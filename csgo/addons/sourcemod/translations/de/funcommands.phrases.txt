@@ -1,0 +1,168 @@
+"Phrases"
+{
+	"Freeze player"
+	{
+		"de"		"Spieler einfrieren"
+	}
+
+	"TimeBomb player"
+	{
+		"de"		"Spieler als Zeitbombe"
+	}
+
+	"Burn player"
+	{
+		"de"		"Spieler verbrennen"
+	}
+
+	"Gravity player"
+	{
+		"de"		"Schwerkraft des Spielers"
+	}
+
+	"Gravity Very High"
+	{
+		"de"		"Sehr starke Schwerkraft"
+	}
+
+	"Gravity Normal"
+	{
+		"de"		"Normale Schwerkraft"
+	}
+
+	"Gravity Low"
+	{
+		"de"		"Schwache Schwerkraft"
+	}
+
+	"Gravity Very Low"
+	{
+		"de"		"Sehr schwache Schwerkraft"
+	}
+
+	"Gravity amount"
+	{
+		"de"		"Schwerkraft?"
+	}
+
+	"Froze target"
+	{
+		"de"		"{1} eingefroren."
+	}
+
+	"Till Explodes"
+	{
+		"de"		"{2} Sekunden bis {1} explodiert."
+	}
+
+	"Drug player"
+	{
+		"de"		"Spieler unter Drogen setzen"
+	}
+
+	"Beacon player"
+	{
+		"de"		"Spieler zum Peilsignal machen"
+	}
+
+	"FireBomb player"
+	{
+		"de"		"Spieler zur Feuerbombe machen"
+	}
+
+	"FreezeBomb player"
+	{
+		"de"		"Spieler zur Eisbombe machen"
+	}
+
+	"NoClip player"
+	{
+		"de"		"Kollisionsabfrage ausschalten"
+	}
+
+	"Set target on fire"
+	{
+		"de"		"Setze {1} unter Feuer."
+	}
+
+	"Blind amount"
+	{
+		"de"		"Wie blind?"
+	}
+
+	"Blind player"
+	{
+		"de"		"Spieler erblinden"
+	}
+
+	"Fully blind"
+	{
+		"de"		"Komplett blind"
+	}
+
+	"Half blind"
+	{
+		"de"		"Halb blind"
+	}
+
+	"No blind"
+	{
+		"de"		"Nicht blind"
+	}
+
+	"Set blind on target"
+	{
+		"de"		"Erblinde Spieler {1}."
+	}
+
+	"Set gravity on target"
+	{
+		"de"		"{1}s Schwerkarft einstellen. "
+	}
+
+	"Toggled FireBomb on target"
+	{
+		"de"		" Feuerbombe für {1} umgeschaltet. "
+	}
+
+	"Toggled FreezeBomb on target"
+	{
+		"de"		"Eisbombe für {1} umgeschaltet. "
+	}
+
+	"Toggled beacon on target"
+	{
+		"de"		"Peilsignal für {1} umgeschaltet. "
+	}
+
+	"Toggled TimeBomb on target"
+	{
+		"de"		"Zeitbombe für {1} umgeschaltet. "
+	}
+
+	"Toggled drug on target"
+	{
+		"de"		"Drogen für {1} umgeschaltet. "
+	}
+
+	"Toggled noclip on target"
+	{
+		"de"		"Kollisionsabfrage für {1} umgeschaltet. "
+	}
+
+	"Gravity High"
+	{
+		"de"		"Starke Schwerkraft"
+	}
+
+	"You will be unfrozen"
+	{
+		"de"		"Du wirst in {1} Sekunden aufgetaut."
+	}
+
+	"Unfrozen"
+	{
+		"de"		"Du bist jetzt aufgetaut."
+	}
+
+}

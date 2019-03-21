@@ -1,0 +1,107 @@
+"GunGame.Weapon"
+{
+    "WeaponOrder"
+    {
+        /**
+         * Weapon Choices:
+         * There are a total of 64 levels by default. (To change this value you can edit the gungame_const.inc
+         * to change the maximum allowed level of the game by changing the define MAX_LEVEL)
+         *
+         * There are a total of 25 usable killing weapons for GunGame.
+         * By default weapon order only 23 levels and uses 23 out of 25 of the usable killing weapons.
+         *
+         * WARNING:
+         * DO NOT SKIP LEVELS in any config for WeaponOrder.
+         * ie .. Only have level 1 to 3 and skip 4 and use 5 to level 23.
+         * DO NOT SKIP LEVELS
+         *
+         * HandGuns:
+         * glock, usp, p228, deagle, fiveseven, elite
+         *
+         * Shotguns:
+         * m3, xm1014
+         *
+         * Sub Machine Guns:
+         * tmp, mac10, mp5navy, ump45, p90
+         *
+         * Rifles:
+         * galil, famas, ak47, scout, m4a1, sg552,
+         * aug, m249, awp
+         *
+         * Automatic Rifles:
+         * sg550, g3sg1
+         *
+         * Machine Gun:
+         * m249
+         *
+         * Other:
+         * knife, hegrenade
+         */
+
+        "1" "glock"
+        "2" "usp"
+        "3" "p228"
+        "4" "deagle"
+        "5" "fiveseven"
+        "6" "elite"
+        "7" "m3"
+        "8" "xm1014"
+        "9" "tmp"
+        "10" "mac10"
+        "11" "mp5navy"
+        "12" "ump45"
+        "13" "p90"
+        "14" "galil"
+        "15" "famas"
+        "16" "ak47"
+        "17" "scout"
+        "18" "m4a1"
+        "19" "sg552"
+        "20" "aug"
+        "21" "m249"
+        "22" "hegrenade"
+        "23" "knife"
+
+        /**
+         * If RandomWeaponOrder is enabled, keep this levels unchanged.
+         * Use comma as a delimiter, do not use whitespace characters - only digits are allowed.
+         * Please keep this config line after levels list and before RandomWeaponOrder.
+         *
+         * "22,23"  - keep knife and nade levels on defined levels
+         * "23"     - keep knife level on defined level
+         * ""       - randomize all levels
+         */
+        "RandomWeaponReserveLevels" ""
+
+        /**
+         * This will take the weapons in the WeaponOrder and randomize all the weapons order.
+         * Please keep this config line after levels list and after RandomWeaponReserveLevels.
+         */
+        "RandomWeaponOrder" "0"
+    }
+
+    "MultipleKillsPerLevel"
+    {
+        /**
+         * This is for custom kills per level will override default (MinKillsPerWeapon).
+         * Leave value at 0 if you do not want to override the default value.
+         *
+         * Example:
+         *
+         * For level 1 they must get 10 kills before they can level up.
+         * "1" "10"
+         * "2" "5"
+         * and so on.
+         *
+         * Or you can set kills per level for a perticular level.
+         * "1" "10"
+         * "3" "5"
+         * "5" "2"
+         * etc.
+         *
+         * Kills will count across all rounds so that you don't have to get them in one round.
+         *
+         *
+         */
+    }
+}

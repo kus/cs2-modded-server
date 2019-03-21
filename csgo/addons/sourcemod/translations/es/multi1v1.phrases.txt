@@ -1,0 +1,103 @@
+"Phrases"
+{
+	"NoOpponent"
+	{
+		"es"			"EstÃ¡s en la arena {GREEN}{1} {NORMAL}sin {DARK_RED}oponentes."
+	}
+	"FacingOff"
+	{
+		"es"			"EstÃ¡s en la arena {GREEN}{1}{NORMAL}, enfrentando a {PURPLE}{2}."
+	}
+	"ArenasFull"
+	{
+		"es"			"Lo sentimos, todas las arenas estÃ¡n actualmente {PURPLE}llenas"
+	}
+	"QueuePosition"
+	{
+		"es"			"EstÃ¡ en posiciÃ³n {GREEN}{1} {NORMAL}en cola de espera."
+	}
+	"WonMessage"
+	{
+		"es"			"{GREEN}Tu {NORMAL}(ELO {GREEN}{1}, {LIGHT_GREEN}+{2}{NORMAL}) ganado {PURPLE}{3} {NORMAL}(ELO {PURPLE}{4}, {DARK_RED}-{5}{NORMAL})."
+	}
+	"LossMessage"
+	{
+		"es"			"{GREEN}Tu {NORMAL}(ELO {GREEN}{1}, {LIGHT_RED}-{2}{NORMAL}) {NORMAL}perdido {PURPLE}{3} {NORMAL}(ELO {PURPLE}{4}, {LIGHT_GREEN}+{5}{NORMAL})."
+	}
+	"TimeRanOut"
+	{
+		"es"			"{GREEN}Tu {NORMAL}(ELO {GREEN}{1}, {LIGHT_RED}-{2}{NORMAL}) dejÃ³ que el tiempo se agote."
+	}
+"MostWins"
+	{
+		"es"		"{GREEN}{1} {NORMAL}ha tenido mÃ¡s victorias {PURPLE}({2}) {NORMAL}en la arena 1 de este mapa."
+	}
+	"OpponentLeft"
+	{
+		"es"		"{GREEN}Tu oponente ha abandonado."
+	}
+	"HideStats"
+	{
+		"es"		"Ahora estÃ¡n ocultas las estadÃsticas de los jugadores."
+	}
+	"ShowStats"
+	{
+		"es"		"Ahora se estÃ¡n mostrando las estadÃsticas del jugador."
+	}
+	"ArenaClanTag"
+	{
+		"es"		"Arena {1}"
+	}
+	"Disabled"
+	{
+		"es"		"desactivada"
+	}
+	"Enabled"
+	{
+		"es"		"activada"
+	}
+	"WeaponsMenuTitle"
+	{
+		"es"		"Selecciona tus armas favoritas:"
+	}
+	"WeaponsMenuRifle"
+	{
+		"es"		"Rifle: {1}"
+	}
+	"WeaponsMenuPistol"
+	{
+		"es"		"Pistola: {1}"
+	}
+	"WeaponsMenuRoundTypeEnabled"
+	{
+		"es"		"{1} ronda: {2}"
+	}
+	"WeaponsMenuPreferenceTitle"
+	{
+		"es"		"Elije tu tipo de ronda preferida:"
+	}
+	"WeaponsMenuPreference"
+	{
+		"es"		"Preferencia: {1} rondas"
+	}
+	"WeaponsMenuPreferenceNone"
+	{
+		"es"		"Preferencia: ninguna"
+	}
+	"WeaponsMenuNoPreference"
+	{
+		"es"		"Sin preferencias"
+	}
+	"WeaponsMenuPreferenceChoice"
+	{
+		"es"		"{1} rondas"
+	}
+	"WeaponsMenuSelection"
+	{
+		"es"		"Cambia tu rifle favorito:"
+	}
+	"PistolMenuTitle"
+	{
+		"es"		"Cambia tu pistola favorita:"
+	}
+}

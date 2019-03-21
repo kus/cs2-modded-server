@@ -1,0 +1,73 @@
+"Phrases"
+{
+	"Choose Type"
+	{
+		"el"		"Διαλέξτε Τρόπο"
+	}
+
+	"Gag Player"
+	{
+		"el"		"Σίγαση παίκτη (μόνο chat)"
+	}
+
+	"Gag/Mute player"
+	{
+		"el"		"Σίγαση παίκτη "
+	}
+
+	"Gagged target"
+	{
+		"el"		"O/H {1} δεν μπορεί να μιλήσει στο chat."
+	}
+
+	"Mute Player"
+	{
+		"el"		"Σίγαση παίκτη (μόνο φωνή)"
+	}
+
+	"Muted target"
+	{
+		"el"		"O/H {1} δεν μπορεί να μιλήσει με μικόφωνο."
+	}
+
+	"Silence Player"
+	{
+		"el"		"Σίγαση παίκτη "
+	}
+
+	"Silenced target"
+	{
+		"el"		"O/H {1} σιωπήθηκε τελείως."
+	}
+
+	"UnGag Player"
+	{
+		"el"		"Αναίρεση σίγασης (μόνο chat)"
+	}
+
+	"UnMute Player"
+	{
+		"el"		"Aναίρεση σίγασης (μόνο φωνή)"
+	}
+
+	"UnSilence Player"
+	{
+		"el"		"Αναίρεση σίγασης (όλα)"
+	}
+
+	"Ungagged target"
+	{
+		"el"		"O/H {1} μπορεί να μιλήσει στο chat από τώρα."
+	}
+
+	"Unmuted target"
+	{
+		"el"		"O/H {1} μπορεί από τώρα να μιλήσει με μικόφωνο."
+	}
+
+	"Unsilenced target"
+	{
+		"el"		"O/H {1} μπορεί από τώρα να μιλήσει και να γράψει."
+	}
+
+}

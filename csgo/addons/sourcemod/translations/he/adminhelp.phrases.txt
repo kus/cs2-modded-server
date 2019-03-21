@@ -1,0 +1,33 @@
+"Phrases"
+{
+	"Entries n - m in page k"
+	{
+		"he"		"ערכים {1} - {2} בדף {3} "
+	}
+
+	"No commands available"
+	{
+		"he"		"אין פקודות זמינות"
+	}
+
+	"No description available"
+	{
+		"he"		"אין הסבר זמין"
+	}
+
+	"No matching results found"
+	{
+		"he"		"לא נמצאו תוצאות מתאימות"
+	}
+
+	"Type sm_help to see more"
+	{
+		"he"		"sm_help {1}  כדי לראות עוד פקודות תרשום בבקשה"
+	}
+
+	"SM help commands"
+	{
+		"he"		"עזרת סורס מוד : מידע על פקודה"
+	}
+
+}

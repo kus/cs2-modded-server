@@ -1,0 +1,187 @@
+"Games"
+{
+	"#default"
+	{
+		"Offsets"
+		{
+			"Blocked"
+			{
+				"windows"	"106"
+				"linux"		"107"
+				"mac"		"107"
+			}
+			"EndTouch"
+			{
+				"windows"	"104"
+				"linux"		"105"
+				"mac"		"105"
+			}
+			"FireBullets"
+			{
+				"windows"	"118"
+				"linux"		"119"
+				"mac"		"119"
+			}
+			"GetMaxHealth"
+			{
+				"windows"	"122"
+				"linux"		"123"
+				"mac"		"123"			
+			}
+			"GroundEntChanged"
+			{
+				"windows"	"177"
+				"linux"		"179"
+				"mac"		"179"
+			}
+			"OnTakeDamage"
+			{
+				"windows"	"68"
+				"linux"		"69"
+				"mac"		"69"
+			}
+			"OnTakeDamage_Alive"
+			{
+				"windows"	"298"
+				"linux"		"299"
+				"mac"		"299"
+			}
+			"PreThink"
+			{
+				"windows"	"371"
+				"linux"		"372"
+				"mac"		"372"
+			}
+			"PostThink"
+			{
+				"windows"	"372"
+				"linux"		"373"
+				"mac"		"373"
+			}
+			"Reload"
+			{
+				"windows"	"309"
+				"linux"		"315"
+				"mac"		"315"
+			}
+			"SetTransmit"
+			{
+				"windows"	"23"
+				"linux"		"24"
+				"mac"		"24"
+			}
+			"ShouldCollide"
+			{
+				"windows"	"18"
+				"linux"		"19"
+				"mac"		"19"
+			}
+			"Spawn"
+			{
+				"windows"	"25"
+				"linux"		"26"
+				"mac"		"26"
+			}
+			"StartTouch"
+			{
+				"windows"	"102"
+				"linux"		"103"
+				"mac"		"103"
+			}
+			"Think"
+			{
+				"windows"	"52"
+				"linux"		"53"
+				"mac"		"53"
+			}
+			"Touch"
+			{
+				"windows"	"103"
+				"linux"		"104"
+				"mac"		"104"
+			}
+			"TraceAttack"
+			{
+				"windows"	"66"
+				"linux"		"67"
+				"mac"		"67"
+			}
+			"Use"
+			{
+				"windows"	"101"
+				"linux"		"102"
+				"mac"		"102"
+			}
+			"VPhysicsUpdate"
+			{
+				"windows"	"156"
+				"linux"		"157"
+				"mac"		"157"
+			}
+			"Weapon_CanSwitchTo"
+			{
+				"windows"	"290"
+				"linux"		"291"
+				"mac"		"291"
+			}
+			"Weapon_CanUse"
+			{
+				"windows"	"284"
+				"linux"		"285"
+				"mac"		"285"
+			}
+			"Weapon_Drop"
+			{
+				"windows"	"287"
+				"linux"		"288"
+				"mac"		"288"
+			}
+			"Weapon_Equip"
+			{
+				"windows"	"285"
+				"linux"		"286"
+				"mac"		"286"
+			}
+			"Weapon_Switch"
+			{
+				"windows"	"288"
+				"linux"		"289"
+				"mac"		"289"
+			}
+		}
+	}
+	
+	"#default"
+	{
+		"Offsets"
+		{
+			"EntityListeners"
+			{
+				"linux"		"196644"
+				"mac"		"196644"
+			}
+		}
+		
+		"Addresses"
+		{
+			"EntityListenersPtr"
+			{
+				"windows"
+				{
+					"signature"	"EntityListenersFinder"
+					"read"		"18"
+				}
+			}
+		}
+		
+		"Signatures"
+		{
+			// Find call to AddListenerEntity in CPhysSaveRestoreBlockHandler::PreRestore (virtual)
+			"EntityListenersFinder"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\x0D\x2A\x2A\x2A\x2A\x33\xC0\x56\x85\xC9\x7E\x32\x8B"
+			}
+		}
+	}
+}

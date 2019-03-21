@@ -1,0 +1,103 @@
+"Phrases"
+{
+	"NoOpponent"
+	{
+		"pl"			"Jestes na arenie {GREEN}{1} {DARK_RED}bez przeciwnika."
+	}
+	"FacingOff"
+	{
+		"pl"			"Walczysz na arenie {GREEN}{1}{NORMAL}, przeciwko {PURPLE}{2}."
+	}
+	"ArenasFull"
+	{
+		"pl"			"Przepraszamy, wszystkie areny sa{PURPLE}pelne."
+	}
+	"QueuePosition"
+	{
+		"pl"			"Jestes {GREEN}{1} {NORMAL}w kolejce."
+	}
+	"WonMessage"
+	{
+		"pl"			"{GREEN}Ty {NORMAL}(rating {GREEN}{1}, {LIGHT_GREEN}+{2}{NORMAL}) pokonales {PURPLE}{3} {NORMAL}(rating {PURPLE}{4}, {DARK_RED}-{5}{NORMAL})."
+	}
+	"LossMessage"
+	{
+		"pl"			"{GREEN}Ty {NORMAL}(rating {GREEN}{1}, {LIGHT_RED}-{2}{NORMAL}) {NORMAL}przegrales z {PURPLE}{3} {NORMAL}(rating {PURPLE}{4}, {LIGHT_GREEN}+{5}{NORMAL})."
+	}
+	"TimeRanOut"
+	{
+		"pl"			"{GREEN}Ty {NORMAL}(rating {GREEN}{1}, {LIGHT_RED}-{2}{NORMAL}) pozwoliles zeby czas sie skonczyl."
+	}
+	"MostWins"
+	{
+		"pl"		"{GREEN}{1} {NORMAL}mial najwiecej wygranych {PURPLE}({2}) {NORMAL}na pierwszej arenie tej mapy."
+	}
+	"OpponentLeft"
+	{
+		"pl"		"{GREEN}Twoj przeciwnik opuscil gre."
+	}
+	"HideStats"
+	{
+		"pl"		"Statystyki graczy sa teraz ukryte."
+	}
+	"ShowStats"
+	{
+		"pl"		"Statystyki graczy sa teraz wyswietlane."
+	}
+	"ArenaClanTag"
+	{
+		"pl"		"Arena {1}"
+	}
+	"Disabled"
+	{
+		"pl"		"Wylaczone"
+	}
+	"Enabled"
+	{
+		"pl"		"Wlaczone"
+	}
+	"WeaponsMenuTitle"
+	{
+		"pl"		"Wybierz swoje bronie:"
+	}
+	"WeaponsMenuRifle"
+	{
+		"pl"		"Karabin: {1}"
+	}
+	"WeaponsMenuPistol"
+	{
+		"pl"		"Pistolet: {1}"
+	}
+	"WeaponsMenuRoundTypeEnabled"
+	{
+		"pl"		"{1} rundy: {2}"
+	}
+	"WeaponsMenuPreferenceTitle"
+	{
+		"pl"		"Wybierz swoj ulubiony typ rundy:"
+	}
+	"WeaponsMenuPreference"
+	{
+		"pl"		"Wybor: {1} rundy"
+	}
+	"WeaponsMenuPreferenceNone"
+	{
+		"pl"		"Wybor: brak"
+	}
+	"WeaponsMenuNoPreference"
+	{
+		"pl"		"Brak wyboru"
+	}
+	"WeaponsMenuPreferenceChoice"
+	{
+		"pl"		"{1} rundy"
+	}
+	"WeaponsMenuSelection"
+	{
+		"pl"		"Wybierz ulubiony karabin:"
+	}
+	"PistolMenuTitle"
+	{
+		"pl"		"Wybierz ulubiony pistolet:"
+	}
+}

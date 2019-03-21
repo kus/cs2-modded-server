@@ -1,0 +1,48 @@
+"Phrases"
+{
+	"Choose Option"
+	{
+		"ro"		"Alege o optiune"
+	}
+
+	"Client Settings"
+	{
+		"ro"		"Setarile clientului"
+	}
+
+	"Cookie Changed Value"
+	{
+		"ro"		"A fost schimbata valoarea pentru cookie din \"{1}\" in \"{2}\""
+	}
+
+	"Cookie List"
+	{
+		"ro"		"Lista Cookie Sourcemod"
+	}
+
+	"Cookie Value"
+	{
+		"ro"		"Valoarea lui {1} este {2}"
+	}
+
+	"Cookie not Found"
+	{
+		"ro"		"Nu am putut gasi cookie \"{1}\""
+	}
+
+	"No Console"
+	{
+		"ro"		"Nu pot fi afisate setarile meniului in consola"
+	}
+
+	"Printing Cookie List"
+	{
+		"ro"		"Printeaza lista cookie in consola"
+	}
+
+	"Protected Cookie"
+	{
+		"ro"		"Nu poate fi schimbata valoarea protejate pentru cookie \"{1}\""
+	}
+
+}

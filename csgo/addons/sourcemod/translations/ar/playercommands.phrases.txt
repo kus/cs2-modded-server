@@ -1,0 +1,48 @@
+"Phrases"
+{
+	"Slap player"
+	{
+		"ar"		"صفع اللاعب"
+	}
+
+	"Slapped target"
+	{
+		"ar"		"صفع {1}."
+	}
+
+	"Slap damage"
+	{
+		"ar"		"ضرر الصفعة"
+	}
+
+	"Slay player"
+	{
+		"ar"		"قتل اللاعب"
+	}
+
+	"Slayed target"
+	{
+		"ar"		"تم قتل {1}"
+	}
+
+	"Renamed target"
+	{
+		"ar"		"غير إسم {1}"
+	}
+
+	"Rename player"
+	{
+		"ar"		"غير إسم اللاعب"
+	}
+
+	"Name changed"
+	{
+		"ar"		"آدمن غير إسمك"
+	}
+
+	"Dead Player Rename"
+	{
+		"ar"		"{1} سيتم تغيير إسمه الدور الآتي."
+	}
+
+}

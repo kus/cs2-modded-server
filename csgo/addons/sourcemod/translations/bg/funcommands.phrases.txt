@@ -1,0 +1,78 @@
+"Phrases"
+{
+	"Blind player"
+	{
+		"bg"		"Заслепяване на играч"
+	}
+
+	"Burn player"
+	{
+		"bg"		"Запалване на играч"
+	}
+
+	"Drug player"
+	{
+		"bg"		"Дрогиране на играч"
+	}
+
+	"Freeze player"
+	{
+		"bg"		"Замразяване на играч"
+	}
+
+	"Fully blind"
+	{
+		"bg"		"Напълно сляп"
+	}
+
+	"Gravity High"
+	{
+		"bg"		"Висока гравитация"
+	}
+
+	"Gravity Low"
+	{
+		"bg"		"Ниска гравитация"
+	}
+
+	"Gravity Normal"
+	{
+		"bg"		"Нормална гравитация"
+	}
+
+	"Gravity Very High"
+	{
+		"bg"		"Много висока гравитация"
+	}
+
+	"Gravity Very Low"
+	{
+		"bg"		"Много ниска гравитация"
+	}
+
+	"Gravity amount"
+	{
+		"bg"		"Гравитация?"
+	}
+
+	"Gravity player"
+	{
+		"bg"		"Промяна гравитацията на играч"
+	}
+
+	"Half blind"
+	{
+		"bg"		"Наполовина сляп"
+	}
+
+	"No blind"
+	{
+		"bg"		"Не е сляп"
+	}
+
+	"Unfrozen"
+	{
+		"bg"		"Вече не сте замразен"
+	}
+
+}

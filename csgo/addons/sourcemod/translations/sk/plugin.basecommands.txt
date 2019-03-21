@@ -1,0 +1,128 @@
+"Phrases"
+{
+	"Removed bans matching"
+	{
+		"sk"		"Zmazané bany pre: {1}"
+	}
+
+	"Player is an admin"
+	{
+		"sk"		"\"{1}\" je admin."
+	}
+
+	"Kicked target"
+	{
+		"sk"		"Vyhodený {1}"
+	}
+
+	"Kicked target reason"
+	{
+		"sk"		"Vyhodený {1} (Dôvod: {2})  "
+	}
+
+	"Identify player"
+	{
+		"sk"		"Identifikovať hráča"
+	}
+
+	"Admin logged in anon"
+	{
+		"sk"		"\"{1}\" ma práva na: {2}  "
+	}
+
+	"Admin logged in as"
+	{
+		"sk"		"\"{1}\" prihlásený ako \"{2}\" s právami: {3}  "
+	}
+
+	"Banned player reason"
+	{
+		"sk"		"Zabanovaný hráč \"{1}\" na {2} minút (dôvod: {3}).  "
+	}
+
+	"Banned player"
+	{
+		"sk"		"Zabanovaný hráč \"{1}\" na {2} minút.  "
+	}
+
+	"Choose Map"
+	{
+		"sk"		"Vybrať mapu"
+	}
+
+	"Config not found"
+	{
+		"sk"		"Config \"{1}\" nenájdený."
+	}
+
+	"Admin cache refreshed"
+	{
+		"sk"		"Admin cache bol obnovený."
+	}
+
+	"Ban added"
+	{
+		"sk"		"Ban bol pridaný."
+	}
+
+	"Cvar changed"
+	{
+		"sk"		"Zmenený cvar \"{1}\" na \"{2}\". "
+	}
+
+	"Cvar is now protected"
+	{
+		"sk"		"Cvar {1} je teraz chránený."
+	}
+
+	"Exec CFG"
+	{
+		"sk"		"Aplikovať CFG"
+	}
+
+	"Executed config"
+	{
+		"sk"		"Aplikovaný config \"{1}\"."
+	}
+
+	"No access to cvar"
+	{
+		"sk"		"Nemáš prístup k tomuto cvaru."
+	}
+
+	"Permabanned player"
+	{
+		"sk"		"Permanentne zabanovaný hráč \"{1}\". "
+	}
+
+	"Permabanned player reason"
+	{
+		"sk"		"Permanentne zabanovaný hráč \"{1}\" (dôvod: {2}).  "
+	}
+
+	"Player is not an admin"
+	{
+		"sk"		"\"{1}\" nie je admin. "
+	}
+
+	"Unable to find cvar"
+	{
+		"sk"		"Nebolo možné nájsť cvar: {1} "
+	}
+
+	"Username"
+	{
+		"sk"		"Uživateľské meno "
+	}
+
+	"Value of cvar"
+	{
+		"sk"		"Hodnota cvaru \"{1}\": \"{2}\" "
+	}
+
+	"Admin access"
+	{
+		"sk"		"Admin prístup"
+	}
+
+}

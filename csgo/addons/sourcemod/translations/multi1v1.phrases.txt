@@ -1,0 +1,137 @@
+"Phrases"
+{
+	"NoOpponent"
+	{
+		"#format"	"{1:i}"
+		"en"		"You are in arena {GREEN}{1} {NORMAL}with {DARK_RED}no opponent."
+	}
+	"NoOpponentHint"
+	{
+		"en"		"<font size='22' color='#FF0000'>You have no opponent.</font>"
+	}
+	"FacingOff"
+	{
+		"#format"	"{1:i},{2:N}"
+		"en"		"You are in arena {GREEN}{1}{NORMAL}, facing off against {PURPLE}{2}{NORMAL}."
+	}
+	"ArenasFull"
+	{
+		"en"		"Sorry, all the arenas are currently {PURPLE}full."
+	}
+	"QueuePosition"
+	{
+		"#format"	"{1:i}"
+		"en"		"You are in position {GREEN}{1} {NORMAL}in the waiting queue."
+	}
+	"WonMessage"
+	{
+		"#format"	"{1:i},{2:.1f},{3:N},{4:i},{5:.1f}"
+		"en"		"{GREEN}You {NORMAL}(rating {GREEN}{1}, {LIGHT_GREEN}+{2}{NORMAL}) beat {PURPLE}{3} {NORMAL}(rating {PURPLE}{4}, {DARK_RED}-{5}{NORMAL})."
+	}
+	"LossMessage"
+	{
+		"#format"	"{1:i},{2:.1f},{3:N},{4:i},{5:.1f}"
+		"en"		"{GREEN}You {NORMAL}(rating {GREEN}{1}, {LIGHT_RED}-{2}{NORMAL}) {NORMAL}lost to {PURPLE}{3} {NORMAL}(rating {PURPLE}{4}, {LIGHT_GREEN}+{5}{NORMAL})."
+	}
+	"TimeRanOut"
+	{
+		"#format"	"{1:i},{2:.1f}"
+		"en"		"{GREEN}You {NORMAL}(rating {GREEN}{1}, {LIGHT_RED}-{2}{NORMAL}) let time run out."
+	}
+	"MostWins"
+	{
+		"#format"	"{1:N},{2:d}"
+		"en"		"{GREEN}{1} {NORMAL}had the most wins {PURPLE}({2}) {NORMAL}in arena 1 this map."
+	}
+	"OpponentLeft"
+	{
+		"en"		"{GREEN}Your opponent left."
+	}
+	"OpponentLeftHint"
+	{
+		"en"		"<font size='22' color='#00FF00'>Your opponent left.</font>"
+	}
+	"HideStats"
+	{
+		"en"		"Player stats are now being hidden."
+	}
+	"ShowStats"
+	{
+		"en"		"Player stats are now being displayed."
+	}
+	"AutoSpecOn"
+	{
+		"en"		"You have enabled auto-spectate."
+	}
+	"AutoSpecOff"
+	{
+		"en"		"You have disabled auto-spectate."
+	}
+	"AutoSpecSwitch"
+	{
+		"#format"		"{1:d}"
+		"en"		"Autoswitching to spectate arena {1}."
+	}
+	"ArenaClanTag"
+	{
+		"#format"	"{1:d}"
+		"en"		"Arena {1}"
+	}
+	"Disabled"
+	{
+		"en"		"disabled"
+	}
+	"Enabled"
+	{
+		"en"		"enabled"
+	}
+	"WeaponsMenuTitle"
+	{
+		"en"		"Select your weapons preferences:"
+	}
+	"WeaponsMenuRifle"
+	{
+		"#format"		"{1:s}"
+		"en"		"Rifle: {1}"
+	}
+	"WeaponsMenuPistol"
+	{
+		"#format"		"{1:s}"
+		"en"		"Pistol: {1}"
+	}
+	"WeaponsMenuRoundTypeEnabled"
+	{
+		"#format"		"{1:s},{2:s}"
+		"en"		"{1} rounds: {2}"
+	}
+	"WeaponsMenuPreferenceTitle"
+	{
+		"en"		"Choose your preferred round type:"
+	}
+	"WeaponsMenuPreference"
+	{
+		"#format"		"{1:s}"
+		"en"		"Preference: {1} rounds"
+	}
+	"WeaponsMenuPreferenceNone"
+	{
+		"en"		"Preference: none"
+	}
+	"WeaponsMenuNoPreference"
+	{
+		"en"		"No preference"
+	}
+	"WeaponsMenuPreferenceChoice"
+	{
+		"#format"		"{1:s}"
+		"en"		"{1} rounds"
+	}
+	"WeaponsMenuSelection"
+	{
+		"en"		"Choose your favorite rifle:"
+	}
+	"PistolMenuTitle"
+	{
+		"en"		"Choose your favorite pistol:"
+	}
+}

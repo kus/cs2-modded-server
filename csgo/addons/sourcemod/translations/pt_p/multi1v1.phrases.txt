@@ -1,0 +1,31 @@
+"Phrases"
+{
+	"NoOpponent"
+	{
+		"pt_p"			"Está na arena {GREEN}{1} {NORMAL}sem {DARK_RED}oponentes."
+	}
+	"FacingOff"
+	{
+		"pt_p"			"Está na arena {GREEN}{1}{NORMAL}, a enfrentar {PURPLE}{2}."
+	}
+	"ArenasFull"
+	{
+		"pt_p"			"Lamentamos, todas as arenas estão atualmente {PURPLE}cheias"
+	}
+	"QueuePosition"
+	{
+		"pt_p"			"Está na posição {GREEN}{1} {NORMAL}na fila de espera."
+	}
+	"WonMessage"
+	{
+		"pt_p"			"{GREEN}Voçê {NORMAL}(ELO {GREEN}{1}, {LIGHT_GREEN}+{2}{NORMAL}) derrotou {PURPLE}{3} {NORMAL}(ELO {PURPLE}{4}, {DARK_RED}-{5}{NORMAL})."
+	}
+	"LossMessage"
+	{
+		"pt_p"			"{GREEN}Você {NORMAL}(ELO {GREEN}{1}, {LIGHT_RED}-{2}{NORMAL}) {NORMAL}perdeu para {PURPLE}{3} {NORMAL}(ELO {PURPLE}{4}, {LIGHT_GREEN}+{5}{NORMAL})."
+	}
+	"TimeRanOut"
+	{
+		"pt_p"			"{GREEN}Você {NORMAL}(ELO {GREEN}{1}, {LIGHT_RED}-{2}{NORMAL}) deixou o tempo acabar."
+	}
+}

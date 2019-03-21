@@ -1,0 +1,68 @@
+"Phrases"
+{
+	"Nominate Title"
+	{
+		"tr"		"Haritayı Aday Göster:"
+	}
+
+	"Max Nominations"
+	{
+		"tr"		"İzin verilen en fazla aday sayısına ulaşıldı."
+	}
+
+	"Map Nomination Changed"
+	{
+		"tr"		"{1} adayını {2} olarak değiştirdi."
+	}
+
+	"Map Inserted"
+	{
+		"tr"		"'{1}' adlı harita adaylar listesine eklendi."
+	}
+
+	"Map Nominated"
+	{
+		"tr"		"{1} {2}'i aday gösterdi."
+	}
+
+	"Map Already Nominated"
+	{
+		"tr"		"Seçtiğiniz harita zaten aday olarak gösterildi."
+	}
+
+	"Map Already In Vote"
+	{
+		"tr"		"'{1}' adlı harita zaten Adaylar listesinde."
+	}
+
+	"Already Nominated"
+	{
+		"tr"		"Zaten bir haritayı aday olarak gösterdiniz."
+	}
+
+	"Current Map"
+	{
+		"tr"		"Geçerli Harita"
+	}
+
+	"Can't Nominate Current Map"
+	{
+		"tr"		"Seçtiğiniz haritayı geçerli harita olduğu için aday gösteremezsiniz"
+	}
+
+	"Map in Exclude List"
+	{
+		"tr"		"Seçtiğiniz haritayı yakın zamanda oynandığı için aday gösteremezsiniz"
+	}
+
+	"Nominated"
+	{
+		"tr"		"Aday Gösterildi"
+	}
+
+	"Recently Played"
+	{
+		"tr"		"Yakın Zamanda Oynandı"
+	}
+
+}

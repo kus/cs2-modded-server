@@ -1,0 +1,48 @@
+"Phrases"
+{
+	"Client Settings"
+	{
+		"cze"		"Nastaveni hrace"
+	}
+
+	"Choose Option"
+	{
+		"cze"		"Zvolte moznost"
+	}
+
+	"Cookie Changed Value"
+	{
+		"cze"		"Zmena hodnoty cookie \"{1}\" na \"{2}\""
+	}
+
+	"Cookie List"
+	{
+		"cze"		"Seznam Sourcemod Cookies"
+	}
+
+	"Cookie Value"
+	{
+		"cze"		"Hodnota hrace {1} je {2}"
+	}
+
+	"Cookie not Found"
+	{
+		"cze"		"Nelze nalezt cookie \"{1}\""
+	}
+
+	"No Console"
+	{
+		"cze"		"Nelze zobrazit menu nastaveni do konzole"
+	}
+
+	"Printing Cookie List"
+	{
+		"cze"		"Vypisuji seznam cookie do konzole"
+	}
+
+	"Protected Cookie"
+	{
+		"cze"		"Nelze zmenit hodnotu chranene cookie \"{1}\""
+	}
+
+}

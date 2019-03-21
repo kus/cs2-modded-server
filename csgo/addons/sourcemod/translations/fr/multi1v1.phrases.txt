@@ -1,0 +1,51 @@
+"Phrases"
+{
+	"NoOpponent"
+	{
+		"fr"			"Tu es dans l'arène {GREEN}{1} {NORMAL}sans {DARK_RED}adversaire."
+	}
+	"FacingOff"
+	{
+		"fr"			"Tu es dans l'arène {GREEN}{1}{NORMAL} contre {PURPLE}{2}."
+	}
+	"ArenasFull"
+	{
+		"fr"			"Toutes les arènes sont {PURPLE}pleines."
+	}
+	"QueuePosition"
+	{
+		"fr"			"Tu es en position {GREEN}{1} {NORMAL}dans la file d'attente."
+	}
+	"WonMessage"
+	{
+		"fr"			"{GREEN}Tu {NORMAL}({GREEN}{1}, {LIGHT_GREEN}+{2}{NORMAL} points) as battu {PURPLE}{3} {NORMAL}({RED}{4}, {DARK_RED}-{5}{NORMAL} points)."
+	}
+	"LossMessage"
+	{
+		"fr"			"{GREEN}Tu {NORMAL}({GREEN}{1}, {LIGHT_RED}-{2}{NORMAL} points) {NORMAL}à perdu contre {PURPLE}{3} {NORMAL}({RED}{4}, {LIGHT_GREEN}+{5}{NORMAL} points)."
+	}
+	"TimeRanOut"
+	{
+		"fr"			"{GREEN}Tu {NORMAL}({GREEN}{1}, {LIGHT_RED}-{2}{NORMAL} points) laisser le temps s'écouler."
+	}
+	"MostWins"
+    	{
+        	"fr"            	"{GREEN}{1} {NORMAL}a eu le plus de victoires {PURPLE}({2}) {NORMAL}dans l'arène 1 pendant cette carte."
+    	}
+    	"OpponentLeft"
+    	{
+       		"fr"            	"{GREEN}Ton adversaire est parti."
+    	}
+    	"HideStats"
+    	{
+        	"fr"            	"Les stats des joueurs sont cachées."
+    	}
+    	"ShowStats"
+    	{
+        	"fr"            	"Les stats des joueurs sont visibles."
+    	}
+    	"ArenaClanTag"
+    	{
+        	"fr"            	"Arena {1}"
+    	}
+}

@@ -1,0 +1,58 @@
+"Phrases"
+{
+	"_s"
+	{
+		"he"		"{1}"
+	}
+
+	"Back"
+	{
+		"he"		"אחורה"
+	}
+
+	"Exit"
+	{
+		"he"		"צא"
+	}
+
+	"Next"
+	{
+		"he"		"הבא"
+	}
+
+	"No Access"
+	{
+		"he"		"אין לך גישה לפקודה זו"
+	}
+
+	"Previous"
+	{
+		"he"		"הקודם"
+	}
+
+	"all alive players"
+	{
+		"he"		"כל השחקנים החיים"
+	}
+
+	"all bots"
+	{
+		"he"		"כל הרובוטים"
+	}
+
+	"all dead players"
+	{
+		"he"		"כל השחקנים המתים"
+	}
+
+	"all humans"
+	{
+		"he"		"כל האנשים"
+	}
+
+	"all players"
+	{
+		"he"		"כל השחקנים"
+	}
+
+}

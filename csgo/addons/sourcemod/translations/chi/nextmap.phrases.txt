@@ -1,0 +1,43 @@
+"Phrases"
+{
+	"Next Map"
+	{
+		"chi"		"下一幅地图: {1}"
+	}
+
+	"Current Map"
+	{
+		"chi"		"当前地图"
+	}
+
+	"Map"
+	{
+		"chi"		"[地图]"
+	}
+
+	"Map History"
+	{
+		"chi"		"地图历史纪录"
+	}
+
+	"Played Time"
+	{
+		"chi"		"[已运行时间]"
+	}
+
+	"Reason"
+	{
+		"chi"		"[终止理由]"
+	}
+
+	"Started"
+	{
+		"chi"		"[已启动]"
+	}
+
+	"ago"
+	{
+		"chi"		"之前"
+	}
+
+}

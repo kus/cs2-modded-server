@@ -1,0 +1,105 @@
+"Games"
+{
+	/* Fortress Forever 2.4 */
+	"FortressForever"
+	{
+		"Offsets"
+		{
+			"EndTouch"
+			{
+				"windows"	"96"
+				"linux"		"97"
+			}
+			"FireBullets"
+			{
+				"windows"	"107"
+				"linux"		"108"
+			}
+			"OnTakeDamage"
+			{
+				"windows"	"65"
+				"linux"		"66"
+			}
+			"PreThink"
+			{
+				"windows"	"281"
+				"linux"		"282"
+			}
+			"PostThink"
+			{
+				"windows"	"282"
+				"linux"		"283"
+			}
+			"SetTransmit"
+			{
+				"windows"	"23"
+				"linux"		"24"
+			}
+			"ShouldCollide"
+			{
+				"windows"	"17"
+				"linux"		"18"
+			}
+			"Spawn"
+			{
+				"windows"	"25"
+				"linux"		"26"
+			}
+			"StartTouch"
+			{
+				"windows"	"94"
+				"linux"		"95"
+			}
+			"Think"
+			{
+				"windows"	"51"
+				"linux"		"52"
+			}
+			"Touch"
+			{
+				"windows"	"95"
+				"linux"		"96"
+			}
+			"TraceAttack"
+			{
+				"windows"	"63"
+				"linux"		"64"
+			}
+			"Use"
+			{
+				"windows"	"93"
+				"linux"		"94"
+			}
+			"VPhysicsUpdate"
+			{
+				"windows"	"150"
+				"linux"		"151"
+			}
+			"Weapon_CanSwitchTo"
+			{
+				"windows"	"230"
+				"linux"		"231"
+			}
+			"Weapon_CanUse"
+			{
+				"windows"	"224"
+				"linux"		"225"
+			}
+			"Weapon_Drop"
+			{
+				"windows"	"227"
+				"linux"		"228"
+			}
+			"Weapon_Equip"
+			{
+				"windows"	"225"
+				"linux"		"226"
+			}
+			"Weapon_Switch"
+			{
+				"windows"	"228"
+				"linux"		"229"
+			}
+		}
+	}
+}

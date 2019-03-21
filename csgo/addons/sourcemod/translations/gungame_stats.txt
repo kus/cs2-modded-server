@@ -1,0 +1,207 @@
+"Phrases"
+{
+        "1>wins"
+        {
+                "#format"    "{1:d}"
+            "en"    "{1} Win"
+			"fr"    "{1} Victoire"
+            "ru"    "{1} победа"
+			"de"    "{1} Sieg"
+			"pt"    "{1} Vitoria"
+			"es"    "{1} Victoria"
+			"pl"    "{1} Wygrana"
+			
+        }
+        "x1>wins"
+        {
+                "#format"    "{1:d}"
+            "en"    "{1} Wins"
+			"fr"    "{1} Victoires"
+            "ru"    "{1} победа"
+			"de"    "{1} Siege"
+			"pt"    "{1} Vitorias"
+			"es"    "{1} Victorias"
+			"pl"    "{1} Wygrane"
+        }
+        "x2-x4>wins"
+        {
+                "#format"    "{1:d}"
+            "en"    "{1} Wins"
+            "ru"    "{1} победы"
+			"de"    "{1} Siege"
+			"pt"    "{1} Vitorias"
+			"es"    "{1} Victorias"
+			"pl"    "{1} Wygrane"
+        }
+        "x5-x20>wins"
+        {
+                "#format"    "{1:d}"
+            "en"    "{1} Wins"
+			"fr"    "{1} Victoires"
+            "ru"    "{1} побед"
+			"de"    "{1} Siege"
+			"pt"    "{1} Vitorias"
+			"es"    "{1} Victorias"
+			"pl"    "{1} Wygrane"
+        }
+    "Rank: not ranked"
+    {
+        "#format"    "{1:s}"
+        "en"    "{teamcolor}{1} {green}has no wins yet"
+		"fr"    "{teamcolor}{1} {green}n'a pas encore de victoire"
+        "ru"    "{teamcolor}{1} {green}ещё не имеет побед"
+		"de"    "{teamcolor}{1} {green}hat aktuell keine Siege"
+		"pt"    "{teamcolor}{1} {green}ainda não tem vitorias"
+		"es"    "{teamcolor}{1} {green}no tiene ninguna victoria todavía"
+		"pl"    "{teamcolor}{1} {green}nie posiadasz jeszcze wygranych"
+    }
+    "Rank: rank"
+    {
+        "#format"    "{1:s},{2:d},{3:s},{4:d}"
+        "en"    "{teamcolor}{1} {green}is on {default}{2} {green}place from {default}{4} {green}with {3}"
+		"fr"    "{teamcolor}{1} {green}est en {default}{2} {green}place de {default}{4} {green}avec {3}"
+        "ru"    "{teamcolor}{1} {green}занимает {default}{2} {green}место из {default}{4} {green}с {3}"
+		"de"    "{teamcolor}{1} {green}ist auf dem {default}{2} {green}Platz von {default}{4} {green}mit {3}"
+		"pt"    "{teamcolor}{1} {green}está no {default}{2} {green}lugar de {default}{4} {green}com {3}"
+		"es"    "{teamcolor}{1} {green}está en {default}{2} {green}lugar de {default}{4} {green}con {3}"
+		"pl"    "{teamcolor}{1} {green} jest {default} {2} {green} miejscu od {default} {4} {green} z {3}"
+    }
+        "1>with wins"
+        {
+                "#format"    "{1:d}"
+            "en"    "{default}{1} {green}win"
+			"fr"    "{default}{1} {green}victoire"
+            "ru"    "{default}{1} {green}победой"
+			"de"    "{default}{1} {green}Sieg"
+			"pt"    "{default}{1} {green}vitoria"
+			"es"    "{default}{1} {green}victoria"
+			"pl"    "{default}{1} {green}wygrana"
+        }
+        "x1>with wins"
+        {
+                "#format"    "{1:d}"
+            "en"    "{default}{1} {green}wins"
+			"fr"    "{default}{1} {green}victoires"
+            "ru"    "{default}{1} {green}победой"
+			"de"    "{default}{1} {green}Siegen"
+			"pt"    "{default}{1} {green}vitorias"
+			"es"    "{default}{1} {green}victorias"
+			"pl"    "{default}{1} {green}wygrane"
+        }
+        "x2-x4>with wins"
+        {
+                "#format"    "{1:d}"
+            "en"    "{default}{1} {green}wins"
+			"fr"    "{default}{1} {green}victoires"
+            "ru"    "{default}{1} {green}победами"
+			"de"    "{default}{1} {green}Siegen"
+			"pt"    "{default}{1} {green}vitorias"
+			"es"    "{default}{1} {green}victorias"
+			"pl"    "{default}{1} {green}wygrane"
+        }
+        "x5-x20>with wins"
+        {
+                "#format"    "{1:d}"
+            "en"    "{default}{1} {green}wins"
+			"fr"    "{default}{1} {green}victoires"
+            "ru"    "{default}{1} {green}победами"
+			"de"    "{default}{1} {green}Siegen"
+			"pt"    "{default}{1} {green}vitorias"
+			"es"    "{default}{1} {green}victorias"
+			"pl"    "{default}{1} {green}wygrane"
+        }
+	"Panel: Page"
+	{
+		"#format"	"{1:d},{2:d}"
+		"en"	"Page {1} / {2}"
+		"fr"	"Page {1} / {2}"
+		"ru"	"Страница {1} / {2}"
+		"de"	"Seite {1} / {2}"
+		"pt"	"Pagina {1} / {2}"
+		"es"	"Página {1} / {2}"
+		"pl"	"Strona {1} / {2}"
+	}
+	"Panel: Back"
+	{
+		"en"	"Back"
+		"fr"	"Retour"
+		"ru"	"Назад"
+		"de"	"Zurück"
+		"pt"	"Atras"
+		"es"	"Volver"
+		"pl"	"Wróć"
+	}
+	"Panel: Next"
+	{
+		"en"	"Next"
+		"fr"	"Suivant"
+		"ru"	"Вперёд"
+		"de"	"Vor"
+		"pt"	"Seguinte"
+		"es"	"Siguiente"
+		"pl"	"Następna"
+	}
+    "Panel: Exit"
+    {
+        "en"    "Exit"
+		"fr"    "Sortir"
+        "ru"    "Выход"
+		"de"    "Ausgang"
+		"pt"    "Sair"
+		"es"    "Salir"
+		"pl"    "Wyjście"
+    }
+    "TopPanel: There are currently no players in the top"
+    {
+        "en"    "There are currently no players in the top"
+		"fr"    "Il n'y a aucun joueurs dans le top actuellement"
+        "ru"    "Нет игроков в Топ"
+		"de"    "Aktuell ist kein Spieler in den Top"
+		"pt"    "Ainda não há jogadores no Top"
+		"es"    "Actualmente no hay jugadores en el top"
+		"pl"    "Obecnie nie ma graczy"
+    }
+    "TopPanel: Top short"
+    {
+        "en"    "[GunGame] Top"
+		"fr"    "[GunGame] Top"
+        "ru"    "[GunGame] Топ"
+		"de"    "[GunGame] Top"
+		"pt"    "[GunGame] Top"
+		"es"    "[GunGame] Top"
+		"pl"    "[GunGame] Top zwycięzców"
+    }
+    "TopPanel: Top"
+    {
+		"#format"	"{1:d},{2:d},{3:d}"
+        "en"    "[GunGame] Top {1}-{2} from {3}"
+		"fr"    "[GunGame] Top {1}-{2} de {3}"
+        "ru"    "[GunGame] Топ {1}-{2} из {3}"
+		"de"    "[GunGame] Top {1}-{2} von {3}"
+		"pt"    "[GunGame] Top {1}-{2} de {3}"
+		"es"    "[GunGame] Top {1}-{2} de {3}"
+		"pl"    "[GunGame] Top {1}-{2} from {3}"
+    }
+    "TopPanel: Name Wins"
+    {
+        "#format"   "{1:s},{2:s}"
+        "en"    "{1} :: {2}"
+		"fr"    "{1} :: {2}"
+        "ru"    "{1} :: {2}"
+		"de"    "{1} :: {2}"
+		"pt"    "{1} :: {2}"
+		"es"    "{1} :: {2}"
+		"pl"    "{1} :: {2}"
+    }
+    "TopPanel: Place Name Wins"
+    {
+        "#format"   "{1:d},{2:s},{3:s}"
+        "en"    "{1}. {2} :: {3}"
+		"fr"    "{1}. {2} :: {3}"
+        "ru"    "{1}. {2} :: {3}"
+		"de"    "{1}. {2} :: {3}"
+		"pt"    "{1}. {2} :: {3}"
+		"es"    "{1}. {2} :: {3}"
+		"pl"    "{1}. {2} :: {3}"
+    }
+}

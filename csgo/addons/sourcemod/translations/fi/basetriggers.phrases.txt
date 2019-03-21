@@ -1,0 +1,108 @@
+"Phrases"
+{
+	"FragLimit"
+	{
+		"fi"		"Kartta vaihtuu kun joku saa yhden tapon"
+	}
+
+	"LastRound"
+	{
+		"fi"		"Tämä on viimeinen erä!"
+	}
+
+	"MaxRounds"
+	{
+		"fi"		"Kartta vaihtuu yhden erän kuluttua"
+	}
+
+	"MaxRoundsAppend"
+	{
+		"fi"		", tai vaihda karttaa yhden erän kuluttua"
+	}
+
+	"FragLimitAppend"
+	{
+		"fi"		", tai vaihda karttaa kun joku saa yhden tapon"
+	}
+
+	"FragLimitAppendPlural"
+	{
+		"fi"		", tai vaihda karttaa kun joku saa {1} tappoa"
+	}
+
+	"FragLimitPlural"
+	{
+		"fi"		"Kartta vaihtuu kun joku saa {1} tappoa"
+	}
+
+	"MaxRoundsAppendPlural"
+	{
+		"fi"		", tai vaihda karttaa {1} erän kuluttua"
+	}
+
+	"MaxRoundsPlural"
+	{
+		"fi"		"Kartta vaihtuu {1} erän kuluttua"
+	}
+
+	"Next Map"
+	{
+		"fi"		"Seuraava kartta: {1}"
+	}
+
+	"NoTimelimit"
+	{
+		"fi"		"Kartalle ei ole aikarajaa"
+	}
+
+	"Pending Vote"
+	{
+		"fi"		"Keskeneräinen äänestys"
+	}
+
+	"WinLimit"
+	{
+		"fi"		"Kartta vaihtuu toisen tiimin voitettua yhden erän"
+	}
+
+	"WinLimitAppend"
+	{
+		"fi"		", tai vaihda karttaa kun toinen tiimi voittaa yhden erän"
+	}
+
+	"WinLimitAppendPlural"
+	{
+		"fi"		", tai vaihda karttaa kun toinen tiimi voittaa {1} erää"
+	}
+
+	"WinLimitPlural"
+	{
+		"fi"		"Kartta vaihtuu toisen tiimin voitettua {1} erää"
+	}
+
+	"Friendly Fire Off"
+	{
+		"fi"		"Omien tulitus on pois päältä."
+	}
+
+	"Friendly Fire On"
+	{
+		"fi"		"Omien tulitus on päällä."
+	}
+
+	"Thetime"
+	{
+		"fi"		"Palvelimen kello on {1}"
+	}
+
+	"Timeleft"
+	{
+		"fi"		"Kartan aikaa jäljellä:"
+	}
+
+	"Current Map"
+	{
+		"fi"		"Tämänhetkinen kartta on {1}."
+	}
+
+}

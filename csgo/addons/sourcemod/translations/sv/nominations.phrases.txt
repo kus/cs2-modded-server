@@ -1,0 +1,68 @@
+"Phrases"
+{
+	"Can't Nominate Current Map"
+	{
+		"sv"		"Banan du valde är den banan som spelas just nu och kan inte bli nominerad"
+	}
+
+	"Already Nominated"
+	{
+		"sv"		"Du har redan nominerat en bana"
+	}
+
+	"Current Map"
+	{
+		"sv"		"Nuvarande bana"
+	}
+
+	"Map Already Nominated"
+	{
+		"sv"		"Banan du valde har redan blivit nominerad"
+	}
+
+	"Map Inserted"
+	{
+		"sv"		"Bana '{1}' har lagts till i nomineringslistan"
+	}
+
+	"Map Nominated"
+	{
+		"sv"		"{1} har nominerat {2}.  "
+	}
+
+	"Map Nomination Changed"
+	{
+		"sv"		"{1} har ändrat sin nominering till {2}.  "
+	}
+
+	"Map in Exclude List"
+	{
+		"sv"		"Den banan  du valde har nyligen blivit spelad och kan inte bli nominerad"
+	}
+
+	"Nominate Title"
+	{
+		"sv"		"Nominera bana:"
+	}
+
+	"Nominated"
+	{
+		"sv"		"Nominerad"
+	}
+
+	"Recently Played"
+	{
+		"sv"		"Nyligen spelad"
+	}
+
+	"Map Already In Vote"
+	{
+		"sv"		"Bana '{1}' finns redan i nomineringslistan."
+	}
+
+	"Max Nominations"
+	{
+		"sv"		"Det maximala antalet tillåtna nomineringar har nått sin gräns."
+	}
+
+}

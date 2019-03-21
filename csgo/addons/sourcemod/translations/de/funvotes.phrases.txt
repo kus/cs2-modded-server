@@ -1,0 +1,98 @@
+"Phrases"
+{
+	"Initiated Vote Alltalk"
+	{
+		"de"		"Abstimmung für teamübergreifende Kommuniktaion gestartet."
+	}
+
+	"Votealltalk Off"
+	{
+		"de"		"Teamübergreifende Kommunikation ausschalten? {1}"
+	}
+
+	"Votealltalk On"
+	{
+		"de"		"Teamübergreifende Kommunikation einschalten? {1}"
+	}
+
+	"Alltalk vote"
+	{
+		"de"		"Abstimmung für teamübergreifende Kommunikation"
+	}
+
+	"Voteff On"
+	{
+		"de"		"Teambeschuss einschalten? {1}"
+	}
+
+	"Voteff Off"
+	{
+		"de"		"Teambeschuss ausschalten? {1}"
+	}
+
+	"Vote FF"
+	{
+		"de"		"Teambeschuss-Abstimmung"
+	}
+
+	"Slay vote"
+	{
+		"de"		"Erschlagen-Abstimmung"
+	}
+
+	"Initiated Vote Slay"
+	{
+		"de"		"Erschlagen-Abstimmung gegen {1} gestartet."
+	}
+
+	"Initiated Vote Gravity"
+	{
+		"de"		"Schwerkraft-Abstimmung gestartet"
+	}
+
+	"Initiated Vote FF"
+	{
+		"de"		"Teambeschuss-Abstimmung gestartet."
+	}
+
+	"Initiated Vote Burn"
+	{
+		"de"		"Verbrennungs-Abstimmung gegen {1} gestartet."
+	}
+
+	"Gravity vote"
+	{
+		"de"		"Schwerkraft-Abstimmung"
+	}
+
+	"Gravity Vote"
+	{
+		"de"		"Schwerkraft-Abstimmung: {1}"
+	}
+
+	"Burn vote"
+	{
+		"de"		"Verbrennungs-Abstimmung"
+	}
+
+	"Slayed player"
+	{
+		"de"		"'{1}' wurde erschlagen"
+	}
+
+	"Change Gravity To"
+	{
+		"de"		"Schwerkraft zu {1} ändern?"
+	}
+
+	"Voteslay Player"
+	{
+		"de"		"Erschlage {1}?"
+	}
+
+	"Voteburn player"
+	{
+		"de"		"{1} verbrennen? "
+	}
+
+}

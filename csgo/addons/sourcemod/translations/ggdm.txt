@@ -1,0 +1,7 @@
+"Phrases" {
+    "restart in" {
+        "#format"   "{1:02d},{2:02d}"
+        "en"     "Respawn in: {1}:{2}"
+        "ru"     "Возрождение через: {1}:{2}"
+    }
+}

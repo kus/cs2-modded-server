@@ -1,0 +1,168 @@
+"Phrases"
+{
+	"Blind player"
+	{
+		"sk"		"Oslepiť hráča"
+	}
+
+	"Burn player"
+	{
+		"sk"		"Podpáliť hráča"
+	}
+
+	"Drug player"
+	{
+		"sk"		"Nadrogovať hráča"
+	}
+
+	"Freeze player"
+	{
+		"sk"		"Zamraziť hráča"
+	}
+
+	"Fully blind"
+	{
+		"sk"		"Oslepiť úplne"
+	}
+
+	"Froze target"
+	{
+		"sk"		"zamrazil {1}. "
+	}
+
+	"Gravity High"
+	{
+		"sk"		"Vysoká gravitácia"
+	}
+
+	"Gravity Low"
+	{
+		"sk"		"Nízka gravitácia"
+	}
+
+	"Gravity Normal"
+	{
+		"sk"		"Normálna gravitácia"
+	}
+
+	"Gravity Very High"
+	{
+		"sk"		"Veľmi vysoká gravitácia"
+	}
+
+	"Gravity Very Low"
+	{
+		"sk"		"Veľmi nízka gravitácia"
+	}
+
+	"Gravity player"
+	{
+		"sk"		"Zmeniť gravitáciu hráča"
+	}
+
+	"Half blind"
+	{
+		"sk"		"Oslepiť na 50%"
+	}
+
+	"Set blind on target"
+	{
+		"sk"		"oslepil {1}. "
+	}
+
+	"Toggled noclip on target"
+	{
+		"sk"		"aplikovaný noclip na {1}."
+	}
+
+	"Toggled drug on target"
+	{
+		"sk"		"aplikované drogy na {1}."
+	}
+
+	"Toggled TimeBomb on target"
+	{
+		"sk"		"aplikovaná časovaná bomba na {1}."
+	}
+
+	"Toggled FreezeBomb on target"
+	{
+		"sk"		"aplikovaná mraziaca bomba na {1}."
+	}
+
+	"Toggled FireBomb on target"
+	{
+		"sk"		"aplikovaná ohňivá bomba na {1}."
+	}
+
+	"TimeBomb player"
+	{
+		"sk"		"Časovaná bomba"
+	}
+
+	"Till Explodes"
+	{
+		"sk"		"{2} sekúnd kým {1} vybuchne."
+	}
+
+	"Set target on fire"
+	{
+		"sk"		"{1} podpálený."
+	}
+
+	"Gravity amount"
+	{
+		"sk"		"Hodnota gravitácie?"
+	}
+
+	"FreezeBomb player"
+	{
+		"sk"		"Zmrazovacia bomba"
+	}
+
+	"FireBomb player"
+	{
+		"sk"		"Ohňivá bomba"
+	}
+
+	"Blind amount"
+	{
+		"sk"		"Koľko oslepiť?"
+	}
+
+	"Beacon player"
+	{
+		"sk"		"Zvýrazniť hráča"
+	}
+
+	"Toggled beacon on target"
+	{
+		"sk"		"aplikované zvýraznenie na hráča {1}."
+	}
+
+	"Unfrozen"
+	{
+		"sk"		"Teraz si odmrazený."
+	}
+
+	"You will be unfrozen"
+	{
+		"sk"		"Budeš odmrazený za {1} sekúnd."
+	}
+
+	"NoClip player"
+	{
+		"sk"		"Zapnúť NoClip pre hráča"
+	}
+
+	"Set gravity on target"
+	{
+		"sk"		"Nastavená gravitácia hráča {1}."
+	}
+
+	"No blind"
+	{
+		"sk"		"Zrušiť oslepenie"
+	}
+
+}

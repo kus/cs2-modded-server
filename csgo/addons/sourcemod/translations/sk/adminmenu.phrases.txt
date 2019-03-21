@@ -1,0 +1,23 @@
+"Phrases"
+{
+	"Admin Menu"
+	{
+		"sk"		"Admin Menu"
+	}
+
+	"Server Commands"
+	{
+		"sk"		"Serverové príkazy"
+	}
+
+	"Player Commands"
+	{
+		"sk"		"Hráčske príkazy"
+	}
+
+	"Voting Commands"
+	{
+		"sk"		"Hlasovacie príkazy"
+	}
+
+}

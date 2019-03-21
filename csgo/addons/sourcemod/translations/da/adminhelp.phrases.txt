@@ -1,0 +1,33 @@
+"Phrases"
+{
+	"No commands available"
+	{
+		"da"		"Ingen kommandoer tilgængelige"
+	}
+
+	"No description available"
+	{
+		"da"		"Ingen beskrivelse tilgængelig"
+	}
+
+	"SM help commands"
+	{
+		"da"		"SourceMod Hjælp: Kommando Information"
+	}
+
+	"Type sm_help to see more"
+	{
+		"da"		"Skriv sm_help {1} for at se flere kommandoer"
+	}
+
+	"No matching results found"
+	{
+		"da"		"Ingen matchende resultater fundet "
+	}
+
+	"Entries n - m in page k"
+	{
+		"da"		"Opslag {1} - {2} på side {3}"
+	}
+
+}

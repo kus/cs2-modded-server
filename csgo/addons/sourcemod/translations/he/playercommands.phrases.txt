@@ -1,0 +1,28 @@
+"Phrases"
+{
+	"Slap damage"
+	{
+		"he"		"חוזק הכאפה"
+	}
+
+	"Slap player"
+	{
+		"he"		"תן כאפה לשחקן"
+	}
+
+	"Slapped target"
+	{
+		"he"		"נתן כאפה ל{1}"
+	}
+
+	"Slay player"
+	{
+		"he"		"רצח שחקן"
+	}
+
+	"Slayed target"
+	{
+		"he"		"רצח את {1}"
+	}
+
+}

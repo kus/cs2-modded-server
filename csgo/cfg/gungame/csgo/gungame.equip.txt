@@ -1,0 +1,224 @@
+"GunGame.Weapon"
+{
+    "WeaponOrder"
+    {
+        /**
+         * Weapon Choices:
+         * There are a total of 64 levels by default. (To change this value you can edit the gungame_const.inc
+         * to change the maximum allowed level of the game by changing the define MAX_LEVEL)
+         *
+         * There are a total of 25 usable killing weapons for GunGame.
+         * By default weapon order only 23 levels and uses 23 out of 25 of the usable killing weapons.
+         *
+         * WARNING:
+         * DO NOT SKIP LEVELS in any config for WeaponOrder.
+         * ie .. Only have level 1 to 3 and skip 4 and use 5 to level 23.
+         * DO NOT SKIP LEVELS
+         *
+
+======================
+melee
+    all:    knife knifegg taser
+pistols
+    all:    glock p250 fiveseven deagle elite
+    ct:     hkp2000 usp_silencer
+    t:      tec9
+shotguns
+    all:    nova xm1014
+    t:      sawedoff
+mgs
+    all:    m249 negev
+    ct:     mag7
+smgs
+    all:    mp7 ump45 p90 bizon
+    ct:     mp9
+    t:      mac10
+riffles
+    ct:     famas m4a1 m4a1_silencer aug
+    t:      galilar ak47 sg556
+snipers
+    all:    ssg08 awp
+    ct:     scar20
+    t:      g3sg1
+gear
+    all:    kevlar vesthelm
+    ct:     defuser
+    t:      c4
+grenades
+    all:    decoy flashbang hegrenade smokegrenade
+    ct:     incgrenade
+    t:      molotov
+
+======================
+weapon_knife
+weapon_knifegg
+weapon_taser
+
+weapon_glock
+weapon_p250
+weapon_fiveseven
+weapon_deagle
+weapon_elite
+weapon_hkp2000
+weapon_tec9
+
+weapon_nova
+weapon_xm1014
+weapon_sawedoff
+
+weapon_m249
+weapon_negev
+weapon_mag7
+
+weapon_mp7
+weapon_ump45
+weapon_p90
+weapon_bizon
+weapon_mp9
+weapon_mac10
+
+weapon_famas
+weapon_m4a1
+weapon_aug
+weapon_galilar
+weapon_ak47
+weapon_sg556
+
+weapon_ssg08
+weapon_awp
+weapon_scar20
+weapon_g3sg1
+
+weapon_c4
+
+weapon_decoy
+weapon_flashbang
+weapon_hegrenade
+weapon_smokegrenade
+weapon_incgrenade
+weapon_molotov
+======================
+
+         */
+
+        /** reverse order
+        "29" "awp"
+        "28" "g3sg1"
+        "27" "scar20"
+
+        "26" "ak47"
+        "25" "m4a1"
+        "24" "sg556"
+        "23" "aug"
+        "22" "galilar"
+        "21" "famas"
+
+        "20" "mac10"
+        "19" "mp9"
+        "18" "bizon"
+        "17" "p90"
+        "16" "ump45"
+        "15" "mp7"
+
+        "14" "mag7"
+        "13" "negev"
+        "12" "m249"
+
+        "11" "sawedoff"
+        "10" "xm1014"
+        "9" "nova"
+
+        "8" "ssg08"
+
+        "7" "deagle"
+        "6" "elite"
+        "5" "tec9"
+        "4" "hkp2000"
+        "3" "fiveseven"
+        "2" "p250"
+        "1" "glock"
+
+        "30" "hegrenade"
+        "31" "knife"
+        */
+
+        "1" "awp"
+        "2" "mag7"
+        "3" "g3sg1"
+        "4" "negev"
+        "5" "scar20"
+        "6" "m249"
+
+        "7" "ak47"
+        "8" "m4a1"
+        "9" "sg556"
+        "10" "aug"
+        "11" "galilar"
+        "12" "famas"
+
+        "13" "mac10"
+        "14" "mp9"
+        "15" "bizon"
+        "16" "p90"
+        "17" "sawedoff"
+        "18" "ump45"
+        "19" "xm1014"
+        "20" "mp7"
+        "21" "nova"
+
+        "22" "ssg08"
+
+        "23" "deagle"
+        "24" "elite"
+        "25" "tec9"
+        "26" "hkp2000"
+        "27" "fiveseven"
+        "28" "p250"
+        "29" "glock"
+
+        "30" "hegrenade"
+        "31" "knife"
+
+        /**
+         * If RandomWeaponOrder is enabled, keep this levels unchanged.
+         * Use comma as a delimiter, do not use whitespace characters - only digits are allowed.
+         * Please keep this config line after levels list and before RandomWeaponOrder.
+         *
+         * "22,23"  - keep knife and nade levels on defined levels
+         * "23"     - keep knife level on defined level
+         * ""       - randomize all levels
+         */
+        "RandomWeaponReserveLevels" ""
+
+        /**
+         * This will take the weapons in the WeaponOrder and randomize all the weapons order.
+         * Please keep this config line after levels list and after RandomWeaponReserveLevels.
+         */
+        "RandomWeaponOrder" "0"
+    }
+
+    "MultipleKillsPerLevel"
+    {
+        /**
+         * This is for custom kills per level will override default (MinKillsPerWeapon).
+         * Leave value at 0 if you do not want to override the default value.
+         *
+         * Example:
+         *
+         * For level 1 they must get 10 kills before they can level up.
+         * "1" "10"
+         * "2" "5"
+         * and so on.
+         *
+         * Or you can set kills per level for a perticular level.
+         * "1" "10"
+         * "3" "5"
+         * "5" "2"
+         * etc.
+         *
+         * Kills will count across all rounds so that you don't have to get them in one round.
+         *
+         *
+         */
+    }
+}

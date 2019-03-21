@@ -1,0 +1,43 @@
+"Phrases"
+{
+	"ago"
+	{
+		"it"		"fa"
+	}
+
+	"Started"
+	{
+		"it"		"[Iniziata]"
+	}
+
+	"Reason"
+	{
+		"it"		"[Motivo della fine]"
+	}
+
+	"Map"
+	{
+		"it"		"[Mappa]"
+	}
+
+	"Current Map"
+	{
+		"it"		"Mappa attuale"
+	}
+
+	"Map History"
+	{
+		"it"		"Cronologia delle mappe"
+	}
+
+	"Next Map"
+	{
+		"it"		"Mappa successiva: {1}"
+	}
+
+	"Played Time"
+	{
+		"it"		"[Tempo di gioco]"
+	}
+
+}

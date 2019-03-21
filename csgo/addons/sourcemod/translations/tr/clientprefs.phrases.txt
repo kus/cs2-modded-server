@@ -1,0 +1,48 @@
+"Phrases"
+{
+	"Cookie Value"
+	{
+		"tr"		"{1}'in değeri {2}  "
+	}
+
+	"Cookie List"
+	{
+		"tr"		"Sourcemod Kurabiye Listesi"
+	}
+
+	"Client Settings"
+	{
+		"tr"		"Alıcı Ayarları"
+	}
+
+	"Cookie Changed Value"
+	{
+		"tr"		"\"{1}\" adlı kurabiyenin değeri \"{2}\" olarak değiştirildi"
+	}
+
+	"Choose Option"
+	{
+		"tr"		"Seçenek Seç"
+	}
+
+	"No Console"
+	{
+		"tr"		"Ayarlar menüsü konsola görüntülenemiyor"
+	}
+
+	"Printing Cookie List"
+	{
+		"tr"		"Kurabiye listesi konsola görüntüleniyor"
+	}
+
+	"Protected Cookie"
+	{
+		"tr"		"Korumalı kurabiye \"{1}\"in değeri değiştirilemez"
+	}
+
+	"Cookie not Found"
+	{
+		"tr"		"\"{1}\"  adlı kurabiye bulunamadı"
+	}
+
+}

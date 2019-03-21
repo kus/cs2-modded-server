@@ -1,0 +1,43 @@
+"Phrases"
+{
+	"Next Map"
+	{
+		"nl"		"Volgende Map: {1}"
+	}
+
+	"Current Map"
+	{
+		"nl"		"Huidige Map"
+	}
+
+	"Map"
+	{
+		"nl"		"[Map]"
+	}
+
+	"Map History"
+	{
+		"nl"		"Map Historie"
+	}
+
+	"Played Time"
+	{
+		"nl"		"[Gespeelde Tijd]"
+	}
+
+	"Reason"
+	{
+		"nl"		"[Reden van aanpassen]"
+	}
+
+	"Started"
+	{
+		"nl"		"[Gestart]"
+	}
+
+	"ago"
+	{
+		"nl"		"geleden"
+	}
+
+}

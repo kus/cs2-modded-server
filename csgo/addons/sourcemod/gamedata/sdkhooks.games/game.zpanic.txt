@@ -1,0 +1,105 @@
+"Games"
+{
+	/* Zombic Panic Source 3.0.7 (Hotfix-3) */
+	"zps"
+	{
+		"Offsets"
+		{
+			"EndTouch"
+			{
+				"windows"	"113"
+				"linux"		"114"
+			}
+			"FireBullets"
+			{
+				"windows"	"125"
+				"linux"		"126"
+			}
+			"OnTakeDamage"
+			{
+				"windows"	"74"
+				"linux"		"75"
+			}
+			"PreThink"
+			{
+				"windows"	"351"
+				"linux"		"352"
+			}
+			"PostThink"
+			{
+				"windows"	"352"
+				"linux"		"353"
+			}
+			"SetTransmit"
+			{
+				"windows"	"26"
+				"linux"		"27"
+			}
+			"ShouldCollide"
+			{
+				"windows"	"22"
+				"linux"		"23"
+			}
+			"Spawn"
+			{
+				"windows"	"28"
+				"linux"		"29"
+			}
+			"StartTouch"
+			{
+				"windows"	"111"
+				"linux"		"112"
+			}
+			"Think"
+			{
+				"windows"	"57"
+				"linux"		"58"
+			}
+			"Touch"
+			{
+				"windows"	"112"
+				"linux"		"113"
+			}
+			"TraceAttack"
+			{
+				"windows"	"70"
+				"linux"		"71"
+			}
+			"Use"
+			{
+				"windows"	"110"
+				"linux"		"111"
+			}
+			"VPhysicsUpdate"
+			{
+				"windows"	"170"
+				"linux"		"171"
+			}
+			"Weapon_CanSwitchTo"
+			{
+				"windows"	"281"
+				"linux"		"282"
+			}
+			"Weapon_CanUse"
+			{
+				"windows"	"274"
+				"linux"		"275"
+			}
+			"Weapon_Drop"
+			{
+				"windows"	"277"
+				"linux"		"278"
+			}
+			"Weapon_Equip"
+			{
+				"windows"	"275"
+				"linux"		"276"
+			}
+			"Weapon_Switch"
+			{
+				"windows"	"278"
+				"linux"		"279"
+			}
+		}
+	}
+}

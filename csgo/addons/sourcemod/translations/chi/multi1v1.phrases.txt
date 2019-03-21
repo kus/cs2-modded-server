@@ -1,0 +1,123 @@
+"Phrases"
+{
+	"NoOpponent"
+	{
+		"chi"			"你目前在战场{GREEN}{1}{NORMAL}但{DARK_RED}没有对手。"
+	}
+	"NoOpponentHint"
+	{
+		"chi"		"<font size='22' color='#FF0000'>你没有对手。</font>"
+	}
+	"FacingOff"
+	{
+		"chi"			"你目前在战场{GREEN}{1}{NORMAL}，与{PURPLE}{2}{NORMAL}决战！"
+	}
+	"ArenasFull"
+	{
+		"chi"			"对不起，所有战场目前{PURPLE}已满。"
+	}
+	"QueuePosition"
+	{
+		"chi"			"等待进入战场，你目前排在队伍的第{GREEN}{1}{NORMAL}位。"
+	}
+	"WonMessage"
+	{
+		"chi"			"{GREEN}你{NORMAL}({GREEN}{1}{NORMAL}分，{LIGHT_GREEN}加{2}{NORMAL}分）击败对手{PURPLE}{3}{NORMAL}（{PURPLE}{4}{NORMAL}分，{DARK_RED}减{5}{NORMAL}分）。"
+	}
+	"LossMessage"
+	{
+		"chi"			"{GREEN}你{NORMAL}({GREEN}{1}{NORMAL}分，{LIGHT_RED}减{2}{NORMAL})）{NORMAL}被对手{PURPLE}{3}{NORMAL}（{PURPLE}{4}{NORMAL}分，{LIGHT_GREEN}加{5}{NORMAL}分)击败。"
+	}
+	"TimeRanOut"
+	{
+		"chi"			"{GREEN}你{NORMAL}({GREEN}{1}{NORMAL}分，{LIGHT_RED}减{2}{NORMAL}分)未在规定时间内击败对手。"
+	}
+	"MostWins"
+	{
+		"chi"		"{GREEN}{1} {NORMAL}是获胜最多的玩家，在这张竞技地图中拥有高达 {PURPLE}({2}) {NORMAL}个回合的胜利。"
+	}
+	"OpponentLeft"
+	{
+		"chi"		"{GREEN}你的对手离开了。"
+	}
+	"OpponentLeftHint"
+	{
+		"chi"		"<font size='22' color='#00FF00'>你的对手离开了。</font>"
+	}
+	"HideStats"
+	{
+		"chi"		"玩家资料目前是隐藏的。"
+	}
+	"ShowStats"
+	{
+		"chi"		"玩家资料目前是公开的。"
+	}
+	"AutoSpecOn"
+	{
+		"chi"		"你已启用自动观看。"
+	}
+	"AutoSpecOff"
+	{
+		"chi"		"你已关闭自动观看。"
+	}
+	"AutoSpecSwitch"
+	{
+		"chi"		"自动切换旁观视角到竞技场 {1}。"
+	}
+	"ArenaClanTag"
+	{
+		"chi"		"竞技场 {1}"
+	}
+	"Disabled"
+	{
+		"chi"		"禁用"
+	}
+	"Enabled"
+	{
+		"chi"		"启用"
+	}
+	"WeaponsMenuTitle"
+	{
+		"chi"		"选择你所偏好的武器："
+	}
+	"WeaponsMenuRifle"
+	{
+		"chi"		"步枪： {1}"
+	}
+	"WeaponsMenuPistol"
+	{
+		"chi"		"手枪： {1}"
+	}
+	"WeaponsMenuRoundTypeEnabled"
+	{
+		"chi"		"{1} 回合： {2}"
+	}
+	"WeaponsMenuPreferenceTitle"
+	{
+		"chi"		"选择您所喜欢的回合类别："
+	}
+	"WeaponsMenuPreference"
+	{
+		"chi"		"偏好: {1} 回合"
+	}
+	"WeaponsMenuPreferenceNone"
+	{
+		"chi"		"偏好： 没有设置"
+	}
+	"WeaponsMenuNoPreference"
+	{
+		"chi"		"没有偏好"
+	}
+	"WeaponsMenuPreferenceChoice"
+	{
+		"chi"		"{1} 回合"
+	}
+	"WeaponsMenuSelection"
+	{
+		"chi"		"选择你最喜欢的步枪："
+	}
+	"PistolMenuTitle"
+	{
+		"chi"		"选择你最喜欢的手枪："
+	}
+}

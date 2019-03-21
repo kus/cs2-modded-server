@@ -1,0 +1,128 @@
+"Phrases"
+{
+	"Ban added"
+	{
+		"tr"		"Yasak eklendi."
+	}
+
+	"Admin logged in as"
+	{
+		"tr"		"\"{1}\", \"{2}\" olarak şu erişimle oturum açtı: {3}"
+	}
+
+	"Admin cache refreshed"
+	{
+		"tr"		"Yönetici önbelleği yenilendi"
+	}
+
+	"Admin access"
+	{
+		"tr"		"Yönetici erişimi"
+	}
+
+	"Admin logged in anon"
+	{
+		"tr"		"\"{1}\" şu erişime sahip: {2} "
+	}
+
+	"Banned player"
+	{
+		"tr"		"\"{1}\" adlı oyuncu {2} dakikalığına yasaklandı."
+	}
+
+	"Banned player reason"
+	{
+		"tr"		"\"{1}\" adlı oyuncu {2} dakikalığına yasaklandı (neden: {3})."
+	}
+
+	"Choose Map"
+	{
+		"tr"		"Harita Seç"
+	}
+
+	"Executed config"
+	{
+		"tr"		"Ayar çalıştırıldı \"{1}\"."
+	}
+
+	"Exec CFG"
+	{
+		"tr"		"CFG Çalıştır"
+	}
+
+	"Cvar is now protected"
+	{
+		"tr"		"{1} adlı cvar artık korunuyor."
+	}
+
+	"Cvar changed"
+	{
+		"tr"		"\"{1}\" adlı cvar \"{2}\" olarak değiştirildi."
+	}
+
+	"Config not found"
+	{
+		"tr"		"Ayar dosyası \"{1}\" bulunamadı."
+	}
+
+	"Permabanned player"
+	{
+		"tr"		"\"{1}\" adlı oyuncu kalıcı olarak yasaklandı."
+	}
+
+	"No access to cvar"
+	{
+		"tr"		"Bu cvar'a erişiminiz yok."
+	}
+
+	"Kicked target"
+	{
+		"tr"		"{1} atıldı."
+	}
+
+	"Identify player"
+	{
+		"tr"		"Oyuncuyu teşhis et"
+	}
+
+	"Permabanned player reason"
+	{
+		"tr"		"\"{1}\" adlı oyuncu kalıcı olarak yasaklandı (neden: {2})."
+	}
+
+	"Player is not an admin"
+	{
+		"tr"		"\"{1}\" bir yönetici değil."
+	}
+
+	"Player is an admin"
+	{
+		"tr"		"\"{1}\" bir yönetici."
+	}
+
+	"Removed bans matching"
+	{
+		"tr"		"Şu süzgeçle eşleşen yasaklar kaldırıldı: {1}"
+	}
+
+	"Username"
+	{
+		"tr"		"Kullanıcı Adı"
+	}
+
+	"Value of cvar"
+	{
+		"tr"		"\"{1}\" adlı cvar'ın değeri: \"{2}\""
+	}
+
+	"Unable to find cvar"
+	{
+		"tr"		"Aranan cvar bulunamadı: {1}"
+	}
+
+	"Kicked target reason"
+	{
+		"tr"		"{1} oyundan atıldı (Neden: {2})"
+	}
+
+}

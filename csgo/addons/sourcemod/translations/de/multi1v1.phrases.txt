@@ -1,0 +1,31 @@
+"Phrases"
+{
+	"NoOpponent"
+	{
+		"de"			"Du bist in Arena {GREEN}{1} {NORMAL}ohne {DARK_RED}einen Gegner."
+	}
+	"FacingOff"
+	{
+		"de"			"Du bist in der Arena {GREEN}{1}{NORMAL}, du trittst an gegen {PURPLE}{2}."
+	}
+	"ArenasFull"
+	{
+		"de"			"Entschuldige, zurzeit sind alle Arenen {PURPLE}besetzt."
+	}
+	"QueuePosition"
+	{
+		"de"			"Du bist Nummer {GREEN}{1} {NORMAL}in der Warteschlange."
+	}
+	"WonMessage"
+	{
+		"de"			"{GREEN}Du {NORMAL}(Wertung {GREEN}{1}, {LIGHT_GREEN}+{2}{NORMAL}) hast gewonnen gegen {PURPLE}{3} {NORMAL}(Wertung {PURPLE}{4}, {DARK_RED}-{5}{NORMAL})."
+	}
+	"LossMessage"
+	{
+		"de"			"{GREEN}Du {NORMAL}(Wertung {GREEN}{1}, {LIGHT_RED}-{2}{NORMAL}) {NORMAL}hast verloren gegen {PURPLE}{3} {NORMAL}(Wertung {PURPLE}{4}, {LIGHT_GREEN}+{5}{NORMAL})."
+	}
+	"TimeRanOut"
+	{
+		"de"			"{GREEN}Du {NORMAL}(Wertung {GREEN}{1}, {LIGHT_RED}-{2}{NORMAL}) hast die Zeit auslaufen lassen."
+	}
+}

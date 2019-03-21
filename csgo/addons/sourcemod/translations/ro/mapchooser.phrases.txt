@@ -1,0 +1,48 @@
+"Phrases"
+{
+	"Current Map Extended"
+	{
+		"ro"		"Harta actuală a fost extinsă."
+	}
+
+	"Extend Map"
+	{
+		"ro"		"Extinde Harta Actuală"
+	}
+
+	"Nextmap Voting Finished"
+	{
+		"ro"		"Votul pentru hartă s-a terminat. Harta următoare va fi {1}."
+	}
+
+	"Nextmap Voting Started"
+	{
+		"ro"		"Votul pentru harta următoare a inceput."
+	}
+
+	"Vote Nextmap"
+	{
+		"ro"		"Votează pentru harta următoare!"
+	}
+
+	"Changed Next Map"
+	{
+		"ro"		"Harta schimbata in \"{1}\"."
+	}
+
+	"Current Map Stays"
+	{
+		"ro"		"Harta curenta continua! (Voturi {1}%% din {2})"
+	}
+
+	"Dont Change"
+	{
+		"ro"		"Nu schimba"
+	}
+
+	"Starting Runoff"
+	{
+		"ro"		"Nici o harta nu a obtinut peste {1}%% voturi ({2} [{3}%%] & {4} [{5}%%]), porneste a doua runda de vot"
+	}
+
+}

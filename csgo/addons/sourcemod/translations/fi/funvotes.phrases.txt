@@ -1,0 +1,98 @@
+"Phrases"
+{
+	"Alltalk vote"
+	{
+		"fi"		"Alltalk-äänestys"
+	}
+
+	"Burn vote"
+	{
+		"fi"		"Polttoäänestys"
+	}
+
+	"Gravity Vote"
+	{
+		"fi"		"Painovoimaäänestys: {1}"
+	}
+
+	"Gravity vote"
+	{
+		"fi"		"Painovoimaäänestys"
+	}
+
+	"Slay vote"
+	{
+		"fi"		"Teloitusäänestys"
+	}
+
+	"Change Gravity To"
+	{
+		"fi"		"Vaihdetaanko painovoimaksi {1}?"
+	}
+
+	"Initiated Vote Alltalk"
+	{
+		"fi"		"Aloitettiin alltalk-äänestys."
+	}
+
+	"Initiated Vote Burn"
+	{
+		"fi"		"Aloitettiin polttoäänestys pelaajaa {1} vastaan."
+	}
+
+	"Initiated Vote FF"
+	{
+		"fi"		"Aloitettiin Friendly Fire -äänestys."
+	}
+
+	"Initiated Vote Gravity"
+	{
+		"fi"		"Aloitettiin painovoimaäänestys."
+	}
+
+	"Initiated Vote Slay"
+	{
+		"fi"		"Aloitettiin teloitusäänestys pelaajaa {1} vastaan."
+	}
+
+	"Votealltalk Off"
+	{
+		"fi"		"Laitetaanko alltalk pois päältä? {1}"
+	}
+
+	"Votealltalk On"
+	{
+		"fi"		"Laitetaanko alltalk päälle? {1}"
+	}
+
+	"Voteburn player"
+	{
+		"fi"		"Poltetaanko pelaaja {1}?"
+	}
+
+	"Voteslay Player"
+	{
+		"fi"		"Teloitetaanko {1}?"
+	}
+
+	"Slayed player"
+	{
+		"fi"		"Teloitettiin pelaaja '{1}'"
+	}
+
+	"Voteff Off"
+	{
+		"fi"		"Laitetaanko omien tulitus pois päältä? {1}"
+	}
+
+	"Voteff On"
+	{
+		"fi"		"Laitetaanko omien tulitus päälle? {1}"
+	}
+
+	"Vote FF"
+	{
+		"fi"		"Äänestä omien tulituksesta"
+	}
+
+}

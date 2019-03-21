@@ -1,0 +1,48 @@
+"Phrases"
+{
+	"Slap damage"
+	{
+		"lv"		"Pēriena bojājumi"
+	}
+
+	"Slap player"
+	{
+		"lv"		"Iepērt spēlētāju"
+	}
+
+	"Slapped target"
+	{
+		"lv"		"Iepēra {1}."
+	}
+
+	"Slay player"
+	{
+		"lv"		"Nonāvēt spēlētāju"
+	}
+
+	"Slayed target"
+	{
+		"lv"		"Nonāvēja {1}."
+	}
+
+	"Name changed"
+	{
+		"lv"		"Administrators ir nomainījis tavu niku"
+	}
+
+	"Rename player"
+	{
+		"lv"		"Pārsaukt spēlētāju"
+	}
+
+	"Renamed target"
+	{
+		"lv"		"Pārsauca {1}."
+	}
+
+	"Dead Player Rename"
+	{
+		"lv"		"{1} tiks pārdēvēts nākamajā raundā.  "
+	}
+
+}

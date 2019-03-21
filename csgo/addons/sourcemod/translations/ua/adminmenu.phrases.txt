@@ -1,0 +1,23 @@
+"Phrases"
+{
+	"Voting Commands"
+	{
+		"ua"		"Управління голосуваннями"
+	}
+
+	"Server Commands"
+	{
+		"ua"		"Управління сервером"
+	}
+
+	"Player Commands"
+	{
+		"ua"		"Управління гравцями"
+	}
+
+	"Admin Menu"
+	{
+		"ua"		"Меню адміністратора"
+	}
+
+}

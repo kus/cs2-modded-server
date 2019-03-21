@@ -1,0 +1,43 @@
+"Phrases"
+{
+	"Next Map"
+	{
+		"zho"		"下一幅地圖: {1}"
+	}
+
+	"Current Map"
+	{
+		"zho"		"當前地圖"
+	}
+
+	"Played Time"
+	{
+		"zho"		"[已遊玩時間]"
+	}
+
+	"Map"
+	{
+		"zho"		"地圖"
+	}
+
+	"Map History"
+	{
+		"zho"		"地圖紀錄"
+	}
+
+	"Reason"
+	{
+		"zho"		"[結束理由]"
+	}
+
+	"Started"
+	{
+		"zho"		"[已開始]"
+	}
+
+	"ago"
+	{
+		"zho"		"前"
+	}
+
+}

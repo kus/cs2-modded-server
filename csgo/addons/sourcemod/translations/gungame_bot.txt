@@ -1,0 +1,35 @@
+﻿"Phrases"
+{
+    "You can not level up on bot with knife"
+    {
+        	"en"         "{lightgreen}You can not level up on bot with knife"
+		"fr"         "{lightgreen}Vous ne pouvez pas gagner de niveau au couteau contre un bot"
+        	"ru"         "{lightgreen}Вы не можете пройти уровень, убив бота с ножа"
+		"es"         "{lightgreen}No puedes subir de nivel si el bot solo tiene cuchillo"
+		"pl"         "{lightgreen}Nie możesz awansować na poziomie noża zabijając bota"
+    }
+    "You can not level up on bot with hegrenade"
+    {
+        	"en"         "{lightgreen}You can not level up on bot with hegrenade"
+		"fr"         "{lightgreen}Vous ne pouvez pas gagner de niveau a la grenade contre un bot"
+        	"ru"         "{lightgreen}Вы не можете пройти уровень, убив бота с гранаты"
+		"es"         "{lightgreen}No puedes subir de nivel si el bot solo tiene granada"
+		"pl"         "{lightgreen}Nie możesz awansować na poziomie granatu zabijając bota"
+    }
+    "You can not level up on bot with knife if there is other human"
+    {
+        	"en"         "{lightgreen}You can not level up on bot with knife if there is other human"
+		"fr"         "{lightgreen}Vous ne pouvez pas gagner de niveau au couteau contre un bot si il y a d'autres joueurs"
+        	"ru"         "{lightgreen}Вы не можете пройти уровень, убив бота с ножа, если есть другие игроки"
+		"es"         "{lightgreen}No puedes subir de nivel si el bot solo tiene cuchillo y no hay otro jugador"
+		"pl"         "{lightgreen}Nie możesz awansować na poziomie noża zabijając bota ponieważ są inni gracze"
+    }
+    "You can not level up on bot with hegrenade if there is other human"
+    {
+        	"en"         "{lightgreen}You can not level up on bot with hegrenade if there is other human"
+		"fr"         "{lightgreen}Vous ne pouvez pas gagner de niveau a la grenade contre un bot si il y a d'autres joueurs"
+        	"ru"         "{lightgreen}Вы не можете пройти уровень, убив бота с гранаты, если есть другие игроки"
+		"es"         "{lightgreen}No puedes subir de nivel si el bot solo tiene granda y no hay otro jugador"
+		"pl"         "{lightgreen}Nie możesz awansować na poziomie granatu zabijając bota ponieważ są inni gracze"
+    }
+}

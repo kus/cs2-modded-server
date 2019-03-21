@@ -1,0 +1,63 @@
+"Phrases"
+{
+	"Cannot ban that IP"
+	{
+		"lt"		"Jūs negalite uždrausti šio IP adreso."
+	}
+
+	"Permabanned player"
+	{
+		"lt"		"Uždraustas neribotam laikui žaidėjas \"{1}\"."
+	}
+
+	"Permabanned player reason"
+	{
+		"lt"		"Uždraustas neribotam laikui žaidėjas \"{1}\" (priežastis: {2})."
+	}
+
+	"Removed bans matching"
+	{
+		"lt"		"Pašalinti draudimai atitinkantys filtrą: {1}"
+	}
+
+	"Banned player reason"
+	{
+		"lt"		"Uždraustas žaidėjas \"{1}\" {2}-ai minučių (priežastis: {3})."
+	}
+
+	"Banned player"
+	{
+		"lt"		"Uždraustas žaidėjas \"{1}\" {2} minučių."
+	}
+
+	"Ban reason"
+	{
+		"lt"		"Draudimo priežastis"
+	}
+
+	"Ban player"
+	{
+		"lt"		"Draudimas žaidėjui"
+	}
+
+	"Ban added"
+	{
+		"lt"		"Draudimas įsigaliojo."
+	}
+
+	"Custom ban reason explanation"
+	{
+		"lt"		"Įveskite priežastį, kaip žinutę. Naudokite {1} kad atšaukti."
+	}
+
+	"AbortBan applied successfully"
+	{
+		"lt"		"Draudimas atšauktas."
+	}
+
+	"AbortBan not waiting for custom reason"
+	{
+		"lt"		"Nebelaukiama, kol bus įvesta draudimo priežastis."
+	}
+
+}

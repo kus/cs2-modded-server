@@ -1,0 +1,168 @@
+"Phrases"
+{
+	"Beacon player"
+	{
+		"tr"		"Oyuncuyu işaret yap"
+	}
+
+	"Blind amount"
+	{
+		"tr"		"Nasıl kör et?"
+	}
+
+	"Blind player"
+	{
+		"tr"		"Oyuncuyu kör et"
+	}
+
+	"Burn player"
+	{
+		"tr"		"Oyuncuyu yak"
+	}
+
+	"FireBomb player"
+	{
+		"tr"		"Oyuncuyu ateş bombası yap"
+	}
+
+	"Drug player"
+	{
+		"tr"		"Oyuncuyu ilaçla"
+	}
+
+	"Freeze player"
+	{
+		"tr"		"Oyuncuyu dondur"
+	}
+
+	"FreezeBomb player"
+	{
+		"tr"		"Oyuncuyu donma bombası yap"
+	}
+
+	"Froze target"
+	{
+		"tr"		"{1} dondu."
+	}
+
+	"Fully blind"
+	{
+		"tr"		"Tamamen kör et"
+	}
+
+	"Gravity High"
+	{
+		"tr"		"Yerçekimi Yüksek"
+	}
+
+	"Gravity Low"
+	{
+		"tr"		"Yerçekimi Düşük"
+	}
+
+	"Gravity Very High"
+	{
+		"tr"		"Yerçekimi Çok Yüksek"
+	}
+
+	"Gravity Normal"
+	{
+		"tr"		"Yerçekimi Normal"
+	}
+
+	"Gravity Very Low"
+	{
+		"tr"		"Yerçekimi Çok Az"
+	}
+
+	"Gravity amount"
+	{
+		"tr"		"Yerçekimi?"
+	}
+
+	"Gravity player"
+	{
+		"tr"		"Oyuncunun yerçekimini değiştir"
+	}
+
+	"Half blind"
+	{
+		"tr"		"Yarı kör"
+	}
+
+	"No blind"
+	{
+		"tr"		"Kör değil"
+	}
+
+	"Toggled drug on target"
+	{
+		"tr"		"{1} adlı oyuncunun ilaçlanması değiştirildi."
+	}
+
+	"Toggled beacon on target"
+	{
+		"tr"		"{1} adlı oyuncunun işaretlenmesi değiştirildi."
+	}
+
+	"Toggled TimeBomb on target"
+	{
+		"tr"		"{1} adlı oyuncunun zaman bombası yapılması değiştirildi."
+	}
+
+	"Toggled FreezeBomb on target"
+	{
+		"tr"		"{1} adlı oyuncunun donma bombası yapılması değiştirildi."
+	}
+
+	"Toggled FireBomb on target"
+	{
+		"tr"		"{1} adlı oyuncunun ateş bombası yapılması değiştirildi."
+	}
+
+	"Toggled noclip on target"
+	{
+		"tr"		"{1} adlı oyuncunun hayaletliği değiştirildi."
+	}
+
+	"TimeBomb player"
+	{
+		"tr"		"Oyuncuyu zaman bombası yap"
+	}
+
+	"Till Explodes"
+	{
+		"tr"		"{1} adlı oyuncunun patlamasına {2} saniye kaldı."
+	}
+
+	"Set target on fire"
+	{
+		"tr"		"{1} adlı oyuncuyu ateşe ver."
+	}
+
+	"Set gravity on target"
+	{
+		"tr"		"{1} adlı oyuncunun yerçekimini değiştir."
+	}
+
+	"Set blind on target"
+	{
+		"tr"		"{1} üzerinde kör etme kullan."
+	}
+
+	"NoClip player"
+	{
+		"tr"		"Oyuncuyu hayalet yap"
+	}
+
+	"Unfrozen"
+	{
+		"tr"		"Donmanız geçti."
+	}
+
+	"You will be unfrozen"
+	{
+		"tr"		"{1} saniye içinde donmanız geçecek."
+	}
+
+}

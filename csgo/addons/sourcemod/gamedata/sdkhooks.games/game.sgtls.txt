@@ -1,0 +1,100 @@
+"Games"
+{
+	/* Stargate: The Last Stand 1.1 beta */
+	"sgtls"
+	{
+		"Offsets"
+		{
+			"EndTouch"
+			{
+				"windows"	"92"
+				"linux"		"93"
+			}
+			"FireBullets"
+			{
+				"windows"	"104"
+				"linux"		"105"
+			}
+			"OnTakeDamage"
+			{
+				"windows"	"60"
+				"linux"		"61"
+			}
+			"PreThink"
+			{
+				"windows"	"287"
+				"linux"		"288"
+			}
+			"PostThink"
+			{
+				"windows"	"288"
+				"linux"		"289"
+			}
+			"SetTransmit"
+			{
+				"windows"	"19"
+				"linux"		"20"
+			}
+			"ShouldCollide"
+			{
+				"windows"	"15"
+				"linux"		"16"
+			}
+			"Spawn"
+			{
+				"windows"	"21"
+				"linux"		"22"
+			}
+			"StartTouch"
+			{
+				"windows"	"90"
+				"linux"		"91"
+			}
+			"Think"
+			{
+				"windows"	"45"
+				"linux"		"46"
+			}
+			"Touch"
+			{
+				"windows"	"91"
+				"linux"		"92"
+			}
+			"TraceAttack"
+			{
+				"windows"	"58"
+				"linux"		"59"
+			}
+			"VPhysicsUpdate"
+			{
+				"windows"	"143"
+				"linux"		"144"
+			}
+			"Weapon_CanSwitchTo"
+			{
+				"windows"	"233"
+				"linux"		"234"
+			}
+			"Weapon_CanUse"
+			{
+				"windows"	"227"
+				"linux"		"228"
+			}
+			"Weapon_Drop"
+			{
+				"windows"	"230"
+				"linux"		"231"
+			}
+			"Weapon_Equip"
+			{
+				"windows"	"228"
+				"linux"		"229"
+			}
+			"Weapon_Switch"
+			{
+				"windows"	"231"
+				"linux"		"232"
+			}
+		}
+	}
+}

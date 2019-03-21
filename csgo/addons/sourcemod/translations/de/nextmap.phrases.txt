@@ -1,0 +1,43 @@
+"Phrases"
+{
+	"Next Map"
+	{
+		"de"		"Nächste Karte: {1}"
+	}
+
+	"Current Map"
+	{
+		"de"		"Aktuelle Karte"
+	}
+
+	"Map"
+	{
+		"de"		"[Karte]"
+	}
+
+	"Map History"
+	{
+		"de"		"Zuletzt gespielte Karten"
+	}
+
+	"Played Time"
+	{
+		"de"		"[Gespielte Zeit]"
+	}
+
+	"Started"
+	{
+		"de"		"[Gestartet]"
+	}
+
+	"ago"
+	{
+		"de"		"vor"
+	}
+
+	"Reason"
+	{
+		"de"		"[Grund für Beendigung]"
+	}
+
+}

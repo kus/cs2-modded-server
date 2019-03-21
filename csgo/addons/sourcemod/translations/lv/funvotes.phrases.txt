@@ -1,0 +1,98 @@
+"Phrases"
+{
+	"Gravity Vote"
+	{
+		"lv"		"Gravitācijas aptauja: {1}"
+	}
+
+	"Gravity vote"
+	{
+		"lv"		"Gravitācijas aptauja"
+	}
+
+	"Change Gravity To"
+	{
+		"lv"		"Mainīt gravitāciju uz {1}?"
+	}
+
+	"Burn vote"
+	{
+		"lv"		"Aizdedzināšanas aptauja"
+	}
+
+	"Alltalk vote"
+	{
+		"lv"		"Atļaut visiem runāt aptauja"
+	}
+
+	"Initiated Vote Alltalk"
+	{
+		"lv"		"Uzsāka aptauju vai atļaut visiem runāt."
+	}
+
+	"Initiated Vote Burn"
+	{
+		"lv"		"Uzsāka aizdedzināšanas aptauju pret {1}."
+	}
+
+	"Initiated Vote FF"
+	{
+		"lv"		"Uzsāka draudzīgas uguns aptauju."
+	}
+
+	"Voteslay Player"
+	{
+		"lv"		"Nonāvēt {1}?"
+	}
+
+	"Voteff On"
+	{
+		"lv"		"Ieslēgt draudzīgo uguni? {1}"
+	}
+
+	"Voteff Off"
+	{
+		"lv"		"Izslēgt draudzīgo uguni? {1}"
+	}
+
+	"Voteburn player"
+	{
+		"lv"		"Aizdedzināt spēlētāju {1}?"
+	}
+
+	"Votealltalk On"
+	{
+		"lv"		"Atļaut visiem runāt? {1}"
+	}
+
+	"Votealltalk Off"
+	{
+		"lv"		"Aizliegt visiem runāt? {1}"
+	}
+
+	"Vote FF"
+	{
+		"lv"		"Aptauja par draudzīgo uguni"
+	}
+
+	"Slay vote"
+	{
+		"lv"		"Nonāvēšanas aptauja"
+	}
+
+	"Initiated Vote Slay"
+	{
+		"lv"		"Uzsāka nonāvešanas aptauju pret {1}."
+	}
+
+	"Initiated Vote Gravity"
+	{
+		"lv"		"Uzsāka gravitācijas aptauju."
+	}
+
+	"Slayed player"
+	{
+		"lv"		"Nonāvēja spēlētāju '{1}'"
+	}
+
+}

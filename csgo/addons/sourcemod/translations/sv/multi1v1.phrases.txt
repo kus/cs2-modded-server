@@ -1,0 +1,31 @@
+"Phrases"
+{
+	"NoOpponent"
+	{
+		"sv"			"Du är i arena {GREEN}{1} {DARK_RED}utan en motståndare."
+	}
+	"FacingOff"
+	{
+		"sv"			"Du är i arena {GREEN}{1}{NORMAL}, du möter {PURPLE}{2}."
+	}
+	"ArenasFull"
+	{
+		"sv"			"Tyvärr, alla arenor är just nu {PURPLE}fulla."
+	}
+	"QueuePosition"
+	{
+		"sv"			"Din position i kön är {GREEN}{1}"
+	}
+	"WonMessage"
+	{
+		"sv"			"{GREEN}Du {NORMAL}(rating {GREEN}{1}, {LIGHT_GREEN}+{2}{NORMAL}) vann över {PURPLE}{3} {NORMAL}(rating {PURPLE}{4}, {DARK_RED}-{5}{NORMAL})."
+	}
+	"LossMessage"
+	{
+		"sv"			"{GREEN}Du {NORMAL}(rating {GREEN}{1}, {LIGHT_RED}-{2}{NORMAL}) {NORMAL}förlorade emot {PURPLE}{3} {NORMAL}(rating {PURPLE}{4}, {LIGHT_GREEN}+{5}{NORMAL})."
+	}
+	"TimeRanOut"
+	{
+		"sv"			"{GREEN}Du {NORMAL}(rating {GREEN}{1}, {LIGHT_RED}-{2}{NORMAL}) lät tiden gå ut."
+	}
+}

@@ -1,0 +1,48 @@
+"Phrases"
+{
+	"Changed Next Map"
+	{
+		"cze"		"Zmenil pristi mapu na \"{1}\"."
+	}
+
+	"Current Map Extended"
+	{
+		"cze"		"Soucasna mapa byla prodlouzena. (Obdrzela {1}%% z {2} hlasu)"
+	}
+
+	"Current Map Stays"
+	{
+		"cze"		"Soucasna mapa pokracuje! Hlasovani rozhodlo! (Obdrzela {1}%% z {2} hlasu)"
+	}
+
+	"Dont Change"
+	{
+		"cze"		" Nemenit soucasnou mapu"
+	}
+
+	"Extend Map"
+	{
+		"cze"		"Prodlouzit soucasnou mapu"
+	}
+
+	"Nextmap Voting Finished"
+	{
+		"cze"		"Hlasovani o mape skoncilo. Pristi mapou bude {1}. (Obdrzela {2}%% z {3} hlasu)"
+	}
+
+	"Nextmap Voting Started"
+	{
+		"cze"		"Hlasovani o pristi mape zacalo."
+	}
+
+	"Vote Nextmap"
+	{
+		"cze"		"Hlasujte o pristi mape!"
+	}
+
+	"Starting Runoff"
+	{
+		"cze"		"Zadna mapa neziskala {1]%% hlasu ({2} [{3}%%] & {4} [{5}%%]), zacina rozhodujici hlasovani."
+	}
+
+}

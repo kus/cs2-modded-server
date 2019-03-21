@@ -1,0 +1,128 @@
+"Phrases"
+{
+	"Admin access"
+	{
+		"lv"		"Administratora pieeja"
+	}
+
+	"Admin cache refreshed"
+	{
+		"lv"		"Administratoru pieejas fails ir atjaunināts."
+	}
+
+	"Ban added"
+	{
+		"lv"		"Bans pievienots."
+	}
+
+	"Admin logged in as"
+	{
+		"lv"		"\"{1}\" ir ielogojies kā \"{2}\" ar pieejām: {3}"
+	}
+
+	"Admin logged in anon"
+	{
+		"lv"		"\"{1}\" ir pieeja: {2}"
+	}
+
+	"Banned player"
+	{
+		"lv"		"Spēlētājs \"{1}\" nobanots uz {2} minūtēm."
+	}
+
+	"Banned player reason"
+	{
+		"lv"		"Spēlētājs \"{1}\" nobanots uz {2} minūtēm (iemesls: {3})."
+	}
+
+	"Choose Map"
+	{
+		"lv"		"Izvēlies karti"
+	}
+
+	"Config not found"
+	{
+		"lv"		"Konfigurācijas fails \"{1}\" netika atrasts."
+	}
+
+	"Cvar changed"
+	{
+		"lv"		"Nomainīja cvaru \"{1}\" uz \"{2}\"."
+	}
+
+	"Cvar is now protected"
+	{
+		"lv"		"Cvars {1} tagad ir aizsargāts."
+	}
+
+	"Exec CFG"
+	{
+		"lv"		"Palaist konfigurācijas failu"
+	}
+
+	"Executed config"
+	{
+		"lv"		"Palaida \"{1}\" konfigurācijas failu."
+	}
+
+	"Identify player"
+	{
+		"lv"		"Identificēt spēlētāju"
+	}
+
+	"Kicked target"
+	{
+		"lv"		"Izmeta {1}."
+	}
+
+	"No access to cvar"
+	{
+		"lv"		"Tev nav pieejas šim cvaram."
+	}
+
+	"Permabanned player"
+	{
+		"lv"		"Neatgriezeniski nobanoja spēlētāju \"{1}\"."
+	}
+
+	"Permabanned player reason"
+	{
+		"lv"		"Neatgriezeniski nobanoja spēlētāju \"{1}\" (iemesls: {2})."
+	}
+
+	"Player is an admin"
+	{
+		"lv"		"\"{1}\" ir administrators."
+	}
+
+	"Player is not an admin"
+	{
+		"lv"		"\"{1}\" nav administrators."
+	}
+
+	"Username"
+	{
+		"lv"		"Lietotājvārds"
+	}
+
+	"Unable to find cvar"
+	{
+		"lv"		"Nevar atrast atbilstošu cvaru: {1}"
+	}
+
+	"Removed bans matching"
+	{
+		"lv"		"Izdzēsa banus ar sekojošu filtru: {1}"
+	}
+
+	"Value of cvar"
+	{
+		"lv"		"Vērtība cvaram \"{1}\": \"{2}\""
+	}
+
+	"Kicked target reason"
+	{
+		"lv"		"Izmeta {1} (Iemesls: {2})  "
+	}
+
+}

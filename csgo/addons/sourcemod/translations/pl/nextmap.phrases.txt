@@ -1,0 +1,43 @@
+"Phrases"
+{
+	"Next Map"
+	{
+		"pl"		"Następna mapa: {1}"
+	}
+
+	"Map"
+	{
+		"pl"		"[Mapa]"
+	}
+
+	"ago"
+	{
+		"pl"		"temu"
+	}
+
+	"Reason"
+	{
+		"pl"		"[Powód zakończenia]"
+	}
+
+	"Started"
+	{
+		"pl"		"[Rozpoczęto]"
+	}
+
+	"Map History"
+	{
+		"pl"		"Historia map"
+	}
+
+	"Played Time"
+	{
+		"pl"		"[Czas gry]"
+	}
+
+	"Current Map"
+	{
+		"pl"		"Aktualna mapa"
+	}
+
+}

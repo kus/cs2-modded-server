@@ -1,0 +1,257 @@
+"Games"
+{
+	/* Nuclear Dawn */
+
+	/* General Temp Entities */
+	"#default"
+	{
+		"Offsets"
+		{
+			/* Offset into CBaseTempEntity constructor */
+			"s_pTempEntities"
+			{
+				"windows"	"19"
+			}
+			"GetTEName"
+			{
+				"windows"	"4"
+				"linux"		"4"
+				"mac"		"4"
+			}
+			"GetTENext"
+			{
+				"windows"	"8"
+				"linux"		"8"
+				"mac"		"8"
+			}
+			"TE_GetServerClass"
+			{
+				"windows"	"0"
+				"linux"		"0"
+				"mac"		"0"
+			}
+		}
+
+		"Signatures"
+		{
+			"CBaseTempEntity"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x8B\xC1\x8B\x4D\x08\xC7\x2A\x2A\x2A\x2A\x2A\x89\x48\x04\x8B"
+			}
+			"s_pTempEntities"
+			{
+				"library"	"server"
+				"linux"		"@_ZN15CBaseTempEntity15s_pTempEntitiesE"
+				"mac"		"@_ZN15CBaseTempEntity15s_pTempEntitiesE"
+			}
+		}
+	}
+	
+	/* CGlobalEntityList */
+	"#default"
+	{			
+		"Signatures"
+		{
+			/* Functions in CGlobalEntityList */
+			"FindEntityByClassname"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x53\x56\x8B\xF1\x8B\x4D\x08\x57\x85\xC9\x74\x16\x8B\x01\x8B\x50\x08\xFF\xD2\x8B\x00\x25\xFF\x0F\x00\x00\x40\x03\xC0\x8B\x3C\xC6\xEB\x06\x8B\xBE\x2A\x2A\x2A\x2A\x85\xFF\x74\x31\x8B"
+				"linux"		"@_ZN17CGlobalEntityList21FindEntityByClassnameEP11CBaseEntityPKc"
+				"mac"		"@_ZN17CGlobalEntityList21FindEntityByClassnameEP11CBaseEntityPKc"
+			}
+		}
+	}
+	
+	/* IServer interface pointer */
+	"#default"
+	{
+		"Keys"
+		{
+			/* Signature for the beginning of IVEngineServer::CreateFakeClient.
+			 *
+			 * The engine binary is not actually scanned in order to look for
+			 * this. SourceHook is used to used to determine the address of the
+			 * function and this signature is used to verify that it contains
+			 * the expected code. A pointer to sv (IServer interface) is used
+			 * here.
+			 */
+			"CreateFakeClient_Windows"	"\x55\x8B\xEC\x8B\x45\x08\x50\xB9"
+		}
+		
+		"Offsets"
+		{
+			/* Offset into IVEngineServer::CreateFakeClient */
+			"sv"
+			{
+				"windows"	"8"
+			}
+		}
+
+		"Signatures"
+		{
+			/* CBaseServer object for IServer interface */
+			"sv"
+			{
+				"library"	"engine"
+				"linux"		"@sv"
+				"mac"		"@sv"
+			}
+		}
+	}
+	
+	/* SetUserInfo data */
+	"#default"
+	{
+		"Offsets"
+		{
+			/**
+			 * CBaseClient::SetUserCVar(char  const*,char  const*);
+			 * Linux offset straight from VTable dump.
+			 * Windows offset is crazy. Found the windows SetName function using string "(%d)%-.*s" (aD_S in IDA)
+			 * Cross referenced back to the vtable and counted manually (SetUserCvar is 1 higher, offsets start from 1)
+			 */
+			"SetUserCvar"
+			{
+				/* Not 100% sure on this, why would windows change and not linux - TEST ME */
+				"windows"	"17"
+				"linux"		"63"
+				"mac"		"63"
+			}
+			/**
+			 * CBaseClient::SetName(char  const*);
+			 * Linux offset straight from VTable dump.
+			 * Has string "(%d)%-0.*s"
+			 */
+			"SetClientName"
+			{
+				"windows"	"16"
+				"linux"		"62"
+				"mac"		"62"
+			}
+			/**
+			 * Offset into CBaseClient - Used by CBaseServer::UpdateUserSettings to determine when changes have been made.
+			 * Find CBaseClient::UpdateUserSettings (strings "net_maxroutable", "cl_updaterate" etc) and the offset is set to 0 near the end.
+			 * Linux: 	mov     byte ptr [esi+0B0h], 0
+			 * Win:		mov     byte ptr [esi+0B0h], 0
+			 *
+			 * L4D2: This has been moved into CBaseClient::UpdateUserSettings(), rest of the details are still relevant.
+			 */
+			"InfoChanged"
+			{
+				"windows"	"164"
+				"linux"		"164"
+				"mac"		"164"
+			}
+		}
+	}
+	
+	"nucleardawn"
+	{		
+		"Offsets"
+		{
+			"GiveNamedItem"
+			{
+				"windows"	"443"
+				"linux"		"444"
+				"mac"		"444"
+			}
+			"RemovePlayerItem"
+			{
+				"windows"	"301"
+				"linux"		"302"
+				"mac"		"302"
+			}
+			"Weapon_GetSlot"
+			{
+				"windows"	"299"
+				"linux"		"300"
+				"mac"		"300"
+			}
+			"Ignite"
+			{
+				"windows"	"234"
+				"linux"		"235"
+				"mac"		"235"
+			}
+			"Extinguish"
+			{
+				"windows"	"237"
+				"linux"		"238"
+				"mac"		"238"
+			}
+			"Teleport"
+			{
+				"windows"	"128"
+				"linux"		"129"
+				"mac"		"129"
+			}
+			"CommitSuicide"
+			{
+				"windows"	"488"
+				"linux"		"488"
+				"mac"		"488"
+			}
+			"GetVelocity"
+			{
+				"windows"	"160"
+				"linux"		"161"
+				"mac"		"161"
+			}
+			"EyeAngles"
+			{
+				"windows"	"151"
+				"linux"		"152"
+				"mac"		"152"
+			}
+			"AcceptInput"
+			{
+				"windows"	"44"
+				"linux"		"45"
+				"mac"		"45"
+			}
+			"SetEntityModel"
+			{
+				"windows"	"27"
+				"linux"		"28"
+				"mac"		"28"
+			}
+			"WeaponEquip"
+			{
+				"windows"	"292"
+				"linux"		"293"
+				"mac"		"293"
+			}
+			"Activate"
+			{
+				"windows"	"36"
+				"linux"		"37"
+				"mac"		"37"
+			}
+			"PlayerRunCmd"
+			{
+				"windows"	"466"
+				"linux"		"467"
+				"mac"		"467"
+			}
+		}
+		
+		"Keys"
+		{
+			"GameRulesProxy"		"CNuclearDawnRulesProxy"
+			"GameRulesDataTable"	"nd_gamerules_data"
+		}
+		
+		"Signatures"
+		{
+			"FireOutput"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x14\xD9\x45\x10\x8B\x45\x0C\x56\x8B"
+				"linux"		"@_ZN17CBaseEntityOutput10FireOutputE9variant_tP11CBaseEntityS2_f"
+				"mac"		"@_ZN17CBaseEntityOutput10FireOutputE9variant_tP11CBaseEntityS2_f"
+			}
+		}
+	}
+}

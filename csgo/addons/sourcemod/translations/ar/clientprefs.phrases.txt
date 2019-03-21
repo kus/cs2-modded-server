@@ -1,0 +1,48 @@
+"Phrases"
+{
+	"Choose Option"
+	{
+		"ar"		"إختر إختيارا :"
+	}
+
+	"Client Settings"
+	{
+		"ar"		"تعديلات اللاعب"
+	}
+
+	"Cookie Changed Value"
+	{
+		"ar"		"تم تغيير الكوكيز من \"{1}\" إلى \"{2}\""
+	}
+
+	"Cookie List"
+	{
+		"ar"		"لائحة الكوكيز "
+	}
+
+	"Cookie Value"
+	{
+		"ar"		"{1} قيمة هي {2}"
+	}
+
+	"Cookie not Found"
+	{
+		"ar"		"لم يتم العثور على الكوكي {1}"
+	}
+
+	"No Console"
+	{
+		"ar"		"لا يمكن عرض التعديلات في وحدت التحكم"
+	}
+
+	"Printing Cookie List"
+	{
+		"ar"		"يتم عرض لائحة الكوكيز إلى وحدة التحكم"
+	}
+
+	"Protected Cookie"
+	{
+		"ar"		"لا يمكن تغيروحدة الكوكي المحمية \"{1}\""
+	}
+
+}

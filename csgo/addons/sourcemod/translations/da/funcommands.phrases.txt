@@ -1,0 +1,168 @@
+"Phrases"
+{
+	"Beacon player"
+	{
+		"da"		"Blink spiller"
+	}
+
+	"Blind amount"
+	{
+		"da"		"Hvor blind?"
+	}
+
+	"Blind player"
+	{
+		"da"		"Gør spiller blind"
+	}
+
+	"Drug player"
+	{
+		"da"		"Gør spiller fuld"
+	}
+
+	"FireBomb player"
+	{
+		"da"		"Ildbombe"
+	}
+
+	"Freeze player"
+	{
+		"da"		"Frys spiller"
+	}
+
+	"FreezeBomb player"
+	{
+		"da"		"Frostbombe"
+	}
+
+	"Froze target"
+	{
+		"da"		"frøs {1}."
+	}
+
+	"Fully blind"
+	{
+		"da"		"Helt blind"
+	}
+
+	"Gravity High"
+	{
+		"da"		"Høj tyngdekraft"
+	}
+
+	"Gravity Low"
+	{
+		"da"		"Lav tyngdekraft"
+	}
+
+	"Gravity Normal"
+	{
+		"da"		"Normal tyngdekraft"
+	}
+
+	"Gravity Very High"
+	{
+		"da"		"Meget høj tyngdekraft"
+	}
+
+	"Gravity Very Low"
+	{
+		"da"		"Meget lav tyngdekraft"
+	}
+
+	"Gravity amount"
+	{
+		"da"		"Tyngde?"
+	}
+
+	"Gravity player"
+	{
+		"da"		"Spillers tyngde"
+	}
+
+	"Half blind"
+	{
+		"da"		"Halv-blind"
+	}
+
+	"No blind"
+	{
+		"da"		"Ingen blindhed"
+	}
+
+	"NoClip player"
+	{
+		"da"		"NoClip spiller"
+	}
+
+	"Set blind on target"
+	{
+		"da"		"{1} er blevet blind."
+	}
+
+	"TimeBomb player"
+	{
+		"da"		"Tidsbombe"
+	}
+
+	"Toggled FireBomb on target"
+	{
+		"da"		"har sat en ildbombe på {1}."
+	}
+
+	"Toggled FreezeBomb on target"
+	{
+		"da"		"har sat en frostbombe på {1}."
+	}
+
+	"Toggled TimeBomb on target"
+	{
+		"da"		"har sat en tidsbombe på {1}."
+	}
+
+	"Till Explodes"
+	{
+		"da"		"{2} sekunder til {1} eksploderer."
+	}
+
+	"Toggled beacon on target"
+	{
+		"da"		"har sat blink på {1}."
+	}
+
+	"Toggled drug on target"
+	{
+		"da"		"har gjort {1} fuld."
+	}
+
+	"Toggled noclip on target"
+	{
+		"da"		"har aktiveret NoClip på {1}."
+	}
+
+	"Burn player"
+	{
+		"da"		"Brænd spiller"
+	}
+
+	"You will be unfrozen"
+	{
+		"da"		"Du vill ikke være frossen om {1} sekunder"
+	}
+
+	"Set gravity on target"
+	{
+		"da"		"	har ændret {1}s tyngde. "
+	}
+
+	"Set target on fire"
+	{
+		"da"		"Tænd ild i {1}"
+	}
+
+	"Unfrozen"
+	{
+		"da"		"Du er blevet tøet op."
+	}
+
+}

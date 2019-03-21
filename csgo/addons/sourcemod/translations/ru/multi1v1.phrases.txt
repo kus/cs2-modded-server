@@ -1,0 +1,123 @@
+"Phrases"
+{
+	"NoOpponent"
+	{
+		"ru"		"Вы в арене {GREEN}{1} {DARK_RED}без противника."
+	}
+	"NoOpponentHint"
+	{
+		"ru"		"<font size='22' color='#FF0000'>У вас нет противника.</font>"
+	}
+	"FacingOff"
+	{
+		"ru"		"Арена: {GREEN}{1}{NORMAL}, противник: {PURPLE}{2}{NORMAL}."
+	}
+	"ArenasFull"
+	{
+		"ru"		"К сожалению, все арены в настоящее время {PURPLE}полны."
+	}
+	"QueuePosition"
+	{
+		"ru"		"Вы {GREEN}{1} {NORMAL}в очереди ожидания."
+	}
+	"WonMessage"
+	{
+		"ru"		"{GREEN}Вы {NORMAL}(рейтинг {GREEN}{1}, {LIGHT_GREEN}+{2}{NORMAL}) победили {PURPLE}{3} {NORMAL}(рейтинг {PURPLE}{4}, {DARK_RED}-{5}{NORMAL})."
+	}
+	"LossMessage"
+	{
+		"ru"		"{GREEN}Вы {NORMAL}(рейтинг {GREEN}{1}, {LIGHT_RED}-{2}{NORMAL}) {NORMAL}проиграли {PURPLE}{3} {NORMAL}(рейтинг {PURPLE}{4}, {LIGHT_GREEN}+{5}{NORMAL})."
+	}
+	"TimeRanOut"
+	{
+		"ru"		"{GREEN}Вы {NORMAL}(рейтинг {GREEN}{1}, {LIGHT_RED}-{2}{NORMAL}) позволили времени выйти."
+	}
+	"MostWins"
+	{
+		"ru"		"{GREEN}У {1} {NORMAL}наибольшее количество побед {PURPLE}({2}) {NORMAL}в первой арене этой карты."
+	}
+	"OpponentLeft"
+	{
+		"ru"		"{GREEN}Ваш противник вышел."
+	}
+	"OpponentLeftHint"
+	{
+		"ru"		"<font size='22' color='#00FF00'>Ваш противник вышел.</font>"
+	}
+	"HideStats"
+	{
+		"ru"		"Статистика игроков в настоящее время скрыта."
+	}
+	"ShowStats"
+	{
+		"ru"		"Статистика игроков в настоящее время отображается."
+	}
+	"AutoSpecOn"
+	{
+		"ru"		"Вы включили авто-наблюдение."
+	}
+	"AutoSpecOff"
+	{
+		"ru"		"Вы отключили авто-наблюдение."
+	}
+	"AutoSpecSwitch"
+	{
+		"ru"		"Автопереключение для наблюдения за ареной {1}."
+	}
+	"ArenaClanTag"
+	{
+		"ru"		"Арена {1}"
+	}
+	"Disabled"
+	{
+		"ru"		"отключен"
+	}
+	"Enabled"
+	{
+		"ru"		"включен"
+	}
+	"WeaponsMenuTitle"
+	{
+		"ru"		"Выберите предпочитаемое оружие:"
+	}
+	"WeaponsMenuRifle"
+	{
+		"ru"		"Винтовка: {1}"
+	}
+	"WeaponsMenuPistol"
+	{
+		"ru"		"Пистолет: {1}"
+	}
+	"WeaponsMenuRoundTypeEnabled"
+	{
+		"ru"		"{1} раунды: {2}"
+	}
+	"WeaponsMenuPreferenceTitle"
+	{
+		"ru"		"Выберите предпочитаемый тип раунда:"
+	}
+	"WeaponsMenuPreference"
+	{
+		"ru"		"Предпочтение: {1} раунды"
+	}
+	"WeaponsMenuPreferenceNone"
+	{
+		"ru"		"Предпочтение: Нет"
+	}
+	"WeaponsMenuNoPreference"
+	{
+		"ru"		"Отсутствует"
+	}
+	"WeaponsMenuPreferenceChoice"
+	{
+		"ru"		"{1} раунды"
+	}
+	"WeaponsMenuSelection"
+	{
+		"ru"		"Выбери предпочитаемую винтовку:"
+	}
+	"PistolMenuTitle"
+	{
+		"ru"		"Выбери предпочитаемый пистолет:"
+	}
+}

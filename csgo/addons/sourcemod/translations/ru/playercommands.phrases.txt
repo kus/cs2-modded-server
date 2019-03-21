@@ -1,0 +1,48 @@
+"Phrases"
+{
+	"Slap damage"
+	{
+		"ru"		"Урон"
+	}
+
+	"Slap player"
+	{
+		"ru"		"Шлепнуть игрока"
+	}
+
+	"Slapped target"
+	{
+		"ru"		"Игрок {1} шлепнут."
+	}
+
+	"Slay player"
+	{
+		"ru"		"Убить игрока"
+	}
+
+	"Slayed target"
+	{
+		"ru"		"Игрок {1} убит."
+	}
+
+	"Name changed"
+	{
+		"ru"		"Админ изменил ваше имя"
+	}
+
+	"Rename player"
+	{
+		"ru"		"Изменить имя игрока"
+	}
+
+	"Renamed target"
+	{
+		"ru"		"Игрок {1} переименован."
+	}
+
+	"Dead Player Rename"
+	{
+		"ru"		"Игрок {1} будет переименован в следующем раунде."
+	}
+
+}

@@ -1,0 +1,168 @@
+"Phrases"
+{
+	"Burn player"
+	{
+		"sv"		"Bränn spelare"
+	}
+
+	"Drug player"
+	{
+		"sv"		"Droga spelare"
+	}
+
+	"Freeze player"
+	{
+		"sv"		"Frys spelare"
+	}
+
+	"Froze target"
+	{
+		"sv"		"frös {1}."
+	}
+
+	"Gravity High"
+	{
+		"sv"		"Hög gravitation"
+	}
+
+	"Gravity Low"
+	{
+		"sv"		"Låg gravitation"
+	}
+
+	"Gravity Normal"
+	{
+		"sv"		"Normal gravitation"
+	}
+
+	"Gravity Very High"
+	{
+		"sv"		"Väldigt hög gravitation"
+	}
+
+	"Gravity Very Low"
+	{
+		"sv"		"Väldigt låg gravitation"
+	}
+
+	"Gravity amount"
+	{
+		"sv"		"Gravitation?"
+	}
+
+	"Beacon player"
+	{
+		"sv"		"Sätt beacon på spelare"
+	}
+
+	"Blind player"
+	{
+		"sv"		"Gör spelare blind"
+	}
+
+	"FireBomb player"
+	{
+		"sv"		"Brandbomba spelare"
+	}
+
+	"FreezeBomb player"
+	{
+		"sv"		"Frysbomba spelare"
+	}
+
+	"Half blind"
+	{
+		"sv"		"Halvblind"
+	}
+
+	"No blind"
+	{
+		"sv"		"Inte blind"
+	}
+
+	"NoClip player"
+	{
+		"sv"		"Sätt NoClip på spelare"
+	}
+
+	"Set blind on target"
+	{
+		"sv"		"gjorde {1} blind"
+	}
+
+	"Till Explodes"
+	{
+		"sv"		"{1} exploderar om {2} sekunder"
+	}
+
+	"TimeBomb player"
+	{
+		"sv"		"Tidsbomba spelare"
+	}
+
+	"Blind amount"
+	{
+		"sv"		"Hur blind?"
+	}
+
+	"Fully blind"
+	{
+		"sv"		"Helt blind"
+	}
+
+	"Toggled FireBomb on target"
+	{
+		"sv"		"Växlade brandbomb på {1}."
+	}
+
+	"Toggled FreezeBomb on target"
+	{
+		"sv"		"Växlade frysbomb på {1}."
+	}
+
+	"Toggled TimeBomb on target"
+	{
+		"sv"		"Växlade tidsbomb på {1}."
+	}
+
+	"Toggled beacon on target"
+	{
+		"sv"		"Växlade beacon på {1}."
+	}
+
+	"Toggled drug on target"
+	{
+		"sv"		"växlade droger på {1}. "
+	}
+
+	"Gravity player"
+	{
+		"sv"		"Gravitation på spelare "
+	}
+
+	"Set gravity on target"
+	{
+		"sv"		" sätt {1}s gravitation."
+	}
+
+	"Set target on fire"
+	{
+		"sv"		"Sätt eld på {1}. "
+	}
+
+	"Toggled noclip on target"
+	{
+		"sv"		"växlade noclip på {1}. "
+	}
+
+	"Unfrozen"
+	{
+		"sv"		"Du är nu ofryst."
+	}
+
+	"You will be unfrozen"
+	{
+		"sv"		"Du kommer bli ofryst om {1} sekunder."
+	}
+
+}

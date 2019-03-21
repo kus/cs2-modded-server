@@ -1,0 +1,103 @@
+"Phrases"
+{
+	"Don't Change"
+	{
+		"tr"		"Geçerli Haritayı Devam Ettir"
+	}
+
+	"Current Map Stays"
+	{
+		"tr"		"Geçerli harita devam ediyor! Rock the Vote konuştu!"
+	}
+
+	"Changing Maps"
+	{
+		"tr"		"Harita {1} olarak değiştiriliyor! Rock the Vote konuştu!"
+	}
+
+	"Already Voted"
+	{
+		"tr"		"Rock the Vote'a zaten oy verdiniz."
+	}
+
+	"Already Nominated"
+	{
+		"tr"		"Bir haritayı zaten aday olarak gösterdiniz."
+	}
+
+	"Map Already In Vote"
+	{
+		"tr"		"'{1}' adlı harita zaten Rock the Vote listesinde."
+	}
+
+	"Map Already Nominated"
+	{
+		"tr"		"Seçtiğiniz harita zaten aday olarak gösterildi."
+	}
+
+	"Max Nominations"
+	{
+		"tr"		"İzin verilen azami adaylara ulaşıldı."
+	}
+
+	"Map Nominated"
+	{
+		"tr"		"{1}, Rock the Vote için {2} adlı haritayı aday olarak gösterdi."
+	}
+
+	"Map Inserted"
+	{
+		"tr"		"'{1}' adlı harita Rock the Vote a eklendi."
+	}
+
+	"Minimal Players Not Met"
+	{
+		"tr"		"Gereken asgari oyuncu sayısına ulaşılamadı."
+	}
+
+	"No Votes"
+	{
+		"tr"		"Rock the Vote için oy alınmadı, geçerli harita sürdürülüyor."
+	}
+
+	"Nominate Title"
+	{
+		"tr"		"Haritayı Aday Olarak Göster:"
+	}
+
+	"RTV Ended"
+	{
+		"tr"		"RTV zaten sona erdi, tekrar başlatamaz veya harita aday gösteremezsiniz."
+	}
+
+	"RTV Not Allowed"
+	{
+		"tr"		"Rock the Vote'a daha izin verilmiyor."
+	}
+
+	"RTV Requested"
+	{
+		"tr"		"{1} rock the vote istiyor. ({2} oy, {3} gerekli) "
+	}
+
+	"RTV Started"
+	{
+		"tr"		"Rock the Vote zaten başladı."
+	}
+
+	"Rock The Vote"
+	{
+		"tr"		"Rock The Vote:"
+	}
+
+	"RTV Vote Ready"
+	{
+		"tr"		"Rock the Vote başlatılıyor!"
+	}
+
+	"Selected Map"
+	{
+		"tr"		"{1}, {2} adlı haritayı seçti."
+	}
+
+}

@@ -1,0 +1,73 @@
+"Phrases"
+{
+	"Choose Type"
+	{
+		"pt_p"		"Escolhe o tipo"
+	}
+
+	"Gag Player"
+	{
+		"pt_p"		"Censurar jogador"
+	}
+
+	"Gag/Mute player"
+	{
+		"pt_p"		"Censurar/Emudecer jogador"
+	}
+
+	"Gagged target"
+	{
+		"pt_p"		"{1} está agora censurado."
+	}
+
+	"Mute Player"
+	{
+		"pt_p"		"Emudecer jogador"
+	}
+
+	"Muted target"
+	{
+		"pt_p"		"{1} está agora emudecido."
+	}
+
+	"Silence Player"
+	{
+		"pt_p"		"Silenciar jogador"
+	}
+
+	"Silenced target"
+	{
+		"pt_p"		"{1} está agora silenciado."
+	}
+
+	"UnGag Player"
+	{
+		"pt_p"		"Descensurar jogador"
+	}
+
+	"UnMute Player"
+	{
+		"pt_p"		"Desemudecer jogador"
+	}
+
+	"UnSilence Player"
+	{
+		"pt_p"		"Dessilenciar jogador"
+	}
+
+	"Ungagged target"
+	{
+		"pt_p"		"{1} já não está censurado."
+	}
+
+	"Unmuted target"
+	{
+		"pt_p"		"{1} já não está emudecido."
+	}
+
+	"Unsilenced target"
+	{
+		"pt_p"		"{1} já não está silenciado."
+	}
+
+}

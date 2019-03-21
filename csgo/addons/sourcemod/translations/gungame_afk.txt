@@ -1,0 +1,13 @@
+﻿"Phrases"
+{
+    "You do not gain a level because you killed an afk"
+    {
+        	"en"         "{lightgreen}You do not gain a level because you killed an afk"
+		"de"         "{lightgreen}Du bekommst für den Kill keinen Level. Der Spieler ist AFK"
+        	"ru"         "{lightgreen}Вы не получили уровень за убийство AFK"
+		"pt"         "{lightgreen}Não ganhas um nivel porque mataste um AFK"
+		"es"         "{lightgreen}No has ganado un nivel porque has matado a un AFK"
+		"pl"         "{lightgreen}Nie zdobywasz poziomu ponieważ gracz był AFK"
+		"fr"         "{lightgreen}Vous ne gagnez pas un niveau parce que vous avez tué un afk"
+    }
+}

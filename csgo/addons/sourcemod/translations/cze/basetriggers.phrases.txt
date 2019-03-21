@@ -1,0 +1,108 @@
+"Phrases"
+{
+	"Current Map"
+	{
+		"cze"		"Aktualni mapa je {1}."
+	}
+
+	"FragLimit"
+	{
+		"cze"		"Mapa se zmeni pote, co hrac dosahne jednoho zabiti"
+	}
+
+	"FragLimitAppend"
+	{
+		"cze"		", nebo se mapa zmeni pote, co hrac dosahne jednoho zabiti"
+	}
+
+	"FragLimitAppendPlural"
+	{
+		"cze"		" , nebo se mapa zmeni pote, co hrac dosahne {1} zabiti "
+	}
+
+	"FragLimitPlural"
+	{
+		"cze"		"Mapa se zmeni pote, co hrac dosahne {1} zabiti"
+	}
+
+	"Friendly Fire Off"
+	{
+		"cze"		"Friendly Fire je vypnut."
+	}
+
+	"Friendly Fire On"
+	{
+		"cze"		"Friendly Fire je zapnut."
+	}
+
+	"LastRound"
+	{
+		"cze"		"Toto je posledni kolo!!"
+	}
+
+	"MaxRounds"
+	{
+		"cze"		"Mapa se zmeni po pristim kole"
+	}
+
+	"MaxRoundsAppend"
+	{
+		"cze"		", nebo se mapa zmeni po pristim kole"
+	}
+
+	"MaxRoundsAppendPlural"
+	{
+		"cze"		", nebo se mapa zmeni po {1} kolech"
+	}
+
+	"MaxRoundsPlural"
+	{
+		"cze"		"Mapa se zmeni po {1} kolech"
+	}
+
+	"Next Map"
+	{
+		"cze"		"Pristi mapa: {1}"
+	}
+
+	"NoTimelimit"
+	{
+		"cze"		"Tato mapa neni casove omezena"
+	}
+
+	"Pending Vote"
+	{
+		"cze"		"Neprobehlo hlasovani"
+	}
+
+	"Thetime"
+	{
+		"cze"		"Soucasny cas je {1}"
+	}
+
+	"Timeleft"
+	{
+		"cze"		"Zbyvajici cas:"
+	}
+
+	"WinLimit"
+	{
+		"cze"		"Mapa se zmeni pote, co nejaky tym vyhraje jedno kolo"
+	}
+
+	"WinLimitAppend"
+	{
+		"cze"		", nebo se mapa zmeni pote, co nejaky tym vyhraje jedno kolo "
+	}
+
+	"WinLimitAppendPlural"
+	{
+		"cze"		", nebo se mapa zmeni pote, co nejaky tym vyhraje {1} kol"
+	}
+
+	"WinLimitPlural"
+	{
+		"cze"		"Mapa se zmeni pote, co nejaky tym vyhraje {1} kol"
+	}
+
+}

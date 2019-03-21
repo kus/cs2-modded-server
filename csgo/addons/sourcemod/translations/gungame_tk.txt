@@ -1,0 +1,69 @@
+"Phrases"
+{
+    "Has lost a level due to team kill"
+    {
+        "#format"    "{1:s},{2:s}"
+        "en"         "{teamcolor}{1}{green} has lost a level due to team kill of {teamcolor}{2}{green}"
+		"fr"         "{teamcolor}{1}{green} a perdu un niveau pour avoir tué son coéquipier {teamcolor}{2}{green}"
+    	"de"         "{teamcolor}{1}{green} hat für den Teamkill an {teamcolor}{2}{green} einen Level verloren"
+        "ru"         "{teamcolor}{1}{green} потерял уровень за убийство {teamcolor}{2}{green} из своей команды"
+		"pt"         "{teamcolor}{1}{green} perdeu um nivel por ter morto {teamcolor}{2}{green} que é da mesma equipa"
+		"es"         "{teamcolor}{1}{green} ha perdido un nivel por matar a {teamcolor}{2}{green} que es del mismo equipo"
+		"pl"         "{teamcolor}{1}{green} stracił poziom z powodu drużynowego zabójstwa na {teamcolor}{2}{green}"
+    }
+    "Has lost levels due to team kill"
+    {
+        "#format"    "{1:s},{2:s},{3:s}"
+        "en"         "{teamcolor}{1}{green} has lost {3} due to team kill of {teamcolor}{2}{green}"
+		"fr"         "{teamcolor}{1}{green} a perdu {3} pour avoir tué son coéquipier {teamcolor}{2}{green}"
+    	"de"         "{teamcolor}{1}{green} hat für den Teamkill an {teamcolor}{2}{green} einen {3} verloren"
+        "ru"         "{teamcolor}{1}{green} потерял {3} за убийство {teamcolor}{2}{green} из своей команды"
+		"pt"         "{teamcolor}{1}{green} perdeu {3} por ter morto {teamcolor}{2}{green} que é da mesma equipa"
+		"es"         "{teamcolor}{1}{green} ha perdido {3} por matar a {teamcolor}{2}{green} que es del mismo equipo"
+		"pl"         "{teamcolor}{1}{green} stracił {3} ze względu na drużynowe zabicie {teamcolor}{2}{green}"
+    }
+	"1>levels"
+	{
+		"#format"	"{1:d}"
+		"en"	"{default}{1} {green}level"
+		"fr"	"{default}{1} {green}niveau"
+		"de"	"{default}{1} {green}Level"
+		"ru"	"{default}{1} {green}уровень"
+		"pt"	"{default}{1} {green}nivel"
+		"es"	"{default}{1} {green}nivel"
+		"pl"	"{default}{1} {green}poziom"
+	}
+	"x1>levels"
+	{
+		"#format"	"{1:d}"
+		"en"	"{default}{1} {green}levels"
+		"fr"	"{default}{1} {green}niveaux"
+		"de"	"{default}{1} {green}Level"
+		"ru"	"{default}{1} {green}уровень"
+		"pt"	"{default}{1} {green}niveis"
+		"es"	"{default}{1} {green}niveles"
+		"pl"	"{default}{1} {green}poziomy"
+	}
+	"x2-x4>levels"
+	{
+		"#format"	"{1:d}"
+		"en"	"{default}{1} {green}levels"
+		"fr"	"{default}{1} {green}niveaux"
+		"de"	"{default}{1} {green}Level"
+		"ru"	"{default}{1} {green}уровня"
+		"pt"	"{default}{1} {green}niveis"
+		"es"	"{default}{1} {green}niveles"
+		"pl"	"{default}{1} {green}poziomy"
+	}
+	"x5-x20>levels"
+	{
+		"#format"	"{1:d}"
+		"en"	"{default}{1} {green}levels"
+		"fr"	"{default}{1} {green}niveaux"
+		"de"	"{default}{1} {green}Level"
+		"ru"	"{default}{1} {green}уровней"
+		"pt"	"{default}{1} {green}niveis"
+		"es"	"{default}{1} {green}niveles"
+		"pl"	"{default}{1} {green}poziomy"
+	}
+}

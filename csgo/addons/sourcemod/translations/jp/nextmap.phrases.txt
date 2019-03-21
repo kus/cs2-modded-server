@@ -1,0 +1,43 @@
+"Phrases"
+{
+	"ago"
+	{
+		"jp"		"前"
+	}
+
+	"Started"
+	{
+		"jp"		"[開始]"
+	}
+
+	"Reason"
+	{
+		"jp"		"[終了の理由]"
+	}
+
+	"Played Time"
+	{
+		"jp"		"[プレイ時間]"
+	}
+
+	"Next Map"
+	{
+		"jp"		"次のマップ: {1}"
+	}
+
+	"Map History"
+	{
+		"jp"		"マップ履歴"
+	}
+
+	"Map"
+	{
+		"jp"		"[マップ]"
+	}
+
+	"Current Map"
+	{
+		"jp"		"現在のマップ"
+	}
+
+}

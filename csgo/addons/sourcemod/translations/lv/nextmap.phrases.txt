@@ -1,0 +1,43 @@
+"Phrases"
+{
+	"Next Map"
+	{
+		"lv"		"Nākamā karte: {1}"
+	}
+
+	"Reason"
+	{
+		"lv"		"[Labojumu iemesls]"
+	}
+
+	"Played Time"
+	{
+		"lv"		"[Nospēlētais laiks]"
+	}
+
+	"Map History"
+	{
+		"lv"		"Kartes vēsture"
+	}
+
+	"Map"
+	{
+		"lv"		"[Karte]"
+	}
+
+	"Started"
+	{
+		"lv"		"[Uzsākta]"
+	}
+
+	"ago"
+	{
+		"lv"		"pirms"
+	}
+
+	"Current Map"
+	{
+		"lv"		"Patreizējā karte"
+	}
+
+}

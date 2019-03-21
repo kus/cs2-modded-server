@@ -1,0 +1,48 @@
+"Phrases"
+{
+	"Client Settings"
+	{
+		"jp"		"クライアントセッティング"
+	}
+
+	"Choose Option"
+	{
+		"jp"		"オプションを選択"
+	}
+
+	"Cookie List"
+	{
+		"jp"		"SourceMod クッキーリスト"
+	}
+
+	"Cookie Value"
+	{
+		"jp"		"{1}の値は{2}"
+	}
+
+	"Cookie not Found"
+	{
+		"jp"		"クッキー \"{1}\" は見つかりませんでした。"
+	}
+
+	"No Console"
+	{
+		"jp"		"セッティングメニューをコンソールに表示出来ません。"
+	}
+
+	"Printing Cookie List"
+	{
+		"jp"		"クッキーリストをコンソールに表示中。"
+	}
+
+	"Protected Cookie"
+	{
+		"jp"		"保護されたクッキー \"{1}\" の値を変更する事は出来ません。"
+	}
+
+	"Cookie Changed Value"
+	{
+		"jp"		"クッキー \"{1}\" の値を\"{2}\"に変更しました。"
+	}
+
+}

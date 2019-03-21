@@ -1,0 +1,98 @@
+"Phrases"
+{
+	"Gravity vote"
+	{
+		"tr"		"Yerçekimi oylaması"
+	}
+
+	"Gravity Vote"
+	{
+		"tr"		"Yerçekimi oylaması: {1}"
+	}
+
+	"Burn vote"
+	{
+		"tr"		"Yakma oylaması"
+	}
+
+	"Alltalk vote"
+	{
+		"tr"		"Alltalk oylaması"
+	}
+
+	"Change Gravity To"
+	{
+		"tr"		"Yerçekimi {1} olarak değiştirilsin mi?"
+	}
+
+	"Voteslay Player"
+	{
+		"tr"		"{1} adlı oyuncu katledilsin mi?"
+	}
+
+	"Voteff On"
+	{
+		"tr"		"Dost ateşi açılsın mı? {1}"
+	}
+
+	"Voteff Off"
+	{
+		"tr"		"Dost ateşi kapansın mı? {1}"
+	}
+
+	"Votealltalk On"
+	{
+		"tr"		"Alltalk açılsın mı? {1}"
+	}
+
+	"Votealltalk Off"
+	{
+		"tr"		"Alltalk kapansın mı? {1}"
+	}
+
+	"Voteburn player"
+	{
+		"tr"		"{1} adlı oyuncu yakılsın mı?"
+	}
+
+	"Vote FF"
+	{
+		"tr"		"DA Oyla"
+	}
+
+	"Slay vote"
+	{
+		"tr"		"Katletme oylaması"
+	}
+
+	"Initiated Vote Slay"
+	{
+		"tr"		"{1} adlı oyuncuya karşı katletme oylaması başlatıldı."
+	}
+
+	"Initiated Vote Gravity"
+	{
+		"tr"		"Yerçekimi oylaması başlatıldı."
+	}
+
+	"Initiated Vote FF"
+	{
+		"tr"		"Dost ateşi oylaması başlatıldı."
+	}
+
+	"Initiated Vote Burn"
+	{
+		"tr"		"{1} adlı oyuncuya karşı yakma oylaması başlatıldı."
+	}
+
+	"Initiated Vote Alltalk"
+	{
+		"tr"		"Alltalk oylaması başlatıldı."
+	}
+
+	"Slayed player"
+	{
+		"tr"		"'{1}'  adlı oyuncu katledildi"
+	}
+
+}

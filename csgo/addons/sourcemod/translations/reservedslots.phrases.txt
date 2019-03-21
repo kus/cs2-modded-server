@@ -1,0 +1,7 @@
+"Phrases"
+{
+	"Slot reserved"
+	{
+		"en"			"Dropped due to slot reservation"
+	}
+}
