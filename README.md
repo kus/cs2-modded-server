@@ -29,10 +29,19 @@ Mod | Version | Why
 [AbNeR DeathRun Manager](https://forums.alliedmods.net/showthread.php?t=272017) | `2.6` | Automates Deathrun Server
 [Map configs](https://forums.alliedmods.net/showthread.php?p=607079) | `1.3` | Load mod settings on map change for mods that don't have exec's on map change
 
-## Updating maps zip
+## Maps
 
-From `maps/` folder:
+You need to source your own maps and update `csgo/mapcycle_*` to match your maps.
+
+### Zipping maps
+
+From the `csgo/maps/` folder:
 `zip -vr -9 maps.zip . -x "*.DS_Store"`
+
+### Unzipping on server
+
+From the `csgo/maps/` folder:
+`curl -O http://yourdomain/maps.zip && unzip -u maps.zip`
 
 ## License
 

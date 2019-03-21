@@ -30,7 +30,7 @@
          *      1 - Enabled.
          *      0 - Disabled.
          */
-        "FastSwitchOnLevelUp" "0"
+        "FastSwitchOnLevelUp" "1"
 
         /**
          * Switch weapon without delays when player changes weapon by himself.
@@ -59,7 +59,7 @@
          *      0 - Freeze players.
          *      1 - Make players fly.
          */
-        "WinnerEffect" "0"
+        "WinnerEffect" "1"
 
         /**
          * Delay before end of multiplayer game after gungame win. 
@@ -68,7 +68,7 @@
          *      0 - Disabled.
          *      1-N - Number of seconds.
          */
-        "EndGameDelay" "0"
+        "EndGameDelay" "3"
 
         /**
          * Sets how to finish the game after someone has won.
@@ -100,7 +100,7 @@
          *     1 - Block weapon switch
          *     0 - Do not block weapon switch
          */
-        "BlockWeaponSwitchIfKnife" "1"
+        "BlockWeaponSwitchIfKnife" "0"
 
         /**
          * Block weapon switch if you get next hegrenade 
@@ -112,7 +112,7 @@
          *     1 - Block weapon switch
          *     0 - Do not block weapon switch
          */
-        "BlockWeaponSwitchOnNade" "1"
+        "BlockWeaponSwitchOnNade" "0"
 
         /** 
          * Show players level message in hint box instead of chat.
@@ -128,7 +128,7 @@
         "ShowLeaderInHintBox" "0"
 
         /* Show leader's weapon name in chat with leading message */
-        "ShowLeaderWeapon" "0"
+        "ShowLeaderWeapon" "1"
         
         /**
          * Strip dead players weapon
@@ -138,7 +138,7 @@
          *  1 - Enabled for alive and dead players (alive players can not drop guns)
          *  2 - Enabled for dead players only (alive players can drop guns)
          */
-        "StripDeadPlayersWeapon" "0"
+        "StripDeadPlayersWeapon" "1"
         
         /* Show levels in scoreboard */
         "LevelsInScoreboard" "1"
@@ -156,7 +156,7 @@
         "AllowLevelUpAfterRoundEnd" "1"
     
         /* Show multikill hints in chat */
-        "MultiKillChat" "0"
+        "MultiKillChat" "1"
         
         /* Set sv_alltalk 1 after player win */
         "AlltalkOnWin" "1"
@@ -165,7 +165,7 @@
         "VoteLevelLessWeaponCount" "2"
         
         /* Display a join message, popup giving players instructions on how to play */
-        "JoinMessage" "1"
+        "JoinMessage" "0"
 
         /** 
          * Level down playr if they kill themself by WorldSpawn Suicide.
@@ -185,7 +185,7 @@
         "MaxLevelPerRound" "0"
 
         /* Turbo Mode: give next level weapon on level up */
-        "TurboMode" "0"
+        "TurboMode" "1"
 
         /* Knife Elite force them to only have a knife after they level up.
            They will get a normal weapon again next round */
@@ -277,7 +277,7 @@
          * 1 - Enabled
          * 0 - Disabled
          */
-        "CanLevelUpWithMapNades"            "0"
+        "CanLevelUpWithMapNades"            "1"
 
         /**
          * Use "CanLevelUpWithMapNades" option when player is on knife level.
@@ -310,7 +310,7 @@
         "KnifePro" "1"
 
         /* Enables Knife Pro when a player is on hegrenade level */
-        "KnifeProHE"    "0"
+        "KnifeProHE"    "1"
 
         /* The minimum level that a player must be at before another player can knife steal from. Requires KnifePro on */
         "KnifeProMinLevel" "0"
@@ -338,7 +338,7 @@
         /* Give x number of level by completing the bomb planting/defusing objectives.
          * Amount giving base on the value setting.
          */
-        "ObjectiveBonus" "1"
+        "ObjectiveBonus" "0"
 
         /* Enables objective bonus on last level */
         "ObjectiveBonusWin" "0"
@@ -371,7 +371,7 @@
          * 1 - Avg level
          * 2 - Min level
          */
-        "HandicapMode" "2"
+        "HandicapMode" "1"
 
         /**
          * Allow players in the top rank to receive a handicap with the rest of the players.
@@ -425,7 +425,7 @@
          * 0 - disabled
          * 1 - enabled
          */
-        "ExtraTaserOnKnifeKill" "1"
+        "ExtraTaserOnKnifeKill" "0"
 
         /**
          * Give extra molotov for the knife kill.
@@ -434,7 +434,7 @@
          * 0 - disabled
          * 1 - enabled
          */
-        "ExtraMolotovOnKnifeKill" "1"
+        "ExtraMolotovOnKnifeKill" "0"
 
         /**
          * This gives the player a weapon with 50 bullets on molotov level.
@@ -477,7 +477,7 @@
          *     "NadeBonus" "deagle" - gives deagle
          *     "NadeBonus" ""       - feature disabled
          */
-        "NadeBonus" ""
+        "NadeBonus" "glock"
 
         /* Gives a smoke grenade on nade level */
         "NadeSmoke" "0"
@@ -498,7 +498,7 @@
          * 1 - Enable
          * 2 - Enable only for knife kills
          */
-        "ExtraNade" "0"
+        "ExtraNade" "1"
 
         /* Gives unlimited hegrenades to the player if he is on nage level */
         "UnlimitedNades" "0"
@@ -513,7 +513,7 @@
          * 0 - Disable
          * 1 and above - Minimum number of players in each team for UnlimitedNames to be on.
          */
-        "UnlimitedNadesMinPlayers" "1"
+        "UnlimitedNadesMinPlayers" "0"
         
         /**
          * Number of nades on the nade level.
@@ -526,10 +526,10 @@
         /* ----- [1.6. multi level] ----- */
         
         /* Multi Level Bonus */
-        "MultiLevelBonus" "0"
+        "MultiLevelBonus" "1"
 
         /* Enable God Mode when multi leveled */
-        "MultiLevelBonusGodMode" "1"
+        "MultiLevelBonusGodMode" "0"
 
         /**
          * Custom speed and gravity value multiplier for multi level bonus.
@@ -539,7 +539,7 @@
         "MultiLevelBonusSpeed" "1.5"
 
         /* Miltilevel visual effect */
-        "MultiLevelEffect" "0"
+        "MultiLevelEffect" "1"
 
         /* How much levels is needed to get bonus */
         "MultiLevelAmount" "3"
@@ -558,7 +558,7 @@
         "WarmupEnabled" "1"
 
         /* Warmup time length */
-        "WarmupTimeLength" "60"
+        "WarmupTimeLength" "20"
 
         /**
          * Give random weapon on warmup.
@@ -598,7 +598,7 @@
         "AfkManagement" "1"
 
         /* Kick player on x number of afk deaths. */
-        "AfkDeaths" "5"
+        "AfkDeaths" "3"
 
         /**
          * What action to deal with the player when the maximum is reach?
@@ -623,7 +623,7 @@
         /* ===== [5. GUNGAME DISPLAY WINNER CONFIG] ===== */
         
         /* Display winner in MOTD window. */
-        "DisplayWinnerMotd" "1"
+        "DisplayWinnerMotd" "0"
 
         /**
           * URL to display in MOTD window. 
@@ -643,7 +643,7 @@
          * 0 - Add win into stats.
          * 1 - Don't add win into stats.
          */
-        "DontAddWinsOnBot" "0"
+        "DontAddWinsOnBot" "1"
 
         /* ===== [6. GUNGAME BOTS CONFIG] ===== */
 
@@ -679,9 +679,9 @@
         "LevelDown"         "gungame/smb3_powerdown.mp3"
         "Triple"            "gungame/smb_star.mp3"
         "Autoff"            "gungame/smb_warning2.mp3"
-        "MultiKill"         "gungame/multikill.mp3"   // (Ñ) VALVE
+        "MultiKill"         "gungame/multikill.mp3"   // (ï¿½) VALVE
         /* Put each song filename in this list seperated by commas */
-        "Winner"            "gungame/winner.mp3"      // (Ñ) VALVE
-        "WarmupTimerSound"  "gungame/timer.mp3"       // (Ñ) VALVE
+        "Winner"            "gungame/winner.mp3"      // (ï¿½) VALVE
+        "WarmupTimerSound"  "gungame/timer.mp3"       // (ï¿½) VALVE
     }
 }
