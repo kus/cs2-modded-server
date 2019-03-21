@@ -35,8 +35,15 @@ export SERVER_PASSWORD="${SERVER_PASSWORD:-$(get_metadata SERVER_PASSWORD)}"
 export PORT="${META_PORT:-27015}"
 export TICKRATE="${META_TICKRATE:-128}"
 export MAXPLAYERS="${META_MAXPLAYERS:-32}"
+export DUCK_DOMAIN="${DUCK_DOMAIN:-$(get_metadata DUCK_DOMAIN)}"
+export DUCK_TOKEN="${DUCK_TOKEN:-$(get_metadata DUCK_TOKEN)}"
 
 cd /
+
+# Update DuckDNS with our current IP
+if [ ! -z "$DUCK_TOKEN" ]; then
+    echo url="http://www.duckdns.org/update?domains=$DUCK_DOMAIN&token=$DUCK_TOKEN&ip=$(dig +short myip.opendns.com @resolver1.opendns.com)" | curl -k -o /duck.log -K -
+fi
 
 # Download latest installer
 curl --silent --output "install.sh" "https://raw.githubusercontent.com/kus/csgo-modded-server/master/install.sh" && chmod +x install.sh
