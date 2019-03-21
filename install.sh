@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# To exit the screen session without disrupting the Steam process, press CTRL + A and then D.
-# To resume, use the `screen -r` command
-
 # Variables
 user="steam"
 IP="0.0.0.0"

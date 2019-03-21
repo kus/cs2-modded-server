@@ -41,5 +41,5 @@ cd /
 # Download latest installer
 curl --silent --output "install.sh" "https://raw.githubusercontent.com/kus/csgo-modded-server/master/install.sh" && chmod +x install.sh
 
-# Run in a screen session
-screen bash install.sh
+# Run
+bash install.sh
