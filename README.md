@@ -43,6 +43,63 @@ From the `csgo/maps/` folder:
 From the `csgo/maps/` folder:
 `curl -O http://yourdomain/maps.zip && unzip -u maps.zip`
 
+## Running the server on Google Cloud
+
+### Create firewall rule
+```
+gcloud compute firewall-rules create source \
+--allow tcp:27015-27020,udp:27015-27020
+```
+
+### Create instance
+```
+gcloud compute instances create <instance-name> \
+--project=<project> \
+--zone=australia-southeast1-a \
+--machine-type=n1-standard-2 \
+--network-tier=PREMIUM \
+--metadata=RCON_PASSWORD=changeme,STEAM_ACCOUNT=changeme,FAST_DL_URL=http://yourdomain/,MOD_URL=https://github.com/kus/csgo-modded-server/archive/master.zip,startup-script=/gcp.sh \
+--no-restart-on-failure \
+--maintenance-policy=MIGRATE \
+--scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/compute.readonly,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append \
+--tags=source \
+--image=ubuntu-1604-xenial-v20190306 \
+--image-project=ubuntu-os-cloud \
+--boot-disk-size=40GB \
+--boot-disk-type=pd-standard \
+--boot-disk-device-name=<instance-name>
+```
+
+### SSH to server
+```
+gcloud compute ssh <instance-name> \
+--zone=australia-southeast1-a
+```
+
+### Install mod
+```
+sudo su
+cd / && curl --silent --output "gcp.sh" "https://raw.githubusercontent.com/kus/csgo-modded-server/master/gcp.sh" && chmod +x gcp.sh && bash gcp.sh
+```
+
+### Stop server
+```
+gcloud compute instances stop <instance-name> \
+--zone australia-southeast1-a
+```
+
+### Start server
+```
+gcloud compute instances start <instance-name> \
+--zone australia-southeast1-a
+```
+
+### Delete server
+```
+gcloud compute instances delete <instance-name> \
+--zone australia-southeast1-a
+```
+
 ## License
 
 See `LICENSE` for more details.
