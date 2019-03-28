@@ -49,4 +49,4 @@ fi
 curl --silent --output "install.sh" "https://raw.githubusercontent.com/kus/csgo-modded-server/master/install.sh" && chmod +x install.sh
 
 # Run
-bash install.sh
+bash install.sh |& tee /install.log
