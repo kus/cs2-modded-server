@@ -64,14 +64,14 @@ if [ ! -d "/steamcmd" ]; then
 	mkdir /steamcmd && cd /steamcmd
 	wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
 	tar -xvzf steamcmd_linux.tar.gz
-	mkdir -p /home/steam/.steam/sdk32/
-	ln -s /home/steam/linux32/steamclient.so /home/steam/.steam/sdk32/steamclient.so
+	mkdir -p /root/.steam/sdk32/
+	ln -s /steamcmd/linux32/steamclient.so /root/.steam/sdk32/steamclient.so
 fi
 
 echo "Downloading any updates for CS:GO..."
 /steamcmd/steamcmd.sh +login anonymous \
   +force_install_dir /home/${user}/csgo \
-  +app_update 740 \
+  +app_update 740 validate \
   +quit
 
 cd /home/${user}
