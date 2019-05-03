@@ -74,7 +74,7 @@ gcloud compute instances create <instance-name> \
 --zone=australia-southeast1-a \
 --machine-type=n1-standard-2 \
 --network-tier=PREMIUM \
---metadata=RCON_PASSWORD=changeme,STEAM_ACCOUNT=changeme,FAST_DL_URL=http://yourdomain/,DUCK_DOMAIN=changeme,DUCK_TOKEN=changeme,MOD_URL=https://github.com/kus/csgo-modded-server/archive/master.zip,startup-script=\#\!/usr/bin/env\ bash$'\n'bash\ /gcp.sh \
+--metadata=RCON_PASSWORD=changeme,STEAM_ACCOUNT=changeme,FAST_DL_URL=http://yourdomain/,DUCK_DOMAIN=changeme,DUCK_TOKEN=changeme,MOD_URL=https://github.com/kus/csgo-modded-server/archive/master.zip,startup-script=\#\!/usr/bin/env\ bash$'\n'echo\ "Delaying\ for\ 10\ seconds..."\ &&\ sleep\ 10\ &&\ bash\ /gcp.sh \
 --no-restart-on-failure \
 --maintenance-policy=MIGRATE \
 --scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/compute.readonly,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append \
