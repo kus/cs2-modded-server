@@ -12,4 +12,6 @@ Configs
 	"cfg/deathrun.cfg"		"Death run"
 	"cfg/surf.cfg"			"Surf"
 	"cfg/respawn.cfg"		"Enable respawn"
+	"cfg/sourcemod/bunnyhop_on.cfg"		"Enable bunny hopping"
+	"cfg/sourcemod/bunnyhop_off.cfg"	"Restore normal movement"
 }

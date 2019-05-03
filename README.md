@@ -18,7 +18,7 @@ Includes a bash script to automatically setup a Unbuntu server on Google Cloud a
 Mod | Version | Why
 --- | --- | ---
 [Metamod:Source](http://www.sourcemm.net/downloads.php?branch=stable) | `1.10.7-git970` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
-[SourceMod](https://www.sourcemod.net/downloads.php?branch=stable) | `1.9.0-git6276` | SourceMod is server modification for any game that runs on the Half-Life 2 engine
+[SourceMod](https://www.sourcemod.net/downloads.php?branch=stable) | `1.9.0-git6280` | SourceMod is server modification for any game that runs on the Half-Life 2 engine
 [GunGame](https://forums.alliedmods.net/showthread.php?t=93977) | `1.2.16` | Kill an enemy with the current weapon to get next weapon, first person to go through every weapon wins
 [DeathMatch](https://forums.alliedmods.net/showthread.php?t=103242) | `1.8.0` | Adds deathmatch mode and spawn protection to the game
 [Quake Sounds](https://forums.alliedmods.net/showthread.php?t=224316) | `3.5.0` | Plays sounds and displays text at certain events sometimes based on the number of kills
@@ -42,6 +42,22 @@ From the `csgo/maps/` folder:
 
 From the `csgo/maps/` folder:
 `curl -O http://yourdomain/maps.zip && unzip -u maps.zip`
+
+## Updating Metamod/SourceMod
+
+Periodically CS:GO will release updates which break Metamod:Source and SourceMod (the server won't start), and they will patch for the updates and release new updates. These need to be applied for the server to run properly. I will try to keep them up to date here which your server will automatically download if using my Linux gcp script but in the case I haven't updated them you can update them your self by checking the version I have bundled above and downloading the latest and putting on your server manually.
+
+### SourceMod
+
+[Download](https://www.sourcemod.net/downloads.php?branch=stable) Linux and Window and in each folder do the following:
+
+From `/addons/sourcemod/` copy `bin`, `extensions`, `gamedata`, `sripting`, `translations` to your servers `/addons/sourcemod/` and *Merge All*
+
+### Metamod:Source
+
+[Download](http://www.sourcemm.net/downloads.php?branch=stable) Linux and Window and in each folder do the following:
+
+From `/addons/metamod/` copy `bin` to your servers `/addons/metamod/` and *Merge All*
 
 ## Running the server on Google Cloud
 
