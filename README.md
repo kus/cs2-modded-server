@@ -43,6 +43,25 @@ From the `csgo/maps/` folder:
 From the `csgo/maps/` folder:
 `curl -O http://yourdomain/maps.zip && unzip -u maps.zip`
 
+## Fast DL
+
+By default the download limit of CS:GO is capped at 20kb/s and also adds additional strain to servers if multiple clients are downloading files at the same time on map changes.
+
+[sv_downloadurl](https://developer.valvesoftware.com/wiki/Sv_downloadurl) allows CS:GO clients to get custom server content (maps/sounds etc) at high speeds from web servers using HTTP which also takes the strain off the game server.
+
+A [bash script](https://github.com/kus/csgo-modded-server/blob/master/scripts/bzip.sh) is included to make this process easy and automatically create the correct directory structure and compress your files with [bzip2](https://en.wikipedia.org/wiki/Bzip2) and create a "fastdl" folder which you simply host on a webserver and set your `FAST_DL_URL` on your server to something like `http://yoursite.com/fastdl/csgo`.
+
+Windows users can [download this](http://gnuwin32.sourceforge.net/packages/bzip2.htm) and manually create the directory structure and compress the files. Anything in `maps`, `sounds`, `materials`, `models` and you need to keep the same directory structure. You should end up with something like:
+
+```
+fastdl
+-csgo
+--maps
+--sounds
+--materials
+--models
+```
+
 ## Updating Metamod/SourceMod
 
 Periodically CS:GO will release updates which break Metamod:Source and SourceMod (the server won't start), and they will patch for the updates and release new updates. These need to be applied for the server to run properly. I will try to keep them up to date here which your server will automatically download if using my Linux gcp script but in the case I haven't updated them you can update them your self by checking the version I have bundled above and downloading the latest and putting on your server manually.
@@ -59,6 +78,22 @@ From `/addons/sourcemod/` copy `bin`, `extensions`, `gamedata`, `sripting`, `tra
 
 From `/addons/metamod/` copy `bin` to your servers `/addons/metamod/` and *Merge All*
 
+## Acessing admin menu
+
+Bind a key to `sm_admin` from console i.e. `bind p sm_admin` then press `p` and the admin menu should open.
+
+If you want to add admins, you need to edit this file `/addons/sourcemod/configs/admins_simple.ini` and add the admin to the bottom i.e. `"STEAM_0:0:56050"	"9:z"` save the file and if the server is running run `sm_reloadadmins` and reconnect to the server.
+
+If you want to read more about admin flags you can do that [here](https://wiki.alliedmods.net/Adding_Admins_(SourceMod)).
+
+Note: `/addons/sourcemod/configs/admins_simple.ini` will be overwritten by my script defaultly each time `install.sh` runs so once you have `install.sh` on your server you may want to update `gcp.sh` and comment out the `curl` line which downloads the latest `install.sh` as it shouldn't change too much.
+
+Open `install.sh` and after it dynamically creates `cfg/env.cfg` you there is commented out code that will dynamically overwrite `/addons/sourcemod/configs/admins_simple.ini` with your own admins. Simply update the Steam ID's and uncomment the lines.
+
+## Changing game modes
+
+Once you are setup as an admin, open up the admin menu and go to Server Commands > Exec Configs and choose a game mode i.e. "Competitive" and you need to change the map for it to properly kick in so open the admin menu again and Server Commands > Maps > de_dust2 and once the server changes map the new game mode will be running.
+
 ## Running the server on Google Cloud
 
 ### Create firewall rule
@@ -68,6 +103,7 @@ gcloud compute firewall-rules create source \
 ```
 
 ### Create instance
+You need to create a Steam [Game Login Token](https://steamcommunity.com/dev/managegameservers) and set `STEAM_ACCOUNT` to the key.
 ```
 gcloud compute instances create <instance-name> \
 --project=<project> \

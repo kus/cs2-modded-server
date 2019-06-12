@@ -107,6 +107,12 @@ fi
 echo "" >> /home/${user}/csgo/csgo/cfg/env.cfg
 echo "echo \"env.cfg executed\"" >> /home/${user}/csgo/csgo/cfg/env.cfg
 
+# Uncomment below for custom admins
+# echo "Dynamically writing /home/$user/csgo/csgo/addons/sourcemod/configs/admins_simple.ini"
+# echo "\"STEAM_0:0:56050\"	\"9:z\"	// Kus" > /home/${user}/csgo/csgo/addons/sourcemod/configs/admins_simple.ini
+# echo "\"STEAM_0:0:2\"	\"8:z\"	// Second user" >> /home/${user}/csgo/csgo/addons/sourcemod/configs/admins_simple.ini
+# echo "\"STEAM_0:0:3\"	\"8:z\"	// Third user" >> /home/${user}/csgo/csgo/addons/sourcemod/configs/admins_simple.ini
+
 chown -R ${user}:${user} /home/${user}/csgo
 
 cd /home/${user}/csgo
@@ -124,4 +130,5 @@ echo "Starting server on $PUBLIC_IP:$PORT"
     +game_mode 1 \
     +mapgroup mg_active \
     +map de_dust2 \
+    +exec boot.cfg \
     +ip $IP
