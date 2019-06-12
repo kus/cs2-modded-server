@@ -130,5 +130,4 @@ echo "Starting server on $PUBLIC_IP:$PORT"
     +game_mode 1 \
     +mapgroup mg_active \
     +map de_dust2 \
-    +exec boot.cfg \
     +ip $IP

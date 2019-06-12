@@ -5,6 +5,7 @@
 A single modded Counter-Strike: Global Offensive Dedicated Server that you can change the active mod on the server from the admin menu and is setup for:
  - GunGame +Turbo (get the next weapon straight away) +Deathmatch (respawn) +Quake sounds +Mario (on 3 kills)
  - WarMod (competitive)
+ - Deathmatch Free For All
  - Multi 1v1
  - Practice (record grenade throws etc)
  - Minigames
@@ -28,6 +29,7 @@ Mod | Version | Why
 [Multi 1v1](https://forums.alliedmods.net/showthread.php?t=241056) | `1.1.9` | Sets up 2+ players in separate 1v1 arenas, when all the arenas are done fighting, the winners move up an arena and the losers move down an arena
 [AbNeR DeathRun Manager](https://forums.alliedmods.net/showthread.php?t=272017) | `2.6` | Automates Deathrun Server
 [Map configs](https://forums.alliedmods.net/showthread.php?p=607079) | `1.3` | Load mod settings on map change for mods that don't have exec's on map change
+[Server Startup Configuration](https://forums.alliedmods.net/showthread.php?t=64625) | `0.2.1` | Run a config file on server boot once Source Mod loaded
 
 ## Maps
 
@@ -110,7 +112,7 @@ gcloud compute instances create <instance-name> \
 --zone=australia-southeast1-a \
 --machine-type=n1-standard-2 \
 --network-tier=PREMIUM \
---metadata=RCON_PASSWORD=changeme,STEAM_ACCOUNT=changeme,FAST_DL_URL=http://yourdomain/,DUCK_DOMAIN=changeme,DUCK_TOKEN=changeme,MOD_URL=https://github.com/kus/csgo-modded-server/archive/master.zip,startup-script=\#\!/usr/bin/env\ bash$'\n'echo\ "Delaying\ for\ 10\ seconds..."\ &&\ sleep\ 10\ &&\ bash\ /gcp.sh \
+--metadata=RCON_PASSWORD=changeme,STEAM_ACCOUNT=changeme,FAST_DL_URL=http://yourdomain/,DUCK_DOMAIN=changeme,DUCK_TOKEN=changeme,MOD_URL=https://github.com/kus/csgo-modded-server/archive/master.zip,startup-script=echo\ "Delaying\ for\ 10\ seconds..."\ &&\ sleep\ 10\ &&\ cd\ /\ &&\ /gcp.sh \
 --no-restart-on-failure \
 --maintenance-policy=MIGRATE \
 --scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/compute.readonly,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append \
