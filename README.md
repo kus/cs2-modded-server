@@ -29,7 +29,6 @@ Mod | Version | Why
 [Multi 1v1](https://forums.alliedmods.net/showthread.php?t=241056) | `1.1.9` | Sets up 2+ players in separate 1v1 arenas, when all the arenas are done fighting, the winners move up an arena and the losers move down an arena
 [AbNeR DeathRun Manager](https://forums.alliedmods.net/showthread.php?t=272017) | `2.6` | Automates Deathrun Server
 [Map configs](https://forums.alliedmods.net/showthread.php?p=607079) | `1.3` | Load mod settings on map change for mods that don't have exec's on map change
-[Server Startup Configuration](https://forums.alliedmods.net/showthread.php?t=64625) | `0.2.1` | Run a config file on server boot once Source Mod loaded
 
 ## Maps
 
