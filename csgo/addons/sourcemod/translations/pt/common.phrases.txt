@@ -250,4 +250,24 @@
 		"pt"		"Você não pode alterar a sua escolha nesta votação."
 	}
 
+	"Say all"
+	{
+		"pt"		"(TODOS) {1}"
+	}
+
+	"Private say to"
+	{
+		"pt"		"(Privado para {1}) {2}"
+	}
+
+	"Chat to admins"
+	{
+		"pt"		"(PARA ADMINS) {1}"
+	}
+
+	"Chat admins"
+	{
+		"pt"		"(ADMINS) {1}"
+	}
+
 }

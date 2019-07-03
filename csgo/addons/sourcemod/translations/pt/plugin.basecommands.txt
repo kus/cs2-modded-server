@@ -125,4 +125,14 @@
 		"pt"		"A cvar {1} não foi encontrada."
 	}
 
+	"Please select a map"
+	{
+		"pt"		"Por favor escolha um mapa"
+	}
+
+	"Choose Config"
+	{
+		"pt"		"Escolha a configuração"
+	}
+
 }
