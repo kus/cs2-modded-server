@@ -21,7 +21,7 @@ Mod | Version | Why
 [Metamod:Source](http://www.sourcemm.net/downloads.php?branch=stable) | `1.10.7-git970` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
 [SourceMod](https://www.sourcemod.net/downloads.php?branch=stable) | `1.9.0-git6280` | SourceMod is server modification for any game that runs on the Half-Life 2 engine
 [GunGame](https://forums.alliedmods.net/showthread.php?t=93977) | `1.2.16` | Kill an enemy with the current weapon to get next weapon, first person to go through every weapon wins
-[DeathMatch](https://forums.alliedmods.net/showthread.php?t=103242) | `1.8.0` | Adds deathmatch mode and spawn protection to the game
+[DeathMatch](https://forums.alliedmods.net/showthread.php?t=103242) | `1.8.0` | Required for GunGame to enable spawn protection and other things to the game
 [Quake Sounds](https://forums.alliedmods.net/showthread.php?t=224316) | `3.5.0` | Plays sounds and displays text at certain events sometimes based on the number of kills
 [NoBlock](https://forums.alliedmods.net/showthread.php?t=91617) | `1.4.2` | Removes player vs player collisions
 [WarMod](https://forums.alliedmods.net/showthread.php?t=225474) | `17.08.12.1053` | Used for competitive matches, and provides the flexibility to suit any form of competition, including large tournaments down to clan matches
@@ -29,6 +29,7 @@ Mod | Version | Why
 [Multi 1v1](https://forums.alliedmods.net/showthread.php?t=241056) | `1.1.9` | Sets up 2+ players in separate 1v1 arenas, when all the arenas are done fighting, the winners move up an arena and the losers move down an arena
 [AbNeR DeathRun Manager](https://forums.alliedmods.net/showthread.php?t=272017) | `2.6` | Automates Deathrun Server
 [Map configs](https://forums.alliedmods.net/showthread.php?p=607079) | `1.3` | Load mod settings on map change for mods that don't have exec's on map change
+[Deathmatch v2](https://forums.alliedmods.net/showthread.php?t=246405) | `2.0.9` | Custom deathmatch
 
 ## Maps
 

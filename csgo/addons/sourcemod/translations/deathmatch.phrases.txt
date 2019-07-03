@@ -1,0 +1,351 @@
+"Phrases"
+{
+    "Guns Menu"
+    {
+        "br"    "Digite {green}guns{default} para abrir o menu de armas."
+        "en"    "Type {green}guns{default} to open the weapons menu."
+        "es"    "Escriba {green}guns{default} para abrir el menú de armas."
+        "de"    "Schreibe {green}guns{default} um das Waffenmenü zu öffnen."
+        "fr"    "Tapez {green}guns{default} pour ouvrir le menu des armes."
+        "pl"    "Napisz {green}guns{default} aby otworzyć menu broni."
+        "ru"    "Напечатайте {green}guns{default} что бы открыть меню оружия."
+    }
+
+    "Guns Disabled"
+    {
+        "br"    "O menu de armas foi {red}desativado{default}."
+        "en"    "The guns menu has been {red}disabled{default}."
+        "es"    "El menú de armas se ha {red}desactivado{default}."
+        "de"    "Das Waffenmenü wurde {red}deaktiviert{default}."
+        "fr"    "Le menu des armes a été {red}désactivé{default}."
+        "pl"    "Menu broni zostało {red}wyłączone{default}."
+        "ru"    "Меню оружия было {red}отключено{default}."
+    }
+    "HS Only"
+    {
+        "br"    "HS Only mode is {green}enabled{default}."
+        "en"    "HS Only mode is {green}enabled{default}."
+        "es"    "HS Only mode is {green}enabled{default}."
+        "de"    "HS Only Modus wurde {green}aktiviert{default}."
+        "fr"    "HS Only mode is {green}enabled{default}."
+        "pl"    "HS Only mode is {green}enabled{default}."
+        "ru"    "HS Only mode is {green}enabled{default}."
+    }
+    "HS Only Client"
+    {
+        "br"    "Type {green}hs{default} to enable personal HS only client mode."
+        "en"    "Type {green}hs{default} to enable personal HS only client mode."
+        "es"    "Type {green}hs{default} to enable personal HS only client mode."
+        "de"    "Schreibe {green}hs{default} um den persönlichen HS Modus zu aktivieren."
+        "fr"    "Type {green}hs{default} to enable personal HS only client mode."
+        "pl"    "Type {green}hs{default} to enable personal HS only client mode."
+        "ru"    "Type {green}hs{default} to enable personal HS only client mode."
+    }
+    "HS Only Client Disabled"
+    {
+        "br"    "HS Only Client mode has been {red}disabled{default}."
+        "en"    "HS Only Client mode has been {red}disabled{default}."
+        "es"    "HS Only Client mode has been {red}disabled{default}."
+        "de"    "HS Only Client Modus wurde {red}deaktiviert{default}."
+        "fr"    "HS Only Client mode has been {red}disabled{default}."
+        "pl"    "HS Only Client mode has been {red}disabled{default}."
+        "ru"    "HS Only Client mode has been {red}disabled{default}."
+    }
+    
+    "HS Only Client Enabled"
+    {
+        "br"    "HS Only Client mode has been {green}enabled{default}."
+        "en"    "HS Only Client mode has been {green}enabled{default}."
+        "es"    "HS Only Client mode has been {green}enabled{default}."
+        "de"    "HS Only Client Modus wurde {green}aktiviert{default}."
+        "fr"    "HS Only Client mode has been {green}enabled{default}."
+        "pl"    "HS Only Client mode has been {green}enabled{default}."
+        "ru"    "HS Only Client mode has been {green}enabled{default}."
+    }
+
+    "Guns New Spawn"
+    {
+        "br"    "Voce recebera a {green}nova{default} arma no próximo spawn."
+        "en"    "You will be given {green}new{default} weapons on next spawn."
+        "es"    "Se le dará {green}nuevas{default} armas en el próximo desove."
+        "de"    "Beim nächsten Spawn erhältst du {grün}neue{default} Waffen."
+        "fr"    "Vous recevrez de {green}nouvelles{default} armes sur le prochain spawn."
+        "pl"    "Zostaną dodane {green}nowe{default} bronie po respawnie."
+        "ru"    "Вы получите {green}новое{default} оружие в следующем возрождении."
+    }
+
+    "Guns Same Spawn"
+    {
+        "br"    "Você recebera as {green}mesmas{default} armas nos próximos spawns"
+        "en"    "You will be given {green}same{default} weapons on next spawn."
+        "es"    "Se le dará {green}mismas{default} armas en el próximo desove."
+        "de"    "Beim nächsten Spawn erhältst du die {grün}gleichen{default} Waffen."
+        "fr"    "Vous recevrez {green}mêmes{default} armes sur le prochain spawn."
+        "pl"    "Zostaną dodane {green}te same{default} bronie po respawnie."
+        "ru"    "Вы получите {green}аналогичное{default} оружие в следующем возрождении."
+    }
+
+    "Guns Random Spawn"
+    {
+        "br"    "Você recebera armas {green}aleatórias{default} nos próximos spawns"
+        "en"    "You will be given {green}random{default} weapons on next spawn."
+        "es"    "Se le dará armas {green}al azar{default} en el próximo desove."
+        "de"    "Beim nächsten Spawn erhältst du {grün}zufällige{default} Waffen."
+        "fr"    "Vous recevrez armes {green}aléatoires{default} sur le prochain spawn."
+        "pl"    "Zostaną dodane {green}losowe{default} bronie po respawnie."
+        "ru"    "Вы получите {green}случайное{default} оружие в следующем возрождении."
+    }
+
+    "Panel Health Remaining"
+    {
+        "br"    "Vida Restante:"
+        "en"    "Health Remaining:"
+        "es"    "Salud restante:"
+        "de"    "Verbleibende Gesundheit:"
+        "fr"    "Restant Santé:"
+        "pl"    "Pozostałe zdrowie:"
+        "ru"    "Оставшееся здоровье:"
+    }
+
+    "Panel Damage Giver"
+    {
+        "br"    "Você fez"
+        "en"    "You did"
+        "es"    "Lo hiciste"
+        "de"    "Du hast es geschafft"
+        "fr"    "Vous avez"
+        "pl"    "Zadałeś"
+        "ru"    "Вы совершили"
+    }
+
+    "Panel Damage Taker"
+    {
+        "br"    "danos ao"
+        "en"    "damage to"
+        "es"    "daño a"
+        "de"    "schaden"
+        "fr"    "dommages à"
+        "pl"    "obrażeń graczowi"
+        "ru"    "урон по"
+    }
+
+    "Panel Kill Confirmed"
+    {
+        "br"    "Você matou."
+        "en"    "You killed him."
+        "es"    "Usted lo mató."
+        "de"    "Du hast ihn getötet."
+        "fr"    "Vous l'avez tué."
+        "pl"    "Zabiłeś go."
+        "ru"    "Вы убили его."
+    }
+
+    "HP Knife Kill"
+    {
+        "br"    "Por matar um inimigo com a ({green}faca{default})."
+        "en"    "for killing an enemy ({green}knife{default})."
+        "es"    "por matar a un enemigo ({green}cuchillo{default})."
+        "de"    "für das Töten eines Gegners mit dem ({green}Messer{default})."
+        "fr"    "pour avoir frag ({green}couteau{default})."
+        "pl"    "za zabicie przeciwnika ({green}nożem{default})."
+        "ru"    "за убийство противника ({green}ножом{default})."
+    }
+
+    "HP Headshot Kill"
+    {
+        "br"    "Por matar um inimigo de ({green}headshot{default})."
+        "en"    "for killing an enemy ({green}headshot{default})."
+        "es"    "por matar a un enemigo ({green}disparo a la cabeza{default})."
+        "de"    "für das Töten eines Gegners mit einem ({green}Kopfschuss{default})."
+        "fr"    "pour avoir frag ({green}à la tête{default})."
+        "pl"    "za zabicie przeciwnika ({green}headshotem{default})."
+        "ru"    "за убийство противника ({green}в голову{default})."
+    }
+
+    "HP Nade Kill"
+    {
+        "br"    "Por matar um inimigo na ({green}granada{default})."
+        "en"    "for killing an enemy ({green}grenade{default})."
+        "es"    "por matar a un enemigo ({green}granada{default})."
+        "de"    "für das Töten eines Gegners mit einer ({green}Granate{default})."
+        "fr"    "pour avoir frag ({green}grenade{default})."
+        "pl"    "za zabicie przeciwnika ({green}granatem{default})."
+        "ru"    "за убийство противника ({green}гранатой{default})."
+    }
+
+    "HP Kill"
+    {
+        "br"    "Por matar um inimigo."
+        "en"    "for killing an enemy."
+        "es"    "por matar a un enemigo."
+        "de"    "für das Töten eines Gegners."
+        "fr"    "pour avoir frag."
+        "pl"    "za zabicie przeciwnika."
+        "ru"    "за убийство противника."
+    }
+
+    "AP Knife Kill"
+    {
+        "br"    "Por matar um inimigo com a ({green}faca{default})."
+        "en"    "for killing an enemy ({green}knife{default})."
+        "es"    "por matar a un enemigo ({green}cuchillo{default})."
+        "de"    "für das Töten eines Gegners mit dem ({green}Messer{default})."
+        "fr"    "pour avoir frag ({green}couteau{default})."
+        "pl"    "za zabicie przeciwnika ({green}nożem{default})."
+        "ru"    "за убийство противника ({green}ножом{default})."
+    }
+
+    "AP Headshot Kill"
+    {
+        "br"    "Por matar um inimigo de ({green}headshot{default})."
+        "en"    "for killing an enemy ({green}headshot{default})."
+        "es"    "por matar a un enemigo ({green}disparo a la cabeza{default})."
+        "de"    "für das Töten eines Gegners mit einem ({green}Kopfschuss{default})."
+        "fr"    "pour avoir frag ({green}à la tête{default})."
+        "pl"    "za zabicie przeciwnika ({green}headshotem{default})."
+        "ru"    "за убийство противника ({green}в голову{default})."
+    }
+
+    "AP Nade Kill"
+    {
+        "br"    "Por matar um inimigo na ({green}granada{default})."
+        "en"    "for killing an enemy ({green}grenade{default})."
+        "es"    "por matar a un enemigo ({green}granada{default})."
+        "de"    "für das Töten eines Gegners mit einer ({green}Granate{default})."
+        "fr"    "pour avoir frag ({green}grenade{default})."
+        "pl"    "za zabicie przeciwnika ({green}granatem{default})."
+        "ru"    "за убийство противника ({green}гранатой{default})."
+    }
+
+    "AP Kill"
+    {
+        "br"    "Por matar um inimigo."
+        "en"    "for killing an enemy."
+        "es"    "por matar a un enemigo."
+        "de"    "für das Töten eines Gegners."
+        "fr"    "pour avoir frag."
+        "pl"    "za zabicie przeciwnika."
+        "ru"    "за убийство противника."
+    }
+
+    "Spawn Editor Enabled"
+    {
+        "br"    "Edit mode {green}ativado{default}."
+        "en"    "Edit mode {green}enabled{default}."
+        "es"    "El modo de edición {green}activado{default}."
+        "de"    "Bearbeitungsmodus {grün}aktiviert{default}."
+        "fr"    "Modifier le mode {green}activé{default}."
+        "pl"    "Tryb edycji {green}włączony{default}."
+        "ru"    "Режим редактирования {green}включен{default}."
+    }
+
+    "Spawn Editor Disabled"
+    {
+        "br"    "Edit mode {red}desativado{default}."
+        "en"    "Edit mode {red}disabled{default}."
+        "es"    "El modo de edición {red}deshabilitado{default}."
+        "de"    "Bearbeitungsmodus {red}deaktiviert{default}."
+        "fr"    "Modifier le mode {red}désactivé{default}."
+        "pl"    "Tryb edycji {red}wyłączony{default}."
+        "ru"    "Режим редактирования {red}отключен{default}."
+    }
+
+    "Spawn Editor Teleported"
+    {
+        "br"    "Teleportado para spawn point"
+        "en"    "Teleported to spawn point"
+        "es"    "Teletransportado a desovar puntos"
+        "de"    "Teleportiert zum Spawn"
+        "fr"    "Téléporté pour frayer le point"
+        "pl"    "Przeteleportowany do punktu respawnu"
+        "ru"    "Телепортирован к точке возрождения"
+    }
+
+    "Spawn Editor No Spawn"
+    {
+        "br"    "Não há pontos de spawn."
+        "en"    "There are no spawn points."
+        "es"    "No hay puntos de regeneración."
+        "de"    "Es sind keine Spawnpunkte vorhanden."
+        "fr"    "Il n'y a pas de points de spawn."
+        "pl"    "Brak punktów respawnu."
+        "ru"    "Точек возрождения здесь нет."
+    }
+
+    "Spawn Editor Deleted Spawn"
+    {
+        "br"    "Ponto de spwan deletado."
+        "en"    "Deleted spawn point"
+        "es"    "Punto de desovar eliminados"
+        "de"    "Spawnpunkt gelöscht"
+        "fr"    "Point de spawn supprimé"
+        "pl"    "Usunięto punkt respawnu"
+        "ru"    "Точка возрождения удалена"
+    }
+
+    "Spawn Editor Deleted All"
+    {
+        "br"    "Todos os pontos de spwan deletados."
+        "en"    "All spawn points have been deleted."
+        "es"    "Se han eliminado todos los puntos de regeneración."
+        "de"    "Alle Spawnpunkte wurden gelöscht"
+        "fr"    "Tous les points spawn ont été supprimés."
+        "pl"    "Wszystkie punkty respawnu zostały usunięte."
+        "ru"    "Все точки возрождения были удалены."
+    }
+
+    "Spawn Editor Spawn Added"
+    {
+        "br"    "Adicionado ponto de spawn"
+        "en"    "Added spawn point"
+        "es"    "Punto de desovar añadido"
+        "de"    "Spawnpunkt hinzugefügt"
+        "fr"    "Point de spawn Ajouté"
+        "pl"    "Dodano punkt respawnu"
+        "ru"    "Точка возрождения добавлена"
+    }
+
+    "Spawn Editor Spawn Not Added"
+    {
+        "br"    "Não foi possível adicionar ponto de spawn (limite máximo alcançado)."
+        "en"    "Could not add spawn point (max limit reached)."
+        "es"    "No se pudo añadir punto de desovar (límite máximo alcanzado)."
+        "de"    "Es konnte kein weiterer Spawn hinzugefügt werden (Maximale Anzahl ereicht)."
+        "fr"    "Impossible d'ajouter le point spawn (limite maximale atteinte)."
+        "pl"    "Nie można dodać punktu respawnu (maksymalny limit osiągnięty)."
+        "ru"    "Не удалось добавить точки возрождения (превышен их предел)."
+    }
+
+    "Spawn Editor Spawn Inserted"
+    {
+        "br"    "Ponto de spawn inserido no"
+        "en"    "Inserted spawn point at"
+        "es"    "Punto de desovar Insertado en"
+        "de"    "Eingefügter Spawnpunkt bei"
+        "fr"    "Point de spawn inséré à"
+        "pl"    "Ustawiono punkt respawnu na"
+        "ru"    "Вставить точку возрождения в"
+    }
+
+    "Spawn Editor Config Saved"
+    {
+        "br"    "A configuração foi salva."
+        "en"    "Configuration has been saved."
+        "es"    "La configuración se ha guardado."
+        "de"    "Konfiguration wurde gespeichert"
+        "fr"    "Configuration a été enregistrée."
+        "pl"    "Konfiguracja została zapisana."
+        "ru"    "Конфигурация была сохранена."
+    }
+
+    "Spawn Editor Config Not Saved"
+    {
+        "br"    "Configuração não pôde ser salva."
+        "en"    "Configuration could not be saved."
+        "es"    "La configuración no ha podido guardar."
+        "de"    "Konfiguration konnte nicht gespeichert werden."
+        "fr"    "Configuration n'a pas pu être sauvé."
+        "pl"    "Konfigurcja nie może zostać zapisana."
+        "ru"    "Конфигурация не может быть сохранена."
+    }
+}
