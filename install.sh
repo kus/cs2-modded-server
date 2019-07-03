@@ -71,7 +71,7 @@ fi
 echo "Downloading any updates for CS:GO..."
 /steamcmd/steamcmd.sh +login anonymous \
   +force_install_dir /home/${user}/csgo \
-  +app_update 740 validate \
+  +app_update 740 \
   +quit
 
 cd /home/${user}
