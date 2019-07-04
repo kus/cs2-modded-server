@@ -127,7 +127,7 @@ echo "Starting server on $PUBLIC_IP:$PORT"
     -port $PORT \
     -maxplayers_override $MAXPLAYERS \
     +game_type 0 \
-    +game_mode 1 \
+    +game_mode 0 \
     +mapgroup mg_active \
     +map de_dust2 \
     +ip $IP

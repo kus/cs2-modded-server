@@ -12,7 +12,10 @@ A single modded Counter-Strike: Global Offensive Dedicated Server that you can c
  - Deathrun
  - Surf
 
-Includes a bash script to automatically setup a Unbuntu server on Google Cloud and a batch script for Windows.
+Getting up and running:
+ - [Running on Linux](#running-on-linux)
+ - [Running on Windows](#running-on-windows)
+ - [Running on Google Cloud](#running-on-google-cloud)
 
 ## Mods installed
 
@@ -96,7 +99,7 @@ Open `install.sh` and after it dynamically creates `cfg/env.cfg` you there is co
 
 Once you are setup as an admin, open up the admin menu and go to Server Commands > Exec Configs and choose a game mode i.e. "Competitive" and you need to change the map for it to properly kick in so open the admin menu again and Server Commands > Maps > de_dust2 and once the server changes map the new game mode will be running.
 
-## Running the server on Google Cloud
+## Running on Google Cloud
 
 ### Create firewall rule
 ```
@@ -153,6 +156,97 @@ gcloud compute instances start <instance-name> \
 gcloud compute instances delete <instance-name> \
 --zone australia-southeast1-a
 ```
+
+## Running on Linux
+Make sure you have **25GB free space**.
+
+* **If setting up internet server:**
+
+   Set environment variable `STEAM_ACCOUNT` to your [Game Server Login Token](https://steamcommunity.com/dev/managegameservers)
+
+* **If setting up LAN server:**
+
+   Set environment variable `LAN` to `1`
+
+```
+sudo su
+export LAN="0"
+export RCON_PASSWORD="changeme"
+export STEAM_ACCOUNT=""
+export FAST_DL_URL=""
+export MOD_URL="https://github.com/kus/csgo-modded-server/archive/master.zip"
+export SERVER_PASSWORD=""
+export PORT="27015"
+export TICKRATE="128"
+export MAXPLAYERS="32"
+cd / && curl --silent --output "install.sh" "https://raw.githubusercontent.com/kus/csgo-modded-server/master/install.sh" && chmod +x install.sh && bash install.sh
+```
+
+* **If running for the first time**
+
+   Once the CS:GO server has started close it
+
+   Copy your maps to `/home/steam/csgo/csgo/maps/`
+
+   Update each `/csgo/mapcycle_` file to match your maps
+
+   Open `/install.sh` and after it dynamically creates `cfg/env.cfg` you there is commented out code that will dynamically overwrite `/addons/sourcemod/configs/admins_simple.ini` with your own admins. Simply update the Steam ID's and uncomment the lines.
+
+   Run `./install.sh` again
+
+When you join the server you can [change game modes](#changing-game-modes).
+
+## Running on Windows
+Make sure you have **25GB free space**.
+
+[Download this repo](https://github.com/kus/csgo-modded-server/archive/master.zip) and extract it to where you want your server (i.e. `C:\Server\csgo-modded-server`). All the following instructions will use this as the root.
+
+Create a folder `steamcmd` and [download SteamCMD](https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip) and extract it inside `steamcmd` so you should have `\steamcmd\steamcmd.exe`.
+
+* **If setting up internet server:**
+
+   Open `\csgo\cfg\env.cfg`
+
+   Set `sv_setsteamaccount` to your [Game Server Login Token](https://steamcommunity.com/dev/managegameservers)
+
+   Open `\win.ini`
+
+   Set `ip_internet` to your [public ip](http://checkip.amazonaws.com/)
+
+* **If setting up LAN server:**
+
+   Open `\csgo\cfg\env.cfg`
+
+   Set `sv_lan` to `1`
+
+[Add admins](#acessing-admin-menu)
+
+Run `win.bat`
+
+* **If running for the first time**
+
+   Once the CS:GO server has started close it
+
+   Copy your maps to `\server\csgo\maps\`
+
+   Update each `\csgo\mapcycle_` file to match your maps
+
+   Run `win.bat` again
+
+When you join the server you can [change game modes](#changing-game-modes).
+
+## How do I connect to RCON remotely?
+[Download SourceAdminTool](https://users.alliedmods.net/~drifter/SAT/) for your OS (you can read about it [here](https://forums.alliedmods.net/showthread.php?t=289370)) and click `Servers > Add Servers` and put in the `<IP>:27015` and when you see the server show in the list, down the bottom left type in your RCON password and click `Login` and you should be able to execute commands from the bottom text box i.e. `exec gg.cfg`
+
+## FAQ
+
+### Why can't I set the server to start automatically with a mod loaded
+Because the way the server is setup with several mods it's not possible. You can't use +exec in the server launcher as that executes to quick before SourceMod is loaded. You can monitor the server once it's started (via RCON) and then load a mod i.e. `exec gg.cfg` then `changelevel ar_shoots`.
+
+It would need a custom plguin that once the first map has loaded, it would execute a mod.cfg delayed and then change the map with a slight delay.
+
+### Why can't I set when a mod is loaded that it changes map
+I tried this, and it happens to fast before the mods are fully loaded. If there was a way to delay the map change command that would work.
 
 ## License
 
