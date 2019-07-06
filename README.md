@@ -38,15 +38,13 @@ Mod | Version | Why
 
 You need to source your own maps and update `csgo/mapcycle_*` to match your maps.
 
-### Zipping maps
+### Download maps
 
-From the `csgo/maps/` folder:
-`zip -vr -9 maps.zip . -x "*.DS_Store"`
-
-### Unzipping on server
-
-From the `csgo/maps/` folder:
-`curl -O http://yourdomain/maps.zip && unzip -u maps.zip`
+```
+# cd to "csgo" parent directory so you are in the same folder as srcds
+cd /home/steam/csgo/
+curl --silent --output "automate.sh" "https://raw.githubusercontent.com/kus/csgo-modded-server-assets/master/automate.sh" && chmod +x automate.sh && bash automate.sh
+```
 
 ## Fast DL
 
@@ -115,7 +113,7 @@ gcloud compute instances create <instance-name> \
 --zone=australia-southeast1-a \
 --machine-type=n1-standard-2 \
 --network-tier=PREMIUM \
---metadata=RCON_PASSWORD=changeme,STEAM_ACCOUNT=changeme,FAST_DL_URL=http://yourdomain/,DUCK_DOMAIN=changeme,DUCK_TOKEN=changeme,MOD_URL=https://github.com/kus/csgo-modded-server/archive/master.zip,startup-script=echo\ "Delaying\ for\ 30\ seconds..."\ &&\ sleep\ 30\ &&\ cd\ /\ &&\ /gcp.sh \
+--metadata=RCON_PASSWORD=changeme,STEAM_ACCOUNT=changeme,FAST_DL_URL=https://raw.githubusercontent.com/kus/csgo-modded-server-assets/master/csgo,DUCK_DOMAIN=changeme,DUCK_TOKEN=changeme,MOD_URL=https://github.com/kus/csgo-modded-server/archive/master.zip,startup-script=echo\ "Delaying\ for\ 30\ seconds..."\ &&\ sleep\ 30\ &&\ cd\ /\ &&\ /gcp.sh \
 --no-restart-on-failure \
 --maintenance-policy=MIGRATE \
 --scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/compute.readonly,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append \

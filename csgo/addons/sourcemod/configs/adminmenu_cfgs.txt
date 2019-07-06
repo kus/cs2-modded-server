@@ -16,6 +16,6 @@ Configs
 	"cfg/respawn.cfg"		"Enable respawn"
 	"cfg/sourcemod/bunnyhop_on.cfg"		"Enable bunny hopping"
 	"cfg/sourcemod/bunnyhop_off.cfg"	"Restore normal movement"
-	"cfg/sourcemod/dm_normal.cfg"	"DM: All guns"
+	"cfg/deathmatch_settings.cfg"	"DM: All guns"
 	"cfg/sourcemod/dm_pistols.cfg"	"DM: Pistols only"
 }

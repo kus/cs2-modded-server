@@ -16,8 +16,13 @@ ar_blue_arena
 ar_baggage
 ar_aztec_shotty
 ar_35clarence_20140829
+aim_deathmatch
+aim_map
+aim_redline
 aim_texture_city_advanced_go
 aim_ag_texture_jungle
+dm_delusion
+dm_wallbang
 fy_winter
 fy_pool_day
 fy_mario_quick
