@@ -65,6 +65,8 @@ fastdl
 --models
 ```
 
+If you want to use my bundled maps and this server setup you can use `https://raw.githubusercontent.com/kus/csgo-modded-server-assets/master/csgo` for your `FAST_DL_URL` linux environment variable or `sv_downloadurl` in `cfg/env.cfg` for Windows. Make sure you change `sv_allowdownload` to `0`.
+
 ## Updating Metamod/SourceMod
 
 Periodically CS:GO will release updates which break Metamod:Source and SourceMod (the server won't start), and they will patch for the updates and release new updates. These need to be applied for the server to run properly. I will try to keep them up to date here which your server will automatically download if using my Linux gcp script but in the case I haven't updated them you can update them your self by checking the version I have bundled above and downloading the latest and putting on your server manually.
@@ -171,7 +173,7 @@ sudo su
 export LAN="0"
 export RCON_PASSWORD="changeme"
 export STEAM_ACCOUNT=""
-export FAST_DL_URL=""
+export FAST_DL_URL="https://raw.githubusercontent.com/kus/csgo-modded-server-assets/master/csgo"
 export MOD_URL="https://github.com/kus/csgo-modded-server/archive/master.zip"
 export SERVER_PASSWORD=""
 export PORT="27015"
@@ -184,7 +186,9 @@ cd / && curl --silent --output "install.sh" "https://raw.githubusercontent.com/k
 
    Once the CS:GO server has started close it
 
-   Copy your maps to `/home/steam/csgo/csgo/maps/`
+   Copy your maps to `/home/steam/csgo/csgo/maps/` or you can use my [bundled maps](#download-maps)
+
+   If you want to use my bundled maps and this server setup you can use `https://raw.githubusercontent.com/kus/csgo-modded-server-assets/master/csgo` for your `FAST_DL_URL` linux environment variable.
 
    Update each `/csgo/mapcycle_` file to match your maps
 
@@ -225,7 +229,9 @@ Run `win.bat`
 
    Once the CS:GO server has started close it
 
-   Copy your maps to `\server\csgo\maps\`
+   Copy your maps to `\server\csgo\maps\` or you can use my [bundled maps](#download-maps) (you need to unzip them all)
+
+   If you want to use my bundled maps and this server setup you can use `https://raw.githubusercontent.com/kus/csgo-modded-server-assets/master/csgo` for your your `sv_downloadurl` in `cfg/env.cfg`. Make sure you change `sv_allowdownload` to `0`.
 
    Update each `\csgo\mapcycle_` file to match your maps
 
