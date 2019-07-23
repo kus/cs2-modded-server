@@ -1,0 +1,604 @@
+//**********************************************  Valid Colors	********************************************************
+// {NORMAL}, {DARKRED}, {PINK}, {YELLOW}, {GREEN}, {LIGHTGREEN}, {RED}, {GRAY}, {BLUE}, {DARKBLUE}, {PURPLE}, {ORANGE} *
+//**********************************************************************************************************************
+//                                     http://i.imgur.com/q2wb8Cu.png                                                  *
+//{NORMAL} = x01 | {DARKRED} = x02 | {PINK} = x03 | {GREEN} = x04 | {YELLOW} = x09 | {LIGHTGREEN} = x06 | {RED} = x07  *
+//{GRAY} = x08 | {BLUE} = x0B | {DARKBLUE} = x0C | {PURPLE} = x0E|  {ORANGE} = x10                                     *
+//**********************************************************************************************************************
+
+"Phrases"
+{
+	//******************* PrintToChat *******************
+	"ResetMyRank"
+	{
+		"ru"		"{RED}Ваш ранг сброшен"
+	}
+
+	"BombPickup"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"ru"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}получил {3} очка {RED}Подобрав бомбу{NORMAL}."
+	}
+
+	"BombDropped"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"ru"		"{PINK}{1}{PURPLE} ({2}) {RED}потерял {3} очка {RED}Сбросив бомбу{NORMAL}."
+	}
+
+	"MVP"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"ru"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}получил {3} очка {NORMAL}как {RED}MVP{NORMAL}."
+	}
+
+	"LostSuicide"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"ru"		"{PINK}{1}{PURPLE} ({2}) {RED}потерял {3} очко(в) {NORMAL}за {RED}Самоубийство{NORMAL}."
+	}
+
+	"LostTK"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s}"
+		"ru"		"{PINK}{1}{PURPLE} ({2}) {RED}потерял {3} очко(в) {NORMAL}Убив своего {PINK}{4}{NORMAL}."
+	}
+
+	"CT_VIPEscaped"
+	{
+		"#format"	"{1:d}"
+		"ru"		"{BLUE}Спецназ {LIGHTGREEN}получил {1} очков {NORMAL}за {RED}Побег в качестве VIP{NORMAL}."
+	}
+
+	"VIPEscaped"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"ru"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}получил {3} очков {NORMAL}за {RED}Побег в качестве VIP{NORMAL}."
+	}
+
+	"TR_VIPKilled"
+	{
+		"#format"	"{1:d}"
+		"ru"		"{ORANGE}Террористы {LIGHTGREEN}получили {1} очков {NORMAL}за {RED}Убийство VIP{NORMAL}."
+	}
+
+	"VIPKilled"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"ru"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}получил {3} очков {NORMAL}за {RED}Убийство VIP{NORMAL}."
+	}
+
+	"GotPointsBy"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s}"
+		"ru"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}получил {3} очко(в) {NORMAL}за {RED}{4}{NORMAL}."
+	}
+
+	"IsRankedAt"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:d},{5:d},{6:d},{7:d},{8:.2f},{9:d},{10:d}"
+		"ru"		"Игрок{PINK} {1} {NORMAL}на {GREEN}{2} {NORMAL}из {3} месте, {PURPLE}{4} очков{NORMAL},{LIGHTGREEN} {5} убийств{NORMAL},{RED} {6} смертей{NORMAL},{ORANGE} {7} помощи{NORMAL}, {BLUE} KDR {8} {NORMAL}, {DARKRED}{9} убийств своих {NORMAL}и {YELLOW}{10} MVP{NORMAL}."
+	}
+
+	"Killing"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d}"
+		"ru"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}+{3} {NORMAL}за {RED}убийство {PINK}{4} {PURPLE}({5}){NORMAL}."
+	}
+
+	"KillingKillerNotRanked"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d},{6:d},{7:d}"
+		"ru"		"{PINK}{1}{PURPLE} ({2})[{6}/{7}] {LIGHTGREEN}+{3} {NORMAL}за {RED}убийство {PINK}{4} {PURPLE}({5}){NORMAL}."
+	}
+
+	"KillingVictimNotRanked"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d},{6:d},{7:d}"
+		"ru"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}+{3} {NORMAL}за {RED}убийство {PINK}{4} {PURPLE}({5})[{6}/{7}]{NORMAL}."
+	}
+
+	"KillingBothNotRanked"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d},{6:d},{7:d},{8:d},{9:d}"
+		"ru"		"{PINK}{1}{PURPLE} ({2})[{6}/{7}] {LIGHTGREEN}+{3} {NORMAL}за {RED}убийство {PINK}{4} {PURPLE}({5})[{8}/{9}]{NORMAL}."
+	}
+
+	"Headshot"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"ru"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}получил {3} очка {NORMAL}за {RED}Headshot{NORMAL}."
+	}
+
+	"TR_Planting"
+	{
+		"#format"	"{1:d}"
+		"ru"		"{ORANGE}Террористы {LIGHTGREEN}получили {1} очков {NORMAL}за {RED}Установку бомбы{NORMAL}."
+	}
+
+	"Planting"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"ru"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}получил {3} очков {NORMAL}за {RED}Установку бомбы{NORMAL}."
+	}
+
+	"TR_Exploding"
+	{
+		"#format"	"{1:d}"
+		"ru"		"{ORANGE}Террористы {LIGHTGREEN}получили {1} очков {NORMAL}за {RED}Взрыв бомбы{NORMAL}."
+	}
+
+	"Exploding"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"ru"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}получил {3} очков {NORMAL}за {RED}Взрыв бомбы{NORMAL}."
+	}
+
+	"CT_Defusing"
+	{
+		"#format"	"{1:d}"
+		"ru"		"{BLUE}Спецназ {LIGHTGREEN}получил {1} очков {NORMAL}за {RED}Обезвреживание бомбы{NORMAL}."
+	}
+
+	"Defusing"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"ru"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}получил {3} очков {NORMAL}за {RED}Обезвреживание бомбы{NORMAL}."
+	}
+
+	"CT_Hostage"
+	{
+		"#format"	"{1:d}"
+		"ru"		"{BLUE}Спецназ {LIGHTGREEN}получил {1} очков {NORMAL}за {RED}Спасение заложника{NORMAL}."
+	}
+
+	"Hostage"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"ru"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}получил {3} очков {NORMAL}за {RED}Спасение заложника{NORMAL}."
+	}
+
+	"CT_Round"
+	{
+		"#format"	"{1:d}"
+		"ru"		"{BLUE}Спецназ {LIGHTGREEN}получил {1} очков {NORMAL}за {BLUE}Победу в раунде{NORMAL}."
+	}
+
+	"TR_Round"
+	{
+		"#format"	"{1:d}"
+		"ru"		"{ORANGE}Террористы {LIGHTGREEN}получили {1} очков {NORMAL}за {ORANGE}Победу в раунде{NORMAL}."
+	}
+
+	"PlayerJoinedChat"
+	//{1} = ClientName | {2} = PosOnConnect | {3} = PointsOnConnect | {4} = Country
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s}"
+		"ru"		"{PINK}{1}{NORMAL} из {LIGHTGREEN}{4} {NORMAL}присоединился к серверу. {YELLOW}(Позиция {GREEN}{2} {YELLOW}- {PURPLE}{3} {YELLOW}Очков){NORMAL}."
+	}
+
+	"TopPlayerJoinedChat"
+	{
+		"#format"	"{1:d},{2:s},{3:d},{4:s}"
+		"ru"		"Топ {RED}{1}{NORMAL} игрок {PINK}{2}{NORMAL} из {LIGHTGREEN}{4} {NORMAL}присоединился, текущий ранг {GREEN}{3}{NORMAL}."
+	}
+
+	"PlayerLeft"
+	//{1} = ClientName | {2} = rank | {3} = Reason
+	{
+		"#format"	"{1:s},{2:d},{3:s}"
+		"ru"		"{PINK}{1}{PURPLE} ({2}) {NORMAL}покинул сервер.. {YELLOW}({3})"
+	}
+
+	"NotRanked"
+	{
+		"#format"	"{1:d},{2:d}"
+		"ru"		"{RED}Пока не попал в статистику. {NORMAL}Тебе нужно {RED}{2}{NORMAL} убийств для входа в ранг. Сейчас {LIGHTGREEN}{1}{NORMAL}."
+	}
+
+	"AssistKill"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:s}"
+		"ru"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}получил {3} очко {NORMAL}за {RED}Помощь {PINK}{4} {RED} Убив {PINK}{5}{NORMAL}."
+	}
+
+	"The rank has been reset"
+	{
+		"ru"		"{RED}Ранг был сброшен"
+	}
+
+	"All rank data has been reset"
+	{
+		"ru"		"{RED}Все данные по рангам сброшены"
+	}
+
+	"Usagepurge"
+	{
+		"ru"		"{RED}Применение: {PINK}rankpurge X (где X равно числу дней бездействия)"
+	}
+
+	"Purged"
+	{
+		"ru"		"{RED}Очищено"
+	}
+
+	"UsageStatsme2"
+	{
+		"ru"		"{RED}Применение: {PINK}sm_statsme2 <имя / #позиция в топ / steam>"
+	}
+
+	//****************** PrintHintText ******************
+
+	"PlayerJoinedHint"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s}"
+		"ru"		"<font color='#28FF28'>Информация</font> \n <font color='#B15BFF'>{1}</font> из <font color='#00FF7F'>{4}</font> присоединился к серверу. \n Ранг <font color='#28FF28'>{2}</font> - <font color='#E800E8'>{3}</font> Очков"
+	}
+
+	"TopPlayerJoinedHint"
+	{
+		"#format"	"{1:d},{2:s},{3:d},{4:s}"
+		"ru"		"<font color='#28FF28'>Информация</font> \n Топ <font color='#FF0000'>{1}</font> игрок <font color='#B15BFF'>{2}</font> из <font color='#00FF7F'>{4}</font> присоединился \n Текущий ранг <font color='#28FF28'>{3}</font>"
+	}
+
+	//***************** Menu (No Colors) *****************
+
+	"Deaths"
+	{
+		"ru"		"Смертей"
+	}
+
+
+	"Kills"
+	{
+		"ru"		"Убийств"
+	}
+
+	"VIPStats"
+	{
+		"ru"		"VIP Статистика"
+	}
+
+	"VIPEscapes"
+	{
+		"ru"		"Побегов в роли VIP"
+	}
+
+	"VIPsKilled"
+	{
+		"ru"		"Убито VIP"
+	}
+
+	"Showing"
+	{
+		"#format"	"{1:d},{2:d},{3:d}"
+		"ru"		"Показано с {1} по {2} из {3}\n"
+	}
+
+	"Next"
+	{
+		"ru"		"Вперед"
+	}
+
+	"Back"
+	{
+		"ru"		"Назад"
+	}
+
+	"KnifeKills"
+	{
+		"ru"		"Убийств ножом"
+	}
+
+	"TaserKills"
+	{
+		"ru"		"Убийств шокером"
+	}
+
+	"Position"
+	{
+		"ru"		"Позиция"
+	}
+
+	"Points"
+	{
+		"ru"		"Очков"
+	}
+
+	"BasicStats"
+	{
+		"ru"		"Базовая статистика"
+	}
+
+	"KillsDeathsAssists"
+	{
+		"#format"	"{1:d},{2:d},{3:d}"
+		"ru"		"Убийств: {1}   Смертей: {2}   Помощи: {3}"
+	}
+
+	"Suicides"
+	{
+		"ru"		"Самоубийств"
+	}
+
+	"RoundStats"
+	{
+		"ru"		"Статистика раунда"
+	}
+
+	"TRWins"
+	{
+		"ru"		"Побед TR"
+	}
+
+	"CTWins"
+	{
+		"ru"		"Побед CT"
+	}
+
+	"HitStats"
+	{
+		"ru"		"Статистика попаданий"
+	}
+
+	"Shots"
+	{
+		"ru"		"Выстрелов"
+	}
+
+	"Hits"
+	{
+		"ru"		"Попаданий"
+	}
+
+	"Accuracy"
+	{
+		"ru"		"Точность"
+	}
+
+	"BombHostagesStats"
+	{
+		"ru"		"Статистика бомб/заложников"
+	}
+
+	"PlantedBombs"
+	{
+		"ru"		"Установлено бомб"
+	}
+
+	"DefusedBombs"
+	{
+		"ru"		"Обезврежено бомб"
+	}
+
+	"ExplodedBombs"
+	{
+		"ru"		"Взорвано бомб"
+	}
+
+	"RescuedHostages"
+	{
+		"ru"		"Спасено заложников"
+	}
+
+	"OtherStats"
+	{
+		"ru"		"Прочая статистика"
+	}
+
+	"TimeConnected"
+	{
+		"#format"	"{1:d},{2:d},{3:d}"
+		"ru"		"Время подключения: {1} часов, {2} минут, {3} секунд"
+	}
+
+	"Head"
+	{
+		"ru"		"Голова"
+	}
+
+	"Chest"
+	{
+		"ru"		"Грудь"
+	}
+
+	"Stomach"
+	{
+		"ru"		"Живот"
+	}
+
+	"LeftArm"
+	{
+		"ru"		"Левая рука"
+	}
+
+	"LeftLeg"
+	{
+		"ru"		"Левая нога"
+	}
+
+	"RightArm"
+	{
+		"ru"		"Правая рука"
+	}
+
+	"RightLeg"
+	{
+		"ru"		"Правая нога"
+	}
+
+	"Next9Players"
+	{
+		"ru"		"Следующие 9 игроков"
+	}
+
+	"WeaponsStats"
+	{
+		"ru"		"Статистика оружия"
+	}
+
+	"Headshots"
+	{
+		"ru"		"Выстрелов в голову"
+	}
+
+	"Assists"
+	{
+		"ru"		"Помощи"
+	}
+
+	"TKs"
+	{
+		"ru"		"Убийств своих"
+	}
+
+	"RankMe Menu"
+	{
+		"ru"		"RankMe Меню"
+	}
+
+	"My Rank"
+	{
+		"ru"		"Мой Ранг"
+	}
+
+	"Reset My Rank"
+	{
+		"ru"		"Сбросить мой ранг"
+	}
+
+	"My Stats"
+	{
+		"ru"		"Моя статистика"
+	}
+
+	"Show Other Players Stats"
+	{
+		"ru"		"Показать статистику других игроков"
+	}
+
+	"Session"
+	{
+		"ru"		"Сессия"
+	}
+
+	"My HitBox Stats"
+	{
+		"ru"		"Моя статистика попаданий"
+	}
+
+	"My Weapon Stats"
+	{
+		"ru"		"Моя статистика оружия"
+	}
+
+	"Show Players Above Me"
+	{
+		"ru"		"Показать игроков надо мной"
+	}
+
+	"TOP 10"
+	{
+		"ru"		"Топ 10"
+	}
+
+	"TOP Kills"
+	{
+		"ru"		"Топ Убийств"
+	}
+
+	"TOP Deaths"
+	{
+		"ru"		"Топ Смертей"
+	}
+
+	"TOP Assists"
+	{
+		"ru"		"Топ Помощи"
+	}
+
+//	"TOP KDR"
+//	{
+//		"ru"		"Топ KDR"
+//	}
+
+	"TOP TK"
+	{
+		"ru"		"Топ Убийств своих"
+	}
+
+	"TOP Weapon"
+	{
+		"ru"		"Топ Оружия"
+	}
+
+//	"TOP Grenade"
+//	{
+//		"ru"		"Топ Гранат"
+//	}
+//
+//	"TOP Knife"
+//	{
+//		"ru"		"Топ Ножей"
+//	}
+//
+//	"TOP Taser"
+//	{
+//		"ru"		"Топ Шокеров"
+//	}
+
+	"TOP Accuracy"
+	{
+		"ru"		"Топ Точности"
+	}
+
+	"TOP HS"
+	{
+		"ru"		"Топ Убийств в голову"
+	}
+
+	"TOP Time Connected"
+	{
+		"ru"		"Топ Времени подключения"
+	}
+
+	"Reset a player rank"
+	{
+		"ru"		"Сбросить ранг игрока"
+	}
+
+	"Reset all the rank"
+	{
+		"ru"		"Сбросить все ранги"
+	}
+
+	"MVPs"
+	{
+		"ru"		"MVP"
+	}
+
+	"TOP MVP"
+	{
+		"ru"		"Топ MVP"
+	}
+
+	"KPR"
+	{
+		"ru"		"KPR"
+	}
+
+	"DPR"
+	{
+		"ru"		"DPR"
+	}
+
+	"Damage"
+	{
+		"ru"		"Урон"
+	}
+
+	"TOP Damage"
+	{
+		"ru"		"Топ Урона"
+	}
+}

@@ -1,0 +1,39 @@
+"Phrases"
+{
+
+	"WinStreak"
+	{
+		"pl"		"Terroryści wygrali {GREEN}{1}{NORMAL} rund pod rząd!"
+	}
+
+	"WinStreakAlmostToScramble"
+	{
+		"pl"		"Terroryści wygrali {GREEN}{1}{NORMAL} rund pod rząd. Jeśli wygrają {GREEN}{2} raz(y), drużyny zostaną wymieszane."
+	}
+
+	"ScrambleMessage"
+	{
+		"pl"		"Terroryści wygrali {GREEN}{1}{NORMAL} rund pod rząd. {PURPLE}Drużyny zostaną wymieszane."
+	}
+
+	"JoinedQueueMessage"
+	{
+		"pl"		"Zostałeś dodany do kolejki."
+	}
+
+	"RetakeSiteMessage"
+	{
+		"pl"		"Retake {GREEN}{1}: {LIGHT_RED}{2} Ts {NORMAL}vs {PURPLE}{3} CTs"
+	}
+
+	"WaitingQueueMessage"
+	{
+		"pl"		"Gra jest pełna z {GREEN}{1} {NORMAL} graczami. Jesteś aktualnie w kolejce."
+	}
+
+	"WinStreakOver"
+	{
+		"pl"		"CT zakończyli {GREEN}{1}{NORMAL} zwycięską serie rund!"
+	}
+
+}

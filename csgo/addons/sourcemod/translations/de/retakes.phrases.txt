@@ -1,0 +1,39 @@
+"Phrases"
+{
+
+	"JoinedQueueMessage"
+	{
+		"de"		"Sie befinden sich in der Warteschlange."
+	}
+
+	"ScrambleMessage"
+	{
+		"de"		"Die Terroristen haben {GREEN}{1}{NORMAL} Runden in Folge gewonnen . {PURPLE}Teams werden gemischt."
+	}
+
+	"RetakeSiteMessage"
+	{
+		"de"		"Retake {GREEN}{1}: {LIGHT_RED}{2} Ts {NORMAL}vs {PURPLE}{3} CTs"
+	}
+
+	"WinStreakOver"
+	{
+		"de"		"Die CTs haben die Sieges-Serie der von {GREEN}{1}{NORMAL}-Runden beendet!"
+	}
+
+	"WaitingQueueMessage"
+	{
+		"de"		"Das Spiel ist aktuell voll mit {GREEN}{1} {NORMAL}Spielern. Sie sind in der Warteschlange."
+	}
+
+	"WinStreak"
+	{
+		"de"		"Die Terroristen haben {GREEN}{1}{NORMAL} Runden in Folge gewonnen!"
+	}
+
+	"WinStreakAlmostToScramble"
+	{
+		"de"		"Die Terroristen haben {GREEN}{1}{NORMAL} Runden in Folge gewonnen - Wenn sie {GREEN}{2} weitere Runden gewinnen, {PURPLE}werden die Teams gemischt."
+	}
+
+}

@@ -1,0 +1,39 @@
+"Phrases"
+{
+	"JoinedQueueMessage"
+	{
+		"hu"			"Át lettél rakva a várólistába."
+	}
+	"WaitingQueueMessage"
+	{
+		"hu"			"Játék jelenleg fullon van {GREEN}{1} {NORMAL}játékossal. Bent vagy a várólistában."
+	}
+	"RetakeSiteMessage"
+	{
+		"hu"			"Retake {GREEN}{1}: {LIGHT_RED}{2} T-k {NORMAL}vs {PURPLE}{3} TE-k"
+	}
+	"ScrambleMessage"
+	{
+		"hu"			"Terroristák {GREEN}{1}{NORMAL} kört nyertek egymás után. {PURPLE}A csapatok össze lettek keverve!"
+	}
+	"WinStreakAlmostToScramble"
+	{
+		"hu"			"Terroristák {GREEN}{1}{NORMAL} kört nyertek egymás után - ha még nyernek {GREEN}{2} kört, {PURPLE}a csapatok össze lesznek keverve."
+	}
+	"WinStreak"
+	{
+		"hu"			"Terroristák {GREEN}{1}{NORMAL} kört nyertek egymás után!"
+	}
+	"WinStreakOver"
+	{
+		"hu"			"TEk megállították a {GREEN}{1}{NORMAL} kör hosszú győzelem sorozatot!"
+	}
+	"AdminScrambleTeams"
+	{
+		"hu"			"{1} beállította, hogy a csapatok össze legyenek keverve a következő körben."
+	}
+	"FailedToPlant"
+	{
+		"hu"		"{PURPLE}{1} {NORMAL}nem rakta le a bombát..."
+	}
+}

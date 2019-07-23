@@ -1,0 +1,604 @@
+//**********************************************  Valid Colors	********************************************************
+// {NORMAL}, {DARKRED}, {PINK}, {YELLOW}, {GREEN}, {LIGHTGREEN}, {RED}, {GRAY}, {BLUE}, {DARKBLUE}, {PURPLE}, {ORANGE} *
+//**********************************************************************************************************************
+//                                     http://i.imgur.com/q2wb8Cu.png                                                  *
+//{NORMAL} = x01 | {DARKRED} = x02 | {PINK} = x03 | {GREEN} = x04 | {YELLOW} = x09 | {LIGHTGREEN} = x06 | {RED} = x07  *
+//{GRAY} = x08 | {BLUE} = x0B | {DARKBLUE} = x0C | {PURPLE} = x0E|  {ORANGE} = x10                                     *
+//**********************************************************************************************************************
+
+"Phrases"
+{
+	//******************* PrintToChat *******************
+	"ResetMyRank"
+	{
+		"ro"		"{RED}Rank-ul tău a fost resetat!"
+	}
+
+	"BombPickup"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"ro"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN} a primit {3} punct(e) {NORMAL}pentru că{RED} a luat bomba{NORMAL}."
+	}
+
+	"BombDropped"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"ro"		"{PINK}{1}{PURPLE} ({2}) {RED}{RED}a pierdut {3} punct(e) {NORMAL}pentru că{RED}a pierdut bomba{NORMAL}."
+	}
+
+	"MVP"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"ro"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}a primit {3} punct(e) {NORMAL}pentru {RED}MVP{NORMAL}."
+	}
+
+	"LostSuicide"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"ro"		"{PINK}{1}{PURPLE} ({2}) {RED}a pierdut {3} punct(e) {NORMAL}pentru {RED}Sinucidere{NORMAL}."
+	}
+
+	"LostTK"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s}"
+		"ro"		"{PINK}{1}{PURPLE} ({2}) {RED}a pierdut {3} punct(e) {NORMAL}pentru că a omorât un coechipier {PINK}{4}{NORMAL}."
+	}
+
+	"CT_VIPEscaped"
+	{
+		"#format"	"{1:d}"
+		"ro"		"{BLUE}Counter-Terrorists{NORMAL} {LIGHTGREEN}au primit {1} puncte {NORMAL}pentru {RED}Salvarea Ostaticilor{NORMAL}!"
+	}
+
+	"VIPEscaped"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"ro"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}a primit {3} puncte {NORMAL}pentru {RED}Salvarea Ostaticilor{NORMAL}."
+	}
+
+	"TR_VIPKilled"
+	{
+		"#format"	"{1:d}"
+		"ro"		"{ORANGE}Terrorists{NORMAL} {LIGHTGREEN}a primit {1} puncte {NORMAL}pentru {RED}Uciderea Ostaticilor{NORMAL}!"
+	}
+
+	"VIPKilled"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"ro"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}a primit {3} puncte {NORMAL}pentru{RED}Uciderea Ostaticilor{NORMAL}."
+	}
+
+	"GotpuncteBy"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s}"
+		"ro"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}a primit {3} punct(e) {NORMAL}pentru {RED}{4}{NORMAL}."
+	}
+
+	"IsRankedAt"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:d},{5:d},{6:d},{7:d},{8:.2f},{9:d},{10:d}"
+		"ro"		"Jucătorul {PINK} {1} {NORMAL} este pe locul {GREEN}{2}/{3} {NORMAL},{NORMAL}cu {PURPLE}{4} puncte{NORMAL},{LIGHTGREEN} {5} kills{NORMAL},{RED} {6} deaths{NORMAL},{ORANGE} {7} assists{NORMAL}, {BLUE} KDR {8} {NORMAL}, {DARKRED}{9} TKs {NORMAL}and {YELLOW}{10} MVPs{NORMAL}."
+	}
+
+	"Killing"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d}"
+		"ro"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}a primit {3} puncte {NORMAL}pentru că {RED}l-a omorât pe {PINK}{4} {PURPLE}({5}){NORMAL}."
+	}
+
+	"KillingKillerNotRanked"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d},{6:d},{7:d}"
+		"ro"		"{PINK}{1}{PURPLE} ({2})[{6}/{7}] {LIGHTGREEN}a primit {3} puncte {NORMAL}pentru că {RED}l-a omorât pe {PINK}{4} {PURPLE}({5}){NORMAL}."
+	}
+
+	"KillingVictimNotRanked"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d},{6:d},{7:d}"
+		"ro"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}a primit {3} puncte {NORMAL}pentru că {RED}l-a omorât pe {PINK}{4} {PURPLE}({5})[{6}/{7}]{NORMAL}."
+	}
+
+	"KillingBothNotRanked"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d},{6:d},{7:d},{8:d},{9:d}"
+		"ro"		"{PINK}{1}{PURPLE} ({2})[{6}/{7}] {LIGHTGREEN}a primit {3} puncte {NORMAL}pentru că {RED}l-a omorât pe {PINK}{4} {PURPLE}({5})[{8}/{9}]{NORMAL}."
+	}
+
+	"Headshot"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"ro"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}a primit {3} punct {NORMAL}pentru că a dat {RED}Headshot{NORMAL}."
+	}
+
+	"TR_Planting"
+	{
+		"#format"	"{1:d}"
+		"ro"		"{ORANGE}Terrorists{NORMAL} {LIGHTGREEN}au primit {1} puncte {NORMAL}pentru {RED}Plantarea Bombei{NORMAL}!"
+	}
+
+	"Planting"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"ro"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}a primit {3} puncte {NORMAL}pentru {RED}Plantarea Bombei{NORMAL}!"
+	}
+
+	"TR_Exploding"
+	{
+		"#format"	"{1:d}"
+		"ro"		"{ORANGE}Terrorists{NORMAL} {LIGHTGREEN}au primit {1} puncte {NORMAL}pentru {RED}Explodarea Bombei{NORMAL}!"
+	}
+
+	"Exploding"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"ro"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}au primit {3} puncte {NORMAL}pentru {RED}Explodarea Bombei{NORMAL}!"
+	}
+
+	"CT_Defusing"
+	{
+		"#format"	"{1:d}"
+		"ro"		"{BLUE}Counter-Terrorists{NORMAL} {LIGHTGREEN}au primit {1} puncte {NORMAL}pentru că {RED}Defusing the Bomb{NORMAL}."
+	}
+
+	"Defusing"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"ro"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}a primit {3} puncte {NORMAL}pentru {RED}Dezamorsarea Bombei{NORMAL}!"
+	}
+
+	"CT_Hostage"
+	{
+		"#format"	"{1:d}"
+		"ro"		"{BLUE}Counter-Terrorists{NORMAL} {LIGHTGREEN}au primit {1} puncte {NORMAL}pentru {RED}Dezamorsarea Bombei{NORMAL}!"
+	}
+
+	"Hostage"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"ro"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}a primit {3} puncte {NORMAL}pentru {RED}Dezamorsarea Bombei{NORMAL}!"
+	}
+
+	"CT_Round"
+	{
+		"#format"	"{1:d}"
+		"ro"		"{BLUE}Counter-Terrorists{NORMAL} {LIGHTGREEN}au primit {1} puncte {NORMAL}pentru {RED}Câștigarea Rundei{NORMAL}!"
+	}
+
+	"TR_Round"
+	{
+		"#format"	"{1:d}"
+		"ro"		"{ORANGE}Terrorists{NORMAL} {LIGHTGREEN}au primit {1} puncte {NORMAL}pentru {RED}Câștigarea Rundei{NORMAL}."
+	}
+
+	"PlayerJoinedChat"
+	//{1} = ClientName | {2} = PosOnConnect | {3} = puncteOnConnect | {4} = Country
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s}"
+		"ro"		"{PINK}{1}{NORMAL} din {LIGHTGREEN}{4} {NORMAL}s-a conectat. {YELLOW}(Rank {GREEN}{2} {YELLOW}- {PURPLE}{3} {YELLOW}puncte){NORMAL}."
+	}
+
+	"TopPlayerJoinedChat"
+	{
+		"#format"	"{1:d},{2:s},{3:d},{4:s}"
+		"ro"		"Top {RED}{1}{NORMAL} jucatori {PINK}{2}{NORMAL} din {LIGHTGREEN}{4} {NORMAL}conectați, rank actual {GREEN}{3}{NORMAL}."
+	}
+
+	"PlayerLeft"
+	//{1} = ClientName | {2} = rank | {3} = Reason
+	{
+		"#format"	"{1:s},{2:d},{3:s}"
+		"ro"		"{PINK}{1}{PURPLE} ({2}) {NORMAL}a ieșit. {YELLOW}({3})"
+	}
+
+	"NotRanked"
+	{
+		"#format"	"{1:d},{2:d}"
+		"ro"		"{RED}Fără rank. {NORMAL}Trebuie să mai faci {RED}{2}{NORMAL} ucideri pentru următorul rank. Acum ai: {LIGHTGREEN}{1}{NORMAL}."
+	}
+
+	"AssistKill"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:s}"
+		"ro"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}a primit {3} punct {NORMAL}pentru {RED}Assist {PINK}{4} {RED}la uciderea lui {PINK}{5}{NORMAL}."
+	}
+
+	"The rank has been reset"
+	{
+		"ro"		"{RED}Rankul a fost resetat!"
+	}
+
+	"All rank data has been reset"
+	{
+		"ro"		"{RED}Toate rankurile au fost resetate!"
+	}
+
+	"Usagepurge"
+	{
+		"ro"		"{RED}Usage: {PINK}rankpurge X (pentru X zile de inactivitate)"
+	}
+
+	"Purged"
+	{
+		"ro"		"{RED}Șters!"
+	}
+
+	"UsageStatsme2"
+	{
+		"ro"		"{RED}Usage: {PINK}sm_statsme2 <name / #position on top / steam>"
+	}
+
+	//****************** PrintHintText ******************
+
+	"PlayerJoinedHint"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s}"
+		"ro"		"<font color='#28FF28'>Info</font> \n <font color='#B15BFF'>{1}</font> din <font color='#00FF7F'>{4}</font> s-a conectat. \n Poziția: <font color='#28FF28'>{2}</font> - <font color='#E800E8'>{3}</font> puncte"
+	}
+
+	"TopPlayerJoinedHint"
+	{
+		"#format"	"{1:d},{2:s},{3:d},{4:s}"
+		"ro"		"<font color='#28FF28'>Info</font> \n Top <font color='#FF0000'>{1}</font> jucători <font color='#B15BFF'>{2}</font> din <font color='#00FF7F'>{4}</font> s-a conectat \n Rank actual: <font color='#28FF28'>{3}</font>"
+	}
+
+	//***************** Menu (No Colors) *****************
+
+	"Deaths"
+	{
+		"ro"		"Decese"
+	}
+
+
+	"Kills"
+	{
+		"ro"		"Ucideri"
+	}
+
+	"VIPStats"
+	{
+		"ro"		"Statistici Ostatici"
+	}
+
+	"VIPEscapes"
+	{
+		"ro"		"Ostatici Salvați"
+	}
+
+	"VIPsKilled"
+	{
+		"ro"		"Ostatici Uciși"
+	}
+
+	"Showing"
+	{
+		"#format"	"{1:d},{2:d},{3:d}"
+		"ro"		"Se afișază de la  {1} la {2} din {3}\n"
+	}
+
+	"Next"
+	{
+		"ro"		"Înainte"
+	}
+
+	"Back"
+	{
+		"ro"		"Înapoi"
+	}
+
+	"KnifeKills"
+	{
+		"ro"		"Ucideri cu Cuțit"
+	}
+
+	"TaserKills"
+	{
+		"ro"		"Ucideri cu Electroșoc"
+	}
+
+	"Position"
+	{
+		"ro"		"Poziția"
+	}
+
+	"puncte"
+	{
+		"ro"		"puncte"
+	}
+
+	"BasicStats"
+	{
+		"ro"		"Statistici parțiale"
+	}
+
+	"KillsDeathsAssists"
+	{
+		"#format"	"{1:d},{2:d},{3:d}"
+		"ro"		"Ucideri: {1}   Decese: {2}   Assists: {3}"
+	}
+
+	"Suicides"
+	{
+		"ro"		"Sinucideri"
+	}
+
+	"RoundStats"
+	{
+		"ro"		"Statistici Runde"
+	}
+
+	"TRWins"
+	{
+		"ro"		"Câștigate la Tero"
+	}
+
+	"CTWins"
+	{
+		"ro"		"Câștigate la CT"
+	}
+
+	"HitStats"
+	{
+		"ro"		"Statistici lovituri:"
+	}
+
+	"Shots"
+	{
+		"ro"		"Focuri"
+	}
+
+	"Hits"
+	{
+		"ro"		"Lovituri"
+	}
+
+	"Accuracy"
+	{
+		"ro"		"Precizie"
+	}
+
+	"BombHostagesStats"
+	{
+		"ro"		"Statistici Bombă/Ostatici"
+	}
+
+	"PlantedBombs"
+	{
+		"ro"		"Bombe Plantate"
+	}
+
+	"DefusedBombs"
+	{
+		"ro"		"Bombe Dezamorsate"
+	}
+
+	"ExplodedBombs"
+	{
+		"ro"		"Bombe Explodate"
+	}
+
+	"RescuedHostages"
+	{
+		"ro"		"Ostatici salvați"
+	}
+
+	"OtherStats"
+	{
+		"ro"		"Alte Statistici"
+	}
+
+	"TimeConnected"
+	{
+		"#format"	"{1:d},{2:d},{3:d}"
+		"ro"		"Timp conectat: {1} ore, {2} minute, {3} secunde"
+	}
+
+	"Head"
+	{
+		"ro"		"Cap"
+	}
+
+	"Chest"
+	{
+		"ro"		"Piept"
+	}
+
+	"Stomach"
+	{
+		"ro"		"Stomac"
+	}
+
+	"LeftArm"
+	{
+		"ro"		"Braț Stâng"
+	}
+
+	"LeftLeg"
+	{
+		"ro"		"Picior Stâng"
+	}
+
+	"RightArm"
+	{
+		"ro"		"Braț drept"
+	}
+
+	"RightLeg"
+	{
+		"ro"		"Picior drept"
+	}
+
+	"Next9Players"
+	{
+		"ro"		"Următorii 9 jucători"
+	}
+
+	"WeaponsStats"
+	{
+		"ro"		"Statistici Lovituri"
+	}
+
+	"Headshots"
+	{
+		"ro"		"Capuri date"
+	}
+
+	"Assists"
+	{
+		"ro"		"Assists"
+	}
+
+	"TKs"
+	{
+		"ro"		"TKs"
+	}
+
+	"RankMe Menu"
+	{
+		"ro"		"Meniu RankMe"
+	}
+
+	"My Rank"
+	{
+		"ro"		"Rank-ul Meu"
+	}
+
+	"Reset My Rank"
+	{
+		"ro"		"Resetează Rank"
+	}
+
+	"My Stats"
+	{
+		"ro"		"Statisticile Mele"
+	}
+
+	"Show Other Players Stats"
+	{
+		"ro"		"Statisticile Altora"
+	}
+
+	"Session"
+	{
+		"ro"		"Sesiune"
+	}
+
+	"My HitBox Stats"
+	{
+		"ro"		"Statistici HitBox"
+	}
+
+	"My Weapon Stats"
+	{
+		"ro"		"Statistici Arme"
+	}
+
+	"Show Players Above Me"
+	{
+		"ro"		"Arată jucătorii mai buni decât mine"
+	}
+
+	"TOP 10"
+	{
+		"ro"		"TOP 10"
+	}
+
+	"TOP Kills"
+	{
+		"ro"		"TOP Ucideri"
+	}
+
+	"TOP Deaths"
+	{
+		"ro"		"TOP Decese"
+	}
+
+	"TOP Assists"
+	{
+		"ro"		"TOP Assists"
+	}
+
+//	"TOP KDR"
+//	{
+//		"ro"		"TOP KDR"
+//	}
+
+	"TOP TK"
+	{
+		"ro"		"TOP TK"
+	}
+
+	"TOP Weapon"
+	{
+		"ro"		"TOP Arme"
+	}
+
+//	"TOP Grenade"
+//	{
+//		"ro"		"TOP Grenade"
+//	}
+//
+//	"TOP Knife"
+//	{
+//		"ro"		"TOP Cuțite"
+//	}
+//
+//	"TOP Taser"
+//	{
+//		"ro"		"TOP Electroșocuri"
+//	}
+
+	"TOP Accuracy"
+	{
+		"ro"		"TOP Precizie"
+	}
+
+	"TOP HS"
+	{
+		"ro"		"TOP HS"
+	}
+
+	"TOP Time Connected"
+	{
+		"ro"		"TOP Timp Online"
+	}
+
+	"Reset a player rank"
+	{
+		"ro"		"Resetează rank jucător"
+	}
+
+	"Reset all the rank"
+	{
+		"ro"		"Resetează toate rankurile"
+	}
+
+	"MVPs"
+	{
+		"ro"		"MVPs"
+	}
+
+	"TOP MVP"
+	{
+		"ro"		"TOP MVP"
+	}
+
+	"KPR"
+	{
+		"ro"		"KPR"
+	}
+
+	"DPR"
+	{
+		"ro"		"DPR"
+	}
+
+	"Damage"
+	{
+		"ro"		"Daune"
+	}
+	
+	"TOP Damage"
+	{
+		"ro"		"TOP Daune"
+	}
+}

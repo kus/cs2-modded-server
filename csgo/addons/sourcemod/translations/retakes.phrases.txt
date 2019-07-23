@@ -1,0 +1,47 @@
+"Phrases"
+{
+	"JoinedQueueMessage"
+	{
+		"en"			"You have been placed in the waiting queue."
+	}
+	"WaitingQueueMessage"
+	{
+		"#format"		"{1:i}"
+		"en"			"The game is currently full with {GREEN}{1} {NORMAL}players. You are in the waiting queue."
+	}
+	"RetakeSiteMessage"
+	{
+		"#format"		"{1:s},{2:d},{3:d}"
+		"en"			"Retake {GREEN}{1}: {LIGHT_RED}{2} Ts {NORMAL}vs {PURPLE}{3} CTs"
+	}
+	"ScrambleMessage"
+	{
+		"#format"		"{1:d}"
+		"en"			"The terrorists won {GREEN}{1}{NORMAL} rounds in a row. {PURPLE}Teams are being scrambled!"
+	}
+	"WinStreakAlmostToScramble"
+	{
+		"#format"		"{1:d},{2:d}"
+		"en"			"The terrorists have won {GREEN}{1}{NORMAL} rounds in a row - if they win {GREEN}{2} more, {PURPLE}teams will be scrambled."
+	}
+	"WinStreak"
+	{
+		"#format"		"{1:d}"
+		"en"			"The terrorists have won {GREEN}{1}{NORMAL} rounds in a row!"
+	}
+	"WinStreakOver"
+	{
+		"#format"		"{1:d}"
+		"en"			"The CTs have ended a {GREEN}{1}{NORMAL}-round long win streak!"
+	}
+	"AdminScrambleTeams"
+	{
+		"#format"		"{1:N}"
+		"en"			"{1} has set the teams to be scrambled next round."
+	}
+	"FailedToPlant"
+	{
+		"#format"		"{1:N}"
+		"en"		"{PURPLE}{1} {NORMAL}failed to plant..."
+	}
+}

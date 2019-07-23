@@ -1,0 +1,121 @@
+// Exported from SourceMod Translator
+// Date: 2018-07-26 13:18:58 UTC
+// Language: English (en)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/311
+//
+"Phrases"
+{
+
+	"Bomb planted on Bombsite"
+	{
+		"en"		"Bomb planted on bombsite:"
+	}
+
+	"Pistol Round"
+	{
+		"en"		"Pistol Round"
+	}
+
+	"Force Buy Round"
+	{
+		"en"		"Force Buy Round"
+	}
+
+	"Full Buy Round"
+	{
+		"en"		"Full Buy Round"
+	}
+
+	"Rifle Round"
+	{
+		"en"		"Rifle Only Round"
+	}
+
+	"Deagle Round"
+	{
+		"en"		"Deagle Round"
+	}
+
+	"Now is"
+	{
+		"en"		"Now is:"
+	}
+
+	"A-A-A"
+	{
+		"en"		"A-A-A"
+	}
+
+	"B-B-B"
+	{
+		"en"		"B-B-B"
+	}
+
+	"Select a CT rifle"
+	{
+		"en"		"Select a CT rifle:"
+	}
+
+	"Select a T rifle"
+	{
+		"en"		"Select a T rifle:"
+	}
+
+	"Select a CT pistol"
+	{
+		"en"		"Select a CT pistol:"
+	}
+
+	"Select a T pistol"
+	{
+		"en"		"Select a T pistol:"
+	}
+
+	"Select a CT SMG"
+	{
+		"en"		"Select a CT SMG:"
+	}
+
+	"Select a T SMG"
+	{
+		"en"		"Select a T SMG:"
+	}
+
+	"Allow Sniper"
+	{
+		"en"		"Allow yourself to receive: \nSSG 08 in Force Buy and \nAWP in Full Buy?"
+	}
+
+	"Yes"
+	{
+		"en"		"Yes"
+	}
+
+	"No"
+	{
+		"en"		"No"
+	}
+
+	"on Bombsite"
+	{
+		"en"		"on bombsite:"
+	}
+
+	"Weapons next round"
+	{
+		"en"		"You'll get your new choice of weapons in the next round."
+	}
+
+	"Round Type"
+	{
+		"en"		"Round Type:"
+	}
+
+	"You need to be in a team"
+	{
+		"en"		"You have to be on a team to choose your weapons."
+	}
+
+}

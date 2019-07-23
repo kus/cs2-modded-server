@@ -33,6 +33,11 @@ Mod | Version | Why
 [AbNeR DeathRun Manager](https://forums.alliedmods.net/showthread.php?t=272017) | `2.6` | Automates Deathrun Server
 [Map configs](https://forums.alliedmods.net/showthread.php?p=607079) | `1.3` | Load mod settings on map change for mods that don't have exec's on map change
 [Deathmatch v2](https://forums.alliedmods.net/showthread.php?t=246405) | `2.0.9` | Custom deathmatch
+[Retakes](https://github.com/splewis/csgo-retakes) | `0.3.4` | Site retake gamemode
+[Retakes Autoplant](https://github.com/b3none/retakes-autoplant) | `2.3.0` | Automatically plant the bomb at the start of the round
+[Retakes MyWeaponAllocator](https://forums.alliedmods.net/showthread.php?p=2604368) | `2.3` | This weapon allocator simulates different kinds of rounds
+[Instant Defuse](https://forums.alliedmods.net/showthread.php?p=2558854) | `1.2.1` | Instantly defuse the bomb if no Terrorists are alive and there is a sufficient amount of time remaining
+[RankMe Kento Edition](https://forums.alliedmods.net/showthread.php?t=290063) | `3.0.3` | Stats
 
 ## Maps
 

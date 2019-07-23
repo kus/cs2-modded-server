@@ -1,0 +1,39 @@
+"Phrases"
+{
+
+	"ScrambleMessage"
+	{
+		"no"		"Terroristene har vunnet {GREEN}{1}{NORMAL} runder på rad. {PURPLE}Lagene blir samlet!"
+	}
+
+	"WinStreakOver"
+	{
+		"no"		"CT har sluttet en {GREEN}{1}{NORMAL}-runders lang seiers rekke!"
+	}
+
+	"WinStreak"
+	{
+		"no"		"Terroristene har vunnet {GREEN}{1}{NORMAL} runder på rad!"
+	}
+
+	"JoinedQueueMessage"
+	{
+		"no"		"Du har blitt plasert i kø for å bli med."
+	}
+
+	"RetakeSiteMessage"
+	{
+		"no"		"Retake {GREEN}{1}: {LIGHT_RED}{2} Ts {NORMAL}mot {PURPLE}{3} CTs"
+	}
+
+	"WinStreakAlmostToScramble"
+	{
+		"no"		"Terroristene har vunnet {GREEN}{1}{NORMAL} runder på rad - hvis de vinner {GREEN}{2} mer, {PURPLE}vil lagene bli endret."
+	}
+
+	"WaitingQueueMessage"
+	{
+		"no"		"Spillet er for øyeblikket fult med {GREEN}{1} {NORMAL}Spillere. Du er nå i køen for å bli med."
+	}
+
+}

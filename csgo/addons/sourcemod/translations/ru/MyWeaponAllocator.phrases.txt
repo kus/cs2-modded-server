@@ -1,0 +1,116 @@
+// Exported from SourceMod Translator
+// Date: 2018-10-22 12:38:49 UTC
+// Language: Russian (ru)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/311
+//
+"Phrases"
+{
+
+	"Bomb planted on Bombsite"
+	{
+		"ru"		"Бомба заложена на: "
+	}
+
+	"Pistol Round"
+	{
+		"ru"		"Пистолетный раунд"
+	}
+
+	"Force Buy Round"
+	{
+		"ru"		"Force Buy раунд"
+	}
+
+	"Full Buy Round"
+	{
+		"ru"		"Full Buy раунд"
+	}
+
+	"Deagle Round"
+	{
+		"ru"		"Deagle раунд"
+	}
+
+	"Now is"
+	{
+		"ru"		"Сейчас:"
+	}
+
+	"A-A-A"
+	{
+		"ru"		"А-А-А"
+	}
+
+	"B-B-B"
+	{
+		"ru"		"B-B-B"
+	}
+
+	"Select a CT rifle"
+	{
+		"ru"		"Выберите винтовку CT:"
+	}
+
+	"Select a T rifle"
+	{
+		"ru"		"Выберите винтовку T:"
+	}
+
+	"Select a CT pistol"
+	{
+		"ru"		"Выберите CT пистолет:"
+	}
+
+	"Select a T pistol"
+	{
+		"ru"		"Выберите T пистолет:"
+	}
+
+	"Select a CT SMG"
+	{
+		"ru"		"Выберите CT SMG:"
+	}
+
+	"Select a T SMG"
+	{
+		"ru"		"Выберите T SMG:"
+	}
+
+	"Allow Sniper"
+	{
+		"ru"		"Хотите получить: \nSSG 08 в Force Buy и \nAWP в Full Buy?"
+	}
+
+	"Yes"
+	{
+		"ru"		"Да"
+	}
+
+	"No"
+	{
+		"ru"		"Нет"
+	}
+
+	"on Bombsite"
+	{
+		"ru"		"на пленту:"
+	}
+
+	"Weapons next round"
+	{
+		"ru"		"Вы получите Ваше новое оружие в следующем раунде."
+	}
+
+	"Round Type"
+	{
+		"ru"		"Тип раунда: "
+	}
+
+	"You need to be in a team"
+	{
+		"ru"		"Вы должны быть в команде, чтобы выбрать оружие."
+	}
+
+}

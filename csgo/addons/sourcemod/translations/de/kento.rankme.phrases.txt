@@ -1,0 +1,415 @@
+//**********************************************  Valid Colors	********************************************************
+// {NORMAL}, {DARKRED}, {PINK}, {YELLOW}, {GREEN}, {LIGHTGREEN}, {RED}, {GRAY}, {BLUE}, {DARKBLUE}, {PURPLE}, {ORANGE} *
+//**********************************************************************************************************************
+//                                     http://i.imgur.com/q2wb8Cu.png                                                  *
+//{NORMAL} = x01 | {DARKRED} = x02 | {PINK} = x03 | {GREEN} = x04 | {YELLOW} = x09 | {LIGHTGREEN} = x06 | {RED} = x07  *
+//{GRAY} = x08 | {BLUE} = x0B | {DARKBLUE} = x0C | {PURPLE} = x0E|  {ORANGE} = x10                                     *
+//**********************************************************************************************************************
+
+"Phrases"
+{	
+	//******************* PrintToChat *******************
+	"ResetMyRank"
+	{
+		"de"		"{RED}Dein Rang wurde zurückgesetzt"
+	}
+	
+	"BombPickup"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"de"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}bekommt {3} Punkt(e) {NORMAL}für {RED}das Aufnehmen der Bombe{NORMAL}."
+	}
+	
+	"BombDropped"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"de"		"{PINK}{1}{PURPLE} ({2}) {RED}{RED}verliert {3} Punkt(e) {NORMAL}für {RED}das Fallenlassen der Bombe{NORMAL}."
+	}
+	
+	"MVP"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"de"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}bekommt {3} Punkt(e) {NORMAL}als {RED}MVP{NORMAL}."
+	}
+	
+	"LostSuicide"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"de"		"{PINK}{1}{PURPLE} ({2}) {RED}verliert {3} Punkt(e) {NORMAL}wegen {RED}Selbstmord{NORMAL}."
+	}
+	
+	"LostTK"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s}"
+		"de"		"{PINK}{1}{PURPLE} ({2}) {RED}verliert {3} Punkt(e) {NORMAL}wegen Team Killing {PINK}{4}{NORMAL}."
+	}
+	
+	"CT_VIPEscaped"
+	{
+		"#format"	"{1:d}"
+		"de"		"{BLUE}Counter-Terroristen{NORMAL} {LIGHTGREEN}bekommen {1} Punkte {NORMAL}für {RED}die erfolgreiche Flucht des VIP{NORMAL}."
+	}
+	
+	"VIPEscaped"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"de"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}bekommt {3} Punkte {NORMAL}für {RED}die erfolgreiche Flucht als VIP{NORMAL}."
+	}
+	
+	"TR_VIPKilled"
+	{
+		"#format"	"{1:d}"
+		"de"		"{ORANGE}Terroristen{NORMAL} {LIGHTGREEN}bekommen {1} Punkte {NORMAL}für {RED}das Töten des VIP{NORMAL}."
+	}
+	
+	"VIPKilled"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"de"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}bekommt {3} Punkte {NORMAL}für {RED}das Töten des VIP{NORMAL}."
+	}
+	
+	"GotPointsBy"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s}"
+		"de"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}bekommt {3} Punkt(e) {NORMAL}für {RED}{4}{NORMAL}."
+	}
+
+	"IsRankedAt"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:d},{5:d},{6:d},{7:d},{8:.2f},{9:d},{10:d}"
+		"de"		"Spieler{PINK} {1} {NORMAL}ist auf Rang {GREEN}{2}/{3} {NORMAL}, {PURPLE}{4} Punkte{NORMAL},{LIGHTGREEN} {5} Kills{NORMAL},{RED} {6} Deaths{NORMAL} und{BLUE} KDR {8}{NORMAL}."
+	}
+	
+	"Killing"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d}"
+		"de"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}bekommt {3} Punkte {NORMAL}für {RED}das Töten von {PINK}{4} {PURPLE}({5}){NORMAL}."
+	}
+	
+	"KillingKillerNotRanked"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d},{6:d},{7:d}"
+		"de"		"{PINK}{1}{PURPLE} ({2})[{6}/{7}] {LIGHTGREEN}bekommt {3} Punkte {NORMAL}für {RED}das Töten von {PINK}{4} {PURPLE}({5}){NORMAL}."
+	}
+	
+	"KillingVictimNotRanked"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d},{6:d},{7:d}"
+		"de"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}bekommt {3} Punkte {NORMAL}für {RED}das Töten von {PINK}{4} {PURPLE}({5})[{6}/{7}]{NORMAL}."
+	}
+	
+	"KillingBothNotRanked"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d},{6:d},{7:d},{8:d},{9:d}"
+		"de"		"{PINK}{1}{PURPLE} ({2})[{6}/{7}] {LIGHTGREEN}bekommt {3} Punkte {NORMAL}für {RED}das Töten von {PINK}{4} {PURPLE}({5})[{8}/{9}]{NORMAL}."
+	}
+	
+	"Headshot"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"de"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}bekommt {3} Punkt {NORMAL}für einen {RED}Kopfschuss{NORMAL}."
+	}
+	
+	"TR_Planting"
+	{
+		"#format"	"{1:d}"
+		"de"		"{ORANGE}Terroristen{NORMAL} {LIGHTGREEN}bekommen {1} Punkte {NORMAL}für {RED}das Legen der Bombe{NORMAL}."
+	}
+	
+	"Planting"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"de"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}bekommt {3} Punkte {NORMAL}für {RED}das Legen der Bombe{NORMAL}."
+	}
+	
+	"TR_Exploding"
+	{
+		"#format"	"{1:d}"
+		"de"		"{ORANGE}Terroristen{NORMAL} {LIGHTGREEN}bekommen {1} Punkte {NORMAL}für {RED}das Zünden der Bombe{NORMAL}."
+	}
+	
+	"Exploding"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"de"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}bekommt {3} Punkte {NORMAL}für {RED}das Zünden der Bombe{NORMAL}."
+	}
+	
+	"CT_Defusing"
+	{
+		"#format"	"{1:d}"
+		"de"		"{BLUE}Counter-Terroristen{NORMAL} {LIGHTGREEN}bekommen {1} Punkte {NORMAL}für {RED}die Entschärfung der Bombe{NORMAL}."
+	}
+	
+	"Defusing"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"de"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}bekommt {3} Punkte {NORMAL}für {RED}die Entschärfung der Bombe{NORMAL}."
+	}
+	
+	"CT_Hostage"
+	{
+		"#format"	"{1:d}"
+		"de"		"{BLUE}Counter-Terroristen{NORMAL} {LIGHTGREEN}bekommen {1} Punkte {NORMAL}für {RED}das Retten der Geisel{NORMAL}."
+	}
+	
+	"Hostage"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"de"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}bekommt {3} Punkte {NORMAL}für {RED}das Retten der Geisel{NORMAL}."
+	}
+	
+	"CT_Round"
+	{
+		"#format"	"{1:d}"
+		"de"		"{BLUE}Counter-Terroristen{NORMAL} {LIGHTGREEN}bekommen {1} Punkte {NORMAL}als {RED}Gewinner der Runde{NORMAL}."
+	}
+	
+	"TR_Round"
+	{
+		"#format"	"{1:d}"
+		"de"		"{ORANGE}Terroristen{NORMAL} {LIGHTGREEN}bekommen {1} Punkte {NORMAL}als {RED}Gewinner der Runde{NORMAL}."
+	}
+	
+	"PlayerJoinedChat"
+	//{1} = ClientName | {2} = RankOnConnect | {3} = PointsOnConnect
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"de"		"{PINK}{1}{NORMAL} hat dem Server betreten. {YELLOW}(Pos {GREEN}{2} {YELLOW}- {PURPLE}{3} {YELLOW}Punkte){NORMAL}."
+	}
+	
+	"TopPlayerJoinedChat"
+	{
+		"#format"	"{1:d},{2:s},{3:d},"
+		"de"		"Top {RED}{1}{NORMAL} Spieler {PINK}{2}{NORMAL} ist beigetreten, zurzeit auf Rang {GREEN}{3}{NORMAL}."
+	}
+	
+	"PlayerLeft"
+	//{1} = ClientName | {2} = rank | {3} = Reason
+	{
+		"#format"	"{1:s},{2:d},{3:s}"
+		"de"		"{PINK}{1}{PURPLE} ({2}) {NORMAL} hat den Server verlassen. {YELLOW}({3})."
+	}
+	
+	"NotRanked"
+	{
+		"#format"	"{1:d},{2:d}"
+		"de"		"{RED}Bisher keinen Rang. {NORMAL}Du brauchst {RED}{2}{NORMAL} Kills um einen Rang zu bekommen. Derzeit {LIGHTGREEN}{1}{NORMAL}."
+	}
+	
+	"AssistKill"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"de"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}bekommt {3}Punkt {NORMAL}für {RED}Assist Kill{NORMAL}."
+	}
+	
+	//****************** PrintHintText ******************
+	
+	"PlayerJoinedHint"
+	{
+		"#format"	"{1:s},{2:d},{3:d},"
+		"de"		"<font color='#28FF28'>Info</font> \n <font color='#B15BFF'>{1}</font> hat den Server betreten. \n Pos <font color='#28FF28'>{2}</font> - <font color='#E800E8'>{3}</font> Punkte"	
+	}
+	
+	"TopPlayerJoinedHint"
+	{
+		"#format"	"{1:d},{2:s},{3:d},"
+		"de"		"<font color='#28FF28'>Info</font> \n Top <font color='#FF0000'>{1}</font> Spieler <font color='#B15BFF'>{2}</font> beigetreten \n Derzeit Rang <font color='#28FF28'>{3}</font>"
+	}
+	
+	//***************** Menu (No Colors) *****************
+	
+	"Deaths"
+	{
+		"de"		"Tode"
+	}
+
+
+	"Kills"
+	{
+		"de"		"Getötet"
+	}
+
+	"VIPStats"
+	{
+		"de"		"VIP Statistik"
+	}
+	
+	"VIPEscapes"
+	{
+		"de"		"Flucht als VIP"
+	}
+	
+	"VIPsKilled"
+	{
+		"de"		"VIPs getötet"
+	}
+	
+	"Showing"
+	{
+		"#format"	"{1:d},{2:d},{3:d}"
+		"de"		"Zeige von {1} bis {2} von {3}\n"
+	}
+	
+	"Next"
+	{
+		"de"		"Nächste"
+	}
+	
+	"Back"
+	{
+		"de"		"Zurück"
+	}
+	
+	"KnifeKills"
+	{
+		"de"		"Messer Kills"
+	}
+	
+	"TaserKills"
+	{
+		"de"		"Taser Kills"
+	}
+	
+	"Position"
+	{
+		"de"		"Position"
+	}
+	
+	"Punkte"
+	{
+		"de"		"Punkte"
+	}
+	
+	"BasicStats"
+	{
+		"de"		"Grundlegende Statistiken"
+	}
+	
+	"KillsDeaths"
+	{
+		"#format"	"{1:d},{2:d}"
+		"de"		"Kills: {1}   Deaths: {2}"
+	}
+	
+	"Suicides"
+	{
+		"de"		"Selbstmord"
+	}
+	
+	"RoundStats"
+	{
+		"de"		"Runden Statistiken"
+	}
+	
+	"TRWins"
+	{
+		"de"		"TR's gewinnt"
+	}
+	
+	"CTWins"
+	{
+		"de"		"CT's gewinnt"
+	}
+	
+	"HitStats"
+	{
+		"de"		"Treffer Statistiken"
+	}
+	
+	"Shots"
+	{
+		"de"		"Schüsse"
+	}
+	
+	"Hits"
+	{
+		"de"		"Treffer"
+	}
+	
+	"Accuracy"
+	{
+		"de"		"Genauigkeit"
+	}
+	
+	"BombHostagesStats"
+	{
+		"de"		"Bomben/Geisel Statistiken"
+	}
+	
+	"PlantedBombs"
+	{
+		"de"		"Gelegte Bomben"
+	}
+	
+	"DefusedBombs"
+	{
+		"de"		"Entschärfte Bomben"
+	}
+	
+	"ExplodedBombs"
+	{
+		"de"		"Explodierte Bomben"
+	}
+	
+	"RescuedHostages"
+	{
+		"de"		"Geiseln befreit"
+	}
+	
+	"OtherStats"
+	{
+		"de"		"Andere Statistiken"
+	}
+	
+	"TimeConnected"
+	{
+		"#format"	"{1:d},{2:d},{3:d}"
+		"de"		"Verbindungszeit: {1} Stunden, {2} Minuten, {3} Sekunden"
+	}
+	
+	"Head"
+	{
+		"de"		"Kopf"
+	}
+	
+	"Chest"
+	{
+		"de"		"Brust"
+	}
+	
+	"Stomach"
+	{
+		"de"		"Bauch"
+	}
+	
+	"LeftArm"
+	{
+		"de"		"Linker Arm"
+	}
+	
+	"LeftLeg"
+	{
+		"de"		"Linkes Bein"
+	}
+	
+	"RightArm"
+	{
+		"de"		"Rechter Arm"
+	}
+	
+	"RightLeg"
+	{
+		"de"		"Rechtes Bein"
+	}
+	
+	"Next9Players"
+	{
+		"de"		"Nächsten 9 Spieler"
+	}
+	
+	"WeaponsStats"
+	{
+		"de"		"Waffen Statistiken"
+	}
+}
+ 

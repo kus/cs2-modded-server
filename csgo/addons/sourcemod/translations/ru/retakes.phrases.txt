@@ -1,0 +1,39 @@
+"Phrases"
+{
+	"JoinedQueueMessage"
+	{
+		"ru"			"Вы в очереди. Ожидайте."
+	}
+	"WaitingQueueMessage"
+	{
+		"ru"			"Сейчас играет максимальное количество игроков -  {GREEN}{1}. {NORMAL}Вы в очереди."
+	}
+	"RetakeSiteMessage"
+	{
+		"ru"			"Retake {GREEN}{1}: {LIGHT_RED}{2} T {NORMAL}против {PURPLE}{3} CT"
+	}
+	"ScrambleMessage"
+	{
+		"ru"			"Террористы выйграли {GREEN}{1}{NORMAL} раундов подряд. {PURPLE}Команды были перемешаны!"
+	}
+	"WinStreakAlmostToScramble"
+	{
+		"ru"			"Террористы выйграли {GREEN}{1}{NORMAL} раундов подряд - если они выйграют еще {GREEN}{2} то {PURPLE}команды будут перемешаны."
+	}
+	"WinStreak"
+	{
+		"ru"			"Террористы выйграли {GREEN}{1}{NORMAL} раундов подряд!"
+	}
+	"WinStreakOver"
+	{
+		"ru"			"Контр-Террористы завершили серию побед Террористов из {GREEN}{1}{NORMAL} раундов!"
+	}
+	"AdminScrambleTeams"
+	{
+		"ru"			"{1} включил перемешивание команд со следующего раунда."
+	}
+	"FailedToPlant"
+	{
+		"ru"		"{PURPLE}{1} {NORMAL}не установил бомбу..."
+	}
+}

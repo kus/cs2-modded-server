@@ -1,0 +1,31 @@
+"Phrases"
+{
+	"JoinedQueueMessage"
+	{
+		"sv"			"Du är placerad i kön."
+	}
+	"WaitingQueueMessage"
+	{
+		"sv"			"Matchen är just nu full med {GREEN}{1} {NORMAL} spelare. Du är i kö."
+	}
+	"RetakeSiteMessage"
+	{
+		"sv"			"Retake {GREEN}{1}: {LIGHT_RED}{2} Terrorister{NORMAL}vs  {PURPLE}{3} Anti-terrorister."
+	}
+	"ScrambleMessage"
+	{
+		"sv"			"Terroristerna har vunnit {GREEN}{1}{NORMAL} rundor i rad. {PURPLE}Blandar om lagen!"
+	}
+	"WinStreakAlmostToScramble"
+	{
+		"sv"			"Terroristerna har vunnit {GREEN}{1}{NORMAL} rundor i rad - vinner dom {GREEN}{2} mer, {PURPLE}så blandas lagen om."
+	}
+	"WinStreak"
+	{
+		"sv"			"Terroristerna har vunnit {GREEN}{1}{NORMAL} rundor i rad!"
+	}
+	"WinStreakOver"
+	{
+		"sv"			"Anti-terroristerna har avbrutit terroristernas {GREEN}{1}{NORMAL} raka vinster!"
+	}
+}

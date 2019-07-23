@@ -1,0 +1,659 @@
+//**********************************************  Valid Colors	********************************************************
+// {NORMAL}, {DARKRED}, {PINK}, {YELLOW}, {GREEN}, {LIGHTGREEN}, {RED}, {GRAY}, {BLUE}, {DARKBLUE}, {PURPLE}, {ORANGE} *
+//**********************************************************************************************************************
+//                                     http://i.imgur.com/q2wb8Cu.png                                                  *
+//{NORMAL} = x01 | {DARKRED} = x02 | {PINK} = x03 | {GREEN} = x04 | {YELLOW} = x09 | {LIGHTGREEN} = x06 | {RED} = x07  *
+//{GRAY} = x08 | {BLUE} = x0B | {DARKBLUE} = x0C | {PURPLE} = x0E|  {ORANGE} = x10                                     *
+//**********************************************************************************************************************
+
+"Phrases"
+{	
+	//******************* PrintToChat *******************
+	
+	"ResetMyRank"
+	{
+		"chi"		"{RED}你的排名已经重置"
+	}
+	
+	"BombPickup"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"chi"		"{PINK}{1}{PURPLE} ({2}) {RED}捡起炸弹{LIGHTGREEN}获得 {3} 点{NORMAL}."
+	}
+	
+	"BombDropped"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"chi"		"{PINK}{1}{PURPLE} ({2}) {RED}丢掉炸弹{RED}失去 {3} 点{NORMAL}."
+	}
+	
+	"MVP"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"chi"		"{PINK}{1}{PURPLE} ({2}) {NORMAL}是这回合的{RED}MVP,{LIGHTGREEN}获得 {3} 点{NORMAL}."
+	}
+	
+	"LostSuicide"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"chi"		"{PINK}{1}{PURPLE} ({2}) {RED}自杀,{RED}失去 {3} 点{NORMAL}."
+	}
+	
+	"LostTK"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s}"
+		"chi"		"{PINK}{1}{PURPLE} ({2}) {RED}击杀队友 {PINK}{4} {RED}失去 {3} 点{NORMAL}. "
+	}
+	
+	"CT_VIPEscaped"
+	{
+		"#format"	"{1:d}"
+		"chi"		"{BLUE}反恐精英{RED} 使VIP成功逃离,{LIGHTGREEN}获得 {1} 点{NORMAL}."
+	}
+	
+	"VIPEscaped"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"chi"		"{PINK}{1}{PURPLE} ({2}) {RED}当VIP成功逃离, {LIGHTGREEN}获得 {3} 点{NORMAL}."
+	}
+	
+	"TR_VIPKilled"
+	{
+		"#format"	"{1:d}"
+		"chi"		"{ORANGE}恐怖分子 {RED}刺杀VIP, {LIGHTGREEN}获得 {1} 点{NORMAL}."
+	}
+	
+	"VIPKilled"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"chi"		"{PINK}{1}{PURPLE} ({2}) {RED}刺杀VIP, {LIGHTGREEN}获得 {3} 点{NORMAL}."
+	}
+	
+	"GotPointsBy"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s}"
+		"chi"		"{PINK}{1}{PURPLE} ({2}) {NORMAL}因为 {RED}{4} {LIGHTGREEN}获得 {3} 点{NORMAL}."
+	}
+
+	"IsRankedAt"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:d},{5:d},{6:d},{7:d},{8:.2f},{9:d},{10:d}"
+		"chi"		"玩家 {PINK} {1} {NORMAL}的排名是 {GREEN}{2}/{3} {NORMAL}, {PURPLE}{4} 点{NORMAL},{LIGHTGREEN} {5} 击杀{NORMAL},{RED} {6} 死亡{NORMAL},{ORANGE} {7} 助攻{NORMAL},{BLUE} KDR {8}{NORMAL},{DARKRED} {9} TKs{NORMAL}, {YELLOW}{10} MVPs{NORMAL}."
+	}
+	
+	"Killing"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d}"
+		"chi"		"{PINK}{1} {PURPLE}({2}) {RED}击杀 {PINK} {4} {PURPLE}({5}){NORMAL}, {LIGHTGREEN}获得 {3} 点{NORMAL}."
+	}
+	
+	"KillingKillerNotRanked"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d},{6:d},{7:d}"
+		"chi"		"{PINK}{1} {PURPLE}({2})[{6}/{7}] {RED}击杀 {PINK}{4} {PURPLE}({5}){NORMAL}, {LIGHTGREEN}获得 {3} 点{NORMAL}."
+	}
+	
+	"KillingVictimNotRanked"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d},{6:d},{7:d}"
+		"chi"		"{PINK}{1} {PURPLE}({2}) {RED}击杀 {PINK}{4} {PURPLE}({5})[{6}/{7}]{NORMAL}, {LIGHTGREEN}获得 {3} 点{NORMAL}."
+	}
+	
+	"KillingBothNotRanked"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d},{6:d},{7:d},{8:d},{9:d}"
+		"chi"		"{PINK}{1}{PURPLE} ({2})[{6}/{7}] {RED}击杀 {PINK}{4} {PURPLE}({5})[{8}/{9}] {LIGHTGREEN}获得 {3} 点{NORMAL}."
+	}
+	
+	"Headshot"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"chi"		"{PINK}{1}{PURPLE} ({2}) {RED}爆头,{LIGHTGREEN}获得 {3} 点{NORMAL}."
+	}
+	
+	"TR_Planting"
+	{
+		"#format"	"{1:d}"
+		"chi"		"{ORANGE}恐怖分子{RED} 放置炸弹,{LIGHTGREEN}获得 {1} 点{NORMAL}."
+	}
+	
+	"Planting"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"chi"		"{PINK}{1}{PURPLE} ({2}) {RED}放置炸弹,{LIGHTGREEN}获得 {3} 点{NORMAL}."
+	}
+	
+	"TR_Exploding"
+	{
+		"#format"	"{1:d}"
+		"chi"		"{ORANGE}恐怖分子{RED} 引爆炸弹,{LIGHTGREEN}获得 {1} 点{NORMAL}."
+	}
+	
+	"Exploding"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"chi"		"{PINK} {1}{PURPLE} ({2}) {RED}引爆炸弹,{LIGHTGREEN}获得 {3} 点{NORMAL}."
+	}
+	
+	"CT_Defusing"
+	{
+		"#format"	"{1:d}"
+		"chi"		"{BLUE}反恐精英{RED} 拆除炸弹,{LIGHTGREEN}获得 {1} 点{NORMAL}."
+	}
+	
+	"Defusing"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"chi"		"{PINK}{1}{PURPLE} ({2}) {RED}拆除炸弹,{LIGHTGREEN}获得 {3} 点{NORMAL}."
+	}
+	
+	"CT_Hostage"
+	{
+		"#format"	"{1:d}"
+		"chi"		"{BLUE}反恐精英{RED} 在这回合疏散人质{LIGHTGREEN}获得 {1} 点{NORMAL}."
+	}
+	
+	"Hostage"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"chi"		"{PINK}{1}{PURPLE} ({2}) {RED}在这回合疏散人质{LIGHTGREEN}获得 {3} 点{NORMAL}."
+	}
+	
+	"CT_Round"
+	{
+		"#format"	"{1:d}"
+		"chi"		"{BLUE}反恐精英{RED} 胜利,在这回合{LIGHTGREEN}获得 {1} 点{NORMAL}."
+	}
+	
+	"TR_Round"
+	{
+		"#format"	"{1:d}"
+		"chi"		"{ORANGE}恐怖分子{RED} 胜利,在这回合{LIGHTGREEN}获得 {1} 点{NORMAL}."
+	}
+	
+	"NotRanked"
+	{
+		"#format"	"{1:d},{2:d}"
+		"chi"		"{RED}你还没被列入排名. {NORMAL}你需要 {RED}{2}{NORMAL} 杀才能被列入排名. 现在 {LIGHTGREEN}{1}."
+	}
+	
+	"PlayerJoinedChat"
+	//{1} = ClientName | {2} = RankOnConnect | {3} = PointsOnConnect
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s}"
+		"chi"		"玩家 {PINK}{1}{NORMAL} 来自 {LIGHTGREEN}{4}{NORMAL} 进入服务器. {YELLOW}(排名 {GREEN}{2} {YELLOW}- {PURPLE}{3} {YELLOW}点)"
+	}
+	
+	"TopPlayerJoinedChat"
+	{
+		"#format"	"{1:d},{2:s},{3:d},{4:s}"
+		"chi"		"Top {RED}{1}{NORMAL} 玩家 {PINK}{2}{NORMAL} 来自 {LIGHTGREEN}{4}{NORMAL} 进入服务器, 目前排名 {GREEN}{3}"
+	}
+	
+	"PlayerLeft"
+	//{1} = ClientName | {2} = rank | {3} = Reason
+	{
+		"#format"	"{1:s},{2:d},{3:s}"
+		"chi"		"玩家 {PINK}{1}{PURPLE} ({2}) {NORMAL} 离开服务器. {YELLOW}({3})"
+	}
+	
+	"AssistKill"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:s}"
+		"chi"		"{PINK}{1}{PURPLE} ({2}) {RED}协助 {PINK}{4} {RED}击杀 {PINK}{5} {NORMAL},{LIGHTGREEN}获得 {3} 点{NORMAL}."
+	}
+	
+	"The rank has been reset"
+	{
+		"chi"		"{RED}已重置排名资料"
+	}
+	
+	"All rank data has been reset"
+	{
+		"chi"		"{RED}已重置所有排名资料"
+	}
+	
+	"Usagepurge"
+	{
+		"chi"		"{RED}请使用: {PINK}rankpurge X (X 代表未上线天数)"
+	}
+	
+	"Purged"
+	{
+		"chi"		"{RED}Purged"
+	}
+	
+	"UsageStatsme2"
+	{
+		"chi"		"{RED}请使用: {PINK}sm_statsme2 <名字 | #排名 | steam>"
+	}
+	
+	"Hide Rankme Chat"
+	{
+		"chi"		"{RED}隐藏对话框消息."
+	}
+	
+	"Show Rankme Chat"
+	{
+		"chi"		"{LIGHTGREEN}显示对话框消息."
+	}
+	
+	"CT_Win"
+	{
+		"#format"	"{1:d}"
+		"chi"		"{BLUE}反恐精英 {RED}赢得比赛{NORMAL},{LIGHTGREEN}获得 {1} 点{NORMAL}."
+	}
+	
+	"TR_Win"
+	{
+		"#format"	"{1:d}"
+		"chi"		"{ORANGE}恐怖分子 {RED}赢得比赛{NORMAL},{LIGHTGREEN}获得 {1} 点{NORMAL}."
+	}
+	
+	"CT_Lose"
+	{
+		"#format"	"{1:d}"
+		"chi"		"{BLUE}反恐精英 {RED}输掉比赛{NORMAL},{LIGHTGREEN}失去 {1} 点{NORMAL}."
+	}
+	
+	"TR_Lose"
+	{
+		"#format"	"{1:d}"
+		"chi"		"{ORANGE}恐怖分子 {RED}输掉比赛{NORMAL},{LIGHTGREEN}失去 {1} 点{NORMAL}."
+	}
+	
+	"Draw"
+	{
+		"#format"	"{1:d}"
+		"chi"		"{RED}比赛平手{NORMAL}, {PINK}双方 {LIGHTGREEN}获得 {1} 点{NORMAL}."
+	}
+	
+	//****************** PrintHintText ******************
+	
+	"PlayerJoinedHint"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s}"
+		"chi"		"<font color='#28FF28'>消息:</font> \n <font color='#B15BFF'>{1}</font> 来自 <font color='#00FF7F'>{4}</font> 加入游戏. \n 排名 <font color='#28FF28'>{2}</font> - <font color='#E800E8'>{3}</font> 点"	
+	}
+	
+	"TopPlayerJoinedHint"
+	{
+		"#format"	"{1:d},{2:s},{3:d},{4:s}"
+		"chi"		"<font color='#28FF28'>消息:</font> \n Top <font color='#FF0000'>{1}</font> 玩家 <font color='#B15BFF'>{2}</font> 来自 <font color='#00FF7F'>{4}</font> 加入游戏 \n 目前排名: <font color='#28FF28'>{3}</font>"
+	}
+	
+	//***************** Menu (No Colors) *****************
+	
+	"Showing"
+	{
+		"#format"	"{1:d},{2:d},{3:d}"
+		"chi"		"显示从 {1} 到 {2} ,共 {3}\n"
+	}
+	
+	"Next"
+	{
+		"chi"		"下一页"
+	}
+	
+	"Back"
+	{
+		"chi"		"上一页"
+	}
+	
+	"KnifeKills"
+	{
+		"chi"		"刀子击杀"
+	}
+	
+	"TaserKills"
+	{
+		"chi"		"电击枪击杀"
+	}
+	
+	"Position"
+	{
+		"chi"		"位置"
+	}
+	
+	"Points"
+	{
+		"chi"		"点数"
+	}
+	
+	"BasicStats"
+	{
+		"chi"		"基本统计"
+	}
+	
+	"KillsDeathsAssists"
+	{
+		"#format"	"{1:d},{2:d},{3:d}"
+		"chi"		"击杀: {1}   死亡: {2}   助攻: {3}"
+	}
+	
+	"Suicides"
+	{
+		"chi"		"自杀"
+	}
+	
+	"RoundStats"
+	{
+		"chi"		"回合统计"
+	}
+	
+	"TRWins"
+	{
+		"chi"		"恐怖分子获胜"
+	}
+	
+	"CTWins"
+	{
+		"chi"		"反恐精英获胜"
+	}
+	
+	"HitStats"
+	{
+		"chi"		"射击统计"
+	}
+	
+	"Shots"
+	{
+		"chi"		"射击数"
+	}
+	
+	"Hits"
+	{
+		"chi"		"击中数"
+	}
+	
+	"Accuracy"
+	{
+		"chi"		"准度"
+	}
+	
+	"BombHostagesStats"
+	{
+		"chi"		"炸弹/人质 统计"
+	}
+	
+	"PlantedBombs"
+	{
+		"chi"		"放置炸弹"
+	}
+	
+	"DefusedBombs"
+	{
+		"chi"		"拆除炸弹"
+	}
+	
+	"ExplodedBombs"
+	{
+		"chi"		"炸弹爆炸"
+	}
+	
+	"RescuedHostages"
+	{
+		"chi"		"解救人质"
+	}
+	
+	"OtherStats"
+	{
+		"chi"		"其他统计"
+	}
+	
+	"TimeConnected"
+	{
+		"#format"	"{1:d},{2:d},{3:d}"
+		"chi"		"游玩时间: {1} 小时, {2} 分, {3} 秒"
+	}
+	
+	"Head"
+	{
+		"chi"		"头"
+	}
+	
+	"Chest"
+	{
+		"chi"		"胸"
+	}
+	
+	"Stomach"
+	{
+		"chi"		"腹"
+	}
+	
+	"LeftArm"
+	{
+		"chi"		"左手"
+	}
+	
+	"LeftLeg"
+	{
+		"chi"		"左脚"
+	}
+	
+	"RightArm"
+	{
+		"chi"		"右手"
+	}
+	
+	"RightLeg"
+	{
+		"chi"		"右脚"
+	}
+	
+	"Next9Players"
+	{
+		"chi"		"上面9个玩家"
+	}
+	
+	"WeaponsStats"
+	{
+		"chi"		"武器统计"
+	}
+	
+	"VIPStats"
+	{
+		"chi"		"VIP统计"
+	}
+	
+	"VIPEscapes"
+	{
+		"chi"		"当VIP逃离"
+	}
+	
+	"VIPsKilled"
+	{
+		"chi"		"VIP刺杀"
+	}
+	
+	"Kills"
+	{
+		"chi"		"击杀数"
+	}
+	
+	"Deaths"
+	{
+		"chi"		"死亡数"
+	}
+	
+	"Headshots"
+	{
+		"chi"		"爆头数"
+	}
+	
+	"Assists"
+	{
+		"chi"		"助攻数"
+	}
+	
+	"TKs"
+	{
+		"chi"		"击杀队友数"
+	}
+	
+	"RankMe Menu"
+	{
+		"chi"		"RankMe菜单"
+	}
+	
+	"My Rank"
+	{
+		"chi"		"我的排名"
+	}
+	
+	"Reset My Rank"
+	{
+		"chi"		"重置我的排名"
+	}
+	
+	"My Stats"
+	{
+		"chi"		"我的统计资料"
+	}
+	
+	"Show Other Players Stats"
+	{
+		"chi"		"显示其他玩家的统计资料"
+	}
+	
+	"Session"
+	{
+		"chi"		"显示这张地图的统计资料"
+	}
+	
+	"My HitBox Stats"
+	{
+		"chi"		"My HitBox Stats"
+	}
+	
+	"My Weapon Stats"
+	{
+		"chi"		"显示我的武器统计"
+	}
+	
+	"Show Players Above Me"
+	{
+		"chi"		"显示名次在我上面的玩家"
+	}
+	
+	"TOP 10"
+	{
+		"chi"		"TOP 10"
+	}
+	
+	"TOP Kills"
+	{
+		"chi"		"击杀排名"
+	}
+	
+	"TOP Deaths"
+	{
+		"chi"		"死亡排名"
+	}
+	
+	"TOP Assists"
+	{
+		"chi"		"助攻排名"
+	}
+	
+//	"TOP KDR"
+//	{
+//		"chi"		"KDR排名"
+//	}
+	
+	"TOP TK"
+	{
+		"chi"		"TK排名"
+	}
+	
+	"TOP Weapon"
+	{
+		"chi"		"武器排名"
+	}
+	
+//	"TOP Grenade"
+//	{
+//		"chi"		"TOP Grenade"
+//	}
+//	
+//	"TOP Knife"
+//	{
+//		"chi"		"TOP Knife"
+//	}
+//	
+//	"TOP Taser"
+//	{
+//		"chi"		"TOP Taser"
+//	}
+	
+	"TOP Accuracy"
+	{
+		"chi"		"准确率排名"
+	}
+	
+	"TOP HS"
+	{
+		"chi"		"爆头排名"
+	}
+	
+	"TOP Time Connected"
+	{
+		"chi"		"在线时间排名"
+	}
+	
+	"Reset a player rank"
+	{
+		"chi"		"重置玩家排名"
+	}
+	
+	"Reset all the rank"
+	{
+		"chi"		"重置所有玩家排名"
+	}
+	
+	"MVPs"
+	{
+		"chi"		"MVPs"
+	}
+		
+	"TOP MVP"
+	{
+		"chi"		"MVP排名"
+	}
+	
+	"KPR"
+	{
+		"chi"		"KPR"
+	}
+	
+	"DPR"
+	{
+		"chi"		"DPR"
+	}
+	
+	"Damage"
+	{
+		"chi"		"总伤害"
+	}
+	
+	"TOP Damage"
+	{
+		"chi"		"伤害排名"
+	}
+	
+	"MatchWins"
+	{
+		"en"		"胜场"
+	}
+	
+	"MatchLosses"
+	{
+		"en"		"败场"
+	}
+	
+	"MatchDraws"
+	{
+		"en"		"平手"
+	}
+}

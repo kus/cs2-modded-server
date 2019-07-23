@@ -1,0 +1,39 @@
+"Phrases"
+{
+	"JoinedQueueMessage"
+	{
+		"fr"			"Vous avez été placé dans la file d'attente."
+	}
+	"WaitingQueueMessage"
+	{
+		"fr"			"La partie est actuellement complète avec {GREEN}{1} {NORMAL}joueurs. Vous êtes dans la file d'attente."
+	}
+	"RetakeSiteMessage"
+	{
+		"fr"			"Reprise {GREEN}{1}: {LIGHT_RED}{2} Terroristes {NORMAL}contre {PURPLE}{3} CTs"
+	}
+	"ScrambleMessage"
+	{
+		"fr"			"Les terroristes ont gagné {GREEN}{1}{NORMAL} tours d'affilée. {PURPLE}Mélange des équipes en cours !"
+	}
+	"WinStreakAlmostToScramble"
+	{
+		"fr"			"Les terroristes ont gagné {GREEN}{1}{NORMAL} tours d'affilée - s'ils en gagnent encore {GREEN}{2}, {PURPLE}les équipes seront mélangées."
+	}
+	"WinStreak"
+	{
+		"fr"			"Les terroristes ont gagné {GREEN}{1}{NORMAL} tours d'affilée !"
+	}
+	"WinStreakOver"
+	{
+		"fr"			"Les CTs ont mis fin à {GREEN}{1}{NORMAL} tours gagnés d'affilée !"
+	}
+	"AdminScrambleTeams"
+	{
+		"fr"			"{1} a imposé le mélange des équipes au prochain tour."
+	}
+	"FailedToPlant"
+	{
+		"fr"		"{PURPLE}{1} {NORMAL}n'a pas réussi à poser la bombe…"
+	}
+}
