@@ -250,4 +250,24 @@
 		"fi"		"Komentoa voi käyttää vain pelissä."
 	}
 
+	"Say all"
+	{
+		"fi"		"(KAIKKI) {1}"
+	}
+
+	"Private say to"
+	{
+		"fi"		"(Yksityisviesti pelaajalle {1}) {2}"
+	}
+
+	"Chat to admins"
+	{
+		"fi"		"(YLLÄPITÄJILLE) {1}"
+	}
+
+	"Chat admins"
+	{
+		"fi"		"(YLLÄPITÄJÄT) {1}"
+	}
+
 }

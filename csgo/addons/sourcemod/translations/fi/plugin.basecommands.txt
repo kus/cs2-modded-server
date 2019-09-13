@@ -125,4 +125,14 @@
 		"fi"		"Poistettiin porttikiellot, jotka vastaavat suodatusta: {1}"
 	}
 
+	"Choose Config"
+	{
+		"fi"		"Valitse konfiguraatio"
+	}
+
+	"Please select a map"
+	{
+		"fi"		"Valitse kartta"
+	}
+
 }
