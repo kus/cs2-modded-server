@@ -1,0 +1,9 @@
+Sprite
+{
+	"$basetexture" "kzmod/starttimersign"
+	"$spriteorientation" "oriented"
+	"$spriteorigin" "[ 0.50 0.50 ]"
+	
+	"$nocull" 1
+	"$translucent" "1"
+}

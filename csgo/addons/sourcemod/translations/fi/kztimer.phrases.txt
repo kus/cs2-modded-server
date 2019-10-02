@@ -1,0 +1,1444 @@
+﻿
+"Phrases"
+{
+
+	"Jumpstats_PersonalBest"
+	{
+		"#format"	"{1:c}"
+		"fi"		" {1}PB"
+	}
+	"NewGlobalMapRankPro"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:i},{6:s},{7:s},{8:i}"
+		"fi"		"[{1}GLOBAL{2}] {3}{4} on nyt #{5} (PRO) kartassa {6}! [{7}, Tick{8}]"
+	}
+	"NewGlobalMapRankTp"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:i},{6:s},{7:s},{8:i},{9:i}"
+		"fi"		"[{1}GLOBAL{2}] {3}{4} on nyt #{5} (TP) kartassa {6}! [{7}, TPt: {8}, Tick{9}]"
+	}
+	"UndoLadder"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] {3}TP kumoaminen ei ole mahdollista, koska teleporttipisteesi oli tikapuissa"
+	}
+	"UndoMidAir"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] {3}TP kumoaminen ei ole mahdollista, koska teleporttipisteesi oli ilmassa"
+	}
+	"mapinfo1"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:s},{6:c},{7:c},{8:s},{9:c},{10:c},{11:s},{12:c}"
+		"fi"		"[{1}KZ{2}] {3}Nykyinen kartta: {4}{5}{6}, Tier: {7}{8}{9} (Vahvistettu {10}{11}{12})"
+	}
+	"mapinfo2"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:s},{6:c}"
+		"fi"		"[{1}KZ{2}] {3}Nykyinen kartta: {4}{5}{6} (Ei vahvistettu)"
+	}
+	"options_lang_en"
+	{
+		"fi"		"Language - English"
+	}
+	"options_lang_de"
+	{
+		"fi"		"Language - Germany"
+	}
+	"options_lang_sv"
+	{
+		"fi"		"Language - Swedish"
+	}
+	"options_lang_fi"
+	{
+		"fi"		"Language - Finnish"
+	}
+	"options_lang_fr"
+	{
+		"fi"		"Language - French"
+	}
+	"options_lang_ru"
+	{
+		"fi"		"Language - Russian"
+	}
+	"options_lang_cn"
+	{
+		"fi"		"Language - Chinese"
+	}
+	"options_lang_pt"
+	{
+		"fi"		"Language - Portuguese Brazilian"
+	}
+	"stopsound"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Kartan musiikki on pysäytetty."
+	}
+	"kick_msg_skill_group"
+	{
+		"#format"	"{1:s}"
+		"fi"		"[KZTimer] Et täytä vaatimuksia pelataksesi tällä serverillä. Sinun pitää olla rankiltasi ‘VIP’, ‘ADMIN’ {1}' tai korkeampi rankki."
+	}
+	"kick_msg_low_fps"
+	{
+		"fi"		"[KZTimer] Muuta “fps_max“ arvosi suuremmaksi tai samaksi kuin 120."
+	}
+	"options_advcp_on"
+	{
+		"fi"		"Kehittynyt infopaneeli (lj tiedot)  -  Käytössä"
+	}
+	"options_advcp_off"
+	{
+		"fi"		"Kehittynyt infopaneeli (lj tiedot)  -  Poissa käytöstä"
+	}
+	"options_rp_on"
+	{
+		"fi"		"Uusinta reitti (vaatii uusinta botit)  -  Käytössä"
+	}
+	"options_rp_off"
+	{
+		"fi"		"Uusinta reitti (vaatii uusinta botit)  -  Poissa käytöstä"
+	}
+	"options_adv_on"
+	{
+		"fi"		"Kehittynyt teleportti valikko  -  Käytössä"
+	}
+	"options_adv_off"
+	{
+		"fi"		"Kehittynyt teleportti valikko  -  Poissa käytöstä"
+	}
+	"options_hide_on"
+	{
+		"fi"		"Piilota muut pelaajat  -  Käytössä"
+	}
+	"options_hide_off"
+	{
+		"fi"		"Piilota muut pelaajat  -  Poissa käytöstä"
+	}
+	"options_colorchat_off"
+	{
+		"fi"		"Värillinen chatti (hyppytiedot)  -  Ei kenenkään (paitsi sinun)"
+	}
+	"options_colorchat_on"
+	{
+		"fi"		"Värillinen chatti (hyppytiedot)  -  Kaikki"
+	}
+	"options_colorchat_only_red"
+	{
+		"fi"		"Värillinen chatti (hyppytiedot)  -  Vain omat punaiset hypyt"
+	}
+	"options_cpmessage_on"
+	{
+		"fi"		"“Teleporttipiste tehty“ chatti ilmoitus  -  Käytössä"
+	}
+	"options_cpmessage_off"
+	{
+		"fi"		"“Teleporttipiste tehty“ chatti ilmoitus  -  Poissa käytöstä"
+	}
+	"options_menusounds_on"
+	{
+		"fi"		"Teleportti valikon äänet  -  Käytössä"
+	}
+	"options_menusounds_off"
+	{
+		"fi"		"Teleportti valikon äänet  -  Poissa käytöstä"
+	}
+	"options_quakesounds_none"
+	{
+		"fi"		"Quake äänet - Ei mitkään"
+	}
+	"options_quakesounds_all"
+	{
+		"fi"		"Quake äänet - Kaikki"
+	}
+	"options_quakesounds_godlike_records_only"
+	{
+		"fi"		"Quake äänet - Vain punaiset hypyt ja ennätykset"
+	}
+	"options_strafesync_on"
+	{
+		"fi"		"Kopioi strafe sync chattiin  -  Käytössä"
+	}
+	"options_strafesync_off"
+	{
+		"fi"		"Kopioi strafe sync chattiin  -  Poissa käytöstä"
+	}
+	"options_timertext_on"
+	{
+		"fi"		"Näytä ajastin valikossa -  Käytössä"
+	}
+	"options_timertext_off"
+	{
+		"fi"		"Näytä ajastin valikossa  -  Poissa käytöstä"
+	}
+	"options_speclist_on"
+	{
+		"fi"		"Katsojalista  -  Katsojien määrä + nimet"
+	}
+	"options_speclist_counter_only"
+	{
+		"fi"		"Katsojalista  -  Katsojien määrä"
+	}
+	"options_speclist_off"
+	{
+		"fi"		"Katsojalista  -  Poissa käytöstä"
+	}
+	"options_centerpanel_on"
+	{
+		"fi"		"Infopaneeli (nopeus, pituus, näppäimet)  -  Käytössä"
+	}
+	"options_centerpanel_off"
+	{
+		"fi"		"Infopaneeli (nopeus, pituus, näppäimet)  -  Poissa käytöstä"
+	}
+	"options_start_weapon_usp"
+	{
+		"fi"		"Aloitusase  -  USP-S"
+	}
+	"options_start_weapon_knife"
+	{
+		"fi"		"Aloitusase  -  Puukko"
+	}
+	"options_jumpbeam_on"
+	{
+		"fi"		"Hypyn reitti  -  Näkyvä"
+	}
+	"options_jumpbeam_off"
+	{
+		"fi"		"Hypyn reitti  -  Piilotettu"
+	}
+	"options_chat_hidden"
+	{
+		"fi"		"Chatti ja Puhe-ikonit  -  Piilotettu"
+	}
+	"options_chat_visible"
+	{
+		"fi"		"Chatti ja Puhe-ikonit  -  Näkyvä"
+	}
+	"options_weaponmodel_visible"
+	{
+		"fi"		"Viewmodel  -  Näkyvä"
+	}
+	"options_weaponmodel_hidden"
+	{
+		"fi"		"Viewmodel  -  Piilotettu"
+	}
+	"options_gotome_on"
+	{
+		"fi"		"!goto sallittu minuun  -  Käytössä"
+	}
+	"options_gotome_off"
+	{
+		"fi"		"!goto sallittu minuun  -  Poissa käytöstä"
+	}
+	"options_autobhop_on"
+	{
+		"fi"		"AutoBhop  -  Käytössä"
+	}
+	"options_autobhop_off"
+	{
+		"fi"		"AutoBhop  -  Poissa käytöstä"
+	}
+	"HideChat1"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Chatti on piilotettu."
+	}
+	"HideChat2"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Chatti on näkyvä."
+	}
+	"HideViewModel1"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Viewmodel poissa käytöstä."
+	}
+	"HideViewModel2"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Viewmodel käytössä."
+	}
+	"PlayerJumpBeam1"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Hypyn reitti käytössä."
+	}
+	"PlayerJumpBeam2"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Hypyn reitti poissa käytöstä."
+	}
+	"ClientLadderJump1"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:.2f},{5:c},{6:i},{7:c},{8:c},{9:.0f},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:i},{16:c},{17:c}"
+		"fi"		"[{1}KZ{2}] {3}LAJ: {4} unittia [{5}{6}{7} Strafea | {8}{9}{10} Pre | {11}{12}{13} Korkeus | {14}{15}{16}{17} Sync]"
+	}
+	"ClientLadderJump2"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:c},{6:.2f},{7:c},{8:c},{9:i},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:.0f},{19:c},{20:c},{21:i},{22:c},{23:c}"
+		"fi"		"[{1}KZ{2}] {3}LAJ{4}: {5}{6} unittia {7} [{8}{9}{10} Strafea | {11}{12}{13} Pre | {14}{15}{16} Max | {17}{18}{19} Korkeus | {20}{21}{22}{23} Sync]"
+	}
+	"Jumpstats_LadderJumpTop"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:i},{6:.3f}"
+		"fi"		"[{1}KZ{2}] {3}{4} on nyt #{5} LadderJumpin Top 20:ssä! [{6} unittia]"
+	}
+	"Jumpstats_BeatLadderJumpBest"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:.3f}"
+		"fi"		"[{1}KZ{2}] {3}Päihitit oman LadderJump ennätyksesi {4} hypyllä!"
+	}
+	"Jumpstats_LadderJumpAll"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:.3f},{8:c},{9:c},{10:s}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} hyppäsi {6}{7} unittia{8}{9}LadderJumpilla{10}"
+	}
+	"AvgTime"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:c},{6:s},{7:i},{8:c},{9:c},{10:s},{11:i}"
+		"fi"		"[{1}KZ{2}] {3}Keskiverto aika {4}PRO{5}: {6} ({7}) {8}TP{9}: {10} ({11})"
+	}
+	"TimerStartReminder"
+	{
+		"#format"	""
+		"fi"		"<font color='#FE642E' size='24' face ='Calibri'><b> Aloita ajastin painamalla  \n “KÄYTÄ“ näppäintä aloitus napin luona.</b></font>"
+	}
+	"TimeleftCounter"
+	{
+		"#format"	"{1:c},{2:c},{3:i}"
+		"fi"		"[{1}KARTTA{2}] {3}.."
+	}
+	"TimeleftMinutes"
+	{
+		"#format"	"{1:c},{2:c},{3:i}"
+		"fi"		"[{1}KARTTA{2}] {3} minuuttia jäljellä"
+	}
+	"TimeleftSeconds"
+	{
+		"#format"	"{1:c},{2:c},{3:i}"
+		"fi"		"[{1}MAP{2}] {3} sekuntia jäljellä"
+	}
+	"TimerStarted1"
+	{
+		"#format"	"{1:s},{2:s}"
+		"fi"		"<b>Ajastin nollattu</b>\n<font color='#4A66FC'><b>Pro</b></font>: {1}\n<font color='#D3CE6D'><b>TP</b></font>: {2}"
+	}
+	"TimerStarted2"
+	{
+		"#format"	"{1:s},{2:s}"
+		"fi"		"<b>Ajastin aloitettu</b>\n<font color='#4A66FC'><b>Pro</b></font>: {1}\n<font color='#D3CE6D'><b>TP</b></font>: {2}"
+	}
+	"TimerStopped"
+	{
+		"#format"	"{1:s}"
+		"fi"		"<font size='22'>Onnittelut!</font>\nLäpäisit kartan ajassa: <font color='#86D53B'>{1}</font>"
+	}
+	"LJblock1"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] {3}Epäkelpo määränpää (korkeusheitto > 0.0)"
+	}
+	"LJblock2"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] {3}Epäkelpo määränpää (reunan tunnistus ei onnistunut)"
+	}
+	"LJblock3"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] {3}Epäkelpo määränpää (valittu matka on liian pitkä)"
+	}
+	"LJblock4"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] {3}Epäkelpo määränpää"
+	}
+	"LJblock5"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:d},{6:c}"
+		"fi"		"[{1}KZ{2}] {3}Longjump Block ({4}{5} unittia{6}) rekisteröity"
+	}
+	"LJblock6"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:i},{6:c}"
+		"fi"		"[{1}KZ{2}] {3}Voit rekisteröidä vain blockeja minimissään 226 unittia! (Nykyinen matka: {4}{5} unittia{6})"
+	}
+	"LJblock7"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:i},{6:c}"
+		"fi"		"[{1}KZ{2}] {3}Voit rekisteröidä blockeja maksimissaan 300 unittia! (Nykyinen matka: {4}{5} unittia{6})"
+	}
+	"MissedTpBest"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:s},{6:c}"
+		"fi"		"[{1}KZ{2}] {3}Olet mennyt parhaimman tp aikasi ohi ({4}{5}{6})"
+	}
+	"MissedProBest"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:s},{6:c}"
+		"fi"		"[{1}KZ{2}] {3}Olet mennyt parhaimman pro aikasi ohi ({4}{5}{6})"
+	}
+	"KickMsg"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:i}"
+		"fi"		"[{1}KZ FPSCHECK{2}] Sinut tullaan {3}potkimaan 10 sekunnin päästä{4}. Muuta “fps_max“ arvosi suuremmaksi tai samaksi kuin 120 (havaittu: fps_max {5})"
+	}
+	"TeamJoin"
+	{
+		"#format"	"{1:N},{2:s}"
+		"fi"		"Pelaaja {1} liittyi tiimiin {2}"
+	}
+	"JumpPenalty3"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Jump penalty forced. (server-puoleinen)"
+	}
+	"MapTopFail"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Käyttö: !maptop <kartan nimi>"
+	}
+	"Hyperscroll"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] {3}VAROITUS: Lopeta hyperscrollaus tai saat porttikiellon!"
+	}
+	"Measure1"
+	{
+		"#format"	"{1:c},{2:c},{3:.1f},{4:.1f}"
+		"fi"		"[{1}KZ{2}] Pituus: {3} (Korkeusheitto: {4})"
+	}
+	"Measure2"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Sinun pitää valita molemmat pisteet ennen kuin saat pituuden."
+	}
+	"Measure3"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Et tähtää mitään kiinteää!"
+	}
+	"Measure4"
+	{
+		"#format"	"{1:c},{2:c},{3:i},{4:.1f},{5:.1f},{6:.1f}"
+		"fi"		"[{1}KZ{2}] Piste {3} saatu kohdassa X: {4}, Y: {5}, Z: {6}"
+	}
+	"AntiCheatEnabled"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"  {1}{2}{3}VAROITUS: Kaikenlainen huijaaminen aiheuttaa porttikiellon jokaiselle Global KZTimer serverille! Tähän kuuluu mutta ei rajoitu niihin: hakkerointi, makrot ja hiiren ominaisuudet kuten hyperscrollaus."
+	}
+	"NoCpsDuringChallenge"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Teleportteja ei hyväksytä kesken haastetta!"
+	}
+	"KnifeDead"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Et voi vaihtaa puukkoasi kun olet kuollut."
+	}
+	"Undo1"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] {3}TP kumoaminen ei ole mahdollista ollessasi ilmassa."
+	}
+	"Undo2"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] {3}TP kumoaminen ei ole mahdollista liikkuessasi."
+	}
+	"JumpstatsDisabled"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Info: Hyppytiedot poissa käytöstä!"
+	}
+	"noJumpRecords"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Ei löytyneitä hyppytietoja..."
+	}
+	"Challenge1"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:i},{6:s}"
+		"fi"		"[{1}KZ{2}] {3}Haastepyyntö lähetetty {4}:lle (Panos: {5}p, Teleporttipisteet {6})"
+	}
+	"Challenge2"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:i},{8:s}"
+		"fi"		"[{1}KZ{2}] {3}{4} haastoi sinut. Sinulla on 20 sekuntia aikaa kirjoittaa {5}“!accept“{6} (Panos: {7}p, Teleporttipisteet {8})"
+	}
+	"Challenge3"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] {3}Haaste hyväksytty."
+	}
+	"Challenge4"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:s},{8:c}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} voitti pelaajan {6}{7}{8}! (Luovutus)"
+	}
+	"ChallengeFailed1"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Sinulla ei saa olla longjump blockia aloittaaksesi haasteen."
+	}
+	"ChallengeFailed2"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Sinun täytää olla hengissä aloittaaksesi haasteen."
+	}
+	"ChallengeFailed3"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Olet jo haasteessa."
+	}
+	"ChallengeFailed4"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Sopivia pelaajia ei löytynyt."
+	}
+	"ChallengeFailed5"
+	{
+		"#format"	"{1:c},{2:c},{3:s},{4:i}"
+		"fi"		"[{1}KZ{2}] {3} ei omista tarpeeksi pisteitä ({4}) hyväksyäksesi haastettasi."
+	}
+	"ChallengeFailed6"
+	{
+		"#format"	"{1:c},{2:c},{3:s}"
+		"fi"		"[{1}KZ{2}] {3} on jo haasteessa."
+	}
+	"ChallengeStarted1"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] {3}Jos haluat luovuttaa, kirjoita “!surrender“"
+	}
+	"ChallengeStarted2"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] {3}Voitte molemmat kirjoittaa “!cancel“ lopettaaksenne haasteen."
+	}
+	"ChallengeStarted3"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] {3}Muista!: ÄLÄ UNOHDA PAINAA START NAPPULAA!"
+	}
+	"ChallengeStarted4"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] {3}Pidä hauskaa!"
+	}
+	"ChallengeRequestExpired"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Haastepyyntö erääntynyt."
+	}
+	"ChallengeWon"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c}"
+		"fi"		"[{1}KZ{2}] {3}Haaste voitettu! {4}(Vastustajasi poistui pelistä)"
+	}
+	"ChallengeAborted"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c}"
+		"fi"		"[{1}KZ{2}] Haaste pelaajaa {3}{4}{5} vastaan on keskeytetty."
+	}
+	"SkillGroup"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:s}"
+		"fi"		"[{1}KZ{2}] {3}Olet ansainnut rankin {4}{5}!"
+	}
+	"Rc_PlayerRankStart"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] {3}Ladataan profiilin tietoja..."
+	}
+	"Rc_PlayerRankFinished"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:i},{6:c}"
+		"fi"		"[{1}KZ{2}] {3}Profiili ladattu. [{4}{5}{6}]"
+	}
+	"EarnedPoints"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:i},{8:c},{9:c},{10:i},{11:c}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} on ansainnut {6}{7} pistettä{8} [{9}{10}{11} Yhteensä]"
+	}
+	"LostPoints"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:i},{8:c},{9:c},{10:i},{11:c}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} on hävinnyt {6}{7} pistettä{8} [{9}{10}{11} Yhteensä]"
+	}
+	"ChallengeW"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:s},{8:c}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} Voitti haasteen pelaajaa {6}{7}{8} vastaan!"
+	}
+	"ChallengeL"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:i},{8:c}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} hävisi {6}{7}pistettä{8}"
+	}
+	"NoReplayFound"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Uusintaa ei löytynyt."
+	}
+	"BotAlreadyCreated"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Uusinta botti on jo olemassa."
+	}
+	"NoPlayerTop"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Pelaajia ei löytynyt."
+	}
+	"NoRecordTop"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Kartasta ei löytynyt aikoja."
+	}
+	"PrUpdateStarted"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Uudelleenlasketaan pelaajajien tietoja. Tässä voi mennä hetki, odota! (Voit seurata prosessia konsolista)"
+	}
+	"PrUpdateFinished"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] {3}Uudelleenlasku valmis!"
+	}
+	"Top100Refreshed"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] {3}Top 100 Pelaajaa uudelleenlaskettu!"
+	}
+	"StopRecalculation"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Uudelleenlasku keskeytetty!"
+	}
+	"NewGlobalRecord102_Pro"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} on rikkonut kartan {6}GLOBAL PRO ENNÄTYKSEN. (102)"
+	}
+	"NewGlobalRecord128_Pro"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} on rikkonut kartan {6}GLOBAL PRO ENNÄTYKSEN."
+	}
+	"NewGlobalRecord64_Pro"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} on rikkonut kartan {6}GLOBAL PRO ENNÄTYKSEN. (64)"
+	}
+	"NewGlobalRecord102_Tp"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} on rikkonut kartan {6}GLOBAL TP ENNÄTYKSEN. (102)"
+	}
+	"NewGlobalRecord128_Tp"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} on rikkonut kartan {6}GLOBAL TP ENNÄTYKSEN."
+	}
+	"NewGlobalRecord64_Tp"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} on rikkonut kartan {6}GLOBAL TP ENNÄTYKSEN. (64)"
+	}
+	"NewProRecord"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} on rikkonut kartan {6}PRO ENNÄTYKSEN."
+	}
+	"NewTpRecord"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} on rikkonut kartan {6}TP ENNÄTYKSEN."
+	}
+	"ReplayFinishingMsg"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:s},{8:c}"
+		"fi"		"[{1}KZ UUSINTA{2}] {3}{4}{5} suoritti kartan ajalla ({6}{7}{8})."
+	}
+	"MapFinished0"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:c},{8:c},{9:s},{10:c},{11:c},{12:i},{13:c},{14:c},{15:c},{16:i},{17:c},{18:i},{19:c},{20:s},{21:c}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} suoritti kartan {6}TP AJALLA{7}  ({8}{9}{10}, Tpt: {11}{12}{13}). {14}[rank {15}#{16}{17}/{18} | Ennätys {19}{20}{21}]"
+	}
+	"MapFinished1"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:c},{8:c},{9:s},{10:c},{11:c},{12:c},{13:i},{14:c},{15:i},{16:c},{17:s},{18:c}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} suoritti kartan {6}PRO AJALLA{7} ({8}{9}{10}). {11}[rank {12}#{13}{14}/{15} | Ennätys {16}{17}{18}]"
+	}
+	"MapFinished2"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:c},{8:c},{9:s},{10:c},{11:c},{12:i},{13:c},{14:c},{15:s},{16:c},{17:c},{18:c},{19:i},{20:c},{21:i},{22:c},{23:s},{24:c}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} suoritti kartan {6}TP AJALLA{7} ({8}{9}{10}, TPt: {11}{12}{13}). Parantaen ennätystään ({14}{15}{16}). {17}[rank {18}#{19}{20}/{21} | Ennätys {22}{23}{24}]"
+	}
+	"MapFinished3"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:c},{8:c},{9:s},{10:c},{11:c},{12:s},{13:c},{14:c},{15:c},{16:i},{17:c},{18:i},{19:c},{20:s},{21:c}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} suoritti kartan {6}PRO AJALLA{7} ({8}{9}{10}). Parantaen ennätystään ({11}{12}{13}). {14}[rank {15}#{16}{17}/{18} | Ennätys {19}{20}{21}]"
+	}
+	"MapFinished4"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:c},{8:c},{9:s},{10:c},{11:c},{12:i},{13:c},{14:c},{15:s},{16:c},{17:c},{18:c},{19:i},{20:c},{21:i},{22:c},{23:s},{24:c}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} suoritti kartan {6}TP AJALLA{7} ({8}{9}{10}, TPt: {11}{12}{13}). Myöhästyen ennätystään ({14}{15}{16}). {17}[rank {18}#{19}{20}/{21} | Ennätys {22}{23}{24}]"
+	}
+	"MapFinished5"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:c},{8:c},{9:s},{10:c},{11:c},{12:s},{13:c},{14:c},{15:c},{16:i},{17:c},{18:i},{19:c},{20:s},{21:c}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} suoritti kartan {6}PRO AJALLA{7} ({8}{9}{10}). Myöhästyen ennätystään ({11}{12}{13}). {14}[rank {15}#{16}{17}/{18} | Ennätys {19}{20}{21}]"
+	}
+	"NoClipUnlocked"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] {3}Noclip sallittu (kirjoita “bind KEY +noclip“ konsoliisi)"
+	}
+	"PlayerNotFound"
+	{
+		"#format"	"{1:c},{2:c},{3:s}"
+		"fi"		"[{1}KZ{2}] Pelaajaa {3} ei löytynyt."
+	}
+	"ConsoleOutput"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Katso tiedot konsolista!"
+	}
+	"PlayerHasNoMapRecords"
+	{
+		"#format"	"{1:c},{2:c},{3:s}"
+		"fi"		"[{1}KZ{2}] {3} Ei omista paikallista kartan aikaa."
+	}
+	"NoTpRecords"
+	{
+		"#format"	"{1:c},{2:c},{3:s}"
+		"fi"		"[{1}KZ{2}] Ei paikallisia TP aikoja löydetty {3}:sta."
+	}
+	"NoGlobalRecords64"
+	{
+		"#format"	"{1:c},{2:c},{3:s}"
+		"fi"		"[{1}KZ{2}] Ei Global aikoja (tickrate 64) löydetty {3}:sta."
+	}
+	"NoGlobalRecords102"
+	{
+		"#format"	"{1:c},{2:c},{3:s}"
+		"fi"		"[{1}KZ{2}] Ei Global aikoja (tickrate 102.4) löydetty {3}:sta."
+	}
+	"NoGlobalRecordsProMode"
+	{
+		"#format"	"{1:c},{2:c},{3:s}"
+		"fi"		"[{1}KZ{2}] Ei Global aikoja (ProMode) löydetty {3}:sta."
+	}
+	"NoGlobalRecords128"
+	{
+		"#format"	"{1:c},{2:c},{3:s}"
+		"fi"		"[{1}KZ{2}] Ei Global aikoja (tickrate 128) löydetty {3}:sta."
+	}
+	"NoTopRecords"
+	{
+		"#format"	"{1:c},{2:c},{3:s}"
+		"fi"		"[{1}KZ{2}] Ei paikallisia aikoja löydetty kartasta {3}"
+	}
+	"NoProRecords"
+	{
+		"#format"	"{1:c},{2:c},{3:s}"
+		"fi"		"[{1}KZ{2}] Ei paikallisia PRO aikoja löydetty kartasta {3}"
+	}
+	"AdminSetButton"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Virhe! Sinun täytyy olla hengissä aloittaaksesi uuden ajan."
+	}
+	"NoclipNotAvailable2"
+	{
+		"#format"	"{1:c},{2:c},{3:s}"
+		"fi"		"[{1}KZ{2}] Sinun täytyy läpäistä kartta tai olla rankiltasi{3}, MAPPER, VIP tai ADMIN käyttääksesi komentoa +noclip."
+	}
+	"NoclipNotAvailable3"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Noclip poistettu käytöstä (palvelin-puoleinen)"
+	}
+	"CMenuDisabled"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Valikko poistettu käytöstä."
+	}
+	"StartDisabled"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c}"
+		"fi"		"[{1}KZ{2}] {3}!start{4} komento on poistettu käytöstä."
+	}
+	"Spec"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] Sinun täytyy olla hengissä käyttääksesi {3}!spec komentoa."
+	}
+	"SpecMenu1"
+	{
+		"fi"		"KZTimer - Katsoja valikko (paina 'm' liittyäksesi peliin uudestaan!)"
+	}
+	"SpecMenu2" 
+	{
+		"fi"		"KZTimer - Katsoja valikko"
+	}
+	"Unspec"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c}"
+		"fi"		"[{1}KZ{2}] Kirjoita {3}!unspec{4} päästäksesi takaisin alkuperäiseen tiimiisi."
+	}
+	"Goto1"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c}"
+		"fi"		"[{1}KZ{2}] {3}!goto{4} komento on poistettu käytöstä palvelin-puolelta."
+	}
+	"Goto2"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c}"
+		"fi"		"[{1}KZ{2}] Et voi käyttää komentoa {3}!goto{4}, jos pelaaja on ottanut sen estämisen käyttöön."
+	}
+	"Goto3"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c}"
+		"fi"		"[{1}KZ{2}] Sinun täytyy {3}!stop{4} aikasi käyttääksesi !goto komentoa."
+	}
+	"Goto4"
+	{
+		"#format"	"{1:c},{2:c},{3:s}"
+		"fi"		"[{1}KZ{2}] Pelaajaa {3} ei löytynyt."
+	}
+	"Goto5"
+	{
+		"#format"	"{1:c},{2:c},{3:s}"
+		"fi"		"[{1}KZ{2}] Pelaaja {3} on teleportannut sinun luoksesi."
+	}
+	"Goto6"
+	{
+		"#format"	"{1:c},{2:c},{3:s}"
+		"fi"		"[{1}KZ{2}] Et voi teleporttaa pelaajaan {3} koska hän on kyykyssä."
+	}
+	"Goto7"
+	{
+		"#format"	"{1:c},{2:c},{3:s}"
+		"fi"		"[{1}KZ{2}] Et voi teleporttaa pelaajaan {3} koska hän ei ole maan tasalla."
+	}
+	"Goto8"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Et voi teleportata itseesi..."
+	}
+	"Goto9"
+	{
+		"#format"	"{1:c},{2:c},{3:s}"
+		"fi"		"[{1}KZ{2}] Virhe! Pelaaja {3} ei ole hengissä..."
+	}
+	"Goto10"
+	{
+		"#format"	"{1:c},{2:c},{3:s}"
+		"fi"		"[{1}KZ{2}] Pelaaja {3} on poistanut käytöstä teleporttaamisen häneen..."
+	}	
+	"SpeedMeter1"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Liikkumisnopeus otettu käyttöön."
+	}
+	"SpeedMeter2"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Liikkumisnopeus poistettu käytöstä."
+	}
+	"TimerStopped1"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Aika pysäytetty"
+	}
+	"CheckpointsDisabled"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Teleporttipisteet ovat poistettu käytöstä."
+	}
+	"CheckpointSaved"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:i},{6:c}"
+		"fi"		"[{1}KZ{2}] {3}Teleporttipiste {4}#{5}{6} tallennettu."
+	}
+	"CheckpointsNotinAir"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] {3}Teleporttipisteiden sijoittaminen on mahdotonta ollessasi ilmassa."
+	}
+	"CheckpointsNotonBhopPlattforms"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] {3}Teleporttipisteet kielletty bunnyhop blockeilla!"
+	}
+	"NoCheckpointsFound"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Teleporttipisteitä ei löytynyt."
+	}
+	"SettingsEnforcerEnabled"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] {3}Asetuksien pakotus otettu käyttöön."
+	}
+	"SettingsEnforcerDisabled"
+	{
+		"#format"	"{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] {3}Asetuksien pakotus poistettu käytöstä..."
+	}
+	"PositionRestored"
+	{
+		"#format"	""
+		"fi"		"<font color='#80FF00' size='24' face ='Calibri'><b> \n Sijaintisi on palautettu</b></font>"
+	}
+	"RadioCommandsDisabled"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Radiokomennot ovat poistettu käytöstä."
+	}
+	"Jumpstats_LjAll"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:.3f},{8:c},{9:c},{10:s},{11:s},{12:s}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} hyppäsi {6}{7} unittia {8} {9}LongJumpilla{10}{11}{12}"
+	}
+	"Jumpstats_BhopAll"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:.3f},{8:c},{9:c},{10:s},{11:s}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} hyppäsi {6}{7} unittia{8} {9}Bunnyhopilla{10}{11}"
+	}
+	"Jumpstats_WeirdAll"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:.3f},{8:c},{9:c},{10:s},{11:s}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} hyppäsi {6}{7} unittia{8} {9}WeirdJumpilla{10}{11}"
+	}
+	"Jumpstats_DropBhopAll"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:.3f},{8:c},{9:c},{10:s},{11:s}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} hyppäsi {6}{7} unittia{8} {9}DropBhopilla{10}{11}"
+	}
+	"Jumpstats_CountJumpAll"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:.3f},{8:c},{9:c},{10:s},{11:s}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} hyppäsi {6}{7} unittia{8} {9}CountJumpilla{10}{11}"
+	}
+	"Jumpstats_MultiBhopAll"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:.3f},{8:c},{9:c},{10:s},{11:s}"
+		"fi"		"[{1}KZ{2}] {3}{4}{5} hyppäsi {6}{7} unittia{8} {9}MultiBhopilla{10}{11}"
+	}
+	"Jumpstats_OnRampage"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s}"
+		"fi"		"[{1}KZ{2}] {3}{4} on rampagella! [Yli 3 punaista hyppyä peräkkäin]"
+	}
+	"Jumpstats_IsDominating"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s}"
+		"fi"		"[{1}KZ{2}] {3}{4} dominoi! [Yli 5 punaista hyppyä peräkkäin]"
+	}
+	"Jumpstats_BeatLjBest"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:.3f}"
+		"fi"		"[{1}KZ{2}] {3} Päihitit oman parhaan LongJumpin {4} hypyllä!"
+	}
+	"Jumpstats_BeatLjBlockBest"
+	{
+		"#format"	"{1:c},{2:c},{3:c}{4:i},{5:.3f}"
+		"fi"		"[{1}KZ{2}] {3} Päihitit oman parhaan Block LongJumpin {4} blockilla ja {5} hypyllä!"
+	}
+	"Jumpstats_BeatWjBest"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:.3f}"
+		"fi"		"[{1}KZ{2}] {3}Päihitit oman parhaan WeirdJumpin {4} hypyllä!"
+	}
+	"Jumpstats_BeatDropBhopBest"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:.3f}"
+		"fi"		"[{1}KZ{2}] {3}Päihitit oman parhaan Drop-Bunnyhopin {4} hyppyllä!"
+	}
+	"Jumpstats_BeatCountJumpBest"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:.3f}"
+		"fi"		"[{1}KZ{2}] {3}Päihitit oman parhaan CountJumpin {4} hypyllä!"
+	}
+	"Jumpstats_BeatBhopBest"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:.3f}"
+		"fi"		"[{1}KZ{2}] {3}Päihitit oman parhaan Bunnyhopin {4} hypyllä!"
+	}
+	"Jumpstats_BeatMultiBhopBest"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:.3f}"
+		"fi"		"[{1}KZ{2}] {3}Päihitit oman parhaan Multi-Bunnyhopin {4} hypyllä!"
+	}
+	"Jumpstats_LjTop"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:i},{6:.3f}"
+		"fi"		"[{1}KZ{2}] {3}{4} on nyt #{5} Longjump Top 20:ssä! [{6} unittia]"
+	}
+	"Jumpstats_LjBlockTop"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:i},{6:i},{7:.3f}"
+		"fi"		"[{1}KZ{2}] {3}{4} on nyt #{5} Block LongJump Top 20:ssä! [{6} block/{7} unittia]"
+	}
+	"Jumpstats_WjTop"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:i},{6:.3f}"
+		"fi"		"[{1}KZ{2}] {3}{4} on nyt #{5} WeirdJump Top 20:ssä! [{6} unittia]"
+	}
+	"Jumpstats_DropBhopTop"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:i},{6:.3f}"
+		"fi"		"[{1}KZ{2}] {3}{4} on nyt #{5} Drop-Bunnyhop Top 20:ssä! [{6} unittia]"
+	}
+	"Jumpstats_CountJumpTop"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:i},{6:.3f}"
+		"fi"		"[{1}KZ{2}] {3}{4} on nyt #{5} CountJump Top 20:ssä! [{6} unittia]"
+	}
+	"Jumpstats_BhopTop"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:i},{6:.3f}"
+		"fi"		"[{1}KZ{2}] {3}{4} on nyt #{5} Bunnyhop Top 20:ssä! [{6} unittia]"
+	}
+	"Jumpstats_MultiBhopTop"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:i},{6:.3f}"
+		"fi"		"[{1}KZ{2}] {3}{4} on nyt #{5} Multi-Bunnyhop Top 20:ssä! [{6} unittia]"
+	}
+	"Hide1"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Pelaajien piilottaminen käytössä."
+	}
+	"Hide2"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Pelaajien piilottaminen ei käytössä."
+	}
+	"Pause1"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Pause toiminto on palvelin-puolelta poissa käytöstä."
+	}
+	"Pause2"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Pause poistettu käytöstä."
+	}	
+	"Pause3"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Pause otettu käyttöön."
+	}
+	"Pause4"
+	{
+		"#format"	"{1:c},{2:c},{3:.1f}"
+		"fi"		"[{1}KZ{2}] Odota {3} sekuntia ennen kuin käytät pausea uudestaan!"
+	}
+	"Pause5"
+	{	
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Et voi käyttää pausea ilmassa!"
+	}
+	"Showtime1"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Ajastin paneeli otettu käyttöön."
+	}
+	"Showtime2"
+	{	
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Ajastin paneeli poistettu käytöstä."
+	}
+	"CpMessage1"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Teleporttipiste ilmoitus otettu käyttöön."
+	}
+	"CpMessage2"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Teleporttipiste ilmoitus poistettu käytöstä."
+	}
+	"DisableGoto1"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] !goto minuun otettu käyttöön."
+	}
+	"DisableGoto2"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] !goto minuun poistettu käytöstä  ."
+	}
+	"Colorchat1"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Värillinen chat otettu käyttöön."
+	}
+	"Colorchat2"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Värillinen chat poistettu käytöstä."
+	}
+	"Route1"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Uusinta reitti otettu käyttöön."
+	}
+	"Route2"
+	{	
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Uusinta reitti poistettu käytöstä."
+	}
+	"Info1"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Nopeus/Näppäimet paneeli otettu käyttöön."
+	}
+	"Info2"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Nopeus/Näppäimet paneeli poistettu käytöstä."
+	}
+	"ShowKeys1"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Näytä näppäimet otettu käyttöön."
+	}
+	"ShowKeys2"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Näytä näppäimet poistettu käytöstä."
+	}
+	"QuakeSounds1"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Quake äänet otettu käyttöön."
+	}
+	"QuakeSounds2"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Quake äänet poistettu käytöstä"
+	}
+	"HideSpecs1"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Katsojalista otettu käyttöön."
+	}
+	"HideSpecs2"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Katsojalista poistettu käytöstä."
+	}
+	"ClimbersMenuSounds1"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Climbers valikon äänet otettu käyttöön."
+	}
+	"ClimbersMenuSounds2"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Climbers valikon äänet poistettu käytöstä."
+	}
+	"StrafeSync1"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Strafe sync chattiin otettu käyttöön."
+	}
+	"StrafeSync2"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Strafe sync chattiin poistettu käytöstä."
+	}
+	"AutoBhop1"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] AutoBhop otettu käyttöön."
+	}
+	"AutoBhop2"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] AutoBhop poistettu käytöstä."
+	}
+	"AutoBhop3"
+	{	
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] AutoBhop poistettu käytöstä. (palvelin-puolelta)"
+	}
+	"AdvClimbersMenu1"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Kehittynyt climbers valikko otettu käyttöön."
+	}
+	"AdvClimbersMenu2"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Kehittynyt climbers valikko poistettu käytöstä."
+	}
+	"Usp1"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Huomio: Liikkumisnopeus pistoolin kanssa voi olla hitaampi kuin puukolla."
+	}
+	"Usp2"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] (ei muita aseita chat komennon kautta saatavilla)"
+	}
+	"Usp3"
+	{
+		"#format"	"{1:c},{2:c}"
+		"fi"		"[{1}KZ{2}] Virhe. Sinä sait jo kolme USPia.."
+	}
+	"HelpMsg"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c}"
+		"fi"		"[{1}KZ{2}] Kirjoita {3}!help{4} chattiin saadaksesi listan kaikista KZTimer komennoista"
+	}
+	"Disconnected1"
+	{
+		"#format"	"{1:c},{2:c},{3:s},{4:c},{5:s}"
+		"fi"		"{1}Pelaaja {2}{3}{4} on poistunut pelistä ({5})"
+	}
+	"Connected2"
+	{
+		"#format"	"{1:c},{2:c},{3:s},{4:c},{5:c},{6:s}"
+		"fi"		"{1}Pelaaja {2}{3}{4} liittyi maasta {5}{6}"
+	}
+	"Connected1"
+	{
+		"#format"	"{1:c},{2:c},{3:s},{4:c}"
+		"fi"		"{1}Pelaaja {2}{3}{4} liittyi peliin"
+	}
+	"Bhop1"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:.3f},{5:c},{6:c},{7:.3f},{8:c},{9:c},{10:c}"
+		"fi"		"[{1}KZ{2}] Prestrafesi on liian iso. ({3}{4}{5}/{6}{7}{8} max) {9}Bhop{10}"
+	}
+	"DropBhop1"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:.1f},{5:c},{6:c},{7:c},{8:c},{9:c}"
+		"fi"		"[{1}KZ{2}] Lensit liian pitkälle. ({3}{4}{5}/{6}132.0{7} max) {8}DropBhop{9}"
+	}
+	"DropBhop2"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:.3f},{5:c},{6:c},{7:.3f},{8:c},{9:c},{10:c}"
+		"fi"		"[{1}KZ{2}] Prestrafesi on liian iso. ({3}{4}{5}/{6}{7}{8} max) {9}DropBhop{10}"
+	}
+	"Wj1"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:.1f},{5:c},{6:c},{7:c},{8:c},{9:c}"
+		"fi"		"[{1}KZ{2}] Lensit liian pitkälle. ({3}{4}{5}/{6}132.0{7} max) {8}WJ{9}"
+	}
+	"Wj2"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:.3f},{5:c},{6:c},{7:c},{8:c},{9:c}"
+		"fi"		"[{1}KZ{2}] Prestrafesi on liian iso. ({3}{4}{5}/{6}300.0{7} max) {8}WJ{9}"
+	}
+	"ClimbersMenu1_1"
+	{
+		"#format"	"{1:i}"
+		"fi"		"Teleporttipiste #{1}"
+	}
+	"ClimbersMenu2_1"
+	{
+		"#format"	"{1:i}"
+		"fi"		"Teleportti #{1}"
+	}
+	"ClimbersMenu1_2"
+	{
+		"#format"	"{1:i}"
+		"fi"		"Teleporttipiste #{1}"
+	}
+	"ClimbersMenu2_2"
+	{
+		"#format"	"{1:i}"
+		"fi"		"Teleportti #{1}"
+	}
+	"ClimbersMenu3"
+	{
+		"fi"		"Edellinen teleporttipiste"
+	}
+	"ClimbersMenu4"
+	{
+		"fi"		"Seuraava teleporttipiste"
+	}
+	"ClimbersMenu5"
+	{
+		"fi"		"Kumoa teleporttipiste"
+	}
+	"ClimbersMenu6"
+	{
+		"fi"		"Pause"
+	}
+	"ClimbersMenu7"
+	{
+		"fi"		"Pause - ON"
+	}
+	"ClimbersMenu8"
+	{
+		"fi"		"Aloita"
+	}	
+	"ClimbersMenu9"
+	{
+		"fi"		"Asetukset"
+	}
+	"ClimbersMenu10"
+	{
+		"#format"	"{1:s},{2:.1f}"
+		"fi"		"{1}\nNopeus: {2} u/s"
+	}
+	"ClimbersMenu11"
+	{
+		"fi"		"Teleporttipiste"
+	}
+	"ClimbersMenu12"
+	{
+		"fi"		"Teleportti"
+	}
+	"ClimbersMenu13"
+	{
+		"fi"		"Teleporttipiste"
+	}
+	"ClimbersMenu14"
+	{
+		"fi"		"Teleportti"
+	}
+	"ClientLongJumpBlockFailstats"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:c},{6:.2f},{7:c},{8:c},{9:i},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:.0f},{19:c},{20:c},{21:i},{22:c},{23:c},{24:c},{25:.3f},{26:c},{27:s}"
+		"fi"		"[{1}KZ{2}] {3}Pituus{4}: {5}{6} unittia{7} [{8}{9}{10} Strafea | {11}{12}{13} Pre | {14}{15}{16} Max | {17}{18}{19} Korkeus | {20}{21}{22}{23} Sync | {24}{25}{26} Reunan heitto]{27}"
+	}
+	"ClientLongJump1"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:.2f},{5:c},{6:i},{7:c},{8:c},{9:.0f},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:i},{19:c},{20:c},{21:s}"
+		"fi"		"[{1}KZ{2}] {3}LJ: {4} unittia [{5}{6}{7} Strafea | {8}{9}{10} Pre | {11}{12}{13} Max | {14}{15}{16} Korkeus | {17}{18}{19}{20} Sync]{21}"
+	}
+	"ClientLongJump2"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:.2f},{5:c},{6:i},{7:c},{8:c},{9:.0f},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:i},{19:c},{20:c},{21:s}"
+		"fi"		"[{1}KZ{2}] {3}LJ: {4} unittia [{5}{6}{7} Strafea | {8}{9}{10} Reunan heitto | {11}{12}{13} Max | {14}{15}{16} Korkeus | {17}{18}{19}{20} Sync]{21}"
+	}
+	"ClientLongJump3"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:c},{6:.2f},{7:c},{8:c},{9:i},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:.0f},{19:c},{20:c},{21:i},{22:c},{23:c},{24:s},{25:s}"
+		"fi"		"[{1}KZ{2}] {3}LJ{4}: {5}{6} unittia{7} [{8}{9}{10} Strafea | {11}{12}{13} Pre | {14}{15}{16} Max | {17}{18}{19} Korkeus | {20}{21}{22}{23} Sync]{24}{25}"
+	}
+	"ClientLongJump4"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:c},{6:.2f},{7:c},{8:c},{9:i},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:.0f},{19:c},{20:c},{21:i},{22:c},{23:c},{24:s}"
+		"fi"		"[{1}KZ{2}] {3}LJ{4}: {5}{6} unittia{7} [{8}{9}{10} Strafea | {11}{12}{13} Reunan heitto | {14}{15}{16} Max | {17}{18}{19} Korkeus | {20}{21}{22}{23} Sync]{24}"
+	}
+	"ClientMultiBhop1"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:.2f},{5:c},{6:i},{7:c},{8:c},{9:.0f},{10:c}{11:c},{12:i},{13:c},{14:c}"
+		"fi"		"[{1}KZ{2}] {3}MultiBhop: {4} unittia [{5}{6}{7} Strafea | {8}{9}{10} Pre | {11}{12}{13}{14} Sync]"
+	}
+	"ClientMultiBhop2"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:c},{6:.2f},{7:c},{8:c},{9:i},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:.0f},{19:c},{20:c},{21:s},{22:c},{23:c},{24:i},{25:c},{26:c},{27:s}"
+		"fi"		"[{1}KZ{2}] {3}MultiBhop{4}: {5}{6} unittia{7} [{8}{9}{10} Strafea | {11}{12}{13} Pre | {14}{15}{16} Max | {17}{18}{19} Korkeus | {20}{21}{22} Bhoppia | {23}{24}{25}{26} Sync]{27}"
+	}
+	"ClientDropBhop1"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:.2f},{5:c},{6:i},{7:c},{8:c},{9:.0f},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:i},{16:c},{17:c}"
+		"fi"		"[{1}KZ{2}] {3}DropBhop: {4} unittia [{5}{6}{7} Strafea | {8}{9}{10} Pre | {11}{12}{13} Korkeus | {14}{15}{16}{17} Sync]"
+	}
+	"ClientDropBhop2"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:c},{6:.2f},{7:c},{8:c},{9:i},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:.0f},{19:c},{20:c},{21:i},{22:c},{23:c},{24:s}"
+		"fi"		"[{1}KZ{2}] {3}DropBhop{4}: {5}{6} unittia{7} [{8}{9}{10} Strafea | {11}{12}{13} Pre | {14}{15}{16} Max | {17}{18}{19} Korkeus | {20}{21}{22}{23} Sync]{24}"
+	}
+	"ClientCountJump1"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:.2f},{5:c},{6:i},{7:c},{8:c},{9:.0f},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:i},{16:c},{17:c}"
+		"fi"		"[{1}KZ{2}] {3}CJ: {4} unittia [{5}{6}{7} Strafea | {8}{9}{10} Pre | {11}{12}{13} Korkeus | {14}{15}{16}{17} Sync]"
+	}
+	"ClientCountJump2"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:c},{6:.2f},{7:c},{8:c},{9:i},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:.0f},{19:c},{20:c},{21:i},{22:c},{23:c},{24:s}"
+		"fi"		"[{1}KZ{2}] {3}CJ{4}: {5}{6} unittia{7} [{8}{9}{10} Strafea | {11}{12}{13} Pre | {14}{15}{16} Max | {17}{18}{19} Korkeus | {20}{21}{22}{23} Sync]{24}"
+	}
+	"ClientWeirdJump1"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:.2f},{5:c},{6:i},{7:c},{8:c},{9:.0f},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:i},{16:c},{17:c}"
+		"fi"		"[{1}KZ{2}] {3}WJ: {4} unittia [{5}{6}{7} Strafea | {8}{9}{10} Pre | {11}{12}{13} Korkeus | {14}{15}{16}{17} Sync]"
+	}
+	"ClientWeirdJump2"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:c},{6:.2f},{7:c},{8:c},{9:i},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:.0f},{19:c},{20:c},{21:i},{22:c},{23:c},{24:s}"
+		"fi"		"[{1}KZ{2}] {3}WJ{4}: {5}{6} unittia{7} [{8}{9}{10} Strafea | {11}{12}{13} Pre | {14}{15}{16} Max | {17}{18}{19} Korkeus | {20}{21}{22}{23} Sync]{24}"
+	}
+	"ClientBunnyhop1"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:.2f},{5:c},{6:i},{7:c},{8:c},{9:.0f},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:i},{16:c},{17:c}"
+		"fi"		"[{1}KZ{2}] {3}Bhop: {4} unittia [{5}{6}{7} Strafea | {8}{9}{10} Pre | {11}{12}{13} Korkeus | {14}{15}{16}{17} Sync]"
+	}
+	"ClientBunnyhop2"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:c},{6:.2f},{7:c},{8:c},{9:i},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:.0f},{19:c},{20:c},{21:i},{22:c},{23:c},{24:s}"
+		"fi"		"[{1}KZ{2}] {3}Bhop{4}: {5}{6} unittia{7} [{8}{9}{10} Strafea | {11}{12}{13} Pre | {14}{15}{16} Max | {17}{18}{19} Korkeus | {20}{21}{22}{23} Sync]{24}"
+	}
+	"ProRecord"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:s},{6:s}"
+		"fi"		"[{1}KZ{2}] {3}PRO ENNÄTYS{4}: {5} ({6})"
+	}	
+	"TpRecord"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:s},{6:s}"
+		"fi"		"[{1}KZ{2}] {3}TP ENNÄTYS{4}: {5} ({6})"
+	}
+	"GlobalRecord1_Pro"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:s},{6:s}"
+		"fi"		"[{1}KZ{2}] {3}GLOBAL PRO ENNÄTYS (64){4}: {5} ({6})"
+	}
+	"GlobalRecord1_Tp"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:s},{6:s}"
+		"fi"		"[{1}KZ{2}] {3}GLOBAL TP ENNÄTYS (64){4}: {5} ({6})"
+	}
+	"GlobalRecord2_Pro"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:s},{6:s}"
+		"fi"		"[{1}KZ{2}] {3}GLOBAL PRO ENNÄTYS (102){4}: {5} ({6})"
+	}
+	"GlobalRecord2_Tp"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:s},{6:s}"
+		"fi"		"[{1}KZ{2}] {3}GLOBAL TP ENNÄTYS (102){4}: {5} ({6})"
+	}
+	"GlobalRecord3_Pro"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:s},{6:s}"
+		"fi"		"[{1}KZ{2}] {3}GLOBAL PRO ENNÄTYS{4}: {5} ({6})"
+	}
+	"GlobalRecord3_Tp"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c},{5:s},{6:s}"
+		"fi"		"[{1}KZ{2}] {3}GLOBAL TP ENNÄTYS{4}: {5} ({6})"
+	}
+	"LanguageSwitch"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c}"
+		"fi"		"[{1}KZ{2}] Kirjoita {3}!language{4} vaihtaaksesi kieltä"
+	}
+	"LjBlock"
+	{
+		"#format"	"{1:c},{2:c},{3:i},{4:c}"
+		"fi"		"{1}[{2}{3} block{4}]"
+	}
+	"Cant_Checkpoint_Just_Landed" 
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"fi"		"[{1}KZ{2}] {3}Et voi tehdä teleporttipistettä, koska laskeuduit juuri."
+	}
+}

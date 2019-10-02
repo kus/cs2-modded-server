@@ -1,0 +1,5 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "models/props/switch001_normal"
+	"$translucent" 1
+}

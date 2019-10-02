@@ -1,0 +1,7 @@
+Sprite
+{
+	"$basetexture" "models/props/stopkztimer"
+	"$spriteorigin" "[ 0.50 0.50 ]"
+	
+	"$nocull" 1
+}

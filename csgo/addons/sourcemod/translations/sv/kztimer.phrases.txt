@@ -1,0 +1,1430 @@
+﻿"Phrases"
+{
+	"Jumpstats_PersonalBest"
+	{
+		"#format"   "{1:c}"
+		"sv"        " {1}PB"
+	}
+	"NewGlobalMapRankPro"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:i},{6:s},{7:s},{8:i}"
+		"sv"        "[{1}GLOBAL{2}] {3}{4} is now #{5} in the Global PRO-Top 20 on {6}! [{7}, Tick{8}]"
+	}
+	"NewGlobalMapRankTp"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:i},{6:s},{7:s},{8:i},{9:i}"
+		"sv"        "[{1}GLOBAL{2}] {3}{4} is now #{5} in the Global TP-Top 20 on {6}! [{7}, TPs: {8}, Tick{9}]"
+	}
+	"UndoLadder"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"        "[{1}KZ{2}] {3}Undo TP not allowed because your last teleport origin is on a ladder"
+	}
+	"UndoMidAir"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"        "[{1}KZ{2}] {3}Undo TP not allowed because your last teleport origin is in midair"
+	}
+	"mapinfo1"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:s},{6:c},{7:c},{8:s},{9:c},{10:c},{11:s},{12:c}"
+		"sv"       "[{1}KZ{2}] {3}Current map: {4}{5}{6}, Difficulty: {7}{8}{9} (approved by {10}{11}{12})"
+	}
+	"mapinfo2"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:s},{6:c}"
+		"sv"       "[{1}KZ{2}] {3}Current map: {4}{5}{6} (not approved)"
+	}
+	"options_lang_en"
+	{
+		"sv"       "Language - English"
+	}
+	"options_lang_de"
+	{
+		"sv"       "Language - German"
+	}
+	"options_lang_sv"
+	{
+		"sv"       "Language - Swedish"
+	}
+	"options_lang_fr"
+	{
+		"sv"       "Language - French"
+	}
+	"options_lang_ru"
+	{
+		"sv"       "Language - Russian"
+	}
+	"options_lang_cn"
+	{
+		"sv"       "Language - Chinese"
+	}
+	"options_lang_pt"
+	{
+		"sv"       "Language - Portuguese Brazilian"
+	}
+	"Route1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Replay route enabled."
+	}
+	"Route2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Replay route disabled."
+	}
+	"stopsound"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Map music stopped."
+	}
+	"kick_msg_skill_group"
+	{
+		"#format"   "{1:s}"
+		"sv"       "[KZTimer] You don't fulfill the criteria to play on this server. You must be ranked as 'VIP', 'ADMIN', '{1}' or above"
+	}
+	"kick_msg_low_fps"
+	{
+		"sv"       "Please set your fps_max greater than or equal to 120"
+	}
+	"options_rp_on"
+	{
+		"sv"       "Replay route (requires replay bots)  -  Enabled"
+	}
+	"options_rp_off"
+	{
+		"sv"       "Replay route (requires replay bots)  -  Disabled"
+	}
+	"options_adv_on"
+	{
+		"sv"       "Adv checkpoint menu  -  Enabled"
+	}
+	"options_adv_off"
+	{
+		"sv"       "Adv checkpoint menu  -  Disabled"
+	}
+	"options_hide_on"
+	{
+		"sv"       "Hide other players  -  Enabled"
+	}
+	"options_hide_off"
+	{
+		"sv"       "Hide other players  -  Disabled"
+	}
+	"options_colorchat_off"
+	{
+		"sv"       "Color chat (jumpstats)  -  Disabled (except yours)"
+	}
+	"options_colorchat_on"
+	{
+		"sv"       "Color chat (jumpstats)  -  Enabled"
+	}
+	"options_colorchat_only_red"
+	{
+		"sv"       "Color chat (jumpstats)  -  Red jumps only (except yours)"
+	}
+	"options_cpmessage_on"
+	{
+		"sv"       "Checkpoint done chat message  -  Enabled"
+	}
+	"options_cpmessage_off"
+	{
+		"sv"       "Checkpoint done chat message  -  Disabled"
+	}
+	"options_menusounds_on"
+	{
+		"sv"       "Checkpoint menu sounds  -  Enabled"
+	}
+	"options_menusounds_off"
+	{
+		"sv"       "Checkpoint menu sounds  -  Disabled"
+	}
+	"options_quakesounds_none"
+	{
+		"sv"       "Quake sounds - None"
+	}
+	"options_quakesounds_all"
+	{
+		"sv"       "Quake sounds - All"
+	}
+	"options_quakesounds_godlike_records_only"
+	{
+		"sv"       "Quake sounds - Godlike jumps and records only"
+	}
+	"options_strafesync_on"
+	{
+		"sv"       "Print strafe sync to chat  -  Enabled"
+	}
+	"options_strafesync_off"
+	{
+		"sv"       "Print strafe sync to chat  -  Disabled"
+	}
+	"options_timertext_on"
+	{
+		"sv"       "Show timer text  -  Enabled"
+	}
+	"options_timertext_off"
+	{
+		"sv"       "Show timer text  -  Disabled"
+	}
+	"options_speclist_on"
+	{
+		"sv"       "Spectator list  -  Player counter + names"
+	}
+	"options_speclist_counter_only"
+	{
+		"sv"       "Spectator list  -  Player counter"
+	}
+	"options_speclist_off"
+	{
+		"sv"       "Spectator list  -  Disabled"
+	}
+	"options_centerpanel_on"
+	{
+		"sv"       "Center panel (jump distance, speed, keys)  -  Enabled"
+	}
+	"options_centerpanel_off"
+	{
+		"sv"       "Center panel (jump distance, speed, keys)  -  Disabled"
+	}
+	"options_advcp_on"
+	{
+		"sv"       "Adv center panel (lj takeoff info)  -  Enabled"
+	}
+	"options_advcp_off"
+	{
+		"sv"       "Adv center panel (lj takeoff info)  -  Disabled"
+	}
+	"options_start_weapon_usp"
+	{
+		"sv"       "Starting weapon  -  USP"
+	}
+	"options_start_weapon_knife"
+	{
+		"sv"       "Starting weapon  -  Knife"
+	}
+	"options_jumpbeam_on"
+	{
+		"sv"       "Jump beam  -  Enabled"
+	}
+	"options_jumpbeam_off"
+	{
+		"sv"       "Jump beam  -  Disabled"
+	}
+	"options_chat_hidden"
+	{
+		"sv"       "Chat and voice icons  -  Hidden"
+	}
+	"options_chat_visible"
+	{
+		"sv"       "Chat and voice icons  -  Visible"
+	}
+	"options_weaponmodel_visible"
+	{
+		"sv"       "Weapon model  -  Visible"
+	}
+	"options_weaponmodel_hidden"
+	{
+		"sv"       "Weapon model  -  Hidden"
+	}
+	"options_gotome_on"
+	{
+		"sv"       "Goto me  -  Enabled"
+	}
+	"options_gotome_off"
+	{
+		"sv"       "Goto me  -  Disabled"
+	}
+	"options_autobhop_on"
+	{
+		"sv"       "AutoBhop  -  Enabled"
+	}
+	"options_autobhop_off"
+	{
+		"sv"       "AutoBhop  -  Disabled"
+	}
+	"HideChat1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Hide chat aktiverat."
+	}
+	"HideChat2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Hide chat avaktiverad."
+	}
+	"HideViewModel1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Weapon viewmodel avaktiverad."
+	}
+	"HideViewModel2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Weapon viewmodel aktiverat."
+	}
+	"PlayerJumpBeam1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Jump beam aktiverat."
+	}
+	"PlayerJumpBeam2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Jump beam avaktiverad."
+	}
+	"ClientLadderJump1"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.2f},{5:c},{6:i},{7:c},{8:c},{9:.0f},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:i},{16:c},{17:c}"
+		"sv"       "[{1}KZ{2}] {3}LAJ: {4} units [{5}{6}{7} Strafes | {8}{9}{10} Pre | {11}{12}{13} Höjd | {14}{15}{16}{17} Sync]"
+	}
+	"ClientLadderJump2"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.2f},{5:c},{6:i},{7:c},{8:c},{9:.0f},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:i},{19:c},{20:c}"
+		"sv"       "[{1}KZ{2}] {3}LAJ: {4} units [{5}{6}{7} Strafes | {8}{9}{10} Pre | {11}{12}{13} Max | {14}{15}{16} Höjd | {17}{18}{19}{20} Sync]"
+	}
+	"Jumpstats_LadderJumpTop"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:i},{6:.3f}"
+		"sv"        "[{1}KZ{2}] {3}{4} är nu #{5} i LadderJump Top 20! [{6} units]"
+	}
+	"Jumpstats_BeatLadderJumpBest"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.3f}"
+		"sv"        "[{1}KZ{2}] {3}Du slog ditt personbästa för LadderJump med ett {4} hopp!"
+	}
+	"Jumpstats_LadderJumpAll"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:.3f},{8:c},{9:c},{10:s}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} hoppade {6}{7} units{8} med ett {9}LadderJump{10}"
+	}
+	"AvgTime"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:c},{6:s},{7:i},{8:c},{9:c},{10:s},{11:i}"
+		"sv"        "[{1}KZ{2}] {3}Avg. time {4}PRO{5}: {6} ({7}) {8}TP{9}: {10} ({11})"
+	}
+	"ClientLongJumpBlockFailstats"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:c},{6:.2f},{7:c},{8:c},{9:i},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:.0f},{19:c},{20:c},{21:i},{22:c},{23:c},{24:c},{25:.3f},{26:c},{27:s}"
+		"sv"       "[{1}KZ{2}] {3}Distance{4}: {5}{6} units{7} [{8}{9}{10} Strafes | {11}{12}{13} Pre | {14}{15}{16} Max | {17}{18}{19} Höjd | {20}{21}{22}{23} Sync | {24}{25}{26} JumpOff Edge]{27}"
+	}
+	"TimerStartReminder"
+	{	
+		"#format"   ""
+		"sv"        " \n<font color='#c73030' size='24'><b> Glöm inte att starta tiden!</b></font>"
+	}
+	"TimeleftCounter"
+	{
+	
+		"#format"   "{1:c},{2:c},{3:i}"
+		"sv"        "[{1}MAP{2}] {3}.."
+	}
+	"TimeleftMinutes"
+	{
+	
+		"#format"   "{1:c},{2:c},{3:i}"
+		"sv"        "[{1}MAP{2}] {3} minuter kvar"
+	}
+	"TimeleftSeconds"
+	{
+	
+		"#format"   "{1:c},{2:c},{3:i}"
+		"sv"        "[{1}MAP{2}] {3} sekunder kvar"
+	}
+	"TimerStarted1"
+	{
+	
+		"#format"   "{1:s},{2:s}"
+		"sv"        "<b>Tiden startades om</b>\n<font color='#4A66FC'><b>Pro</b></font>: {1}\n<font color='#D3CE6D'><b>TP</b></font>: {2}"
+	}
+	"TimerStarted2"
+	{
+	
+		"#format"   "{1:s},{2:s}"
+		"sv"        "<b>Tiden startades</b>\n<font color='#4A66FC'><b>Pro</b></font>: {1}\n<font color='#D3CE6D'><b>TP</b></font>: {2}"
+	}
+	"TimerStopped"
+	{
+	
+		"#format"   "{1:s}"
+		"sv"        "<b>Tiden stoppades.</b>\nDin tid på mappen: <font color='#86D53B'>{1}</font>\n<font size='22'>Grattis!</font>"
+	}
+	"LJblock1"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"        "[{1}KZ{2}] {3}Ogiltig destination (Höjd skillnad > 0.0)"
+	}
+	"LJblock2"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"        "[{1}KZ{2}] {3}Ogiltig destination (kunde inte upptäcka en kant)"
+	}	
+	"LJblock3"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"        "[{1}KZ{2}] {3}Ogiltig destination (den valda destinationen är för stor)"
+	}
+	"LJblock4"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"        "[{1}KZ{2}] {3}Ogiltig destination"
+	}
+	"LJblock5"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:d},{6:c}"
+		"sv"        "[{1}KZ{2}] {3}Longjump Block ({4}{5} units{6}) registrerad!"
+	}
+	"LJblock6"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:i},{6:c}"
+		"sv"        "[{1}KZ{2}] {3}Du kan endast registrera blocks som är större än 226 units! (nuvarande mellanrum: {4}{5} units{6})"
+	}
+	"LJblock7"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:i},{6:c}"
+		"sv"        "[{1}KZ{2}] {3}Du kan endast registrera blocks upp till 300 units! (nuvarande mellanrum: {4}{5} units{6})"
+	}	
+	"MissedTpBest"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:s},{6:c}"
+		"sv"       "[{1}KZ{2}] {3}Du har missat din bästa tp tid som är ({4}{5}{6})"
+	}
+	"MissedProBest"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:s},{6:c}"
+		"sv"       "[{1}KZ{2}] {3}Du har missat din bästa pro tid som är ({4}{5}{6})"
+	}
+	"KickMsg"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:i}"
+		"sv"        "[{1}KZ FPSCHECK{2}] Du kommer bli {3}kickad inom 10 sekunder{4}. Snälla sätt fps_max till något mellan 100 och 300! (upptäckt: fps_max {5})"
+	}
+	"TeamJoin"
+	{
+		"#format"   "{1:N},{2:s}"
+		"sv"       "Spelare {1} anslöt till servern. {2}"
+	}
+	"JumpPenalty3"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"       "[{1}KZ{2}] Hopp straff tvingat. (server-sided)"
+	}
+	"MapTopFail"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"       "[{1}KZ{2}] Användning: !maptop <mapname>"
+	}
+	"Hyperscroll"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"       "[{1}KZ{2}] {3}VARNING: Inaktivera hyper scroll eller bli bannad."
+	}	
+	"Measure1"
+	{
+		"#format"   "{1:c},{2:c},{3:.1f},{4:.1f}"
+		"sv"       "[{1}KZ{2}] Avstånd: {3} (Höjd skillnad: {4})"
+	}
+	"Measure2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"       "[{1}KZ{2}] Du måste sätta de båda punkterna innan du kan hitta avståndet."
+	}
+	"Measure3"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"       "[{1}KZ{2}] Du siktar inte på någonting fast!"
+	}
+	"Measure4"
+	{
+		"#format"   "{1:c},{2:c},{3:i},{4:.1f},{5:.1f},{6:.1f}"
+		"sv"       "[{1}KZ{2}] Fick Punkt {3} vid X: {4}, Y: {5}, Z: {6}"
+	}	
+	"AntiCheatEnabled"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"       " {1}{2}{3}WARNING: Any kind of cheating will get you banned from every KZTimer Global server! This includes, but is not limited to: hacks, macros and mouse features like hyperscrolling."
+	}	
+	"NoCpsDuringChallenge"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Inga checkpoints är tillåtna under din utmaning!"
+	}
+	"KnifeDead"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Du kan inte ändra din kniv när du är död."
+	}
+	"Undo1"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"        "[{1}KZ{2}] {3}Undo TP är inte tillåtet när du är i luften."
+	}
+	"Undo2"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"        "[{1}KZ{2}] {3}Undo TP är inte tillåtet när du rör på dig."
+	}
+	"JumpstatsDisabled"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Info: JumpStats inaktiverades!"
+	}
+	"noJumpRecords"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Inga hopp rekord hittades!"
+	}
+
+	"Challenge1"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:i},{6:s}"
+		"sv"        "[{1}KZ{2}] {3}Utmanings begäran skickades till {4} (Bet: {5}p, Checkpoints{6})"
+	}
+	"Challenge2"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:i},{8:s}"
+		"sv"        "[{1}KZ{2}] {3}{4} utmanade dig. Du har 20 sekunder att {5}!accept{6} (Bet: {7}p, Checkpoints {8})"
+	}
+	"Challenge3"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"        "[{1}KZ{2}] {3}Utmaning accepterad."
+	}
+	"Challenge4"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:s},{8:c}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} vann en utmaning mot {6}{7}{8}! (Gav upp)"
+	}
+
+	"ChallengeFailed1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] No block måste vara aktiverat för att starta en utmaning."
+	}
+	"ChallengeFailed2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Du måste vara levande för att starta en utmaning."
+	}
+	"ChallengeFailed3"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Du är redan i en utmaning."
+	}
+	"ChallengeFailed4"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Ingen giltlig spelare hittad."
+	}
+	"ChallengeFailed5"
+	{
+		"#format"   "{1:c},{2:c},{3:s},{4:i}"
+		"sv"        "[{1}KZ{2}] {3} har inte tillräckligt med player points ({4}) för att acceptera din utmaning."
+	}
+	"ChallengeFailed6"
+	{
+		"#format"   "{1:c},{2:c},{3:s}"
+		"sv"        "[{1}KZ{2}] {3} är redan i en utmaning."
+	}
+	"ChallengeStarted1"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"        "[{1}KZ{2}] {3}Ifall du vill ge upp bara skriv !surrender."
+	}
+	"ChallengeStarted2"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"        "[{1}KZ{2}] {3}Ni båda kan !abort utmaningen."
+	}
+	"ChallengeStarted3"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"        "[{1}KZ{2}] {3}Viktigt: GLÖM INTE ATT STARTA TIDEN!"
+	}
+	"ChallengeStarted4"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"        "[{1}KZ{2}] {3}Lycka till och ha det roligt!!"
+	}
+	"ChallengeRequestExpired"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Utmanings begäran gick ut!"
+	}
+	"ChallengeWon"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c}"
+		"sv"        "[{1}KZ{2}] {3}Utmaning vunnen! {4}(din motståndare har lämnat servern)"
+	}
+	"ChallengeAborted"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c}"
+		"sv"        "[{1}KZ{2}] Utmaning mot {3}{4}{5} var avbruten."
+	}
+	"SkillGroup"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:s}"
+		"sv"        "[{1}KZ{2}] {3}Du är nu rankad som {4}{5}"
+	}
+	"Rc_PlayerRankStart"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"        "[{1}KZ{2}] {3}Laddar om profil data...."
+	}
+	"Rc_PlayerRankFinished"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:i},{6:c}"
+		"sv"        "[{1}KZ{2}] {3}Profil omladdad. [{4}{5}{6}]"
+	}	
+	"EarnedPoints"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:i},{8:c},{9:c},{10:i},{11:c}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} har tjänat {6}{7} points{8} [{9}{10}{11} Totalt]"
+	}
+	"LostPoints"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:i},{8:c},{9:c},{10:i},{11:c}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} har förlorat {6}{7} points{8} [{9}{10}{11} Totalt]"
+	}
+
+	"ChallengeW"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:s},{8:c}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} vann en utmaning mot {6}{7}{8}"
+	}
+
+	"ChallengeL"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:i},{8:c}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} har förlorat {6}{7} {8}points!"
+	}
+	"NoReplayFound"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Ingen replay hittad."
+	}
+	"BotAlreadyCreated"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Replay bot har redan skapats."
+	}
+	"NoPlayerTop"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Inga spelare hittades."
+	}
+	"NoRecordTop"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Inga rekord hittades."
+	}
+	"PrUpdateStarted"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Räknar om spelar rankning. Detta kan ta ett tag, snälla vänta!"
+	}
+	"PrUpdateFinished"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"        "[{1}KZ{2}] {3}Omberäkning avslutad!"
+	}
+	"Top100Refreshed"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"        "[{1}KZ{2}] {3}Top 100 Players omräknad!"
+	}
+	"StopRecalculation"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Omberäkning stoppad!"
+	}
+	"NewGlobalRecord102_Pro"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} has beaten the {6}GLOBAL PRO RECORD (102)"
+	}
+	"NewGlobalRecord128_Pro"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} has beaten the {6}GLOBAL PRO RECORD"
+	}
+	"NewGlobalRecord64_Pro"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} has beaten the {6}GLOBAL PRO RECORD (64)"
+	}
+	"NewGlobalRecord102_Tp"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} has beaten the {6}GLOBAL TP RECORD (102)"
+	}
+	"NewGlobalRecord128_Tp"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} has beaten the {6}GLOBAL TP RECORD"
+	}
+	"NewGlobalRecord64_Tp"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} has beaten the {6}GLOBAL TP RECORD (64)"
+	}
+	"NewProRecord"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} fick ett nytt {6}PRO RECORD"
+	}
+	"NewTpRecord"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} fick ett nytt {6}TP RECORD"
+	}
+	"ReplayFinishingMsg"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:s},{8:c}"
+		"sv"        "[{1}KZ REPLAY{2}] {3}{4}{5} slutade med en tid av ({6}{7}{8})."
+	}
+	"MapFinished0"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:c},{8:c},{9:s},{10:c},{11:c},{12:i},{13:c},{14:c},{15:c},{16:i},{17:c},{18:i},{19:c},{20:s},{21:c}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} slutade med en {6}TP TIME{7} av ({8}{9}{10}, TP's: {11}{12}{13}). {14}[rank {15}#{16}{17}/{18} | rekord {19}{20}{21}]"
+	}
+	"MapFinished1"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:c},{8:c},{9:s},{10:c},{11:c},{12:c},{13:i},{14:c},{15:i},{16:c},{17:s},{18:c}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} slutade med en {6}PRO TIME{7} av ({8}{9}{10}). {11}[rank {12}#{13}{14}/{15} | rekord {16}{17}{18}]"
+	}
+	"MapFinished2"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:c},{8:c},{9:s},{10:c},{11:c},{12:i},{13:c},{14:c},{15:s},{16:c},{17:c},{18:c},{19:i},{20:c},{21:i},{22:c},{23:s},{24:c}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} slutade med en {6}TP TIME{7} av ({8}{9}{10}, TP's: {11}{12}{13}). Improving their best time by ({14}{15}{16}). {17}[rank {18}#{19}{20}/{21} | rekord {22}{23}{24}]"
+	}
+	"MapFinished3"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:c},{8:c},{9:s},{10:c},{11:c},{12:s},{13:c},{14:c},{15:c},{16:i},{17:c},{18:i},{19:c},{20:s},{21:c}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} slutade med en {6}PRO TIME{7} av ({8}{9}{10}). Improving their best time by ({11}{12}{13}). {14}[rank {15}#{16}{17}/{18} | rekord {19}{20}{21}]"
+	}
+	"MapFinished4"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:c},{8:c},{9:s},{10:c},{11:c},{12:i},{13:c},{14:c},{15:s},{16:c},{17:c},{18:c},{19:i},{20:c},{21:i},{22:c},{23:s},{24:c}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} slutade med en {6}TP TIME{7} av ({8}{9}{10}, TP's: {11}{12}{13}). Missing their best time by ({14}{15}{16}). {17}[rank {18}#{19}{20}/{21} | rekord {22}{23}{24}]"
+	}
+	"MapFinished5"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:c},{8:c},{9:s},{10:c},{11:c},{12:s},{13:c},{14:c},{15:c},{16:i},{17:c},{18:i},{19:c},{20:s},{21:c}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} slutade med en {6}PRO TIME{7} av ({8}{9}{10}). Missing their best time by ({11}{12}{13}). {14}[rank {15}#{16}{17}/{18} | rekord {19}{20}{21}]"
+	}
+	"NoClipUnlocked"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"        "[{1}KZ{2}] {3}NoClip upplåst (skriv detta i consolen: bind KEY +noclip)"
+	}
+	"PlayerNotFound"
+	{
+		"#format"   "{1:c},{2:c},{3:s}"
+		"sv"        "[{1}KZ{2}] Spelare {3} hittades inte i den lokala databasen."
+	}
+	"ConsoleOutput"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Titta i consolen för utmatning!"
+	}
+	"PlayerHasNoMapRecords"
+	{
+		"#format"   "{1:c},{2:c},{3:s}"
+		"sv"        "[{1}KZ{2}] {3} har inga lokala map rekord."
+	}
+	"NoTpRecords"
+	{
+		"#format"   "{1:c},{2:c},{3:s}"
+		"sv"        "[{1}KZ{2}] Inga Local TP Records hittades på {3}"
+	}
+	"NoGlobalRecords64"
+	{
+		"#format"   "{1:c},{2:c},{3:s}"
+		"sv"        "[{1}KZ{2}] Inga Global Records (tickrate 64) hittades på {3}"
+	}
+	"NoGlobalRecords102"
+	{
+		"#format"   "{1:c},{2:c},{3:s}"
+		"sv"        "[{1}KZ{2}] Inga Global Records (tickrate 102.4) hittades på {3}"
+	}
+	"NoGlobalRecordsProMode"
+	{
+		"#format"   "{1:c},{2:c},{3:s}"
+		"sv"        "[{1}KZ{2}] Inga Global Records (ProMode) hittades på {3}"
+	}
+	"NoGlobalRecords128"
+	{
+		"#format"   "{1:c},{2:c},{3:s}"
+		"sv"        "[{1}KZInga Inga Global Records (tickrate 128) hittades på {3}"
+	}
+	"NoTopRecords"
+	{
+		"#format"   "{1:c},{2:c},{3:s}"
+		"sv"        "[{1}KZ{2}] Inga Local Records hittades på {3}"
+	}
+	"NoProRecords"
+	{
+		"#format"   "{1:c},{2:c},{3:s}"
+		"sv"        "[{1}KZ{2}] Inga Local Pro Records hittades på {3}"
+	}
+	"AdminSetButton"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Failed! Du måste vara vid liv för att sätta en ny knapp."
+	}
+	"NoclipNotAvailable2"
+	{
+		"#format"   "{1:c},{2:c},{3:s}"
+		"sv"        "[{1}KZ{2}] Du måste klara mappen eller vara rankad som {3}, MAPPER, VIP eller ADMIN för att använda +noclip"
+	}
+	"NoclipNotAvailable3"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Noclip avaktiverat (server-sided)"
+	}
+	"CMenuDisabled"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Climbers menu är avaktiverad."
+	}
+	"StartDisabled"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c}"
+		"sv"        "[{1}KZ{2}] {3}!start{4} kommandot är avaktiverat."
+	}
+	"Spec"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"        "[{1}KZ{2}] Du måste vara vid liv för att använda {3}!spec."
+	}
+	"Unspec"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c}"
+		"sv"        "[{1}KZ{2}] Skriv {3}!unspec{4} för att gå tillbaka till ditt gamla lag."
+	}
+	"Goto1"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c}"
+		"sv"        "[{1}KZ{2}] {3}!goto{4} kommandot är avaktiverat på serversidan."
+	}
+	"Goto2"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c}"
+		"sv"        "[{1}KZ{2}] Du kan inte använda {3}!goto{4} ifall player blocking är aktiverat."
+	}
+	"Goto3"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c}"
+		"sv"        "[{1}KZ{2}] Du måste {3}!stop{4} din tid för att använda !goto."
+	}
+	"Goto4"
+	{
+		"#format"   "{1:c},{2:c},{3:s}"
+		"sv"        "[{1}KZ{2}] Spelare {3} hittades inte!"
+	}
+	"Goto5"
+	{
+		"#format"   "{1:c},{2:c},{3:s}"
+		"sv"        "[{1}KZ{2}] Spelare {3} har teleporterat sig till dig."
+	}
+	"Goto6"
+	{
+		"#format"   "{1:c},{2:c},{3:s}"
+		"sv"        "[{1}KZ{2}] Du kan inte teleportera till {3} för spelaren duckade."
+	}
+	"Goto7"
+	{
+		"#format"   "{1:c},{2:c},{3:s}"
+		"sv"        "[{1}KZ{2}] Du kan inte teleportera till {3} för han/hon var inte på marken."
+	}
+	"Goto8"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Du kan inte teleportera till dig själv."
+	}
+	"Goto9"
+	{
+		"#format"   "{1:c},{2:c},{3:s}"
+		"sv"        "[{1}KZ{2}] Failed! Spelare {3} är inte vid liv."
+	}
+	"Goto10"
+	{
+		"#format"   "{1:c},{2:c},{3:s}"
+		"sv"        "[{1}KZ{2}] Spelare {3} har avaktiverat teleporting till honom/henne."
+	}
+	"SpeedMeter1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Hastighetsmätaren aktiverad."
+	}
+	"SpeedMeter2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Hastighetsmätaren avaktiverad."
+	}
+	"TimerStopped1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Tiden stoppades."
+	}
+	"CheckpointsDisabled"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Checkpoints är avaktiverade."
+	}
+	"CheckpointSaved"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:i},{6:c}"
+		"sv"        "[{1}KZ{2}] {3}Checkpoint {4}#{5}{6} saved."
+	}
+	"CheckpointsNotinAir"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"        "[{1}KZ{2}] {3}Checkpoint är inte tillåten i luften."
+	}
+	"CheckpointsNotonBhopPlattforms"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"        "[{1}KZ{2}] {3}Checkpoint på ett bunnyhop block är förbjudet."
+	}
+	"NoCheckpointsFound"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Ingen checkpoints hittad."
+	}
+	"SettingsEnforcerEnabled"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"        "[{1}KZ{2}] {3}Settings Enforcer aktiverad."
+	}
+	"SettingsEnforcerDisabled"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"        "[{1}KZ{2}] {3}Settings Enforcer avaktiverad."
+	}
+	"PositionRestored"
+	{
+		"#format"   ""
+		"sv"        " \n   <font size='23'><b>Tid och position återställdes</b></font>\n"
+	}
+	"RadioCommandsDisabled"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Radio commands är avaktiverade."
+	}
+	"Jumpstats_LjAll"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:.3f},{8:c},{9:c},{10:s},{11:s},{12:s}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} hoppade {6}{7} units{8} med ett {9}LongJump{10}{11}{12}"
+	}
+	"Jumpstats_BhopAll"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:.3f},{8:c},{9:c},{10:s},{11:s}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} hoppade {6}{7} units{8} med ett {9}Bunnyhop{10}{11}"
+	}
+	"Jumpstats_WeirdAll"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:.3f},{8:c},{9:c},{10:s},{11:s}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} hoppade {6}{7} units{8} med ett {9}WeirdJump{10}{11}"
+	}
+	"Jumpstats_DropBhopAll"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:.3f},{8:c},{9:c},{10:s},{11:s}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} hoppade {6}{7} units{8} med ett {9}DropBhop{10}{11}"
+	}
+	"Jumpstats_CountJumpAll"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:.3f},{8:c},{9:c},{10:s},{11:s}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} hoppade {6}{7} units{8} med ett {9}CountJump{10}{11}"
+	}
+	"Jumpstats_MultiBhopAll"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:.3f},{8:c},{9:c},{10:s},{11:s}"
+		"sv"        "[{1}KZ{2}] {3}{4}{5} hoppade {6}{7} units{8} med {9}MultiBhop{10}{11}"
+	}
+	"Jumpstats_OnRampage"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s}"
+		"sv"        "[{1}KZ{2}] {3}{4} är på rampage [3 leet jumps i rad]"
+	}
+	"Jumpstats_IsDominating"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s}"
+		"sv"        "[{1}KZ{2}] {3}{4} är dominating [5 leet jumps i rad]"
+	}
+	"Jumpstats_BeatLjBest"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.3f}"
+		"sv"        "[{1}KZ{2}] {3}Du slog ditt personbästa för LongJump med ett {4} hopp!"
+	}
+	"Jumpstats_BeatLjBlockBest"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c}{4:i},{5:.3f}"
+		"sv"        "[{1}KZ{2}] {3}Du slog ditt personbästa för Block LongJump med ett {4} block och {5} hopp!"
+	}
+	"Jumpstats_BeatWjBest"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.3f}"
+		"sv"        "[{1}KZ{2}] {3}Du slog ditt personbästa för WeirdJump med ett {4} hopp!"
+	}
+	"Jumpstats_BeatDropBhopBest"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.3f}"
+		"sv"        "[{1}KZ{2}] {3}Du slog ditt personbästa för Drop-Bunnyhop med ett {4} hopp!"
+	}
+	"Jumpstats_BeatCountJumpBest"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.3f}"
+		"sv"        "[{1}KZ{2}] {3}Du slog ditt personbästa för CountJump med ett {4} hopp!"
+	}
+	"Jumpstats_BeatBhopBest"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.3f}"
+		"sv"        "[{1}KZ{2}] {3}Du slog ditt personbästa för Bunnyhop med ett {4} hopp!"
+	}
+	"Jumpstats_BeatMultiBhopBest"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.3f}"
+		"sv"        "[{1}KZ{2}] {3}Du slog ditt personbästa för Multi-Bunnyhop med ett {4} hopp!"
+	}
+	"Jumpstats_LjTop"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:i},{6:.3f}"
+		"sv"        "[{1}KZ{2}] {3}{4} är nu #{5} i LongJump Top 20! [{6} units]"
+	}
+	"Jumpstats_LjBlockTop"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:i},{6:i},{7:.3f}"
+		"sv"        "[{1}KZ{2}] {3}{4} är nu #{5} i Block LongJump Top 20! [{6} units block/{7} units jump]"
+	}
+	"Jumpstats_WjTop"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:i},{6:.3f}"
+		"sv"        "[{1}KZ{2}] {3}{4} är nu #{5} i WeirdJump Top 20! [{6} units]"
+	}
+	"Jumpstats_DropBhopTop"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:i},{6:.3f}"
+		"sv"        "[{1}KZ{2}] {3}{4} är nu #{5} i Drop-Bunnyhop Top 20! [{6} units]"
+	}
+	"Jumpstats_CountJumpTop"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:i},{6:.3f}"
+		"sv"        "[{1}KZ{2}] {3}{4} är nu #{5} i CountJump Top 20! [{6} units]"
+	}
+	"Jumpstats_BhopTop"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:i},{6:.3f}"
+		"sv"        "[{1}KZ{2}] {3}{4} är nu #{5} i Bunnyhop Top 20! [{6} units]"
+	}
+	"Jumpstats_MultiBhopTop"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:i},{6:.3f}"
+		"sv"        "[{1}KZ{2}] {3}{4} är nu #{5} i Multi-Bunnyhop Top 20! [{6} units]"
+	}
+	"Hide1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Göm andra spelare avaktiverat."
+	}
+	"Hide2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Göm andra spelare aktiverat."
+	}
+	"Pause1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Pause funktionen är server-sided avaktiverad."
+	}
+	"Pause2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Pause avaktiverad."
+	}
+	"Pause3"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Pause aktiverad."
+	}
+	"Showtime1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Tid rutan aktiverad."
+	}
+	"Showtime2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Tid rutan avaktiverad."
+	}
+	"CpMessage1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Checkpoint meddelande aktiverad."
+	}
+	"CpMessage2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Checkpoint meddelande avaktiverad."
+	}
+	"DisableGoto1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Goto till mig aktiverad."
+	}
+	"DisableGoto2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Goto till mig avaktiverad."
+	}
+	"Colorchat1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Colorchat aktiverat."
+	}
+	"Colorchat2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Colorchat avaktiverad."
+	}
+	"Info1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Info rutan aktiverad."
+	}
+	"Info2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Info rutan avaktiverad."
+	}
+	"ShowKeys1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Visa tangenter aktiverat."
+	}
+	"ShowKeys2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Visa tangenter avaktiverat."
+	}
+	"QuakeSounds1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Quake ljud aktiverat."
+	}
+	"QuakeSounds2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Quake ljud avaktiverat."
+	}
+	"HideSpecs1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Åskådare listan aktiverad."
+	}
+	"HideSpecs2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Åskådare listan avaktiverad."
+	}
+	"ClimbersMenuSounds1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Climbers menu ljud aktiverat."
+	}
+	"ClimbersMenuSounds2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Climbers menu ljud avaktiverat."
+	}
+	"StrafeSync1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Strafe sync i chatten aktiverat."
+	}
+	"StrafeSync2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Strafe sync i chatten avaktiverat."
+	}
+	"AutoBhop1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] AutoBhop aktiverat."
+	}
+	"AutoBhop2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] AutoBhop avaktiverat."
+	}
+	"AutoBhop3"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] AutoBhop avaktiverat. (server-sided)"
+	}
+	"AdvClimbersMenu1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Avancerad climbers menu aktiverad."
+	}
+	"AdvClimbersMenu2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Avancerad climbers menu avaktiverad."
+	}
+	"Usp1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Notera: Rörelsehastigheten är saktare än med en kniv."
+	}
+	"Usp2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] (inga andra vapen via chat kommands är tillgängliga)"
+	}
+	"Usp3"
+	{
+		"#format"   "{1:c},{2:c}"
+		"sv"        "[{1}KZ{2}] Nope. Du har redan fått 3 USP's.."
+	}
+	"HelpMsg"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c}"
+		"sv"        "[{1}KZ{2}] Ifall du behöver hjälp, skriv {3}!helpmenu{4} i chatten."
+	}
+	"Disconnected1"
+	{
+		"#format"   "{1:c},{2:c},{3:s},{4:c},{5:s}"
+		"sv"       "{1}Spelare {2}{3}{4} har lämnat spelet. ({5})"
+	}
+	"Connected2"
+	{
+		"#format"   "{1:c},{2:c},{3:s},{4:c},{5:c},{6:s}"
+		"sv"       "{1}Spelare {2}{3}{4} anslöt från {5}{6}"
+	}
+	"Connected1"
+	{
+		"#format"   "{1:c},{2:c},{3:s},{4:c}"
+		"sv"       "{1}Spelare {2}{3}{4} anslöt."
+	}
+	"Bhop1"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.3f},{5:c},{6:c},{7:.3f},{8:c},{9:c},{10:c}"
+		"sv"       "[{1}KZ{2}] Din Prestrafe är för hög. ({3}{4}{5}/{6}{7}{8} max) {9}Bhop{10}"
+	}
+	"DropBhop1"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.1f},{5:c},{6:c},{7:c},{8:c},{9:c}"
+		"sv"       "[{1}KZ{2}] Du föll för långt. ({3}{4}{5}/{6}132.0{7} max) {8}DropBhop{9}"
+	}	
+	"DropBhop2"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.3f},{5:c},{6:c},{7:.3f},{8:c},{9:c},{10:c}"
+		"sv"       "[{1}KZ{2}] Din Prestrafe är för hög. ({3}{4}{5}/{6}{7}{8} max) {9}DropBhop{10}"
+	}
+	"Wj1"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.1f},{5:c},{6:c},{7:c},{8:c},{9:c}"
+		"sv"       "[{1}KZ{2}] Du föll för långt. ({3}{4}{5}/{6}132.0{7} max) {8}WJ{9}"
+	}	
+	"Wj2"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.3f},{5:c},{6:c},{7:c},{8:c},{9:c}"
+		"sv"       "[{1}KZ{2}] Din Prestrafe är för hög. ({3}{4}{5}/{6}300.0{7} max) {8}WJ{9}"
+	}
+	"ClimbersMenu1_1"
+	{
+		"#format"   "{1:i}"
+		"sv"       "Checkpoint #{1}"
+	}
+	"ClimbersMenu2_1"
+	{
+		"#format"   "{1:i}"
+		"sv"       "Teleport #{1}"
+	}
+	"ClimbersMenu1_2"
+	{
+		"#format"   "{1:i}"
+		"sv"       "CP #{1}"
+	}
+	"ClimbersMenu2_2"
+	{
+		"#format"   "{1:i}"
+		"sv"       "TP #{1}"
+	}
+	"ClimbersMenu3"
+	{
+		"sv"       "Föregående CP"
+	}
+	"ClimbersMenu4"
+	{
+		"sv"       "Nästa CP"
+	}
+	"ClimbersMenu5"
+	{
+		"sv"       "Ångra TP"
+	}
+	"ClimbersMenu6"
+	{
+		"sv"       "Pause"
+	}
+	"ClimbersMenu7"
+	{
+		"sv"       "Pause - PÅ"
+	}
+	"ClimbersMenu8"
+	{
+		"sv"       "Start"
+	}
+	"ClimbersMenu9"
+	{
+		"sv"       "Avancerat"
+	}
+	"ClimbersMenu10"
+	{
+		"#format"   "{1:s},{2:.1f}"
+		"sv"       "{1}\nSpeed: {2} u/s"
+	}
+	"ClimbersMenu11"
+	{
+		"sv"       "Checkpoint"
+	}
+	"ClimbersMenu12"
+	{
+		"sv"       "Teleport"
+	}
+	"ClimbersMenu13"
+	{
+		"sv"       "CP"
+	}
+	"ClimbersMenu14"
+	{
+		"sv"       "TP"
+	}	
+	"ClientLongJump1"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.2f},{5:c},{6:i},{7:c},{8:c},{9:.0f},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:i},{19:c},{20:c},{21:s}"
+		"sv"       "[{1}KZ{2}] {3}LJ: {4} units [{5}{6}{7} Strafes | {8}{9}{10} Pre | {11}{12}{13} Max | {14}{15}{16} Höjd | {17}{18}{19}{20} Sync]{21}"
+	}
+	"ClientLongJump2"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.2f},{5:c},{6:i},{7:c},{8:c},{9:.0f},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:i},{19:c},{20:c},{21:s}"
+		"sv"       "[{1}KZ{2}] {3}LJ: {4} units [{5}{6}{7} Strafes | {8}{9}{10} TakeOff | {11}{12}{13} Max | {14}{15}{16} Höjd | {17}{18}{19}{20} Sync]{21}"
+	}
+	"ClientLongJump3"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:c},{6:.2f},{7:c},{8:c},{9:i},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:.0f},{19:c},{20:c},{21:i},{22:c},{23:c},{24:s},{25:s}"
+		"sv"       "[{1}KZ{2}] {3}LJ{4}: {5}{6} units{7} [{8}{9}{10} Strafes | {11}{12}{13} Pre | {14}{15}{16} Max | {17}{18}{19} Höjd | {20}{21}{22}{23} Sync]{24}{25}"
+	}
+	"ClientLongJump4"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:c},{6:.2f},{7:c},{8:c},{9:i},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:.0f},{19:c},{20:c},{21:i},{22:c},{23:c},{24:s}"
+		"sv"       "[{1}KZ{2}] {3}LJ{4}: {5}{6} units{7} [{8}{9}{10} Strafes | {11}{12}{13} TakeOff | {14}{15}{16} Max | {17}{18}{19} Höjd | {20}{21}{22}{23} Sync]{24}"
+	}	
+	"ClientMultiBhop1"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.2f},{5:c},{6:i},{7:c},{8:c},{9:.0f},{10:c}{11:c},{12:i},{13:c},{14:c}"
+		"sv"       "[{1}KZ{2}] {3}MultiBhop: {4} units [{5}{6}{7} Strafes | {8}{9}{10} Pre | {11}{12}{13}{14} Sync]"
+	}
+	"ClientMultiBhop2"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:c},{6:.2f},{7:c},{8:c},{9:i},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:.0f},{19:c},{20:c},{21:s},{22:c},{23:c},{24:i},{25:c},{26:c},{27:s}"
+		"sv"       "[{1}KZ{2}] {3}MultiBhop{4}: {5}{6} units{7} [{8}{9}{10} Strafes | {11}{12}{13} Pre | {14}{15}{16} Max | {17}{18}{19} Höjd | {20}{21}{22} Bhops | {23}{24}{25}{26} Sync]{27}"
+	}
+	"ClientDropBhop1"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.2f},{5:c},{6:i},{7:c},{8:c},{9:.0f},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:i},{16:c},{17:c}"
+		"sv"       "[{1}KZ{2}] {3}DropBhop: {4} units [{5}{6}{7} Strafes | {8}{9}{10} Pre | {11}{12}{13} Höjd | {14}{15}{16}{17} Sync]"
+	}
+	"ClientDropBhop2"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:c},{6:.2f},{7:c},{8:c},{9:i},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:.0f},{19:c},{20:c},{21:i},{22:c},{23:c},{24:s}"
+		"sv"       "[{1}KZ{2}] {3}DropBhop{4}: {5}{6} units{7} [{8}{9}{10} Strafes | {11}{12}{13} Pre | {14}{15}{16} Max | {17}{18}{19} Höjd | {20}{21}{22}{23} Sync]{24}"
+	}
+	"ClientCountJump1"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.2f},{5:c},{6:i},{7:c},{8:c},{9:.0f},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:i},{16:c},{17:c}"
+		"sv"       "[{1}KZ{2}] {3}CJ: {4} units [{5}{6}{7} Strafes | {8}{9}{10} Pre | {11}{12}{13} Höjd | {14}{15}{16}{17} Sync]"
+	}
+	"ClientCountJump2"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:c},{6:.2f},{7:c},{8:c},{9:i},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:.0f},{19:c},{20:c},{21:i},{22:c},{23:c},{24:s}"
+		"sv"       "[{1}KZ{2}] {3}CJ{4}: {5}{6} units{7} [{8}{9}{10} Strafes | {11}{12}{13} Pre | {14}{15}{16} Max | {17}{18}{19} Höjd | {20}{21}{22}{23} Sync]{24}"
+	}
+	"ClientWeirdJump1"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.2f},{5:c},{6:i},{7:c},{8:c},{9:.0f},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:i},{16:c},{17:c}"
+		"sv"       "[{1}KZ{2}] {3}WJ: {4} units [{5}{6}{7} Strafes | {8}{9}{10} Pre | {11}{12}{13} Höjd | {14}{15}{16}{17} Sync]"
+	}
+	"ClientWeirdJump2"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:c},{6:.2f},{7:c},{8:c},{9:i},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:.0f},{19:c},{20:c},{21:i},{22:c},{23:c},{24:s}"
+		"sv"       "[{1}KZ{2}] {3}WJ{4}: {5}{6} units{7} [{8}{9}{10} Strafes | {11}{12}{13} Pre | {14}{15}{16} Max | {17}{18}{19} Höjd | {20}{21}{22}{23} Sync]{24}"
+	}
+	"ClientBunnyhop1"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.2f},{5:c},{6:i},{7:c},{8:c},{9:.0f},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:i},{16:c},{17:c}"
+		"sv"       "[{1}KZ{2}] {3}Bhop: {4} units [{5}{6}{7} Strafes | {8}{9}{10} Pre | {11}{12}{13} Höjd | {14}{15}{16}{17} Sync]"
+	}
+	"ClientBunnyhop2"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:c},{6:.2f},{7:c},{8:c},{9:i},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:.0f},{19:c},{20:c},{21:i},{22:c},{23:c},{24:s}"
+		"sv"       "[{1}KZ{2}] {3}Bhop{4}: {5}{6} units{7} [{8}{9}{10} Strafes | {11}{12}{13} Pre | {14}{15}{16} Max | {17}{18}{19} Höjd | {20}{21}{22}{23} Sync]{24}"
+	}
+	"ProRecord"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:s},{6:s}"
+		"sv"        "[{1}KZ{2}] {3}PRO RECORD{4}: {5} ({6})"
+	}
+	"TpRecord"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:s},{6:s}"
+		"sv"        "[{1}KZ{2}] {3}TP RECORD{4}: {5} ({6})"
+	}
+	"GlobalRecord1_Pro"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:s},{6:s}"
+		"sv"        "[{1}KZ{2}] {3}GLOBAL PRO RECORD (64){4}: {5} ({6})"
+	}
+	"GlobalRecord1_Tp"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:s},{6:s}"
+		"sv"        "[{1}KZ{2}] {3}GLOBAL TP RECORD (64){4}: {5} ({6})"
+	}
+	"GlobalRecord2_Pro"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:s},{6:s}"
+		"sv"        "[{1}KZ{2}] {3}GLOBAL PRO RECORD (102){4}: {5} ({6})"
+	}
+	"GlobalRecord2_Tp"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:s},{6:s}"
+		"sv"        "[{1}KZ{2}] {3}GLOBAL TP RECORD (102){4}: {5} ({6})"
+	}
+	"GlobalRecord3_Pro"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:s},{6:s}"
+		"sv"        "[{1}KZ{2}] {3}GLOBAL PRO RECORD (128){4}: {5} ({6})"
+	}
+	"GlobalRecord3_Tp"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:s},{6:s}"
+		"sv"        "[{1}KZ{2}] {3}GLOBAL TP RECORD (128){4}: {5} ({6})"
+	}
+	"LanguageSwitch"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c}"
+		"sv"        "[{1}KZ{2}] Type {3}!language{4} in chat to select a different language"
+	}
+	"LjBlock"
+	{
+		"#format"   "{1:c},{2:c},{3:i},{4:c}"
+		"sv"        " {1}[{2}{3} block{4}]"
+	}
+	"Cant_Checkpoint_Just_Landed" 
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"sv"		"[{1}KZ{2}] {3}Du kan inte göra en checkpoint eftersom du precis landat."
+	}
+}

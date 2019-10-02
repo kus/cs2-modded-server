@@ -6,11 +6,13 @@ A single modded Counter-Strike: Global Offensive Dedicated Server that you can c
  - GunGame +Turbo (get the next weapon straight away) +Deathmatch (respawn) +Quake sounds +Mario (on 3 kills)
  - WarMod (competitive)
  - Deathmatch Free For All
+ - Retakes
  - Multi 1v1
  - Practice (record grenade throws etc)
  - Minigames
  - Deathrun
  - Surf
+ - Kreedz Climbing
 
 Getting up and running:
  - [Running on Linux](#running-on-linux)
@@ -38,6 +40,7 @@ Mod | Version | Why
 [Retakes MyWeaponAllocator](https://forums.alliedmods.net/showthread.php?p=2604368) | `2.3` | This weapon allocator simulates different kinds of rounds
 [Instant Defuse](https://forums.alliedmods.net/showthread.php?p=2558854) | `1.2.1` | Instantly defuse the bomb if no Terrorists are alive and there is a sufficient amount of time remaining
 [RankMe Kento Edition](https://forums.alliedmods.net/showthread.php?t=290063) | `3.0.3` | Stats
+[KZTimer](https://bitbucket.org/kztimerglobalteam/kztimerglobal/src/master/) | `1.91.1` | KZTimer is a powerful, feature rich SourceMod climb timer plugin for CS:GO servers
 
 ## Maps
 

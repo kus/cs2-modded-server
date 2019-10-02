@@ -13,6 +13,7 @@ Configs
 	"cfg/mg.cfg"			"Minigames"
 	"cfg/deathrun.cfg"		"Death run"
 	"cfg/surf.cfg"			"Surf"
+	"cfg/kz.cfg"			"Kreedz Climbing"
 	"cfg/sourcemod/kick_bots.cfg"		"Kick bots"
 	"cfg/respawn.cfg"		"Enable respawn"
 	"cfg/sourcemod/bunnyhop_on.cfg"		"Enable bunny hopping"

@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\kzmod\buttons\/stand_button"
+	"$bumpmap" "models\kzmod\buttons\/stand_button_normal"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmaptint" "[.5 .5 .5]"
+        "$envmapsaturation" .25
+	"$envmapconstrast" .75
+	"$surfaceprop" metal
+}

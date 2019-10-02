@@ -1,0 +1,16 @@
+VertexLitGeneric
+{
+$basetexture "models/props/switch"
+$surfaceprop metal
+$bumpmap "models\props\Metal_box_normal"
+$phong 1
+$phongexponenttexture "models\props\Metal_box_exponent"
+
+$phongboost 1
+
+$phongfresnelranges "[5 1 2]"
+
+
+
+$selfillum 1
+}

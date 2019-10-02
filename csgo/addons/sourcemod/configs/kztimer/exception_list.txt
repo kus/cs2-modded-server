@@ -1,0 +1,2 @@
+// The climbers menu of KZTimer blocks menus of other plugins.
+// Here you are able to add exceptions for menu trigger commands. (e.g. sm_knife) [Requires map restart]

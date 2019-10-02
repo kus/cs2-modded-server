@@ -1,0 +1,2 @@
+// Here you are able to add steam-id's of map makers. They get access to no clip and are tagged as "MAPPER" (Players with admin or vip rights can't be ranked as mapper) [Requires map restart]
+// each line ONLY ONE steam-id (STEAM_1:x:xxx)
