@@ -250,4 +250,24 @@
 		"nl"		"Speler '{1}' geslayed"
 	}
 
+	"Chat admins"
+	{
+		"nl"		"(ADMINS) {1}"
+	}
+
+	"Chat to admins"
+	{
+		"nl"		"(NAAR ADMINS) {1}"
+	}
+
+	"Private say to"
+	{
+		"nl"		"(PRIVE NAAR {1}) {2}"
+	}
+
+	"Say all"
+	{
+		"nl"		"(IEDEREEN) {1}"
+	}
+
 }

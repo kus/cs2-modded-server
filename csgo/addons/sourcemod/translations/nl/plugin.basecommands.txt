@@ -125,4 +125,14 @@
 		"nl"		"Bans verwijderd die voldoen aan filter: {1}"
 	}
 
+	"Choose Config"
+	{
+		"nl"		"Kies configuratie"
+	}
+
+	"Please select a map"
+	{
+		"nl"		"Selecteer een map"
+	}
+
 }
