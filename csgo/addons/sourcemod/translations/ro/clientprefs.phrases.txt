@@ -42,7 +42,7 @@
 
 	"Protected Cookie"
 	{
-		"ro"		"Nu poate fi schimbata valoarea protejate pentru cookie \"{1}\""
+		"ro"		"Nu poate fi schimbata valoarea unui cookie protejat \"{1}\""
 	}
 
 }

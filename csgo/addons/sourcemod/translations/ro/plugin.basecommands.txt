@@ -120,9 +120,19 @@
 		"ro"		"Valoare cvar \"{1}\": \"{2}\""
 	}
 
+	"Choose Config"
+	{
+		"ro"		"Alege config"
+	}
+
+	"Please select a map"
+	{
+		"ro"		"Selecteaza o harta"
+	}
+
 	"Kicked target reason"
 	{
-		"ro"		"a fost dat afara {1} (Motiv: {2})"
+		"ro"		"{1} a primit Kick (motiv: {2})"
 	}
 
 }

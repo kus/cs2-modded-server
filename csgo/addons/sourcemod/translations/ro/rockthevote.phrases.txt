@@ -7,7 +7,7 @@
 
 	"Already Voted"
 	{
-		"ro"		"Ai votat deja pentru Rock the Vote."
+		"ro"		"Ai votat deja pentru Rock the Vote. ({1} voturi, {2} necesare)"
 	}
 
 	"Changing Maps"

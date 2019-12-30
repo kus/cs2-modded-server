@@ -250,4 +250,24 @@
 		"ro"		"On"
 	}
 
+	"Chat admins"
+	{
+		"ro"		"Chat admins"
+	}
+
+	"Chat to admins"
+	{
+		"ro"		"Chat cu admins"
+	}
+
+	"Private say to"
+	{
+		"ro"		"Say privat lui"
+	}
+
+	"Say all"
+	{
+		"ro"		"Say tuturor"
+	}
+
 }

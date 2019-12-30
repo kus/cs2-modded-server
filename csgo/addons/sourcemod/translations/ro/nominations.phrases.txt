@@ -40,29 +40,29 @@
 		"ro"		"Propune harta:"
 	}
 
-	"Can't Nominate Current Map"
-	{
-		"ro"		"Harta care ai ales-o este harta curenta si nu poate fi nominata"
-	}
-
 	"Current Map"
 	{
 		"ro"		"Harta curenta"
 	}
 
+	"Recently Played"
+	{
+		"ro"		"Recent jucata"
+	}
+
+	"Can't Nominate Current Map"
+	{
+		"ro"		"Harta care ai ales-o este harta curenta si nu poate fi nominalizata"
+	}
+
 	"Map in Exclude List"
 	{
-		"ro"		"Harta care ai ales-o a fost recent jucata si nu poate fi nominata"
+		"ro"		"Harta care ai ales-o a fost recent jucata si nu poate fi propusa"
 	}
 
 	"Nominated"
 	{
-		"ro"		"Nominata"
-	}
-
-	"Recently Played"
-	{
-		"ro"		"Recent jucata"
+		"ro"		"Propusa"
 	}
 
 }

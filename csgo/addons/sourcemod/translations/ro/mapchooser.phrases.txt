@@ -2,7 +2,7 @@
 {
 	"Current Map Extended"
 	{
-		"ro"		"Harta actuală a fost extinsă."
+		"ro"		"Harta actuală a fost extinsă. ({1}%% voturi din {2})"
 	}
 
 	"Extend Map"
@@ -12,7 +12,7 @@
 
 	"Nextmap Voting Finished"
 	{
-		"ro"		"Votul pentru hartă s-a terminat. Harta următoare va fi {1}."
+		"ro"		"Votul pentru hartă s-a terminat. Harta următoare va fi {1}. ({2}%% voturi din {3})"
 	}
 
 	"Nextmap Voting Started"
