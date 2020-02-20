@@ -40,6 +40,7 @@ Mod | Version | Why
 [Retakes MyWeaponAllocator](https://forums.alliedmods.net/showthread.php?p=2604368) | `2.3` | This weapon allocator simulates different kinds of rounds
 [Instant Defuse](https://forums.alliedmods.net/showthread.php?p=2558854) | `1.2.1` | Instantly defuse the bomb if no Terrorists are alive and there is a sufficient amount of time remaining
 [RankMe Kento Edition](https://forums.alliedmods.net/showthread.php?t=290063) | `3.0.3` | Stats
+[DHooks](https://forums.alliedmods.net/showthread.php?t=180114) | `2.2.0-dev` | Required by KZTimer
 [KZTimer](https://bitbucket.org/kztimerglobalteam/kztimerglobal/src/master/) | `1.91.1` | KZTimer is a powerful, feature rich SourceMod climb timer plugin for CS:GO servers
 
 ## Maps
