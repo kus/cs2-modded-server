@@ -1,0 +1,77 @@
+"Games"
+{
+	"cstrike"
+	{
+		"Keys"
+		{
+			"EngineInterface"	"VEngineServer021"
+		}
+		"Signatures"
+		{
+			"CreateInterface"
+			{
+				"library"		"engine"
+				"windows"		"@CreateInterface"
+				"linux"			"@CreateInterface"
+			}
+		}
+		"Offsets"
+		{
+			"BloodColor"
+			{
+				"windows"	"68"
+				"linux"		"69"
+			}
+			"GetModelName"
+			{
+				"windows"	"7"
+				"linux"		"8"
+			}
+			"GetMaxs"
+			{
+				"windows"	"339"
+				"linux"		"340"
+			}
+			"CanUse"
+			{
+				"windows"	"260"
+				"linux"		"261"
+			}
+			"CanHaveAmmo"
+			{
+				"windows"	"98"
+				"linux"		"98"
+			}
+			"SetModel"
+			{
+				"windows"	"24"
+				"linux"		"25"
+			}
+			"GetMaxPlayerSpeed"
+			{
+				"windows"	"438"
+				"linux"		"439"
+			}
+			"GiveAmmo"
+			{
+				"windows"	"252"
+				"linux"		"253"
+			}
+			"OnTakeDamage"
+			{
+				"windows"	"62"
+				"linux"		"63"
+			}
+			"ClientPrintf"
+			{
+				"windows"	"45"
+				"linux"		"45"
+			}
+			"AcceptInput"
+			{
+				"windows"	"36"
+				"linux"		"37"
+			}
+		}
+	}
+}
