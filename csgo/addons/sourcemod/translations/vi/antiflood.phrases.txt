@@ -1,0 +1,8 @@
+"Phrases"
+{
+	"Flooding the server"
+	{
+		"vi"		"Bạn đang làm máy chủ quá tải!"
+	}
+
+}

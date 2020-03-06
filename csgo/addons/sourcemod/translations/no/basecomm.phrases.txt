@@ -1,3 +1,73 @@
 "Phrases"
 {
+	"Choose Type"
+	{
+		"no"		"Velg Type"
+	}
+
+	"Gag Player"
+	{
+		"no"		"Gag spiller"
+	}
+
+	"Gag/Mute player"
+	{
+		"no"		"Gag/Mute spiller"
+	}
+
+	"Gagged target"
+	{
+		"no"		"Gagged {1}."
+	}
+
+	"Mute Player"
+	{
+		"no"		"Mute spiller"
+	}
+
+	"Muted target"
+	{
+		"no"		"Muted {1}."
+	}
+
+	"Silence Player"
+	{
+		"no"		"Silence spiller"
+	}
+
+	"Silenced target"
+	{
+		"no"		"Silenced {1}."
+	}
+
+	"UnGag Player"
+	{
+		"no"		"UnGag spiller"
+	}
+
+	"UnMute Player"
+	{
+		"no"		"UnMute player."
+	}
+
+	"UnSilence Player"
+	{
+		"no"		"UnSilence spiller."
+	}
+
+	"Unmuted target"
+	{
+		"no"		"Unmuted {1}."
+	}
+
+	"Ungagged target"
+	{
+		"no"		"Ungagged {1}."
+	}
+
+	"Unsilenced target"
+	{
+		"no"		"Unsilenced {1}."
+	}
+
 }

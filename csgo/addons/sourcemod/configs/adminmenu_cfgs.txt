@@ -15,6 +15,7 @@ Configs
 	"cfg/surf.cfg"			"Surf"
 	"cfg/kz.cfg"			"Kreedz Climbing"
 	"cfg/sourcemod/kick_bots.cfg"		"Kick bots"
+	"cfg/sourcemod/checkpoints.cfg"		"Enable checkpoints"
 	"cfg/respawn.cfg"		"Enable respawn"
 	"cfg/sourcemod/bunnyhop_on.cfg"		"Enable bunny hopping"
 	"cfg/sourcemod/bunnyhop_off.cfg"	"Restore normal movement"
