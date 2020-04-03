@@ -14,7 +14,7 @@ Configs
 	"cfg/deathrun.cfg"		"Death run"
 	"cfg/surf.cfg"			"Surf"
 	"cfg/kz.cfg"			"Kreedz Climbing"
-	"cfg/soccer.cfg"		"Soccer"
+	"cfg/soccermod.cfg"		"Soccer"
 	"cfg/sourcemod/kick_bots.cfg"		"Kick bots"
 	"cfg/sourcemod/checkpoints.cfg"		"Enable checkpoints"
 	"cfg/respawn.cfg"		"Enable respawn"
