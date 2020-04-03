@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+
+	 $basetexture "models/player/soccermod/soccer_mod_2014_ct_r3/BSP_blue_pants_b_D"
+	 $bumpmap "models/player/soccermod/soccer_mod_2014_ct_r3/BSP_pants_N"
+}

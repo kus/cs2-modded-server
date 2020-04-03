@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+
+	 $basetexture "models/player/soccermod/soccer_mod_2014_ct_gk_r3/gkglove_51"
+	 $bumpmap "models/player/soccermod/soccer_mod_2014_ct_gk_r3/gkglove_51_n"
+}

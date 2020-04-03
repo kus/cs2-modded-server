@@ -1,0 +1,1034 @@
+"Phrases"
+{
+	// ***********************************************************************************************************
+	// ************************************************** MENUS **************************************************
+	// ***********************************************************************************************************
+
+	"Name"
+	{
+		"en"		"Name"
+	}
+
+	"No"
+	{
+		"en"		"No"
+	}
+
+	"Settings"
+	{
+		"en"		"Settings"
+	}
+
+	"Yes"
+	{
+		"en"		"Yes"
+	}
+
+	// ************************************************** ADMIN **************************************************
+	"Admin"
+	{
+		"en"		"Admin"
+	}
+
+	"Spec player"
+	{
+		"en"		"Spec player"
+	}
+
+	// ************************************************** ALLOWED MAPS **************************************************
+	"Allowed maps"
+	{
+		"en"		"Allowed maps"
+	}
+
+	"Add"
+	{
+		"en"		"Add"
+	}
+
+	"Change"
+	{
+		"en"		"Change"
+	}
+
+	"Remove"
+	{
+		"en"		"Remove"
+	}
+
+	// ************************************************** CAP **************************************************
+	"Cap"
+	{
+		"en"		"Cap"
+	}
+
+	"Put all players to spectator"
+	{
+		"en"		"Put all players to spectator"
+	}
+
+	"Add random player"
+	{
+		"en"		"Add random player"
+	}
+
+	"Start cap fight"
+	{
+		"en"		"Start cap fight"
+	}
+
+	"Pick"
+	{
+		"en"		"Pick"
+	}
+
+	"Positions"
+	{
+		"en"		"Positions"
+	}
+
+	"Goalkeeper"
+	{
+		"en"		"Goalkeeper"
+	}
+
+	"Left back"
+	{
+		"en"		"Left back"
+	}
+
+	"Right back"
+	{
+		"en"		"Right back"
+	}
+
+	"Midfielder"
+	{
+		"en"		"Midfielder"
+	}
+
+	"Left wing"
+	{
+		"en"		"Left wing"
+	}
+
+	"Right wing"
+	{
+		"en"		"Right wing"
+	}
+
+	// ************************************************** CREDITS **************************************************
+	"Credits"
+	{
+		"en"		"Credits"
+	}
+
+	"Script"
+	{
+		"en"		"Script"
+	}
+
+	"Player models"
+	{
+		"en"		"Player models"
+	}
+
+	"Soccer Mod group"
+	{
+		"en"		"Soccer Mod group"
+	}
+
+	"Soccer Mod version: $version"
+	{
+		"#format"	"{1:s}"
+		"en"		"Soccer Mod version: {1}"
+	}
+
+	// ************************************************** HELP **************************************************
+	"Help"
+	{
+		"en"		"Help"
+	}
+
+	"Chat commands"
+	{
+		"en"		"Chat commands"
+	}
+
+	"Hold the walk key to sprint"
+	{
+		"en"		"Hold the walk key (default = shift) to sprint"
+	}
+
+	"Guide"
+	{
+		"en"		"Guide"
+	}
+
+	// ************************************************** MATCH **************************************************
+	"Match"
+	{
+		"en"		"Match"
+	}
+
+	"Start"
+	{
+		"en"		"Start"
+	}
+
+	"Pause"
+	{
+		"en"		"Pause"
+	}
+
+	"Unpause"
+	{
+		"en"		"Unpause"
+	}
+
+	"Stop"
+	{
+		"en"		"Stop"
+	}
+
+	"Score"
+	{
+		"en"		"Score"
+	}
+
+	"Add a goal to $team"
+	{
+		"#format"	"{1:s}"
+		"en"		"Add a goal to {1}"
+	}
+
+	"Remove a goal from $team"
+	{
+		"#format"	"{1:s}"
+		"en"		"Remove a goal from {1}"
+	}
+
+	"Reset"
+	{
+		"en"		"Reset"
+	}
+
+	// ************************************************** RANKING **************************************************
+	"Ranking"
+	{
+		"en"		"Ranking"
+	}
+
+	"Last connected"
+	{
+		"en"		"Last connected"
+	}
+
+	"Match top $number"
+	{
+		"#format"	"{1:i}"
+		"en"		"Match top {1}"
+	}
+
+	"Public top $number"
+	{
+		"#format"	"{1:i}"
+		"en"		"Public top {1}"
+	}
+
+	"Match personal"
+	{
+		"en"		"Match personal"
+	}
+
+	"Public personal"
+	{
+		"en"		"Public personal"
+	}
+
+	// ************************************************** REFEREE **************************************************
+	"Referee"
+	{
+		"en"		"Referee"
+	}
+
+	"Yellow card"
+	{
+		"en"		"Yellow card"
+	}
+
+	"Yellow"
+	{
+		"en"		"Yellow"
+	}
+
+	"Red card"
+	{
+		"en"		"Red card"
+	}
+
+	"Remove red card"
+	{
+		"en"		"Remove red card"
+	}
+
+	"Remove all cards"
+	{
+		"en"		"Remove all cards"
+	}
+
+	// ************************************************** STATISTICS **************************************************
+	"Statistics"
+	{
+		"en"		"Statistics"
+	}
+
+	"Team CT"
+	{
+		"en"		"Team CT"
+	}
+
+	"Team T"
+	{
+		"en"		"Team T"
+	}
+
+	"Player"
+	{
+		"en"		"Player"
+	}
+
+	"Current match"
+	{
+		"en"		"Current match"
+	}
+
+	"Current round"
+	{
+		"en"		"Current round"
+	}
+
+	"Assists"
+	{
+		"en"		"Assists"
+	}
+
+	"Ball losses"
+	{
+		"en"		"Ball losses"
+	}
+
+	"Goals"
+	{
+		"en"		"Goals"
+	}
+
+	"Hits"
+	{
+		"en"		"Hits"
+	}
+
+	"Interceptions"
+	{
+		"en"		"Interceptions"
+	}
+
+	"MOTM"
+	{
+		"en"		"MOTM"
+	}
+
+	"MVP"
+	{
+		"en"		"MVP"
+	}
+
+	"Own goals"
+	{
+		"en"		"Own goals"
+	}
+
+	"Passes"
+	{
+		"en"		"Passes"
+	}
+
+	"Points"
+	{
+		"en"		"Points"
+	}
+
+	"Possession"
+	{
+		"en"		"Possession"
+	}
+
+	"Rounds lost"
+	{
+		"en"		"Rounds lost"
+	}
+
+	"Rounds won"
+	{
+		"en"		"Rounds won"
+	}
+
+	"Saves"
+	{
+		"en"		"Saves"
+	}
+
+	// ************************************************** TRAINING **************************************************
+	"Training"
+	{
+		"en"		"Training"
+	}
+
+	"Cannon"
+	{
+		"en"		"Cannon"
+	}
+
+	"Set cannon position"
+	{
+		"en"		"Set cannon position"
+	}
+
+	"Set cannon aim"
+	{
+		"en"		"Set cannon aim"
+	}
+
+	"Select ball"
+	{
+		"en"		"Select ball"
+	}
+
+	"Cannon on"
+	{
+		"en"		"Cannon on"
+	}
+
+	"Cannon off"
+	{
+		"en"		"Cannon off"
+	}
+
+	"Randomness"
+	{
+		"en"		"Randomness"
+	}
+
+	"Fire rate"
+	{
+		"en"		"Fire rate"
+	}
+
+	"Power"
+	{
+		"en"		"Power"
+	}
+
+	"Disable goals"
+	{
+		"en"		"Disable goals"
+	}
+
+	"Enable goals"
+	{
+		"en"		"Enable goals"
+	}
+
+	"Spawn/remove ball"
+	{
+		"en"		"Spawn/remove ball"
+	}
+
+	// ******************************************************************************************************************
+	// ************************************************** MESSAGES ALL **************************************************
+	// ******************************************************************************************************************
+
+	"$player has put $target to spectator"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} has put {2} to spectator"
+	}
+
+	"$player has restarted the round"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} has restarted the round"
+	}
+
+	"Type $command for more information"
+	{
+		"#format"	"{1:s}"
+		"en"		"Type {1} for more information"
+	}
+
+	// ************************************************** ALLOWED MAPS **************************************************
+	"$player has changed the map to $map"
+	{
+		"#format"	"{1:N},{2:s}"
+		"en"		"{1} has changed the map to {2}"
+	}
+
+	// ************************************************** CAP **************************************************
+	"$player has forced $target as random player"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} has forced {2} as random player"
+	}
+
+	"$player has put all players to spectator"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} has put all players to spectator"
+	}
+
+	"$player has started a cap fight"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} has started a cap fight"
+	}
+
+	"Cap fight will start in $number seconds"
+	{
+		"#format"	"{1:i}"
+		"en"		"Cap fight will start in {1} seconds"
+	}
+
+	"FIGHT!"
+	{
+		"en"		"FIGHT!"
+	}
+
+	"$player has picked $target"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} has picked {2}"
+	}
+
+	// ************************************************** MATCH **************************************************
+	"$player has added a goal to $team"
+	{
+		"#format"	"{1:N},{2:s}"
+		"en"		"{1} has added a goal to {2}"
+	}
+
+	"$player has paused the match"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} has paused the match"
+	}
+
+	"$player has removed a goal from $team"
+	{
+		"#format"	"{1:N},{2:s}"
+		"en"		"{1} has removed a goal from {2}"
+	}
+
+	"$player has reset the score"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} has reset the score"
+	}
+
+	"$player has started a match"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} has started a match"
+	}
+
+	"$player has stopped the match"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} has stopped the match"
+	}
+
+	"$player has unpaused the match"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} has unpaused the match"
+	}
+
+	"Final score"
+	{
+		"en"		"Final score"
+	}
+
+	"Goal scored"
+	{
+		"en"		"Goal scored"
+	}
+
+	"Golden goal"
+	{
+		"en"		"Golden goal"
+	}
+
+	"Half time"
+	{
+		"en"		"Half time"
+	}
+
+	"Kick off $team"
+	{
+		"#format"	"{1:s}"
+		"en"		"Kick off {1}"
+	}
+
+	"The match ended in a draw and will continue with a golden goal"
+	{
+		"en"		"The match ended in a draw and will continue with a golden goal"
+	}
+
+	"Paused"
+	{
+		"en"		"Paused"
+	}
+
+	"Period break"
+	{
+		"en"		"Period break"
+	}
+
+	"$player has been put to spectator because the maximum number of players per team during a match is $number"
+	{
+		"#format"	"{1:N},{2:i}"
+		"en"		"{1} has been put to spectator because the maximum number of players per team during a match is {2}"
+	}
+
+	"Unpausing in 1 second"
+	{
+		"en"		"Unpausing in 1 second"
+	}
+
+	"Unpausing in $number seconds"
+	{
+		"#format"	"{1:i}"
+		"en"		"Unpausing in {1} seconds"
+	}
+
+	// ************************************************** RANKING **************************************************
+	"$player is ranked $rank with $number points"
+	{
+		"#format"	"{1:N},{2:i},{3:i},{4:i}"
+		"en"		"{1} is ranked {2}/{3} with {4} points"
+	}
+
+	// ************************************************** REFEREE **************************************************
+	"$player has given a red card to $target"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} has given a red card to {2}"
+	}
+
+	"$player has given a second yellow card to $target"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} has given a second yellow card to {2}"
+	}
+
+	"$player has given a yellow card to $target"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} has given a yellow card to {2}"
+	}
+
+	"$player has removed all cards"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} has removed all cards"
+	}
+
+	"$player has removed the red card from $target"
+	{
+		"#format"	"{1:N},{2:s}"
+		"en"		"{1} has removed the red card from {2}"
+	}
+
+	// ************************************************** STATS **************************************************
+	"Assist given by $player"
+	{
+		"#format"	"{1:s}"
+		"en"		"Assist given by {1}"
+	}
+
+	"Goal scored by $player"
+	{
+		"#format"	"{1:s}"
+		"en"		"Goal scored by {1}"
+	}
+
+	"The man of the match was $player with $number points"
+	{
+		"#format"	"{1:s},{2:i}"
+		"en"		"The man of the match was {1} with {2} points"
+	}
+
+	"MOTM: No player scored more than 0 points this match"
+	{
+		"en"		"MOTM: No player scored more than 0 points this match"
+	}
+
+	"MVP: No player scored more than 0 points this round"
+	{
+		"en"		"MVP: No player scored more than 0 points this round"
+	}
+
+	"Own goal scored by $player"
+	{
+		"#format"	"{1:s}"
+		"en"		"Own goal scored by {1}"
+	}
+
+	"$player was the MVP this round with $number points"
+	{
+		"#format"	"{1:s},{2:i}"
+		"en"		"{1} was the MVP this round with {2} points"
+	}
+
+	// ************************************************** TRAINING **************************************************
+	"$player has disabled the goals"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} has disabled the goals"
+	}
+
+	"$player has enabled the goals"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} has enabled the goals"
+	}
+
+	"$player has set the cannon aim position"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} has set the cannon aim position"
+	}
+
+	"$player has set the cannon position"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} has set the cannon position"
+	}
+
+	"$player has set the cannon fire rate to $number"
+	{
+		"#format"	"{1:N},{2:.1f}"
+		"en"		"{1} has set the cannon fire rate to {2}"
+	}
+
+	"$player has set the cannon randomness to $number"
+	{
+		"#format"	"{1:N},{2:.0f}"
+		"en"		"{1} has set the cannon randomness to {2}"
+	}
+
+	"$player has set the cannon power to $number"
+	{
+		"#format"	"{1:N},{2:.3f}"
+		"en"		"{1} has set the cannon power to {2}"
+	}
+
+	"$player has turned the cannon off"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} has turned the cannon off"
+	}
+
+	"$player has turned the cannon on"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} has turned the cannon on"
+	}
+
+	"Ball cannon entity is invalid"
+	{
+		"en"		"Ball cannon entity is invalid"
+	}
+
+	// *********************************************************************************************************************
+	// ************************************************** MESSAGES PLAYER **************************************************
+	// *********************************************************************************************************************
+
+	"All players already are in spectator"
+	{
+		"en"		"All players already are in spectator"
+	}
+
+	"No players in spectator"
+	{
+		"en"		"No players in spectator"
+	}
+
+	"Player is already in spectator"
+	{
+		"en"		"Player is already in spectator"
+	}
+
+	"Player is no longer on the server"
+	{
+		"en"		"Player is no longer on the server"
+	}
+
+	"Soccer Mod is not allowed on this map"
+	{
+		"en"		"Soccer Mod is not allowed on this map"
+	}
+
+	"You are not allowed to use this option"
+	{
+		"en"		"You are not allowed to use this option"
+	}
+
+	"You can not use this option during a match"
+	{
+		"en"		"You can not use this option during a match"
+	}
+
+	// ************************************************** ALLOWED MAPS **************************************************
+	"Allowed maps list is empty"
+	{
+		"en"		"Allowed maps list is empty"
+	}
+
+	"$map added to the allowed maps list"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} added to the allowed maps list"
+	}
+
+	"$map is already added to the allowed maps list"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} is already added to the allowed maps list"
+	}
+
+	"$map is already removed from the allowed maps list"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} is already removed from the allowed maps list"
+	}
+
+	"$map removed from the allowed maps list"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} removed from the allowed maps list"
+	}
+
+	// ************************************************** CAP **************************************************
+	"Cap fight already started"
+	{
+		"en"		"Cap fight already started"
+	}
+
+	"It is not your turn to pick"
+	{
+		"en"		"It is not your turn to pick"
+	}
+
+	"No players available to pick"
+	{
+		"en"		"No players available to pick"
+	}
+
+	"Please set your position to help the caps with picking"
+	{
+		"en"		"Please set your position to help the caps with picking"
+	}
+
+	"You are not a cap"
+	{
+		"en"		"You are not a cap"
+	}
+
+	// ************************************************** HELP **************************************************
+	"Enables or disables the goalkeeper skin"
+	{
+		"en"		"Enables or disables the goalkeeper skin"
+	}
+
+	"Opens the Soccer Mod admin menu"
+	{
+		"en"		"Opens the Soccer Mod admin menu"
+	}
+
+	"Opens the Soccer Mod cap match menu"
+	{
+		"en"		"Opens the Soccer Mod cap match menu"
+	}
+
+	"Opens the Soccer Mod cap picking menu"
+	{
+		"en"		"Opens the Soccer Mod cap picking menu"
+	}
+
+	"Opens the Soccer Mod commands menu"
+	{
+		"en"		"Opens the Soccer Mod commands menu"
+	}
+
+	"Opens the Soccer Mod credits menu"
+	{
+		"en"		"Opens the Soccer Mod credits menu"
+	}
+
+	"Opens the Soccer Mod help menu"
+	{
+		"en"		"Opens the Soccer Mod help menu"
+	}
+
+	"Opens the Soccer Mod main menu"
+	{
+		"en"		"Opens the Soccer Mod main menu"
+	}
+
+	"Opens the Soccer Mod match menu"
+	{
+		"en"		"Opens the Soccer Mod match menu"
+	}
+
+	"Opens the Soccer Mod statistics menu"
+	{
+		"en"		"Opens the Soccer Mod statistics menu"
+	}
+
+	"Opens the Soccer Mod training menu"
+	{
+		"en"		"Opens the Soccer Mod training menu"
+	}
+
+	"Restarts the round"
+	{
+		"en"		"Restarts the round"
+	}
+
+	"Shows your public ranking"
+	{
+		"en"		"Shows your public ranking"
+	}
+
+	// ************************************************** MATCH **************************************************
+	"Match already paused"
+	{
+		"en"		"Match already paused"
+	}
+
+	"Match already started"
+	{
+		"en"		"Match already started"
+	}
+
+	"Match already unpaused"
+	{
+		"en"		"Match already unpaused"
+	}
+
+	"No match started"
+	{
+		"en"		"No match started"
+	}
+
+	"Score is already 0"
+	{
+		"en"		"Score is already 0"
+	}
+
+	// ************************************************** RANKING **************************************************
+	"No players are ranked yet"
+	{
+		"en"		"No players are ranked yet"
+	}
+
+	"No players found"
+	{
+		"en"		"No players found"
+	}
+
+	"You are not ranked yet"
+	{
+		"en"		"You are not ranked yet"
+	}
+
+	// ************************************************** REFEREE **************************************************
+	"All players already have a red card"
+	{
+		"en"		"All players already have a red card"
+	}
+
+	"Player already has a red card"
+	{
+		"en"		"Player already has a red card"
+	}
+
+	"Red card already removed"
+	{
+		"en"		"Red card already removed"
+	}
+
+	"There are no players with a red card"
+	{
+		"en"		"There are no players with a red card"
+	}
+
+	"You have been put to spectator because you have a red card"
+	{
+		"en"		"You have been put to spectator because you have a red card"
+	}
+
+	// ************************************************** SKINS **************************************************
+	"Goalkeeper skin disabled"
+	{
+		"en"		"Goalkeeper skin disabled"
+	}
+
+	"Goalkeeper skin enabled"
+	{
+		"en"		"Goalkeeper skin enabled"
+	}
+
+	"Skins"
+	{
+		"en"		"Skins"
+	}
+
+	// ************************************************** TRAINING **************************************************
+	"Cant spawn model $model"
+	{
+		"#format"	"{1:s}"
+		"en"		"Can't spawn model {1}"
+	}
+
+	"Cannon is already off"
+	{
+		"en"		"Cannon is already off"
+	}
+
+	"Cannon is already on"
+	{
+		"en"		"Cannon is already on"
+	}
+
+	"Goals are already disabled"
+	{
+		"en"		"Goals are already disabled"
+	}
+
+	"Goals are already enabled"
+	{
+		"en"		"Goals are already enabled"
+	}
+
+	"More than one possible ball found"
+	{
+		"en"		"More than one possible ball found"
+	}
+
+	"Type a value between $min and $max"
+	{
+		"#format"	"{1:.3f},{2:.3f}"
+		"en"		"Type a value between {1} and {2}"
+	}
+}

@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+
+	 $basetexture "models/player/soccermod/soccer_mod_2014_shared/WH2_D"
+	 $bumpmap "models/player/soccermod/soccer_mod_2014_shared/WH2_N"
+}

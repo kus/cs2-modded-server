@@ -42,6 +42,7 @@ Mod | Version | Why
 [RankMe Kento Edition](https://forums.alliedmods.net/showthread.php?t=290063) | `3.0.3` | Stats
 [DHooks](https://github.com/XutaxKamay/dhooks/releases) | `2.2.1b` | Required by KZTimer
 [KZTimer](https://bitbucket.org/kztimerglobalteam/kztimerglobal/src/master/) | `1.91.1` | KZTimer is a powerful, feature rich SourceMod climb timer plugin for CS:GO servers
+[SoccerMod](https://github.com/marcoboogers/soccermod) | `2017.5.5` | Soccer gamemode
 
 ## Maps
 
