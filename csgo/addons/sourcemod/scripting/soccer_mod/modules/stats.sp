@@ -1121,7 +1121,7 @@ public void ResetRoundStats()
     statsKeygroupRound = new KeyValues("roundStatistics");
 }
 
-public void AddPlayerStatInt(char name[32], char steamid[32], char stat[16], int points)
+public void AddPlayerStatInt(char name[MAX_NAME_LENGTH], char steamid[32], char stat[16], int points)
 {
     // Handle keygroup = new KeyValues("matchStatistics");
     // keygroup.ImportFromFile(statsKeygroupMatch);

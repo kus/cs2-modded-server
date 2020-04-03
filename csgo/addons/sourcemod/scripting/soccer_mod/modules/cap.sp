@@ -456,7 +456,7 @@ public void CapCreatePickMenu(int client)
                 if (keygroup.GetNum("lw", 0)) Format(positions, sizeof(positions), "%s[LW]", positions);
                 if (keygroup.GetNum("rw", 0)) Format(positions, sizeof(positions), "%s[RW]", positions);
 
-                char menuString[64];
+                char menuString[MAX_NAME_LENGTH];
                 if (positions[0]) Format(menuString, sizeof(menuString), "%s %s", playerName, positions);
                 else menuString = playerName;
                 menu.AddItem(playerid, menuString);
