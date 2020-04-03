@@ -166,6 +166,22 @@ gcloud compute instances delete <instance-name> \
 --zone australia-southeast1-a
 ```
 
+### Push file to server from local machine
+
+For example a map:
+
+```
+On local:
+gcloud config set project <project>
+cd /path/to/folder
+gcloud compute scp soccer_breezeway_lite.bsp root@<instance-name>:/home/steam/csgo/csgo/maps --zone australia-southeast1-a
+
+On server SSH:
+cd /home/steam/csgo/csgo/maps
+chown steam:steam soccer_breezeway_lite.bsp
+chmod 644 soccer_breezeway_lite.bsp
+```
+
 ## Running on Linux
 Make sure you have **25GB free space**.
 
