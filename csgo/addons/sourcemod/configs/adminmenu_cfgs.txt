@@ -22,4 +22,5 @@ Configs
 	"cfg/sourcemod/bunnyhop_off.cfg"	"Restore normal movement"
 	"cfg/deathmatch_settings.cfg"	"DM: All guns"
 	"cfg/sourcemod/dm_pistols.cfg"	"DM: Pistols only"
+	"cfg/sourcemod/restart.cfg"	"Restart server"
 }
