@@ -1,3 +1,4 @@
 soccer_breezeway_lite
 soccer_xsl_stadium_b1
 soccer_cps_indoor
+soccer_cps_mini

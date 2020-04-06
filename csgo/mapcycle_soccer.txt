@@ -1,1 +1,1 @@
-soccer_cps_indoor
+soccer_cps_mini
