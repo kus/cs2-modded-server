@@ -13,6 +13,7 @@ A single modded Counter-Strike: Global Offensive Dedicated Server that you can c
  - Deathrun
  - Surf
  - Kreedz Climbing
+ - Soccer
 
 Getting up and running:
  - [Running on Linux](#running-on-linux)

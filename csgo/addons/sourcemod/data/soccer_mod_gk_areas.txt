@@ -30,4 +30,8 @@
 		"t_min_z"		"-2240"
 		"t_max_z"		"-2120"
 	}
+	"soccer_cps_indoor"
+	{
+		
+	}
 }
