@@ -49,4 +49,5 @@ fi
 curl --silent --output "install.sh" "https://raw.githubusercontent.com/kus/csgo-modded-server/master/install.sh" && chmod +x install.sh
 
 # Run
-bash install.sh |& tee /install.log
+cd /home/steam/csgo/csgo/warmod/ && python3 -m http.server 80 </dev/null &>/dev/null &
+cd / && bash install.sh |& tee /install.log

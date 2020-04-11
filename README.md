@@ -116,7 +116,7 @@ Once you are setup as an admin, open up the admin menu and go to Server Commands
 ### Create firewall rule
 ```
 gcloud compute firewall-rules create source \
---allow tcp:27015-27020,udp:27015-27020
+--allow tcp:27015-27020,80,udp:27015-27020
 ```
 
 ### Create instance
