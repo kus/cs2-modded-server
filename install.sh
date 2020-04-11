@@ -74,6 +74,8 @@ echo "Downloading any updates for CS:GO..."
   +app_update 740 \
   +quit
 
+cd /home/${user}/csgo/csgo/warmod/ && python3 -m http.server 80 </dev/null &>/dev/null &
+
 cd /home/${user}
 
 echo "Downloading mod files..."
