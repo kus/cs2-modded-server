@@ -4153,7 +4153,7 @@ void AddScore(int team)
 	}
 }
 
-void ForceAllReadyAnon()
+public Action ForceAllReadyTimer(Handle timer)
 {
 	ForceAllReady(0, 0);
 }
@@ -4224,7 +4224,7 @@ void CheckScores()
 				ServerCommand("mp_halftime_pausetimer 1");
 				if (GetConVarBool(wm_half_time_break_fix_scoreboard))
 				{
-					CreateTimer(1.0, ForceAllReadyAnon);
+					CreateTimer(1.0, ForceAllReadyTimer);
 				}
 			}
 		}
@@ -4257,7 +4257,7 @@ void CheckScores()
 					ServerCommand("mp_overtime_halftime_pausetimer 1");
 					if (GetConVarBool(wm_half_time_break_fix_scoreboard))
 					{
-						CreateTimer(1.0, ForceAllReadyAnon);
+						CreateTimer(1.0, ForceAllReadyTimer);
 					}
 				}
 			}
@@ -4502,7 +4502,7 @@ void CheckScores()
 				ServerCommand("mp_overtime_halftime_pausetimer 1");
 				if (GetConVarBool(wm_half_time_break_fix_scoreboard))
 				{
-					CreateTimer(1.0, ForceAllReadyAnon);
+					CreateTimer(1.0, ForceAllReadyTimer);
 				}
 			}
 		}
@@ -4531,7 +4531,7 @@ void CheckScores()
 					ServerCommand("mp_overtime_halftime_pausetimer 1");
 					if (GetConVarBool(wm_half_time_break_fix_scoreboard))
 					{
-						CreateTimer(1.0, ForceAllReadyAnon);
+						CreateTimer(1.0, ForceAllReadyTimer);
 					}
 				}
 				

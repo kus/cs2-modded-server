@@ -111,6 +111,10 @@ Open `install.sh` and after it dynamically creates `cfg/env.cfg` you there is co
 
 Once you are setup as an admin, open up the admin menu and go to Server Commands > Exec Configs and choose a game mode i.e. "Competitive" and you need to change the map for it to properly kick in so open the admin menu again and Server Commands > Maps > de_dust2 and once the server changes map the new game mode will be running.
 
+## Making changes to WarMod plugin
+
+You need [SourceMod 1.8](http://sourcemod.net/downloads.php?all=1&branch=1.8-dev) to compile and add the following into `addons/sourcemod/scripting/includes` [tEasyFTP.inc](https://raw.githubusercontent.com/thraaawn/tEasyFTP/master/scripting/include/tEasyFTP.inc) [bzip2.inc](https://raw.githubusercontent.com/thraaawn/SMbz2/master/pawn/scripting/include/bzip2.inc) [updater.inc](https://bitbucket.org/GoD_Tony/updater/raw/12181277db77d6117052b8ddf5810c7681745156/include/updater.inc) [zip.inc](https://raw.githubusercontent.com/Versatile-BFG/sm-zip/master/sm-zip/scripting/include/zip.inc) and copy the compiled `warmod.smx` from `addons/sourcemod/scripting/compiled` to `addons/sourcemod/plugins/disabled`.
+
 ## Running on Google Cloud
 
 ### Create firewall rule
