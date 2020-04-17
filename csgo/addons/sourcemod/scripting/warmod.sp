@@ -118,6 +118,7 @@ ConVar wm_overtime_config;
 ConVar wm_default_config;
 ConVar wm_knife_config;
 ConVar wm_half_time_break;
+ConVar wm_half_time_break_fix_scoreboard;
 ConVar wm_over_time_break;
 ConVar wm_round_money;
 ConVar wm_ingame_scores;
@@ -520,6 +521,7 @@ public void OnPluginStart()
 	wm_min_ready = CreateConVar("wm_min_ready", "10", "Sets the minimum required ready players to Live on 3", FCVAR_NOTIFY);
 	wm_max_players = CreateConVar("wm_max_players", "10", "Sets the maximum players allowed on both teams combined, others will be forced to spectator (0 = unlimited)", FCVAR_NOTIFY, true, 0.0);
 	wm_half_time_break = CreateConVar("wm_half_time_break", "0", "Pause game at halftime for a break, No break = 0, break = 1", FCVAR_NONE, true, 0.0, true, 1.0);
+	wm_half_time_break_fix_scoreboard = CreateConVar("wm_half_time_break_fix_scoreboard", "0", "Auto ready half time break, only using to fix stuck scoreboard, No auto ready = 0, auto ready = 1", FCVAR_NONE, true, 0.0, true, 1.0);
 	wm_over_time_break = CreateConVar("wm_over_time_break", "0", "Pause game at overtime for a break, No break = 0, break = 1", FCVAR_NONE, true, 0.0, true, 1.0);
 	wm_round_money = CreateConVar("wm_round_money", "1", "Enable or disable a client's team mates money to be displayed at the start of a round (to him only)", FCVAR_NONE, true, 0.0, true, 1.0);
 	wm_ingame_scores = CreateConVar("wm_ingame_scores", "1", "Enable or disable ingame scores to be showed at the end of each round", FCVAR_NOTIFY, true, 0.0, true, 1.0);
@@ -4151,6 +4153,11 @@ void AddScore(int team)
 	}
 }
 
+void ForceAllReadyAnon()
+{
+	ForceAllReady(0, 0);
+}
+
 void CheckScores()
 {
 	if (!g_overtime)
@@ -4215,6 +4222,10 @@ void CheckScores()
 				ReadySystem(true);
 				ShowInfo(0, true, false, 0);
 				ServerCommand("mp_halftime_pausetimer 1");
+				if (GetConVarBool(wm_half_time_break_fix_scoreboard))
+				{
+					CreateTimer(1.0, ForceAllReadyAnon);
+				}
 			}
 		}
 		else if (GetTScore() == (GetConVarInt(mp_maxrounds)/2) && GetCTScore() == (GetConVarInt(mp_maxrounds)/2)) // complete draw
@@ -4244,6 +4255,10 @@ void CheckScores()
 					ReadySystem(true);
 					ShowInfo(0, true, false, 0);
 					ServerCommand("mp_overtime_halftime_pausetimer 1");
+					if (GetConVarBool(wm_half_time_break_fix_scoreboard))
+					{
+						CreateTimer(1.0, ForceAllReadyAnon);
+					}
 				}
 			}
 			else
@@ -4485,6 +4500,10 @@ void CheckScores()
 				ReadySystem(true);
 				ShowInfo(0, true, false, 0);
 				ServerCommand("mp_overtime_halftime_pausetimer 1");
+				if (GetConVarBool(wm_half_time_break_fix_scoreboard))
+				{
+					CreateTimer(1.0, ForceAllReadyAnon);
+				}
 			}
 		}
 		else if (GetTOTScore() == (GetConVarInt(mp_overtime_maxrounds)/2) && GetCTOTScore() == (GetConVarInt(mp_overtime_maxrounds)/2)) // complete draw
@@ -4510,6 +4529,10 @@ void CheckScores()
 					ReadySystem(true);
 					ShowInfo(0, true, false, 0);
 					ServerCommand("mp_overtime_halftime_pausetimer 1");
+					if (GetConVarBool(wm_half_time_break_fix_scoreboard))
+					{
+						CreateTimer(1.0, ForceAllReadyAnon);
+					}
 				}
 				
 				return;
