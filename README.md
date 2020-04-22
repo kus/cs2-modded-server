@@ -136,7 +136,7 @@ gcloud compute instances create <instance-name> \
 --maintenance-policy=MIGRATE \
 --scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/compute.readonly,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append \
 --tags=source \
---image=ubuntu-1604-xenial-v20190306 \
+--image=ubuntu-1804-lts \
 --image-project=ubuntu-os-cloud \
 --boot-disk-size=40GB \
 --boot-disk-type=pd-standard \
