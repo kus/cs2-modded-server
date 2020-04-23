@@ -282,7 +282,7 @@ Because the way the server is setup with several mods it's not possible. You can
 It would need a custom plguin that once the first map has loaded, it would execute a mod.cfg delayed and then change the map with a slight delay.
 
 ### Why can't I set when a mod is loaded that it changes map
-I tried this, and it happens to fast before the mods are fully loaded. If there was a way to delay the map change command that would work.
+I tried this, and it happens too fast before the mods are fully loaded. If there was a way to delay the map change command that would work.
 
 ## License
 
