@@ -25,7 +25,7 @@ Getting up and running:
 Mod | Version | Why
 --- | --- | ---
 [Metamod:Source](http://www.sourcemm.net/downloads.php?branch=stable) | `1.10.7-git971` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
-[SourceMod](https://www.sourcemod.net/downloads.php?branch=stable) | `1.10-git6478` | SourceMod is server modification for any game that runs on the Half-Life 2 engine
+[SourceMod](https://www.sourcemod.net/downloads.php?branch=stable) | `1.10-git6488` | SourceMod is server modification for any game that runs on the Half-Life 2 engine
 [GunGame](https://forums.alliedmods.net/showthread.php?t=93977) | `1.2.16` | Kill an enemy with the current weapon to get next weapon, first person to go through every weapon wins
 [DeathMatch](https://forums.alliedmods.net/showthread.php?t=103242) | `1.8.0` | Required for GunGame to enable spawn protection and other things to the game
 [Quake Sounds](https://forums.alliedmods.net/showthread.php?t=224316) | `3.5.0` | Plays sounds and displays text at certain events sometimes based on the number of kills
@@ -196,6 +196,8 @@ Make sure you have **25GB free space**.
 
    Set environment variable `STEAM_ACCOUNT` to your [Game Server Login Token](https://steamcommunity.com/dev/managegameservers)
 
+   Make sure you [port forward](https://portforward.com/router.htm) on your router TCP: `27015` and UDP: `27015` & `27020` so players can connect from the internet.
+
 * **If setting up LAN server:**
 
    Set environment variable `LAN` to `1`
@@ -247,6 +249,8 @@ Create a folder `steamcmd` and [download SteamCMD](https://steamcdn-a.akamaihd.n
 
    Set `ip_internet` to your [public ip](http://checkip.amazonaws.com/)
 
+   Make sure you [port forward](https://portforward.com/router.htm) on your router TCP: `27015` and UDP: `27015` & `27020` so players can connect from the internet.
+
 * **If setting up LAN server:**
 
    Open `\csgo\cfg\env.cfg`
@@ -256,6 +260,8 @@ Create a folder `steamcmd` and [download SteamCMD](https://steamcdn-a.akamaihd.n
 [Add admins](#acessing-admin-menu)
 
 Run `win.bat`
+
+Accept both Private and Public connections on Windows Firewall.
 
 * **If running for the first time**
 
@@ -277,12 +283,7 @@ When you join the server you can [change game modes](#changing-game-modes).
 ## FAQ
 
 ### Why can't I set the server to start automatically with a mod loaded
-Because the way the server is setup with several mods it's not possible. You can't use +exec in the server launcher as that executes to quick before SourceMod is loaded. You can monitor the server once it's started (via RCON) and then load a mod i.e. `exec gg.cfg` then `changelevel ar_shoots`.
-
-It would need a custom plguin that once the first map has loaded, it would execute a mod.cfg delayed and then change the map with a slight delay.
-
-### Why can't I set when a mod is loaded that it changes map
-I tried this, and it happens to fast before the mods are fully loaded. If there was a way to delay the map change command that would work.
+Because the way the server is setup with several mods it's not possible. You can't use `+exec` in the server launcher as that executes to quick before SourceMod is loaded. You can monitor the server once it's started (via RCON) and then load a mod i.e. `exec gg.cfg`.
 
 ## License
 

@@ -1,3 +1,13 @@
 "Phrases"
 {
+	"Change Gravity To"
+	{
+		"vi"		"Thay đổi trọng lực dến {1}?"
+	}
+
+	"Gravity Vote"
+	{
+		"vi"		"Bầu chọn trọng lực: {1}"
+	}
+
 }
