@@ -185,6 +185,18 @@ chown steam:steam soccer_breezeway_lite.bsp
 chmod 644 soccer_breezeway_lite.bsp
 ```
 
+### Turn VM off at 3:30AM every day
+
+SSH into the VM
+
+Switch to root `sudo su`
+
+Open crontab file `nano /etc/crontab`
+
+Append to the end of the crontab file `30 3    * * *   root    shutdown -h now`
+
+Save `CTRL + X`
+
 ## Running on Linux
 Make sure you have **25GB free space**.
 
