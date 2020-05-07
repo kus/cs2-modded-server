@@ -1,3 +1,118 @@
 "Phrases"
 {
+	"Blind player"
+	{
+		"vi"		"Làm mù người chơi"
+	}
+
+	"Blind amount"
+	{
+		"vi"		"Mù đến mức nào?"
+	}
+
+	"Burn player"
+	{
+		"vi"		"Thiêu đốt người chơi"
+	}
+
+	"Freeze player"
+	{
+		"vi"		"Đóng băng người chơi"
+	}
+
+	"Froze target"
+	{
+		"vi"		"Đã đóng băng {1}."
+	}
+
+	"Fully blind"
+	{
+		"vi"		"Hoàn toàn mù"
+	}
+
+	"Gravity High"
+	{
+		"vi"		"Trọng lực cao"
+	}
+
+	"Gravity Low"
+	{
+		"vi"		"Trọng lực thấp"
+	}
+
+	"Gravity Normal"
+	{
+		"vi"		"Trọng lực bình thường"
+	}
+
+	"Gravity Very High"
+	{
+		"vi"		"Trọng lực rất cao"
+	}
+
+	"Gravity Very Low"
+	{
+		"vi"		"Trọng lực rất thấp"
+	}
+
+	"Gravity amount"
+	{
+		"vi"		"Mức độ trọng lực?"
+	}
+
+	"Gravity player"
+	{
+		"vi"		"Trọng lực lên người chơi"
+	}
+
+	"Half blind"
+	{
+		"vi"		"Nửa mù"
+	}
+
+	"No blind"
+	{
+		"vi"		"Không mù"
+	}
+
+	"NoClip player"
+	{
+		"vi"		"NoClip người chơi"
+	}
+
+	"Set blind on target"
+	{
+		"vi"		"Đã làm mù {1}."
+	}
+
+	"Set gravity on target"
+	{
+		"vi"		"Đã thay đổi trọng lực của {1}."
+	}
+
+	"Set target on fire"
+	{
+		"vi"		"Đã đốt {1}."
+	}
+
+	"Till Explodes"
+	{
+		"vi"		"Còn {2} nữa thì {1} phát nổ."
+	}
+
+	"TimeBomb player"
+	{
+		"vi"		"Đặt bom đếm giờ vào người chơi"
+	}
+
+	"Unfrozen"
+	{
+		"vi"		"Bạn không còn bị đóng băng nữa."
+	}
+
+	"You will be unfrozen"
+	{
+		"vi"		"Bạn sẽ không còn bị đóng băng sau {1} giây nữa."
+	}
+
 }

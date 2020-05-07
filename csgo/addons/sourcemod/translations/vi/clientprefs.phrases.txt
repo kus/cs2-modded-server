@@ -1,3 +1,48 @@
 "Phrases"
 {
+	"Client Settings"
+	{
+		"vi"		"Cài đặt người dùng"
+	}
+
+	"Cookie List"
+	{
+		"vi"		"Danh sách cookie của Sourcemod"
+	}
+
+	"Cookie Changed Value"
+	{
+		"vi"		"Đã thay đổi giá trị của cookie {1} sang {2}"
+	}
+
+	"Cookie Value"
+	{
+		"vi"		"Giá trị của {1} là {2}"
+	}
+
+	"Cookie not Found"
+	{
+		"vi"		"Không tìm thấy cookie \"{1}\""
+	}
+
+	"No Console"
+	{
+		"vi"		"Không thể hiển thị menu cài đặt lên bảng điều khiển"
+	}
+
+	"Printing Cookie List"
+	{
+		"vi"		"Đang viết danh sách cookie vào bảng điều khiển"
+	}
+
+	"Protected Cookie"
+	{
+		"vi"		"Không thể thay đổi giá trị của cookie đã được bảo vệ {1}"
+	}
+
+	"Choose Option"
+	{
+		"vi"		"Chọn tùy chọn"
+	}
+
 }

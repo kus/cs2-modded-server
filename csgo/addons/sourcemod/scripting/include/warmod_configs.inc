@@ -1038,6 +1038,10 @@ static void CreateTranslationFile()
 	WriteFileLine(file, "	{");
 	WriteFileLine(file, "		\"en\"			\"Knife\"");
 	WriteFileLine(file, "	}");
+	WriteFileLine(file, "	\"Admin_Menu Knife Custom\"");
+	WriteFileLine(file, "	{");
+	WriteFileLine(file, "		\"en\"			\"Knife Custom\"");
+	WriteFileLine(file, "	}");
 	WriteFileLine(file, "	\"Admin_Menu Force Start\"");
 	WriteFileLine(file, "	{");
 	WriteFileLine(file, "		\"en\"			\"Force Start\"");

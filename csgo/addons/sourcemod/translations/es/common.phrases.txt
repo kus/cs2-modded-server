@@ -250,4 +250,24 @@
 		"es"		"Has especificado un Steam ID inválido (debe comenzar con 'STEAM_:'). "
 	}
 
+	"Say all"
+	{
+		"es"		"(TODOS) {1}"
+	}
+
+	"Private say to"
+	{
+		"es"		"(Privado para {1}) {2}"
+	}
+
+	"Chat to admins"
+	{
+		"es"		"(PARA ADMINS) {1}"
+	}
+
+	"Chat admins"
+	{
+		"es"		"(ADMINS) {1}"
+	}
+
 }

@@ -125,4 +125,14 @@
 		"es"		"{1} expulsado"
 	}
 
+	"Please select a map"
+	{
+		"es"		"Por favor seleccione un mapa"
+	}
+
+	"Choose Config"
+	{
+		"es"		"Seleccionar Config"
+	}
+
 }

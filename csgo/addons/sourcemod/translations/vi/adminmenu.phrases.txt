@@ -2,7 +2,7 @@
 {
 	"Admin Menu"
 	{
-		"vi"		"Danh sách lựa chọn của quản trị viên"
+		"vi"		"Menu quản trị viên"
 	}
 
 	"Player Commands"
