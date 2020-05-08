@@ -195,6 +195,8 @@ SSH into the VM
 
 Switch to root `sudo su`
 
+Check the timezone your server is running in `sudo hwclock --show`
+
 Open crontab file `nano /etc/crontab`
 
 Append to the end of the crontab file `30 3    * * *   root    shutdown -h now`
