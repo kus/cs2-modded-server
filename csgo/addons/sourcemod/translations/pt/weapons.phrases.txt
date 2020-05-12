@@ -1,0 +1,303 @@
+"Phrases"
+{
+	"WSMenuTitle"
+	{
+		"pt"	"Menu de Skins"
+	}
+	"ChooseKnife"
+	{
+		"pt"	"★ Mudar Suas Facas ★"
+	}
+	"ConfigAllWeapons"
+	{
+		"pt"	"Configurar Todas As Armas"
+	}
+	"KnifeMenuTitle"
+	{
+		"pt"	"★ Seleção De Facas ★"
+	}
+	"AllWeaponsMenuTitle"
+	{
+		"pt"	"Todas As Armas"
+	}
+	"Increase"
+	{
+		"pt"	"Aumentar %d%%"
+	}
+	"Decrease"
+	{
+		"pt"	"Diminuir %d%%"
+	}
+	"NameTagInfo"
+	{
+		"pt"	"Use !nametag <tag> para escolher uma name tag para sua arma atual!"
+	}
+	"NameTagColor"
+	{
+		"pt"	"Escolher cor da name tag"
+	}
+	"NameTagDisabled"
+	{
+		"pt"	"O uso da name tag está desabilitado no momento."
+	}
+	"DontSpamNameTag"
+	{
+		"pt"	"Aguarde um pouco até usar !nametag."
+	}
+	"NameTagNeedsParams"
+	{
+		"pt"	"Use: !nametag <tag>"
+	}
+	"ChooseLanguage"
+	{
+		"pt"	"Escolha uma linguagem para as suas skins:"
+	}
+	"ChooseColor"
+	{
+		"pt"	"Escolha uma cor:"
+	}
+	"DefaultColor"
+	{
+		"pt"	"Padrão"
+	}
+	"DefaultSkin"
+	{
+		"pt"	"Padrão"
+	}
+	"RandomSkin"
+	{
+		"pt"	"Aleatório"
+	}
+	"Black"
+	{
+		"pt"	"Preto"
+	}
+	"Grey"
+	{
+		"pt"	"Cinza"
+	}
+	"Red"
+	{
+		"pt"	"Encarnado"
+	}
+	"Green"
+	{
+		"pt"	"Verde"
+	}
+	"Blue"
+	{
+		"pt"	"Azul"
+	}
+	"DeleteNameTag"
+	{
+		"pt"	"Apagar Name Tag"
+	}
+	"OwnKnife"
+	{
+		"pt"	"★ Sua própia faca"
+	}
+	"SetSkin"
+	{
+		"pt"	"Escolha uma skin"
+	}
+	"SetFloat"
+	{
+		"pt"	"Condição da arma: "
+	}
+	"StatTrak"
+	{
+		"pt"	"StatTrak™: "
+	}
+	"SetNameTag"
+	{
+		"pt"	"Name Tag: "
+	}
+	"On"
+	{
+		"pt"	"Ligado"
+	}
+	"Off"
+	{
+		"pt"	"Desligado"
+	}
+	"weapon_galilar"
+	{
+		"pt"	"Galil AR"
+	}
+	"weapon_awp"
+	{
+		"pt"	"AWP"
+	}
+	"weapon_m4a1"
+	{
+		"pt"	"M4A4"
+	}
+	"weapon_m4a1_silencer"
+	{
+		"pt"	"M4A1-S"
+	}
+	"weapon_cz75a"
+	{
+		"pt"	"CZ75-Auto"
+	}
+	"weapon_revolver"
+	{
+		"pt"	"Revólver R8"
+	}
+	"weapon_deagle"
+	{
+		"pt"	"Desert Eagle"
+	}
+	"weapon_g3sg1"
+	{
+		"pt"	"G3SG1"
+	}
+	"weapon_scar20"
+	{
+		"pt"	"SCAR-20"
+	}
+	"weapon_sawedoff"
+	{
+		"pt"	"Cano curto"
+	}
+	"weapon_negev"
+	{
+		"pt"	"Negev"
+	}
+	"weapon_ssg08"
+	{
+		"pt"	"SSG 08"
+	}
+	"weapon_sg556"
+	{
+		"pt"	"SG 553"
+	}
+	"weapon_nova"
+	{
+		"pt"	"Nova"
+	}
+	"weapon_xm1014"
+	{
+		"pt"	"XM1014"
+	}
+	"weapon_p90"
+	{
+		"pt"	"P90"
+	}
+	"weapon_p250"
+	{
+		"pt"	"P250"
+	}
+	"weapon_fiveseven"
+	{
+		"pt"	"Five-SeveN"
+	}
+	"weapon_aug"
+	{
+		"pt"	"AUG"
+	}
+	"weapon_elite"
+	{
+		"pt"	"Berettas Duplas"
+	}
+	"weapon_m249"
+	{
+		"pt"	"M249"
+	}
+	"weapon_mac10"
+	{
+		"pt"	"MAC-10"
+	}
+	"weapon_mag7"
+	{
+		"pt"	"MAG-7"
+	}
+	"weapon_mp7"
+	{
+		"pt"	"MP7"
+	}
+	"weapon_mp9"
+	{
+		"pt"	"MP9"
+	}
+	"weapon_tec9"
+	{
+		"pt"	"Tec-9"
+	}
+	"weapon_ump45"
+	{
+		"pt"	"UMP-45"
+	}
+	"weapon_ak47"
+	{
+		"pt"	"AK-47"
+	}
+	"weapon_bizon"
+	{
+		"pt"	"PP-Bizon"
+	}
+	"weapon_usp_silencer"
+	{
+		"pt"	"USP-S"
+	}
+	"weapon_hkp2000"
+	{
+		"pt"	"P2000"
+	}
+	"weapon_famas"
+	{
+		"pt"	"FAMAS"
+	}
+	"weapon_glock"
+	{
+		"pt"	"Glock-18"
+	}
+	"weapon_bayonet"
+	{
+		"pt"	"★ Baioneta"
+	}
+	"weapon_knife_gut"
+	{
+		"pt"	"★ Gut Hook"
+	}
+	"weapon_knife_flip"
+	{
+		"pt"	"★ Canivete"
+	}
+	"weapon_knife_m9_bayonet"
+	{
+		"pt"	"★ Baioneta M9"
+	}
+	"weapon_knife_karambit"
+	{
+		"pt"	"★ Karambit"
+	}
+	"weapon_knife_tactical"
+	{
+		"pt"	"★ Faca de caçador"
+	}
+	"weapon_knife_butterfly"
+	{
+		"pt"	"★ Canivete borboleta"
+	}
+	"weapon_knife_falchion"
+	{
+		"pt"	"★ Canivete Falchion"
+	}
+	"weapon_knife_push"
+	{
+		"pt"	"★ Adagas Sombrias"
+	}
+	"weapon_knife_survival_bowie"
+	{
+		"pt"	"★ Faca Bowie"
+	}
+	"weapon_knife_t"
+	{
+		"pt"	"Knife"
+	}
+	"weapon_knife"
+	{
+		"pt"	"Knife"
+	}
+}
