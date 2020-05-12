@@ -12,17 +12,3 @@ cs_militia
 cs_italy
 cs_assault
 cs_agency
-as_oilrig_classic
-as_tundra_classic
-de_aztec_classic
-de_inferno_classic
-de_dust_classic
-de_dust2_classic
-de_nuke_classic
-de_train_classic
-cs_assault_classic
-cs_mansion_classic
-cs_militia_classic
-de_rats_1337_classic
-de_prodigy_source
-de_aztec_go
