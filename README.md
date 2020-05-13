@@ -45,8 +45,6 @@ Mod | Version | Why
 [KZTimer](https://bitbucket.org/kztimerglobalteam/kztimerglobal/src/master/) | `1.91.1` | KZTimer is a powerful, feature rich SourceMod climb timer plugin for CS:GO servers
 [SoccerMod](https://github.com/marcoboogers/soccermod) | `2017.5.5` | Soccer gamemode
 [Command Time-Traveler](https://forums.alliedmods.net/showthread.php?t=134288) | `1.2.0` | Run a command in the future
-[Gloves](https://forums.alliedmods.net/showthread.php?t=299977) | `1.0.4` | Custom gloves
-[Weapon & Knives](https://forums.alliedmods.net/showthread.php?t=298770) | `1.6.0` | Custom weapon skins
 
 ## Maps
 
@@ -204,27 +202,6 @@ Open crontab file `nano /etc/crontab`
 Append to the end of the crontab file `30 3    * * *   root    shutdown -h now`
 
 Save `CTRL + X`
-
-## WARNING: If running an internet server; custom gloves and knives plugin could get you a temp ban
-
-If running an internet server, and your Steam Game Server Login Token is tied to your account, Steam has banned the token plus a 30 day cool down for the account that created it in the past. [Read about it here](http://blog.counter-strike.net/index.php/server_guidelines/). There haven't been any bans in the last few years, and there are plenty of servers running these plugins, so do so at your own risk.
-
-If you want to disable these plugins do the following:
-
-Edit `csgo/addons/sourcemod/configs/core.cfg` and change `"FollowCSGOServerGuidelines" "no"` to `"yes"`
-
-Delete the following lines:
-
-```
-sm plugins load disabled/weapons.smx
-sm plugins load disabled/gloves.smx
-```
-
-From:
-
- - `csgo/cfg/comp.cfg`
- - `csgo/cfg/gg.cfg`
- - `csgo/cfg/retake.cfg`
 
 ## Running on Linux
 Make sure you have **25GB free space**.
