@@ -214,19 +214,6 @@ If you want to disable these plugins do the following:
 
 Edit `csgo/addons/sourcemod/configs/core.cfg` and change `"FollowCSGOServerGuidelines" "no"` to `"yes"`
 
-Delete the following lines:
-
-```
-sm plugins load disabled/weapons.smx
-sm plugins load disabled/gloves.smx
-```
-
-From:
-
- - `csgo/cfg/comp.cfg`
- - `csgo/cfg/gg.cfg`
- - `csgo/cfg/retake.cfg`
-
 ## Running on Linux
 Make sure you have **25GB free space**.
 
