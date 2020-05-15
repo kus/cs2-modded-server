@@ -1,0 +1,419 @@
+"Phrases"
+{
+	"WSMenuTitle"
+	{
+		"tr"	"Silah Skinleri Menüsü"
+	}
+	"ChooseKnife"
+	{
+		"tr"	"★ Bıçak Değiştir ★"
+	}
+	"ConfigAllWeapons"
+	{
+		"tr"	"Tüm silahları ayarla"
+	}
+	"KnifeMenuTitle"
+	{
+		"tr"	"★ Bıçak Seçenekleri ★"
+	}
+	"AllWeaponsMenuTitle"
+	{
+		"tr"	"Tüm Silahlar"
+	}
+	"Increase"
+	{
+		"tr"	"%d%% Yükselt"
+	}
+	"Decrease"
+	{
+		"tr"	"%d%% Düşür"
+	}
+	"NameTagColor"
+	{
+		"tr"	"Etiket Rengi Belirle"
+	}
+	"NameTagDisabled"
+	{
+		"tr"	"İsim etiketi kullanımı şu an kapalı."
+	}
+	"ChooseLanguage"
+	{
+		"tr"	"Skin isimleri için dil seçin:"
+	}
+	"ChooseColor"
+	{
+		"tr"	"Renk seçin:"
+	}
+	"DefaultColor"
+	{
+		"tr"	"Normal (Renksiz)"
+	}
+	"DefaultSkin"
+	{
+		"tr"	"Normal (Skinsiz)"
+	}
+	"RandomSkin"
+	{
+		"tr"	"Rastgele"
+	}
+	"Black"
+	{
+		"tr"	"Siyah"
+	}
+	"Red"
+	{
+		"tr"	"Kırmızı"
+	}
+	"Green"
+	{
+		"tr"	"Yeşil"
+	}
+	"Blue"
+	{
+		"tr"	"Mavi"
+	}
+	"DeleteNameTag"
+	{
+		"tr"	"Etiketi Sil"
+	}
+	"OwnKnife"
+	{
+		"tr"	"★ Kendi bıçağın"
+	}
+	"SetSkin"
+	{
+		"tr"	"Skin Seç"
+	}
+	"SetFloat"
+	{
+		"tr"	"Silah Yenilik Durumu: "
+	}
+	"StatTrak"
+	{
+		"tr"	"StatTrak™: "
+	}
+	"SetNameTag"
+	{
+		"tr"	"İsim Etiketi"
+	}
+	"On"
+	{
+		"tr"	"AÇIK"
+	}
+	"Off"
+	{
+		"tr"	"KAPALI"
+	}
+	"weapon_galilar"
+	{
+		"tr"	"Galil AR"
+	}
+	"weapon_awp"
+	{
+		"tr"	"AWP"
+	}
+	"weapon_m4a1"
+	{
+		"tr"	"M4A4"
+	}
+	"weapon_m4a1_silencer"
+	{
+		"tr"	"M4A1-S"
+	}
+	"weapon_cz75a"
+	{
+		"tr"	"CZ75-Auto"
+	}
+	"weapon_revolver"
+	{
+		"tr"	"Revolver"
+	}
+	"weapon_deagle"
+	{
+		"tr"	"Desert Eagle"
+	}
+	"weapon_g3sg1"
+	{
+		"tr"	"G3SG1"
+	}
+	"weapon_scar20"
+	{
+		"tr"	"SCAR-20"
+	}
+	"weapon_sawedoff"
+	{
+		"tr"	"Sawed-Off"
+	}
+	"weapon_negev"
+	{
+		"tr"	"Negev"
+	}
+	"weapon_ssg08"
+	{
+		"tr"	"SSG 08"
+	}
+	"weapon_sg556"
+	{
+		"tr"	"SG 553"
+	}
+	"weapon_nova"
+	{
+		"tr"	"Nova"
+	}
+	"weapon_xm1014"
+	{
+		"tr"	"XM1014"
+	}
+	"weapon_p90"
+	{
+		"tr"	"P90"
+	}
+	"weapon_p250"
+	{
+		"tr"	"P250"
+	}
+	"weapon_fiveseven"
+	{
+		"tr"	"Five-SeveN"
+	}
+	"weapon_aug"
+	{
+		"tr"	"AUG"
+	}
+	"weapon_elite"
+	{
+		"tr"	"Dual Berettas"
+	}
+	"weapon_m249"
+	{
+		"tr"	"M249"
+	}
+	"weapon_mac10"
+	{
+		"tr"	"MAC-10"
+	}
+	"weapon_mag7"
+	{
+		"tr"	"MAG-7"
+	}
+	"weapon_mp7"
+	{
+		"tr"	"MP7"
+	}
+	"weapon_mp9"
+	{
+		"tr"	"MP9"
+	}
+	"weapon_tec9"
+	{
+		"tr"	"Tec-9"
+	}
+	"weapon_ump45"
+	{
+		"tr"	"UMP-45"
+	}
+	"weapon_ak47"
+	{
+		"tr"	"AK-47"
+	}
+	"weapon_bizon"
+	{
+		"tr"	"PP-Bizon"
+	}
+	"weapon_usp_silencer"
+	{
+		"tr"	"USP-S"
+	}
+	"weapon_hkp2000"
+	{
+		"tr"	"P2000"
+	}
+	"weapon_famas"
+	{
+		"tr"	"FAMAS"
+	}
+	"weapon_glock"
+	{
+		"tr"	"Glock-18"
+	}
+	"weapon_mp5sd"
+	{
+		"tr"	"MP5-SD"
+	}
+	"weapon_bayonet"
+	{
+		"tr"	"★ Bayonet"
+	}
+	"weapon_knife_gut"
+	{
+		"tr"	"★ Kancalı Bıçak"
+	}
+	"weapon_knife_flip"
+	{
+		"tr"	"★ Sustalı Bıçak"
+	}
+	"weapon_knife_m9_bayonet"
+	{
+		"tr"	"★ M9 Bayonet"
+	}
+	"weapon_knife_karambit"
+	{
+		"tr"	"★ Karambit"
+	}
+	"weapon_knife_tactical"
+	{
+		"tr"	"★ Avcı Bıçağı"
+	}
+	"weapon_knife_butterfly"
+	{
+		"tr"	"★ Kelebek Bıçak"
+	}
+	"weapon_knife_falchion"
+	{
+		"tr"	"★ Pala Bıçağı"
+	}
+	"weapon_knife_push"
+	{
+		"tr"	"★ Gölge Hançerler"
+	}
+	"weapon_knife_survival_bowie"
+	{
+		"tr"	"★ Bowie Bıçağı"
+	}
+	"weapon_knife_ursus"
+	{
+		"tr"	"★ Ursus Bıçağı"
+	}
+	"weapon_knife_gypsy_jackknife"
+	{
+		"tr"	"★ Navaja Bıçağı"
+	}
+	"weapon_knife_stiletto"
+	{
+		"tr"	"★ Stiletto Bıçak"
+	}
+	"weapon_knife_widowmaker"
+	{
+		"tr"	"★ Talon Bıçağı"
+	}
+	"weapon_knife_css"
+	{
+		"tr"	"★ Klasik Bıçak"
+	}
+	"weapon_knife_cord"
+	{
+		"tr"	"★ Paraşüt Kordonu Saplı Bıçak"
+	}
+	"weapon_knife_canis"
+	{
+		"tr"	"★ Hayatta Kalma Bıçağı"
+	}
+	"weapon_knife_outdoor"
+	{
+		"tr"	"★ Göçebe Bıçağı"
+	}
+	"weapon_knife_skeleton"
+	{
+		"tr"	"★ İskelet Bıçak"
+	}
+	"weapon_knife_t"
+	{
+		"tr"	"Bıçak"
+	}
+	"weapon_knife"
+	{
+		"tr"	"Bıçak"
+	}
+	"ChangeNameTag"
+	{
+		"tr"	"Etiket Belirle"
+	}
+	"NameTagNew"
+	{
+		"tr"	"İsim etiketi belirlemek için artık !ws menüsünü kullanabilirsiniz."
+	}
+	"GracePeriod"
+	{
+		"tr"	"!ws komudunu sadece ölüyken ya da her tur başı ilk %d saniye içerisinde kullanabilirsiniz."
+	}
+	"ChangeLang"
+	{
+		"tr"	"Dil Değiştir"
+	}
+	"NameTagCancelled"
+	{
+		"tr"	"İsim etiketi işleminiz iptal edildi."
+	}
+	"Yellow"
+	{
+		"tr"	"Sarı"
+	}
+	"NameTagInstruction"
+	{
+		"tr"	"Kullanmak istediğiniz isim etiketini chat'e yazın. İsim etiketi değiştirmekten vazgeçtiyseniz !iptal yazabilirsiniz."
+	}
+	"NameTagSuccess"
+	{
+		"tr"	"İsim etiketi belirlendi"
+	}
+	"Seed"
+	{
+		"tr"	"Seed"
+	}
+	"SeedTitle"
+	{
+		"tr"	"Seed: %i"
+	}
+	"SeedTitleNoSeed"
+	{
+		"tr"	"Seed: ∞"
+	}
+	"SeedRandom"
+	{
+		"tr"	"Rastgele Seed"
+	}
+	"SeedManual"
+	{
+		"tr"	"Kendin Seed Gir"
+	}
+	"SeedSave"
+	{
+		"tr"	"Seed'i Kaydet"
+	}
+	"SeedInstruction"
+	{
+		"tr"	"Kullanmak istediğiniz seed değerini (0 - 8192) chat'e yazın. Seed belirlemekten vazgeçtiyseniz !iptal yazabilirsiniz."
+	}
+	"SeedSuccess"
+	{
+		"tr"	"Seed başarıyla uygulandı."
+	}
+	"SeedCancelled"
+	{
+		"tr"	"Seed işlemi iptal edildi."
+	}
+	"SeedFailed"
+	{
+		"tr"	"Geçersiz seed değeri (0 - 8192)"
+	}
+	"SeedSaved"
+	{
+		"tr"	"Seed kaydedildi."
+	}
+	"SeedDisabled"
+	{
+		"tr"	"Seed menü kullanımı şu an kapalı."
+	}
+	"SeedExplanation"
+	{
+		"tr"	"Seed işlemleri için !ws menüsünü kullanmalısınız."
+	}
+	"SeedReset"
+	{
+		"tr"	"Seed sıfırlandı."
+	}
+	"ResetSeed"
+	{
+		"tr"	"Seed Sıfırla"
+	}
+}

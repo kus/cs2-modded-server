@@ -1,0 +1,39 @@
+"Phrases"
+{
+	"GloveMenuTitle"
+	{
+		"chi"	"手套皮肤菜单"
+	}
+	"CT"
+	{
+		"chi"	"反恐精英"
+	}
+	"T"
+	{
+		"chi"	"恐怖分子"
+	}
+	"Increase"
+	{
+		"chi"	"增加 %d%%"
+	}
+	"Decrease"
+	{
+		"chi"	"减少 %d%%"
+	}
+	"ChooseLanguage"
+	{
+		"chi"	"请选择皮肤名称显示语言："
+	}
+	"DefaultGloves"
+	{
+		"chi"	"默认手套"
+	}
+	"RandomGloves"
+	{
+		"chi"	"随机手套"
+	}
+	"SetFloat"
+	{
+		"chi"	"手套磨损："
+	}
+}

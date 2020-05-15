@@ -1,0 +1,419 @@
+"Phrases"
+{
+	"WSMenuTitle"
+	{
+		"chi"	"武器皮肤菜单"
+	}
+	"ChooseKnife"
+	{
+		"chi"	"★ 更换您的刀具 ★"
+	}
+	"ConfigAllWeapons"
+	{
+		"chi"	"配置所有武器"
+	}
+	"KnifeMenuTitle"
+	{
+		"chi"	"★ 选择您的刀具 ★"
+	}
+	"AllWeaponsMenuTitle"
+	{
+		"chi"	"所有武器"
+	}
+	"Increase"
+	{
+		"chi"	"增加 %d%%"
+	}
+	"Decrease"
+	{
+		"chi"	"减少 %d%%"
+	}
+	"NameTagColor"
+	{
+		"chi"	"设置名称标签颜色"
+	}
+	"NameTagDisabled"
+	{
+		"chi"	"名称标签已禁用"
+	}
+	"ChooseLanguage"
+	{
+		"chi"	"请选择皮肤名称显示语言："
+	}
+	"ChooseColor"
+	{
+		"chi"	"选择一个颜色："
+	}
+	"DefaultColor"
+	{
+		"chi"	"默认"
+	}
+	"DefaultSkin"
+	{
+		"chi"	"默认"
+	}
+	"RandomSkin"
+	{
+		"chi"	"随机"
+	}
+	"Black"
+	{
+		"chi"	"黑"
+	}
+	"Red"
+	{
+		"chi"	"红"
+	}
+	"Green"
+	{
+		"chi"	"绿"
+	}
+	"Blue"
+	{
+		"chi"	"蓝"
+	}
+	"DeleteNameTag"
+	{
+		"chi"	"删除名称标签"
+	}
+	"OwnKnife"
+	{
+		"chi"	"★ 您自己的刀"
+	}
+	"SetSkin"
+	{
+		"chi"	"选择皮肤"
+	}
+	"SetFloat"
+	{
+		"chi"	"武器磨损："
+	}
+	"StatTrak"
+	{
+		"chi"	"StatTrak™："
+	}
+	"SetNameTag"
+	{
+		"chi"	"名称标签"
+	}
+	"On"
+	{
+		"chi"	"开"
+	}
+	"Off"
+	{
+		"chi"	"关"
+	}
+	"weapon_galilar"
+	{
+		"chi"	"加利尔 AR"
+	}
+	"weapon_awp"
+	{
+		"chi"	"AWP"
+	}
+	"weapon_m4a1"
+	{
+		"chi"	"M4A4"
+	}
+	"weapon_m4a1_silencer"
+	{
+		"chi"	"M4A1 消音型"
+	}
+	"weapon_cz75a"
+	{
+		"chi"	"CZ75 自动手枪"
+	}
+	"weapon_revolver"
+	{
+		"chi"	"R8 左轮手枪"
+	}
+	"weapon_deagle"
+	{
+		"chi"	"沙漠之鹰"
+	}
+	"weapon_g3sg1"
+	{
+		"chi"	"G3SG1"
+	}
+	"weapon_scar20"
+	{
+		"chi"	"SCAR-20"
+	}
+	"weapon_sawedoff"
+	{
+		"chi"	"截短霰弹枪"
+	}
+	"weapon_negev"
+	{
+		"chi"	"内格夫"
+	}
+	"weapon_ssg08"
+	{
+		"chi"	"SSG 08"
+	}
+	"weapon_sg556"
+	{
+		"chi"	"SG 553"
+	}
+	"weapon_nova"
+	{
+		"chi"	"新星"
+	}
+	"weapon_xm1014"
+	{
+		"chi"	"XM1014"
+	}
+	"weapon_p90"
+	{
+		"chi"	"P90"
+	}
+	"weapon_p250"
+	{
+		"chi"	"P250"
+	}
+	"weapon_fiveseven"
+	{
+		"chi"	"FN57"
+	}
+	"weapon_aug"
+	{
+		"chi"	"AUG"
+	}
+	"weapon_elite"
+	{
+		"chi"	"双枪贝瑞塔"
+	}
+	"weapon_m249"
+	{
+		"chi"	"M249"
+	}
+	"weapon_mac10"
+	{
+		"chi"	"MAC-10"
+	}
+	"weapon_mag7"
+	{
+		"chi"	"MAG-7"
+	}
+	"weapon_mp7"
+	{
+		"chi"	"MP7"
+	}
+	"weapon_mp9"
+	{
+		"chi"	"MP9"
+	}
+	"weapon_tec9"
+	{
+		"chi"	"Tec-9"
+	}
+	"weapon_ump45"
+	{
+		"chi"	"UMP-45"
+	}
+	"weapon_ak47"
+	{
+		"chi"	"AK-47"
+	}
+	"weapon_bizon"
+	{
+		"chi"	"PP-野牛"
+	}
+	"weapon_usp_silencer"
+	{
+		"chi"	"USP-S"
+	}
+	"weapon_hkp2000"
+	{
+		"chi"	"P2000"
+	}
+	"weapon_famas"
+	{
+		"chi"	"FAMAS"
+	}
+	"weapon_glock"
+	{
+		"chi"	"格洛克18型"
+	}
+	"weapon_mp5sd"
+	{
+		"chi"	"MP5-SD"
+	}
+	"weapon_bayonet"
+	{
+		"chi"	"★ 刺刀"
+	}
+	"weapon_knife_gut"
+	{
+		"chi"	"★ 穿肠刀"
+	}
+	"weapon_knife_flip"
+	{
+		"chi"	"★ 折叠刀"
+	}
+	"weapon_knife_m9_bayonet"
+	{
+		"chi"	"★ M9 刺刀"
+	}
+	"weapon_knife_karambit"
+	{
+		"chi"	"★ 爪子刀"
+	}
+	"weapon_knife_tactical"
+	{
+		"chi"	"★ 猎杀者匕首"
+	}
+	"weapon_knife_butterfly"
+	{
+		"chi"	"★ 蝴蝶刀"
+	}
+	"weapon_knife_falchion"
+	{
+		"chi"	"★ 弯刀"
+	}
+	"weapon_knife_push"
+	{
+		"chi"	"★ 暗影双匕"
+	}
+	"weapon_knife_survival_bowie"
+	{
+		"chi"	"★ 鲍伊猎刀"
+	}
+	"weapon_knife_ursus"
+	{
+		"chi"	"★ 熊刀"
+	}
+	"weapon_knife_gypsy_jackknife"
+	{
+		"chi"	"★ 折刀"
+	}
+	"weapon_knife_stiletto"
+	{
+		"chi"	"★ 短剑"
+	}
+	"weapon_knife_widowmaker"
+	{
+		"chi"	"★ 锯齿爪刀"
+	}
+	"weapon_knife_css"
+	{
+		"chi"	"★ 海豹短刀"
+	}
+	"weapon_knife_cord"
+	{
+		"chi"	"★ 系绳匕首"
+	}
+	"weapon_knife_canis"
+	{
+		"chi"	"★ 求生匕首"
+	}
+	"weapon_knife_outdoor"
+	{
+		"chi"	"★ 流浪者匕首"
+	}
+	"weapon_knife_skeleton"
+	{
+		"chi"	"★ 骷髅匕首"
+	}
+	"weapon_knife_t"
+	{
+		"chi"	"恐怖分子默认刀"
+	}
+	"weapon_knife"
+	{
+		"chi"	"恐怖分子默认刀"
+	}
+	"ChangeNameTag"
+	{
+		"chi"	"设置名称标签"
+	}
+	"NameTagNew"
+	{
+		"chi"	"你现在可以使用 !ws 指令设置名称标签。"
+	}
+	"GracePeriod"
+	{
+		"chi"	"你只能在你死后或开局 %d 秒后，使用 !ws 指令。"
+	}
+	"ChangeLang"
+	{
+		"chi"	"更改语言"
+	}
+	"NameTagCancelled"
+	{
+		"chi"	"名称标签设置中断。"
+	}
+	"Yellow"
+	{
+		"chi"	"黄"
+	}
+	"NameTagInstruction"
+	{
+		"chi"	"请将你希望设置的名称标签输入至聊天框。如需取消，请输入 !cancel 。"
+	}
+	"NameTagSuccess"
+	{
+		"chi"	"名称标签已设置"
+	}
+	"SeedTitle"
+	{
+		"chi"	"图案模板： %i"
+	}
+	"SeedTitleNoSeed"
+	{
+		"chi"	"图案模板： ∞"
+	}
+	"SeedRandom"
+	{
+		"chi"	"使用随机图案模板编号"
+	}
+	"SeedManual"
+	{
+		"chi"	"手动设置图案模板编号"
+	}
+	"SeedSave"
+	{
+		"chi"	"保存当前图案模板编号"
+	}
+	"SeedInstruction"
+	{
+		"chi"	"请将你希望设置的图案模板编号输入至聊天框。如需取消，请输入 !cancel 。"
+	}
+	"SeedSuccess"
+	{
+		"chi"	"图案模板应用成功！"
+	}
+	"SeedCancelled"
+	{
+		"chi"	"图案模板设置中断。"
+	}
+	"SeedFailed"
+	{
+		"chi"	"图案模板编号无效 (0 - 8192)"
+	}
+	"SeedSaved"
+	{
+		"chi"	"图案模板编号已保存。"
+	}
+        "Seed"
+        {
+                "chi"   "图案模板编号"
+	}
+	"SeedDisabled"
+	{
+		"chi"	"图案模板选项已禁用"
+	}
+	"SeedExplanation"
+	{
+		"chi"	"你需要使用!ws菜单来为皮肤设置图案模板"
+	}
+	"SeedReset"
+	{
+		"chi"	"图案模板已重置。"
+	}
+	"ResetSeed"
+	{
+		"chi"	"重置图案模板"
+	}
+}

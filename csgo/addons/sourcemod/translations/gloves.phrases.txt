@@ -1,0 +1,39 @@
+"Phrases"
+{
+	"GloveMenuTitle"
+	{
+		"en"	"Gloves Menu"
+	}
+	"CT"
+	{
+		"en"	"Counter-Terrorist"
+	}
+	"T"
+	{
+		"en"	"Terrorist"
+	}
+	"Increase"
+	{
+		"en"	"Increase by %d%%"
+	}
+	"Decrease"
+	{
+		"en"	"Decrease by %d%%"
+	}
+	"ChooseLanguage"
+	{
+		"en"	"Select language for glove names:"
+	}
+	"DefaultGloves"
+	{
+		"en"	"Default"
+	}
+	"RandomGloves"
+	{
+		"en"	"Random"
+	}
+	"SetFloat"
+	{
+		"en"	"Gloves Condition: "
+	}
+}

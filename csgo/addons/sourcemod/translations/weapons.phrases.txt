@@ -1,0 +1,419 @@
+"Phrases"
+{
+	"WSMenuTitle"
+	{
+		"en"	"Weapon Skins Menu"
+	}
+	"ChooseKnife"
+	{
+		"en"	"★ Change Knife ★"
+	}
+	"ConfigAllWeapons"
+	{
+		"en"	"Configure all weapons"
+	}
+	"KnifeMenuTitle"
+	{
+		"en"	"★ Knife Selection ★"
+	}
+	"AllWeaponsMenuTitle"
+	{
+		"en"	"All Weapons"
+	}
+	"Increase"
+	{
+		"en"	"Increase by %d%%"
+	}
+	"Decrease"
+	{
+		"en"	"Decrease by %d%%"
+	}
+	"NameTagColor"
+	{
+		"en"	"Set Name Tag Color"
+	}
+	"NameTagDisabled"
+	{
+		"en"	"Name tag usage is disabled at the moment."
+	}
+	"ChooseLanguage"
+	{
+		"en"	"Select language for skin names:"
+	}
+	"ChooseColor"
+	{
+		"en"	"Choose a color:"
+	}
+	"DefaultColor"
+	{
+		"en"	"Default"
+	}
+	"DefaultSkin"
+	{
+		"en"	"Default"
+	}
+	"RandomSkin"
+	{
+		"en"	"Random"
+	}
+	"Black"
+	{
+		"en"	"Black"
+	}
+	"Red"
+	{
+		"en"	"Red"
+	}
+	"Green"
+	{
+		"en"	"Green"
+	}
+	"Blue"
+	{
+		"en"	"Blue"
+	}
+	"DeleteNameTag"
+	{
+		"en"	"Delete Name Tag"
+	}
+	"OwnKnife"
+	{
+		"en"	"★ Your own knife"
+	}
+	"SetSkin"
+	{
+		"en"	"Choose Skin"
+	}
+	"SetFloat"
+	{
+		"en"	"Weapon Condition: "
+	}
+	"StatTrak"
+	{
+		"en"	"StatTrak™: "
+	}
+	"SetNameTag"
+	{
+		"en"	"Name Tag"
+	}
+	"On"
+	{
+		"en"	"ON"
+	}
+	"Off"
+	{
+		"en"	"OFF"
+	}
+	"weapon_galilar"
+	{
+		"en"	"Galil AR"
+	}
+	"weapon_awp"
+	{
+		"en"	"AWP"
+	}
+	"weapon_m4a1"
+	{
+		"en"	"M4A4"
+	}
+	"weapon_m4a1_silencer"
+	{
+		"en"	"M4A1-S"
+	}
+	"weapon_cz75a"
+	{
+		"en"	"CZ75-Auto"
+	}
+	"weapon_revolver"
+	{
+		"en"	"Revolver"
+	}
+	"weapon_deagle"
+	{
+		"en"	"Desert Eagle"
+	}
+	"weapon_g3sg1"
+	{
+		"en"	"G3SG1"
+	}
+	"weapon_scar20"
+	{
+		"en"	"SCAR-20"
+	}
+	"weapon_sawedoff"
+	{
+		"en"	"Sawed-Off"
+	}
+	"weapon_negev"
+	{
+		"en"	"Negev"
+	}
+	"weapon_ssg08"
+	{
+		"en"	"SSG 08"
+	}
+	"weapon_sg556"
+	{
+		"en"	"SG 553"
+	}
+	"weapon_nova"
+	{
+		"en"	"Nova"
+	}
+	"weapon_xm1014"
+	{
+		"en"	"XM1014"
+	}
+	"weapon_p90"
+	{
+		"en"	"P90"
+	}
+	"weapon_p250"
+	{
+		"en"	"P250"
+	}
+	"weapon_fiveseven"
+	{
+		"en"	"Five-SeveN"
+	}
+	"weapon_aug"
+	{
+		"en"	"AUG"
+	}
+	"weapon_elite"
+	{
+		"en"	"Dual Berettas"
+	}
+	"weapon_m249"
+	{
+		"en"	"M249"
+	}
+	"weapon_mac10"
+	{
+		"en"	"MAC-10"
+	}
+	"weapon_mag7"
+	{
+		"en"	"MAG-7"
+	}
+	"weapon_mp7"
+	{
+		"en"	"MP7"
+	}
+	"weapon_mp9"
+	{
+		"en"	"MP9"
+	}
+	"weapon_tec9"
+	{
+		"en"	"Tec-9"
+	}
+	"weapon_ump45"
+	{
+		"en"	"UMP-45"
+	}
+	"weapon_ak47"
+	{
+		"en"	"AK-47"
+	}
+	"weapon_bizon"
+	{
+		"en"	"PP-Bizon"
+	}
+	"weapon_usp_silencer"
+	{
+		"en"	"USP-S"
+	}
+	"weapon_hkp2000"
+	{
+		"en"	"P2000"
+	}
+	"weapon_famas"
+	{
+		"en"	"FAMAS"
+	}
+	"weapon_glock"
+	{
+		"en"	"Glock-18"
+	}
+	"weapon_mp5sd"
+	{
+		"en"	"MP5-SD"
+	}
+	"weapon_bayonet"
+	{
+		"en"	"★ Bayonet"
+	}
+	"weapon_knife_gut"
+	{
+		"en"	"★ Gut Knife"
+	}
+	"weapon_knife_flip"
+	{
+		"en"	"★ Flip Knife"
+	}
+	"weapon_knife_m9_bayonet"
+	{
+		"en"	"★ M9 Bayonet"
+	}
+	"weapon_knife_karambit"
+	{
+		"en"	"★ Karambit"
+	}
+	"weapon_knife_tactical"
+	{
+		"en"	"★ Huntsman Knife"
+	}
+	"weapon_knife_butterfly"
+	{
+		"en"	"★ Butterfly Knife"
+	}
+	"weapon_knife_falchion"
+	{
+		"en"	"★ Falchion Knife"
+	}
+	"weapon_knife_push"
+	{
+		"en"	"★ Shadow Daggers"
+	}
+	"weapon_knife_survival_bowie"
+	{
+		"en"	"★ Bowie Knife"
+	}
+	"weapon_knife_ursus"
+	{
+		"en"	"★ Ursus"
+	}
+	"weapon_knife_gypsy_jackknife"
+	{
+		"en"	"★ Navaja"
+	}
+	"weapon_knife_stiletto"
+	{
+		"en"	"★ Stiletto"
+	}
+	"weapon_knife_widowmaker"
+	{
+		"en"	"★ Talon"
+	}
+	"weapon_knife_css"
+	{
+		"en"	"★ Classic Knife"
+	}
+	"weapon_knife_cord"
+	{
+		"en"	"★ Paracord Knife"
+	}
+	"weapon_knife_canis"
+	{
+		"en"	"★ Survival Knife"
+	}
+	"weapon_knife_outdoor"
+	{
+		"en"	"★ Nomad Knife"
+	}
+	"weapon_knife_skeleton"
+	{
+		"en"	"★ Skeleton Knife"
+	}
+	"weapon_knife_t"
+	{
+		"en"	"Knife"
+	}
+	"weapon_knife"
+	{
+		"en"	"Knife"
+	}
+	"ChangeNameTag"
+	{
+		"en"	"Set Name Tag"
+	}
+	"NameTagNew"
+	{
+		"en"	"You can now use !ws menu to set name tag."
+	}
+	"GracePeriod"
+	{
+		"en"	"You can only use !ws command if you're dead or in the first %d seconds after every round start."
+	}
+	"ChangeLang"
+	{
+		"en"	"Change Language"
+	}
+	"NameTagCancelled"
+	{
+		"en"	"Nametag operation aborted."
+	}
+	"Yellow"
+	{
+		"en"	"Yellow"
+	}
+	"NameTagInstruction"
+	{
+		"en"	"Write your desired name tag into chat. To abort, type !cancel."
+	}
+	"NameTagSuccess"
+	{
+		"en"	"Name tag successfully applied"
+	}
+	"Seed"
+	{
+		"en"	"Seed"
+	}
+	"SeedTitle"
+	{
+		"en"	"Seed: %i"
+	}
+	"SeedTitleNoSeed"
+	{
+		"en"	"Seed: ∞"
+	}
+	"SeedRandom"
+	{
+		"en"	"Random Seed"
+	}
+	"SeedManual"
+	{
+		"en"	"Manual Seed"
+	}
+	"SeedSave"
+	{
+		"en"	"Save Current Seed"
+	}
+	"SeedInstruction"
+	{
+		"en"	"Write your desired seed into chat. To abort, type !cancel."
+	}
+	"SeedSuccess"
+	{
+		"en"	"Seed successfully applied."
+	}
+	"SeedCancelled"
+	{
+		"en"	"Seed operation aborted."
+	}
+	"SeedFailed"
+	{
+		"en"	"Invalid seed (0 - 8192)"
+	}
+	"SeedSaved"
+	{
+		"en"	"Seed saved."
+	}
+	"SeedDisabled"
+	{
+		"en"	"Seed menu is disabled at the moment."
+	}
+	"SeedExplanation"
+	{
+		"en"	"You should use !ws menu to set seed for skins."
+	}
+	"SeedReset"
+	{
+		"en"	"Seed reset."
+	}
+	"ResetSeed"
+	{
+		"en"	"Reset Seed"
+	}
+}

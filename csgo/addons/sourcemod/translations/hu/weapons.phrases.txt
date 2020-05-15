@@ -1,0 +1,303 @@
+"Phrases"
+{
+	"WSMenuTitle"
+	{
+		"hu"	"Fegyver skinek menü"
+	}
+	"ChooseKnife"
+	{
+		"hu"	"★ Kés megváltoztatása ★"
+	}
+	"ConfigAllWeapons"
+	{
+		"hu"	"Összes fegyver konfigurálása"
+	}
+	"KnifeMenuTitle"
+	{
+		"hu"	"★ Kés választék ★"
+	}
+	"AllWeaponsMenuTitle"
+	{
+		"hu"	"Összes fegyver"
+	}
+	"Increase"
+	{
+		"hu"	"Megnövelés %d%%-kal"
+	}
+	"Decrease"
+	{
+		"hu"	"Csökkentés %d%%-kal"
+	}
+	"NameTagInfo"
+	{
+		"hu"	"Használd !nametag <név>, hogy beállíthasd a nevét a jelenlegi fegyverednek"
+	}
+	"NameTagColor"
+	{
+		"hu"	"Névcédula színének beállítása"
+	}
+	"NameTagDisabled"
+	{
+		"hu"	"Névcédula használata le van tiltva."
+	}
+	"DontSpamNameTag"
+	{
+		"hu"	"Várnod kell mi előtt újra használnád a !nametag -et."
+	}
+	"NameTagNeedsParams"
+	{
+		"hu"	"Használat: !nametag <név>"
+	}
+	"ChooseLanguage"
+	{
+		"hu"	"Válaszd ki a nyelvet a skin nevéhez:"
+	}
+	"ChooseColor"
+	{
+		"hu"	"Válassz színt:"
+	}
+	"DefaultColor"
+	{
+		"hu"	"Eredeti"
+	}
+	"DefaultSkin"
+	{
+		"hu"	"Eredeti"
+	}
+	"RandomSkin"
+	{
+		"hu"	"Véletlenszerű"
+	}
+	"Black"
+	{
+		"hu"	"Fekete"
+	}
+	"Grey"
+	{
+		"hu"	"Szürke"
+	}
+	"Red"
+	{
+		"hu"	"Piros"
+	}
+	"Green"
+	{
+		"hu"	"Zöld"
+	}
+	"Blue"
+	{
+		"hu"	"Kék"
+	}
+	"DeleteNameTag"
+	{
+		"hu"	"Névcédula törlése"
+	}
+	"OwnKnife"
+	{
+		"hu"	"★ Saját késed"
+	}
+	"SetSkin"
+	{
+		"hu"	"Válassz skint"
+	}
+	"SetFloat"
+	{
+		"hu"	"Fegyver állapota: "
+	}
+	"StatTrak"
+	{
+		"hu"	"StatTrak™: "
+	}
+	"SetNameTag"
+	{
+		"hu"	"Névcédula: "
+	}
+	"On"
+	{
+		"hu"	"BE"
+	}
+	"Off"
+	{
+		"hu"	"KI"
+	}
+	"weapon_galilar"
+	{
+		"hu"	"Galil AR"
+	}
+	"weapon_awp"
+	{
+		"hu"	"AWP"
+	}
+	"weapon_m4a1"
+	{
+		"hu"	"M4A4"
+	}
+	"weapon_m4a1_silencer"
+	{
+		"hu"	"M4A1-S"
+	}
+	"weapon_cz75a"
+	{
+		"hu"	"CZ75-Auto"
+	}
+	"weapon_revolver"
+	{
+		"hu"	"Revolver"
+	}
+	"weapon_deagle"
+	{
+		"hu"	"Desert Eagle"
+	}
+	"weapon_g3sg1"
+	{
+		"hu"	"G3SG1"
+	}
+	"weapon_scar20"
+	{
+		"hu"	"SCAR-20"
+	}
+	"weapon_sawedoff"
+	{
+		"hu"	"Lefűrészelt csövű sörétes"
+	}
+	"weapon_negev"
+	{
+		"hu"	"Negev"
+	}
+	"weapon_ssg08"
+	{
+		"hu"	"SSG 08"
+	}
+	"weapon_sg556"
+	{
+		"hu"	"SG 553"
+	}
+	"weapon_nova"
+	{
+		"hu"	"Nova"
+	}
+	"weapon_xm1014"
+	{
+		"hu"	"XM1014"
+	}
+	"weapon_p90"
+	{
+		"hu"	"P90"
+	}
+	"weapon_p250"
+	{
+		"hu"	"P250"
+	}
+	"weapon_fiveseven"
+	{
+		"hu"	"Five-SeveN"
+	}
+	"weapon_aug"
+	{
+		"hu"	"AUG"
+	}
+	"weapon_elite"
+	{
+		"hu"	"Dupla Beretta"
+	}
+	"weapon_m249"
+	{
+		"hu"	"M249"
+	}
+	"weapon_mac10"
+	{
+		"hu"	"MAC-10"
+	}
+	"weapon_mag7"
+	{
+		"hu"	"MAG-7"
+	}
+	"weapon_mp7"
+	{
+		"hu"	"MP7"
+	}
+	"weapon_mp9"
+	{
+		"hu"	"MP9"
+	}
+	"weapon_tec9"
+	{
+		"hu"	"Tec-9"
+	}
+	"weapon_ump45"
+	{
+		"hu"	"UMP-45"
+	}
+	"weapon_ak47"
+	{
+		"hu"	"AK-47"
+	}
+	"weapon_bizon"
+	{
+		"hu"	"PP-Bizon"
+	}
+	"weapon_usp_silencer"
+	{
+		"hu"	"USP-S"
+	}
+	"weapon_hkp2000"
+	{
+		"hu"	"P2000"
+	}
+	"weapon_famas"
+	{
+		"hu"	"FAMAS"
+	}
+	"weapon_glock"
+	{
+		"hu"	"Glock-18"
+	}
+	"weapon_bayonet"
+	{
+		"hu"	"★ Bayonet"
+	}
+	"weapon_knife_gut"
+	{
+		"hu"	"★ Zsigerelőkés"
+	}
+	"weapon_knife_flip"
+	{
+		"hu"	"★ Összecsukhatókés"
+	}
+	"weapon_knife_m9_bayonet"
+	{
+		"hu"	"★ M9 Bayonet"
+	}
+	"weapon_knife_karambit"
+	{
+		"hu"	"★ Karambit"
+	}
+	"weapon_knife_tactical"
+	{
+		"hu"	"★ Vadászkés"
+	}
+	"weapon_knife_butterfly"
+	{
+		"hu"	"★ Pillangókés"
+	}
+	"weapon_knife_falchion"
+	{
+		"hu"	"★ Handzsárkés"
+	}
+	"weapon_knife_push"
+	{
+		"hu"	"★ Árnyéktőr"
+	}
+	"weapon_knife_survival_bowie"
+	{
+		"hu"	"★ Bowie Kés"
+	}
+	"weapon_knife_t"
+	{
+		"hu"	"Kés"
+	}
+	"weapon_knife"
+	{
+		"hu"	"Kés"
+	}
+}

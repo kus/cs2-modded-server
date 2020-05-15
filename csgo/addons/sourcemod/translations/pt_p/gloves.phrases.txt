@@ -1,0 +1,39 @@
+"Phrases"
+{
+	"GloveMenuTitle"
+	{
+		"pt_p"	"Menu de Luvas:"
+	}
+	"CT"
+	{
+		"pt_p"	"Contra-Terrorista"
+	}
+	"T"
+	{
+		"pt_p"	"Terrorista"
+	}
+	"Increase"
+	{
+		"pt_p"	"Aumentar por %d%%"
+	}
+	"Decrease"
+	{
+		"pt_p"	"Diminuir por %d%%"
+	}
+	"ChooseLanguage"
+	{
+		"pt_p"	"Seleciona a linguagem para o nome das luvas:"
+	}
+	"DefaultGloves"
+	{
+		"pt_p"	"Padrão"
+	}
+	"RandomGloves"
+	{
+		"pt_p"	"Aleatório"
+	}
+	"SetFloat"
+	{
+		"pt_p"	"Condição das luvas: "
+	}
+}

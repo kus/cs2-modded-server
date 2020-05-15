@@ -1,0 +1,39 @@
+"Phrases"
+{
+	"GloveMenuTitle"
+	{
+		"tr"	"Eldiven Menüsü"
+	}
+	"CT"
+	{
+		"tr"	"Anti-Terörist"
+	}
+	"T"
+	{
+		"tr"	"Terörist"
+	}
+	"Increase"
+	{
+		"tr"	"%d%% Yükselt"
+	}
+	"Decrease"
+	{
+		"tr"	"%d%% Düşür"
+	}
+	"ChooseLanguage"
+	{
+		"tr"	"Eldiven isimleri için dil seçin:"
+	}
+	"DefaultGloves"
+	{
+		"tr"	"Normal (Skinsiz)"
+	}
+	"RandomGloves"
+	{
+		"tr"	"Rastgele"
+	}
+	"SetFloat"
+	{
+		"tr"	"Eldiven Yenilik Durumu: "
+	}
+}
