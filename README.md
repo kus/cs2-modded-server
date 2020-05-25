@@ -45,6 +45,7 @@ Mod | Version | Why
 [KZTimer](https://bitbucket.org/kztimerglobalteam/kztimerglobal/src/master/) | `1.91.1` | KZTimer is a powerful, feature rich SourceMod climb timer plugin for CS:GO servers
 [SoccerMod](https://github.com/marcoboogers/soccermod) | `2017.5.5` | Soccer gamemode
 [Command Time-Traveler](https://forums.alliedmods.net/showthread.php?t=134288) | `1.2.0` | Run a command in the future
+[P Tools and Hooks](https://forums.alliedmods.net/showthread.php?t=289289) | `1.1.1-build17` | Additional CS:GO Hooks and Natives 
 [Gloves](https://forums.alliedmods.net/showthread.php?t=299977) | `1.0.4` | Custom gloves
 [Weapon & Knives](https://forums.alliedmods.net/showthread.php?t=298770) | `1.6.0` | Custom weapon skins
 [Accelerator](https://forums.alliedmods.net/showthread.php?t=277703) | `2.5.0-cd575aa` | Crash Reporting That Doesn't Suck
