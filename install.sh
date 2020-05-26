@@ -5,6 +5,9 @@ user="steam"
 IP="0.0.0.0"
 PUBLIC_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
 
+# Download latest stop script
+curl --silent --output "stop.sh" "https://raw.githubusercontent.com/kus/csgo-modded-server/master/stop.sh" && chmod +x stop.sh
+
 # Check distrib
 if ! command -v apt-get &> /dev/null; then
 	echo "ERROR: OS distribution not supported..."
