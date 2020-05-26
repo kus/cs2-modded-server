@@ -14,6 +14,7 @@ A single modded Counter-Strike: Global Offensive Dedicated Server that you can c
  - Surf
  - Kreedz Climbing
  - Soccer
+ - Capture The Flag
 
 Getting up and running:
  - [Running on Linux](#running-on-linux)
@@ -49,6 +50,7 @@ Mod | Version | Why
 [Gloves](https://forums.alliedmods.net/showthread.php?t=299977) | `1.0.4` | Custom gloves
 [Weapon & Knives](https://forums.alliedmods.net/showthread.php?t=298770) | `1.6.0` | Custom weapon skins
 [Accelerator](https://forums.alliedmods.net/showthread.php?t=277703) | `2.5.0-cd575aa` | Crash Reporting That Doesn't Suck
+[Capture the flag](https://forums.alliedmods.net/showthread.php?p=2466337) | `1.2` | Capture the flag for CS:GO
 
 ## Maps
 

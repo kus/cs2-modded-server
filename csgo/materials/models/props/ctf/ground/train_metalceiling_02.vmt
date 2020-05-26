@@ -1,0 +1,6 @@
+vertexlitgeneric
+{
+	"$basetexture"	"de_train\train_metalceiling_02"
+	"$surfaceprop" "metalgrate"
+
+}

@@ -15,6 +15,7 @@ Configs
 	"cfg/surf.cfg"			"Surf"
 	"cfg/kz.cfg"			"Kreedz Climbing"
 	"cfg/soccermod.cfg"		"Soccer"
+	"cfg/ctf.cfg"			"CTF"
 	"cfg/sourcemod/classic_map_vote.cfg"	"Classic map vote"
 	"cfg/sourcemod/kick_bots.cfg"		"Kick bots"
 	"cfg/sourcemod/checkpoints.cfg"		"Enable checkpoints"
