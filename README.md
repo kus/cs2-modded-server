@@ -123,6 +123,15 @@ Once you are setup as an admin, open up the admin menu and go to Server Commands
 
 You need [SourceMod 1.8](http://sourcemod.net/downloads.php?all=1&branch=1.8-dev) to compile and add the following into `addons/sourcemod/scripting/includes` [tEasyFTP.inc](https://raw.githubusercontent.com/thraaawn/tEasyFTP/master/scripting/include/tEasyFTP.inc) [bzip2.inc](https://raw.githubusercontent.com/thraaawn/SMbz2/master/pawn/scripting/include/bzip2.inc) [updater.inc](https://bitbucket.org/GoD_Tony/updater/raw/12181277db77d6117052b8ddf5810c7681745156/include/updater.inc) [zip.inc](https://raw.githubusercontent.com/Versatile-BFG/sm-zip/master/sm-zip/scripting/include/zip.inc) and copy the compiled `warmod.smx` from `addons/sourcemod/scripting/compiled` to `addons/sourcemod/plugins/disabled`.
 
+## Adding new maps to Capture The Flag
+
+Type `!props` in chat to open the props menu.
+Stand where you want the T flag and click `Spawn models > Ground` (and `Ground2` for CT) and a platform should appear in front of you. Enable `Move models (On)` and stand near it and grab it with your use key (E) and you can move it around. Rotate with reload (R) and push/pull with attack (Mouse1) and secondary fire (Mouse2).
+Once you have it on the floor, click `Save models` and close the props menu.
+Type `!ctf` in chat to open the Capture The Flag menu.
+Aim at the floor where you want to place it and push `Spawn T flag` and click `Save flags` and close the menu.
+Repeat this process for CT's and then reload the map and it should have the platform and flags.
+
 ## Running on Google Cloud
 
 ### Create firewall rule
