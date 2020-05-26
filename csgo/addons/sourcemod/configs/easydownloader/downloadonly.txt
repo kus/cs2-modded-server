@@ -1,0 +1,5 @@
+//Download Only (no precaching)
+models/props/ctf|exts=.dx80.vtx,.dx90.vtx,.mdl,.phy,.sw.vtx,.vvd
+materials/models/props/ctf/ground|exts=.vmt
+
+
