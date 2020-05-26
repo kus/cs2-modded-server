@@ -51,6 +51,8 @@ Mod | Version | Why
 [Weapon & Knives](https://forums.alliedmods.net/showthread.php?t=298770) | `1.6.0` | Custom weapon skins
 [Accelerator](https://forums.alliedmods.net/showthread.php?t=277703) | `2.5.0-cd575aa` | Crash Reporting That Doesn't Suck
 [Capture the flag](https://forums.alliedmods.net/showthread.php?p=2466337) | `1.2` | Capture the flag for CS:GO
+[Models in map](https://forums.alliedmods.net/showthread.php?p=2389415) | `1.2` | Allows you to place models in map. Required for CTF
+[SM Downloader and Precacher](https://forums.alliedmods.net/showthread.php?p=602270) | `1.4` | Downloads and Precaches Files/Folders. Required for CTF
 
 ## Maps
 
