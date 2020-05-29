@@ -1,12 +1,25 @@
 void StartDefusingFlag(int client)
 {
-	b_DefusingFlag[client] = true;
+	//b_DefusingFlag[client] = true;
 	
-	int StartedDefusing = RoundToNearest(GetGameTime() + 1050);
-	SetEntPropFloat(client, Prop_Send, "m_flProgressBarStartTime", GetGameTime());
-	SetEntProp(client, Prop_Send, "m_iProgressBarDuration",RoundToNearest(StartedDefusing-GetGameTime()));
+	//int StartedDefusing = RoundToNearest(GetGameTime() + 1050);
+	//SetEntPropFloat(client, Prop_Send, "m_flProgressBarStartTime", GetGameTime());
+	//SetEntProp(client, Prop_Send, "m_iProgressBarDuration",RoundToNearest(StartedDefusing-GetGameTime()));
 	
-	DefuseTimer[client] = CreateTimer(10.0, TimerDefuse, client);
+	//DefuseTimer[client] = CreateTimer(10.0, TimerDefuse, client);
+
+	int team = GetClientTeam(client);
+	if(IsClientValid(client))
+	{
+		if(team == CS_TEAM_CT)
+		{
+			SpawnFlag(CS_TEAM_CT, FLAGTYPE_SPAWN, true, -1);
+			Sound_BlueFlagReturned();	
+		} else if(team == CS_TEAM_T) {
+			SpawnFlag(CS_TEAM_T, FLAGTYPE_SPAWN, true, -1);
+			Sound_RedFlagReturned();
+		}
+	}
 	
 }
 
