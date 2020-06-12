@@ -1,14 +1,3 @@
-de_vertigo
-de_train
-de_overpass
-de_nuke
-de_mirage
 de_inferno
 de_dust2
-de_cbble
-de_cache
-cs_office
-cs_militia
-cs_italy
-cs_assault
-cs_agency
+gg_quad_7

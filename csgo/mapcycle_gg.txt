@@ -21,3 +21,5 @@ aim_ag_texture_jungle
 fy_winter
 fy_pool_day
 fy_mario_quick
+gg_quad_7
+de_rats_1337_classic
