@@ -16,6 +16,7 @@ Configs
 	"cfg/kz.cfg"			"Kreedz Climbing"
 	"cfg/soccermod.cfg"		"Soccer"
 	"cfg/ctf.cfg"			"Capture The Flag"
+	"cfg/prophunt.cfg"		"Prop Hunt/Hide n Seek"
 	"cfg/pingpong.cfg"		"Table Tennis"
 	"cfg/sourcemod/classic_map_vote.cfg"	"Classic map vote"
 	"cfg/sourcemod/kick_bots.cfg"		"Kick bots"
