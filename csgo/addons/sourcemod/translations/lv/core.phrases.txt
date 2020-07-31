@@ -1,8 +1,8 @@
 "Phrases"
 {
-	"_s"
+	"No Access"
 	{
-		"lv"		"{1}"
+		"lv"		"Tev nav pieejas šai komandai"
 	}
 
 	"Back"
@@ -10,19 +10,14 @@
 		"lv"		"Atpakaļ"
 	}
 
-	"Exit"
-	{
-		"lv"		"Iziet"
-	}
-
 	"Next"
 	{
 		"lv"		"Tālāk"
 	}
 
-	"No Access"
+	"Exit"
 	{
-		"lv"		"Tev nav pieejas šai komandai"
+		"lv"		"Iziet"
 	}
 
 	"Previous"
@@ -30,9 +25,14 @@
 		"lv"		"Atpakaļ"
 	}
 
-	"all alive players"
+	"all players"
 	{
-		"lv"		"visi dzīvie spēlētāji"
+		"lv"		"visi spēlētāji"
+	}
+
+	"all humans"
+	{
+		"lv"		"visi cilvēki"
 	}
 
 	"all bots"
@@ -45,14 +45,19 @@
 		"lv"		"visi mirušie spēlētāji"
 	}
 
-	"all humans"
+	"all alive players"
 	{
-		"lv"		"visi cilvēki"
+		"lv"		"visi dzīvie spēlētāji"
 	}
 
-	"all players"
+	"_s"
 	{
-		"lv"		"visi spēlētāji"
+		"lv"		"{1}"
+	}
+
+	"all spectators"
+	{
+		"lv"		"visi skatītāji"
 	}
 
 	"Vote Count"
@@ -60,19 +65,14 @@
 		"lv"		"Balsis: {1}/{2}, {3} atlikušas"
 	}
 
-	"Changed Vote"
-	{
-		"lv"		"{1} nomainija savu balsojumu uz {2}  "
-	}
-
 	"Voted For"
 	{
 		"lv"		"{1} nobalsoja par {2}  "
 	}
 
-	"all spectators"
+	"Changed Vote"
 	{
-		"lv"		"visi skatītāji"
+		"lv"		"{1} nomainija savu balsojumu uz {2}  "
 	}
 
 	"No Vote"

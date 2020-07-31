@@ -1,53 +1,8 @@
 "Phrases"
 {
-	"Cannot be performed on dead"
-	{
-		"vi"		"Hành động này không thể thực hiện lên người dùng đã chết \"{1}\""
-	}
-
 	"Yes"
 	{
 		"vi"		"Có"
-	}
-
-	"On"
-	{
-		"vi"		"Bật"
-	}
-
-	"Player has since died"
-	{
-		"vi"		"Không thực hiện được hành động vì người chơi đã chết."
-	}
-
-	"Played Sound"
-	{
-		"vi"		"Đã bật âm thanh cho người chơi '{1}'"
-	}
-
-	"Off"
-	{
-		"vi"		"Tắt"
-	}
-
-	"No matching clients"
-	{
-		"vi"		"Không tìm thấy người dùng phù hợp."
-	}
-
-	"No matching client"
-	{
-		"vi"		"Không tìm thấy người dùng phù hợp."
-	}
-
-	"No access to cvar"
-	{
-		"vi"		"Bạn không có quyền truy cập cvar này."
-	}
-
-	"No Votes Cast"
-	{
-		"vi"		"Không có phiếu nào được bầu."
 	}
 
 	"No"
@@ -55,9 +10,14 @@
 		"vi"		"Không"
 	}
 
-	"Name"
+	"No matching client"
 	{
-		"vi"		"Tên"
+		"vi"		"Không tìm thấy người dùng phù hợp."
+	}
+
+	"No matching clients"
+	{
+		"vi"		"Không tìm thấy người dùng phù hợp."
 	}
 
 	"More than one client matches"
@@ -70,19 +30,9 @@
 		"vi"		"Có nhiều hơn một người dùng phù hợp với mẫu trên."
 	}
 
-	"Map was not found"
+	"Player no longer available"
 	{
-		"vi"		"Không tìm thấy bản đồ {1}."
-	}
-
-	"Kicked player"
-	{
-		"vi"		"Đã đuổi người chơi '{1}'"
-	}
-
-	"Kicked by admin"
-	{
-		"vi"		"Bị đuổi bởi quản trị viên"
+		"vi"		"Người chơi mà bạn đã chọn không có mặt nữa."
 	}
 
 	"Kick player"
@@ -90,69 +40,9 @@
 		"vi"		"Đuổi người chơi"
 	}
 
-	"Invalid SteamID specified"
+	"Kicked by admin"
 	{
-		"vi"		"SteamID không hợp lệ (phải bắt đầu bằng 'STEAM_')."
-	}
-
-	"Invalid Amount"
-	{
-		"vi"		"Số lượng không hợp lệ"
-	}
-
-	"Failed to query database"
-	{
-		"vi"		"Không thể truy vấn cơ sở dữ liệu."
-	}
-
-	"Vote in Progress"
-	{
-		"vi"		"Một cuộc bỏ phiếu đang được tiến hành."
-	}
-
-	"Vote Select"
-	{
-		"vi"		"{1} đã chọn {2}."
-	}
-
-	"Vote Not In Progress"
-	{
-		"vi"		"Không có cuộc bỏ phiếu đang được tiến hành vào lúc này."
-	}
-
-	"Access"
-	{
-		"vi"		"Truy cập"
-	}
-
-	"Admin cache refreshed"
-	{
-		"vi"		"Bộ nhớ cache quản trị viên đã được làm mới."
-	}
-
-	"Cancel vote"
-	{
-		"vi"		"Hủy bầu chọn"
-	}
-
-	"Cancelled Vote"
-	{
-		"vi"		"Đã hủy bầu chọn."
-	}
-
-	"Cannot change vote"
-	{
-		"vi"		"Bạn không thể thay đổi lựa chọn."
-	}
-
-	"Cannot participate in vote"
-	{
-		"vi"		"Bạn không thể tham gia vào cuộc bầu chọn này.."
-	}
-
-	"Cannot target bot"
-	{
-		"vi"		"Không thể thực hiện lệnh này lên máy."
+		"vi"		"Bị đuổi bởi quản trị viên"
 	}
 
 	"Changing map"
@@ -160,29 +50,49 @@
 		"vi"		"Thay đổi bản đồ sang {1}..."
 	}
 
-	"Chat admins"
+	"Map was not found"
 	{
-		"vi"		"(Quản trị viên) {1}"
+		"vi"		"Không tìm thấy bản đồ {1}."
 	}
 
-	"Chat to admins"
+	"Unable to target"
 	{
-		"vi"		"(Tới quản trị viên) {1}"
+		"vi"		"Bạn không thể chọn người chơi này làm mục tiêu."
 	}
 
-	"Command is in-game only"
+	"Name"
 	{
-		"vi"		"Lệnh này chỉ có thể được sử dụng bởi người chơi."
+		"vi"		"Tên"
 	}
 
-	"Config not found"
+	"Access"
 	{
-		"vi"		"Không tìm thấy tệp cấu hình \"{1}\"."
+		"vi"		"Truy cập"
 	}
 
-	"Could not connect to database"
+	"See console for output"
 	{
-		"vi"		"Không thể kết nối vào cơ sở dữ liệu."
+		"vi"		"Xem đầu ra ở bảng điều khiển."
+	}
+
+	"Cannot target bot"
+	{
+		"vi"		"Không thể thực hiện lệnh này lên máy."
+	}
+
+	"Unable to find cvar"
+	{
+		"vi"		"Không tìm được cvar: {1}"
+	}
+
+	"No access to cvar"
+	{
+		"vi"		"Bạn không có quyền truy cập cvar này."
+	}
+
+	"Value of cvar"
+	{
+		"vi"		"Giá trị của cvar \"{1}\": \"{2}\""
 	}
 
 	"Cvar changed"
@@ -190,19 +100,89 @@
 		"vi"		"Đã thay đổi cvar \"{1}\" sang \"{2}\""
 	}
 
+	"Config not found"
+	{
+		"vi"		"Không tìm thấy tệp cấu hình \"{1}\"."
+	}
+
 	"Executed config"
 	{
 		"vi"		"Đã thực thi cấu hình \"{1}\"."
 	}
 
-	"Player no longer available"
+	"Admin cache refreshed"
 	{
-		"vi"		"Người chơi mà bạn đã chọn không có mặt nữa."
+		"vi"		"Bộ nhớ cache quản trị viên đã được làm mới."
 	}
 
-	"Private say to"
+	"Invalid Amount"
 	{
-		"vi"		"(Tin nhắn riêng tới {1}) {2}"
+		"vi"		"Số lượng không hợp lệ"
+	}
+
+	"Cannot be performed on dead"
+	{
+		"vi"		"Hành động này không thể thực hiện lên người dùng đã chết \"{1}\""
+	}
+
+	"Player has since died"
+	{
+		"vi"		"Không thực hiện được hành động vì người chơi đã chết."
+	}
+
+	"Vote in Progress"
+	{
+		"vi"		"Một cuộc bỏ phiếu đang được tiến hành."
+	}
+
+	"Vote Not In Progress"
+	{
+		"vi"		"Không có cuộc bỏ phiếu đang được tiến hành vào lúc này."
+	}
+
+	"Cancelled Vote"
+	{
+		"vi"		"Đã hủy bầu chọn."
+	}
+
+	"Cancel vote"
+	{
+		"vi"		"Hủy bầu chọn"
+	}
+
+	"Vote Select"
+	{
+		"vi"		"{1} đã chọn {2}."
+	}
+
+	"No Votes Cast"
+	{
+		"vi"		"Không có phiếu nào được bầu."
+	}
+
+	"Vote Delay Minutes"
+	{
+		"vi"		"Bạn phải đợi {1} phút trước khi bắt đầu một cuộc bầu chọn mới."
+	}
+
+	"Vote Delay Seconds"
+	{
+		"vi"		"Bạn phải đợi {1} giây trước khi bắt đầu một cuộc bầu chọn mới."
+	}
+
+	"Could not connect to database"
+	{
+		"vi"		"Không thể kết nối vào cơ sở dữ liệu."
+	}
+
+	"Failed to query database"
+	{
+		"vi"		"Không thể truy vấn cơ sở dữ liệu."
+	}
+
+	"Invalid SteamID specified"
+	{
+		"vi"		"SteamID không hợp lệ (phải bắt đầu bằng 'STEAM_')."
 	}
 
 	"Reload admins"
@@ -210,14 +190,29 @@
 		"vi"		"Tải lại danh sách quản trị viên"
 	}
 
-	"Say all"
+	"Command is in-game only"
 	{
-		"vi"		"(Tất cả) {1}"
+		"vi"		"Lệnh này chỉ có thể được sử dụng bởi người chơi."
 	}
 
-	"See console for output"
+	"Target must be dead"
 	{
-		"vi"		"Xem đầu ra ở bảng điều khiển."
+		"vi"		"Câu lệnh này chỉ có thể dùng lên người chơi đã chết."
+	}
+
+	"Target must be alive"
+	{
+		"vi"		"Câu lệnh này chỉ có thể dùng lên người chơi còn sống."
+	}
+
+	"Target is not in game"
+	{
+		"vi"		"Người chơi này hiện không ở trong trò chơi."
+	}
+
+	"Played Sound"
+	{
+		"vi"		"Đã bật âm thanh cho người chơi '{1}'"
 	}
 
 	"Slapped player"
@@ -230,44 +225,49 @@
 		"vi"		"Đã giết người chơi '{1}'"
 	}
 
-	"Target is not in game"
+	"Kicked player"
 	{
-		"vi"		"Người chơi này hiện không ở trong trò chơi."
+		"vi"		"Đã đuổi người chơi '{1}'"
 	}
 
-	"Target must be alive"
+	"Cannot participate in vote"
 	{
-		"vi"		"Câu lệnh này chỉ có thể dùng lên người chơi còn sống."
+		"vi"		"Bạn không thể tham gia vào cuộc bầu chọn này.."
 	}
 
-	"Target must be dead"
+	"Cannot change vote"
 	{
-		"vi"		"Câu lệnh này chỉ có thể dùng lên người chơi đã chết."
+		"vi"		"Bạn không thể thay đổi lựa chọn."
 	}
 
-	"Unable to find cvar"
+	"On"
 	{
-		"vi"		"Không tìm được cvar: {1}"
+		"vi"		"Bật"
 	}
 
-	"Unable to target"
+	"Off"
 	{
-		"vi"		"Bạn không thể chọn người chơi này làm mục tiêu."
+		"vi"		"Tắt"
 	}
 
-	"Value of cvar"
+	"Say all"
 	{
-		"vi"		"Giá trị của cvar \"{1}\": \"{2}\""
+		"vi"		"(Tất cả) {1}"
 	}
 
-	"Vote Delay Minutes"
+	"Chat admins"
 	{
-		"vi"		"Bạn phải đợi {1} phút trước khi bắt đầu một cuộc bầu chọn mới."
+		"vi"		"(Quản trị viên) {1}"
 	}
 
-	"Vote Delay Seconds"
+	"Chat to admins"
 	{
-		"vi"		"Bạn phải đợi {1} giây trước khi bắt đầu một cuộc bầu chọn mới."
+		"vi"		"(Tới quản trị viên) {1}"
+	}
+
+	"Private say to"
+	{
+		"vi"		"(Tin nhắn riêng tới {1}) {2}"
 	}
 
 }

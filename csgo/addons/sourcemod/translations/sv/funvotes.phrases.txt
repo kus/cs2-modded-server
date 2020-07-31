@@ -1,28 +1,8 @@
 "Phrases"
 {
-	"Alltalk vote"
+	"Initiated Vote Gravity"
 	{
-		"sv"		"Allprat röstning "
-	}
-
-	"Burn vote"
-	{
-		"sv"		"Bränn röstning"
-	}
-
-	"Gravity Vote"
-	{
-		"sv"		"Gravitations röstning: {1} "
-	}
-
-	"Gravity vote"
-	{
-		"sv"		"Gravitations röstning"
-	}
-
-	"Initiated Vote Alltalk"
-	{
-		"sv"		"Startar en allprat röstning. "
+		"sv"		"Startade en gravitation röstning."
 	}
 
 	"Initiated Vote Burn"
@@ -30,24 +10,29 @@
 		"sv"		"Startade en bränn röstning mot {1}. "
 	}
 
-	"Initiated Vote FF"
-	{
-		"sv"		"Startade en vänlig skada röstning."
-	}
-
-	"Initiated Vote Gravity"
-	{
-		"sv"		"Startade en gravitation röstning."
-	}
-
 	"Initiated Vote Slay"
 	{
 		"sv"		"Startade en döds röstning mot {1}. "
 	}
 
-	"Slay vote"
+	"Initiated Vote Alltalk"
 	{
-		"sv"		"Dräp röstning"
+		"sv"		"Startar en allprat röstning. "
+	}
+
+	"Initiated Vote FF"
+	{
+		"sv"		"Startade en vänlig skada röstning."
+	}
+
+	"Gravity Vote"
+	{
+		"sv"		"Gravitations röstning: {1} "
+	}
+
+	"Change Gravity To"
+	{
+		"sv"		" Ändra gravitationen till {1}"
 	}
 
 	"Voteburn player"
@@ -60,29 +45,14 @@
 		"sv"		"Dräp {1}? "
 	}
 
-	"Votealltalk On"
-	{
-		"sv"		"Sätt på allprat? {1} "
-	}
-
 	"Votealltalk Off"
 	{
 		"sv"		"Stäng av allprat? {1}"
 	}
 
-	"Change Gravity To"
+	"Votealltalk On"
 	{
-		"sv"		" Ändra gravitationen till {1}"
-	}
-
-	"Slayed player"
-	{
-		"sv"		"Dräpte spelare '{1}'  "
-	}
-
-	"Voteff On"
-	{
-		"sv"		"Slå på vänlig skada? {1} "
+		"sv"		"Sätt på allprat? {1} "
 	}
 
 	"Voteff Off"
@@ -90,9 +60,39 @@
 		"sv"		"Stäng av vänlig skada? {1} "
 	}
 
+	"Voteff On"
+	{
+		"sv"		"Slå på vänlig skada? {1} "
+	}
+
+	"Gravity vote"
+	{
+		"sv"		"Gravitations röstning"
+	}
+
 	"Vote FF"
 	{
 		"sv"		"Rösta vänlig skada "
+	}
+
+	"Burn vote"
+	{
+		"sv"		"Bränn röstning"
+	}
+
+	"Alltalk vote"
+	{
+		"sv"		"Allprat röstning "
+	}
+
+	"Slay vote"
+	{
+		"sv"		"Dräp röstning"
+	}
+
+	"Slayed player"
+	{
+		"sv"		"Dräpte spelare '{1}'  "
 	}
 
 }

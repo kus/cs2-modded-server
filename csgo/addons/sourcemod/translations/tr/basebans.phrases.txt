@@ -1,10 +1,5 @@
 "Phrases"
 {
-	"Ban added"
-	{
-		"tr"		"Yasaklama eklendi."
-	}
-
 	"Ban player"
 	{
 		"tr"		"Oyuncuyu yasakla"
@@ -13,16 +8,6 @@
 	"Ban reason"
 	{
 		"tr"		"Yasaklama nedeni"
-	}
-
-	"Banned player reason"
-	{
-		"tr"		"\"{1}\" adlı kullanıcı {2} dakikalığına yasaklandı (neden: {3})."
-	}
-
-	"Cannot ban that IP"
-	{
-		"tr"		"O IP adresini yasaklayamazsınız."
 	}
 
 	"Permabanned player"
@@ -35,19 +20,34 @@
 		"tr"		"\"{1}\" adlı kullanıcı kalıcı olarak yasaklandı (neden: {2})."
 	}
 
-	"Removed bans matching"
-	{
-		"tr"		"Bu süzgeçe uyan yasaklamalar kaldırıldı: {1}"
-	}
-
 	"Banned player"
 	{
 		"tr"		"\"{1}\" adlı oyuncu {2} dakikalığına yasaklandı."
 	}
 
-	"AbortBan not waiting for custom reason"
+	"Banned player reason"
 	{
-		"tr"		"Bir yasak nedeninin yazılması beklenmiyor, iptal edilecek yasak yok."
+		"tr"		"\"{1}\" adlı kullanıcı {2} dakikalığına yasaklandı (neden: {3})."
+	}
+
+	"Removed bans matching"
+	{
+		"tr"		"Bu süzgeçe uyan yasaklamalar kaldırıldı: {1}"
+	}
+
+	"Ban added"
+	{
+		"tr"		"Yasaklama eklendi."
+	}
+
+	"Cannot ban that IP"
+	{
+		"tr"		"O IP adresini yasaklayamazsınız."
+	}
+
+	"Custom ban reason explanation"
+	{
+		"tr"		"Nedeni bir sohbet mesajı olarak girin. İptal etmek için {1} kullanın."
 	}
 
 	"AbortBan applied successfully"
@@ -55,9 +55,9 @@
 		"tr"		"Yasaklama iptal edildi."
 	}
 
-	"Custom ban reason explanation"
+	"AbortBan not waiting for custom reason"
 	{
-		"tr"		"Nedeni bir sohbet mesajı olarak girin. İptal etmek için {1} kullanın."
+		"tr"		"Bir yasak nedeninin yazılması beklenmiyor, iptal edilecek yasak yok."
 	}
 
 }

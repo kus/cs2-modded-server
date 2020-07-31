@@ -1,5 +1,40 @@
 "Phrases"
 {
+	"Cookie List"
+	{
+		"sk"		"Sourcemod Cookie zoznam"
+	}
+
+	"Printing Cookie List"
+	{
+		"sk"		"Zobrazujem zoznam cookies do konzoly"
+	}
+
+	"Cookie not Found"
+	{
+		"sk"		"Nebolo možné nájsť cookie \"{1}\""
+	}
+
+	"Cookie Value"
+	{
+		"sk"		"Hodnota {1} je {2}"
+	}
+
+	"Protected Cookie"
+	{
+		"sk"		"Nemôžem zmeniť hodnotu chránenej cookie \"{1}\""
+	}
+
+	"Cookie Changed Value"
+	{
+		"sk"		"Zmenená hodnota cookie \"{1}\" na \"{2}\""
+	}
+
+	"No Console"
+	{
+		"sk"		"Nemôžem zobraziť menu nastavení do konzoly"
+	}
+
 	"Choose Option"
 	{
 		"sk"		"Vyber možnosť"
@@ -8,41 +43,6 @@
 	"Client Settings"
 	{
 		"sk"		"Uživaťeľské nastavenia"
-	}
-
-	"Cookie Changed Value"
-	{
-		"sk"		"Zmenená hodnota cookie \"{1}\" na \"{2}\""
-	}
-
-	"Cookie List"
-	{
-		"sk"		"Sourcemod Cookie zoznam"
-	}
-
-	"Cookie Value"
-	{
-		"sk"		"Hodnota {1} je {2}"
-	}
-
-	"Cookie not Found"
-	{
-		"sk"		"Nebolo možné nájsť cookie \"{1}\""
-	}
-
-	"No Console"
-	{
-		"sk"		"Nemôžem zobraziť menu nastavení do konzoly"
-	}
-
-	"Printing Cookie List"
-	{
-		"sk"		"Zobrazujem zoznam cookies do konzoly"
-	}
-
-	"Protected Cookie"
-	{
-		"sk"		"Nemôžem zmeniť hodnotu chránenej cookie \"{1}\""
 	}
 
 }

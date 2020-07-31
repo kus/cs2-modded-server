@@ -1,8 +1,8 @@
 "Phrases"
 {
-	"No commands available"
+	"SM help commands"
 	{
-		"nl"		"Geen commando's beschikbaar"
+		"nl"		"SourceMod Help: Commando Informatie"
 	}
 
 	"No description available"
@@ -10,14 +10,9 @@
 		"nl"		"Geen beschrijving beschikbaar"
 	}
 
-	"No matching results found"
+	"No commands available"
 	{
-		"nl"		"Geen resultaten gevonden"
-	}
-
-	"SM help commands"
-	{
-		"nl"		"SourceMod Help: Commando Informatie"
+		"nl"		"Geen commando's beschikbaar"
 	}
 
 	"Type sm_help to see more"
@@ -28,6 +23,11 @@
 	"Entries n - m in page k"
 	{
 		"nl"		"Data {1} - {2} op pagina {3}"
+	}
+
+	"No matching results found"
+	{
+		"nl"		"Geen resultaten gevonden"
 	}
 
 }

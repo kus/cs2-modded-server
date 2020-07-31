@@ -1,33 +1,8 @@
 "Phrases"
 {
-	"Alltalk vote"
+	"Initiated Vote Gravity"
 	{
-		"ar"		"تصويت الجميع يتكلم"
-	}
-
-	"Burn vote"
-	{
-		"ar"		"تصويت الإحراق"
-	}
-
-	"Change Gravity To"
-	{
-		"ar"		"تغيير الجاذبية إلى {1}؟"
-	}
-
-	"Gravity Vote"
-	{
-		"ar"		"تصويت الجاذبية: {1}"
-	}
-
-	"Gravity vote"
-	{
-		"ar"		"تصويت الجاذبية"
-	}
-
-	"Initiated Vote Alltalk"
-	{
-		"ar"		"إبتدء تصويت 'الجميع يتكلم'."
+		"ar"		"إبتدء تصويت الجاذبية."
 	}
 
 	"Initiated Vote Burn"
@@ -35,34 +10,39 @@
 		"ar"		"إبتدء التصويت لحرق {1}."
 	}
 
-	"Initiated Vote FF"
-	{
-		"ar"		"إبتدء تصويت النيران الصديقة."
-	}
-
-	"Initiated Vote Gravity"
-	{
-		"ar"		"إبتدء تصويت الجاذبية."
-	}
-
 	"Initiated Vote Slay"
 	{
 		"ar"		"إبتدء التصية لقتل {1}."
 	}
 
-	"Slay vote"
+	"Initiated Vote Alltalk"
 	{
-		"ar"		"تصويت للقتل"
+		"ar"		"إبتدء تصويت 'الجميع يتكلم'."
 	}
 
-	"Slayed player"
+	"Initiated Vote FF"
 	{
-		"ar"		"قتل اللاعب '{1}'"
+		"ar"		"إبتدء تصويت النيران الصديقة."
 	}
 
-	"Vote FF"
+	"Gravity Vote"
 	{
-		"ar"		"تصويت النيران الصديقة"
+		"ar"		"تصويت الجاذبية: {1}"
+	}
+
+	"Change Gravity To"
+	{
+		"ar"		"تغيير الجاذبية إلى {1}؟"
+	}
+
+	"Voteburn player"
+	{
+		"ar"		"حرق اللاعب {1}؟"
+	}
+
+	"Voteslay Player"
+	{
+		"ar"		"قتل {1}؟"
 	}
 
 	"Votealltalk Off"
@@ -75,11 +55,6 @@
 		"ar"		"إمكان تكلم الجميع؟ {1}"
 	}
 
-	"Voteburn player"
-	{
-		"ar"		"حرق اللاعب {1}؟"
-	}
-
 	"Voteff Off"
 	{
 		"ar"		"إيقاف النيران الصديقة؟ {1}"
@@ -90,9 +65,34 @@
 		"ar"		"تشغيل النيران الصديقة؟ {1}"
 	}
 
-	"Voteslay Player"
+	"Gravity vote"
 	{
-		"ar"		"قتل {1}؟"
+		"ar"		"تصويت الجاذبية"
+	}
+
+	"Vote FF"
+	{
+		"ar"		"تصويت النيران الصديقة"
+	}
+
+	"Burn vote"
+	{
+		"ar"		"تصويت الإحراق"
+	}
+
+	"Alltalk vote"
+	{
+		"ar"		"تصويت الجميع يتكلم"
+	}
+
+	"Slay vote"
+	{
+		"ar"		"تصويت للقتل"
+	}
+
+	"Slayed player"
+	{
+		"ar"		"قتل اللاعب '{1}'"
 	}
 
 }

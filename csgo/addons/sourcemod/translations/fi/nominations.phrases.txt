@@ -5,14 +5,9 @@
 		"fi"		"Olet jo ehdottanut karttaa."
 	}
 
-	"Can't Nominate Current Map"
+	"Max Nominations"
 	{
-		"fi"		"Valitsemasi kartta on tämänhetkinen kartta, eikä sitä voi ehdottaa."
-	}
-
-	"Current Map"
-	{
-		"fi"		"Tämänhetkinen kartta"
+		"fi"		"Suurin sallittu ehdotusmäärä saavutettu."
 	}
 
 	"Map Already In Vote"
@@ -20,14 +15,14 @@
 		"fi"		"Kartta '{1}' on jo ehdotettujen listalla."
 	}
 
-	"Map Already Nominated"
-	{
-		"fi"		"Valitsemaasi karttaa on jo ehdotettu."
-	}
-
 	"Map Inserted"
 	{
 		"fi"		"Kartta '{1}' lisätty ehdotettujen listalle."
+	}
+
+	"Map Already Nominated"
+	{
+		"fi"		"Valitsemaasi karttaa on jo ehdotettu."
 	}
 
 	"Map Nominated"
@@ -40,29 +35,34 @@
 		"fi"		"{1} vaihtoi ehdotuksensa karttaan {2}."
 	}
 
-	"Map in Exclude List"
-	{
-		"fi"		"Valitsemaasi karttaa pelattiin viimeaikoina, eikä sitä voi ehdottaa."
-	}
-
-	"Max Nominations"
-	{
-		"fi"		"Suurin sallittu ehdotusmäärä saavutettu."
-	}
-
 	"Nominate Title"
 	{
 		"fi"		"Ehdota karttaa:"
 	}
 
-	"Nominated"
+	"Can't Nominate Current Map"
 	{
-		"fi"		"Ehdotettu"
+		"fi"		"Valitsemasi kartta on tämänhetkinen kartta, eikä sitä voi ehdottaa."
+	}
+
+	"Map in Exclude List"
+	{
+		"fi"		"Valitsemaasi karttaa pelattiin viimeaikoina, eikä sitä voi ehdottaa."
+	}
+
+	"Current Map"
+	{
+		"fi"		"Tämänhetkinen kartta"
 	}
 
 	"Recently Played"
 	{
 		"fi"		"Viimeaikoina pelattu"
+	}
+
+	"Nominated"
+	{
+		"fi"		"Ehdotettu"
 	}
 
 }

@@ -1,13 +1,8 @@
 "Phrases"
 {
-	"Map Nominated"
+	"Rock The Vote"
 	{
-		"sv"		"{1} har nominerat {2} till Rock the Vote. "
-	}
-
-	"Max Nominations"
-	{
-		"sv"		"Max antal nomineringar har blivit nåt."
+		"sv"		"Rock The Vote:"
 	}
 
 	"RTV Not Allowed"
@@ -15,29 +10,14 @@
 		"sv"		"Rock the Vote är inte tillåtet ännu."
 	}
 
-	"RTV Requested"
-	{
-		"sv"		"{1} Vill rock the vote. ({2} röster, {3} krävs) "
-	}
-
 	"RTV Started"
 	{
 		"sv"		"Rock the Vote har redan börjat."
 	}
 
-	"Selected Map"
+	"RTV Ended"
 	{
-		"sv"		"{1} har valt {2} "
-	}
-
-	"Rock The Vote"
-	{
-		"sv"		"Rock The Vote:"
-	}
-
-	"RTV Vote Ready"
-	{
-		"sv"		"Rocking the Vote!"
+		"sv"		"RTV är redan över, du kan inte starta det igen eller nominera kartor. "
 	}
 
 	"Already Voted"
@@ -45,19 +25,9 @@
 		"sv"		"Du har redan röstat för Rock the Vote."
 	}
 
-	"Already Nominated"
+	"Minimal Players Not Met"
 	{
-		"sv"		"Du har redan nominerat en karta."
-	}
-
-	"Don't Change"
-	{
-		"sv"		"Behåll nuvarande karta."
-	}
-
-	"Map Already Nominated"
-	{
-		"sv"		"Kartan du valt är redan nominerad. "
+		"sv"		"Antalet spelare som behövs har inte uppnåtts."
 	}
 
 	"Map Already In Vote"
@@ -70,24 +40,39 @@
 		"sv"		"Karta '{1}' tillagd till Rock the Vote. "
 	}
 
-	"Minimal Players Not Met"
+	"RTV Requested"
 	{
-		"sv"		"Antalet spelare som behövs har inte uppnåtts."
+		"sv"		"{1} Vill rock the vote. ({2} röster, {3} krävs) "
+	}
+
+	"RTV Vote Ready"
+	{
+		"sv"		"Rocking the Vote!"
+	}
+
+	"Don't Change"
+	{
+		"sv"		"Behåll nuvarande karta."
+	}
+
+	"Already Nominated"
+	{
+		"sv"		"Du har redan nominerat en karta."
+	}
+
+	"Max Nominations"
+	{
+		"sv"		"Max antal nomineringar har blivit nåt."
+	}
+
+	"Selected Map"
+	{
+		"sv"		"{1} har valt {2} "
 	}
 
 	"No Votes"
 	{
 		"sv"		"Inga röstningar för Rock the Vote, behåller nuvarande karta."
-	}
-
-	"Nominate Title"
-	{
-		"sv"		"Nominera karta: "
-	}
-
-	"RTV Ended"
-	{
-		"sv"		"RTV är redan över, du kan inte starta det igen eller nominera kartor. "
 	}
 
 	"Current Map Stays"
@@ -98,6 +83,21 @@
 	"Changing Maps"
 	{
 		"sv"		"Byter karta till {1}! Rock the vote har talat!"
+	}
+
+	"Map Already Nominated"
+	{
+		"sv"		"Kartan du valt är redan nominerad. "
+	}
+
+	"Map Nominated"
+	{
+		"sv"		"{1} har nominerat {2} till Rock the Vote. "
+	}
+
+	"Nominate Title"
+	{
+		"sv"		"Nominera karta: "
 	}
 
 }

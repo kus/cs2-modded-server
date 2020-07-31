@@ -5,59 +5,9 @@
 		"pt"		"Sim"
 	}
 
-	"Vote in Progress"
+	"No"
 	{
-		"pt"		"Uma votação já está em andamento."
-	}
-
-	"Vote Select"
-	{
-		"pt"		"{1} escolheu {2}"
-	}
-
-	"Value of cvar"
-	{
-		"pt"		"Valor da cvar \"{1}\": \"{2}\""
-	}
-
-	"Unable to find cvar"
-	{
-		"pt"		"Cvar {1} não encontrada"
-	}
-
-	"Target must be dead"
-	{
-		"pt"		"Esse comando só pode ser usado em jogadores mortos."
-	}
-
-	"Target must be alive"
-	{
-		"pt"		"Esse comando só pode ser usado em jogadores vivos."
-	}
-
-	"See console for output"
-	{
-		"pt"		"Veja o console para resposta."
-	}
-
-	"Reload admins"
-	{
-		"pt"		"Recarregar administradores"
-	}
-
-	"Player no longer available"
-	{
-		"pt"		"O jogador selecionado não está mais disponível."
-	}
-
-	"Played Sound"
-	{
-		"pt"		"Som tocado para '{1}'"
-	}
-
-	"No matching clients"
-	{
-		"pt"		"Nenhum jogador encontrado."
+		"pt"		"Não"
 	}
 
 	"No matching client"
@@ -65,24 +15,9 @@
 		"pt"		"Nenhum jogador encontrado."
 	}
 
-	"No access to cvar"
+	"No matching clients"
 	{
-		"pt"		"Você não tem acesso a essa cvar."
-	}
-
-	"No Votes Cast"
-	{
-		"pt"		"Nenhum voto foi computado."
-	}
-
-	"No"
-	{
-		"pt"		"Não"
-	}
-
-	"Name"
-	{
-		"pt"		"Nome"
+		"pt"		"Nenhum jogador encontrado."
 	}
 
 	"More than one client matches"
@@ -95,14 +30,9 @@
 		"pt"		"Mais de um jogador corresponde ao padrão especificado."
 	}
 
-	"Map was not found"
+	"Player no longer available"
 	{
-		"pt"		"Mapa {1} não encontrado"
-	}
-
-	"Kicked by admin"
-	{
-		"pt"		"Expulso pelo adminstrador"
+		"pt"		"O jogador selecionado não está mais disponível."
 	}
 
 	"Kick player"
@@ -110,14 +40,59 @@
 		"pt"		"Expulsar jogador"
 	}
 
-	"Failed to query database"
+	"Kicked by admin"
 	{
-		"pt"		"Falha ao consultar a base de dados."
+		"pt"		"Expulso pelo adminstrador"
 	}
 
-	"Executed config"
+	"Changing map"
 	{
-		"pt"		"Configuração \"{1}\" executada."
+		"pt"		"Alterando mapa para {1}... "
+	}
+
+	"Map was not found"
+	{
+		"pt"		"Mapa {1} não encontrado"
+	}
+
+	"Unable to target"
+	{
+		"pt"		"Você não pode ter esse jogador como alvo."
+	}
+
+	"Name"
+	{
+		"pt"		"Nome"
+	}
+
+	"Access"
+	{
+		"pt"		"Acesso"
+	}
+
+	"See console for output"
+	{
+		"pt"		"Veja o console para resposta."
+	}
+
+	"Cannot target bot"
+	{
+		"pt"		"Esse comando não pode ser aplicado em um bot."
+	}
+
+	"Unable to find cvar"
+	{
+		"pt"		"Cvar {1} não encontrada"
+	}
+
+	"No access to cvar"
+	{
+		"pt"		"Você não tem acesso a essa cvar."
+	}
+
+	"Value of cvar"
+	{
+		"pt"		"Valor da cvar \"{1}\": \"{2}\""
 	}
 
 	"Cvar changed"
@@ -125,14 +100,44 @@
 		"pt"		"Cvar \"{1}\" alterada para \"{2}\""
 	}
 
-	"Command is in-game only"
+	"Config not found"
 	{
-		"pt"		"Esse comando só pode ser usado dentro do jogo."
+		"pt"		"Arquivo de configurações \"{1}\" não encontrado."
 	}
 
-	"Cannot target bot"
+	"Executed config"
 	{
-		"pt"		"Esse comando não pode ser aplicado em um bot."
+		"pt"		"Configuração \"{1}\" executada."
+	}
+
+	"Admin cache refreshed"
+	{
+		"pt"		"A lista de administradores foi atualizada."
+	}
+
+	"Invalid Amount"
+	{
+		"pt"		"Quantidade inválida especificada."
+	}
+
+	"Cannot be performed on dead"
+	{
+		"pt"		"Essa ação não pode ser aplicada no jogador morto \"{1}\""
+	}
+
+	"Player has since died"
+	{
+		"pt"		"A ação não pode ser aplicada pois o jogador morreu desde então."
+	}
+
+	"Vote in Progress"
+	{
+		"pt"		"Uma votação já está em andamento."
+	}
+
+	"Vote Not In Progress"
+	{
+		"pt"		"Não há nenhuma votação em andamento no momento."
 	}
 
 	"Cancelled Vote"
@@ -145,59 +150,14 @@
 		"pt"		"Cancelar votação"
 	}
 
-	"Admin cache refreshed"
+	"Vote Select"
 	{
-		"pt"		"A lista de administradores foi atualizada."
+		"pt"		"{1} escolheu {2}"
 	}
 
-	"Access"
+	"No Votes Cast"
 	{
-		"pt"		"Acesso"
-	}
-
-	"Cannot participate in vote"
-	{
-		"pt"		"Você não pode participar desta votação."
-	}
-
-	"Off"
-	{
-		"pt"		"Desligado"
-	}
-
-	"On"
-	{
-		"pt"		"Ligado"
-	}
-
-	"Player has since died"
-	{
-		"pt"		"A ação não pode ser aplicada pois o jogador morreu desde então."
-	}
-
-	"Slayed player"
-	{
-		"pt"		"'{1}' foi assassinado(a)"
-	}
-
-	"Invalid SteamID specified"
-	{
-		"pt"		"Você especificou um SteamID inválido (precisa começar com 'STEAM_:')."
-	}
-
-	"Could not connect to database"
-	{
-		"pt"		"Não foi possível conectar-se ao banco de dados."
-	}
-
-	"Vote Not In Progress"
-	{
-		"pt"		"Não há nenhuma votação em andamento no momento."
-	}
-
-	"Vote Delay Seconds"
-	{
-		"pt"		"Você precisa esperar {1} segundo(s) antes de iniciar outra votação."
+		"pt"		"Nenhum voto foi computado."
 	}
 
 	"Vote Delay Minutes"
@@ -205,9 +165,44 @@
 		"pt"		"Você precisa esperar {1} minutos antes de iniciar outra votação."
 	}
 
-	"Unable to target"
+	"Vote Delay Seconds"
 	{
-		"pt"		"Você não pode ter esse jogador como alvo."
+		"pt"		"Você precisa esperar {1} segundo(s) antes de iniciar outra votação."
+	}
+
+	"Could not connect to database"
+	{
+		"pt"		"Não foi possível conectar-se ao banco de dados."
+	}
+
+	"Failed to query database"
+	{
+		"pt"		"Falha ao consultar a base de dados."
+	}
+
+	"Invalid SteamID specified"
+	{
+		"pt"		"Você especificou um SteamID inválido (precisa começar com 'STEAM_:')."
+	}
+
+	"Reload admins"
+	{
+		"pt"		"Recarregar administradores"
+	}
+
+	"Command is in-game only"
+	{
+		"pt"		"Esse comando só pode ser usado dentro do jogo."
+	}
+
+	"Target must be dead"
+	{
+		"pt"		"Esse comando só pode ser usado em jogadores mortos."
+	}
+
+	"Target must be alive"
+	{
+		"pt"		"Esse comando só pode ser usado em jogadores vivos."
 	}
 
 	"Target is not in game"
@@ -215,9 +210,9 @@
 		"pt"		"O jogador selecionado ainda não está totalmente conectado."
 	}
 
-	"Kicked player"
+	"Played Sound"
 	{
-		"pt"		"'{1}' foi expulso(a)"
+		"pt"		"Som tocado para '{1}'"
 	}
 
 	"Slapped player"
@@ -225,24 +220,19 @@
 		"pt"		"'{1}' foi estapeado(a)"
 	}
 
-	"Invalid Amount"
+	"Slayed player"
 	{
-		"pt"		"Quantidade inválida especificada."
+		"pt"		"'{1}' foi assassinado(a)"
 	}
 
-	"Config not found"
+	"Kicked player"
 	{
-		"pt"		"Arquivo de configurações \"{1}\" não encontrado."
+		"pt"		"'{1}' foi expulso(a)"
 	}
 
-	"Changing map"
+	"Cannot participate in vote"
 	{
-		"pt"		"Alterando mapa para {1}... "
-	}
-
-	"Cannot be performed on dead"
-	{
-		"pt"		"Essa ação não pode ser aplicada no jogador morto \"{1}\""
+		"pt"		"Você não pode participar desta votação."
 	}
 
 	"Cannot change vote"
@@ -250,14 +240,24 @@
 		"pt"		"Você não pode alterar a sua escolha nesta votação."
 	}
 
+	"On"
+	{
+		"pt"		"Ligado"
+	}
+
+	"Off"
+	{
+		"pt"		"Desligado"
+	}
+
 	"Say all"
 	{
 		"pt"		"(TODOS) {1}"
 	}
 
-	"Private say to"
+	"Chat admins"
 	{
-		"pt"		"(Privado para {1}) {2}"
+		"pt"		"(ADMINS) {1}"
 	}
 
 	"Chat to admins"
@@ -265,9 +265,9 @@
 		"pt"		"(PARA ADMINS) {1}"
 	}
 
-	"Chat admins"
+	"Private say to"
 	{
-		"pt"		"(ADMINS) {1}"
+		"pt"		"(Privado para {1}) {2}"
 	}
 
 }

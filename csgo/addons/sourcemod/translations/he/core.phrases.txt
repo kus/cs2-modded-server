@@ -1,8 +1,8 @@
 "Phrases"
 {
-	"_s"
+	"No Access"
 	{
-		"he"		"{1}"
+		"he"		"אין לך גישה לפקודה זו"
 	}
 
 	"Back"
@@ -10,19 +10,14 @@
 		"he"		"אחורה"
 	}
 
-	"Exit"
-	{
-		"he"		"צא"
-	}
-
 	"Next"
 	{
 		"he"		"הבא"
 	}
 
-	"No Access"
+	"Exit"
 	{
-		"he"		"אין לך גישה לפקודה זו"
+		"he"		"צא"
 	}
 
 	"Previous"
@@ -30,9 +25,14 @@
 		"he"		"הקודם"
 	}
 
-	"all alive players"
+	"all players"
 	{
-		"he"		"כל השחקנים החיים"
+		"he"		"כל השחקנים"
+	}
+
+	"all humans"
+	{
+		"he"		"כל האנשים"
 	}
 
 	"all bots"
@@ -45,14 +45,14 @@
 		"he"		"כל השחקנים המתים"
 	}
 
-	"all humans"
+	"all alive players"
 	{
-		"he"		"כל האנשים"
+		"he"		"כל השחקנים החיים"
 	}
 
-	"all players"
+	"_s"
 	{
-		"he"		"כל השחקנים"
+		"he"		"{1}"
 	}
 
 }

@@ -1,33 +1,8 @@
 "Phrases"
 {
-	"Alltalk vote"
+	"Initiated Vote Gravity"
 	{
-		"lt"		"Balsavimas dėl leidimo visiem šnekėti"
-	}
-
-	"Burn vote"
-	{
-		"lt"		"Balsavimas dėl sudeginimo"
-	}
-
-	"Change Gravity To"
-	{
-		"lt"		"Pakeisti žaidimo gravitaciją į {1}?"
-	}
-
-	"Gravity Vote"
-	{
-		"lt"		"Gravitacijos balsavimas: {1}"
-	}
-
-	"Gravity vote"
-	{
-		"lt"		"Gravitacijos balsavimas"
-	}
-
-	"Initiated Vote Alltalk"
-	{
-		"lt"		"Pradėtas balsavimas dėl leidimo visiem šnekėti."
+		"lt"		"Pradėtas balsavimas dėl žaidimo gravitacijos."
 	}
 
 	"Initiated Vote Burn"
@@ -35,29 +10,39 @@
 		"lt"		"Pradėtas sudeginimo balsavimas prieš {1}."
 	}
 
-	"Initiated Vote FF"
-	{
-		"lt"		"Pradėtas balsavimas dėl leidimo šaudyti komandos narius."
-	}
-
-	"Initiated Vote Gravity"
-	{
-		"lt"		"Pradėtas balsavimas dėl žaidimo gravitacijos."
-	}
-
 	"Initiated Vote Slay"
 	{
 		"lt"		"Pradėtas balsavimas nužudyti žaidėją {1}."
 	}
 
-	"Slay vote"
+	"Initiated Vote Alltalk"
 	{
-		"lt"		"Balsavimas nužudyti"
+		"lt"		"Pradėtas balsavimas dėl leidimo visiem šnekėti."
 	}
 
-	"Vote FF"
+	"Initiated Vote FF"
 	{
-		"lt"		"Balsavimas FF"
+		"lt"		"Pradėtas balsavimas dėl leidimo šaudyti komandos narius."
+	}
+
+	"Gravity Vote"
+	{
+		"lt"		"Gravitacijos balsavimas: {1}"
+	}
+
+	"Change Gravity To"
+	{
+		"lt"		"Pakeisti žaidimo gravitaciją į {1}?"
+	}
+
+	"Voteburn player"
+	{
+		"lt"		"Sudeginti žaidėją {1}?"
+	}
+
+	"Voteslay Player"
+	{
+		"lt"		"Patiesti {1}?"
 	}
 
 	"Votealltalk Off"
@@ -70,11 +55,6 @@
 		"lt"		"Įjungti leidimą visiem šnekėti? {1}"
 	}
 
-	"Voteburn player"
-	{
-		"lt"		"Sudeginti žaidėją {1}?"
-	}
-
 	"Voteff Off"
 	{
 		"lt"		"Išjungti leidimą šaudyti komandos narius? {1}"
@@ -85,9 +65,29 @@
 		"lt"		"Įjungti leidimą šaudyti komandos narius? {1}"
 	}
 
-	"Voteslay Player"
+	"Gravity vote"
 	{
-		"lt"		"Patiesti {1}?"
+		"lt"		"Gravitacijos balsavimas"
+	}
+
+	"Vote FF"
+	{
+		"lt"		"Balsavimas FF"
+	}
+
+	"Burn vote"
+	{
+		"lt"		"Balsavimas dėl sudeginimo"
+	}
+
+	"Alltalk vote"
+	{
+		"lt"		"Balsavimas dėl leidimo visiem šnekėti"
+	}
+
+	"Slay vote"
+	{
+		"lt"		"Balsavimas nužudyti"
 	}
 
 	"Slayed player"

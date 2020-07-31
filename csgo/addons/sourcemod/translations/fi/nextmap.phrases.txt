@@ -5,9 +5,9 @@
 		"fi"		"Seuraava kartta: {1}"
 	}
 
-	"Current Map"
+	"Map History"
 	{
-		"fi"		"Tämänhetkinen kartta"
+		"fi"		"Karttahistoria"
 	}
 
 	"Map"
@@ -15,19 +15,9 @@
 		"fi"		"[Kartta]"
 	}
 
-	"Map History"
+	"Started"
 	{
-		"fi"		"Karttahistoria"
-	}
-
-	"Reason"
-	{
-		"fi"		"[Syy lopettamiselle]"
-	}
-
-	"ago"
-	{
-		"fi"		"sitten"
+		"fi"		"[Aloitettu]"
 	}
 
 	"Played Time"
@@ -35,9 +25,19 @@
 		"fi"		"[Pelattu aika]"
 	}
 
-	"Started"
+	"Reason"
 	{
-		"fi"		"[Aloitettu]"
+		"fi"		"[Syy lopettamiselle]"
+	}
+
+	"Current Map"
+	{
+		"fi"		"Tämänhetkinen kartta"
+	}
+
+	"ago"
+	{
+		"fi"		"sitten"
 	}
 
 }

@@ -20,9 +20,19 @@
 		"chi"		"RTV (滚动投票)已结束, 您无法重来或再预订地图."
 	}
 
+	"Already Voted"
+	{
+		"chi"		"您已经发起了投票(现有{1}票,仍需{2}票)"
+	}
+
 	"Minimal Players Not Met"
 	{
 		"chi"		"未达所需人数下限."
+	}
+
+	"Map Already In Vote"
+	{
+		"chi"		"地图 '{1}' 已在 RTV (滚动投票)列表中."
 	}
 
 	"Map Inserted"
@@ -43,6 +53,11 @@
 	"Don't Change"
 	{
 		"chi"		"继续运行当前地图"
+	}
+
+	"Already Nominated"
+	{
+		"chi"		"您已经提名过一张地图"
 	}
 
 	"Max Nominations"
@@ -83,21 +98,6 @@
 	"Nominate Title"
 	{
 		"chi"		"预订地图:"
-	}
-
-	"Map Already In Vote"
-	{
-		"chi"		"地图 '{1}' 已在 RTV (滚动投票)列表中."
-	}
-
-	"Already Nominated"
-	{
-		"chi"		"您已经提名过一张地图"
-	}
-
-	"Already Voted"
-	{
-		"chi"		"您已经发起了投票(现有{1}票,仍需{2}票)"
 	}
 
 }

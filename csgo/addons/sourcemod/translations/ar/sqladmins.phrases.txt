@@ -1,15 +1,5 @@
 "Phrases"
 {
-	"Added group to user"
-	{
-		"ar"		"تمت إضافة المجموعة المعطاة للآدمن بنجاح."
-	}
-
-	"Added groups to user"
-	{
-		"ar"		"تمت إضافة {1} مجموعة معطاة للآدمن بنجاح."
-	}
-
 	"Invalid authtype"
 	{
 		"ar"		"يجب أن يتم الترخيص بإستعمال 'steam'، 'الإسم' أو 'ip'."
@@ -20,14 +10,14 @@
 		"ar"		"يجب أن تكون الحصانة عدد صحيح."
 	}
 
-	"SQL Admin added"
-	{
-		"ar"		"تمت إضافة الآدمن بنجاح."
-	}
-
 	"SQL Admin already exists"
 	{
 		"ar"		"هناك آدمن مسبقا بنفس الترخيص المعطى."
+	}
+
+	"SQL Admin added"
+	{
+		"ar"		"تمت إضافة الآدمن بنجاح."
 	}
 
 	"SQL Admin deleted"
@@ -35,34 +25,19 @@
 		"ar"		"تم حذف الآدمن بنجاح."
 	}
 
-	"SQL Admin groups reset"
-	{
-		"ar"		"تمت إعادت مجموعة الآدمن للحالة الأصلية."
-	}
-
 	"SQL Admin not found"
 	{
 		"ar"		"لم يتم العثور على الآدمن بالمعطيات المعطى."
 	}
 
-	"SQL Group X failed to bind"
+	"SQL Group already exists"
 	{
-		"ar"		"تم فشل محاولت ربط: \"{1}\""
-	}
-
-	"SQL Group X not found"
-	{
-		"ar"		"لم يتم العثور على مجموعة: \"{1}\""
+		"ar"		"آدمن بنفس اللإسم موجود مسبقا."
 	}
 
 	"SQL Group added"
 	{
 		"ar"		"تمت إضافة المجموعة بنجاح."
-	}
-
-	"SQL Group already exists"
-	{
-		"ar"		"آدمن بنفس اللإسم موجود مسبقا."
 	}
 
 	"SQL Group deleted"
@@ -73,6 +48,31 @@
 	"SQL Group not found"
 	{
 		"ar"		"لم يتم العثور على المجموعة بالمعطياة المعطى."
+	}
+
+	"SQL Admin groups reset"
+	{
+		"ar"		"تمت إعادت مجموعة الآدمن للحالة الأصلية."
+	}
+
+	"SQL Group X not found"
+	{
+		"ar"		"لم يتم العثور على مجموعة: \"{1}\""
+	}
+
+	"SQL Group X failed to bind"
+	{
+		"ar"		"تم فشل محاولت ربط: \"{1}\""
+	}
+
+	"Added group to user"
+	{
+		"ar"		"تمت إضافة المجموعة المعطاة للآدمن بنجاح."
+	}
+
+	"Added groups to user"
+	{
+		"ar"		"تمت إضافة {1} مجموعة معطاة للآدمن بنجاح."
 	}
 
 }

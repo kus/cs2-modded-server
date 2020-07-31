@@ -30,14 +30,14 @@
 		"pl"		"Admin zmienił twój nick"
 	}
 
-	"Rename player"
-	{
-		"pl"		"Zmień nick gracza"
-	}
-
 	"Renamed target"
 	{
 		"pl"		"Zmieniono nick graczowi {1}."
+	}
+
+	"Rename player"
+	{
+		"pl"		"Zmień nick gracza"
 	}
 
 	"Dead Player Rename"

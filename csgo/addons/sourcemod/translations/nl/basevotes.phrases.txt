@@ -1,33 +1,8 @@
 "Phrases"
 {
-	"Ban vote"
-	{
-		"nl"		"Ban stem"
-	}
-
-	"Change Map To"
-	{
-		"nl"		"Verander map naar {1}?"
-	}
-
-	"Confirm Vote"
-	{
-		"nl"		"Bevestig Stem"
-	}
-
 	"Initiate Vote"
 	{
 		"nl"		"Stem gestart: {1}"
-	}
-
-	"Initiated Vote Ban"
-	{
-		"nl"		"Ban stem gestart voor {1}."
-	}
-
-	"Initiated Vote Kick"
-	{
-		"nl"		"Kick stem gestart voor {1}."
 	}
 
 	"Initiated Vote Map"
@@ -35,9 +10,14 @@
 		"nl"		"Map stem gestart."
 	}
 
-	"Kick vote"
+	"Initiated Vote Kick"
 	{
-		"nl"		"Kick stem"
+		"nl"		"Kick stem gestart voor {1}."
+	}
+
+	"Initiated Vote Ban"
+	{
+		"nl"		"Ban stem gestart voor {1}."
 	}
 
 	"Map Vote"
@@ -45,24 +25,9 @@
 		"nl"		"Map Stem: {1}"
 	}
 
-	"Map vote"
+	"Change Map To"
 	{
-		"nl"		"Map stem"
-	}
-
-	"Vote End"
-	{
-		"nl"		"Het antwoord op {1} is: {2}."
-	}
-
-	"Vote Successful"
-	{
-		"nl"		"Stemmen gelukt. (Ontvangen: {1}%% van {2} stemmen)"
-	}
-
-	"Voteban Player"
-	{
-		"nl"		"Ban {1}?"
+		"nl"		"Verander map naar {1}?"
 	}
 
 	"Votekick Player"
@@ -70,14 +35,49 @@
 		"nl"		"Kick {1}?"
 	}
 
+	"Voteban Player"
+	{
+		"nl"		"Ban {1}?"
+	}
+
+	"Vote Successful"
+	{
+		"nl"		"Stemmen gelukt. (Ontvangen: {1}%% van {2} stemmen)"
+	}
+
+	"Vote Failed"
+	{
+		"nl"		"Stemmen mislukt. {1}%% stemmen nodig. ({2}%% van de {3} stemmen ontvangen)"
+	}
+
+	"Vote End"
+	{
+		"nl"		"Het antwoord op {1} is: {2}."
+	}
+
+	"Kick vote"
+	{
+		"nl"		"Kick stem"
+	}
+
+	"Ban vote"
+	{
+		"nl"		"Ban stem"
+	}
+
+	"Map vote"
+	{
+		"nl"		"Map stem"
+	}
+
+	"Confirm Vote"
+	{
+		"nl"		"Bevestig Stem"
+	}
+
 	"Map Vote In Use"
 	{
 		"nl"		"Een andere admin is bezig met het map vote menu."
-	}
-
-	"Start the Vote"
-	{
-		"nl"		"Start de Stemming"
 	}
 
 	"Please select a map"
@@ -85,9 +85,9 @@
 		"nl"		"Selecteer aub een map"
 	}
 
-	"Vote Failed"
+	"Start the Vote"
 	{
-		"nl"		"Stemmen mislukt. {1}%% stemmen nodig. ({2}%% van de {3} stemmen ontvangen)"
+		"nl"		"Start de Stemming"
 	}
 
 }

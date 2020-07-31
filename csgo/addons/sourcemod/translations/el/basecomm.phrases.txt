@@ -1,18 +1,13 @@
 "Phrases"
 {
-	"Choose Type"
-	{
-		"el"		"Διαλέξτε Τρόπο"
-	}
-
-	"Gag Player"
-	{
-		"el"		"Σίγαση παίκτη (μόνο chat)"
-	}
-
 	"Gag/Mute player"
 	{
 		"el"		"Σίγαση παίκτη "
+	}
+
+	"Choose Type"
+	{
+		"el"		"Διαλέξτε Τρόπο"
 	}
 
 	"Gagged target"
@@ -20,9 +15,9 @@
 		"el"		"O/H {1} δεν μπορεί να μιλήσει στο chat."
 	}
 
-	"Mute Player"
+	"Ungagged target"
 	{
-		"el"		"Σίγαση παίκτη (μόνο φωνή)"
+		"el"		"O/H {1} μπορεί να μιλήσει στο chat από τώρα."
 	}
 
 	"Muted target"
@@ -30,9 +25,9 @@
 		"el"		"O/H {1} δεν μπορεί να μιλήσει με μικόφωνο."
 	}
 
-	"Silence Player"
+	"Unmuted target"
 	{
-		"el"		"Σίγαση παίκτη "
+		"el"		"O/H {1} μπορεί από τώρα να μιλήσει με μικόφωνο."
 	}
 
 	"Silenced target"
@@ -40,9 +35,14 @@
 		"el"		"O/H {1} σιωπήθηκε τελείως."
 	}
 
-	"UnGag Player"
+	"Unsilenced target"
 	{
-		"el"		"Αναίρεση σίγασης (μόνο chat)"
+		"el"		"O/H {1} μπορεί από τώρα να μιλήσει και να γράψει."
+	}
+
+	"Mute Player"
+	{
+		"el"		"Σίγαση παίκτη (μόνο φωνή)"
 	}
 
 	"UnMute Player"
@@ -50,24 +50,24 @@
 		"el"		"Aναίρεση σίγασης (μόνο φωνή)"
 	}
 
+	"Gag Player"
+	{
+		"el"		"Σίγαση παίκτη (μόνο chat)"
+	}
+
+	"UnGag Player"
+	{
+		"el"		"Αναίρεση σίγασης (μόνο chat)"
+	}
+
+	"Silence Player"
+	{
+		"el"		"Σίγαση παίκτη "
+	}
+
 	"UnSilence Player"
 	{
 		"el"		"Αναίρεση σίγασης (όλα)"
-	}
-
-	"Ungagged target"
-	{
-		"el"		"O/H {1} μπορεί να μιλήσει στο chat από τώρα."
-	}
-
-	"Unmuted target"
-	{
-		"el"		"O/H {1} μπορεί από τώρα να μιλήσει με μικόφωνο."
-	}
-
-	"Unsilenced target"
-	{
-		"el"		"O/H {1} μπορεί από τώρα να μιλήσει και να γράψει."
 	}
 
 }

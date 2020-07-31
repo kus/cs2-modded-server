@@ -1,48 +1,18 @@
 "Phrases"
 {
-	"Admin access"
+	"Unable to find cvar"
 	{
-		"da"		"Administrator adgang"
+		"da"		"Kunne ikke finde cvar: {1}"
 	}
 
-	"Admin cache refreshed"
+	"No access to cvar"
 	{
-		"da"		"Administrator lageret er blevet opdateret."
+		"da"		"Du har ikke adgang til denne cvar."
 	}
 
-	"Admin logged in anon"
+	"Value of cvar"
 	{
-		"da"		"\"{1}\" har adgang til: {2}"
-	}
-
-	"Admin logged in as"
-	{
-		"da"		"\"{1}\" er logget ind som \"{2}\" med adgang: {3}"
-	}
-
-	"Ban added"
-	{
-		"da"		"Bandlysning blev tilføjet."
-	}
-
-	"Banned player"
-	{
-		"da"		"Bandlyste spiller \"{1}\" med virkning  i {2} minutter."
-	}
-
-	"Banned player reason"
-	{
-		"da"		"Bandlyste spiller \"{1}\" med virkning i {2} minutter. (årsag: {3})."
-	}
-
-	"Choose Map"
-	{
-		"da"		"Vælg bane"
-	}
-
-	"Config not found"
-	{
-		"da"		"Konfigurations fil \"{1}\" blev ikke fundet."
+		"da"		"Værdi for cvar \"{1}\": \"{2}\""
 	}
 
 	"Cvar changed"
@@ -50,34 +20,14 @@
 		"da"		"Ændrede cvar \"{1}\" til \"{2}\"."
 	}
 
-	"Cvar is now protected"
+	"Config not found"
 	{
-		"da"		"Cvar {1} er nu beskyttet."
-	}
-
-	"Exec CFG"
-	{
-		"da"		"Kør CFG"
+		"da"		"Konfigurations fil \"{1}\" blev ikke fundet."
 	}
 
 	"Executed config"
 	{
 		"da"		"Kørte konfigurations fil \"{1}\"."
-	}
-
-	"Identify player"
-	{
-		"da"		"Identificer spiller"
-	}
-
-	"Kicked target"
-	{
-		"da"		"{1} blev fjernet"
-	}
-
-	"No access to cvar"
-	{
-		"da"		"Du har ikke adgang til denne cvar."
 	}
 
 	"Permabanned player"
@@ -90,14 +40,14 @@
 		"da"		" Spiller \"{1}\" er bandlyst for evigt (årsag: {2})."
 	}
 
-	"Player is an admin"
+	"Banned player"
 	{
-		"da"		"\"{1}\" er en administrator."
+		"da"		"Bandlyste spiller \"{1}\" med virkning  i {2} minutter."
 	}
 
-	"Player is not an admin"
+	"Banned player reason"
 	{
-		"da"		"\"{1}\" er ikke en administrator."
+		"da"		"Bandlyste spiller \"{1}\" med virkning i {2} minutter. (årsag: {3})."
 	}
 
 	"Removed bans matching"
@@ -105,9 +55,49 @@
 		"da"		"Bandlysninger som matcher filteret: \"{1}\" er blevet fjernet."
 	}
 
-	"Unable to find cvar"
+	"Ban added"
 	{
-		"da"		"Kunne ikke finde cvar: {1}"
+		"da"		"Bandlysning blev tilføjet."
+	}
+
+	"Admin cache refreshed"
+	{
+		"da"		"Administrator lageret er blevet opdateret."
+	}
+
+	"Identify player"
+	{
+		"da"		"Identificer spiller"
+	}
+
+	"Choose Map"
+	{
+		"da"		"Vælg bane"
+	}
+
+	"Exec CFG"
+	{
+		"da"		"Kør CFG"
+	}
+
+	"Admin logged in as"
+	{
+		"da"		"\"{1}\" er logget ind som \"{2}\" med adgang: {3}"
+	}
+
+	"Admin logged in anon"
+	{
+		"da"		"\"{1}\" har adgang til: {2}"
+	}
+
+	"Player is not an admin"
+	{
+		"da"		"\"{1}\" er ikke en administrator."
+	}
+
+	"Player is an admin"
+	{
+		"da"		"\"{1}\" er en administrator."
 	}
 
 	"Username"
@@ -115,9 +105,19 @@
 		"da"		"Brugernavn"
 	}
 
-	"Value of cvar"
+	"Kicked target"
 	{
-		"da"		"Værdi for cvar \"{1}\": \"{2}\""
+		"da"		"{1} blev fjernet"
+	}
+
+	"Admin access"
+	{
+		"da"		"Administrator adgang"
+	}
+
+	"Cvar is now protected"
+	{
+		"da"		"Cvar {1} er nu beskyttet."
 	}
 
 	"Kicked target reason"

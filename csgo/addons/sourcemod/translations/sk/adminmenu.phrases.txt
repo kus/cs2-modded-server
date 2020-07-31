@@ -5,14 +5,14 @@
 		"sk"		"Admin Menu"
 	}
 
-	"Server Commands"
-	{
-		"sk"		"Serverové príkazy"
-	}
-
 	"Player Commands"
 	{
 		"sk"		"Hráčske príkazy"
+	}
+
+	"Server Commands"
+	{
+		"sk"		"Serverové príkazy"
 	}
 
 	"Voting Commands"

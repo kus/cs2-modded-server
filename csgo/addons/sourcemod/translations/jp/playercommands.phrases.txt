@@ -5,11 +5,6 @@
 		"jp"		"プレイヤーを叩く"
 	}
 
-	"Slapped target"
-	{
-		"jp"		"{1}を叩きました。"
-	}
-
 	"Slap damage"
 	{
 		"jp"		"叩くダメージ"
@@ -18,6 +13,11 @@
 	"Slay player"
 	{
 		"jp"		"プレイヤーを殺害"
+	}
+
+	"Slapped target"
+	{
+		"jp"		"{1}を叩きました。"
 	}
 
 	"Slayed target"
@@ -30,14 +30,14 @@
 		"jp"		"管理者があなたの名前を変更しました。"
 	}
 
-	"Rename player"
-	{
-		"jp"		"プレイヤーをリネーム"
-	}
-
 	"Renamed target"
 	{
 		"jp"		"リネーム対象"
+	}
+
+	"Rename player"
+	{
+		"jp"		"プレイヤーをリネーム"
 	}
 
 	"Dead Player Rename"

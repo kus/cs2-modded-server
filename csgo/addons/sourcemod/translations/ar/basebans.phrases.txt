@@ -1,10 +1,5 @@
 "Phrases"
 {
-	"Ban added"
-	{
-		"ar"		"تمت إضافة حظر"
-	}
-
 	"Ban player"
 	{
 		"ar"		"لاعب الحظر"
@@ -13,6 +8,16 @@
 	"Ban reason"
 	{
 		"ar"		"سبب الحظر"
+	}
+
+	"Permabanned player"
+	{
+		"ar"		"لاعب فرض حظر دائم \"{1}\""
+	}
+
+	"Permabanned player reason"
+	{
+		"ar"		"لاعب فرض حظر دائم \"{1}\" (السبب: {2})."
 	}
 
 	"Banned player"
@@ -25,24 +30,24 @@
 		"ar"		"لاعب المحظورة \"{1}\" ل{2} دقيقة (السبب: {3})"
 	}
 
-	"Cannot ban that IP"
-	{
-		"ar"		"لا يمكنك حظر عنوان IP"
-	}
-
 	"Removed bans matching"
 	{
 		"ar"		"يحظر إزالة مطابقة التصفية: {1}"
 	}
 
-	"Permabanned player reason"
+	"Ban added"
 	{
-		"ar"		"لاعب فرض حظر دائم \"{1}\" (السبب: {2})."
+		"ar"		"تمت إضافة حظر"
 	}
 
-	"Permabanned player"
+	"Cannot ban that IP"
 	{
-		"ar"		"لاعب فرض حظر دائم \"{1}\""
+		"ar"		"لا يمكنك حظر عنوان IP"
+	}
+
+	"Custom ban reason explanation"
+	{
+		"ar"		"أكتب سبب الحظر. إستعمل {1} للإلغاء."
 	}
 
 	"AbortBan applied successfully"
@@ -53,11 +58,6 @@
 	"AbortBan not waiting for custom reason"
 	{
 		"ar"		"لا حظر ليتم الإلغاء"
-	}
-
-	"Custom ban reason explanation"
-	{
-		"ar"		"أكتب سبب الحظر. إستعمل {1} للإلغاء."
 	}
 
 }

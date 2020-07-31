@@ -1,33 +1,8 @@
 "Phrases"
 {
-	"Alltalk vote"
+	"Initiated Vote Gravity"
 	{
-		"cze"		"Hlasovani o Alltalk"
-	}
-
-	"Burn vote"
-	{
-		"cze"		"Hlasovani o zapaleni"
-	}
-
-	"Change Gravity To"
-	{
-		"cze"		"Zmenit gravitaci na {1}?"
-	}
-
-	"Gravity Vote"
-	{
-		"cze"		"Hlasovani o gravitaci: {1}"
-	}
-
-	"Gravity vote"
-	{
-		"cze"		"Hlasovani o gravitaci"
-	}
-
-	"Initiated Vote Alltalk"
-	{
-		"cze"		"Zahajil hlasovani o alltalku."
+		"cze"		"Zahajil hlasovani o gravitaci."
 	}
 
 	"Initiated Vote Burn"
@@ -35,34 +10,39 @@
 		"cze"		"Zahajil hlasovani o zapaleni proti hraci {1}."
 	}
 
-	"Initiated Vote FF"
-	{
-		"cze"		"Zahajil hlasovani o Friendly Fire."
-	}
-
-	"Initiated Vote Gravity"
-	{
-		"cze"		"Zahajil hlasovani o gravitaci."
-	}
-
 	"Initiated Vote Slay"
 	{
 		"cze"		"Zahajil hlasovani o zabiti proti hraci {1}."
 	}
 
-	"Slay vote"
+	"Initiated Vote Alltalk"
 	{
-		"cze"		"Hlasovani o zabiti"
+		"cze"		"Zahajil hlasovani o alltalku."
 	}
 
-	"Vote FF"
+	"Initiated Vote FF"
 	{
-		"cze"		"Hlasovani o FriendlyFire"
+		"cze"		"Zahajil hlasovani o Friendly Fire."
 	}
 
-	"Slayed player"
+	"Gravity Vote"
 	{
-		"cze"		"Zabil hrace '{1}'"
+		"cze"		"Hlasovani o gravitaci: {1}"
+	}
+
+	"Change Gravity To"
+	{
+		"cze"		"Zmenit gravitaci na {1}?"
+	}
+
+	"Voteburn player"
+	{
+		"cze"		" Zapalit hrace {1}?"
+	}
+
+	"Voteslay Player"
+	{
+		"cze"		"Zabit hrace {1}?"
 	}
 
 	"Votealltalk Off"
@@ -75,24 +55,44 @@
 		"cze"		"Zapnout alltalk? {1}"
 	}
 
-	"Voteburn player"
-	{
-		"cze"		" Zapalit hrace {1}?"
-	}
-
 	"Voteff Off"
 	{
 		"cze"		"Vypnout FriendlyFire? {1}"
 	}
 
-	"Voteslay Player"
-	{
-		"cze"		"Zabit hrace {1}?"
-	}
-
 	"Voteff On"
 	{
 		"cze"		"Zapnout FriendlyFire? {1}"
+	}
+
+	"Gravity vote"
+	{
+		"cze"		"Hlasovani o gravitaci"
+	}
+
+	"Vote FF"
+	{
+		"cze"		"Hlasovani o FriendlyFire"
+	}
+
+	"Burn vote"
+	{
+		"cze"		"Hlasovani o zapaleni"
+	}
+
+	"Alltalk vote"
+	{
+		"cze"		"Hlasovani o Alltalk"
+	}
+
+	"Slay vote"
+	{
+		"cze"		"Hlasovani o zabiti"
+	}
+
+	"Slayed player"
+	{
+		"cze"		"Zabil hrace '{1}'"
 	}
 
 }

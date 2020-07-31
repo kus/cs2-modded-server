@@ -5,11 +5,6 @@
 		"fr"		"Map suivante: {1}"
 	}
 
-	"Reason"
-	{
-		"fr"		"[Raison d'interruption]"
-	}
-
 	"Map History"
 	{
 		"fr"		"Historique des Maps"
@@ -28,6 +23,11 @@
 	"Played Time"
 	{
 		"fr"		"[Temps Joué]"
+	}
+
+	"Reason"
+	{
+		"fr"		"[Raison d'interruption]"
 	}
 
 	"Current Map"

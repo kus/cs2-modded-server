@@ -1,8 +1,8 @@
 "Phrases"
 {
-	"_s"
+	"No Access"
 	{
-		"zho"		"{1}"
+		"zho"		"你無權使用該指令"
 	}
 
 	"Back"
@@ -10,19 +10,24 @@
 		"zho"		"返回"
 	}
 
+	"Next"
+	{
+		"zho"		"繼續"
+	}
+
 	"Exit"
 	{
 		"zho"		"退出"
 	}
 
+	"Previous"
+	{
+		"zho"		"前一頁"
+	}
+
 	"all players"
 	{
 		"zho"		"所有玩家"
-	}
-
-	"all dead players"
-	{
-		"zho"		"所有已死玩家"
 	}
 
 	"all humans"
@@ -35,24 +40,24 @@
 		"zho"		"所有電腦玩家 (Bots)"
 	}
 
+	"all dead players"
+	{
+		"zho"		"所有已死玩家"
+	}
+
 	"all alive players"
 	{
 		"zho"		"所有生存玩家"
 	}
 
-	"Previous"
+	"_s"
 	{
-		"zho"		"前一頁"
+		"zho"		"{1}"
 	}
 
-	"Next"
+	"all spectators"
 	{
-		"zho"		"繼續"
-	}
-
-	"Changed Vote"
-	{
-		"zho"		"{1}更改投票為{2}"
+		"zho"		"所有觀察者"
 	}
 
 	"Vote Count"
@@ -65,14 +70,9 @@
 		"zho"		"{1}投票選擇{2}"
 	}
 
-	"all spectators"
+	"Changed Vote"
 	{
-		"zho"		"所有觀察者"
-	}
-
-	"No Access"
-	{
-		"zho"		"你無權使用該指令"
+		"zho"		"{1}更改投票為{2}"
 	}
 
 	"No Vote"

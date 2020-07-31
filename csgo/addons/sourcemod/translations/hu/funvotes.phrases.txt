@@ -1,28 +1,13 @@
 "Phrases"
 {
-	"Vote FF"
+	"Initiated Vote Gravity"
 	{
-		"hu"		"Csapatsebzés szavazás"
+		"hu"		"Gravitacios szavazas"
 	}
 
 	"Initiated Vote Burn"
 	{
 		"hu"		"{1} megégetése szavazásra bocsájtva"
-	}
-
-	"Gravity vote"
-	{
-		"hu"		"Gravitáció szavazás"
-	}
-
-	"Gravity Vote"
-	{
-		"hu"		"Gravitáció szavazás: {1}?"
-	}
-
-	"Initiated Vote Gravity"
-	{
-		"hu"		"Gravitacios szavazas"
 	}
 
 	"Initiated Vote Slay"
@@ -38,6 +23,11 @@
 	"Initiated Vote FF"
 	{
 		"hu"		"FF szavazas"
+	}
+
+	"Gravity Vote"
+	{
+		"hu"		"Gravitáció szavazás: {1}?"
 	}
 
 	"Change Gravity To"
@@ -73,6 +63,16 @@
 	"Voteff On"
 	{
 		"hu"		"Bekapcsoljuk az FF-et? {1}"
+	}
+
+	"Gravity vote"
+	{
+		"hu"		"Gravitáció szavazás"
+	}
+
+	"Vote FF"
+	{
+		"hu"		"Csapatsebzés szavazás"
 	}
 
 	"Burn vote"

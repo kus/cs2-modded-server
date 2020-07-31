@@ -1,8 +1,13 @@
 "Phrases"
 {
-	"Cookie Value"
+	"Cookie List"
 	{
-		"pt"		"O valor de {1} é {2}"
+		"pt"		"Lista de cookies do Sourcemod"
+	}
+
+	"Printing Cookie List"
+	{
+		"pt"		"Listando cookies no console"
 	}
 
 	"Cookie not Found"
@@ -10,9 +15,24 @@
 		"pt"		"Não foi possível encontrar o cookie \"{1}\""
 	}
 
-	"Printing Cookie List"
+	"Cookie Value"
 	{
-		"pt"		"Listando cookies no console"
+		"pt"		"O valor de {1} é {2}"
+	}
+
+	"Protected Cookie"
+	{
+		"pt"		"Não é possível alterar o valor do cookie protegido \"{1}\" "
+	}
+
+	"Cookie Changed Value"
+	{
+		"pt"		"Alterou o valor do cookie \"{1}\" para \"{2}\" "
+	}
+
+	"No Console"
+	{
+		"pt"		"Não é possível exibir o menu de configurações no console"
 	}
 
 	"Choose Option"
@@ -23,26 +43,6 @@
 	"Client Settings"
 	{
 		"pt"		"Configurações do cliente"
-	}
-
-	"Cookie List"
-	{
-		"pt"		"Lista de cookies do Sourcemod"
-	}
-
-	"No Console"
-	{
-		"pt"		"Não é possível exibir o menu de configurações no console"
-	}
-
-	"Cookie Changed Value"
-	{
-		"pt"		"Alterou o valor do cookie \"{1}\" para \"{2}\" "
-	}
-
-	"Protected Cookie"
-	{
-		"pt"		"Não é possível alterar o valor do cookie protegido \"{1}\" "
 	}
 
 }

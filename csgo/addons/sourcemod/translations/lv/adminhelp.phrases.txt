@@ -1,8 +1,8 @@
 "Phrases"
 {
-	"No commands available"
+	"SM help commands"
 	{
-		"lv"		"Komandas nav pieejamas"
+		"lv"		"SourceMod palīdzība: Informācija par komandām"
 	}
 
 	"No description available"
@@ -10,14 +10,9 @@
 		"lv"		"Apraksts nav pieejams"
 	}
 
-	"No matching results found"
+	"No commands available"
 	{
-		"lv"		"Atbilsotoši rezultāti netika atrasti"
-	}
-
-	"SM help commands"
-	{
-		"lv"		"SourceMod palīdzība: Informācija par komandām"
+		"lv"		"Komandas nav pieejamas"
 	}
 
 	"Type sm_help to see more"
@@ -28,6 +23,11 @@
 	"Entries n - m in page k"
 	{
 		"lv"		"Ieraksti no {1} līdz {2} lapaspusē {3} "
+	}
+
+	"No matching results found"
+	{
+		"lv"		"Atbilsotoši rezultāti netika atrasti"
 	}
 
 }

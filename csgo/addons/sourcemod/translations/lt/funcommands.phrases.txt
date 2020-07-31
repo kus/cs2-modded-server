@@ -1,28 +1,23 @@
 "Phrases"
 {
-	"Toggled noclip on target"
+	"Burn player"
 	{
-		"lt"		"įjungtas noclip žaidėjui {1}."
+		"lt"		"Uždegti žaidėją"
 	}
 
-	"Toggled beacon on target"
+	"FireBomb player"
 	{
-		"lt"		"įjungtas švyturiavimas žaidėjui {1}."
+		"lt"		"Degančios bombos žaidėjas"
 	}
 
-	"Toggled TimeBomb on target"
+	"Freeze player"
 	{
-		"lt"		"įjungta laiko bomba žaidėjui {1}."
+		"lt"		"Sušaldyti žaidėją"
 	}
 
-	"Toggled FreezeBomb on target"
+	"FreezeBomb player"
 	{
-		"lt"		"įjungta sušaldymo bomba žaidėjui {1}."
-	}
-
-	"Toggled FireBomb on target"
-	{
-		"lt"		"įjungta ugnies bomba žaidėjui {1}."
+		"lt"		"Šaldomosios bombos žaidėjas"
 	}
 
 	"TimeBomb player"
@@ -30,24 +25,9 @@
 		"lt"		"Laiko bomba žaidėjas"
 	}
 
-	"Till Explodes"
+	"Beacon player"
 	{
-		"lt"		"{2} sekundžių(ės) iki {1} sprogs."
-	}
-
-	"Set target on fire"
-	{
-		"lt"		"{1} buvo padegtas."
-	}
-
-	"Set gravity on target"
-	{
-		"lt"		"nustatė {1} gravitaciją."
-	}
-
-	"Set blind on target"
-	{
-		"lt"		"žaidėjas {1} tapo aklas."
+		"lt"		"Švyturiuojantis žaidėjas"
 	}
 
 	"NoClip player"
@@ -55,9 +35,39 @@
 		"lt"		"NoClip žaidėjas"
 	}
 
+	"Blind player"
+	{
+		"lt"		"Apakinti žaidėją"
+	}
+
+	"Drug player"
+	{
+		"lt"		"Apsvaiginti žaidėją"
+	}
+
 	"Gravity player"
 	{
 		"lt"		"Žaidėjas su nestandartine gravitacija"
+	}
+
+	"Blind amount"
+	{
+		"lt"		"Kiek apakinti?"
+	}
+
+	"Fully blind"
+	{
+		"lt"		"Visiškai aklas"
+	}
+
+	"Half blind"
+	{
+		"lt"		"Pusiau apakintas"
+	}
+
+	"No blind"
+	{
+		"lt"		"Neapakintas"
 	}
 
 	"Gravity amount"
@@ -65,14 +75,14 @@
 		"lt"		"Gravitacija?"
 	}
 
-	"Gravity Very Low"
-	{
-		"lt"		"Gravitacija labai maža"
-	}
-
 	"Gravity Very High"
 	{
 		"lt"		"Gravitacija labai didelė"
+	}
+
+	"Gravity High"
+	{
+		"lt"		"Gravitacija didelė"
 	}
 
 	"Gravity Normal"
@@ -85,14 +95,19 @@
 		"lt"		"Gravitacija maža"
 	}
 
-	"Gravity High"
+	"Gravity Very Low"
 	{
-		"lt"		"Gravitacija didelė"
+		"lt"		"Gravitacija labai maža"
 	}
 
-	"Fully blind"
+	"Set target on fire"
 	{
-		"lt"		"Visiškai aklas"
+		"lt"		"{1} buvo padegtas."
+	}
+
+	"Toggled FireBomb on target"
+	{
+		"lt"		"įjungta ugnies bomba žaidėjui {1}."
 	}
 
 	"Froze target"
@@ -100,54 +115,24 @@
 		"lt"		"sušalo {1}."
 	}
 
-	"FreezeBomb player"
+	"Toggled FreezeBomb on target"
 	{
-		"lt"		"Šaldomosios bombos žaidėjas"
+		"lt"		"įjungta sušaldymo bomba žaidėjui {1}."
 	}
 
-	"FireBomb player"
+	"Toggled beacon on target"
 	{
-		"lt"		"Degančios bombos žaidėjas"
+		"lt"		"įjungtas švyturiavimas žaidėjui {1}."
 	}
 
-	"Beacon player"
+	"Toggled TimeBomb on target"
 	{
-		"lt"		"Švyturiuojantis žaidėjas"
+		"lt"		"įjungta laiko bomba žaidėjui {1}."
 	}
 
-	"Blind amount"
+	"Toggled noclip on target"
 	{
-		"lt"		"Kiek apakinti?"
-	}
-
-	"Blind player"
-	{
-		"lt"		"Apakinti žaidėją"
-	}
-
-	"Burn player"
-	{
-		"lt"		"Uždegti žaidėją"
-	}
-
-	"Drug player"
-	{
-		"lt"		"Apsvaiginti žaidėją"
-	}
-
-	"Freeze player"
-	{
-		"lt"		"Sušaldyti žaidėją"
-	}
-
-	"You will be unfrozen"
-	{
-		"lt"		"Jūs būsite atšildytas po {1} sekundžių"
-	}
-
-	"Unfrozen"
-	{
-		"lt"		"Jūs buvote atšildytas"
+		"lt"		"įjungtas noclip žaidėjui {1}."
 	}
 
 	"Toggled drug on target"
@@ -155,14 +140,29 @@
 		"lt"		"įjungtas apsvaiginimas žaidėjui {1}"
 	}
 
-	"Half blind"
+	"Set blind on target"
 	{
-		"lt"		"Pusiau apakintas"
+		"lt"		"žaidėjas {1} tapo aklas."
 	}
 
-	"No blind"
+	"Set gravity on target"
 	{
-		"lt"		"Neapakintas"
+		"lt"		"nustatė {1} gravitaciją."
+	}
+
+	"Till Explodes"
+	{
+		"lt"		"{2} sekundžių(ės) iki {1} sprogs."
+	}
+
+	"Unfrozen"
+	{
+		"lt"		"Jūs buvote atšildytas"
+	}
+
+	"You will be unfrozen"
+	{
+		"lt"		"Jūs būsite atšildytas po {1} sekundžių"
 	}
 
 }

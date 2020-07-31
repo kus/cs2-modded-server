@@ -1,10 +1,5 @@
 "Phrases"
 {
-	"AbortBan applied successfully"
-	{
-		"vi"		"Đã hủy lệnh cấm."
-	}
-
 	"Ban player"
 	{
 		"vi"		"Cấm người chơi"
@@ -13,21 +8,6 @@
 	"Ban reason"
 	{
 		"vi"		"Lý do cấm"
-	}
-
-	"Banned player reason"
-	{
-		"vi"		"Người chơi \"{1}\" đã bị cấm khỏi máy chủ trong vòng {2} phút (Lý do: {3})."
-	}
-
-	"Cannot ban that IP"
-	{
-		"vi"		"Bạn không thể cấm địa chỉ IP đó."
-	}
-
-	"Custom ban reason explanation"
-	{
-		"vi"		"Hãy gõ lý do cấm. Gõ {1} để hủy."
 	}
 
 	"Permabanned player"
@@ -40,19 +20,39 @@
 		"vi"		"Đã cấm vĩnh viễn người chơi {1} khỏi máy chủ (Lý do: {2})."
 	}
 
-	"Removed bans matching"
-	{
-		"vi"		"Đã bỏ các lệnh cấm chứa bộ lọc: {1}"
-	}
-
 	"Banned player"
 	{
 		"vi"		"Người chơi \"{1}\" đã bị cấm khỏi máy chủ trong vòng {2} phút."
 	}
 
+	"Banned player reason"
+	{
+		"vi"		"Người chơi \"{1}\" đã bị cấm khỏi máy chủ trong vòng {2} phút (Lý do: {3})."
+	}
+
+	"Removed bans matching"
+	{
+		"vi"		"Đã bỏ các lệnh cấm chứa bộ lọc: {1}"
+	}
+
 	"Ban added"
 	{
 		"vi"		"Đã thêm lệnh cấm."
+	}
+
+	"Cannot ban that IP"
+	{
+		"vi"		"Bạn không thể cấm địa chỉ IP đó."
+	}
+
+	"Custom ban reason explanation"
+	{
+		"vi"		"Hãy gõ lý do cấm. Gõ {1} để hủy."
+	}
+
+	"AbortBan applied successfully"
+	{
+		"vi"		"Đã hủy lệnh cấm."
 	}
 
 	"AbortBan not waiting for custom reason"

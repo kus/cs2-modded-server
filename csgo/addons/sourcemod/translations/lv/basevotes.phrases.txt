@@ -1,5 +1,35 @@
 "Phrases"
 {
+	"Initiate Vote"
+	{
+		"lv"		"Uzsāka aptauju: {1}"
+	}
+
+	"Initiated Vote Map"
+	{
+		"lv"		"Uzsāka kartes maiņas aptauju."
+	}
+
+	"Initiated Vote Kick"
+	{
+		"lv"		"Uzsāka izmešanas aptauju pret {1}."
+	}
+
+	"Initiated Vote Ban"
+	{
+		"lv"		"Uzsāka banošanas aptauju pret {1}."
+	}
+
+	"Map Vote"
+	{
+		"lv"		"Aptauja par karti: {1}"
+	}
+
+	"Change Map To"
+	{
+		"lv"		"Nomainīt karti uz {1}?"
+	}
+
 	"Votekick Player"
 	{
 		"lv"		"Izmest {1}?"
@@ -25,54 +55,24 @@
 		"lv"		"Atbilde uz {1} ir: {2}."
 	}
 
-	"Map vote"
-	{
-		"lv"		"Aptauja par karti"
-	}
-
-	"Map Vote"
-	{
-		"lv"		"Aptauja par karti: {1}"
-	}
-
-	"Change Map To"
-	{
-		"lv"		"Nomainīt karti uz {1}?"
-	}
-
-	"Confirm Vote"
-	{
-		"lv"		"Apstiprināt aptauju"
-	}
-
-	"Initiate Vote"
-	{
-		"lv"		"Uzsāka aptauju: {1}"
-	}
-
-	"Initiated Vote Kick"
-	{
-		"lv"		"Uzsāka izmešanas aptauju pret {1}."
-	}
-
-	"Initiated Vote Map"
-	{
-		"lv"		"Uzsāka kartes maiņas aptauju."
-	}
-
 	"Kick vote"
 	{
 		"lv"		"Izmešanas aptauja"
 	}
 
-	"Initiated Vote Ban"
-	{
-		"lv"		"Uzsāka banošanas aptauju pret {1}."
-	}
-
 	"Ban vote"
 	{
 		"lv"		"Banošanas aptauja"
+	}
+
+	"Map vote"
+	{
+		"lv"		"Aptauja par karti"
+	}
+
+	"Confirm Vote"
+	{
+		"lv"		"Apstiprināt aptauju"
 	}
 
 	"Map Vote In Use"

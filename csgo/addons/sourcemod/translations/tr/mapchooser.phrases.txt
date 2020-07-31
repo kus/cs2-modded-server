@@ -15,19 +15,19 @@
 		"tr"		"Harita oylaması sona erdi. Sıradaki harita {1} olacak. ({3} oyun %%{2}'i alındı) "
 	}
 
-	"Extend Map"
-	{
-		"tr"		"Geçerli Haritayı Uzat"
-	}
-
 	"Current Map Extended"
 	{
 		"tr"		"Geçerli harita uzatıldı. ({2} oyun %%{1}'i alındı) "
 	}
 
-	"Changed Next Map"
+	"Extend Map"
 	{
-		"tr"		"Sıradaki harita \"{1}\" olarak değiştirildi."
+		"tr"		"Geçerli Haritayı Uzat"
+	}
+
+	"Dont Change"
+	{
+		"tr"		"Değiştirme"
 	}
 
 	"Current Map Stays"
@@ -35,9 +35,9 @@
 		"tr"		"Geçerli harita devam ediyor! Oylama konuştu! ({2} oyun %%{1}'i alındı)  "
 	}
 
-	"Dont Change"
+	"Changed Next Map"
 	{
-		"tr"		"Değiştirme"
+		"tr"		"Sıradaki harita \"{1}\" olarak değiştirildi."
 	}
 
 	"Starting Runoff"

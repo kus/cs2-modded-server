@@ -1,33 +1,8 @@
 "Phrases"
 {
-	"Vote End"
-	{
-		"sv"		"Svaret till {1} är: {2}. "
-	}
-
-	"Change Map To"
-	{
-		"sv"		" Byt karta till {1}? "
-	}
-
-	"Confirm Vote"
-	{
-		"sv"		"Bekräfta omröstning "
-	}
-
 	"Initiate Vote"
 	{
 		"sv"		"Påbörjade omröstning: {1} "
-	}
-
-	"Initiated Vote Ban"
-	{
-		"sv"		"Startade en bannlysomröstning mot {1}."
-	}
-
-	"Initiated Vote Kick"
-	{
-		"sv"		"Startade en utsparkningomröstning mot {1}. "
 	}
 
 	"Initiated Vote Map"
@@ -35,9 +10,14 @@
 		"sv"		"Startade omröstning om karta. "
 	}
 
-	"Kick vote"
+	"Initiated Vote Kick"
 	{
-		"sv"		"Utsparkningsomröstning"
+		"sv"		"Startade en utsparkningomröstning mot {1}. "
+	}
+
+	"Initiated Vote Ban"
+	{
+		"sv"		"Startade en bannlysomröstning mot {1}."
 	}
 
 	"Map Vote"
@@ -45,24 +25,9 @@
 		"sv"		"Kartomröstning: {1} "
 	}
 
-	"Map vote"
+	"Change Map To"
 	{
-		"sv"		"Kartomröstning "
-	}
-
-	"Vote Failed"
-	{
-		"sv"		"Omröstningen misslyckades. {1}%% röster krävs. (Fick {2}%% av {3} röster) "
-	}
-
-	"Vote Successful"
-	{
-		"sv"		"Omröstningen lyckades. (Fick {1}%% av {2} röster) "
-	}
-
-	"Voteban Player"
-	{
-		"sv"		"Bannlys {1}? "
+		"sv"		" Byt karta till {1}? "
 	}
 
 	"Votekick Player"
@@ -70,9 +35,29 @@
 		"sv"		"Sparka ut {1}? "
 	}
 
-	"Map Vote In Use"
+	"Voteban Player"
 	{
-		"sv"		"En annan admin använder just nu menyn för kartomröstningar."
+		"sv"		"Bannlys {1}? "
+	}
+
+	"Vote Successful"
+	{
+		"sv"		"Omröstningen lyckades. (Fick {1}%% av {2} röster) "
+	}
+
+	"Vote Failed"
+	{
+		"sv"		"Omröstningen misslyckades. {1}%% röster krävs. (Fick {2}%% av {3} röster) "
+	}
+
+	"Vote End"
+	{
+		"sv"		"Svaret till {1} är: {2}. "
+	}
+
+	"Kick vote"
+	{
+		"sv"		"Utsparkningsomröstning"
 	}
 
 	"Ban vote"
@@ -80,14 +65,29 @@
 		"sv"		"Omröstning om bannlysning"
 	}
 
-	"Start the Vote"
+	"Map vote"
 	{
-		"sv"		"Starta omröstningen"
+		"sv"		"Kartomröstning "
+	}
+
+	"Confirm Vote"
+	{
+		"sv"		"Bekräfta omröstning "
+	}
+
+	"Map Vote In Use"
+	{
+		"sv"		"En annan admin använder just nu menyn för kartomröstningar."
 	}
 
 	"Please select a map"
 	{
 		"sv"		"Vänligen välj en karta"
+	}
+
+	"Start the Vote"
+	{
+		"sv"		"Starta omröstningen"
 	}
 
 }

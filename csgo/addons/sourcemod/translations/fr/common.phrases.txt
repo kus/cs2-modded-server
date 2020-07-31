@@ -1,118 +1,13 @@
 "Phrases"
 {
-	"Cancel vote"
+	"Yes"
 	{
-		"fr"		"Annuler le vote"
-	}
-
-	"Cannot target bot"
-	{
-		"fr"		"Impossible d'utiliser cette commande sur un bot."
-	}
-
-	"Could not connect to database"
-	{
-		"fr"		"Impossible de se connecter à la base de données."
-	}
-
-	"Executed config"
-	{
-		"fr"		"a exécuté la config \"{1}\"."
-	}
-
-	"Invalid Amount"
-	{
-		"fr"		"Montant spécifié invalide"
-	}
-
-	"Kicked player"
-	{
-		"fr"		"a kické le joueur '{1}' "
+		"fr"		"Oui"
 	}
 
 	"No"
 	{
 		"fr"		"Non"
-	}
-
-	"Played Sound"
-	{
-		"fr"		"a joué un son au joueur '{1}' "
-	}
-
-	"Player no longer available"
-	{
-		"fr"		"Le joueur sélectionné n'est plus en jeu."
-	}
-
-	"Slayed player"
-	{
-		"fr"		"a tué le joueur '{1}' "
-	}
-
-	"Cannot be performed on dead"
-	{
-		"fr"		"Cette action ne peut être effectuée sur le joueur mort \"{1}\""
-	}
-
-	"Changing map"
-	{
-		"fr"		"Changement de map pour {1}..."
-	}
-
-	"No access to cvar"
-	{
-		"fr"		"Vous n'avez pas accès à cette cvar."
-	}
-
-	"Player has since died"
-	{
-		"fr"		"Cette action ne peut être effectuée, le joueur est mort entre temps."
-	}
-
-	"Failed to query database"
-	{
-		"fr"		"Impossible d'atteindre la base de données."
-	}
-
-	"Off"
-	{
-		"fr"		"Off"
-	}
-
-	"On"
-	{
-		"fr"		"On"
-	}
-
-	"Admin cache refreshed"
-	{
-		"fr"		"Le cache Admin a été actualisé."
-	}
-
-	"Command is in-game only"
-	{
-		"fr"		"Cette commande ne peut être utilisée qu'en Jeu."
-	}
-
-	"Config not found"
-	{
-		"fr"		"Fichier de configuration \"{1}\" non trouvé."
-	}
-
-	"Cvar changed"
-	{
-		"fr"		"a changé la cvar \"{1}\" pour \"{2}\". "
-	}
-
-	"Kicked by admin"
-	{
-		"fr"		"a été Kické par un Admin"
-	}
-
-	"More than one client matches"
-	{
-		"fr"		"Plus d'un Client correspond au filtre \"{1}\""
 	}
 
 	"No matching client"
@@ -125,9 +20,9 @@
 		"fr"		"Aucun Clients correspondants trouvés."
 	}
 
-	"Yes"
+	"More than one client matches"
 	{
-		"fr"		"Oui"
+		"fr"		"Plus d'un Client correspond au filtre \"{1}\""
 	}
 
 	"More than one client matched"
@@ -135,9 +30,24 @@
 		"fr"		"Plus d'un Client correspondait au filtre donné."
 	}
 
+	"Player no longer available"
+	{
+		"fr"		"Le joueur sélectionné n'est plus en jeu."
+	}
+
 	"Kick player"
 	{
 		"fr"		"Kicker le Joueur"
+	}
+
+	"Kicked by admin"
+	{
+		"fr"		"a été Kické par un Admin"
+	}
+
+	"Changing map"
+	{
+		"fr"		"Changement de map pour {1}..."
 	}
 
 	"Map was not found"
@@ -155,9 +65,19 @@
 		"fr"		"Nom"
 	}
 
+	"Access"
+	{
+		"fr"		"Accès"
+	}
+
 	"See console for output"
 	{
 		"fr"		"Voir la console."
+	}
+
+	"Cannot target bot"
+	{
+		"fr"		"Impossible d'utiliser cette commande sur un bot."
 	}
 
 	"Unable to find cvar"
@@ -165,9 +85,49 @@
 		"fr"		"Impossible de trouver la Cvar: {1}"
 	}
 
+	"No access to cvar"
+	{
+		"fr"		"Vous n'avez pas accès à cette cvar."
+	}
+
 	"Value of cvar"
 	{
 		"fr"		"Valeur de la Cvar \"{1}\": \"{2}\""
+	}
+
+	"Cvar changed"
+	{
+		"fr"		"a changé la cvar \"{1}\" pour \"{2}\". "
+	}
+
+	"Config not found"
+	{
+		"fr"		"Fichier de configuration \"{1}\" non trouvé."
+	}
+
+	"Executed config"
+	{
+		"fr"		"a exécuté la config \"{1}\"."
+	}
+
+	"Admin cache refreshed"
+	{
+		"fr"		"Le cache Admin a été actualisé."
+	}
+
+	"Invalid Amount"
+	{
+		"fr"		"Montant spécifié invalide"
+	}
+
+	"Cannot be performed on dead"
+	{
+		"fr"		"Cette action ne peut être effectuée sur le joueur mort \"{1}\""
+	}
+
+	"Player has since died"
+	{
+		"fr"		"Cette action ne peut être effectuée, le joueur est mort entre temps."
 	}
 
 	"Vote in Progress"
@@ -185,9 +145,19 @@
 		"fr"		"a annulé le Vote."
 	}
 
+	"Cancel vote"
+	{
+		"fr"		"Annuler le vote"
+	}
+
 	"Vote Select"
 	{
 		"fr"		"{1} a choisi {2}."
+	}
+
+	"No Votes Cast"
+	{
+		"fr"		"Aucun Vote n'a été enregistré. "
 	}
 
 	"Vote Delay Minutes"
@@ -200,9 +170,29 @@
 		"fr"		"Vous devez attendre {1} secondes avant de commencer un nouveau vote."
 	}
 
+	"Could not connect to database"
+	{
+		"fr"		"Impossible de se connecter à la base de données."
+	}
+
+	"Failed to query database"
+	{
+		"fr"		"Impossible d'atteindre la base de données."
+	}
+
+	"Invalid SteamID specified"
+	{
+		"fr"		" Vous avez spécifié un Steam ID invalide (doit commencer par 'STEAM_:'). "
+	}
+
 	"Reload admins"
 	{
 		"fr"		"Recharger la liste Admins"
+	}
+
+	"Command is in-game only"
+	{
+		"fr"		"Cette commande ne peut être utilisée qu'en Jeu."
 	}
 
 	"Target must be dead"
@@ -220,6 +210,26 @@
 		"fr"		"Ce Joueur n'est pas complètement en Jeu."
 	}
 
+	"Played Sound"
+	{
+		"fr"		"a joué un son au joueur '{1}' "
+	}
+
+	"Slapped player"
+	{
+		"fr"		"a giflé '{1}'"
+	}
+
+	"Slayed player"
+	{
+		"fr"		"a tué le joueur '{1}' "
+	}
+
+	"Kicked player"
+	{
+		"fr"		"a kické le joueur '{1}' "
+	}
+
 	"Cannot participate in vote"
 	{
 		"fr"		"Vous ne pouvez pas participer à ce vote."
@@ -230,24 +240,14 @@
 		"fr"		"Vous ne pouvez pas changer votre sélection pour ce vote."
 	}
 
-	"Access"
+	"On"
 	{
-		"fr"		"Accès"
+		"fr"		"On"
 	}
 
-	"Slapped player"
+	"Off"
 	{
-		"fr"		"a giflé '{1}'"
-	}
-
-	"No Votes Cast"
-	{
-		"fr"		"Aucun Vote n'a été enregistré. "
-	}
-
-	"Invalid SteamID specified"
-	{
-		"fr"		" Vous avez spécifié un Steam ID invalide (doit commencer par 'STEAM_:'). "
+		"fr"		"Off"
 	}
 
 }

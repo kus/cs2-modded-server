@@ -1,15 +1,5 @@
 "Phrases"
 {
-	"SQL Group deleted"
-	{
-		"fr"		"Le groupe a été supprimé de la base de données."
-	}
-
-	"SQL Admin already exists"
-	{
-		"fr"		"Un administrateur avec les droits désignés existe déjà."
-	}
-
 	"Invalid authtype"
 	{
 		"fr"		"Auth type doit être 'steam', 'name', ou 'ip'."
@@ -18,6 +8,11 @@
 	"Invalid immunity"
 	{
 		"fr"		"L'Immunité doit être un entier positif."
+	}
+
+	"SQL Admin already exists"
+	{
+		"fr"		"Un administrateur avec les droits désignés existe déjà."
 	}
 
 	"SQL Admin added"
@@ -43,6 +38,11 @@
 	"SQL Group added"
 	{
 		"fr"		"Le groupe a été ajouté à la Base de données."
+	}
+
+	"SQL Group deleted"
+	{
+		"fr"		"Le groupe a été supprimé de la base de données."
 	}
 
 	"SQL Group not found"

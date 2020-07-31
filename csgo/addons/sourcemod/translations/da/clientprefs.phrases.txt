@@ -1,18 +1,23 @@
 "Phrases"
 {
-	"Client Settings"
+	"Cookie List"
 	{
-		"da"		"Klient indstillinger"
+		"da"		"Sourcemod cookie liste"
 	}
 
-	"Choose Option"
+	"Printing Cookie List"
 	{
-		"da"		"Vælg valgmulighed"
+		"da"		"Udskriver cookie listen til konsollen"
 	}
 
 	"Cookie not Found"
 	{
 		"da"		"Kunne ikke finde cookien  \"{1}\""
+	}
+
+	"Cookie Value"
+	{
+		"da"		"Værdien af {1} er {2}"
 	}
 
 	"Protected Cookie"
@@ -25,24 +30,19 @@
 		"da"		"Ændrede værdien af cookien \"{1}\" til \"{2}\""
 	}
 
-	"Cookie List"
-	{
-		"da"		"Sourcemod cookie liste"
-	}
-
 	"No Console"
 	{
 		"da"		"Indstillingsmenuen kan ikke vises i konsollen"
 	}
 
-	"Printing Cookie List"
+	"Choose Option"
 	{
-		"da"		"Udskriver cookie listen til konsollen"
+		"da"		"Vælg valgmulighed"
 	}
 
-	"Cookie Value"
+	"Client Settings"
 	{
-		"da"		"Værdien af {1} er {2}"
+		"da"		"Klient indstillinger"
 	}
 
 }

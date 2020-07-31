@@ -1,48 +1,13 @@
 "Phrases"
 {
-	"SQL Group not found"
+	"Invalid authtype"
 	{
-		"lv"		"Grupa ar norādīto nosaukumu netika atrasta."
+		"lv"		"Autorizācijas tipam ir jābūt 'steam', 'name', vai 'ip'. "
 	}
 
-	"SQL Group deleted"
+	"Invalid immunity"
 	{
-		"lv"		"Grupa veiksmīgi izdzēsta no datubāzes."
-	}
-
-	"SQL Group already exists"
-	{
-		"lv"		"Grupa ar šādu nosaukumu jau eksistē."
-	}
-
-	"SQL Group added"
-	{
-		"lv"		"Grupa veiksmīgi pievienota datubāzei."
-	}
-
-	"SQL Group X not found"
-	{
-		"lv"		"Nevar atrast grupu: \"{1}\""
-	}
-
-	"SQL Group X failed to bind"
-	{
-		"lv"		"Grupu nevar piesaistīt: \"{1}\""
-	}
-
-	"SQL Admin not found"
-	{
-		"lv"		"Administrators ar uzrādītajiem datiem netika atrasts."
-	}
-
-	"SQL Admin groups reset"
-	{
-		"lv"		"Administratora grupas ir veiksmīgi atjaunotas."
-	}
-
-	"SQL Admin deleted"
-	{
-		"lv"		"Administrators veiksmīgi izdzēsts no datubāzes."
+		"lv"		"Imunitātei ir jābūt pozitīvam skaitlim."
 	}
 
 	"SQL Admin already exists"
@@ -55,24 +20,59 @@
 		"lv"		"Administrators veiksmīgi pievienots datubāzei."
 	}
 
-	"Invalid immunity"
+	"SQL Admin deleted"
 	{
-		"lv"		"Imunitātei ir jābūt pozitīvam skaitlim."
+		"lv"		"Administrators veiksmīgi izdzēsts no datubāzes."
 	}
 
-	"Invalid authtype"
+	"SQL Admin not found"
 	{
-		"lv"		"Autorizācijas tipam ir jābūt 'steam', 'name', vai 'ip'. "
+		"lv"		"Administrators ar uzrādītajiem datiem netika atrasts."
 	}
 
-	"Added groups to user"
+	"SQL Group already exists"
 	{
-		"lv"		"Veiksmīgi pievienotas {1} grupas dotajam administratoram."
+		"lv"		"Grupa ar šādu nosaukumu jau eksistē."
+	}
+
+	"SQL Group added"
+	{
+		"lv"		"Grupa veiksmīgi pievienota datubāzei."
+	}
+
+	"SQL Group deleted"
+	{
+		"lv"		"Grupa veiksmīgi izdzēsta no datubāzes."
+	}
+
+	"SQL Group not found"
+	{
+		"lv"		"Grupa ar norādīto nosaukumu netika atrasta."
+	}
+
+	"SQL Admin groups reset"
+	{
+		"lv"		"Administratora grupas ir veiksmīgi atjaunotas."
+	}
+
+	"SQL Group X not found"
+	{
+		"lv"		"Nevar atrast grupu: \"{1}\""
+	}
+
+	"SQL Group X failed to bind"
+	{
+		"lv"		"Grupu nevar piesaistīt: \"{1}\""
 	}
 
 	"Added group to user"
 	{
 		"lv"		"Veiksmīgi pievienota grupa dotajam administratoram."
+	}
+
+	"Added groups to user"
+	{
+		"lv"		"Veiksmīgi pievienotas {1} grupas dotajam administratoram."
 	}
 
 }

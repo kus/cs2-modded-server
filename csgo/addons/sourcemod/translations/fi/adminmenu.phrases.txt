@@ -1,13 +1,13 @@
 "Phrases"
 {
+	"Admin Menu"
+	{
+		"fi"		"Ylläpitovalikko"
+	}
+
 	"Player Commands"
 	{
 		"fi"		"Pelaajakomennot"
-	}
-
-	"Voting Commands"
-	{
-		"fi"		"Äänestyskomennot"
 	}
 
 	"Server Commands"
@@ -15,9 +15,9 @@
 		"fi"		"Palvelinkomennot"
 	}
 
-	"Admin Menu"
+	"Voting Commands"
 	{
-		"fi"		"Ylläpitovalikko"
+		"fi"		"Äänestyskomennot"
 	}
 
 }

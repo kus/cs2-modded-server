@@ -1,43 +1,18 @@
 "Phrases"
 {
-	"Admin access"
+	"Unable to find cvar"
 	{
-		"ar"		"ترخيص للآدمن"
+		"ar"		"لم يتم العثور على الإعداد: {1}"
 	}
 
-	"Admin cache refreshed"
+	"No access to cvar"
 	{
-		"ar"		"تم إنعاش ترخيصات الآدمن."
+		"ar"		"ليس لك الحق لإسعمال هذا الإعداد."
 	}
 
-	"Admin logged in anon"
+	"Value of cvar"
 	{
-		"ar"		"\"{1}\" لديه ترخيص: {2}"
-	}
-
-	"Ban added"
-	{
-		"ar"		"تم إضافة الحظر."
-	}
-
-	"Banned player"
-	{
-		"ar"		"حظر اللاعب \"{1}\" لمدت {2} دقائق."
-	}
-
-	"Banned player reason"
-	{
-		"ar"		"حظر اللاعب \"{1}\" لمدت {2} دقائق(السبب: {3})."
-	}
-
-	"Choose Map"
-	{
-		"ar"		"إختر خريطة"
-	}
-
-	"Config not found"
-	{
-		"ar"		"لم يتم العثور على ملف الأعدادات {1}."
+		"ar"		"قيمة الإعداد \"{1}\": \"{2}\""
 	}
 
 	"Cvar changed"
@@ -45,39 +20,14 @@
 		"ar"		"غير ال'cvar' من \"{1}\" إلى \"{2}\"."
 	}
 
-	"Cvar is now protected"
+	"Config not found"
 	{
-		"ar"		"تم تحصين ال'cvar' \"{1}\"."
-	}
-
-	"Exec CFG"
-	{
-		"ar"		"إستعمل ملف إعداد"
+		"ar"		"لم يتم العثور على ملف الأعدادات {1}."
 	}
 
 	"Executed config"
 	{
 		"ar"		"شغل الإعداد \"{1}\"."
-	}
-
-	"Identify player"
-	{
-		"ar"		"تعريف اللاعب"
-	}
-
-	"Kicked target"
-	{
-		"ar"		"طرد {1}"
-	}
-
-	"Kicked target reason"
-	{
-		"ar"		"طرد {1} (السبب: {2})."
-	}
-
-	"No access to cvar"
-	{
-		"ar"		"ليس لك الحق لإسعمال هذا الإعداد."
 	}
 
 	"Permabanned player"
@@ -90,14 +40,14 @@
 		"ar"		"حضر الاعب \"{1}\" من الدخول أبديا(السبب: {1})."
 	}
 
-	"Player is an admin"
+	"Banned player"
 	{
-		"ar"		"\"{1}\" هو آدمن."
+		"ar"		"حظر اللاعب \"{1}\" لمدت {2} دقائق."
 	}
 
-	"Player is not an admin"
+	"Banned player reason"
 	{
-		"ar"		"\"{1}\" ليس بآدمن."
+		"ar"		"حظر اللاعب \"{1}\" لمدت {2} دقائق(السبب: {3})."
 	}
 
 	"Removed bans matching"
@@ -105,9 +55,49 @@
 		"ar"		"تم حذف الأحظار المطابقة: {1}"
 	}
 
-	"Unable to find cvar"
+	"Ban added"
 	{
-		"ar"		"لم يتم العثور على الإعداد: {1}"
+		"ar"		"تم إضافة الحظر."
+	}
+
+	"Admin cache refreshed"
+	{
+		"ar"		"تم إنعاش ترخيصات الآدمن."
+	}
+
+	"Identify player"
+	{
+		"ar"		"تعريف اللاعب"
+	}
+
+	"Choose Map"
+	{
+		"ar"		"إختر خريطة"
+	}
+
+	"Exec CFG"
+	{
+		"ar"		"إستعمل ملف إعداد"
+	}
+
+	"Admin logged in as"
+	{
+		"ar"		"\"{1}\" دخل ك\"{2}\" بالترخيص: {3}"
+	}
+
+	"Admin logged in anon"
+	{
+		"ar"		"\"{1}\" لديه ترخيص: {2}"
+	}
+
+	"Player is not an admin"
+	{
+		"ar"		"\"{1}\" ليس بآدمن."
+	}
+
+	"Player is an admin"
+	{
+		"ar"		"\"{1}\" هو آدمن."
 	}
 
 	"Username"
@@ -115,14 +105,24 @@
 		"ar"		"إسم المستخدم"
 	}
 
-	"Value of cvar"
+	"Kicked target"
 	{
-		"ar"		"قيمة الإعداد \"{1}\": \"{2}\""
+		"ar"		"طرد {1}"
 	}
 
-	"Admin logged in as"
+	"Admin access"
 	{
-		"ar"		"\"{1}\" دخل ك\"{2}\" بالترخيص: {3}"
+		"ar"		"ترخيص للآدمن"
+	}
+
+	"Cvar is now protected"
+	{
+		"ar"		"تم تحصين ال'cvar' \"{1}\"."
+	}
+
+	"Kicked target reason"
+	{
+		"ar"		"طرد {1} (السبب: {2})."
 	}
 
 }

@@ -1,18 +1,13 @@
 "Phrases"
 {
-	"Choose Type"
-	{
-		"vi"		"Chọn loại"
-	}
-
-	"Gag Player"
-	{
-		"vi"		"Cấm người chơi sử dụng chat"
-	}
-
 	"Gag/Mute player"
 	{
 		"vi"		"Cấm người chơi trò chuyện"
+	}
+
+	"Choose Type"
+	{
+		"vi"		"Chọn loại"
 	}
 
 	"Gagged target"
@@ -20,29 +15,9 @@
 		"vi"		"Người chơi {1} đã bị cấm chat"
 	}
 
-	"UnSilence Player"
+	"Ungagged target"
 	{
-		"vi"		"Bỏ lệnh câm lặng cho người chơi"
-	}
-
-	"UnMute Player"
-	{
-		"vi"		"Bỏ lệnh cấm sử dụng micro cho người chơi"
-	}
-
-	"UnGag Player"
-	{
-		"vi"		"Bỏ lệnh cấm chat cho người chơi"
-	}
-
-	"Silenced target"
-	{
-		"vi"		"Người chơi {1} đã bị câm lặng."
-	}
-
-	"Silence Player"
-	{
-		"vi"		"Câm lặng người chơi"
+		"vi"		"Đã bỏ lệnh cấm chat cho {1}."
 	}
 
 	"Muted target"
@@ -50,9 +25,14 @@
 		"vi"		"Đã cấm người chơi {1} sử dụng micrô."
 	}
 
-	"Mute Player"
+	"Unmuted target"
 	{
-		"vi"		"Cấm người chơi sử dụng micrô"
+		"vi"		"Đã bỏ lệnh cấm sử dụng micrô cho {1}."
+	}
+
+	"Silenced target"
+	{
+		"vi"		"Người chơi {1} đã bị câm lặng."
 	}
 
 	"Unsilenced target"
@@ -60,14 +40,34 @@
 		"vi"		"Đã bỏ câm lặng {1}."
 	}
 
-	"Unmuted target"
+	"Mute Player"
 	{
-		"vi"		"Đã bỏ lệnh cấm sử dụng micrô cho {1}."
+		"vi"		"Cấm người chơi sử dụng micrô"
 	}
 
-	"Ungagged target"
+	"UnMute Player"
 	{
-		"vi"		"Đã bỏ lệnh cấm chat cho {1}."
+		"vi"		"Bỏ lệnh cấm sử dụng micro cho người chơi"
+	}
+
+	"Gag Player"
+	{
+		"vi"		"Cấm người chơi sử dụng chat"
+	}
+
+	"UnGag Player"
+	{
+		"vi"		"Bỏ lệnh cấm chat cho người chơi"
+	}
+
+	"Silence Player"
+	{
+		"vi"		"Câm lặng người chơi"
+	}
+
+	"UnSilence Player"
+	{
+		"vi"		"Bỏ lệnh câm lặng cho người chơi"
 	}
 
 }

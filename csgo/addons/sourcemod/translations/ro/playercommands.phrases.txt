@@ -1,23 +1,23 @@
 "Phrases"
 {
-	"Slap damage"
-	{
-		"ro"		"Damage pentru slap"
-	}
-
 	"Slap player"
 	{
 		"ro"		"Slap jucător"
 	}
 
-	"Slapped target"
+	"Slap damage"
 	{
-		"ro"		"{1} a primit slap."
+		"ro"		"Damage pentru slap"
 	}
 
 	"Slay player"
 	{
 		"ro"		"Slay jucător"
+	}
+
+	"Slapped target"
+	{
+		"ro"		"{1} a primit slap."
 	}
 
 	"Slayed target"
@@ -30,14 +30,14 @@
 		"ro"		"Un admin ti-a schimbat numele"
 	}
 
-	"Rename player"
-	{
-		"ro"		"Schimba numele jucatorului"
-	}
-
 	"Renamed target"
 	{
 		"ro"		"Nume schimbat {1}."
+	}
+
+	"Rename player"
+	{
+		"ro"		"Schimba numele jucatorului"
 	}
 
 	"Dead Player Rename"

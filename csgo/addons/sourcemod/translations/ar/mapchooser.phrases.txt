@@ -1,18 +1,8 @@
 "Phrases"
 {
-	"Changed Next Map"
+	"Vote Nextmap"
 	{
-		"ar"		"غير الخريطة الآتية ل\"{1}\"."
-	}
-
-	"Dont Change"
-	{
-		"ar"		"لا تغير"
-	}
-
-	"Extend Map"
-	{
-		"ar"		"أطل وقت الخريطة الحالية"
+		"ar"		"صوت للخريطة الآتية!"
 	}
 
 	"Nextmap Voting Started"
@@ -20,9 +10,9 @@
 		"ar"		"إبتدأ التصويت للخريطة الآتية."
 	}
 
-	"Vote Nextmap"
+	"Nextmap Voting Finished"
 	{
-		"ar"		"صوت للخريطة الآتية!"
+		"ar"		"تم التصويت. الخريطة الآتية هي: {1} (قبل {2}%% من {3} تسويت)."
 	}
 
 	"Current Map Extended"
@@ -30,14 +20,24 @@
 		"ar"		"تم إطالت وقت الخريطة الحالية(قبل {1}%% من {2} تصويت)."
 	}
 
+	"Extend Map"
+	{
+		"ar"		"أطل وقت الخريطة الحالية"
+	}
+
+	"Dont Change"
+	{
+		"ar"		"لا تغير"
+	}
+
 	"Current Map Stays"
 	{
 		"ar"		"الخريطة الحالية تستأنف! تم التصويت!(قبل {1}%% من {2} تصويت)."
 	}
 
-	"Nextmap Voting Finished"
+	"Changed Next Map"
 	{
-		"ar"		"تم التصويت. الخريطة الآتية هي: {1} (قبل {2}%% من {3} تسويت)."
+		"ar"		"غير الخريطة الآتية ل\"{1}\"."
 	}
 
 	"Starting Runoff"

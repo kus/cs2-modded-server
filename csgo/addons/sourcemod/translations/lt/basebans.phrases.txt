@@ -1,8 +1,13 @@
 "Phrases"
 {
-	"Cannot ban that IP"
+	"Ban player"
 	{
-		"lt"		"Jūs negalite uždrausti šio IP adreso."
+		"lt"		"Draudimas žaidėjui"
+	}
+
+	"Ban reason"
+	{
+		"lt"		"Draudimo priežastis"
 	}
 
 	"Permabanned player"
@@ -15,9 +20,9 @@
 		"lt"		"Uždraustas neribotam laikui žaidėjas \"{1}\" (priežastis: {2})."
 	}
 
-	"Removed bans matching"
+	"Banned player"
 	{
-		"lt"		"Pašalinti draudimai atitinkantys filtrą: {1}"
+		"lt"		"Uždraustas žaidėjas \"{1}\" {2} minučių."
 	}
 
 	"Banned player reason"
@@ -25,24 +30,19 @@
 		"lt"		"Uždraustas žaidėjas \"{1}\" {2}-ai minučių (priežastis: {3})."
 	}
 
-	"Banned player"
+	"Removed bans matching"
 	{
-		"lt"		"Uždraustas žaidėjas \"{1}\" {2} minučių."
-	}
-
-	"Ban reason"
-	{
-		"lt"		"Draudimo priežastis"
-	}
-
-	"Ban player"
-	{
-		"lt"		"Draudimas žaidėjui"
+		"lt"		"Pašalinti draudimai atitinkantys filtrą: {1}"
 	}
 
 	"Ban added"
 	{
 		"lt"		"Draudimas įsigaliojo."
+	}
+
+	"Cannot ban that IP"
+	{
+		"lt"		"Jūs negalite uždrausti šio IP adreso."
 	}
 
 	"Custom ban reason explanation"

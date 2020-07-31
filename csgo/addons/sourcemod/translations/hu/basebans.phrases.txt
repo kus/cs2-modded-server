@@ -45,6 +45,11 @@
 		"hu"		"Nem tudod kitiltani azt az IP-t"
 	}
 
+	"Custom ban reason explanation"
+	{
+		"hu"		"Add meg a ban okát. Megszakításhoz használd a {1} parancsot."
+	}
+
 	"AbortBan applied successfully"
 	{
 		"hu"		"Ban megszakítva.."
@@ -53,11 +58,6 @@
 	"AbortBan not waiting for custom reason"
 	{
 		"hu"		"Nem várunk ban indokra, nincs megszakítható ban."
-	}
-
-	"Custom ban reason explanation"
-	{
-		"hu"		"Add meg a ban okát. Megszakításhoz használd a {1} parancsot."
 	}
 
 }

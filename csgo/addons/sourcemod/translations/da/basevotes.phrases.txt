@@ -1,33 +1,8 @@
 "Phrases"
 {
-	"Ban vote"
-	{
-		"da"		"Stem om bandlysning"
-	}
-
-	"Change Map To"
-	{
-		"da"		"Skift bane til {1}?"
-	}
-
-	"Confirm Vote"
-	{
-		"da"		"Bekræft stemme"
-	}
-
 	"Initiate Vote"
 	{
 		"da"		"Afstemning startet: {1}"
-	}
-
-	"Initiated Vote Ban"
-	{
-		"da"		"Afstemning om bandlysning mod {1} startet."
-	}
-
-	"Initiated Vote Kick"
-	{
-		"da"		"Afstemning om udsmidning mod {1} startet."
 	}
 
 	"Initiated Vote Map"
@@ -35,9 +10,14 @@
 		"da"		"Afsteming om bane-skift startet."
 	}
 
-	"Kick vote"
+	"Initiated Vote Kick"
 	{
-		"da"		"Stem om udsmidning"
+		"da"		"Afstemning om udsmidning mod {1} startet."
+	}
+
+	"Initiated Vote Ban"
+	{
+		"da"		"Afstemning om bandlysning mod {1} startet."
 	}
 
 	"Map Vote"
@@ -45,24 +25,14 @@
 		"da"		"Bane afstemning: {1}"
 	}
 
-	"Map vote"
+	"Change Map To"
 	{
-		"da"		"Stem om bane skift"
+		"da"		"Skift bane til {1}?"
 	}
 
-	"Vote End"
+	"Votekick Player"
 	{
-		"da"		"Svaret på {1} er: {2}"
-	}
-
-	"Vote Failed"
-	{
-		"da"		"Afstemning slog fejl. {1}%% stemmer er påkrævet. (Modtog {2}%% af {3} stemmer)"
-	}
-
-	"Vote Successful"
-	{
-		"da"		"Afstemning er succesfuld. (Modtog {1}%% af {2} stemmer)"
+		"da"		"Smid {1} ud?"
 	}
 
 	"Voteban Player"
@@ -70,9 +40,39 @@
 		"da"		"Bandlys {1}?"
 	}
 
-	"Votekick Player"
+	"Vote Successful"
 	{
-		"da"		"Smid {1} ud?"
+		"da"		"Afstemning er succesfuld. (Modtog {1}%% af {2} stemmer)"
+	}
+
+	"Vote Failed"
+	{
+		"da"		"Afstemning slog fejl. {1}%% stemmer er påkrævet. (Modtog {2}%% af {3} stemmer)"
+	}
+
+	"Vote End"
+	{
+		"da"		"Svaret på {1} er: {2}"
+	}
+
+	"Kick vote"
+	{
+		"da"		"Stem om udsmidning"
+	}
+
+	"Ban vote"
+	{
+		"da"		"Stem om bandlysning"
+	}
+
+	"Map vote"
+	{
+		"da"		"Stem om bane skift"
+	}
+
+	"Confirm Vote"
+	{
+		"da"		"Bekræft stemme"
 	}
 
 	"Map Vote In Use"

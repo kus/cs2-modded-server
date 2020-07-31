@@ -5,9 +5,9 @@
 		"chi"		"下一幅地图: {1}"
 	}
 
-	"Current Map"
+	"Map History"
 	{
-		"chi"		"当前地图"
+		"chi"		"地图历史纪录"
 	}
 
 	"Map"
@@ -15,9 +15,9 @@
 		"chi"		"[地图]"
 	}
 
-	"Map History"
+	"Started"
 	{
-		"chi"		"地图历史纪录"
+		"chi"		"[已启动]"
 	}
 
 	"Played Time"
@@ -30,9 +30,9 @@
 		"chi"		"[终止理由]"
 	}
 
-	"Started"
+	"Current Map"
 	{
-		"chi"		"[已启动]"
+		"chi"		"当前地图"
 	}
 
 	"ago"

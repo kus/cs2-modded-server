@@ -1,13 +1,8 @@
 "Phrases"
 {
-	"Current Map"
+	"Next Map"
 	{
-		"pt_p"		"Mapa atual"
-	}
-
-	"Map"
-	{
-		"pt_p"		"[Mapa]"
+		"pt_p"		"Próximo mapa: {1}"
 	}
 
 	"Map History"
@@ -15,9 +10,14 @@
 		"pt_p"		"Histórico de mapas"
 	}
 
-	"Next Map"
+	"Map"
 	{
-		"pt_p"		"Próximo mapa: {1}"
+		"pt_p"		"[Mapa]"
+	}
+
+	"Started"
+	{
+		"pt_p"		"[Iniciado]"
 	}
 
 	"Played Time"
@@ -30,9 +30,9 @@
 		"pt_p"		"[Motivo para término]"
 	}
 
-	"Started"
+	"Current Map"
 	{
-		"pt_p"		"[Iniciado]"
+		"pt_p"		"Mapa atual"
 	}
 
 	"ago"

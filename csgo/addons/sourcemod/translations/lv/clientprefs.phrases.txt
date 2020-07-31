@@ -1,5 +1,40 @@
 "Phrases"
 {
+	"Cookie List"
+	{
+		"lv"		"Sourcemod cepumiņu saraksts"
+	}
+
+	"Printing Cookie List"
+	{
+		"lv"		"Izraksta cepumiņu sarakstu konsolē"
+	}
+
+	"Cookie not Found"
+	{
+		"lv"		"Nevar atrast \"{1}\" cepumiņu"
+	}
+
+	"Cookie Value"
+	{
+		"lv"		"{1} vērība ir {2}  "
+	}
+
+	"Protected Cookie"
+	{
+		"lv"		"Nevar nomainīt aizsargātā \"{1}\" cepumiņa vērtību"
+	}
+
+	"Cookie Changed Value"
+	{
+		"lv"		"Nomainīja \"{1}\" cepumiņa vērtību uz \"{2}\""
+	}
+
+	"No Console"
+	{
+		"lv"		"Nevar parādīt uzstādījumu izvēlni konsolē"
+	}
+
 	"Choose Option"
 	{
 		"lv"		"Izvēlies iespēju"
@@ -8,41 +43,6 @@
 	"Client Settings"
 	{
 		"lv"		"Klienta uzstādījumi"
-	}
-
-	"Cookie Value"
-	{
-		"lv"		"{1} vērība ir {2}  "
-	}
-
-	"Cookie Changed Value"
-	{
-		"lv"		"Nomainīja \"{1}\" cepumiņa vērtību uz \"{2}\""
-	}
-
-	"Cookie List"
-	{
-		"lv"		"Sourcemod cepumiņu saraksts"
-	}
-
-	"Cookie not Found"
-	{
-		"lv"		"Nevar atrast \"{1}\" cepumiņu"
-	}
-
-	"No Console"
-	{
-		"lv"		"Nevar parādīt uzstādījumu izvēlni konsolē"
-	}
-
-	"Printing Cookie List"
-	{
-		"lv"		"Izraksta cepumiņu sarakstu konsolē"
-	}
-
-	"Protected Cookie"
-	{
-		"lv"		"Nevar nomainīt aizsargātā \"{1}\" cepumiņa vērtību"
 	}
 
 }

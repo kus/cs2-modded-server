@@ -1,18 +1,18 @@
 "Phrases"
 {
-	"Slay player"
-	{
-		"sk"		"Zabit hráča"
-	}
-
-	"Slayed target"
-	{
-		"sk"		"Zabitý {1}"
-	}
-
 	"Slap player"
 	{
 		"sk"		"Slapnúť hráča"
+	}
+
+	"Slap damage"
+	{
+		"sk"		"Sila slapu"
+	}
+
+	"Slay player"
+	{
+		"sk"		"Zabit hráča"
 	}
 
 	"Slapped target"
@@ -20,14 +20,9 @@
 		"sk"		"Slapnutý {1}. "
 	}
 
-	"Rename player"
+	"Slayed target"
 	{
-		"sk"		"Premenovať hráča"
-	}
-
-	"Renamed target"
-	{
-		"sk"		"Hráč {1} premenovaný."
+		"sk"		"Zabitý {1}"
 	}
 
 	"Name changed"
@@ -35,14 +30,19 @@
 		"sk"		"Admin ti zmenil meno"
 	}
 
+	"Renamed target"
+	{
+		"sk"		"Hráč {1} premenovaný."
+	}
+
+	"Rename player"
+	{
+		"sk"		"Premenovať hráča"
+	}
+
 	"Dead Player Rename"
 	{
 		"sk"		"{1} bude premenovaný v ďalšom kole. "
-	}
-
-	"Slap damage"
-	{
-		"sk"		"Sila slapu"
 	}
 
 }

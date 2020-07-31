@@ -5,14 +5,9 @@
 		"pt_p"		"Já sugeriste um mapa."
 	}
 
-	"Can't Nominate Current Map"
+	"Max Nominations"
 	{
-		"pt_p"		"O mapa que escolheste é o mapa atual e não pode ser sugerido"
-	}
-
-	"Current Map"
-	{
-		"pt_p"		"Mapa atual"
+		"pt_p"		"O número máximo de sugestões já foi alcançado."
 	}
 
 	"Map Already In Vote"
@@ -20,14 +15,14 @@
 		"pt_p"		"O mapa '{1}' já está na lista de sugestões."
 	}
 
-	"Map Already Nominated"
-	{
-		"pt_p"		"O mapa que escolheste já foi sugerido."
-	}
-
 	"Map Inserted"
 	{
 		"pt_p"		"O mapa '{1}' foi adicionado à lista de sugestões."
+	}
+
+	"Map Already Nominated"
+	{
+		"pt_p"		"O mapa que escolheste já foi sugerido."
 	}
 
 	"Map Nominated"
@@ -40,29 +35,34 @@
 		"pt_p"		"{1} mudou a sua sugestão para {2}."
 	}
 
-	"Map in Exclude List"
-	{
-		"pt_p"		"O mapa que escolheste foi jogado recentemente e não pode ser sugerido"
-	}
-
-	"Max Nominations"
-	{
-		"pt_p"		"O número máximo de sugestões já foi alcançado."
-	}
-
 	"Nominate Title"
 	{
 		"pt_p"		"Sugerir mapa:"
 	}
 
-	"Nominated"
+	"Can't Nominate Current Map"
 	{
-		"pt_p"		"Sugerido"
+		"pt_p"		"O mapa que escolheste é o mapa atual e não pode ser sugerido"
+	}
+
+	"Map in Exclude List"
+	{
+		"pt_p"		"O mapa que escolheste foi jogado recentemente e não pode ser sugerido"
+	}
+
+	"Current Map"
+	{
+		"pt_p"		"Mapa atual"
 	}
 
 	"Recently Played"
 	{
 		"pt_p"		"Jogado recentemente"
+	}
+
+	"Nominated"
+	{
+		"pt_p"		"Sugerido"
 	}
 
 }

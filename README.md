@@ -26,7 +26,7 @@ Getting up and running:
 Mod | Version | Why
 --- | --- | ---
 [Metamod:Source](http://www.sourcemm.net/downloads.php?branch=stable) | `1.10.7-git971` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
-[SourceMod](https://www.sourcemod.net/downloads.php?branch=stable) | `1.10-git6488` | SourceMod is server modification for any game that runs on the Half-Life 2 engine
+[SourceMod](https://www.sourcemod.net/downloads.php?branch=stable) | `1.10-git6492` | SourceMod is server modification for any game that runs on the Half-Life 2 engine
 [GunGame](https://forums.alliedmods.net/showthread.php?t=93977) | `1.2.16` | Kill an enemy with the current weapon to get next weapon, first person to go through every weapon wins
 [DeathMatch](https://forums.alliedmods.net/showthread.php?t=103242) | `1.8.0` | Required for GunGame to enable spawn protection and other things to the game
 [Quake Sounds](https://forums.alliedmods.net/showthread.php?t=224316) | `3.5.0` | Plays sounds and displays text at certain events sometimes based on the number of kills
@@ -138,13 +138,18 @@ Repeat this process for CT's and then reload the map and it should have the plat
 ### Create firewall rule
 ```
 gcloud compute firewall-rules create source \
---allow tcp:27015-27020,80,udp:27015-27020
+--allow tcp:27015-27020,tcp:80,udp:27015-27020
 ```
 
 ### Create instance
 You need to create a Steam [Game Login Token](https://steamcommunity.com/dev/managegameservers) and set `STEAM_ACCOUNT` to the key.
+
+If you don't want to make a [preemptible](https://cloud.google.com/compute/docs/instances/create-start-preemptible-instance#gcloud) instace; remove `--preemptible` from the below command.
+
 ```
-gcloud compute instances create <instance-name> \
+gcloud beta compute instances create <instance-name> \
+--maintenance-policy=TERMINATE \
+--preemptible \
 --project=<project> \
 --zone=australia-southeast1-a \
 --machine-type=n1-standard-2 \
@@ -154,7 +159,7 @@ gcloud compute instances create <instance-name> \
 --maintenance-policy=MIGRATE \
 --scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/compute.readonly,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append \
 --tags=source \
---image=ubuntu-1804-lts \
+--image-family=ubuntu-1804-lts \
 --image-project=ubuntu-os-cloud \
 --boot-disk-size=40GB \
 --boot-disk-type=pd-standard \

@@ -1,23 +1,8 @@
 "Phrases"
 {
-	"Beacon player"
-	{
-		"ar"		"حدد موقع اللاعب"
-	}
-
-	"Blind player"
-	{
-		"ar"		"إجعل اللاعب أعمى"
-	}
-
 	"Burn player"
 	{
 		"ar"		"أحرق اللاعب"
-	}
-
-	"Drug player"
-	{
-		"ar"		"خدر اللاعب"
 	}
 
 	"FireBomb player"
@@ -35,49 +20,44 @@
 		"ar"		"جمد و فجر اللاعب"
 	}
 
-	"Froze target"
+	"TimeBomb player"
 	{
-		"ar"		"جامد {1}"
+		"ar"		"حدد وقت إنفجار اللاعب"
 	}
 
-	"Fully blind"
+	"Beacon player"
 	{
-		"ar"		"أعمى بالكامل"
+		"ar"		"حدد موقع اللاعب"
 	}
 
-	"Gravity High"
+	"NoClip player"
 	{
-		"ar"		"جاذبية عالية"
+		"ar"		"حرر اللاعب"
 	}
 
-	"Gravity Low"
+	"Blind player"
 	{
-		"ar"		"جاذبية خفيفة"
+		"ar"		"إجعل اللاعب أعمى"
 	}
 
-	"Gravity Normal"
+	"Drug player"
 	{
-		"ar"		"جاذبية عادية"
-	}
-
-	"Gravity Very High"
-	{
-		"ar"		"جاذبية جد عالية"
-	}
-
-	"Gravity Very Low"
-	{
-		"ar"		"جاذبية جد خفيفة"
-	}
-
-	"Gravity amount"
-	{
-		"ar"		"جاذبية؟"
+		"ar"		"خدر اللاعب"
 	}
 
 	"Gravity player"
 	{
 		"ar"		"مارس الجاجبية على اللاعب"
+	}
+
+	"Blind amount"
+	{
+		"ar"		"مستوى العمى"
+	}
+
+	"Fully blind"
+	{
+		"ar"		"أعمى بالكامل"
 	}
 
 	"Half blind"
@@ -90,9 +70,74 @@
 		"ar"		"لا أعمى"
 	}
 
-	"NoClip player"
+	"Gravity amount"
 	{
-		"ar"		"حرر اللاعب"
+		"ar"		"جاذبية؟"
+	}
+
+	"Gravity Very High"
+	{
+		"ar"		"جاذبية جد عالية"
+	}
+
+	"Gravity High"
+	{
+		"ar"		"جاذبية عالية"
+	}
+
+	"Gravity Normal"
+	{
+		"ar"		"جاذبية عادية"
+	}
+
+	"Gravity Low"
+	{
+		"ar"		"جاذبية خفيفة"
+	}
+
+	"Gravity Very Low"
+	{
+		"ar"		"جاذبية جد خفيفة"
+	}
+
+	"Set target on fire"
+	{
+		"ar"		"احرق اللاعب {1}"
+	}
+
+	"Toggled FireBomb on target"
+	{
+		"ar"		"مارس الإنفجار على {1}"
+	}
+
+	"Froze target"
+	{
+		"ar"		"جامد {1}"
+	}
+
+	"Toggled FreezeBomb on target"
+	{
+		"ar"		"مارس التجميد و الانفجار على {1}"
+	}
+
+	"Toggled beacon on target"
+	{
+		"ar"		"مارس تحديد الموقع على {1ç"
+	}
+
+	"Toggled TimeBomb on target"
+	{
+		"ar"		"حدد الإنفجار المبرمج على {1}"
+	}
+
+	"Toggled noclip on target"
+	{
+		"ar"		"مارس التحرير على {1}"
+	}
+
+	"Toggled drug on target"
+	{
+		"ar"		"مارس التخدير على {1}"
 	}
 
 	"Set blind on target"
@@ -105,49 +150,9 @@
 		"ar"		"إجعل جاذبية اللاعب {1}"
 	}
 
-	"Set target on fire"
-	{
-		"ar"		"احرق اللاعب {1}"
-	}
-
 	"Till Explodes"
 	{
 		"ar"		"{2} حتى إنفجار {1}"
-	}
-
-	"TimeBomb player"
-	{
-		"ar"		"حدد وقت إنفجار اللاعب"
-	}
-
-	"Toggled FireBomb on target"
-	{
-		"ar"		"مارس الإنفجار على {1}"
-	}
-
-	"Toggled FreezeBomb on target"
-	{
-		"ar"		"مارس التجميد و الانفجار على {1}"
-	}
-
-	"Toggled TimeBomb on target"
-	{
-		"ar"		"حدد الإنفجار المبرمج على {1}"
-	}
-
-	"Toggled beacon on target"
-	{
-		"ar"		"مارس تحديد الموقع على {1ç"
-	}
-
-	"Toggled drug on target"
-	{
-		"ar"		"مارس التخدير على {1}"
-	}
-
-	"Toggled noclip on target"
-	{
-		"ar"		"مارس التحرير على {1}"
 	}
 
 	"Unfrozen"
@@ -158,11 +163,6 @@
 	"You will be unfrozen"
 	{
 		"ar"		"سيتم عكس تجميدك في {1} ثوان"
-	}
-
-	"Blind amount"
-	{
-		"ar"		"مستوى العمى"
 	}
 
 }

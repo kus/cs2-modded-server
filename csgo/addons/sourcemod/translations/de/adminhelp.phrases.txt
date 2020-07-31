@@ -5,19 +5,9 @@
 		"de"		"SourceMod-Hilfe: Befehlsinformationen"
 	}
 
-	"Type sm_help to see more"
+	"No description available"
 	{
-		"de"		"Schreibe 'sm_help {1}' um mehr Befehle anzuzeigen"
-	}
-
-	"No matching results found"
-	{
-		"de"		"Keine passenden Resultate gefunden"
-	}
-
-	"Entries n - m in page k"
-	{
-		"de"		"Einträge {1} - {2} in Seite {3} "
+		"de"		"Keine Beschreibung verfügbar "
 	}
 
 	"No commands available"
@@ -25,9 +15,19 @@
 		"de"		" Keine Befehle verfügbar "
 	}
 
-	"No description available"
+	"Type sm_help to see more"
 	{
-		"de"		"Keine Beschreibung verfügbar "
+		"de"		"Schreibe 'sm_help {1}' um mehr Befehle anzuzeigen"
+	}
+
+	"Entries n - m in page k"
+	{
+		"de"		"Einträge {1} - {2} in Seite {3} "
+	}
+
+	"No matching results found"
+	{
+		"de"		"Keine passenden Resultate gefunden"
 	}
 
 }

@@ -30,14 +30,14 @@
 		"chi"		"某管理员更改了您的名称"
 	}
 
-	"Rename player"
-	{
-		"chi"		"玩家更名"
-	}
-
 	"Renamed target"
 	{
 		"chi"		"更改了 {1} 的名称."
+	}
+
+	"Rename player"
+	{
+		"chi"		"玩家更名"
 	}
 
 	"Dead Player Rename"

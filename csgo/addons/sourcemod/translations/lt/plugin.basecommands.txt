@@ -1,43 +1,8 @@
 "Phrases"
 {
-	"Value of cvar"
-	{
-		"lt"		"Reikšmė nustatymo \"{1}\": \"{2}\""
-	}
-
-	"Username"
-	{
-		"lt"		"Vartotojo vardas"
-	}
-
 	"Unable to find cvar"
 	{
 		"lt"		"Nepavyko rasti nustatymo: {1}"
-	}
-
-	"Removed bans matching"
-	{
-		"lt"		"Pašalinti draudimai atitinkantys filtrą: {1}"
-	}
-
-	"Player is not an admin"
-	{
-		"lt"		"\"{1}\" nėra administratorius."
-	}
-
-	"Player is an admin"
-	{
-		"lt"		"\"{1}\" yra administratorius."
-	}
-
-	"Permabanned player reason"
-	{
-		"lt"		"Neribotai uždrausta žaisti žaidėjui \"{1}\" (priežastis: {2})."
-	}
-
-	"Permabanned player"
-	{
-		"lt"		"Neribotai uždrausta žaisti žaidėjui \"{1}\"."
 	}
 
 	"No access to cvar"
@@ -45,29 +10,9 @@
 		"lt"		"Jūs neturite teisių į šį nustatymą."
 	}
 
-	"Kicked target"
+	"Value of cvar"
 	{
-		"lt"		"Pašalintas {1}."
-	}
-
-	"Identify player"
-	{
-		"lt"		"Identifikuoti žaidėją"
-	}
-
-	"Executed config"
-	{
-		"lt"		"Įvykdyti nustatymai \"{1}\"."
-	}
-
-	"Exec CFG"
-	{
-		"lt"		"Vykdomas CFG"
-	}
-
-	"Cvar is now protected"
-	{
-		"lt"		"Nustatymas {1} dabar apsaugotas."
+		"lt"		"Reikšmė nustatymo \"{1}\": \"{2}\""
 	}
 
 	"Cvar changed"
@@ -80,14 +25,19 @@
 		"lt"		"Nustatymų failas \"{1}\" nerastas."
 	}
 
-	"Choose Map"
+	"Executed config"
 	{
-		"lt"		"Pasirinkti žemėlapį"
+		"lt"		"Įvykdyti nustatymai \"{1}\"."
 	}
 
-	"Banned player reason"
+	"Permabanned player"
 	{
-		"lt"		"Draudimas žaisti žaidėjui \"{1}\" {2} minučių (priežastis: {3})."
+		"lt"		"Neribotai uždrausta žaisti žaidėjui \"{1}\"."
+	}
+
+	"Permabanned player reason"
+	{
+		"lt"		"Neribotai uždrausta žaisti žaidėjui \"{1}\" (priežastis: {2})."
 	}
 
 	"Banned player"
@@ -95,9 +45,39 @@
 		"lt"		"Draudimas žaisti žaidėjui \"{1}\" {2} minučių."
 	}
 
+	"Banned player reason"
+	{
+		"lt"		"Draudimas žaisti žaidėjui \"{1}\" {2} minučių (priežastis: {3})."
+	}
+
+	"Removed bans matching"
+	{
+		"lt"		"Pašalinti draudimai atitinkantys filtrą: {1}"
+	}
+
 	"Ban added"
 	{
 		"lt"		"Draudimas žaisti įsigaliojo."
+	}
+
+	"Admin cache refreshed"
+	{
+		"lt"		"Adminisracinio personalo informacija buvo atnaujinta."
+	}
+
+	"Identify player"
+	{
+		"lt"		"Identifikuoti žaidėją"
+	}
+
+	"Choose Map"
+	{
+		"lt"		"Pasirinkti žemėlapį"
+	}
+
+	"Exec CFG"
+	{
+		"lt"		"Vykdomas CFG"
 	}
 
 	"Admin logged in as"
@@ -110,14 +90,34 @@
 		"lt"		"\"{1}\" turi teises: {2}"
 	}
 
-	"Admin cache refreshed"
+	"Player is not an admin"
 	{
-		"lt"		"Adminisracinio personalo informacija buvo atnaujinta."
+		"lt"		"\"{1}\" nėra administratorius."
+	}
+
+	"Player is an admin"
+	{
+		"lt"		"\"{1}\" yra administratorius."
+	}
+
+	"Username"
+	{
+		"lt"		"Vartotojo vardas"
+	}
+
+	"Kicked target"
+	{
+		"lt"		"Pašalintas {1}."
 	}
 
 	"Admin access"
 	{
 		"lt"		"Administracijos prieiga"
+	}
+
+	"Cvar is now protected"
+	{
+		"lt"		"Nustatymas {1} dabar apsaugotas."
 	}
 
 	"Kicked target reason"

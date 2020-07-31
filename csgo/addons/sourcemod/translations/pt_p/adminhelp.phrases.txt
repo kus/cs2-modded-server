@@ -1,13 +1,8 @@
 "Phrases"
 {
-	"Entries n - m in page k"
+	"SM help commands"
 	{
-		"pt_p"		"Itens {1} - {2} na página {3}"
-	}
-
-	"No commands available"
-	{
-		"pt_p"		"Nenhum comando disponível"
+		"pt_p"		"Ajuda do SourceMod: Informações sobre comandos"
 	}
 
 	"No description available"
@@ -15,14 +10,19 @@
 		"pt_p"		"Nenhuma descrição disponível"
 	}
 
+	"No commands available"
+	{
+		"pt_p"		"Nenhum comando disponível"
+	}
+
 	"Type sm_help to see more"
 	{
 		"pt_p"		"Escreve sm_help {1} para ver mais comandos"
 	}
 
-	"SM help commands"
+	"Entries n - m in page k"
 	{
-		"pt_p"		"Ajuda do SourceMod: Informações sobre comandos"
+		"pt_p"		"Itens {1} - {2} na página {3}"
 	}
 
 	"No matching results found"

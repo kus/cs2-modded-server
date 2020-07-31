@@ -1,43 +1,8 @@
 "Phrases"
 {
-	"_s"
-	{
-		"sk"		"{1}"
-	}
-
 	"No Access"
 	{
 		"sk"		"Nemáš prístup k tejto funkcii"
-	}
-
-	"all alive players"
-	{
-		"sk"		"všetkých živých hráčov"
-	}
-
-	"all bots"
-	{
-		"sk"		"všetkých botov"
-	}
-
-	"all humans"
-	{
-		"sk"		"všetkých ľudí"
-	}
-
-	"all players"
-	{
-		"sk"		"všetkých hráčov"
-	}
-
-	"Vote Count"
-	{
-		"sk"		"Hlasov: {1}/{2}, {3}s zostáva"
-	}
-
-	"No Vote"
-	{
-		"sk"		"Žiadne hlasovanie"
 	}
 
 	"Back"
@@ -45,9 +10,9 @@
 		"sk"		"Späť"
 	}
 
-	"Changed Vote"
+	"Next"
 	{
-		"sk"		"{1} zmenil/a svoj hlas na {2} "
+		"sk"		"Ďalší/a"
 	}
 
 	"Exit"
@@ -55,19 +20,24 @@
 		"sk"		"Koniec"
 	}
 
-	"Next"
-	{
-		"sk"		"Ďalší/a"
-	}
-
 	"Previous"
 	{
 		"sk"		"Predchádzajúci"
 	}
 
-	"Voted For"
+	"all players"
 	{
-		"sk"		"{1} hlasoval za {2} "
+		"sk"		"všetkých hráčov"
+	}
+
+	"all humans"
+	{
+		"sk"		"všetkých ľudí"
+	}
+
+	"all bots"
+	{
+		"sk"		"všetkých botov"
 	}
 
 	"all dead players"
@@ -75,9 +45,39 @@
 		"sk"		"všetkých mŕtvych hráčov "
 	}
 
+	"all alive players"
+	{
+		"sk"		"všetkých živých hráčov"
+	}
+
+	"_s"
+	{
+		"sk"		"{1}"
+	}
+
 	"all spectators"
 	{
 		"sk"		"všetkých divákov"
+	}
+
+	"Vote Count"
+	{
+		"sk"		"Hlasov: {1}/{2}, {3}s zostáva"
+	}
+
+	"Voted For"
+	{
+		"sk"		"{1} hlasoval za {2} "
+	}
+
+	"Changed Vote"
+	{
+		"sk"		"{1} zmenil/a svoj hlas na {2} "
+	}
+
+	"No Vote"
+	{
+		"sk"		"Žiadne hlasovanie"
 	}
 
 	"Name Reserved"

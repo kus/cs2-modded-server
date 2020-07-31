@@ -1,18 +1,13 @@
 "Phrases"
 {
-	"Choose Type"
-	{
-		"pt_p"		"Escolhe o tipo"
-	}
-
-	"Gag Player"
-	{
-		"pt_p"		"Censurar jogador"
-	}
-
 	"Gag/Mute player"
 	{
 		"pt_p"		"Censurar/Emudecer jogador"
+	}
+
+	"Choose Type"
+	{
+		"pt_p"		"Escolhe o tipo"
 	}
 
 	"Gagged target"
@@ -20,9 +15,9 @@
 		"pt_p"		"{1} está agora censurado."
 	}
 
-	"Mute Player"
+	"Ungagged target"
 	{
-		"pt_p"		"Emudecer jogador"
+		"pt_p"		"{1} já não está censurado."
 	}
 
 	"Muted target"
@@ -30,9 +25,9 @@
 		"pt_p"		"{1} está agora emudecido."
 	}
 
-	"Silence Player"
+	"Unmuted target"
 	{
-		"pt_p"		"Silenciar jogador"
+		"pt_p"		"{1} já não está emudecido."
 	}
 
 	"Silenced target"
@@ -40,9 +35,14 @@
 		"pt_p"		"{1} está agora silenciado."
 	}
 
-	"UnGag Player"
+	"Unsilenced target"
 	{
-		"pt_p"		"Descensurar jogador"
+		"pt_p"		"{1} já não está silenciado."
+	}
+
+	"Mute Player"
+	{
+		"pt_p"		"Emudecer jogador"
 	}
 
 	"UnMute Player"
@@ -50,24 +50,24 @@
 		"pt_p"		"Desemudecer jogador"
 	}
 
+	"Gag Player"
+	{
+		"pt_p"		"Censurar jogador"
+	}
+
+	"UnGag Player"
+	{
+		"pt_p"		"Descensurar jogador"
+	}
+
+	"Silence Player"
+	{
+		"pt_p"		"Silenciar jogador"
+	}
+
 	"UnSilence Player"
 	{
 		"pt_p"		"Dessilenciar jogador"
-	}
-
-	"Ungagged target"
-	{
-		"pt_p"		"{1} já não está censurado."
-	}
-
-	"Unmuted target"
-	{
-		"pt_p"		"{1} já não está emudecido."
-	}
-
-	"Unsilenced target"
-	{
-		"pt_p"		"{1} já não está silenciado."
 	}
 
 }

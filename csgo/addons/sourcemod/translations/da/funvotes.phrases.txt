@@ -1,33 +1,8 @@
 "Phrases"
 {
-	"Alltalk vote"
+	"Initiated Vote Gravity"
 	{
-		"da"		"Stem om alltalk"
-	}
-
-	"Burn vote"
-	{
-		"da"		"Stem om at brænde en spiller"
-	}
-
-	"Change Gravity To"
-	{
-		"da"		"Ændre tyngdekraften til {1}?"
-	}
-
-	"Gravity Vote"
-	{
-		"da"		"Tyngde afstemning: {1}"
-	}
-
-	"Gravity vote"
-	{
-		"da"		"Stem om tyngdekraft"
-	}
-
-	"Initiated Vote Alltalk"
-	{
-		"da"		"Alltalk afstemning startet."
+		"da"		"Tyngde afstemning er startet."
 	}
 
 	"Initiated Vote Burn"
@@ -35,29 +10,39 @@
 		"da"		"Brænd spiller afstemning startet mod {1}."
 	}
 
-	"Initiated Vote FF"
-	{
-		"da"		"Friendly Fire afstemning er startet."
-	}
-
-	"Initiated Vote Gravity"
-	{
-		"da"		"Tyngde afstemning er startet."
-	}
-
 	"Initiated Vote Slay"
 	{
 		"da"		"Afstemning om henrettelse mod {1} er startet."
 	}
 
-	"Slay vote"
+	"Initiated Vote Alltalk"
 	{
-		"da"		"Stem om henrettelse mod spiller"
+		"da"		"Alltalk afstemning startet."
 	}
 
-	"Vote FF"
+	"Initiated Vote FF"
 	{
-		"da"		"Stem om Friendly Fire"
+		"da"		"Friendly Fire afstemning er startet."
+	}
+
+	"Gravity Vote"
+	{
+		"da"		"Tyngde afstemning: {1}"
+	}
+
+	"Change Gravity To"
+	{
+		"da"		"Ændre tyngdekraften til {1}?"
+	}
+
+	"Voteburn player"
+	{
+		"da"		"Brænd spiller {1}?"
+	}
+
+	"Voteslay Player"
+	{
+		"da"		"Dræb {1}?"
 	}
 
 	"Votealltalk Off"
@@ -70,11 +55,6 @@
 		"da"		"Slå alltalk til? {1}"
 	}
 
-	"Voteburn player"
-	{
-		"da"		"Brænd spiller {1}?"
-	}
-
 	"Voteff Off"
 	{
 		"da"		"Slå Friendly Fire fra? {1}"
@@ -85,9 +65,29 @@
 		"da"		"Slå Friendly Fire til? {1}"
 	}
 
-	"Voteslay Player"
+	"Gravity vote"
 	{
-		"da"		"Dræb {1}?"
+		"da"		"Stem om tyngdekraft"
+	}
+
+	"Vote FF"
+	{
+		"da"		"Stem om Friendly Fire"
+	}
+
+	"Burn vote"
+	{
+		"da"		"Stem om at brænde en spiller"
+	}
+
+	"Alltalk vote"
+	{
+		"da"		"Stem om alltalk"
+	}
+
+	"Slay vote"
+	{
+		"da"		"Stem om henrettelse mod spiller"
 	}
 
 	"Slayed player"

@@ -80,6 +80,11 @@
 		"de"		"Konfiguration ausführen"
 	}
 
+	"Admin logged in as"
+	{
+		"de"		"\"{1}\" ist angemeldet als \"{2}\" mit dem Zugriff: {3} "
+	}
+
 	"Admin logged in anon"
 	{
 		"de"		"\"{1}\" hat Zugriff: {2}"
@@ -100,6 +105,11 @@
 		"de"		"Benutzername"
 	}
 
+	"Kicked target"
+	{
+		"de"		"{1} wurde gekickt"
+	}
+
 	"Admin access"
 	{
 		"de"		"Admin-Zugriff"
@@ -110,19 +120,9 @@
 		"de"		"Konsolenvariable {1} ist jetzt geschützt. "
 	}
 
-	"Admin logged in as"
-	{
-		"de"		"\"{1}\" ist angemeldet als \"{2}\" mit dem Zugriff: {3} "
-	}
-
 	"Kicked target reason"
 	{
 		"de"		"{1} wurde gekickt (Grund: {2})"
-	}
-
-	"Kicked target"
-	{
-		"de"		"{1} wurde gekickt"
 	}
 
 }

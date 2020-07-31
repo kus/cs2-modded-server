@@ -5,9 +5,9 @@
 		"nl"		"Volgende Map: {1}"
 	}
 
-	"Current Map"
+	"Map History"
 	{
-		"nl"		"Huidige Map"
+		"nl"		"Map Historie"
 	}
 
 	"Map"
@@ -15,9 +15,9 @@
 		"nl"		"[Map]"
 	}
 
-	"Map History"
+	"Started"
 	{
-		"nl"		"Map Historie"
+		"nl"		"[Gestart]"
 	}
 
 	"Played Time"
@@ -30,9 +30,9 @@
 		"nl"		"[Reden van aanpassen]"
 	}
 
-	"Started"
+	"Current Map"
 	{
-		"nl"		"[Gestart]"
+		"nl"		"Huidige Map"
 	}
 
 	"ago"

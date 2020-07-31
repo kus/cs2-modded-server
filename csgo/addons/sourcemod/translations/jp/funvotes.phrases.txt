@@ -1,33 +1,33 @@
 "Phrases"
 {
+	"Initiated Vote Gravity"
+	{
+		"jp"		"重力投票を開始しました。"
+	}
+
+	"Initiated Vote Burn"
+	{
+		"jp"		"{1}への燃焼投票を開始しました。"
+	}
+
+	"Initiated Vote Slay"
+	{
+		"jp"		"{1}への殺害投票を開始しました。"
+	}
+
+	"Initiated Vote Alltalk"
+	{
+		"jp"		"alltalk投票を開始しました。"
+	}
+
+	"Initiated Vote FF"
+	{
+		"jp"		"Friendly Fire投票を開始しました。"
+	}
+
 	"Gravity Vote"
 	{
 		"jp"		"重力投票: {1}"
-	}
-
-	"Gravity vote"
-	{
-		"jp"		"重力投票"
-	}
-
-	"Vote FF"
-	{
-		"jp"		"FF投票"
-	}
-
-	"Slayed player"
-	{
-		"jp"		"プレイヤー '{1}' を殺害しました。"
-	}
-
-	"Slay vote"
-	{
-		"jp"		"殺害投票"
-	}
-
-	"Burn vote"
-	{
-		"jp"		"燃焼投票"
 	}
 
 	"Change Gravity To"
@@ -35,29 +35,14 @@
 		"jp"		"重力を{1}に変更しますか？"
 	}
 
-	"Alltalk vote"
+	"Voteburn player"
 	{
-		"jp"		"Alltalk投票"
-	}
-
-	"Voteff Off"
-	{
-		"jp"		"Friendly Fireをオフにしますか？{1}"
-	}
-
-	"Voteff On"
-	{
-		"jp"		"Friendly Fireをオンにしますか？{1}"
+		"jp"		"プレイヤー {1}を燃焼？"
 	}
 
 	"Voteslay Player"
 	{
 		"jp"		"{1}を殺害？"
-	}
-
-	"Voteburn player"
-	{
-		"jp"		"プレイヤー {1}を燃焼？"
 	}
 
 	"Votealltalk Off"
@@ -70,29 +55,44 @@
 		"jp"		"alltalkをオン？{1}"
 	}
 
-	"Initiated Vote Alltalk"
+	"Voteff Off"
 	{
-		"jp"		"alltalk投票を開始しました。"
+		"jp"		"Friendly Fireをオフにしますか？{1}"
 	}
 
-	"Initiated Vote Burn"
+	"Voteff On"
 	{
-		"jp"		"{1}への燃焼投票を開始しました。"
+		"jp"		"Friendly Fireをオンにしますか？{1}"
 	}
 
-	"Initiated Vote Gravity"
+	"Gravity vote"
 	{
-		"jp"		"重力投票を開始しました。"
+		"jp"		"重力投票"
 	}
 
-	"Initiated Vote FF"
+	"Vote FF"
 	{
-		"jp"		"Friendly Fire投票を開始しました。"
+		"jp"		"FF投票"
 	}
 
-	"Initiated Vote Slay"
+	"Burn vote"
 	{
-		"jp"		"{1}への殺害投票を開始しました。"
+		"jp"		"燃焼投票"
+	}
+
+	"Alltalk vote"
+	{
+		"jp"		"Alltalk投票"
+	}
+
+	"Slay vote"
+	{
+		"jp"		"殺害投票"
+	}
+
+	"Slayed player"
+	{
+		"jp"		"プレイヤー '{1}' を殺害しました。"
 	}
 
 }

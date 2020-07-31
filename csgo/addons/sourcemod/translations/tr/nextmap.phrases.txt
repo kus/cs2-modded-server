@@ -5,26 +5,6 @@
 		"tr"		"Sonraki Harita: {1}"
 	}
 
-	"ago"
-	{
-		"tr"		"zaman önce"
-	}
-
-	"Started"
-	{
-		"tr"		"[Başladı]"
-	}
-
-	"Reason"
-	{
-		"tr"		"[Bitme nedeni]"
-	}
-
-	"Played Time"
-	{
-		"tr"		"[Oynanılan Zaman]"
-	}
-
 	"Map History"
 	{
 		"tr"		"Harita Geçmişi"
@@ -35,9 +15,29 @@
 		"tr"		"[Harita]"
 	}
 
+	"Started"
+	{
+		"tr"		"[Başladı]"
+	}
+
+	"Played Time"
+	{
+		"tr"		"[Oynanılan Zaman]"
+	}
+
+	"Reason"
+	{
+		"tr"		"[Bitme nedeni]"
+	}
+
 	"Current Map"
 	{
 		"tr"		"Geçerli Harita"
+	}
+
+	"ago"
+	{
+		"tr"		"zaman önce"
 	}
 
 }

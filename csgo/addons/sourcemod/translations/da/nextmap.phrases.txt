@@ -5,9 +5,14 @@
 		"da"		"Næste bane: {1}"
 	}
 
-	"ago"
+	"Map History"
 	{
-		"da"		"siden"
+		"da"		"Bane historie"
+	}
+
+	"Map"
+	{
+		"da"		"[Bane]"
 	}
 
 	"Started"
@@ -20,9 +25,9 @@
 		"da"		"[Spillet tid]"
 	}
 
-	"Map History"
+	"Reason"
 	{
-		"da"		"Bane historie"
+		"da"		"[Afslutningsårsag]"
 	}
 
 	"Current Map"
@@ -30,14 +35,9 @@
 		"da"		"Aktuelle bane"
 	}
 
-	"Map"
+	"ago"
 	{
-		"da"		"[Bane]"
-	}
-
-	"Reason"
-	{
-		"da"		"[Afslutningsårsag]"
+		"da"		"siden"
 	}
 
 }

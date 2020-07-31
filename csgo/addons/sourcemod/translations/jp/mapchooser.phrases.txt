@@ -1,10 +1,5 @@
 "Phrases"
 {
-	"Extend Map"
-	{
-		"jp"		"現在のマップを延長"
-	}
-
 	"Vote Nextmap"
 	{
 		"jp"		"次のマップを投票してください！"
@@ -20,6 +15,16 @@
 		"jp"		"マップ投票が完了しました。次はマップは{1}です。({3}中{2}%%)"
 	}
 
+	"Current Map Extended"
+	{
+		"jp"		"現在のマップを延長します。({3}中{2}%%)"
+	}
+
+	"Extend Map"
+	{
+		"jp"		"現在のマップを延長"
+	}
+
 	"Dont Change"
 	{
 		"jp"		"変更しない"
@@ -33,11 +38,6 @@
 	"Changed Next Map"
 	{
 		"jp"		"次のマップを\"{1}\"に変更しました。"
-	}
-
-	"Current Map Extended"
-	{
-		"jp"		"現在のマップを延長します。({3}中{2}%%)"
 	}
 
 	"Starting Runoff"

@@ -1,28 +1,8 @@
 "Phrases"
 {
-	"Selected Map"
-	{
-		"hu"		"{1} szavazata: {2}"
-	}
-
 	"Rock The Vote"
 	{
 		"hu"		"Pályaváltás:"
-	}
-
-	"RTV Vote Ready"
-	{
-		"hu"		"Pályaváltás véget ért"
-	}
-
-	"RTV Started"
-	{
-		"hu"		"Pályaváltás elindítva"
-	}
-
-	"RTV Requested"
-	{
-		"hu"		"{1} pályaváltást szeretne. ({3} szükséges szavazatból {2} van eddig)"
 	}
 
 	"RTV Not Allowed"
@@ -30,64 +10,14 @@
 		"hu"		"Még nem lehet pályaszavazást indítani"
 	}
 
+	"RTV Started"
+	{
+		"hu"		"Pályaváltás elindítva"
+	}
+
 	"RTV Ended"
 	{
 		"hu"		"A pályaváltás véget ért, nem lehet újat indítani vagy pályát nevezni"
-	}
-
-	"Nominate Title"
-	{
-		"hu"		"Pálya nevezése:"
-	}
-
-	"No Votes"
-	{
-		"hu"		"Senki se szavazott a pályaváltásra, marad a jelenlegi"
-	}
-
-	"Minimal Players Not Met"
-	{
-		"hu"		"Nincs elegendő játékos"
-	}
-
-	"Max Nominations"
-	{
-		"hu"		"Nem lehet több pályát nevezni"
-	}
-
-	"Map Nominated"
-	{
-		"hu"		"{1} a {2}-t nevezte pályaváltásra"
-	}
-
-	"Map Inserted"
-	{
-		"hu"		"{1} hozzáadva a listához"
-	}
-
-	"Map Already Nominated"
-	{
-		"hu"		"A pályát már nevezték"
-	}
-
-	"Don't Change"
-	{
-		"hu"		"Maradjon"
-	}
-
-	"Current Map Stays"
-	{
-		"hu"		"A pályaváltás szavazásának indítása sikertelen"
-	}
-
-	"Map Already In Vote"
-	{
-		"hu"		"{1} már a listában van"
-	}
-
-	"Changing Maps"
-	{
-		"hu"		"Pálya váltása {1}-ra! "
 	}
 
 	"Already Voted"
@@ -95,9 +25,79 @@
 		"hu"		"Már szavaztál pályaváltás indítására"
 	}
 
+	"Minimal Players Not Met"
+	{
+		"hu"		"Nincs elegendő játékos"
+	}
+
+	"Map Already In Vote"
+	{
+		"hu"		"{1} már a listában van"
+	}
+
+	"Map Inserted"
+	{
+		"hu"		"{1} hozzáadva a listához"
+	}
+
+	"RTV Requested"
+	{
+		"hu"		"{1} pályaváltást szeretne. ({3} szükséges szavazatból {2} van eddig)"
+	}
+
+	"RTV Vote Ready"
+	{
+		"hu"		"Pályaváltás véget ért"
+	}
+
+	"Don't Change"
+	{
+		"hu"		"Maradjon"
+	}
+
 	"Already Nominated"
 	{
 		"hu"		"Már neveztél pályát"
+	}
+
+	"Max Nominations"
+	{
+		"hu"		"Nem lehet több pályát nevezni"
+	}
+
+	"Selected Map"
+	{
+		"hu"		"{1} szavazata: {2}"
+	}
+
+	"No Votes"
+	{
+		"hu"		"Senki se szavazott a pályaváltásra, marad a jelenlegi"
+	}
+
+	"Current Map Stays"
+	{
+		"hu"		"A pályaváltás szavazásának indítása sikertelen"
+	}
+
+	"Changing Maps"
+	{
+		"hu"		"Pálya váltása {1}-ra! "
+	}
+
+	"Map Already Nominated"
+	{
+		"hu"		"A pályát már nevezték"
+	}
+
+	"Map Nominated"
+	{
+		"hu"		"{1} a {2}-t nevezte pályaváltásra"
+	}
+
+	"Nominate Title"
+	{
+		"hu"		"Pálya nevezése:"
 	}
 
 }

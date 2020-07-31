@@ -1,20 +1,5 @@
 "Phrases"
 {
-	"Beacon player"
-	{
-		"tr"		"Oyuncuyu işaret yap"
-	}
-
-	"Blind amount"
-	{
-		"tr"		"Nasıl kör et?"
-	}
-
-	"Blind player"
-	{
-		"tr"		"Oyuncuyu kör et"
-	}
-
 	"Burn player"
 	{
 		"tr"		"Oyuncuyu yak"
@@ -23,11 +8,6 @@
 	"FireBomb player"
 	{
 		"tr"		"Oyuncuyu ateş bombası yap"
-	}
-
-	"Drug player"
-	{
-		"tr"		"Oyuncuyu ilaçla"
 	}
 
 	"Freeze player"
@@ -40,49 +20,44 @@
 		"tr"		"Oyuncuyu donma bombası yap"
 	}
 
-	"Froze target"
+	"TimeBomb player"
 	{
-		"tr"		"{1} dondu."
+		"tr"		"Oyuncuyu zaman bombası yap"
 	}
 
-	"Fully blind"
+	"Beacon player"
 	{
-		"tr"		"Tamamen kör et"
+		"tr"		"Oyuncuyu işaret yap"
 	}
 
-	"Gravity High"
+	"NoClip player"
 	{
-		"tr"		"Yerçekimi Yüksek"
+		"tr"		"Oyuncuyu hayalet yap"
 	}
 
-	"Gravity Low"
+	"Blind player"
 	{
-		"tr"		"Yerçekimi Düşük"
+		"tr"		"Oyuncuyu kör et"
 	}
 
-	"Gravity Very High"
+	"Drug player"
 	{
-		"tr"		"Yerçekimi Çok Yüksek"
-	}
-
-	"Gravity Normal"
-	{
-		"tr"		"Yerçekimi Normal"
-	}
-
-	"Gravity Very Low"
-	{
-		"tr"		"Yerçekimi Çok Az"
-	}
-
-	"Gravity amount"
-	{
-		"tr"		"Yerçekimi?"
+		"tr"		"Oyuncuyu ilaçla"
 	}
 
 	"Gravity player"
 	{
 		"tr"		"Oyuncunun yerçekimini değiştir"
+	}
+
+	"Blind amount"
+	{
+		"tr"		"Nasıl kör et?"
+	}
+
+	"Fully blind"
+	{
+		"tr"		"Tamamen kör et"
 	}
 
 	"Half blind"
@@ -95,9 +70,54 @@
 		"tr"		"Kör değil"
 	}
 
-	"Toggled drug on target"
+	"Gravity amount"
 	{
-		"tr"		"{1} adlı oyuncunun ilaçlanması değiştirildi."
+		"tr"		"Yerçekimi?"
+	}
+
+	"Gravity Very High"
+	{
+		"tr"		"Yerçekimi Çok Yüksek"
+	}
+
+	"Gravity High"
+	{
+		"tr"		"Yerçekimi Yüksek"
+	}
+
+	"Gravity Normal"
+	{
+		"tr"		"Yerçekimi Normal"
+	}
+
+	"Gravity Low"
+	{
+		"tr"		"Yerçekimi Düşük"
+	}
+
+	"Gravity Very Low"
+	{
+		"tr"		"Yerçekimi Çok Az"
+	}
+
+	"Set target on fire"
+	{
+		"tr"		"{1} adlı oyuncuyu ateşe ver."
+	}
+
+	"Toggled FireBomb on target"
+	{
+		"tr"		"{1} adlı oyuncunun ateş bombası yapılması değiştirildi."
+	}
+
+	"Froze target"
+	{
+		"tr"		"{1} dondu."
+	}
+
+	"Toggled FreezeBomb on target"
+	{
+		"tr"		"{1} adlı oyuncunun donma bombası yapılması değiştirildi."
 	}
 
 	"Toggled beacon on target"
@@ -110,39 +130,14 @@
 		"tr"		"{1} adlı oyuncunun zaman bombası yapılması değiştirildi."
 	}
 
-	"Toggled FreezeBomb on target"
-	{
-		"tr"		"{1} adlı oyuncunun donma bombası yapılması değiştirildi."
-	}
-
-	"Toggled FireBomb on target"
-	{
-		"tr"		"{1} adlı oyuncunun ateş bombası yapılması değiştirildi."
-	}
-
 	"Toggled noclip on target"
 	{
 		"tr"		"{1} adlı oyuncunun hayaletliği değiştirildi."
 	}
 
-	"TimeBomb player"
+	"Toggled drug on target"
 	{
-		"tr"		"Oyuncuyu zaman bombası yap"
-	}
-
-	"Till Explodes"
-	{
-		"tr"		"{1} adlı oyuncunun patlamasına {2} saniye kaldı."
-	}
-
-	"Set target on fire"
-	{
-		"tr"		"{1} adlı oyuncuyu ateşe ver."
-	}
-
-	"Set gravity on target"
-	{
-		"tr"		"{1} adlı oyuncunun yerçekimini değiştir."
+		"tr"		"{1} adlı oyuncunun ilaçlanması değiştirildi."
 	}
 
 	"Set blind on target"
@@ -150,9 +145,14 @@
 		"tr"		"{1} üzerinde kör etme kullan."
 	}
 
-	"NoClip player"
+	"Set gravity on target"
 	{
-		"tr"		"Oyuncuyu hayalet yap"
+		"tr"		"{1} adlı oyuncunun yerçekimini değiştir."
+	}
+
+	"Till Explodes"
+	{
+		"tr"		"{1} adlı oyuncunun patlamasına {2} saniye kaldı."
 	}
 
 	"Unfrozen"

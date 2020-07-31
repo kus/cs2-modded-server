@@ -1,8 +1,8 @@
 "Phrases"
 {
-	"Server Commands"
+	"Admin Menu"
 	{
-		"es"		"Comandos de Servidor"
+		"es"		"Menú de Admin"
 	}
 
 	"Player Commands"
@@ -10,9 +10,9 @@
 		"es"		"Comandos de Jugador  "
 	}
 
-	"Admin Menu"
+	"Server Commands"
 	{
-		"es"		"Menú de Admin"
+		"es"		"Comandos de Servidor"
 	}
 
 	"Voting Commands"

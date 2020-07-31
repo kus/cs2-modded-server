@@ -1,28 +1,8 @@
 "Phrases"
 {
-	"Beacon player"
-	{
-		"pt_p"		"Sinalizar jogador"
-	}
-
-	"Blind amount"
-	{
-		"pt_p"		"Quanto?"
-	}
-
-	"Blind player"
-	{
-		"pt_p"		"Cegar jogador"
-	}
-
 	"Burn player"
 	{
 		"pt_p"		"Queimar jogador"
-	}
-
-	"Drug player"
-	{
-		"pt_p"		"Drogar jogador"
 	}
 
 	"FireBomb player"
@@ -40,49 +20,44 @@
 		"pt_p"		"Bomba de gelo no jogador"
 	}
 
-	"Froze target"
+	"TimeBomb player"
 	{
-		"pt_p"		"- {1} foi congelado(a)."
+		"pt_p"		"Bomba-relógio no jogador"
 	}
 
-	"Fully blind"
+	"Beacon player"
 	{
-		"pt_p"		"Totalmente cego"
+		"pt_p"		"Sinalizar jogador"
 	}
 
-	"Gravity High"
+	"NoClip player"
 	{
-		"pt_p"		"Gravidade alta"
+		"pt_p"		"Alterar NoClip em jogador"
 	}
 
-	"Gravity Low"
+	"Blind player"
 	{
-		"pt_p"		"Gravidade alta"
+		"pt_p"		"Cegar jogador"
 	}
 
-	"Gravity Normal"
+	"Drug player"
 	{
-		"pt_p"		"Gravidade normal"
-	}
-
-	"Gravity Very High"
-	{
-		"pt_p"		"Gravidade muito alta"
-	}
-
-	"Gravity Very Low"
-	{
-		"pt_p"		"Gravidade muito baixa"
-	}
-
-	"Gravity amount"
-	{
-		"pt_p"		"Gravidade?"
+		"pt_p"		"Drogar jogador"
 	}
 
 	"Gravity player"
 	{
 		"pt_p"		"Gravidade do jogador"
+	}
+
+	"Blind amount"
+	{
+		"pt_p"		"Quanto?"
+	}
+
+	"Fully blind"
+	{
+		"pt_p"		"Totalmente cego"
 	}
 
 	"Half blind"
@@ -95,9 +70,74 @@
 		"pt_p"		"Visão normal"
 	}
 
-	"NoClip player"
+	"Gravity amount"
 	{
-		"pt_p"		"Alterar NoClip em jogador"
+		"pt_p"		"Gravidade?"
+	}
+
+	"Gravity Very High"
+	{
+		"pt_p"		"Gravidade muito alta"
+	}
+
+	"Gravity High"
+	{
+		"pt_p"		"Gravidade alta"
+	}
+
+	"Gravity Normal"
+	{
+		"pt_p"		"Gravidade normal"
+	}
+
+	"Gravity Low"
+	{
+		"pt_p"		"Gravidade alta"
+	}
+
+	"Gravity Very Low"
+	{
+		"pt_p"		"Gravidade muito baixa"
+	}
+
+	"Set target on fire"
+	{
+		"pt_p"		"- Foi ateado um fogo em {1}."
+	}
+
+	"Toggled FireBomb on target"
+	{
+		"pt_p"		"- A bomba de fogo em {1} foi alterada."
+	}
+
+	"Froze target"
+	{
+		"pt_p"		"- {1} foi congelado(a)."
+	}
+
+	"Toggled FreezeBomb on target"
+	{
+		"pt_p"		"- A bomba de gelo em {1} foi alterada."
+	}
+
+	"Toggled beacon on target"
+	{
+		"pt_p"		"- O sinalizador em {1} foi alterado. "
+	}
+
+	"Toggled TimeBomb on target"
+	{
+		"pt_p"		"- A bomba-relógio em {1} foi alterada."
+	}
+
+	"Toggled noclip on target"
+	{
+		"pt_p"		"- Os valores de noclip em {1} foram alterados."
+	}
+
+	"Toggled drug on target"
+	{
+		"pt_p"		"- As drogas em {1} foram alteradas."
 	}
 
 	"Set blind on target"
@@ -110,49 +150,9 @@
 		"pt_p"		"- A gravidade de {1} foi alterada."
 	}
 
-	"Set target on fire"
-	{
-		"pt_p"		"- Foi ateado um fogo em {1}."
-	}
-
 	"Till Explodes"
 	{
 		"pt_p"		"{2} segundos até que {1} expluda."
-	}
-
-	"TimeBomb player"
-	{
-		"pt_p"		"Bomba-relógio no jogador"
-	}
-
-	"Toggled FireBomb on target"
-	{
-		"pt_p"		"- A bomba de fogo em {1} foi alterada."
-	}
-
-	"Toggled FreezeBomb on target"
-	{
-		"pt_p"		"- A bomba de gelo em {1} foi alterada."
-	}
-
-	"Toggled TimeBomb on target"
-	{
-		"pt_p"		"- A bomba-relógio em {1} foi alterada."
-	}
-
-	"Toggled beacon on target"
-	{
-		"pt_p"		"- O sinalizador em {1} foi alterado. "
-	}
-
-	"Toggled drug on target"
-	{
-		"pt_p"		"- As drogas em {1} foram alteradas."
-	}
-
-	"Toggled noclip on target"
-	{
-		"pt_p"		"- Os valores de noclip em {1} foram alterados."
 	}
 
 	"Unfrozen"

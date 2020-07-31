@@ -1,10 +1,5 @@
 "Phrases"
 {
-	"Slay player"
-	{
-		"es"		"Matar jugador"
-	}
-
 	"Slap player"
 	{
 		"es"		"Abofetear jugador"
@@ -13,6 +8,11 @@
 	"Slap damage"
 	{
 		"es"		"Daño de bofetada"
+	}
+
+	"Slay player"
+	{
+		"es"		"Matar jugador"
 	}
 
 	"Slapped target"
@@ -30,14 +30,14 @@
 		"es"		"Un administrador te ha cambiado el nombre"
 	}
 
-	"Rename player"
-	{
-		"es"		"Renombrar jugador"
-	}
-
 	"Renamed target"
 	{
 		"es"		"{1} renombrado."
+	}
+
+	"Rename player"
+	{
+		"es"		"Renombrar jugador"
 	}
 
 	"Dead Player Rename"

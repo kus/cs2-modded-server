@@ -10,14 +10,19 @@
 		"hu"		"Jelenlegi idő: {1}"
 	}
 
+	"Friendly Fire On"
+	{
+		"hu"		"Csapattárs sebzés bekapcsolva."
+	}
+
+	"Friendly Fire Off"
+	{
+		"hu"		"Csapattárs sebzés kikapcsolva."
+	}
+
 	"Current Map"
 	{
 		"hu"		"{1} a jelenlegi pálya"
-	}
-
-	"MaxRoundsAppend"
-	{
-		"hu"		", or change map after {1} round{2}"
 	}
 
 	"LastRound"
@@ -40,51 +45,6 @@
 		"hu"		"Szavazás folyik"
 	}
 
-	"WinLimitPlural"
-	{
-		"hu"		"{1} győztes kör után pályaváltás következik."
-	}
-
-	"WinLimitAppendPlural"
-	{
-		"hu"		", vagy {1} győztes kör után pályaváltás"
-	}
-
-	"MaxRoundsPlural"
-	{
-		"hu"		"{1} kör után pályaváltás lesz."
-	}
-
-	"MaxRoundsAppendPlural"
-	{
-		"hu"		", vagy {1} kör után pályaváltás"
-	}
-
-	"FragLimitAppendPlural"
-	{
-		"hu"		", vagy {1} játékospontszám elérése után pályaváltás"
-	}
-
-	"FragLimitAppend"
-	{
-		"hu"		", vagy 1 játékospontszám elérése után pályaváltás"
-	}
-
-	"FragLimitPlural"
-	{
-		"hu"		"{1} játékospontszám elérése után pályaváltás lesz."
-	}
-
-	"Friendly Fire Off"
-	{
-		"hu"		"Csapattárs sebzés kikapcsolva."
-	}
-
-	"Friendly Fire On"
-	{
-		"hu"		"Csapattárs sebzés bekapcsolva."
-	}
-
 	"WinLimitAppend"
 	{
 		"hu"		"vagy amint az egyik csapat pontot szerez"
@@ -95,14 +55,54 @@
 		"hu"		"Pályaváltás amint egy az egyik csapat pontot szerez"
 	}
 
+	"MaxRoundsAppend"
+	{
+		"hu"		", or change map after {1} round{2}"
+	}
+
 	"MaxRounds"
 	{
 		"hu"		"Pályaváltás egy kör múlva"
 	}
 
+	"FragLimitAppend"
+	{
+		"hu"		", vagy 1 játékospontszám elérése után pályaváltás"
+	}
+
 	"FragLimit"
 	{
 		"hu"		"Pályaváltás amint egy játékos megöl valakit"
+	}
+
+	"WinLimitAppendPlural"
+	{
+		"hu"		", vagy {1} győztes kör után pályaváltás"
+	}
+
+	"WinLimitPlural"
+	{
+		"hu"		"{1} győztes kör után pályaváltás következik."
+	}
+
+	"MaxRoundsAppendPlural"
+	{
+		"hu"		", vagy {1} kör után pályaváltás"
+	}
+
+	"MaxRoundsPlural"
+	{
+		"hu"		"{1} kör után pályaváltás lesz."
+	}
+
+	"FragLimitAppendPlural"
+	{
+		"hu"		", vagy {1} játékospontszám elérése után pályaváltás"
+	}
+
+	"FragLimitPlural"
+	{
+		"hu"		"{1} játékospontszám elérése után pályaváltás lesz."
 	}
 
 }

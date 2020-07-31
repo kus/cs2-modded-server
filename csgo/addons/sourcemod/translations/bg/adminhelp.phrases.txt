@@ -1,13 +1,8 @@
 "Phrases"
 {
-	"Entries n - m in page k"
+	"SM help commands"
 	{
-		"bg"		"Резултати {1} - {2} на страница {3} "
-	}
-
-	"No commands available"
-	{
-		"bg"		"Няма налични команди"
+		"bg"		"SM помощни команди"
 	}
 
 	"No description available"
@@ -15,14 +10,19 @@
 		"bg"		"Няма налично описание"
 	}
 
-	"SM help commands"
+	"No commands available"
 	{
-		"bg"		"SM помощни команди"
+		"bg"		"Няма налични команди"
 	}
 
 	"Type sm_help to see more"
 	{
 		"bg"		"Напишете sm_help {1}, за да видите още команди"
+	}
+
+	"Entries n - m in page k"
+	{
+		"bg"		"Резултати {1} - {2} на страница {3} "
 	}
 
 	"No matching results found"

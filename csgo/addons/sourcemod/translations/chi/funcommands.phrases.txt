@@ -30,6 +30,11 @@
 		"chi"		"点玩家灯"
 	}
 
+	"NoClip player"
+	{
+		"chi"		"设置穿墙模式"
+	}
+
 	"Blind player"
 	{
 		"chi"		"把玩家变成瞎子"
@@ -95,6 +100,11 @@
 		"chi"		"超低重力"
 	}
 
+	"Set target on fire"
+	{
+		"chi"		"将 {1} 点燃."
+	}
+
 	"Toggled FireBomb on target"
 	{
 		"chi"		"触发 {1} 身上的燃烧弹."
@@ -120,6 +130,11 @@
 		"chi"		"触发 {1} 身上的定时炸弹."
 	}
 
+	"Toggled noclip on target"
+	{
+		"chi"		"触发{1}的穿墙模式"
+	}
+
 	"Toggled drug on target"
 	{
 		"chi"		"激活 {1} 身上的毒药."
@@ -138,21 +153,6 @@
 	"Till Explodes"
 	{
 		"chi"		"还有 {2} 秒钟 {1} 就要爆炸."
-	}
-
-	"Set target on fire"
-	{
-		"chi"		"将 {1} 点燃."
-	}
-
-	"NoClip player"
-	{
-		"chi"		"设置穿墙模式"
-	}
-
-	"Toggled noclip on target"
-	{
-		"chi"		"触发{1}的穿墙模式"
 	}
 
 	"Unfrozen"

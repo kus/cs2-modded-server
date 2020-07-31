@@ -1,93 +1,13 @@
 "Phrases"
 {
-	"Access"
+	"Yes"
 	{
-		"nl"		"Toegang"
-	}
-
-	"Admin cache refreshed"
-	{
-		"nl"		"Admin geheugen ververst."
-	}
-
-	"Cancel vote"
-	{
-		"nl"		"Stop de vote"
-	}
-
-	"Cancelled Vote"
-	{
-		"nl"		"Vote is gestopt."
-	}
-
-	"Cannot target bot"
-	{
-		"nl"		"Onmogelijk om dit commando voor een bot te gebruiken. "
-	}
-
-	"Changing map"
-	{
-		"nl"		"Map wordt verandert naar {1}..."
-	}
-
-	"Command is in-game only"
-	{
-		"nl"		"Dit commando kan alleen in het spel gebruikt worden."
-	}
-
-	"Could not connect to database"
-	{
-		"nl"		"Kan niet verbinden met de database."
-	}
-
-	"Failed to query database"
-	{
-		"nl"		"Mislukt om database aan te spreken."
-	}
-
-	"Invalid Amount"
-	{
-		"nl"		"Verkeerd getal ingevuld"
-	}
-
-	"Kick player"
-	{
-		"nl"		"Verwijder speler"
-	}
-
-	"Map was not found"
-	{
-		"nl"		"Map {1} niet gevonden."
-	}
-
-	"More than one client matched"
-	{
-		"nl"		"Meer dan één speler voldoet aan het patroon."
-	}
-
-	"More than one client matches"
-	{
-		"nl"		"Meer dan één speler voldoet aan het patroon \"{1}\"."
-	}
-
-	"Name"
-	{
-		"nl"		"Naam"
+		"nl"		"Ja"
 	}
 
 	"No"
 	{
 		"nl"		"Nee"
-	}
-
-	"No Votes Cast"
-	{
-		"nl"		"Er zijn geen stemmen uitgebracht."
-	}
-
-	"No access to cvar"
-	{
-		"nl"		"Geen toegang tot deze cvar."
 	}
 
 	"No matching client"
@@ -100,9 +20,14 @@
 		"nl"		"Geen spelers gevonden volgens patroon."
 	}
 
-	"Played Sound"
+	"More than one client matches"
 	{
-		"nl"		"Geluid afgespeeld voor speler '{1}'"
+		"nl"		"Meer dan één speler voldoet aan het patroon \"{1}\"."
+	}
+
+	"More than one client matched"
+	{
+		"nl"		"Meer dan één speler voldoet aan het patroon."
 	}
 
 	"Player no longer available"
@@ -110,34 +35,24 @@
 		"nl"		"De speler die je hebt geselecteerd is niet langer beschikbaar."
 	}
 
-	"Reload admins"
+	"Kick player"
 	{
-		"nl"		"Beheerders opnieuw laden"
+		"nl"		"Verwijder speler"
 	}
 
-	"Slapped player"
+	"Kicked by admin"
 	{
-		"nl"		"Speler '{1}' geslagen"
+		"nl"		"Verwijderd door beheerder"
 	}
 
-	"Target is not in game"
+	"Changing map"
 	{
-		"nl"		"De opgegeven speler is nog niet helemaal in het spel aanwezig."
+		"nl"		"Map wordt verandert naar {1}..."
 	}
 
-	"Target must be alive"
+	"Map was not found"
 	{
-		"nl"		"Dit commando kan alleen worden gebruikt voor spelers die nog leven."
-	}
-
-	"Target must be dead"
-	{
-		"nl"		"Dit commando kan alleen worden gebruikt voor spelers die dood zijn."
-	}
-
-	"Unable to find cvar"
-	{
-		"nl"		"Niet mogelijk om cvar: {1} te vinden"
+		"nl"		"Map {1} niet gevonden."
 	}
 
 	"Unable to target"
@@ -145,9 +60,104 @@
 		"nl"		"Je kunt deze speler niet als doel instellen."
 	}
 
+	"Name"
+	{
+		"nl"		"Naam"
+	}
+
+	"Access"
+	{
+		"nl"		"Toegang"
+	}
+
+	"See console for output"
+	{
+		"nl"		"Controleer console voor het resultaat."
+	}
+
+	"Cannot target bot"
+	{
+		"nl"		"Onmogelijk om dit commando voor een bot te gebruiken. "
+	}
+
+	"Unable to find cvar"
+	{
+		"nl"		"Niet mogelijk om cvar: {1} te vinden"
+	}
+
+	"No access to cvar"
+	{
+		"nl"		"Geen toegang tot deze cvar."
+	}
+
 	"Value of cvar"
 	{
 		"nl"		"Waarde van cvar \"{1}\": \"{2}\""
+	}
+
+	"Cvar changed"
+	{
+		"nl"		"Cvar \"{1}\" naar \"{2}\" veranderd."
+	}
+
+	"Config not found"
+	{
+		"nl"		"Config bestand \"{1}\" niet gevonden."
+	}
+
+	"Executed config"
+	{
+		"nl"		"Config bestand \"{1}\" uitgevoerd."
+	}
+
+	"Admin cache refreshed"
+	{
+		"nl"		"Admin geheugen ververst."
+	}
+
+	"Invalid Amount"
+	{
+		"nl"		"Verkeerd getal ingevuld"
+	}
+
+	"Cannot be performed on dead"
+	{
+		"nl"		"Deze actie kan niet op dode speler \"{1}\" uitgevoerd worden"
+	}
+
+	"Player has since died"
+	{
+		"nl"		"Actie kan niet uitgevoerd worden omdat de speler dood is."
+	}
+
+	"Vote in Progress"
+	{
+		"nl"		"Een stem is al gaande."
+	}
+
+	"Vote Not In Progress"
+	{
+		"nl"		"Er is geen stem gaande op dit moment."
+	}
+
+	"Cancelled Vote"
+	{
+		"nl"		"Vote is gestopt."
+	}
+
+	"Cancel vote"
+	{
+		"nl"		"Stop de vote"
+	}
+
+	"Vote Select"
+	{
+		"nl"		"{1} heeft {2} gekozen."
+	}
+
+	"No Votes Cast"
+	{
+		"nl"		"Er zijn geen stemmen uitgebracht."
 	}
 
 	"Vote Delay Minutes"
@@ -160,64 +170,14 @@
 		"nl"		"Je dient {1} seconden te wachten voor het starten van nog een stem."
 	}
 
-	"Vote Not In Progress"
+	"Could not connect to database"
 	{
-		"nl"		"Er is geen stem gaande op dit moment."
+		"nl"		"Kan niet verbinden met de database."
 	}
 
-	"Vote Select"
+	"Failed to query database"
 	{
-		"nl"		"{1} heeft {2} gekozen."
-	}
-
-	"Vote in Progress"
-	{
-		"nl"		"Een stem is al gaande."
-	}
-
-	"Yes"
-	{
-		"nl"		"Ja"
-	}
-
-	"Cannot change vote"
-	{
-		"nl"		"Je kunt de selectie voor deze vote niet veranderen."
-	}
-
-	"Cannot participate in vote"
-	{
-		"nl"		"Je kunt niet meedoen in deze vote."
-	}
-
-	"Off"
-	{
-		"nl"		"Uit"
-	}
-
-	"On"
-	{
-		"nl"		"Aan"
-	}
-
-	"Cannot be performed on dead"
-	{
-		"nl"		"Deze actie kan niet op dode speler \"{1}\" uitgevoerd worden"
-	}
-
-	"Config not found"
-	{
-		"nl"		"Config bestand \"{1}\" niet gevonden."
-	}
-
-	"Cvar changed"
-	{
-		"nl"		"Cvar \"{1}\" naar \"{2}\" veranderd."
-	}
-
-	"Executed config"
-	{
-		"nl"		"Config bestand \"{1}\" uitgevoerd."
+		"nl"		"Mislukt om database aan te spreken."
 	}
 
 	"Invalid SteamID specified"
@@ -225,9 +185,44 @@
 		"nl"		"Je hebt een verkeerde Steam ID ingevuld (moet beginnen met 'STEAM_')."
 	}
 
-	"Kicked by admin"
+	"Reload admins"
 	{
-		"nl"		"Verwijderd door beheerder"
+		"nl"		"Beheerders opnieuw laden"
+	}
+
+	"Command is in-game only"
+	{
+		"nl"		"Dit commando kan alleen in het spel gebruikt worden."
+	}
+
+	"Target must be dead"
+	{
+		"nl"		"Dit commando kan alleen worden gebruikt voor spelers die dood zijn."
+	}
+
+	"Target must be alive"
+	{
+		"nl"		"Dit commando kan alleen worden gebruikt voor spelers die nog leven."
+	}
+
+	"Target is not in game"
+	{
+		"nl"		"De opgegeven speler is nog niet helemaal in het spel aanwezig."
+	}
+
+	"Played Sound"
+	{
+		"nl"		"Geluid afgespeeld voor speler '{1}'"
+	}
+
+	"Slapped player"
+	{
+		"nl"		"Speler '{1}' geslagen"
+	}
+
+	"Slayed player"
+	{
+		"nl"		"Speler '{1}' geslayed"
 	}
 
 	"Kicked player"
@@ -235,19 +230,29 @@
 		"nl"		"Speler '{1}' verwijderd"
 	}
 
-	"Player has since died"
+	"Cannot participate in vote"
 	{
-		"nl"		"Actie kan niet uitgevoerd worden omdat de speler dood is."
+		"nl"		"Je kunt niet meedoen in deze vote."
 	}
 
-	"See console for output"
+	"Cannot change vote"
 	{
-		"nl"		"Controleer console voor het resultaat."
+		"nl"		"Je kunt de selectie voor deze vote niet veranderen."
 	}
 
-	"Slayed player"
+	"On"
 	{
-		"nl"		"Speler '{1}' geslayed"
+		"nl"		"Aan"
+	}
+
+	"Off"
+	{
+		"nl"		"Uit"
+	}
+
+	"Say all"
+	{
+		"nl"		"(IEDEREEN) {1}"
 	}
 
 	"Chat admins"
@@ -263,11 +268,6 @@
 	"Private say to"
 	{
 		"nl"		"(PRIVE NAAR {1}) {2}"
-	}
-
-	"Say all"
-	{
-		"nl"		"(IEDEREEN) {1}"
 	}
 
 }

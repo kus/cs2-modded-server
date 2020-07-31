@@ -1,10 +1,5 @@
 "Phrases"
 {
-	"Can't Nominate Current Map"
-	{
-		"fr"		" La map que vous avez choisi est en cours d'utilisation et ne peut-être proposée. "
-	}
-
 	"Already Nominated"
 	{
 		"fr"		"Vous avez déja proposé une map. "
@@ -43,6 +38,11 @@
 	"Nominate Title"
 	{
 		"fr"		"Sélectionnez une Map:"
+	}
+
+	"Can't Nominate Current Map"
+	{
+		"fr"		" La map que vous avez choisi est en cours d'utilisation et ne peut-être proposée. "
 	}
 
 	"Map in Exclude List"

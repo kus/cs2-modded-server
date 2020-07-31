@@ -1,53 +1,8 @@
 "Phrases"
 {
-	"Already Nominated"
-	{
-		"lt"		"Jūs jau nominavote žemėlapį."
-	}
-
-	"Already Voted"
-	{
-		"lt"		"Jūs jau išreiškėte savo nuomonę dėl žemėlapio pakeitimo."
-	}
-
-	"Changing Maps"
-	{
-		"lt"		"Keičiamas žemėlapis į {1}! Žaidėjai patys išsirinko!"
-	}
-
-	"Current Map Stays"
-	{
-		"lt"		"Tęsiamas dabartinis žemėlapis! Žaidėjai patys išsirinko!"
-	}
-
-	"Don't Change"
-	{
-		"lt"		"Nekeisti dabartinio žemėlapio"
-	}
-
-	"Selected Map"
-	{
-		"lt"		"{1} pasirinko {2}"
-	}
-
 	"Rock The Vote"
 	{
 		"lt"		"Iškviesti balsavimą:"
-	}
-
-	"RTV Vote Ready"
-	{
-		"lt"		"Kviečiamas balsavimas!"
-	}
-
-	"RTV Started"
-	{
-		"lt"		"Balsavimas jau prasidėjo."
-	}
-
-	"RTV Requested"
-	{
-		"lt"		"{1} nori iškviesti balsavimą, žaidėjo pageidavimu. ({2} balsai už, {3} balsų reikia)"
 	}
 
 	"RTV Not Allowed"
@@ -55,39 +10,19 @@
 		"lt"		"Balsavimas, vartotojo pageidavimu, vis dar neleidžiamas."
 	}
 
+	"RTV Started"
+	{
+		"lt"		"Balsavimas jau prasidėjo."
+	}
+
 	"RTV Ended"
 	{
 		"lt"		"BVP jau pasibaigė, jūs negalite pradėti naujo balsavimo at nominuoti žemėlapio."
 	}
 
-	"Nominate Title"
+	"Already Voted"
 	{
-		"lt"		"Nominuotas žemėlapis:"
-	}
-
-	"Map Already In Vote"
-	{
-		"lt"		"Žemėlapis '{1}' jau balsavimo pagal pageidavimą sąraše."
-	}
-
-	"Map Already Nominated"
-	{
-		"lt"		"Žemėlapis, kurį jūs pasirinkote, jau buvo nominuotas."
-	}
-
-	"Map Inserted"
-	{
-		"lt"		"Žemėlapis '{1}' įtrauktas į balsavimo pagal pageidavimą sąrašą."
-	}
-
-	"Map Nominated"
-	{
-		"lt"		"{1} nominamo {2} į balsavimo pagal pageidavimą sąrašą."
-	}
-
-	"Max Nominations"
-	{
-		"lt"		"Maksimalus kiekis nominacijų pasiektas."
+		"lt"		"Jūs jau išreiškėte savo nuomonę dėl žemėlapio pakeitimo."
 	}
 
 	"Minimal Players Not Met"
@@ -95,9 +30,74 @@
 		"lt"		"Permažai žaidėjų."
 	}
 
+	"Map Already In Vote"
+	{
+		"lt"		"Žemėlapis '{1}' jau balsavimo pagal pageidavimą sąraše."
+	}
+
+	"Map Inserted"
+	{
+		"lt"		"Žemėlapis '{1}' įtrauktas į balsavimo pagal pageidavimą sąrašą."
+	}
+
+	"RTV Requested"
+	{
+		"lt"		"{1} nori iškviesti balsavimą, žaidėjo pageidavimu. ({2} balsai už, {3} balsų reikia)"
+	}
+
+	"RTV Vote Ready"
+	{
+		"lt"		"Kviečiamas balsavimas!"
+	}
+
+	"Don't Change"
+	{
+		"lt"		"Nekeisti dabartinio žemėlapio"
+	}
+
+	"Already Nominated"
+	{
+		"lt"		"Jūs jau nominavote žemėlapį."
+	}
+
+	"Max Nominations"
+	{
+		"lt"		"Maksimalus kiekis nominacijų pasiektas."
+	}
+
+	"Selected Map"
+	{
+		"lt"		"{1} pasirinko {2}"
+	}
+
 	"No Votes"
 	{
 		"lt"		"Negauta jokių balsų pagal pageidavimą, paliekamas dabartinis žemėlapis."
+	}
+
+	"Current Map Stays"
+	{
+		"lt"		"Tęsiamas dabartinis žemėlapis! Žaidėjai patys išsirinko!"
+	}
+
+	"Changing Maps"
+	{
+		"lt"		"Keičiamas žemėlapis į {1}! Žaidėjai patys išsirinko!"
+	}
+
+	"Map Already Nominated"
+	{
+		"lt"		"Žemėlapis, kurį jūs pasirinkote, jau buvo nominuotas."
+	}
+
+	"Map Nominated"
+	{
+		"lt"		"{1} nominamo {2} į balsavimo pagal pageidavimą sąrašą."
+	}
+
+	"Nominate Title"
+	{
+		"lt"		"Nominuotas žemėlapis:"
 	}
 
 }

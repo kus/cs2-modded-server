@@ -10,21 +10,6 @@
 		"da"		"Bandlysnings årsag"
 	}
 
-	"Banned player"
-	{
-		"da"		"Spiller \"{1}\" er blevet bandlyst i {2} minutter."
-	}
-
-	"Banned player reason"
-	{
-		"da"		" Spiller \"{1}\" er blevet bandlyst i {2} minutter (årsag: {3})."
-	}
-
-	"Cannot ban that IP"
-	{
-		"da"		"Du kan ikke bandlyse den IP adresse."
-	}
-
 	"Permabanned player"
 	{
 		"da"		"Spiller \"{1}\" er blevet bandlyst permanent."
@@ -33,6 +18,16 @@
 	"Permabanned player reason"
 	{
 		"da"		" Spiller \"{1}\" er blevet bandlyst permanent (årsag: {2})."
+	}
+
+	"Banned player"
+	{
+		"da"		"Spiller \"{1}\" er blevet bandlyst i {2} minutter."
+	}
+
+	"Banned player reason"
+	{
+		"da"		" Spiller \"{1}\" er blevet bandlyst i {2} minutter (årsag: {3})."
 	}
 
 	"Removed bans matching"
@@ -45,14 +40,19 @@
 		"da"		"Bandlysningen er blevet tilføjet. "
 	}
 
-	"AbortBan applied successfully"
+	"Cannot ban that IP"
 	{
-		"da"		"Bandlysning afbrudt."
+		"da"		"Du kan ikke bandlyse den IP adresse."
 	}
 
 	"Custom ban reason explanation"
 	{
 		"da"		"Skriv årsag som en chat besked. Brug {1} for at afbryde dette."
+	}
+
+	"AbortBan applied successfully"
+	{
+		"da"		"Bandlysning afbrudt."
 	}
 
 	"AbortBan not waiting for custom reason"

@@ -1,23 +1,8 @@
 "Phrases"
 {
-	"Dead Player Rename"
+	"Slap player"
 	{
-		"pt_p"		"{1} será renomeado na próxima ronda."
-	}
-
-	"Name changed"
-	{
-		"pt_p"		"Um administrador mudou o teu nome"
-	}
-
-	"Rename player"
-	{
-		"pt_p"		"Renomear jogador"
-	}
-
-	"Renamed target"
-	{
-		"pt_p"		"{1} foi renomeado."
+		"pt_p"		"Dar bofetada em jogador"
 	}
 
 	"Slap damage"
@@ -25,9 +10,9 @@
 		"pt_p"		"Dano da bofetada"
 	}
 
-	"Slap player"
+	"Slay player"
 	{
-		"pt_p"		"Dar bofetada em jogador"
+		"pt_p"		"Chacinar jogador"
 	}
 
 	"Slapped target"
@@ -35,14 +20,29 @@
 		"pt_p"		"{1} levou uma bofetada."
 	}
 
-	"Slay player"
-	{
-		"pt_p"		"Chacinar jogador"
-	}
-
 	"Slayed target"
 	{
 		"pt_p"		"{1} foi chacinado."
+	}
+
+	"Name changed"
+	{
+		"pt_p"		"Um administrador mudou o teu nome"
+	}
+
+	"Renamed target"
+	{
+		"pt_p"		"{1} foi renomeado."
+	}
+
+	"Rename player"
+	{
+		"pt_p"		"Renomear jogador"
+	}
+
+	"Dead Player Rename"
+	{
+		"pt_p"		"{1} será renomeado na próxima ronda."
 	}
 
 }

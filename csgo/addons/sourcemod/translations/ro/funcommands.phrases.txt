@@ -1,28 +1,8 @@
 "Phrases"
 {
-	"Beacon player"
-	{
-		"ro"		"Luminează jucător"
-	}
-
-	"Blind amount"
-	{
-		"ro"		"Cât de orb?"
-	}
-
-	"Blind player"
-	{
-		"ro"		"Orbeşte jucător"
-	}
-
 	"Burn player"
 	{
 		"ro"		"Arde jucător"
-	}
-
-	"Drug player"
-	{
-		"ro"		"Droghează jucător"
 	}
 
 	"FireBomb player"
@@ -40,49 +20,44 @@
 		"ro"		"FreezeBomb jucător"
 	}
 
-	"Froze target"
+	"TimeBomb player"
 	{
-		"ro"		"îngheaţă {1}."
+		"ro"		"Jucător TimeBomb"
 	}
 
-	"Fully blind"
+	"Beacon player"
 	{
-		"ro"		"Orb complet"
+		"ro"		"Luminează jucător"
 	}
 
-	"Gravity High"
+	"NoClip player"
 	{
-		"ro"		"Gravitate Mare"
+		"ro"		"NoClip jucător"
 	}
 
-	"Gravity Low"
+	"Blind player"
 	{
-		"ro"		"Gravitate Mică"
+		"ro"		"Orbeşte jucător"
 	}
 
-	"Gravity Normal"
+	"Drug player"
 	{
-		"ro"		"Gravitate Normală"
-	}
-
-	"Gravity Very High"
-	{
-		"ro"		"Gravitate Foarte Mare"
-	}
-
-	"Gravity Very Low"
-	{
-		"ro"		"Gravitate Foarte Mică"
-	}
-
-	"Gravity amount"
-	{
-		"ro"		"Gravitate?"
+		"ro"		"Droghează jucător"
 	}
 
 	"Gravity player"
 	{
 		"ro"		"Gravitate pentru jucător"
+	}
+
+	"Blind amount"
+	{
+		"ro"		"Cât de orb?"
+	}
+
+	"Fully blind"
+	{
+		"ro"		"Orb complet"
 	}
 
 	"Half blind"
@@ -95,9 +70,74 @@
 		"ro"		"Scoate orbire"
 	}
 
-	"NoClip player"
+	"Gravity amount"
 	{
-		"ro"		"NoClip jucător"
+		"ro"		"Gravitate?"
+	}
+
+	"Gravity Very High"
+	{
+		"ro"		"Gravitate Foarte Mare"
+	}
+
+	"Gravity High"
+	{
+		"ro"		"Gravitate Mare"
+	}
+
+	"Gravity Normal"
+	{
+		"ro"		"Gravitate Normală"
+	}
+
+	"Gravity Low"
+	{
+		"ro"		"Gravitate Mică"
+	}
+
+	"Gravity Very Low"
+	{
+		"ro"		"Gravitate Foarte Mică"
+	}
+
+	"Set target on fire"
+	{
+		"ro"		"Da-i foc lui {1}."
+	}
+
+	"Toggled FireBomb on target"
+	{
+		"ro"		"schimbat firebomb pe {1}."
+	}
+
+	"Froze target"
+	{
+		"ro"		"îngheaţă {1}."
+	}
+
+	"Toggled FreezeBomb on target"
+	{
+		"ro"		"schimbat freezebomb pe {1}."
+	}
+
+	"Toggled beacon on target"
+	{
+		"ro"		"schimbat beacon pe {1}."
+	}
+
+	"Toggled TimeBomb on target"
+	{
+		"ro"		"schimbat timebomb pe {1}."
+	}
+
+	"Toggled noclip on target"
+	{
+		"ro"		"schimbat noclip pe {1}."
+	}
+
+	"Toggled drug on target"
+	{
+		"ro"		"schimbat drog pe {1}."
 	}
 
 	"Set blind on target"
@@ -110,49 +150,9 @@
 		"ro"		"seteaza gravitatea pentru {1}."
 	}
 
-	"Set target on fire"
-	{
-		"ro"		"Da-i foc lui {1}."
-	}
-
 	"Till Explodes"
 	{
 		"ro"		"{2} secunde până ce {1} explodează."
-	}
-
-	"TimeBomb player"
-	{
-		"ro"		"Jucător TimeBomb"
-	}
-
-	"Toggled FireBomb on target"
-	{
-		"ro"		"schimbat firebomb pe {1}."
-	}
-
-	"Toggled FreezeBomb on target"
-	{
-		"ro"		"schimbat freezebomb pe {1}."
-	}
-
-	"Toggled TimeBomb on target"
-	{
-		"ro"		"schimbat timebomb pe {1}."
-	}
-
-	"Toggled beacon on target"
-	{
-		"ro"		"schimbat beacon pe {1}."
-	}
-
-	"Toggled drug on target"
-	{
-		"ro"		"schimbat drog pe {1}."
-	}
-
-	"Toggled noclip on target"
-	{
-		"ro"		"schimbat noclip pe {1}."
 	}
 
 	"Unfrozen"

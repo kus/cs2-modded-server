@@ -1,23 +1,8 @@
 "Phrases"
 {
-	"Dead Player Rename"
+	"Slap player"
 	{
-		"cze"		"Hrac {1} bude pristi kolo prejmenovan."
-	}
-
-	"Name changed"
-	{
-		"cze"		"Admin zmenil tve jmeno"
-	}
-
-	"Rename player"
-	{
-		"cze"		" Prejmenovat hrace"
-	}
-
-	"Renamed target"
-	{
-		"cze"		"Prejmenoval hrace {1}."
+		"cze"		"Vyliskat hrace"
 	}
 
 	"Slap damage"
@@ -25,9 +10,9 @@
 		"cze"		"Sila lisknuti"
 	}
 
-	"Slap player"
+	"Slay player"
 	{
-		"cze"		"Vyliskat hrace"
+		"cze"		"Zabit hrace"
 	}
 
 	"Slapped target"
@@ -35,14 +20,29 @@
 		"cze"		"Vyliskal hrace {1}."
 	}
 
-	"Slay player"
-	{
-		"cze"		"Zabit hrace"
-	}
-
 	"Slayed target"
 	{
 		"cze"		"Zabil hrace {1}."
+	}
+
+	"Name changed"
+	{
+		"cze"		"Admin zmenil tve jmeno"
+	}
+
+	"Renamed target"
+	{
+		"cze"		"Prejmenoval hrace {1}."
+	}
+
+	"Rename player"
+	{
+		"cze"		" Prejmenovat hrace"
+	}
+
+	"Dead Player Rename"
+	{
+		"cze"		"Hrac {1} bude pristi kolo prejmenovan."
 	}
 
 }

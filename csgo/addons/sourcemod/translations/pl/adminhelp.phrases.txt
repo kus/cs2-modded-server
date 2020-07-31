@@ -1,8 +1,8 @@
 "Phrases"
 {
-	"No commands available"
+	"SM help commands"
 	{
-		"pl"		"Brak dostępnych komend"
+		"pl"		" Pomoc SourceMod: Informacje o komendach "
 	}
 
 	"No description available"
@@ -10,14 +10,14 @@
 		"pl"		"Brak opisu"
 	}
 
-	"No matching results found"
+	"No commands available"
 	{
-		"pl"		"Nie znaleziono pasujących rezultatów"
+		"pl"		"Brak dostępnych komend"
 	}
 
-	"SM help commands"
+	"Type sm_help to see more"
 	{
-		"pl"		" Pomoc SourceMod: Informacje o komendach "
+		"pl"		"Wpisz sm_help {1}, aby zobaczyć więcej komend"
 	}
 
 	"Entries n - m in page k"
@@ -25,9 +25,9 @@
 		"pl"		"Wpisy {1} - {2} na stronie {3}"
 	}
 
-	"Type sm_help to see more"
+	"No matching results found"
 	{
-		"pl"		"Wpisz sm_help {1}, aby zobaczyć więcej komend"
+		"pl"		"Nie znaleziono pasujących rezultatów"
 	}
 
 }

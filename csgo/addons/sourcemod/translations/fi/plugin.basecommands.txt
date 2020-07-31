@@ -1,83 +1,8 @@
 "Phrases"
 {
-	"Admin access"
+	"Unable to find cvar"
 	{
-		"fi"		"Adminoikeudet"
-	}
-
-	"Admin cache refreshed"
-	{
-		"fi"		"Admin-välimuisti uudistettu."
-	}
-
-	"Choose Map"
-	{
-		"fi"		"Valitse kartta"
-	}
-
-	"Config not found"
-	{
-		"fi"		"Asetustiedostoa \"{1}\" ei löytynyt."
-	}
-
-	"Cvar is now protected"
-	{
-		"fi"		"Cvar {1} on nyt suojeltu."
-	}
-
-	"Executed config"
-	{
-		"fi"		"Suoritettiin asetustiedosto \"{1}\"."
-	}
-
-	"Identify player"
-	{
-		"fi"		"Tunnista pelaaja"
-	}
-
-	"Kicked target"
-	{
-		"fi"		"Potkittiin {1}."
-	}
-
-	"Player is an admin"
-	{
-		"fi"		"\"{1}\" on admin."
-	}
-
-	"Player is not an admin"
-	{
-		"fi"		"\"{1}\" ei ole admin."
-	}
-
-	"Username"
-	{
-		"fi"		"Käyttäjänimi"
-	}
-
-	"Value of cvar"
-	{
-		"fi"		"Cvarin \"{1}\" arvo on: \"{2}\""
-	}
-
-	"Admin logged in anon"
-	{
-		"fi"		"Pelaajalla \"{1}\" on oikeudet: {2}"
-	}
-
-	"Admin logged in as"
-	{
-		"fi"		"\"{1}\" on kirjautuneena nimellä \"{2}\" ja oikeuksilla: {3}"
-	}
-
-	"Cvar changed"
-	{
-		"fi"		"Cvarin \"{1}\" arvoksi vaihdettiin \"{2}\"."
-	}
-
-	"Exec CFG"
-	{
-		"fi"		"Suorita CFG"
+		"fi"		"Cvaria \"{1}\" ei löytynyt."
 	}
 
 	"No access to cvar"
@@ -85,29 +10,24 @@
 		"fi"		"Sinulla ei ole oikeuksia tähän cvariin."
 	}
 
-	"Unable to find cvar"
+	"Value of cvar"
 	{
-		"fi"		"Cvaria \"{1}\" ei löytynyt."
+		"fi"		"Cvarin \"{1}\" arvo on: \"{2}\""
 	}
 
-	"Kicked target reason"
+	"Cvar changed"
 	{
-		"fi"		"Erotettiin pelaaja {1} (Syy: {2})"
+		"fi"		"Cvarin \"{1}\" arvoksi vaihdettiin \"{2}\"."
 	}
 
-	"Ban added"
+	"Config not found"
 	{
-		"fi"		"Porttikielto lisätty."
+		"fi"		"Asetustiedostoa \"{1}\" ei löytynyt."
 	}
 
-	"Banned player"
+	"Executed config"
 	{
-		"fi"		"Annettiin porttikielto pelaajalle \"{1}\" {2} minuutiksi."
-	}
-
-	"Banned player reason"
-	{
-		"fi"		"Annettiin porttikielto pelaajalle \"{1}\" {2} minuutiksi (syy: {3})."
+		"fi"		"Suoritettiin asetustiedosto \"{1}\"."
 	}
 
 	"Permabanned player"
@@ -120,19 +40,99 @@
 		"fi"		"Annettiin pysyvä porttikielto pelaajalle \"{1}\" (syy: {3})."
 	}
 
+	"Banned player"
+	{
+		"fi"		"Annettiin porttikielto pelaajalle \"{1}\" {2} minuutiksi."
+	}
+
+	"Banned player reason"
+	{
+		"fi"		"Annettiin porttikielto pelaajalle \"{1}\" {2} minuutiksi (syy: {3})."
+	}
+
 	"Removed bans matching"
 	{
 		"fi"		"Poistettiin porttikiellot, jotka vastaavat suodatusta: {1}"
 	}
 
-	"Choose Config"
+	"Ban added"
 	{
-		"fi"		"Valitse konfiguraatio"
+		"fi"		"Porttikielto lisätty."
+	}
+
+	"Admin cache refreshed"
+	{
+		"fi"		"Admin-välimuisti uudistettu."
+	}
+
+	"Identify player"
+	{
+		"fi"		"Tunnista pelaaja"
+	}
+
+	"Choose Map"
+	{
+		"fi"		"Valitse kartta"
+	}
+
+	"Exec CFG"
+	{
+		"fi"		"Suorita CFG"
+	}
+
+	"Admin logged in as"
+	{
+		"fi"		"\"{1}\" on kirjautuneena nimellä \"{2}\" ja oikeuksilla: {3}"
+	}
+
+	"Admin logged in anon"
+	{
+		"fi"		"Pelaajalla \"{1}\" on oikeudet: {2}"
+	}
+
+	"Player is not an admin"
+	{
+		"fi"		"\"{1}\" ei ole admin."
+	}
+
+	"Player is an admin"
+	{
+		"fi"		"\"{1}\" on admin."
+	}
+
+	"Username"
+	{
+		"fi"		"Käyttäjänimi"
+	}
+
+	"Kicked target"
+	{
+		"fi"		"Potkittiin {1}."
+	}
+
+	"Admin access"
+	{
+		"fi"		"Adminoikeudet"
+	}
+
+	"Cvar is now protected"
+	{
+		"fi"		"Cvar {1} on nyt suojeltu."
+	}
+
+	"Kicked target reason"
+	{
+		"fi"		"Erotettiin pelaaja {1} (Syy: {2})"
 	}
 
 	"Please select a map"
 	{
 		"fi"		"Valitse kartta"
+	}
+
+	"Choose Config"
+	{
+		"fi"		"Valitse konfiguraatio"
 	}
 
 }

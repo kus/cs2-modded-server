@@ -1,38 +1,13 @@
 "Phrases"
 {
-	"Banned player reason"
-	{
-		"jp"		"プレイヤー \"{1}\" を{2}分間BANしました。 (理由: {3})"
-	}
-
-	"Banned player"
-	{
-		"jp"		"プレイヤー \"{1}\" を{2}分間BANしました。"
-	}
-
-	"Ban added"
-	{
-		"jp"		"BANを追加しました。"
-	}
-
-	"Admin cache refreshed"
-	{
-		"jp"		"管理者キャッシュを更新しました。"
-	}
-
-	"Admin access"
-	{
-		"jp"		"管理者アクセス"
-	}
-
-	"Admin logged in anon"
-	{
-		"jp"		"\"{1}\"の権限: {2}"
-	}
-
 	"Unable to find cvar"
 	{
 		"jp"		"CVarが見つかりませんでした: {1}"
+	}
+
+	"No access to cvar"
+	{
+		"jp"		"あなたはこのCVarにアクセス出来ません。"
 	}
 
 	"Value of cvar"
@@ -40,24 +15,19 @@
 		"jp"		"CVar \"{1]\" の値: \"{2}\""
 	}
 
-	"Username"
+	"Cvar changed"
 	{
-		"jp"		"ユーザ名"
+		"jp"		"Cvar \"{1}\" を \"{2}\" に変更しました。"
 	}
 
-	"Player is not an admin"
+	"Config not found"
 	{
-		"jp"		"\"{1}\"は管理者ではありません。"
+		"jp"		"コンフィグファイル \"{1}\" は存在しません。"
 	}
 
-	"Removed bans matching"
+	"Executed config"
 	{
-		"jp"		"フィルターにマッチするBANを削除しました:"
-	}
-
-	"Player is an admin"
-	{
-		"jp"		"\"{1}\"は管理者です。"
+		"jp"		"コンフィグ \"{1}\" を実行しました。"
 	}
 
 	"Permabanned player"
@@ -70,24 +40,29 @@
 		"jp"		"プレイヤー \"{1}\" を永久BANしました。(理由: {2})"
 	}
 
-	"Kicked target"
+	"Banned player"
 	{
-		"jp"		"{1}をキックしました。"
+		"jp"		"プレイヤー \"{1}\" を{2}分間BANしました。"
 	}
 
-	"No access to cvar"
+	"Banned player reason"
 	{
-		"jp"		"あなたはこのCVarにアクセス出来ません。"
+		"jp"		"プレイヤー \"{1}\" を{2}分間BANしました。 (理由: {3})"
 	}
 
-	"Exec CFG"
+	"Removed bans matching"
 	{
-		"jp"		"CFGを実行"
+		"jp"		"フィルターにマッチするBANを削除しました:"
 	}
 
-	"Executed config"
+	"Ban added"
 	{
-		"jp"		"コンフィグ \"{1}\" を実行しました。"
+		"jp"		"BANを追加しました。"
+	}
+
+	"Admin cache refreshed"
+	{
+		"jp"		"管理者キャッシュを更新しました。"
 	}
 
 	"Identify player"
@@ -95,19 +70,14 @@
 		"jp"		"プレイヤーを特定"
 	}
 
-	"Cvar is now protected"
-	{
-		"jp"		"Cvar {1} は保護されています。"
-	}
-
-	"Cvar changed"
-	{
-		"jp"		"Cvar \"{1}\" を \"{2}\" に変更しました。"
-	}
-
 	"Choose Map"
 	{
 		"jp"		"マップを選択"
+	}
+
+	"Exec CFG"
+	{
+		"jp"		"CFGを実行"
 	}
 
 	"Admin logged in as"
@@ -115,9 +85,39 @@
 		"jp"		"\"{1}\" は \"{2}\" としてログインしています。権限: {3}"
 	}
 
-	"Config not found"
+	"Admin logged in anon"
 	{
-		"jp"		"コンフィグファイル \"{1}\" は存在しません。"
+		"jp"		"\"{1}\"の権限: {2}"
+	}
+
+	"Player is not an admin"
+	{
+		"jp"		"\"{1}\"は管理者ではありません。"
+	}
+
+	"Player is an admin"
+	{
+		"jp"		"\"{1}\"は管理者です。"
+	}
+
+	"Username"
+	{
+		"jp"		"ユーザ名"
+	}
+
+	"Kicked target"
+	{
+		"jp"		"{1}をキックしました。"
+	}
+
+	"Admin access"
+	{
+		"jp"		"管理者アクセス"
+	}
+
+	"Cvar is now protected"
+	{
+		"jp"		"Cvar {1} は保護されています。"
 	}
 
 	"Kicked target reason"

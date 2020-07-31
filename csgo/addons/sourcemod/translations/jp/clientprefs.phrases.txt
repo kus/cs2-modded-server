@@ -1,23 +1,13 @@
 "Phrases"
 {
-	"Client Settings"
-	{
-		"jp"		"クライアントセッティング"
-	}
-
-	"Choose Option"
-	{
-		"jp"		"オプションを選択"
-	}
-
 	"Cookie List"
 	{
 		"jp"		"SourceMod クッキーリスト"
 	}
 
-	"Cookie Value"
+	"Printing Cookie List"
 	{
-		"jp"		"{1}の値は{2}"
+		"jp"		"クッキーリストをコンソールに表示中。"
 	}
 
 	"Cookie not Found"
@@ -25,14 +15,9 @@
 		"jp"		"クッキー \"{1}\" は見つかりませんでした。"
 	}
 
-	"No Console"
+	"Cookie Value"
 	{
-		"jp"		"セッティングメニューをコンソールに表示出来ません。"
-	}
-
-	"Printing Cookie List"
-	{
-		"jp"		"クッキーリストをコンソールに表示中。"
+		"jp"		"{1}の値は{2}"
 	}
 
 	"Protected Cookie"
@@ -43,6 +28,21 @@
 	"Cookie Changed Value"
 	{
 		"jp"		"クッキー \"{1}\" の値を\"{2}\"に変更しました。"
+	}
+
+	"No Console"
+	{
+		"jp"		"セッティングメニューをコンソールに表示出来ません。"
+	}
+
+	"Choose Option"
+	{
+		"jp"		"オプションを選択"
+	}
+
+	"Client Settings"
+	{
+		"jp"		"クライアントセッティング"
 	}
 
 }

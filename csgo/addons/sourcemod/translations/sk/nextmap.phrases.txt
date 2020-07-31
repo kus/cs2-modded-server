@@ -5,24 +5,9 @@
 		"sk"		"Ďalšia mapa : {1} "
 	}
 
-	"ago"
+	"Map History"
 	{
-		"sk"		"pred"
-	}
-
-	"Started"
-	{
-		"sk"		"[Spustené]  "
-	}
-
-	"Reason"
-	{
-		"sk"		"[Dôvod pre ukončenie]  "
-	}
-
-	"Played Time"
-	{
-		"sk"		"[Herný čas]  "
+		"sk"		"História zmien máp"
 	}
 
 	"Map"
@@ -30,14 +15,29 @@
 		"sk"		"[Mapa]"
 	}
 
+	"Started"
+	{
+		"sk"		"[Spustené]  "
+	}
+
+	"Played Time"
+	{
+		"sk"		"[Herný čas]  "
+	}
+
+	"Reason"
+	{
+		"sk"		"[Dôvod pre ukončenie]  "
+	}
+
 	"Current Map"
 	{
 		"sk"		"Aktuálna mapa"
 	}
 
-	"Map History"
+	"ago"
 	{
-		"sk"		"História zmien máp"
+		"sk"		"pred"
 	}
 
 }

@@ -230,24 +230,24 @@
 		"chi"		"已踢出玩家 '{1}'"
 	}
 
-	"Cannot change vote"
-	{
-		"chi"		"您无法改变对该项投票作出的选择."
-	}
-
 	"Cannot participate in vote"
 	{
 		"chi"		"您无法参与该项投票."
 	}
 
-	"Off"
+	"Cannot change vote"
 	{
-		"chi"		"关"
+		"chi"		"您无法改变对该项投票作出的选择."
 	}
 
 	"On"
 	{
 		"chi"		"开"
+	}
+
+	"Off"
+	{
+		"chi"		"关"
 	}
 
 }

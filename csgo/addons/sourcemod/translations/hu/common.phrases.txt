@@ -1,55 +1,5 @@
 "Phrases"
 {
-	"Slayed player"
-	{
-		"hu"		"{1} kivégezve"
-	}
-
-	"Slapped player"
-	{
-		"hu"		"{1} megütve"
-	}
-
-	"Played Sound"
-	{
-		"hu"		"Hang lejátszva {1}-nak"
-	}
-
-	"Kicked player"
-	{
-		"hu"		"{1} kirúgva"
-	}
-
-	"Cannot be performed on dead"
-	{
-		"hu"		"{1} halott. A parancsot nem lehet végrehajtani"
-	}
-
-	"Cannot change vote"
-	{
-		"hu"		"Nem változtathatod meg a szavazatod!"
-	}
-
-	"Cannot participate in vote"
-	{
-		"hu"		"Nem vehetsz részt a szavazásban"
-	}
-
-	"Off"
-	{
-		"hu"		"Ki"
-	}
-
-	"On"
-	{
-		"hu"		"Be"
-	}
-
-	"Access"
-	{
-		"hu"		"Hozzáférés"
-	}
-
 	"Yes"
 	{
 		"hu"		"Igen"
@@ -115,6 +65,11 @@
 		"hu"		"Név"
 	}
 
+	"Access"
+	{
+		"hu"		"Hozzáférés"
+	}
+
 	"See console for output"
 	{
 		"hu"		"Nézd meg a konzolt az infókért"
@@ -163,6 +118,11 @@
 	"Invalid Amount"
 	{
 		"hu"		"Nem valós érték"
+	}
+
+	"Cannot be performed on dead"
+	{
+		"hu"		"{1} halott. A parancsot nem lehet végrehajtani"
 	}
 
 	"Player has since died"
@@ -248,6 +208,46 @@
 	"Target is not in game"
 	{
 		"hu"		"A megadott játékos még nem lépett be a játékba teljesen!"
+	}
+
+	"Played Sound"
+	{
+		"hu"		"Hang lejátszva {1}-nak"
+	}
+
+	"Slapped player"
+	{
+		"hu"		"{1} megütve"
+	}
+
+	"Slayed player"
+	{
+		"hu"		"{1} kivégezve"
+	}
+
+	"Kicked player"
+	{
+		"hu"		"{1} kirúgva"
+	}
+
+	"Cannot participate in vote"
+	{
+		"hu"		"Nem vehetsz részt a szavazásban"
+	}
+
+	"Cannot change vote"
+	{
+		"hu"		"Nem változtathatod meg a szavazatod!"
+	}
+
+	"On"
+	{
+		"hu"		"Be"
+	}
+
+	"Off"
+	{
+		"hu"		"Ki"
 	}
 
 }

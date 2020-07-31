@@ -1,5 +1,30 @@
 "Phrases"
 {
+	"Initiate Vote"
+	{
+		"es"		"Votación iniciada: {1}"
+	}
+
+	"Initiated Vote Map"
+	{
+		"es"		"Votación de mapa iniciada."
+	}
+
+	"Initiated Vote Kick"
+	{
+		"es"		"Votación iniciada para expulsar a {1}."
+	}
+
+	"Initiated Vote Ban"
+	{
+		"es"		"Votación de ban contra {1} iniciada."
+	}
+
+	"Map Vote"
+	{
+		"es"		"Votar mapa: {1}"
+	}
+
 	"Change Map To"
 	{
 		"es"		"Cambiar mapa a {1}?"
@@ -15,54 +40,9 @@
 		"es"		"Banear a {1}?"
 	}
 
-	"Vote End"
+	"Vote Successful"
 	{
-		"es"		"La respuesta a {1} es: {2}."
-	}
-
-	"Ban vote"
-	{
-		"es"		"Votar ban"
-	}
-
-	"Confirm Vote"
-	{
-		"es"		"Confirmar votación"
-	}
-
-	"Initiate Vote"
-	{
-		"es"		"Votación iniciada: {1}"
-	}
-
-	"Initiated Vote Ban"
-	{
-		"es"		"Votación de ban contra {1} iniciada."
-	}
-
-	"Initiated Vote Kick"
-	{
-		"es"		"Votación iniciada para expulsar a {1}."
-	}
-
-	"Initiated Vote Map"
-	{
-		"es"		"Votación de mapa iniciada."
-	}
-
-	"Kick vote"
-	{
-		"es"		"Votar expulsión"
-	}
-
-	"Map Vote"
-	{
-		"es"		"Votar mapa: {1}"
-	}
-
-	"Map vote"
-	{
-		"es"		"Votar mapa"
+		"es"		"Votación exitosa. (Obtenidos {1}%% de {2} votos)"
 	}
 
 	"Vote Failed"
@@ -70,9 +50,29 @@
 		"es"		"Votación sin éxito. {1}%% de votos requeridos. (Obtenidos {2}%% de {3} votos)"
 	}
 
-	"Vote Successful"
+	"Vote End"
 	{
-		"es"		"Votación exitosa. (Obtenidos {1}%% de {2} votos)"
+		"es"		"La respuesta a {1} es: {2}."
+	}
+
+	"Kick vote"
+	{
+		"es"		"Votar expulsión"
+	}
+
+	"Ban vote"
+	{
+		"es"		"Votar ban"
+	}
+
+	"Map vote"
+	{
+		"es"		"Votar mapa"
+	}
+
+	"Confirm Vote"
+	{
+		"es"		"Confirmar votación"
 	}
 
 	"Map Vote In Use"
@@ -80,14 +80,14 @@
 		"es"		"Otro administrador está utilizando el menú de votación de mapas."
 	}
 
-	"Start the Vote"
-	{
-		"es"		"Empezar la votación"
-	}
-
 	"Please select a map"
 	{
 		"es"		"Selecciona un mapa"
+	}
+
+	"Start the Vote"
+	{
+		"es"		"Empezar la votación"
 	}
 
 }

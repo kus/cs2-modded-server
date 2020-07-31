@@ -1,13 +1,8 @@
 "Phrases"
 {
-	"Type sm_help to see more"
+	"SM help commands"
 	{
-		"fi"		"Kirjoita sm_help {1} nähdäksesi lisää komentoja"
-	}
-
-	"No matching results found"
-	{
-		"fi"		"Tuloksia ei löytynyt"
+		"fi"		"SourceMod-ohje: Tietoa komennosta"
 	}
 
 	"No description available"
@@ -15,19 +10,24 @@
 		"fi"		"Ei kuvausta saatavilla"
 	}
 
-	"Entries n - m in page k"
-	{
-		"fi"		"Tulokset {1} - {2} sivulla {3}"
-	}
-
 	"No commands available"
 	{
 		"fi"		"Ei käytettävissä olevia komentoja"
 	}
 
-	"SM help commands"
+	"Type sm_help to see more"
 	{
-		"fi"		"SourceMod-ohje: Tietoa komennosta"
+		"fi"		"Kirjoita sm_help {1} nähdäksesi lisää komentoja"
+	}
+
+	"Entries n - m in page k"
+	{
+		"fi"		"Tulokset {1} - {2} sivulla {3}"
+	}
+
+	"No matching results found"
+	{
+		"fi"		"Tuloksia ei löytynyt"
 	}
 
 }

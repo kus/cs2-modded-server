@@ -1,5 +1,15 @@
 "Phrases"
 {
+	"Gag/Mute player"
+	{
+		"pl"		"Knebluj/Wycisz gracza "
+	}
+
+	"Choose Type"
+	{
+		"pl"		"Wybierz typ"
+	}
+
 	"Gagged target"
 	{
 		"pl"		"Zakneblowano {1}."
@@ -15,44 +25,14 @@
 		"pl"		"Wyciszono {1}."
 	}
 
-	"Silenced target"
-	{
-		"pl"		"Uciszono {1}."
-	}
-
-	"Gag/Mute player"
-	{
-		"pl"		"Knebluj/Wycisz gracza "
-	}
-
-	"Gag Player"
-	{
-		"pl"		"Wycisz czat gracza"
-	}
-
-	"Mute Player"
-	{
-		"pl"		"Wycisz mikrofon gracza"
-	}
-
-	"UnGag Player"
-	{
-		"pl"		"Odblokuj czat gracza"
-	}
-
-	"UnMute Player"
-	{
-		"pl"		"Odblokuj mikrofon gracza"
-	}
-
-	"UnSilence Player"
-	{
-		"pl"		"Odblokuj mikrofon i czat gracza"
-	}
-
 	"Unmuted target"
 	{
 		"pl"		"Gracz {1} nie jest już wyciszony. "
+	}
+
+	"Silenced target"
+	{
+		"pl"		"Uciszono {1}."
 	}
 
 	"Unsilenced target"
@@ -60,14 +40,34 @@
 		"pl"		"Gracz {1} nie jest już uciszony."
 	}
 
-	"Choose Type"
+	"Mute Player"
 	{
-		"pl"		"Wybierz typ"
+		"pl"		"Wycisz mikrofon gracza"
+	}
+
+	"UnMute Player"
+	{
+		"pl"		"Odblokuj mikrofon gracza"
+	}
+
+	"Gag Player"
+	{
+		"pl"		"Wycisz czat gracza"
+	}
+
+	"UnGag Player"
+	{
+		"pl"		"Odblokuj czat gracza"
 	}
 
 	"Silence Player"
 	{
 		"pl"		"Ucisz gracza zupełnie"
+	}
+
+	"UnSilence Player"
+	{
+		"pl"		"Odblokuj mikrofon i czat gracza"
 	}
 
 }

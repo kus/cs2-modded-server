@@ -1,35 +1,5 @@
 "Phrases"
 {
-	"Dont Change"
-	{
-		"sv"		"Byt inte"
-	}
-
-	"Changed Next Map"
-	{
-		"sv"		"Bytte nästa karta till \"{1}\"."
-	}
-
-	"Current Map Extended"
-	{
-		"sv"		"Den nuvarande kartan har förlängts. (Fick {1}%% av {2} röster)"
-	}
-
-	"Current Map Stays"
-	{
-		"sv"		"Den nuvarande kartan fortsätter! Röstningen har talat! (Fick {1}%% av {2} röster)"
-	}
-
-	"Extend Map"
-	{
-		"sv"		"Förläng nuvarande karta"
-	}
-
-	"Nextmap Voting Finished"
-	{
-		"sv"		"Kartomröstningen har avslutats. Nästa karta kommer att bli {1}. (Fick {2}%% av {3} röster)"
-	}
-
 	"Vote Nextmap"
 	{
 		"sv"		"Rösta om nästa karta!"
@@ -38,6 +8,36 @@
 	"Nextmap Voting Started"
 	{
 		"sv"		"Röstning om nästa karta har börjat."
+	}
+
+	"Nextmap Voting Finished"
+	{
+		"sv"		"Kartomröstningen har avslutats. Nästa karta kommer att bli {1}. (Fick {2}%% av {3} röster)"
+	}
+
+	"Current Map Extended"
+	{
+		"sv"		"Den nuvarande kartan har förlängts. (Fick {1}%% av {2} röster)"
+	}
+
+	"Extend Map"
+	{
+		"sv"		"Förläng nuvarande karta"
+	}
+
+	"Dont Change"
+	{
+		"sv"		"Byt inte"
+	}
+
+	"Current Map Stays"
+	{
+		"sv"		"Den nuvarande kartan fortsätter! Röstningen har talat! (Fick {1}%% av {2} röster)"
+	}
+
+	"Changed Next Map"
+	{
+		"sv"		"Bytte nästa karta till \"{1}\"."
 	}
 
 	"Starting Runoff"

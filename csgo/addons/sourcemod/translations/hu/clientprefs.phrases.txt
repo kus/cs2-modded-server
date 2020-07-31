@@ -1,28 +1,13 @@
 "Phrases"
 {
-	"Choose Option"
-	{
-		"hu"		"Válasz egy lehetőséget"
-	}
-
-	"Client Settings"
-	{
-		"hu"		"Kliens beállitások"
-	}
-
-	"No Console"
-	{
-		"hu"		"Nem lehet konzolban megjeleniteni a beállitások menüjét"
-	}
-
-	"Cookie Changed Value"
-	{
-		"hu"		"Süti értéke módositva \"{1}\" -ről \"{2}\" -re"
-	}
-
 	"Cookie List"
 	{
 		"hu"		"Sütik listája"
+	}
+
+	"Printing Cookie List"
+	{
+		"hu"		"Sütik listájának megjelenitése konzolba"
 	}
 
 	"Cookie not Found"
@@ -35,14 +20,29 @@
 		"hu"		"{1} süti értéke {2}"
 	}
 
-	"Printing Cookie List"
-	{
-		"hu"		"Sütik listájának megjelenitése konzolba"
-	}
-
 	"Protected Cookie"
 	{
 		"hu"		"Védett sütinek nem lehet megváltoztatni az értékét! \"{1}\""
+	}
+
+	"Cookie Changed Value"
+	{
+		"hu"		"Süti értéke módositva \"{1}\" -ről \"{2}\" -re"
+	}
+
+	"No Console"
+	{
+		"hu"		"Nem lehet konzolban megjeleniteni a beállitások menüjét"
+	}
+
+	"Choose Option"
+	{
+		"hu"		"Válasz egy lehetőséget"
+	}
+
+	"Client Settings"
+	{
+		"hu"		"Kliens beállitások"
 	}
 
 }

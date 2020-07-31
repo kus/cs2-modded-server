@@ -5,34 +5,9 @@
 		"es"		"Banear jugador"
 	}
 
-	"Ban added"
-	{
-		"es"		"Se ha agregado el ban."
-	}
-
 	"Ban reason"
 	{
 		"es"		"Causa de ban"
-	}
-
-	"Cannot ban that IP"
-	{
-		"es"		"No puedes banear esa IP."
-	}
-
-	"Removed bans matching"
-	{
-		"es"		"Eliminados bans coincidentes con: {1}"
-	}
-
-	"Banned player"
-	{
-		"es"		"\"{1}\" baneado por {2} minutos."
-	}
-
-	"Banned player reason"
-	{
-		"es"		"\"{1}\" baneado por {2} minutos. (Razón: {3})."
 	}
 
 	"Permabanned player"
@@ -45,19 +20,44 @@
 		"es"		"\"{1}\" baneado permanentemente (Razón: {2})."
 	}
 
+	"Banned player"
+	{
+		"es"		"\"{1}\" baneado por {2} minutos."
+	}
+
+	"Banned player reason"
+	{
+		"es"		"\"{1}\" baneado por {2} minutos. (Razón: {3})."
+	}
+
+	"Removed bans matching"
+	{
+		"es"		"Eliminados bans coincidentes con: {1}"
+	}
+
+	"Ban added"
+	{
+		"es"		"Se ha agregado el ban."
+	}
+
+	"Cannot ban that IP"
+	{
+		"es"		"No puedes banear esa IP."
+	}
+
 	"Custom ban reason explanation"
 	{
 		"es"		"Introduzca la razón como un mensaje de chat. Usa {1} para abortar esto."
 	}
 
-	"AbortBan not waiting for custom reason"
-	{
-		"es"		"No se espera una razón de ban para que sea escrita, no hay ban que abortar."
-	}
-
 	"AbortBan applied successfully"
 	{
 		"es"		"Ban abortado."
+	}
+
+	"AbortBan not waiting for custom reason"
+	{
+		"es"		"No se espera una razón de ban para que sea escrita, no hay ban que abortar."
 	}
 
 }

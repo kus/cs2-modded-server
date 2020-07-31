@@ -1,15 +1,5 @@
 "Phrases"
 {
-	"Added group to user"
-	{
-		"cze"		"Skupina byla uspesne pridana zvolenemu administratorovi."
-	}
-
-	"Added groups to user"
-	{
-		"cze"		"{1} skupin bylo uspesne pridano zvolenemu administratorovi."
-	}
-
 	"Invalid authtype"
 	{
 		"cze"		"Typ autorizace musi byt bud 'steam', 'name', nebo 'ip'."
@@ -20,14 +10,14 @@
 		"cze"		"Hodnota imunity musi byt kladne cele cislo."
 	}
 
-	"SQL Admin added"
-	{
-		"cze"		"Administrator byl uspesne pridan do databaze."
-	}
-
 	"SQL Admin already exists"
 	{
 		"cze"		"Administrator se zadanymi hodnotami jiz existuje."
+	}
+
+	"SQL Admin added"
+	{
+		"cze"		"Administrator byl uspesne pridan do databaze."
 	}
 
 	"SQL Admin deleted"
@@ -35,34 +25,19 @@
 		"cze"		"Administrator byl uspesne smazan z databaze."
 	}
 
-	"SQL Admin groups reset"
-	{
-		"cze"		"Administratorske skupiny byly uspesne resetovany."
-	}
-
 	"SQL Admin not found"
 	{
 		"cze"		"Zadny administrator se zadanymi hodnotami nebyl nalezen."
 	}
 
-	"SQL Group X failed to bind"
+	"SQL Group already exists"
 	{
-		"cze"		"Nelze priradit skupinu: \"{1}\""
-	}
-
-	"SQL Group X not found"
-	{
-		"cze"		"Nelze nalezt skupinu: \"{1}\""
+		"cze"		"Skupina s timto nazvem jiz existuje."
 	}
 
 	"SQL Group added"
 	{
 		"cze"		"Skupina byla uspesne pridana do databaze."
-	}
-
-	"SQL Group already exists"
-	{
-		"cze"		"Skupina s timto nazvem jiz existuje."
 	}
 
 	"SQL Group deleted"
@@ -73,6 +48,31 @@
 	"SQL Group not found"
 	{
 		"cze"		"Zadna skupina se zadanym nazvem nebyla nalezena."
+	}
+
+	"SQL Admin groups reset"
+	{
+		"cze"		"Administratorske skupiny byly uspesne resetovany."
+	}
+
+	"SQL Group X not found"
+	{
+		"cze"		"Nelze nalezt skupinu: \"{1}\""
+	}
+
+	"SQL Group X failed to bind"
+	{
+		"cze"		"Nelze priradit skupinu: \"{1}\""
+	}
+
+	"Added group to user"
+	{
+		"cze"		"Skupina byla uspesne pridana zvolenemu administratorovi."
+	}
+
+	"Added groups to user"
+	{
+		"cze"		"{1} skupin bylo uspesne pridano zvolenemu administratorovi."
 	}
 
 }

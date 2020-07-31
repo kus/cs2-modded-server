@@ -1,5 +1,10 @@
 "Phrases"
 {
+	"SM help commands"
+	{
+		"fr"		"Aide de SourceMod: Information sur les Commandes"
+	}
+
 	"No description available"
 	{
 		"fr"		"Pas de description disponible"
@@ -13,11 +18,6 @@
 	"Type sm_help to see more"
 	{
 		"fr"		"Tapez sm_help {1} pour voir plus de commandes"
-	}
-
-	"SM help commands"
-	{
-		"fr"		"Aide de SourceMod: Information sur les Commandes"
 	}
 
 	"Entries n - m in page k"

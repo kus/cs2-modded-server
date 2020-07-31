@@ -5,14 +5,9 @@
 		"lt"		"Jūs jau pasiūlėte žemėlapį."
 	}
 
-	"Can't Nominate Current Map"
+	"Max Nominations"
 	{
-		"lt"		"Žemėlapis, kurį pasiūlėte, žaidžiamas dabar ir negali būti siūlomas"
-	}
-
-	"Current Map"
-	{
-		"lt"		"Dabartinis Žemėlapis"
+		"lt"		"Maksimalus pasiūlymų skaičius pasiektas."
 	}
 
 	"Map Already In Vote"
@@ -20,14 +15,14 @@
 		"lt"		"Žemėlapis '{1}' jau pasiūlymų sąraše."
 	}
 
-	"Map Already Nominated"
-	{
-		"lt"		"Žemėlapis, kurį pasirinkote, jau buvo pasiūlytas."
-	}
-
 	"Map Inserted"
 	{
 		"lt"		"Žemėlapis '{1}' pridėtas į pasiūlymų sąrašą."
+	}
+
+	"Map Already Nominated"
+	{
+		"lt"		"Žemėlapis, kurį pasirinkote, jau buvo pasiūlytas."
 	}
 
 	"Map Nominated"
@@ -40,29 +35,34 @@
 		"lt"		"{1} pakeitė pasiūlymą į {2}."
 	}
 
-	"Map in Exclude List"
-	{
-		"lt"		"Žemėlapis, kurį pasirinkote, nesenai buvo žaidžiamas ir negali būt pasiūlytas"
-	}
-
-	"Max Nominations"
-	{
-		"lt"		"Maksimalus pasiūlymų skaičius pasiektas."
-	}
-
 	"Nominate Title"
 	{
 		"lt"		"Pasiūlyti Žemėlapį:"
 	}
 
-	"Nominated"
+	"Can't Nominate Current Map"
 	{
-		"lt"		"Pasiūlytas"
+		"lt"		"Žemėlapis, kurį pasiūlėte, žaidžiamas dabar ir negali būti siūlomas"
+	}
+
+	"Map in Exclude List"
+	{
+		"lt"		"Žemėlapis, kurį pasirinkote, nesenai buvo žaidžiamas ir negali būt pasiūlytas"
+	}
+
+	"Current Map"
+	{
+		"lt"		"Dabartinis Žemėlapis"
 	}
 
 	"Recently Played"
 	{
 		"lt"		"Nesenai Žaista"
+	}
+
+	"Nominated"
+	{
+		"lt"		"Pasiūlytas"
 	}
 
 }

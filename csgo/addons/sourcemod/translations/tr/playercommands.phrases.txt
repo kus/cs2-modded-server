@@ -1,8 +1,13 @@
 "Phrases"
 {
-	"Slayed target"
+	"Slap player"
 	{
-		"tr"		"{1} katledildi."
+		"tr"		"Oyuncuyu tokatla"
+	}
+
+	"Slap damage"
+	{
+		"tr"		"Tokatlama hasarı"
 	}
 
 	"Slay player"
@@ -15,14 +20,9 @@
 		"tr"		"{1} tokatlandı."
 	}
 
-	"Slap player"
+	"Slayed target"
 	{
-		"tr"		"Oyuncuyu tokatla"
-	}
-
-	"Slap damage"
-	{
-		"tr"		"Tokatlama hasarı"
+		"tr"		"{1} katledildi."
 	}
 
 	"Name changed"
@@ -30,14 +30,14 @@
 		"tr"		"Bir yönetici adınızı değiştirdi"
 	}
 
-	"Rename player"
-	{
-		"tr"		"Oyuncunun adını değiştir"
-	}
-
 	"Renamed target"
 	{
 		"tr"		"{1} adlı oyuncunun adı değiştirildi."
+	}
+
+	"Rename player"
+	{
+		"tr"		"Oyuncunun adını değiştir"
 	}
 
 	"Dead Player Rename"

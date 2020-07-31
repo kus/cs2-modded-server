@@ -1,8 +1,83 @@
 "Phrases"
 {
+	"Yes"
+	{
+		"de"		"Ja"
+	}
+
+	"No"
+	{
+		"de"		"Nein"
+	}
+
+	"No matching client"
+	{
+		"de"		"Es wurde kein passender Spieler gefunden."
+	}
+
+	"No matching clients"
+	{
+		"de"		"Es wurden keine passenden Spieler gefunden."
+	}
+
+	"More than one client matches"
+	{
+		"de"		"Mehr als ein Spieler passt zum Kriterium '{1}'"
+	}
+
+	"More than one client matched"
+	{
+		"de"		"Mehr als ein Spieler passte zum eingegebenen Kriterium."
+	}
+
+	"Player no longer available"
+	{
+		"de"		"Der ausgewählte Spieler ist nicht mehr verfügbar. "
+	}
+
+	"Kick player"
+	{
+		"de"		"Spieler kicken"
+	}
+
+	"Kicked by admin"
+	{
+		"de"		"Gekickt vom Administrator"
+	}
+
+	"Changing map"
+	{
+		"de"		"Ändere Map zu {1}..."
+	}
+
+	"Map was not found"
+	{
+		"de"		"Map {1} wurde nicht gefunden."
+	}
+
 	"Unable to target"
 	{
 		"de"		" Du kannst diesen Spieler nicht erfassen."
+	}
+
+	"Name"
+	{
+		"de"		"Name"
+	}
+
+	"Access"
+	{
+		"de"		"Zugriff"
+	}
+
+	"See console for output"
+	{
+		"de"		"Ausgabe in der Konsole"
+	}
+
+	"Cannot target bot"
+	{
+		"de"		"Dieser Befehl kann nicht an einem Bot ausgeführt werden. "
 	}
 
 	"Unable to find cvar"
@@ -15,6 +90,16 @@
 		"de"		" Du hast keinen Zugriff auf diese Konsolenvariable. "
 	}
 
+	"Value of cvar"
+	{
+		"de"		"Wert der Konsolenvariable '{1}': '{2}'"
+	}
+
+	"Cvar changed"
+	{
+		"de"		"Wert der Konsolenvariable \"{1}\" wurde auf \"{2}\" geändert. "
+	}
+
 	"Config not found"
 	{
 		"de"		"Konfigurationsdatei \"{1}\" nicht gefunden."
@@ -25,39 +110,34 @@
 		"de"		"Konfiguration  \"{1}\" ausgeführt."
 	}
 
-	"Vote Delay Minutes"
+	"Admin cache refreshed"
 	{
-		"de"		"Du musst {1} Minuten warten, bis eine andere Abstimmung gestartet werden kann."
+		"de"		"Admin-Cache wurde aktualisiert."
 	}
 
-	"Vote Delay Seconds"
+	"Invalid Amount"
 	{
-		"de"		"Du musst {1} Sekunden warten, bis eine andere Abstimmung gestartet werden kann."
+		"de"		"Ein ungültiger Wert wurde angegeben"
 	}
 
-	"Yes"
+	"Cannot be performed on dead"
 	{
-		"de"		"Ja"
+		"de"		"Diese Aktion kann nicht am toten Spieler \"{1}\" ausgeführt werden "
 	}
 
-	"No"
+	"Player has since died"
 	{
-		"de"		"Nein"
+		"de"		"Aktion kann nicht durchgeführt werden, Spieler ist mittlerweile tot. "
 	}
 
-	"Kick player"
+	"Vote in Progress"
 	{
-		"de"		"Spieler kicken"
+		"de"		"Es ist bereits eine Abstimmung aktiv."
 	}
 
-	"Name"
+	"Vote Not In Progress"
 	{
-		"de"		"Name"
-	}
-
-	"Access"
-	{
-		"de"		"Zugriff"
+		"de"		"Momentan ist keine Abstimmung aktiv."
 	}
 
 	"Cancelled Vote"
@@ -80,6 +160,41 @@
 		"de"		"Niemand hat abgestimmt."
 	}
 
+	"Vote Delay Minutes"
+	{
+		"de"		"Du musst {1} Minuten warten, bis eine andere Abstimmung gestartet werden kann."
+	}
+
+	"Vote Delay Seconds"
+	{
+		"de"		"Du musst {1} Sekunden warten, bis eine andere Abstimmung gestartet werden kann."
+	}
+
+	"Could not connect to database"
+	{
+		"de"		"Konnte keine Verbindung zur Datenbank herstellen."
+	}
+
+	"Failed to query database"
+	{
+		"de"		"Datenbankabfrage fehlgeschlagen."
+	}
+
+	"Invalid SteamID specified"
+	{
+		"de"		"Du hast eine ungültige SteamID angegeben (muss mit 'STEAM_' beginnen)."
+	}
+
+	"Reload admins"
+	{
+		"de"		"Admins aktualisieren "
+	}
+
+	"Command is in-game only"
+	{
+		"de"		"Dieser Befehl kann nur im Spiel verwendet werden."
+	}
+
 	"Target must be dead"
 	{
 		"de"		"Dieser Befehl kann nur auf tote Spieler angewendet werden."
@@ -90,54 +205,14 @@
 		"de"		"Dieser Befehl kann nur auf lebende Spieler angewendet werden."
 	}
 
-	"Kicked player"
+	"Target is not in game"
 	{
-		"de"		"'{1}' wurde gekickt "
+		"de"		"Der ausgewählte Spieler ist noch nicht im Spiel. "
 	}
 
-	"On"
+	"Played Sound"
 	{
-		"de"		"An"
-	}
-
-	"Off"
-	{
-		"de"		"Aus"
-	}
-
-	"Cannot participate in vote"
-	{
-		"de"		"Du kannst an dieser Abstimmung nicht teilnehmen."
-	}
-
-	"Command is in-game only"
-	{
-		"de"		"Dieser Befehl kann nur im Spiel verwendet werden."
-	}
-
-	"Failed to query database"
-	{
-		"de"		"Datenbankabfrage fehlgeschlagen."
-	}
-
-	"More than one client matches"
-	{
-		"de"		"Mehr als ein Spieler passt zum Kriterium '{1}'"
-	}
-
-	"No matching client"
-	{
-		"de"		"Es wurde kein passender Spieler gefunden."
-	}
-
-	"No matching clients"
-	{
-		"de"		"Es wurden keine passenden Spieler gefunden."
-	}
-
-	"See console for output"
-	{
-		"de"		"Ausgabe in der Konsole"
+		"de"		" Ton wurde bei Spieler '{1}' abgespielt. "
 	}
 
 	"Slapped player"
@@ -150,24 +225,14 @@
 		"de"		"'{1}' wurde erschlagen"
 	}
 
-	"Value of cvar"
+	"Kicked player"
 	{
-		"de"		"Wert der Konsolenvariable '{1}': '{2}'"
+		"de"		"'{1}' wurde gekickt "
 	}
 
-	"Vote Not In Progress"
+	"Cannot participate in vote"
 	{
-		"de"		"Momentan ist keine Abstimmung aktiv."
-	}
-
-	"Vote in Progress"
-	{
-		"de"		"Es ist bereits eine Abstimmung aktiv."
-	}
-
-	"Cannot be performed on dead"
-	{
-		"de"		"Diese Aktion kann nicht am toten Spieler \"{1}\" ausgeführt werden "
+		"de"		"Du kannst an dieser Abstimmung nicht teilnehmen."
 	}
 
 	"Cannot change vote"
@@ -175,79 +240,14 @@
 		"de"		"Du kannst deine Auswahl in dieser Abstimmung nicht ändern. "
 	}
 
-	"Cannot target bot"
+	"On"
 	{
-		"de"		"Dieser Befehl kann nicht an einem Bot ausgeführt werden. "
+		"de"		"An"
 	}
 
-	"Could not connect to database"
+	"Off"
 	{
-		"de"		"Konnte keine Verbindung zur Datenbank herstellen."
-	}
-
-	"Cvar changed"
-	{
-		"de"		"Wert der Konsolenvariable \"{1}\" wurde auf \"{2}\" geändert. "
-	}
-
-	"Invalid Amount"
-	{
-		"de"		"Ein ungültiger Wert wurde angegeben"
-	}
-
-	"Played Sound"
-	{
-		"de"		" Ton wurde bei Spieler '{1}' abgespielt. "
-	}
-
-	"Player has since died"
-	{
-		"de"		"Aktion kann nicht durchgeführt werden, Spieler ist mittlerweile tot. "
-	}
-
-	"Player no longer available"
-	{
-		"de"		"Der ausgewählte Spieler ist nicht mehr verfügbar. "
-	}
-
-	"Target is not in game"
-	{
-		"de"		"Der ausgewählte Spieler ist noch nicht im Spiel. "
-	}
-
-	"Admin cache refreshed"
-	{
-		"de"		"Admin-Cache wurde aktualisiert."
-	}
-
-	"Changing map"
-	{
-		"de"		"Ändere Map zu {1}..."
-	}
-
-	"Invalid SteamID specified"
-	{
-		"de"		"Du hast eine ungültige SteamID angegeben (muss mit 'STEAM_' beginnen)."
-	}
-
-	"Kicked by admin"
-	{
-		"de"		"Gekickt vom Administrator"
-	}
-
-	"Map was not found"
-	{
-		"de"		"Map {1} wurde nicht gefunden."
-	}
-
-	"More than one client matched"
-	{
-		"de"		"Mehr als ein Spieler passte zum eingegebenen Kriterium."
-	}
-
-	"Reload admins"
-	{
-		"de"		"Admins aktualisieren "
+		"de"		"Aus"
 	}
 
 }

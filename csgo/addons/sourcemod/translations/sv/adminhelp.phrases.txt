@@ -1,18 +1,8 @@
 "Phrases"
 {
-	"Type sm_help to see more"
-	{
-		"sv"		"Skriv sm_help {1} för att se mer kommandon"
-	}
-
 	"SM help commands"
 	{
 		"sv"		"SourceMod hjälp: Information om kommandon"
-	}
-
-	"Entries n - m in page k"
-	{
-		"sv"		"Post {1} - {2} på sidan {3}"
 	}
 
 	"No description available"
@@ -23,6 +13,16 @@
 	"No commands available"
 	{
 		"sv"		"Inga kommandon tillgängliga "
+	}
+
+	"Type sm_help to see more"
+	{
+		"sv"		"Skriv sm_help {1} för att se mer kommandon"
+	}
+
+	"Entries n - m in page k"
+	{
+		"sv"		"Post {1} - {2} på sidan {3}"
 	}
 
 	"No matching results found"

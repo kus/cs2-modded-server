@@ -5,31 +5,6 @@
 		"fr"		"Bannir un joueur"
 	}
 
-	"Banned player"
-	{
-		"fr"		"Le joueur \"{1}\" a été banni pour {2} minutes."
-	}
-
-	"Banned player reason"
-	{
-		"fr"		"Le joueur \"{1}\" a été banni pour {2} minutes. (raison: {3})."
-	}
-
-	"Cannot ban that IP"
-	{
-		"fr"		"Vous ne pouvez pas bannir cette adresse IP."
-	}
-
-	"Permabanned player reason"
-	{
-		"fr"		"Le joueur \"{1}\" a été définitivement banni. (Motif : {2}). "
-	}
-
-	"Removed bans matching"
-	{
-		"fr"		"Les bans correspondants au filtre: {1} ont été retirés. "
-	}
-
 	"Ban reason"
 	{
 		"fr"		"Motif du ban"
@@ -40,19 +15,44 @@
 		"fr"		" Le joueur \"{1}\" a été définitivement banni. "
 	}
 
+	"Permabanned player reason"
+	{
+		"fr"		"Le joueur \"{1}\" a été définitivement banni. (Motif : {2}). "
+	}
+
+	"Banned player"
+	{
+		"fr"		"Le joueur \"{1}\" a été banni pour {2} minutes."
+	}
+
+	"Banned player reason"
+	{
+		"fr"		"Le joueur \"{1}\" a été banni pour {2} minutes. (raison: {3})."
+	}
+
+	"Removed bans matching"
+	{
+		"fr"		"Les bans correspondants au filtre: {1} ont été retirés. "
+	}
+
 	"Ban added"
 	{
 		"fr"		"Le ban a été ajouté"
 	}
 
-	"AbortBan applied successfully"
+	"Cannot ban that IP"
 	{
-		"fr"		"Ban annulé"
+		"fr"		"Vous ne pouvez pas bannir cette adresse IP."
 	}
 
 	"Custom ban reason explanation"
 	{
 		"fr"		"Saisissez la raison du ban dans un message. {1} pour annuler."
+	}
+
+	"AbortBan applied successfully"
+	{
+		"fr"		"Ban annulé"
 	}
 
 	"AbortBan not waiting for custom reason"

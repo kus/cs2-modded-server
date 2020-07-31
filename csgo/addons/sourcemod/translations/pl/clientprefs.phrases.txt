@@ -1,13 +1,13 @@
 "Phrases"
 {
-	"Cookie Changed Value"
+	"Cookie List"
 	{
-		"pl"		"Zmieniono wartość ciasteczka \"{1}\" na \"{2}\""
+		"pl"		"Lista ciasteczek SourceModa "
 	}
 
-	"Cookie Value"
+	"Printing Cookie List"
 	{
-		"pl"		"{1} posiada wartość {2}"
+		"pl"		"Wyświetlanie listy ciasteczek w konsoli"
 	}
 
 	"Cookie not Found"
@@ -15,9 +15,9 @@
 		"pl"		"Nie można znaleźć ciasteczka \"{1}\""
 	}
 
-	"No Console"
+	"Cookie Value"
 	{
-		"pl"		"Nie można wyświetlić menu ustawień w konsoli"
+		"pl"		"{1} posiada wartość {2}"
 	}
 
 	"Protected Cookie"
@@ -25,9 +25,14 @@
 		"pl"		"Nie można zmienić wartości zabezpieczonego ciasteczka \"{1}\""
 	}
 
-	"Cookie List"
+	"Cookie Changed Value"
 	{
-		"pl"		"Lista ciasteczek SourceModa "
+		"pl"		"Zmieniono wartość ciasteczka \"{1}\" na \"{2}\""
+	}
+
+	"No Console"
+	{
+		"pl"		"Nie można wyświetlić menu ustawień w konsoli"
 	}
 
 	"Choose Option"
@@ -38,11 +43,6 @@
 	"Client Settings"
 	{
 		"pl"		"Ustawienia klienta"
-	}
-
-	"Printing Cookie List"
-	{
-		"pl"		"Wyświetlanie listy ciasteczek w konsoli"
 	}
 
 }

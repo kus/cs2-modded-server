@@ -1,18 +1,13 @@
 "Phrases"
 {
-	"Choose Type"
-	{
-		"ar"		"إختر"
-	}
-
-	"Gag Player"
-	{
-		"ar"		"إحظر الكتابة على اللاعب "
-	}
-
 	"Gag/Mute player"
 	{
 		"ar"		"إحظر الكتابة/التكلم"
+	}
+
+	"Choose Type"
+	{
+		"ar"		"إختر"
 	}
 
 	"Gagged target"
@@ -20,9 +15,9 @@
 		"ar"		"ختابة محظورة على {1}"
 	}
 
-	"Mute Player"
+	"Ungagged target"
 	{
-		"ar"		"إحظراللاعب من التكلم"
+		"ar"		"تم رفع حظرالكتابة  على {1}"
 	}
 
 	"Muted target"
@@ -30,9 +25,9 @@
 		"ar"		"محظور من التكلم {1}"
 	}
 
-	"Silence Player"
+	"Unmuted target"
 	{
-		"ar"		"إمنع اللاعب من التكلم و الكتابة"
+		"ar"		"تم رفع حظرالتكلم  على {1}"
 	}
 
 	"Silenced target"
@@ -40,9 +35,14 @@
 		"ar"		"لاعب ممنوع من التكلم و الكتابة {1}"
 	}
 
-	"UnGag Player"
+	"Unsilenced target"
 	{
-		"ar"		"إرفع حظرالكتابة"
+		"ar"		"تم رفع حظرالتكلم و الكتابة على {1}"
+	}
+
+	"Mute Player"
+	{
+		"ar"		"إحظراللاعب من التكلم"
 	}
 
 	"UnMute Player"
@@ -50,24 +50,24 @@
 		"ar"		"إرفع حظرالتكلم"
 	}
 
+	"Gag Player"
+	{
+		"ar"		"إحظر الكتابة على اللاعب "
+	}
+
+	"UnGag Player"
+	{
+		"ar"		"إرفع حظرالكتابة"
+	}
+
+	"Silence Player"
+	{
+		"ar"		"إمنع اللاعب من التكلم و الكتابة"
+	}
+
 	"UnSilence Player"
 	{
 		"ar"		"إرفع حظرالتكلم و الكتابة"
-	}
-
-	"Ungagged target"
-	{
-		"ar"		"تم رفع حظرالكتابة  على {1}"
-	}
-
-	"Unmuted target"
-	{
-		"ar"		"تم رفع حظرالتكلم  على {1}"
-	}
-
-	"Unsilenced target"
-	{
-		"ar"		"تم رفع حظرالتكلم و الكتابة على {1}"
 	}
 
 }

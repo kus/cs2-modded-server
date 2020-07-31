@@ -1,18 +1,18 @@
 "Phrases"
 {
-	"Changed Next Map"
+	"Vote Nextmap"
 	{
-		"zho"		"將下幅地圖改為 \"{1}\""
+		"zho"		"為下一幅地票投票吧！"
 	}
 
-	"Current Map Stays"
+	"Nextmap Voting Started"
 	{
-		"zho"		"投票結果︰當前地圖繼續！(得到共 {2} 票中的 {1}%%) "
+		"zho"		"下一幅圖的投票已開始"
 	}
 
-	"Dont Change"
+	"Nextmap Voting Finished"
 	{
-		"zho"		"不改變"
+		"zho"		"地圖投票已結束，下一幅地圖為 {1} (得到共 {3} 票中的 {2}%%) "
 	}
 
 	"Current Map Extended"
@@ -25,19 +25,19 @@
 		"zho"		"地圖延時"
 	}
 
-	"Nextmap Voting Finished"
+	"Dont Change"
 	{
-		"zho"		"地圖投票已結束，下一幅地圖為 {1} (得到共 {3} 票中的 {2}%%) "
+		"zho"		"不改變"
 	}
 
-	"Nextmap Voting Started"
+	"Current Map Stays"
 	{
-		"zho"		"下一幅圖的投票已開始"
+		"zho"		"投票結果︰當前地圖繼續！(得到共 {2} 票中的 {1}%%) "
 	}
 
-	"Vote Nextmap"
+	"Changed Next Map"
 	{
-		"zho"		"為下一幅地票投票吧！"
+		"zho"		"將下幅地圖改為 \"{1}\""
 	}
 
 	"Starting Runoff"

@@ -1,13 +1,13 @@
 "Phrases"
 {
-	"Removed bans matching"
+	"Ban player"
 	{
-		"jp"		"フィルター \"{1}\" にマッチするBANを削除しました。"
+		"jp"		"プレイヤーをBAN"
 	}
 
-	"Permabanned player reason"
+	"Ban reason"
 	{
-		"jp"		"プレイヤー \"{1}\" を永久BANしました。(理由: {2})"
+		"jp"		"BANの理由"
 	}
 
 	"Permabanned player"
@@ -15,9 +15,9 @@
 		"jp"		"プレイヤー \"{1}\" を永久BANしました。"
 	}
 
-	"Cannot ban that IP"
+	"Permabanned player reason"
 	{
-		"jp"		"このIPアドレスはBAN出来ません。"
+		"jp"		"プレイヤー \"{1}\" を永久BANしました。(理由: {2})"
 	}
 
 	"Banned player"
@@ -30,19 +30,24 @@
 		"jp"		"プレイヤー \"{1}\" を{2}分間BANしました。(理由: {3})"
 	}
 
-	"Ban reason"
+	"Removed bans matching"
 	{
-		"jp"		"BANの理由"
-	}
-
-	"Ban player"
-	{
-		"jp"		"プレイヤーをBAN"
+		"jp"		"フィルター \"{1}\" にマッチするBANを削除しました。"
 	}
 
 	"Ban added"
 	{
 		"jp"		"BANを追加しました。"
+	}
+
+	"Cannot ban that IP"
+	{
+		"jp"		"このIPアドレスはBAN出来ません。"
+	}
+
+	"Custom ban reason explanation"
+	{
+		"jp"		"BANの理由をチャットで入力してください。キャンセルするには{1}を利用します。"
 	}
 
 	"AbortBan applied successfully"
@@ -53,11 +58,6 @@
 	"AbortBan not waiting for custom reason"
 	{
 		"jp"		"BANの理由の入力を待っていないため、BANをキャンセルできません。"
-	}
-
-	"Custom ban reason explanation"
-	{
-		"jp"		"BANの理由をチャットで入力してください。キャンセルするには{1}を利用します。"
 	}
 
 }

@@ -1,28 +1,13 @@
 "Phrases"
 {
-	"Nominate Title"
+	"Already Nominated"
 	{
-		"sk"		"Nominovať mapu:"
+		"sk"		"Už si nominoval mapu. "
 	}
 
-	"Nominated"
+	"Max Nominations"
 	{
-		"sk"		"Nominované"
-	}
-
-	"Recently Played"
-	{
-		"sk"		"Nedávno hrané"
-	}
-
-	"Map Nomination Changed"
-	{
-		"sk"		"{1} zmenil nomináciu na {2}. "
-	}
-
-	"Map Nominated"
-	{
-		"sk"		"{1} nominoval {2}."
+		"sk"		"Maximum povolených nominácii bol dosiahnutý."
 	}
 
 	"Map Already In Vote"
@@ -30,19 +15,9 @@
 		"sk"		"Mapa '{1}' je už v nominačnej listine."
 	}
 
-	"Can't Nominate Current Map"
+	"Map Inserted"
 	{
-		"sk"		"Aktuálna mapa sa nedá nominovať."
-	}
-
-	"Current Map"
-	{
-		"sk"		"Aktuálna mapa"
-	}
-
-	"Already Nominated"
-	{
-		"sk"		"Už si nominoval mapu. "
+		"sk"		"Mapa '{1}' bola pridaná do zoznamu nominácii."
 	}
 
 	"Map Already Nominated"
@@ -50,9 +25,24 @@
 		"sk"		"Mapa ktorú si vybral už bola nominovaná."
 	}
 
-	"Map Inserted"
+	"Map Nominated"
 	{
-		"sk"		"Mapa '{1}' bola pridaná do zoznamu nominácii."
+		"sk"		"{1} nominoval {2}."
+	}
+
+	"Map Nomination Changed"
+	{
+		"sk"		"{1} zmenil nomináciu na {2}. "
+	}
+
+	"Nominate Title"
+	{
+		"sk"		"Nominovať mapu:"
+	}
+
+	"Can't Nominate Current Map"
+	{
+		"sk"		"Aktuálna mapa sa nedá nominovať."
 	}
 
 	"Map in Exclude List"
@@ -60,9 +50,19 @@
 		"sk"		"Vybraná mapa sa hrala nedávno a nemôže byť nominovaná"
 	}
 
-	"Max Nominations"
+	"Current Map"
 	{
-		"sk"		"Maximum povolených nominácii bol dosiahnutý."
+		"sk"		"Aktuálna mapa"
+	}
+
+	"Recently Played"
+	{
+		"sk"		"Nedávno hrané"
+	}
+
+	"Nominated"
+	{
+		"sk"		"Nominované"
 	}
 
 }

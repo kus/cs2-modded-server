@@ -1,33 +1,8 @@
 "Phrases"
 {
-	"Alltalk vote"
+	"Initiated Vote Gravity"
 	{
-		"nl"		"Alltalk stem"
-	}
-
-	"Burn vote"
-	{
-		"nl"		"Vuur stem"
-	}
-
-	"Change Gravity To"
-	{
-		"nl"		"Verander zwaartekracht naar {1}?"
-	}
-
-	"Gravity Vote"
-	{
-		"nl"		"Zwaartekracht stem: {1}"
-	}
-
-	"Gravity vote"
-	{
-		"nl"		"Zwaartekracht stem"
-	}
-
-	"Initiated Vote Alltalk"
-	{
-		"nl"		"Alltalk stem gestart."
+		"nl"		"Zwaartekracht stem gestart."
 	}
 
 	"Initiated Vote Burn"
@@ -35,29 +10,39 @@
 		"nl"		"Vuur stem gestart voor {1}."
 	}
 
-	"Initiated Vote FF"
-	{
-		"nl"		"Friendly fire stem gestart."
-	}
-
-	"Initiated Vote Gravity"
-	{
-		"nl"		"Zwaartekracht stem gestart."
-	}
-
 	"Initiated Vote Slay"
 	{
 		"nl"		"Slay stem gestart voor {1}."
 	}
 
-	"Slay vote"
+	"Initiated Vote Alltalk"
 	{
-		"nl"		"Slay stem"
+		"nl"		"Alltalk stem gestart."
 	}
 
-	"Vote FF"
+	"Initiated Vote FF"
 	{
-		"nl"		"Stem FF"
+		"nl"		"Friendly fire stem gestart."
+	}
+
+	"Gravity Vote"
+	{
+		"nl"		"Zwaartekracht stem: {1}"
+	}
+
+	"Change Gravity To"
+	{
+		"nl"		"Verander zwaartekracht naar {1}?"
+	}
+
+	"Voteburn player"
+	{
+		"nl"		"Zet speler {1} in vuur?"
+	}
+
+	"Voteslay Player"
+	{
+		"nl"		"Slay {1}?"
 	}
 
 	"Votealltalk Off"
@@ -70,11 +55,6 @@
 		"nl"		"Zet alltalk aan? {1}"
 	}
 
-	"Voteburn player"
-	{
-		"nl"		"Zet speler {1} in vuur?"
-	}
-
 	"Voteff Off"
 	{
 		"nl"		"Zet friendly fire uit? {1}"
@@ -85,9 +65,29 @@
 		"nl"		"Zet friendly fire aan? {1}"
 	}
 
-	"Voteslay Player"
+	"Gravity vote"
 	{
-		"nl"		"Slay {1}?"
+		"nl"		"Zwaartekracht stem"
+	}
+
+	"Vote FF"
+	{
+		"nl"		"Stem FF"
+	}
+
+	"Burn vote"
+	{
+		"nl"		"Vuur stem"
+	}
+
+	"Alltalk vote"
+	{
+		"nl"		"Alltalk stem"
+	}
+
+	"Slay vote"
+	{
+		"nl"		"Slay stem"
 	}
 
 	"Slayed player"

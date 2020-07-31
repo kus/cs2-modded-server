@@ -1,23 +1,28 @@
 "Phrases"
 {
-	"Choose Type"
-	{
-		"ko"		"종류를 선택하세요"
-	}
-
 	"Gag/Mute player"
 	{
 		"ko"		"플레이어 대화/음성 금지"
 	}
 
-	"Muted target"
+	"Choose Type"
 	{
-		"ko"		"{1} 님의 음성을 금지했습니다."
+		"ko"		"종류를 선택하세요"
+	}
+
+	"Gagged target"
+	{
+		"ko"		"{1} 님의 대화를 금지했습니다."
 	}
 
 	"Ungagged target"
 	{
 		"ko"		"{1} 님의 대화 금지를 풀었습니다."
+	}
+
+	"Muted target"
+	{
+		"ko"		"{1} 님의 음성을 금지했습니다."
 	}
 
 	"Unmuted target"
@@ -35,9 +40,14 @@
 		"ko"		"{1} 님의 대화와 음성 금지를 풀었습니다."
 	}
 
-	"Gagged target"
+	"Mute Player"
 	{
-		"ko"		"{1} 님의 대화를 금지했습니다."
+		"ko"		"플레이어 음성 금지"
+	}
+
+	"UnMute Player"
+	{
+		"ko"		"플레이어 음성 금지 해제"
 	}
 
 	"Gag Player"
@@ -45,24 +55,14 @@
 		"ko"		"플레이어 대화 금지"
 	}
 
-	"Mute Player"
-	{
-		"ko"		"플레이어 음성 금지"
-	}
-
-	"Silence Player"
-	{
-		"ko"		"플레이어 대화/음성 금지"
-	}
-
 	"UnGag Player"
 	{
 		"ko"		"플레이어 대화 금지 해제"
 	}
 
-	"UnMute Player"
+	"Silence Player"
 	{
-		"ko"		"플레이어 음성 금지 해제"
+		"ko"		"플레이어 대화/음성 금지"
 	}
 
 	"UnSilence Player"

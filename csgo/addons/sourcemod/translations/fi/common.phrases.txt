@@ -1,143 +1,13 @@
 "Phrases"
 {
-	"Access"
-	{
-		"fi"		"Pääsy"
-	}
-
-	"Cancel vote"
-	{
-		"fi"		"Peruuta äänestys"
-	}
-
-	"Cancelled Vote"
-	{
-		"fi"		"Äänestys peruutettu"
-	}
-
-	"Config not found"
-	{
-		"fi"		"Asetustiedostoa \"{1}\" ei löytynyt."
-	}
-
-	"Executed config"
-	{
-		"fi"		"Suoritettiin asetustiedosto \"{1}\"."
-	}
-
-	"Kicked player"
-	{
-		"fi"		"Potkaistiin pelaaja '{1}'"
-	}
-
-	"Map was not found"
-	{
-		"fi"		"Karttaa {1} ei löytynyt."
-	}
-
-	"Name"
-	{
-		"fi"		"Nimi"
-	}
-
-	"No"
-	{
-		"fi"		"Ei"
-	}
-
-	"No access to cvar"
-	{
-		"fi"		"Sinulla ei ole oikeuksia tähän cvariin."
-	}
-
-	"Played Sound"
-	{
-		"fi"		"Soitettiin ääni pelaajalle '{1}'"
-	}
-
-	"See console for output"
-	{
-		"fi"		"Katso konsolista lisätietoja."
-	}
-
-	"Slapped player"
-	{
-		"fi"		"Läpsäistiin pelaajaa '{1}'"
-	}
-
-	"Slayed player"
-	{
-		"fi"		"Teloitettiin pelaaja '{1}'"
-	}
-
-	"Target is not in game"
-	{
-		"fi"		"Kohde ei ole vielä täysin pelissä."
-	}
-
-	"Target must be alive"
-	{
-		"fi"		"Tätä komentoa voidaan käyttää vain elossa oleviin pelaajiin."
-	}
-
-	"Target must be dead"
-	{
-		"fi"		"Tätä komentoa voidaan käyttää vain kuolleena oleviin pelaajiin."
-	}
-
-	"Unable to target"
-	{
-		"fi"		"Pelaaja ei käy kohteeksi."
-	}
-
-	"Value of cvar"
-	{
-		"fi"		"Cvarin \"{1}\" arvo: \"{2}\""
-	}
-
-	"Vote Delay Minutes"
-	{
-		"fi"		"Sinun täytyy odottaa {1} minuuttia ennen kuin voit aloittaa uuden äänestyksen."
-	}
-
-	"Vote Delay Seconds"
-	{
-		"fi"		"Sinun täytyy odottaa {1} sekuntia ennen kuin voit aloittaa uuden äänestyksen."
-	}
-
-	"Vote Not In Progress"
-	{
-		"fi"		"Äänestystä ei ole tällä hetkellä käynnissä."
-	}
-
-	"Vote Select"
-	{
-		"fi"		"{1} valitsi {2}."
-	}
-
-	"Vote in Progress"
-	{
-		"fi"		"Äänestys on jo käynnissä."
-	}
-
 	"Yes"
 	{
 		"fi"		"Kyllä"
 	}
 
-	"Could not connect to database"
+	"No"
 	{
-		"fi"		"Ei saatu yhteyttä tietokantaan."
-	}
-
-	"Cvar changed"
-	{
-		"fi"		"Vaihdettiin cvarin \"{1}\" arvoksi \"{2}\"."
-	}
-
-	"Invalid SteamID specified"
-	{
-		"fi"		"Antamasi Steam ID on virheellinen. Steam ID:n täytyy sisältää alkuosuus 'STEAM_0:'."
+		"fi"		"Ei"
 	}
 
 	"No matching client"
@@ -150,79 +20,9 @@
 		"fi"		"Ehdot täyttäviä pelaajia ei löytynyt."
 	}
 
-	"Player no longer available"
+	"More than one client matches"
 	{
-		"fi"		"Valitsemasi pelaaja ei ole enää saatavilla."
-	}
-
-	"Unable to find cvar"
-	{
-		"fi"		"Cvaria \"{1}\" ei löytynyt."
-	}
-
-	"Cannot change vote"
-	{
-		"fi"		"Et voi vaihtaa valintaasi tässä äänestyksessä."
-	}
-
-	"Cannot participate in vote"
-	{
-		"fi"		"Et voi osallistua tähän äänestykseen."
-	}
-
-	"Off"
-	{
-		"fi"		"Pois päältä"
-	}
-
-	"On"
-	{
-		"fi"		"Päällä"
-	}
-
-	"Changing map"
-	{
-		"fi"		"Vaihdetaan karttaan {1}..."
-	}
-
-	"Kicked by admin"
-	{
-		"fi"		"Erotettu ylläpitäjän toimesta"
-	}
-
-	"Kick player"
-	{
-		"fi"		"Erota pelaaja"
-	}
-
-	"No Votes Cast"
-	{
-		"fi"		"Kukaan ei äänestänyt."
-	}
-
-	"Reload admins"
-	{
-		"fi"		"Päivitä ylläpitäjät"
-	}
-
-	"Cannot be performed on dead"
-	{
-		"fi"		"Komentoa ei voida suorittaa kuolleelle pelaajalle \"{1}\""
-	}
-
-	"Cannot target bot"
-	{
-		"fi"		"Komentoa ei voida suorittaa botille."
-	}
-
-	"Failed to query database"
-	{
-		"fi"		"Tietokantakysely epäonnistui."
-	}
-
-	"Invalid Amount"
-	{
-		"fi"		"Anna kelvollinen määrä"
+		"fi"		"Useampi kuin yksi pelaaja täyttää ehdon \"{1}\""
 	}
 
 	"More than one client matched"
@@ -230,14 +30,84 @@
 		"fi"		"Useampi kuin yksi pelaaja täyttää annetut ehdot."
 	}
 
-	"More than one client matches"
+	"Player no longer available"
 	{
-		"fi"		"Useampi kuin yksi pelaaja täyttää ehdon \"{1}\""
+		"fi"		"Valitsemasi pelaaja ei ole enää saatavilla."
 	}
 
-	"Player has since died"
+	"Kick player"
 	{
-		"fi"		"Toimintoa ei voida suorittaa, sillä pelaaja on jo kuollut."
+		"fi"		"Erota pelaaja"
+	}
+
+	"Kicked by admin"
+	{
+		"fi"		"Erotettu ylläpitäjän toimesta"
+	}
+
+	"Changing map"
+	{
+		"fi"		"Vaihdetaan karttaan {1}..."
+	}
+
+	"Map was not found"
+	{
+		"fi"		"Karttaa {1} ei löytynyt."
+	}
+
+	"Unable to target"
+	{
+		"fi"		"Pelaaja ei käy kohteeksi."
+	}
+
+	"Name"
+	{
+		"fi"		"Nimi"
+	}
+
+	"Access"
+	{
+		"fi"		"Pääsy"
+	}
+
+	"See console for output"
+	{
+		"fi"		"Katso konsolista lisätietoja."
+	}
+
+	"Cannot target bot"
+	{
+		"fi"		"Komentoa ei voida suorittaa botille."
+	}
+
+	"Unable to find cvar"
+	{
+		"fi"		"Cvaria \"{1}\" ei löytynyt."
+	}
+
+	"No access to cvar"
+	{
+		"fi"		"Sinulla ei ole oikeuksia tähän cvariin."
+	}
+
+	"Value of cvar"
+	{
+		"fi"		"Cvarin \"{1}\" arvo: \"{2}\""
+	}
+
+	"Cvar changed"
+	{
+		"fi"		"Vaihdettiin cvarin \"{1}\" arvoksi \"{2}\"."
+	}
+
+	"Config not found"
+	{
+		"fi"		"Asetustiedostoa \"{1}\" ei löytynyt."
+	}
+
+	"Executed config"
+	{
+		"fi"		"Suoritettiin asetustiedosto \"{1}\"."
 	}
 
 	"Admin cache refreshed"
@@ -245,9 +115,139 @@
 		"fi"		"Ylläpitäjät päivitettiin."
 	}
 
+	"Invalid Amount"
+	{
+		"fi"		"Anna kelvollinen määrä"
+	}
+
+	"Cannot be performed on dead"
+	{
+		"fi"		"Komentoa ei voida suorittaa kuolleelle pelaajalle \"{1}\""
+	}
+
+	"Player has since died"
+	{
+		"fi"		"Toimintoa ei voida suorittaa, sillä pelaaja on jo kuollut."
+	}
+
+	"Vote in Progress"
+	{
+		"fi"		"Äänestys on jo käynnissä."
+	}
+
+	"Vote Not In Progress"
+	{
+		"fi"		"Äänestystä ei ole tällä hetkellä käynnissä."
+	}
+
+	"Cancelled Vote"
+	{
+		"fi"		"Äänestys peruutettu"
+	}
+
+	"Cancel vote"
+	{
+		"fi"		"Peruuta äänestys"
+	}
+
+	"Vote Select"
+	{
+		"fi"		"{1} valitsi {2}."
+	}
+
+	"No Votes Cast"
+	{
+		"fi"		"Kukaan ei äänestänyt."
+	}
+
+	"Vote Delay Minutes"
+	{
+		"fi"		"Sinun täytyy odottaa {1} minuuttia ennen kuin voit aloittaa uuden äänestyksen."
+	}
+
+	"Vote Delay Seconds"
+	{
+		"fi"		"Sinun täytyy odottaa {1} sekuntia ennen kuin voit aloittaa uuden äänestyksen."
+	}
+
+	"Could not connect to database"
+	{
+		"fi"		"Ei saatu yhteyttä tietokantaan."
+	}
+
+	"Failed to query database"
+	{
+		"fi"		"Tietokantakysely epäonnistui."
+	}
+
+	"Invalid SteamID specified"
+	{
+		"fi"		"Antamasi Steam ID on virheellinen. Steam ID:n täytyy sisältää alkuosuus 'STEAM_0:'."
+	}
+
+	"Reload admins"
+	{
+		"fi"		"Päivitä ylläpitäjät"
+	}
+
 	"Command is in-game only"
 	{
 		"fi"		"Komentoa voi käyttää vain pelissä."
+	}
+
+	"Target must be dead"
+	{
+		"fi"		"Tätä komentoa voidaan käyttää vain kuolleena oleviin pelaajiin."
+	}
+
+	"Target must be alive"
+	{
+		"fi"		"Tätä komentoa voidaan käyttää vain elossa oleviin pelaajiin."
+	}
+
+	"Target is not in game"
+	{
+		"fi"		"Kohde ei ole vielä täysin pelissä."
+	}
+
+	"Played Sound"
+	{
+		"fi"		"Soitettiin ääni pelaajalle '{1}'"
+	}
+
+	"Slapped player"
+	{
+		"fi"		"Läpsäistiin pelaajaa '{1}'"
+	}
+
+	"Slayed player"
+	{
+		"fi"		"Teloitettiin pelaaja '{1}'"
+	}
+
+	"Kicked player"
+	{
+		"fi"		"Potkaistiin pelaaja '{1}'"
+	}
+
+	"Cannot participate in vote"
+	{
+		"fi"		"Et voi osallistua tähän äänestykseen."
+	}
+
+	"Cannot change vote"
+	{
+		"fi"		"Et voi vaihtaa valintaasi tässä äänestyksessä."
+	}
+
+	"On"
+	{
+		"fi"		"Päällä"
+	}
+
+	"Off"
+	{
+		"fi"		"Pois päältä"
 	}
 
 	"Say all"
@@ -255,9 +255,9 @@
 		"fi"		"(KAIKKI) {1}"
 	}
 
-	"Private say to"
+	"Chat admins"
 	{
-		"fi"		"(Yksityisviesti pelaajalle {1}) {2}"
+		"fi"		"(YLLÄPITÄJÄT) {1}"
 	}
 
 	"Chat to admins"
@@ -265,9 +265,9 @@
 		"fi"		"(YLLÄPITÄJILLE) {1}"
 	}
 
-	"Chat admins"
+	"Private say to"
 	{
-		"fi"		"(YLLÄPITÄJÄT) {1}"
+		"fi"		"(Yksityisviesti pelaajalle {1}) {2}"
 	}
 
 }

@@ -1,13 +1,13 @@
 "Phrases"
 {
+	"Ban player"
+	{
+		"ko"		"플레이어 차단하기"
+	}
+
 	"Ban reason"
 	{
 		"ko"		"차단 이유"
-	}
-
-	"Cannot ban that IP"
-	{
-		"ko"		"그 IP 주소를 차단할 수 없습니다. "
 	}
 
 	"Permabanned player"
@@ -20,19 +20,19 @@
 		"ko"		"\"{1}\" 님을 영구히 차단하였습니다. (이유 : {2})."
 	}
 
-	"Banned player reason"
-	{
-		"ko"		"\"{1}\" 님을 {2} 분 차단하였습니다. (이유 : {3})."
-	}
-
 	"Banned player"
 	{
 		"ko"		"\"{1}\" 님을 {2} 분 차단하였습니다. "
 	}
 
-	"Ban player"
+	"Banned player reason"
 	{
-		"ko"		"플레이어 차단하기"
+		"ko"		"\"{1}\" 님을 {2} 분 차단하였습니다. (이유 : {3})."
+	}
+
+	"Removed bans matching"
+	{
+		"ko"		"{1} 과 일치하는 차단 필터를 제거합니다"
 	}
 
 	"Ban added"
@@ -40,9 +40,9 @@
 		"ko"		"차단 목록에 추가되었습니다."
 	}
 
-	"Removed bans matching"
+	"Cannot ban that IP"
 	{
-		"ko"		"{1} 과 일치하는 차단 필터를 제거합니다"
+		"ko"		"그 IP 주소를 차단할 수 없습니다. "
 	}
 
 	"Custom ban reason explanation"

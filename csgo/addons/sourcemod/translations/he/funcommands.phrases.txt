@@ -1,28 +1,8 @@
 "Phrases"
 {
-	"Beacon player"
-	{
-		"he"		"סמן שחקן"
-	}
-
-	"Blind amount"
-	{
-		"he"		"כמה עיוור?"
-	}
-
-	"Blind player"
-	{
-		"he"		"עוור שחקן"
-	}
-
 	"Burn player"
 	{
 		"he"		"שרוף שחקן"
-	}
-
-	"Drug player"
-	{
-		"he"		"סמם שחקן"
 	}
 
 	"FireBomb player"
@@ -40,49 +20,39 @@
 		"he"		"שלח פצצת קור לשחקן"
 	}
 
-	"Froze target"
+	"Beacon player"
 	{
-		"he"		"השחקן {1} הוקפא"
+		"he"		"סמן שחקן"
 	}
 
-	"Fully blind"
+	"NoClip player"
 	{
-		"he"		"עיוור לחלוטין"
+		"he"		"ישם לשחקן תזוזה חופשית"
 	}
 
-	"Gravity High"
+	"Blind player"
 	{
-		"he"		"כוח משיכה גבוהה"
+		"he"		"עוור שחקן"
 	}
 
-	"Gravity Low"
+	"Drug player"
 	{
-		"he"		"כוח משיכה נמוך"
-	}
-
-	"Gravity Normal"
-	{
-		"he"		"כוח משיכה נורמלי"
-	}
-
-	"Gravity Very High"
-	{
-		"he"		"כוח משיכה גבוהה מאוד"
-	}
-
-	"Gravity Very Low"
-	{
-		"he"		"כוח משיכה נמוך מאוד"
-	}
-
-	"Gravity amount"
-	{
-		"he"		"כוח משיכה?"
+		"he"		"סמם שחקן"
 	}
 
 	"Gravity player"
 	{
 		"he"		"ישם כוח משיכה ע ל שחקן אחד"
+	}
+
+	"Blind amount"
+	{
+		"he"		"כמה עיוור?"
+	}
+
+	"Fully blind"
+	{
+		"he"		"עיוור לחלוטין"
 	}
 
 	"Half blind"
@@ -95,9 +65,39 @@
 		"he"		"לא עיוור"
 	}
 
-	"NoClip player"
+	"Gravity amount"
 	{
-		"he"		"ישם לשחקן תזוזה חופשית"
+		"he"		"כוח משיכה?"
+	}
+
+	"Gravity Very High"
+	{
+		"he"		"כוח משיכה גבוהה מאוד"
+	}
+
+	"Gravity High"
+	{
+		"he"		"כוח משיכה גבוהה"
+	}
+
+	"Gravity Normal"
+	{
+		"he"		"כוח משיכה נורמלי"
+	}
+
+	"Gravity Low"
+	{
+		"he"		"כוח משיכה נמוך"
+	}
+
+	"Gravity Very Low"
+	{
+		"he"		"כוח משיכה נמוך מאוד"
+	}
+
+	"Froze target"
+	{
+		"he"		"השחקן {1} הוקפא"
 	}
 
 }

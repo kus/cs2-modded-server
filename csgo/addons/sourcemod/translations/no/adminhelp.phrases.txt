@@ -1,13 +1,8 @@
 "Phrases"
 {
-	"Type sm_help to see more"
+	"SM help commands"
 	{
-		"no"		"Skriv sm_help for å se mere"
-	}
-
-	"No commands available"
-	{
-		"no"		"Ingen kommandoer tilgjengelig"
+		"no"		"SourceMod Hjelp: Kommando Informasjon"
 	}
 
 	"No description available"
@@ -15,19 +10,24 @@
 		"no"		"Ingen beskrivelse tilgjengelig"
 	}
 
-	"No matching results found"
+	"No commands available"
 	{
-		"no"		"Ingen matchende resultater funnet"
+		"no"		"Ingen kommandoer tilgjengelig"
 	}
 
-	"SM help commands"
+	"Type sm_help to see more"
 	{
-		"no"		"SourceMod Hjelp: Kommando Informasjon"
+		"no"		"Skriv sm_help for å se mere"
 	}
 
 	"Entries n - m in page k"
 	{
 		"no"		"Oppføring {1} - {2} på side {3}"
+	}
+
+	"No matching results found"
+	{
+		"no"		"Ingen matchende resultater funnet"
 	}
 
 }

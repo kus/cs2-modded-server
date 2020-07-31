@@ -1,10 +1,5 @@
 "Phrases"
 {
-	"Ban added"
-	{
-		"it"		"Il ban è stato aggiunto"
-	}
-
 	"Ban player"
 	{
 		"it"		"Bandisci un giocatore"
@@ -13,21 +8,6 @@
 	"Ban reason"
 	{
 		"it"		"Motivo del ban"
-	}
-
-	"Banned player"
-	{
-		"it"		"Il giocatore \"{1}\" è stato bandito per {2} minuti."
-	}
-
-	"Banned player reason"
-	{
-		"it"		"Il giocatore \"{1}\" è stato bandito per {2} minuti (motivo: {3})."
-	}
-
-	"Cannot ban that IP"
-	{
-		"it"		"Non puoi bandire questo indirizzo IP."
 	}
 
 	"Permabanned player"
@@ -40,19 +20,39 @@
 		"it"		"Il giocatore \"{1}\" è stato bandito permanentemente (motivo: {2})."
 	}
 
+	"Banned player"
+	{
+		"it"		"Il giocatore \"{1}\" è stato bandito per {2} minuti."
+	}
+
+	"Banned player reason"
+	{
+		"it"		"Il giocatore \"{1}\" è stato bandito per {2} minuti (motivo: {3})."
+	}
+
 	"Removed bans matching"
 	{
 		"it"		"Rimossi i ban corrispondenti al filtro: {1}"
 	}
 
-	"AbortBan applied successfully"
+	"Ban added"
 	{
-		"it"		"Ban annullato."
+		"it"		"Il ban è stato aggiunto"
+	}
+
+	"Cannot ban that IP"
+	{
+		"it"		"Non puoi bandire questo indirizzo IP."
 	}
 
 	"Custom ban reason explanation"
 	{
 		"it"		"Inserisci la ragione come messaggio nella chat. Usa {1} per annullare."
+	}
+
+	"AbortBan applied successfully"
+	{
+		"it"		"Ban annullato."
 	}
 
 	"AbortBan not waiting for custom reason"

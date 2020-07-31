@@ -1,13 +1,13 @@
 "Phrases"
 {
+	"No Access"
+	{
+		"nl"		"Je hebt geen toegang tot dit commando"
+	}
+
 	"Back"
 	{
 		"nl"		"Terug"
-	}
-
-	"Exit"
-	{
-		"nl"		"Einde"
 	}
 
 	"Next"
@@ -15,9 +15,9 @@
 		"nl"		"Volgende"
 	}
 
-	"No Access"
+	"Exit"
 	{
-		"nl"		"Je hebt geen toegang tot dit commando"
+		"nl"		"Einde"
 	}
 
 	"Previous"
@@ -25,14 +25,14 @@
 		"nl"		"Vorige"
 	}
 
-	"_s"
+	"all players"
 	{
-		"nl"		"{1}"
+		"nl"		"alle spelers"
 	}
 
-	"all alive players"
+	"all humans"
 	{
-		"nl"		"alle levende spelers"
+		"nl"		"alle mensen"
 	}
 
 	"all bots"
@@ -45,24 +45,14 @@
 		"nl"		"alle dode spelers"
 	}
 
-	"all humans"
+	"all alive players"
 	{
-		"nl"		"alle mensen"
+		"nl"		"alle levende spelers"
 	}
 
-	"all players"
+	"_s"
 	{
-		"nl"		"alle spelers"
-	}
-
-	"Vote Count"
-	{
-		"nl"		"{1}/{2}, {3}s over"
-	}
-
-	"Changed Vote"
-	{
-		"nl"		"{1} heeft zijn vote gewijzigd naar {2}"
+		"nl"		"{1}"
 	}
 
 	"all spectators"
@@ -70,14 +60,24 @@
 		"nl"		"alle toeschouwers"
 	}
 
-	"No Vote"
+	"Vote Count"
 	{
-		"nl"		"Geen Vote"
+		"nl"		"{1}/{2}, {3}s over"
 	}
 
 	"Voted For"
 	{
 		"nl"		"{1} heeft gestemd op {2}"
+	}
+
+	"Changed Vote"
+	{
+		"nl"		"{1} heeft zijn vote gewijzigd naar {2}"
+	}
+
+	"No Vote"
+	{
+		"nl"		"Geen Vote"
 	}
 
 	"Name Reserved"

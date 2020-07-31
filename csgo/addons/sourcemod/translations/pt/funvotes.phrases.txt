@@ -1,18 +1,13 @@
 "Phrases"
 {
-	"Voteslay Player"
+	"Initiated Vote Gravity"
 	{
-		"pt"		"Assassinar {1}?"
+		"pt"		"Iniciou uma votação para alterar a gravidade."
 	}
 
-	"Vote FF"
+	"Initiated Vote Burn"
 	{
-		"pt"		"Votação para fogo amigo"
-	}
-
-	"Slay vote"
-	{
-		"pt"		"Votação para assassinato"
+		"pt"		"Iniciou uma votação para atear fogo em {1}."
 	}
 
 	"Initiated Vote Slay"
@@ -20,9 +15,34 @@
 		"pt"		"Iniciou uma votação para assassinar {1}."
 	}
 
-	"Alltalk vote"
+	"Initiated Vote Alltalk"
 	{
-		"pt"		"Votação para alterar a fala aberta (AllTalk)"
+		"pt"		"Iniciou uma votação para alterar a fala aberta (AllTalk)."
+	}
+
+	"Initiated Vote FF"
+	{
+		"pt"		"Iniciou uma votação para alterar o fogo amigo."
+	}
+
+	"Gravity Vote"
+	{
+		"pt"		"Votação para alterar a gravidade: {1}"
+	}
+
+	"Change Gravity To"
+	{
+		"pt"		"Alterar a gravidade para {1}?"
+	}
+
+	"Voteburn player"
+	{
+		"pt"		"Atear fogo em {1}?"
+	}
+
+	"Voteslay Player"
+	{
+		"pt"		"Assassinar {1}?"
 	}
 
 	"Votealltalk Off"
@@ -45,19 +65,14 @@
 		"pt"		"Ativar fogo amigo? {1}"
 	}
 
-	"Voteburn player"
+	"Gravity vote"
 	{
-		"pt"		"Atear fogo em {1}?"
+		"pt"		"Votação para alterar a gravidade"
 	}
 
-	"Initiated Vote Gravity"
+	"Vote FF"
 	{
-		"pt"		"Iniciou uma votação para alterar a gravidade."
-	}
-
-	"Initiated Vote FF"
-	{
-		"pt"		"Iniciou uma votação para alterar o fogo amigo."
+		"pt"		"Votação para fogo amigo"
 	}
 
 	"Burn vote"
@@ -65,29 +80,14 @@
 		"pt"		"Votação para atear fogo"
 	}
 
-	"Initiated Vote Burn"
+	"Alltalk vote"
 	{
-		"pt"		"Iniciou uma votação para atear fogo em {1}."
+		"pt"		"Votação para alterar a fala aberta (AllTalk)"
 	}
 
-	"Initiated Vote Alltalk"
+	"Slay vote"
 	{
-		"pt"		"Iniciou uma votação para alterar a fala aberta (AllTalk)."
-	}
-
-	"Gravity vote"
-	{
-		"pt"		"Votação para alterar a gravidade"
-	}
-
-	"Gravity Vote"
-	{
-		"pt"		"Votação para alterar a gravidade: {1}"
-	}
-
-	"Change Gravity To"
-	{
-		"pt"		"Alterar a gravidade para {1}?"
+		"pt"		"Votação para assassinato"
 	}
 
 	"Slayed player"

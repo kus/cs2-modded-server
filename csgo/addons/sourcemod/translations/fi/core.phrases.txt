@@ -1,8 +1,8 @@
 "Phrases"
 {
-	"_s"
+	"No Access"
 	{
-		"fi"		"{1}"
+		"fi"		"Sinulla ei ole oikeuksia tähän komentoon"
 	}
 
 	"Back"
@@ -10,19 +10,14 @@
 		"fi"		"Takaisin"
 	}
 
-	"Exit"
-	{
-		"fi"		"Poistu"
-	}
-
 	"Next"
 	{
 		"fi"		"Seuraava"
 	}
 
-	"No Access"
+	"Exit"
 	{
-		"fi"		"Sinulla ei ole oikeuksia tähän komentoon"
+		"fi"		"Poistu"
 	}
 
 	"Previous"
@@ -30,9 +25,14 @@
 		"fi"		"Edellinen"
 	}
 
-	"all alive players"
+	"all players"
 	{
-		"fi"		"kaikki elossa olevat pelaajat"
+		"fi"		"kaikki pelaajat"
+	}
+
+	"all humans"
+	{
+		"fi"		"kaikki ihmiset"
 	}
 
 	"all bots"
@@ -45,24 +45,19 @@
 		"fi"		"kaikki kuolleet pelaajat"
 	}
 
-	"all humans"
+	"all alive players"
 	{
-		"fi"		"kaikki ihmiset"
+		"fi"		"kaikki elossa olevat pelaajat"
 	}
 
-	"all players"
+	"_s"
 	{
-		"fi"		"kaikki pelaajat"
+		"fi"		"{1}"
 	}
 
-	"Changed Vote"
+	"all spectators"
 	{
-		"fi"		"{1} vaihtoi äänekseen {2}"
-	}
-
-	"No Vote"
-	{
-		"fi"		"Ei ääntä"
+		"fi"		"kaikki katsojat"
 	}
 
 	"Vote Count"
@@ -75,9 +70,14 @@
 		"fi"		"{1} äänesti vaihtoehtoa {2}"
 	}
 
-	"all spectators"
+	"Changed Vote"
 	{
-		"fi"		"kaikki katsojat"
+		"fi"		"{1} vaihtoi äänekseen {2}"
+	}
+
+	"No Vote"
+	{
+		"fi"		"Ei ääntä"
 	}
 
 	"Name Reserved"

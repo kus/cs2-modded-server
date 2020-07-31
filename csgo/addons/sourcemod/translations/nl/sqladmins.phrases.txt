@@ -1,10 +1,5 @@
 "Phrases"
 {
-	"Added group to user"
-	{
-		"nl"		"Een groep met succes toegevoegd aan de beheerder."
-	}
-
 	"Invalid authtype"
 	{
 		"nl"		"Auth type moet een 'steam','naam', of 'ip' zijn."
@@ -15,54 +10,14 @@
 		"nl"		"Immuniteit moet een positief getal zijn."
 	}
 
-	"SQL Admin added"
-	{
-		"nl"		"Beheerder met succes toegevoegd aan de database."
-	}
-
 	"SQL Admin already exists"
 	{
 		"nl"		"Een beheerder met de gegeven waardes bestaat al."
 	}
 
-	"SQL Admin groups reset"
+	"SQL Admin added"
 	{
-		"nl"		"Beheerders groepen met succes gereset."
-	}
-
-	"SQL Admin not found"
-	{
-		"nl"		"Geen beheerder met de gegeven waardes gevonden."
-	}
-
-	"SQL Group X failed to bind"
-	{
-		"nl"		"Groep kan niet worden gebonden aan: \"{1}\""
-	}
-
-	"SQL Group X not found"
-	{
-		"nl"		"Kan groep: \"{1}\" niet vinden."
-	}
-
-	"SQL Group added"
-	{
-		"nl"		"Groep met succes toegevoegd aan de database."
-	}
-
-	"SQL Group already exists"
-	{
-		"nl"		"Een groep met deze naam bestaat al."
-	}
-
-	"SQL Group not found"
-	{
-		"nl"		"Geen groep met de gegeven naam gevonden."
-	}
-
-	"Added groups to user"
-	{
-		"nl"		"{1} groepen met succes aan de beheerder toegevoegd."
+		"nl"		"Beheerder met succes toegevoegd aan de database."
 	}
 
 	"SQL Admin deleted"
@@ -70,9 +25,54 @@
 		"nl"		"Beheerder met succes van de database verwijderd."
 	}
 
+	"SQL Admin not found"
+	{
+		"nl"		"Geen beheerder met de gegeven waardes gevonden."
+	}
+
+	"SQL Group already exists"
+	{
+		"nl"		"Een groep met deze naam bestaat al."
+	}
+
+	"SQL Group added"
+	{
+		"nl"		"Groep met succes toegevoegd aan de database."
+	}
+
 	"SQL Group deleted"
 	{
 		"nl"		"Groep met succes uit de database verwijderd."
+	}
+
+	"SQL Group not found"
+	{
+		"nl"		"Geen groep met de gegeven naam gevonden."
+	}
+
+	"SQL Admin groups reset"
+	{
+		"nl"		"Beheerders groepen met succes gereset."
+	}
+
+	"SQL Group X not found"
+	{
+		"nl"		"Kan groep: \"{1}\" niet vinden."
+	}
+
+	"SQL Group X failed to bind"
+	{
+		"nl"		"Groep kan niet worden gebonden aan: \"{1}\""
+	}
+
+	"Added group to user"
+	{
+		"nl"		"Een groep met succes toegevoegd aan de beheerder."
+	}
+
+	"Added groups to user"
+	{
+		"nl"		"{1} groepen met succes aan de beheerder toegevoegd."
 	}
 
 }

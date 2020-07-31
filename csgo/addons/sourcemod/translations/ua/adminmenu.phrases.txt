@@ -1,13 +1,8 @@
 "Phrases"
 {
-	"Voting Commands"
+	"Admin Menu"
 	{
-		"ua"		"Управління голосуваннями"
-	}
-
-	"Server Commands"
-	{
-		"ua"		"Управління сервером"
+		"ua"		"Меню адміністратора"
 	}
 
 	"Player Commands"
@@ -15,9 +10,14 @@
 		"ua"		"Управління гравцями"
 	}
 
-	"Admin Menu"
+	"Server Commands"
 	{
-		"ua"		"Меню адміністратора"
+		"ua"		"Управління сервером"
+	}
+
+	"Voting Commands"
+	{
+		"ua"		"Управління голосуваннями"
 	}
 
 }

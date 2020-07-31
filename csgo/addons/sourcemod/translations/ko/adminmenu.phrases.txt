@@ -1,15 +1,5 @@
 "Phrases"
 {
-	"Server Commands"
-	{
-		"ko"		"서버 명령어"
-	}
-
-	"Voting Commands"
-	{
-		"ko"		"투표 명령어"
-	}
-
 	"Admin Menu"
 	{
 		"ko"		"관리자 메뉴"
@@ -18,6 +8,16 @@
 	"Player Commands"
 	{
 		"ko"		"플레이어 명령어"
+	}
+
+	"Server Commands"
+	{
+		"ko"		"서버 명령어"
+	}
+
+	"Voting Commands"
+	{
+		"ko"		"투표 명령어"
 	}
 
 }

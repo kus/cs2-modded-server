@@ -1,28 +1,8 @@
 "Phrases"
 {
-	"Beacon player"
-	{
-		"fi"		"Majakoi pelaaja"
-	}
-
-	"Blind amount"
-	{
-		"fi"		"Kuinka sokea?"
-	}
-
-	"Blind player"
-	{
-		"fi"		"Sokaise pelaaja"
-	}
-
 	"Burn player"
 	{
 		"fi"		"Polta pelaaja"
-	}
-
-	"Drug player"
-	{
-		"fi"		"Huumaa pelaaja"
 	}
 
 	"FireBomb player"
@@ -40,34 +20,44 @@
 		"fi"		"Jääpommita pelaaja"
 	}
 
+	"TimeBomb player"
+	{
+		"fi"		"Aikapommita pelaaja"
+	}
+
+	"Beacon player"
+	{
+		"fi"		"Majakoi pelaaja"
+	}
+
+	"NoClip player"
+	{
+		"fi"		"NoClippaa pelaaja"
+	}
+
+	"Blind player"
+	{
+		"fi"		"Sokaise pelaaja"
+	}
+
+	"Drug player"
+	{
+		"fi"		"Huumaa pelaaja"
+	}
+
+	"Gravity player"
+	{
+		"fi"		"Painovoimita pelaaja"
+	}
+
+	"Blind amount"
+	{
+		"fi"		"Kuinka sokea?"
+	}
+
 	"Fully blind"
 	{
 		"fi"		"Täysin sokea"
-	}
-
-	"Gravity High"
-	{
-		"fi"		"Suuri painovoima"
-	}
-
-	"Gravity Low"
-	{
-		"fi"		"Pieni painovoima"
-	}
-
-	"Gravity Normal"
-	{
-		"fi"		"Normaali painovoima"
-	}
-
-	"Gravity Very High"
-	{
-		"fi"		"Erittäin suuri painovoima"
-	}
-
-	"Gravity Very Low"
-	{
-		"fi"		"Erittäin pieni painovoima"
 	}
 
 	"Half blind"
@@ -85,24 +75,69 @@
 		"fi"		"Painovoima?"
 	}
 
-	"Gravity player"
+	"Gravity Very High"
 	{
-		"fi"		"Painovoimita pelaaja"
+		"fi"		"Erittäin suuri painovoima"
 	}
 
-	"NoClip player"
+	"Gravity High"
 	{
-		"fi"		"NoClippaa pelaaja"
+		"fi"		"Suuri painovoima"
 	}
 
-	"TimeBomb player"
+	"Gravity Normal"
 	{
-		"fi"		"Aikapommita pelaaja"
+		"fi"		"Normaali painovoima"
+	}
+
+	"Gravity Low"
+	{
+		"fi"		"Pieni painovoima"
+	}
+
+	"Gravity Very Low"
+	{
+		"fi"		"Erittäin pieni painovoima"
+	}
+
+	"Set target on fire"
+	{
+		"fi"		"Sytytettiin pelaaja {1} tuleen."
+	}
+
+	"Toggled FireBomb on target"
+	{
+		"fi"		"asetti tulipommin pelaajalle {1}."
 	}
 
 	"Froze target"
 	{
 		"fi"		"jäädytti pelaajan {1}."
+	}
+
+	"Toggled FreezeBomb on target"
+	{
+		"fi"		"asetti jääpommin pelaajalle {1}."
+	}
+
+	"Toggled beacon on target"
+	{
+		"fi"		"asetti majakan pelaajalle {1}."
+	}
+
+	"Toggled TimeBomb on target"
+	{
+		"fi"		"asetti aikapommin pelaajalle {1}."
+	}
+
+	"Toggled noclip on target"
+	{
+		"fi"		"asetti noclipin pelaajalle {1}."
+	}
+
+	"Toggled drug on target"
+	{
+		"fi"		"huumasi pelaajan {1}."
 	}
 
 	"Set blind on target"
@@ -120,36 +155,6 @@
 		"fi"		"{2} sekuntia pelaajan {1} räjähtämiseen."
 	}
 
-	"Toggled FireBomb on target"
-	{
-		"fi"		"asetti tulipommin pelaajalle {1}."
-	}
-
-	"Toggled FreezeBomb on target"
-	{
-		"fi"		"asetti jääpommin pelaajalle {1}."
-	}
-
-	"Toggled TimeBomb on target"
-	{
-		"fi"		"asetti aikapommin pelaajalle {1}."
-	}
-
-	"Toggled beacon on target"
-	{
-		"fi"		"asetti majakan pelaajalle {1}."
-	}
-
-	"Toggled drug on target"
-	{
-		"fi"		"huumasi pelaajan {1}."
-	}
-
-	"Toggled noclip on target"
-	{
-		"fi"		"asetti noclipin pelaajalle {1}."
-	}
-
 	"Unfrozen"
 	{
 		"fi"		"Et ole enää jäädytetty."
@@ -158,11 +163,6 @@
 	"You will be unfrozen"
 	{
 		"fi"		"Jäädytyksesi poistuu {1} sekunnin kuluttua."
-	}
-
-	"Set target on fire"
-	{
-		"fi"		"Sytytettiin pelaaja {1} tuleen."
 	}
 
 }

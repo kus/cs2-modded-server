@@ -1,10 +1,5 @@
 "Phrases"
 {
-	"_s"
-	{
-		"chi"		"{1}"
-	}
-
 	"No Access"
 	{
 		"chi"		"您无权使用该指令"
@@ -55,9 +50,9 @@
 		"chi"		"全体活人玩家"
 	}
 
-	"Changed Vote"
+	"_s"
 	{
-		"chi"		"{1} 已更改其投票为 {2} "
+		"chi"		"{1}"
 	}
 
 	"all spectators"
@@ -73,6 +68,11 @@
 	"Voted For"
 	{
 		"chi"		"{1}投票选择了{2}"
+	}
+
+	"Changed Vote"
+	{
+		"chi"		"{1} 已更改其投票为 {2} "
 	}
 
 	"No Vote"

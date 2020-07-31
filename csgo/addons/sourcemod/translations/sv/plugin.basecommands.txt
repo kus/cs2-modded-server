@@ -1,8 +1,18 @@
 "Phrases"
 {
-	"Banned player reason"
+	"Unable to find cvar"
 	{
-		"sv"		"Bannlyste spelare \"{1}\" i {2} minuter (skäl: {3})."
+		"sv"		"Kunde inte hitta cvar: {1}"
+	}
+
+	"No access to cvar"
+	{
+		"sv"		"Du har inte access till denna cvar. "
+	}
+
+	"Value of cvar"
+	{
+		"sv"		"Värde för cvar \"{1}\": \"{2}\" "
 	}
 
 	"Cvar changed"
@@ -10,14 +20,14 @@
 		"sv"		"Ändrade cvar \"{1}\" till \"{2}\"."
 	}
 
-	"Cvar is now protected"
+	"Config not found"
 	{
-		"sv"		"Cvar {1} är nu skyddad"
+		"sv"		"Konfigurationsfil \"{1}\" hittades inte. "
 	}
 
-	"Identify player"
+	"Executed config"
 	{
-		"sv"		"Identifiera spelare"
+		"sv"		"Utförde konfiguration \"{1}\". "
 	}
 
 	"Permabanned player"
@@ -30,39 +40,14 @@
 		"sv"		"Bannlyste spelare \"{1}\" permanent (skäl: {2})."
 	}
 
-	"Value of cvar"
-	{
-		"sv"		"Värde för cvar \"{1}\": \"{2}\" "
-	}
-
-	"Username"
-	{
-		"sv"		"Användarnamn "
-	}
-
-	"Executed config"
-	{
-		"sv"		"Utförde konfiguration \"{1}\". "
-	}
-
 	"Banned player"
 	{
 		"sv"		"Bannlyste spelare \"{1}\" i {2} minuter. "
 	}
 
-	"Exec CFG"
+	"Banned player reason"
 	{
-		"sv"		"Utför CFG"
-	}
-
-	"Player is an admin"
-	{
-		"sv"		"\"{1}\" är en administratör."
-	}
-
-	"Player is not an admin"
-	{
-		"sv"		"\"{1}\" är inte en administratör."
+		"sv"		"Bannlyste spelare \"{1}\" i {2} minuter (skäl: {3})."
 	}
 
 	"Removed bans matching"
@@ -70,9 +55,9 @@
 		"sv"		"Tog bort banlysningar som matchade följande filter: {1}  "
 	}
 
-	"Unable to find cvar"
+	"Ban added"
 	{
-		"sv"		"Kunde inte hitta cvar: {1}"
+		"sv"		"Bannlysningen är tillagd"
 	}
 
 	"Admin cache refreshed"
@@ -80,24 +65,9 @@
 		"sv"		"Admincachen har blivit förnyad. "
 	}
 
-	"Admin access"
+	"Identify player"
 	{
-		"sv"		"Administratöraccess"
-	}
-
-	"Admin logged in anon"
-	{
-		"sv"		"\"{1}\" har access: {2}"
-	}
-
-	"Admin logged in as"
-	{
-		"sv"		"\"{1}\" är inloggad som \"{2}\" med access: {3} "
-	}
-
-	"Ban added"
-	{
-		"sv"		"Bannlysningen är tillagd"
+		"sv"		"Identifiera spelare"
 	}
 
 	"Choose Map"
@@ -105,24 +75,54 @@
 		"sv"		"Välj karta"
 	}
 
-	"Config not found"
+	"Exec CFG"
 	{
-		"sv"		"Konfigurationsfil \"{1}\" hittades inte. "
+		"sv"		"Utför CFG"
 	}
 
-	"No access to cvar"
+	"Admin logged in as"
 	{
-		"sv"		"Du har inte access till denna cvar. "
+		"sv"		"\"{1}\" är inloggad som \"{2}\" med access: {3} "
 	}
 
-	"Kicked target reason"
+	"Admin logged in anon"
 	{
-		"sv"		"Kastade ut {1} (Anledning: {2})"
+		"sv"		"\"{1}\" har access: {2}"
+	}
+
+	"Player is not an admin"
+	{
+		"sv"		"\"{1}\" är inte en administratör."
+	}
+
+	"Player is an admin"
+	{
+		"sv"		"\"{1}\" är en administratör."
+	}
+
+	"Username"
+	{
+		"sv"		"Användarnamn "
 	}
 
 	"Kicked target"
 	{
 		"sv"		"Kastade ut {1}"
+	}
+
+	"Admin access"
+	{
+		"sv"		"Administratöraccess"
+	}
+
+	"Cvar is now protected"
+	{
+		"sv"		"Cvar {1} är nu skyddad"
+	}
+
+	"Kicked target reason"
+	{
+		"sv"		"Kastade ut {1} (Anledning: {2})"
 	}
 
 }

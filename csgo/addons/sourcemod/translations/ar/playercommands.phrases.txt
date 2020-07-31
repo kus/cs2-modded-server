@@ -5,11 +5,6 @@
 		"ar"		"صفع اللاعب"
 	}
 
-	"Slapped target"
-	{
-		"ar"		"صفع {1}."
-	}
-
 	"Slap damage"
 	{
 		"ar"		"ضرر الصفعة"
@@ -20,9 +15,19 @@
 		"ar"		"قتل اللاعب"
 	}
 
+	"Slapped target"
+	{
+		"ar"		"صفع {1}."
+	}
+
 	"Slayed target"
 	{
 		"ar"		"تم قتل {1}"
+	}
+
+	"Name changed"
+	{
+		"ar"		"آدمن غير إسمك"
 	}
 
 	"Renamed target"
@@ -33,11 +38,6 @@
 	"Rename player"
 	{
 		"ar"		"غير إسم اللاعب"
-	}
-
-	"Name changed"
-	{
-		"ar"		"آدمن غير إسمك"
 	}
 
 	"Dead Player Rename"

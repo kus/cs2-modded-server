@@ -1,8 +1,28 @@
 "Phrases"
 {
-	"_s"
+	"No Access"
 	{
-		"lt"		"{1}"
+		"lt"		"Jūs neturite teisių šiai komandai"
+	}
+
+	"Back"
+	{
+		"lt"		"Atgal"
+	}
+
+	"Next"
+	{
+		"lt"		"Sekantis"
+	}
+
+	"Exit"
+	{
+		"lt"		"Išeiti"
+	}
+
+	"Previous"
+	{
+		"lt"		"Ankstesnis"
 	}
 
 	"all players"
@@ -15,14 +35,14 @@
 		"lt"		"visiems žmonėms"
 	}
 
-	"all dead players"
-	{
-		"lt"		"visiems negyviems žaidėjams"
-	}
-
 	"all bots"
 	{
 		"lt"		"visiems botams"
+	}
+
+	"all dead players"
+	{
+		"lt"		"visiems negyviems žaidėjams"
 	}
 
 	"all alive players"
@@ -30,29 +50,14 @@
 		"lt"		"visiems gyviems žaidėjams"
 	}
 
-	"Previous"
+	"_s"
 	{
-		"lt"		"Ankstesnis"
+		"lt"		"{1}"
 	}
 
-	"No Access"
+	"all spectators"
 	{
-		"lt"		"Jūs neturite teisių šiai komandai"
-	}
-
-	"Next"
-	{
-		"lt"		"Sekantis"
-	}
-
-	"Back"
-	{
-		"lt"		"Atgal"
-	}
-
-	"Exit"
-	{
-		"lt"		"Išeiti"
+		"lt"		"visi stebėtojai"
 	}
 
 	"Vote Count"
@@ -63,11 +68,6 @@
 	"Voted For"
 	{
 		"lt"		"{1} balsavo už {2}"
-	}
-
-	"all spectators"
-	{
-		"lt"		"visi stebėtojai"
 	}
 
 	"Changed Vote"

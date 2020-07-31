@@ -5,19 +5,24 @@
 		"ro"		"Ai propus deja o harta"
 	}
 
+	"Max Nominations"
+	{
+		"ro"		"Numarul maxim de propuneri a fost atins"
+	}
+
 	"Map Already In Vote"
 	{
 		"ro"		"Harta '{1}' este deja in lista de nominari"
 	}
 
-	"Map Already Nominated"
-	{
-		"ro"		"Harta care ai ales-o a fost deja propusa"
-	}
-
 	"Map Inserted"
 	{
 		"ro"		"Harta '{1}' a fost adaugata in lista de nominari"
+	}
+
+	"Map Already Nominated"
+	{
+		"ro"		"Harta care ai ales-o a fost deja propusa"
 	}
 
 	"Map Nominated"
@@ -30,24 +35,9 @@
 		"ro"		"{1} si-a schimbat propunerea in {2}."
 	}
 
-	"Max Nominations"
-	{
-		"ro"		"Numarul maxim de propuneri a fost atins"
-	}
-
 	"Nominate Title"
 	{
 		"ro"		"Propune harta:"
-	}
-
-	"Current Map"
-	{
-		"ro"		"Harta curenta"
-	}
-
-	"Recently Played"
-	{
-		"ro"		"Recent jucata"
 	}
 
 	"Can't Nominate Current Map"
@@ -58,6 +48,16 @@
 	"Map in Exclude List"
 	{
 		"ro"		"Harta care ai ales-o a fost recent jucata si nu poate fi propusa"
+	}
+
+	"Current Map"
+	{
+		"ro"		"Harta curenta"
+	}
+
+	"Recently Played"
+	{
+		"ro"		"Recent jucata"
 	}
 
 	"Nominated"

@@ -1,13 +1,18 @@
 "Phrases"
 {
-	"_s"
+	"No Access"
 	{
-		"it"		"{1}"
+		"it"		"Non hai accesso a questo comando"
 	}
 
 	"Back"
 	{
 		"it"		"Indietro"
+	}
+
+	"Next"
+	{
+		"it"		"Successiva"
 	}
 
 	"Exit"
@@ -20,6 +25,16 @@
 		"it"		"Precedente"
 	}
 
+	"all players"
+	{
+		"it"		"tutti i giocatori"
+	}
+
+	"all humans"
+	{
+		"it"		"tutti gli umani"
+	}
+
 	"all bots"
 	{
 		"it"		"tutti i bot"
@@ -30,39 +45,14 @@
 		"it"		"tutti i giocatori morti"
 	}
 
-	"all humans"
-	{
-		"it"		"tutti gli umani"
-	}
-
-	"all players"
-	{
-		"it"		"tutti i giocatori"
-	}
-
-	"Voted For"
-	{
-		"it"		"{1} ha votato per {2}"
-	}
-
-	"Vote Count"
-	{
-		"it"		"Voti:  {1}/{2}, {3} rimasti"
-	}
-
-	"No Access"
-	{
-		"it"		"Non hai accesso a questo comando"
-	}
-
-	"No Vote"
-	{
-		"it"		"Nessun voto"
-	}
-
 	"all alive players"
 	{
 		"it"		"tutti i giocatori in vita"
+	}
+
+	"_s"
+	{
+		"it"		"{1}"
 	}
 
 	"all spectators"
@@ -70,19 +60,29 @@
 		"it"		"tutti gli spettatori"
 	}
 
-	"Name Reserved"
+	"Vote Count"
 	{
-		"it"		"Il tuo nome è stato riservato da SourceMod; imposta la tua password per utilizzarlo."
+		"it"		"Voti:  {1}/{2}, {3} rimasti"
 	}
 
-	"Next"
+	"Voted For"
 	{
-		"it"		"Successiva"
+		"it"		"{1} ha votato per {2}"
 	}
 
 	"Changed Vote"
 	{
 		"it"		"{1} ha cambiato il proprio voto in {2}"
+	}
+
+	"No Vote"
+	{
+		"it"		"Nessun voto"
+	}
+
+	"Name Reserved"
+	{
+		"it"		"Il tuo nome è stato riservato da SourceMod; imposta la tua password per utilizzarlo."
 	}
 
 }

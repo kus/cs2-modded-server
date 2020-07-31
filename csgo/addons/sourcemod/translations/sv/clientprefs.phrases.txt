@@ -1,23 +1,13 @@
 "Phrases"
 {
-	"Client Settings"
+	"Cookie List"
 	{
-		"sv"		"Spelarinställningar"
+		"sv"		"Sourcemods cookielista "
 	}
 
-	"Choose Option"
+	"Printing Cookie List"
 	{
-		"sv"		"Välj alternativ"
-	}
-
-	"No Console"
-	{
-		"sv"		"Kan inte visa inställningsmenyn i consolen"
-	}
-
-	"Cookie Value"
-	{
-		"sv"		"{1}s värde är {2}  "
+		"sv"		"Skriver ut cookielistan till consolen"
 	}
 
 	"Cookie not Found"
@@ -25,9 +15,9 @@
 		"sv"		"Kunde inte hitta cookie \"{1}\"  "
 	}
 
-	"Printing Cookie List"
+	"Cookie Value"
 	{
-		"sv"		"Skriver ut cookielistan till consolen"
+		"sv"		"{1}s värde är {2}  "
 	}
 
 	"Protected Cookie"
@@ -40,9 +30,19 @@
 		"sv"		"Ändrade värdet av cookie \"{1}\" till \"{2}\"  "
 	}
 
-	"Cookie List"
+	"No Console"
 	{
-		"sv"		"Sourcemods cookielista "
+		"sv"		"Kan inte visa inställningsmenyn i consolen"
+	}
+
+	"Choose Option"
+	{
+		"sv"		"Välj alternativ"
+	}
+
+	"Client Settings"
+	{
+		"sv"		"Spelarinställningar"
 	}
 
 }

@@ -1,13 +1,13 @@
 "Phrases"
 {
+	"No Access"
+	{
+		"jp"		"このコマンドにアクセスする権限がありません。"
+	}
+
 	"Back"
 	{
 		"jp"		"戻る"
-	}
-
-	"Exit"
-	{
-		"jp"		"閉じる"
 	}
 
 	"Next"
@@ -15,9 +15,9 @@
 		"jp"		"次へ"
 	}
 
-	"_s"
+	"Exit"
 	{
-		"jp"		"{1}"
+		"jp"		"閉じる"
 	}
 
 	"Previous"
@@ -25,24 +25,9 @@
 		"jp"		"戻る"
 	}
 
-	"No Access"
+	"all players"
 	{
-		"jp"		"このコマンドにアクセスする権限がありません。"
-	}
-
-	"all alive players"
-	{
-		"jp"		"全ての生存プレイヤー"
-	}
-
-	"all dead players"
-	{
-		"jp"		"全ての死亡プレイヤー"
-	}
-
-	"all bots"
-	{
-		"jp"		"全てのボット"
+		"jp"		"全てのプレイヤー"
 	}
 
 	"all humans"
@@ -50,19 +35,29 @@
 		"jp"		"全ての人間"
 	}
 
-	"all players"
+	"all bots"
 	{
-		"jp"		"全てのプレイヤー"
+		"jp"		"全てのボット"
+	}
+
+	"all dead players"
+	{
+		"jp"		"全ての死亡プレイヤー"
+	}
+
+	"all alive players"
+	{
+		"jp"		"全ての生存プレイヤー"
+	}
+
+	"_s"
+	{
+		"jp"		"{1}"
 	}
 
 	"all spectators"
 	{
 		"jp"		"全ての観戦者"
-	}
-
-	"Changed Vote"
-	{
-		"jp"		"{1}は{2}に投票を変更しました。"
 	}
 
 	"Vote Count"
@@ -73,6 +68,11 @@
 	"Voted For"
 	{
 		"jp"		"{1}は{2}に投票しました。"
+	}
+
+	"Changed Vote"
+	{
+		"jp"		"{1}は{2}に投票を変更しました。"
 	}
 
 	"No Vote"

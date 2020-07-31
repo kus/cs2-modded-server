@@ -35,6 +35,11 @@
 		"chi"		"更改重力为 {1}?"
 	}
 
+	"Voteburn player"
+	{
+		"chi"		"烧烤玩家 {1}?"
+	}
+
 	"Voteslay Player"
 	{
 		"chi"		"处死 {1}?"
@@ -65,6 +70,11 @@
 		"chi"		"重力投票"
 	}
 
+	"Vote FF"
+	{
+		"chi"		"队友伤害投票"
+	}
+
 	"Burn vote"
 	{
 		"chi"		"烧烤投票"
@@ -80,19 +90,9 @@
 		"chi"		"处死投票"
 	}
 
-	"Voteburn player"
-	{
-		"chi"		"烧烤玩家 {1}?"
-	}
-
 	"Slayed player"
 	{
 		"chi"		"处死了玩家 '{1}'"
-	}
-
-	"Vote FF"
-	{
-		"chi"		"队友伤害投票"
 	}
 
 }

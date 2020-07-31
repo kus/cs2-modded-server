@@ -1,5 +1,15 @@
 "Phrases"
 {
+	"Unable to find cvar"
+	{
+		"ru"		"Не удалось найти переменную: {1}"
+	}
+
+	"No access to cvar"
+	{
+		"ru"		"У вас нет доступа к этой переменной."
+	}
+
 	"Value of cvar"
 	{
 		"ru"		"Значение переменной \"{1}\": \"{2}\""
@@ -10,74 +20,14 @@
 		"ru"		"Переменная \"{1}\" изменена на \"{2}\"."
 	}
 
-	"Ban added"
+	"Config not found"
 	{
-		"ru"		"Бан добавлен."
+		"ru"		"Конфиг \"{1}\" не найден."
 	}
 
-	"Admin logged in as"
+	"Executed config"
 	{
-		"ru"		"\"{1}\" вошел как \"{2}\" с доступом: {3}"
-	}
-
-	"Admin logged in anon"
-	{
-		"ru"		"\"{1}\" имеет доступ: {2}"
-	}
-
-	"Username"
-	{
-		"ru"		"Имя пользователя"
-	}
-
-	"Admin access"
-	{
-		"ru"		"Админский доступ"
-	}
-
-	"Player is an admin"
-	{
-		"ru"		"\"{1}\" является админом."
-	}
-
-	"Player is not an admin"
-	{
-		"ru"		"\"{1}\" не является админом."
-	}
-
-	"Banned player reason"
-	{
-		"ru"		"\"{1}\" забанен на {2} минут (причина: {3})."
-	}
-
-	"No access to cvar"
-	{
-		"ru"		"У вас нет доступа к этой переменной."
-	}
-
-	"Admin cache refreshed"
-	{
-		"ru"		"Данные админов обновлены."
-	}
-
-	"Banned player"
-	{
-		"ru"		"Игрок \"{1}\" забанен на {2} минут."
-	}
-
-	"Cvar is now protected"
-	{
-		"ru"		"Переменная {1} теперь защищена."
-	}
-
-	"Identify player"
-	{
-		"ru"		"Опознать игрока"
-	}
-
-	"Kicked target"
-	{
-		"ru"		"Игрок {1} кикнут"
+		"ru"		"Выполнен конфиг \"{1}\"."
 	}
 
 	"Permabanned player"
@@ -90,9 +40,14 @@
 		"ru"		"Игрок \"{1}\" забанен навсегда (причина: {2})."
 	}
 
-	"Unable to find cvar"
+	"Banned player"
 	{
-		"ru"		"Не удалось найти переменную: {1}"
+		"ru"		"Игрок \"{1}\" забанен на {2} минут."
+	}
+
+	"Banned player reason"
+	{
+		"ru"		"\"{1}\" забанен на {2} минут (причина: {3})."
 	}
 
 	"Removed bans matching"
@@ -100,24 +55,19 @@
 		"ru"		"Удалены баны по фильтру: {1}"
 	}
 
-	"Kicked target reason"
+	"Ban added"
 	{
-		"ru"		"Игрок {1} кикнут (Причина: {2})"
+		"ru"		"Бан добавлен."
 	}
 
-	"Choose Config"
+	"Admin cache refreshed"
 	{
-		"ru"		"Выберите конфиг:"
+		"ru"		"Данные админов обновлены."
 	}
 
-	"Please select a map"
+	"Identify player"
 	{
-		"ru"		"Пожалуйста, выберите карту:"
-	}
-
-	"Exec CFG"
-	{
-		"ru"		"Выполнить конфиг"
+		"ru"		"Опознать игрока"
 	}
 
 	"Choose Map"
@@ -125,14 +75,64 @@
 		"ru"		"Смена карты"
 	}
 
-	"Executed config"
+	"Exec CFG"
 	{
-		"ru"		"Выполнен конфиг \"{1}\"."
+		"ru"		"Выполнить конфиг"
 	}
 
-	"Config not found"
+	"Admin logged in as"
 	{
-		"ru"		"Конфиг \"{1}\" не найден."
+		"ru"		"\"{1}\" вошел как \"{2}\" с доступом: {3}"
+	}
+
+	"Admin logged in anon"
+	{
+		"ru"		"\"{1}\" имеет доступ: {2}"
+	}
+
+	"Player is not an admin"
+	{
+		"ru"		"\"{1}\" не является админом."
+	}
+
+	"Player is an admin"
+	{
+		"ru"		"\"{1}\" является админом."
+	}
+
+	"Username"
+	{
+		"ru"		"Имя пользователя"
+	}
+
+	"Kicked target"
+	{
+		"ru"		"Игрок {1} кикнут"
+	}
+
+	"Admin access"
+	{
+		"ru"		"Админский доступ"
+	}
+
+	"Cvar is now protected"
+	{
+		"ru"		"Переменная {1} теперь защищена."
+	}
+
+	"Kicked target reason"
+	{
+		"ru"		"Игрок {1} кикнут (Причина: {2})"
+	}
+
+	"Please select a map"
+	{
+		"ru"		"Пожалуйста, выберите карту:"
+	}
+
+	"Choose Config"
+	{
+		"ru"		"Выберите конфиг:"
 	}
 
 }

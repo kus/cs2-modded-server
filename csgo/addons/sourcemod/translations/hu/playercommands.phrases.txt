@@ -1,10 +1,5 @@
 "Phrases"
 {
-	"Slay player"
-	{
-		"hu"		"Játékos levágása"
-	}
-
 	"Slap player"
 	{
 		"hu"		"Játékos megütése"
@@ -13,6 +8,11 @@
 	"Slap damage"
 	{
 		"hu"		"Ütés erőssége"
+	}
+
+	"Slay player"
+	{
+		"hu"		"Játékos levágása"
 	}
 
 	"Slapped target"
@@ -30,14 +30,14 @@
 		"hu"		"Az admin megváltoztatta a nevedet!"
 	}
 
-	"Rename player"
-	{
-		"hu"		"Játékos átnevezése"
-	}
-
 	"Renamed target"
 	{
 		"hu"		"{1} átnevezve"
+	}
+
+	"Rename player"
+	{
+		"hu"		"Játékos átnevezése"
 	}
 
 	"Dead Player Rename"

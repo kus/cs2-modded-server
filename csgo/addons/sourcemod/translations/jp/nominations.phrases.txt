@@ -1,23 +1,13 @@
 "Phrases"
 {
-	"Current Map"
-	{
-		"jp"		"現在のマップ"
-	}
-
-	"Map Nominated"
-	{
-		"jp"		"{1}は{2}をノミネートしました。"
-	}
-
 	"Already Nominated"
 	{
 		"jp"		"すでにマップをノミネートしています。"
 	}
 
-	"Can't Nominate Current Map"
+	"Max Nominations"
 	{
-		"jp"		"現在のマップはノミネート出来ません。"
+		"jp"		"ノミネート制限に到達しました。"
 	}
 
 	"Map Already In Vote"
@@ -25,14 +15,19 @@
 		"jp"		"マップ '{1}' はすでにノミネートリストにはいっています。"
 	}
 
+	"Map Inserted"
+	{
+		"jp"		"マップ '{1}' をノミネートリストに追加しました。"
+	}
+
 	"Map Already Nominated"
 	{
 		"jp"		"そのマップはすでにノミネートしています。"
 	}
 
-	"Map Inserted"
+	"Map Nominated"
 	{
-		"jp"		"マップ '{1}' をノミネートリストに追加しました。"
+		"jp"		"{1}は{2}をノミネートしました。"
 	}
 
 	"Map Nomination Changed"
@@ -45,9 +40,9 @@
 		"jp"		"マップノミネート:"
 	}
 
-	"Max Nominations"
+	"Can't Nominate Current Map"
 	{
-		"jp"		"ノミネート制限に到達しました。"
+		"jp"		"現在のマップはノミネート出来ません。"
 	}
 
 	"Map in Exclude List"
@@ -55,14 +50,19 @@
 		"jp"		"そのマップは最近プレイしているためノミネートすることは出来ません。"
 	}
 
-	"Nominated"
+	"Current Map"
 	{
-		"jp"		"ノミネートしました。"
+		"jp"		"現在のマップ"
 	}
 
 	"Recently Played"
 	{
 		"jp"		"最近のプレイ"
+	}
+
+	"Nominated"
+	{
+		"jp"		"ノミネートしました。"
 	}
 
 }

@@ -1,5 +1,20 @@
 "Phrases"
 {
+	"Vote Nextmap"
+	{
+		"ro"		"Votează pentru harta următoare!"
+	}
+
+	"Nextmap Voting Started"
+	{
+		"ro"		"Votul pentru harta următoare a inceput."
+	}
+
+	"Nextmap Voting Finished"
+	{
+		"ro"		"Votul pentru hartă s-a terminat. Harta următoare va fi {1}. ({2}%% voturi din {3})"
+	}
+
 	"Current Map Extended"
 	{
 		"ro"		"Harta actuală a fost extinsă. ({1}%% voturi din {2})"
@@ -10,24 +25,9 @@
 		"ro"		"Extinde Harta Actuală"
 	}
 
-	"Nextmap Voting Finished"
+	"Dont Change"
 	{
-		"ro"		"Votul pentru hartă s-a terminat. Harta următoare va fi {1}. ({2}%% voturi din {3})"
-	}
-
-	"Nextmap Voting Started"
-	{
-		"ro"		"Votul pentru harta următoare a inceput."
-	}
-
-	"Vote Nextmap"
-	{
-		"ro"		"Votează pentru harta următoare!"
-	}
-
-	"Changed Next Map"
-	{
-		"ro"		"Harta schimbata in \"{1}\"."
+		"ro"		"Nu schimba"
 	}
 
 	"Current Map Stays"
@@ -35,9 +35,9 @@
 		"ro"		"Harta curenta continua! (Voturi {1}%% din {2})"
 	}
 
-	"Dont Change"
+	"Changed Next Map"
 	{
-		"ro"		"Nu schimba"
+		"ro"		"Harta schimbata in \"{1}\"."
 	}
 
 	"Starting Runoff"

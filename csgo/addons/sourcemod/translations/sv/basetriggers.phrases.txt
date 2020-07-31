@@ -1,23 +1,18 @@
 "Phrases"
 {
-	"Friendly Fire On"
+	"Timeleft"
 	{
-		"sv"		"Vänlig skada är på."
-	}
-
-	"LastRound"
-	{
-		"sv"		"Detta är sista omgången!!"
-	}
-
-	"Pending Vote"
-	{
-		"sv"		"Avvaktande röstning"
+		"sv"		"Återstående tid av kartan: "
 	}
 
 	"Thetime"
 	{
 		"sv"		"Nuvarande servertid är {1}"
+	}
+
+	"Friendly Fire On"
+	{
+		"sv"		"Vänlig skada är på."
 	}
 
 	"Friendly Fire Off"
@@ -30,24 +25,39 @@
 		"sv"		"Nuvarande karta är {1}. "
 	}
 
-	"FragLimit"
+	"LastRound"
 	{
-		"sv"		"Kartan kommer att bytas efter att en spelare når en poäng "
+		"sv"		"Detta är sista omgången!!"
 	}
 
-	"FragLimitAppend"
+	"NoTimelimit"
 	{
-		"sv"		", eller byt karta efter att en spelare når en poäng "
+		"sv"		"Ingen tidsgräns för kartan"
 	}
 
-	"FragLimitAppendPlural"
+	"Next Map"
 	{
-		"sv"		", eller byt karta efter att en spelare når {1} poäng "
+		"sv"		"Nästa karta: {1} "
 	}
 
-	"FragLimitPlural"
+	"Pending Vote"
 	{
-		"sv"		"Kartan kommer att bytas efter att en spelare når {1} poäng "
+		"sv"		"Avvaktande röstning"
+	}
+
+	"WinLimitAppend"
+	{
+		"sv"		", eller byt karta efter ett lag vinner en omgång "
+	}
+
+	"WinLimit"
+	{
+		"sv"		"Kartan kommer att bytas när ett lag vinner en omgång "
+	}
+
+	"MaxRoundsAppend"
+	{
+		"sv"		", eller byt karta efter en till omgång "
 	}
 
 	"MaxRounds"
@@ -55,9 +65,24 @@
 		"sv"		"Kartan kommer att bytas efter nästa omgång "
 	}
 
-	"MaxRoundsAppend"
+	"FragLimitAppend"
 	{
-		"sv"		", eller byt karta efter en till omgång "
+		"sv"		", eller byt karta efter att en spelare når en poäng "
+	}
+
+	"FragLimit"
+	{
+		"sv"		"Kartan kommer att bytas efter att en spelare når en poäng "
+	}
+
+	"WinLimitAppendPlural"
+	{
+		"sv"		", eller byt karta efter ett lag vinner {1} omgångar"
+	}
+
+	"WinLimitPlural"
+	{
+		"sv"		"Kartan kommer att bytas när ett lag vinner {1} omgångar "
 	}
 
 	"MaxRoundsAppendPlural"
@@ -70,39 +95,14 @@
 		"sv"		"Kartan kommer att bytas efter {1} omgångar "
 	}
 
-	"Next Map"
+	"FragLimitAppendPlural"
 	{
-		"sv"		"Nästa karta: {1} "
+		"sv"		", eller byt karta efter att en spelare når {1} poäng "
 	}
 
-	"NoTimelimit"
+	"FragLimitPlural"
 	{
-		"sv"		"Ingen tidsgräns för kartan"
-	}
-
-	"Timeleft"
-	{
-		"sv"		"Återstående tid av kartan: "
-	}
-
-	"WinLimit"
-	{
-		"sv"		"Kartan kommer att bytas när ett lag vinner en omgång "
-	}
-
-	"WinLimitAppend"
-	{
-		"sv"		", eller byt karta efter ett lag vinner en omgång "
-	}
-
-	"WinLimitAppendPlural"
-	{
-		"sv"		", eller byt karta efter ett lag vinner {1} omgångar"
-	}
-
-	"WinLimitPlural"
-	{
-		"sv"		"Kartan kommer att bytas när ett lag vinner {1} omgångar "
+		"sv"		"Kartan kommer att bytas efter att en spelare når {1} poäng "
 	}
 
 }

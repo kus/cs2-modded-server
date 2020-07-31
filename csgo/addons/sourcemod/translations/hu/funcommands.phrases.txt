@@ -1,33 +1,23 @@
 "Phrases"
 {
-	"Toggled noclip on target"
+	"Burn player"
 	{
-		"hu"		"{1} átjárhat a falakon"
+		"hu"		"Játékos megégetése"
 	}
 
-	"Toggled drug on target"
+	"FireBomb player"
 	{
-		"hu"		"{1} bedrogozva"
+		"hu"		"Játékos felrobbantása"
 	}
 
-	"Toggled beacon on target"
+	"Freeze player"
 	{
-		"hu"		"{1} megjelölve"
+		"hu"		"Játékos lebénítása"
 	}
 
-	"Toggled TimeBomb on target"
+	"FreezeBomb player"
 	{
-		"hu"		"{1} időzített bomba lett"
-	}
-
-	"Toggled FreezeBomb on target"
-	{
-		"hu"		"{1} bénítóbombáva lett"
-	}
-
-	"Toggled FireBomb on target"
-	{
-		"hu"		"{1} bombáva lett"
+		"hu"		"Bénítóbomba"
 	}
 
 	"TimeBomb player"
@@ -35,29 +25,39 @@
 		"hu"		"Időzített bomba"
 	}
 
-	"Till Explodes"
+	"Beacon player"
 	{
-		"hu"		"{1} {2} másodperc múlva felrobban"
-	}
-
-	"Set target on fire"
-	{
-		"hu"		"{1} meggyújtása"
-	}
-
-	"Set gravity on target"
-	{
-		"hu"		"{1} súlyának megváltoztatása"
-	}
-
-	"Set blind on target"
-	{
-		"hu"		"{1} megvakítva"
+		"hu"		"Játékos megjelölése"
 	}
 
 	"NoClip player"
 	{
 		"hu"		"Falonátjárás"
+	}
+
+	"Blind player"
+	{
+		"hu"		"Játékos megvakítása"
+	}
+
+	"Drug player"
+	{
+		"hu"		"Játékos belövése"
+	}
+
+	"Gravity player"
+	{
+		"hu"		"Játékos súlyának megváltoztatása"
+	}
+
+	"Blind amount"
+	{
+		"hu"		"Vakság mértéke?"
+	}
+
+	"Fully blind"
+	{
+		"hu"		"Tejlesen vak"
 	}
 
 	"Half blind"
@@ -70,24 +70,19 @@
 		"hu"		"Vakítás feloldása"
 	}
 
-	"Gravity player"
-	{
-		"hu"		"Játékos súlyának megváltoztatása"
-	}
-
 	"Gravity amount"
 	{
 		"hu"		"Gravitáció mértéke?"
 	}
 
-	"Gravity Very Low"
-	{
-		"hu"		"Nagyon alacsony gravitáció"
-	}
-
 	"Gravity Very High"
 	{
 		"hu"		"Nagyon magas gravitáció"
+	}
+
+	"Gravity High"
+	{
+		"hu"		"Magas gravitáció"
 	}
 
 	"Gravity Normal"
@@ -100,14 +95,19 @@
 		"hu"		"Alacsony gravitáció"
 	}
 
-	"Fully blind"
+	"Gravity Very Low"
 	{
-		"hu"		"Tejlesen vak"
+		"hu"		"Nagyon alacsony gravitáció"
 	}
 
-	"Gravity High"
+	"Set target on fire"
 	{
-		"hu"		"Magas gravitáció"
+		"hu"		"{1} meggyújtása"
+	}
+
+	"Toggled FireBomb on target"
+	{
+		"hu"		"{1} bombáva lett"
 	}
 
 	"Froze target"
@@ -115,44 +115,44 @@
 		"hu"		"{1} lebénítva"
 	}
 
-	"FreezeBomb player"
+	"Toggled FreezeBomb on target"
 	{
-		"hu"		"Bénítóbomba"
+		"hu"		"{1} bénítóbombáva lett"
 	}
 
-	"Freeze player"
+	"Toggled beacon on target"
 	{
-		"hu"		"Játékos lebénítása"
+		"hu"		"{1} megjelölve"
 	}
 
-	"FireBomb player"
+	"Toggled TimeBomb on target"
 	{
-		"hu"		"Játékos felrobbantása"
+		"hu"		"{1} időzített bomba lett"
 	}
 
-	"Drug player"
+	"Toggled noclip on target"
 	{
-		"hu"		"Játékos belövése"
+		"hu"		"{1} átjárhat a falakon"
 	}
 
-	"Burn player"
+	"Toggled drug on target"
 	{
-		"hu"		"Játékos megégetése"
+		"hu"		"{1} bedrogozva"
 	}
 
-	"Blind player"
+	"Set blind on target"
 	{
-		"hu"		"Játékos megvakítása"
+		"hu"		"{1} megvakítva"
 	}
 
-	"Blind amount"
+	"Set gravity on target"
 	{
-		"hu"		"Vakság mértéke?"
+		"hu"		"{1} súlyának megváltoztatása"
 	}
 
-	"Beacon player"
+	"Till Explodes"
 	{
-		"hu"		"Játékos megjelölése"
+		"hu"		"{1} {2} másodperc múlva felrobban"
 	}
 
 	"Unfrozen"

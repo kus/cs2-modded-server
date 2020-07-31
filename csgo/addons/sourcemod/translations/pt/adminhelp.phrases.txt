@@ -1,8 +1,8 @@
 "Phrases"
 {
-	"No commands available"
+	"SM help commands"
 	{
-		"pt"		"Nenhum comando disponível"
+		"pt"		"Ajuda do SourceMod: Informações sobre comandos"
 	}
 
 	"No description available"
@@ -10,9 +10,9 @@
 		"pt"		"Descrição não disponível"
 	}
 
-	"No matching results found"
+	"No commands available"
 	{
-		"pt"		"Nenhum resultado encontrado"
+		"pt"		"Nenhum comando disponível"
 	}
 
 	"Type sm_help to see more"
@@ -25,9 +25,9 @@
 		"pt"		"Itens {1} - {2} na página {3}"
 	}
 
-	"SM help commands"
+	"No matching results found"
 	{
-		"pt"		"Ajuda do SourceMod: Informações sobre comandos"
+		"pt"		"Nenhum resultado encontrado"
 	}
 
 }

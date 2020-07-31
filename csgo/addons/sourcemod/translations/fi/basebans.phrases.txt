@@ -10,21 +10,6 @@
 		"fi"		"Porttikiellon syy"
 	}
 
-	"Banned player"
-	{
-		"fi"		"Annettiin {2} minuutin porttikielto pelaajalle \"{1}\"."
-	}
-
-	"Banned player reason"
-	{
-		"fi"		"Annettiin {2} minuutin porttikielto pelaajalle \"{1}\" (syy: {3})."
-	}
-
-	"Cannot ban that IP"
-	{
-		"fi"		"Et voi antaa porttikieltoa tälle IP-osoitteelle."
-	}
-
 	"Permabanned player"
 	{
 		"fi"		"Annettiin pysyvä porttikielto pelaajalle \"{1}\"."
@@ -35,6 +20,16 @@
 		"fi"		"Annettiin pysyvä porttikielto pelaajalle \"{1}\" (syy: {2})."
 	}
 
+	"Banned player"
+	{
+		"fi"		"Annettiin {2} minuutin porttikielto pelaajalle \"{1}\"."
+	}
+
+	"Banned player reason"
+	{
+		"fi"		"Annettiin {2} minuutin porttikielto pelaajalle \"{1}\" (syy: {3})."
+	}
+
 	"Removed bans matching"
 	{
 		"fi"		"Poistettiin porttikiellot, jotka vastasivat suodatusta: {1} "
@@ -43,6 +38,11 @@
 	"Ban added"
 	{
 		"fi"		"Porttikielto lisätty"
+	}
+
+	"Cannot ban that IP"
+	{
+		"fi"		"Et voi antaa porttikieltoa tälle IP-osoitteelle."
 	}
 
 	"Custom ban reason explanation"

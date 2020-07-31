@@ -5,14 +5,9 @@
 		"cze"		"Uz jsi nominoval mapu."
 	}
 
-	"Can't Nominate Current Map"
+	"Max Nominations"
 	{
-		"cze"		"Mapa, kterou jsi zvolil, je soucasna mapa a nemuze byt nominovana."
-	}
-
-	"Current Map"
-	{
-		"cze"		"Soucasna mapa"
+		"cze"		"Maximalni pocet nominaci byl dosahnut."
 	}
 
 	"Map Already In Vote"
@@ -20,14 +15,14 @@
 		"cze"		"Mapa '{1}' byla jiz nominovana."
 	}
 
-	"Map Already Nominated"
-	{
-		"cze"		"Mapa, kterou jsi zvolil, byla jiz nominovana."
-	}
-
 	"Map Inserted"
 	{
 		"cze"		"Mapa '{1}' byla pridana do nominaci."
+	}
+
+	"Map Already Nominated"
+	{
+		"cze"		"Mapa, kterou jsi zvolil, byla jiz nominovana."
 	}
 
 	"Map Nominated"
@@ -40,19 +35,24 @@
 		"cze"		"{1} zmenil svou nominaci na {2}."
 	}
 
-	"Map in Exclude List"
-	{
-		"cze"		"Mapa, kterou jsi zvolil, se nedavno hrala a nemuze byt nominovana."
-	}
-
 	"Nominate Title"
 	{
 		"cze"		"Nominovat mapu:"
 	}
 
-	"Nominated"
+	"Can't Nominate Current Map"
 	{
-		"cze"		"Nominovana"
+		"cze"		"Mapa, kterou jsi zvolil, je soucasna mapa a nemuze byt nominovana."
+	}
+
+	"Map in Exclude List"
+	{
+		"cze"		"Mapa, kterou jsi zvolil, se nedavno hrala a nemuze byt nominovana."
+	}
+
+	"Current Map"
+	{
+		"cze"		"Soucasna mapa"
 	}
 
 	"Recently Played"
@@ -60,9 +60,9 @@
 		"cze"		"Nedavno hrana"
 	}
 
-	"Max Nominations"
+	"Nominated"
 	{
-		"cze"		"Maximalni pocet nominaci byl dosahnut."
+		"cze"		"Nominovana"
 	}
 
 }

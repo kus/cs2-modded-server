@@ -1,53 +1,8 @@
 "Phrases"
 {
-	"Ban vote"
-	{
-		"sk"		"Hlasovať o zabanovanie"
-	}
-
-	"Change Map To"
-	{
-		"sk"		"Zmeniť mapu na {1}? "
-	}
-
-	"Confirm Vote"
-	{
-		"sk"		"Potvrdiť hlasovanie"
-	}
-
 	"Initiate Vote"
 	{
 		"sk"		"Spustené hlasovanie : {1} "
-	}
-
-	"Votekick Player"
-	{
-		"sk"		"Vykopnúť {1}? "
-	}
-
-	"Voteban Player"
-	{
-		"sk"		"Zabanovať {1}? "
-	}
-
-	"Vote Successful"
-	{
-		"sk"		"Hlasovanie úspešné. (Získaných {1}%% z {2} hlasov)  "
-	}
-
-	"Map vote"
-	{
-		"sk"		"Hlasovanie mapy"
-	}
-
-	"Map Vote"
-	{
-		"sk"		"Hlasovanie mapy: {1}  "
-	}
-
-	"Kick vote"
-	{
-		"sk"		"Hlasovanie vyhodenia"
 	}
 
 	"Initiated Vote Map"
@@ -65,14 +20,29 @@
 		"sk"		"Spustené hlasovanie o zabanovanie hráča {1}. "
 	}
 
-	"Start the Vote"
+	"Map Vote"
 	{
-		"sk"		"Začiatok hlasovania"
+		"sk"		"Hlasovanie mapy: {1}  "
 	}
 
-	"Vote End"
+	"Change Map To"
 	{
-		"sk"		"Odpoveď na {1} je: {2}. "
+		"sk"		"Zmeniť mapu na {1}? "
+	}
+
+	"Votekick Player"
+	{
+		"sk"		"Vykopnúť {1}? "
+	}
+
+	"Voteban Player"
+	{
+		"sk"		"Zabanovať {1}? "
+	}
+
+	"Vote Successful"
+	{
+		"sk"		"Hlasovanie úspešné. (Získaných {1}%% z {2} hlasov)  "
 	}
 
 	"Vote Failed"
@@ -80,14 +50,44 @@
 		"sk"		"Hlasovanie zlyhalo. {1}%% potrebných hlasov. (Získaných {2}%% z {3} hlasov) "
 	}
 
-	"Please select a map"
+	"Vote End"
 	{
-		"sk"		"Prosím vyberte mapu"
+		"sk"		"Odpoveď na {1} je: {2}. "
+	}
+
+	"Kick vote"
+	{
+		"sk"		"Hlasovanie vyhodenia"
+	}
+
+	"Ban vote"
+	{
+		"sk"		"Hlasovať o zabanovanie"
+	}
+
+	"Map vote"
+	{
+		"sk"		"Hlasovanie mapy"
+	}
+
+	"Confirm Vote"
+	{
+		"sk"		"Potvrdiť hlasovanie"
 	}
 
 	"Map Vote In Use"
 	{
 		"sk"		"Iný admin práve používa menu hlasovania mapy."
+	}
+
+	"Please select a map"
+	{
+		"sk"		"Prosím vyberte mapu"
+	}
+
+	"Start the Vote"
+	{
+		"sk"		"Začiatok hlasovania"
 	}
 
 }

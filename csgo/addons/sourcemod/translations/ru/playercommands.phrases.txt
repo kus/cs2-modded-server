@@ -1,23 +1,23 @@
 "Phrases"
 {
-	"Slap damage"
-	{
-		"ru"		"Урон"
-	}
-
 	"Slap player"
 	{
 		"ru"		"Шлепнуть игрока"
 	}
 
-	"Slapped target"
+	"Slap damage"
 	{
-		"ru"		"Игрок {1} шлепнут."
+		"ru"		"Урон"
 	}
 
 	"Slay player"
 	{
 		"ru"		"Убить игрока"
+	}
+
+	"Slapped target"
+	{
+		"ru"		"Игрок {1} шлепнут."
 	}
 
 	"Slayed target"
@@ -30,14 +30,14 @@
 		"ru"		"Админ изменил ваше имя"
 	}
 
-	"Rename player"
-	{
-		"ru"		"Изменить имя игрока"
-	}
-
 	"Renamed target"
 	{
 		"ru"		"Игрок {1} переименован."
+	}
+
+	"Rename player"
+	{
+		"ru"		"Изменить имя игрока"
 	}
 
 	"Dead Player Rename"

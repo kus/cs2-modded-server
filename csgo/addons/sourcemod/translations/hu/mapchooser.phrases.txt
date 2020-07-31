@@ -5,14 +5,14 @@
 		"hu"		"Mi legyen a következő pálya?"
 	}
 
-	"Nextmap Voting Finished"
-	{
-		"hu"		"A szavazás lezárult. A következő pálya a {1} lesz"
-	}
-
 	"Nextmap Voting Started"
 	{
 		"hu"		"Palyavalaszto szavazas elindult!"
+	}
+
+	"Nextmap Voting Finished"
+	{
+		"hu"		"A szavazás lezárult. A következő pálya a {1} lesz"
 	}
 
 	"Current Map Extended"

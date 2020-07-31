@@ -5,9 +5,9 @@
 		"sv"		"Bränn spelare"
 	}
 
-	"Drug player"
+	"FireBomb player"
 	{
-		"sv"		"Droga spelare"
+		"sv"		"Brandbomba spelare"
 	}
 
 	"Freeze player"
@@ -15,39 +15,14 @@
 		"sv"		"Frys spelare"
 	}
 
-	"Froze target"
+	"FreezeBomb player"
 	{
-		"sv"		"frös {1}."
+		"sv"		"Frysbomba spelare"
 	}
 
-	"Gravity High"
+	"TimeBomb player"
 	{
-		"sv"		"Hög gravitation"
-	}
-
-	"Gravity Low"
-	{
-		"sv"		"Låg gravitation"
-	}
-
-	"Gravity Normal"
-	{
-		"sv"		"Normal gravitation"
-	}
-
-	"Gravity Very High"
-	{
-		"sv"		"Väldigt hög gravitation"
-	}
-
-	"Gravity Very Low"
-	{
-		"sv"		"Väldigt låg gravitation"
-	}
-
-	"Gravity amount"
-	{
-		"sv"		"Gravitation?"
+		"sv"		"Tidsbomba spelare"
 	}
 
 	"Beacon player"
@@ -55,49 +30,24 @@
 		"sv"		"Sätt beacon på spelare"
 	}
 
-	"Blind player"
-	{
-		"sv"		"Gör spelare blind"
-	}
-
-	"FireBomb player"
-	{
-		"sv"		"Brandbomba spelare"
-	}
-
-	"FreezeBomb player"
-	{
-		"sv"		"Frysbomba spelare"
-	}
-
-	"Half blind"
-	{
-		"sv"		"Halvblind"
-	}
-
-	"No blind"
-	{
-		"sv"		"Inte blind"
-	}
-
 	"NoClip player"
 	{
 		"sv"		"Sätt NoClip på spelare"
 	}
 
-	"Set blind on target"
+	"Blind player"
 	{
-		"sv"		"gjorde {1} blind"
+		"sv"		"Gör spelare blind"
 	}
 
-	"Till Explodes"
+	"Drug player"
 	{
-		"sv"		"{1} exploderar om {2} sekunder"
+		"sv"		"Droga spelare"
 	}
 
-	"TimeBomb player"
+	"Gravity player"
 	{
-		"sv"		"Tidsbomba spelare"
+		"sv"		"Gravitation på spelare "
 	}
 
 	"Blind amount"
@@ -110,39 +60,44 @@
 		"sv"		"Helt blind"
 	}
 
-	"Toggled FireBomb on target"
+	"Half blind"
 	{
-		"sv"		"Växlade brandbomb på {1}."
+		"sv"		"Halvblind"
 	}
 
-	"Toggled FreezeBomb on target"
+	"No blind"
 	{
-		"sv"		"Växlade frysbomb på {1}."
+		"sv"		"Inte blind"
 	}
 
-	"Toggled TimeBomb on target"
+	"Gravity amount"
 	{
-		"sv"		"Växlade tidsbomb på {1}."
+		"sv"		"Gravitation?"
 	}
 
-	"Toggled beacon on target"
+	"Gravity Very High"
 	{
-		"sv"		"Växlade beacon på {1}."
+		"sv"		"Väldigt hög gravitation"
 	}
 
-	"Toggled drug on target"
+	"Gravity High"
 	{
-		"sv"		"växlade droger på {1}. "
+		"sv"		"Hög gravitation"
 	}
 
-	"Gravity player"
+	"Gravity Normal"
 	{
-		"sv"		"Gravitation på spelare "
+		"sv"		"Normal gravitation"
 	}
 
-	"Set gravity on target"
+	"Gravity Low"
 	{
-		"sv"		" sätt {1}s gravitation."
+		"sv"		"Låg gravitation"
+	}
+
+	"Gravity Very Low"
+	{
+		"sv"		"Väldigt låg gravitation"
 	}
 
 	"Set target on fire"
@@ -150,9 +105,54 @@
 		"sv"		"Sätt eld på {1}. "
 	}
 
+	"Toggled FireBomb on target"
+	{
+		"sv"		"Växlade brandbomb på {1}."
+	}
+
+	"Froze target"
+	{
+		"sv"		"frös {1}."
+	}
+
+	"Toggled FreezeBomb on target"
+	{
+		"sv"		"Växlade frysbomb på {1}."
+	}
+
+	"Toggled beacon on target"
+	{
+		"sv"		"Växlade beacon på {1}."
+	}
+
+	"Toggled TimeBomb on target"
+	{
+		"sv"		"Växlade tidsbomb på {1}."
+	}
+
 	"Toggled noclip on target"
 	{
 		"sv"		"växlade noclip på {1}. "
+	}
+
+	"Toggled drug on target"
+	{
+		"sv"		"växlade droger på {1}. "
+	}
+
+	"Set blind on target"
+	{
+		"sv"		"gjorde {1} blind"
+	}
+
+	"Set gravity on target"
+	{
+		"sv"		" sätt {1}s gravitation."
+	}
+
+	"Till Explodes"
+	{
+		"sv"		"{1} exploderar om {2} sekunder"
 	}
 
 	"Unfrozen"

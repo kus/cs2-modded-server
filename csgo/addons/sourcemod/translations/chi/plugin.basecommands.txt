@@ -5,9 +5,19 @@
 		"chi"		"无法找到 cvar: {1}"
 	}
 
+	"No access to cvar"
+	{
+		"chi"		"你无权操作这个键值"
+	}
+
 	"Value of cvar"
 	{
 		"chi"		"cvar \"{1}\" 的值: \"{2}\""
+	}
+
+	"Cvar changed"
+	{
+		"chi"		"更改键值  \"{1}\" 为 \"{2}\". "
 	}
 
 	"Config not found"
@@ -105,24 +115,14 @@
 		"chi"		"管理员权限"
 	}
 
-	"Kicked target reason"
-	{
-		"chi"		"踢出 {1} (理由: {2})"
-	}
-
-	"Cvar changed"
-	{
-		"chi"		"更改键值  \"{1}\" 为 \"{2}\". "
-	}
-
 	"Cvar is now protected"
 	{
 		"chi"		"键值{1}已经受保护"
 	}
 
-	"No access to cvar"
+	"Kicked target reason"
 	{
-		"chi"		"你无权操作这个键值"
+		"chi"		"踢出 {1} (理由: {2})"
 	}
 
 }

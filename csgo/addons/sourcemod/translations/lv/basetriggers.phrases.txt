@@ -1,18 +1,8 @@
 "Phrases"
 {
-	"Current Map"
+	"Timeleft"
 	{
-		"lv"		"Pašlaik tiek spēlēta {1} karte."
-	}
-
-	"Friendly Fire Off"
-	{
-		"lv"		"Draudzīgā uguns ir atslēgta."
-	}
-
-	"Friendly Fire On"
-	{
-		"lv"		"Draudzīgā uguns ir ieslēgta."
+		"lv"		"Atlikušais laiks šai kartei:"
 	}
 
 	"Thetime"
@@ -20,39 +10,19 @@
 		"lv"		"Patreizējais servera laiks ir {1}"
 	}
 
-	"Timeleft"
+	"Friendly Fire On"
 	{
-		"lv"		"Atlikušais laiks šai kartei:"
+		"lv"		"Draudzīgā uguns ir ieslēgta."
 	}
 
-	"FragLimit"
+	"Friendly Fire Off"
 	{
-		"lv"		"Karte tiks nomainīta līdzko spēlētājs nogalinās vienu upuri"
+		"lv"		"Draudzīgā uguns ir atslēgta."
 	}
 
-	"Next Map"
+	"Current Map"
 	{
-		"lv"		"Nākamā karte: {1}"
-	}
-
-	"NoTimelimit"
-	{
-		"lv"		"Šai kartei nav laika limita"
-	}
-
-	"Pending Vote"
-	{
-		"lv"		"Gaida balsojumu"
-	}
-
-	"MaxRoundsPlural"
-	{
-		"lv"		"Karte tiks nomainīta pēc {1} raundiem"
-	}
-
-	"MaxRounds"
-	{
-		"lv"		"Karte tiks nomainīta pēc viena raunda"
+		"lv"		"Pašlaik tiek spēlēta {1} karte."
 	}
 
 	"LastRound"
@@ -60,24 +30,24 @@
 		"lv"		"Šis ir pēdējais raunds!!"
 	}
 
-	"MaxRoundsAppend"
+	"NoTimelimit"
 	{
-		"lv"		", vai arī karte tiks nomainīta pēc viena raunda"
+		"lv"		"Šai kartei nav laika limita"
 	}
 
-	"MaxRoundsAppendPlural"
+	"Next Map"
 	{
-		"lv"		", vai arī karte tiks nomainīta pēc {1} raundiem"
+		"lv"		"Nākamā karte: {1}"
 	}
 
-	"FragLimitPlural"
+	"Pending Vote"
 	{
-		"lv"		"Karte tiks nomainīta tiklīdz spēlētājs veiks {1} slepkavības"
+		"lv"		"Gaida balsojumu"
 	}
 
-	"WinLimitPlural"
+	"WinLimitAppend"
 	{
-		"lv"		"Karte tiks nomainīta tiklīdz kāda no komandām iegūs {1} raundu uzvaru"
+		"lv"		", vai arī karte tiks nomainīta tiklīdz kāda no komandām iegūs vienu raunda uzvaru"
 	}
 
 	"WinLimit"
@@ -85,14 +55,24 @@
 		"lv"		"Karte tiks nomainīta tiklīdz kāda no komandām iegūs viena raunda uzvaru"
 	}
 
+	"MaxRoundsAppend"
+	{
+		"lv"		", vai arī karte tiks nomainīta pēc viena raunda"
+	}
+
+	"MaxRounds"
+	{
+		"lv"		"Karte tiks nomainīta pēc viena raunda"
+	}
+
 	"FragLimitAppend"
 	{
 		"lv"		", vai arī karte tiks nomainīta līdzko spēlētājs nogalinās vienu upuri"
 	}
 
-	"FragLimitAppendPlural"
+	"FragLimit"
 	{
-		"lv"		", vai arī karte tiks nomainīta līdzko spēlētājs nogalinās {1} upurus"
+		"lv"		"Karte tiks nomainīta līdzko spēlētājs nogalinās vienu upuri"
 	}
 
 	"WinLimitAppendPlural"
@@ -100,9 +80,29 @@
 		"lv"		", vai arī karte tiks nomainīta tiklīdz kāda no komandām iegūs {1} raundu uzvaru"
 	}
 
-	"WinLimitAppend"
+	"WinLimitPlural"
 	{
-		"lv"		", vai arī karte tiks nomainīta tiklīdz kāda no komandām iegūs vienu raunda uzvaru"
+		"lv"		"Karte tiks nomainīta tiklīdz kāda no komandām iegūs {1} raundu uzvaru"
+	}
+
+	"MaxRoundsAppendPlural"
+	{
+		"lv"		", vai arī karte tiks nomainīta pēc {1} raundiem"
+	}
+
+	"MaxRoundsPlural"
+	{
+		"lv"		"Karte tiks nomainīta pēc {1} raundiem"
+	}
+
+	"FragLimitAppendPlural"
+	{
+		"lv"		", vai arī karte tiks nomainīta līdzko spēlētājs nogalinās {1} upurus"
+	}
+
+	"FragLimitPlural"
+	{
+		"lv"		"Karte tiks nomainīta tiklīdz spēlētājs veiks {1} slepkavības"
 	}
 
 }

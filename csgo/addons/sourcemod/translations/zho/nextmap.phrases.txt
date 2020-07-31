@@ -5,14 +5,9 @@
 		"zho"		"下一幅地圖: {1}"
 	}
 
-	"Current Map"
+	"Map History"
 	{
-		"zho"		"當前地圖"
-	}
-
-	"Played Time"
-	{
-		"zho"		"[已遊玩時間]"
+		"zho"		"地圖紀錄"
 	}
 
 	"Map"
@@ -20,9 +15,14 @@
 		"zho"		"地圖"
 	}
 
-	"Map History"
+	"Started"
 	{
-		"zho"		"地圖紀錄"
+		"zho"		"[已開始]"
+	}
+
+	"Played Time"
+	{
+		"zho"		"[已遊玩時間]"
 	}
 
 	"Reason"
@@ -30,9 +30,9 @@
 		"zho"		"[結束理由]"
 	}
 
-	"Started"
+	"Current Map"
 	{
-		"zho"		"[已開始]"
+		"zho"		"當前地圖"
 	}
 
 	"ago"
