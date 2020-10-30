@@ -5,14 +5,29 @@
 		"vi"		"Thiêu đốt người chơi"
 	}
 
+	"FireBomb player"
+	{
+		"vi"		"Dùng bom lửa lên người chơi"
+	}
+
 	"Freeze player"
 	{
 		"vi"		"Đóng băng người chơi"
 	}
 
+	"FreezeBomb player"
+	{
+		"vi"		"Dùng bom đóng băng lên người chơi"
+	}
+
 	"TimeBomb player"
 	{
 		"vi"		"Đặt bom đếm giờ vào người chơi"
+	}
+
+	"Beacon player"
+	{
+		"vi"		"Đặt đèn hiệu lên người chơi"
 	}
 
 	"NoClip player"
@@ -23,6 +38,11 @@
 	"Blind player"
 	{
 		"vi"		"Làm mù người chơi"
+	}
+
+	"Drug player"
+	{
+		"vi"		"Kích độc người chơi"
 	}
 
 	"Gravity player"
@@ -85,9 +105,39 @@
 		"vi"		"Đã đốt {1}."
 	}
 
+	"Toggled FireBomb on target"
+	{
+		"vi"		"Đã bật/tắt bom lửa lên {1}."
+	}
+
 	"Froze target"
 	{
 		"vi"		"Đã đóng băng {1}."
+	}
+
+	"Toggled FreezeBomb on target"
+	{
+		"vi"		"Đã bật/tắt bom đóng băng lên {1}."
+	}
+
+	"Toggled beacon on target"
+	{
+		"vi"		"Đã bật/tắt bom lửa lên {1}."
+	}
+
+	"Toggled TimeBomb on target"
+	{
+		"vi"		"Đã bật/tắt đèn hiệu lên {1}."
+	}
+
+	"Toggled noclip on target"
+	{
+		"vi"		"Đã bật tắt noclip lên {1}."
+	}
+
+	"Toggled drug on target"
+	{
+		"vi"		"Đã bật/tắt kích độc lên {1}."
 	}
 
 	"Set blind on target"

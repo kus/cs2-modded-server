@@ -19,165 +19,118 @@
 		}
 		"Signatures"
 		{
-			//CCStrike15ItemDefinition__GetLoadoutSlot(CCStrike15ItemDefinition *this, int team)
-			//CEconItemDefinition::GetLoadoutSlot() - does not work, always returns 0
-			"GetLoadoutSlot"
+			"CCStrike15ItemDefinition::GetLoadoutSlot"
 			{
-				"library"		"server"
-				"windows"		"\x55\x8B\xEC\x8B\x45\x08\x8D\x50\xFF"
-				"linux"			"\x55\x89\xE5\x8B\x45\x0C\x8B\x55\x08\x8D\x48\xFF"
+				"library"       "server"
+				"windows"       "\x55\x8B\xEC\x8B\x45\x08\x8D\x50\xFF"
+				"linux"         "\x55\x89\xE5\x8B\x45\x0C\x8B\x55\x08\x8D\x48\xFF"
 			}
-			"FindMatchingWeaponsForTeamLoadout"
+			"CCSPlayer::FindMatchingWeaponsForTeamLoadout"
 			{
-				"library"		"server"
-				"windows"		"\x55\x8B\xEC\x83\xEC\x08\x53\x56\x57\x89\x4D\xF8"
-				"linux"			"\x55\x89\xE5\x57\x56\x53\x83\xEC\x3C\x0F\xB6\x4D\x14"
+				"library"       "server"
+				"windows"       "\x55\x8B\xEC\x83\xEC\x08\x53\x56\x57\x89\x4D\xF8"
+				"linux"         "\x55\x89\xE5\x57\x56\x53\x83\xEC\x3C\x0F\xB6\x4D\x14"
 			}
-			"SpawnItem"
+			"CItemGeneration::SpawnItem"
 			{
-				"library"		"server"
-				"windows"		"\x55\x8B\xEC\x51\x53\x56\x57\xE8\x2A\x2A\x2A\x2A\x8B\x5D\x08"
-				"linux"			"\x55\x89\xE5\x57\x56\x53\x83\xEC\x4C\x8B\x55\x08\x8B\x7D\x0C\x8B\x5D\x20"
+				"library"       "server"
+				"windows"       "\x55\x8B\xEC\x51\x53\x56\x57\xE8\x2A\x2A\x2A\x2A\x8B\x5D\x08"
+				"linux"         "\x55\x89\xE5\x57\x56\x53\x83\xEC\x4C\x8B\x55\x08\x8B\x7D\x0C\x8B\x5D\x20"
 			}
 			"FX_FireBullets"
 			{
-				"library"		"server"
-				"windows"		"\x55\x8B\xEC\x83\xE4\xF8\x81\xEC\x40\x02\x00\x00"
-				"linux"			"\x55\x89\xE5\x57\x56\x53\x81\xEC\x9C\x02\x00\x00\x8B\x5D\x10"
+				"library"       "server"
+				"windows"       "\x55\x8B\xEC\x83\xE4\xF8\x81\xEC\xE0\x01\x00\x00"
+				"linux"         "\x55\x89\xE5\x57\x56\x53\x81\xEC\xBC\x02\x00\x00\x8B\x5D\x10"
 			}
 			"g_CPlayerVoiceListener"
 			{
-				"library"		"server"
-				"windows"		"\x6A\x00\xB9\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x6A\x40"
-				"linux"			"\x55\x89\xE5\x83\xEC\x28\xC6\x05\x2A\x2A\x2A\x2A\x00\xC6\x05\x2A\x2A\x2A\x2A\x00\xC6\x05\x2A\x2A\x2A\x2A\x00\xC6\x05\x2A\x2A\x2A\x2A\x00\xC7\x05\x2A\x2A\x2A\x2A\x00\x00\x00\x00\xC7\x05\x2A\x2A\x2A\x2A\x00\x00\x00\x00\xC7\x05\x2A\x2A\x2A\x2A\xFF\xFF\x7F\x7F\xC7\x05\x2A\x2A\x2A\x2A\xFF\xFF\x7F\x7F\xC7\x05\x2A\x2A\x2A\x2A\x00\x00\x00\x00\xC7\x05\x2A\x2A\x2A\x2A\x00\x00\x00\x00\xC7\x05\x2A\x2A\x2A\x2A\x00\x00\x00\x00\xC7\x05\x2A\x2A\x2A\x2A\x00\x00\x00\x00\xC7\x05\x2A\x2A\x2A\x2A\xFF\xFF\x7F\x7F\xC7\x05\x2A\x2A\x2A\x2A\xFF\xFF\x7F\x7F\xC7\x05\x2A\x2A\x2A\x2A\xFF\xFF\x7F\x7F\xC7\x05\x2A\x2A\x2A\x2A\xFF\xFF\x7F\x7F\xC7\x44\x24\x0C\x00\x40\x00\x00"
+				"library"       "server"
+				"windows"       "\x6A\x00\xB9\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x6A\x40"
+				"linux"         "\x55\x89\xE5\x83\xEC\x28\xC6\x05\x2A\x2A\x2A\x2A\x00\xC6\x05\x2A\x2A\x2A\x2A\x00\xC6\x05\x2A\x2A\x2A\x2A\x00\xC6\x05\x2A\x2A\x2A\x2A\x00\xC7\x05\x2A\x2A\x2A\x2A\x00\x00\x00\x00\xC7\x05\x2A\x2A\x2A\x2A\x00\x00\x00\x00\xC7\x05\x2A\x2A\x2A\x2A\xFF\xFF\x7F\x7F\xC7\x05\x2A\x2A\x2A\x2A\xFF\xFF\x7F\x7F\xC7\x05\x2A\x2A\x2A\x2A\x00\x00\x00\x00\xC7\x05\x2A\x2A\x2A\x2A\x00\x00\x00\x00\xC7\x05\x2A\x2A\x2A\x2A\x00\x00\x00\x00\xC7\x05\x2A\x2A\x2A\x2A\x00\x00\x00\x00\xC7\x05\x2A\x2A\x2A\x2A\xFF\xFF\x7F\x7F\xC7\x05\x2A\x2A\x2A\x2A\xFF\xFF\x7F\x7F\xC7\x05\x2A\x2A\x2A\x2A\xFF\xFF\x7F\x7F\xC7\x05\x2A\x2A\x2A\x2A\xFF\xFF\x7F\x7F\xC7\x44\x24\x0C\x00\x40\x00\x00"
 			}
 		}
 		"Offsets"
 		{
-			"ConnectClient"
+			"CBaseServer::ConnectClient"
 			{
-				"windows"		"54"
-				"linux"			"55"
+				"windows"       "54"
+				"linux"         "55"
 			}
-			"RejectConnection"
+			"CBaseServer::RejectConnection"
 			{
-				"windows"		"52"
-				"linux"			"53"
+				"windows"       "52"
+				"linux"         "53"
 			}
-			"GetItemDefinitionByDefIndex"
+			"CEconItemSchema::m_mapItems"
 			{
-				"windows"		"208"
-				"linux"			"208"
+				"windows"       "172"
+				"linux"         "172"
 			}
-			"GetAttributeDefinitionInterface"
+			"CEconItemSchema::m_mapAttributesContainer"
 			{
-				"windows"		"27"
-				"linux"			"27"
+				"windows"       "284"
+				"linux"         "284"
 			}
-			"GetDefinitionIndex"
+			"CCStrike15ItemDefinition::m_vbClassUsability"
 			{
-				"windows"		"0"
-				"linux"			"0"
+				"windows"       "616"
+				"linux"         "616"
 			}
-			"GetNumSupportedStickerSlots"
+			"CEconItemDefinition::GetNumSupportedStickerSlots"
 			{
-				"windows"		"44"
-				"linux"			"45"
+				"windows"       "44"
+				"linux"         "45"
 			}
-			"GetClassName"
+			"CEconItemDefinition::GetInventoryImage"
 			{
-				"windows"		"444"
-				"linux"			"444"
+				"windows"       "5"
+				"linux"         "5"
 			}
-			"GetCustomPaintKitIndex"
+			"CEconItemDefinition::GetBasePlayerDisplayModel"
 			{
-				"windows"		"1"
-				"linux"			"2"
+				"windows"       "6"
+				"linux"         "6"
 			}
-			"GetCustomPaintKitSeed"
+			"CEconItemDefinition::GetWorldDisplayModel"
 			{
-				"windows"		"2"
-				"linux"			"3"
+				"windows"       "7"
+				"linux"         "7"
 			}
-			"GetCustomPaintKitWear"
+			"CEconItemDefinition::GetWorldDroppedModel"
 			{
-				"windows"		"3"
-				"linux"			"4"
+				"windows"       "33"
+				"linux"         "34"
 			}
-			"GetStickerAttributeBySlotIndexFloat"
+			"CEconItemDefinition::m_pszDefinitionName"
 			{
-				"windows"		"4"
-				"linux"			"5"
+				"windows"       "444"
+				"linux"         "444"
 			}
-			"GetStickerAttributeBySlotIndexInt"
+			"CGameClient::UpdateAcknowledgedFramecount"
 			{
-				"windows"		"5"
-				"linux"			"6"
+				"windows"       "17"
+				"linux"         "55"
 			}
-			"IsTradable"
+			"CGameClient::ExecuteStringCommand"
 			{
-				"windows"		"6"
-				"linux"			"7"
+				"windows"       "30"
+				"linux"         "25"
 			}
-			"IsMarketable"
+			"CBaseClient::ClientPrintf"
 			{
-				"windows"		"7"
-				"linux"			"8"
+				"windows"       "32"
+				"linux"         "27"
 			}
-			"GetItemDefinition"
+			"CPlayerInventory::SendInventoryUpdateEvent"
 			{
-				"windows"		"12"
-				"linux"			"13"
+				"windows"       "16"
+				"linux"         "17"
 			}
-			"GetAccountID"
+			"CPlayerInventory::m_vecInventoryItems"
 			{
-				"windows"		"13"
-				"linux"			"14"
-			}
-			"GetQuality"
-			{
-				"windows"		"15"
-				"linux"			"16"
-			}
-			"GetRarity"
-			{
-				"windows"		"16"
-				"linux"			"17"
-			}
-			"GetFlags"
-			{
-				"windows"		"17"
-				"linux"			"18"
-			}
-			"GetOrigin"
-			{
-				"windows"		"18"
-				"linux"			"19"
-			}
-			"GetCustomName"
-			{
-				"windows"		"22"
-				"linux"			"23"
-			}
-			"IterateAttributes"
-			{
-				"windows"		"25"
-				"linux"			"26"
-			}
-			"UpdateAcknowledgedFramecount"
-			{
-				"windows"		"17"
-				"linux"			"55"
-			}
-			"ExecuteStringCommand"
-			{
-				"windows"		"30"
-				"linux"			"25"
-			}
-			"ClientPrintf"
-			{
-				"windows"		"32"
-				"linux"			"27"
+				"windows"       "44"
+				"linux"         "44"
 			}
 		}
 	}

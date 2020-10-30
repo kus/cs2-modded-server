@@ -20,6 +20,7 @@
 #include <sdkhooks>
 #include <cstrike>
 #include <PTaH>
+#include <weapons>
 
 #pragma semicolon 1
 #pragma newdecls required
@@ -31,15 +32,25 @@
 #include "weapons/database.sp"
 #include "weapons/config.sp"
 #include "weapons/menus.sp"
+#include "weapons/natives.sp"
+
+//#define DEBUG
 
 public Plugin myinfo = 
 {
 	name = "Weapons & Knives",
 	author = "kgns | oyunhost.net",
 	description = "All in one weapon skin management",
-	version = "1.6.0",
+	version = "1.7.0",
 	url = "https://www.oyunhost.net"
 };
+
+public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int err_max)
+{
+	CreateNative("Weapons_SetClientKnife", Weapons_SetClientKnife_Native);
+	CreateNative("Weapons_GetClientKnife", Weapons_GetClientKnife_Native);
+	return APLRes_Success;
+}
 
 public void OnPluginStart()
 {
@@ -96,7 +107,68 @@ public void OnPluginStart()
 	AddCommandListener(ChatListener, "say");
 	AddCommandListener(ChatListener, "say2");
 	AddCommandListener(ChatListener, "say_team");
+
+	#if defined DEBUG
+	RegAdminCmd("sm_setknife", Command_SetKnife, ADMFLAG_ROOT, "Sets knife of specific player.");
+	RegAdminCmd("sm_getknife", Command_GetClientKnife, ADMFLAG_ROOT, "Gets specific player's knife class name.");
+	#endif
+	
+	for(int i = 0; i < sizeof(g_iWeaponSeed); i++)
+	{
+		for(int j = 0; j < sizeof(g_iWeaponSeed[]); j++)
+		{
+			g_iWeaponSeed[i][j] = -1;
+		}
+	}
 }
+
+#if defined DEBUG
+public Action Command_SetKnife(int client, int args)
+{
+	if(args != 2)
+	{
+		ReplyToCommand(client, "[SM] Usage: sm_setknife <playername> <weaponname>");
+		return Plugin_Handled;
+	}
+	char buffer[64];
+	GetCmdArg(1, buffer, sizeof(buffer));
+	int target = FindTarget(client, buffer);
+	if(target == -1)
+	{
+		ReplyToCommand(client, "[SM] Please enter valid playername!");
+		return Plugin_Handled;
+	}
+	GetCmdArg(2, buffer, sizeof(buffer));
+	if(SetClientKnife(target, buffer) == -1)
+	{
+		ReplyToCommand(client, "[SM] Knife %s is not valid.", buffer);
+		return Plugin_Handled;
+	}
+	ReplyToCommand(client, "[SM] Successfully set %N's knife.", target);
+	return Plugin_Handled;
+}
+
+public Action Command_GetClientKnife(int client, int args)
+{
+	if(args != 1)
+	{
+		ReplyToCommand(client, "[SM] Usage: sm_getknife <playername>");
+		return Plugin_Handled;
+	}
+	char buffer[32];
+	GetCmdArg(1, buffer, sizeof(buffer));
+	int target = FindTarget(client, buffer);
+	if(target == -1)
+	{
+		ReplyToCommand(client, "[SM] Please enter valid playername!");
+		return Plugin_Handled;
+	}
+	char sKnife[64];
+	GetClientKnife(client, sKnife, sizeof(sKnife));
+	ReplyToCommand(client, "[SM] %N's knife is %s.", target, sKnife);
+	return Plugin_Handled;
+}
+#endif
 
 public Action CommandWeaponSkins(int client, int args)
 {
@@ -211,7 +283,7 @@ void SetWeaponProps(int client, int entity)
 		{
 			SetEntDataString(entity, FindSendPropInfo("CBaseAttributableItem", "m_szCustomName"), g_NameTag[client][index], 128);
 		}
-		SetEntProp(entity, Prop_Send, "m_iAccountID", g_iSteam32[client]);
+		SetEntProp(entity, Prop_Send, "m_iAccountID", GetSteamAccountID(client));
 		SetEntPropEnt(entity, Prop_Send, "m_hOwnerEntity", client);
 		SetEntPropEnt(entity, Prop_Send, "m_hPrevOwner", -1);
 	}

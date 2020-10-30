@@ -12,3 +12,7 @@ cs_militia
 cs_italy
 cs_assault
 cs_agency
+de_shortdust
+de_shortnuke
+gd_cbble
+gd_rialto

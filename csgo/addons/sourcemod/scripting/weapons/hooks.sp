@@ -181,7 +181,14 @@ public Action OnTakeDamageAlive(int victim, int &attacker, int &inflictor, float
 
 public void OnRoundStart(Handle event, const char[] name, bool dontBroadcast)
 {
-	g_iRoundStartTime = GetTime();
+	if (IsWarmUpPeriod())
+	{
+		g_iRoundStartTime = 0;
+	}
+	else
+	{
+		g_iRoundStartTime = GetTime();
+	}
 }
 
 Action WeaponCanUsePre(int client, int weapon, bool& pickup)

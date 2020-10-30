@@ -21,10 +21,9 @@ public void OnConfigsExecuted()
 	GetConVarString(g_Cvar_TablePrefix, g_TablePrefix, sizeof(g_TablePrefix));
 	g_iGraceInactiveDays = g_Cvar_InactiveDays.IntValue;
 	
-	if(g_DBConnectionOld[0] != EOS && strcmp(g_DBConnectionOld, g_DBConnection) != 0 && db != null)
+	if(g_DBConnectionOld[0] != EOS && strcmp(g_DBConnectionOld, g_DBConnection) != 0)
 	{
 		delete db;
-		db = null;
 	}
 	
 	if(db == null)
@@ -53,6 +52,15 @@ public void OnConfigsExecuted()
 	{
 		HookEvent("round_start", OnRoundStart, EventHookMode_PostNoCopy);
 	}
+	
+	for (int i = 1; i <= MaxClients; i++)
+	{
+		if (IsClientInGame(i))
+		{
+			OnClientPutInServer(i);
+		}
+	}
+	
 	ReadConfig();
 }
 
@@ -81,18 +89,6 @@ public void OnClientPostAdminCheck(int client)
 {
 	if(g_iDatabaseState > 1 && IsValidClient(client))
 	{
-		char steam32[20];
-		char temp[20];
-		if(GetClientAuthId(client, AuthId_Steam3, steam32, sizeof(steam32)))
-		{
-			strcopy(temp, sizeof(temp), steam32[5]);
-			int index;
-			if((index = StrContains(temp, "]")) > -1)
-			{
-				temp[index] = '\0';
-			}
-			g_iSteam32[client] = StringToInt(temp);
-		}
 		GetPlayerData(client);
 		QueryClientConVar(client, "cl_language", ConVarCallBack);
 	}
@@ -116,7 +112,16 @@ public void OnClientDisconnect(int client)
 	else if(IsValidClient(client))
 	{
 		UnhookPlayer(client);
-		g_iSteam32[client] = 0;
+		for(int i = 0; i < sizeof(g_WeaponClasses); i++)
+		{
+			g_iSkins[client][i] = 0;
+			g_iStatTrak[client][i] = 0;
+			g_iStatTrakCount[client][i] = 0;
+			g_NameTag[client][i] = "";
+			g_fFloatValue[client][i] = 0.0;
+			g_iWeaponSeed[client][i] = -1;
+		}
+		g_iKnife[client] = 0;
 	}
 }
 

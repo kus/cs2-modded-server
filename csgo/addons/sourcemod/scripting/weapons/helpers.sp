@@ -15,7 +15,7 @@
  * this program. If not, see http://www.gnu.org/licenses/.
  */
 
-stock void StripHtml(const char[] source, char[] output, int size)
+void StripHtml(const char[] source, char[] output, int size)
 {
 	int start, end;
 	strcopy(output, size, source);
@@ -29,7 +29,7 @@ stock void StripHtml(const char[] source, char[] output, int size)
 	}
 }
 
-stock void CleanNameTag(char[] nameTag, int size)
+void CleanNameTag(char[] nameTag, int size)
 {
 	ReplaceString(nameTag, size, "%", "％");
 	while(StrContains(nameTag, "  ") > -1)
@@ -39,7 +39,7 @@ stock void CleanNameTag(char[] nameTag, int size)
 	StripQuotes(nameTag);
 }
 
-stock int GetRandomSkin(int client, int index)
+int GetRandomSkin(int client, int index)
 {
 	int max = menuWeapons[g_iClientLanguage[client]][index].ItemCount;
 	int random = GetRandomInt(2, max);
@@ -48,7 +48,7 @@ stock int GetRandomSkin(int client, int index)
 	return StringToInt(idStr);
 }
 
-stock bool IsValidClient(int client)
+bool IsValidClient(int client)
 {
 	if (!(1 <= client <= MaxClients) || !IsClientInGame(client) || IsFakeClient(client) || IsClientSourceTV(client) || IsClientReplay(client))
 	{
@@ -57,7 +57,7 @@ stock bool IsValidClient(int client)
 	return true;
 }
 
-stock int GetWeaponIndex(int entity)
+int GetWeaponIndex(int entity)
 {
 	char class[32];
 	if(GetWeaponClass(entity, class, sizeof(class)))
@@ -71,20 +71,20 @@ stock int GetWeaponIndex(int entity)
 	return -1;
 }
 
-stock bool GetWeaponClass(int entity, char[] weaponClass, int size)
+bool GetWeaponClass(int entity, char[] weaponClass, int size)
 {
 	int id = GetEntProp(entity, Prop_Send, "m_iItemDefinitionIndex");
 	return ClassByDefIndex(id, weaponClass, size);
 }
 
-stock bool IsKnifeClass(const char[] classname)
+bool IsKnifeClass(const char[] classname)
 {
 	if ((StrContains(classname, "knife") > -1 && strcmp(classname, "weapon_knifegg") != 0) || StrContains(classname, "bayonet") > -1)
 		return true;
 	return false;
 }
 
-stock bool IsKnife(int entity)
+bool IsKnife(int entity)
 {
 	char classname[32];
 	if(GetWeaponClass(entity, classname, sizeof(classname)))
@@ -92,7 +92,7 @@ stock bool IsKnife(int entity)
 	return false;
 }
 
-stock int DefIndexByClass(char[] class)
+int DefIndexByClass(char[] class)
 {
 	if (StrEqual(class, "weapon_knife"))
 	{
@@ -109,12 +109,12 @@ stock int DefIndexByClass(char[] class)
 	return 0;
 }
 
-stock void RemoveWeaponPrefix(const char[] source, char[] output, int size)
+void RemoveWeaponPrefix(const char[] source, char[] output, int size)
 {
 	strcopy(output, size, source[7]);
 }
 
-stock bool ClassByDefIndex(int index, char[] class, int size)
+bool ClassByDefIndex(int index, char[] class, int size)
 {
 	switch(index)
 	{
@@ -143,7 +143,7 @@ stock bool ClassByDefIndex(int index, char[] class, int size)
 	return false;
 }
 
-stock bool IsValidWeapon(int weaponEntity)
+bool IsValidWeapon(int weaponEntity)
 {
 	if (weaponEntity > 4096 && weaponEntity != INVALID_ENT_REFERENCE) {
 		weaponEntity = EntRefToEntIndex(weaponEntity);
@@ -159,7 +159,7 @@ stock bool IsValidWeapon(int weaponEntity)
 	return StrContains(weaponClass, "weapon_") == 0;
 }
 
-stock void FirstCharUpper(char[] string)
+void FirstCharUpper(char[] string)
 {
 	if (strlen(string) > 0)
 	{
@@ -167,7 +167,7 @@ stock void FirstCharUpper(char[] string)
 	}
 }
 
-stock int GetTotalKnifeStatTrakCount(int client)
+int GetTotalKnifeStatTrakCount(int client)
 {
 	int count = 0;
 	for (int i = 0; i < sizeof(g_WeaponClasses); i++)
@@ -180,7 +180,7 @@ stock int GetTotalKnifeStatTrakCount(int client)
 	return count;
 }
 
-stock int GetRemainingGracePeriodSeconds(int client)
+int GetRemainingGracePeriodSeconds(int client)
 {
 	if(g_iGracePeriod == 0 || g_iRoundStartTime == 0 || (IsClientInGame(client) && !IsPlayerAlive(client)))
 	{
@@ -191,4 +191,63 @@ stock int GetRemainingGracePeriodSeconds(int client)
 		int remaining = g_iRoundStartTime + g_iGracePeriod - GetTime();
 		return remaining > 0 ? remaining : -1;
 	}
+}
+
+void GetClientKnife(int client, char[] KnifeName, int Size)
+{
+	if(g_iKnife[client] == 0)
+	{
+		Format(KnifeName, Size, "weapon_knife");
+	}
+	else
+	{
+		Format(KnifeName, Size, g_WeaponClasses[g_iKnife[client]]);
+	}
+}
+
+int SetClientKnife(int client, char[] sKnife, bool Native = false, bool update = true)
+{
+	int knife;
+	if(strcmp(sKnife, "weapon_knife") == 0)
+	{
+		knife = 0;
+	}
+	else
+	{
+		int count = -1;
+		for(int i = 33; i < sizeof(g_WeaponClasses); i++)
+		{
+			if(strcmp(sKnife, g_WeaponClasses[i]) == 0)
+			{
+				count = i;
+				break;
+			}
+		}
+		if(count == -1)
+		{
+			if(Native)
+			{
+				return ThrowNativeError(25, "Knife (%s) is not valid.", sKnife);
+			}
+			else
+			{
+				return -1;
+			}
+		}
+		knife = count;
+	}
+	g_iKnife[client] = knife;
+	if(update)
+	{
+		char updateFields[16];
+		Format(updateFields, sizeof(updateFields), "knife = %d", knife);
+		UpdatePlayerData(client, updateFields);
+	}
+	RefreshWeapon(client, knife, knife == 0);
+	return 0;
+}
+
+bool IsWarmUpPeriod()
+{
+	return view_as<bool>(GameRules_GetProp("m_bWarmupPeriod"));
 }

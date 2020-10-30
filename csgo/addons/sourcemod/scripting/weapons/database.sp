@@ -46,16 +46,6 @@ public void T_GetPlayerDataCallback(Database database, DBResultSet results, cons
 				pack.WriteString(steamid);
 				pack.WriteString(query);
 				db.Query(T_InsertCallback, query, pack);
-				for(int i = 0; i < sizeof(g_WeaponClasses); i++)
-				{
-					g_iSkins[clientIndex][i] = 0;
-					g_iStatTrak[clientIndex][i] = 0;
-					g_iStatTrakCount[clientIndex][i] = 0;
-					g_NameTag[clientIndex][i] = "";
-					g_fFloatValue[clientIndex][i] = 0.0;
-					g_iWeaponSeed[clientIndex][i] = -1;
-				}
-				g_iKnife[clientIndex] = 0;
 			}
 		}
 		else

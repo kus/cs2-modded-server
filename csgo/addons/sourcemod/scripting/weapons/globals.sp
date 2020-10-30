@@ -88,7 +88,6 @@ float g_fFloatValue[MAXPLAYERS+1][sizeof(g_WeaponClasses)];
 
 int g_iIndex[MAXPLAYERS+1] = { 0, ... };
 Handle g_FloatTimer[MAXPLAYERS+1] = { INVALID_HANDLE, ... };
-int g_iSteam32[MAXPLAYERS+1] = { 0, ... };
 
 bool g_bWaitingForNametag[MAXPLAYERS+1] = { false, ... };
 bool g_bWaitingForSeed[MAXPLAYERS+1] = { false, ... };

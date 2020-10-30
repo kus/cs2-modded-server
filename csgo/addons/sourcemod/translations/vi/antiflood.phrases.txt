@@ -2,7 +2,7 @@
 {
 	"Flooding the server"
 	{
-		"vi"		"Bạn đang làm máy chủ quá tải!"
+		"vi"		"Bạn đang làm quá tải máy chủ!"
 	}
 
 }

@@ -250,4 +250,24 @@
 		"pl"		"Wyłączone"
 	}
 
+	"Say all"
+	{
+		"pl"		"Wszyscy"
+	}
+
+	"Chat admins"
+	{
+		"pl"		"Administratorzy"
+	}
+
+	"Chat to admins"
+	{
+		"pl"		"Do administratorów"
+	}
+
+	"Private say to"
+	{
+		"pl"		"Prywatnie do"
+	}
+
 }

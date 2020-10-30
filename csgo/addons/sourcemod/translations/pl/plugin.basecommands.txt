@@ -125,4 +125,14 @@
 		"pl"		"Wykopano {1} (Powód: {2})"
 	}
 
+	"Please select a map"
+	{
+		"pl"		"Proszę wybrać mapę"
+	}
+
+	"Choose Config"
+	{
+		"pl"		"Wybierz konfigurację"
+	}
+
 }

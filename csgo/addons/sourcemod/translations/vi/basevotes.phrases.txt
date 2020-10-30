@@ -2,27 +2,27 @@
 {
 	"Initiate Vote"
 	{
-		"vi"		"Bắt đầu bỏ phiếu: {1}"
+		"vi"		"Bắt đầu bầu chọn: {1}"
 	}
 
 	"Initiated Vote Map"
 	{
-		"vi"		"Bắt đầu bỏ phiếu chọn bản đồ."
+		"vi"		"Băt đầu bầu chọn bản đồ."
 	}
 
 	"Initiated Vote Kick"
 	{
-		"vi"		"Bắt đầu bò phiếu đuổi {1}."
+		"vi"		"Bắt đầu bầu chọn đuổi {1}."
 	}
 
 	"Initiated Vote Ban"
 	{
-		"vi"		"Bắt đầu bò phiếu cấm {1}."
+		"vi"		"Bắt đầu bầu chọn cấm {1}."
 	}
 
 	"Map Vote"
 	{
-		"vi"		"Bỏ phiếu chọn bản đồ: {1}"
+		"vi"		"Bầu chọn bản đồ: {1}"
 	}
 
 	"Change Map To"
@@ -42,12 +42,12 @@
 
 	"Vote Successful"
 	{
-		"vi"		"Bỏ phiếu thành công. (Đã nhận được {1}%% trên {2} phiếu)"
+		"vi"		"Bầu chọn thành công. (Nhận được {1}%% trên {2} lượt bầu)"
 	}
 
 	"Vote Failed"
 	{
-		"vi"		"Bỏ phiếu thất bại. Cần {1}%% phiếu. (Đã nhận được {2} trên {3} phiếu)"
+		"vi"		"Bầu chọn thất bại. Cần {1}%% phiếu. (Nhận được {2} trên {3} phiếu)"
 	}
 
 	"Vote End"
@@ -57,22 +57,22 @@
 
 	"Kick vote"
 	{
-		"vi"		"Bỏ phiếu đổi"
+		"vi"		"Bầu chọn đuổi"
 	}
 
 	"Ban vote"
 	{
-		"vi"		"Bỏ phiếu cấm"
+		"vi"		"Bầu chọn cấm"
 	}
 
 	"Map vote"
 	{
-		"vi"		"Bỏ phiếu chọn bản đồ"
+		"vi"		"Bầu chọn bản đồ"
 	}
 
 	"Confirm Vote"
 	{
-		"vi"		"Xác nhận phiếu"
+		"vi"		"Xác nhận lựa chọn"
 	}
 
 	"Map Vote In Use"
