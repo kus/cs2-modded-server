@@ -119,3 +119,6 @@ Menu menuWeapons[MAX_LANG][sizeof(g_WeaponClasses)];
 StringMap g_smWeaponIndex;
 StringMap g_smWeaponDefIndex;
 StringMap g_smLanguageIndex;
+
+GlobalForward g_hOnKnifeSelect_Pre;
+GlobalForward g_hOnKnifeSelect_Post;

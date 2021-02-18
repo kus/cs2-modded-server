@@ -25,8 +25,8 @@ Getting up and running:
 
 Mod | Version | Why
 --- | --- | ---
-[Metamod:Source](http://www.sourcemm.net/downloads.php?branch=stable) | `1.11.0-git1143` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
-[SourceMod](https://www.sourcemod.net/downloads.php?branch=stable) | `1.10-git6499` | SourceMod is server modification for any game that runs on the Half-Life 2 engine
+[Metamod:Source](http://www.sourcemm.net/downloads.php?branch=stable) | `1.11.0-git1144` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
+[SourceMod](https://www.sourcemod.net/downloads.php?branch=stable) | `1.10-git6502` | SourceMod is server modification for any game that runs on the Half-Life 2 engine
 [GunGame](https://forums.alliedmods.net/showthread.php?t=93977) | `1.2.16` | Kill an enemy with the current weapon to get next weapon, first person to go through every weapon wins
 [DeathMatch](https://forums.alliedmods.net/showthread.php?t=103242) | `1.8.0` | Required for GunGame to enable spawn protection and other things to the game
 [Quake Sounds](https://forums.alliedmods.net/showthread.php?t=224316) | `3.5.0` | Plays sounds and displays text at certain events sometimes based on the number of kills
@@ -47,8 +47,8 @@ Mod | Version | Why
 [SoccerMod](https://github.com/marcoboogers/soccermod) | `2017.5.5` | Soccer gamemode
 [Command Time-Traveler](https://forums.alliedmods.net/showthread.php?t=134288) | `1.2.0` | Run a command in the future
 [P Tools and Hooks](https://forums.alliedmods.net/showthread.php?t=289289) | `1.1.3-build19` | Additional CS:GO Hooks and Natives 
-[Gloves](https://forums.alliedmods.net/showthread.php?t=299977) | `1.0.4` | Custom gloves
-[Weapon & Knives](https://forums.alliedmods.net/showthread.php?t=298770) | `1.7.0` | Custom weapon skins
+[Gloves](https://forums.alliedmods.net/showthread.php?t=299977) | `1.0.5` | Custom gloves
+[Weapon & Knives](https://forums.alliedmods.net/showthread.php?t=298770) | `1.7.1` | Custom weapon skins
 [Accelerator](https://forums.alliedmods.net/showthread.php?t=277703) | `2.5.0-cd575aa` | Crash Reporting That Doesn't Suck
 [Capture the flag](https://forums.alliedmods.net/showthread.php?p=2466337) | `1.2` | Capture the flag for CS:GO
 [Models in map](https://forums.alliedmods.net/showthread.php?p=2389415) | `1.2` | Allows you to place models in map. Required for CTF
@@ -57,15 +57,21 @@ Mod | Version | Why
 
 ## Maps
 
-You need to source your own maps and update `csgo/mapcycle_*` to match your maps.
+You can source your own maps and update `csgo/mapcycle_*` to match or you can use [my bundled maps](https://github.com/kus/csgo-modded-server-assets) that my server uses.
 
 ### Download maps
+
+Linux: 
 
 ```
 # cd to "csgo" parent directory so you are in the same folder as srcds
 cd /home/steam/csgo/
 curl --silent --output "automate.sh" "https://raw.githubusercontent.com/kus/csgo-modded-server-assets/master/automate.sh" && chmod +x automate.sh && bash automate.sh
 ```
+
+Windows:
+
+[Download](https://github.com/kus/csgo-modded-server-assets/archive/master.zip), unzip and unbzip all the files with [7-Zip](https://www.7-zip.org/download.html) and copy the contents from the csgo/ folder into your servers csgo/csgo/ folder.
 
 ## Fast DL
 

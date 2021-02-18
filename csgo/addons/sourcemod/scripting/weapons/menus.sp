@@ -856,9 +856,9 @@ Menu CreateKnifeMenu(int client)
 	return menu;
 }
 
-public int KnifeMenuHandler(Menu menu, MenuAction action, int client, int selection)
+public int KnifeMenuHandler(Menu menu, MenuAction menuaction, int client, int selection)
 {
-	switch(action)
+	switch(menuaction)
 	{
 		case MenuAction_Select:
 		{
@@ -868,12 +868,44 @@ public int KnifeMenuHandler(Menu menu, MenuAction action, int client, int select
 				menu.GetItem(selection, knifeIdStr, sizeof(knifeIdStr));
 				int knifeId = StringToInt(knifeIdStr);
 				
+				Action action = Plugin_Continue;
+				Call_StartForward(g_hOnKnifeSelect_Pre);
+				Call_PushCell(client);
+				Call_PushCell(knifeId);
+				if(knifeId == 0)
+				{
+					Call_PushString("weapon_knife");
+				}
+				else
+				{
+					Call_PushString(g_WeaponClasses[knifeId]);
+				}
+				Call_Finish(action);
+
+				if(action >= Plugin_Handled)
+				{
+					return;
+				}
+				
 				g_iKnife[client] = knifeId;
 				char updateFields[50];
 				Format(updateFields, sizeof(updateFields), "knife = %d", knifeId);
 				UpdatePlayerData(client, updateFields);
 				
 				RefreshWeapon(client, knifeId, knifeId == 0);
+				
+				Call_StartForward(g_hOnKnifeSelect_Post);
+				Call_PushCell(client);
+				Call_PushCell(knifeId);
+				if(knifeId == 0)
+				{
+					Call_PushString("weapon_knife");
+				}
+				else
+				{
+					Call_PushString(g_WeaponClasses[knifeId]);
+				}
+				Call_Finish();
 				
 				int menuTime;
 				if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)

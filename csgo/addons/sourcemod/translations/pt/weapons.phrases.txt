@@ -6,27 +6,27 @@
 	}
 	"ChooseKnife"
 	{
-		"pt"	"★ Mudar Suas Facas ★"
+		"pt"	"★ Mudar Faca ★"
 	}
 	"ConfigAllWeapons"
 	{
-		"pt"	"Configurar Todas As Armas"
+		"pt"	"Configurar todas as armas"
 	}
 	"KnifeMenuTitle"
 	{
-		"pt"	"★ Seleção De Facas ★"
+		"pt"	"★ Seleção de Faca ★"
 	}
 	"AllWeaponsMenuTitle"
 	{
-		"pt"	"Todas As Armas"
+		"pt"	"Todas as Armas"
 	}
 	"Increase"
 	{
-		"pt"	"Aumentar %d%%"
+		"pt"	"Aumentar em %d%%"
 	}
 	"Decrease"
 	{
-		"pt"	"Diminuir %d%%"
+		"pt"	"Diminuir em %d%%"
 	}
 	"NameTagInfo"
 	{
@@ -34,7 +34,7 @@
 	}
 	"NameTagColor"
 	{
-		"pt"	"Escolher cor da name tag"
+		"pt"	"Escolher Cor da Name Tag"
 	}
 	"NameTagDisabled"
 	{
@@ -50,7 +50,7 @@
 	}
 	"ChooseLanguage"
 	{
-		"pt"	"Escolha uma linguagem para as suas skins:"
+		"pt"	"Selecione o idioma para nomes de skin:"
 	}
 	"ChooseColor"
 	{
@@ -78,7 +78,7 @@
 	}
 	"Red"
 	{
-		"pt"	"Encarnado"
+		"pt"	"Vermelho"
 	}
 	"Green"
 	{
@@ -98,11 +98,11 @@
 	}
 	"SetSkin"
 	{
-		"pt"	"Escolha uma skin"
+		"pt"	"Escolha uma Skin"
 	}
 	"SetFloat"
 	{
-		"pt"	"Condição da arma: "
+		"pt"	"Condição da Arma: "
 	}
 	"StatTrak"
 	{
@@ -110,15 +110,15 @@
 	}
 	"SetNameTag"
 	{
-		"pt"	"Name Tag: "
+		"pt"	"Name Tag"
 	}
 	"On"
 	{
-		"pt"	"Ligado"
+		"pt"	"ON"
 	}
 	"Off"
 	{
-		"pt"	"Desligado"
+		"pt"	"OFF"
 	}
 	"weapon_galilar"
 	{
@@ -142,7 +142,7 @@
 	}
 	"weapon_revolver"
 	{
-		"pt"	"Revólver R8"
+		"pt"	"R8 Revolver"
 	}
 	"weapon_deagle"
 	{
@@ -158,7 +158,7 @@
 	}
 	"weapon_sawedoff"
 	{
-		"pt"	"Cano curto"
+		"pt"	"Sawed-Off"
 	}
 	"weapon_negev"
 	{
@@ -198,7 +198,7 @@
 	}
 	"weapon_elite"
 	{
-		"pt"	"Berettas Duplas"
+		"pt"	"Dual Berettas"
 	}
 	"weapon_m249"
 	{
@@ -252,21 +252,25 @@
 	{
 		"pt"	"Glock-18"
 	}
+	"weapon_mp5sd"
+	{
+		"pt"	"MP5-SD"
+	}
 	"weapon_bayonet"
 	{
-		"pt"	"★ Baioneta"
+		"pt"	"★ Bayonet"
 	}
 	"weapon_knife_gut"
 	{
-		"pt"	"★ Gut Hook"
+		"pt"	"★ Gut Knife"
 	}
 	"weapon_knife_flip"
 	{
-		"pt"	"★ Canivete"
+		"pt"	"★ Flip Knife"
 	}
 	"weapon_knife_m9_bayonet"
 	{
-		"pt"	"★ Baioneta M9"
+		"pt"	"★ M9 Bayonet"
 	}
 	"weapon_knife_karambit"
 	{
@@ -274,23 +278,59 @@
 	}
 	"weapon_knife_tactical"
 	{
-		"pt"	"★ Faca de caçador"
+		"pt"	"★ Huntsman Knife"
 	}
 	"weapon_knife_butterfly"
 	{
-		"pt"	"★ Canivete borboleta"
+		"pt"	"★ Butterfly Knife"
 	}
 	"weapon_knife_falchion"
 	{
-		"pt"	"★ Canivete Falchion"
+		"pt"	"★ Falchion Knife"
 	}
 	"weapon_knife_push"
 	{
-		"pt"	"★ Adagas Sombrias"
+		"pt"	"★ Shadow Daggers"
 	}
 	"weapon_knife_survival_bowie"
 	{
-		"pt"	"★ Faca Bowie"
+		"pt"	"★ Bowie Knife"
+	}
+	"weapon_knife_ursus"
+	{
+		"pt"	"★ Ursus"
+	}
+	"weapon_knife_gypsy_jackknife"
+	{
+		"pt"	"★ Navaja"
+	}
+	"weapon_knife_stiletto"
+	{
+		"pt"	"★ Stiletto"
+	}
+	"weapon_knife_widowmaker"
+	{
+		"pt"	"★ Talon"
+	}
+	"weapon_knife_css"
+	{
+		"pt"	"★ Classic Knife"
+	}
+	"weapon_knife_cord"
+	{
+		"pt"	"★ Paracord Knife"
+	}
+	"weapon_knife_canis"
+	{
+		"pt"	"★ Survival Knife"
+	}
+	"weapon_knife_outdoor"
+	{
+		"pt"	"★ Nomad Knife"
+	}
+	"weapon_knife_skeleton"
+	{
+		"pt"	"★ Skeleton Knife"
 	}
 	"weapon_knife_t"
 	{
@@ -299,5 +339,97 @@
 	"weapon_knife"
 	{
 		"pt"	"Knife"
+	}
+	"ChangeNameTag"
+	{
+		"pt"	"Definir Name Tag"
+	}
+	"NameTagNew"
+	{
+		"pt"	"Agora você pode usar o menu !ws para definir a name tag."
+	}
+	"GracePeriod"
+	{
+		"pt"	"Você só pode usar este comando se estiver morto ou nos primeiros %d segundos após o início de cada round."
+	}
+	"ChangeLang"
+	{
+		"pt"	"Mudar Idioma"
+	}
+	"NameTagCancelled"
+	{
+		"pt"	"Operação da name tag foi abortada."
+	}
+	"Yellow"
+	{
+		"pt"	"Amarelo"
+	}
+	"NameTagInstruction"
+	{
+		"pt"	"Escreva a name tag desejada no chat. Para abortar, digite !cancel."
+	}
+	"NameTagSuccess"
+	{
+		"pt"	"Name tag aplicada com sucesso"
+	}
+	"Seed"
+	{
+		"pt"	"Seed"
+	}
+	"SeedTitle"
+	{
+		"pt"	"Seed: %i"
+	}
+	"SeedTitleNoSeed"
+	{
+		"pt"	"Seed: ∞"
+	}
+	"SeedRandom"
+	{
+		"pt"	"Seed Aleatório"
+	}
+	"SeedManual"
+	{
+		"pt"	"Seed Manual"
+	}
+	"SeedSave"
+	{
+		"pt"	"Salvar Seed Atual"
+	}
+	"SeedInstruction"
+	{
+		"pt"	"Escreva a seed desejada no chat. Para abortar, digite !cancel."
+	}
+	"SeedSuccess"
+	{
+		"pt"	"Seed aplicada com sucesso."
+	}
+	"SeedCancelled"
+	{
+		"pt"	"Operação de seed abortada."
+	}
+	"SeedFailed"
+	{
+		"pt"	"Seed inválida (0 - 8192)"
+	}
+	"SeedSaved"
+	{
+		"pt"	"Seed salva."
+	}
+	"SeedDisabled"
+	{
+		"pt"	"O menu de seed está desativado no momento."
+	}
+	"SeedExplanation"
+	{
+		"pt"	"Você deve usar o menu !ws para definir o seed para skins."
+	}
+	"SeedReset"
+	{
+		"pt"	"Seed reseted."
+	}
+	"ResetSeed"
+	{
+		"pt"	"Resetar Seed"
 	}
 }

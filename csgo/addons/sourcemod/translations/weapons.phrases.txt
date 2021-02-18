@@ -28,6 +28,10 @@
 	{
 		"en"	"Decrease by %d%%"
 	}
+	"NameTagInfo"
+	{
+		"en"	"Use !nametag <tag> to choose a name tag for your current weapon!"
+	}	  
 	"NameTagColor"
 	{
 		"en"	"Set Name Tag Color"
@@ -35,6 +39,14 @@
 	"NameTagDisabled"
 	{
 		"en"	"Name tag usage is disabled at the moment."
+	}
+	"DontSpamNameTag"
+	{
+		"en"	"Wait a while before using !nametag."
+	}
+	"NameTagNeedsParams"
+	{
+		"en"	"Use: !nametag <tag>"
 	}
 	"ChooseLanguage"
 	{
@@ -60,6 +72,10 @@
 	{
 		"en"	"Black"
 	}
+	"Grey"
+	{
+		"en"	"Grey"
+	} 
 	"Red"
 	{
 		"en"	"Red"
@@ -126,7 +142,7 @@
 	}
 	"weapon_revolver"
 	{
-		"en"	"Revolver"
+		"en"	"R8 Revolver"
 	}
 	"weapon_deagle"
 	{
@@ -334,7 +350,7 @@
 	}
 	"GracePeriod"
 	{
-		"en"	"You can only use !ws command if you're dead or in the first %d seconds after every round start."
+		"en"	"You can only use this command if you're dead or in the first %d seconds after every round start."
 	}
 	"ChangeLang"
 	{
@@ -342,7 +358,7 @@
 	}
 	"NameTagCancelled"
 	{
-		"en"	"Nametag operation aborted."
+		"en"	"Name tag operation aborted."
 	}
 	"Yellow"
 	{
@@ -410,7 +426,7 @@
 	}
 	"SeedReset"
 	{
-		"en"	"Seed reset."
+		"en"	"Seed reseted."
 	}
 	"ResetSeed"
 	{
