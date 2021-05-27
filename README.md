@@ -10,7 +10,7 @@ A single modded Counter-Strike: Global Offensive Dedicated Server that you can c
  - Multi 1v1
  - Practice (record grenade throws etc)
  - Minigames
- - Red Bull Flick (only Flux map which has surfing and jump pads)
+ - Red Bull Flick (only Flux map which has surfing and jump pads [Steam API key](#playing-workshop-maps-collections) required)
  - Deathrun
  - Surf
  - Kreedz Climbing
@@ -73,6 +73,14 @@ curl --silent --output "automate.sh" "https://raw.githubusercontent.com/kus/csgo
 Windows:
 
 [Download](https://github.com/kus/csgo-modded-server-assets/archive/master.zip), unzip and unbzip all the files with [7-Zip](https://www.7-zip.org/download.html) and copy the contents from the csgo/ folder into your servers csgo/csgo/ folder.
+
+### Playing workshop maps/collections
+
+To download maps from the workshop, your server needs access to the steam web api. To allow this you'll need an authorization key which you can generate [here](http://steamcommunity.com/dev/apikey) and set `API_KEY` to the key.
+
+The console command for hosting a workshop map is `host_workshop_map fileid` where `fileid` is the number that comes after `?id=` in the workshop URL for example: [https://steamcommunity.com/sharedfiles/filedetails/?id=2433686680](https://steamcommunity.com/sharedfiles/filedetails/?id=2433686680)
+
+The console command for hosting a workshop collection is `host_workshop_collection collectionid` where `collectionid` is the number that comes after `?id=` in the workshop URL for example: [https://steamcommunity.com/sharedfiles/filedetails/?id=1092904694](https://steamcommunity.com/sharedfiles/filedetails/?id=1092904694). This command will then download all maps in the collection and create a mapgroup out of them, then host it.
 
 ## Fast DL
 
@@ -155,6 +163,8 @@ gcloud compute firewall-rules create source \
 ### Create instance
 You need to create a Steam [Game Login Token](https://steamcommunity.com/dev/managegameservers) and set `STEAM_ACCOUNT` to the key.
 
+To download maps from the workshop, your server needs access to the steam web api. To allow this you'll need an authorization key which you can generate [here](http://steamcommunity.com/dev/apikey) and set `API_KEY` to the key.
+
 If you don't want to make a [preemptible](https://cloud.google.com/compute/docs/instances/create-start-preemptible-instance#gcloud) instace; remove `--preemptible` from the below command.
 
 ```
@@ -165,7 +175,7 @@ gcloud beta compute instances create <instance-name> \
 --zone=australia-southeast1-a \
 --machine-type=n1-standard-2 \
 --network-tier=PREMIUM \
---metadata=RCON_PASSWORD=changeme,STEAM_ACCOUNT=changeme,FAST_DL_URL=https://raw.githubusercontent.com/kus/csgo-modded-server-assets/master/csgo,DUCK_DOMAIN=changeme,DUCK_TOKEN=changeme,MOD_URL=https://github.com/kus/csgo-modded-server/archive/master.zip,startup-script=echo\ "Delaying\ for\ 30\ seconds..."\ &&\ sleep\ 30\ &&\ cd\ /\ &&\ /gcp.sh \
+--metadata=RCON_PASSWORD=changeme,STEAM_ACCOUNT=changeme,API_KEY=changeme,FAST_DL_URL=https://raw.githubusercontent.com/kus/csgo-modded-server-assets/master/csgo,DUCK_DOMAIN=changeme,DUCK_TOKEN=changeme,MOD_URL=https://github.com/kus/csgo-modded-server/archive/master.zip,startup-script=echo\ "Delaying\ for\ 30\ seconds..."\ &&\ sleep\ 30\ &&\ cd\ /\ &&\ /gcp.sh \
 --no-restart-on-failure \
 --maintenance-policy=MIGRATE \
 --scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/compute.readonly,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append \
@@ -262,6 +272,7 @@ Make sure you have **25GB free space**.
 sudo su
 export LAN="0"
 export RCON_PASSWORD="changeme"
+export API_KEY="changeme"
 export STEAM_ACCOUNT=""
 export FAST_DL_URL="https://raw.githubusercontent.com/kus/csgo-modded-server-assets/master/csgo"
 export MOD_URL="https://github.com/kus/csgo-modded-server/archive/master.zip"

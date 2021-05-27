@@ -131,6 +131,7 @@ echo "Starting server on $PUBLIC_IP:$PORT"
     -tickrate $TICKRATE \
     -port $PORT \
     -maxplayers_override $MAXPLAYERS \
+    -authkey $API_KEY
     +game_type 0 \
     +game_mode 0 \
     +mapgroup mg_active \

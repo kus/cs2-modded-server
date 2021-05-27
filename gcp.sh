@@ -22,12 +22,14 @@ get_metadata () {
 
 # Get meta data from GCP and set environment variables
 META_RCON_PASSWORD=$(get_metadata RCON_PASSWORD)
+META_API_KEY=$(get_metadata API_KEY)
 META_MOD_URL=$(get_metadata MOD_URL)
 META_PORT=$(get_metadata PORT)
 META_TICKRATE=$(get_metadata TICKRATE)
 META_MAXPLAYERS=$(get_metadata MAXPLAYERS)
 export LAN="${LAN:-$(get_metadata LAN)}"
 export RCON_PASSWORD="${META_RCON_PASSWORD:-changeme}"
+export API_KEY="${META_API_KEY:-changeme}"
 export STEAM_ACCOUNT="${STEAM_ACCOUNT:-$(get_metadata STEAM_ACCOUNT)}"
 export FAST_DL_URL="${FAST_DL_URL:-$(get_metadata FAST_DL_URL)}"
 export MOD_URL="${META_MOD_URL:-https://github.com/kus/csgo-modded-server/archive/master.zip}"
