@@ -10,6 +10,7 @@ A single modded Counter-Strike: Global Offensive Dedicated Server that you can c
  - Multi 1v1
  - Practice (record grenade throws etc)
  - Minigames
+ - Red Bull Flick (only Flux map which has surfing and jump pads)
  - Deathrun
  - Surf
  - Kreedz Climbing

@@ -10,6 +10,7 @@ Configs
 	"cfg/practice.cfg"		"Practice"
 	"cfg/1v1.cfg"			"1v1"
 	"cfg/deathmatch.cfg"	"Deathmatch"
+	"cfg/redbull.cfg"		"Red Bull Flick"
 	"cfg/mg.cfg"			"Minigames"
 	"cfg/deathrun.cfg"		"Death run"
 	"cfg/surf.cfg"			"Surf"
