@@ -7,6 +7,7 @@ Configs
 	"cfg/gg.cfg"			"Gun Game"
 	"cfg/comp.cfg"			"Competitive"
 	"cfg/retake.cfg"		"Retakes"
+	"cfg/wingman.cfg"		"Wingman"
 	"cfg/practice.cfg"		"Practice"
 	"cfg/1v1.cfg"			"1v1"
 	"cfg/deathmatch.cfg"	"Deathmatch"

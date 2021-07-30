@@ -7,6 +7,7 @@ A single modded Counter-Strike: Global Offensive Dedicated Server that you can c
  - WarMod (competitive)
  - Deathmatch Free For All
  - Retakes
+ - Wingman
  - Multi 1v1
  - Practice (record grenade throws etc)
  - Minigames
