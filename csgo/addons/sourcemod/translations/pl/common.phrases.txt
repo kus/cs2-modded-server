@@ -252,22 +252,22 @@
 
 	"Say all"
 	{
-		"pl"		"Wszyscy"
+		"pl"		"(Wszyscy) {1}"
 	}
 
 	"Chat admins"
 	{
-		"pl"		"Administratorzy"
+		"pl"		"(Administratorzy) {1}"
 	}
 
 	"Chat to admins"
 	{
-		"pl"		"Do administratorów"
+		"pl"		"(Do administratorów) {1}"
 	}
 
 	"Private say to"
 	{
-		"pl"		"Prywatnie do"
+		"pl"		"(Prywatnie do {1}) {2}"
 	}
 
 }
