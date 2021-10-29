@@ -7,12 +7,12 @@ de_inferno
 de_dust2
 de_cbble
 de_cache
+cs_insertion2
 cs_office
 cs_militia
 cs_italy
 cs_assault
 cs_agency
-de_shortdust
-de_shortnuke
-gd_cbble
-gd_rialto
+workshop/2423926054/de_inferno_destruct
+workshop/1595985187/de_mirage_custom
+workshop/2387176217/de_nukefun
