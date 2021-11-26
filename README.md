@@ -55,7 +55,7 @@ Mod | Version | Why
 [Capture the flag](https://forums.alliedmods.net/showthread.php?p=2466337) | `1.2` | Capture the flag for CS:GO
 [Models in map](https://forums.alliedmods.net/showthread.php?p=2389415) | `1.2` | Allows you to place models in map. Required for CTF
 [Easy Downloader](https://forums.alliedmods.net/showthread.php?t=292207) | `1.03` | Downloads and Precaches Files/Folders. Required for CTF
-[PropHunt](https://forums.alliedmods.net/showthread.php?t=277864) | `1.0.5.1` | Terrorists choose a model and hide, and CTs try to find and kill them.
+[PropHunt](https://gitlab.com/Zipcore/Prophunt) | `3` | Terrorists choose a model and hide, and CTs try to find and kill them.
 
 ## Maps
 

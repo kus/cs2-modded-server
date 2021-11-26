@@ -1,277 +1,325 @@
 "Phrases"
 {
-	
-	"Title Select Model"
+	"PropHunt: Reloaded config"
 	{
-		"en"			"Select Model"
+		"en"			"PropHunt: Reloaded config."
+		"ru"			"PropHunt: Настрйки перезагружены."
+		"de"			"PropHunt: Config wurde neu geladen."
 	}
-	
-	"Model Changed"
-	{
-		"en"			"You're now a"
-	}
-
-	"Modelmenu Disabled"
-	{
-		"en"			"You can't change your model anymore in this round."
-	}
-
-	"Did not choose model"
-	{
-		"en"			"You didn't choose a model. Autoassigning..."
-	}
-	
-	"Print to console"
-	{
-		"en"			"Please print this to console:"
-	}
-	
-	"Only terrorists can select models"
-	{
-		"en"			"Only terrorists can select models."
-	}
-	
-	"Only terrorists can use"
-	{
-		"en"			"Only terrorists can use this command."
-	}
-	
-	"CT team is full"
-	{
-		"en"			"CT team is full!"
-	}
-
-	"Type again for ego"
-	{
-		"en"			"Type /tp again to switch back to ego perspective."
-	}
-
-	"Wait for t to hide"
+	"You have been added to seeker team"
 	{
 		"#format"		"{1:d}"
-		"en"			"Give the terrorists {1} seconds to hide."
+		"en"			"You have been added to {darkblue}seeker team {yellow}queue. Current position: {darkred}{1}"
+		"ru"			"Ты был добавлен в очередь в {darkblue}команду водящих {yellow}ты на {darkred}{1}{yellow} позиции."
+		"de"			"Du wurdest der Warteliste für das {darkblue}Seeker-Team {yellow}hinzugefügt. Aktuelle Position: {darkred}{1}"
 	}
-
-	"seconds to hide"
+	"Youre now frozen"
+	{
+		"en"			"You're now {darkblue}frozen{yellow}. Just start moving to unfreeze yourself."
+		"ru"			"Сейчас ты {darkblue}заморожен{yellow}. Чтобы разморозиться просто начни двигаться."
+		"de"			"Du bist nun {darkblue}gefroren{yellow}. Beweg dich in eine Richtung um dich selbst aufzutauen."
+	}
+	"You have s to hide"
 	{
 		"#format"		"{1:d}"
-		"en"			"You have {1} seconds to hide. Find a place where you fit into the background!"
+		"en"			"{green}You have {yellow}{1}s{green} to hide."
+		"ru"			"{green}У тебя {yellow}{1} секунд{green} чтобы спрятаться."
+		"de"			"{green}Du hast {yellow}{1}s{green} um dich zu verstecken."
 	}
-
-	"Go search"
-	{
-		"en"			"You don't think all terrorists are hidden well? Go find them!"
-	}
-
-	"whistled"
-	{
-		"en"			"whistled!"
-	}
-    
-	"whistles left"
+	"You are blind"
 	{
 		"#format"		"{1:d}"
-		"en"			"You are allowed to whistle {1} more times."
+		"en"			"{blue}You are {white}blind{blue} for {yellow}{1}s{blue} to give the other team time to find a place to hide."
+		"ru"			"{blue}Ты {white}закрыл глаза{blue} на {yellow}{1} секунд{blue} чтобы другие игроки успели спрятаться."
+		"de"			"{blue}Du bist jetzt {white}blind{blue} für {yellow}{1}s{blue} damit das andere Team einen guten Platz zum verstecken finden kann."
 	}
-
-	"Whistling not allowed yet"
+	"The model has been saved and will be spawned here every round!"
 	{
-		"en"			"Whistling is not allowed yet."
+		"en"			"The model has been saved and will be spawned here every round!"
+		"ru"			"Модель сохранена и будет появляться в каждом раунде!"
+		"de"			"Dieses Model wurde gespeichert und wird jede Runde genau hier spawnen."
 	}
-
-	"T type /whistle"
+	"You need to freeze first before you can do this!"
 	{
-		"en"			"Terrorists may whistle to give a hint. Type \"/whistle\" in chat!"
+		"en"			"You need to freeze first before you can do this!"
+		"ru"			"Чтобы это сделать нужно полностью замереть!"
+		"de"			"Du musst zuerst gefroren sein um das zu nutzen!"
 	}
-	
-	"whistle limit exceeded"
+	"The model has been saved and will be spawned here randomly per round!"
 	{
-		"#format"		"{1:d}"
-		"en"			"You already used your {1} whistles this round."
+		"en"			"The model has been saved and will be spawned here randomly per round!"
+		"ru"			"Модель сохранена и будет появляться здесь случайно в раунде!"
+		"de"			"Das Model wurde gesichert und wird zufällig bei Rundenanfang spawnen!"
 	}
-
-	"T type /tp"
+	"Write the new setting to chat or abort"
 	{
-		"en"			"Type \"/tp\" in chat to toggle thirdperson view!"
+		"en"			"Write the new setting to chat or abort by typing \"no\":"
+		"ru"			"Напиши новую настройку в чат или отмени написав в чат \"no\":"
+		"de"			"Sende die neue Einstellung an den Chat oder brich ab mit \"no\":"
 	}
-
-	"Type !hide"
+	"Name set to"
 	{
-		"en"			"Type \"/hide\" in chat to open the model menu."
+		"#format"		"{1:s}"
+		"en"			"Name set to: {1}"
+		"ru"			"Имя изменено на: {1}"
+		"de"			"Namen geändert in: {1}"
 	}
-
-	"Spectator Cheater"
-	{
-		"en"			"has been moved to spectator because of bad cvars."
-	}
-
-	"Kick bad cvars"
-	{
-		"en"			"You have to change the above cvars (console) to play on this server."
-	}
-
-	"protected cvar"
-	{
-		"en"			"This cvar is protected. Leave it alone!"
-	}
-
-	"got frags"
+	"HP set to"
 	{
 		"#format"		"{1:d}"
-		"en"			"All surviving hiders got {1} points. Good job!"
+		"en"			"HP set to: {1}"
+		"ru"			"Здоровье изменено на: {1}"
+		"de"			"HP gesetzt auf: {1}"
 	}
-
-	"Hider Freezed"
+	"Max HP set to"
 	{
-		"en"			"You're frozen in place."
+		"#format"		"{1:d}"
+		"en"			"Max HP set to: {1}"
+		"ru"			"Максимальное здоровье изменено на: {1}"
+		"de"			"Max HP gesetzt auf: {1}"
 	}
-
-	"Hider Unfreezed"
+	"Speed set to"
+	{
+		"#format"		"{1:f}"
+		"en"			"Speed set to: {1}"
+		"ru"			"Скорость изменена на: {1}"
+		"de"			"Geschwindigkeit gesetzt auf: {1}"
+	}
+	"Gravity set to"
+	{
+		"#format"		"{1:f}"
+		"en"			"Gravity set to: {1}"
+		"ru"			"Гравитация изменена на: {1}"
+		"de"			"Schwerkraft gesetzt auf: {1}"
+	}
+	"Height set to"
+	{
+		"#format"		"{1:f}"
+		"en"			"Height set to: {1}"
+		"ru"			"Гравитация изменена на: {1}"
+		"de"			"Größe gesetzt auf: {1}"
+	}
+	"Offset x set to"
+	{
+		"#format"		"{1:f}"
+		"en"			"Offset x set to: {1}"
+		"ru"			"Расположение по оси X изменено на: {1}"
+		"de"			"Koordinate X gesetzt auf: {1}"
+	}
+	"Offset y set to"
+	{
+		"#format"		"{1:f}"
+		"en"			"Offset y set to: {1}"
+		"ru"			"Расположение по оси Y изменено на: {1}"
+	}
+	"Rotation X set to"
+	{
+		"#format"		"{1:f}"
+		"en"			"Rotation X set to: {1}"
+		"ru"			"Угол по оси X изменен на: {1}"
+		"de"			"Rotation X gesetzt auf: {1}"
+	}
+	"Rotation Y set to"
+	{
+		"#format"		"{1:f}"
+		"en"			"Rotation Y set to: {1}"
+		"ru"			"Угол по оси Y изменен на: {1}"
+		"de"			"Rotation Y gesetzt auf: {1}"
+	}
+	"Rotation Z set to"
+	{
+		"#format"		"{1:f}"
+		"en"			"Rotation Z set to: {1}"
+		"ru"			"Угол по оси Z изменен на: {1}"
+		"de"			"Rotation Z gesetzt auf: {1}"
+	}
+	"Skin set to"
+	{
+		"#format"		"{1:d}"
+		"en"			"Skin set to: {1}"
+		"ru"			"Скин изменен на: {1}"
+		"de"			"Skinvariante gesetzt auf: {1}"
+	}
+	"Weight set to"
+	{
+		"#format"		"{1:d}"
+		"en"			"Weight set to: {1}"
+		"ru"			"Вес изменен на: {1}"
+		"de"			"Gewicht gesetzt auf: {1}"
+	}
+	"Color set to"
+	{
+		"#format"		"{1:d},{2:d},{3:d}"
+		"en"			"Color set to: {1} {2} {3}"
+		"ru"			"Цвет изменен на: {1} {2} {3}"
+		"de"			"Farbe gesetzt auf: {1} {2} {3}"
+	}
+	"You're able to move again."
 	{
 		"en"			"You're able to move again."
+		"ru"			"Ты снова можешь двигаться."
+		"de"			"Du kannst dich wieder bewegen."
 	}
-
-	"HnS Help"
+	"You can't freeze while falling 2 fast"
 	{
-		"en"			"PropHunt: Help"
+		"en"			"{darkred}You can't {darkblue}freeze{darkred} while falling 2 fast"
+		"ru"			"{darkred}Ты не можешь {darkblue}замереть{darkred} падая так быстро"
+		"de"			"{darkred}Du kannst dich nicht im freien Fall {darkblue}einfrieren."
 	}
-
-	"Running HnS"
+	"You can't freeze that high above ground"
 	{
-		"en"			"This server is running PropHunt."
+		"en"			"{darkred}You can't {darkblue}freeze{darkred} that high above ground."
+		"ru"			"{darkred}Ты не можешь {darkblue}замереть{darkred} находять в воздухе над землей."
+		"de"			"{darkred}Du kannst dich nicht so weit oben über dem Boden {darkblue}einfrieren."
 	}
-
-	"Instructions 1"
+	"You can't freeze above water."
 	{
-		"en"			"Terrorists choose a model and hide, CTs search and kill them."
+		"en"			"{darkred}You can't {darkblue}freeze{darkred} above {darkblue}water{darkred}."
+		"ru"			"{darkred}Ты не можешь {darkblue}замереть{darkred} находять в воздухе над водой."
+		"de"			"{darkred}Du kannst dich nicht {darkblue}einfrieren{darkred} über {darkblue}Wasser{darkred} oder anderen gleich viskosen Substanzen."
 	}
-
-	"Available Commands"
+	"whoami"
 	{
-		"en"			"Available Chat Commands"
+		"#format"		"{1:s}"
+		"en"			"You're a {lime}{1}{yellow}."
+		"ru"			"Ты {lime}{1}{yellow}."
+		"de"			"Du bist ein/e {lime}{1}{yellow}."
 	}
-
-	"Howto CT"
+	"Find all demons"
 	{
-		"en"			"How to play as seeker?"
+		"en"			"{lime}Find all demons and stop them before they bring doom into your world!"
+		"ru"			"{lime}Найди всех демонов и останови их, прежде чем они захватят твой мир!"
+		"de"			"{lime}Finde alle Dämonen und halte sie auf, bevor sie die Apokalypse auf die Welt bringen und alle Ungläubigen bestrafen!"
 	}
-
-	"Instructions CT 1"
-	{
-		"en"			"Seekers have to find the hiders, who could be everything from an oil drum to a pot plant and kill them."
-	}
-
-	"Instructions CT 2"
+	"Try again in s"
 	{
 		"#format"		"{1:d}"
-		"en"			"Be careful with your shootings! You may loose {1} HP per shot."
+		"en"			"Try again in {darkred}{1}s{yellow}."
+		"ru"			"Попробуй ещё через {darkred}{1} секунд{yellow}."
+		"de"			"Hör auf zu spammen! Warte noch {darkred}{1} Sekunde/n{yellow}"
 	}
-
-	"Instructions CT 3"
+	"Taunted"
+	{
+		"#format"		"{1:s}"
+		"en"			"{purple}{1} {yellow}taunted."
+		"ru"			"{purple}{1} {yellow}свистнул."
+		"de"			"{purple}{1} {yellow}macht einen Lockruf."
+	}
+	"Taunt Overload Warn"
+	{
+		"en"			"{darkred}WARNING: {yellow}Taunt overload! Taunt before punishment kicks in."
+		"de"			"{darkred}ACHTUNG: {yellow}Mach schnell einen Lockruf, sonst wirst du bestraft!"
+	}
+	"Taunt Overload"
+	{
+		"#format"		"{1:s}"
+		"en"			"{purple}{1} {darkred}Didn't taunt for to much time."
+		"de"			"{purple}{1} {darkred}hat fuer zu lange keinen Lockruf abgespielt."
+	}
+	"Taunt Forced"
+	{
+		"#format"		"{1:s},{2:s}"
+		"en"			"{purple}{1} {yellow}forced {purple}{2} {yellow}to taunt."
+		"ru"			"{purple}{1} {yellow}заставил {purple}{2} {yellow}просвистеть."
+		"de"			"{purple}{1} {yellow}zwang {purple}{2} {yellow}die Sucher zu Locken."
+	}
+	"Force Taunt: failed"
+	{
+		"en"			"Force Taunt: {darkred}failed"
+		"ru"			"Принудительный свисток: {darkred}неудачно"
+		"de"			"Lockruf erzwingen {darkred}fehlgeschlagen."
+	}
+	"You can't force the last hider to whistle."
+	{
+		"en"			"You can't force the last hider to whistle."
+		"ru"			"Нельзя заставить свистнуть последнего игрока."
+		"de"			"Du kannst den letzten Dämon zu nichts mehr zwingen! Viel Glück tapferer Held."
+	}
+	"No alive hiders found."
+	{
+		"en"			"No alive hiders found."
+		"ru"			"Нет живых игроков."
+		"de"			"Es keine Gegner am leben."
+	}
+	"Not enough points"
 	{
 		"#format"		"{1:d},{2:d}"
-		"en"			"You gain {1} HP on hider hurt and {2} HP when killing a hider. Always keep an eye behind you!"
+		"en"			"Not enough points, need: {darkred}{1} {yellow}have: {darkred}{2}."
+		"ru"			"Не хватает очков, нужно: {darkred}{1}{yellow}, а у тебя: {darkred}{2}."
+		"de"			"Night genug Punkte, Preis: {darkred}{1} {yellow}Konto: {darkred}{2}."
 	}
-
-	"Howto T"
+	"Spent points"
 	{
-		"en"			"How to play as hider?"
+		"#format"		"{1:d},{2:d}"
+		"en"			"You spent {darkred}{1} {yellow}points and you have {darkred}{2} {yellow}points left."
+		"ru"			"Ты потратил {darkred}{1} {yellow}очков и у тебя осталось {darkred}{2}."
+		"de"			"Du hast {darkred}{1} {yellow}Punkte ausgegeben und noch {darkred}{2} {yellow}auf deinem Konto."
 	}
-
-	"Instructions T 1"
-	{
-		"en"			"Hiders choose a model which is common on the current map and should search a place they blend in best."
-	}
-
-	"Instructions T 2"
-	{
-		"en"			"Keep moving to give the seekers a chance and higher the action!"
-	}
-
-	"cmd hide"
-	{
-		"en"			"Displays the model choice menu."
-	}
-
-	"cmd tp"
-	{
-		"en"			"Toggles the thirdperson view."
-	}
-
-	"cmd whistle"
-	{
-		"en"			"Play a sound from the hiders position to give the seekers a hint."
-	}
-
-	"cmd whoami"
-	{
-		"en"			"Prints the current modelname in chat."
-	}
-
-	"cmd freeze"
-	{
-		"en"			"Freezes the hider in place."
-	}
-
-	"cmd hidehelp"
-	{
-		"en"			"Displays this help menu."
-	}
-
-	"going to switch"
-	{
-		"#format"		"{1:s}"
-		"en"			"{1} will be switched to the hider team at the end of the round."
-	}
-
-	"stop switch"
-	{
-		"#format"		"{1:s}"
-		"en"			"{1} will no longer be switched to the hider team at the end of the round."
-	}
-
-	"switched ct"
-	{
-		"#format"		"{1:s}"
-		"en"			"{1} has been switched to seeker team."
-	}
-
-	"switched t"
-	{
-		"#format"		"{1:s}"
-		"en"			"{1} has been switched to hider team."
-	}
-
-	"random"
-	{
-		"en"			"Random model"
-	}
-
-	"balancing"
-	{
-		"en"			"Balancing teams..."
-	}
-
-	"scrambling"
-	{
-		"en"			"Scrambling teams..."
-	}
-
-	"periodic whistle"
-	{
-		"#format"		"{1:s}"
-		"en"			"It was {1}'s time to whistle."
-	}
-
-	"will whistle"
+	"Shop Heal Bought"
 	{
 		"#format"		"{1:d}"
-		"en"			"{1} seconds until someone whistles!"
+		"en"			"You healed {1} HP."
+		"de"			"Du hast {1} HP geheilt."
 	}
-
-	"turns until switch"
+	"Shop Heal Full"
 	{
-		"#format"		"{1:d}"
-		"en"			"Turns until team switch: {1}"
+		"en"			"You are already full health."
+		"de"			"Du bist schon vollkommen geheilt."
+	}
+	"Already Bought"
+	{
+		"en"			"You bought this already."
+		"ru"			"Ты уже купил это."
+		"de"			"Du hast das schon gekauft."
+	}
+	"Req Frozen"
+	{
+		"en"			"You need to be {darkblue}frozen{yellow} to be able to buy this."
+		"ru"			"Тебе нужно {darkblue}fзамереть{yellow} чтобы купить это."
+		"de"			"Du musst {darkblue}feingefrohren{yellow} sein um dies zu kaufen."
+	}
+	"Not Unlocked"
+	{
+		"en"			"This item is locked, try again later."
+		"ru"			"Этот предмет недоступен. Как-нибудь в другой раз."
+		"de"			"Du kannst das noch nicht kaufen."
+	}
+	"Buy Disabled"
+	{
+		"en"			"Buying this item has been disabled."
+		"ru"			"Это не продается."
+		"de"			"Der Gegenstand wird nicht mehr zum Kauf angeboten."
+	}
+	"Buy Disabled2"
+	{
+		"en"			"Buying this item has been disabled for you."
+		"ru"			"Это не продается (для тебя)."
+		"de"			"Der Gegenstand wird für dich nicht mehr zum Kauf angeboten."
+	}
+	"Freeze Air Upgrade"
+	{
+		"en"			"You can now freeze more up into the air."
+		"ru"			"Теперь ты снова можешь замереть в воздухе."
+		"de"			"Du kannst dich höher in der Luft halten beim einfrieren."
+	}
+	"HUD Mode Help"
+	{
+		"en"			"{lime}Activated helper HUD mode. Use !hud again to switch to normal HUD mode."
+	}
+	"HUD Mode Normal"
+	{
+		"en"			"{lime}Deactivated helper HUD mode. Use !hud again to disable it completly."
+	}
+	"HUD Mode Disabled"
+	{
+		"en"			"{lime}HUD disabled. Use !hud again to enable it again."
+	}
+	"HUD Help Hider"
+	{
+		"en"			"<mouse1> Taunt\n<mouse2> Shop menu\n<F> Freeze\n!hud: Disable this message"
+	}
+	"HUD Help Seeker"
+	{
+		"en"			"<mouse2+knife> Shop menu\n!hud: Disable this message"
 	}
 }
