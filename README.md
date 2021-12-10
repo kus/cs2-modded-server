@@ -6,11 +6,13 @@ A single modded Counter-Strike: Global Offensive Dedicated Server that you can c
  - GunGame +Turbo (get the next weapon straight away) +Deathmatch (respawn) +Quake sounds +Mario (on 3 kills)
  - WarMod (competitive)
  - Deathmatch Free For All
+ - Prop Hunt / Hide n Seek
  - Retakes
  - Wingman
  - Multi 1v1
  - Practice (record grenade throws etc)
  - Minigames
+ - Squid Game [Steam API key](#playing-workshop-maps-collections) required
  - Red Bull Flick (only Flux map which has surfing and jump pads [Steam API key](#playing-workshop-maps-collections) required)
  - Deathrun
  - Surf
