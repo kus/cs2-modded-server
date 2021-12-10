@@ -58,6 +58,7 @@ Mod | Version | Why
 [PropHunt](https://gitlab.com/Zipcore/Prophunt) | `3.0.0` | Terrorists choose a model and hide, and CTs try to find and kill them.
 [Sound Info Library](https://forums.alliedmods.net/showthread.php?t=105816) | `1.0.1` | Better calculation of sound length and information required for PropHunt
 [SpeedRules](https://gitlab.com/Zipcore/speedrules) | `1.0` | Advanced system to sync speed rules required for PropHunt
+[Simple-Downloader](https://github.com/JakubKosmaty/Simple-Downloader) | `1.0` | Force clients to download files (audio for PropHunt)
 
 ## Maps
 
