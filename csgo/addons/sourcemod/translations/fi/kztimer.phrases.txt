@@ -1,4 +1,4 @@
-﻿
+
 "Phrases"
 {
 
@@ -16,11 +16,6 @@
 	{
 		"#format"	"{1:c},{2:c},{3:c},{4:s},{5:i},{6:s},{7:s},{8:i},{9:i}"
 		"fi"		"[{1}GLOBAL{2}] {3}{4} on nyt #{5} (TP) kartassa {6}! [{7}, TPt: {8}, Tick{9}]"
-	}
-	"UndoLadder"
-	{
-		"#format"	"{1:c},{2:c},{3:c}"
-		"fi"		"[{1}KZ{2}] {3}TP kumoaminen ei ole mahdollista, koska teleporttipisteesi oli tikapuissa"
 	}
 	"UndoMidAir"
 	{
@@ -68,6 +63,10 @@
 	"options_lang_pt"
 	{
 		"fi"		"Language - Portuguese Brazilian"
+	}
+	"options_lang_es"
+	{
+		"fi"       "Language - Spanish"
 	}
 	"stopsound"
 	{
@@ -230,14 +229,6 @@
 	"options_gotome_off"
 	{
 		"fi"		"!goto sallittu minuun  -  Poissa käytöstä"
-	}
-	"options_autobhop_on"
-	{
-		"fi"		"AutoBhop  -  Käytössä"
-	}
-	"options_autobhop_off"
-	{
-		"fi"		"AutoBhop  -  Poissa käytöstä"
 	}
 	"HideChat1"
 	{
@@ -1156,21 +1147,6 @@
 	{
 		"#format"	"{1:c},{2:c}"
 		"fi"		"[{1}KZ{2}] Strafe sync chattiin poistettu käytöstä."
-	}
-	"AutoBhop1"
-	{
-		"#format"	"{1:c},{2:c}"
-		"fi"		"[{1}KZ{2}] AutoBhop otettu käyttöön."
-	}
-	"AutoBhop2"
-	{
-		"#format"	"{1:c},{2:c}"
-		"fi"		"[{1}KZ{2}] AutoBhop poistettu käytöstä."
-	}
-	"AutoBhop3"
-	{	
-		"#format"	"{1:c},{2:c}"
-		"fi"		"[{1}KZ{2}] AutoBhop poistettu käytöstä. (palvelin-puolelta)"
 	}
 	"AdvClimbersMenu1"
 	{

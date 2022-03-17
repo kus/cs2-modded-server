@@ -108,9 +108,9 @@ public Action Client_ToggleSpeclist(int client, int args)
 
 	switch(g_ShowSpecs[client])
 	{
-		case 0: PrintToChat(client, "[%cKZ%c] Spec list is now set to %cdisabled%c", MOSSGREEN, WHITE, RED, WHITE);
+		case 0: PrintToChat(client, "[%cKZ%c] Spec list is now %cenabled%c", MOSSGREEN, WHITE, LIMEGREEN, WHITE);
 		case 1: PrintToChat(client, "[%cKZ%c] Spec list is now set to %ccount only%c", MOSSGREEN, WHITE, LIMEGREEN, WHITE);
-		case 2: PrintToChat(client, "[%cKZ%c] Spec list is now %cenabled%c", MOSSGREEN, WHITE, LIMEGREEN, WHITE);
+		case 2: PrintToChat(client, "[%cKZ%c] Spec list is now set to %cdisabled%c", MOSSGREEN, WHITE, RED, WHITE);
 	}
 
 	return Plugin_Handled;
@@ -234,14 +234,6 @@ public Action:Command_Specs(client, args)
 	return Plugin_Handled;
 }
 
-
-public Action:Client_RankingSystem(client, args)
-{
-	PrintToChat(client, "%t", "RankingSystem", MOSSGREEN,WHITE,LIMEGREEN);
-	ShowMOTDPanel(client, "rankingsystem" ,"http://kuala-lumpur-court-8417.pancakeapps.com/ranking_index.html", 2);
-	return Plugin_Handled;
-}
-
 public Action:Client_Ljblock(client, args)
 {
 	if (IsValidClient(client) && IsPlayerAlive(client))
@@ -253,10 +245,7 @@ public Action:Client_Wr(client, args)
 {
 	if (IsValidClient(client))
 	{
-		if (g_fGlobalRecordTp_Time == 9999999.0 && g_fGlobalRecordPro_Time == 9999999.0 && g_fRecordTimePro == 9999999.0 && g_fRecordTime == 9999999.0)
-			PrintToChat(client, "%t", "NoRecordTop", MOSSGREEN,WHITE);
-		else
-			PrintMapRecords(client);
+		PrintMapRecords(client);
 	}
 	return Plugin_Handled;
 }
@@ -264,30 +253,17 @@ public Action:Client_Wr(client, args)
 public Action:Client_MapTier(client, args)
 {
 	if (!IsValidClient(client))
+	{
 		return Plugin_Handled;
-
-	else
-	{
-		if(gB_KZTimerAPI)
-		{
-			KZTimerAPI_PrintMapTier(client);
-		}
-		PrintMapTier(client);
 	}
+	
+	if (gB_KZTimerAPI)
+	{
+		KZTimerAPI_PrintMapTier(client);
+	}
+	
 	return Plugin_Handled;
 }
-
-public Action:Client_TierHelp(client, args)
-{
-	if (IsValidClient(client))
-	{
-		PrintToChat(client,"[%cKZ%c]%c Loading html page.. (requires cl_disablehtmlmotd 0)", MOSSGREEN,WHITE,LIMEGREEN);
-		ShowMOTDPanel(client, "TierInfo" ,"http://tokyo-lane-2453.pancakeapps.com/TierInfo.html", 2);
-	}
-
-	return Plugin_Handled;
-}
-
 
 public LJBlockMenu(client)
 {
@@ -318,6 +294,10 @@ public LjBlockMenuHandler(Handle:ljblockmenu, MenuAction:action, client, select)
 			g_bLJBlock[client] = false;
 			LJBlockMenu(client);
 		}
+	}
+	else if (action == MenuAction_End)
+	{
+		delete ljblockmenu;
 	}
 }
 
@@ -604,7 +584,6 @@ public Action:Client_Accept(client, args)
 				g_Challenge_Bet[client] = g_Challenge_Bet[i];
 				g_bChallenge_Checkpoints[client] = g_bChallenge_Checkpoints[i];
 
-				g_fTeleportValidationTime[client] = GetEngineTime();
 				CS_RespawnPlayer(client);
 				SetEntityMoveType(client, MOVETYPE_NONE);
 				CreateTimer(0.5, SetChallengeSpawnPoint, i,TIMER_FLAG_NO_MAPCHANGE);
@@ -829,6 +808,14 @@ public Action:Command_JoinTeam(client, const String:command[], argc)
  	{
 		return Plugin_Handled;
  	}
+ 	
+ 	// Fix for spec unspec bug in the air.
+ 	if (toteam == CS_TEAM_SPECTATOR && GetEntityMoveType(client) != MOVETYPE_LADDER
+ 		&& !(GetEntityFlags(client) & FL_ONGROUND))
+ 	{
+ 		PrintToChat(client, "[%cKZ%c] You can't join spectator while in the air!", MOSSGREEN, WHITE);
+ 		return Plugin_Handled;
+ 	}
 	
 	if (g_Team_Restriction > 0)
 	{
@@ -931,69 +918,90 @@ public Action:Client_Next(client, args)
 }
 public Action:Client_Undo(client, args)
 {
-	new Float:fLastUndo = GetEngineTime() - g_fLastUndo[client];
-	if (IsValidClient(client) && !g_bPause[client] && !g_bInvalidUndoGround[client] && fLastUndo > 1.0)
+	if (!IsValidClient(client)
+		|| g_bPause[client])
 	{
-		if(g_fPlayerCordsUndoTp[client][0] == 0.0 && g_fPlayerCordsUndoTp[client][1] == 0.0 && g_fPlayerCordsUndoTp[client][2] == 0.0)
-			return Plugin_Handled;
-		if (GetClientDistanceToGround(g_fPlayerCordsUndoTp[client]) < 66.0)
+		return Plugin_Handled;
+	}
+	
+	if (!g_bInvalidUndoGround[client])
+	{
+		if (!(g_fPlayerCordsUndoTp[client][0] == 0.0
+			&& g_fPlayerCordsUndoTp[client][1] == 0.0
+			&& g_fPlayerCordsUndoTp[client][2] == 0.0))
 		{
-			g_fLastUndo[client] = GetEngineTime();
-			DoValidTeleport(client, g_fPlayerCordsUndoTp[client],g_fPlayerAnglesUndoTp[client], Float:{0.0,0.0,-100.0});
+			CreateTimer(RESET_VELOCITY_DELAY, ZeroVelocity, client);
+			DoValidTeleport(client, g_fPlayerCordsUndoTp[client], g_fPlayerAnglesUndoTp[client], NULL_VECTOR);
 			g_js_GODLIKE_Count[client] = 0;
-		}
-		else
-		{
-			if (g_bErrorSounds[client])
-			{
-				EmitSoundToClient(client,"buttons/button10.wav",client);
-			}
-			PrintToChat(client, "%t", "UndoMidAir",MOSSGREEN, WHITE,RED);
+			g_OverallTp[client]++;
 		}
 	}
 	else
 	{
-		if (g_bInvalidUndoGround[client])
+		if (g_bErrorSounds[client])
 		{
-			if (g_bErrorSounds[client])
-			{
-				EmitSoundToClient(client,"buttons/button10.wav",client);
-			}
-			PrintToChat(client, "%t", "UndoLadder",MOSSGREEN, WHITE,RED);
+			EmitSoundToClient(client,"buttons/button10.wav",client);
 		}
+		PrintToChat(client, "%t", "UndoMidAir",MOSSGREEN, WHITE,RED);
 	}
 	return Plugin_Handled;
 }
 
 
-public Action:NoClip(client, args)
+public Action NoClip(int client, int args)
 {
 	if (!IsValidClient(client))
-		return Plugin_Handled;
-	if (g_bNoClipS || GetUserFlagBits(client) & ADMFLAG_RESERVATION || GetUserFlagBits(client) & ADMFLAG_ROOT || GetUserFlagBits(client) & ADMFLAG_GENERIC || StrEqual(g_pr_rankname[client],"MAPPER"))
 	{
-		if (!g_bMapFinished[client])
-		{
-			//BEST RANK || ADMIN || VIP || MAPPER
-			if ((StrEqual(g_pr_rankname[client],g_szSkillGroups[8]) || StrEqual(g_pr_rankname[client],"MAPPER") || GetUserFlagBits(client) & ADMFLAG_RESERVATION || GetUserFlagBits(client) & ADMFLAG_ROOT || GetUserFlagBits(client) & ADMFLAG_GENERIC) && !g_bNoClip[client])
-				Action_NoClip(client);
-			else
-				PrintToChat(client, "%t", "NoclipNotAvailable2",MOSSGREEN, WHITE, g_szSkillGroups[8]);
-		}
-		else
-			if (!g_bNoClip[client])
-				Action_NoClip(client);
+		return Plugin_Handled;
 	}
-	else
-		if (IsValidClient(client))
+	
+	// top rank or vip or admin or mapper
+	bool privileged = StrEqual(g_pr_rankname[client], g_szSkillGroups[8]) || GetUserFlagBits(client) & (ADMFLAG_RESERVATION | ADMFLAG_ROOT | ADMFLAG_GENERIC) || g_bMapper[client]
+	
+	switch (g_iNoClipMode)
+	{
+		case NOCLIPMODE_DISABLED:
+		{
 			PrintToChat(client, "%t", "NoclipNotAvailable3",MOSSGREEN, WHITE);
+		}
+		case NOCLIPMODE_NORMAL:
+		{
+			if (g_bMapFinished[client] || privileged)
+			{
+				Action_NoClip(client);
+			}
+			else
+			{
+				PrintToChat(client, "%t", "NoclipNotAvailable2", MOSSGREEN, WHITE, g_szSkillGroups[8]);
+			}
+		}
+		case NOCLIPMODE_PRIVILEGED:
+		{
+			if (privileged)
+			{
+				Action_NoClip(client);
+			}
+			else
+			{
+				PrintToChat(client, "%t", "NoclipNotAvailablePrivileged", MOSSGREEN, WHITE, g_szSkillGroups[8]);
+			}
+		}
+		default:
+		{
+			Action_NoClip(client);
+		}
+	}
+	
 	return Plugin_Handled;
 }
 
-public Action:UnNoClip(client, args)
+public Action UnNoClip(int client, int args)
 {
-	if (g_bNoClip[client] == true)
+	if (GetEntityMoveType(client) == MOVETYPE_NOCLIP)
+	{
 		Action_UnNoClip(client);
+	}
+	
 	return Plugin_Handled;
 }
 
@@ -1073,30 +1081,37 @@ public Action:Client_Spec(client, args)
 //https://forums.alliedmods.net/showthread.php?t=88830?t=88830
 public Action:Command_Menu(client,args)
 {
+	Showmenu_Measure(client);
+	
+	return Plugin_Handled;
+}
+
+void Showmenu_Measure(int client)
+{
 	//Credits: Measure by DaFox
 	//https://forums.alliedmods.net/showthread.php?t=88830
 	
 	decl String:buffer[64];
 	
-	g_hMainMenu = CreateMenu(Handler_MainMenu)
+	Menu menu = CreateMenu(Menu_Measure);
 	Format(buffer, sizeof(buffer), "%T", "MeasureMenuTitle", client);
-	SetMenuTitle(g_hMainMenu, buffer);
+	SetMenuTitle(menu, buffer);
 	Format(buffer, sizeof(buffer), "%T", "Measure_Point1", client);
-	AddMenuItem(g_hMainMenu, "", buffer);
+	AddMenuItem(menu, "", buffer);
 	Format(buffer, sizeof(buffer), "%T", "Measure_Point2", client);
-	AddMenuItem(g_hMainMenu, "", buffer);
+	AddMenuItem(menu, "", buffer);
 	Format(buffer, sizeof(buffer), "%T", "Measure_FindDist", client);
-	AddMenuItem(g_hMainMenu, "", buffer);
+	AddMenuItem(menu, "", buffer);
 	Format(buffer, sizeof(buffer), "%T", "Measure_Reset", client);
-	AddMenuItem(g_hMainMenu, "", buffer);
+	AddMenuItem(menu, "", buffer);
+	
 	
 	StopClimbersMenu(client);
 	g_bMenuOpen[client]=true;
-	CreateTimer(0.1, OpenMeasureMenu, client,TIMER_FLAG_NO_MAPCHANGE);
-	return Plugin_Handled;
+	menu.Display(client, MENU_TIME_FOREVER);
 }
 
-public Handler_MainMenu(Handle:menu,MenuAction:action,param1,param2)
+public Menu_Measure(Handle:menu,MenuAction:action,param1,param2)
 {
 	if(action == MenuAction_Select)
 	{
@@ -1123,12 +1138,16 @@ public Handler_MainMenu(Handle:menu,MenuAction:action,param1,param2)
 				ResetPos(param1);
 			}
 		}
-		DisplayMenu(g_hMainMenu,param1,MENU_TIME_FOREVER);
+		Showmenu_Measure(param1);
 	}
 	else if(action == MenuAction_Cancel)
 	{
 		g_bMenuOpen[param1] = false;
 		ResetPos(param1);
+	}
+	else if (action == MenuAction_End)
+	{
+		delete menu;
 	}
 }
 
@@ -1607,29 +1626,6 @@ public ProfileSelectMenuHandler(Handle:menu, MenuAction:action, param1,param2)
 	}
 }
 
-public Action:Client_AutoBhop(client, args)
-{
-	AutoBhop(client);
-	if (g_bAutoBhop)
-	{
-		if (!g_bAutoBhopClient[client])
-			PrintToChat(client, "%t", "AutoBhop2",MOSSGREEN,WHITE);
-		else
-			PrintToChat(client, "%t", "AutoBhop1",MOSSGREEN,WHITE);
-	}
-	return Plugin_Handled;
-}
-
-public AutoBhop(client)
-{
-	if (!g_bAutoBhop)
-		PrintToChat(client, "%t", "AutoBhop3",MOSSGREEN,WHITE);
-	if (!g_bAutoBhopClient[client])
-		g_bAutoBhopClient[client] = true;
-	else
-		g_bAutoBhopClient[client] = false;
-}
-
 public Action:Client_Hide(client, args)
 {
 	HideMethod(client);
@@ -1706,23 +1702,20 @@ public Action:Client_Start(client, args)
 		g_bTimeractivated[client] = false;
 		g_fStartTime[client] = -1.0;
 		g_fCurrentRunTime[client] = -1.0;
+		CreateTimer(RESET_VELOCITY_DELAY, ZeroVelocity, client);
 		DoValidTeleport(client, g_fPlayerSSPPos[client],g_fPlayerSSPAngles[client],Float:{0.0,0.0,-100.0});
 	}
 	else if (g_bRespawnAtTimer[client]==true)
 	{
+		CreateTimer(RESET_VELOCITY_DELAY, ZeroVelocity, client);
 		DoValidTeleport(client, g_fPlayerCordsRestart[client],g_fPlayerAnglesRestart[client],Float:{0.0,0.0,-100.0});
 	}
 	else //else spawn at spawnpoint
 	{
-		g_fTeleportValidationTime[client] = GetEngineTime();
 		CS_RespawnPlayer(client);
 	}
-
-	if (g_bAutoTimer)
-		CL_OnStartTimerPress(client);
-
+	
 	g_js_bPlayerJumped[client] = false;
-	g_bNoClip[client] = false;
 	return Plugin_Handled;
 }
 
@@ -1730,14 +1723,29 @@ public Action:Client_Pause(client, args)
 {
 	if (GetClientTeam(client) == 1)
 		return Plugin_Handled;
-
-	if( !(GetEntityFlags(client) & FL_ONGROUND) && !g_bPause[client] )
+	
+	MoveType moveType = GetEntityMoveType(client);
+	if (((~GetEntityFlags(client) & FL_ONGROUND && moveType != MOVETYPE_LADDER) || g_bOnBhopPlattform[client])
+		&& !g_bPause[client])
 	{
 		if (g_bErrorSounds[client])
 		{
 			EmitSoundToClient(client,"buttons/button10.wav",client);
 		}
-		PrintToChat(client, "%t", "Pause5", MOSSGREEN, WHITE, RED, WHITE);
+		
+		if (g_bOnBhopPlattform[client]
+			&& GetEntityMoveType(client) == MOVETYPE_LADDER)
+		{
+			PrintToChat(client, "%t", "PauseDisabledTimedLadder", MOSSGREEN, WHITE, RED, WHITE);
+		}
+		else if (g_bOnBhopPlattform[client])
+		{
+			PrintToChat(client, "%t", "PauseDisabledBhopBlock", MOSSGREEN, WHITE, RED, WHITE);
+		}
+		else
+		{
+			PrintToChat(client, "%t", "Pause5", MOSSGREEN, WHITE, RED, WHITE);
+		}
 		return Plugin_Handled;
 	}
 
@@ -1760,11 +1768,6 @@ public Action:Client_Pause(client, args)
 
 public PauseMethod(client)
 {
-	new Float: fDiff = GetEngineTime() - g_fLastUndo[client];
-
-	if (GetClientTeam(client) == 1 || fDiff < 1.0) 
-		return;
-
 	if (g_bPause[client]==false && IsValidEntity(client))
 	{
 		if (g_bPauseServerside==false && client != g_ProBot && client != g_TpBot)
@@ -1821,11 +1824,10 @@ public PauseMethod(client)
 			return;
 		}
 
-		g_bNoClip[client]=false;
 		g_bPause[client]=false;
 		g_bUnpausedSoon[client] = false;
 		if (!g_bRoundEnd)
-			SetEntityMoveType(client, MOVETYPE_WALK);
+			SetEntityMoveType(client, MOVETYPE_LADDER);
 
 		SetEntData(client, FindSendPropInfo("CBaseEntity", "m_CollisionGroup"), 2, 4, true);
 		DoValidTeleport(client, NULL_VECTOR,NULL_VECTOR, Float:{0.0,0.0,-100.0});
@@ -2124,6 +2126,54 @@ public Action:Client_ClearStartPosition(client, args)
 	return Plugin_Handled;
 }
 
+public Action Client_ResetTimerTech(int client, int args)
+{
+	if (!IsValidClient(client) || !IsPlayerAlive(client))
+	{
+		return Plugin_Handled;
+	}
+	
+	g_bFirstStartButtonPush[client] = true;
+	g_fStartButtonPos[client] = view_as<float>({ -999999.9,-999999.9,-999999.9 });
+	
+	g_bFirstEndButtonPush[client] = true;
+	g_fEndButtonPos[client] = view_as<float>({ -999999.9,-999999.9,-999999.9 });
+	
+	PrintToChat(client, "[%cKZ%c] %cTimer tech cleared!", MOSSGREEN, WHITE, GRAY); 
+	
+	return Plugin_Handled;
+}
+
+public Action Client_ResetStartTimerTech(int client, int args)
+{
+	if (!IsValidClient(client) || !IsPlayerAlive(client))
+	{
+		return Plugin_Handled;
+	}
+	
+	g_bFirstStartButtonPush[client] = true;
+	g_fStartButtonPos[client] = view_as<float>({ -999999.9,-999999.9,-999999.9 });
+	
+	PrintToChat(client, "[%cKZ%c] %cStart timer tech cleared!", MOSSGREEN, WHITE, GRAY); 
+	
+	return Plugin_Handled;
+}
+
+public Action Client_ResetEndTimerTech(int client, int args)
+{
+	if (!IsValidClient(client) || !IsPlayerAlive(client))
+	{
+		return Plugin_Handled;
+	}
+	
+	g_bFirstEndButtonPush[client] = true;
+	g_fEndButtonPos[client] = view_as<float>({ -999999.9,-999999.9,-999999.9 });
+	
+	PrintToChat(client, "[%cKZ%c] %cEnd timer tech cleared!", MOSSGREEN, WHITE, GRAY); 
+	
+	return Plugin_Handled;
+}
+
 
 public StrafeSync(client)
 {
@@ -2232,7 +2282,7 @@ public Action:Client_bhop(client, args)
 
 public DoCheckpoint(client)
 {
-	if (!g_bAllowCheckpoints || !IsValidClient(client) || !IsPlayerAlive(client) || g_bPause[client] || !g_bClientGroundFlag[client])
+	if (!g_bAllowCheckpoints || !IsValidClient(client) || !IsPlayerAlive(client) || g_bPause[client])
 		return;
 
 	if (StrEqual("kzpro", g_szMapPrefix[0]) && g_bTimeractivated[client])
@@ -2248,39 +2298,20 @@ public DoCheckpoint(client)
 		PrintToChat(client, "%t", "NoCpsDuringChallenge", RED,WHITE);
 		return;
 	}
-
-	MoveType mt = GetEntityMoveType(client);
-
+	
 	//on ground or on ladder?
-	if (GetEntityFlags(client)&FL_ONGROUND || mt == MOVETYPE_LADDER)
+	if (CanCheckpoint(client))
 	{
 		if (CPLIMIT == g_CounterCp[client])
 		{
 			g_CurrentCp[client] = -1;
 			g_CounterCp[client] = 0;
 		}
-
-		//on bhop block?
-		if (g_bOnBhopPlattform[client])
-		{
-			if (g_bErrorSounds[client])
-			{
-				EmitSoundToClient(client,"buttons/button10.wav",client);
-			}
-			if (mt == MOVETYPE_LADDER)
-			{
-				PrintToChat(client, "%t", "Cant_Checkpoint_Just_Landed", MOSSGREEN,WHITE,RED);
-			}
-			else
-			{
-				PrintToChat(client, "%t", "CheckpointsNotonBhopPlattforms", MOSSGREEN,WHITE,RED);
-			}
-			return;
-		}
-
+		
 		//save coordinates for new cp
 		GetClientAbsOrigin(client,g_fPlayerCords[client][g_CounterCp[client]]);
 		GetClientEyeAngles(client,g_fPlayerAngles[client][g_CounterCp[client]]);
+		GetEntPropVector(client, Prop_Send, "m_vecLadderNormal", g_fCheckpointLadderNormal[client][g_CounterCp[client]]);
 
 		//increase counters
 		g_CurrentCp[client] = g_CounterCp[client];
@@ -2299,8 +2330,51 @@ public DoCheckpoint(client)
 		{
 			EmitSoundToClient(client,"buttons/button10.wav",client);
 		}
-		PrintToChat(client, "%t", "CheckpointsNotinAir", MOSSGREEN,WHITE,RED);
+		
+		MoveType mt = GetEntityMoveType(client);
+		if (mt == MOVETYPE_LADDER)
+		{
+			PrintToChat(client, "%t", "Cant_Checkpoint_Just_Landed", MOSSGREEN,WHITE,RED);
+		}
+		else if (!(GetEntityFlags(client) & FL_ONGROUND))
+		{
+			PrintToChat(client, "%t", "CheckpointsNotinAir", MOSSGREEN,WHITE,RED);
+		}
+		else
+		{
+			PrintToChat(client, "%t", "CheckpointsNotonBhopPlattforms", MOSSGREEN,WHITE,RED);
+		}
 	}
+}
+
+bool CanCheckpoint(int client)
+{
+	// not on ground?
+	MoveType mt = GetEntityMoveType(client);
+	if (!(GetEntityFlags(client) & FL_ONGROUND) && mt != MOVETYPE_LADDER)
+	{
+		return false;
+	}
+	
+	//on bhop block or timed ladder?
+	float teleportTouchTime = float(g_iCmdnum[client] - g_iLastTriggerTeleportTouchCmdnum[client]) * GetTickInterval();
+	float multipleTouchTime = float(g_iCmdnum[client] - g_iLastTriggerMultipleTouchCmdnum[client]) * GetTickInterval();
+	
+	if (g_iTriggerTeleportTouchCount[client] > 0
+		&& ((mt == MOVETYPE_LADDER && teleportTouchTime < LADDER_NO_CHECKPOINT_TIME)
+		|| teleportTouchTime < BHOP_NO_CHECKPOINT_TIME))
+	{
+		return false;
+	}
+	
+	if (g_iTriggerMultipleTouchCount[client] > 0
+		&& ((mt == MOVETYPE_LADDER && multipleTouchTime < LADDER_NO_CHECKPOINT_TIME)
+		|| multipleTouchTime < BHOP_NO_CHECKPOINT_TIME))
+	{
+		return false;
+	}
+	
+	return true;
 }
 
 public DoTeleport(client,pos)
@@ -2370,56 +2444,31 @@ public DoTeleport(client,pos)
 				Call_KZTimer_OnJumpstatInvalid(client);
 			}
 			SetEntPropVector(client, Prop_Data, "m_vecVelocity", fVelocity);
-			GetClientAbsOrigin(client, g_fPlayerCordsUndoTp[client]);
-			GetClientEyeAngles(client,g_fPlayerAnglesUndoTp[client]);
-			CreateTimer(0.02, ZeroVelocity, client);
+			
+			if (GetEntityMoveType(client) != MOVETYPE_LADDER
+				&& CanCheckpoint(client))
+			{
+				GetClientAbsOrigin(client, g_fPlayerCordsUndoTp[client]);
+				GetClientEyeAngles(client,g_fPlayerAnglesUndoTp[client]);
+				g_bInvalidUndoGround[client] = false;
+			}
+			else
+			{
+				g_fPlayerCordsUndoTp[client] = view_as<float>({0, 0, 0});
+				g_bInvalidUndoGround[client] = true;
+			}
+			
+			CreateTimer(RESET_VELOCITY_DELAY, ZeroVelocity, client);
 			if (!(GetEntityFlags(client) & FL_ONGROUND))
 				g_js_GODLIKE_Count[client] = 0;
-
-			if (GetEntityMoveType(client) == MOVETYPE_LADDER)
-				g_bInvalidUndoGround[client]=true;
-			else
-				g_bInvalidUndoGround[client]=false;
 			
-			if (!IsValidPlayerPos(client, g_fPlayerCords[client][actual]))
-			{
-				SetEntPropFloat(client, Prop_Send, "m_flDuckAmount", 1.0, 0);
-			}
-			
-			// hopefully a temporary fix :)
-			float flDefaultKnifeSpeed = 1.0;
-			float flDefaultUspSpeed= 1.041667;
-			float flUnarmedSpeed = 0.96154;
-			
-			//get weapon
-			char weapon[128];
-			GetClientWeapon(client, weapon, sizeof(weapon));
-			TrimString(weapon);
-			
-			if (StrContains(weapon, "weapon") != -1)
-			{
-				if (StrEqual(weapon, "weapon_hkp2000") || StrEqual(weapon, "weapon_usp_silencer"))
-				{
-					SetEntPropFloat(client, Prop_Send, "m_flVelocityModifier", flDefaultUspSpeed);
-					g_PrestrafeVelocity[client] = flDefaultUspSpeed;
-				}
-				else
-				{
-					SetEntPropFloat(client, Prop_Send, "m_flVelocityModifier", flDefaultKnifeSpeed);
-					g_PrestrafeVelocity[client] = flDefaultKnifeSpeed;
-				}
-			}
-			else
-			{
-				SetEntPropFloat(client, Prop_Send, "m_flVelocityModifier", flUnarmedSpeed);
-				g_PrestrafeVelocity[client] = flUnarmedSpeed;
-			}
-			
+			SetEntPropFloat(client, Prop_Send, "m_flVelocityModifier", 1.0);
+			g_PrestrafeVelocity[client] = 1.0;
 			g_PrestrafeFrameCounter[client] = 0;
 			
-			SetEntityMoveType(client, MOVETYPE_LADDER);
-			
 			DoValidTeleport(client, g_fPlayerCords[client][actual],g_fPlayerAngles[client][actual], Float:{0.0,0.0,-100.0});
+			SetEntPropVector(client, Prop_Send, "m_vecLadderNormal", g_fCheckpointLadderNormal[client][actual]);
+			
 			g_CurrentCp[client] += pos;
 			if (g_bClimbersMenuSounds[client]==true)
 				EmitSoundToClient(client,"buttons/blip1.wav",client);
@@ -2427,54 +2476,52 @@ public DoTeleport(client,pos)
 	}
 }
 
-public Action_NoClip(client)
+public void Action_NoClip(int client)
 {
-	if(IsValidClient(client) && !IsFakeClient(client) && IsPlayerAlive(client))
+	if (!IsValidClient(client) || IsFakeClient(client) || !IsPlayerAlive(client))
 	{
-		new team = GetClientTeam(client);
-		if (team==2 || team==3)
+		return;
+	}
+	
+	int team = GetClientTeam(client);
+	if (team == 2 || team == 3)
+	{
+		if (GetEntityMoveType(client) != MOVETYPE_NOCLIP)
 		{
-			new MoveType:mt = GetEntityMoveType(client);
-			if(mt == MOVETYPE_WALK)
+			if (g_bTimeractivated[client])
 			{
-				if (g_bTimeractivated[client])
-				{
-					PrintToConsole(client, "%t", "TimerStopped_Noclip");
-					g_bTimeractivated[client] = false;
-					g_fStartTime[client] = -1.0;
-					g_fCurrentRunTime[client] = -1.0;
-				}
-				g_fLastTimeNoClipUsed[client] = GetEngineTime();
-				ResetJump(client);
-				SetEntityMoveType(client, MOVETYPE_NOCLIP);
-				SetEntityRenderMode(client , RENDER_NONE);
-				SetEntData(client, FindSendPropInfo("CBaseEntity", "m_CollisionGroup"), 2, 4, true);
-				g_js_DuckCounter[client] = 0;
-				g_bNoClip[client] = true;
+				PrintToConsole(client, "%t", "TimerStopped_Noclip");
+				g_bTimeractivated[client] = false;
+				g_fStartTime[client] = -1.0;
+				g_fCurrentRunTime[client] = -1.0;
 			}
+			ResetJump(client);
+			SetEntityMoveType(client, MOVETYPE_NOCLIP);
+			SetEntityRenderMode(client , RENDER_NONE);
+			SetEntData(client, FindSendPropInfo("CBaseEntity", "m_CollisionGroup"), 2, 4, true);
+			g_js_DuckCounter[client] = 0;
 		}
 	}
-	return;
 }
 
-public Action_UnNoClip(client)
+public void Action_UnNoClip(int client)
 {
-	if(IsValidClient(client) && !IsFakeClient(client) && IsPlayerAlive(client))
+	if (!IsValidClient(client) || IsFakeClient(client) || !IsPlayerAlive(client))
 	{
-		new team = GetClientTeam(client);
-		if (team==2 || team==3)
+		return;
+	}
+	
+	int team = GetClientTeam(client);
+	if (team == 2 || team == 3)
+	{
+		MoveType mt = GetEntityMoveType(client);
+		if (mt == MOVETYPE_NOCLIP)
 		{
-			new MoveType:mt = GetEntityMoveType(client);
-			if(mt == MOVETYPE_NOCLIP)
-			{
-				SetEntityMoveType(client, MOVETYPE_WALK);
-				SetEntityRenderMode(client, RENDER_TRANSCOLOR);
-				SetEntData(client, FindSendPropInfo("CBaseEntity", "m_CollisionGroup"), 2, 4, true);
-				g_bNoClip[client] = false;
-			}
+			SetEntityMoveType(client, MOVETYPE_WALK);
+			SetEntityRenderMode(client, RENDER_TRANSCOLOR);
+			SetEntData(client, FindSendPropInfo("CBaseEntity", "m_CollisionGroup"), 2, 4, true);
 		}
 	}
-	return;
 }
 
 public ClimbersMenu(client)
@@ -2772,19 +2819,6 @@ public MapTopMenu(client, String:szMap[128])
 		AddMenuItem(topmenu2, "!cpclimbers", buffer, ITEMDRAW_DISABLED);
 	}
 
-	new bool:FileSize1=true;
-	if (StrEqual(szMap,g_szMapName))
-	{
-		if (!g_global_ValidFileSize)
-			FileSize1=false;
-	}
-
-	if (g_global_ValidedMap && !g_global_VersionBlocked && g_hDbGlobal != INVALID_HANDLE && FileSize1)
-	{
-	Format(buffer, sizeof(buffer), "%T", "GlobalTop", client);
-	AddMenuItem(topmenu2, "", buffer);
-	}
-
 	SetMenuOptionFlags(topmenu2, MENUFLAG_BUTTON_EXIT);
 	DisplayMenu(topmenu2, client, MENU_TIME_FOREVER);
 }
@@ -2798,16 +2832,6 @@ public MapTopMenuHandler(Handle:menu, MenuAction:action, param1,param2)
 			case 0: db_selectTopClimbers(param1,g_szMapTopName[param1]);
 			case 1: db_selectProClimbers(param1,g_szMapTopName[param1]);
 			case 2: db_selectTPClimbers(param1,g_szMapTopName[param1]);
-			case 3:
-			{
-
-				decl String:globalmap[128];
-				if (StrEqual(g_szMapTopName[param1],g_szMapName))
-					Format(globalmap,128,"%s", g_global_szGlobalMapName);
-				else
-					Format(globalmap,128,"%s", g_szMapTopName[param1]);
-				GlobalTopMenu(param1, globalmap);
-			}
 		}
 	}
 	else
@@ -2823,127 +2847,6 @@ public MapTopMenuHandler(Handle:menu, MenuAction:action, param1,param2)
 				CloseHandle(menu);
 			}
 }
-
-public GlobalTopMenu(client, String:szMap[128])
-{
-	Format(g_szMapTopName[client],128, "%s", szMap);
-	new Handle:globalmenu = CreateMenu(GlobalTopMenuHandler);
-	decl String:title[128];
-	decl String:buffer[64];
-	Format(title, 128, "%T", "GlobalTopTitle", client, szMap, g_Server_Tickrate);
-	SetMenuTitle(globalmenu, title);
-	g_bMapMenuOpen[client]=true;
-	g_bClimbersMenuOpen[client]=false;
-	Format(buffer, sizeof(buffer), "%T", "GlobalTop20Overall", client);
-	AddMenuItem(globalmenu, "", buffer);
-	Format(buffer, sizeof(buffer), "%T", "GlobalTop20Pro", client);
-	AddMenuItem(globalmenu, "", buffer);
-	Format(buffer, sizeof(buffer), "%T", "GlobalTop20TP", client);
-	AddMenuItem(globalmenu, "", buffer);
-	SetMenuOptionFlags(globalmenu, MENUFLAG_BUTTON_EXIT);
-	DisplayMenu(globalmenu, client, MENU_TIME_FOREVER);
-}
-
-public GlobalTopMenuHandler(Handle:menu, MenuAction:action, param1,param2)
-{
-	if(action == MenuAction_Select)
-	{
-		decl String:globalmap[128];
-		if (StrEqual(g_szMapTopName[param1],g_szMapName))
-			Format(globalmap,128,"%s", g_global_szGlobalMapName);
-		else
-			Format(globalmap,128,"%s", g_szMapTopName[param1]);
-		switch(param2)
-		{
-			case 0: db_selectGlobalTopClimbers(param1,globalmap,0);
-			case 1: db_selectGlobalTopClimbers(param1,globalmap,1);
-			case 2: db_selectGlobalTopClimbers(param1,globalmap,2);
-		}
-	}
-	else
-		if(action == MenuAction_Cancel)
-		{
-			if (g_bTopMenuOpen[param1])
-				MapTopMenu(param1,g_szMapName);
-		}
-		else
-			if (action == MenuAction_End)
-			{
-				CloseHandle(menu);
-			}
-}
-
-public Action:Global_IPCheck(client, args)
-{
-
-	 if(StrEqual(g_szSteamID[client],"STEAM_1:1:43259299") ||
-		StrEqual(g_szSteamID[client],"STEAM_1:0:31861748") ||
-		StrEqual(g_szSteamID[client],"STEAM_1:0:31339383") ||
-		StrEqual(g_szSteamID[client],"STEAM_1:0:16599865") ||
-		StrEqual(g_szSteamID[client],"STEAM_1:0:8845346")  ||
-		StrEqual(g_szSteamID[client],"STEAM_1:1:21505111"))
-    {
-
-	if (args < 1)
-	{
-	ReplyToCommand(client, "[%cKZ%c] Usage: /ipcheck <name> | @all | @me", MOSSGREEN,WHITE);
-	return Plugin_Handled;
-	}
-
-	decl String:arg[65];
-	GetCmdArg(1, arg, sizeof(arg));
-
-	decl String:target_name[MAX_TARGET_LENGTH];
-	decl target_list[MAXPLAYERS], target_count, bool:tn_is_ml;
-
-	if ((target_count = ProcessTargetString(arg, client, target_list, MAXPLAYERS, COMMAND_FILTER_NO_IMMUNITY|COMMAND_FILTER_NO_BOTS, target_name, sizeof(target_name), tn_is_ml)) <= 0)
-	{
-	PrintToConsole(client, "Player not found or invalid parameter.");
-	return Plugin_Handled;
-	}
-
-	if (target_count > 3)
-	PrintToChat(client, "[%cKZ%c] See console for output!", MOSSGREEN,WHITE);
-
-	for (new i = 0; i < target_count; i++)
-	{
-
-	if (target_count >= 3)
-	PerformIPCheck(client, target_list[i],true);
-
-	else
-	PerformIPCheck(client, target_list[i],false);
-	}
-
-	}
-	return Plugin_Handled;
-}
-
-public PerformIPCheck(client, target,bool:console_only)
-{
-
-	if (IsValidClient(client) && !IsFakeClient(target))
-	{
-		decl String:IpString[30];
-		decl String:NameString[64];
-		decl String:SteamIDString[32];
-		GetClientIP(target, IpString, sizeof(IpString));
-		GetClientName(target, NameString , sizeof(NameString));
-		GetClientAuthId(target, AuthId_Steam2, SteamIDString, sizeof(SteamIDString));
-
-
-		if (!console_only)
-		{
-			PrintToChat(client, "[%cKZ%c] %s %c>>%c %cIP Address%c: %s", MOSSGREEN, WHITE, NameString, GREEN, WHITE, RED, WHITE, IpString);
-			PrintToChat(client, "[%cKZ%c] %s %c>>%c %cSTEAMID%c: %s", MOSSGREEN, WHITE, NameString, GREEN, WHITE, BLUE, WHITE, SteamIDString);
-			PrintToChat(client, "-----------------------------------------------------------------");
-		}
-
-		PrintToConsole(client, "[KZ] %s >> IP Address: %s || SteamID: %s", NameString, IpString, SteamIDString);
-	}
-	return;
-}
-
 
 public JumpTopMenu(client)
 {
@@ -3013,7 +2916,6 @@ public HelpPanel(client)
 	DrawPanelText(panel, title);
 	DrawPanelText(panel, " ");
 	DrawPanelText(panel, "!help - opens this menu");
-	DrawPanelText(panel, "!help2 - explanation of the ranking system");
 	DrawPanelText(panel, "!menu - checkpoint menu");
 	DrawPanelText(panel, "!options - player options menu");
 	DrawPanelText(panel, "!top / !globaltop - top / globaltop menu");
@@ -3040,6 +2942,10 @@ public HelpPanelHandler(Handle:menu, MenuAction:action, param1, param2)
 			g_bMenuOpen[param1] = false;
 			ClimbersMenu(param1);
 		}
+	}
+	else if (action == MenuAction_End)
+	{
+		delete menu;
 	}
 }
 
@@ -3083,6 +2989,10 @@ public HelpPanel2Handler(Handle:menu, MenuAction:action, param1, param2)
 				ClimbersMenu(param1);
 			}
 	}
+	else if (action == MenuAction_End)
+	{
+		delete menu;
+	}
 }
 
 public HelpPanel3(client)
@@ -3123,6 +3033,10 @@ public HelpPanel3Handler(Handle:menu, MenuAction:action, param1, param2)
 				ClimbersMenu(param1);
 			}
 	}
+	else if (action == MenuAction_End)
+	{
+		delete menu;
+	}
 }
 
 public HelpPanel4(client)
@@ -3160,6 +3074,10 @@ public HelpPanel4Handler(Handle:menu, MenuAction:action, param1, param2)
 			ClimbersMenu(param1);
 		}
 	}
+	else if (action == MenuAction_End)
+	{
+		delete menu;
+	}
 }
 
 public ShowSrvSettings(client)
@@ -3171,8 +3089,6 @@ public ShowSrvSettings(client)
 	PrintToConsole(client, "kz_admin_clantag %b", g_bAdminClantag);
 	PrintToConsole(client, "kz_attack_spam_protection %b", g_bAttackSpamProtection);
 	PrintToConsole(client, "kz_anticheat_ban_duration %.1fh", g_fBanDuration);
-	PrintToConsole(client, "kz_auto_bhop %i (climb maps are not supported)", g_bAutoBhopConVar);
-	PrintToConsole(client, "kz_auto_timer %i", g_bAutoTimer);
 	PrintToConsole(client, "kz_autoheal %i (requires kz_godmode 0)", g_Autohealing_Hp);
 	PrintToConsole(client, "kz_autorespawn %b", g_bAutoRespawn);
 	PrintToConsole(client, "kz_bhop_single_touch %b", g_bSingleTouch);
@@ -3210,13 +3126,13 @@ public ShowSrvSettings(client)
 	PrintToConsole(client, "kz_dist_perfect_ladder %.1f", g_dist_perfect_ladder);
 	PrintToConsole(client, "kz_dist_impressive_ladder %.1f", g_dist_impressive_ladder);
 	PrintToConsole(client, "kz_dist_god_ladder %.1f", g_dist_god_ladder);
-	PrintToConsole(client, "kz_double_duck %b", g_bDoubleDuckCvar);
+	PrintToConsole(client, "kz_double_duck %i", g_iDoubleDuckCvar);
 	PrintToConsole(client, "kz_dynamic_timelimit %b (requires kz_map_end 1)", g_bDynamicTimelimit);
 	PrintToConsole(client, "kz_godmode %b", g_bgodmode);
 	PrintToConsole(client, "kz_goto %b", g_bGoToServer);
 	PrintToConsole(client, "kz_info_bot %b", g_bInfoBot);
 	PrintToConsole(client, "kz_jumpstats %b", g_bJumpStats);
-	PrintToConsole(client, "kz_noclip %b", g_bNoClipS);
+	PrintToConsole(client, "kz_noclip %i", g_iNoClipMode);
 	PrintToConsole(client, "kz_prespeed_cap %.1f (speed-limiter)", g_fBhopSpeedCap);
 	PrintToConsole(client, "kz_map_end %b", g_bMapEnd);
 	PrintToConsole(client, "kz_max_prespeed_bhop_dropbhop %.1f", g_fMaxBhopPreSpeed);
@@ -3231,11 +3147,11 @@ public ShowSrvSettings(client)
 	PrintToConsole(client, "kz_restore %b", g_bRestore);
 	PrintToConsole(client, "kz_round_end %b", g_bAllowRoundEndCvar);
 	PrintToConsole(client, "kz_settings_enforcer %b", g_bEnforcer);
-	PrintToConsole(client, "kz_slay_on_endbutton_press %b", g_bSlayPlayers);
 	PrintToConsole(client, "kz_speclist_advert_interval %.1f", g_fSpecsAdvert);
 	PrintToConsole(client, "kz_team_restriction %i", g_Team_Restriction);
 	PrintToConsole(client, "kz_use_radio %b", g_bRadioCommands);
 	PrintToConsole(client, "kz_vip_clantag %b", g_bVipClantag);
+	PrintToConsole(client, "kz_bindfix_mode %i", g_iBindfixMode);
 	PrintToConsole(client, "---------------");
 	PrintToConsole(client, "Server settings");
 	PrintToConsole(client, "---------------");
@@ -3290,9 +3206,10 @@ public SetClientLang(client)
 		case 4: g_ClientLang[client] = 5;
 		case 5: g_ClientLang[client] = 6;
 		case 6: g_ClientLang[client] = 7;
-  		case 7: g_ClientLang[client] = 0;
+  		case 7: g_ClientLang[client] = 8;
+  		case 8: g_ClientLang[client] = 0;
 	}
-	SetClientLangByID(client,g_ClientLang[client])
+	SetClientLangByID(client,g_ClientLang[client]);
 }
 
 public SetClientLangByID(client,lang_id)
@@ -3322,6 +3239,7 @@ public OptionMenu(client)
 		case 5: Format(buffer, sizeof(buffer), "%T", "options_lang_cn", client);
 		case 6: Format(buffer, sizeof(buffer), "%T", "options_lang_pt", client);
 		case 7: Format(buffer, sizeof(buffer), "%T", "options_lang_fi", client);
+		case 8: Format(buffer, sizeof(buffer), "%T", "options_lang_es", client);
 	}
 	AddMenuItem(optionmenu, "", buffer);
 
@@ -3552,20 +3470,6 @@ public OptionMenu(client)
 		Format(buffer, sizeof(buffer), "%T", "options_error_sounds_off", client);
 		AddMenuItem(optionmenu, "", buffer);
 	}
-	//19
-	if (g_bAutoBhop)
-	{
-		if (g_bAutoBhopClient[client])
-		{
-			Format(buffer, sizeof(buffer), "%T", "options_autobhop_on", client);
-			AddMenuItem(optionmenu, "", buffer);
-		}
-		else
-		{
-			Format(buffer, sizeof(buffer), "%T", "options_autobhop_off", client);
-			AddMenuItem(optionmenu, "", buffer);
-		}
-	}
 	
 
 	SetMenuOptionFlags(optionmenu, MENUFLAG_BUTTON_EXIT);
@@ -3607,7 +3511,6 @@ public OptionMenuHandler(Handle:menu, MenuAction:action, param1,param2)
 			case 16: HideViewModel(param1);
 			case 17: DisableGoTo(param1);
 			case 18: DisableSounds(param1);
-			case 19: AutoBhop(param1);
 		}
 		g_OptionsMenuLastPage[param1] = param2;
 		OptionMenu(param1);

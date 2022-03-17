@@ -1,4 +1,4 @@
-﻿"Phrases"
+"Phrases"
 {
 	"AntiCheatEnabled"
 	{
@@ -19,11 +19,6 @@
 	{
 		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:i},{6:s},{7:s},{8:i},{9:i}"
 		"de"        "[{1}GLOBAL{2}] {3}{4} is now #{5} in the Global TP-Top 20 on {6}! [{7}, TPs: {8}, Tick{9}]"
-	}
-	"UndoLadder"
-	{
-		"#format"   "{1:c},{2:c},{3:c}"
-		"de"        "[{1}KZ{2}] {3}Undo TP not allowed because your last teleport origin is on a ladder"
 	}
 	"UndoMidAir"
 	{
@@ -67,6 +62,10 @@
 	"options_lang_pt"
 	{
 		"de"       "Language - Portuguese Brazilian"
+	}
+	"options_lang_es"
+	{
+		"de"       "Language - Spanish"
 	}
 	"Route1"
 	{
@@ -239,14 +238,6 @@
 	"options_gotome_off"
 	{
 		"de"       "Goto me  -  deaktiviert"
-	}
-	"options_autobhop_on"
-	{
-		"de"       "AutoBhop  -  aktiviert"
-	}
-	"options_autobhop_off"
-	{
-		"de"       "AutoBhop  -  deaktiviert"
 	}
 	"HideChat1"
 	{
@@ -1192,21 +1183,6 @@
 	{
 		"#format"   "{1:c},{2:c}"
 		"de"        "[{1}KZ{2}] Strafe Sync im Chat deaktiviert."
-	}
-	"AutoBhop1"
-	{
-		"#format"   "{1:c},{2:c}"
-		"de"        "[{1}KZ{2}] AutoBhop aktiviert."
-	}
-	"AutoBhop2"
-	{
-		"#format"   "{1:c},{2:c}"
-		"de"        "[{1}KZ{2}] AutoBhop deaktiviert."
-	}
-	"AutoBhop3"
-	{
-		"#format"   "{1:c},{2:c}"
-		"de"        "[{1}KZ{2}] AutoBhop server-seitig deaktiviert."
 	}
 	"AdvClimbersMenu1"
 	{

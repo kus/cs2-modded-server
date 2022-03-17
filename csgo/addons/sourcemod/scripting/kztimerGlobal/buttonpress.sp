@@ -9,16 +9,18 @@ public ButtonPress(const String:name[], caller, activator, Float:delay)
 	if(!StrEqual(targetname,"player"))
 		return;
 	GetEntPropString(caller, Prop_Data, "m_iName", targetname, sizeof(targetname));
-	if(StrEqual(targetname,"climb_startbutton"))
+	if(StrEqual(targetname,"climb_startbutton") && g_FramesOnGround[activator] >= MAX_BHOP_FRAMES)
 	{
 		Call_StartForward(hStartPress);
 		Call_PushCell(activator);
+		Call_PushCell(false);
 		Call_Finish();
 	} 
 	else if(StrEqual(targetname,"climb_endbutton")) 
 	{
 		Call_StartForward(hEndPress);
 		Call_PushCell(activator);
+		Call_PushCell(false);
 		Call_Finish();
 	}
 	return;
@@ -34,12 +36,13 @@ public OnUsePost(entity, activator, caller, UseType:type, Float:value)
 	if(!StrEqual(targetname,"player"))
 		return;
 	GetEntPropString(entity, Prop_Data, "m_iName", targetname, sizeof(targetname));
-	new Float: speed = GetSpeed(activator);
-	if(StrEqual(targetname,"climb_startbuttonx") && speed < 251.0)
+	//new Float: speed = GetSpeed(activator);
+	if(StrEqual(targetname,"climb_startbuttonx") && g_FramesOnGround[activator] >= MAX_BHOP_FRAMES)
 	{		
 		g_global_SelfBuiltButtons=true;
 		Call_StartForward(hStartPress);
 		Call_PushCell(activator);
+		Call_PushCell(false);
 		Call_Finish();
 	}
 	else if(StrEqual(targetname,"climb_endbuttonx")) 
@@ -52,22 +55,26 @@ public OnUsePost(entity, activator, caller, UseType:type, Float:value)
 }  
 
 // - Climb Button OnStartPress -
-public CL_OnStartTimerPress(client)
+public void CL_OnStartTimerPress(int client, bool zone)
 {		
 	ClearArray(g_hRouteArray[client]);
 	
 	if (!IsFakeClient(client))
 	{
-		if (g_bNewReplay[client])
-			return;
-		if (!(g_bOnGround[client]) && !g_global_SelfBuiltButtons)
-			return;	
-	
-		//timer pos
-		if (g_bFirstStartButtonPush)
+		if (g_bNewReplay[client]
+			|| !zone && !(g_bOnGround[client]) && !g_global_SelfBuiltButtons
+			|| IsPlayerStuck(client)
+			|| GetGameTime() - g_fLastTeleportTime[client] < TP_TIMER_BLOCK_TIME
+			|| zone && g_FramesOnGroundLast[client] <= 1)
 		{
-			GetClientAbsOrigin(client,g_fStartButtonPos);
-			g_bFirstStartButtonPush=false;
+			return;
+		}
+		
+		//timer pos
+		if (!zone && g_bFirstStartButtonPush[client])
+		{
+			GetClientAbsOrigin(client,g_fStartButtonPos[client]);
+			g_bFirstStartButtonPush[client]=false;
 		}	
 
 		if (!IsPlayerAlive(client) || GetClientTeam(client) == 1)
@@ -83,11 +90,7 @@ public CL_OnStartTimerPress(client)
 		}		
 	}
 	
-	//noclip check
-	new Float:time;
-	time = GetEngineTime() - g_fLastTimeNoClipUsed[client];
-			
-	if ((!g_bSpectate[client] && !g_bNoClip[client] && time > 2.0) || IsFakeClient(client))
+	if ((!g_bSpectate[client] && !g_bNoclipped[client]) || IsFakeClient(client))
 	{	
 		g_fPlayerCordsUndoTp[client][0] = 0.0;
 		g_fPlayerCordsUndoTp[client][1] = 0.0;
@@ -100,7 +103,6 @@ public CL_OnStartTimerPress(client)
 		g_JumpCheck2[client] = 0;
 		g_JumpCheck1[client] = 0;
 		g_fStartPauseTime[client] = 0.0;
-		g_bRespawnAtTimer[client] = true;
 		g_bPause[client] = false;
 		SetEntityMoveType(client, MOVETYPE_WALK);
 		g_fStartTime[client] = GetEngineTime();	
@@ -109,24 +111,18 @@ public CL_OnStartTimerPress(client)
 		g_bPositionRestored[client] = false;
 		g_bGlobalDisconnected[client] = false;
 		g_bDisconnected[client] = false;
-		g_global_AutoBhopDetected[client] = false;
 		g_bMissedTpBest[client] = true;
 		g_bMissedProBest[client] = true;
 		new bool: act = g_bTimeractivated[client];
 		g_bTimeractivated[client] = true;		
 		decl String:szTime[32];
 		
-		if (g_bAutoTimer)
-			g_global_AutoTimerOnStart[client] = true;
-		else
-			g_global_AutoTimerOnStart[client] = false;
-
 		if (g_bEnforcer)
 			g_global_Enforcer[client]=true;
 		else
 			g_global_Enforcer[client]=false;
 			
-		if (g_bDoubleDuckCvar)
+		if (g_iDoubleDuckCvar == 1)
 			g_global_DoubleDuck[client]=true;
 		else
 			g_global_DoubleDuck[client]=false;			
@@ -135,9 +131,13 @@ public CL_OnStartTimerPress(client)
 		if (!IsFakeClient(client))
 		{	
 			//Get start position
-			GetClientAbsOrigin(client, g_fPlayerCordsRestart[client]);
-			GetClientEyeAngles(client, g_fPlayerAnglesRestart[client]);		
-
+			if (!zone)
+			{
+				g_bRespawnAtTimer[client] = true;
+				GetClientAbsOrigin(client, g_fPlayerCordsRestart[client]);
+				GetClientEyeAngles(client, g_fPlayerAnglesRestart[client]);		
+			}
+			
 			if (g_bShowTimerInfo[client])
 			{
 				g_bShowTimerInfo[client] = false;
@@ -199,7 +199,7 @@ public CL_OnStartTimerPress(client)
 }
 
 // - Climb Button OnEndPress -
-public CL_OnEndTimerPress(client)
+public CL_OnEndTimerPress(int client, bool zone)
 {	
 	//Format Final Time
 	if (IsFakeClient(client) && g_bTimeractivated[client])
@@ -242,10 +242,11 @@ public CL_OnEndTimerPress(client)
 	static float fLastActiveButtonPushTime[MAXPLAYERS + 1];
 	
 	//timer pos
-	if (g_bFirstEndButtonPush)
+	if (!zone && g_bFirstEndButtonPush[client]
+		&& GetGameTime() - g_fLastTeleportTime[client] > TP_TIMER_BLOCK_TIME)
 	{
-		GetClientAbsOrigin(client,g_fEndButtonPos);
-		g_bFirstEndButtonPush=false;
+		GetClientAbsOrigin(client, g_fEndButtonPos[client]);
+		g_bFirstEndButtonPush[client] = false;
 		PlayButtonSound(client);
 	}
 	else if (GetEngineTime() - fLastButtonPushTime[client] > 0.1
@@ -295,16 +296,6 @@ public CL_OnEndTimerPress(client)
 		g_fFinalTime[client] = GetEngineTime() - g_fStartTime[client] - g_fPauseTime[client];
 		g_Tp_Final[client] = g_OverallTp[client];
 		g_bTimeractivated[client] = false;
-	}
-
-	//slay others
-	if (g_bSlayPlayers)
-	{
-		for(new i = 1; i <= MaxClients; i++) 
-		{
-			if (IsValidClient(client) && i != client)
-				ForcePlayerSuicide(i);
-		}	
 	}
 	
 	//decl
@@ -406,8 +397,8 @@ public CL_OnEndTimerPress(client)
 	{
 		if (!g_bPositionRestored[client] && !g_global_DoubleDuck[client] && 
 			!g_global_SelfBuiltButtons && !g_bFlagged[client] &&
-			!g_global_AutoTimerOnStart[client] && g_global_Enforcer[client] &&
-			!g_global_AutoBhopDetected[client] && g_fFinalTime[client] > 5.0)
+			g_global_Enforcer[client] &&
+			g_fFinalTime[client] > 5.0)
 			{
 				KZTimerAPI_InsertRecord(client, g_Tp_Final[client], g_fFinalTime[client]);
 			}
@@ -416,28 +407,6 @@ public CL_OnEndTimerPress(client)
 			{
 				PrintToChat(client, "[KZ-API] Time not registered to API! [Settings dont match!]");
 			}
-	}
-	
-	//NEW GLOBAL RECORD 
-	if (IsGlobalMap() && !g_global_SelfBuiltButtons && g_global_Enforcer[client] && !g_bPositionRestored[client] && !g_global_DoubleDuck[client] && !g_bFlagged[client] && !g_global_AutoTimerOnStart[client] && !g_global_AutoBhopDetected[client] && g_fFinalTime[client] > 5.0)
-	{	
-		if (g_Tp_Final[client] == 0 && g_fFinalTime[client] < g_fGlobalRecordPro_Time)
-		{
-			bNewrecord=true;
-			g_Sound_Type[client] = 1;	
-			Format(g_GlobalRecordPro_Name, MAX_NAME_LENGTH, "%s", szName);
-			g_fGlobalRecordPro_Time = g_fFinalTime[client];		
-			g_FinishingType[client] = 3;
-		}
-		if (g_Tp_Final[client] > 0 && g_fFinalTime[client] < g_fGlobalRecordTp_Time)
-		{
-			bNewrecord=true;
-			g_Sound_Type[client] = 1;	
-			Format(g_GlobalRecordTp_Name, MAX_NAME_LENGTH, "%s", szName);
-			g_fGlobalRecordTp_Time = g_fFinalTime[client];
-			g_FinishingType[client] = 4;
-		}			
-		
 	}
 	
 	//NEW PRO RECORD
@@ -548,56 +517,26 @@ public CL_OnEndTimerPress(client)
 	}
 
 	
-	if (IsGlobalMap() && !g_global_DoubleDuck[client] && g_global_Enforcer[client] && !g_global_SelfBuiltButtons && !g_bPositionRestored[client] && !g_bFlagged[client] && !g_global_AutoTimerOnStart[client] && g_global_Access && !g_global_AutoBhopDetected[client] && g_fFinalTime[client] > 5.0)
-	{			
-		db_GlobalRecord(client);
-	}
-	else
+	if (!(g_bMomsurffixAvailable
+		&& !g_global_DoubleDuck[client]
+		&& g_global_Enforcer[client]
+		&& !g_global_SelfBuiltButtons
+		&& !g_bPositionRestored[client]
+		&& !g_bFlagged[client]
+		&& g_fFinalTime[client] > 5.0))
 	{
 		if(StrEqual(g_szMapPrefix[0],"kz") || StrEqual(g_szMapPrefix[0],"xc") || StrEqual(g_szMapPrefix[0],"bkz")  || StrEqual(g_szMapPrefix[0],"kzpro"))
 		{
-			if (!g_global_Access)
-				PrintToChat(client, "[%cKZ%c] %cGlobal Records disabled. Reason: This server is not whitelisted.%c",MOSSGREEN, WHITE, RED, WHITE);
-			else
-			if (g_hDbGlobal == INVALID_HANDLE)
-				PrintToChat(client, "[%cKZ%c] %cGlobal Records disabled. Reason: No connection to the global database.%c",MOSSGREEN, WHITE, RED, WHITE);
-			else
-			if (g_global_Disabled)
-				PrintToChat(client, "[%cKZ%c] %cGlobal Records has been temporarily disabled. For more information visit the KZTimer steam group!%c",MOSSGREEN, WHITE, RED, WHITE);
-			else
-			if (g_global_VersionBlocked)
-				PrintToChat(client, "[%cKZ%c] %cGlobal Records disabled. Reason: This server is running an outdated KZTimer version. Contact an admin!%c",MOSSGREEN, WHITE, RED, WHITE);
-			else
 			if (g_global_SelfBuiltButtons)
 				PrintToChat(client, "[%cKZ%c] %cGlobal Records disabled. Reason: Self-built climb buttons detected. (only built-in buttons supported)%c",MOSSGREEN, WHITE, RED, WHITE);
-			else
-			if (!g_global_IntegratedButtons)
-				PrintToChat(client, "[%cKZ%c] %cGlobal Records disabled. Reason: This map does not provide built-in climb buttons.%c",MOSSGREEN, WHITE, RED, WHITE);
 			else
 			if (!g_bEnforcer)
 				PrintToChat(client, "[%cKZ%c] %cGlobal Records disabled. Reason: kz_settings_enforcer is disabled.%c",MOSSGREEN, WHITE, RED, WHITE);
 			else
-			if (!g_global_ValidFileSize && g_global_IntegratedButtons)
-			{
-				if (g_global_WrongMapVersion)
-					PrintToChat(client, "[%cKZ%c] %cGlobal Records disabled. Reason: Wrong map version. (requires latest+offical workshop version)%c",MOSSGREEN, WHITE, RED, WHITE);
-				else
-					PrintToChat(client, "[%cKZ%c] %cGlobal Records disabled. Reason: Filesize of the current map does not match with the stored global filesize. Please upload the latest workshop version on your server!%c",MOSSGREEN, WHITE, RED, WHITE);
-			}
-			else
-			if (g_bAutoTimer || g_global_AutoTimerOnStart[client])
-				PrintToChat(client, "[%cKZ%c] %cGlobal Records disabled. Reason: kz_auto_timer is enabled.%c",MOSSGREEN, WHITE, RED, WHITE);
-			else
-			if (g_global_AutoBhopDetected[client])
-				PrintToChat(client, "[%cKZ%c] %cGlobal Records disabled. Reason: kz_auto_bhop was enabled during your run.%c",MOSSGREEN, WHITE, RED, WHITE);
-			else
-			if (!g_global_EntityCheck)
-				PrintToChat(client, "[%cKZ%c] %cGlobal Records disabled. Reason: Custom entities/objects on the current map detected.%c",MOSSGREEN, WHITE, RED, WHITE);
-			else
 			if (g_bFlagged[client])
 				PrintToChat(client, "[%cKZ%c] %cGlobal Records disabled. Reason: Bhop script detected%c",MOSSGREEN, WHITE, RED, WHITE);
 			else
-			if (g_bDoubleDuckCvar)
+			if (g_iDoubleDuckCvar == 1)
 				PrintToChat(client, "[%cKZ%c] %cGlobal Records disabled. Reason: kz_double_duck is set to 1.%c",MOSSGREEN, WHITE, RED, WHITE);
 			else
 			if (!g_global_Enforcer[client])
@@ -608,13 +547,10 @@ public CL_OnEndTimerPress(client)
 			else
 			if (g_bPositionRestored[client] || g_bGlobalDisconnected[client])
 				PrintToChat(client, "[%cKZ%c] %cGlobal Records disabled. Reason: Reconnecting is not allowed.%c",MOSSGREEN, WHITE, RED, WHITE);
-			else
-			if (!g_global_ValidedMap)
-				PrintToChat(client, "[%cKZ%c] %cGlobal Records disabled. Reason: The current map is not approved by a kztimer map tester!%c",MOSSGREEN, WHITE, RED, WHITE);
+			else if (!g_bMomsurffixAvailable)
+				PrintToChat(client, "[%cKZ%c] %cGlobal Records disabled. Reason: kztimer-momsurffix is not available.",MOSSGREEN,WHITE,RED);
 		}
 	}	
-	//delete tmp
-	db_deleteTmp(client);
 }
 
 static bool IsPlayerStuck(int client)

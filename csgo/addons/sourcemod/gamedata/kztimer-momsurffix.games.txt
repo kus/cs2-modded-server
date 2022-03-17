@@ -1,0 +1,454 @@
+"Games"
+{
+	"#default"
+	{
+		"Keys"
+		{
+			//CGameMovement
+			"CGameMovement::player"				"4"
+			"CGameMovement::mv"					"8"
+			//...
+			"CGameMovement::m_pTraceListData"	"3660"
+			"CGameMovement::m_nTraceCount"		"3664"
+			
+			//cplane_t		
+			"cplane_t::normal"					"0"
+			"cplane_t::dist"					"12"
+			"cplane_t::type"					"16"
+			"cplane_t::signbits"				"17"
+			
+			//csurface_t		
+			"csurface_t::name"					"0"
+			"csurface_t::surfaceProps"			"4"
+			"csurface_t::flags"					"6"
+			
+			//CGameTrace		
+			"CGameTrace::startpos"				"0"
+			"CGameTrace::endpos"				"12"
+			"CGameTrace::plane"					"24"
+			"CGameTrace::fraction"				"44"
+			"CGameTrace::contents"				"48"
+			"CGameTrace::dispFlags"				"52"
+			"CGameTrace::allsolid"				"54"
+			"CGameTrace::startsolid"			"55"
+			"CGameTrace::fractionleftsolid"		"56"
+			"CGameTrace::surface"				"60"
+			"CGameTrace::hitgroup"				"68"
+			"CGameTrace::physicsbone"			"72"
+			"CGameTrace::m_pEnt"				"74"
+			"CGameTrace::hitbox"				"80"
+			"CGameTrace::size"					"84"
+			
+			//CTraceFilterSimple
+			"CTraceFilterSimple::vptr"								"0"
+			"CTraceFilterSimple::m_pPassEnt"						"4"
+			"CTraceFilterSimple::m_collisionGroup"					"8"
+			"CTraceFilterSimple::m_pExtraShouldHitCheckFunction"	"12"
+			"CTraceFilterSimple::size"								"16"
+		}
+		
+		"Addresses"
+		{
+			"CGameMovement::TryPlayerMove_Start"
+			{
+				"windows"
+				{
+					"signature"	"CGameMovement::TryPlayerMove"
+				}
+				"linux"
+				{
+					"signature" "CGameMovement::TryPlayerMove"
+				}
+				"offset" "0"
+			}
+		}
+		
+		"Offsets"
+		{
+			"OSType"
+			{
+				"windows"		"1"
+				"linux"			"2"
+			}
+		}
+		
+		"Signatures"
+		{
+			"CreateInterface"
+			{
+				"library"		"engine"
+				"windows"		"@CreateInterface"
+				"linux"			"@CreateInterface"
+			}
+		}
+	}
+	
+	"cstrike"
+	{
+		"Keys"
+		{
+			//EngineTrace interface name
+			"CEngineTrace"	"EngineTraceServer003"
+		
+			//CMoveData
+			"CMoveData::m_nPlayerHandle"		"4"
+			"CMoveData::m_vecVelocity"			"64"
+			//...
+			"CMoveData::m_vecAbsOrigin"			"152"
+			
+			//CBaseHandle
+			"CBaseHandle::m_Index"				"0"
+			
+			//CBaseEntityList
+			"CBaseEntityList::m_EntPtrArray"	"0"
+			
+			//CEntInfo
+			"CEntInfo::m_pEntity"				"4"
+			"CEntInfo::m_SerialNumber"			"8"
+			//...
+			"CEntInfo::size"					"16"
+			
+			//CBasePlayer
+			//Offset is relative to m_szLastPlaceName netprop and will be added to it
+			"CBasePlayer::m_surfaceFriction"	"104"
+			
+			//Ray_t
+			"Ray_t::m_Start"					"0"
+			"Ray_t::m_Delta"					"16"
+			"Ray_t::m_StartOffset"				"32"
+			"Ray_t::m_Extents"					"48"
+			"Ray_t::m_IsRay"					"64"
+			"Ray_t::m_IsSwept"					"65"
+			"Ray_t::size"						"66"
+		}
+		
+		"Addresses"
+		{
+			"g_pMemAlloc"
+			{
+				"windows"
+				{
+					"signature" "g_pMemAllocFunc"
+					"read" "253"
+					"read" "0"
+					"read" "0"
+				}
+			}
+			
+			"g_pEntityList"
+			{
+				"windows"
+				{
+					"signature"	"CGameMovement::TracePlayerBBox"
+					"read" "83"
+				}
+				"linux"
+				{
+					"signature"	"CGameMovement::TracePlayerBBox"
+					"read"	"579"
+				}
+			}
+			
+			"sm_pSingleton"
+			{
+				"windows"
+				{
+					"signature"	"CGameMovement::TryPlayerMove"
+					"read" "667"
+				}
+				"linux"
+				{
+					"signature"	"CGameMovement::TryPlayerMove"
+					"read"	"536"
+				}
+				
+				"read" "0"
+			}
+			
+			"CTraceFilterSimple::vtable"
+			{
+				"windows"
+				{
+					"signature"	"CTraceFilterSimple::CTraceFilterSimple"
+					"read" "25"
+				}
+				"linux"
+				{
+					"signature"	"CTraceFilterSimple::CTraceFilterSimple"
+					"read" "11"
+				}
+			}
+		}
+		
+		"Signatures"
+		{
+			"CMoveHelperServer::CMoveHelperServer"
+			{
+				"library"		"server"
+				"windows"		"\xA1\x2A\x2A\x2A\x2A\xA8\x01\x75\x2A\x83\xC8\x01\xC7\x05\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\xA3\x2A\x2A\x2A\x2A\xA1\x2A\x2A\x2A\x2A\xC7\x05\x2A\x2A\x2A\x2A\x00\x00\x00\x00"
+				"linux"			"@_ZN17CMoveHelperServerC2Ev"
+			}
+			
+			"CTraceFilterSimple::CTraceFilterSimple"
+			{
+				"library"		"server"
+				"windows"		"\x55\x8B\xEC\x8B\x45\x08\x89\x41\x04\x8B\x45\x0C\x89\x41\x08\x8B\x45\x10\x89\x41\x0C\x8B\xC1\xC7\x01\x2A\x2A\x2A\x2A\x5D"
+				"linux"			"@_ZN18CTraceFilterSimpleC2EPK13IHandleEntityiPFbPS0_iE"
+			}
+			
+			"CGameMovement::TracePlayerBBox"
+			{
+				"library"		"server"
+				"windows"		"\x53\x8B\xDC\x83\xEC\x08\x83\xE4\xF0\x83\xC4\x04\x55\x8B\x6B\x04\x89\x6C\x24\x04\x8B\xEC\x83\xEC\x7C\x56"
+				"linux"			"@_ZN13CGameMovement15TracePlayerBBoxERK6VectorS2_jiR10CGameTrace"
+			}
+			
+			"CGameMovement::TryPlayerMove"
+			{
+				"library"		"server"
+				"windows"		"\x55\x8B\xEC\x81\xEC\x20\x01\x00\x00\xF3\x0F\x10\x1D\x2A\x2A\x2A\x2A"
+				"linux"			"@_ZN13CGameMovement13TryPlayerMoveEP6VectorP10CGameTrace"
+			}
+			
+			"g_pMemAllocFunc"
+			{
+				"library"		"server"
+				"windows"		"\x55\x8B\xEC\x83\xEC\x20\x8B\x45\x08\xB9\x2A\x2A\x2A\x2A"
+			}
+			
+			"CGameMovement::ClipVelocity"
+			{
+				"library"		"server"
+				"linux"			"@_ZN13CGameMovement12ClipVelocityER6VectorS1_S1_f"
+			}
+			
+			"CGameMovement::GetPlayerMaxs"
+			{
+				"library"		"server"
+				"linux"			"@_ZNK13CGameMovement13GetPlayerMaxsEb"
+			}
+			
+			"CGameMovement::GetPlayerMins"
+			{
+				"library"		"server"
+				"linux"			"@_ZNK13CGameMovement13GetPlayerMinsEb"
+			}
+			
+			"malloc"
+			{
+				"library"		"engine"
+				"linux"			"@_ZL7SzAllocPvj"
+			}
+			
+			"free"
+			{
+				"library"		"engine"
+				"linux"			"@_ZL6SzFreePvS_"
+			}
+		}
+		
+		"Offsets"
+		{
+			"AddToTouched"
+			{
+				"windows"		"2"
+				"linux"			"2"
+			}
+			
+			"TraceRay"
+			{
+				"windows"		"4"
+				"linux"			"4"
+			}
+			
+			"TracePlayerBBox"
+			{
+				"windows"		"10"
+				"linux"			"9"
+			}
+			
+			"GetPlayerMaxs"
+			{
+				"windows"		"9"
+			}
+			
+			"GetPlayerMins"
+			{
+				"windows"		"8"
+			}
+			
+			"Malloc"
+			{
+				"windows"		"1"
+			}
+			
+			"Free"
+			{
+				"windows"		"5"
+			}
+		}
+	}
+	
+	"csgo"
+	{
+		"Keys"
+		{
+			//EngineTrace interface name
+			"CEngineTrace"	"EngineTraceServer004"
+			
+			//CMoveData		
+			"CMoveData::m_vecVelocity"			"64"
+			//...
+			"CMoveData::m_vecAbsOrigin"			"172"
+			
+			//CBasePlayer
+			//Offset is relative to m_ubEFNoInterpParity netprop and will be substracted from it
+			"CBasePlayer::m_surfaceFriction"	"8"
+			
+			//Ray_t
+			"Ray_t::m_Start"					"0"
+			"Ray_t::m_Delta"					"16"
+			"Ray_t::m_StartOffset"				"32"
+			"Ray_t::m_Extents"					"48"
+			"Ray_t::m_pWorldAxisTransform"		"64"
+			"Ray_t::m_IsRay"					"68"
+			"Ray_t::m_IsSwept"					"69"
+			"Ray_t::size"						"70"
+		}
+		
+		"Addresses"
+		{
+			"g_pMemAlloc"
+			{
+				"windows"
+				{
+					"signature" "g_pMemAllocFunc"
+					"read" "20"
+					"read" "0"
+				}
+				"linux"
+				{
+					"signature" "g_pMemAllocFunc"
+					"read" "142"
+				}
+				
+				"read"	"0"
+			}
+			
+			"sm_pSingleton"
+			{
+				"windows"
+				{
+					"signature"	"CGameMovement::TryPlayerMove"
+					"read" "700"
+				}
+				"linux"
+				{
+					"signature"	"CGameMovement::TryPlayerMove"
+					"read" "596"
+				}
+				
+				"read" "0"
+			}
+		}
+		
+		"Signatures"
+		{
+			"CGameMovement::TracePlayerBBox"
+			{
+				"library"		"server"
+				"windows"		"\x55\x8B\xEC\x83\xE4\xF0\x83\xEC\x5C"
+				"linux"			"\x55\x89\xE5\x57\x56\x53\x81\xEC\x8C\x00\x00\x00\x8B\x5D\x08\x8B\x7D\x10"
+			}
+			
+			"CGameMovement::TryPlayerMove"
+			{
+				"library"		"server"
+				"windows"		"\x55\x8B\xEC\x83\xE4\xF8\x81\xEC\x38\x01\x00\x00\xF3\x0F\x10\x35\x2A\x2A\x2A\x2A"
+				"linux"			"\x55\x89\xE5\x57\x56\x31\xF6\x53\x81\xEC\x2A\x2A\x2A\x2A\xC7\x85\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\xC7\x85"
+			}
+			
+			"g_pMemAllocFunc"
+			{
+				"library"		"server"
+				"windows"		"\x55\x8B\xEC\x56\x8B\xF1\x83\x4E\x30\x04"
+				"linux"			"\x55\x89\xE5\x57\x56\x53\x81\xEC\x6C\x03\x00\x00\x8B\x55\x08"
+			}
+		}
+		
+		"Offsets"
+		{
+			"AddToTouched"
+			{
+				"windows"		"3"
+				"linux"			"3"
+			}
+			
+			"CanTraceRay"
+			{
+				"windows"		"3"
+				"linux"			"4"
+			}
+			
+			"TraceRay"
+			{
+				"windows"		"5"
+				"linux"			"5"
+			}
+			
+			"TraceRayAgainstLeafAndEntityList"
+			{
+				"windows"		"8"
+				"linux"			"8"
+			}
+			
+			"UnlockTraceFilter"
+			{
+				"windows"		"74"
+				"linux"			"75"
+			}
+			
+			"LockTraceFilter"
+			{
+				"windows"		"73"
+				"linux"			"74"
+			}
+			
+			"ClipVelocity"
+			{
+				"windows"		"49"
+				"linux"			"50"
+			}
+			
+			"TracePlayerBBox"
+			{
+				"windows"		"15"
+				"linux"			"14"
+			}
+			
+			"GetPlayerMaxs"
+			{
+				"windows"		"14"
+				"linux"			"35"
+			}
+			
+			"GetPlayerMins"
+			{
+				"windows"		"13"
+				"linux"			"34"
+			}
+			
+			"Malloc"
+			{
+				"windows"		"1"
+				"linux"			"0"
+			}
+			
+			"Free"
+			{
+				"windows"		"5"
+				"linux"			"2"
+			}
+		}
+	}
+}

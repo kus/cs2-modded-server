@@ -1,4 +1,4 @@
-﻿"Phrases"
+"Phrases"
 {
 	"Jumpstats_PersonalBest"
 	{
@@ -14,11 +14,6 @@
 	{
 		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:i},{6:s},{7:s},{8:i},{9:i}"
 		"en"        "[{1}GLOBAL{2}] {3}{4} is now #{5} (TP) on {6}! [{7}, TPs: {8}, Tick{9}]"
-	}
-	"UndoLadder"
-	{
-		"#format"   "{1:c},{2:c},{3:c}"
-		"en"        "[{1}KZ{2}] {3}Undo TP is not allowed because your last teleport origin is on a ladder"
 	}
 	"UndoMidAir"
 	{
@@ -62,6 +57,10 @@
 	"options_lang_pt"
 	{
 		"en"       "Language - Portuguese Brazilian"
+	}
+	"options_lang_es"
+	{
+		"en"       "Language - Spanish"
 	}
 	"stopsound"
 	{
@@ -240,14 +239,6 @@
 	"options_gotome_off"
 	{
 		"en"       "Goto me  -  Disabled"
-	}
-	"options_autobhop_on"
-	{
-		"en"       "AutoBhop  -  Enabled"
-	}
-	"options_autobhop_off"
-	{
-		"en"       "AutoBhop  -  Disabled"
 	}
 	"HideChat1"
 	{
@@ -923,6 +914,11 @@
 		"#format"   "{1:c},{2:c}"
 		"en"        "[{1}KZ{2}] Noclip disabled (server-sided)"
 	}
+	"NoclipNotAvailablePrivileged"
+	{
+		"#format"   "{1:c},{2:c},{3:s}"
+		"en"        "[{1}KZ{2}] You must be ranked as {3}, MAPPER, VIP or ADMIN to use +noclip"
+	}
 	"CMenuDisabled"
 	{
 		"#format"   "{1:c},{2:c}"
@@ -1078,11 +1074,6 @@
 	"CompareMenuTitle"
 	{
 		"en"		"KZTimer - Compare Menu"
-	}
-	"RankingSystem" 
-	{
-		"#format"	"{1:c},{2:c},{3:c}"
-		"en"		"[{1}KZ{2}]{3} Loading html page.. (requires cl_disablehtmlmotd 0)"
 	}
 	"TopRankedPlayer" 
 	{
@@ -1254,6 +1245,16 @@
 		"#format"	"{1:c},{2:c},{3:c},{4:c}"
 		"en"		"[{1}KZ{2}] {3}You can't unpause.. yet!{4}"
 	}
+	"PauseDisabledTimedLadder"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c}"
+		"en"		"[{1}KZ{2}] {3}You can't pause on a timed ladder!{4}"
+	}
+	"PauseDisabledBhopBlock"
+	{
+		"#format"	"{1:c},{2:c},{3:c},{4:c}"
+		"en"		"[{1}KZ{2}] {3}You can't pause on a bhop block!{4}"
+	}
 	"Showtime1"
 	{
 		"#format"   "{1:c},{2:c}"
@@ -1363,21 +1364,6 @@
 	{
 		"#format"   "{1:c},{2:c}"
 		"en"        "[{1}KZ{2}] Strafe sync in chat disabled."
-	}
-	"AutoBhop1"
-	{
-		"#format"   "{1:c},{2:c}"
-		"en"        "[{1}KZ{2}] AutoBhop enabled."
-	}
-	"AutoBhop2"
-	{
-		"#format"   "{1:c},{2:c}"
-		"en"        "[{1}KZ{2}] AutoBhop disabled."
-	}
-	"AutoBhop3"
-	{
-		"#format"   "{1:c},{2:c}"
-		"en"        "[{1}KZ{2}] AutoBhop disabled. (server-sided)"
 	}
 	"AdvClimbersMenu1"
 	{

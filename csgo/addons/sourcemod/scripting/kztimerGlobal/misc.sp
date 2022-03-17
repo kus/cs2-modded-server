@@ -173,7 +173,6 @@ public SetServerConvars()
 		SetConVarFloat(g_hBhopSpeedCap, 380.0);
 		SetConVarFloat(g_hWaterAccelerate, 10.0);
 		SetConVarInt(g_hCheats, 0);
-		SetConVarInt(g_hDropKnifeEnable, 0);
 		SetConVarInt(g_hEnableBunnyhoping, 1);
 		SetConVarInt(g_hAutoBhop, 0);
 		SetConVarInt(g_hClampVel, 0);
@@ -196,6 +195,12 @@ public SetServerConvars()
 		SetConVarFloat(g_hExojumpJumpcost, 0.0);
 		SetConVarFloat(g_hExojumpLandcost, 0.0);
 		SetConVarFloat(g_hJumpImpulseExojumpMultiplier, 1.0);
+		SetConVarFloat(g_hMinUpdateRate, g_fTickrate);
+		SetConVarFloat(g_hMaxUpdateRate, g_fTickrate);
+		SetConVarFloat(g_hMinCmdRate, g_fTickrate);
+		SetConVarFloat(g_hMaxCmdRate, g_fTickrate);
+		SetConVarFloat(g_hClientCmdrateDifference, 0.0);
+		SetConVarBool(g_hTurboPhysics, false);
 
 		if (FloatAbs(JumpImpulseValue - 301.993377) > 0.00000)
 			ServerCommand("sv_jump_impulse 301.993377");
@@ -226,7 +231,7 @@ public SetServerConvars()
 	SetConVarBool(mp_match_end_restart, false);
 	SetConVarInt(mp_match_restart_delay, 10);
 	SetConVarFloat(mp_endmatch_votenextleveltime, 3.0);
-	SetConVarFloat(sv_timebetweenducks, 0.1);
+	SetConVarFloat(sv_timebetweenducks, 0.0);
 	SetConVarBool(mp_halftime, false);
 	SetConVarBool(bot_zombie, true);
 	SetConVarBool(mp_do_warmup_period, true);
@@ -241,8 +246,39 @@ public DoValidTeleport(client, Float:origin[3],Float:angles[3],Float:vel[3])
 	if (!IsValidClient(client))
 		return;
 	
-	g_fTeleportValidationTime[client] = GetEngineTime();
 	TeleportEntity(client, origin, angles, vel);
+	
+	// don't need to check for position if the player isn't moving anywhere
+	if (IsNullVector(origin))
+	{
+		return;
+	}
+	
+	ResetJump(client); // invalidate jumpstat if origin changed
+	SetEntityMoveType(client, MOVETYPE_LADDER); // don't fall off ladders when teleporting
+	
+	// spec unspec exploit fix
+	if (!IsValidPlayerPos(client, origin))
+	{
+		// do a requestframe here because it doesn't work otherwise when moving from spectator back to ct/t
+		RequestFrame(RequestFrame_DoValidTeleport, client);
+	}
+}
+
+void RequestFrame_DoValidTeleport(int client)
+{
+	SetEntityMoveType(client, MOVETYPE_NONE);
+	// this makes it so the player doesn't trigger triggers, but is still solid to the world
+	SetEntProp(client, Prop_Send, "m_CollisionGroup", COLLISION_GROUP_DEBRIS);
+	SetEntProp(client, Prop_Send, "m_bDucking", true);
+	SetEntityMoveType(client, MOVETYPE_LADDER);
+	
+	RequestFrame(RequestFrame_DoValidTeleport2, client);
+}
+
+void RequestFrame_DoValidTeleport2(int client)
+{
+	SetEntProp(client, Prop_Send, "m_CollisionGroup", COLLISION_GROUP_DEBRIS_TRIGGER); // default value
 }
 
 public LadderCheck(client,Float:speed)
@@ -423,12 +459,7 @@ public PrintConsoleInfo(client)
 	secs = timeleft % 60;
 	Format(finalOutput, 1024, "%d:%02d", mins, secs);
 	new Float:fltickrate = 1.0 / GetTickInterval( );
-
-	if (g_hDbGlobal != INVALID_HANDLE && !StrEqual(VERSION,g_global_szLatestGlobalVersion,false))
-	{
-		PrintToConsole(client, "-----------------------------------------------------------------------------------------------------------");
-		PrintToConsole(client,"Latest KZTimer version: %s", g_global_szLatestGlobalVersion);
-	}
+	
 	PrintToConsole(client, "-----------------------------------------------------------------------------------------------------------");
 	PrintToConsole(client, "This server is running KZTimer v%s - Author: 1NuTWunDeR - Server tickrate: %i", VERSION, RoundToNearest(fltickrate));
 	PrintToConsole(client, "Steam group of KZTimer: http://steamcommunity.com/groups/KZTimerOfficial");
@@ -440,7 +471,7 @@ public PrintConsoleInfo(client)
 	PrintToConsole(client, "- The speed panel of replays bots is inaccurate");
 	PrintToConsole(client, " ");
 	PrintToConsole(client, "Player commands:");
-	PrintToConsole(client, "!help, !help2, !menu, !options, !checkpoint, !gocheck, !prev, !next, !undo, !profile, !compare, !specs,");
+	PrintToConsole(client, "!help, !menu, !options, !checkpoint, !gocheck, !prev, !next, !undo, !profile, !compare, !specs,");
 	PrintToConsole(client, "!bhopcheck, !maptop, top, !start, !stop, !pause, !challenge, !surrender, !goto, !spec, !wr, !avg,");
 	PrintToConsole(client, "!showsettings, !latest, !measure, !ljblock, !ranks, !flashlight, !usp, !globalcheck, !beam,");
 	PrintToConsole(client, "!adv, !speed, !showkeys, !hide, !sync, !bhop, !hidechat, !hideweapon, !stopsound, !route, !mapinfo");
@@ -455,49 +486,14 @@ public PrintConsoleInfo(client)
 	PrintToConsole(client, "%s (%ip), %s (%ip), %s (%ip), %s (%ip)",g_szSkillGroups[1],g_pr_rank_Percentage[1],g_szSkillGroups[2], g_pr_rank_Percentage[2],g_szSkillGroups[3], g_pr_rank_Percentage[3],g_szSkillGroups[4], g_pr_rank_Percentage[4]);
 	PrintToConsole(client, "%s (%ip), %s (%ip), %s (%ip), %s (%ip)",g_szSkillGroups[5], g_pr_rank_Percentage[5], g_szSkillGroups[6],g_pr_rank_Percentage[6], g_szSkillGroups[7], g_pr_rank_Percentage[7], g_szSkillGroups[8], g_pr_rank_Percentage[8]);
 	PrintToConsole(client, "-----------------------------------------------------------------------------------------------------------");
-	if (!g_global_Access)
-		PrintToConsole(client, "[KZ] Global Records disabled. Reason: This server is not whitelisted.");
-	else
-	if (g_hDbGlobal == INVALID_HANDLE)
-		PrintToConsole(client, "[KZ] Global Records disabled. Reason: No connection to the global database.");
-	else
-	if (g_global_Disabled)
-		PrintToConsole(client, "[KZ] Global Records have been temporarily disabled. For more information visit the KZTimer steam group!");
-	else
-	if(!StrEqual(g_szMapPrefix[0],"kz") && !StrEqual(g_szMapPrefix[0],"xc") && !StrEqual(g_szMapPrefix[0],"bkz")  && !StrEqual(g_szMapPrefix[0],"kzpro"))
-		PrintToConsole(client, "[KZ] Global Records disabled. Reason: Only bkz_, kz_,kzpro_ and xc_ maps supported!");
-	else
-	if (g_global_VersionBlocked)
-		PrintToConsole(client, "[KZ] Global Records disabled. Reason: This server is running an outdated KZTimer version. Contact an server admin!");
-	else
 	if (g_global_SelfBuiltButtons)
 		PrintToConsole(client, "[KZ] Global Records disabled. Reason: Self-built climb buttons detected. (only built-in buttons supported)");
-	else
-	if (!g_global_IntegratedButtons)
-		PrintToConsole(client, "[KZ] Global Records disabled. Reason: This map does not provide built-in climb buttons.");
 	else
 	if (!g_bEnforcer)
 		PrintToConsole(client, "[KZ] Global Records disabled. Reason: Server settings enforcer disabled.");
 	else
-	if (!g_global_ValidFileSize && g_global_IntegratedButtons)
-	{
-		if (g_global_WrongMapVersion)
-			PrintToConsole(client, "[KZ] Global Records disabled. Reason: Wrong map version. (requires latest+offical workshop version)");
-		else
-			PrintToConsole(client, "[KZ] Global Records disabled. Reason: Filesize of the current map does not match with the stored global filesize. Please upload the latest workshop version on your server!");
-	}
-	else
-	if (g_bAutoTimer)
-		PrintToConsole(client, "[KZ] Global Records disabled. Reason: kz_auto_timer enabled.");
-	else
-	if (g_bDoubleDuckCvar)
+	if (g_iDoubleDuckCvar == 1)
 		PrintToConsole(client, "[KZ] Global Records disabled. Reason: kz_double_duck is set to 1.");
-	else
-	if (g_bAutoBhop)
-		PrintToConsole(client, "[KZ] Global Records disabled. Reason: AutoBhop enabled.");
-	else
-	if (!g_global_ValidedMap)
-		PrintToConsole(client, "[KZ] Global Records disabled. Reason: The current map is not approved by a kztimer map tester!");
 	else
 		PrintToConsole(client, "[KZ] Global records are enabled.");
 	PrintToConsole(client," ");
@@ -511,6 +507,11 @@ stock Client_SetAssists(client, value)
 {
 	new assists_offset = FindDataMapInfo( client, "m_iFrags" ) + 4;
 	SetEntData(client, assists_offset, value );
+}
+
+stock bool IsWeaponSlotActive(int iClient, int iSlot)
+{
+    return GetPlayerWeaponSlot(iClient, iSlot) == GetEntPropEnt(iClient, Prop_Send, "m_hActiveWeapon");
 }
 
 public SetStandingStartButton(client)
@@ -666,15 +667,21 @@ public DeleteButtons(client)
 			{
 				if (StrEqual(targetname, "climb_startbuttonx", false))
 				{
-					g_fStartButtonPos[0] = -999999.9;
-					g_fStartButtonPos[1] = -999999.9;
-					g_fStartButtonPos[2] = -999999.9;
+					for (int index = 0; index <= MaxClients; index++)
+					{
+						g_fStartButtonPos[index][0] = -999999.9;
+						g_fStartButtonPos[index][1] = -999999.9;
+						g_fStartButtonPos[index][2] = -999999.9;
+					}
 				}
 				else
 				{
-					g_fEndButtonPos[0] = -999999.9;
-					g_fEndButtonPos[1] = -999999.9;
-					g_fEndButtonPos[2] = -999999.9;
+					for (int index = 0; index <= MaxClients; index++)
+					{
+						g_fEndButtonPos[index][0] = -999999.9;
+						g_fEndButtonPos[index][1] = -999999.9;
+						g_fEndButtonPos[index][2] = -999999.9;
+					}
 				}
 				AcceptEntityInput(i, "Kill");
 				RemoveEdict(i);
@@ -696,14 +703,17 @@ public DeleteButtons(client)
 		}
 	}
 	g_global_SelfBuiltButtons=false;
-	g_bFirstEndButtonPush=true;
-	g_bFirstStartButtonPush=true;
 	
-	//stop player times (global record fake)
 	for (new i = 1; i <= MaxClients; i++)
-	if (IsValidClient(i) && !IsFakeClient(i) && client != 67)
 	{
-		Client_Stop(i,0);
+		g_bFirstStartButtonPush[i]=true;
+		g_bFirstEndButtonPush[i]=true;
+		
+		//stop player times (global record fake)
+		if (IsValidClient(i) && !IsFakeClient(i) && client != 67)
+		{
+			Client_Stop(i,0);
+		}
 	}
 	if (IsValidClient(client))
 		KzAdminMenu(client);
@@ -743,15 +753,21 @@ public CreateButton(client,String:targetname[])
 			location3[2]+=150.0;
 			if (StrEqual(targetname, "climb_startbuttonx"))
 			{
-				g_fStartButtonPos = location3;
+				for (int index = 0; index <= MaxClients; index++)
+				{
+					g_fStartButtonPos[index] = location3;
+				}
 				PrintToChat(client,"%c[%cKZ%c] Start button built!", WHITE,MOSSGREEN,WHITE);
-				g_bFirstStartButtonPush=false;
+				g_bFirstStartButtonPush[client]=false;
 			}
 			else
 			{
-				g_fEndButtonPos = location3;
+				for (int index = 0; index <= MaxClients; index++)
+				{
+					g_fEndButtonPos[index] = location3;
+				}
 				PrintToChat(client,"%c[%cKZ%c] Stop button built!", WHITE,MOSSGREEN,WHITE);
-				g_bFirstEndButtonPush = false;
+				g_bFirstEndButtonPush[client] = false;
 			}
 			g_global_SelfBuiltButtons=true;
 			ang[1] -= 180.0;
@@ -787,12 +803,18 @@ public CreateButton(client,String:targetname[])
 		if (StrEqual(targetname, "climb_startbuttonx"))
 		{
 			db_updateMapButtons(location2[0],location2[1],location2[2],ang[1],0);
-			g_fStartButtonPos = location2;
+			for (int index = 0; index <= MaxClients; index++)
+			{
+				g_fStartButtonPos[index] = location2;
+			}
 		}
 		else
 		{
 			db_updateMapButtons(location2[0],location2[1],location2[2],ang[1],1);
-			g_fEndButtonPos =  location2;
+			for (int index = 0; index <= MaxClients; index++)
+			{
+				g_fEndButtonPos[index] =  location2;
+			}
 		}
 	}
 	else
@@ -820,10 +842,8 @@ public SetClientDefaults(client)
 	FloorFrames[client] = 12 + 1;
 	AirSpeed[client][0] = 0.0;
 	AirSpeed[client][1] = 0.0;
-	g_fLastUndo[client] = GetEngineTime();
 	AfterJumpFrame[client] = false;
 	PlayerInTriggerPush[client] = false;
-	g_fLastTimeBhopBlock[client] = GetEngineTime();
 	g_LastGroundEnt[client] = - 1;
 	g_bFlagged[client] = false;
 	g_fLastOverlay[client] = GetEngineTime() - 5.0;
@@ -839,16 +859,13 @@ public SetClientDefaults(client)
 	g_bRespawnAtTimer[client] = false;
 	g_js_bPlayerJumped[client] = false;
 	g_bRecalcRankInProgess[client] = false;
-	g_bClientGroundFlag[client]=false;
 	g_bPrestrafeTooHigh[client] = false;
 	g_bPause[client] = false;
 	g_bPositionRestored[client] = false;
 	g_bTopMenuOpen[client] = false;
 	g_bMapMenuOpen[client] = false;
-	g_bRestorePosition[client] = false;
 	g_bRestorePositionMsg[client] = false;
 	g_bRespawnPosition[client] = false;
-	g_bNoClip[client] = false;
 	g_bMapFinished[client] = false;
 	g_bMapRankToChat[client] = false;
 	g_bOnBhopPlattform[client] = false;
@@ -875,13 +892,10 @@ public SetClientDefaults(client)
 	g_PrestrafeFrameCounter[client] = 0;
 	g_PrestrafeVelocity[client] = 1.0;
 	g_fCurrentRunTime[client] = -1.0;
-	g_fPlayerCordsLastPosition[client] = Float:{0.0,0.0,0.0};
 	g_fPlayerCordsUndoTp[client] = Float:{0.0,0.0,0.0};
 	g_fPlayerConnectedTime[client] = GetEngineTime();
 	g_fLastTimeButtonSound[client] = GetEngineTime();
-	g_fLastTimeNoClipUsed[client] = -1.0;
 	g_fStartTime[client] = -1.0;
-	g_fPlayerLastTime[client] = -1.0;
 	g_js_GroundFrames[client] = 0;
 	g_fStartPauseTime[client] = 0.0;
 	g_js_fJump_JumpOff_PosLastHeight[client] = -1.012345;
@@ -895,9 +909,7 @@ public SetClientDefaults(client)
 	g_OldMapRankTp[client] = 99999;
 	g_fProfileMenuLastQuery[client] = GetEngineTime();
 	g_PlayerRank[client] = 99999;
-	g_fTeleportValidationTime[client] = GetEngineTime()-1.01;
-	if (g_fTeleportValidationTime[client]  < 0.0)
-		g_fTeleportValidationTime[client]  = 0.0;
+	g_bMapper[client] = false;
 	Format(g_szPlayerPanelText[client], 512, "");
 	Format(g_pr_rankname[client], 32, "");
 	Format(g_pr_chat_coloredrank[client], 32, "");
@@ -923,7 +935,6 @@ public SetClientDefaults(client)
 	g_bAdvancedClimbersMenu[client]=true;
 	g_ColorChat[client]=1;
 	g_ShowSpecs[client]=0;
-	g_bAutoBhopClient[client]=true;
 	g_bJumpBeam[client]=false;
 	g_bViewModel[client]=true;
 	g_bAdvInfoPanel[client]=false;
@@ -938,6 +949,14 @@ public GetcurrentRunTime(client)
 {
 	decl String:szTime[32];
 	decl Float:flPause, Float:flTime;
+	
+	g_fCurrentRunTime[client] = GetEngineTime() - g_fStartTime[client] - g_fPauseTime[client];
+	if (!g_bShowTime[client])
+	{
+		Format(g_szTimerTitle[client], 255, "%s", g_szPlayerPanelText[client]);
+		return;
+	}
+	
 	if (g_bPause[client])
 	{
 		flPause = GetEngineTime() - g_fStartPauseTime[client];
@@ -947,19 +966,11 @@ public GetcurrentRunTime(client)
 	}
 	else
 	{
-		g_fCurrentRunTime[client] = GetEngineTime() - g_fStartTime[client] - g_fPauseTime[client];
 		FormatTimeFloat(client, g_fCurrentRunTime[client], 1,szTime,sizeof(szTime));
-		if(g_bShowTime[client])
-		{
-			if(StrEqual(g_szPlayerPanelText[client],""))
-				Format(g_szTimerTitle[client], 255, "%s", szTime);
-			else
-				Format(g_szTimerTitle[client], 255, "%s\n%s", g_szPlayerPanelText[client],szTime);
-		}
+		if(StrEqual(g_szPlayerPanelText[client],""))
+			Format(g_szTimerTitle[client], 255, "%s", szTime);
 		else
-		{
-			Format(g_szTimerTitle[client], 255, "%s", g_szPlayerPanelText[client]);
-		}
+			Format(g_szTimerTitle[client], 255, "%s\n%s", g_szPlayerPanelText[client],szTime);
 	}
 }
 
@@ -1044,6 +1055,12 @@ public PlayLeetJumpSound(client)
 
 public PlayGoldenJumpSound(client)
 {
+	// don't play ownage sounds for bots
+	if (IsFakeClient(client))
+	{
+		return;
+	}
+	
 	decl String:buffer[255];
 
 	//all sound
@@ -1078,7 +1095,7 @@ public PlayRecordSound(iRecordtype)
 {
 	decl String:buffer[255];
 	if (iRecordtype==1)
-	    for(new i = 1; i <= GetMaxClients(); i++)
+	    for(new i = 1; i <= MaxClients; i++)
 		{
 			if(IsValidClient(i) && !IsFakeClient(i) && g_EnableQuakeSounds[i] >= 1)
 			{
@@ -1088,7 +1105,7 @@ public PlayRecordSound(iRecordtype)
 		}
 	else
 		if (iRecordtype==2 || iRecordtype == 3)
-			for(new i = 1; i <= GetMaxClients(); i++)
+			for(new i = 1; i <= MaxClients; i++)
 			{
 				if(IsValidClient(i) && !IsFakeClient(i) && g_EnableQuakeSounds[i] >= 1)
 				{
@@ -1201,32 +1218,7 @@ public PrintMapRecords(client)
 	{
 		KZTimerAPI_PrintGlobalRecord(client);
 	}
-
-	if (g_global_ValidedMap && g_global_IntegratedButtons && !g_global_VersionBlocked && !g_global_SelfBuiltButtons && g_hDbGlobal != INVALID_HANDLE && g_bEnforcer && g_global_ValidFileSize && !g_bAutoTimer)
-	{
-		if (g_fGlobalRecordPro_Time != 9999999.0)
-		{
-			FormatTimeFloat(client, g_fGlobalRecordPro_Time, 3,szTime,sizeof(szTime));
-			switch(g_Server_Tickrate)
-			{
-				case 64: PrintToChat(client, "%t", "GlobalRecord1_Pro",MOSSGREEN,WHITE, DARKRED,WHITE, szTime, g_GlobalRecordPro_Name);
-				case 102: PrintToChat(client, "%t", "GlobalRecord2_Pro",MOSSGREEN,WHITE,DARKRED,WHITE, szTime, g_GlobalRecordPro_Name);
-				case 128: PrintToChat(client, "%t", "GlobalRecord3_Pro",MOSSGREEN,WHITE,DARKRED,WHITE, szTime, g_GlobalRecordPro_Name);
-			}
-		}
-
-		if (g_fGlobalRecordTp_Time != 9999999.0)
-		{
-			FormatTimeFloat(client, g_fGlobalRecordTp_Time, 3,szTime,sizeof(szTime));
-			switch(g_Server_Tickrate)
-			{
-				case 64: PrintToChat(client, "%t", "GlobalRecord1_Tp",MOSSGREEN,WHITE,RED,WHITE, szTime, g_GlobalRecordTp_Name);
-				case 102: PrintToChat(client, "%t", "GlobalRecord2_Tp",MOSSGREEN,WHITE,RED,WHITE, szTime, g_GlobalRecordTp_Name);
-				case 128: PrintToChat(client, "%t", "GlobalRecord3_Tp",MOSSGREEN,WHITE,RED,WHITE, szTime, g_GlobalRecordTp_Name);
-			}
-		}
-	}
-
+	
 	if (g_fRecordTimePro != 9999999.0)
 	{
 		FormatTimeFloat(client, g_fRecordTimePro, 3,szTime,sizeof(szTime));
@@ -1237,39 +1229,6 @@ public PrintMapRecords(client)
 		FormatTimeFloat(client, g_fRecordTime, 3,szTime,sizeof(szTime));
 		PrintToChat(client, "%t", "TpRecord",MOSSGREEN,WHITE,YELLOW,WHITE, szTime, g_szRecordPlayer);
 	}
-}
-
-public PrintMapTier(client)
-{
-	if (g_hDbGlobal == INVALID_HANDLE)
-		PrintToChat(client, "[%cKZ%c] %cMap Tier%c: %cNo connection to database (Server most likely not global)%c", MOSSGREEN, WHITE, BLUE, WHITE, RED, WHITE);
-
-	else if (!g_global_ValidedMap)
-		PrintToChat(client, "[%cKZ%c] %cMap Tier%c: %cCurrent map is not global%c", MOSSGREEN, WHITE, BLUE, WHITE, RED, WHITE);
-
-	else if (g_global_maptier <= 0 && g_global_ValidedMap)
-		PrintToChat(client, "[%cKZ%c] %cMap Tier%c: %cCurrent map does not have a tier%c", MOSSGREEN, WHITE, BLUE, WHITE, RED, WHITE);
-
-	else
-	{
-
-	switch (g_global_maptier)
-	{
-   	case 1:
-		PrintToChat(client, "[%cKZ%c] %cMap Tier%c: %cVery Easy%c (See %c!tierhelp %cfor more info)", MOSSGREEN, WHITE, BLUE, WHITE, GREEN, WHITE, GREEN, WHITE);
-	case 2:
-		PrintToChat(client, "[%cKZ%c] %cMap Tier%c: %cEasy%c (See %c!tierhelp %cfor more info)", MOSSGREEN, WHITE, BLUE, WHITE, LIMEGREEN, WHITE, GREEN, WHITE);
-	case 3:
-	    PrintToChat(client, "[%cKZ%c] %cMap Tier%c: %cMedium%c (See %c!tierhelp %cfor more info)", MOSSGREEN, WHITE, BLUE, WHITE, MOSSGREEN, WHITE, GREEN, WHITE);
-	case 4:
-	    PrintToChat(client, "[%cKZ%c] %cMap Tier%c: %cHard%c (See %c!tierhelp %cfor more info)", MOSSGREEN, WHITE, BLUE, WHITE, ORANGE, WHITE, GREEN, WHITE);
-	case 5:
-	    PrintToChat(client, "[%cKZ%c] %cMap Tier%c: %cVery Hard%c (See %c!tierhelp %cfor more info)", MOSSGREEN, WHITE, BLUE, WHITE, DARKRED, WHITE, GREEN, WHITE);
-	case 6:
-		PrintToChat(client, "[%cKZ%c] %cMap Tier%c: %cDeath%c (See %c!tierhelp %cfor more info)", MOSSGREEN, WHITE, BLUE, WHITE, RED, WHITE, GREEN, WHITE);
-		}
-	}
-	return;
 }
 
 public MapFinishedMsgs(client, type)
@@ -1294,7 +1253,7 @@ public MapFinishedMsgs(client, type)
 			rank = g_MapRankTp[client];
 			FormatTimeFloat(client, g_fRecordTime, 3, szTime, sizeof(szTime));
 		}
-		for(new i = 1; i <= GetMaxClients(); i++)
+		for(new i = 1; i <= MaxClients; i++)
 		{
 			if(IsValidClient(i) && !IsFakeClient(i))
 			{
@@ -1406,8 +1365,14 @@ public MapFinishedMsgs(client, type)
 		}
 
 		//noclip MsgMsg
-		if (IsValidClient(client) && g_bMapFinished[client] == false && !StrEqual(g_pr_rankname[client],g_szSkillGroups[8]) && !(GetUserFlagBits(client) & ADMFLAG_RESERVATION) && !(GetUserFlagBits(client) & ADMFLAG_ROOT) && !(GetUserFlagBits(client) & ADMFLAG_GENERIC) && g_bNoClipS)
+		if (IsValidClient(client)
+			&& g_bMapFinished[client] == false
+			&& !StrEqual(g_pr_rankname[client], g_szSkillGroups[8])
+			&& !(GetUserFlagBits(client) & (ADMFLAG_RESERVATION | ADMFLAG_ROOT | ADMFLAG_GENERIC))
+			&& g_iNoClipMode == NOCLIPMODE_NORMAL)
+		{
 			PrintToChat(client, "%t", "NoClipUnlocked",MOSSGREEN,WHITE,YELLOW);
+		}
 		g_bMapFinished[client] = true;
 		CreateTimer(0.0, UpdatePlayerProfile, client,TIMER_FLAG_NO_MAPCHANGE);
 
@@ -1720,7 +1685,16 @@ public SetPlayerRank(client)
 		g_Skillgroup[client] = 0;
 		Format(g_pr_rankname[client], 32, "");
 	}
-
+	
+	// Mapper tag
+	for (int i = 0; i < sizeof(g_szMapmakers); i++)
+	{
+		if (StrEqual(g_szMapmakers[i], g_szSteamID[client]))
+		{
+			g_bMapper[client] = true;
+			break;
+		}
+	}
 
 	// DEV Tags -- 1NutWunder, Klyve & Sikari
 	if (StrEqual(g_szSteamID[client],"STEAM_1:1:73507922") ||	// 1NutWunder
@@ -1777,18 +1751,11 @@ public SetPlayerRank(client)
 		Format(g_pr_rankname[client], 32, "VIP");
 	}
 
-  // Mapper tag
-  for(new x = 0; x < 100; x++)
+	// Mapper tag
+	if (g_bMapper[client])
 	{
-		if ((StrContains(g_szMapmakers[x],"STEAM",true) != -1))
-		{
-			if (StrEqual(g_szMapmakers[x],g_szSteamID[client]))
-			{
-				Format(g_pr_chat_coloredrank[client], 32, "%s %cMAPPER%c",g_pr_chat_coloredrank[client],LIMEGREEN,WHITE);
-				Format(g_pr_rankname[client], 32, "MAPPER");
-				break;
-			}
-		}
+		Format(g_pr_chat_coloredrank[client], 32, "%s %cMAPPER%c",g_pr_chat_coloredrank[client],LIMEGREEN,WHITE);
+		Format(g_pr_rankname[client], 32, "MAPPER");
 	}
 }
 
@@ -1834,10 +1801,6 @@ stock Action:PrintSpecMessageAll(client)
 	ReplaceString(szTextToAll,1024,"{lightred}","",false);
 	Color_StripFromChatText(szTextToAll, szTextToAll, sizeof(szTextToAll));
 
-	//text right to left?
-	decl String:sTextNew[1024];
-	if(RTLify(sTextNew, szTextToAll))
-		FormatEx(szTextToAll, 1024, sTextNew);
 
 	decl String:szChatRank[64];
 	Format(szChatRank, 64, "%s",g_pr_chat_coloredrank[client]);
@@ -1915,9 +1878,7 @@ public AttackProtection(client, &buttons)
 {
 	if (g_bAttackSpamProtection && !IsFakeClient(client))
 	{
-		decl String:classnamex[64];
-		GetClientWeapon(client, classnamex, 64);
-		if(StrContains(classnamex,"knife",true) == -1 && g_AttackCounter[client] >= 40)
+		if(!IsWeaponSlotActive(client, CS_SLOT_KNIFE) && g_AttackCounter[client] >= 40)
 		{
 			if(buttons & IN_ATTACK)
 			{
@@ -2094,64 +2055,54 @@ public bool TraceRayDontHitSelfSlope(int entity, int mask, any data)
 }
 
 ////https://forums.alliedmods.net/showthread.php?t=266888
-public SlopeBoostFix(client)
+public void SlopeBoostFix(int client)
 {
-	g_bLastOnGround[client] = g_bOnGround[client];
-	g_vLast[client][0]    = g_vCurrent[client][0];
-	g_vLast[client][1]    = g_vCurrent[client][1];
-	g_vLast[client][2]    = g_vCurrent[client][2];
-	g_vCurrent[client][0] = GetEntPropFloat(client, Prop_Send, "m_vecVelocity[0]");
-	g_vCurrent[client][1] = GetEntPropFloat(client, Prop_Send, "m_vecVelocity[1]");
-	g_vCurrent[client][2] = GetEntPropFloat(client, Prop_Send, "m_vecVelocity[2]");
-
 	// Check if player landed on the ground
-	if (g_bOnGround[client] == true && g_bLastOnGround[client] == false)
+	if (g_bOnGround[client] && !g_bLastOnGround[client])
 	{
 		// Set up and do tracehull to find out if the player landed on a slope
-		float vPos[3];
-		GetEntPropVector(client, Prop_Data, "m_vecOrigin", vPos);
-
+		float position[3];
+		GetEntPropVector(client, Prop_Data, "m_vecOrigin", position);
+		
 		float vMins[3];
-		GetEntPropVector(client, Prop_Send, "m_vecMins", vMins);
-
+		GetClientMins(client, vMins);
 		float vMaxs[3];
-		GetEntPropVector(client, Prop_Send, "m_vecMaxs", vMaxs);
-
+		GetClientMaxs(client, vMaxs);
+		
 		float vEndPos[3];
-		vEndPos[0] = vPos[0];
-		vEndPos[1] = vPos[1];
-		vEndPos[2] = vPos[2] - FindConVar("sv_maxvelocity").FloatValue;
-
-		TR_TraceHullFilter(vPos, vEndPos, vMins, vMaxs, MASK_PLAYERSOLID_BRUSHONLY, TraceRayDontHitSelfSlope, client);
-
-		if(TR_DidHit())
+		vEndPos = position;
+		vEndPos[2] -= FindConVar("sv_maxvelocity").FloatValue;
+		
+		TR_TraceHullFilter(position, vEndPos, vMins, vMaxs, MASK_PLAYERSOLID_BRUSHONLY, TraceRayDontHitSelfSlope, client);
+		
+		if (TR_DidHit())
 		{
 			// Gets the normal vector of the surface under the player
 			float vPlane[3], vLast[3];
 			TR_GetPlaneNormal(INVALID_HANDLE, vPlane);
-
+			
 			// Make sure it's not flat ground and not a surf ramp (1.0 = flat ground, < 0.7 = surf ramp)
-			if(0.7 <= vPlane[2] && vPlane[2] < 1.0)
+			if (0.7 <= vPlane[2] && vPlane[2] < 1.0)
 			{
 				/*
 				Copy the ClipVelocity function from sdk2013
 				(https://mxr.alliedmods.net/hl2sdk-sdk2013/source/game/shared/gamemovement.cpp#3145)
 				With some minor changes to make it actually work
 				*/
-				vLast[0]  = g_vLast[client][0];
-				vLast[1]  = g_vLast[client][1];
-				vLast[2]  = g_vLast[client][2];
+				vLast[0]  = g_fLastVelocity[client][0];
+				vLast[1]  = g_fLastVelocity[client][1];
+				vLast[2]  = g_fLastVelocity[client][2];
 				vLast[2] -= (FindConVar("sv_gravity").FloatValue * GetTickInterval() * 0.5);
-
+				
 				float fBackOff = GetVectorDotProduct(vLast, vPlane);
-
+				
 				float change, vVel[3];
 				for(int i; i < 2; i++)
 				{
 					change  = vPlane[i] * fBackOff;
 					vVel[i] = vLast[i] - change;
 				}
-
+				
 				float fAdjust = GetVectorDotProduct(vVel, vPlane);
 				if(fAdjust < 0.0)
 				{
@@ -2160,22 +2111,15 @@ public SlopeBoostFix(client)
 						vVel[i] -= (vPlane[i] * fAdjust);
 					}
 				}
-
+				
 				vVel[2] = 0.0;
 				vLast[2] = 0.0;
-
+				
+				float velLength = GetVectorLength(vVel);
 				// Make sure the player is going down a ramp by checking if they actually will gain speed from the boost
-				if(GetVectorLength(vVel) > GetVectorLength(vLast))
+				if (velLength > GetVectorLength(vLast)
+					&& velLength < g_fBhopSpeedCap)
 				{
-					// Teleport the player, also adds basevelocity
-					if(GetEntityFlags(client) & FL_BASEVELOCITY)
-					{
-						float vBase[3];
-						GetEntPropVector(client, Prop_Data, "m_vecBaseVelocity", vBase);
-
-						AddVectors(vVel, vBase, vVel);
-					}
-
 					DoValidTeleport(client, NULL_VECTOR, NULL_VECTOR, vVel);
 				}
 			}
@@ -2251,13 +2195,22 @@ public SetPlayerBeam(client, Float:origin[3])
 
 
 
-public PerformBan(client, String:szbantype[16])
+public void PerformBan(int client, char szbantype[64], bool hack)
 {
 	if (IsValidClient(client))
 	{
 		decl String:szName[64];
 		GetClientName(client,szName,64);
-		new duration = RoundToZero(g_fBanDuration*60);
+		int duration;
+		if (hack)
+		{
+			duration = RoundToZero(g_fBanDuration * 60.0);
+		}
+		else
+		{
+			duration = RoundToZero(g_fBanDurationM * 60.0);
+		}
+		
 		decl String:KickMsg[255];
 		Format(KickMsg, sizeof(KickMsg), "KZ-AntiCheat: You have been banned from the server. (reason: %s)",szbantype);
 
@@ -2282,7 +2235,7 @@ public bool:WallCheck(client)
 	angs[1] = -180.0;
 	while (angs[1] != 180.0)
 	{
-		new Handle:trace = TR_TraceRayFilterEx(pos, angs, MASK_SHOT, RayType_Infinite, TraceEntityFilterPlayer);
+		new Handle:trace = TR_TraceRayFilterEx(pos, angs, MASK_PLAYERSOLID, RayType_Infinite, TraceEntityFilterPlayer);
 
 		if(TR_DidHit(trace))
 		{
@@ -2307,43 +2260,16 @@ public Prestrafe(client, Float: ang, &buttons)
 	//decl.
 	new Float:flDefaultKnifeSpeed = 1.0;
 	new Float:flMaxKnifeSpeed = 1.104;
-	new Float:flDefaultUspSpeed= 1.041667;
-	new Float:flMaxUspSpeed = 1.15;
-	new Float:flUnarmedSpeed = 0.96154;
 	new bool: turning_right;
 	new bool: turning_left;
 	decl MaxFrameCount;
 	decl Float: IncSpeed, Float: DecSpeed;
 	new Float: speed = GetSpeed(client);
 	new bool: bForward;
-
-	//get weapon
-	char classname[128];
-	GetClientWeapon(client, classname, sizeof(classname));
-	TrimString(classname);
-
-	if (!g_bPreStrafe ||
-	(!StrEqual(classname, "weapon_hkp2000") &&
-	!StrEqual(classname, "weapon_usp_silencer") &&
-	!StrEqual(classname, "weapon_bayonet") &&
-	StrContains(classname, "weapon_knife") &&
-	StrContains(classname, "weapon")))
+	
+	if (!g_bPreStrafe)
 	{
-		if (StrEqual(classname, "weapon_hkp2000") || StrEqual(classname, "weapon_usp_silencer"))
-		{
-			SetEntPropFloat(client, Prop_Send, "m_flVelocityModifier", flDefaultUspSpeed);
-		}
-
-		else if ((StrContains(classname, "weapon_knife")) != -1 || (StrContains(classname, "weapon_bayonet") != -1))
-		{
-			SetEntPropFloat(client, Prop_Send, "m_flVelocityModifier", flDefaultKnifeSpeed);
-		}
-
-		else
-		{
-			SetEntPropFloat(client, Prop_Send, "m_flVelocityModifier", flUnarmedSpeed);
-		}
-
+		SetEntPropFloat(client, Prop_Send, "m_flVelocityModifier", flDefaultKnifeSpeed);
 		return;
 	}
 	
@@ -2366,10 +2292,7 @@ public Prestrafe(client, Float: ang, &buttons)
 
 
 	new Float: flVelMd = GetEntPropFloat(client, Prop_Send, "m_flVelocityModifier");
-	if ((StrEqual(classname, "weapon_knife") ||
-	StrEqual(classname, "weapon_bayonet") ||
-	StrContains(classname, "weapon_knife_") != -1) &&
-	flVelMd > flMaxKnifeSpeed+0.007)
+	if (flVelMd > flMaxKnifeSpeed+0.007)
 	{
 		SetEntPropFloat(client, Prop_Send, "m_flVelocityModifier", flMaxKnifeSpeed-0.001);
 	}
@@ -2381,10 +2304,7 @@ public Prestrafe(client, Float: ang, &buttons)
 		diff = GetEngineTime() - g_fVelocityModifierLastChange[client]
 		if (diff > 0.2)
 		{
-			if(StrEqual(classname, "weapon_hkp2000") || StrEqual(classname, "weapon_usp_silencer"))
-				g_PrestrafeVelocity[client] = flDefaultUspSpeed;
-			else
-				g_PrestrafeVelocity[client] = flDefaultKnifeSpeed;
+			g_PrestrafeVelocity[client] = flDefaultKnifeSpeed;
 			g_fVelocityModifierLastChange[client] = GetEngineTime();
 			SetEntPropFloat(client, Prop_Send, "m_flVelocityModifier", g_PrestrafeVelocity[client]);
 		}
@@ -2398,9 +2318,10 @@ public Prestrafe(client, Float: ang, &buttons)
 		{
 			MaxFrameCount = 45;
 			IncSpeed = 0.0015;
-			if ((g_PrestrafeVelocity[client] > 1.08 && (StrEqual(classname, "weapon_hkp2000") || StrEqual(classname, "weapon_usp_silencer"))) ||
-				(g_PrestrafeVelocity[client] > 1.04 && (!StrEqual(classname, "weapon_hkp2000") || !StrEqual(classname, "weapon_usp_silencer"))))
+			if (g_PrestrafeVelocity[client] > 1.04)
+			{
 				IncSpeed = 0.001;
+			}
 			DecSpeed = 0.0045;
 		}
 
@@ -2408,20 +2329,21 @@ public Prestrafe(client, Float: ang, &buttons)
 		{
 			MaxFrameCount = 60;
 			IncSpeed = 0.0011;
-			if ((g_PrestrafeVelocity[client] > 1.08 && (StrEqual(classname, "weapon_hkp2000") || StrEqual(classname, "weapon_usp_silencer"))) ||
-				(g_PrestrafeVelocity[client] > 1.04 && (!StrEqual(classname, "weapon_hkp2000") || !StrEqual(classname, "weapon_usp_silencer"))))
+			if (g_PrestrafeVelocity[client] > 1.04)
+			{
 				IncSpeed = 0.001;
+			}
 			DecSpeed = 0.0045;
-
 		}
 
 		if (g_Server_Tickrate == 128)
 		{
 			MaxFrameCount = 75;
 			IncSpeed = 0.0009;
-			if ((g_PrestrafeVelocity[client] > 1.08 && (StrEqual(classname, "weapon_hkp2000") || StrEqual(classname, "weapon_usp_silencer"))) ||
-				(g_PrestrafeVelocity[client] > 1.04 && (!StrEqual(classname, "weapon_hkp2000") || !StrEqual(classname, "weapon_usp_silencer"))))
+			if (g_PrestrafeVelocity[client] > 1.04)
+			{
 				IncSpeed = 0.001;
+			}
 			DecSpeed = 0.0045;
 		}
 		if (((buttons & IN_MOVERIGHT && turning_right || turning_left && !bForward)) || ((buttons & IN_MOVELEFT && turning_left || turning_right && !bForward)))
@@ -2432,21 +2354,12 @@ public Prestrafe(client, Float: ang, &buttons)
 			{
 				//increase speed
 				g_PrestrafeVelocity[client]+= IncSpeed;
-				//usp
-				if(StrEqual(classname, "weapon_hkp2000") || StrEqual(classname, "weapon_usp_silencer"))
+				if (g_PrestrafeVelocity[client] > flMaxKnifeSpeed)
 				{
-					if (g_PrestrafeVelocity[client] > flMaxUspSpeed)
+					if (g_PrestrafeVelocity[client] > flMaxKnifeSpeed+0.007)
+						g_PrestrafeVelocity[client] = flMaxKnifeSpeed-0.001;
+					else
 						g_PrestrafeVelocity[client]-=0.007;
-				}
-				else
-				{
-					if (g_PrestrafeVelocity[client] > flMaxKnifeSpeed)
-					{
-						if (g_PrestrafeVelocity[client] > flMaxKnifeSpeed+0.007)
-							g_PrestrafeVelocity[client] = flMaxKnifeSpeed-0.001;
-						else
-							g_PrestrafeVelocity[client]-=0.007;
-					}
 				}
 				g_PrestrafeVelocity[client]+= IncSpeed;
 			}
@@ -2456,33 +2369,17 @@ public Prestrafe(client, Float: ang, &buttons)
 				g_PrestrafeVelocity[client]-= DecSpeed;
 				g_PrestrafeFrameCounter[client] = g_PrestrafeFrameCounter[client] - 2;
 
-				//usp reset 250.0 speed
-				if(StrEqual(classname, "weapon_hkp2000") || StrEqual(classname, "weapon_usp_silencer"))
+				//reset 250.0 speed
+				if (g_PrestrafeVelocity[client]< flDefaultKnifeSpeed)
 				{
-					if (g_PrestrafeVelocity[client]< flDefaultUspSpeed)
-					{
-						g_PrestrafeFrameCounter[client] = 0;
-						g_PrestrafeVelocity[client]= flDefaultUspSpeed;
-					}
+					g_PrestrafeFrameCounter[client] = 0;
+					g_PrestrafeVelocity[client]= flDefaultKnifeSpeed;
 				}
-				else
-					//knife reset 250.0 speed
-					if (g_PrestrafeVelocity[client]< flDefaultKnifeSpeed)
-					{
-						g_PrestrafeFrameCounter[client] = 0;
-						g_PrestrafeVelocity[client]= flDefaultKnifeSpeed;
-					}
 			}
 		}
 		else
 		{
 			g_PrestrafeVelocity[client] -= 0.04;
-			if(StrEqual(classname, "weapon_hkp2000") || StrEqual(classname, "weapon_usp_silencer"))
-			{
-				if (g_PrestrafeVelocity[client]< flDefaultUspSpeed)
-					g_PrestrafeVelocity[client]= flDefaultUspSpeed;
-			}
-			else
 			if (g_PrestrafeVelocity[client]< flDefaultKnifeSpeed)
 				g_PrestrafeVelocity[client]= flDefaultKnifeSpeed;
 		}
@@ -2493,10 +2390,7 @@ public Prestrafe(client, Float: ang, &buttons)
 	}
 	else
 	{
-		if(StrEqual(classname, "weapon_hkp2000") || StrEqual(classname, "weapon_usp_silencer"))
-			SetEntPropFloat(client, Prop_Send, "m_flVelocityModifier", flDefaultUspSpeed);
-		else
-			SetEntPropFloat(client, Prop_Send, "m_flVelocityModifier", flDefaultKnifeSpeed);
+		SetEntPropFloat(client, Prop_Send, "m_flVelocityModifier", flDefaultKnifeSpeed);
 		g_PrestrafeFrameCounter[client] = 0;
 	}
 }
@@ -2612,11 +2506,6 @@ public MovementCheck(client)
 		new Float:LaggedMovementValue = GetEntPropFloat(client, Prop_Data, "m_flLaggedMovementValue");
 		if (LaggedMovementValue != 1.0)
 		{
-			if (g_bTimeractivated[client])
-			{
-				PrintToChat(client,"[KZ] Timer stopped. Reason: m_flLaggedMovementValue modified.")
-				g_bTimeractivated[client] = false;
-			}
 			if (g_js_bPlayerJumped[client])
 				ResetJump(client);
 		}
@@ -2639,7 +2528,7 @@ public MovementCheck(client)
 
 public TeleportCheck(client, Float: origin[3])
 {
-	if((StrEqual(g_szMapPrefix[0],"kz") || StrEqual(g_szMapPrefix[0],"xc") || StrEqual(g_szMapPrefix[0],"kzpro") || StrEqual(g_szMapPrefix[0],"bkz")) || g_bAutoBhop == false)
+	if((StrEqual(g_szMapPrefix[0],"kz") || StrEqual(g_szMapPrefix[0],"xc") || StrEqual(g_szMapPrefix[0],"kzpro") || StrEqual(g_szMapPrefix[0],"bkz")))
 	{
 		if (!IsFakeClient(client))
 		{
@@ -2699,8 +2588,10 @@ public SpeedCap(client)
 
 
 	new Float:current_speed = GetSpeed(client)
+	new Float:ZSpeed;
 	decl Float:CurVelVec[3];
 	GetEntPropVector(client, Prop_Data, "m_vecVelocity", CurVelVec);
+	ZSpeed = CurVelVec[2];
 
 	//cj addition
 	if (!g_js_bPlayerJumped[client] && g_js_DuckCounter[client] > 0)
@@ -2717,10 +2608,12 @@ public SpeedCap(client)
 	if (g_bJumpBugged[client])
 	{
 		g_bJumpBugged[client] = false; // Reset
+		CurVelVec[2] = 0.0;
 		if (GetVectorLength(CurVelVec) > g_fBhopSpeedCap)
 		{
 			NormalizeVector(CurVelVec, CurVelVec);
 			ScaleVector(CurVelVec, g_fBhopSpeedCap);
+			CurVelVec[2] = ZSpeed;
 			DoValidTeleport(client, NULL_VECTOR, NULL_VECTOR, CurVelVec);
 		}
 	}
@@ -2745,7 +2638,7 @@ public SpeedCap(client)
 
 public ButtonPressCheck(client, &buttons, Float: origin[3], Float:speed)
 {
-	if (IsValidClient(client) && !IsFakeClient(client) && g_LastButton[client] != IN_USE && buttons & IN_USE && ((g_fCurrentRunTime[client] > 0.1 || g_fCurrentRunTime[client] == -1.0)))
+	if (IsValidClient(client) && !IsFakeClient(client) && buttons & IN_USE && ((g_fCurrentRunTime[client] > 0.1 || g_fCurrentRunTime[client] == -1.0)))
 	{
 		decl Float:diff;
 		diff = GetEngineTime() - g_fLastTimeButtonSound[client];
@@ -2754,28 +2647,28 @@ public ButtonPressCheck(client, &buttons, Float: origin[3], Float:speed)
 			decl Float:dist;
 			dist=70.0;
 			decl  Float:distance1;
-			distance1 = GetVectorDistance(origin, g_fStartButtonPos);
+			distance1 = GetVectorDistance(origin, g_fStartButtonPos[client]);
 			decl  Float: distance2;
-			distance2 = GetVectorDistance(origin, g_fEndButtonPos);
-			if (distance1 < dist && speed < 251.0 && !g_bFirstStartButtonPush)
+			distance2 = GetVectorDistance(origin, g_fEndButtonPos[client]);
+			if (distance1 < dist && g_FramesOnGround[client] >= MAX_BHOP_FRAMES && !g_bFirstStartButtonPush[client])
 			{
 				new Handle:trace;
-				trace = TR_TraceRayFilterEx(origin, g_fStartButtonPos, MASK_SOLID,RayType_EndPoint,TraceFilterPlayers,client)
+				trace = TR_TraceRayFilterEx(origin, g_fStartButtonPos[client], MASK_SOLID,RayType_EndPoint,TraceFilterPlayers,client)
 				if (!TR_DidHit(trace) || g_global_SelfBuiltButtons)
 				{
-					CL_OnStartTimerPress(client);
+					CL_OnStartTimerPress(client, false);
 					g_fLastTimeButtonSound[client] = GetEngineTime();
 				}
 				CloseHandle(trace);
 			}
 			else
-				if (distance2 < dist  && !g_bFirstEndButtonPush)
+				if (distance2 < dist  && !g_bFirstEndButtonPush[client])
 				{
 					new Handle:trace;
-					trace = TR_TraceRayFilterEx(origin, g_fEndButtonPos, MASK_SOLID,RayType_EndPoint,TraceFilterPlayers,client)
+					trace = TR_TraceRayFilterEx(origin, g_fEndButtonPos[client], MASK_SOLID,RayType_EndPoint,TraceFilterPlayers,client)
 					if (!TR_DidHit(trace) || g_global_SelfBuiltButtons)
 					{
-						CL_OnEndTimerPress(client);
+						CL_OnEndTimerPress(client, false);
 						g_fLastTimeButtonSound[client] = GetEngineTime();
 					}
 					CloseHandle(trace);
@@ -2784,16 +2677,16 @@ public ButtonPressCheck(client, &buttons, Float: origin[3], Float:speed)
 	}
 	else
 	{
-		if (IsValidClient(client) && IsFakeClient(client) && g_bTimeractivated[client] && g_LastButton[client] != IN_USE && buttons & IN_USE)
+		if (IsValidClient(client) && IsFakeClient(client) && g_bTimeractivated[client] && buttons & IN_USE)
 		{
-			new Float: distance = GetVectorDistance(origin, g_fEndButtonPos);
-			if (distance < 75.0  && !g_bFirstEndButtonPush)
+			new Float: distance = GetVectorDistance(origin, g_fEndButtonPos[client]);
+			if (distance < 75.0  && !g_bFirstEndButtonPush[client])
 			{
 				new Handle:trace;
-				trace = TR_TraceRayFilterEx(origin, g_fEndButtonPos, MASK_SOLID,RayType_EndPoint,TraceFilterPlayers,client)
+				trace = TR_TraceRayFilterEx(origin, g_fEndButtonPos[client], MASK_SOLID,RayType_EndPoint,TraceFilterPlayers,client)
 				if (!TR_DidHit(trace) || g_global_SelfBuiltButtons)
 				{
-					CL_OnEndTimerPress(client);
+					CL_OnEndTimerPress(client, false);
 					g_fLastTimeButtonSound[client] = GetEngineTime();
 				}
 				CloseHandle(trace);
@@ -2926,21 +2819,6 @@ public CalcJumpSync(client, Float: speed, Float: ang, &buttons)
 	}
 }
 
-public ServerSidedAutoBhop(client,&buttons)
-{
-	if (!IsValidClient(client))
-		return;
-	if (g_bAutoBhop && g_bAutoBhopClient[client])
-	{
-		if (buttons & IN_JUMP)
-			if (!(g_bOnGround[client]))
-				if (!(GetEntityMoveType(client) & MOVETYPE_LADDER))
-					if (GetEntProp(client, Prop_Data, "m_nWaterLevel") <= 1)
-						buttons &= ~IN_JUMP;
-
-	}
-}
-
 stock bool:IsEven(num)
 {
     return (num & 1) == 0;
@@ -2977,9 +2855,14 @@ public Action:BindCheck(client, &buttons)
 		return Plugin_Continue;
 	}
 	
+	if (!g_bTimeractivated[client] && g_iBindfixMode == 0)
+	{
+		return Plugin_Continue;
+	}
+	
 	if (IsPlayerAlive(client))
 	{
-		if (!oldJumping && !oldDuck && newJumping && newOnGround && newDuck && g_bTimeractivated[client])
+		if (!oldJumping && !oldDuck && newJumping && newOnGround && newDuck)
 		{
 			buttons &= ~IN_DUCK;
 		}
@@ -3304,11 +3187,6 @@ public PerformStats(client, target,bool:console_only)
 		if (!console_only)
 			PrintToChat(client, "[%cKZ%c] %s",MOSSGREEN,WHITE,banstats);
 		PrintToConsole(client, "[KZ] %s, fps_max: %i, Tickrate: %i",banstats,g_fps_max[target],	g_Server_Tickrate);
-		if (g_bAutoBhop)
-		{
-			PrintToChat(client, "[%cKZ%c] AutoBhop enabled",MOSSGREEN,WHITE);
-			PrintToConsole(client, "[KZ] AutoBhop enabled");
-		}
 	}
 }
 
@@ -3416,53 +3294,49 @@ public GetClientStatsLog(client, String:string[], length)
 
 public MacroBan(int client, bool hack)
 {
-	if (!g_bAutoBhop && !g_bFlagged[client])
+	if (!g_bFlagged[client])
 	{
+		OnMacroBan_Cheaterreplays(client);
+		
 		decl String:globalbanstats[256];
 		decl String:banstats[256];
 		decl String:reason[256];
 		Format(reason, 256, "bhop hack");
 		GetClientStatsLog(client, banstats, sizeof(banstats));
 		GetClientStatsLog2(client, globalbanstats, sizeof(globalbanstats));
-
-		if (g_hDbGlobal != INVALID_HANDLE)
+		
+		if (gB_KZTimerAPI)
 		{
-			decl String:szName[64];
-			decl String:szIP[128];
-			GetClientName(client,szName,64);
-			GetClientIP(client, szIP, 128);
-			db_InsertBan(g_szSteamID[client], szName, g_szCountryCode[client], szIP, reason, globalbanstats);
-
-			if (gB_KZTimerAPI)
+			if (hack)
 			{
-				if (hack)
-				{
-					KZTimerAPI_InsertGlobalBan(client, "bhop_hack", reason, globalbanstats);
-				}
-				else
-				{
-					KZTimerAPI_InsertGlobalBan(client, "bhop_macro", reason, globalbanstats);
-				}
+				KZTimerAPI_InsertGlobalBan(client, "bhop_hack", reason, globalbanstats);
+			}
+			else
+			{
+				KZTimerAPI_InsertGlobalBan(client, "bhop_macro", reason, globalbanstats);
 			}
 		}
+		
 		decl String:sPath[512];
 		BuildPath(Path_SM, sPath, sizeof(sPath), "%s", ANTICHEAT_LOG_PATH);
-		if (g_bAutoBan)
+		if (hack)
 		{
 			LogToFile(sPath, "%s, Reason: bhop hack detected. (autoban)", banstats);
+			PerformBan(client, "KZTimer - Bhop Hack", true);
 		}
-		else
-			LogToFile(sPath, "%s, Reason: bhop hack detected.", banstats);
+		else if (!hack)
+		{
+			LogToFile(sPath, "%s, Reason: bhop macro detected. (autoban)", banstats);
+			PerformBan(client, "KZTimer - Bhop Macro", false);
+		}
 		g_bFlagged[client] = true;
-		if (g_bAutoBan)
-			PerformBan(client,"BhopHack");
 	}
 }
 
 //macrodox addon by 1nut
 public BhopPatternCheck(client)
 {
-	if (!IsValidClient(client) || !IsPlayerAlive(client) || IsFakeClient(client) || g_bPause[client] || g_bAutoBhop || g_bFlagged[client] || g_fafAvgPerfJumps[client] < 0.6 || g_fafAvgSpeed[client] < 300.0)
+	if (!IsValidClient(client) || !IsPlayerAlive(client) || IsFakeClient(client) || g_bPause[client] || g_bFlagged[client] || g_fafAvgPerfJumps[client] < 0.6 || g_fafAvgSpeed[client] < 300.0)
 		return;
 
 	//decl.
@@ -3492,7 +3366,7 @@ public BhopPatternCheck(client)
 	//pattern check #2
 	for (new j = 2; j < 50; j++)
 	{
-		if (pattern_array[j] >= 22)
+		if (pattern_array[j] >= 25)
 		{
 			MacroBan(client, false);
 			return;
@@ -3544,460 +3418,6 @@ public GetClientStatsLog2(client, String:string[], length)
 	PERCENT);
 }
 
-//MultiPlayer Bunnyhop
-//https://forums.alliedmods.net/showthread.php?p=808724
-public Teleport(client, bhop,bool:mt)
-{
-	decl i;
-	new tele = -1, ent = bhop;
-
-	//search door trigger list
-	for (i = 0; i < g_BhopDoorCount; i++)
-	{
-		if(ent == g_BhopDoorList[i])
-		{
-			tele = g_BhopDoorTeleList[i];
-			break;
-		}
-	}
-
-	//no destination? search button trigger list
-	if(tele == -1)
-	{
-		for (i = 0; i < g_BhopButtonCount; i++)
-		{
-			if(ent == g_BhopButtonList[i])
-			{
-				tele = g_BhopButtonTeleList[i];
-				break;
-			}
-		}
-	}
-
-	//no destination? search multiple trigger list
-	for (i = 0; i < g_BhopMultipleCount; i++)
-	{
-		if(ent == g_BhopMultipleList[i])
-		{
-			tele = g_BhopMultipleTeleList[i];
-			break;
-		}
-	}
-
-	//set teleport destination
-	if(tele != -1 && IsValidEntity(tele))
-	{
-		decl String:targetName[64];
-		decl String:destName[64];
-		GetEntPropString(tele, Prop_Data, "m_target", targetName, sizeof(targetName));
-		new dest = -1;
-		while ((dest = FindEntityByClassname(dest, "info_teleport_destination")) != -1)
-		{
-			GetEntPropString(dest, Prop_Data, "m_iName", destName, sizeof(destName));
-			if (StrEqual(destName, targetName))
-			{
-
-				new Float: pos[3];
-				new Float: ang[3];
-				GetEntPropVector(dest, Prop_Data, "m_angRotation", ang);
-				GetEntPropVector(dest, Prop_Send, "m_vecOrigin", pos);
-
-				//synergy fix
-				if ((StrContains(g_szMapName,"bkz_synergy_ez") != -1 || StrContains(g_szMapName,"bkz_synergy_x") != -1) && StrEqual(targetName,"1-1"))
-				{
-				}
-				else
-				{
-					DoValidTeleport(client, pos,ang,Float:{0.0,0.0,-100.0});
-				}
-			}
-		}
-	}
-}
-
-//MultiPlayer Bunnyhop
-//https://forums.alliedmods.net/showthread.php?p=808724
-public FindBhopBlocks()
-{
-	decl Float:startpos[3], Float:endpos[3], Float:mins[3], Float:maxs[3], tele;
-	new ent = -1;
-	new Float:flbaseVelocity[3];
-	while((ent = FindEntityByClassname(ent,"func_door")) != -1)
-	{
-		if(g_DoorOffs_vecPosition1 == -1)
-		{
-			g_DoorOffs_vecPosition1 = FindDataMapInfo(ent,"m_vecPosition1");
-			g_DoorOffs_vecPosition2 = FindDataMapInfo(ent,"m_vecPosition2");
-			g_DoorOffs_flSpeed = FindDataMapInfo(ent,"m_flSpeed");
-			g_DoorOffs_spawnflags = FindDataMapInfo(ent,"m_spawnflags");
-			g_DoorOffs_NoiseMoving = FindDataMapInfo(ent,"m_NoiseMoving");
-			g_DoorOffs_sLockedSound = FindDataMapInfo(ent,"m_ls.sLockedSound");
-			g_DoorOffs_bLocked = FindDataMapInfo(ent,"m_bLocked");
-		}
-
-		GetEntDataVector(ent,g_DoorOffs_vecPosition1,startpos);
-		GetEntDataVector(ent,g_DoorOffs_vecPosition2,endpos);
-
-
-		if(startpos[2] > endpos[2])
-		{
-			GetEntDataVector(ent,g_Offs_vecMins,mins);
-			GetEntDataVector(ent,g_Offs_vecMaxs,maxs);
-			GetEntPropVector(ent, Prop_Data, "m_vecBaseVelocity", flbaseVelocity);
-			new Float:speed = GetEntDataFloat(ent,g_DoorOffs_flSpeed);
-
-			if((flbaseVelocity[0] != 1100.0 && flbaseVelocity[1] != 1100.0 && flbaseVelocity[2] != 1100.0) && (maxs[2] - mins[2]) < 80 && (startpos[2] > endpos[2] || speed > 100))
-			{
-				startpos[0] += (mins[0] + maxs[0]) * 0.5;
-				startpos[1] += (mins[1] + maxs[1]) * 0.5;
-				startpos[2] += maxs[2];
-
-				if((tele = CustomTraceForTeleports(startpos,endpos[2] + maxs[2])) != -1 || (speed > 100 && startpos[2] < endpos[2]))
-				{
-					g_BhopDoorList[g_BhopDoorCount] = ent;
-					g_BhopDoorTeleList[g_BhopDoorCount] = tele;
-
-					if(++g_BhopDoorCount == sizeof g_BhopDoorList)
-					{
-						break;
-					}
-				}
-			}
-		}
-	}
-
-	ent = -1;
-
-	while((ent = FindEntityByClassname(ent,"func_button")) != -1)
-	{
-		if(g_ButtonOffs_vecPosition1 == -1)
-		{
-			g_ButtonOffs_vecPosition1 = FindDataMapInfo(ent,"m_vecPosition1");
-			g_ButtonOffs_vecPosition2 = FindDataMapInfo(ent,"m_vecPosition2");
-			g_ButtonOffs_flSpeed = FindDataMapInfo(ent,"m_flSpeed");
-			g_ButtonOffs_spawnflags = FindDataMapInfo(ent,"m_spawnflags");
-		}
-
-		GetEntDataVector(ent,g_ButtonOffs_vecPosition1,startpos);
-		GetEntDataVector(ent,g_ButtonOffs_vecPosition2,endpos);
-
-		if(startpos[2] > endpos[2] && (GetEntData(ent,g_ButtonOffs_spawnflags,4) & SF_BUTTON_TOUCH_ACTIVATES))
-		{
-			GetEntDataVector(ent,g_Offs_vecMins,mins);
-			GetEntDataVector(ent,g_Offs_vecMaxs,maxs);
-
-			startpos[0] += (mins[0] + maxs[0]) * 0.5;
-			startpos[1] += (mins[1] + maxs[1]) * 0.5;
-			startpos[2] += maxs[2];
-
-			if((tele = CustomTraceForTeleports(startpos,endpos[2] + maxs[2])) != -1)
-			{
-				g_BhopButtonList[g_BhopButtonCount] = ent;
-				g_BhopButtonTeleList[g_BhopButtonCount] = tele;
-
-				if(++g_BhopButtonCount == sizeof g_BhopButtonList)
-				{
-					break;
-				}
-			}
-		}
-	}
-
-	AlterBhopBlocks(false);
-}
-
-public Entity_Touch3(bhop,client)
-{
-	if(IsValidClient(client))
-		g_bOnBhopPlattform[client] = false;
-}
-
-public Entity_Touch2(bhop,client)
-{
-	if(IsValidClient(client))
-	{
-		g_bOnBhopPlattform[client]=true;
-		if (g_bSingleTouch)
-		{
-			if (bhop == g_LastGroundEnt[client] && (GetEngineTime() - g_fLastTimeBhopBlock[client]) <= 0.9)
-			{
-				g_LastGroundEnt[client] = -1;
-				Teleport(client, bhop,true);
-			}
-			else
-			{
-				g_fLastTimeBhopBlock[client] = GetEngineTime();
-				g_LastGroundEnt[client] = bhop;
-			}
-		}
-	}
-}
-
-
-CustomTraceForTeleports2(const Float:pos[3])
-{
-	decl teleports[512];
-	new tpcount, ent = -1;
-	while((ent = FindEntityByClassname(ent,"trigger_teleport")) != -1 && tpcount != sizeof teleports)
-		teleports[tpcount++] = ent;
-
-	decl Float:mins[3], Float:maxs[3], Float:origin[3], Float: step, Float:endpos, i;
-	origin[0] = pos[0];
-	origin[1] = pos[1];
-	origin[2] = pos[2];
-	step = 1.0;
-	endpos = origin[2] - 30;
-	do
-	{
-		for(i = 0; i < tpcount; i++)
-		{
-			ent = teleports[i];
-			GetAbsBoundingBox(ent,mins,maxs);
-			if(mins[0] <= origin[0] <= maxs[0] && mins[1] <= origin[1] <= maxs[1] && mins[2] <= origin[2] <= maxs[2])
-				return ent;
-		}
-		origin[2] -= step;
-	}
-	while(endpos <= origin[2]);
-	return -1;
-}
-
-//MultiPlayer Bunnyhop
-//https://forums.alliedmods.net/showthread.php?p=808724
-public AlterBhopBlocks(bool:bRevertChanges)
-{
-	static Float:vecDoorPosition2[sizeof g_BhopDoorList][3];
-	static Float:flDoorSpeed[sizeof g_BhopDoorList];
-	static iDoorSpawnflags[sizeof g_BhopDoorList];
-	static bool:bDoorLocked[sizeof g_BhopDoorList];
-	static Float:vecButtonPosition2[sizeof g_BhopButtonList][3];
-	static Float:flButtonSpeed[sizeof g_BhopButtonList];
-	static iButtonSpawnflags[sizeof g_BhopButtonList];
-	decl ent, i;
-	if(bRevertChanges)
-	{
-		for(i = 0; i < g_BhopDoorCount; i++)
-		{
-			ent = g_BhopDoorList[i];
-			if(IsValidEntity(ent))
-			{
-				SetEntDataVector(ent,g_DoorOffs_vecPosition2,vecDoorPosition2[i]);
-				SetEntDataFloat(ent,g_DoorOffs_flSpeed,flDoorSpeed[i]);
-				SetEntData(ent,g_DoorOffs_spawnflags,iDoorSpawnflags[i],4);
-				if(!bDoorLocked[i])
-				{
-					AcceptEntityInput(ent,"Unlock");
-				}
-				SDKUnhook(ent,SDKHook_Touch,Entity_Touch);
-				SDKUnhook(ent,SDKHook_StartTouch,Entity_Touch2);
-				SDKUnhook(ent,SDKHook_EndTouch,Entity_Touch3);
-			}
-		}
-
-		for(i = 0; i < g_BhopButtonCount; i++)
-		{
-			ent = g_BhopButtonList[i];
-			if(IsValidEntity(ent))
-			{
-				SetEntDataVector(ent,g_ButtonOffs_vecPosition2,vecButtonPosition2[i]);
-				SetEntDataFloat(ent,g_ButtonOffs_flSpeed,flButtonSpeed[i]);
-				SetEntData(ent,g_ButtonOffs_spawnflags,iButtonSpawnflags[i],4);
-				if(flDoorSpeed[i] <= 100)
-				{
-					SDKUnhook(ent,SDKHook_Touch,Entity_Touch);
-					SDKUnhook(ent,SDKHook_StartTouch,Entity_Touch2);
-				}
-				else
-				{
-					SDKUnhook(ent,SDKHook_Touch,Entity_BoostTouch);
-					SDKUnhook(ent,SDKHook_StartTouch,Entity_Touch2);
-				}
-			}
-		}
-	}
-	else
-	{
-		decl Float:startpos[3];
-		for (i = 0; i < g_BhopDoorCount; i++)
-		{
-			ent = g_BhopDoorList[i];
-			GetEntDataVector(ent,g_DoorOffs_vecPosition2,vecDoorPosition2[i]);
-			flDoorSpeed[i] = GetEntDataFloat(ent,g_DoorOffs_flSpeed);
-			iDoorSpawnflags[i] = GetEntData(ent,g_DoorOffs_spawnflags,4);
-			bDoorLocked[i] = GetEntData(ent,g_DoorOffs_bLocked,1) ? true : false;
-			GetEntDataVector(ent,g_DoorOffs_vecPosition1,startpos);
-			SetEntDataVector(ent,g_DoorOffs_vecPosition2,startpos);
-			SetEntDataFloat(ent,g_DoorOffs_flSpeed,0.0);
-			SetEntData(ent,g_DoorOffs_spawnflags,SF_DOOR_PTOUCH,4);
-			AcceptEntityInput(ent,"Lock");
-			SetEntData(ent,g_DoorOffs_sLockedSound,GetEntData(ent,g_DoorOffs_NoiseMoving,4),4);
-			SDKHook(ent,SDKHook_Touch,Entity_Touch);
-			SDKHook(ent,SDKHook_StartTouch,Entity_Touch2);
-			SDKHook(ent,SDKHook_EndTouch,Entity_Touch3);
-		}
-
-		for (i = 0; i < g_BhopButtonCount; i++)
-		{
-			ent = g_BhopButtonList[i];
-			GetEntDataVector(ent,g_ButtonOffs_vecPosition2,vecButtonPosition2[i]);
-			flButtonSpeed[i] = GetEntDataFloat(ent,g_ButtonOffs_flSpeed);
-			iButtonSpawnflags[i] = GetEntData(ent,g_ButtonOffs_spawnflags,4);
-			GetEntDataVector(ent,g_ButtonOffs_vecPosition1,startpos);
-			SetEntDataVector(ent,g_ButtonOffs_vecPosition2,startpos);
-			SetEntDataFloat(ent,g_ButtonOffs_flSpeed,0.0);
-			SetEntData(ent,g_ButtonOffs_spawnflags,SF_BUTTON_DONTMOVE|SF_BUTTON_TOUCH_ACTIVATES,4);
-			if(flDoorSpeed[i] <= 100)
-			{
-				SDKHook(ent,SDKHook_Touch,Entity_Touch);
-				SDKHook(ent,SDKHook_StartTouch,Entity_Touch2);
-			}
-			else
-			{
-				g_fBhopDoorSp[i] = flDoorSpeed[i];
-				SDKHook(ent,SDKHook_Touch,Entity_BoostTouch);
-				SDKHook(ent,SDKHook_StartTouch,Entity_Touch2);
-			}
-		}
-	}
-}
-
-//MultiPlayer Bunnyhop
-//https://forums.alliedmods.net/showthread.php?p=808724
-public Entity_BoostTouch(bhop,client)
-{
-	if(0 < client <= MaxClients)
-	{
-		new Float:speed = -1.0;
-		static i;
-		for(i = 0; i < g_BhopDoorCount; i++)
-		{
-			if(bhop == g_BhopDoorList[i])
-			{
-				speed = g_fBhopDoorSp[i]
-				break
-			}
-		}
-		if(speed != -1 && speed)
-		{
-
-			new Float:ovel[3]
-			Entity_GetBaseVelocity(client, ovel)
-			new Float:evel[3]
-			Entity_GetLocalVelocity(client, evel)
-			if(ovel[2] < speed && evel[2] < speed)
-			{
-				new Float:vel[3]
-				vel[0] = Float:0
-				vel[1] = Float:0
-				vel[2] = speed * 1.8
-				Entity_SetBaseVelocity(client, vel)
-			}
-		}
-	}
-}
-
-//Credits: MultiPlayer Bunny Hops: Source by DaFox & petsku
-//https://forums.alliedmods.net/showthread.php?p=808724
-public Entity_Touch(bhop,client)
-{
-	//bhop = entity
-	if(IsValidClient(client))
-	{
-
-		g_bOnBhopPlattform[client]=true;
-
-		static Float:flPunishTime[MAXPLAYERS + 1], iLastBlock[MAXPLAYERS + 1] = { -1,... };
-		new Float:time = GetEngineTime();
-		new Float:diff = time - flPunishTime[client];
-		if(iLastBlock[client] != bhop || diff > 0.1)
-		{
-			//reset cooldown
-			iLastBlock[client] = bhop;
-			flPunishTime[client] = time + 0.05;
-
-		}
-		else
-		{
-			if(diff > 0.05)
-			{
-				if(time - g_fLastJump[client] > (0.05 + 0.1))
-				{
-					Teleport(client, iLastBlock[client],false);
-					iLastBlock[client] = -1;
-				}
-			}
-		}
-	}
-}
-
-
-//MultiPlayer Bunnyhop
-//https://forums.alliedmods.net/showthread.php?p=808724
-CustomTraceForTeleports(const Float:startpos[3],Float:endheight,Float:step=1.0)
-{
-	decl teleports[512];
-	new tpcount, ent = -1;
-	while((ent = FindEntityByClassname(ent,"trigger_teleport")) != -1 && tpcount != sizeof teleports)
-	{
-		teleports[tpcount++] = ent;
-	}
-
-	decl Float:mins[3], Float:maxs[3], Float:origin[3], i;
-	origin[0] = startpos[0];
-	origin[1] = startpos[1];
-	origin[2] = startpos[2];
-	do
-	{
-		for(i = 0; i < tpcount; i++)
-		{
-			ent = teleports[i];
-			GetAbsBoundingBox(ent,mins,maxs);
-
-			if(mins[0] <= origin[0] <= maxs[0] && mins[1] <= origin[1] <= maxs[1] && mins[2] <= origin[2] <= maxs[2])
-			{
-				return ent;
-			}
-		}
-		origin[2] -= step;
-	}
-	while(origin[2] >= endheight);
-	return -1;
-}
-
-//MultiPlayer Bunnyhop
-//https://forums.alliedmods.net/showthread.php?p=808724
-public GetAbsBoundingBox(ent,Float:mins[3],Float:maxs[3])
-{
-	decl Float:origin[3];
-	GetEntDataVector(ent,g_Offs_vecOrigin,origin);
-	GetEntDataVector(ent,g_Offs_vecMins,mins);
-	GetEntDataVector(ent,g_Offs_vecMaxs,maxs);
-	mins[0] += origin[0];
-	mins[1] += origin[1];
-	mins[2] += origin[2];
-	maxs[0] += origin[0];
-	maxs[1] += origin[1];
-	maxs[2] += origin[2];
-}
-
-public FindMultipleBlocks()
-{
-	decl Float:pos[3], tele;
-	new ent = -1;
-	while((ent = FindEntityByClassname(ent,"trigger_multiple")) != -1)
-	{
-		GetEntPropVector(ent, Prop_Send, "m_vecOrigin", pos);
-		if((tele = CustomTraceForTeleports2(pos)) != -1)
-		{
-			g_BhopMultipleList[g_BhopMultipleCount] = ent;
-			g_BhopMultipleTeleList[g_BhopMultipleCount] = tele;
-			SDKHook(ent,SDKHook_StartTouch,Entity_Touch2);
-			if(++g_BhopMultipleCount == sizeof g_BhopMultipleList)
-				break;
-		}
-	}
-}
-
 // Measure-Plugin by DaFox
 //https://forums.alliedmods.net/showthread.php?t=88830?t=88830
 GetPos(client,arg)
@@ -4005,7 +3425,7 @@ GetPos(client,arg)
 	decl Float:origin[3],Float:angles[3]
 	GetClientEyePosition(client,origin)
 	GetClientEyeAngles(client,angles)
-	new Handle:trace = TR_TraceRayFilterEx(origin,angles,MASK_SHOT,RayType_Infinite,TraceFilterPlayers,client)
+	new Handle:trace = TR_TraceRayFilterEx(origin,angles,MASK_PLAYERSOLID,RayType_Infinite,TraceFilterPlayers,client)
 	if(!TR_DidHit(trace))
 	{
 		CloseHandle(trace);
@@ -4171,7 +3591,7 @@ stock TraceClientGroundOrigin(client, Float:result[3], Float:offset)
 	temp[1][2] -= offset;
 	new Float:mins[] ={-16.0, -16.0, 0.0};
 	new Float:maxs[] =	{16.0, 16.0, 60.0};
-	new Handle:trace = TR_TraceHullFilterEx(temp[0], temp[1], mins, maxs, MASK_SHOT, TraceEntityFilterPlayer);
+	new Handle:trace = TR_TraceHullFilterEx(temp[0], temp[1], mins, maxs, MASK_PLAYERSOLID, TraceEntityFilterPlayer);
 	if(TR_DidHit(trace))
 	{
 		TR_GetEndPosition(result, trace);
@@ -4451,94 +3871,11 @@ public PrintCenterPanelToClient(client,target, String:sKeys[32])
 
 }
 
-// https://forums.alliedmods.net/showthread.php?t=178279
-//  [ANY] RTLer - Support for Right-to-Left Languages
-RTLify(String:dest[1024], String:original[1024])
-{
-	new rtledWords = 0;
-
-	new String:tokens[96][96];
-	new String:words[sizeof(tokens)][sizeof(tokens[])];
-
-	new n = ExplodeString(original, " ", tokens, sizeof(tokens), sizeof(tokens[]));
-
-	for (new word = 0; word < n; word++)
-	{
-		if (WordAnalysis(tokens[word]) >= 0.1)
-		{
-			ReverseString(tokens[word], sizeof(tokens[]), words[n-1-word]);
-			rtledWords++;
-		}
-		else
-		{
-			new firstWord = word;
-			new lastWord = word;
-
-			while (WordAnalysis(tokens[lastWord]) < 0.1)
-			{
-				lastWord++;
-			}
-
-			for (new t = lastWord - 1; t >= firstWord; t--)
-			{
-				strcopy(words[n-1-word], sizeof(tokens[]), tokens[t]);
-
-				if (t > firstWord)
-					word++;
-			}
-		}
-	}
-
-	ImplodeStrings(words, n, " ", dest, sizeof(words[]));
-	return rtledWords;
-}
-
-// https://forums.alliedmods.net/showthread.php?t=178279
-//  [ANY] RTLer - Support for Right-to-Left Languages
-ReverseString(String:str[], maxlength, String:buffer[])
-{
-	for (new character = strlen(str); character >= 0; character--)
-	{
-		if (str[character] >= 0xD6 && str[character] <= 0xDE)
-			continue;
-
-		if (character > 0 && str[character - 1] >= 0xD7 && str[character - 1] <= 0xD9)
-			Format(buffer, maxlength, "%s%c%c", buffer, str[character - 1], str[character]);
-		else
-			Format(buffer, maxlength, "%s%c", buffer, str[character]);
-	}
-}
-
-// https://forums.alliedmods.net/showthread.php?t=178279
-//  [ANY] RTLer - Support for Right-to-Left Languages
-Float:WordAnalysis(String:word[])
-{
-	new count = 0, length = strlen(word);
-
-	for (new n = 0; n < length - 1; n++)
-	{
-		if (IsRTLCharacter(word, n))
-		{
-			count++;
-			n++;
-		}
-	}
-
-	return float(count) * 2 / length;
-}
-
-// https://forums.alliedmods.net/showthread.php?t=178279
-//  [ANY] RTLer - Support for Right-to-Left Languages
-bool:IsRTLCharacter(String:str[], n)
-{
-	return (str[n] >= 0xD6 && str[n] <= 0xDE && str[n + 1] >= 0x80 && str[n + 1] <= 0xBF);
-}
-
 // https://forums.alliedmods.net/showpost.php?p=2308824&postcount=4
 // by Mehis
 public DoubleDuck(client,&buttons)
 {
-    if (!IsValidClient(client) || !IsPlayerAlive( client ) || (g_bTimeractivated[client] && !g_bDoubleDuckCvar))
+    if (!IsValidClient(client) || !IsPlayerAlive( client ) || (g_bTimeractivated[client] && g_iDoubleDuckCvar == 0) || g_iDoubleDuckCvar == 2)
 		return;
 
     static int fFlags;
@@ -4564,7 +3901,11 @@ public DoubleDuck(client,&buttons)
         {
             float vecPos[3];
             GetClientAbsOrigin( client, vecPos );
-            vecPos[2] += 40.0;
+            // Add 31.005 exactly because in DovalidTeleport the movetype gets
+            // set to MOVETYPE_LADDER and ducking behaves differently there giving
+            // you an extra 9 units of height. The 0.005 comes from countjumps not
+            // giving you 1 tick of airtime when the player's z origin is near 0.
+            vecPos[2] += 31.005;
             if (IsValidPlayerPos(client, vecPos))
 			{
 				g_js_GroundFrames[client] = 0;
@@ -4600,13 +3941,9 @@ public RegServerConVars()
 {
 	CreateConVar("kztimer_version", VERSION, "kztimer Version.", FCVAR_DONTRECORD|FCVAR_SPONLY|FCVAR_REPLICATED|FCVAR_NOTIFY);
 
-	g_hDoubleDuckCvar = 	CreateConVar("kz_double_duck", "0", "on/off - Allows you to get up edges that are 32 units high or less without jumping (double duck is always enabled if your timer is disabled; 0 required for global records)", FCVAR_NOTIFY, true, 0.0, true, 1.0);
-	g_bDoubleDuckCvar     = GetConVarBool(g_hDoubleDuckCvar);
+	g_hDoubleDuckCvar = 	CreateConVar("kz_double_duck", "0", "Allows you to get up edges that are 32 units high or less without jumping (0 = enabled with timer disabled, 1 = always enabled (globals will be disabled), 2 = completely disabled)", FCVAR_NOTIFY, true, 0.0, true, 2.0);
+	g_iDoubleDuckCvar     = GetConVarInt(g_hDoubleDuckCvar);
 	HookConVarChange(g_hDoubleDuckCvar, OnSettingChanged);
-
-	g_hSlayPlayers = 	CreateConVar("kz_slay_on_endbutton_press", "0", "on/off - Slays other players when someone finishs the map. (helpful on mg_ course maps)", FCVAR_NOTIFY, true, 0.0, true, 1.0);
-	g_bSlayPlayers     = GetConVarBool(g_hSlayPlayers);
-	HookConVarChange(g_hSlayPlayers, OnSettingChanged);
 
 	g_hAllowRoundEndCvar = CreateConVar("kz_round_end", "0", "on/off - Allows to end the current round", FCVAR_NOTIFY, true, 0.0, true, 1.0);
 	g_bAllowRoundEndCvar     = GetConVarBool(g_hAllowRoundEndCvar);
@@ -4636,8 +3973,8 @@ public RegServerConVars()
 	g_bInfoBot     = GetConVarBool(g_hInfoBot);
 	HookConVarChange(g_hInfoBot, OnSettingChanged);
 
-	g_hNoClipS = CreateConVar("kz_noclip", "1", "on/off - Allows players to use noclip when they have finished the map", FCVAR_NOTIFY, true, 0.0, true, 1.0);
-	g_bNoClipS     = GetConVarBool(g_hNoClipS);
+	g_hNoClipS = CreateConVar("kz_noclip", "3", "Noclip mode: 0 - Disabled, 1 - Enabled for top ranks/mappers/vip's, 2 - Enabled for only top ranks/mappers/vip's, 3 - Enabled for everyone.", FCVAR_NOTIFY, true, 0.0, true, float(MAX_NOCLIPMODES));
+	g_iNoClipMode = GetConVarInt(g_hNoClipS);
 	HookConVarChange(g_hNoClipS, OnSettingChanged);
 
 	g_hVipClantag = 	CreateConVar("kz_vip_clantag", "1", "on/off - VIP clan tag (necessary flag: a)", FCVAR_NOTIFY, true, 0.0, true, 1.0);
@@ -4651,10 +3988,6 @@ public RegServerConVars()
 	g_hAdminClantag = 	CreateConVar("kz_admin_clantag", "1", "on/off - Admin clan tag (necessary flag: b - z)", FCVAR_NOTIFY, true, 0.0, true, 1.0);
 	g_bAdminClantag     = GetConVarBool(g_hAdminClantag);
 	HookConVarChange(g_hAdminClantag, OnSettingChanged);
-
-	g_hAutoTimer = CreateConVar("kz_auto_timer", "0", "on/off - Timer starts automatically when a player joins a team, dies or uses !start/!r (0 required for global records)", FCVAR_NOTIFY, true, 0.0, true, 1.0);
-	g_bAutoTimer     = GetConVarBool(g_hAutoTimer);
-	HookConVarChange(g_hAutoTimer, OnSettingChanged);
 
 	g_hGoToServer = CreateConVar("kz_goto", "1", "on/off - Allows players to use the !goto command", FCVAR_NOTIFY, true, 0.0, true, 1.0);
 	g_bGoToServer     = GetConVarBool(g_hGoToServer);
@@ -4720,15 +4053,11 @@ public RegServerConVars()
 	g_bChallengePoints     = GetConVarBool(g_hChallengePoints);
 	HookConVarChange(g_hChallengePoints, OnSettingChanged);
 
-	g_hAutoBhopConVar 	= CreateConVar("kz_auto_bhop", "0", "on/off - AutoBhop on bhop_ and surf_ maps (climb maps are not supported)", FCVAR_NOTIFY, true, 0.0, true, 1.0);
-	g_bAutoBhopConVar     = GetConVarBool(g_hAutoBhopConVar);
-	HookConVarChange(g_hAutoBhopConVar, OnSettingChanged);
-
 	g_hDynamicTimelimit 	= CreateConVar("kz_dynamic_timelimit", "1", "on/off - Sets a suitable timelimit by calculating the average run time (This method requires kz_map_end 1, greater than 5 map times and a default timelimit in your server config for maps with less than 5 times", FCVAR_NOTIFY, true, 0.0, true, 1.0);
 	g_bDynamicTimelimit     = GetConVarBool(g_hDynamicTimelimit);
 	HookConVarChange(g_hDynamicTimelimit, OnSettingChanged);
 
-	g_hBhopSpeedCap   = CreateConVar("kz_prespeed_cap", "380.0", "Limits player's pre speed (kz_settings_enforcer must be disabled)", FCVAR_NOTIFY, true, 300.0, true, 5000.0);
+	g_hBhopSpeedCap   = CreateConVar("kz_prespeed_cap", "380.0", "Limits player's pre speed (kz_settings_enforcer must be disabled)", FCVAR_NOTIFY, true, 250.0, true, 5000.0);
 	g_fBhopSpeedCap    = GetConVarFloat(g_hBhopSpeedCap);
 	HookConVarChange(g_hBhopSpeedCap, OnSettingChanged);
 
@@ -4784,7 +4113,7 @@ public RegServerConVars()
 	GetConVarString(g_hWelcomeMsg,g_sWelcomeMsg,512);
 	HookConVarChange(g_hWelcomeMsg, OnSettingChanged);
 
-	g_hDefaultLanguage 	= CreateConVar("kz_default_language", "0", "default language of kztimer (0: english,  1: german, 2: swedish, 3: french, 4: russian, 5: simplified chinese, 6: portuguese brazilian)", FCVAR_NOTIFY, true, 0.0, true, 100.0);
+	g_hDefaultLanguage 	= CreateConVar("kz_default_language", "0", "Default language of kztimer (0: english, 1: german, 2: swedish, 3: french, 4: russian, 5: simplified chinese, 6: portuguese brazilian, 7: finnish, 8: spanish)", FCVAR_NOTIFY, true, 0.0, true, 100.0);
 	g_DefaultLanguage     = GetConVarInt(g_hDefaultLanguage);
 	HookConVarChange(g_hDefaultLanguage, OnSettingChanged);
 
@@ -4799,11 +4128,7 @@ public RegServerConVars()
 	decl String:szTpColor[256];
 	GetConVarString(g_hReplayBotTpColor,szTpColor,256);
 	GetRGBColor(1,szTpColor);
-
-	g_hAutoBan 	= CreateConVar("kz_anticheat_auto_ban", "1", "on/off - auto-ban (bhop hack) including deletion of their records (anti-cheat log: sourcemod/logs)", FCVAR_NOTIFY, true, 0.0, true, 1.0);
-	g_bAutoBan     = GetConVarBool(g_hAutoBan);
-	HookConVarChange(g_hAutoBan, OnSettingChanged);
-
+	
 	g_hEnableChatProcessing = CreateConVar("kz_chat_enable", "1", "Enable or disable KZ Timer chat processing.", FCVAR_NOTIFY, true, 0.0, true, 1.0);
 	g_bEnableChatProcessing = GetConVarBool(g_hEnableChatProcessing);
 	HookConVarChange(g_hEnableChatProcessing, OnSettingChanged);
@@ -4812,7 +4137,12 @@ public RegServerConVars()
 	g_bEnableGroupAdverts = GetConVarBool(g_hEnableGroupAdverts);
 	HookConVarChange(g_hEnableGroupAdverts, OnSettingChanged);
 	
-	g_hBanDuration   = CreateConVar("kz_anticheat_ban_duration", "72.0", "Ban duration in hours", FCVAR_NOTIFY, true, 0.0, true, 999999.0);
+	g_hBindfixMode = CreateConVar("kz_bindfix_mode", "0", "Changes bind fix mode. (0 = bind fix applied if timer running, 1 = bindfix always applied)", FCVAR_NOTIFY, true, 0.0, true, 1.0);
+	g_iBindfixMode = GetConVarInt(g_hBindfixMode);
+	HookConVarChange(g_hBindfixMode, OnSettingChanged);
+	
+	g_hBanDuration   = CreateConVar("kz_anticheat_ban_duration", "0.0", "Ban duration in hours for bhop hack", FCVAR_NOTIFY, true, 0.0, true, 999999.0);
+	g_hBanDurationM   = CreateConVar("kz_anticheat_macro_ban_duration", "720.0", "Ban duration in hours for bhop macro", FCVAR_NOTIFY, true, 0.0, true, 999999.0);
 	
 	//settings enforcer
 	g_hFullAlltalk = FindConVar("sv_full_alltalk");
@@ -4826,7 +4156,6 @@ public RegServerConVars()
 	g_hAccelerate = FindConVar("sv_accelerate");
 	g_hMaxVelocity = FindConVar("sv_maxvelocity");
 	g_hCheats = FindConVar("sv_cheats");
-	g_hDropKnifeEnable = FindConVar("sv_cheats");
 	g_hEnableBunnyhoping = FindConVar("sv_enablebunnyhopping");
 
   // New convars
@@ -4850,7 +4179,13 @@ public RegServerConVars()
 	g_hExojumpJumpcost = FindConVar("sv_exostaminajumpcost");
 	g_hExojumpLandcost = FindConVar("sv_exostaminalandcost");
 	g_hJumpImpulseExojumpMultiplier = FindConVar("sv_jump_impulse_exojump_multiplier");
-
+	g_hMinUpdateRate = FindConVar("sv_minupdaterate");
+	g_hMaxUpdateRate = FindConVar("sv_maxupdaterate");
+	g_hMinCmdRate = FindConVar("sv_mincmdrate");
+	g_hMaxCmdRate = FindConVar("sv_maxcmdrate");
+	g_hClientCmdrateDifference = FindConVar("sv_client_cmdrate_difference");
+	g_hTurboPhysics = FindConVar("sv_turbophysics");
+	
 	g_hsv_ladder_scale_speed = FindConVar("sv_ladder_scale_speed");
 	g_hMaxRounds = FindConVar("mp_maxrounds");
 	HookConVarChange(g_hStaminaLandCost, OnSettingChanged);
@@ -4863,7 +4198,6 @@ public RegServerConVars()
 	HookConVarChange(g_hAccelerate, OnSettingChanged);
 	HookConVarChange(g_hMaxVelocity, OnSettingChanged);
 	HookConVarChange(g_hCheats, OnSettingChanged);
-	HookConVarChange(g_hDropKnifeEnable, OnSettingChanged);
 	HookConVarChange(g_hEnableBunnyhoping, OnSettingChanged);
 	HookConVarChange(g_hAutoBhop, OnSettingChanged);
 	HookConVarChange(g_hClampVel, OnSettingChanged);
@@ -4887,10 +4221,16 @@ public RegServerConVars()
 	HookConVarChange(g_hExojumpJumpcost, OnSettingChanged);
 	HookConVarChange(g_hExojumpLandcost, OnSettingChanged);
 	HookConVarChange(g_hJumpImpulseExojumpMultiplier, OnSettingChanged);
+	HookConVarChange(g_hMinUpdateRate, OnSettingChanged);
+	HookConVarChange(g_hMaxUpdateRate, OnSettingChanged);
+	HookConVarChange(g_hMinCmdRate, OnSettingChanged);
+	HookConVarChange(g_hMaxCmdRate, OnSettingChanged);
+	HookConVarChange(g_hClientCmdrateDifference, OnSettingChanged);
+	HookConVarChange(g_hTurboPhysics, OnSettingChanged);
 
 	if (g_Server_Tickrate == 64)
 	{
-		g_hMaxBhopPreSpeed   = CreateConVar("kz_max_prespeed_bhop_dropbhop", "325.0", "Max counted pre speed for bhop,dropbhop (no speed limiter)", FCVAR_NOTIFY, true, 300.0, true, 400.0);
+		g_hMaxBhopPreSpeed   = CreateConVar("kz_max_prespeed_bhop_dropbhop", "325.0", "Max counted pre speed for bhop,dropbhop (no speed limiter)", FCVAR_NOTIFY, true, 300.0, true, 360.0);
 		g_hdist_good_countjump    	= CreateConVar("kz_dist_min_cj", "240.0", "Minimum distance for count jumps to be considered good [Client Message]", FCVAR_NOTIFY, true, 200.0, true, 999.0);
 		g_hdist_perfect_countjump   	= CreateConVar("kz_dist_perfect_cj", "240.0", "Minimum distance for count jumps to be considered perfect [JumpStats Colorchat All]", FCVAR_NOTIFY, true, 220.0, true, 999.0);
 		g_hdist_impressive_countjump   	= CreateConVar("kz_dist_impressive_cj", "245.0", "Minimum distance for count jumps to be considered impressive [JumpStats Colorchat All]", FCVAR_NOTIFY, true, 220.0, true, 999.0);
@@ -4932,7 +4272,7 @@ public RegServerConVars()
 	{
 		if (g_Server_Tickrate == 128)
 		{
-			g_hMaxBhopPreSpeed   = CreateConVar("kz_max_prespeed_bhop_dropbhop", "360.0", "Max counted pre speed for bhop,dropbhop (no speed limiter)", FCVAR_NOTIFY, true, 300.0, true, 400.0);
+			g_hMaxBhopPreSpeed   = CreateConVar("kz_max_prespeed_bhop_dropbhop", "360.0", "Max counted pre speed for bhop,dropbhop (no speed limiter)", FCVAR_NOTIFY, true, 300.0, true, 360.0);
 			g_hdist_good_countjump    	= CreateConVar("kz_dist_min_cj", "240.0", "Minimum distance for count jumps to be considered good [Client Message]", FCVAR_NOTIFY, true, 200.0, true, 999.0);
 			g_hdist_perfect_countjump   	= CreateConVar("kz_dist_perfect_cj", "285.0", "Minimum distance for count jumps to be considered perfect [JumpStats Colorchat All]", FCVAR_NOTIFY, true, 220.0, true, 999.0);
 			g_hdist_impressive_countjump   	= CreateConVar("kz_dist_impressive_cj", "290.0", "Minimum distance for count jumps to be considered impressive [JumpStats Colorchat All]", FCVAR_NOTIFY, true, 220.0, true, 999.0);
@@ -4973,7 +4313,7 @@ public RegServerConVars()
 		}
 		else
 		{
-			g_hMaxBhopPreSpeed   = CreateConVar("kz_max_prespeed_bhop_dropbhop", "350.0", "Max counted pre speed for bhop,dropbhop (no speed limiter)", FCVAR_NOTIFY, true, 300.0, true, 400.0);
+			g_hMaxBhopPreSpeed   = CreateConVar("kz_max_prespeed_bhop_dropbhop", "350.0", "Max counted pre speed for bhop,dropbhop (no speed limiter)", FCVAR_NOTIFY, true, 300.0, true, 360.0);
 			g_hdist_good_countjump    	= CreateConVar("kz_dist_min_cj", "230.0", "Minimum distance for count jumps to be considered good [Client Message]", FCVAR_NOTIFY, true, 200.0, true, 999.0);
 			g_hdist_perfect_countjump   	= CreateConVar("kz_dist_perfect_cj", "270.0", "Minimum distance for count jumps to be considered perfect [JumpStats Colorchat All]", FCVAR_NOTIFY, true, 220.0, true, 999.0);
 			g_hdist_impressive_countjump   	= CreateConVar("kz_dist_impressive_cj", "275.0", "Minimum distance for count jumps to be considered impressive [JumpStats Colorchat All]", FCVAR_NOTIFY, true, 220.0, true, 999.0);
@@ -5015,6 +4355,9 @@ public RegServerConVars()
 
 	g_fBanDuration    = GetConVarFloat(g_hBanDuration);
 	HookConVarChange(g_hBanDuration, OnSettingChanged);
+	
+	g_fBanDurationM    = GetConVarFloat(g_hBanDurationM);
+	HookConVarChange(g_hBanDurationM, OnSettingChanged);
 
 	g_fMaxBhopPreSpeed    = GetConVarFloat(g_hMaxBhopPreSpeed);
 	HookConVarChange(g_hMaxBhopPreSpeed, OnSettingChanged);
@@ -5110,16 +4453,13 @@ public RegConsoleCmds()
 	RegConsoleCmd("sm_usp", Client_Usp, "[KZTimer] spawns a usp silencer");
 	RegConsoleCmd("sm_beam", Client_PlayerJumpBeam, "[KZTimer] onf/off - showing the trajectory of the jump");
 	RegConsoleCmd("sm_avg", Client_Avg, "[KZTimer] prints in chat the average time of the current map");
-	RegConsoleCmd("sm_join", Client_Join, "[KZTimer] Opens the kztimer steam group");
 	RegConsoleCmd("sm_accept", Client_Accept, "[KZTimer] allows you to accept a challenge request");
 	RegConsoleCmd("sm_goto", Client_GoTo, "[KZTimer] teleports you to a selected player");
 	RegConsoleCmd("sm_showkeys", Client_InfoPanel, "[KZTimer] on/off speed/showkeys center panel");
 	RegConsoleCmd("sm_sync", Client_StrafeSync,"[KZTimer] on/off strafe sync in chat");
 	RegConsoleCmd("sm_surrender", Client_Surrender, "[KZTimer] surrender your current challenge");
 	RegConsoleCmd("sm_next", Client_Next,"[KZTimer] goto next checkpoint");
-	RegConsoleCmd("sm_bhop", Client_AutoBhop,"[KZTimer] on/off autobhop (only mg_,surf_ and bhop_ maps supported)");
 	RegConsoleCmd("sm_undo", Client_Undo,"[KZTimer] undoes your last telepoint");
-	RegConsoleCmd("sm_help2", Client_RankingSystem,"[KZTimer] Explanation of the KZTimer ranking system");
 	RegConsoleCmd("sm_flashlight", Client_Flashlight,"[KZTimer] on/off flashlight");
 	RegConsoleCmd("sm_prev", Client_Prev,"[KZTimer] goto previous checkpoint");
 	RegConsoleCmd("sm_ljblock", Client_Ljblock,"[KZTimer] registers a lj block");
@@ -5134,7 +4474,6 @@ public RegConsoleCmds()
 	RegConsoleCmd("sm_cpmenu", Client_Kzmenu, "[KZTimer] opens checkpoint menu");
 	RegConsoleCmd("sm_wr", Client_Wr, "[KZTimer] prints records in chat");
 	RegConsoleCmd("sm_tier", Client_MapTier, "[KZTimer] prints map tier in chat");
-	RegConsoleCmd("sm_tierhelp", Client_TierHelp, "[KZTimer] displays information about map tiers");
 	RegConsoleCmd("sm_measure",Command_Menu, "[KZTimer] allows you to measure the distance between 2 points");
 	RegConsoleCmd("sm_abort", Client_Abort, "[KZTimer] abort your current challenge");
 	RegConsoleCmd("sm_spec", Client_Spec, "[KZTimer] chooses a player who you want to spectate and switch you to spectators");
@@ -5163,10 +4502,8 @@ public RegConsoleCmds()
 	RegConsoleCmd("sm_showsettings", Client_Showsettings,"[KZTimer] shows kztimer server settings");
 	RegConsoleCmd("sm_latest", Client_Latest,"[KZTimer] shows latest map records");
 	RegConsoleCmd("sm_hide", Client_Hide, "[KZTimer] on/off - hides other players");
-	RegConsoleCmd("sm_globaltop", Client_GlobalTop, "[KZTimer] Global Top");
 	RegConsoleCmd("sm_globalcheck", Client_GlobalCheck, "[KZTimer] checks global record requirements");
 	RegConsoleCmd("sm_bhopcheck", Command_Stats, "[KZTimer] checks bhop stats for a given player");
-	RegConsoleCmd("sm_ipcheck", Global_IPCheck, "[KZTimer] grabs IPs of every client on server");
 	RegConsoleCmd("+noclip", NoClip, "[KZTimer] Player noclip on");
 	RegConsoleCmd("-noclip", UnNoClip, "[KZTimer] Player noclip off");
 	RegConsoleCmd("sm_pb", Client_PersonalBest, "[KZTimer] Prints your best times for the current map");
@@ -5181,6 +4518,12 @@ public RegConsoleCmds()
 	RegConsoleCmd("sm_toggle_jumpstatcolors", Client_ToggleJumpstatsColorChat, "[KZTimer] Toggle between jumpstats color chat");
 	RegConsoleCmd("sm_ssp", Client_SetStartPosition, "[KZTimer] Set Start Position");
 	RegConsoleCmd("sm_csp", Client_ClearStartPosition, "[KZTimer] Clear Start Position");
+	RegConsoleCmd("sm_resettimertech", Client_ResetTimerTech, "[KZTimer] Reset timer tech");
+	RegConsoleCmd("sm_resetstarttimertech", Client_ResetStartTimerTech, "[KZTimer] Reset start timer tech");
+	RegConsoleCmd("sm_resetendtimertech", Client_ResetEndTimerTech, "[KZTimer] Reset end timer tech");
+	RegConsoleCmd("sm_rtt", Client_ResetTimerTech, "[KZTimer] Reset timer tech");
+	RegConsoleCmd("sm_rts", Client_ResetStartTimerTech, "[KZTimer] Reset start timer tech");
+	RegConsoleCmd("sm_rte", Client_ResetEndTimerTech, "[KZTimer] Reset end timer tech");
 	RegAdminCmd("sm_kzadmin", Admin_KzPanel, ADMIN_LEVEL, "[KZTimer] Displays the kztimer menu panel (requires flag e)");
 	RegAdminCmd("sm_refreshprofile", Admin_RefreshProfile, ADMIN_LEVEL, "[KZTimer] Recalculates player profile for given steam id");
 	RegAdminCmd("sm_resetchallenges", Admin_DropChallenges, ADMIN_LEVEL2, "[KZTimer] Resets all player challenges (drops table challenges) - requires z flag");

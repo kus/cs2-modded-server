@@ -56,22 +56,22 @@ stock TE_SendBlockPoint(client, const Float:pos1[3], const Float:pos2[3], model)
 // Credits: LJStats by justshoot, Zipcore
 GetEdgeOrigin1(client, Float:ground[3], Float:result[3])
 {
-	result[0] = FloatDiv(g_fEdgeVector[client][0]*ground[0] + g_fEdgeVector[client][1]*g_fEdgePoint1[client][0], g_fEdgeVector[client][0]+g_fEdgeVector[client][1]);
-	result[1] = FloatDiv(g_fEdgeVector[client][1]*ground[1] - g_fEdgeVector[client][0]*g_fEdgePoint1[client][1], g_fEdgeVector[client][1]-g_fEdgeVector[client][0]);
+	result[0] = ((g_fEdgeVector[client][0]*ground[0] + g_fEdgeVector[client][1]*g_fEdgePoint1[client][0]) / (g_fEdgeVector[client][0]+g_fEdgeVector[client][1]));
+	result[1] = ((g_fEdgeVector[client][1]*ground[1] - g_fEdgeVector[client][0]*g_fEdgePoint1[client][1]) / (g_fEdgeVector[client][1]-g_fEdgeVector[client][0]));
 	result[2] = ground[2];
 }
 
 GetEdgeOrigin2(client, Float:ground[3], Float:result[3])
 {
-	result[0] = FloatDiv(g_fEdgeVector[client][0]*ground[0] + g_fEdgeVector[client][1]*g_fEdgePoint2[client][0], g_fEdgeVector[client][0]+g_fEdgeVector[client][1]);
-	result[1] = FloatDiv(g_fEdgeVector[client][1]*ground[1] - g_fEdgeVector[client][0]*g_fEdgePoint2[client][1], g_fEdgeVector[client][1]-g_fEdgeVector[client][0]);
+	result[0] = ((g_fEdgeVector[client][0]*ground[0] + g_fEdgeVector[client][1]*g_fEdgePoint2[client][0]) / (g_fEdgeVector[client][0]+g_fEdgeVector[client][1]));
+	result[1] = ((g_fEdgeVector[client][1]*ground[1] - g_fEdgeVector[client][0]*g_fEdgePoint2[client][1]) / (g_fEdgeVector[client][1]-g_fEdgeVector[client][0]));
 	result[2] = ground[2];
 }
 
 // Credits: LJStats by justshoot, Zipcore
 stock TraceWallOrigin(Float:fOrigin[3], Float:vAngles[3], Float:result[3])
 {
-	new Handle:trace = TR_TraceRayFilterEx(fOrigin, vAngles, MASK_SHOT, RayType_Infinite, TraceEntityFilterPlayer);
+	new Handle:trace = TR_TraceRayFilterEx(fOrigin, vAngles, MASK_PLAYERSOLID, RayType_Infinite, TraceEntityFilterPlayer);
 	if(TR_DidHit(trace)) 
 	{
 		TR_GetEndPosition(result, trace);
@@ -86,7 +86,7 @@ stock TraceWallOrigin(Float:fOrigin[3], Float:vAngles[3], Float:result[3])
 stock TraceGroundOrigin(Float:fOrigin[3], Float:result[3])
 {
 	new Float:vAngles[3] = {90.0, 0.0, 0.0};
-	new Handle:trace = TR_TraceRayFilterEx(fOrigin, vAngles, MASK_SHOT, RayType_Infinite, TraceEntityFilterPlayer);
+	new Handle:trace = TR_TraceRayFilterEx(fOrigin, vAngles, MASK_PLAYERSOLID, RayType_Infinite, TraceEntityFilterPlayer);
 	if(TR_DidHit(trace)) 
 	{
 		TR_GetEndPosition(result, trace);
@@ -110,7 +110,7 @@ stock GetBeamEndOrigin(Float:fOrigin[3], Float:vAngles[3], Float:distance, Float
 // Credits: LJStats by justshoot, Zipcore
 stock GetBeamHitOrigin(Float:fOrigin[3], Float:vAngles[3], Float:result[3])
 {
-    new Handle:trace = TR_TraceRayFilterEx(fOrigin, vAngles, MASK_SHOT, RayType_Infinite, TraceEntityFilterPlayer);
+    new Handle:trace = TR_TraceRayFilterEx(fOrigin, vAngles, MASK_PLAYERSOLID, RayType_Infinite, TraceEntityFilterPlayer);
     if(TR_DidHit(trace)) 
     {
         TR_GetEndPosition(result, trace);
@@ -125,7 +125,7 @@ stock GetAimOrigin(client, Float:hOrigin[3])
     GetClientEyePosition(client,fOrigin);
     GetClientEyeAngles(client, vAngles);
 
-    new Handle:trace = TR_TraceRayFilterEx(fOrigin, vAngles, MASK_SHOT, RayType_Infinite, TraceEntityFilterPlayer);
+    new Handle:trace = TR_TraceRayFilterEx(fOrigin, vAngles, MASK_PLAYERSOLID, RayType_Infinite, TraceEntityFilterPlayer);
 
     if(TR_DidHit(trace)) 
     {
@@ -202,7 +202,7 @@ CalculateBlockGap(client, Float:startblock[3], Float:endblock[3])
 {
 	new Float:distance = GetVectorDistance(startblock, endblock);
 	new Float:rad = DegToRad(15.0);
-	new Float:newdistance = FloatDiv(distance, Cosine(rad));
+	new Float:newdistance = (distance / Cosine(rad));
 	decl Float:eye[3], Float:eyeangle[2][3];
 	new Float:temp = 0.0;
 	GetClientEyePosition(client, eye);
@@ -387,11 +387,14 @@ public Prethink (client, bool:ladderjump)
 	g_fLastJump[client] =  GetEngineTime()
 	g_fJumpOffTime[client] = GetEngineTime();
 	
-	decl weapon;
-	weapon = GetEntPropEnt(client, Prop_Data, "m_hActiveWeapon");
-	if (!client || !IsPlayerAlive(client) || g_bNoClipUsed[client] || weapon == -1 || GetEntProp(client, Prop_Data, "m_nWaterLevel") > 0)
+	if (!client || !IsPlayerAlive(client) || g_bNoClipUsed[client] || GetEntProp(client, Prop_Data, "m_nWaterLevel") > 0)
 	{	
 		g_bNoClipUsed[client] = false;
+		return;
+	}
+	
+	if (g_bJumpBugged[client])
+	{
 		return;
 	}
 
@@ -491,14 +494,10 @@ public Prethink (client, bool:ladderjump)
 	//last InitialLastHeight
 	g_js_fJump_JumpOff_PosLastHeight[client] = g_js_fJump_JumpOff_Pos[client][2];
 	
-	//noclip check
-	if ((GetEngineTime() - g_fLastTimeNoClipUsed[client]) < 4.0)
-		DoValidTeleport(client, NULL_VECTOR, NULL_VECTOR, Float:{0.0,0.0,-100.0});
-
-		if(client != g_ProBot && client != g_TpBot && g_bEnforcer){
-			Call_KZTimer_OnJumpstatStarted(client);
+	if (client != g_ProBot && client != g_TpBot && g_bEnforcer)
+	{
+		Call_KZTimer_OnJumpstatStarted(client);
 	}
-
 }
 
 
@@ -608,9 +607,8 @@ public Postthink(client)
 	
 	
 	//Format StrafeStats Console
-	if(2 < strafes <= 25)
-	{	
-		new Float:FSync;
+	if(2 < strafes < 25)
+	{
 		decl Float:fStrafeAirtime;
 		decl Float:fStrafeAirtimePerc;
 		Format(szStrafeStats, sizeof(szStrafeStats), " #. Sync        Gained      Lost        MaxSpeed    AirTime\n");
@@ -628,7 +626,7 @@ public Postthink(client)
 			}
 			
 			fStrafeAirtimePerc = FloatAbs(fStrafeAirtime / g_fAirTime[client] * 100.0);
-			FSync += g_js_Strafe_Good_Sync[client][i] / g_js_Strafe_Frames[client][i] * 100;		
+			
 			decl sync2;
 			sync2 = RoundToNearest(g_js_Strafe_Good_Sync[client][i] / g_js_Strafe_Frames[client][i] * 100);
 			if (sync2 < 0)
@@ -652,7 +650,6 @@ public Postthink(client)
 			fStrafeAirtimePerc,\
 			PERCENT);
 		}
-		sync = RoundToZero(FSync / strafes);
 	}
 	else
 		Format(szStrafeStats,1024, "");
@@ -1435,7 +1432,7 @@ public Postthink(client)
 		g_js_MultiBhop_Count[client]++;	
 		//strafe hack block 
 		new Float: SpeedCapAdv = g_fBhopSpeedCap + 0.5;
-		if ((IsFakeClient(client) && g_js_fJump_Distance[client] > (g_dist_god_multibhop * 1.025)) || (!IsFakeClient(client) && ((g_js_fPreStrafe[client] > SpeedCapAdv) || ((g_js_MultiBhop_Count[client] <= 1 && g_js_fPreStrafe[client] > 350.0) || g_bTouchedBooster[client] || strafes > 20) || (g_fBhopSpeedCap == 380.0 && g_js_fJump_Distance[client] > 365.0))))
+		if ((IsFakeClient(client) && g_js_fJump_Distance[client] > (g_dist_god_multibhop * 1.025)) || (!IsFakeClient(client) && ((g_js_fPreStrafe[client] > SpeedCapAdv) || ((g_js_MultiBhop_Count[client] <= 1 && g_js_fPreStrafe[client] > 350.0) || g_bTouchedBooster[client] || strafes > 20) || (g_fBhopSpeedCap == 380.0 && g_js_fJump_Distance[client] > 372.0))))
 		{
 			Format(g_js_szLastJumpDistance[client], 256, "<font color='#948d8d'>invalid</font>");
 			PostThinkPost(client, ground_frames);

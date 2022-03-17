@@ -13,6 +13,7 @@ public Action:SetChallengeSpawnPoint(Handle:timer, any:client)
 			{
 				new Float:pos[3];
 				GetClientAbsOrigin(i,pos);
+				CreateTimer(RESET_VELOCITY_DELAY, ZeroVelocity, client);
 				DoValidTeleport(client, pos,NULL_VECTOR,Float:{0.0,0.0,-100.0});	
 				SetEntityMoveType(client, MOVETYPE_NONE);
 			}
@@ -33,35 +34,6 @@ public Action:ZeroVelocity(Handle:timer, any:client)
 	return Plugin_Continue;
 }
 
-public Action:SetClientGroundFlagTimer(Handle:timer, any:client)
-{
-	if (!IsValidClient(client) || !IsPlayerAlive(client))
-		return;	
-	SetEntityFlags(client, g_PlayerEntityFlagRestore[client]);
-	g_bClientGroundFlag[client]=true;
-}	
-
-public Action:CheckTeleport(Handle:timer, any:client)
-{
-	if (!IsValidClient(client) || !IsPlayerAlive(client))
-		return;
-
-	new Float:diff = GetEngineTime() - g_fLastTimeBhopBlock[client];
-	new Float:diff2 = GetEngineTime() - g_fTeleportValidationTime[client];
-	if (!g_bRestorePosition[client] && !g_bRespawnPosition[client] && diff > 1.0 && diff2 > 2.0)
-	{
-		ResetJump(client);
-		if (g_bTimeractivated[client])
-		{
-			decl Float:org[3];
-			GetClientAbsOrigin(client,org);
-			PrintToChat(client,"[%cKZ%c] Unverified client teleport detected. Your position: %f, %f, %f on %s",MOSSGREEN,WHITE,org[0],org[1],org[2],g_szMapName);
-			PrintToConsole(client,"[KZ] Unverified client teleport detected. Your position: %f, %f, %f on %s",org[0],org[1],org[2],g_szMapName);
-			Client_Stop(client,0);
-		}	
-	}
-}	
-	
 public Action:SpecAdvertTimer(Handle:timer)
 {
 	new count;
@@ -117,13 +89,6 @@ public Action:OpenCheckpointMenu(Handle:timer, any:client)
 	}
 }
 
-public Action:OpenMeasureMenu(Handle:timer, any:client)
-{
-	if (IsValidClient(client) && !IsFakeClient(client))
-	{
-		DisplayMenu(g_hMainMenu,client,MENU_TIME_FOREVER)
-	}
-}
 public Action:OpenTopMenu(Handle:timer, any:client)
 {
 	if (IsValidClient(client) && !IsFakeClient(client))
@@ -167,22 +132,10 @@ public Action:UpdatePlayerProfile(Handle:timer, any:client)
 		db_updateStat(client);	
 }
 
-public Action:StartTimer(Handle:timer, any:client)
-{
-	if (IsValidClient(client) && !IsFakeClient(client))	
-		CL_OnStartTimerPress(client);
-}
-
 public Action:BhopCheck(Handle:timer, any:client)
 {
 	if (!g_js_bBhop[client])
 		g_js_GODLIKE_Count[client] = 0;
-}
-
-public Action:VersionCheckTimer(Handle:timer)
-{
-	db_VersionCheck();
-	return Plugin_Continue;
 }
 
 public Action:AttackTimer(Handle:timer)
@@ -392,8 +345,11 @@ public Action:KZTimer2(Handle:timer)
 		}
 		
 		if (!IsFakeClient(i) && !g_bKickStatus[i])
-			QueryClientConVar(i, "fps_max", ConVarQueryFinished:FPSCheck, i);
-
+		{
+			QueryClientConVar(i, "fps_max", FPSCheck, i);
+			QueryClientConVar(i, "m_yaw", MYawCheck, i);
+		}
+		
 		//overlay check
 		if (g_bOverlay[i] && GetEngineTime()-g_fLastOverlay[i] > 5.0)
 			g_bOverlay[i] = false;
@@ -428,10 +384,6 @@ public Action:KZTimer2(Handle:timer)
 				
 			//spec hud
 			SpecListMenuAlive(i);
-			
-			//AutBhop check
-			if (g_bAutoBhop && g_bTimeractivated[i])
-				g_global_AutoBhopDetected[i] = true;
 				
 			//challenge check
 			if (g_bChallenge_Request[i])
@@ -448,31 +400,21 @@ public Action:KZTimer2(Handle:timer)
 			if (g_bTimeractivated[i] && !g_bEnforcer)
 				g_global_Enforcer[i] = false;
 				
-			if (g_bTimeractivated[i] && g_bDoubleDuckCvar)
+			if (g_bTimeractivated[i] && g_iDoubleDuckCvar == 1)
 				g_global_DoubleDuck[i] = true;			
 			
-			if (g_global_EntCounter)
+			if (!IsFakeClient(i) && GetEntityFlags(i) & FL_ONGROUND)
 			{
-				//entitycount *** see mapstart() .. an earlier check doenst count the correct number of valid map entities..
-				g_global_EntCounter=false;
-				CreateTimer(1.0, EntityCount);
-			}	
-			
-			//Last Time, Cords & Angles		
-			if (GetEntityFlags(i)&FL_ONGROUND)
-			{
+				PlayerRestoreData restoreData;
+				GetClientAbsOrigin(i, restoreData.position);
+				GetClientEyeAngles(i, restoreData.angles);
 				if (g_bTimeractivated[i])
 				{
-					if (g_bPause[i])
-					{
-						new Float: flPt = GetEngineTime() - g_fStartPauseTime[i];
-						g_fPlayerLastTime[i] = GetEngineTime() - g_fStartTime[i] - flPt;	
-					}
-					else
-						g_fPlayerLastTime[i] = GetEngineTime() - g_fStartTime[i] - g_fPauseTime[i];
+					restoreData.teleports = g_OverallTp[i];
+					restoreData.checkpoints = g_OverallCp[i];
+					restoreData.runTime = GetEngineTime() - g_fStartTime[i] - g_fPauseTime[i];
 				}
-				GetClientAbsOrigin(i,g_fPlayerCordsLastPosition[i]);
-				GetClientEyeAngles(i,g_fPlayerAnglesLastPosition[i]);
+				g_smPlayerRestore.SetArray(g_szSteamID[i], restoreData, sizeof(restoreData));
 			}
 		}
 		else
@@ -498,56 +440,7 @@ public Action:KZTimer2(Handle:timer)
 			}
 		}
 	}
-	if (g_global_EntityCheck)
-	{
-		char classname[32];
-		char targetName[64];
-
-		int ent_count;
-		ent_count = 0;
-		for (new y; y < GetEntityCount(); y++)
-		{
-			if (IsValidEdict(y))
-			{
-				GetEntPropString(y, Prop_Data, "m_iName", targetName, sizeof(targetName));
-			}
-
-			if (IsValidEdict(y) && GetEntityClassname(y, classname, 32) && (StrContains(classname, "prop_physics_multiplayer") != -1))
-			{
-				return Plugin_Handled;
-			}
-
-			else if (IsValidEdict(y) && ((StrEqual(targetName, "climb_startbuttonx")) || StrEqual(targetName, "climb_endbuttonx")))
-			{
-				return Plugin_Handled;
-			}
-
-			else if (IsValidEdict(y) && GetEntityClassname(y, classname, 32) && (StrContains(classname, "prop") != -1))
-			{
-				ent_count++;
-			}
-		}
-		if (ent_count > g_global_EntityCount)
-		{
-			g_global_EntityCheck = false;
-		}
-	}
 	return Plugin_Continue;
-}
-
-public Action:EntityCount(Handle:timer)
-{
-	g_global_EntityCount = 0;
-	decl String:classname[32];
-	for (new i; i < GetEntityCount(); i++)
-	{
-		if (IsValidEdict(i) && GetEntityClassname(i, classname, 32) && (StrContains(classname, "prop") != -1))
-		{
-			g_global_EntityCount++;
-		}
-	}
-	
-	g_global_EntityCheck = true;
 }
 			
 public Action:OnMapStartTimer(Handle:timer)
@@ -787,7 +680,7 @@ public Action:CenterMsgTimer(Handle:timer, any:client)
 			PrintHintText(client,"%t", "PositionRestored");
 		}
 		
-		if (!g_bAutoTimer && IsPlayerAlive(client) && !g_bRestorePositionMsg[client])
+		if (IsPlayerAlive(client) && !g_bRestorePositionMsg[client])
 		{
 			g_fLastOverlay[client] = GetEngineTime();
 			g_bOverlay[client]=true;

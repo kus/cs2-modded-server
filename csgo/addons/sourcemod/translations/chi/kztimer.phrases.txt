@@ -1,4 +1,4 @@
-﻿"Phrases"
+"Phrases"
 {
 	"Jumpstats_PersonalBest"
 	{
@@ -14,11 +14,6 @@
 	{
 		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:i},{6:s},{7:s},{8:i},{9:i}"
 		"chi"        "[{1}GLOBAL{2}] {3}{4} 现在 #{5} 在全球TP-TOP 20以内 {6}! [{7}, Tps: {8}, Tick{9}]"
-	}
-	"UndoLadder"
-	{
-		"#format"   "{1:c},{2:c},{3:c}"
-		"chi"        "[{1}KZ{2}] {3}Undo TP not allowed because your last teleport origin is on a ladder"
 	}
 	"UndoMidAir"
 	{
@@ -207,14 +202,6 @@
 	"options_gotome_off"
 	{
 		"chi"       "停止计时的玩家可传送到你的位置 -  已关闭"
-	}
-	"options_autobhop_on"
-	{
-		"chi"       "自动连跳  -  已开启"
-	}
-	"options_autobhop_off"
-	{
-		"chi"       "自动连跳  -  已关闭"
 	}
 	"HideChat1"
 	{
@@ -1161,21 +1148,6 @@
 		"#format"   "{1:c},{2:c}"
 		"chi"        "[{1}KZ{2}] 聊天区显示加速同步率禁用."
 	}
-	"AutoBhop1"
-	{
-		"#format"   "{1:c},{2:c}"
-		"chi"        "[{1}KZ{2}] 自动连跳启用."
-	}
-	"AutoBhop2"
-	{
-		"#format"   "{1:c},{2:c}"
-		"chi"        "[{1}KZ{2}] 自动连跳禁用."
-	}
-	"AutoBhop3"
-	{
-		"#format"   "{1:c},{2:c}"
-		"chi"        "[{1}KZ{2}] 自动连跳禁用. (服务器已禁用)"
-	}
 	"AdvClimbersMenu1"
 	{
 		"#format"   "{1:c},{2:c}"
@@ -1427,6 +1399,10 @@
 	"options_lang_pt"
 	{
 		"chi"       "Language - Portuguese Brazilian"
+	}
+	"options_lang_es"
+	{
+		"chi"       "Language - Spanish"
 	}
 	"Cant_Checkpoint_Just_Landed" 
 	{

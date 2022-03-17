@@ -15,14 +15,15 @@
 #undef REQUIRE_PLUGIN
 #include <sourcebans>
 #include <mapchooser>
+#include <kztimer/momsurffix>
 
 //API
 #include <KZTimer-API>
 #include <updater>
 bool gB_KZTimerAPI = false;
 
-#define VERSION "1.91_1"
-#define PLUGIN_VERSION 200
+#define VERSION "1.100"
+#define PLUGIN_VERSION 209
 #define UPDATER "http://updater.kztimerglobal.com/KZTimerGlobal.txt"
 
 #pragma tabsize 0
@@ -45,6 +46,7 @@ bool gB_KZTimerAPI = false;
 #define DARKBLUE 0x0C
 #define LIGHTBLUE 0x0D
 #define PINK 0x0E
+#define ORCHID 0x0E
 #define LIGHTRED 0x0F
 #define QUOTE 0x22
 #define PERCENT 0x25
@@ -69,6 +71,21 @@ bool gB_KZTimerAPI = false;
 #define SOURCEBANS_AVAILABLE()	(GetFeatureStatus(FeatureType_Native, "SBBanPlayer") == FeatureStatus_Available)
 #define MANIFEST_FOLDER         "maps/"
 #define MANIFEST_EXTENSION      "_particles.txt"
+
+#define MAX_BHOP_FRAMES			8
+#define LEFT_RIGHT_MASK			(IN_LEFT | IN_RIGHT)
+#define RESET_VELOCITY_DELAY	0.02
+#define TP_TIMER_BLOCK_TIME		0.1
+
+#define LAND_HEIGHT     2.0 // maximum distance that the player is allowed to be from the ground while being on the ground
+#define DUCK_DIFFERENCE 9.0 // player origin's height difference between ducked and unducked states.
+
+#define KZTIMER_GAMEDATA_FILE	"kztimer.games"
+#define BHOP_NO_CHECKPOINT_TIME 0.11
+#define LADDER_NO_CHECKPOINT_TIME 1.5
+
+#define NOCLIP_GROUND_FRAMES 5
+
 #pragma dynamic 131072
 #pragma tabsize 0
 
@@ -125,6 +142,26 @@ enum EJoinTeamReason
 	k_CTTeamFull=3
 }
 
+enum
+{
+	NOCLIPMODE_DISABLED,  // Disable noclip completely
+	NOCLIPMODE_NORMAL,    // Enable only if map finished, pro rank, mapper, vip or admin.
+	NOCLIPMODE_PRIVILEGED,// Enable only pro rank, mapper, vip or admin.
+	NOCLIPMODE_EVERYONE,  // Enable for everyone at any time.
+	MAX_NOCLIPMODES
+}
+
+
+enum struct PlayerRestoreData
+{
+	float position[3];
+	float angles[3];
+	int teleports;
+	int checkpoints;
+	float runTime;
+}
+
+
 // kztimer decl.
 new g_DbType;
 new g_ReplayRecordTps;
@@ -146,7 +183,6 @@ new Handle:g_hFriction = INVALID_HANDLE;
 new Handle:g_hAccelerate = INVALID_HANDLE;
 new Handle:g_hMaxVelocity = INVALID_HANDLE;
 new Handle:g_hCheats = INVALID_HANDLE;
-new Handle:g_hDropKnifeEnable = INVALID_HANDLE;
 new Handle:g_hMaxRounds = INVALID_HANDLE;
 new Handle:g_hEnableBunnyhoping = INVALID_HANDLE;
 new Handle:g_hsv_ladder_scale_speed = INVALID_HANDLE;
@@ -168,6 +204,14 @@ new Handle:g_hExojumpJumpbonusUp = INVALID_HANDLE;
 new Handle:g_hExojumpJumpcost = INVALID_HANDLE;
 new Handle:g_hExojumpLandcost = INVALID_HANDLE;
 new Handle:g_hJumpImpulseExojumpMultiplier = INVALID_HANDLE;
+new Handle:g_hMinUpdateRate = INVALID_HANDLE;
+new Handle:g_hMaxUpdateRate = INVALID_HANDLE;
+new Handle:g_hMinCmdRate = INVALID_HANDLE;
+new Handle:g_hMaxCmdRate = INVALID_HANDLE;
+new Handle:g_hClientCmdrateDifference = INVALID_HANDLE;
+new Handle:g_hTurboPhysics = INVALID_HANDLE;
+
+float g_fTickrate;
 
 //Test
 new Handle:g_hAutoBhop = INVALID_HANDLE;
@@ -181,7 +225,6 @@ new Float:g_fUnpauseDelay[MAXPLAYERS+1];
 new bool:g_bUnpausedSoon[MAXPLAYERS+1];
 
 new Handle:g_hTeleport = INVALID_HANDLE;
-new Handle:g_hMainMenu = INVALID_HANDLE;
 new Handle:g_hSDK_Touch = INVALID_HANDLE;
 new Handle:g_hAdminMenu = INVALID_HANDLE;
 new Handle:g_MapList = INVALID_HANDLE;
@@ -254,6 +297,8 @@ new Handle:g_hdist_godlike_ladder = INVALID_HANDLE;
 new Float:g_dist_god_ladder;
 new Handle:g_hBanDuration = INVALID_HANDLE;
 new Float:g_fBanDuration;
+new Handle:g_hBanDurationM = INVALID_HANDLE;
+new Float:g_fBanDurationM;
 new Handle:g_hdist_good_lj = INVALID_HANDLE;
 new Float:g_dist_min_lj;
 new Handle:g_hdist_impressive_lj = INVALID_HANDLE;
@@ -279,26 +324,17 @@ new bool:g_bRestore;
 new Handle:g_hAllowRoundEndCvar = INVALID_HANDLE;
 new bool:g_bAllowRoundEndCvar;
 new Handle:g_hNoClipS = INVALID_HANDLE;
-new bool:g_bNoClipS;
+int g_iNoClipMode;
 new Handle:g_hReplayBot = INVALID_HANDLE;
 new bool:g_bReplayBot;
-new Handle:g_hAutoBan = INVALID_HANDLE;
-new bool:g_bAutoBan;
 new Handle:g_hEnableChatProcessing = INVALID_HANDLE;
 new bool:g_bEnableChatProcessing;
 new Handle:g_hEnableGroupAdverts = INVALID_HANDLE;
 new bool:g_bEnableGroupAdverts;
-new Handle:g_hSlayPlayers = INVALID_HANDLE;
-new bool:g_bSlayPlayers;
-new Handle:g_hDoubleDuckCvar = INVALID_HANDLE;
-new bool:g_bDoubleDuckCvar;
 new Handle:g_hPauseServerside = INVALID_HANDLE;
 new bool:g_bPauseServerside;
 new Handle:g_hChallengePoints = INVALID_HANDLE;
 new bool:g_bChallengePoints;
-new Handle:g_hAutoBhopConVar = INVALID_HANDLE;
-new bool:g_bAutoBhopConVar;
-new bool:g_bAutoBhop;
 new Handle:g_hTierMessages = INVALID_HANDLE;
 new bool:g_bTierMessages;
 new Handle:g_hVipClantag = INVALID_HANDLE;
@@ -325,7 +361,6 @@ new Handle:g_hCountry = INVALID_HANDLE;
 new bool:g_bCountry;
 new Handle:g_hAutoRespawn = INVALID_HANDLE;
 new bool:g_bAutoRespawn;
-new Handle:g_hGlobalBanListArray = INVALID_HANDLE;
 new Handle:g_hAllowCheckpoints = INVALID_HANDLE;
 new bool:g_bAllowCheckpoints;
 new Handle:g_hSingleTouch = INVALID_HANDLE;
@@ -335,15 +370,16 @@ new bool:g_bPointSystem;
 new Handle:g_hCleanWeapons = INVALID_HANDLE;
 new bool:g_bCleanWeapons;
 new Handle:g_hcvargodmode = INVALID_HANDLE;
-new bool:g_bAutoTimer;
-new Handle:g_hAutoTimer = INVALID_HANDLE;
 new bool:g_bgodmode;
 new Handle:g_hEnforcer = INVALID_HANDLE;
 new bool:g_bEnforcer;
+new bool:g_bEnforcerOnFreshMap;
 new Handle:g_hPreStrafe = INVALID_HANDLE;
 new bool:g_bPreStrafe;
 new Handle:g_hMapEnd = INVALID_HANDLE;
 new bool:g_bMapEnd;
+new Handle:g_hDoubleDuckCvar = INVALID_HANDLE;
+new g_iDoubleDuckCvar;
 new Handle:g_hTransPlayerModels = INVALID_HANDLE;
 new g_TransPlayerModels;
 new Handle:g_hAutohealing_Hp = INVALID_HANDLE;
@@ -362,10 +398,11 @@ new Handle:g_hMinSkillGroup = INVALID_HANDLE;
 new g_MinSkillGroup;
 new Handle:g_hReplayBotProColor = INVALID_HANDLE;
 new Handle:g_hReplayBotTpColor = INVALID_HANDLE;
+Handle g_hBindfixMode;
+int g_iBindfixMode;
 new Float:g_fMapStartTime;
-new Float:g_fBhopDoorSp[300];
 new Float:g_fSpawnTime[MAXPLAYERS+1];
-new Float:g_fTeleportValidationTime[MAXPLAYERS+1];
+new Float:g_fLastTeleportTime[MAXPLAYERS+1];
 new Float:g_fvMeasurePos[MAXPLAYERS+1][2][3];
 new Float:g_fafAvgJumps[MAXPLAYERS+1] = {1.0, ...};
 new Float:g_fafAvgSpeed[MAXPLAYERS+1] = {250.0, ...};
@@ -382,14 +419,11 @@ new Float:g_fDestBlock[MAXPLAYERS + 1][2][3];
 new Float:g_fStartTime[MAXPLAYERS+1];
 new Float:g_fFinalTime[MAXPLAYERS+1];
 new Float:g_fPauseTime[MAXPLAYERS+1];
-new Float:g_fLastTimeNoClipUsed[MAXPLAYERS+1];
 new Float:g_fLastOverlay[MAXPLAYERS+1];
 new Float:g_fStartPauseTime[MAXPLAYERS+1];
-new Float:g_fPlayerCordsLastPosition[MAXPLAYERS+1][3];
-new Float:g_fPlayerLastTime[MAXPLAYERS+1];
-new Float:g_fPlayerAnglesLastPosition[MAXPLAYERS+1][3];
 new Float:g_fPlayerCords[MAXPLAYERS+1][CPLIMIT][3];
 new Float:g_fPlayerAngles[MAXPLAYERS+1][CPLIMIT][3];
+new Float:g_fCheckpointLadderNormal[MAXPLAYERS+1][CPLIMIT][3];
 new Float:g_fPlayerCordsRestart[MAXPLAYERS+1][3];
 new Float:g_fPlayerAnglesRestart[MAXPLAYERS+1][3];
 new Float:g_fPlayerSSPPos[MAXPLAYERS+1][3];
@@ -442,15 +476,14 @@ new Float:g_js_fPersonal_LjBlockRecord_Dist[MAX_PR_PLAYERS]=-1.0;
 new Float:g_fLastSpeed[MAXPLAYERS+1];
 new Float:g_fLastPauseUsed[MAXPLAYERS+1];
 new Float:g_fJumpButtonLastTimeUsed[MAXPLAYERS+1];
-new Float:g_vCurrent[MAXPLAYERS + 1][3];
-new Float:g_vLast[MAXPLAYERS + 1][3];
+new Float:g_fVelocity[MAXPLAYERS + 1][3];
+new Float:g_fLastVelocity[MAXPLAYERS + 1][3];
 new Float:g_fCrouchButtonLastTimeUsed[MAXPLAYERS+1];
 new Float:g_fFailedLandingPos[MAXPLAYERS+1][3];
 new Float:g_fAirTime[MAXPLAYERS+1];
 new Float:g_fLastTimeDoubleDucked[MAXPLAYERS+1];
 new Float:g_fJumpOffTime[MAXPLAYERS+1];
 new Float:g_fLandingTime[MAXPLAYERS+1];
-new Float:g_fLastUndo[MAXPLAYERS +1];
 new Float:g_flastHeight[MAXPLAYERS +1];
 new Float:g_fInitialPosition[MAXPLAYERS+1][3];
 new Float:g_fInitialAngles[MAXPLAYERS+1][3];
@@ -459,19 +492,19 @@ new Float:g_fChallenge_RequestTime[MAXPLAYERS+1];
 new Float:g_fLastPosition[MAXPLAYERS + 1][3];
 new Float:g_fMovingDirection[MAXPLAYERS+1];
 new Float:g_fLastAngles[MAXPLAYERS + 1][3];
-new Float:g_fLastTimeBhopBlock[MAXPLAYERS+1];
 new Float:g_js_fLadderDirection[MAXPLAYERS+1];
 new Float:g_fRecordTime;
 new Float:g_fRecordTimePro;
-new Float:g_fStartButtonPos[3];
-new Float:g_fEndButtonPos[3];
+new Float:g_fStartButtonPos[MAXPLAYERS+1][3];
+new Float:g_fEndButtonPos[MAXPLAYERS+1][3];
 new Float:g_pr_finishedmaps_tp_perc[MAX_PR_PLAYERS];
 new Float:g_pr_finishedmaps_pro_perc[MAX_PR_PLAYERS];
 new MoveType:g_LastMoveType[MAXPLAYERS+1];
 new bool:g_bLateLoaded = false;
+new bool:g_bEnforcerLateLoaded = false;
 new bool:g_bRoundEnd;
-new bool:g_bFirstStartButtonPush;
-new bool:g_bFirstEndButtonPush;
+new bool:g_bFirstStartButtonPush[MAXPLAYERS+1];
+new bool:g_bFirstEndButtonPush[MAXPLAYERS+1];
 new bool:g_bProReplay;
 new bool:g_bTpReplay;
 new bool:g_pr_RankingRecalc_InProgress;
@@ -512,10 +545,8 @@ new bool:g_bFirstTeamJoin[MAXPLAYERS+1];
 new bool:g_bFirstSpawn[MAXPLAYERS+1];
 new bool:g_bMissedTpBest[MAXPLAYERS+1];
 new bool:g_bMissedProBest[MAXPLAYERS+1];
-new bool:g_bRestorePosition[MAXPLAYERS+1];
 new bool:g_bRestorePositionMsg[MAXPLAYERS+1];
 new bool:g_bClimbersMenuOpen[MAXPLAYERS+1];
-new bool:g_bNoClip[MAXPLAYERS+1];
 new bool:g_bOnBhopPlattform[MAXPLAYERS+1];
 new bool:g_bMapFinished[MAXPLAYERS+1];
 new bool:g_bRespawnPosition[MAXPLAYERS+1];
@@ -523,7 +554,6 @@ new bool:g_bKickStatus[MAXPLAYERS+1];
 new bool:g_bTouchedBooster[MAXPLAYERS+1];
 new bool:g_bProfileRecalc[MAX_PR_PLAYERS];
 new bool:g_bProfileSelected[MAXPLAYERS+1];
-new bool:g_bClientGroundFlag[MAXPLAYERS+1];
 new bool:g_bSelectProfile[MAXPLAYERS+1];
 new bool:g_bClimbersMenuwasOpen[MAXPLAYERS+1];
 new bool:g_js_bDropJump[MAXPLAYERS+1];
@@ -563,7 +593,6 @@ new bool:g_bFlagged[MAXPLAYERS+1];
 new bool:g_bMeasurePosSet[MAXPLAYERS+1][2];
 new bool:g_bCPTextMessage[MAXPLAYERS+1];
 new bool:g_bAdvancedClimbersMenu[MAXPLAYERS+1];
-new bool:g_bAutoBhopClient[MAXPLAYERS+1];
 new bool:g_bJumpBeam[MAXPLAYERS+1];
 new bool:g_bHideChat[MAXPLAYERS+1];
 new bool:g_bViewModel[MAXPLAYERS+1];
@@ -586,40 +615,17 @@ new bool:g_borg_Hide[MAXPLAYERS+1];
 new g_org_ShowSpecs[MAXPLAYERS+1];
 new bool:g_borg_CPTextMessage[MAXPLAYERS+1];
 new bool:g_borg_AdvancedClimbersMenu[MAXPLAYERS+1];
-new bool:g_borg_AutoBhopClient[MAXPLAYERS+1];
 new bool:g_bErrorSounds[MAXPLAYERS+1];
 new bool:g_borg_ErrorSounds[MAXPLAYERS + 1];
 new bool:g_bOnGround[MAXPLAYERS+1];
 new bool:g_bOnGroundBindFix[MAXPLAYERS+1];
 new bool:g_bWasDucking[MAXPLAYERS + 1];
 new bool:g_bJumping[MAXPLAYERS + 1];
+new bool:g_bMapper[MAXPLAYERS + 1];
 new g_org_ClientLang[MAXPLAYERS+1];
 new g_ClientLang[MAXPLAYERS+1];
 new bool:g_bPrestrafeTooHigh[MAXPLAYERS+1];
 new g_Beam[3];
-new g_BhopMultipleList[MAX_BHOPBLOCKS];
-new g_BhopMultipleTeleList[MAX_BHOPBLOCKS];
-new g_BhopMultipleCount;
-new g_BhopDoorList[MAX_BHOPBLOCKS];
-new g_BhopDoorTeleList[MAX_BHOPBLOCKS];
-new g_BhopDoorCount;
-new g_BhopButtonList[MAX_BHOPBLOCKS];
-new g_BhopButtonTeleList[MAX_BHOPBLOCKS];
-new g_BhopButtonCount;
-new g_Offs_vecOrigin = -1;
-new g_Offs_vecMins = -1;
-new g_Offs_vecMaxs = -1;
-new g_DoorOffs_vecPosition1 = -1;
-new g_DoorOffs_vecPosition2 = -1;
-new g_DoorOffs_flSpeed = -1;
-new g_DoorOffs_spawnflags = -1;
-new g_DoorOffs_NoiseMoving = -1;
-new g_DoorOffs_sLockedSound = -1;
-new g_DoorOffs_bLocked = -1;
-new g_ButtonOffs_vecPosition1 = -1;
-new g_ButtonOffs_vecPosition2 = -1;
-new g_ButtonOffs_flSpeed = -1;
-new g_ButtonOffs_spawnflags = -1;
 new g_TSpawns=-1;
 new g_CTSpawns=-1;
 new g_ownerOffset;
@@ -714,6 +720,11 @@ new g_JumpCheck1[MAXPLAYERS+1];
 new g_JumpCheck2[MAXPLAYERS+1];
 new g_AdminMenuLastPage[MAXPLAYERS+1];
 new g_OptionsMenuLastPage[MAXPLAYERS+1];
+new g_FramesOnGround[MAXPLAYERS+1]; // # of frames on ground currently. 0 if not on ground.
+new g_FramesOnGroundLast[MAXPLAYERS+1]; // # of frames the player was on ground the last time he was on ground. same as g_FramesOnGround if currently on ground.
+new g_LastFlags[MAXPLAYERS + 1];
+new Float:g_fTimeInAir[MAXPLAYERS+1];
+new Float:g_fGroundTime[MAXPLAYERS+1];
 new String:g_js_szLastJumpDistance[MAXPLAYERS+1][256];
 new String:g_pr_chat_coloredrank[MAXPLAYERS+1][32];
 new String:g_pr_rankname[MAXPLAYERS+1][32];
@@ -769,7 +780,7 @@ new String:IMPRESSIVE_FULL_SOUND_PATH[128];
 new String:IMPRESSIVE_RELATIVE_SOUND_PATH[128];
 new String:GOLDEN_FULL_SOUND_PATH[128];
 new String:GOLDEN_RELATIVE_SOUND_PATH[128];
-new String:g_szLanguages[][128] = {"English", "German", "Swedish", "French", "Russian", "SChinese", "Brazilian", "Finnish"};
+new String:g_szLanguages[][128] = {"English", "German", "Swedish", "French", "Russian", "SChinese", "Brazilian", "Finnish", "Spanish"};
 new String:RadioCMDS[][] = {"coverme", "takepoint", "holdpos", "regroup", "followme", "takingfire", "go", "fallback", "sticktog",
 	"getinpos", "stormfront", "report", "roger", "enemyspot", "needbackup", "sectorclear", "inposition", "reportingin",
 	"getout", "negative","enemydown","cheer","thanks","nice","compliment"};
@@ -779,34 +790,11 @@ new bool:g_bJumpBugged[MAXPLAYERS + 1];
 new bool:g_bSSPSet[MAXPLAYERS + 1];
 
 //global decls
-new Handle:g_hDbGlobal = INVALID_HANDLE;
-new g_global_EntityCount = 0;
-new g_global_MapFileSize;
-new g_global_VersionBlocked;
-new g_global_maptier;
-new g_global_maprank_tp[MAXPLAYERS+1];
-new g_global_maprank_pro[MAXPLAYERS+1];
-new bool:g_global_Disabled;
-new bool:g_global_Access;
-new bool:g_global_ValidedMap;
-new bool:g_global_ValidFileSize;
-new bool:g_global_IntegratedButtons;
-new bool:g_global_EntityCheck;
-new bool:g_global_EntCounter;
 new bool:g_global_SelfBuiltButtons;
-new bool:g_global_AutoTimerOnStart[MAXPLAYERS+1];
-new bool:g_global_AutoBhopDetected[MAXPLAYERS+1];
-new bool:g_global_WrongMapVersion;
 new bool:g_global_Enforcer[MAXPLAYERS+1];
 new bool:g_global_DoubleDuck[MAXPLAYERS+1];
-new String:g_global_szGlobalMapName[128];
-new String:g_global_szLatestGlobalVersion[32];
-new String:g_global_szMapDifficulty[255];
-new String:g_global_szApprover[255];
-new String:g_GlobalRecordPro_Name[MAX_NAME_LENGTH];
-new String:g_GlobalRecordTp_Name[MAX_NAME_LENGTH];
-new Float:g_fGlobalRecordTp_Time=9999999.0;
-new Float:g_fGlobalRecordPro_Time=9999999.0;
+
+StringMap g_smPlayerRestore;
 
 //realbhop
 new bool:AfterJumpFrame[MAXPLAYERS + 1];
@@ -824,6 +812,17 @@ new Float:g_hdist_golden_bhop;
 new Float:g_hdist_golden_multibhop;
 new Float:g_hdist_golden_ladder;
 
+new g_iCmdnum[MAXPLAYERS + 1];
+
+new g_iLastTriggerTeleportTouchCmdnum[MAXPLAYERS + 1];
+new g_iTriggerTeleportTouchCount[MAXPLAYERS + 1];
+new g_iLastTriggerMultipleTouchCmdnum[MAXPLAYERS + 1];
+new g_iTriggerMultipleTouchCount[MAXPLAYERS + 1];
+
+new bool:g_bMomsurffixAvailable;
+
+new bool:g_bNoclipped[MAXPLAYERS + 1];
+
 #include "kztimerGlobal/admin.sp"
 #include "kztimerGlobal/commands.sp"
 #include "kztimerGlobal/hooks.sp"
@@ -834,6 +833,9 @@ new Float:g_hdist_golden_ladder;
 #include "kztimerGlobal/timer.sp"
 #include "kztimerGlobal/replay.sp"
 #include "kztimerGlobal/jumpstats.sp"
+#include "kztimerGlobal/weaponspeed.sp"
+#include "kztimerGlobal/cheaterreplays.sp"
+#include "kztimerGlobal/triggerfix.sp"
 //#include "kztimerGlobal/addons/sound.sp"
 
 public APLRes:AskPluginLoad2(Handle:myself, bool:late, String:error[], err_max)
@@ -841,8 +843,8 @@ public APLRes:AskPluginLoad2(Handle:myself, bool:late, String:error[], err_max)
 	RegPluginLibrary("KZTimer");
 	MarkNativeAsOptional("HasEndOfMapVoteFinished");
 	MarkNativeAsOptional("EndOfMapVoteEnabled");
-	hStartPress = CreateGlobalForward("CL_OnStartTimerPress", ET_Ignore, Param_Cell);
-	hEndPress = CreateGlobalForward("CL_OnEndTimerPress", ET_Ignore, Param_Cell);
+	hStartPress = CreateGlobalForward("CL_OnStartTimerPress", ET_Ignore, Param_Cell, Param_Cell);
+	hEndPress = CreateGlobalForward("CL_OnEndTimerPress", ET_Ignore, Param_Cell, Param_Cell);
 	CreateNative("KZTimer_GetTimerStatus", Native_GetTimerStatus);
 	CreateNative("KZTimer_StopUpdatingOfClimbersMenu", Native_StopUpdatingOfClimbersMenu);
 	CreateNative("KZTimer_StopTimer", Native_StopTimer);
@@ -855,6 +857,8 @@ public APLRes:AskPluginLoad2(Handle:myself, bool:late, String:error[], err_max)
 	CreateNative("KZTimer_GetVersion", Native_GetVersion);
 	CreateNative("KZTimer_GetVersion_Desc", Native_GetVersion_Desc);
 	g_bLateLoaded = late;
+	g_bEnforcerLateLoaded = late
+	g_bEnforcerOnFreshMap = !late;
 	g_hFWD_TimerStart = CreateGlobalForward("KZTimer_TimerStarted", ET_Event, Param_Cell);
 	g_hFWD_TimerStopped = CreateGlobalForward("KZTimer_TimerStopped", ET_Event, Param_Cell, Param_Cell, Param_Float, Param_Cell);
 	g_hFWD_TimerStoppedValid = CreateGlobalForward("KZTimer_TimerStoppedValid", ET_Event, Param_Cell, Param_Cell, Param_Cell, Param_Float);
@@ -867,23 +871,31 @@ public APLRes:AskPluginLoad2(Handle:myself, bool:late, String:error[], err_max)
 
 public OnPluginStart()
 {
-
+	OnPluginStart_Triggerfix();
+	
+	if (g_smPlayerRestore == INVALID_HANDLE)
+	{
+		g_smPlayerRestore = new StringMap();
+	}
+	else
+	{
+		g_smPlayerRestore.Clear();
+	}
+	
 	//GameCheck
 	new String:gameDir[64];
 	GetGameFolderName(gameDir, sizeof(gameDir));
 	if(StrContains(gameDir, "csgo", false) == -1)
 		SetFailState("Sorry, this game isn't supported by KZTimer. (%s)", gameDir);
 
+	g_fTickrate = 1.0 / GetTickInterval();
 	//TickrateCheck
-	new Float:fltickrate = 1.0 / GetTickInterval( );
-	if (fltickrate > 65)
-		if (fltickrate < 103)
-			g_Server_Tickrate = 102;
-		else
-			g_Server_Tickrate = 128;
-	else
-		g_Server_Tickrate= 64;
+	g_Server_Tickrate = RoundFloat(1 / GetTickInterval());
 
+	if(g_Server_Tickrate != 64 && g_Server_Tickrate != 102 && g_Server_Tickrate != 128)
+	{
+		LogError("Warning: This plugin only supports 64, 102, and 128 tickrates.");
+	}
 
 	RegServerConVars();
 	RegConsoleCmds();
@@ -915,9 +927,6 @@ public OnPluginStart()
 	g_hLoadedRecordsAdditionalTeleport = CreateTrie();
 
 	//offsets
-	g_Offs_vecOrigin = FindSendPropInfo("CBaseEntity","m_vecOrigin");
-	g_Offs_vecMins = FindSendPropInfo("CBaseEntity","m_vecMins");
-	g_Offs_vecMaxs = FindSendPropInfo("CBaseEntity","m_vecMaxs");
 	g_ownerOffset = FindSendPropInfo("CBaseCombatWeapon", "m_hOwnerEntity");
 	g_ragdolls = FindSendPropInfo("CCSPlayer","m_hRagdoll");
 
@@ -939,30 +948,8 @@ public OnPluginStart()
 		CreateTimer(3.0, LoadPlayerSettings, INVALID_HANDLE, TIMER_FLAG_NO_MAPCHANGE);
 
 	//CleanupDB();
-}
-
-public OnPluginPauseChange(bool:bPause)
-{
-	if (bPause)
-	{
-		AlterBhopBlocks(true);
-		g_BhopDoorCount = 0;
-		g_BhopButtonCount = 0;
-		for(new i = 0; i < g_BhopMultipleCount; i++)
-		{
-			new ent = g_BhopMultipleList[i];
-			if(IsValidEntity(ent))
-				SDKUnhook(ent,SDKHook_StartTouch,Entity_Touch2);
-		}
-	}
-	else
-	{
-		g_BhopDoorCount = 0;
-		g_BhopButtonCount = 0;
-		g_BhopMultipleCount = 0;
-		FindBhopBlocks();
-		FindMultipleBlocks();
-	}
+	
+	WeapSpeedOnPluginStart();
 }
 
 public OnLibraryAdded(const String:name[])
@@ -976,6 +963,10 @@ public OnLibraryAdded(const String:name[])
 	if (StrEqual(name, "KZTimer-API"))
 	{
 		gB_KZTimerAPI = true;
+	}
+	else if (StrEqual(name, "kztimer-momsurffix"))
+	{
+		g_bMomsurffixAvailable = true;
 	}
 	
 	if (StrEqual(name, "updater"))
@@ -1010,6 +1001,8 @@ public OnLibraryAdded(const String:name[])
 				OnClientPutInServer(i);
 		}
 	}
+	
+	WeapSpeedOnLibraryAdded(name);
 }
 
 public OnPluginEnd()
@@ -1050,16 +1043,22 @@ public OnPluginEnd()
 public OnLibraryRemoved(const String:name[])
 {
 	if (StrEqual(name, "adminmenu"))
+	{
 		g_hAdminMenu = INVALID_HANDLE;
-	if(StrEqual(name, "dhooks"))
+	}
+	else if(StrEqual(name, "dhooks"))
+	{
 		SetFailState("<KZTIMER> Dhooks extension is not loaded.");
-		
-	if (StrEqual(name, "KZTimer-API"))
+	}
+	else if (StrEqual(name, "KZTimer-API"))
 	{
 		gB_KZTimerAPI = false;
 	}
-	
-	if (StrEqual(name, "updater"))
+	else if (StrEqual(name, "kztimer-momsurffix"))
+	{
+		g_bMomsurffixAvailable = false;
+	}
+	else if (StrEqual(name, "updater"))
 	{
 		Updater_RemovePlugin();
 	}
@@ -1067,6 +1066,8 @@ public OnLibraryRemoved(const String:name[])
 
 public OnMapStart()
 {
+	OnMapStart_Cheaterreplays();
+	
 	new timeleft;
 	GetMapTimeLeft(timeleft);
 	ServerCommand("sv_pure 0;bot_quota 0;mp_warmup_end");
@@ -1078,46 +1079,41 @@ public OnMapStart()
 	SetupExceptions(true);
 	InitPrecache();
 	SetCashState();
+	
+	if (g_bEnforcerLateLoaded)
+	{
+		g_bEnforcerLateLoaded = false;
+	}
+	else
+	{
+		g_bEnforcerOnFreshMap = true; //!g_bLateLoaded
+	}
 
 	//set defaults
 	for (new i = 1; i <= MaxClients; i++)
+	{
 		g_Skillgroup[i] = 0;
+		g_fStartButtonPos[i] = Float:{-999999.9,-999999.9,-999999.9};
+		g_fEndButtonPos[i] = Float:{-999999.9,-999999.9,-999999.9};
+		g_bFirstStartButtonPush[i]=true;
+		g_bFirstEndButtonPush[i]=true;
+	}
 	g_hReplayRouteArray = CreateArray(3);
-	g_global_MapFileSize = -1;
-	g_bFirstStartButtonPush=true;
-	g_bFirstEndButtonPush=true;
 	g_fMapStartTime = GetEngineTime();
 	g_global_SelfBuiltButtons=false;
-	g_global_IntegratedButtons=true;
-	g_global_Disabled=false;
 	g_fRecordTime=9999999.0;
 	g_fRecordTimePro=9999999.0;
-	g_fGlobalRecordPro_Time = 9999999.0;
-	g_fGlobalRecordTp_Time = 9999999.0;
-	g_fStartButtonPos = Float:{-999999.9,-999999.9,-999999.9};
-	g_fEndButtonPos = Float:{-999999.9,-999999.9,-999999.9};
 	g_MapTimesCountPro = 0;
 	g_MapTimesCountTp = 0;
 	g_ProBot = -1;
 	g_TpBot = -1;
 	g_InfoBot = -1
-	g_bAutoBhop=false;
 	g_bRoundEnd=false;
-	g_global_EntityCheck = false;
-	g_global_EntCounter = true;
-	g_hDbGlobal = INVALID_HANDLE;
 	CheatFlag("bot_zombie", false, true);
 
-	//global
-	Format(g_global_szMapDifficulty,255,"undefined");
-	Format(g_global_szGlobalMapName,128,"");
-	Format(g_global_szApprover,255,"Unknown");
-
 	//get mapname
-	new bool: fileFound;
 	GetCurrentMap(g_szMapName, 128);
 	Format(g_szMapPath, sizeof(g_szMapPath), "maps/%s.bsp", g_szMapName);
-	fileFound = FileExists(g_szMapPath);
 
 	//workshop fix
 	new String:mapPieces[6][128];
@@ -1126,20 +1122,16 @@ public OnMapStart()
 
 	//get map tag
 	ExplodeString(g_szMapName, "_", g_szMapPrefix, 2, 32);
-	g_global_ValidFileSize=false;
 	StrToLower(g_szMapName);
 	StrToLower(g_szMapPrefix[0]);
 
 
 	//sql
-	ConnectToGlobalDB();
 	db_GetMapRecord_CP();
 	db_GetMapRecord_Pro();
 	db_CalculatePlayerCount();
 	db_viewMapProRankCount();
 	db_viewMapTpRankCount();
-	db_VersionCheck();
-	db_MapTierCheck();
 	db_ClearLatestRecords();
 	db_GetDynamicTimelimit();
 	db_CalcAvgRunTime();
@@ -1150,40 +1142,16 @@ public OnMapStart()
 	CreateTimer(2.0, OnMapStartTimer, INVALID_HANDLE, TIMER_FLAG_NO_MAPCHANGE);
 	CreateTimer(60.0, AttackTimer, INVALID_HANDLE, TIMER_FLAG_NO_MAPCHANGE|TIMER_REPEAT);
 	CreateTimer(600.0, PlayerRanksTimer, INVALID_HANDLE, TIMER_FLAG_NO_MAPCHANGE|TIMER_REPEAT);
-	CreateTimer(1800.0, VersionCheckTimer, INVALID_HANDLE, TIMER_FLAG_NO_MAPCHANGE|TIMER_REPEAT);
 	g_hSpecAdvertTimer = CreateTimer(g_fSpecsAdvert, SpecAdvertTimer, _, TIMER_REPEAT|TIMER_FLAG_NO_MAPCHANGE);
-
-	if (fileFound)
-	{
-		g_global_MapFileSize =  FileSize(g_szMapPath);
-		if (g_hDbGlobal != INVALID_HANDLE)
-		{
-			if(StrEqual(g_szMapPrefix[0],"kz") || StrEqual(g_szMapPrefix[0],"xc") || StrEqual(g_szMapPrefix[0],"bkz") || StrEqual(g_szMapPrefix[0],"kzpro"))
-				dbCheckFileSize();
-		}
-	}
-
-	//AutoBhop?
-	if(StrEqual(g_szMapPrefix[0],"surf") || StrEqual(g_szMapPrefix[0],"bhop") || StrEqual(g_szMapPrefix[0],"mg"))
-		if (g_bAutoBhopConVar)
-			g_bAutoBhop=true;
 
 	//server infos
 	CreateTimer(5.0, GetServerInfo);
-
-	//Bhop block stuff
-	g_BhopDoorCount = 0;
-	g_BhopButtonCount = 0;
-	g_BhopMultipleCount = 0;
-	FindBhopBlocks();
-	FindMultipleBlocks();
 
 	if (g_bLateLoaded)
 	{
 		OnConfigsExecuted();
 		OnAutoConfigsBuffered();
 	}
-	dbGetGlobalBanList();
 
 	decl String:sManifestFullPath[PLATFORM_MAX_PATH];
 	FormatEx(sManifestFullPath, sizeof(sManifestFullPath), "%s%s%s", MANIFEST_FOLDER, g_szMapName, MANIFEST_EXTENSION);
@@ -1193,23 +1161,11 @@ public OnMapStart()
 
 public OnMapEnd()
 {
-	AlterBhopBlocks(true);
+	g_smPlayerRestore.Clear();
 	SetupExceptions(false);
-	ResetHandle(g_hGlobalBanListArray);
 	ResetHandle(g_hReplayRouteArray);
-	g_BhopDoorCount = 0;
 	g_ProBot = -1;
 	g_TpBot = -1;
-	g_BhopButtonCount = 0;
-	g_BhopMultipleCount = 0;
-	for(new i = 0; i < g_BhopMultipleCount; i++)
-	{
-		new ent = g_BhopMultipleList[i];
-		if(IsValidEntity(ent))
-		{
-			SDKUnhook(ent,SDKHook_StartTouch,Entity_Touch2);
-		}
-	}
 	ServerCommand("bot_quota 0");
 	db_Cleanup();
 }
@@ -1270,11 +1226,6 @@ public OnConfigsExecuted()
 	StrToLower(g_szMapName);
 	StrToLower(g_szMapPrefix[0]);
 
-	//AutoBhop?
-	if(StrEqual(g_szMapPrefix[0],"surf") || StrEqual(g_szMapPrefix[0],"bhop") || StrEqual(g_szMapPrefix[0],"mg"))
-		if (g_bAutoBhopConVar)
-			g_bAutoBhop=true;
-
 	ServerCommand("sv_pure 0");
 }
 
@@ -1310,6 +1261,8 @@ public OnAutoConfigsBuffered()
 
 public OnClientPutInServer(client)
 {
+	OnClientPutInServer_Cheaterreplays(client);
+	OnClientPutInServer_Triggerfix(client);
 	if (!IsValidClient(client))
 		return;
 
@@ -1331,6 +1284,8 @@ public OnClientPutInServer(client)
 	SDKHook(client, SDKHook_PostThink, Hook_PostThinkPost);
 	SDKHook(client, SDKHook_WeaponSwitchPost, OnWeaponSwitchPost);
 	SDKHook(client, SDKHook_WeaponEquipPost, OnWeaponSwitchPost);
+	
+	WeapSpeedOnClientPutInServer(client);
 
 	if (IsFakeClient(client))
 	{
@@ -1361,21 +1316,6 @@ public OnClientPutInServer(client)
 	new lastPiece = ExplodeString(g_szSteamID[client], ":", idpieces, sizeof(idpieces), sizeof(idpieces[]));
 	Format(szSteamID, sizeof(szSteamID), "%s", idpieces[lastPiece-1]);
 
-	if (g_hGlobalBanListArray != INVALID_HANDLE)
-	{
-		for (new i = 0; i < GetArraySize(g_hGlobalBanListArray); i++)
-		{
-			decl String:szAuthID[32];
-			GetArrayString(g_hGlobalBanListArray,i,szAuthID,32);
-			TrimString(szAuthID);
-			if (StrEqual(szAuthID,szSteamID))
-			{
-				KickClient(client, "You are globally banned! For more information visit kzstats.com");
-				return;
-			}
-		}
-	}
-
 	db_viewPlayerOptions(client, g_szSteamID[client]);
  	db_viewPersonalRecords(client,g_szSteamID[client],g_szMapName);
 	db_viewPersonalBhopRecord(client, g_szSteamID[client]);
@@ -1386,14 +1326,9 @@ public OnClientPutInServer(client)
 	db_viewPersonalLadderJumpRecord(client, g_szSteamID[client]);
 	db_viewPersonalCJRecord(client, g_szSteamID[client]);
 	db_viewPersonalLJRecord(client, g_szSteamID[client]);
-	CreateTimer(2.0, GetGlobalMapRank_Timer, client,TIMER_FLAG_NO_MAPCHANGE);
 
 	// ' char fix
 	FixPlayerName(client);
-
-	//position restoring
-	if(g_bRestore)
-		db_selectLastRun(client);
 
 	//console info
 	PrintConsoleInfo(client);
@@ -1426,10 +1361,10 @@ public OnClientDisconnect(client)
 		return;
 	}
 
-	//Database
+	
 	if (IsValidClient(client))
 	{
-		db_insertLastPosition(client,g_szMapName);
+		//Database
 		db_updatePlayerOptions(client);
 		g_bSSPSet[client] = false;
 	}
@@ -1443,6 +1378,22 @@ public OnClientDisconnect(client)
 	g_fafAvgPerfJumps[client] = 0.3333;
 	g_bFlagged[client] = false;
 	g_favVEL[client][2] = 0.0;
+	
+	//reset timer variables
+	g_fStartButtonPos[client] = Float:{-999999.9,-999999.9,-999999.9};
+	g_fEndButtonPos[client] = Float:{-999999.9,-999999.9,-999999.9};
+	g_bFirstStartButtonPush[client] = true;
+	g_bFirstEndButtonPush[client] = true;
+	
+	g_iLastTriggerTeleportTouchCmdnum[client] = 0;
+	g_iTriggerTeleportTouchCount[client] = 0;
+	g_iLastTriggerMultipleTouchCmdnum[client] = 0;
+	g_iTriggerMultipleTouchCount[client] = 0;
+}
+
+public void OnClientConnected(int client)
+{
+	OnClientConnected_Triggerfix(client);
 }
 
 public OnClientAuthorized(client)
@@ -1518,17 +1469,17 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 	}
 	if(convar == g_hNoClipS)
 	{
-		if(newValue[0] == '1')
-			g_bNoClipS = true;
+		int newNoclipMode = newValue[0] - '0';
+		
+		if (newNoclipMode >= NOCLIPMODE_DISABLED
+			&& newNoclipMode < MAX_NOCLIPMODES)
+		{
+			g_iNoClipMode = newNoclipMode;
+		}
 		else
-			g_bNoClipS = false;
-	}
-	if(convar == g_hAutoBan)
-	{
-		if(newValue[0] == '1')
-			g_bAutoBan = true;
-		else
-			g_bAutoBan = false;
+		{
+			g_iNoClipMode = NOCLIPMODE_EVERYONE;
+		}
 	}
 	if(convar == g_hReplayBot)
 	{
@@ -1593,13 +1544,6 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 				if (IsValidClient(i))
 					CreateTimer(0.0, SetClanTag, i,TIMER_FLAG_NO_MAPCHANGE);
 		}
-	}
-	if(convar == g_hAutoTimer)
-	{
-		if(newValue[0] == '1')
-			g_bAutoTimer = true;
-		else
-			g_bAutoTimer = false;
 	}
 	if(convar == g_hPauseServerside)
 	{
@@ -1782,7 +1726,7 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 	}
 	if(convar == g_hEnforcer)
 	{
-		if(newValue[0] == '1')
+		if(newValue[0] == '1' && g_bEnforcerOnFreshMap)
 		{
 			new Float:JumpImpulseValue = GetConVarFloat(g_hJumpImpulse);
 
@@ -1800,7 +1744,6 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 			SetConVarInt(g_hCheats, 0);
 			SetConVarInt(g_hEnableBunnyhoping, 1);
 			SetConVarInt(g_hReplayBot, 1);
-			SetConVarInt(g_hDropKnifeEnable, 0);
 			SetConVarInt(g_hAutoBhop, 0);
 			SetConVarInt(g_hClampVel, 0);
 			SetConVarFloat(g_hsv_ladder_scale_speed, 1.0);
@@ -1822,12 +1765,25 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 			SetConVarFloat(g_hExojumpJumpcost, 0.0);
 			SetConVarFloat(g_hExojumpLandcost, 0.0);
 			SetConVarFloat(g_hJumpImpulseExojumpMultiplier, 1.0);
+			SetConVarFloat(g_hMinUpdateRate, g_fTickrate);
+			SetConVarFloat(g_hMaxUpdateRate, g_fTickrate);
+			SetConVarFloat(g_hMinCmdRate, g_fTickrate);
+			SetConVarFloat(g_hMaxCmdRate, g_fTickrate);
+			SetConVarFloat(g_hClientCmdrateDifference, 0.0);
+			SetConVarBool(g_hTurboPhysics, false);
+				
+			if (g_iDoubleDuckCvar == 1)
+				SetConVarInt(g_hDoubleDuckCvar, 0);
 
 			if (FloatAbs(JumpImpulseValue - 301.993377) > 0.00000)
 				ServerCommand("sv_jump_impulse 301.993377");
 		}
 		else
+		{
 			g_bEnforcer = false;
+			g_bEnforcerOnFreshMap = false;
+			ServerCommand("kz_settings_enforcer 0");
+		}
 	}
 	if(convar == g_hJumpStats)
 	{
@@ -1835,20 +1791,6 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 			g_bJumpStats = true;
 		else
 			g_bJumpStats = false;
-	}
-	if(convar == g_hDoubleDuckCvar)
-	{
-		if(newValue[0] == '1')
-			g_bDoubleDuckCvar = true;
-		else
-			g_bDoubleDuckCvar = false;
-	}
-	if(convar == g_hSlayPlayers)
-	{
-		if(newValue[0] == '1')
-			g_bSlayPlayers = true;
-		else
-			g_bSlayPlayers = false;
 	}
 	if(convar == g_hAllowRoundEndCvar)
 	{
@@ -1870,23 +1812,6 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 		else
 			g_bSingleTouch = false;
 	}
-	if(convar == g_hAutoBhopConVar)
-	{
-		if(newValue[0] == '1')
-		{
-			g_bAutoBhopConVar = true;
-			if(StrEqual(g_szMapPrefix[0],"surf") || StrEqual(g_szMapPrefix[0],"bhop") || StrEqual(g_szMapPrefix[0],"mg"))
-			{
-				g_bAutoBhop = true;
-			}
-		}
-		else
-		{
-			g_bAutoBhopConVar = false;
-			g_bAutoBhop = false;
-		}
-	}
-
 	if(convar == g_hCountry)
 	{
 		if(newValue[0] == '1')
@@ -2014,6 +1939,9 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 
 	if(convar == g_hBanDuration)
 		g_fBanDuration = StringToFloat(newValue[0]);
+	
+	if(convar == g_hBanDurationM)
+		g_fBanDurationM = StringToFloat(newValue[0]);
 
 	if(convar == g_hTransPlayerModels)
 	{
@@ -2155,7 +2083,7 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 	//Settings Enforcer
 	if(convar == g_hBhopSpeedCap)
 	{
-		new Float:fTmp = StringToFloat(newValue[0]);
+		new Float:fTmp = StringToFloat(newValue);
 		if (g_bEnforcer && fTmp != 380.0)
 			SetConVarFloat(g_hBhopSpeedCap, 380.0);
 		else
@@ -2164,70 +2092,64 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 
 	if(convar == g_hStaminaLandCost)
 	{
-		new Float:fTmp = StringToFloat(newValue[0]);
+		new Float:fTmp = StringToFloat(newValue);
 		if (g_bEnforcer && fTmp != 0.0)
 			SetConVarFloat(g_hStaminaLandCost, 0.0);
 	}
 	if(convar == g_hStaminaJumpCost)
 	{
-		new Float:fTmp = StringToFloat(newValue[0]);
+		new Float:fTmp = StringToFloat(newValue);
 		if (g_bEnforcer && fTmp != 0.0)
 			SetConVarFloat(g_hStaminaJumpCost, 0.0);
 	}
 	if(convar == g_hMaxSpeed)
 	{
-		new Float:fTmp = StringToFloat(newValue[0]);
+		new Float:fTmp = StringToFloat(newValue);
 		if (g_bEnforcer && fTmp != 320.0)
 			SetConVarFloat(g_hMaxSpeed, 320.0);
 	}
 
 	if(convar == g_hGravity)
 	{
-		new Float:fTmp = StringToFloat(newValue[0]);
+		new Float:fTmp = StringToFloat(newValue);
 		if (g_bEnforcer && fTmp != 800.0)
 			SetConVarFloat(g_hGravity, 800.0);
 	}
 	if(convar == g_hAirAccelerate)
 	{
-		new Float:fTmp = StringToFloat(newValue[0]);
+		new Float:fTmp = StringToFloat(newValue);
 		if (g_bEnforcer && fTmp != 100.0)
 			SetConVarFloat(g_hAirAccelerate, 100.0);
 	}
 	if(convar == g_hFriction)
 	{
-		new Float:fTmp = StringToFloat(newValue[0]);
+		new Float:fTmp = StringToFloat(newValue);
 		if (g_bEnforcer && fTmp != 5.0)
 			SetConVarFloat(g_hFriction, 5.0);
 	}
 	if(convar == g_hAccelerate)
 	{
-		new Float:fTmp = StringToFloat(newValue[0]);
+		new Float:fTmp = StringToFloat(newValue);
 		if (g_bEnforcer && fTmp != 6.5)
 			SetConVarFloat(g_hAccelerate, 6.5);
 	}
 	if(convar == g_hMaxVelocity)
 	{
-		new Float:fTmp = StringToFloat(newValue[0]);
+		new Float:fTmp = StringToFloat(newValue);
 		if (g_bEnforcer && fTmp != 2000.0)
 			SetConVarFloat(g_hMaxVelocity, 2000.0);
 	}
 	if(convar == g_hWaterAccelerate)
 	{
-		new Float:fTmp = StringToFloat(newValue[0]);
+		new Float:fTmp = StringToFloat(newValue);
 		if (g_bEnforcer && fTmp != 10.0)
 			SetConVarFloat(g_hWaterAccelerate, 10.0);
 	}
 	if(convar == g_hCheats)
 	{
-		new iTmp = StringToInt(newValue[0]);
+		new iTmp = StringToInt(newValue);
 		if (g_bEnforcer && iTmp != 0)
 			SetConVarInt(g_hCheats, 0);
-	}
-	if(convar == g_hDropKnifeEnable)
-	{
-		new iTmp = StringToInt(newValue[0]);
-		if (g_bEnforcer && iTmp != 0)
-			SetConVarInt(g_hDropKnifeEnable, 0);
 	}
 	if(convar == g_hMaxRounds)
 	{
@@ -2236,38 +2158,38 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 	}
 	if(convar == g_hEnableBunnyhoping)
 	{
-		new iTmp = StringToInt(newValue[0]);
+		new iTmp = StringToInt(newValue);
 		if (g_bEnforcer && iTmp != 1)
 			SetConVarInt(g_hEnableBunnyhoping, 1);
 	}
 
 	if(convar == g_hsv_ladder_scale_speed)
 	{
-		new Float:flTmp = StringToFloat(newValue[0]);
+		new Float:flTmp = StringToFloat(newValue);
 		if (g_bEnforcer && flTmp != 1.0)
 			SetConVarFloat(g_hsv_ladder_scale_speed, 1.0);
 	}
 	if (convar == g_hReplayBot)
 	{
-		new iTmp = StringToInt(newValue[0]);
+		new iTmp = StringToInt(newValue);
 		if (g_bEnforcer && iTmp != 1)
 			SetConVarInt(g_hReplayBot, 1);
 	}
 	if(convar == g_hAutoBhop)
 	{
-		new iTmp = StringToInt(newValue[0]);
+		new iTmp = StringToInt(newValue);
 		if (g_bEnforcer && iTmp != 0)
 			SetConVarInt(g_hAutoBhop, 0);
 	}
 	if(convar == g_hClampVel)
 	{
-		new iTmp = StringToInt(newValue[0]);
+		new iTmp = StringToInt(newValue);
 		if (g_bEnforcer && iTmp != 0)
 			SetConVarInt(g_hClampVel, 0);
 	}
 	if(convar == g_hJumpImpulse)
 	{
-		new Float:flTmp = StringToFloat(newValue[0]);
+		new Float:flTmp = StringToFloat(newValue);
 		new Float:JumpImpulseValue = GetConVarFloat(g_hJumpImpulse);
 
 			if (g_bEnforcer && flTmp != 301.993377)
@@ -2282,7 +2204,7 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 	}
 	if (convar == g_hAccelerateUseWeaponSpeed)
 	{
-		new iTmp = StringToInt(newValue[0]);
+		new iTmp = StringToInt(newValue);
 		if (g_bEnforcer && iTmp != 0)
 		{
 			SetConVarInt(g_hAccelerateUseWeaponSpeed, 0);
@@ -2290,7 +2212,7 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 	}
 	if (convar == g_hWaterMovespeedMultiplier)
 	{
-		new Float:flTmp = StringToFloat(newValue[0]);
+		new Float:flTmp = StringToFloat(newValue);
 		if (g_bEnforcer && flTmp != 0.8)
 		{
 			SetConVarFloat(g_hWaterMovespeedMultiplier, 0.8);
@@ -2298,7 +2220,7 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 	}
 	if (convar == g_hWaterSwimMode)
 	{
-		new iTmp = StringToInt(newValue[0]);
+		new iTmp = StringToInt(newValue);
 		if (g_bEnforcer && iTmp != 0)
 		{
 			SetConVarInt(g_hWaterSwimMode, 0);
@@ -2306,7 +2228,7 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 	}
 	if (convar == g_hWeaponEncumbranceScale)
 	{
-		new Float:flTmp = StringToFloat(newValue[0]);
+		new Float:flTmp = StringToFloat(newValue);
 		if (g_bEnforcer && flTmp != 0.0)
 		{
 			SetConVarFloat(g_hWeaponEncumbranceScale, 0.0);
@@ -2314,7 +2236,7 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 	}
 	if (convar == g_hAirMaxWishspeed)
 	{
-		new Float:flTmp = StringToFloat(newValue[0]);
+		new Float:flTmp = StringToFloat(newValue);
 		if (g_bEnforcer && flTmp != 30.0)
 		{
 			SetConVarFloat(g_hAirMaxWishspeed, 30.0);
@@ -2322,7 +2244,7 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 	}
 	if (convar == g_hLedgeMantleHelper)
 	{
-		new iTmp = StringToInt(newValue[0]);
+		new iTmp = StringToInt(newValue);
 		if (g_bEnforcer && iTmp != 0)
 		{
 			SetConVarInt(g_hLedgeMantleHelper, 0);
@@ -2330,7 +2252,7 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 	}
 	if (convar == g_hStandableNormal)
 	{
-		new Float:flTmp = StringToFloat(newValue[0]);
+		new Float:flTmp = StringToFloat(newValue);
 		if (g_bEnforcer && flTmp != 0.7)
 		{
 			SetConVarFloat(g_hStandableNormal, 0.7);
@@ -2338,7 +2260,7 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 	}
 	if (convar == g_hWalkableNormal)
 	{
-		new Float:flTmp = StringToFloat(newValue[0]);
+		new Float:flTmp = StringToFloat(newValue);
 		if (g_bEnforcer && flTmp != 0.7)
 		{
 			SetConVarFloat(g_hWalkableNormal, 0.7);
@@ -2346,7 +2268,7 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 	}
 	if (convar == g_hAmmoGrenadeLimitBumpmine)
 	{
-		new iTmp = StringToInt(newValue[0]);
+		new iTmp = StringToInt(newValue);
 		if (g_bEnforcer && iTmp != 0)
 		{
 			SetConVarInt(g_hAmmoGrenadeLimitBumpmine, 0);
@@ -2354,7 +2276,7 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 	}
 	if (convar == g_hBumpmineDetonateDelay)
 	{
-		new Float:flTmp = StringToFloat(newValue[0]);
+		new Float:flTmp = StringToFloat(newValue);
 		if (g_bEnforcer && flTmp != 99999.9)
 		{
 			SetConVarFloat(g_hBumpmineDetonateDelay, 99999.9);
@@ -2362,7 +2284,7 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 	}
 	if (convar == g_hShieldSpeedDeployed)
 	{
-		new Float:flTmp = StringToFloat(newValue[0]);
+		new Float:flTmp = StringToFloat(newValue);
 		if (g_bEnforcer && flTmp != 250.0)
 		{
 			SetConVarFloat(g_hShieldSpeedDeployed, 250.0);
@@ -2370,7 +2292,7 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 	}
 	if (convar == g_hShieldSpeedHolstered)
 	{
-		new Float:flTmp = StringToFloat(newValue[0]);
+		new Float:flTmp = StringToFloat(newValue);
 		if (g_bEnforcer && flTmp != 250.0)
 		{
 			SetConVarFloat(g_hShieldSpeedHolstered, 250.0);
@@ -2378,7 +2300,7 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 	}
 	if (convar == g_hExojumpJumpbonusForward)
 	{
-		new Float:flTmp = StringToFloat(newValue[0]);
+		new Float:flTmp = StringToFloat(newValue);
 		if (g_bEnforcer && flTmp != 0.0)
 		{
 			SetConVarFloat(g_hExojumpJumpbonusForward, 0.0);
@@ -2386,7 +2308,7 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 	}
 	if (convar == g_hExojumpJumpbonusUp)
 	{
-		new Float:flTmp = StringToFloat(newValue[0]);
+		new Float:flTmp = StringToFloat(newValue);
 		if (g_bEnforcer && flTmp != 0.0)
 		{
 			SetConVarFloat(g_hExojumpJumpbonusUp, 0.0);
@@ -2394,7 +2316,7 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 	}
 	if (convar == g_hExojumpJumpcost)
 	{
-		new Float:flTmp = StringToFloat(newValue[0]);
+		new Float:flTmp = StringToFloat(newValue);
 		if (g_bEnforcer && flTmp != 0.0)
 		{
 			SetConVarFloat(g_hExojumpJumpcost, 0.0);
@@ -2402,7 +2324,7 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 	}
 	if (convar == g_hExojumpLandcost)
 	{
-		new Float:flTmp = StringToFloat(newValue[0]);
+		new Float:flTmp = StringToFloat(newValue);
 		if (g_bEnforcer && flTmp != 0.0)
 		{
 			SetConVarFloat(g_hExojumpLandcost, 0.0);
@@ -2410,10 +2332,55 @@ public OnSettingChanged(Handle:convar, const String:oldValue[], const String:new
 	}
 	if (convar == g_hJumpImpulseExojumpMultiplier)
 	{
-		new Float:flTmp = StringToFloat(newValue[0]);
+		new Float:flTmp = StringToFloat(newValue);
 		if (g_bEnforcer && flTmp != 1.0)
 		{
 			SetConVarFloat(g_hJumpImpulseExojumpMultiplier, 1.0);
+		}
+	}
+	if(convar == g_hDoubleDuckCvar)
+	{
+		new iTmp = StringToInt(newValue);
+		
+		if (g_bEnforcer && iTmp == 1)
+		{
+			SetConVarInt(g_hDoubleDuckCvar, 0);
+			g_iDoubleDuckCvar = 0;
+		}
+		else
+		{
+			g_iDoubleDuckCvar = iTmp;
+		}
+	}
+	if (convar == g_hBindfixMode)
+	{
+		g_iBindfixMode = newValue[0] - '0';
+	}
+	if (convar == g_hMinUpdateRate
+		|| convar == g_hMaxUpdateRate
+		|| convar == g_hMinCmdRate
+		|| convar == g_hMaxCmdRate)
+	{
+		new Float:flTmp = StringToFloat(newValue);
+		if (g_bEnforcer && (flTmp > g_fTickrate + 0.000001 || flTmp < g_fTickrate - 0.000001))
+		{
+			SetConVarFloat(convar, g_fTickrate);
+		}
+	}
+	if (convar == g_hClientCmdrateDifference)
+	{
+		new Float:flTmp = StringToFloat(newValue);
+		if (g_bEnforcer && flTmp != 0.0)
+		{
+			SetConVarFloat(convar, 0.0);
+		}
+	}
+	if (convar == g_hTurboPhysics)
+	{
+		int val = StringToInt(newValue);
+		if (g_bEnforcer && val != 0)
+		{
+			SetConVarInt(convar, 0);
 		}
 	}
 }

@@ -46,8 +46,8 @@ Mod | Version | Why
 [Retakes MyWeaponAllocator](https://forums.alliedmods.net/showthread.php?p=2604368) | `2.3` | This weapon allocator simulates different kinds of rounds
 [Instant Defuse](https://forums.alliedmods.net/showthread.php?p=2558854) | `1.2.1` | Instantly defuse the bomb if no Terrorists are alive and there is a sufficient amount of time remaining
 [RankMe Kento Edition](https://forums.alliedmods.net/showthread.php?t=290063) | `3.0.3` | Stats
-[DHooks](https://github.com/XutaxKamay/dhooks/releases) | `2.2.1b` | Required by KZTimer
-[KZTimer](https://bitbucket.org/kztimerglobalteam/kztimerglobal/src/master/) | `1.91.1` | KZTimer is a powerful, feature rich SourceMod climb timer plugin for CS:GO servers
+[DHooks](https://forums.alliedmods.net/showpost.php?p=2588686) | `2.2.0-detours17` | Required by KZTimer
+[KZTimer](https://bitbucket.org/kztimerglobalteam/kztimerglobal/src/master/) | `1.100` | KZTimer is a powerful, feature rich SourceMod climb timer plugin for CS:GO servers
 [SoccerMod](https://github.com/marcoboogers/soccermod) | `2017.5.5` | Soccer gamemode
 [Command Time-Traveler](https://forums.alliedmods.net/showthread.php?t=134288) | `1.2.0` | Run a command in the future
 [P Tools and Hooks](https://forums.alliedmods.net/showthread.php?t=289289) | `1.1.3-build19` | Additional CS:GO Hooks and Natives 

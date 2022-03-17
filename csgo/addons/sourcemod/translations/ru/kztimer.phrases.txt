@@ -1,4 +1,4 @@
-﻿"Phrases"
+"Phrases"
 {
 	"Jumpstats_PersonalBest"
 	{
@@ -14,11 +14,6 @@
 	{
 		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:i},{6:s},{7:s},{8:i},{9:i}"
 		"ru"        "[{1}GLOBAL{2}] {3}{4} сейчас #{5} в глобальном ТП-То 20 на карте {6}! [{7}, TPs: {8}, Tick{9}]"
-	}
-	"UndoLadder"
-	{
-		"#format"   "{1:c},{2:c},{3:c}"
-		"ru"        "[{1}KZ{2}] {3} Нельзя отменить телепорт, когда ты находился на лестнице"
 	}
 	"UndoMidAir"
 	{
@@ -62,6 +57,10 @@
 	"options_lang_pt"
 	{
 		"ru"       "Language - Portuguese Brazilian"
+	}
+	"options_lang_es"
+	{
+		"ru"       "Language - Spanish"
 	}
 	"Route1"
 	{
@@ -234,14 +233,6 @@
 	"options_gotome_off"
 	{
 		"ru"       "Goto me  -  Disabled"
-	}
-	"options_autobhop_on"
-	{
-		"ru"       "AutoBhop  -  Enabled"
-	}
-	"options_autobhop_off"
-	{
-		"ru"       "AutoBhop  -  Disabled"
 	}
 	"StrafeSync1"
 	{
@@ -1203,21 +1194,6 @@
 	{
 		"#format"   "{1:c},{2:c}"
 		"ru"        "[{1}KZ{2}] Отображение синхронизации стрейфов в чате выключено."
-	}
-	"AutoBhop1"
-	{
-		"#format"   "{1:c},{2:c}"
-		"ru"        "[{1}KZ{2}] АвтоБхоп включен."
-	}
-	"AutoBhop2"
-	{
-		"#format"   "{1:c},{2:c}"
-		"ru"        "[{1}KZ{2}] АвтоБхоп отключен."
-	}
-	"AutoBhop3"
-	{
-		"#format"   "{1:c},{2:c}"
-		"ru"        "[{1}KZ{2}] АвтоБхоп включен. (настройка сервера)"
 	}
 	"AdvClimbersMenu1"
 	{

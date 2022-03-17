@@ -1,4 +1,4 @@
-﻿"Phrases"
+"Phrases"
 {
 	"Jumpstats_PersonalBest"
 	{
@@ -9,11 +9,6 @@
 	{
 		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:i},{6:s},{7:s},{8:i}"
 		"pt"        "[{1}GLOBAL{2}] {3}{4} é agora #{5} no Top Global 20 em {6}! [{7}, Tick{8}]"
-	}
-	"UndoLadder"
-	{
-		"#format"   "{1:c},{2:c},{3:c}"
-		"pt"        "[{1}KZ{2}] {3}Desfazer TP não é permitido pois a sua última origem é uma escada."
 	}
 	"UndoMidAir"
 	{
@@ -57,6 +52,10 @@
 	"options_lang_pt"
 	{
 		"pt"       "Language - Portuguese Brazilian"
+	}
+	"options_lang_es"
+	{
+		"pt"       "Language - Spanish"
 	}
 	"stopsound"
 	{
@@ -219,14 +218,6 @@
 	"options_gotome_off"
 	{
 		"pt"       "Permissão para teleportarem-se para mim  -  Desativado"
-	}
-	"options_autobhop_on"
-	{
-		"pt"       "AutoBhop  -  Ativado"
-	}
-	"options_autobhop_off"
-	{
-		"pt"       "AutoBhop  -  Desativado"
 	}
 	"HideChat1"
 	{
@@ -1129,21 +1120,6 @@
 	{
 		"#format"   "{1:c},{2:c}"
 		"pt"        "[{1}KZ{2}] Mensagem de Strafe sync desativado."
-	}
-	"AutoBhop1"
-	{
-		"#format"   "{1:c},{2:c}"
-		"pt"        "[{1}KZ{2}] AutoBhop ativado."
-	}
-	"AutoBhop2"
-	{
-		"#format"   "{1:c},{2:c}"
-		"pt"        "[{1}KZ{2}] AutoBhop desativado."
-	}
-	"AutoBhop3"
-	{
-		"#format"   "{1:c},{2:c}"
-		"pt"        "[{1}KZ{2}] AutoBhop desativado. (pelo servidor)"
 	}
 	"AdvClimbersMenu1"
 	{

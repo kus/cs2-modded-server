@@ -43,9 +43,14 @@ public MRESReturn:DHooks_OnTeleport(client, Handle:hParams)
 	if (!IsValidClient(client))
 		return MRES_Ignored;
 	
-	// valid teleport?
-	if (!IsFakeClient(client) && !g_bOnBhopPlattform[client])
-		CreateTimer(0.1, CheckTeleport, client,TIMER_FLAG_NO_MAPCHANGE);
+	new bool:bOriginNull = DHookIsNullParam(hParams, 1);
+	new bool:bAnglesNull = DHookIsNullParam(hParams, 2);
+	new bool:bVelocityNull = DHookIsNullParam(hParams, 3);
+	
+	if (!bOriginNull)
+	{
+		g_fLastTeleportTime[client] = GetGameTime();
+	}
 
 	// This one is currently mimicing something.
 	if(g_hBotMimicsRecord[client] != INVALID_HANDLE)
@@ -62,9 +67,6 @@ public MRESReturn:DHooks_OnTeleport(client, Handle:hParams)
 		return MRES_Ignored;
 	
 	new Float:origin[3], Float:angles[3], Float:velocity[3];
-	new bool:bOriginNull = DHookIsNullParam(hParams, 1);
-	new bool:bAnglesNull = DHookIsNullParam(hParams, 2);
-	new bool:bVelocityNull = DHookIsNullParam(hParams, 3);
 	
 	if(!bOriginNull)
 		DHookGetParamVector(hParams, 1, origin);
@@ -108,7 +110,7 @@ public Trigger_GravityTouch(const String:output[], bhop_block, client, Float:del
 	ResetJump(client);
 }
 //trigger_teleport/trigger_multiple hook
-public Teleport_OnStartTouch(const String:output[], bhop_block, client, Float:delay)
+public Teleport_OnStartTouch(const String:output[], caller, client, Float:delay)
 {
 	if (!IsValidClient(client))
 		return;
@@ -117,6 +119,21 @@ public Teleport_OnStartTouch(const String:output[], bhop_block, client, Float:de
 	if (g_bOnGround[client])
 	{
 		g_bOnBhopPlattform[client]=true;
+	}
+	
+	char classname[32];
+	GetEntityClassname(caller, classname, sizeof(classname));
+	if (StrEqual(classname, "trigger_multiple"))
+	{
+		char targetname[32];
+		GetEntPropString(caller, Prop_Data, "m_iName", targetname, sizeof(targetname));
+		if (StrEqual(targetname, "climb_endzone"))
+		{
+			Call_StartForward(hEndPress);
+			Call_PushCell(client);
+			Call_PushCell(true);
+			Call_Finish();
+		}
 	}
 	
 	//Jumpstats/Failstats: ljblock with teleport trigger
@@ -131,7 +148,6 @@ public Teleport_OnStartTouch(const String:output[], bhop_block, client, Float:de
 		g_bLastInvalidGround[client] = g_js_bInvalidGround[client];	
 	}	
 	//PrintToChat(client,"touched");
-	g_fTeleportValidationTime[client] = GetEngineTime();
 }  
 
 //https://forums.alliedmods.net/showpost.php?p=1807997&postcount=14
@@ -149,7 +165,7 @@ public Action:Event_OnFire(Handle:event, const String:name[], bool:dontBroadcast
 	{
 		decl String: weapon[64];
 		GetEventString(event, "weapon", weapon, 64);
-		if (StrContains(weapon,"knife",true) == -1 && g_AttackCounter[client] < 41)
+		if (!IsWeaponSlotActive(client, CS_SLOT_KNIFE) && g_AttackCounter[client] < 41)
 		{	
 			if (g_AttackCounter[client] < 41)
 			{
@@ -185,7 +201,7 @@ public Action:Event_OnPlayerSpawn(Handle:event, const String:name[], bool:dontBr
 
 PlayerSpawn(client)
 {
-	if (!IsValidClient(client) || (GetClientTeam(client) == 1))
+	if (!IsValidClient(client) || (GetClientTeam(client) <= 1))
 		return;
 	g_fStartCommandUsed_LastTime[client] = GetEngineTime();
 	g_js_bPlayerJumped[client] = false;
@@ -243,43 +259,51 @@ PlayerSpawn(client)
 	}		
 
 	//1st spawn & t/ct
-	if (g_bFirstSpawn[client])		
+	if (IsPlayerAlive(client) && g_bFirstSpawn[client])		
 	{
+		if (g_smPlayerRestore != INVALID_HANDLE)
+		{
+			PlayerRestoreData restoreData;
+			int elementsRead;
+			
+			if (g_smPlayerRestore.GetArray(g_szSteamID[client], restoreData, sizeof(restoreData), elementsRead))
+			{
+				if (elementsRead == sizeof(restoreData))
+				{
+					DoValidTeleport(client, restoreData.position, restoreData.angles, NULL_VECTOR);
+					g_bRestorePositionMsg[client] = true;
+					
+					g_OverallTp[client] = restoreData.teleports;
+					g_OverallCp[client] = restoreData.checkpoints;
+					if (restoreData.runTime > 0.0)
+					{
+						g_fStartTime[client] = GetEngineTime() - restoreData.runTime;
+						g_bTimeractivated[client] = true;
+						g_fPauseTime[client] = 0.0;
+						g_fStartPauseTime[client] = 0.0;
+						g_bGlobalDisconnected[client] = true;
+						g_bPositionRestored[client] = true;
+					}
+				}
+			}
+		}
 		CreateTimer(1.5, CenterMsgTimer, client,TIMER_FLAG_NO_MAPCHANGE);		
 		g_bFirstSpawn[client] = false;
 	}
-	g_bClientGroundFlag[client]=true;
-	
-	//restore position (before spec or last session) && Climbers Menu
-	if (g_bRestorePosition[client])
-		{
-			if(g_bDisconnected[client])
-				g_bGlobalDisconnected[client] = true;
-
-			g_bPositionRestored[client] = true;
-			DoValidTeleport(client, g_fPlayerCordsRestore[client],g_fPlayerAnglesRestore[client],NULL_VECTOR);
-			g_bRestorePosition[client]  = false;	
-		}
-		else
-			if (g_bRespawnPosition[client])
-			{
-				DoValidTeleport(client, g_fPlayerCordsRestore[client],g_fPlayerAnglesRestore[client],NULL_VECTOR);
-				g_bRespawnPosition[client] = false;
-				g_bClientGroundFlag[client]=false;
-				CreateTimer(0.1, SetClientGroundFlagTimer, client,TIMER_FLAG_NO_MAPCHANGE);
-			}		
-			else
-				if (g_bAutoTimer)
-				{
-					CreateTimer(0.1, StartTimer, client,TIMER_FLAG_NO_MAPCHANGE);			
-				}
-				else
-				{
-					g_bTimeractivated[client] = false;	
-					g_fStartTime[client] = -1.0;
-					g_fCurrentRunTime[client] = -1.0;	
-				}			
-
+	//restore position (before spec) && Climbers Menu
+	else if (g_bRespawnPosition[client])
+	{
+		CreateTimer(RESET_VELOCITY_DELAY, ZeroVelocity, client);
+		DoValidTeleport(client, g_fPlayerCordsRestore[client],g_fPlayerAnglesRestore[client],NULL_VECTOR);
+		g_bRespawnPosition[client] = false;
+		RequestFrame(RequestFrame_PlayerSpawnSetGroundFlag, client);
+	}
+	else
+	{
+		g_bTimeractivated[client] = false;
+		g_fStartTime[client] = -1.0;
+		g_fCurrentRunTime[client] = -1.0;
+	}
 	
 	if (g_bClimbersMenuwasOpen[client])
 	{
@@ -292,11 +316,36 @@ PlayerSpawn(client)
 	CreateTimer(0.0, ClimbersMenuTimer, client,TIMER_FLAG_NO_MAPCHANGE);
 	CreateTimer(1.5, SetClanTag, client,TIMER_FLAG_NO_MAPCHANGE);	
 	QueryClientConVar(client, "fps_max", ConVarQueryFinished:FPSCheck, client);	
+	QueryClientConVar(client, "m_yaw", MYawCheck, client);
 	g_fSpawnTime[client] = GetEngineTime();
 	g_fLastSpeed[client] = GetSpeed(client);
 	GetClientAbsOrigin(client, g_fLastPosition[client]);
 }
 
+public void RequestFrame_PlayerSpawnSetGroundFlag(int client)
+{
+	// Make sure the restore position is actually on ground and set player flags accordingly.
+	float mins[3] = {-16.0, -16.0, -2.0}; // 2.0 is maximum distance from ground where ground flag gets set
+	float maxs[3] = { 16.0,  16.0,  0.0};
+	
+	TR_TraceHullFilter(g_fPlayerCordsRestore[client],
+		g_fPlayerCordsRestore[client],
+		mins,
+		maxs,
+		MASK_PLAYERSOLID,
+		TraceRayDontHitSelf,
+		client
+	);
+	
+	if (TR_DidHit())
+	{
+		SetEntityFlags(client, g_PlayerEntityFlagRestore[client] | FL_ONGROUND);
+	}
+	else
+	{
+		SetEntityFlags(client, g_PlayerEntityFlagRestore[client] & ~FL_ONGROUND);
+	}
+}
 
 public Action:NormalSHook_callback(clients[64], &numClients, String:sample[PLATFORM_MAX_PATH], &entity, &channel, &Float:volume, &level, &pitch, &flags)
 {
@@ -366,11 +415,6 @@ public Action:Say_Hook(client, const String:command[], argc)
 		// This should stop people copying ASCII colors into the chat
 		Color_StripFromChatText(sText, sText, sizeof(sText));
 		
-		//text right to left?
-		decl String:sTextNew[1024];
-		if(RTLify(sTextNew, sText))
-			FormatEx(sText, 1024, sTextNew);
-		
 		//empty message
 		if(StrEqual(sText, " ") || StrEqual(sText, ""))
 		{
@@ -399,7 +443,7 @@ public Action:Say_Hook(client, const String:command[], argc)
 			}
 		}
 		//chat trigger?
-		if((IsChatTrigger() && sText[0] == '/') || (sText[0] == '@' && (GetUserFlagBits(client) & ADMFLAG_ROOT ||  GetUserFlagBits(client) & ADMFLAG_GENERIC)))
+		if((IsChatTrigger() && sText[0] == '/') || sText[0] == '@')
 		{
 			g_bSayHook[client]=false;
 			return Plugin_Continue;
@@ -618,7 +662,6 @@ public Action:Event_OnPlayerDeath(Handle:event, const String:name[], bool:dontBr
 	{		
 		if (!IsFakeClient(client))
 		{	
-			g_fTeleportValidationTime[client] = GetEngineTime();
 			if(g_hRecording[client] != INVALID_HANDLE)
 				StopRecording(client);			
 			CreateTimer(2.0, RemoveRagdoll, client);
@@ -643,10 +686,6 @@ public Action:CS_OnTerminateRound(&Float:delay, &CSRoundEndReason:reason)
 	if (diff < 10.0)
 		return Plugin_Handled;	
 	
-	for(new i = 1; i <= MaxClients; i++) 
-		if (IsValidClient(i) && IsPlayerAlive(i))
-			g_fTeleportValidationTime[i] = GetEngineTime();
-
 	if (reason == CSRoundEnd_GameStart)
 		return Plugin_Handled;
 	new timeleft;
@@ -730,7 +769,6 @@ public Action:Event_OnRoundStart(Handle:event, const String:name[], bool:dontBro
 	
 	g_bRoundEnd=false;
 	db_selectMapButtons();
-	OnPluginPauseChange(false);
 	return Plugin_Continue; 
 }
 
@@ -785,8 +823,72 @@ public Hook_OnTouch(client, touched_ent)
 		if (GetEntityMoveType(client) != MOVETYPE_LADDER && !(GetEntityFlags(client) & FL_ONGROUND) || touched_ent != 0)
 			ResetJump(client);	
 	}
-}  
+}
 
+public void OnEntityCreated(int entity, const char[] classname)
+{
+	OnEntityCreated_Triggerfix(entity, classname);
+	SDKHook(entity, SDKHook_Spawn, OnEntitySpawned);
+}
+
+public void OnEntitySpawned(int entity)
+{
+	char classname[128];
+	GetEntityClassname(entity, classname, sizeof(classname));
+	
+	if (StrEqual(classname, "trigger_teleport"))
+	{
+		SDKHook(entity, SDKHook_StartTouchPost, SDKHook_StartTouchPost_TriggerTeleport);
+		SDKHook(entity, SDKHook_EndTouchPost, SDKHook_EndTouchPost_TriggerTeleport);
+	}
+	else if (StrEqual(classname, "trigger_multiple"))
+	{
+		SDKHook(entity, SDKHook_StartTouchPost, SDKHook_StartTouchPost_TriggerMultiple);
+		SDKHook(entity, SDKHook_EndTouchPost, SDKHook_EndTouchPost_TriggerMultiple);
+	}
+}
+
+public void SDKHook_StartTouchPost_TriggerTeleport(int entity, int client)
+{
+	if (!IsValidClient(client))
+	{
+		return;
+	}
+	
+	g_iLastTriggerTeleportTouchCmdnum[client] = g_iCmdnum[client];
+	g_iTriggerTeleportTouchCount[client]++;
+}
+
+public void SDKHook_EndTouchPost_TriggerTeleport(int entity, int client)
+{
+	if (!IsValidClient(client))
+	{
+		return;
+	}
+	
+	g_iTriggerTeleportTouchCount[client]--;
+}
+
+public void SDKHook_StartTouchPost_TriggerMultiple(int entity, int client)
+{
+	if (!IsValidClient(client))
+	{
+		return;
+	}
+	
+	g_iLastTriggerMultipleTouchCmdnum[client] = g_iCmdnum[client];
+	g_iTriggerMultipleTouchCount[client]++;
+}
+
+public void SDKHook_EndTouchPost_TriggerMultiple(int entity, int client)
+{
+	if (!IsValidClient(client))
+	{
+		return;
+	}
+	
+	g_iTriggerMultipleTouchCount[client]--;
+}
 
 // PlayerHurt 
 public Action:Event_OnPlayerHurt(Handle:event, const String:name[], bool:dontBroadcast)
@@ -828,6 +930,15 @@ public FPSCheck(QueryCookie:cookie, client, ConVarQueryResult:result, const Stri
 	}
 }
 
+public MYawCheck(QueryCookie cookie, int client, ConVarQueryResult result, const char[] cvarName, const char[] cvarValue)
+{
+	if (IsValidClient(client) && !IsFakeClient(client) && StringToFloat(cvarValue) > 0.3)
+	{
+		KickClient(client, "You may not have an m_yaw value greater than 0.3 to play on this server");
+		g_bKickStatus[client] = true;
+	}
+}
+
 //thx to TnTSCS (player slap stops timer)
 //https://forums.alliedmods.net/showthread.php?t=233966
 public Action:OnLogAction(Handle:source, Identity:ident, client, target, const String:message[])
@@ -850,31 +961,129 @@ public Action:OnLogAction(Handle:source, Identity:ident, client, target, const S
     return Plugin_Continue;
 }  
 
+public void OnPlayerRunCmdPost(int client, int buttons, int impulse, const float vel[3], const float angles[3], int weapon, int subtype, int cmdnum, int tickcount, int seed, const int mouse[2])
+{
+	OnPlayerRunCmdPost_Cheaterreplays(client, buttons);
+	if (g_bRoundEnd || !IsValidClient(client) || !IsPlayerAlive(client))
+	{
+		return;
+	}
+	
+	static int lastFlags[MAXPLAYERS + 1];
+	float origin[3];
+	float speed = GetSpeed(client);
+	GetClientAbsOrigin(client, origin);
+	ButtonPressCheck(client, buttons, origin, speed);
+	
+	MoveType moveType = GetEntityMoveType(client);
+	
+	// noclip protection
+	if (moveType == MOVETYPE_NOCLIP)
+	{
+		g_bNoclipped[client] = true;
+	}
+	
+	if (g_bNoclipped[client] && moveType != MOVETYPE_NOCLIP
+		&& g_FramesOnGround[client] > NOCLIP_GROUND_FRAMES)
+	{
+		g_bNoclipped[client] = false;
+	}
+	
+	if (g_js_bPlayerJumped[client])
+	{
+		// fix funkbug
+		int lastButtons = GetEntProp(client, Prop_Data, "m_afButtonLast");
+		int flags = GetEntityFlags(client);
+		if (GetEntityMoveType(client) == MOVETYPE_WALK)
+		{
+			// if just landed
+			if (!(lastFlags[client] & FL_ONGROUND)
+				&& flags & FL_ONGROUND)
+			{
+				// if unducked
+				if ((lastButtons & IN_DUCK && !(buttons & IN_DUCK))
+					&& !(flags & FL_DUCKING))
+				{
+					// trace to check if duckbugged
+					float pos1[3];
+					float pos2[3];
+					float mins[3];
+					float maxs[3];
+					GetClientMins(client, mins);
+					GetClientMaxs(client, maxs);
+					pos1 = g_fLastPosition[client];
+					pos2 = g_fLastPosition[client];
+					// normalise the position to unducked state and subtract the maximum land height.
+					pos1[2] -= DUCK_DIFFERENCE;
+					pos2[2] -= DUCK_DIFFERENCE + LAND_HEIGHT;
+					
+					TR_TraceHullFilter(pos1, pos2, mins, maxs, MASK_PLAYERSOLID, TraceEntityFilterPlayer);
+					
+					if (TR_DidHit())
+					{
+						// Reset jump if duckbugged
+						ResetJump(client);
+					}
+				}
+			}
+		}
+		
+		// enforce default gravity
+		float playerGravity = GetEntPropFloat(client, Prop_Data, "m_flGravity");
+		// gravity 0.0 acts the same as 1.0 for some reason.
+		if (playerGravity != 0.0 && playerGravity != 1.0)
+		{
+			ResetJump(client);
+		}
+		if (GetConVarFloat(g_hGravity) != 800.0)
+		{
+			ResetJump(client);
+		}
+	}
+	
+	lastFlags[client] = GetEntityFlags(client);
+}
+
 // OnPlayerRunCmd
 public Action:OnPlayerRunCmd(client, &buttons, &impulse, Float:vel[3], Float:angles[3], &weapon, &subtype, &cmdnum, &tickcount, &seed, mouse[2])
 {
+	g_iCmdnum[client] = cmdnum;
 	
 	if (g_bRoundEnd || !IsValidClient(client))
 		return Plugin_Continue;	
 
 	if(IsPlayerAlive(client))	
-	{		
+	{
+		GetEntPropVector(client, Prop_Data, "m_vecVelocity", g_fVelocity[client]);
+		
 		//replay bots
 		PlayReplay(client, buttons, subtype, seed, impulse, weapon, angles, vel);
 		RecordReplay(client, buttons, subtype, seed, impulse, weapon, angles, vel);
 		if (IsFakeClient(client) && g_js_fPreStrafe[client] > g_fBhopSpeedCap)
 			g_js_fPreStrafe[client] = g_fBhopSpeedCap;
-			
+		
 		decl Float:speed, Float:origin[3],Float:ang[3];
 		g_CurrentButton[client] = buttons;
 		GetClientAbsOrigin(client, origin);
 		GetClientEyeAngles(client, ang);		
 		new MoveType:movetype = GetEntityMoveType(client);
 		speed = GetSpeed(client);		
-		if (GetEntityFlags(client) & FL_ONGROUND)		
+		if (GetEntityFlags(client) & FL_ONGROUND)
+		{
+			g_FramesOnGround[client]++;
+			if (g_FramesOnGround[client] == 1)
+			{
+				g_fTimeInAir[client] = GetGameTime() - g_fGroundTime[client];
+			}
+			g_FramesOnGroundLast[client] = g_FramesOnGround[client];
+			g_fGroundTime[client] = GetGameTime();
 			g_bOnGround[client]=true;
+		}
 		else
-			g_bOnGround[client]=false;		
+		{
+			g_FramesOnGround[client] = 0;
+			g_bOnGround[client]=false;
+		}
 		
 		
 		if (buttons & IN_JUMP)
@@ -899,16 +1108,66 @@ public Action:OnPlayerRunCmd(client, &buttons, &impulse, Float:vel[3], Float:ang
 			}
 		}
 		
-		//left right script check 
-		if (!IsFakeClient(client))
+		// left right script check
+		static float lastValidYaw[MAXPLAYERS + 1];
+		
+		// holding both doesn't do anything
+		int leftRight = buttons & LEFT_RIGHT_MASK;
+		if (leftRight && leftRight != LEFT_RIGHT_MASK)
 		{
-			if ((buttons & IN_LEFT) || (buttons & IN_RIGHT))
+			angles[1] = lastValidYaw[client];
+			TeleportEntity(client, NULL_VECTOR, angles, NULL_VECTOR);
+			
+			int lastLeftRight = g_LastButton[client] & LEFT_RIGHT_MASK;
+			if (!lastLeftRight || lastLeftRight == LEFT_RIGHT_MASK)
 			{
-				if ((GetEngineTime()-g_fSpawnTime[client]) > 3.0)
+				PrintToChat(client, "[%cKZ%c]%c You cannot use turn binds!", RED, WHITE, GRAY);
+			}
+		}
+		else
+		{
+			lastValidYaw[client] = angles[1];
+		}
+		
+		// Water bug fix.
+		// When you press and release duck in water, you go down 9 units. This fixes that.
+		if (GetEntProp(client, Prop_Send, "m_nWaterLevel") >= 2) // WL_Waist = 2
+		{
+			// if duck is being pressed and we're not already ducking or on ground
+			if (GetEntityFlags(client) & (FL_DUCKING | FL_ONGROUND) == 0
+				&& buttons & IN_DUCK && ~g_LastButton[client] & IN_DUCK)
+			{
+				float newOrigin[3];
+				newOrigin = origin;
+				newOrigin[2] += 9.0;
+				
+				TR_TraceHullFilter(newOrigin, newOrigin, view_as<float>({-16.0, -16.0, 0.0}), view_as<float>({16.0, 16.0, 54.0}), MASK_PLAYERSOLID, TraceEntityFilterPlayer);
+				if (!TR_DidHit())
 				{
-					PrintToChat(client, "[%cKZ%c]%c You have been slayed for using a strafe/turn bind",RED,WHITE,GRAY);
-					ForcePlayerSuicide(client);
-					ResetJump(client);
+					TeleportEntity(client, newOrigin, NULL_VECTOR, NULL_VECTOR);
+					origin = newOrigin;
+				}
+			}
+		}
+		
+		// Fix getting stuck in displacements when unducking
+		{
+			int flags = GetEntityFlags(client);
+			bool unducked = ~flags & FL_DUCKING && g_LastFlags[client] & FL_DUCKING;
+			
+			float standingMins[] = {-16.0, -16.0, 0.0};
+			float standingMaxs[] = {16.0, 16.0, 72.0};
+			
+			if (unducked)
+			{
+				// check if we're stuck after unducking and if we're stuck then force duck
+				TR_TraceHullFilter(origin, origin, standingMins, standingMaxs, MASK_PLAYERSOLID, TraceEntityFilterPlayer);
+				
+				if (TR_DidHit())
+				{
+					DoValidTeleport(client, NULL_VECTOR, NULL_VECTOR, g_fLastVelocity[client]);
+					g_fVelocity[client] = g_fLastVelocity[client];
+					SetEntProp(client, Prop_Send, "m_bDucking", true);
 				}
 			}
 		}
@@ -922,29 +1181,11 @@ public Action:OnPlayerRunCmd(client, &buttons, &impulse, Float:vel[3], Float:ang
 		
 		//menu refreshing
 		MenuTitleRefreshing(client);
-
-		//undo check
-		new Float:fLastUndo = GetEngineTime() - g_fLastUndo[client];
-		if (fLastUndo < 1.0 && g_bOnBhopPlattform[client])
-		{
-			EmitSoundToClient(client,"buttons/button10.wav",client);
-			PrintToChat(client,"[%cKZ%c] %cUndo-TP is not allowed on bhop blocks!",MOSSGREEN,WHITE,RED);
-			g_bOnBhopPlattform[client]=false;
-			DoTeleport(client,0);		
-			new Float:f3pos[3];
-			new Float:f3ang[3];
-			GetClientAbsAngles(client,f3ang);
-			GetClientAbsOrigin(client,f3pos);
-			g_fPlayerCordsUndoTp[client] = f3pos;
-			g_fPlayerAnglesUndoTp[client] =f3ang;			
-		}	
 		
 		//other
-		SpeedCap(client);		
-		ServerSidedAutoBhop(client, buttons);
+		SpeedCap(client);
 		DoubleDuck(client, buttons);
 		Prestrafe(client,ang[1], buttons);
-		ButtonPressCheck(client, buttons, origin, speed);
 		TeleportCheck(client, origin);
 		NoClipCheck(client);
 		WaterCheck(client);
@@ -963,16 +1204,12 @@ public Action:OnPlayerRunCmd(client, &buttons, &impulse, Float:vel[3], Float:ang
 
 		
 		static bool:bHoldingJump[MAXPLAYERS + 1];
-		static bLastOnGround[MAXPLAYERS + 1];
 
 		//Crouch spam fix by DanZay
 		//CSGO update changed crouch so that it can't be spammed but we like spamming crouch
-		float DuckSpeed = GetEntPropFloat(client, Prop_Data, "m_flDuckSpeed");
-
-		if (!bLastOnGround[client] && (GetEntityFlags(client) & FL_ONGROUND)){
-			if(DuckSpeed < 7){
-				SetEntPropFloat(client, Prop_Send, "m_flDuckSpeed", 7.0, 0);
-			}
+		if (GetEntProp(client, Prop_Data, "m_afButtonReleased") & IN_DUCK)
+		{
+			SetEntPropFloat(client, Prop_Send, "m_flDuckSpeed", 8.0);
 		}
 
 		//Bhop AntiCheat
@@ -982,17 +1219,14 @@ public Action:OnPlayerRunCmd(client, &buttons, &impulse, Float:vel[3], Float:ang
 			{
 				bHoldingJump[client] = true;
 				g_aiJumps[client]++;
-				if (bLastOnGround[client] && (GetEntityFlags(client) & FL_ONGROUND))
-					g_fafAvgPerfJumps[client] = ( g_fafAvgPerfJumps[client] * 9.0 + 0 ) / 10.0;
-				else 
-					if (!bLastOnGround[client] && (GetEntityFlags(client) & FL_ONGROUND))
-						g_fafAvgPerfJumps[client] = ( g_fafAvgPerfJumps[client] * 9.0 + 1 ) / 10.0;
 			}
 		}
-		else 
-			if(bHoldingJump[client]) 
-				bHoldingJump[client] = false;
-		bLastOnGround[client] = GetEntityFlags(client) & FL_ONGROUND;
+		else if (bHoldingJump[client])
+		{
+			bHoldingJump[client] = false;
+		}
+		
+		g_bLastOnGround[client] = view_as<bool>(GetEntityFlags(client) & FL_ONGROUND);
 
  	
 		if (g_bOnGround[client])
@@ -1018,9 +1252,11 @@ public Action:OnPlayerRunCmd(client, &buttons, &impulse, Float:vel[3], Float:ang
 		
 		g_fLastAngles[client] = ang;
 		g_LastMoveType[client] = movetype;
-		g_fLastSpeed[client] = speed;
+		g_fLastSpeed[client] = GetSpeed(client);
 		g_fLastPosition[client] = origin;
 		g_LastButton[client] = buttons;
+		GetEntPropVector(client, Prop_Data, "m_vecVelocity", g_fLastVelocity[client]);
+		g_LastFlags[client] = GetEntityFlags(client);
 	}
 	return Plugin_Continue;
 }
@@ -1037,6 +1273,8 @@ public Action:Event_OnJump(Handle:Event2, const String:Name[], bool:Broadcast)
 
 	if (!g_bOnGround[client]) { // Detect jumpbug
 		g_bJumpBugged[client] = true;
+		// Invalidate jumpstat if jumpbugged
+		ResetJump(client);
 	}
 
 	if (g_bJumpStats && !WallCheck(client))
@@ -1052,21 +1290,69 @@ public Hook_PostThinkPost(entity)
 
 public Teleport_OnEndTouch(const String:output[], caller, client, Float:delay)
 {
-	if (IsValidClient(client) && g_bOnBhopPlattform[client])
+	if (!IsValidClient(client))
 	{
-		g_fTeleportValidationTime[client] = GetEngineTime();
+		return;
+	}
+	
+	char classname[32];
+	GetEntityClassname(caller, classname, sizeof(classname));
+	if (StrEqual(classname, "trigger_multiple"))
+	{
+		char targetname[32];
+		GetEntPropString(caller, Prop_Data, "m_iName", targetname, sizeof(targetname));
+		if (StrEqual(targetname, "climb_startzone"))
+		{
+			Call_StartForward(hStartPress);
+			Call_PushCell(client);
+			Call_PushCell(true);
+			Call_Finish();
+		}
+	}
+	
+	if (g_bOnBhopPlattform[client])
+	{
 		g_bOnBhopPlattform[client] = false;
-		g_fLastTimeBhopBlock[client] = GetEngineTime();
 	}	
 }  
 
 //https://forums.alliedmods.net/showthread.php?p=1678026 by Inami
-public Action:Event_OnJumpMacroDox(Handle:Event3, const String:Name[], bool:Broadcast)
+public Event_OnJumpMacroDox(Handle:Event3, const String:Name[], bool:Broadcast)
 {
 	decl client;
 	client = GetClientOfUserId(GetEventInt(Event3, "userid"));	
-	if(IsValidClient(client) && !IsFakeClient(client) && !g_bAutoBhop && !g_bPause[client])
-	{	
+	
+	if (GetConVarBool(g_hAutoBhop))
+	{
+		return;
+	}
+	
+	// cursedjourney tree/fortroca surf false perf fix
+	// the minimum airtime in a crouch tunnel (57 units) is 6 ticks on 128 tick (6 - 1 = 5 ticks, 0.0390625 seconds)
+	if (g_fTimeInAir[client] <= 0.0390625)
+	{
+		return;
+	}
+	
+	// telehop fix. if teleported in the last 8 ticks then don't track with macrodox
+	float lastTeleportTime = GetGameTime() - g_fLastTeleportTime[client];
+	if (lastTeleportTime <= 8.0 * GetTickInterval())
+	{
+		return;
+	}
+	
+	int frames = g_FramesOnGround[client] - 1; // - 1 for jumpbug
+	if(IsValidClient(client) && !IsFakeClient(client) && !g_bPause[client])
+	{
+		if (frames == 0)
+		{
+			g_fafAvgPerfJumps[client] = ( g_fafAvgPerfJumps[client] * 9.0 + 1 ) / 10.0;
+		}
+		else
+		{
+			g_fafAvgPerfJumps[client] = ( g_fafAvgPerfJumps[client] * 9.0 + 0 ) / 10.0;
+		}
+		
 		g_fafAvgJumps[client] = ( g_fafAvgJumps[client] * 9.0 + float(g_aiJumps[client]) ) / 10.0;	
 		decl Float:vec_vel[3];
 		GetEntPropVector(client, Prop_Data, "m_vecVelocity", vec_vel);
