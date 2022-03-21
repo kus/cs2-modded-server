@@ -16,7 +16,7 @@ A single modded Counter-Strike: Global Offensive Dedicated Server that you can c
  - Red Bull Flick (only Flux map which has surfing and jump pads [Steam API key](#playing-workshop-maps-collections) required)
  - Deathrun
  - Surf
- - Kreedz Climbing (this must be changed to as the first mod. It can't be loaded after another mod)
+ - Kreedz Climbing ([this must be changed to as the first mod. It can't be loaded after another mod](#loading-kreedz-climbing))
  - Soccer
  - Capture The Flag
 
@@ -358,8 +358,14 @@ When you join the server you can [change game modes](#changing-game-modes).
 ### Why can't I set the server to start automatically with a mod loaded
 Because the way the server is setup with several mods it's not possible. You can't use `+exec` in the server launcher as that executes to quick before SourceMod is loaded. You can monitor the server once it's started (via RCON) and then load a mod i.e. `exec gg.cfg`.
 
-### Why does the server constantly change map on boot
-This is caused by KZTimer. KZTimer cannot be hot loaded like everything else, so it must be loaded at all times and unloaded when not needed [#12](https://github.com/kus/csgo-modded-server/issues/12). It seems like it has some settings/code still running after it's unloaded. When the server is loaded, you just need to load the mod you want GunGame, Competitive, Wingman, KZ etc. You can do this via the admin menu, RCON or from the server console i.e. `exec gg`.
+### Loading Kreedz Climbing
+KZTimer can't be hot loaded anymore like every other mod in my collection [#12](https://github.com/kus/csgo-modded-server/issues/12).
+
+So the solution is to have it always load with the server, and based on the map type to unload it if it's not a KZ/bhop map.
+
+If you want to play KZ, you must do it as the first mod after the server has booted. You can't do it after another mod. So when the server starts up, via admin menu, RCON or server console run `exec kz`.
+
+If you want to play KZ AFTER having another mod already loaded (i.e. GunGame) you need to restart the server and then load it, you can do this by running the command `exec sourcemod/restart` via the admin menu (Server EXEC > Restart), RCON or from the server console.
 
 ### How do I restart the server quickly?
 Run the command `exec sourcemod/restart` via the admin menu (Server EXEC > Restart), RCON or from the server console. It is best to restart the server when changing between mods as some code/settings aren't fully removed when changing between mods.
