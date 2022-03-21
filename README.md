@@ -16,7 +16,7 @@ A single modded Counter-Strike: Global Offensive Dedicated Server that you can c
  - Red Bull Flick (only Flux map which has surfing and jump pads [Steam API key](#playing-workshop-maps-collections) required)
  - Deathrun
  - Surf
- - Kreedz Climbing
+ - Kreedz Climbing (this must be changed to as the first mod. It can't be loaded after another mod)
  - Soccer
  - Capture The Flag
 
@@ -357,6 +357,12 @@ When you join the server you can [change game modes](#changing-game-modes).
 
 ### Why can't I set the server to start automatically with a mod loaded
 Because the way the server is setup with several mods it's not possible. You can't use `+exec` in the server launcher as that executes to quick before SourceMod is loaded. You can monitor the server once it's started (via RCON) and then load a mod i.e. `exec gg.cfg`.
+
+### Why does the server constantly change map on boot
+This is caused by KZTimer. KZTimer cannot be hot loaded like everything else, so it must be loaded at all times and unloaded when not needed [#12](https://github.com/kus/csgo-modded-server/issues/12). It seems like it has some settings/code still running after it's unloaded. When the server is loaded, you just need to load the mod you want GunGame, Competitive, Wingman, KZ etc. You can do this via the admin menu, RCON or from the server console i.e. `exec gg`.
+
+### How do I restart the server quickly?
+Run the command `exec sourcemod/restart` via the admin menu (Server EXEC > Restart), RCON or from the server console. It is best to restart the server when changing between mods as some code/settings aren't fully removed when changing between mods.
 
 ## License
 
