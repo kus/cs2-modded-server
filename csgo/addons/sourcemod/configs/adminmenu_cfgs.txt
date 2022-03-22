@@ -5,6 +5,7 @@
 Configs
 {
 	"cfg/gg.cfg"			"Gun Game"
+	"cfg/gg_ffa.cfg"		"Gun Game FFA"
 	"cfg/comp.cfg"			"Competitive"
 	"cfg/retake.cfg"		"Retakes"
 	"cfg/wingman.cfg"		"Wingman"

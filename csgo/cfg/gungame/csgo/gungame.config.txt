@@ -218,7 +218,7 @@
          * 0 - Disabled
          * 1 - Enabled
          */
-        "FFA" "0"
+        "FFA" "1"
 
         /** 
          * Enable friendly fire on defined level.
