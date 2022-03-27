@@ -6,7 +6,7 @@ A single modded Counter-Strike: Global Offensive Dedicated Server that you can c
  - GunGame +Turbo (get the next weapon straight away) +Deathmatch (respawn) +Quake sounds +Mario (on 3 kills)
  - GunGame +FFA (free for all) +Turbo (get the next weapon straight away) +Deathmatch (respawn) +Quake sounds +Mario (on 3 kills)
  - WarMod (competitive)
- - Scouts Knives
+ - Scoutz Knivez
  - Deathmatch Free For All
  - Prop Hunt / Hide n Seek
  - Retakes
