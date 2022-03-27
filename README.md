@@ -4,7 +4,9 @@
 
 A single modded Counter-Strike: Global Offensive Dedicated Server that you can change the active mod on the server from the admin menu and is setup for:
  - GunGame +Turbo (get the next weapon straight away) +Deathmatch (respawn) +Quake sounds +Mario (on 3 kills)
+ - GunGame +FFA (free for all) +Turbo (get the next weapon straight away) +Deathmatch (respawn) +Quake sounds +Mario (on 3 kills)
  - WarMod (competitive)
+ - Scouts Knives
  - Deathmatch Free For All
  - Prop Hunt / Hide n Seek
  - Retakes

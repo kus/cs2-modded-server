@@ -11,6 +11,7 @@ Configs
 	"cfg/wingman.cfg"		"Wingman"
 	"cfg/practice.cfg"		"Practice"
 	"cfg/1v1.cfg"			"1v1"
+	"cfg/scoutsknives.cfg"	"Scouts Knives"
 	"cfg/deathmatch.cfg"	"Deathmatch"
 	"cfg/redbull.cfg"		"Red Bull Flick"
 	"cfg/mg.cfg"			"Minigames"
