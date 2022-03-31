@@ -82,6 +82,7 @@ char force_team_ct[10][64];
 int force_team_t_count = 0;
 int force_team_ct_count = 0;
 bool g_planted = false;
+bool g_knife_custom = false;
 Handle g_stats_trace_timer = INVALID_HANDLE;
 ConVar wm_competition;
 ConVar wm_event;
@@ -130,6 +131,12 @@ ConVar wm_knife_smokegrenade;
 ConVar wm_knife_zeus;
 ConVar wm_knife_armor;
 ConVar wm_knife_helmet;
+ConVar wm_knife_fists;
+ConVar wm_knife_shield;
+ConVar wm_knife_exojump;
+ConVar wm_knife_mines;
+ConVar wm_knife_medishot;
+ConVar wm_knife_breachcharge;
 ConVar wm_require_names;
 ConVar wm_require_logos;
 ConVar wm_logos_menu_only;
@@ -581,6 +588,12 @@ public void OnPluginStart()
 	wm_knife_zeus = CreateConVar("wm_knife_zeus", "0", "Enable or disable giving a player a zeus on Knife on 3", FCVAR_NOTIFY, true, 0.0, true, 1.0);
 	wm_knife_armor = CreateConVar("wm_knife_armor", "1", "Enable or disable giving a player Armor on Knife on 3", FCVAR_NOTIFY, true, 0.0, true, 1.0);
 	wm_knife_helmet = CreateConVar("wm_knife_helmet", "0", "Enable or disable giving a player a Helmet on Knife on 3 [requires armor active]", FCVAR_NOTIFY, true, 0.0, true, 1.0);
+	wm_knife_fists = CreateConVar("wm_knife_fists", "0", "Enable or disable giving a player fists on Knife on 3", FCVAR_NOTIFY, true, 0.0, true, 1.0);
+	wm_knife_shield = CreateConVar("wm_knife_shield", "0", "Enable or disable giving a player a shield on Knife on 3", FCVAR_NOTIFY, true, 0.0, true, 1.0);
+	wm_knife_exojump = CreateConVar("wm_knife_exojump", "0", "Enable or disable giving a player exojump boots on Knife on 3", FCVAR_NOTIFY, true, 0.0, true, 1.0);
+	wm_knife_mines = CreateConVar("wm_knife_mines", "0", "Enable or disable giving a player mines on Knife on 3", FCVAR_NOTIFY, true, 0.0, true, 1.0);
+	wm_knife_medishot = CreateConVar("wm_knife_medishot", "0", "Enable or disable giving a player a medshot on Knife on 3", FCVAR_NOTIFY, true, 0.0, true, 1.0);
+	wm_knife_breachcharge = CreateConVar("wm_knife_breachcharge", "0", "Enable or disable giving a player breach charges on Knife on 3", FCVAR_NOTIFY, true, 0.0, true, 1.0);
 	wm_name_fix = CreateConVar("wm_name_fix", "0", "Fix name swap after knife round", FCVAR_NOTIFY, true, 0.0, true, 1.0);
 	
 	/* FTP Upload Convars */
@@ -814,6 +827,7 @@ public void OnAdminMenuReady(Handle topmenu)
 	// add menu items
 	AddToTopMenu(g_h_menu, "forcestart", TopMenuObject_Item, MenuHandler, new_menu, "forcestart", ADMFLAG_CUSTOM1);
 	AddToTopMenu(g_h_menu, "readyup", TopMenuObject_Item, MenuHandler, new_menu, "readyup", ADMFLAG_CUSTOM1);
+	AddToTopMenu(g_h_menu, "knifecustom", TopMenuObject_Item, MenuHandler, new_menu, "knifecustom", ADMFLAG_CUSTOM1);
 	AddToTopMenu(g_h_menu, "knife", TopMenuObject_Item, MenuHandler, new_menu, "knife", ADMFLAG_CUSTOM1);
 	AddToTopMenu(g_h_menu, "cancelhalf", TopMenuObject_Item, MenuHandler, new_menu, "cancelhalf", ADMFLAG_CUSTOM1);
 	AddToTopMenu(g_h_menu, "cancelmatch", TopMenuObject_Item, MenuHandler, new_menu, "cancelmatch", ADMFLAG_CUSTOM1);
@@ -2956,6 +2970,40 @@ public void Event_Round_Start_CMD()
 						SetEntProp(i, Prop_Send, "m_bHasHelmet", 1);
 					}
 				}
+				if (g_knife_custom)
+				{
+					if (GetConVarBool(wm_knife_fists))
+					{
+						// remove all the weapons on "melee slot" in order to prevent the bug of duplicated fists
+						int weapon;
+						while((weapon = GetPlayerWeaponSlot(i, CS_SLOT_KNIFE)) != -1)
+						{
+							RemovePlayerItem(i, weapon);
+							AcceptEntityInput(weapon, "Kill");
+						}
+						EquipPlayerWeapon(i, GivePlayerItem(i, "weapon_fists"));
+					}
+					if (GetConVarBool(wm_knife_shield))
+					{
+						GivePlayerItem(i, "weapon_shield");
+					}
+					if (GetConVarBool(wm_knife_exojump))
+					{
+						SetEntProp(i, Prop_Send, "m_passiveItems", true, 1, 1);
+					}
+					if (GetConVarBool(wm_knife_mines))
+					{
+						GivePlayerItem(i, "weapon_bumpmine");
+					}
+					if (GetConVarBool(wm_knife_medishot))
+					{
+						GivePlayerItem(i, "weapon_healthshot");
+					}
+					if (GetConVarBool(wm_knife_breachcharge))
+					{
+						GivePlayerItem(i, "weapon_breachcharge");
+					}
+				}
 			}
 		}
 	}
@@ -3765,6 +3813,40 @@ public Action Event_Player_Spawned(Handle event, const char[] name, bool dontBro
 				if (GetConVarBool(wm_knife_helmet))
 				{
 					SetEntProp(client, Prop_Send, "m_bHasHelmet", 1);
+				}
+			}
+			if (g_knife_custom)
+			{
+				if (GetConVarBool(wm_knife_fists))
+				{
+					// remove all the weapons on "melee slot" in order to prevent the bug of duplicated fists
+					int weapon;
+					while((weapon = GetPlayerWeaponSlot(client, CS_SLOT_KNIFE)) != -1)
+					{
+						RemovePlayerItem(client, weapon);
+						AcceptEntityInput(weapon, "Kill");
+					}
+					EquipPlayerWeapon(client, GivePlayerItem(client, "weapon_fists"));
+				}
+				if (GetConVarBool(wm_knife_shield))
+				{
+					GivePlayerItem(client, "weapon_shield");
+				}
+				if (GetConVarBool(wm_knife_exojump))
+				{
+					SetEntProp(client, Prop_Send, "m_passiveItems", true, 1, 1);
+				}
+				if (GetConVarBool(wm_knife_mines))
+				{
+					GivePlayerItem(client, "weapon_bumpmine");
+				}
+				if (GetConVarBool(wm_knife_medishot))
+				{
+					GivePlayerItem(client, "weapon_healthshot");
+				}
+				if (GetConVarBool(wm_knife_breachcharge))
+				{
+					GivePlayerItem(client, "weapon_breachcharge");
 				}
 			}
 		}
@@ -7554,6 +7636,18 @@ public int MenuHandler(Handle topmenu, TopMenuAction action, TopMenuObject objec
 			ReadyToggle(param, 0);
 		}
 	}
+	else if (StrEqual(menu_name, "knifecustom"))
+	{
+		if (action == TopMenuAction_DisplayOption)
+		{
+			Format(buffer, maxlength, "%t", "Admin_Menu Knife Custom");
+		}
+		else if (action == TopMenuAction_SelectOption)
+		{
+			g_knife_custom = true;
+			KnifeOn3(param, 0);
+		}
+	}
 	else if (StrEqual(menu_name, "knife"))
 	{
 		if (action == TopMenuAction_DisplayOption)
@@ -7562,6 +7656,7 @@ public int MenuHandler(Handle topmenu, TopMenuAction action, TopMenuObject objec
 		}
 		else if (action == TopMenuAction_SelectOption)
 		{
+			g_knife_custom = false;
 			KnifeOn3(param, 0);
 		}
 	}
