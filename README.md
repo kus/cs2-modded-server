@@ -151,6 +151,14 @@ You can run multiple servers by modifying the launch scripts (install.sh/win.bat
 
 You need [SourceMod 1.8](http://sourcemod.net/downloads.php?all=1&branch=1.8-dev) to compile and add the following into `addons/sourcemod/scripting/includes` [tEasyFTP.inc](https://raw.githubusercontent.com/thraaawn/tEasyFTP/master/scripting/include/tEasyFTP.inc) [bzip2.inc](https://raw.githubusercontent.com/thraaawn/SMbz2/master/pawn/scripting/include/bzip2.inc) [updater.inc](https://bitbucket.org/GoD_Tony/updater/raw/12181277db77d6117052b8ddf5810c7681745156/include/updater.inc) [zip.inc](https://raw.githubusercontent.com/Versatile-BFG/sm-zip/master/sm-zip/scripting/include/zip.inc) and copy the compiled `warmod.smx` from `addons/sourcemod/scripting/compiled` to `addons/sourcemod/plugins/disabled`.
 
+On Windows:
+Open up a command prompt (Start > Run > "cmd")
+
+```
+cd /d C:\git\csgo-modded-server\csgo\addons\sourcemod\scripting
+spcomp warmod.sp -o compiled/warmod.smx
+```
+
 ## Adding new maps to Capture The Flag
 
 Type `!props` in chat to open the props menu.
