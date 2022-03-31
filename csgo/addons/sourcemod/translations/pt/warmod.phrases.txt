@@ -1,0 +1,540 @@
+"Phrases"
+{
+	"Safe Mode"
+	{
+		"pt"			"Modo de segurança habilitado. Recurso está desativado."
+	}
+	"Match Reset"
+	{
+		"pt"			"Partida Reiniciada - O jogo ainda nao esta valendo!"
+	}
+	"Half Reset"
+	{
+		"pt"			"Metade da Partida Reiniciada - O jogo ainda nao esta valendo!"
+	}
+	"Half Time"
+	{
+		"pt"			"Intervalo! Por Favor vire os times..."
+	}
+	"Half Time Auto Swap"
+	{
+		"pt"			"Intervalo! Virando os Times..."
+	}
+	"Full Time"
+	{
+		"pt"			"Fim de Jogo"
+	}
+	"Over Time"
+	{
+		"#format"		"{1:i}"
+		"pt"			"Tempo Extra! MR{1}"
+	}
+	"Over Time Sudden Death"
+	{
+		"pt"			"Tempo Extra! Morte Subita"
+	}
+	"Playing Out Notice"
+	{
+		"#format"		"{1:i}"
+		"pt"			"Nota: Todos {1} Turnos devem ser jogados!"
+	}
+	"Ready"
+	{
+		"pt"			"Voce foi marcado como Pronto"
+	}
+	"Not Ready"
+	{
+		"pt"			"Voce nao esta marcado como Pronto"
+	}
+	"Score Overtime"
+	{
+		"pt"			"Tempo extra: "
+	}
+	"Score Overall"
+	{
+		"pt"			"Placar Final: "
+	}
+	"Knife Round Cancelled"
+	{
+		"pt"			"Turno de Faca Cancelado - Nao esta valendo"
+	}
+	"Knife Round Inactive"
+	{
+		"pt"			"Turno de Faca Nao esta Ativo"
+	}
+	"Ready System Enabled"
+	{
+		"pt"			"Sistem de Pronto - Ativado"
+	}
+	"Ready System Disabled"
+	{
+		"pt"			"Sistema de Pronto - Desativado"
+	}
+	"Set Active"
+	{
+		"pt"			"Mudar para Ativado"
+	}
+	"Set Inactive"
+	{
+		"pt"			"Mudar para Desativado"
+	}
+	"Console Ready"
+	{
+		"pt"			"Console nao pode ser marcado como Pronto"
+	}
+	"Console Not Ready"
+	{
+		"pt"			"Console nao pode ser marcado como Nao Pronto"
+	}
+	"Not on Team"
+	{
+		"pt"			"Voce nao esta em nenhum time"
+	}
+	"Already Ready"
+	{
+		"pt"			"Voce ja esta marcado como Pronto"
+	}
+	"Already Not Ready"
+	{
+		"pt"			"Voce ja esta marcado como Nao Pronto"
+	}
+	"Forced Ready"
+	{
+		"pt"			"Forcar todos Jogadores a ficarem Prontos"
+	}
+	"Forced Not Ready"
+	{
+		"pt"			"Forcar todos Jogares a Nao pronto"
+	}
+	"Forced Spectate"
+	{
+		"pt"			"Forçado todos os jogadores para spectate" 
+	}
+	"Match Not In Progress"
+	{
+		"pt"			"A Partida ainda nao comecou!"
+	}
+	"T Winning"
+	{
+		"#format"		"{1:s}"
+		"pt"			"{1} Estao Ganhando!"
+	}
+	"Tied"
+	{
+		"pt"			"Os Pontos estao Empatados!"
+	}
+	"CT Winning"
+	{
+		"#format"		"{1:s}"
+		"pt"			"{1} Estao Ganhando!"
+	}
+	"Change Teams Midgame"
+	{
+		"pt"			"Boqueado - A Partida Nao Comecou"
+	}
+	"Maximum Players"
+	{
+		"pt"			"Os times atingiram o numero maximo de jogadores!"
+	}
+	"Nightvision Blocked"
+	{
+		"pt"			"Visao Noturna Desativada"
+	}
+	"Grenades Blocked"
+	{
+		"pt"			"Granadas no aquecimento sao desativadas"
+	}
+	"Ready System"
+	{
+		"pt"			"Sistema Pronto"
+	}
+	"Match Begin Msg"
+	{
+		"#format"		"{1:i}" 
+		"pt"			"A partida ira comecar apos {1} estiverem prontos"
+	}
+	"No Players Found"
+	{
+		"pt"			"Nenhum jogador encontrado"
+	}
+	"Info Not Ready"
+	{
+		"pt"			"Nao esta Pronto:"
+	}
+	"Info Exit"
+	{
+		"pt"			"Saida"
+	}
+	"Ready System Disabled2"
+	{
+		"pt"			"O sistema de Pronto nao esta ativado"
+	}
+	"ShowInfo Disabled"
+	{
+		"pt"			"O visor Sistema Pronto não está habilitado"
+	}
+	"Match Is Live"
+	{
+		"pt"			"A partida iniciou"
+	}
+	"WarMod Inactive"
+	{
+		"pt"			"WarMod nao esta ativo"
+	}
+	"Change T Name"
+	{
+		"#format"		"{1:s}" 
+		"pt"			"Nome dos Terroristas modificado para  '{1}'"
+	}
+	"Change CT Name"
+	{
+		"#format"		"{1:s}" 
+		"pt"			"Nome dos Contra-Terroristas modificado para '{1}'"
+	}
+	"Console"
+	{
+		"pt"			"Matrix: "
+	}
+	"Available Commands"
+	{
+		"pt"			"Comandos de Cliente disponiveis"
+	}
+	"No Permission"
+	{
+		"pt"			"Voce nao tem permissao para usar este comando"
+	}
+	"Set Minready"
+	{
+		"#format"		"{1:i}"
+		"pt"			"wm_min_ready modifricado para {1}"
+	}
+	"Set Maxrounds"
+	{
+		"#format"		"{1:i}"
+		"pt"			"wm_max_rounds modificado para {1}"
+	}
+	"WarMod Rcon Only"
+	{
+		"pt"			"Comandos de Admin foram restritos para somente RCON"
+	}
+	"Set Password"
+	{
+		"#format"		"{1:s}" 
+		"pt"			"sv_password modificado para '{1}'"
+	}
+	"Autokick"
+	{
+		"pt"			"Voce foi automaticamente removido do servidor"
+	}
+	"Names Required"
+	{
+		"pt"			"A partida nao sera iniciada enquanto os nomes de ambos times nao forem adicionados"
+	}
+	"Pause Freeze Time"
+	{
+		"pt"			"Jogo fará uma pausa na hora do congelamento"
+	}
+	"Pause Round End"
+	{
+		"pt"			"Jogo fará uma pausa no final da ronda"
+	}
+	"Pause Limit"
+	{
+		"pt"			"Você usou todas as suas pausas já"
+	}
+	"Pause Non-player"
+	{
+		"pt"			"Você deve estar em T ou CT de usar /pause"
+	}
+	"Pause Offer"
+	{
+		"pt"			"pediram uma pausa. Por favor, digite /pause para pausar o jogo"
+	}
+	"Pause Not Enabled"
+	{
+		"pt"			"sv_pauseable é definido como 0. Pausa função não habilitado"
+	}
+	"Unpause Notice"
+	{
+		"pt"			"Jogo está agora em pausa. Por favor, digite /unpause para retomar o jogo"
+	}
+	"Unpause Offer"
+	{
+		"pt"			"pediram para retomar o jogo. Por favor, digite /unpause para retomar o jogo"
+	}
+	"Unpaused Match"
+	{
+		"pt"			"já retomaram a partida"
+	}
+	"Unpause Non-player"
+	{
+		"pt"			"Você deve estar em T ou CT usar /unpause"
+	}
+	"Pause Not Confirmed"
+	{
+		"pt"			"Pausa oferta não foi confirmado por outra equipe"
+	}
+	"Unpause Timer"
+	{
+		"pt"			"segundos até que jogo é auto unpaused"
+	}
+	"Unpause Auto"
+	{
+		"pt"			"Jogo foi auto retomaram porque limite de tempo alcançado"
+	}
+	"Auto Pause Notice"
+	{
+		"#format"		"{1:s}"
+		"pt"			"Match will be paused because a player from '{1}' has left the server"
+	}
+	"Auto Unpause Notice"
+	{
+		"#format"		"{1:s}"
+		"pt"			"Match has been auto paused because a player from '{1}' has left the server"
+	}
+	"Paused Via Rcon"
+	{
+		"pt"			"Servidor não está em pausa ou foi interrompida via rcon"
+	}
+	"Knife Vote Team"
+	{
+		"pt"			"estão votando para ficar ou troca de equipes"
+	}
+	"Knife Vote"
+	{
+		"pt"			"Por favor, digite /stay ou /switch"
+	}
+	"Knife Stay"
+	{
+		"pt"			"votaram para ficar"
+	}
+	"Knife Switch"
+	{
+		"pt"			"votaram para mudar de time"
+	}
+	"Set Name CT"
+	{
+		"pt"			"Contra-terroristas por favor, defina o nome da equipe"
+	}
+	"Set Name T"
+	{
+		"pt"			"Terroristas por favor, defina o nome da equipe"
+	}
+	"Set Name Both"
+	{
+		"pt"			"Equipes por favor, defina o nome da equipe"
+	}
+	"Set Name CMD"
+	{
+		"pt"			"Para definir o nome da equipe por favor tipo /name Nome da equipe"
+	}
+	"Logos Required"
+	{
+		"pt"			"Match will not lo3 until both team logos have been set"
+	}
+	"Set Logo CT"
+	{
+		"pt"			"CT's please set team logo"
+	}
+	"Set Logo T"
+	{
+		"pt"			"T's please set team logo"
+	}
+	"Set Logo Both"
+	{
+		"pt"			"Teams please set team logos"
+	}
+	"Set Logo CMD"
+	{
+		"pt"			"To set team logo please type /logo"
+	}
+	"Live"
+	{
+		"pt"			"O jogo é agora VIVER!"
+	}
+	"Live on 3"
+	{
+		"pt"			"Viver com 3"
+	}
+	"Live on 2"
+	{
+		"pt"			"Viver com 2"
+	}
+	"Live on 1"
+	{
+		"pt"			"Viver com 1"
+	}
+	"Knife On 3"
+	{
+		"pt"			"Faca na 3"
+	}
+	"Knife On 2"
+	{
+		"pt"			"Faca na 2"
+	}
+	"Knife On 1"
+	{
+		"pt"			"Faca na 1"
+	}
+	"Knife"
+	{
+		"pt"			"FACA!"
+	}
+	"Zeus"
+	{
+		"pt"			"ZEUS!"
+	}
+	"Good Luck"
+	{
+		"pt"			"Boa sorte, divirta-se!"
+	}
+	"Powered By"
+	{
+		"pt"			"Ativado por"
+	}
+	"Admin_Menu WarMod Commands"
+	{
+		"pt"			"Comandos WarMod"
+	}
+	"Admin_Menu Enable ReadyUp"
+	{
+		"pt"			"Permitir Ficar Pronto"
+	}
+	"Admin_Menu Disable ReadyUp"
+	{
+		"pt"			"Proibir Ficar Pronto"
+	}
+	"Admin_Menu Knife"
+	{
+		"pt"			"Faca"
+	}
+	"Admin_Menu Force Start"
+	{
+		"pt"			"Forcar Inicio"
+	}
+	"Admin_Menu Force End"
+	{
+		"pt"			"Forcar Fim"
+	}
+	"Admin_Menu Cancel Half"
+	{
+		"pt"			"Cancelar no Meio"
+	}
+	"Admin_Menu Cancel Match"
+	{
+		"pt"			"Cancelar Partida"
+	}
+	"Admin_Menu Cancel Knife"
+	{
+		"pt"			"Cancelar Faca"
+	}
+	"Admin_Menu ForceAllReady"
+	{
+		"pt"			"Forcar todos ficarem Prontos"
+	}
+	"Admin_Menu ForceAllUnready"
+	{
+		"pt"			"Forcar todos a ficar Nao Pronto"
+	}
+	"Admin_Menu ForceAllSpectate"
+	{
+		"pt"			"Força Todos Spectate" 
+	}
+	"Admin_Menu Activate WarMod"
+	{
+		"pt"			"Ativar WarMod"
+	}
+	"Admin_Menu Deactivate WarMod"
+	{
+		"pt"			"Desativar WarMod"
+	}
+	"Warm Up Active"
+	{
+		"pt"			"Warm Up Active"
+	}
+	"FTP Upload Failed"
+	{
+		"pt"			"Failed uploading demo file. Check the server log files."
+	}
+	"FTP Log Upload Successful"
+	{
+		"pt"			"Log file uploaded successfully"
+	}
+	"FTP Demo Upload Successful"
+	{
+		"pt"			"Demo uploaded successfully"
+	}
+	"Veto Offer Not Confirmed"
+	{
+		"pt"			"Veto offer was not confirmed by the other team"
+	}
+	"Veto No Maps"
+	{
+		"#format"		"{1:i}"
+		"pt"			"No maps in bo{1} list"
+	}
+	"Veto Bo3 Map List"
+	{
+		"#format"		"{1:s},{2:s},{3:s}"
+		"pt"			"Map 1 = {1}, Map 2 = {2}, Map 3 = {3}"
+	}
+	"Veto Bo5 Map List"
+	{
+		"#format"		"{1:s},{2:s},{3:s},{4:s},{5:s}"
+		"pt"			"Map 1 = {1}, Map 2 = {2}, Map 3 = {3}, Map 4 = {4}, Map 5 = {5}"
+	}
+	"Veto Bo2 Map List"
+	{
+		"#format"		"{1:s},{2:s}"
+		"pt"			"First Map = {1}, Second Map = {2}"
+	}
+	"Veto Disabled"
+	{
+		"pt"			"Veto system is disabled"
+	}
+	"Veto Non-player"
+	{
+		"pt"			"You must be on Terrorist or Counter Terrorist to use !veto"
+	}
+	"Veto Offer"
+	{
+		"#format"		"{1:i}"
+		"pt"			"have asked for a veto Bo{1}. Please type !veto to start"
+	}
+	"Veto Captain"
+	{
+		"pt"			"captain will be"
+	}
+	"Veto First Second"
+	{
+		"pt"			"is picking to go first or second in the veto"
+	}
+	"Non-player"
+	{
+		"pt"			"You must be on Terrorist or Counter Terrorist to use this command"
+	}
+	"Default Offer"
+	{
+		"pt"			"have asked for a default match. Please type !default to accept"
+	}
+	"Default Offer Not Confirmed"
+	{
+		"pt"			"Default offer was not confirmed by the other team"
+	}
+	"PlayOut Offer"
+	{
+		"pt"			"have asked for a play out match. Please type !playout to accept"
+	}
+	"PlayOut Offer Not Confirmed"
+	{
+		"pt"			"Play Out offer was not confirmed by the other team"
+	}
+	"OverTime Offer"
+	{
+		"pt"			"have asked for a over time match. Please type !overtime to accept"
+	}
+	"OverTime Offer Not Confirmed"
+	{
+		"pt"			"Over Time offer was not confirmed by the other team"
+	}
+}

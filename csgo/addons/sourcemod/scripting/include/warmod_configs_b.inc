@@ -9,12 +9,6 @@ void CheckConFigFiles(char[] WM_VERSION)
 		DeleteFile(cfgFile);
 	}
 	
-	BuildPath(Path_SM, cfgFile, sizeof(cfgFile), "plugins/warmod_b.smx");
-	if (FileExists(cfgFile))
-	{
-		DeleteFile(cfgFile);
-	}
-	
 	Format(dirName, sizeof(dirName), "cfg/sourcemod");
 	if (!DirExists(dirName))
 	{
@@ -175,7 +169,7 @@ static void Gamemode_Competitive_Server(char[] WM_VERSION)
 	WriteFileLine(file, "mp_autokick 0					// Kick idle/team-killing players");
 	WriteFileLine(file, "mp_autoteambalance 0");
 	WriteFileLine(file, "mp_buytime 15                           	// How many seconds after round start players can buy items for.");
-	WriteFileLine(file, "mp_c4timer 40                           	// How long from when the C4 is armed until it blows");
+	WriteFileLine(file, "mp_c4timer 35                           	// How long from when the C4 is armed until it blows");
 	WriteFileLine(file, "mp_death_drop_defuser 1				// Drop defuser on player death");
 	WriteFileLine(file, "mp_death_drop_grenade 2				// Which grenade to drop on player death: 0=none, 1=best, 2=current or best");
 	WriteFileLine(file, "mp_death_drop_gun 1				// Which gun to drop on player death: 0=none, 1=best, 2=current or best");
@@ -197,8 +191,8 @@ static void Gamemode_Competitive_Server(char[] WM_VERSION)
 	WriteFileLine(file, "mp_playerid_delay 0.5				// Number of seconds to delay showing information in the status bar");
 	WriteFileLine(file, "mp_playerid_hold 0.25				// Number of seconds to keep showing old information in the status bar");
 	WriteFileLine(file, "mp_round_restart_delay 5			// Number of seconds to delay before restarting a round after a win");
-	WriteFileLine(file, "mp_roundtime 1.92                       	// How many minutes each round takes.");
-	WriteFileLine(file, "mp_roundtime_defuse 1.92                	// How many minutes each round takes on defusal maps.");
+	WriteFileLine(file, "mp_roundtime 1.75                       	// How many minutes each round takes.");
+	WriteFileLine(file, "mp_roundtime_defuse 1.75                	// How many minutes each round takes on defusal maps.");
 	WriteFileLine(file, "mp_solid_teammates 1 				// Determines whether teammates are solid or not.");
 	WriteFileLine(file, "mp_teamcashawards 1				// Teams can earn money by performing in-game actions");
 	WriteFileLine(file, "mp_timelimit 0                           	// game time per map in minutes");
@@ -282,11 +276,6 @@ static void RuleSet_Global(char[] WM_VERSION)
 	WriteFileLine(file, "tv_enable					\"1\"	//GOTV enabled?");
 	WriteFileLine(file, "wm_auto_record				\"1\"	//Enable or disable auto SourceTV demo record on Live on 3");
 	WriteFileLine(file, "");
-	WriteFileLine(file, "//Damage Printer");
-	WriteFileLine(file, "wm_damageprint_auto_color		 \"1\"	//Whether colors are automatically inserted for damage values, changing depending on if the damage resulted in a kill");
-	WriteFileLine(file, "wm_damageprint_enabled			\"0\"	//Whether to enabled damage print to client on round end");
-	WriteFileLine(file, "wm_damageprint_format			\"--> ({DMG_TO} dmg / {HITS_TO} hits) to ({DMG_FROM} dmg / {HITS_FROM} hits) from {NAME} ({HEALTH} HP)\"	//Format of the damage output string. Avaliable tags are in the default, color tags such as {LIGHT_RED} and {GREEN} also work.");
-	
 	WriteFileLine(file, "//WarMod Knife");
 	WriteFileLine(file, "wm_auto_knife				\"0\"	//Enable or disable the knife round before going live");
 	WriteFileLine(file, "wm_knife_auto_start			\"0\"	//Enable or disable after knife round to be forced lived");
@@ -296,7 +285,6 @@ static void RuleSet_Global(char[] WM_VERSION)
 	WriteFileLine(file, "wm_knife_zeus				\"0\"	//Enable or disable giving a player a zeus on Knife on 3");
 	WriteFileLine(file, "wm_knife_armor				\"1\"	//Enable or disable giving a player Armor on Knife on 3");
 	WriteFileLine(file, "wm_knife_helmet				\"0\"	//Enable or disable giving a player a Helmet on Knife on 3 [requires armor active]");
-	WriteFileLine(file, "wm_name_fix				\"0\"	//Fix name swap after knife round");
 	WriteFileLine(file, "");
 	WriteFileLine(file, "//WarMod Pause");
 	WriteFileLine(file, "");
@@ -357,8 +345,8 @@ static void RuleSet_Default(char[] WM_VERSION)
 	WriteFileLine(file, "mp_overtime_maxrounds		\"6\"		//When overtime is enabled play additional rounds to determine winner");
 	WriteFileLine(file, "mp_overtime_startmoney		\"10000\"		//Money assigned to all players at start of every overtime half");
 	WriteFileLine(file, "mp_startmoney		\"800\"			//amount of money each player gets when they reset");
-	WriteFileLine(file, "mp_roundtime		\"1.92\"		//How many minutes each round takes");
-	WriteFileLine(file, "mp_roundtime_defuse		\"1.92\"		//How many minutes each round of Bomb Defuse takes. If 0 then use mp_roundtime instead");
+	WriteFileLine(file, "mp_roundtime		\"1.75\"		//How many minutes each round takes");
+	WriteFileLine(file, "mp_roundtime_defuse		\"1.75\"		//How many minutes each round of Bomb Defuse takes. If 0 then use mp_roundtime instead");
 	WriteFileLine(file, "wm_round_money		\"1\"		//Enable or disable a client's team mates money to be displayed at the start of a round (to him only)");
 	WriteFileLine(file, "");
 	WriteFileLine(file, "say WarMod [BFG] Default Match Config Loaded", false); // no newline at the end
@@ -384,8 +372,8 @@ static void RuleSet_PlayOut(char[] WM_VERSION)
 	WriteFileLine(file, "mp_overtime_maxrounds		\"6\"		//When overtime is enabled play additional rounds to determine winner");
 	WriteFileLine(file, "mp_overtime_startmoney		\"10000\"		//Money assigned to all players at start of every overtime half");
 	WriteFileLine(file, "mp_startmoney		\"800\"			//amount of money each player gets when they reset");
-	WriteFileLine(file, "mp_roundtime		\"1.92\"		//How many minutes each round takes");
-	WriteFileLine(file, "mp_roundtime_defuse		\"1.92\"		//How many minutes each round of Bomb Defuse takes. If 0 then use mp_roundtime instead");
+	WriteFileLine(file, "mp_roundtime		\"1.75\"		//How many minutes each round takes");
+	WriteFileLine(file, "mp_roundtime_defuse		\"1.75\"		//How many minutes each round of Bomb Defuse takes. If 0 then use mp_roundtime instead");
 	WriteFileLine(file, "wm_round_money		\"1\"		//Enable or disable a client's team mates money to be displayed at the start of a round (to him only)");
 	WriteFileLine(file, "");
 	WriteFileLine(file, "say WarMod [BFG] PlayOut Match Config Loaded", false); // no newline at the end
@@ -411,8 +399,8 @@ static void RuleSet_OverTime(char[] WM_VERSION)
 	WriteFileLine(file, "mp_overtime_maxrounds		\"6\"		//When overtime is enabled play additional rounds to determine winner");
 	WriteFileLine(file, "mp_overtime_startmoney 		\"10000\"		//Money assigned to all players at start of every overtime half");
 	WriteFileLine(file, "mp_startmoney		\"800\"		//amount of money each player gets when they reset");
-	WriteFileLine(file, "mp_roundtime		\"1.92\"		//How many minutes each round takes");
-	WriteFileLine(file, "mp_roundtime_defuse		\"1.92\"		//How many minutes each round of Bomb Defuse takes. If 0 then use mp_roundtime instead");
+	WriteFileLine(file, "mp_roundtime		\"1.75\"		//How many minutes each round takes");
+	WriteFileLine(file, "mp_roundtime_defuse		\"1.75\"		//How many minutes each round of Bomb Defuse takes. If 0 then use mp_roundtime instead");
 	WriteFileLine(file, "wm_round_money		\"1\"		//Enable or disable a client's team mates money to be displayed at the start of a round (to him only)");
 	WriteFileLine(file, "");
 	WriteFileLine(file, "say WarMod [BFG] OverTime Config Loaded", false);// no newline at the end
@@ -446,7 +434,7 @@ static void RuleSet_WarmUp(char[] WM_VERSION)
 	WriteFileLine(file, "sv_showimpacts		\"0\"			//Shows client (red) and server (blue) bullet impact point");
 	WriteFileLine(file, "sv_cheats			\"0\"			//Allow cheats on server");
 	WriteFileLine(file, "mp_buy_anywhere		\"0\"		//When set, players can buy anywhere, not only in buyzones");
-	WriteFileLine(file, "mp_roundtime_defuse		\"1.92\"		//How many minutes each round of Bomb Defuse takes. If 0 then use mp_roundtime instead");
+	WriteFileLine(file, "mp_roundtime_defuse		\"1.75\"		//How many minutes each round of Bomb Defuse takes. If 0 then use mp_roundtime instead");
 	WriteFileLine(file, "mp_death_drop_defuser	\"0\"			// Drop defuser on player death");
 	WriteFileLine(file, "mp_death_drop_grenade	\"0\"			// Which grenade to drop on player death: 0=none, 1=best, 2=current or best");
 	WriteFileLine(file, "mp_death_drop_gun	\"0\"			// Which gun to drop on player death: 0=none, 1=best, 2=current or best");
@@ -1310,8 +1298,8 @@ static void UpdateRuleSet_Default(char[] WM_VERSION)
 	WriteFileLine(file, "mp_overtime_maxrounds		\"%i\"		//When overtime is enabled play additional rounds to determine winner", GetConVarInt(FindConVar("mp_overtime_maxrounds")));
 	WriteFileLine(file, "mp_overtime_startmoney		\"%i\"		//Money assigned to all players at start of every overtime half", GetConVarInt(FindConVar("mp_overtime_startmoney")));
 	WriteFileLine(file, "mp_startmoney		\"800\"			//amount of money each player gets when they reset");
-	WriteFileLine(file, "mp_roundtime		\"1.92\"		//How many minutes each round takes");
-	WriteFileLine(file, "mp_roundtime_defuse		\"1.92\"		//How many minutes each round of Bomb Defuse takes. If 0 then use mp_roundtime instead");
+	WriteFileLine(file, "mp_roundtime		\"1.75\"		//How many minutes each round takes");
+	WriteFileLine(file, "mp_roundtime_defuse		\"1.75\"		//How many minutes each round of Bomb Defuse takes. If 0 then use mp_roundtime instead");
 	WriteFileLine(file, "wm_round_money		\"1\"		//Enable or disable a client's team mates money to be displayed at the start of a round (to him only)");
 	WriteFileLine(file, "");
 	WriteFileLine(file, "say WarMod [BFG] Default Match Config Loaded", false); // no newline at the end
@@ -1342,8 +1330,8 @@ static void UpdateRuleSet_PlayOut(char[] WM_VERSION)
 	WriteFileLine(file, "mp_overtime_maxrounds		\"%i\"		//When overtime is enabled play additional rounds to determine winner", GetConVarInt(FindConVar("mp_overtime_maxrounds")));
 	WriteFileLine(file, "mp_overtime_startmoney		\"%i\"		//Money assigned to all players at start of every overtime half", GetConVarInt(FindConVar("mp_overtime_startmoney")));
 	WriteFileLine(file, "mp_startmoney		\"800\"			//amount of money each player gets when they reset");
-	WriteFileLine(file, "mp_roundtime		\"1.92\"		//How many minutes each round takes");
-	WriteFileLine(file, "mp_roundtime_defuse		\"1.92\"		//How many minutes each round of Bomb Defuse takes. If 0 then use mp_roundtime instead");
+	WriteFileLine(file, "mp_roundtime		\"1.75\"		//How many minutes each round takes");
+	WriteFileLine(file, "mp_roundtime_defuse		\"1.75\"		//How many minutes each round of Bomb Defuse takes. If 0 then use mp_roundtime instead");
 	WriteFileLine(file, "wm_round_money		\"1\"		//Enable or disable a client's team mates money to be displayed at the start of a round (to him only)");
 	WriteFileLine(file, "");
 	WriteFileLine(file, "say WarMod [BFG] Play Out Match Config Loaded", false); // no newline at the end
@@ -1375,8 +1363,8 @@ static void UpdateRuleSet_OverTime(char[] WM_VERSION)
 	WriteFileLine(file, "mp_overtime_maxrounds		\"%i\"		//When overtime is enabled play additional rounds to determine winner", GetConVarInt(FindConVar("mp_overtime_maxrounds")));
 	WriteFileLine(file, "mp_overtime_startmoney 		\"%i\"		//Money assigned to all players at start of every overtime half", GetConVarInt(FindConVar("mp_overtime_startmoney")));
 	WriteFileLine(file, "mp_startmoney		\"800\"		//amount of money each player gets when they reset");
-	WriteFileLine(file, "mp_roundtime		\"1.92\"		//How many minutes each round takes");
-	WriteFileLine(file, "mp_roundtime_defuse		\"1.92\"		//How many minutes each round of Bomb Defuse takes. If 0 then use mp_roundtime instead");
+	WriteFileLine(file, "mp_roundtime		\"1.75\"		//How many minutes each round takes");
+	WriteFileLine(file, "mp_roundtime_defuse		\"1.75\"		//How many minutes each round of Bomb Defuse takes. If 0 then use mp_roundtime instead");
 	WriteFileLine(file, "wm_round_money		\"1\"		//Enable or disable a client's team mates money to be displayed at the start of a round (to him only)");
 	WriteFileLine(file, "");
 	WriteFileLine(file, "say WarMod [BFG] OverTime Config Loaded", false);// no newline at the end
@@ -1412,7 +1400,7 @@ static void UpdateWarmUp(char[] WM_VERSION)
 	WriteFileLine(file, "sv_showimpacts		\"0\"			//Shows client (red) and server (blue) bullet impact point");
 	WriteFileLine(file, "sv_cheats			\"0\"			//Allow cheats on server");
 	WriteFileLine(file, "mp_buy_anywhere		\"0\"		//When set, players can buy anywhere, not only in buyzones");
-	WriteFileLine(file, "mp_roundtime_defuse		\"1.92\"		//How many minutes each round of Bomb Defuse takes. If 0 then use mp_roundtime instead");
+	WriteFileLine(file, "mp_roundtime_defuse		\"1.75\"		//How many minutes each round of Bomb Defuse takes. If 0 then use mp_roundtime instead");
 	WriteFileLine(file, "mp_death_drop_defuser	\"0\"			// Drop defuser on player death");
 	WriteFileLine(file, "mp_death_drop_grenade	\"0\"			// Which grenade to drop on player death: 0=none, 1=best, 2=current or best");
 	WriteFileLine(file, "mp_death_drop_gun	\"0\"			// Which gun to drop on player death: 0=none, 1=best, 2=current or best");

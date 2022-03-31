@@ -1,0 +1,540 @@
+"Phrases"
+{
+	"Safe Mode"
+	{
+		"sv"			"Felsäkert läge aktiverat. Funktionen är avaktiverad."
+	}
+	"Match Reset"
+	{
+		"sv"			"Match Återställning - Matchen har inte börjat än!"
+	}
+	"Half Reset"
+	{
+		"sv"			"Match Halva Återställning - Matchen har inte börjat än!"
+	}
+	"Half Time"
+	{
+		"sv"			"Halv Tid! Vänligen ändra lag..."
+	}
+	"Half Time Auto Swap"
+	{
+		"sv"			"Halv Tid! Byte utav lag..."
+	}
+	"Full Time"
+	{
+		"sv"			"Full Tid!"
+	}
+	"Over Time"
+	{
+		"#format"		"{1:i}"
+		"sv"			"Övertid! MR{1}"
+	}
+	"Over Time Sudden Death"
+	{
+		"sv"			"Övertid! Sudden Death"
+	}
+	"Playing Out Notice"
+	{
+		"#format"		"{1:i}"
+		"sv"			"Observera: Alla {1} rundor måste spelas ut!"
+	}
+	"Ready"
+	{
+		"sv"			"Du har markerats som klar"
+	}
+	"Not Ready"
+	{
+		"sv"			"Du har blivit markerat som inte klar"
+	}
+	"Score Overtime"
+	{
+		"sv"			"Övertid: "
+	}
+	"Score Overall"
+	{
+		"sv"			"Totalt: "
+	}
+	"Knife Round Cancelled"
+	{
+		"sv"			"Kniv Runda avbryten - Inte startat"
+	}
+	"Knife Round Inactive"
+	{
+		"sv"			"Kniv rundan är inte igång"
+	}
+	"Ready System Enabled"
+	{
+		"sv"			"Redo System - Aktiverat"
+	}
+	"Ready System Disabled"
+	{
+		"sv"			"Redo System - Inaktiverat"
+	}
+	"Set Active"
+	{
+		"sv"			"Ställ in på aktiv"
+	}
+	"Set Inactive"
+	{
+		"sv"			"Ställ in på inaktiv"
+	}
+	"Console Ready"
+	{
+		"sv"			"Consolen kan inte bli markerad som redo"
+	}
+	"Console Not Ready"
+	{
+		"sv"			"Consolen kan inte bli markerad som inte redo"
+	}
+	"Not on Team"
+	{
+		"sv"			"Du är inte med i ett lag"
+	}
+	"Already Ready"
+	{
+		"sv"			"Du har redan blivit markerad som redo"
+	}
+	"Already Not Ready"
+	{
+		"sv"			"Du har redan blivit markerad som inte redo"
+	}
+	"Forced Ready"
+	{
+		"sv"			"Tvinga alla spelare att vara redo"
+	}
+	"Forced Not Ready"
+	{
+		"sv"			"Tvinga alla spelare att vara ej redo"
+	}
+	"Forced Spectate"
+	{
+		"sv"			"Tvinga alla spelare att gå till spectate"
+	}
+	"Match Not In Progress"
+	{
+		"sv"			"Ingen match pågår just nu!"
+	}
+	"T Winning"
+	{
+		"#format"		"{1:s}"
+		"sv"			"{1} håller på att vinna"
+	}
+	"Tied"
+	{
+		"sv"			"Poängen är lika!"
+	}
+	"CT Winning"
+	{
+		"#format"		"{1:s}"
+		"sv"			"{1} håller på att vinna"
+	}
+	"Change Teams Midgame"
+	{
+		"sv"			"Blockerad - En match pågår just nu"
+	}
+	"Maximum Players"
+	{
+		"sv"			"Laget har nått maximalt antal spelare"
+	}
+	"Nightvision Blocked"
+	{
+		"sv"			"Mörkerseende är inaktiverat"
+	}
+	"Grenades Blocked"
+	{
+		"sv"			"Granater i uppvärmning är inaktiverat"
+	}
+	"Ready System"
+	{
+		"sv"			"Redo System"
+	}
+	"Match Begin Msg"
+	{
+		"#format"		"{1:i}"
+		"sv"			"Match kommer att börja efter {1} spelare är redo"
+	}
+	"No Players Found"
+	{
+		"sv"			"Inga spelare hittades"
+	}
+	"Info Not Ready"
+	{
+		"sv"			"Ejredo:"
+	}
+	"Info Exit"
+	{
+		"sv"			"Avsluta"
+	}
+	"Ready System Disabled2"
+	{
+		"sv"			"Redo systemet är inte igång"
+	}
+	"ShowInfo Disabled"
+	{
+		"sv"			"Redo systemets display är inte igång"
+	}
+	"Match Is Live"
+	{
+		"sv"			"Matchen har startat"
+	}
+	"WarMod Inactive"
+	{
+		"sv"			"WarMod är inte aktiv"
+	}
+	"Change T Name"
+	{
+		"#format"		"{1:s}"
+		"sv"			"Terroristerna har satt sitt namn till '{1}'"
+	}
+	"Change CT Name"
+	{
+		"#format"		"{1:s}"
+		"sv"			"Counter-Terroristerna har satt sitt namn till '{1}'"
+	}
+	"Console"
+	{
+		"sv"			"Console: "
+	}
+	"Available Commands"
+	{
+		"sv"			"Tillgängliga klientkommandon"
+	}
+	"No Permission"
+	{
+		"sv"			"Du har inte behörighet att använda detta kommando"
+	}
+	"Set Minready"
+	{
+		"#format"		"{1:i}"
+		"sv"			"wm_min_ready ändrat till {1}"
+	}
+	"Set Maxrounds"
+	{
+		"#format"		"{1:i}"
+		"sv"			"wm_max_rounds ändrat till {1}"
+	}
+	"WarMod Rcon Only"
+	{
+		"sv"			"Admin kommandon har blivit begränsade till RCON bara"
+	}
+	"Set Password"
+	{
+		"#format"		"{1:s}"
+		"sv"			"sv_password ändrat till '{1}'"
+	}
+	"Autokick"
+	{
+		"sv"			"Du har automatiskt blivit kickad från servern"
+	}
+	"Names Required"
+	{
+		"sv"			"Match kommer inte lo3 tills båda namn lagen har ställts in"
+	}
+	"Pause Freeze Time"
+	{
+		"sv"			"Spelet kommer att pausa vid frys tiden"
+	}
+	"Pause Round End"
+	{
+		"sv"			"Spelet kommer att pausa vid slutet av rundan"
+	}
+	"Pause Limit"
+	{
+		"sv"			"Du har använt alla dina pauser redan"
+	}
+	"Pause Non-player"
+	{
+		"sv"			"Du måste vara i T eller CT för att använda /pause"
+	}
+	"Pause Offer"
+	{
+		"sv"			"har bett om en Paus. Vänligen skriv /pause för att pausa matchen"
+	}
+	"Pause Not Enabled"
+	{
+		"sv"			"sv_pauseable är inställd på 0. Pause-funktionen inte aktiverad"
+	}
+	"Unpause Notice"
+	{
+		"sv"			"Matchen är nu Pausad. Vängligen skriv /unpause för att unpause the match"
+	}
+	"Unpause Offer"
+	{
+		"sv"			"have asked to unpause the game. Please type /unpause för att sluta pausen"
+	}
+	"Unpaused Match"
+	{
+		"sv"			"har slutat pausen"
+	}
+	"Unpause Non-player"
+	{
+		"sv"			"Du måste vara T eller CT för att använda /unpause"
+	}
+	"Pause Not Confirmed"
+	{
+		"sv"			"Paus erbjudandet bekräftades inte av det andra laget"
+	}
+	"Unpause Timer"
+	{
+		"sv"			"sekunder till pausen slutas automatiskt"
+	}
+	"Unpause Auto"
+	{
+		"sv"			"Matchen var automatiskt påbörjad för att tiden gick ut"
+	}
+	"Auto Pause Notice"
+	{
+		"#format"		"{1:s}"
+		"sv"			"Match will be paused because a player from '{1}' has left the server"
+	}
+	"Auto Unpause Notice"
+	{
+		"#format"		"{1:s}"
+		"sv"			"Match has been auto paused because a player from '{1}' has left the server"
+	}
+	"Paused Via Rcon"
+	{
+		"sv"			"Server är inte pausad eller så var den pausad via rcon"
+	}
+	"Knife Vote Team"
+	{
+		"sv"			"röstar på att stanna eller byta lag"
+	}
+	"Knife Vote"
+	{
+		"sv"			"Vänligen skriv /stay or /switch"
+	}
+	"Knife Stay"
+	{
+		"sv"			"har röstat att stanna"
+	}
+	"Knife Switch"
+	{
+		"sv"			"har röstat på att byta lag"
+	}
+	"Set Name CT"
+	{
+		"sv"			"CT's ställ in erat lagnamn"
+	}
+	"Set Name T"
+	{
+		"sv"			"T's ställ in erat lagnamn"
+	}
+	"Set Name Both"
+	{
+		"sv"			"Båda lagen vändligen ställ in erat lagnamn"
+	}
+	"Set Name CMD"
+	{
+		"sv"			"För att ställa in lagnamnen skriv /name LagNamn"
+	}
+	"Logos Required"
+	{
+		"sv"			"Match will not lo3 until both team logos have been set"
+	}
+	"Set Logo CT"
+	{
+		"sv"			"CT's please set team logo"
+	}
+	"Set Logo T"
+	{
+		"sv"			"T's please set team logo"
+	}
+	"Set Logo Both"
+	{
+		"sv"			"Teams please set team logos"
+	}
+	"Set Logo CMD"
+	{
+		"sv"			"To set team logo please type /logo"
+	}
+	"Live"
+	{
+		"sv"			"Matchen har nu STARTAT!"
+	}
+	"Live on 3"
+	{
+		"sv"			"Startar på 3"
+	}
+	"Live on 2"
+	{
+		"sv"			"Startar på 2"
+	}
+	"Live on 1"
+	{
+		"sv"			"Startar på 1"
+	}
+	"Knife On 3"
+	{
+		"sv"			"Kniv på 3"
+	}
+	"Knife On 2"
+	{
+		"sv"			"Kniv på 2"
+	}
+	"Knife On 1"
+	{
+		"sv"			"Kniv på 1"
+	}
+	"Knife"
+	{
+		"sv"			"KNIV!"
+	}
+	"Zeus"
+	{
+		"sv"			"ZEUS!"
+	}
+	"Good Luck"
+	{
+		"sv"			"Lycka till, Ha Det Så Kul!"
+	}
+	"Powered By"
+	{
+		"sv"			"Drivs med"
+	}	
+	"Admin_Menu WarMod Commands"
+	{
+		"sv"			"WarMod Kommandon"
+	}
+	"Admin_Menu Enable ReadyUp"
+	{
+		"sv"			"Aktivera RedoUpp"
+	}
+	"Admin_Menu Disable ReadyUp"
+	{
+		"sv"			"Inaktivera RedoUpp"
+	}
+	"Admin_Menu Knife"
+	{
+		"sv"			"Kniv"
+	}
+	"Admin_Menu Force Start"
+	{
+		"sv"			"Tvinga Start"
+	}
+	"Admin_Menu Force End"
+	{
+		"sv"			"Tvinga avslutning"
+	}
+	"Admin_Menu Cancel Half"
+	{
+		"sv"			"Avbryt Halvan"
+	}
+	"Admin_Menu Cancel Match"
+	{
+		"sv"			"Avbryt Matchen"
+	}
+	"Admin_Menu Cancel Knife"
+	{
+		"sv"			"Avbryt Kniven"
+	}
+	"Admin_Menu ForceAllReady"
+	{
+		"sv"			"Tvinga Alla Redo"
+	}
+	"Admin_Menu ForceAllUnready"
+	{
+		"sv"			"Tvinga Alla Ejredo"
+	}
+	"Admin_Menu ForceAllSpectate"
+	{
+		"sv"			"Tvinga Alla till Spectate"
+	}
+	"Admin_Menu Activate WarMod"
+	{
+		"sv"			"Aktivera WarMod"
+	}
+	"Admin_Menu Deactivate WarMod"
+	{
+		"sv"			"Inaktivera WarMod"
+	}
+	"Warm Up Active"
+	{
+		"sv"			"Warm Up Active"
+	}
+	"FTP Upload Failed"
+	{
+		"sv"			"Failed uploading demo file. Check the server log files."
+	}
+	"FTP Log Upload Successful"
+	{
+		"sv"			"Log file uploaded successfully"
+	}
+	"FTP Demo Upload Successful"
+	{
+		"sv"			"Demo uploaded successfully"
+	}
+	"Veto Offer Not Confirmed"
+	{
+		"sv"			"Veto offer was not confirmed by the other team"
+	}
+	"Veto No Maps"
+	{
+		"#format"		"{1:i}"
+		"sv"			"No maps in bo{1} list"
+	}
+	"Veto Bo3 Map List"
+	{
+		"#format"		"{1:s},{2:s},{3:s}"
+		"sv"			"Map 1 = {1}, Map 2 = {2}, Map 3 = {3}"
+	}
+	"Veto Bo5 Map List"
+	{
+		"#format"		"{1:s},{2:s},{3:s},{4:s},{5:s}"
+		"sv"			"Map 1 = {1}, Map 2 = {2}, Map 3 = {3}, Map 4 = {4}, Map 5 = {5}"
+	}
+	"Veto Bo2 Map List"
+	{
+		"#format"		"{1:s},{2:s}"
+		"sv"			"First Map = {1}, Second Map = {2}"
+	}
+	"Veto Disabled"
+	{
+		"sv"			"Veto system is disabled"
+	}
+	"Veto Non-player"
+	{
+		"sv"			"You must be on Terrorist or Counter Terrorist to use !veto"
+	}
+	"Veto Offer"
+	{
+		"#format"		"{1:i}"
+		"sv"			"have asked for a veto Bo{1}. Please type !veto to start"
+	}
+	"Veto Captain"
+	{
+		"sv"			"captain will be"
+	}
+	"Veto First Second"
+	{
+		"sv"			"is picking to go first or second in the veto"
+	}
+	"Non-player"
+	{
+		"sv"			"You must be on Terrorist or Counter Terrorist to use this command"
+	}
+	"Default Offer"
+	{
+		"sv"			"have asked for a default match. Please type !default to accept"
+	}
+	"Default Offer Not Confirmed"
+	{
+		"sv"			"Default offer was not confirmed by the other team"
+	}
+	"PlayOut Offer"
+	{
+		"sv"			"have asked for a play out match. Please type !playout to accept"
+	}
+	"PlayOut Offer Not Confirmed"
+	{
+		"sv"			"Play Out offer was not confirmed by the other team"
+	}
+	"OverTime Offer"
+	{
+		"sv"			"have asked for a over time match. Please type !overtime to accept"
+	}
+	"OverTime Offer Not Confirmed"
+	{
+		"sv"			"Over Time offer was not confirmed by the other team"
+	}
+}

@@ -1,0 +1,541 @@
+﻿"Phrases"
+{
+	"Safe Mode"
+	{
+		"ro"			"Modul de siguranta (Safe Mode) este activ. Optiunea este dezactivata."
+	}
+	"Match Reset"
+	{
+		"ro"			"Resetare de meci - Jocul nu este live (online sau transmis)"
+	}
+	"Half Reset"
+	{
+		"ro"			"Resetare jumatatii / rundei - Jocul nu este live (online sau transmis)"
+	}
+	"Half Time"
+	{
+		"ro"			"Pauza! Va rugam schimbati echipele..."
+	}
+	"Half Time Auto Swap"
+	{
+		"ro"			"Pauza! Echipele se schimba..."
+	}
+	"Full Time"
+	{
+		"ro"			"Sfarsitul meciului / timpului de meci"
+	}
+	"Over Time"
+	{
+		"#format"		"{1:i}"
+		"ro"			"Prelungire!MR{1}"
+	}
+	"Over Time Sudden Death"
+	{
+		"ro"			"Prelungire! Moarte subita / baraj"
+	}
+	"Playing Out Notice"
+	{
+		"#format"		"{1:i}"
+		"ro"			"Nota: Toate cele {1} runde trebuie jucate pana la sfarsit!"
+	}
+	"Ready"
+	{
+		"ro"			"Ai fost marcat ca 'gata de joc'"
+	}
+	"Not Ready"
+	{
+		"ro"			"Ai fost setat ca 'Nu sunt gata de joc'"
+	}
+	"Score Overtime"
+	{
+		"ro"			"Prelungire: "
+	}
+	"Score Overall"
+	{
+		"ro"			"Per Total: "
+	}
+	"Knife Round Cancelled"
+	{
+		"ro"			"Runda cu cutite a fost anulata - Nu este live"
+	}
+	"Knife Round Inactive"
+	{
+		"ro"			"Runda cu cutite nu este activa"
+	}
+	"Ready System roabled"
+	{
+		"ro"			"Sistemul de marcare cu 'Gata' este activ"
+	}
+	"Ready System Disabled"
+	{
+		"ro"			"Sistemul de marcare cu 'Gata' este inactiv"
+	}
+	"Set Active"
+	{
+		"ro"			"Setat sa fie activ"
+	}
+	"Set Inactive"
+	{
+		"ro"			"Setat sa fie inactiv"
+	}
+	"Console Ready"
+	{
+		"ro"			"Consola nu poate fi marcata ca pregatita"
+	}
+	"Console Not Ready"
+	{
+		"ro"			"Consola nu poate fi marcata ca nu este pregatita"
+	}
+	"Not on Team"
+	{
+		"ro"			"Nu esti in nici o echipa"
+	}
+	"Already Ready"
+	{
+		"ro"			"Deja ai fost marcat ca fiind pregatit"
+	}
+	"Already Not Ready"
+	{
+		"ro"			"Deja ai fost marcat ca nu esti pregatit"
+	}
+	"Forced Ready"
+	{
+		"ro"			"Fortez ca toti playerii sa fie gata"
+	}
+	"Forced Not Ready"
+	{
+		"ro"			"Fortez ca toti playerii sa nu fie gata"
+	}
+	"Forced Spectate"
+	{
+		"ro"			"Fortez toti playerii sa fie SPECTATORI"
+	}
+	"Match Not In Progress"
+	{
+		"ro"			"Meciul nu este in desfasurare"
+	}
+	"T Winning"
+	{
+		"#format"		"{1:s}"
+		"ro"			"{1} castiga"
+	}
+	"Tied"
+	{
+		"ro"			"Scorul este legat"
+	}
+	"CT Winning"
+	{
+		"#format"		"{1:s}"
+		"ro"			"{1} castiga"
+	}
+	"Change Teams Midgame"
+	{
+		"ro"			"Blocat - Meciul este in desfasurare"
+	}
+	"Maximum Players"
+	{
+		"ro"			"Echipele au atins limita maxima de jucatori"
+	}
+	"Nightvision Blocked"
+	{
+		"ro"			"Night vision a fost dezactivat"
+	}
+	"Grroades Blocked"
+	{
+		"ro"			"Grroadele in runda de incalzire au fost dezactivate"
+	}
+	"Ready System"
+	{
+		"ro"			"Sistemul este Gata"
+	}
+	"Match Begin Msg"
+	{
+		"#format"		"{1:i}"
+		"ro"			"Meciul va incepe dupa ce {1} jucatorii sunt pregatiti"
+	}
+	"No Players Found"
+	{
+		"ro"			"Nu s-au gasit playeri pe server"
+	}
+	"Info Not Ready"
+	{
+		"ro"			"Nu este gata:"
+	}
+	"Info Exit"
+	{
+		"ro"			"Iesire"
+		"ru"			"Выход: "
+	}
+	"Ready System Disabled2"
+	{
+		"ro"			"Sistemul protru Start nu este activat "
+	}
+	"ShowInfo Disabled"
+	{
+		"ro"			"Afisarea sistemului Start nu este pregatit"
+	}
+	"Match Is Live"
+	{
+		"ro"			"Meciul este LIVE !"
+	}
+	"WarMod Inactive"
+	{
+		"ro"			"WarMod nu este activ"
+	}
+	"Change T Name"
+	{
+		"#format"		"{1:s}"
+		"ro"			"Teroristii isi schimba numele in '{1}'"
+	}
+	"Change CT Name"
+	{
+		"#format"		"{1:s}"
+		"ro"			"Counter-Terrorists isi schimba numele in '{1}'"
+	}
+	"Console"
+	{
+		"ro"			"Consola: "
+	}
+	"Available Commands"
+	{
+		"ro"			"Comrozi disponibile jucatorilor"
+	}
+	"No Permission"
+	{
+		"ro"			"Nu ai permisiunea sa accesezi aceasta comanda"
+	}
+	"Set Minready"
+	{
+		"#format"		"{1:i}"
+		"ro"			"wm_min_ready a fost setat la {1}"
+	}
+	"Set Maxrounds"
+	{
+		"#format"		"{1:i}"
+		"ro"			"wm_max_rounds a fost setat la {1}"
+	}
+	"WarMod Rcon Only"
+	{
+		"ro"			"Comrozile admin-ului au fost restrictionate protru numai RCON"
+	}
+	"Set Password"
+	{
+		"#format"		"{1:s}"
+		"ro"			"sv_password setat la '{1}'"
+	}
+	"Autokick"
+	{
+		"ro"			"Ai fost dat afara automat de pe server"
+	}
+	"Names Required"
+	{
+		"ro"			"Meciul nu va incepe pana cand numele ambelor echipe este setat"
+	}
+	"Pause Freeze Time"
+	{
+		"ro"			"Jocul se va opri la timpul de inghetare"
+	}
+	"Pause Round rod"
+	{
+		"ro"			"Jocul va intra in pauza dupa sfarsitul rundei"
+	}
+	"Pause Limit"
+	{
+		"ro"			"Ai folosit toate pauzele deja"
+	}
+	"Pause Non-player"
+	{
+		"ro"			"Trebuie sa fi in T sau CT protru a folosi /pause"
+	}
+	"Pause Offer"
+	{
+		"ro"			"au cerut o pauza. Scrieti /pause protru a pune pauza meciului"
+	}
+	"Pause Not roabled"
+	{
+		"ro"			"sv_pauseable este setat la 0. Functia de pauza nu este pornita"
+	}
+	"Unpause Notice"
+	{
+		"ro"			"Meciul este in pauza. Scrieti /unpause protru a iesi din pauza"
+	}
+	"Unpause Offer"
+	{
+		"ro"			" au cerut ca meciul sa iasa din pauza. Scrieti /unpause protru a iesi din pauza"
+	}
+	"Unpaused Match"
+	{
+		"ro"			"au scos meciul din pauza"
+	}
+	"Unpause Non-player"
+	{
+		"ro"			"Trebuie sa fi in T sau cT protru a folosi /unpause"
+	}
+	"Pause Not Confirmed"
+	{
+		"ro"			"Oferta de pauza nu a fost confirmata de echipa adversa"
+	}
+	"Unpause Timer"
+	{
+		"ro"			"secunde pana ce meciul iese din pauza automat"
+	}
+	"Unpause Auto"
+	{
+		"ro"			"Meciul a iesit din pauza fiindca s-a atins limita de time"
+	}
+	"Auto Pause Notice"
+	{
+		"#format"		"{1:s}"
+		"ro"			"Match will be paused because a player from '{1}' has left the server"
+	}
+	"Auto Unpause Notice"
+	{
+		"#format"		"{1:s}"
+		"ro"			"Match has been auto paused because a player from '{1}' has left the server"
+	}
+	"Paused Via Rcon"
+	{
+		"ro"			"Serverul nu este in pauza sau a fost bagat in pauza prin RCON"
+	}
+	"Knife Vote Team"
+	{
+		"ro"			"voteaza sa ramana sau sa schimbe echipele"
+	}
+	"Knife Vote"
+	{
+		"ro"			"Va rugam scrieti /stay (raman) sau /switch (schimb)"
+	}
+	"Knife Stay"
+	{
+		"ro"			"au votat sa ramana"
+	}
+	"Knife Switch"
+	{
+		"ro"			"au votat sa schimbe echipele"
+	}
+	"Set Name CT"
+	{
+		"ro"			"CT va rugam setati numele echipei"
+	}
+	"Set Name T"
+	{
+		"ro"			"T's va rugam setati numele echipei"
+	}
+	"Set Name Both"
+	{
+		"ro"			"Echipe, setati-va numele"
+	}
+	"Set Name CMD"
+	{
+		"ro"			"Protru a seta numele scrieti /name NumeEchipa"
+	}
+	"Logos Required"
+	{
+		"ro"			"Match will not lo3 until both team logos have been set"
+	}
+	"Set Logo CT"
+	{
+		"ro"			"CT's please set team logo"
+	}
+	"Set Logo T"
+	{
+		"ro"			"T's please set team logo"
+	}
+	"Set Logo Both"
+	{
+		"ro"			"Teams please set team logos"
+	}
+	"Set Logo CMD"
+	{
+		"ro"			"To set team logo please type /logo"
+	}
+	"Live"
+	{
+		"ro"			"Meciule este acum LIVE!"
+	}
+	"Live on 3"
+	{
+		"ro"			"Live in 3"
+	}
+	"Live on 2"
+	{
+		"ro"			"Live on 2"
+	}
+	"Live on 1"
+	{
+		"ro"			"Live on 1"
+	}
+	"Knife On 3"
+	{
+		"ro"			"Cutite in 3"
+	}
+	"Knife On 2"
+	{
+		"ro"			"Cutite in 2"
+	}
+	"Knife On 1"
+	{
+		"ro"			"Cutite in 1"
+	}
+	"Knife"
+	{
+		"ro"			"Cutite !!"
+	}
+	"Zeus"
+	{
+		"ro"			"ZEUS!"
+	}
+	"Good Luck"
+	{
+		"ro"			"Good Luck, Have Fun!"
+	}
+	"Powered By"
+	{
+		"ro"			"Powered by"
+	}	
+	"Admin_Mrou WarMod Commands"
+	{
+		"ro"			"Comrozi WarMod "
+	}
+	"Admin_Mrou roable ReadyUp"
+	{
+		"ro"			"Porneste ReadyUp"
+	}
+	"Admin_Mrou Disable ReadyUp"
+	{
+		"ro"			"Opreste ReadyUp"
+	}
+	"Admin_Mrou Knife"
+	{
+		"ro"			"Cutit"
+	}
+	"Admin_Mrou Force Start"
+	{
+		"ro"			"Pornire Fortata"
+	}
+	"Admin_Mrou Force rod"
+	{
+		"ro"			"Oprire Fortata"
+	}
+	"Admin_Mrou Cancel Half"
+	{
+		"ro"			"Anularea primei jumatati"
+	}
+	"Admin_Mrou Cancel Match"
+	{
+		"ro"			"Anulare Meci"
+	}
+	"Admin_Mrou Cancel Knife"
+	{
+		"ro"			"Anulare Cutite"
+	}
+	"Admin_Mrou ForceAllReady"
+	{
+		"ro"			"Forteaza pe toti sa fie gata"
+	}
+	"Admin_Mrou ForceAllUnready"
+	{
+		"ro"			"Forteaza pe toti sa nu fie gata"
+	}
+	"Admin_Mrou ForceAllSpectate"
+	{
+		"ro"			"Forteaza pe toti sa fie Spectatori"
+	}
+	"Admin_Mrou Activate WarMod"
+	{
+		"ro"			"WarMod Activat"
+	}
+	"Admin_Mrou Deactivate WarMod"
+	{
+		"ro"			"WarMod Dezactivat"
+	}
+	"Warm Up Active"
+	{
+		"ro"			"Runda de incalzire a inceput!"
+	}
+	"FTP Upload Failed"
+	{
+		"ro"			"Failed uploading demo file. Check the server log files."
+	}
+	"FTP Log Upload Successful"
+	{
+		"ro"			"Log file uploaded successfully"
+	}
+	"FTP Demo Upload Successful"
+	{
+		"ro"			"Demo uploaded successfully"
+	}
+	"Veto Offer Not Confirmed"
+	{
+		"ro"			"Veto offer was not confirmed by the other team"
+	}
+	"Veto No Maps"
+	{
+		"#format"		"{1:i}"
+		"ro"			"No maps in bo{1} list"
+	}
+	"Veto Bo3 Map List"
+	{
+		"#format"		"{1:s},{2:s},{3:s}"
+		"ro"			"Map 1 = {1}, Map 2 = {2}, Map 3 = {3}"
+	}
+	"Veto Bo5 Map List"
+	{
+		"#format"		"{1:s},{2:s},{3:s},{4:s},{5:s}"
+		"ro"			"Map 1 = {1}, Map 2 = {2}, Map 3 = {3}, Map 4 = {4}, Map 5 = {5}"
+	}
+	"Veto Bo2 Map List"
+	{
+		"#format"		"{1:s},{2:s}"
+		"ro"			"First Map = {1}, Second Map = {2}"
+	}
+	"Veto Disabled"
+	{
+		"ro"			"Veto system is disabled"
+	}
+	"Veto Non-player"
+	{
+		"ro"			"You must be on Terrorist or Counter Terrorist to use !veto"
+	}
+	"Veto Offer"
+	{
+		"#format"		"{1:i}"
+		"ro"			"have asked for a veto Bo{1}. Please type !veto to start"
+	}
+	"Veto Captain"
+	{
+		"ro"			"captain will be"
+	}
+	"Veto First Second"
+	{
+		"ro"			"is picking to go first or second in the veto"
+	}
+	"Non-player"
+	{
+		"ro"			"You must be on Terrorist or Counter Terrorist to use this command"
+	}
+	"Default Offer"
+	{
+		"ro"			"have asked for a default match. Please type !default to accept"
+	}
+	"Default Offer Not Confirmed"
+	{
+		"ro"			"Default offer was not confirmed by the other team"
+	}
+	"PlayOut Offer"
+	{
+		"ro"			"have asked for a play out match. Please type !playout to accept"
+	}
+	"PlayOut Offer Not Confirmed"
+	{
+		"ro"			"Play Out offer was not confirmed by the other team"
+	}
+	"OverTime Offer"
+	{
+		"ro"			"have asked for a over time match. Please type !overtime to accept"
+	}
+	"OverTime Offer Not Confirmed"
+	{
+		"ro"			"Over Time offer was not confirmed by the other team"
+	}
+}

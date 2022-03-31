@@ -1,0 +1,540 @@
+"Phrases"
+{
+	"Safe Mode"
+	{
+		"ru"			"Включен безопасный режим. Функция отключена."
+	}
+	"Match Reset"
+	{
+		"ru"			"Матч остановлен админом - счет сброшен"
+	}
+	"Half Reset"
+	{
+		"ru"			"Текущая половина матча сброшена админом!"
+	}
+	"Half Time"
+	{
+		"ru"			"15 раундов прошло. Ожидание смены сторон..."
+	}
+	"Half Time Auto Swap"
+	{
+		"ru"			"15 раундов прошло. Автоматическая смена сторон..."
+	}
+	"Full Time"
+	{
+		"ru"			"Матч окончен. GG"
+	}
+	"Over Time"
+	{
+		"#format"		"{1:i}"
+		"ru"			"Овертайм! MR{1}"
+	}
+	"Over Time Sudden Death"
+	{
+		"ru"			"Овертайм!"
+	}
+	"Playing Out Notice"
+	{
+		"#format"		"{1:i}"
+		"ru"			"Все {1} раундов должны быть сыграны!"
+	}
+	"Ready"
+	{
+		"ru"			"Вы готовы к матчу!"
+	}
+	"Not Ready"
+	{
+		"ru"			"Вы не готовы к матчу!"
+	}
+	"Score Overtime"
+	{
+		"ru"			"Овертайм: "
+	}
+	"Score Overall"
+	{
+		"ru"			"Общий счет: "
+	}
+	"Knife Round Cancelled"
+	{
+		"ru"			"Ножевой раунд остановлен админом"
+	}
+	"Knife Round Inactive"
+	{
+		"ru"			"Ножевой раунд не активирован"
+	}
+	"Ready System Enabled"
+	{
+		"ru"			"Система готовности включена"
+	}
+	"Ready System Disabled"
+	{
+		"ru"			"Система готовности отключена"
+	}
+	"Set Active"
+	{
+		"ru"			"WarMod включен"
+	}
+	"Set Inactive"
+	{
+		"ru"			"WarMod выключен"
+	}
+	"Console Ready"
+	{
+		"ru"			"Консоль не может быть готовой =))"
+	}
+	"Console Not Ready"
+	{
+		"ru"			"Консоль не может быть не готовой =))"
+	}
+	"Not on Team"
+	{
+		"ru"			"Вы должны быть в одной из команд для этого"
+	}
+	"Already Ready"
+	{
+		"ru"			"Вы уже готовы к матчу"
+	}
+	"Already Not Ready"
+	{
+		"ru"			"Вы уже были не готовы к матчу"
+	}
+	"Forced Ready"
+	{
+		"ru"			"Все игроки отмечены, как готовые (принудительно)"
+	}
+	"Forced Not Ready"
+	{
+		"ru"			"Все игроки отмечены, как НЕ готовые (принудительно)"
+	}
+	"Forced Spectate"
+	{
+		"ru"			"Вынуждены все игроки быть зрителем"
+	}
+	"Match Not In Progress"
+	{
+		"ru"			"Режим матча не активен"
+	}
+	"T Winning"
+	{
+		"#format"		"{1:s}"
+		"ru"			"{1} выигрывают"
+	}
+	"Tied"
+	{
+		"ru"			"Ничья"
+	}
+	"CT Winning"
+	{
+		"#format"		"{1:s}"
+		"ru"			"{1} выигрывают"
+	}
+	"Change Teams Midgame"
+	{
+		"ru"			"Заблокировано - Идет матч"
+	}
+	"Maximum Players"
+	{
+		"ru"			"В командах максимальное количество игроков"
+	}
+	"Nightvision Blocked"
+	{
+		"ru"			"Прибор ночного видения недоступен"
+	}
+	"Grenades Blocked"
+	{
+		"ru"			"В тренировочном раунде гранаты не доступны"
+	}
+	"Ready System"
+	{
+		"ru"			"Система готовности"
+	}
+	"Match Begin Msg"
+	{
+		"#format"		"{1:i}"
+		"ru"			"Матч начнется, как только 10 игроков будут готовы"
+	}
+	"No Players Found"
+	{
+		"ru"			"Игроки не найдены"
+	}
+	"Info Not Ready"
+	{
+		"ru"			"Не готовы: "
+	}
+	"Info Exit"
+	{
+		"ru"			"Выход: "
+	}
+	"Ready System Disabled2"
+	{
+		"ru"			"Cистема готовности отключена"
+	}
+	"ShowInfo Disabled"
+	{
+		"ru"			"Готовые системы отображения не включена" 
+	}
+	"Match Is Live"
+	{
+		"ru"			"Матч начался"
+	}
+	"WarMod Inactive"
+	{
+		"ru"			"WarMod отключен"
+	}
+	"Change T Name"
+	{
+		"#format"		"{1:s}"
+		"ru"			"'{1}' - команда террористов"
+	}
+	"Change CT Name"
+	{
+		"#format"		"{1:s}"
+		"ru"			"'{1}' - команда контров"
+	}
+	"Console"
+	{
+		"ru"			"Console: "
+	}
+	"Available Commands"
+	{
+		"ru"			"Доступные команды"
+	}
+	"No Permission"
+	{
+		"ru"			"У вас нет прав для этой команды"
+	}
+	"Set Minready"
+	{
+		"#format"		"{1:i}" 
+		"ru"			"У вас нет прав для этой команды"
+	}
+	"Set Maxrounds"
+	{
+		"#format"		"{1:i}" 
+		"ru"			"wm_max_rounds установлена в значение {1}"
+	}
+	"WarMod Rcon Only"
+	{
+		"ru"			"Используйте RCON для этих команд"
+	}
+	"Set Password"
+	{
+		"#format"		"{1:s}"
+		"ru"			"sv_password установлена в значение '{1}'"
+	}
+	"Autokick"
+	{
+		"ru"			"Вы автоматически удалены с сервера"
+	}
+	"Names Required"
+	{
+		"ru"			"Матч lo3 не будет до тех пор, пока обе команды имена были установлены"
+	}
+	"Pause Freeze Time"
+	{
+		"ru"			"Игра будет приостановлена на время заморозить"
+	}
+	"Pause Round End"
+	{
+		"ru"			"Игра будет приостановлена в конце раунда"
+	}
+	"Pause Limit"
+	{
+		"ru"			"Вы уже использовали все паузы"
+	}
+	"Pause Non-player"
+	{
+		"ru"			"Вы должны быть на T или CT /pause"
+	}
+	"Pause Offer"
+	{
+		"ru"			"попросил паузу. Пожалуйста, введите /pause для паузы матч"
+	}
+	"Pause Not Enabled"
+	{
+		"ru"			"sv_pauseable имеет значение 0. Не включена функция паузы"
+	}
+	"Unpause Notice"
+	{
+		"ru"			"Матч в настоящее время приостановлена. Пожалуйста введите /unpause , чтобы возобновить матч"
+	}
+	"Unpause Offer"
+	{
+		"ru"			"попросили возобновить игру. Пожалуйста введите /unpause , чтобы возобновить матч"
+	}
+	"Unpaused Match"
+	{
+		"ru"			"возобновил матч"
+	}
+	"Unpause Non-player"
+	{
+		"ru"			"Вы должны быть на T или КТ использовать /unpause"
+	}
+	"Pause Not Confirmed"
+	{
+		"ru"			"Предложение паузы не было подтверждено другой команды"
+	}
+	"Unpause Timer"
+	{
+		"ru"			"секунд до игры является автоматически ресумед"
+	}
+	"Unpause Auto"
+	{
+		"ru"			"Матч получился авто возобновления смены, потому что срок достиг"
+	}
+	"Auto Pause Notice"
+	{
+		"#format"		"{1:s}"
+		"ru"			"Match will be paused because a player from '{1}' has left the server"
+	}
+	"Auto Unpause Notice"
+	{
+		"#format"		"{1:s}"
+		"ru"			"Match has been auto paused because a player from '{1}' has left the server"
+	}
+	"Paused Via Rcon"
+	{
+		"ru"			"Сервер не приостановлена или было приостановлено через rcon"
+	}
+	"Knife Vote Team"
+	{
+		"ru"			"голосование остаться или замены команды"
+	}
+	"Knife Vote"
+	{
+		"ru"			"Пожалуйста, введите /stay или /switch"
+	}
+	"Knife Stay"
+	{
+		"ru"			"проголосовали остановиться"
+	}
+	"Knife Switch"
+	{
+		"ru"			"проголосовали для переключения команд"
+	}
+	"Set Name CT"
+	{
+		"ru"			"Контр-террористов Пожалуйста, установите имя команды"
+	}
+	"Set Name T"
+	{
+		"ru"			"Террористы Пожалуйста, установите имя команды"
+	}
+	"Set Name Both"
+	{
+		"ru"			"Команды, пожалуйста, установите имя команды"
+	}
+	"Set Name CMD"
+	{
+		"ru"			"Чтобы задать команды, пожалуйста, введите имя /name Название команды"
+	}
+	"Logos Required"
+	{
+		"ru"			"Match will not lo3 until both team logos have been set"
+	}
+	"Set Logo CT"
+	{
+		"ru"			"CT's please set team logo"
+	}
+	"Set Logo T"
+	{
+		"ru"			"T's please set team logo"
+	}
+	"Set Logo Both"
+	{
+		"ru"			"Teams please set team logos"
+	}
+	"Set Logo CMD"
+	{
+		"ru"			"To set team logo please type /logo"
+	}
+	"Live"
+	{
+		"ru"			"Матч в настоящее время Жить!"
+	}
+	"Live on 3"
+	{
+		"ru"			"Жить на 3"
+	}
+	"Live on 2"
+	{
+		"ru"			"Жить на 2"
+	}
+	"Live on 1"
+	{
+		"ru"			"Жить на 1"
+	}
+	"Knife On 3"
+	{
+		"ru"			"Нож на 3"
+	}
+	"Knife On 2"
+	{
+		"ru"			"Нож на 2"
+	}
+	"Knife On 1"
+	{
+		"ru"			"Нож на 1"
+	}
+	"Knife"
+	{
+		"ru"			"Нож!"
+	}
+	"Zeus"
+	{
+		"ru"			"ZEUS!"
+	}
+	"Good Luck"
+	{
+		"ru"			"Удачи, получайте удовольствие!"
+	}
+	"Powered By"
+	{
+		"ru"			"механизированный"
+	}	
+	"Admin_Menu WarMod Commands"
+	{
+		"ru"			"Управление матчем (WarMod)"
+	}
+	"Admin_Menu Enable ReadyUp"
+	{
+		"ru"			"Включить систему готовности"
+	}
+	"Admin_Menu Disable ReadyUp"
+	{
+		"ru"			"Отключить систему готовности"
+	}
+	"Admin_Menu Knife"
+	{
+		"ru"			"Ножевой раунд"
+	}
+	"Admin_Menu Force Start"
+	{
+		"ru"			"Начать матч!"
+	}
+	"Admin_Menu Force End"
+	{
+		"ru"			"Окончить матч!"
+	}
+	"Admin_Menu Cancel Half"
+	{
+		"ru"			"Отменить половину матча"
+	}
+	"Admin_Menu Cancel Match"
+	{
+		"ru"			"Отменить матч"
+	}
+	"Admin_Menu Cancel Knife"
+	{
+		"ru"			"Отменить ножевой раунд"
+	}
+	"Admin_Menu ForceAllReady"
+	{
+		"ru"			"Принудительная готовность"
+	}
+	"Admin_Menu ForceAllUnready"
+	{
+		"ru"			"Сброс готовности"
+	}
+	"Admin_Menu ForceAllSpectate"
+	{
+		"ru"			"Силы Все быть зрителем" 
+	}
+	"Admin_Menu Activate WarMod"
+	{
+		"ru"			"Включить WarmMod"
+	}
+	"Admin_Menu Deactivate WarMod"
+	{
+		"ru"			"Отключить WarMod"
+	}
+	"Warm Up Active"
+	{
+		"ru"			"Разогреть активным"
+	}
+	"FTP Upload Failed"
+	{
+		"ru"			"Failed uploading demo file. Check the server log files."
+	}
+	"FTP Log Upload Successful"
+	{
+		"ru"			"Log file uploaded successfully"
+	}
+	"FTP Demo Upload Successful"
+	{
+		"ru"			"Demo uploaded successfully"
+	}
+	"Veto Offer Not Confirmed"
+	{
+		"ru"			"Veto offer was not confirmed by the other team"
+	}
+	"Veto No Maps"
+	{
+		"#format"		"{1:i}"
+		"ru"			"No maps in bo{1} list"
+	}
+	"Veto Bo3 Map List"
+	{
+		"#format"		"{1:s},{2:s},{3:s}"
+		"ru"			"Map 1 = {1}, Map 2 = {2}, Map 3 = {3}"
+	}
+	"Veto Bo5 Map List"
+	{
+		"#format"		"{1:s},{2:s},{3:s},{4:s},{5:s}"
+		"ru"			"Map 1 = {1}, Map 2 = {2}, Map 3 = {3}, Map 4 = {4}, Map 5 = {5}"
+	}
+	"Veto Bo2 Map List"
+	{
+		"#format"		"{1:s},{2:s}"
+		"ru"			"First Map = {1}, Second Map = {2}"
+	}
+	"Veto Disabled"
+	{
+		"ru"			"Veto system is disabled"
+	}
+	"Veto Non-player"
+	{
+		"ru"			"You must be on Terrorist or Counter Terrorist to use !veto"
+	}
+	"Veto Offer"
+	{
+		"#format"		"{1:i}"
+		"ru"			"have asked for a veto Bo{1}. Please type !veto to start"
+	}
+	"Veto Captain"
+	{
+		"ru"			"captain will be"
+	}
+	"Veto First Second"
+	{
+		"ru"			"is picking to go first or second in the veto"
+	}
+	"Non-player"
+	{
+		"ru"			"You must be on Terrorist or Counter Terrorist to use this command"
+	}
+	"Default Offer"
+	{
+		"ru"			"have asked for a default match. Please type !default to accept"
+	}
+	"Default Offer Not Confirmed"
+	{
+		"ru"			"Default offer was not confirmed by the other team"
+	}
+	"PlayOut Offer"
+	{
+		"ru"			"have asked for a play out match. Please type !playout to accept"
+	}
+	"PlayOut Offer Not Confirmed"
+	{
+		"ru"			"Play Out offer was not confirmed by the other team"
+	}
+	"OverTime Offer"
+	{
+		"ru"			"have asked for a over time match. Please type !overtime to accept"
+	}
+	"OverTime Offer Not Confirmed"
+	{
+		"ru"			"Over Time offer was not confirmed by the other team"
+	}
+}

@@ -1,0 +1,540 @@
+"Phrases"
+{
+	"Safe Mode"
+	{
+		"chi"			"启用安全模式。功能被禁用。"
+	}
+	"Match Reset"
+	{
+		"chi"			"比赛重置 - 比赛没有开始!"
+	}
+	"Half Reset"
+	{
+		"chi"			"半场比赛重置 - 比赛没有开始!"
+	}
+	"Half Time"
+	{
+		"chi"			"上半场结束! 请交换队伍..."
+	}
+	"Half Time Auto Swap"
+	{
+		"chi"			"上半场结束! 正在交换队伍..."
+	}
+	"Full Time"
+	{
+		"chi"			"比赛结束!"
+	}
+	"Over Time"
+	{
+		"#format"		"{1:i}"
+		"chi"			"加时赛! MR{1}"
+	}
+	"Over Time Sudden Death"
+	{
+		"chi"			"加时赛! "
+	}
+	"Playing Out Notice"
+	{
+		"#format"		"{1:i}"
+		"chi"			"注意: 必须打完全部 {1} 局!"
+	}
+	"Ready"
+	{
+		"chi"			"你已准备完毕"
+	}
+	"Not Ready"
+	{
+		"chi"			"你未准备完毕"
+	}
+	"Score Overtime"
+	{
+		"chi"			"加时赛: "
+	}
+	"Score Overall"
+	{
+		"chi"			"总比分: "
+	}
+	"Knife Round Cancelled"
+	{
+		"chi"			"刀局被取消 - 比赛没有开始"
+	}
+	"Knife Round Inactive"
+	{
+		"chi"			"刀局没有开始"
+	}
+	"Ready System Enabled"
+	{
+		"chi"			"准备系统 - 已启用"
+	}
+	"Ready System Disabled"
+	{
+		"chi"			"准备系统 - 已禁用"
+	}
+	"Set Active"
+	{
+		"chi"			"设置为启用"
+	}
+	"Set Inactive"
+	{
+		"chi"			"设置为未启用"
+	}
+	"Console Ready"
+	{
+		"chi"			"服务器准备完毕"
+	}
+	"Console Not Ready"
+	{
+		"chi"			"服务器为未准备完毕"
+	}
+	"Not on Team"
+	{
+		"chi"			"你没有加入一个队伍"
+	}
+	"Already Ready"
+	{
+		"chi"			"你已准备完毕"
+	}
+	"Already Not Ready"
+	{
+		"chi"			"你已经被标记为未准备完毕"
+	}
+	"Forced Ready"
+	{
+		"chi"			"强制所有玩家准备完毕"
+	}
+	"Forced Not Ready"
+	{
+		"chi"			"强制所有玩家未准备完毕"
+	}
+	"Forced Spectate"
+	{
+		"chi"			"强制所有玩家进入到观看模式"
+	}
+	"Match Not In Progress"
+	{
+		"chi"			"比赛未开始进行!"
+	}
+	"T Winning"
+	{
+		"#format"		"{1:s}"
+		"chi"			"{1} 处于领先"
+	}
+	"Tied"
+	{
+		"chi"			"双方比分持平"
+	}
+	"CT Winning"
+	{
+		"#format"		"{1:s}"
+		"chi"			"{1} 处于领先"
+	}
+	"Change Teams Midgame"
+	{
+		"chi"			"操作被禁用 - 比赛正在进行"
+	}
+	"Maximum Players"
+	{
+		"chi"			"队伍打到玩家最大数量限制"
+	}
+	"Nightvision Blocked"
+	{
+		"chi"			"夜视系统被禁用"
+	}
+	"Grenades Blocked"
+	{
+		"chi"			"在热身赛中禁止使用手雷"
+	}
+	"Ready System"
+	{
+		"chi"			"比赛准备系统"
+	}
+	"Match Begin Msg"
+	{
+		"#format"		"{1:i}"
+		"chi"			"比赛将在 {1} 玩家准备完毕后开始"
+	}
+	"No Players Found"
+	{
+		"chi"			"未发现玩家"
+	}
+	"Info Not Ready"
+	{
+		"chi"			"未准备完毕:"
+	}
+	"Info Exit"
+	{
+		"chi"			"退出"
+	}
+	"Ready System Disabled2"
+	{
+		"chi"			"准备系统未启用"
+	}
+	"ShowInfo Disabled"
+	{
+		"chi"			"准备系统的显示未启用"
+	}
+	"Match Is Live"
+	{
+		"chi"			"比赛开始"
+	}
+	"WarMod Inactive"
+	{
+		"chi"			"WarMod比赛插件未启用"
+	}
+	"Change T Name"
+	{
+		"#format"		"{1:s}"
+		"chi"			"恐怖分子的名称设为 '{1}'"
+	}
+	"Change CT Name"
+	{
+		"#format"		"{1:s}"
+		"chi"			"反恐精英的名称设为 '{1}'"
+	}
+	"Console"
+	{
+		"chi"			"Warmod服务器: "
+	}
+	"Available Commands"
+	{
+		"chi"			"可用的客户端命令"
+	}
+	"No Permission"
+	{
+		"chi"			"你无权使用这个命令"
+	}
+	"Set Minready"
+	{
+		"#format"		"{1:i}"
+		"chi"			"wm_min_ready 设置为 {1}"
+	}
+	"Set Maxrounds"
+	{
+		"#format"		"{1:i}"
+		"chi"			"wm_max_rounds 设置为 {1}"
+	}
+	"WarMod Rcon Only"
+	{
+		"chi"			"管理员指令仅限于RCON使用"
+	}
+	"Set Password"
+	{
+		"#format"		"{1:s}"
+		"chi"			"sv_password 设置为 '{1}'"
+	}
+	"Autokick"
+	{
+		"chi"			"你已经被自动踢出服务器"
+	}
+	"Names Required"
+	{
+		"chi"			"比赛只有在双方队伍名字设置完成后才能lo3"
+	}
+	"Pause Freeze Time"
+	{
+		"chi"			"比赛将在冻结时间内暂停"
+	}
+	"Pause Round End"
+	{
+		"chi"			"比赛将在本局结束后暂停"
+	}
+	"Pause Limit"
+	{
+		"chi"			"你已经用尽所有的暂停机会"
+	}
+	"Pause Non-player"
+	{
+		"chi"			"你只能在当T或者CT的时候才能使用/pause命令"
+	}
+	"Pause Offer"
+	{
+		"chi"			"请求暂停. 请输入 /pause 来暂停比赛"
+	}
+	"Pause Not Enabled"
+	{
+		"chi"			"sv_pauseable 设置为 0. 暂停功能没有被激活"
+	}
+	"Unpause Notice"
+	{
+		"chi"			"比赛被暂停. 请输入 /unpause 恢复比赛"
+	}
+	"Unpause Offer"
+	{
+		"chi"			"请求继续比赛. 请输入 /unpause 来恢复比赛"
+	}
+	"Unpaused Match"
+	{
+		"chi"			"继续比赛"
+	}
+	"Unpause Non-player"
+	{
+		"chi"			"你只能在当T或者CT的时候才能使用/unpause命令"
+	}
+	"Pause Not Confirmed"
+	{
+		"chi"			"对方不同意暂停比赛"
+	}
+	"Unpause Timer"
+	{
+		"chi"			"秒后将继续比赛"
+	}
+	"Unpause Auto"
+	{
+		"chi"			"由于暂停时间到，比赛继续进行"
+	}
+	"Auto Pause Notice"
+	{
+		"#format"		"{1:s}"
+		"chi"			"Match will be paused because a player from '{1}' has left the server"
+	}
+	"Auto Unpause Notice"
+	{
+		"#format"		"{1:s}"
+		"chi"			"Match has been auto paused because a player from '{1}' has left the server"
+	}
+	"Paused Via Rcon"
+	{
+		"chi"			"服务器没有暂停或者是通过RCON远程暂停比赛"
+	}
+	"Knife Vote Team"
+	{
+		"chi"			"正在投票，你可以选择stay(保持)或者swap(交换)当前队伍"
+	}
+	"Knife Vote"
+	{
+		"chi"			"请键入 /stay 或 /switch"
+	}
+	"Knife Stay"
+	{
+		"chi"			"投赞成票留"
+	}
+	"Knife Switch"
+	{
+		"chi"			"投赞成票要转队了。"
+	}
+	"Set Name CT"
+	{
+		"chi"			"请设置反恐精英的队伍名字"
+	}
+	"Set Name T"
+	{
+		"chi"			"请设置恐怖分子的队伍名字"
+	}
+	"Set Name Both"
+	{
+		"chi"			"设置队伍名字"
+	}
+	"Set Name CMD"
+	{
+		"chi"			"输入 /name 设置队伍名字"
+	}
+	"Logos Required"
+	{
+		"chi"			"Match will not lo3 until both team logos have been set"
+	}
+	"Set Logo CT"
+	{
+		"chi"			"CT's please set team logo"
+	}
+	"Set Logo T"
+	{
+		"chi"			"T's please set team logo"
+	}
+	"Set Logo Both"
+	{
+		"chi"			"Teams please set team logos"
+	}
+	"Set Logo CMD"
+	{
+		"chi"			"To set team logo please type /logo"
+	}
+	"Live"
+	{
+		"chi"			"比赛开始！"
+	}
+	"Live on 3"
+	{
+		"chi"			"刷新后比赛开始"
+	}
+	"Live on 2"
+	{
+		"chi"			"刷新后比赛开始"
+	}
+	"Live on 1"
+	{
+		"chi"			"刷新后比赛开始"
+	}
+	"Knife On 3"
+	{
+		"chi"			"刷新后刀局"
+	}
+	"Knife on 2"
+	{
+		"chi"			"刷新后刀局"
+	}
+	"Knife on 1"
+	{
+		"chi"			"刷新后刀局"
+	}
+	"Knife"
+	{
+		"chi"			"刀局 ！"
+	}
+	"Zeus"
+	{
+		"chi"			"ZEUS!"
+	}
+	"Good Luck"
+	{
+		"chi"			"祝你好運，玩得開心 ！"
+	}
+	"Powered By"
+	{
+		"chi"			"提供者"
+	}	
+	"Admin_Menu WarMod Commands"
+	{
+		"chi"			"WarMod命令"
+	}
+	"Admin_Menu Enable ReadyUp"
+	{
+		"chi"			"启用准备系统"
+	}
+	"Admin_Menu Disable ReadyUp"
+	{
+		"chi"			"禁用准备系统"
+	}
+	"Admin_Menu Knife"
+	{
+		"chi"			"刀局"
+	}
+	"Admin_Menu Force Start"
+	{
+		"chi"			"强制开始"
+	}
+	"Admin_Menu Force End"
+	{
+		"chi"			"强制结束"
+	}
+	"Admin_Menu Cancel Half"
+	{
+		"chi"			"取消半场"
+	}
+	"Admin_Menu Cancel Match"
+	{
+		"chi"			"取消比赛"
+	}
+	"Admin_Menu Cancel Knife"
+	{
+		"chi"			"取消刀局"
+	}
+	"Admin_Menu ForceAllReady"
+	{
+		"chi"			"强制所有人准备"
+	}
+	"Admin_Menu ForceAllUnready"
+	{
+		"chi"			"强制所有人未准备"
+	}
+	"Admin_Menu ForceAllSpectate"
+	{
+		"chi"			"强制所有人观看"
+	}
+	"Admin_Menu Activate WarMod"
+	{
+		"chi"			"打开 WarMod"
+	}
+	"Admin_Menu Deactivate WarMod"
+	{
+		"chi"			"关闭 WarMod"
+	}
+	"Warm Up Active"
+	{
+		"chi"			"热身活动"
+	}
+	"FTP Upload Failed"
+	{
+		"chi"			"上传demo失败，请检查服务器日志."
+	}
+	"FTP Log Upload Successful"
+	{
+		"chi"			"日志文件上传成功"
+	}
+	"FTP Demo Upload Successful"
+	{
+		"chi"			"DEMO文件上传成功"
+	}
+	"Veto Offer Not Confirmed"
+	{
+		"chi"			"多图比赛邀请被对方拒绝"
+	}
+	"Veto No Maps"
+	{
+		"#format"		"{1:i}"
+		"chi"			"没有地图在bo{1}列表里"
+	}
+	"Veto Bo3 Map List"
+	{
+		"#format"		"{1:s},{2:s},{3:s}"
+		"chi"			"第一张图 = {1}, 第二张图 = {2}, 第三张图 = {3}"
+	}
+	"Veto Bo5 Map List"
+	{
+		"#format"		"{1:s},{2:s},{3:s},{4:s},{5:s}"
+		"chi"			"Map 1 = {1}, Map 2 = {2}, Map 3 = {3}, Map 4 = {4}, Map 5 = {5}"
+	}
+	"Veto Bo2 Map List"
+	{
+		"#format"		"{1:s},{2:s}"
+		"chi"			"第一张图 = {1}, 第二张图 = {2}"
+	}
+	"Veto Disabled"
+	{
+		"chi"			"多图比赛模式被禁用"
+	}
+	"Veto Non-player"
+	{
+		"chi"			"你不许在游戏内才能使用!veto命令"
+	}
+	"Veto Offer"
+	{
+		"#format"		"{1:i}"
+		"chi"			"对方想进行多图比赛，请输入!veto 来启动系统 bo{1}"
+	}
+	"Veto Captain"
+	{
+		"chi"			"队长是"
+	}
+	"Veto First Second"
+	{
+		"chi"			"is picking to go first or second in the veto"
+	}
+	"Non-player"
+	{
+		"chi"			"You must be on Terrorist or Counter Terrorist to use this command"
+	}
+	"Default Offer"
+	{
+		"chi"			"have asked for a default match. Please type !default to accept"
+	}
+	"Default Offer Not Confirmed"
+	{
+		"chi"			"Default offer was not confirmed by the other team"
+	}
+	"PlayOut Offer"
+	{
+		"chi"			"have asked for a play out match. Please type !playout to accept"
+	}
+	"PlayOut Offer Not Confirmed"
+	{
+		"chi"			"Play Out offer was not confirmed by the other team"
+	}
+	"OverTime Offer"
+	{
+		"chi"			"have asked for a over time match. Please type !overtime to accept"
+	}
+	"OverTime Offer Not Confirmed"
+	{
+		"chi"			"Over Time offer was not confirmed by the other team"
+	}
+}
