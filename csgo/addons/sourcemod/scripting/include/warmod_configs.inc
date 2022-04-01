@@ -187,7 +187,7 @@ static void Gamemode_Competitive_Server(char[] WM_VERSION)
 	WriteFileLine(file, "mp_freezetime 12                        	// How many seconds to keep players frozen when the round starts");
 	WriteFileLine(file, "mp_friendlyfire 1                       	// Allows team members to injure other members of their team");
 	WriteFileLine(file, "mp_halftime 1					// Determines whether or not the match has a team-swapping halftime event.");
-	WriteFileLine(file, "mp_halftime_duration 15				// Number of seconds that halftime lasts");
+	WriteFileLine(file, "mp_halftime_duration 2				// Number of seconds that halftime lasts");
 	WriteFileLine(file, "mp_join_grace_time 30				// Number of seconds after round start to allow a player to join a game");
 	WriteFileLine(file, "mp_limitteams 0                         	// Max # of players 1 team can have over another (0 disables check)");
 	WriteFileLine(file, "mp_logdetail 3                          	// Logs attacks.  Values are: 0=off, 1=enemy, 2=teammate, 3=both)");
@@ -206,7 +206,7 @@ static void Gamemode_Competitive_Server(char[] WM_VERSION)
 	WriteFileLine(file, "mp_warmuptime 1					// If true, there will be a warmup period/round at the start of each match to allow");
 	WriteFileLine(file, "mp_weapons_allow_map_placed 1             	// If this convar is set, when a match starts, the game will not delete weapons placed in the map.");
 	WriteFileLine(file, "mp_weapons_allow_zeus 1				// Determines whether the Zeus is purchasable or not.");
-	WriteFileLine(file, "mp_win_panel_display_time 15	                // The amount of time to show the win panel between matches / halfs");
+	WriteFileLine(file, "mp_win_panel_display_time 3	                // The amount of time to show the win panel between matches / halfs");
 	WriteFileLine(file, "");
 	WriteFileLine(file, "spec_freeze_time 5.0                            // Time spend frozen in observer freeze cam.");
 	WriteFileLine(file, "spec_freeze_panel_extended_time 0               // Time spent with the freeze panel still up after observer freeze cam is done.");
@@ -1037,6 +1037,10 @@ static void CreateTranslationFile()
 	WriteFileLine(file, "	\"Admin_Menu Knife\"");
 	WriteFileLine(file, "	{");
 	WriteFileLine(file, "		\"en\"			\"Knife\"");
+	WriteFileLine(file, "	}");
+	WriteFileLine(file, "	\"Admin_Menu Knife Custom\"");
+	WriteFileLine(file, "	{");
+	WriteFileLine(file, "		\"en\"			\"Knife Custom\"");
 	WriteFileLine(file, "	}");
 	WriteFileLine(file, "	\"Admin_Menu Force Start\"");
 	WriteFileLine(file, "	{");
