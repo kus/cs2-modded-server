@@ -408,6 +408,10 @@
 	{
 		"en"			"Knife"
 	}
+	"Admin_Menu Knife Custom"
+	{
+		"en"			"Knife Custom"
+	}
 	"Admin_Menu Force Start"
 	{
 		"en"			"Force Start"
