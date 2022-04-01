@@ -177,11 +177,11 @@
         "level_index" "28"
     }
 
+    // not the weapons, but world entities
     "prop_physics" {
         "index" "29"
         "level_index" "29"
     }
-
     "prop_physics_multiplayer" {
         "index" "30"
         "level_index" "30"

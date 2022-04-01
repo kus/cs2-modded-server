@@ -122,6 +122,8 @@ public GG_ConfigKeyValue(const String:key[], const String:value[])
                 SetConVarInt(g_Cvar_MultiLevelAmount, g_Cfg_MultiLevelAmount);
             } else if(strcmp("KnifeProMaxDiff", key, false) == 0) {
                 g_Cfg_KnifeProMaxDiff = StringToInt(value);
+            } else if(strcmp("KnifeProMaxDiffIsBi", key, false) == 0) {
+                g_Cfg_KnifeProMaxDiffIsBi = bool:StringToInt(value);
             } else if(strcmp("HandicapSkipBots", key, false) == 0) {
                 g_Cfg_HandicapSkipBots = bool:StringToInt(value);
             } else if(strcmp("KnifeProRecalcPoints", key, false) == 0) {

@@ -33,7 +33,7 @@ Mod | Version | Why
 --- | --- | ---
 [Metamod:Source](http://www.sourcemm.net/downloads.php?branch=stable) | `1.11.0-1145` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
 [SourceMod](https://www.sourcemod.net/downloads.php?branch=stable) | `1.10.0-6522` | SourceMod is server modification for any game that runs on the Half-Life 2 engine
-[GunGame](https://forums.alliedmods.net/showthread.php?t=93977) | `1.2.16` | Kill an enemy with the current weapon to get next weapon, first person to go through every weapon wins
+[GunGame](https://github.com/nvrm/sourcemod-plugin-gungame) | `1.2.16` | Kill an enemy with the current weapon to get next weapon, first person to go through every weapon wins
 [DeathMatch](https://forums.alliedmods.net/showthread.php?t=103242) | `1.8.0` | Required for GunGame to enable spawn protection and other things to the game
 [Quake Sounds](https://forums.alliedmods.net/showthread.php?t=224316) | `3.5.0` | Plays sounds and displays text at certain events sometimes based on the number of kills
 [NoBlock](https://forums.alliedmods.net/showthread.php?t=91617) | `1.4.2` | Removes player vs player collisions

@@ -295,7 +295,7 @@ public OnClientDisconnect(client)
     if ( !IsFakeClient(client) )
     {
         decl String:steamid[64];
-        GetClientAuthString(client, steamid, sizeof(steamid));
+        GetClientAuthId(client, AuthId_Steam2, steamid, sizeof(steamid));
         SetTrieValue(PlayerLevelsBeforeDisconnect, steamid, PlayerLevel[client]);
     }
     

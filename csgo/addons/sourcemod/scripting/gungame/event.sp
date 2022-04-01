@@ -342,10 +342,22 @@ public _PlayerDeath(Handle:event, const String:name[], bool:dontBroadcast)
                 break;
             }
 
-            if ( g_Cfg_KnifeProMaxDiff && ( g_Cfg_KnifeProMaxDiff < level - VictimLevel ) )
+            if ( g_Cfg_KnifeProMaxDiff && (g_WeaponLevelIndex[WeaponOrderId[VictimLevel]] != g_WeaponLevelIdKnife) )
             {
-                CPrintToChatEx(Killer, Victim, "%t", "You can not steal level from %s, your levels difference is more then %d", vName, g_Cfg_KnifeProMaxDiff);
-                break;
+                new LevelDiff = level - VictimLevel;
+                new BitMask;
+
+                if ( g_Cfg_KnifeProMaxDiffIsBi ) {
+                    // Get absolute value
+                    BitMask = LevelDiff >> 31;
+                    LevelDiff = (BitMask ^ LevelDiff) - BitMask;
+                }
+
+                if ( g_Cfg_KnifeProMaxDiff < LevelDiff )
+                {
+                    CPrintToChatEx(Killer, Victim, "%t", "You can not steal level from %s, your levels difference is more then %d", vName, g_Cfg_KnifeProMaxDiff);
+                    break;
+                }
             }
 
             if ( !g_Cfg_DisableLevelDown ) {
@@ -701,6 +713,11 @@ public _BombState(Handle:event, const String:name[], bool:dontBroadcast)
     {
         return;
     }
+
+    if ( MaxLevelPerRound && CurrentLevelPerRound[client] >= MaxLevelPerRound )
+    {
+        return;
+    }
     
     /* Give them a level if give level for objective */
     new oldLevel = PlayerLevel[client];
@@ -727,6 +744,14 @@ public _BombState(Handle:event, const String:name[], bool:dontBroadcast)
     {
         CPrintToChat(client, "%t", "You gained level by defusing the bomb", subtext);
     }
+
+    CurrentLevelPerRound[client]++;
+                   
+    if ( TurboMode ) {
+        UTIL_GiveNextWeapon(client, newLevel, false);
+    }
+
+    CheckForTripleLevel(client);
 }
 
 public _HostageKilled(Handle:event, const String:name[], bool:dontBroadcast)

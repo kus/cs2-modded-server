@@ -319,11 +319,25 @@
         "KnifeProRecalcPoints" "0"
         
         /**
-         * Maximum level difference between players to allow steal level 
+         * Maximum level difference between players to allow steal level.
+         * By default does not protect victims who are >N levels higher than
+         * the killer. 
+         * See also: KnifeProMaxDiffIsBi
+         *
          * 0 - Disabled
          * 1..N - Level difference between killer and victim
          */
         "KnifeProMaxDiff" "0"
+
+        /**
+         * Also apply KnifeProMaxDiff to victims who are >N levels higher than
+         * the killer (fully bidirectional difference check).
+         * See also: KnifeProMaxDiff
+         *
+         * 0 - Disable fully bidirectional difference check
+         * 1 - Enable fully bidirectional difference check
+         */
+        "KnifeProMaxDiffIsBi" "0"
 
         /**
          * Disable level down on knifepro.

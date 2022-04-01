@@ -32,7 +32,7 @@ public OnPluginStart()
 {
     LoadTranslations("gungame_afk");
     
-    OffsetOrigin = FindSendPropOffs("CBaseEntity", "m_vecOrigin");
+    OffsetOrigin = FindSendPropInfo("CBaseEntity", "m_vecOrigin");
 
     if(OffsetOrigin == INVALID_OFFSET)
     {

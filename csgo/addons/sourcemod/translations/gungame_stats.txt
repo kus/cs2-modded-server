@@ -4,7 +4,6 @@
         {
                 "#format"    "{1:d}"
             "en"    "{1} Win"
-			"fr"    "{1} Victoire"
             "ru"    "{1} победа"
 			"de"    "{1} Sieg"
 			"pt"    "{1} Vitoria"
@@ -16,7 +15,6 @@
         {
                 "#format"    "{1:d}"
             "en"    "{1} Wins"
-			"fr"    "{1} Victoires"
             "ru"    "{1} победа"
 			"de"    "{1} Siege"
 			"pt"    "{1} Vitorias"
@@ -37,7 +35,6 @@
         {
                 "#format"    "{1:d}"
             "en"    "{1} Wins"
-			"fr"    "{1} Victoires"
             "ru"    "{1} побед"
 			"de"    "{1} Siege"
 			"pt"    "{1} Vitorias"
@@ -48,7 +45,6 @@
     {
         "#format"    "{1:s}"
         "en"    "{teamcolor}{1} {green}has no wins yet"
-		"fr"    "{teamcolor}{1} {green}n'a pas encore de victoire"
         "ru"    "{teamcolor}{1} {green}ещё не имеет побед"
 		"de"    "{teamcolor}{1} {green}hat aktuell keine Siege"
 		"pt"    "{teamcolor}{1} {green}ainda não tem vitorias"
@@ -59,7 +55,6 @@
     {
         "#format"    "{1:s},{2:d},{3:s},{4:d}"
         "en"    "{teamcolor}{1} {green}is on {default}{2} {green}place from {default}{4} {green}with {3}"
-		"fr"    "{teamcolor}{1} {green}est en {default}{2} {green}place de {default}{4} {green}avec {3}"
         "ru"    "{teamcolor}{1} {green}занимает {default}{2} {green}место из {default}{4} {green}с {3}"
 		"de"    "{teamcolor}{1} {green}ist auf dem {default}{2} {green}Platz von {default}{4} {green}mit {3}"
 		"pt"    "{teamcolor}{1} {green}está no {default}{2} {green}lugar de {default}{4} {green}com {3}"
@@ -70,7 +65,6 @@
         {
                 "#format"    "{1:d}"
             "en"    "{default}{1} {green}win"
-			"fr"    "{default}{1} {green}victoire"
             "ru"    "{default}{1} {green}победой"
 			"de"    "{default}{1} {green}Sieg"
 			"pt"    "{default}{1} {green}vitoria"
@@ -81,7 +75,6 @@
         {
                 "#format"    "{1:d}"
             "en"    "{default}{1} {green}wins"
-			"fr"    "{default}{1} {green}victoires"
             "ru"    "{default}{1} {green}победой"
 			"de"    "{default}{1} {green}Siegen"
 			"pt"    "{default}{1} {green}vitorias"
@@ -92,7 +85,6 @@
         {
                 "#format"    "{1:d}"
             "en"    "{default}{1} {green}wins"
-			"fr"    "{default}{1} {green}victoires"
             "ru"    "{default}{1} {green}победами"
 			"de"    "{default}{1} {green}Siegen"
 			"pt"    "{default}{1} {green}vitorias"
@@ -103,7 +95,6 @@
         {
                 "#format"    "{1:d}"
             "en"    "{default}{1} {green}wins"
-			"fr"    "{default}{1} {green}victoires"
             "ru"    "{default}{1} {green}победами"
 			"de"    "{default}{1} {green}Siegen"
 			"pt"    "{default}{1} {green}vitorias"
@@ -114,7 +105,6 @@
 	{
 		"#format"	"{1:d},{2:d}"
 		"en"	"Page {1} / {2}"
-		"fr"	"Page {1} / {2}"
 		"ru"	"Страница {1} / {2}"
 		"de"	"Seite {1} / {2}"
 		"pt"	"Pagina {1} / {2}"
@@ -124,7 +114,6 @@
 	"Panel: Back"
 	{
 		"en"	"Back"
-		"fr"	"Retour"
 		"ru"	"Назад"
 		"de"	"Zurück"
 		"pt"	"Atras"
@@ -134,7 +123,6 @@
 	"Panel: Next"
 	{
 		"en"	"Next"
-		"fr"	"Suivant"
 		"ru"	"Вперёд"
 		"de"	"Vor"
 		"pt"	"Seguinte"
@@ -144,7 +132,6 @@
     "Panel: Exit"
     {
         "en"    "Exit"
-		"fr"    "Sortir"
         "ru"    "Выход"
 		"de"    "Ausgang"
 		"pt"    "Sair"
@@ -154,7 +141,6 @@
     "TopPanel: There are currently no players in the top"
     {
         "en"    "There are currently no players in the top"
-		"fr"    "Il n'y a aucun joueurs dans le top actuellement"
         "ru"    "Нет игроков в Топ"
 		"de"    "Aktuell ist kein Spieler in den Top"
 		"pt"    "Ainda não há jogadores no Top"
@@ -164,7 +150,6 @@
     "TopPanel: Top short"
     {
         "en"    "[GunGame] Top"
-		"fr"    "[GunGame] Top"
         "ru"    "[GunGame] Топ"
 		"de"    "[GunGame] Top"
 		"pt"    "[GunGame] Top"
@@ -175,7 +160,6 @@
     {
 		"#format"	"{1:d},{2:d},{3:d}"
         "en"    "[GunGame] Top {1}-{2} from {3}"
-		"fr"    "[GunGame] Top {1}-{2} de {3}"
         "ru"    "[GunGame] Топ {1}-{2} из {3}"
 		"de"    "[GunGame] Top {1}-{2} von {3}"
 		"pt"    "[GunGame] Top {1}-{2} de {3}"
@@ -186,7 +170,6 @@
     {
         "#format"   "{1:s},{2:s}"
         "en"    "{1} :: {2}"
-		"fr"    "{1} :: {2}"
         "ru"    "{1} :: {2}"
 		"de"    "{1} :: {2}"
 		"pt"    "{1} :: {2}"
@@ -197,7 +180,6 @@
     {
         "#format"   "{1:d},{2:s},{3:s}"
         "en"    "{1}. {2} :: {3}"
-		"fr"    "{1}. {2} :: {3}"
         "ru"    "{1}. {2} :: {3}"
 		"de"    "{1}. {2} :: {3}"
 		"pt"    "{1}. {2} :: {3}"

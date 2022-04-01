@@ -104,7 +104,7 @@ SavePlayerData(client)
     }
     
     decl String:auth[64], String:name[MAX_NAME_SIZE];
-    GetClientAuthString(client, auth, sizeof(auth));
+    GetClientAuthId(client, AuthId_Steam2, auth, sizeof(auth));
     GetClientName(client, name, sizeof(name));
 
     new bufferLen = sizeof(name) * 2 + 1;
@@ -387,7 +387,7 @@ public Action:_CmdImport(client, args)
     {
         if ( IsClientAuthorized(i) )
         {
-            GetClientAuthString(i, Auth, sizeof(Auth));
+            GetClientAuthId(i, AuthId_Steam2, Auth, sizeof(Auth));
             RetrieveKeyValues(i, Auth);
         }
     }
@@ -400,17 +400,17 @@ public Action:_CmdImport(client, args)
 // non-threaded
 public Action:_CmdImportDb(client, args)
 {
-    decl String:File[PLATFORM_MAX_PATH];
-    BuildPath(Path_SM, File, sizeof(File), "data/gungame/playerdata.txt");
+    decl String:PlayerDataFile[PLATFORM_MAX_PATH];
+    BuildPath(Path_SM, PlayerDataFile, sizeof(PlayerDataFile), "data/gungame/playerdata.txt");
 
-    if ( !FileExists(File) )
+    if ( !FileExists(PlayerDataFile) )
     {
         ReplyToCommand(client, "[GunGame] playerdata.txt does not exists to be imported.");
         return Plugin_Handled;
     }
 
     new Handle:KvGunGame = CreateKeyValues("gg_PlayerData", BLANK, BLANK);
-    FileToKeyValues(KvGunGame, File);
+    FileToKeyValues(KvGunGame, PlayerDataFile);
 
     /* Go to first SubKey */
     if ( !KvGotoFirstSubKey(KvGunGame) )
@@ -498,7 +498,7 @@ public Action:_CmdImportDb(client, args)
     {
         if ( IsClientAuthorized(i) )
         {
-            GetClientAuthString(i, Auth, sizeof(Auth));
+            GetClientAuthId(i, AuthId_Steam2, Auth, sizeof(Auth));
             RetrieveKeyValues(i, Auth);
         }
     }

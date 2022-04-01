@@ -4,7 +4,6 @@
     {
         "#format"    "{1:s},{2:s}"
         "en"         "{teamcolor}{1}{green} has lost a level due to team kill of {teamcolor}{2}{green}"
-		"fr"         "{teamcolor}{1}{green} a perdu un niveau pour avoir tué son coéquipier {teamcolor}{2}{green}"
     	"de"         "{teamcolor}{1}{green} hat für den Teamkill an {teamcolor}{2}{green} einen Level verloren"
         "ru"         "{teamcolor}{1}{green} потерял уровень за убийство {teamcolor}{2}{green} из своей команды"
 		"pt"         "{teamcolor}{1}{green} perdeu um nivel por ter morto {teamcolor}{2}{green} que é da mesma equipa"
@@ -15,7 +14,6 @@
     {
         "#format"    "{1:s},{2:s},{3:s}"
         "en"         "{teamcolor}{1}{green} has lost {3} due to team kill of {teamcolor}{2}{green}"
-		"fr"         "{teamcolor}{1}{green} a perdu {3} pour avoir tué son coéquipier {teamcolor}{2}{green}"
     	"de"         "{teamcolor}{1}{green} hat für den Teamkill an {teamcolor}{2}{green} einen {3} verloren"
         "ru"         "{teamcolor}{1}{green} потерял {3} за убийство {teamcolor}{2}{green} из своей команды"
 		"pt"         "{teamcolor}{1}{green} perdeu {3} por ter morto {teamcolor}{2}{green} que é da mesma equipa"
@@ -26,7 +24,6 @@
 	{
 		"#format"	"{1:d}"
 		"en"	"{default}{1} {green}level"
-		"fr"	"{default}{1} {green}niveau"
 		"de"	"{default}{1} {green}Level"
 		"ru"	"{default}{1} {green}уровень"
 		"pt"	"{default}{1} {green}nivel"
@@ -37,7 +34,6 @@
 	{
 		"#format"	"{1:d}"
 		"en"	"{default}{1} {green}levels"
-		"fr"	"{default}{1} {green}niveaux"
 		"de"	"{default}{1} {green}Level"
 		"ru"	"{default}{1} {green}уровень"
 		"pt"	"{default}{1} {green}niveis"
@@ -48,7 +44,6 @@
 	{
 		"#format"	"{1:d}"
 		"en"	"{default}{1} {green}levels"
-		"fr"	"{default}{1} {green}niveaux"
 		"de"	"{default}{1} {green}Level"
 		"ru"	"{default}{1} {green}уровня"
 		"pt"	"{default}{1} {green}niveis"
@@ -59,7 +54,6 @@
 	{
 		"#format"	"{1:d}"
 		"en"	"{default}{1} {green}levels"
-		"fr"	"{default}{1} {green}niveaux"
 		"de"	"{default}{1} {green}Level"
 		"ru"	"{default}{1} {green}уровней"
 		"pt"	"{default}{1} {green}niveis"

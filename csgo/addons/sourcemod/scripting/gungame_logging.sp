@@ -71,8 +71,8 @@ public Action:GG_OnClientLevelChange(client, level, difference, bool:steal, bool
 LogEventToGame(const String:event[], client) {
     decl String:Auth[64];
 
-    GetClientAuthString(client, Auth, sizeof(Auth));
-    if (!GetClientAuthString(client, Auth, sizeof(Auth))) {
+    GetClientAuthId(client, AuthId_Steam2, Auth, sizeof(Auth));
+    if (!GetClientAuthId(client, AuthId_Steam2, Auth, sizeof(Auth))) {
         strcopy(Auth, sizeof(Auth), "UNKNOWN");
     }
 

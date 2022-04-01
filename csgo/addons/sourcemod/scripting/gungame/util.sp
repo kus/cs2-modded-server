@@ -469,7 +469,9 @@ UTIL_ForceDropAllWeapon(client, bool:dropKnife) {
                 }
             }
         } else if (i == Slot_C4) {
-            UTIL_ForceDropC4(client);
+            if (MapStatus & OBJECTIVE_BOMB && MapStatus & OBJECTIVE_REMOVE_BOMB) {
+                UTIL_ForceDropC4(client);
+            }
             continue;
         }
 
@@ -1269,7 +1271,7 @@ public Action:UTIL_Timer_ShowHintText(Handle:timer, any:data)
     }
     else
     {
-        SetPackPosition(data, 0);
+        SetPackPosition(data, DataPackPos:0);
         WritePackCell(data, times);
         return Plugin_Continue;
     }
@@ -1383,7 +1385,7 @@ bool:UTIL_SetHandicapForClient(client)
     if ( g_Cfg_HandicapTimesPerMap )
     {
         decl String:auth[64];
-        GetClientAuthString(client, auth, sizeof(auth));
+        GetClientAuthId(client, AuthId_Steam2, auth, sizeof(auth));
 
         new times = 0;
         if ( !GetTrieValue(PlayerHandicapTimes, auth, times) ) {

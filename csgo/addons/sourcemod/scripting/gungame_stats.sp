@@ -82,7 +82,7 @@ public GG_OnStartup(bool:Command)
         {
             if ( IsClientAuthorized(i) )
             {
-                GetClientAuthString(i, Auth, sizeof(Auth));
+                GetClientAuthId(i, AuthId_Steam2, Auth, sizeof(Auth));
                 OnClientAuthorized(i, Auth);
             }
         }
