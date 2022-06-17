@@ -1,0 +1,371 @@
+"Phrases"
+{
+	"SetupMenuTitle"
+	{
+		"ro"		"Configurare Opțiuni"
+	}
+	"MapTypeOption"
+	{
+		"ro"		"Tipul Hărții"
+	}
+	"TeamTypeOption"
+	{
+		"ro"		"Tipul Echipei"
+	}
+	"TeamSizeOption"
+	{
+		"ro"		"Mărimea Echipei"
+	}
+	"DemoOption"
+	{
+		"ro"		"Înregistrare Demo"
+	}
+	"AutoLiveOption"
+	{
+		"ro"		"Începe Meciul Automat"
+	}
+	"VetoMessage"
+	{
+		"ro"		"Ban-ul hărților va începe în câteva secunde."
+	}
+	"VoteMessage"
+	{
+		"ro"		"Votarea hărții va începe în câteva secunde."
+	}
+	"AlreadyLive"
+	{
+		"ro"		"Meciul a început deja!"
+	}
+	"ReadyStatusPlayers"
+	{
+		"ro"		"{1} din {2} jucători sunt pregătiți"
+	}
+	"ReadyStatus"
+	{
+		"ro"		"{1} din {2} jucători sunt pregătiți\nScrie {3} când ești pregătit"
+	}
+	"ReadyStatusCaptains"
+	{
+		"ro"		"{1} din {2} jucători sunt pregătiți\nCapitan 1: {3}\nCapitan 2: {4}"
+	}
+	"CaptainNotSelected"
+	{
+		"ro"		"nu este selectat"
+	}
+	"SetCaptainsHint"
+	{
+		"ro"		"Îl așteptăm pe {GREEN}{1} {NORMAL}să scrie {GREEN}{2} {NORMAL}pentru a selecta căpitanii."
+	}
+	"ReadyCommandHint"
+	{
+		"ro"		"You still need to ready up by typing {GREEN}{1}"
+	}
+	"NoPermission"
+	{
+		"ro"		"Nu poți face acest lucru."
+	}
+	"NotUsingCaptains"
+	{
+		"ro"		"Meciul nu folosește căpitani."
+	}
+	"Scrambling"
+	{
+		"ro"		"{GREEN}Generare echipe aleatorii!"
+	}
+	"ForceEnd"
+	{
+		"ro"		"Meciul a fost oprit forțat de către {GREEN}{1}{NORMAL}."
+	}
+	"Pause"
+	{
+		"ro"		"{GREEN}{1} {NORMAL}a cerut pauza."
+	}
+	"Unpause"
+	{
+		"ro"		"{GREEN}{1} {NORMAL}a scos pauza."
+	}
+	"SetupBy"
+	{
+		"ro"		"Liderul meciului: {GREEN}{1}"
+	}
+	"NewLeader"
+	{
+		"ro"		"Noul lider este acum {GREEN}{1}"
+	}
+	"CaptMessage"
+	{
+		"ro"		"Căpitanul {1} va fii {2}"
+	}
+	"TeamSetupMenuTitle"
+	{
+		"ro"		"Cum vor fi organizate echipele?"
+	}
+	"TeamSetupMenuCaptains"
+	{
+		"ro"		"Căpitanii își aleg jucătorii"
+	}
+	"TeamSetupMenuRandom"
+	{
+		"ro"		"Echipe aleatorii"
+	}
+	"TeamSetupMenuManual"
+	{
+		"ro"		"Jucătorii își aleg manual echipa"
+	}
+	"TeamSetupCaptainsShort"
+	{
+		"ro"		"căpitanii aleg jucătorii"
+	}
+	"TeamSetupRandomShort"
+	{
+		"ro"		"echipe aleatorii"
+	}
+	"TeamSetupManualShort"
+	{
+		"ro"		"manual"
+	}
+	"HowManyPlayers"
+	{
+		"ro"		"Câți jucători vor fii într-o echipa?"
+	}
+	"MapChoiceMenuTitle"
+	{
+		"ro"		"Cum va fii aleasă harta?"
+	}
+	"MapChoiceCurrent"
+	{
+		"ro"		"Folosește harta curentă"
+	}
+	"MapChoiceVote"
+	{
+		"ro"		"Vot pentru hartă"
+	}
+	"MapChoiceVeto"
+	{
+		"ro"		"Căpitanii banează hărțile"
+	}
+	"MapChoiceCurrentShort"
+	{
+		"ro"		"harta curentă"
+	}
+	"MapChoiceVoteShort"
+	{
+		"ro"		"vot pentru hartă"
+	}
+	"MapChoiceVetoShort"
+	{
+		"ro"		"banare hărți"
+	}
+	"Yes"
+	{
+		"ro"		"da"
+	}
+	"No"
+	{
+		"ro"		"nu"
+	}
+	"Enabled"
+	{
+		"ro"		"activat"
+	}
+	"Disabled"
+	{
+		"ro"		"dezactivat"
+	}
+	"InitialPickTitle"
+	{
+		"ro"		"Pe cine preferi:"
+	}
+	"InitialPickSides"
+	{
+		"ro"		"Alege echipa"
+	}
+	"InitialPickPlayer"
+	{
+		"ro"		"Alege primul jucător"
+	}
+	"InitialPickPlayerChoice"
+	{
+		"ro"		"{1} a fost ales {GREEN}să aleagă primul jucător."
+	}
+	"InitialPickSideChoice"
+	{
+		"ro"		"{1} a fost ales să aleagă {GREEN}echipa."
+	}
+	"SideChoiceTitle"
+	{
+		"ro"		"Ce echipa dorești:"
+	}
+	"SideChoiceSelected"
+	{
+		"ro"		"{1} a ales ca {GREEN}{2} {NORMAL}să fie prima."
+	}
+	"PlayerPickTitle"
+	{
+		"ro"		"Alege jucătorii:"
+	}
+	"PlayerPickChoice"
+	{
+		"ro"		"{1} l-a ales pe {2}."
+	}
+	"SpecCantReady"
+	{
+		"ro"		"Nu poți face asta atât timp cât ești spectator."
+	}
+	"RestartCounter"
+	{
+		"ro"		"Restart {1}/3"
+	}
+	"Live"
+	{
+		"ro"		"Meciul {GREEN}A ÎNCEPUT"
+	}
+	"VetoMenuTitle"
+	{
+		"ro"		"Banează o hartă"
+	}
+	"PlayerVetoed"
+	{
+		"ro"		"{1} {NORMAL}a banat {LIGHT_RED}{2}."
+	}
+	"MapsLeft"
+	{
+		"ro"		"Hărți rămase:"
+	}
+	"VoteMenuTitle"
+	{
+		"ro"		"Votează harta"
+	}
+	"Random"
+	{
+		"ro"		"Aleator"
+	}
+	"RandomMapVote"
+	{
+		"ro"		"aleator"
+	}
+	"NotLiveYet"
+	{
+		"ro"		"Meciul nu a început încă."
+	}
+	"EndMatchMenuTitle"
+	{
+		"ro"		"Ești sigur că vrei să oprești meciul?"
+	}
+	"EndMatch"
+	{
+		"ro"		"Da, sunt sigur"
+	}
+	"ContinueMatch"
+	{
+		"ro"		"Nu, nu sunt sigur"
+	}
+	"MutualUnpauseMessage"
+	{
+		"ro"		"Echipa {1} vrea să scoată pauza, îi așteptăm pe {2} să scrie {GREEN}{3}"
+	}
+	"CancelCountdownMessage"
+	{
+		"ro"		"Meciul a fost anulat."
+	}
+	"Countdown"
+	{
+		"ro"		"Numărătoare inversă: {GREEN}{1} {NORMAL}secunde"
+	}
+	"Ready"
+	{
+		"ro"		"[Pregatit]"
+	}
+	"NotReady"
+	{
+		"ro"		"[Nepregătit]"
+	}
+	"KnifeRound"
+	{
+		"ro"		"LAME!"
+	}
+	"KnifeRoundOption"
+	{
+		"ro"		"Runda de lame"
+	}
+	"KnifeRoundVoteStay"
+	{
+		"ro"		"S-a înregistrat un vot pentru a ramane"
+	}
+	"KnifeRoundVoteSwap"
+	{
+		"ro"		"S-a înregistrat un vot pentru a schimba echipele"
+	}
+	"KnifeRoundWinner"
+	{
+		"ro"		"Echipa {1} a câștigat runda de lame. Îi așteptăm să scrie {GREEN}{2} {NORMAL}sau {GREEN}{3}"
+	}
+	"KnifeRoundWinnerVote"
+	{
+		"ro"		"Echpa {1} a câștigat runda de lame. Îi așteptăm să voteze, scriind {GREEN}{2} {NORMAL}sau {GREEN}{3}"
+	}
+	"TVDisabled"
+	{
+		"ro"		"GOTV este dezactivat, deci nu se poate înregistra un demo. Setază {GREEN}tv_enable 1{NORMAL} pentru a activa GOTV."
+	}
+	"FinishSetup"
+	{
+		"ro"		"Termină configurarea"
+	}
+	"CancelSetup"
+	{
+		"ro"		"Anulează"
+	}
+	"Back"
+	{
+		"ro"		"Înapoi"
+	}
+	"ChooseCaptainTitle"
+	{
+		"ro"		"Alege căpitanul {1}:"
+	}
+	"ChooseLeaderTitle"
+	{
+		"ro"		"Alege liderul meciului:"
+	}
+	"WaitingForStart"
+	{
+		"ro"		"Toți jucătorii sunt gata, îl așteptam pe {GREEN}{1} {NORMAL}să scrie {GREEN}{2}"
+	}
+	"StartMatchMenuOption"
+	{
+		"ro"		"Începe meciul"
+	}
+	"SetCaptainsMenuOption"
+	{
+		"ro"		"Selecteaza Căpitanii"
+	}
+	"AimWarmupMenuOption"
+	{
+		"ro"		"Folosește harti aim la încălzire"
+	}
+	"ChangeMapMenuOption"
+	{
+		"ro"		"Schimbă harta"
+	}
+	"ChangeMapMenuTitle"
+	{
+		"ro"		"Selecteză harta"
+	}
+	"Autobalanced"
+	{
+		"ro"		"Echilibrare automată"
+	}
+	"IsNowReady"
+	{
+		"ro"		"{1} este acum pregătit."
+	}
+	"IsNoLongerReady"
+	{
+		"ro"		"{1} nu mai este pregătit."
+	}
+	"PlayoutOption"
+	{
+		"ro"		"Număr de runde jucate"
+	}
+}

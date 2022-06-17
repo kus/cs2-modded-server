@@ -6,7 +6,8 @@ Configs
 {
 	"cfg/gg.cfg"			"Gun Game"
 	"cfg/gg_ffa.cfg"		"Gun Game FFA"
-	"cfg/comp.cfg"			"Competitive"
+	"cfg/pug.cfg"			"Competitive [Pug]"
+	"cfg/comp.cfg"			"Competitive [Warmod]"
 	"cfg/retake.cfg"		"Retakes"
 	"cfg/wingman.cfg"		"Wingman"
 	"cfg/practice.cfg"		"Practice"

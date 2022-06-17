@@ -39,11 +39,12 @@ int g_DebugAdminFlags;
 /**
  * Inits debug logging. You must call this in OnPluginStart().
  *
- * @param convarName    A name to use for the cvar which controls debug log output. Also used as
- * filename for logfile.
+ * @param convarName    A name to use for the cvar which controls debug log output. Also
+ * used
+ * as filename for logfile.
  * @param debugTag      Tag to prepend to messages, without []. Max 10 characters.
- * @param adminFlag     One or more admin flagbits which define whether a user is an "admin". If you
- * pass multiple flags, users will need ALL flags.
+ * @param adminFlag     One or more admin flagbits which define whether a user is an
+ * "admin". If you pass multiple flags, users will need ALL flags.
  * @noreturn
  */
 stock void InitDebugLog(const char[] convarName, const char[] debugTag,

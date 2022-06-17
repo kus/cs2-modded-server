@@ -1,0 +1,435 @@
+"Phrases"
+{
+	"SetupMenuTitle"
+	{
+		"pt"		"Setup Opções"
+	}
+	"MapTypeOption"
+	{
+		"pt"		"Tipo de Mapa"
+	}
+	"TeamTypeOption"
+	{
+		"pt"		"Tipo de Time"
+	}
+	"TeamSizeOption"
+	{
+		"pt"		"Tamanho do Time"
+	}
+	"DemoOption"
+	{
+		"pt"		"Gravar Demo"
+	}
+	"AutoLiveOption"
+	{
+		"pt"		"Auto-Live"
+	}
+	"VetoMessage"
+	{
+		"pt"		"O processo de veto do mapa começará em alguns segundos."
+	}
+	"VoteMessage"
+	{
+		"pt"		"A votação do mapa começará em alguns segundos."
+	}
+	"AlreadyLive"
+	{
+		"pt"		"O jogo está live!"
+	}
+	"ReadyStatus"
+	{
+		"pt"		"{1} de {2} players estão prontos.\nDigite: {3} para se preparar."
+	}
+	"ReadyStatusCaptains"
+	{
+		"pt"		"{1} de {2} players estão prontos.\nCapitão 1: {3}\nCapitão 2: {4}"
+	}
+	"CaptainNotSelected"
+	{
+		"pt"		"não selecionado"
+	}
+	"SetCaptainsHint"
+	{
+		"pt"		"Aguardando {GREEN}{1} {NORMAL}para digitar {GREEN}{2} {NORMAL}para selecionar os capitães."
+	}
+	"ReadyCommandHint"
+	{
+		"pt"		"Você ainda precisa estar ready digitando {GREEN}{1}"
+	}
+	"NoPermission"
+	{
+		"pt"		"Você não tem permissão para fazer isso."
+	}
+	"NotUsingCaptains"
+	{
+		"pt"		"Este jogo não está usando capitães de time."
+	}
+	"Scrambling"
+	{
+		"pt"		"{GREEN}Lutando contra as equipes!"
+	}
+	"ForceEnd"
+	{
+		"pt"		"A partida foi finalizada por {GREEN}{1}{NORMAL}."
+	}
+	"Pause"
+	{
+		"pt"		"{GREEN}{1} {NORMAL}pediu uma pausa."
+	}
+	"Unpause"
+	{
+		"pt"		"{GREEN}{1} {NORMAL}pediu unpause."
+	}
+	"SetupBy"
+	{
+		"pt"		"PUG Líder: {GREEN}{1}"
+	}
+	"NewLeader"
+	{
+		"pt"		"O novo líder é {GREEN}{1}"
+	}
+	"CaptMessage"
+	{
+		"pt"		"Capitão {1} será {2}"
+	}
+	"TeamSetupMenuTitle"
+	{
+		"pt"		"Como os times serão configuradas?"
+	}
+	"TeamSetupMenuCaptains"
+	{
+		"pt"		"Capitães atribuídos escolhem seus times"
+	}
+	"TeamSetupMenuRandom"
+	{
+		"pt"		"Times Aleatórios"
+	}
+	"TeamSetupMenuManual"
+	{
+		"pt"		"Os players trocam manualmente os times"
+	}
+	"TeamSetupCaptainsShort"
+	{
+		"pt"		"Capitães escolhem players"
+	}
+	"TeamSetupRandomShort"
+	{
+		"pt"		"Times Aleatórios"
+	}
+	"TeamSetupManualShort"
+	{
+		"pt"		"Mudar Manualmente"
+	}
+	"HowManyPlayers"
+	{
+		"pt"		"Quantos players por time?"
+	}
+	"MapChoiceMenuTitle"
+	{
+		"pt"		"Como o mapa deve ser escolhido?"
+	}
+	"MapChoiceCurrent"
+	{
+		"pt"		"Use o mapa atual"
+	}
+	"MapChoiceVote"
+	{
+		"pt"		"Vote em um mapa"
+	}
+	"MapChoiceVeto"
+	{
+		"pt"		"Capitães vetam mapas até sobrar um"
+	}
+	"MapChoiceCurrentShort"
+	{
+		"pt"		"use o mapa atual"
+	}
+	"MapChoiceVoteShort"
+	{
+		"pt"		"votar em um mapa"
+	}
+	"MapChoiceVetoShort"
+	{
+		"pt"		"mapas de veto de capitães"
+	}
+	"Yes"
+	{
+		"pt"		"Sim"
+	}
+	"No"
+	{
+		"pt"		"Não"
+	}
+	"Enabled"
+	{
+		"pt"		"Ativado"
+	}
+	"Disabled"
+	{
+		"pt"		"Desativado"
+	}
+	"InitialPickTitle"
+	{
+		"pt"		"Qual você prefere:"
+	}
+	"InitialPickSides"
+	{
+		"pt"		"Escolha os lados iniciais"
+	}
+	"InitialPickPlayer"
+	{
+		"pt"		"Escolha o primeiro player"
+	}
+	"InitialPickPlayerChoice"
+	{
+		"pt"		"{1} selecionou para escolher o {GREEN}primeiro player."
+	}
+	"InitialPickSideChoice"
+	{
+		"pt"		"{1} selecionou para escolher os {GREEN}lados iniciais."
+	}
+	"SideChoiceTitle"
+	{
+		"pt"		"Qual lado você quer primeiro:"
+	}
+	"SideChoiceSelected"
+	{
+		"pt"		"{1} escolheu {GREEN}{2} {NORMAL}primeiro."
+	}
+	"PlayerPickTitle"
+	{
+		"pt"		"Escolha seus players:"
+	}
+	"PlayerPickChoice"
+	{
+		"pt"		"{1} escolheu {2}."
+	}
+	"SpecCantReady"
+	{
+		"pt"		"Você não pode estar .ready quando está de spectador."
+	}
+	"RestartCounter"
+	{
+		"pt"		"Restart {1}/3"
+	}
+	"Live"
+	{
+		"pt"		"Partida esta {GREEN}LIVE"
+	}
+	"VetoMenuTitle"
+	{
+		"pt"		"Selecione um mapa para vetar"
+	}
+	"PlayerVetoed"
+	{
+		"pt"		"{1} {NORMAL}vetado {LIGHT_RED}{2}."
+	}
+	"MapsLeft"
+	{
+		"pt"		"Mapas restantes:"
+	}
+	"VoteMenuTitle"
+	{
+		"pt"		"Vote em um mapa"
+	}
+	"Random"
+	{
+		"pt"		"Aleatória"
+	}
+	"RandomMapVote"
+	{
+		"pt"		"aleatória"
+	}
+	"NotLiveYet"
+	{
+		"pt"		"O jogo ainda não começou."
+	}
+	"EndMatchMenuTitle"
+	{
+		"pt"		"Tem certeza que quer terminar o jogo?"
+	}
+	"EndMatch"
+	{
+		"pt"		"Sim, termine o jogo"
+	}
+	"ContinueMatch"
+	{
+		"pt"		"Não, continue o jogo"
+	}
+	"MutualUnpauseMessage"
+	{
+		"pt"		"O time {1} deseja unpause, aguardando o time {2} digitar {GREEN}{3}"
+	}
+	"CancelCountdownMessage"
+	{
+		"pt"		"A partida foi cancelada."
+	}
+	"Countdown"
+	{
+		"pt"		"Contagem Regressiva: {GREEN}{1} {NORMAL}segundos"
+	}
+	"Ready"
+	{
+		"pt"		"[Ready]"
+	}
+	"NotReady"
+	{
+		"pt"		"[Not Ready]"
+	}
+	"KnifeRound"
+	{
+		"pt"		"FACA!"
+	}
+	"KnifeRoundOption"
+	{
+		"pt"		"Round Faca"
+	}
+	"KnifeRoundWinner"
+	{
+		"pt"		"O time {1} venceu o Round Faca. Esperando que eles digitem {GREEN}{2} {NORMAL}ou {GREEN}{3}{NORMAL}."
+	}
+	"KnifeRoundWinnerVote"
+	{
+		"pt"		"O time {1} venceu o Round Faca. Esperando que eles votem digitando {GREEN}{2} {NORMAL}ou {GREEN}{3}{NORMAL}."
+	}
+	"TVDisabled"
+	{
+		"pt"		"O GOTV está desativado, portanto, não é possível gravar uma demo. Defina {GREEN}tv_enable 1{NORMAL} para ativar GOTV."
+	}
+	"FinishSetup"
+	{
+		"pt"		"Finalizar Setup"
+	}
+	"CancelSetup"
+	{
+		"pt"		"Cancelar Setup"
+	}
+	"Back"
+	{
+		"pt"		"Voltar"
+	}
+	"sm_capt_alias"
+	{
+		"pt"		".capt"
+	}
+	"sm_endgame_alias"
+	{
+		"pt"		".endgame"
+	}
+	"sm_notready_alias"
+	{
+		"pt"		".notready"
+	}
+	"sm_pause_alias"
+	{
+		"pt"		".pause"
+	}
+	"sm_ready_alias"
+	{
+		"pt"		".ready"
+	}
+	"sm_setup_alias"
+	{
+		"pt"		".setup"
+	}
+	"sm_stay_alias"
+	{
+		"pt"		".stay"
+	}
+	"sm_swap_alias"
+	{
+		"pt"		".swap"
+	}
+	"sm_unpause_alias"
+	{
+		"pt"		".unpause"
+	}
+	"sm_start_alias"
+	{
+		"pt"		".start"
+	}
+	"ChooseCaptainTitle"
+	{
+		"pt"		"Escolha o capitão {1}:"
+	}
+	"ChooseLeaderTitle"
+	{
+		"pt"		"Escolha o líder do jogo:"
+	}
+	"WaitingForStart"
+	{
+		"pt"		"Todos os players estão .ready, esperando que {GREEN}{1} {NORMAL}digite {GREEN}{2}"
+	}
+	"StartMatchMenuOption"
+	{
+		"pt"		"Comece o jogo"
+	}
+	"SetCaptainsMenuOption"
+	{
+		"pt"		"Definir capitães"
+	}
+	"AimWarmupMenuOption"
+	{
+		"pt"		"Use WarMup do aim_map"
+	}
+	"ChangeMapMenuOption"
+	{
+		"pt"		"Mudar Mapa"
+	}
+	"ChangeMapMenuTitle"
+	{
+		"pt"		"lecionar o Mapa"
+	}
+	"Autobalanced"
+	{
+		"pt"		"Auto-Balanced"
+	}
+	"IsNowReady"
+	{
+		"pt"		"{1} está .ready agora."
+	}
+	"IsNoLongerReady"
+	{
+		"pt"		"{1} não está .ready mais."
+	}
+	"SavedReadyMessage"
+	{
+		"pt"		"Mensagem pronta personalizada salva com sucesso."
+	}
+	"PlayoutOption"
+	{
+		"pt"		"Jogue maxrounds"
+	}
+	"KnifeRoundVoteStay"
+	{
+		"pt"		"Voto gravado para .stay"
+	}
+	"KnifeRoundVoteSwap"
+	{
+		"pt"		"Voto gravado para .swap"
+	}
+	"ChangeMapMessage"
+	{
+		"pt"		"Alterar mapa para {GREEN}{1}{NORMAL}..."
+	}
+	"TimeLeftInVoteHint"
+	{
+		"pt"		"{1} segundos restantes em votação..."
+	}
+	"IRVMenuTitle"
+	{
+		"pt"		"Selecione sua #{1} escolha"
+	}
+	"IRVSelectionMessage"
+	{
+		"pt"		"Você escolheu {GREEN}{1} {NORMAL}como sua opção {GREEN}#{2} {NORMAL}."
+	}
+	"MapVoteWinnerHintText"
+	{
+		"pt"		"Vote sobre... {1} ganhou!"
+	}
+	"IRVResultMessage"
+	{
+		"pt"		"{GREEN}{1}{NORMAL} ganhou, {GREEN}{2} {NORMAL}veio em 2º, {GREEN}{3} {NORMAL}em 3º."
+	}
+}

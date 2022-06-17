@@ -36,6 +36,8 @@ Mod | Version | Why
 [DeathMatch](https://forums.alliedmods.net/showthread.php?t=103242) | `1.8.0` | Required for GunGame to enable spawn protection and other things to the game
 [Quake Sounds](https://forums.alliedmods.net/showthread.php?t=224316) | `3.5.0` | Plays sounds and displays text at certain events sometimes based on the number of kills
 [NoBlock](https://forums.alliedmods.net/showthread.php?t=91617) | `1.4.2` | Removes player vs player collisions
+[csgo-pug-setup](https://github.com/splewis/csgo-pug-setup) | `2.0.7` | This is a useful plugin for managing pug games, especially 10 mans/gathers
+[PugSetup RoundRestore](https://forums.alliedmods.net/showthread.php?p=2707964) | `1.2` | Restore the match to the previous round for pug setup
 [WarMod](https://forums.alliedmods.net/showthread.php?t=225474) | `20.07.15.1214` | Used for competitive matches, and provides the flexibility to suit any form of competition, including large tournaments down to clan matches
 [Practice Mod](https://github.com/splewis/csgo-practice-mode) | `1.3.3` | Private team/individual practice servers
 [Multi 1v1](https://forums.alliedmods.net/showthread.php?t=241056) | `1.1.9` | Sets up 2+ players in separate 1v1 arenas, when all the arenas are done fighting, the winners move up an arena and the losers move down an arena

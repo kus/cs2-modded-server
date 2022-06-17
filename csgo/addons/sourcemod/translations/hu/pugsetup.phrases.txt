@@ -1,0 +1,435 @@
+"Phrases"
+{
+	"SetupMenuTitle"
+	{
+		"hu"		"Beállítások"
+	}
+	"MapTypeOption"
+	{
+		"hu"		"Pályaválasztás"
+	}
+	"TeamTypeOption"
+	{
+		"hu"		"Csapatválasztás"
+	}
+	"TeamSizeOption"
+	{
+		"hu"		"Csapatméret"
+	}
+	"DemoOption"
+	{
+		"hu"		"Demofelvétel"
+	}
+	"AutoLiveOption"
+	{
+		"hu"		"Automatikus indítás"
+	}
+	"VetoMessage"
+	{
+		"hu"		"A pályavétózás pár másodpercen belül kezdődik."
+	}
+	"VoteMessage"
+	{
+		"hu"		"A pályaszavazás pár másodpercen belül kezdődik."
+	}
+	"AlreadyLive"
+	{
+		"hu"		"A meccs már elkezdődött!"
+	}
+	"ReadyStatus"
+	{
+		"hu"		"{1} a(z) {2} játékosból készen áll.\nÍrj {3}-t hogy készen állj."
+	}
+	"ReadyStatusCaptains"
+	{
+		"hu"		"{1} a(z) {2} játékosból készen áll.\nCsapatkapitány 1: {3}\nCsapatkapitány 2: {4}"
+	}
+	"CaptainNotSelected"
+	{
+		"hu"		"nincs kiválasztva"
+	}
+	"SetCaptainsHint"
+	{
+		"hu"		"A csapatkapitányok kiválasztásához {GREEN}{1} {NORMAL}írjon {GREEN}{2} {NORMAL}-t a chatbe."
+	}
+	"ReadyCommandHint"
+	{
+		"hu"		"Hogy készen állj be kell írnod a chatbe, hogy {GREEN}{1}{NORMAL}."
+	}
+	"NoPermission"
+	{
+		"hu"		"Nincs jogosultságod ehhez."
+	}
+	"NotUsingCaptains"
+	{
+		"hu"		"Ez a meccs csapatkapitányok nélkül kerül lejátszásra."
+	}
+	"Scrambling"
+	{
+		"hu"		"{GREEN}Csapatok összekeverése!"
+	}
+	"ForceEnd"
+	{
+		"hu"		"A meccset {GREEN}{1}{NORMAL} leállította."
+	}
+	"Pause"
+	{
+		"hu"		"{GREEN}{1} {NORMAL}szünetet kért."
+	}
+	"Unpause"
+	{
+		"hu"		"{GREEN}{1} {NORMAL}elindította a játékot."
+	}
+	"SetupBy"
+	{
+		"hu"		"Játékvezető: {GREEN}{1}"
+	}
+	"NewLeader"
+	{
+		"hu"		"Az új játékvezető: {GREEN}{1}"
+	}
+	"CaptMessage"
+	{
+		"hu"		"A {1}. csapatkapitány {2} lesz."
+	}
+	"TeamSetupMenuTitle"
+	{
+		"hu"		"Hogyan kerülnek összeállításra a csapatok?"
+	}
+	"TeamSetupMenuCaptains"
+	{
+		"hu"		"a válaszott csapatkapitányok választják ki a csapattagokat"
+	}
+	"TeamSetupMenuRandom"
+	{
+		"hu"		"véletlenszerű csapatok"
+	}
+	"TeamSetupMenuManual"
+	{
+		"hu"		"a játékosok maguk választanak oldalt"
+	}
+	"TeamSetupCaptainsShort"
+	{
+		"hu"		"a csapatkapitányok választanak"
+	}
+	"TeamSetupRandomShort"
+	{
+		"hu"		"véletlenszerű csapatok"
+	}
+	"TeamSetupManualShort"
+	{
+		"hu"		"szabad csapatválasztás"
+	}
+	"HowManyPlayers"
+	{
+		"hu"		"Hány főből álljon egy csapat?"
+	}
+	"MapChoiceMenuTitle"
+	{
+		"hu"		"Hogyan kerüljön a pálya kiválasztásra?"
+	}
+	"MapChoiceCurrent"
+	{
+		"hu"		"maradjon a jelenlegi pálya"
+	}
+	"MapChoiceVote"
+	{
+		"hu"		"szavazás a pályáról"
+	}
+	"MapChoiceVeto"
+	{
+		"hu"		"a csapatkapitányok vétóznak a pályakiválasztáshoz"
+	}
+	"MapChoiceCurrentShort"
+	{
+		"hu"		"marad a jelenlegi pálya"
+	}
+	"MapChoiceVoteShort"
+	{
+		"hu"		"pályaszavazás"
+	}
+	"MapChoiceVetoShort"
+	{
+		"hu"		"csapatkapitányok vétóznak"
+	}
+	"Yes"
+	{
+		"hu"		"igen"
+	}
+	"No"
+	{
+		"hu"		"nem"
+	}
+	"Enabled"
+	{
+		"hu"		"bekapcsolva"
+	}
+	"Disabled"
+	{
+		"hu"		"kikapcsolva"
+	}
+	"InitialPickTitle"
+	{
+		"hu"		"Mit szeretnél?"
+	}
+	"InitialPickSides"
+	{
+		"hu"		"Kezdőoldal kiválasztása"
+	}
+	"InitialPickPlayer"
+	{
+		"hu"		"Első játékos kiválasztása"
+	}
+	"InitialPickPlayerChoice"
+	{
+		"hu"		"{1} fogja az {GREEN}első játékost kiválasztani{NORMAL}."
+	}
+	"InitialPickSideChoice"
+	{
+		"hu"		"{1} fogja a {GREEN}kezdőoldalt kiválasztani{NORMAL}."
+	}
+	"SideChoiceTitle"
+	{
+		"hu"		"Melyik oldalon szeretnél kezdeni?"
+	}
+	"SideChoiceSelected"
+	{
+		"hu"		"{1} a {GREEN}{2} {NORMAL}oldalt választotta."
+	}
+	"PlayerPickTitle"
+	{
+		"hu"		"Válassz csapattársakat!"
+	}
+	"PlayerPickChoice"
+	{
+		"hu"		"{1} {2}-t választotta."
+	}
+	"SpecCantReady"
+	{
+		"hu"		"Nem állhatsz készen, amíg néző vagy."
+	}
+	"RestartCounter"
+	{
+		"hu"		"Újraindítás {1}/3"
+	}
+	"Live"
+	{
+		"hu"		"A meccs {GREEN}ELKEZDŐDÖTT"
+	}
+	"VetoMenuTitle"
+	{
+		"hu"		"Válassz pályát a vétózáshoz"
+	}
+	"PlayerVetoed"
+	{
+		"hu"		"{1} {NORMAL}vétózta a következő pályát: {LIGHT_RED}{2}."
+	}
+	"MapsLeft"
+	{
+		"hu"		"Hátralévő pályák:"
+	}
+	"VoteMenuTitle"
+	{
+		"hu"		"Szavazz egy pályára"
+	}
+	"Random"
+	{
+		"hu"		"Véletlenszerű"
+	}
+	"RandomMapVote"
+	{
+		"hu"		"véletlenszerű"
+	}
+	"NotLiveYet"
+	{
+		"hu"		"A meccs még nem kezdődött el."
+	}
+	"EndMatchMenuTitle"
+	{
+		"hu"		"Biztosan le akarod állítani a meccset?"
+	}
+	"EndMatch"
+	{
+		"hu"		"Igen, megállítom a meccset."
+	}
+	"ContinueMatch"
+	{
+		"hu"		"Nem, folytatódjon a meccs."
+	}
+	"MutualUnpauseMessage"
+	{
+		"hu"		"A {1} csapat el akarja indítani a játékot, várakozás a {2} csapatra, hogy beírják: {GREEN}{3}"
+	}
+	"CancelCountdownMessage"
+	{
+		"hu"		"A meccs le lett állítva."
+	}
+	"Countdown"
+	{
+		"hu"		"Visszaszámlálás: {GREEN}{1} {NORMAL}másodperc"
+	}
+	"Ready"
+	{
+		"hu"		"[Készen áll]"
+	}
+	"NotReady"
+	{
+		"hu"		"[Nincs készen]"
+	}
+	"KnifeRound"
+	{
+		"hu"		"KÉS!"
+	}
+	"KnifeRoundOption"
+	{
+		"hu"		"Kés kör"
+	}
+	"KnifeRoundWinner"
+	{
+		"hu"		"A {1} csapat megnyerte a késkört. Megvárjuk míg beírják {GREEN}{2}{NORMAL}-t vagy {GREEN}{3}{NORMAL}-t."
+	}
+	"KnifeRoundWinnerVote"
+	{
+		"hu"		"A {1} csapat megnyerte a késkört. Megvárjuk míg beírják {GREEN}{2}{NORMAL}-t vagy {GREEN}{3}{NORMAL}-t."
+	}
+	"TVDisabled"
+	{
+		"hu"		"A GOTV ki van kapcsolva, ezért nem lehet demót felvenni. Állítsd be a {GREEN}tv_enable 1{NORMAL}-et, hogy bekapcsold a GOTV-t."
+	}
+	"FinishSetup"
+	{
+		"hu"		"Beállítások véglegesítése"
+	}
+	"CancelSetup"
+	{
+		"hu"		"Beállítások elvetése"
+	}
+	"Back"
+	{
+		"hu"		"Vissza"
+	}
+	"sm_capt_alias"
+	{
+		"hu"		".capt"
+	}
+	"sm_endgame_alias"
+	{
+		"hu"		".endgame"
+	}
+	"sm_notready_alias"
+	{
+		"hu"		".notready"
+	}
+	"sm_pause_alias"
+	{
+		"hu"		".pause"
+	}
+	"sm_ready_alias"
+	{
+		"hu"		".ready"
+	}
+	"sm_setup_alias"
+	{
+		"hu"		".setup"
+	}
+	"sm_stay_alias"
+	{
+		"hu"		".stay"
+	}
+	"sm_swap_alias"
+	{
+		"hu"		".swap"
+	}
+	"sm_unpause_alias"
+	{
+		"hu"		".unpause"
+	}
+	"sm_start_alias"
+	{
+		"hu"		".start"
+	}
+	"ChooseCaptainTitle"
+	{
+		"hu"		"Válassz {1} csapatkapitányt!"
+	}
+	"ChooseLeaderTitle"
+	{
+		"hu"		"Válaszd ki a játékvezetőt!"
+	}
+	"WaitingForStart"
+	{
+		"hu"		"Minden játékos készen áll, {GREEN}{1}{NORMAL} be kell írja, hogy {GREEN}{2}"
+	}
+	"StartMatchMenuOption"
+	{
+		"hu"		"Meccs indítása"
+	}
+	"SetCaptainsMenuOption"
+	{
+		"hu"		"Csapatkapitányok kiválasztása"
+	}
+	"AimWarmupMenuOption"
+	{
+		"hu"		"Bemelegítés aim pályákon"
+	}
+	"ChangeMapMenuOption"
+	{
+		"hu"		"Pályaváltás"
+	}
+	"ChangeMapMenuTitle"
+	{
+		"hu"		"Válaszd ki a pályát"
+	}
+	"Autobalanced"
+	{
+		"hu"		"Csapatok automatikusan kiegyenlítve"
+	}
+	"IsNowReady"
+	{
+		"hu"		"{1} készen áll."
+	}
+	"IsNoLongerReady"
+	{
+		"hu"		"{1} már nem áll készen."
+	}
+	"SavedReadyMessage"
+	{
+		"hu"		"Egyéni készenálló üzenet sikeresen elmentve."
+	}
+	"PlayoutOption"
+	{
+		"hu"		"Hátralévő körök lejátszása"
+	}
+	"KnifeRoundVoteStay"
+	{
+		"hu"		"Maradásra való szavazat rögzítve"
+	}
+	"KnifeRoundVoteSwap"
+	{
+		"hu"		"Oldalváltásra való szavazat rögzítve"
+	}
+	"ChangeMapMessage"
+	{
+		"hu"		"Pálya váltása a következőre: {GREEN}{1}{NORMAL}..."
+	}
+	"TimeLeftInVoteHint"
+	{
+		"hu"		"{1} másodperc még a szavazásból..."
+	}
+	"IRVMenuTitle"
+	{
+		"hu"		"Válaszd ki a(z) {1}. pályaszavazatodat"
+	}
+	"IRVSelectionMessage"
+	{
+		"hu"		"{GREEN}{1}{NORMAL}-t választottad {GREEN}{2}{NORMAL}. szavazatodként."
+	}
+	"MapVoteWinnerHintText"
+	{
+		"hu"		"Vége a szavazásnak... {1} nyert!"
+	}
+	"IRVResultMessage"
+	{
+		"hu"		"{GREEN}{1}{NORMAL} nyert, {GREEN}{2}{NORMAL} második lett, {GREEN}{3}{NORMAL} lett a harmadik."
+	}
+}

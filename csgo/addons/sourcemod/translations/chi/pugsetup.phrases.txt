@@ -1,0 +1,459 @@
+"Phrases"
+{
+	"SetupMenuTitle"
+	{
+		"chi"		"设置选项"
+	}
+	"MapTypeOption"
+	{
+		"chi"		"地图类型"
+	}
+	"TeamTypeOption"
+	{
+		"chi"		"团队类型"
+	}
+	"TeamSizeOption"
+	{
+		"chi"		"团队人数"
+	}
+	"DemoOption"
+	{
+		"chi"		"录制比赛"
+	}
+	"AutoLiveOption"
+	{
+		"chi"		"自动开始"
+	}
+	"VetoMessage"
+	{
+		"chi"		"投票禁图将在几秒后开始···"
+	}
+	"VoteMessage"
+	{
+		"chi"		"投票选图将在几秒后开始···"
+	}
+	"AlreadyLive"
+	{
+		"chi"		"游戏已经开始了！"
+	}
+	"ReadyStatusPlayers"
+	{
+		"chi"		"{1}/{2} 名玩家已就绪"
+	}
+	"ReadyStatus"
+	{
+		"chi"		"{1}/{2} 名玩家已就绪\n键入 .r 或者 {3} 以准备"
+	}
+	"ReadyStatusCaptains"
+	{
+		"chi"		"{1}/{2} 名玩家已就绪\n队长 1: {3}\n队长 2: {4}"
+	}
+	"ReadyStatusAllReadyPick"
+	{
+		"chi"		"开始选择队员"
+	}
+	"ReadyStatusAllReady"
+	{
+		"chi"		"正在开始比赛"
+	}
+	"ReadyStatusAllReadyWaiting"
+	{
+		"chi"		"等待比赛开始"
+	}
+	"ReadyStatusAllReadyVeto"
+	{
+		"chi"		"开始投票禁图"
+	}
+	"ReadyStatusAllReadyVote"
+	{
+		"chi"		"开始投票选图"
+	}
+	"CaptainNotSelected"
+	{
+		"chi"		"未选择"
+	}
+	"SetCaptainsHint"
+	{
+		"chi"		"等待 {GREEN}{1} {NORMAL}输入 {GREEN}{2} {NORMAL}来选择队长"
+	}
+	"ReadyCommandHint"
+	{
+		"chi"		"您尚未输入 {GREEN}{1} {NORMAL}准备开始"
+	}
+	"NoPermission"
+	{
+		"chi"		"您没有执行此操作的权限"
+	}
+	"NotUsingCaptains"
+	{
+		"chi"		"此比赛不使用队长制"
+	}
+	"Scrambling"
+	{
+		"chi"		"{GREEN}正在交换队伍！"
+	}
+	"ForceEnd"
+	{
+		"chi"		"此比赛已被 {GREEN}{1}{NORMAL} 强制结束"
+	}
+	"Pause"
+	{
+		"chi"		"{GREEN}{1} {NORMAL}已投票暂停"
+	}
+	"Unpause"
+	{
+		"chi"		"{GREEN}{1} {NORMAL}已投票继续游戏"
+	}
+	"SetupBy"
+	{
+		"chi"		"比赛指挥: {GREEN}{1}"
+	}
+	"NewLeader"
+	{
+		"chi"		"新队长为 {GREEN}{1}"
+	}
+	"CaptMessage"
+	{
+		"chi"		"队长 {1} 是 {2}"
+	}
+	"TeamSetupMenuTitle"
+	{
+		"chi"		"队伍选择方式"
+	}
+	"TeamSetupMenuCaptains"
+	{
+		"chi"		"队长选择队伍"
+	}
+	"TeamSetupMenuRandom"
+	{
+		"chi"		"随机队伍"
+	}
+	"TeamSetupMenuManual"
+	{
+		"chi"		"玩家选队"
+	}
+	"TeamSetupCaptainsShort"
+	{
+		"chi"		"队长选人"
+	}
+	"TeamSetupRandomShort"
+	{
+		"chi"		"随机队伍"
+	}
+	"TeamSetupManualShort"
+	{
+		"chi"		"手动切换"
+	}
+	"HowManyPlayers"
+	{
+		"chi"		"每只团队人数"
+	}
+	"MapChoiceMenuTitle"
+	{
+		"chi"		"地图选择方式"
+	}
+	"MapChoiceCurrent"
+	{
+		"chi"		"使用当前地图"
+	}
+	"MapChoiceVote"
+	{
+		"chi"		"玩家投票换图"
+	}
+	"MapChoiceVeto"
+	{
+		"chi"		"队长投票禁图"
+	}
+	"MapChoiceCurrentShort"
+	{
+		"chi"		"当前地图"
+	}
+	"MapChoiceVoteShort"
+	{
+		"chi"		"投票选图"
+	}
+	"MapChoiceVetoShort"
+	{
+		"chi"		"队长禁图"
+	}
+	"Yes"
+	{
+		"chi"		"是"
+	}
+	"No"
+	{
+		"chi"		"否"
+	}
+	"Enabled"
+	{
+		"chi"		"启用"
+	}
+	"Disabled"
+	{
+		"chi"		"禁用"
+	}
+	"InitialPickTitle"
+	{
+		"chi"		"请选择您的偏好"
+	}
+	"InitialPickSides"
+	{
+		"chi"		"先选择起始阵营"
+	}
+	"InitialPickPlayer"
+	{
+		"chi"		"先选择同队玩家"
+	}
+	"InitialPickPlayerChoice"
+	{
+		"chi"		"{1} 已选择{GREEN}先选择玩家"
+	}
+	"InitialPickSideChoice"
+	{
+		"chi"		"{1} 已选择{GREEN}先选择起始阵营"
+	}
+	"SideChoiceTitle"
+	{
+		"chi"		"选择阵营"
+	}
+	"SideChoiceSelected"
+	{
+		"chi"		"{1} 已选择 {GREEN}{2} {NORMAL}方"
+	}
+	"PlayerPickTitle"
+	{
+		"chi"		"选择玩家"
+	}
+	"PlayerPickChoice"
+	{
+		"chi"		"{1} 选择了 {2}."
+	}
+	"SpecCantReady"
+	{
+		"chi"		"您无法作为观察者准备游戏开始。"
+	}
+	"RestartCounter"
+	{
+		"chi"		"重启游戏 {1}/3"
+	}
+	"Live"
+	{
+		"chi"		"比赛{GREEN}已开始！"
+	}
+	"VetoMenuTitle"
+	{
+		"chi"		"选择要禁止的地图"
+	}
+	"PlayerVetoed"
+	{
+		"chi"		"{1} {NORMAL}投票禁止了 {LIGHT_RED}{2}."
+	}
+	"MapsLeft"
+	{
+		"chi"		"剩余地图"
+	}
+	"VoteMenuTitle"
+	{
+		"chi"		"投票选图"
+	}
+	"Random"
+	{
+		"chi"		"随机"
+	}
+	"RandomMapVote"
+	{
+		"chi"		"随机"
+	}
+	"NotLiveYet"
+	{
+		"chi"		"比赛尚未开始。"
+	}
+	"EndMatchMenuTitle"
+	{
+		"chi"		"您确定要结束比赛吗？"
+	}
+	"EndMatch"
+	{
+		"chi"		"是，结束比赛"
+	}
+	"ContinueMatch"
+	{
+		"chi"		"否，继续比赛"
+	}
+	"MutualUnpauseMessage"
+	{
+		"chi"		"队伍 {1} 想要继续比赛，等待队伍 {2} 键入 {GREEN}{3}"
+	}
+	"CancelCountdownMessage"
+	{
+		"chi"		"比赛已取消。"
+	}
+	"Countdown"
+	{
+		"chi"		"倒计时: {GREEN}{1} {NORMAL}秒"
+	}
+	"Ready"
+	{
+		"chi"		"[已准备]"
+	}
+	"NotReady"
+	{
+		"chi"		"[未准备]"
+	}
+	"KnifeRound"
+	{
+		"chi"		"拼刀!"
+	}
+	"KnifeRoundOption"
+	{
+		"chi"		"拼刀选边"
+	}
+	"KnifeRoundWinner"
+	{
+		"chi"		"队伍 {1} 赢得了拼刀局胜利。正等待其键入 {GREEN}{2} {NORMAL}或 {GREEN}{3}"
+	}
+	"KnifeRoundWinnerVote"
+	{
+		"chi"		"队伍 {1} 赢得了拼刀局胜利。正等待其键入 {GREEN}{2} {NORMAL}或 {GREEN}{3} {NORMAL}投票"
+	}
+	"TVDisabled"
+	{
+		"chi"		"GOTV 被禁用，服务器无法录制比赛。请设置 {GREEN}tv_enable 1{NORMAL} 来启用 GOTV。"
+	}
+	"FinishSetup"
+	{
+		"chi"		"完成设置"
+	}
+	"CancelSetup"
+	{
+		"chi"		"取消设置"
+	}
+	"Back"
+	{
+		"chi"		"返回"
+	}
+	"sm_capt_alias"
+	{
+		"chi"		".capt"
+	}
+	"sm_endgame_alias"
+	{
+		"chi"		".endgame"
+	}
+	"sm_notready_alias"
+	{
+		"chi"		".notready"
+	}
+	"sm_pause_alias"
+	{
+		"chi"		".pause"
+	}
+	"sm_ready_alias"
+	{
+		"chi"		".ready"
+	}
+	"sm_setup_alias"
+	{
+		"chi"		".setup"
+	}
+	"sm_stay_alias"
+	{
+		"chi"		".stay"
+	}
+	"sm_swap_alias"
+	{
+		"chi"		".swap"
+	}
+	"sm_unpause_alias"
+	{
+		"chi"		".unpause"
+	}
+	"sm_start_alias"
+	{
+		"chi"		".start"
+	}
+	"ChooseCaptainTitle"
+	{
+		"chi"		"选择队长 {1}:"
+	}
+	"ChooseLeaderTitle"
+	{
+		"chi"		"选择比赛指挥:"
+	}
+	"WaitingForStart"
+	{
+		"chi"		"所有玩家均已就绪，等待 {GREEN}{1} {NORMAL}键入 {GREEN}{2}"
+	}
+	"StartMatchMenuOption"
+	{
+		"chi"		"开始比赛"
+	}
+	"SetCaptainsMenuOption"
+	{
+		"chi"		"设置队长"
+	}
+	"AimWarmupMenuOption"
+	{
+		"chi"		"使用训练地图热身"
+	}
+	"ChangeMapMenuOption"
+	{
+		"chi"		"更换地图"
+	}
+	"ChangeMapMenuTitle"
+	{
+		"chi"		"选择地图"
+	}
+	"Autobalanced"
+	{
+		"chi"		"自动平衡队伍"
+	}
+	"IsNowReady"
+	{
+		"chi"		"{1} 已准备。"
+	}
+	"IsNoLongerReady"
+	{
+		"chi"		"{1} 未准备。"
+	}
+	"SavedReadyMessage"
+	{
+		"chi"		"已成功保存自定义准备信息。"
+	}
+	"PlayoutOption"
+	{
+		"chi"		"比赛至多回合数"
+	}
+	"KnifeRoundVoteStay"
+	{
+		"chi"		"已选择保持阵营"
+	}
+	"KnifeRoundVoteSwap"
+	{
+		"chi"		"已选择交换阵营"
+	}
+	"ChangeMapMessage"
+	{
+		"chi"		"正在切换地图至 {GREEN}{1}{NORMAL}"
+	}
+	"TimeLeftInVoteHint"
+	{
+		"chi"		"投票时间剩余 {1} 秒"
+	}
+	"IRVMenuTitle"
+	{
+		"chi"		"请选择 #{1}"
+	}
+	"IRVSelectionMessage"
+	{
+		"chi"		"您已选择 {GREEN}{1} {NORMAL}作为您的 {GREEN}#{2}"
+	}
+	"MapVoteWinnerHintText"
+	{
+		"chi"		"投票结束！{1} 获胜！"
+	}
+	"IRVResultMessage"
+	{
+		"chi"		"{GREEN}{1}{NORMAL} 获胜；{GREEN}{2}{NORMAL} 将作为第二张地图；{GREEN}{3}{NORMAL} 将作为第三张地图"
+	}
+}

@@ -1,0 +1,407 @@
+"Phrases"
+{
+	"SetupMenuTitle"
+	{
+		"fr"		"Options de configuration"
+	}
+	"MapTypeOption"
+	{
+		"fr"		"Choix de la carte"
+	}
+	"TeamTypeOption"
+	{
+		"fr"		"Choix de l'équipe"
+	}
+	"TeamSizeOption"
+	{
+		"fr"		"Taille de l'équipe"
+	}
+	"DemoOption"
+	{
+		"fr"		"Enregistrer la demo"
+	}
+	"AutoLiveOption"
+	{
+		"fr"		"Lancement automatique"
+	}
+	"VetoMessage"
+	{
+		"fr"		"Le vote d'exclusion de cartes commence dans quelques secondes."
+	}
+	"VoteMessage"
+	{
+		"fr"		"Le vote de la carte commence dans quelques secondes."
+	}
+	"AlreadyLive"
+	{
+		"fr"		"Un match est déjà en cours !"
+	}
+	"ReadyStatusPlayers"
+	{
+		"fr"		"{1} joueurs sur {2} sont prêts"
+	}
+	"ReadyStatus"
+	{
+		"fr"		"{1} joueurs sur {2} sont prêts\nTapez {3} quand vous êtes prêt"
+	}
+	"ReadyStatusCaptains"
+	{
+		"fr"		"{1} joueurs sur {2} sont prêts\nCapitaine 1: {3}\nCapitaine 2: {4}"
+	}
+	"ReadyStatusAllReadyPick"
+	{
+		"fr"		"Lancement du choix des joueurs..."
+	}
+	"ReadyStatusAllReady"
+	{
+		"fr"		"Lancement du match..."
+	}
+	"ReadyStatusAllReadyWaiting"
+	{
+		"fr"		"En attente de lancement..."
+	}
+	"ReadyStatusAllReadyVeto"
+	{
+		"fr"		"Lancement du vote d'exclusion de carte..."
+	}
+	"ReadyStatusAllReadyVote"
+	{
+		"fr"		"Lancement du vote de carte..."
+	}
+	"CaptainNotSelected"
+	{
+		"fr"		"non sélectionné"
+	}
+	"SetCaptainsHint"
+	{
+		"fr"		"{GREEN}{1} {NORMAL}doit taper {GREEN}{2} {NORMAL}afin de sélectionner les capitaines."
+	}
+	"ReadyCommandHint"
+	{
+		"fr"		"Vous devez encore vous marquer comme prêt en tapant {GREEN}{1}"
+	}
+	"NoPermission"
+	{
+		"fr"		"Vous n'avez pas la permission pour faire cela."
+	}
+	"NotUsingCaptains"
+	{
+		"fr"		"Le match n'utilise pas les capitaines d'équipe."
+	}
+	"Scrambling"
+	{
+		"fr"		"{GREEN}Mélange des équipes !"
+	}
+	"ForceEnd"
+	{
+		"fr"		"{GREEN}{1}{NORMAL} a forcé l'arrêt du match."
+	}
+	"Pause"
+	{
+		"fr"		"{GREEN}{1} {NORMAL}demande une pause."
+	}
+	"Unpause"
+	{
+		"fr"		"{GREEN}{1} {NORMAL}a enlevé la pause."
+	}
+	"NewLeader"
+	{
+		"fr"		"{GREEN}{1}{NORMAL} est le nouveau leader"
+	}
+	"CaptMessage"
+	{
+		"fr"		"Capitaine {1} sera {2}"
+	}
+	"TeamSetupMenuTitle"
+	{
+		"fr"		"Comment seront configurées les équipes ?"
+	}
+	"TeamSetupMenuCaptains"
+	{
+		"fr"		"Les capitaines assignés sélectionnent leur équipe"
+	}
+	"TeamSetupMenuRandom"
+	{
+		"fr"		"Équipes aléatoires"
+	}
+	"TeamSetupMenuManual"
+	{
+		"fr"		"Les joueurs changent manuellement d'équipe"
+	}
+	"TeamSetupCaptainsShort"
+	{
+		"fr"		"les capitaines sélectionnent leur équipe"
+	}
+	"TeamSetupRandomShort"
+	{
+		"fr"		"équipes aléatoires"
+	}
+	"TeamSetupManualShort"
+	{
+		"fr"		"changement manuel"
+	}
+	"HowManyPlayers"
+	{
+		"fr"		"Combien de joueurs par équipe ?"
+	}
+	"MapChoiceMenuTitle"
+	{
+		"fr"		"Comment la carte sera décidée ?"
+	}
+	"MapChoiceCurrent"
+	{
+		"fr"		"Utiliser la carte en cours"
+	}
+	"MapChoiceVote"
+	{
+		"fr"		"Voter pour une carte"
+	}
+	"MapChoiceVeto"
+	{
+		"fr"		"Les capitaines excluent les cartes jusqu'à ce qu'il n'en reste qu'une"
+	}
+	"MapChoiceCurrentShort"
+	{
+		"fr"		"utiliser la carte en cours"
+	}
+	"MapChoiceVoteShort"
+	{
+		"fr"		"voter pour une carte"
+	}
+	"MapChoiceVetoShort"
+	{
+		"fr"		"Les capitaines excluent les cartes"
+	}
+	"Yes"
+	{
+		"fr"		"oui"
+	}
+	"No"
+	{
+		"fr"		"non"
+	}
+	"Enabled"
+	{
+		"fr"		"activé"
+	}
+	"Disabled"
+	{
+		"fr"		"désactivé"
+	}
+	"InitialPickTitle"
+	{
+		"fr"		"Que préférez-vous :"
+	}
+	"InitialPickSides"
+	{
+		"fr"		"Choisir de quel côté commencer"
+	}
+	"InitialPickPlayer"
+	{
+		"fr"		"Choisir le premier joueur"
+	}
+	"InitialPickPlayerChoice"
+	{
+		"fr"		"{1} a décidé de choisir {GREEN}le premier joueur."
+	}
+	"InitialPickSideChoice"
+	{
+		"fr"		"{1} a décidé de choisir {GREEN}de quel côté commencer."
+	}
+	"SideChoiceTitle"
+	{
+		"fr"		"De quel côté souhaitez-vous commencer :"
+	}
+	"SideChoiceSelected"
+	{
+		"fr"		"{1} a choisi de commencer du côté {GREEN}{2} {NORMAL}."
+	}
+	"PlayerPickTitle"
+	{
+		"fr"		"Sélectionnez vos joueurs:"
+	}
+	"PlayerPickChoice"
+	{
+		"fr"		"{1} a sélectionné {2}."
+	}
+	"SpecCantReady"
+	{
+		"fr"		"Vous ne pouvez pas être prêt en tant que spectateur."
+	}
+	"VetoMenuTitle"
+	{
+		"fr"		"Sélectionnez une carte à exclure"
+	}
+	"PlayerVetoed"
+	{
+		"fr"		"{1} {NORMAL}a exclu {LIGHT_RED}{2}."
+	}
+	"MapsLeft"
+	{
+		"fr"		"Cartes restantes :"
+	}
+	"VoteMenuTitle"
+	{
+		"fr"		"Votez pour une carte"
+	}
+	"Random"
+	{
+		"fr"		"Aléatoire"
+	}
+	"RandomMapVote"
+	{
+		"fr"		"aléatoire"
+	}
+	"NotLiveYet"
+	{
+		"fr"		"Le match n'a pas encore commencé."
+	}
+	"EndMatchMenuTitle"
+	{
+		"fr"		"Êtes-vous sûr de vouloir arrêter le match ?"
+	}
+	"EndMatch"
+	{
+		"fr"		"Oui, arrêter le match"
+	}
+	"ContinueMatch"
+	{
+		"fr"		"Non, continuer le match"
+	}
+	"MutualUnpauseMessage"
+	{
+		"fr"		"Les {1} veulent enlever la pause, en attente des {2} pour taper {GREEN}{3}"
+	}
+	"CancelCountdownMessage"
+	{
+		"fr"		"Le match a été annulé."
+	}
+	"Countdown"
+	{
+		"fr"		"Lancement dans {GREEN}{1} {NORMAL}secondes"
+	}
+	"Ready"
+	{
+		"fr"		"[Prêt]"
+	}
+	"NotReady"
+	{
+		"fr"		"[Pas prêt]"
+	}
+	"KnifeRound"
+	{
+		"fr"		"COUTEAU!"
+	}
+	"KnifeRoundOption"
+	{
+		"fr"		"Round au couteau"
+	}
+	"KnifeRoundWinner"
+	{
+		"fr"		"Les {1} gagnent le couteau. En attente de leur choix en tapant {GREEN}{2} {NORMAL}ou {GREEN}{3}"
+	}
+	"KnifeRoundWinnerVote"
+	{
+		"fr"		"Les {1} gagnent le couteau. En attente de leur vote en tapant {GREEN}{2} {NORMAL}ou {GREEN}{3}"
+	}
+	"TVDisabled"
+	{
+		"fr"		"La GOTV est désactivée. Une démo ne peut être enregistrée. Tapez {GREEN}tv_enable 1{NORMAL} pour activer la GOTV."
+	}
+	"FinishSetup"
+	{
+		"fr"		"Finir la configuration"
+	}
+	"CancelSetup"
+	{
+		"fr"		"Annuler la configuration"
+	}
+	"Back"
+	{
+		"fr"		"Retour"
+	}
+	"ChooseCaptainTitle"
+	{
+		"fr"		"Choisissez le capitaine {1} :"
+	}
+	"ChooseLeaderTitle"
+	{
+		"fr"		"Choisissez le leader du match :"
+	}
+	"WaitingForStart"
+	{
+		"fr"		"Tous les joueurs sont prêts, en attente de {GREEN}{1} {NORMAL}pour taper {GREEN}{2}"
+	}
+	"StartMatchMenuOption"
+	{
+		"fr"		"Lancer le match"
+	}
+	"SetCaptainsMenuOption"
+	{
+		"fr"		"Sélectionner les capitaines"
+	}
+	"AimWarmupMenuOption"
+	{
+		"fr"		"Utiliser une carte aim"
+	}
+	"ChangeMapMenuOption"
+	{
+		"fr"		"Changer la carte"
+	}
+	"ChangeMapMenuTitle"
+	{
+		"fr"		"Sélectionner une carte"
+	}
+	"Autobalanced"
+	{
+		"fr"		"Équilibrage automatique"
+	}
+	"IsNowReady"
+	{
+		"fr"		"{1} est maintenant prêt."
+	}
+	"IsNoLongerReady"
+	{
+		"fr"		"{1} n'est plus prêt."
+	}
+	"SavedReadyMessage"
+	{
+		"fr"		"Enregistrement du message personnalisé réussi."
+	}
+	"PlayoutOption"
+	{
+		"fr"		"Jouer tous les rounds"
+	}
+	"KnifeRoundVoteStay"
+	{
+		"fr"		"Vote pour rester enregistré"
+	}
+	"KnifeRoundVoteSwap"
+	{
+		"fr"		"Vote pour changer enregistré"
+	}
+	"ChangeMapMessage"
+	{
+		"fr"		"Changement de carte pour {GREEN}{1}{NORMAL}..."
+	}
+	"TimeLeftInVoteHint"
+	{
+		"fr"		"{1} secondes restantes pour voter..."
+	}
+	"IRVMenuTitle"
+	{
+		"fr"		"Sélectionnez votre #{1} choix"
+	}
+	"IRVSelectionMessage"
+	{
+		"fr"		"Vous avez choisi {GREEN}{1} {NORMAL}en tant que {GREEN}#{2} {NORMAL}choix."
+	}
+	"MapVoteWinnerHintText"
+	{
+		"fr"		"Vote terminé... {1} gagne!"
+	}
+	"IRVResultMessage"
+	{
+		"fr"		"{GREEN}{1}{NORMAL} gagne, {GREEN}{2}{NORMAL} arrive 2e, {GREEN}{3}{NORMAL} en 3e"
+	}
+}

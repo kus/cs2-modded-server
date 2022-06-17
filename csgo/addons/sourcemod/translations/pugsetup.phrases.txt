@@ -1,0 +1,490 @@
+"Phrases"
+{
+	"SetupMenuTitle"
+	{
+		"en"		"Setup options"
+	}
+	"MapTypeOption"
+	{
+		"en"		"Map type"
+	}
+	"TeamTypeOption"
+	{
+		"en"		"Team type"
+	}
+	"TeamSizeOption"
+	{
+		"en"		"Team size"
+	}
+	"DemoOption"
+	{
+		"en"		"Record demo"
+	}
+	"AutoLiveOption"
+	{
+		"en"		"Autolive"
+	}
+	"VetoMessage"
+	{
+		"en"		"The map veto process will begin in a few seconds."
+	}
+	"VoteMessage"
+	{
+		"en"		"The map voting will begin in a few seconds."
+	}
+	"AlreadyLive"
+	{
+		"en"		"The game is already live!"
+	}
+	"ReadyStatusPlayers"
+	{
+		"#format"	"{1:i},{2:i}"
+		"en"		"{1} out of {2} players are ready"
+	}
+	"ReadyStatus"
+	{
+		"#format"	"{1:i},{2:i},{3:s}"
+		"en"		"{1} out of {2} players are ready\nType {3} to ready up"
+	}
+	"ReadyStatusCaptains"
+	{
+		"#format"	"{1:i},{2:i},{3:s},{4:s}"
+		"en"		"{1} out of {2} players are ready\nCaptain 1: {3}\nCaptain 2: {4}"
+	}
+	"ReadyStatusAllReadyPick"
+	{
+		"en"		"Starting player picking..."
+	}
+	"ReadyStatusAllReady"
+	{
+		"en"		"Starting match..."
+	}
+	"ReadyStatusAllReadyWaiting"
+	{
+		"en"		"Waiting to start..."
+	}
+	"ReadyStatusAllReadyVeto"
+	{
+		"en"		"Starting map veto process..."
+	}
+	"ReadyStatusAllReadyVote"
+	{
+		"en"		"Starting map voting..."
+	}
+	"CaptainNotSelected"
+	{
+		"en"		"not selected"
+	}
+	"SetCaptainsHint"
+	{
+		"#format"		"{1:N},{2:s}"
+		"en"		"Waiting for {GREEN}{1} {NORMAL}to type {GREEN}{2} {NORMAL}to select captains."
+	}
+	"ReadyCommandHint"
+	{
+		"#format"		"{1:s}"
+		"en"		"You still need to ready up by typing {GREEN}{1}"
+	}
+	"NoPermission"
+	{
+		"en"		"You don't have permission to do that."
+	}
+	"NotUsingCaptains"
+	{
+		"en"		"This game isn't using team captains."
+	}
+	"Scrambling"
+	{
+		"en"		"{GREEN}Scrambling the teams!"
+	}
+	"ForceEnd"
+	{
+		"#format"	"{1:N}"
+		"en"		"The match was force-ended by {GREEN}{1}{NORMAL}."
+	}
+	"Pause"
+	{
+		"#format"	"{1:N}"
+		"en"		"{GREEN}{1} {NORMAL}has called for a pause."
+	}
+	"Unpause"
+	{
+		"#format"	"{1:N}"
+		"en"		"{GREEN}{1} {NORMAL}has unpaused."
+	}
+	"SetupBy"
+	{
+		"#format"	"{1:N}"
+		"en"		"Pug leader: {GREEN}{1}"
+	}
+	"NewLeader"
+	{
+		"#format"		"{1:N}"
+		"en"		"The new leader is {GREEN}{1}"
+	}
+	"CaptMessage"
+	{
+		"#format"		"{1:d},{2:s}"
+		"en"		"Captain {1} will be {2}"
+	}
+	"TeamSetupMenuTitle"
+	{
+		"en"		"How will teams be setup?"
+	}
+	"TeamSetupMenuCaptains"
+	{
+		"en"		"Assigned captains pick their teams"
+	}
+	"TeamSetupMenuRandom"
+	{
+		"en"		"Random teams"
+	}
+	"TeamSetupMenuManual"
+	{
+		"en"		"Players manually switch teams"
+	}
+	"TeamSetupCaptainsShort"
+	{
+		"en"		"captains pick players"
+	}
+	"TeamSetupRandomShort"
+	{
+		"en"		"random teams"
+	}
+	"TeamSetupManualShort"
+	{
+		"en"		"manually switch"
+	}
+	"HowManyPlayers"
+	{
+		"en"		"How many players per team?"
+	}
+	"MapChoiceMenuTitle"
+	{
+		"en"		"How should the map be chosen?"
+	}
+	"MapChoiceCurrent"
+	{
+		"en"		"Use the current map"
+	}
+	"MapChoiceVote"
+	{
+		"en"		"Vote for a map"
+	}
+	"MapChoiceVeto"
+	{
+		"en"		"Captains veto maps until 1 left"
+	}
+	"MapChoiceCurrentShort"
+	{
+		"en"		"use the current map"
+	}
+	"MapChoiceVoteShort"
+	{
+		"en"		"vote for a map"
+	}
+	"MapChoiceVetoShort"
+	{
+		"en"		"captains veto maps"
+	}
+	"Yes"
+	{
+		"en"		"yes"
+	}
+	"No"
+	{
+		"en"		"no"
+	}
+	"Enabled"
+	{
+		"en"		"enabled"
+	}
+	"Disabled"
+	{
+		"en"		"disabled"
+	}
+	"InitialPickTitle"
+	{
+		"en"		"Which would you prefer:"
+	}
+	"InitialPickSides"
+	{
+		"en"		"Pick the starting sides"
+	}
+	"InitialPickPlayer"
+	{
+		"en"		"Pick the first player"
+	}
+	"InitialPickPlayerChoice"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} has elected to get the {GREEN}first player pick."
+	}
+	"InitialPickSideChoice"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} has elected to pick the {GREEN}starting sides."
+	}
+	"SideChoiceTitle"
+	{
+		"en"		"Which side do you want first:"
+	}
+	"SideChoiceSelected"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1} has picked {GREEN}{2} {NORMAL}first."
+	}
+	"PlayerPickTitle"
+	{
+		"en"		"Pick your players:"
+	}
+	"PlayerPickChoice"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1} has picked {2}."
+	}
+	"SpecCantReady"
+	{
+		"en"		"You cannot ready up when you are on spectator."
+	}
+	"RestartCounter"
+	{
+		"#format"	"{1:d}"
+		"en"		"Restart {1}/3"
+	}
+	"Live"
+	{
+		"en"		"Match is {GREEN}LIVE"
+	}
+	"VetoMenuTitle"
+	{
+		"en"		"Select a map to veto"
+	}
+	"PlayerVetoed"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1} {NORMAL}vetoed {LIGHT_RED}{2}."
+	}
+	"MapsLeft"
+	{
+		"en"		"Maps left:"
+	}
+	"VoteMenuTitle"
+	{
+		"en"		"Vote for a map"
+	}
+	"Random"
+	{
+		"en"		"Random"
+	}
+	"RandomMapVote"
+	{
+		"en"		"random"
+	}
+	"NotLiveYet"
+	{
+		"en"		"The match has not begun yet."
+	}
+	"EndMatchMenuTitle"
+	{
+		"en"		"Are you sure you want to end the match?"
+	}
+	"EndMatch"
+	{
+		"en"		"Yes, end the match"
+	}
+	"ContinueMatch"
+	{
+		"en"		"No, continue the match"
+	}
+	"MutualUnpauseMessage"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"
+		"en"		"The {1} team wants to unpause, waiting for the {2} team to type {GREEN}{3}"
+	}
+	"CancelCountdownMessage"
+	{
+		"en"		"The match has been cancelled."
+	}
+	"Countdown"
+	{
+		"#format"	"{1:d}"
+		"en"		"Countdown: {GREEN}{1} {NORMAL}seconds"
+	}
+	"Ready"
+	{
+		"en"		"[Ready]"
+	}
+	"NotReady"
+	{
+		"en"		"[Not Ready]"
+	}
+	"KnifeRound"
+	{
+		"en"		"KNIFE!"
+	}
+	"KnifeRoundOption"
+	{
+		"en"		"Knife round"
+	}
+	"KnifeRoundWinner"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"
+		"en"		"The {1} team won the knife round. Waiting for them to type {GREEN}{2} {NORMAL}or {GREEN}{3}"
+	}
+	"KnifeRoundWinnerVote"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"
+		"en"		"The {1} team won the knife round. Waiting for them to vote by typing {GREEN}{2} {NORMAL}or {GREEN}{3}"
+	}
+	"TVDisabled"
+	{
+		"en"		"GOTV is disabled, so a demo cannot be recorded. Set {GREEN}tv_enable 1{NORMAL} to enable GOTV."
+	}
+	"FinishSetup"
+	{
+		"en"		"Finish setup"
+	}
+	"CancelSetup"
+	{
+		"en"		"Cancel setup"
+	}
+	"Back"
+	{
+		"en"		"Back"
+	}
+	"sm_capt_alias"
+	{
+		"en"		".capt"
+	}
+	"sm_endgame_alias"
+	{
+		"en"		".endgame"
+	}
+	"sm_notready_alias"
+	{
+		"en"		".notready"
+	}
+	"sm_pause_alias"
+	{
+		"en"		".pause"
+	}
+	"sm_ready_alias"
+	{
+		"en"		".ready"
+	}
+	"sm_setup_alias"
+	{
+		"en"		".setup"
+	}
+	"sm_stay_alias"
+	{
+		"en"		".stay"
+	}
+	"sm_swap_alias"
+	{
+		"en"		".swap"
+	}
+	"sm_unpause_alias"
+	{
+		"en"		".unpause"
+	}
+	"sm_start_alias"
+	{
+		"en"		".start"
+	}
+	"ChooseCaptainTitle"
+	{
+		"#format"	"{1:d}"
+		"en"		"Choose captain {1}:"
+	}
+	"ChooseLeaderTitle"
+	{
+		"en"		"Choose the game leader:"
+	}
+	"WaitingForStart"
+	{
+		"#format"		"{1:N},{2:s}"
+		"en"		"All players are ready, waiting for {GREEN}{1} {NORMAL}to type {GREEN}{2}"
+	}
+	"StartMatchMenuOption"
+	{
+		"en"		"Start the match"
+	}
+	"SetCaptainsMenuOption"
+	{
+		"en"		"Set captains"
+	}
+	"AimWarmupMenuOption"
+	{
+		"en"		"Use aim map warmup"
+	}
+	"ChangeMapMenuOption"
+	{
+		"en"		"Change map"
+	}
+	"ChangeMapMenuTitle"
+	{
+		"en"		"Select the map"
+	}
+	"Autobalanced"
+	{
+		"en"		"Autobalanced"
+	}
+	"IsNowReady"
+	{
+		"#format"		"{1:N}"
+		"en"		"{1} is now ready."
+	}
+	"IsNoLongerReady"
+	{
+		"#format"		"{1:N}"
+		"en"		"{1} is no longer ready."
+	}
+	"SavedReadyMessage"
+	{
+		"en"		"Successfully saved custom ready message."
+	}
+	"PlayoutOption"
+	{
+		"en"		"Play out maxrounds"
+	}
+	"KnifeRoundVoteStay"
+	{
+		"en"		"Recorded vote to stay"
+	}
+	"KnifeRoundVoteSwap"
+	{
+		"en"		"Recorded vote to swap"
+	}
+	"ChangeMapMessage"
+	{
+		"#format"		"{1:s}"
+		"en"		"Changing map to {GREEN}{1}{NORMAL}..."
+	}
+	"TimeLeftInVoteHint"
+	{
+		"#format"		"{1:d}"
+		"en"		"{1} seconds left in vote..."
+	}
+	"IRVMenuTitle"
+	{
+		"#format"		"{1:d}"
+		"en"		"Select your #{1} choice"
+	}
+	"IRVSelectionMessage"
+	{
+		"#format"		"{1:s},{2:d}"
+		"en"		"You picked {GREEN}{1} {NORMAL}as your {GREEN}#{2} {NORMAL}choice."
+	}
+	"MapVoteWinnerHintText"
+	{
+		"#format"		"{1:s}"
+		"en"		"Vote over... {1} won!"
+	}
+	"IRVResultMessage"
+	{
+		"#format"		"{1:s},{2:s},{3:s}"
+		"en"		"{GREEN}{1}{NORMAL} won, {GREEN}{2}{NORMAL} came in 2nd, {GREEN}{3}{NORMAL} in 3rd"
+	}
+}

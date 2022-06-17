@@ -1,0 +1,331 @@
+"Phrases"
+{
+	"SetupMenuTitle"
+	{
+		"de"		"Einstellungen"
+	}
+	"MapTypeOption"
+	{
+		"de"		"Map Art"
+	}
+	"TeamTypeOption"
+	{
+		"de"		"Team Art"
+	}
+	"TeamSizeOption"
+	{
+		"de"		"Team Größe"
+	}
+	"DemoOption"
+	{
+		"de"		"Aufzeichnung starten"
+	}
+	"AutoLiveOption"
+	{
+		"de"		"Automatischer Start"
+	}
+	"VetoMessage"
+	{
+		"de"		"Map veto wird in wenigen Sekunden starten."
+	}
+	"VoteMessage"
+	{
+		"de"		"Die Mapwahl wird in wenigen Sekunden beginnen."
+	}
+	"AlreadyLive"
+	{
+		"de"		"Das Spiel ist bereits gestartet!"
+	}
+	"ReadyStatusPlayers"
+	{
+		"de"		"{1} von {2} Spielern ist bereit"
+	}
+	"ReadyStatus"
+	{
+		"de"		"{1} von {2} Spielern ist bereit\nType {3} um zu starten"
+	}
+	"ReadyStatusCaptains"
+	{
+		"de"		"{1} von {2} Spielern ist bereit\nCaptain 1: {3}\nCaptain 2: {4}"
+	}
+	"CaptainNotSelected"
+	{
+		"de"		"wurde nicht gewählt"
+	}
+	"SetCaptainsHint"
+	{
+		"de"		"Um einen Kapitän zu wählen, muss {GREEN}{1} {NORMAL}{GREEN}{2} {NORMAL} schreiben."
+	}
+	"NoPermission"
+	{
+		"de"		"Dafür hast du keine Berechtigung."
+	}
+	"NotUsingCaptains"
+	{
+		"de"		"Dieses Spiel wird ohne Kapitän durchgeführt."
+	}
+	"Scrambling"
+	{
+		"de"		"{GREEN}Die Teams werden gemischt!"
+	}
+	"ForceEnd"
+	{
+		"de"		"Das Match wurde beendet durch {GREEN}{1}{NORMAL}."
+	}
+	"Pause"
+	{
+		"de"		"{GREEN}{1} {NORMAL}hat das Spiel pausiert."
+	}
+	"Unpause"
+	{
+		"de"		"{GREEN}{1} {NORMAL}hat die Pause beendet."
+	}
+	"SetupBy"
+	{
+		"de"		"Spielleiter: {GREEN}{1}"
+	}
+	"NewLeader"
+	{
+		"de"		"Der neue Spielleiter ist: {GREEN}{1}"
+	}
+	"CaptMessage"
+	{
+		"de"		"Kapitän {1} ist nun {2}"
+	}
+	"TeamSetupMenuTitle"
+	{
+		"de"		"Wie werden die Teams gewählt?"
+	}
+	"TeamSetupMenuCaptains"
+	{
+		"de"		"Gewählte Kapitäne wählen ihre Teams?"
+	}
+	"TeamSetupMenuRandom"
+	{
+		"de"		"Zufällig gemischte Teams"
+	}
+	"TeamSetupMenuManual"
+	{
+		"de"		"Spieler können frei die Teams wechseln."
+	}
+	"TeamSetupCaptainsShort"
+	{
+		"de"		"Kapitän wählt Spieler"
+	}
+	"TeamSetupRandomShort"
+	{
+		"de"		"Zufällige Teams"
+	}
+	"TeamSetupManualShort"
+	{
+		"de"		"Freie Wahl"
+	}
+	"HowManyPlayers"
+	{
+		"de"		"Wie viele Spieler pro Team?"
+	}
+	"MapChoiceMenuTitle"
+	{
+		"de"		"Wie soll die Map gewählt werden?"
+	}
+	"MapChoiceCurrent"
+	{
+		"de"		"Derzeitige Map verwenden"
+	}
+	"MapChoiceVote"
+	{
+		"de"		"Map abstimmen"
+	}
+	"MapChoiceVeto"
+	{
+		"de"		"Kapitäne schließen Maps aus bis 1 übrig ist"
+	}
+	"MapChoiceCurrentShort"
+	{
+		"de"		"Derzeitige Map"
+	}
+	"MapChoiceVoteShort"
+	{
+		"de"		"Mapabstimmung"
+	}
+	"MapChoiceVetoShort"
+	{
+		"de"		"veto"
+	}
+	"Yes"
+	{
+		"de"		"Ja"
+	}
+	"No"
+	{
+		"de"		"Nein"
+	}
+	"Enabled"
+	{
+		"de"		"Ausgewählt"
+	}
+	"Disabled"
+	{
+		"de"		"Ausgeschaltet"
+	}
+	"InitialPickTitle"
+	{
+		"de"		"Was möchtest du:"
+	}
+	"InitialPickSides"
+	{
+		"de"		"Wähle die Startseite"
+	}
+	"InitialPickPlayer"
+	{
+		"de"		"Wähle den ersten Spieler"
+	}
+	"InitialPickPlayerChoice"
+	{
+		"de"		"{1} möchte den {GREEN}ersten Spieler wählen."
+	}
+	"InitialPickSideChoice"
+	{
+		"de"		"{1} möchte die {GREEN}Startseite wählen."
+	}
+	"SideChoiceTitle"
+	{
+		"de"		"Welche Seite möchtest du zuerst spielen:"
+	}
+	"SideChoiceSelected"
+	{
+		"de"		"{1} hat {GREEN}{2} {NORMAL}gewählt."
+	}
+	"PlayerPickTitle"
+	{
+		"de"		"Wähle deine Spieler:"
+	}
+	"PlayerPickChoice"
+	{
+		"de"		"{1} hat {2} gewählt."
+	}
+	"SpecCantReady"
+	{
+		"de"		"Im Zuschauermodus kannst du das dich nicht bereit melden"
+	}
+	"RestartCounter"
+	{
+		"de"		"Neustart in {1}/3"
+	}
+	"Live"
+	{
+		"de"		"Das Spiel hat {GREEN}begonnen"
+	}
+	"VetoMenuTitle"
+	{
+		"de"		"Wähle eine Map die du nicht spielen willst"
+	}
+	"PlayerVetoed"
+	{
+		"de"		"{1} {NORMAL}hat {LIGHT_RED}{2} abgewählt."
+	}
+	"MapsLeft"
+	{
+		"de"		"Map übrig:"
+	}
+	"VoteMenuTitle"
+	{
+		"de"		"Stimme für eine Map"
+	}
+	"Random"
+	{
+		"de"		"Zufall"
+	}
+	"NotLiveYet"
+	{
+		"de"		"Das Spiel hat noch nicht begonnen."
+	}
+	"EndMatchMenuTitle"
+	{
+		"de"		"Bist du sicher das Spiel zu beenden?"
+	}
+	"EndMatch"
+	{
+		"de"		"Ja, beende das Spiel"
+	}
+	"ContinueMatch"
+	{
+		"de"		"Nein, Spiel wird fortgeführt."
+	}
+	"MutualUnpauseMessage"
+	{
+		"de"		"{1} möchte die Pause beenden, es wird auf die Bestätigung von {2} durch das tippen von {GREEN}{3} gewartet."
+	}
+	"CancelCountdownMessage"
+	{
+		"de"		"Das Spiel wurde beendet."
+	}
+	"Countdown"
+	{
+		"de"		"Countdown: {GREEN}{1} {NORMAL} Sekunden"
+	}
+	"Ready"
+	{
+		"de"		"[Bereit]"
+	}
+	"NotReady"
+	{
+		"de"		"[Nicht Bereit]"
+	}
+	"KnifeRound"
+	{
+		"de"		"Messer!"
+	}
+	"KnifeRoundOption"
+	{
+		"de"		"Messer Runde"
+	}
+	"KnifeRoundWinner"
+	{
+		"de"		"{1} hat die Messer Runde gewonnen. Bitte tippt{GREEN}{2} {NORMAL}oder {GREEN}{3} ein."
+	}
+	"TVDisabled"
+	{
+		"de"		"GOTV ist deaktiviert, dadurch kann keine Demo aufgenommen werden. Setzt {GREEN}tv_enable 1{NORMAL} um GOTV zu aktivieren."
+	}
+	"FinishSetup"
+	{
+		"de"		"Konfiguration abgeschlossen"
+	}
+	"CancelSetup"
+	{
+		"de"		"Konfiguration abbrechen"
+	}
+	"Back"
+	{
+		"de"		"Zurück"
+	}
+	"ChooseCaptainTitle"
+	{
+		"de"		"Wähle Kapitän {1}:"
+	}
+	"ChooseLeaderTitle"
+	{
+		"de"		"Wähle Spielleiter:"
+	}
+	"WaitingForStart"
+	{
+		"de"		"Alle Spieler sind bereit{GREEN}{1} {NORMAL} muss {GREEN}{2} eintippen."
+	}
+	"StartMatchMenuOption"
+	{
+		"de"		"Spiel starten"
+	}
+	"SetCaptainsMenuOption"
+	{
+		"de"		"Kapitäne festlegen"
+	}
+	"ChangeMapMenuOption"
+	{
+		"de"		"Map wechseln"
+	}
+	"ChangeMapMenuTitle"
+	{
+		"de"		"Wähle Map"
+	}
+}

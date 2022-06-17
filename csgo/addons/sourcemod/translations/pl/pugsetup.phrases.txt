@@ -1,0 +1,399 @@
+"Phrases"
+{
+	"SetupMenuTitle"
+	{
+		"pl"		"Opcje ustawienia"
+	}
+	"MapTypeOption"
+	{
+		"pl"		"Typ mapy"
+	}
+	"TeamTypeOption"
+	{
+		"pl"		"Typ drużyny"
+	}
+	"TeamSizeOption"
+	{
+		"pl"		"Wielkość drużyny"
+	}
+	"DemoOption"
+	{
+		"pl"		"Nagraj demo"
+	}
+	"AutoLiveOption"
+	{
+		"pl"		"Autolive"
+	}
+	"VetoMessage"
+	{
+		"pl"		"Odrzucanie map za chwilę się zacznie."
+	}
+	"VoteMessage"
+	{
+		"pl"		"Głosowanie na mapę za chwilę się zacznie."
+	}
+	"AlreadyLive"
+	{
+		"pl"		"Gra trwa!"
+	}
+	"ReadyStatusPlayers"
+	{
+		"pl"		"{1} z {2} graczy jest gotowych"
+	}
+	"ReadyStatus"
+	{
+		"pl"		"{1} z {2} graczy jest gotowych\nWpisz {3} aby zgłosić gotowość."
+	}
+	"ReadyStatusCaptains"
+	{
+		"pl"		"{1} z {2} graczy jest gotowych\nKapitan 1: {3}\nKapitan 2: {4}"
+	}
+	"CaptainNotSelected"
+	{
+		"pl"		"nie wybrany"
+	}
+	"SetCaptainsHint"
+	{
+		"pl"		"Oczekiwanie na {GREEN}{1} {NORMAL}aby wpisać {GREEN}{2} {NORMAL}by wybrać kapitanów."
+	}
+	"ReadyCommandHint"
+	{
+		"pl"		"Nadal musisz zgłosić gotowość wpisując {GREEN}{1}"
+	}
+	"NoPermission"
+	{
+		"pl"		"Nie masz do tego uprawnień."
+	}
+	"NotUsingCaptains"
+	{
+		"pl"		"Ta gra nie używa kapitanów."
+	}
+	"Scrambling"
+	{
+		"pl"		"{GREEN}Mieszanie drużyn!"
+	}
+	"ForceEnd"
+	{
+		"pl"		"Mecz został przerwany przez {GREEN}{1}{NORMAL}."
+	}
+	"Pause"
+	{
+		"pl"		"{GREEN}{1} {NORMAL}poprosił o pauzę."
+	}
+	"Unpause"
+	{
+		"pl"		"{GREEN}{1} {NORMAL}usunął pauzę."
+	}
+	"SetupBy"
+	{
+		"pl"		"Lider PUGa: {GREEN}{1}"
+	}
+	"NewLeader"
+	{
+		"pl"		"Nowym liderem jest {GREEN}{1}"
+	}
+	"CaptMessage"
+	{
+		"pl"		"Kapitan {1} będzie {2}"
+	}
+	"TeamSetupMenuTitle"
+	{
+		"pl"		"Jak będą ustawione drużyny?"
+	}
+	"TeamSetupMenuCaptains"
+	{
+		"pl"		"Wybrani kapitanowie wybierają swoje drużyny"
+	}
+	"TeamSetupMenuRandom"
+	{
+		"pl"		"Losowe drużyny"
+	}
+	"TeamSetupMenuManual"
+	{
+		"pl"		"Gracze manualnie zmieniają drużyny"
+	}
+	"TeamSetupCaptainsShort"
+	{
+		"pl"		"kapitanowie wybierają graczy"
+	}
+	"TeamSetupRandomShort"
+	{
+		"pl"		"losowe drużyny"
+	}
+	"TeamSetupManualShort"
+	{
+		"pl"		"manualna zmiana"
+	}
+	"HowManyPlayers"
+	{
+		"pl"		"Ilu graczy na drużynę?"
+	}
+	"MapChoiceMenuTitle"
+	{
+		"pl"		"Jak będzie wybierana mapa?"
+	}
+	"MapChoiceCurrent"
+	{
+		"pl"		"Użyj tej mapy"
+	}
+	"MapChoiceVote"
+	{
+		"pl"		"Głosowanie na mapę"
+	}
+	"MapChoiceVeto"
+	{
+		"pl"		"Kapitanowie odrzucają mapy, aż zostanie jedna"
+	}
+	"MapChoiceCurrentShort"
+	{
+		"pl"		"użyj obecnej mapy"
+	}
+	"MapChoiceVoteShort"
+	{
+		"pl"		"głosowanie na mapę"
+	}
+	"MapChoiceVetoShort"
+	{
+		"pl"		"kapitanowie odrzucają mapy"
+	}
+	"Yes"
+	{
+		"pl"		"tak"
+	}
+	"No"
+	{
+		"pl"		"nie"
+	}
+	"Enabled"
+	{
+		"pl"		"włączone"
+	}
+	"Disabled"
+	{
+		"pl"		"wyłączone"
+	}
+	"InitialPickTitle"
+	{
+		"pl"		"Kogo wolisz:"
+	}
+	"InitialPickSides"
+	{
+		"pl"		"Wybierz rozpoczynające strony"
+	}
+	"InitialPickPlayer"
+	{
+		"pl"		"Wybierz pierwszego gracza"
+	}
+	"InitialPickPlayerChoice"
+	{
+		"pl"		"{1} został wylosowany do wybrania {GREEN}pierwszego gracza."
+	}
+	"InitialPickSideChoice"
+	{
+		"pl"		"{1} został wylosowany do wybrania {GREEN}rozpoczynających stron."
+	}
+	"SideChoiceTitle"
+	{
+		"pl"		"Którą stronę chcesz pierwszą:"
+	}
+	"SideChoiceSelected"
+	{
+		"pl"		"{1} wybrał {GREEN}{2} {NORMAL}pierwszego."
+	}
+	"PlayerPickTitle"
+	{
+		"pl"		"Wybierz swoich graczy:"
+	}
+	"PlayerPickChoice"
+	{
+		"pl"		"{1} wybrał {2}."
+	}
+	"SpecCantReady"
+	{
+		"pl"		"Nie możesz zgłosić gotowości będąc widzem."
+	}
+	"RestartCounter"
+	{
+		"pl"		"Restart {1}/3"
+	}
+	"Live"
+	{
+		"pl"		"Mecz jest {GREEN}LIVE"
+	}
+	"VetoMenuTitle"
+	{
+		"pl"		"Wybierz mapę do odrzucenia"
+	}
+	"PlayerVetoed"
+	{
+		"pl"		"{1} {NORMAL}odrzucił {LIGHT_RED}{2}."
+	}
+	"MapsLeft"
+	{
+		"pl"		"Pozostałe mapy:"
+	}
+	"VoteMenuTitle"
+	{
+		"pl"		"Zagłosuj na mapę"
+	}
+	"Random"
+	{
+		"pl"		"Losowo"
+	}
+	"RandomMapVote"
+	{
+		"pl"		"losowo"
+	}
+	"NotLiveYet"
+	{
+		"pl"		"Mecz jeszcze się nie zaczął."
+	}
+	"EndMatchMenuTitle"
+	{
+		"pl"		"Jesteś pewien, że chcesz zakończyć mecz?"
+	}
+	"EndMatch"
+	{
+		"pl"		"Tak, zakończ mecz"
+	}
+	"ContinueMatch"
+	{
+		"pl"		"Nie, kontynuuj mecz"
+	}
+	"MutualUnpauseMessage"
+	{
+		"pl"		"Drużyna {1} chce usunąć pauzę, czekanie na drużynę {2} do wpisania {GREEN}{3}"
+	}
+	"CancelCountdownMessage"
+	{
+		"pl"		"Mecz został anulowany."
+	}
+	"Countdown"
+	{
+		"pl"		"Odliczanie: {GREEN}{1} {NORMAL}sek."
+	}
+	"Ready"
+	{
+		"pl"		"[Gotowy]"
+	}
+	"NotReady"
+	{
+		"pl"		"[Niegotowy]"
+	}
+	"KnifeRound"
+	{
+		"pl"		"NOŻE!"
+	}
+	"KnifeRoundOption"
+	{
+		"pl"		"Runda nożowa"
+	}
+	"KnifeRoundWinner"
+	{
+		"pl"		"Drużyna {1} Wygrała rundę nożową. Czekanie na wpisanie {GREEN}{2} {NORMAL}lub {GREEN}{3}"
+	}
+	"TVDisabled"
+	{
+		"pl"		"GOTV jest wyłączone, więc demo nie może być nagrane. Ustaw {GREEN}tv_enable 1{NORMAL} aby włączyć GOTV."
+	}
+	"FinishSetup"
+	{
+		"pl"		"Zakończ ustawianie"
+	}
+	"CancelSetup"
+	{
+		"pl"		"Anuluj ustawianie"
+	}
+	"Back"
+	{
+		"pl"		"Wstecz"
+	}
+	"sm_capt_alias"
+	{
+		"pl"		".kapt"
+	}
+	"sm_endgame_alias"
+	{
+		"pl"		".zakoncz"
+	}
+	"sm_notready_alias"
+	{
+		"pl"		".niegot"
+	}
+	"sm_pause_alias"
+	{
+		"pl"		".pauza"
+	}
+	"sm_ready_alias"
+	{
+		"pl"		".got"
+	}
+	"sm_setup_alias"
+	{
+		"pl"		".ustawianie"
+	}
+	"sm_stay_alias"
+	{
+		"pl"		".zostan"
+	}
+	"sm_swap_alias"
+	{
+		"pl"		".zmien"
+	}
+	"sm_unpause_alias"
+	{
+		"pl"		".konpauza"
+	}
+	"sm_start_alias"
+	{
+		"pl"		".start"
+	}
+	"ChooseCaptainTitle"
+	{
+		"pl"		"Wybierz kapitana {1}:"
+	}
+	"ChooseLeaderTitle"
+	{
+		"pl"		"Wybierz lidera gry:"
+	}
+	"WaitingForStart"
+	{
+		"pl"		"Wszyscy gracze są gotowi, czekanie na {GREEN}{1} {NORMAL}by wpisał {GREEN}{2}"
+	}
+	"StartMatchMenuOption"
+	{
+		"pl"		"Rozpocznij mecz"
+	}
+	"SetCaptainsMenuOption"
+	{
+		"pl"		"Ustaw kapitanów"
+	}
+	"AimWarmupMenuOption"
+	{
+		"pl"		"Użyj rozgrzewki na mapie treningowej"
+	}
+	"ChangeMapMenuOption"
+	{
+		"pl"		"Zmień mapę"
+	}
+	"ChangeMapMenuTitle"
+	{
+		"pl"		"Wybierz mapę"
+	}
+	"Autobalanced"
+	{
+		"pl"		"Zbalansowano"
+	}
+	"IsNowReady"
+	{
+		"pl"		"{1} jest już gotowy."
+	}
+	"IsNoLongerReady"
+	{
+		"pl"		"{1} nie jest już gotowy."
+	}
+	"PlayoutOption"
+	{
+		"pl"		"Rozegrać maksymalną liczbę rund"
+	}
+}

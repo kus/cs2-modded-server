@@ -1,0 +1,379 @@
+"Phrases"
+{
+	"SetupMenuTitle"
+	{
+		"ru"		"Настройка параметров матча"
+	}
+	"MapTypeOption"
+	{
+		"ru"		"Тип карты"
+	}
+	"TeamTypeOption"
+	{
+		"ru"		"Тип команды"
+	}
+	"TeamSizeOption"
+	{
+		"ru"		"Размер команды"
+	}
+	"DemoOption"
+	{
+		"ru"		"Запись DEMO"
+	}
+	"AutoLiveOption"
+	{
+		"ru"		"Автом. начать Матч"
+	}
+	"VetoMessage"
+	{
+		"ru"		"Голосование методом исключения карт начнется через несколько секунд."
+	}
+	"VoteMessage"
+	{
+		"ru"		"Голосование за карту начнется через несколько секунд."
+	}
+	"AlreadyLive"
+	{
+		"ru"		"Матч уже запущен!"
+	}
+	"ReadyStatusPlayers"
+	{
+		"ru"		"{1} из {2} игроков готовы"
+	}
+	"ReadyStatus"
+	{
+		"ru"		"{1} из {2} игроков готовы\nПишите {3}\nдля подтверждения готовности"
+	}
+	"ReadyStatusCaptains"
+	{
+		"ru"		"{1} из {2} игроков готовы\nКапитан 1: {3}\nКапитан 2: {4}"
+	}
+	"CaptainNotSelected"
+	{
+		"ru"		"не выбран"
+	}
+	"SetCaptainsHint"
+	{
+		"ru"		"Ждем {GREEN}{1} {NORMAL}пока напишет {GREEN}{2} {NORMAL}для выбора капитанов."
+	}
+	"ReadyCommandHint"
+	{
+		"ru"		"Вам необходимо подтвердить готовность, написав в чате {GREEN}{1}"
+	}
+	"NoPermission"
+	{
+		"ru"		"Недостаточно прав."
+	}
+	"NotUsingCaptains"
+	{
+		"ru"		"Игра без капитанов."
+	}
+	"Scrambling"
+	{
+		"ru"		"{GREEN}Перемешивание команд!"
+	}
+	"ForceEnd"
+	{
+		"ru"		"{GREEN}{1} {NORMAL}принудительно остановил матч."
+	}
+	"Pause"
+	{
+		"ru"		"{GREEN}{1} {NORMAL}приостановил матч."
+	}
+	"Unpause"
+	{
+		"ru"		"{GREEN}{1} {NORMAL}возобновил матч."
+	}
+	"SetupBy"
+	{
+		"ru"		"Параметры матча установил {GREEN}{1}"
+	}
+	"NewLeader"
+	{
+		"ru"		"Новый лидер матча: {GREEN}{1}"
+	}
+	"CaptMessage"
+	{
+		"ru"		"Капитаном {1} назначен {2}"
+	}
+	"TeamSetupMenuTitle"
+	{
+		"ru"		"Как будут распределены игроки?"
+	}
+	"TeamSetupMenuCaptains"
+	{
+		"ru"		"Капитаны распределяют игроков"
+	}
+	"TeamSetupMenuRandom"
+	{
+		"ru"		"Случайное распределение"
+	}
+	"TeamSetupMenuManual"
+	{
+		"ru"		"Игроки самостоятельно выбирут команду"
+	}
+	"TeamSetupCaptainsShort"
+	{
+		"ru"		"распределяют капитаны"
+	}
+	"TeamSetupRandomShort"
+	{
+		"ru"		"случайный выбор"
+	}
+	"TeamSetupManualShort"
+	{
+		"ru"		"самостоятельный выбор"
+	}
+	"HowManyPlayers"
+	{
+		"ru"		"Сколько игроков в команде?"
+	}
+	"MapChoiceMenuTitle"
+	{
+		"ru"		"Как будет выбрана карта?"
+	}
+	"MapChoiceCurrent"
+	{
+		"ru"		"Выбрать текущую карту"
+	}
+	"MapChoiceVote"
+	{
+		"ru"		"Голосование за карту"
+	}
+	"MapChoiceVeto"
+	{
+		"ru"		"Голосование капитанов методом исключения карт"
+	}
+	"MapChoiceCurrentShort"
+	{
+		"ru"		"текущая"
+	}
+	"MapChoiceVoteShort"
+	{
+		"ru"		"голосование"
+	}
+	"MapChoiceVetoShort"
+	{
+		"ru"		"методом исключения карт"
+	}
+	"Yes"
+	{
+		"ru"		"Да"
+	}
+	"No"
+	{
+		"ru"		"Нет"
+	}
+	"Enabled"
+	{
+		"ru"		"включен"
+	}
+	"Disabled"
+	{
+		"ru"		"выключен"
+	}
+	"InitialPickTitle"
+	{
+		"ru"		"Что бы вы предпочли:"
+	}
+	"InitialPickSides"
+	{
+		"ru"		"Выбрать первым сторону"
+	}
+	"InitialPickPlayer"
+	{
+		"ru"		"Выбрать первого игрока"
+	}
+	"InitialPickPlayerChoice"
+	{
+		"ru"		"{1} решил выбрать {GREEN}первого игрока."
+	}
+	"InitialPickSideChoice"
+	{
+		"ru"		"{1} решил выбрать {GREEN}сторону команды."
+	}
+	"SideChoiceTitle"
+	{
+		"ru"		"За какую сторону вы хотите играть первым:"
+	}
+	"SideChoiceSelected"
+	{
+		"ru"		"{1} решил играть за {GREEN}{2} {NORMAL}первым."
+	}
+	"PlayerPickTitle"
+	{
+		"ru"		"Выберите игроков:"
+	}
+	"PlayerPickChoice"
+	{
+		"ru"		"{1} выбрал {2}."
+	}
+	"SpecCantReady"
+	{
+		"ru"		"Вы не можете быть готовы, находясь в спектрах."
+	}
+	"RestartCounter"
+	{
+		"ru"		"Рестарт {1}/3"
+	}
+	"Live"
+	{
+		"ru"		"{GREEN}!!! ПОЕХАЛИ !!!"
+	}
+	"VetoMenuTitle"
+	{
+		"ru"		"Вычеркните ненужные карты"
+	}
+	"PlayerVetoed"
+	{
+		"ru"		"{1} {NORMAL}вычеркнул {LIGHT_RED}{2}."
+	}
+	"MapsLeft"
+	{
+		"ru"		"Оставшиеся карты:"
+	}
+	"VoteMenuTitle"
+	{
+		"ru"		"Голосование за карту"
+	}
+	"Random"
+	{
+		"ru"		"Случайный выбор"
+	}
+	"RandomMapVote"
+	{
+		"ru"		"случайно"
+	}
+	"NotLiveYet"
+	{
+		"ru"		"Матч еще не начался."
+	}
+	"EndMatchMenuTitle"
+	{
+		"ru"		"Вы действительно хотите завершить матч?"
+	}
+	"EndMatch"
+	{
+		"ru"		"Да, завершить матч"
+	}
+	"ContinueMatch"
+	{
+		"ru"		"Нет, продолжить матч"
+	}
+	"MutualUnpauseMessage"
+	{
+		"ru"		"Команда {1} желает продолжить матч, ждем пока команда {2} напишет {GREEN}{3}"
+	}
+	"CancelCountdownMessage"
+	{
+		"ru"		"Матч отменен."
+	}
+	"Countdown"
+	{
+		"ru"		"Обратный отсчет: {GREEN}{1} {NORMAL}сек."
+	}
+	"Ready"
+	{
+		"ru"		"Готов"
+	}
+	"NotReady"
+	{
+		"ru"		"Не готов"
+	}
+	"KnifeRound"
+	{
+		"ru"		"НОЖЕВОЙ РАУНД!"
+	}
+	"KnifeRoundOption"
+	{
+		"ru"		"Ножевой раунд"
+	}
+	"KnifeRoundWinner"
+	{
+		"ru"		"Команда {1} выиграла ножевой раунд. Ждем их пока напишут {GREEN}{2} {NORMAL}или {GREEN}{3}"
+	}
+	"KnifeRoundWinnerVote"
+	{
+		"ru"		"Команда {1} выиграла ножевой раунд. Ждем их пока проголосуют {GREEN}{2} {NORMAL}или {GREEN}{3}"
+	}
+	"TVDisabled"
+	{
+		"ru"		"Запись DEMO невозможна, так как выключен GOTV. Установите {GREEN}tv_enable 1{NORMAL} для включения GOTV."
+	}
+	"FinishSetup"
+	{
+		"ru"		"Установить параметры матча"
+	}
+	"CancelSetup"
+	{
+		"ru"		"Отменить параметры матча"
+	}
+	"Back"
+	{
+		"ru"		"Назад"
+	}
+	"ChooseCaptainTitle"
+	{
+		"ru"		"Выберите капитана {1}:"
+	}
+	"ChooseLeaderTitle"
+	{
+		"ru"		"Выберите лидера матча:"
+	}
+	"WaitingForStart"
+	{
+		"ru"		"Все игроки готовы, ждем {GREEN}{1} {NORMAL}пока напишет {GREEN}{2}"
+	}
+	"StartMatchMenuOption"
+	{
+		"ru"		"Начать матч"
+	}
+	"SetCaptainsMenuOption"
+	{
+		"ru"		"Выбор капитанов"
+	}
+	"AimWarmupMenuOption"
+	{
+		"ru"		"Использовать AIM карту в разминке"
+	}
+	"ChangeMapMenuOption"
+	{
+		"ru"		"Сменить карту"
+	}
+	"ChangeMapMenuTitle"
+	{
+		"ru"		"Выберите карту"
+	}
+	"Autobalanced"
+	{
+		"ru"		"Автобаланс"
+	}
+	"IsNowReady"
+	{
+		"ru"		"{1} готов."
+	}
+	"IsNoLongerReady"
+	{
+		"ru"		"{1} не готов."
+	}
+	"SavedReadyMessage"
+	{
+		"ru"		"Сообщения готовности успешно сохранены."
+	}
+	"PlayoutOption"
+	{
+		"ru"		"Играть все раунды"
+	}
+	"KnifeRoundVoteStay"
+	{
+		"ru"		"Результат голосования - оставить сторону"
+	}
+	"KnifeRoundVoteSwap"
+	{
+		"ru"		"Результат голосования - сменить сторону"
+	}
+	"ChangeMapMessage"
+	{
+		"ru"		"Смена карты на {GREEN}{1}{NORMAL}..."
+	}
+}

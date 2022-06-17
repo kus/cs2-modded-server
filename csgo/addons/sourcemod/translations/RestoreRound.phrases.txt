@@ -1,0 +1,60 @@
+"Phrases"
+{
+	"CannotUseRightNow"
+	{
+		"en"			"You cannot use this command right now."
+	}
+	"UsedCommand"
+	{
+		"en"			"You've already used this command."
+	}
+	"TeamUsedCommand"
+	{
+		"en"			"Your team has already used this command."
+	}
+	"T"
+	{
+		"en"			"{yellow}Terrorists{default}"
+	}
+	"CT"
+	{
+		"en"			"{lightblue}Counter-Terrorists{default}"
+	}
+	"StopRequest"
+	{
+		"#format"		"{1:s},{2:s}"
+		"en"			"{1} requested to restore last round. {2} can type {lightgreen}.stop{default} in chat to restore last round!"
+	}
+	"RoundRestored"
+	{
+		"en"			"Round restored, GLHF!"
+	}
+	"UnpauseInst"
+	{
+		"en"			"Type {lightgreen}!unpause{default} to resume the match."
+	}
+	"Round"
+	{
+		"en"			"Round"
+	}
+	"CurrentShort"
+	{
+		"en"			" [Curr]"
+	}
+	"NoBackupRounds"
+	{
+		"en"			"No backup rounds found!"
+	}
+	"DeletedBackup"
+	{
+		"en"			"Deleted all backup rounds!"
+	}
+	"TUnpause"
+	{
+		"en"			"The T team wants to unpause. Waiting for the CT team to type {lightgreen}!unpause"
+	}
+	"CTUnpause"
+	{
+		"en"			"The CT team wants to unpause. Waiting for the T team to type {lightgreen}!unpause"
+	}
+}

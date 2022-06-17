@@ -1,0 +1,490 @@
+"Phrases"
+{
+	"SetupMenuTitle"
+	{
+		"tr"		"Maç öncesi ayarları"
+	}
+	"MapTypeOption"
+	{
+		"tr"		"Harita tipi"
+	}
+	"TeamTypeOption"
+	{
+		"tr"		"Takım tipi"
+	}
+	"TeamSizeOption"
+	{
+		"tr"		"Takım büyüklüğü"
+	}
+	"DemoOption"
+	{
+		"tr"		"Demo kaydet"
+	}
+	"AutoLiveOption"
+	{
+		"tr"		"OtoBaşlat"
+	}
+	"VetoMessage"
+	{
+		"tr"		"Harita veto oylaması birazdan başlayacak."
+	}
+	"VoteMessage"
+	{
+		"tr"		"Harita oylaması birazdan başlayacak."
+	}
+	"AlreadyLive"
+	{
+		"tr"		"Oyun çoktan başladı!"
+	}
+	"ReadyStatusPlayers"
+	{
+		"#format"	"{1:i},{2:i}"
+		"tr"		"{2} oyuncudan {1} tanesi hazır"
+	}
+	"ReadyStatus"
+	{
+		"#format"	"{1:i},{2:i},{3:s}"
+		"tr"		"{2} oyuncudan {1} tanesi hazır\nHazırsan {3} yaz"
+	}
+	"ReadyStatusCaptains"
+	{
+		"#format"	"{1:i},{2:i},{3:s},{4:s}"
+		"tr"		"{2} oyuncudan {1} tanesi hazır\nKaptan 1: {3}\nKaptan 2: {4}"
+	}
+	"ReadyStatusAllReadyPick"
+	{
+		"tr"		"Oyuncu seçimi başlatılıyor..."
+	}
+	"ReadyStatusAllReady"
+	{
+		"tr"		"Maç başlatılıyor..."
+	}
+	"ReadyStatusAllReadyWaiting"
+	{
+		"tr"		"Başlatma için bekleniyor..."
+	}
+	"ReadyStatusAllReadyVeto"
+	{
+		"tr"		"Harita veto oylaması başlatılıyor..."
+	}
+	"ReadyStatusAllReadyVote"
+	{
+		"tr"		"Harita oylaması başlatılıyor..."
+	}
+	"CaptainNotSelected"
+	{
+		"tr"		"seçilmedi"
+	}
+	"SetCaptainsHint"
+	{
+		"#format"		"{1:N},{2:s}"
+		"tr"		"{GREEN}{1} {NORMAL}takım kaptanını seçmek için {GREEN}{2} {NORMAL}yazması bekleniyor."
+	}
+	"ReadyCommandHint"
+	{
+		"#format"		"{1:s}"
+		"tr"		"Halen {GREEN}{1} yazarak hazır olduğunu belirtmen gerekli"
+	}
+	"NoPermission"
+	{
+		"tr"		"Bunu yapmaya yetkin yok."
+	}
+	"NotUsingCaptains"
+	{
+		"tr"		"Bu maç takım kaptanları kullanmıyor."
+	}
+	"Scrambling"
+	{
+		"tr"		"{GREEN}Takımlar karıştırılıyor!"
+	}
+	"ForceEnd"
+	{
+		"#format"	"{1:N}"
+		"tr"		"Maç, {GREEN}{1}{NORMAL} tarafından sona endirildi."
+	}
+	"Pause"
+	{
+		"#format"	"{1:N}"
+		"tr"		"{GREEN}{1} {NORMAL}mola istedi."
+	}
+	"Unpause"
+	{
+		"#format"	"{1:N}"
+		"tr"		"{GREEN}{1} {NORMAL}oyuna geri döndü."
+	}
+	"SetupBy"
+	{
+		"#format"	"{1:N}"
+		"tr"		"Pug lideri: {GREEN}{1}"
+	}
+	"NewLeader"
+	{
+		"#format"		"{1:N}"
+		"tr"		"Yeni lider {GREEN}{1}"
+	}
+	"CaptMessage"
+	{
+		"#format"		"{1:d},{2:s}"
+		"tr"		"Kaptan {1}, {2} olacak"
+	}
+	"TeamSetupMenuTitle"
+	{
+		"tr"		"Takımlar nasıl ayarlansın?"
+	}
+	"TeamSetupMenuCaptains"
+	{
+		"tr"		"Seçilen kaptanlar takımınızı seçin"
+	}
+	"TeamSetupMenuRandom"
+	{
+		"tr"		"Rastgele takım"
+	}
+	"TeamSetupMenuManual"
+	{
+		"tr"		"Oyuncular tarafından seçilen takım"
+	}
+	"TeamSetupCaptainsShort"
+	{
+		"tr"		"kaptanlar oyuncuları seçsin"
+	}
+	"TeamSetupRandomShort"
+	{
+		"tr"		"rastgele takım"
+	}
+	"TeamSetupManualShort"
+	{
+		"tr"		"el ile değiştirme"
+	}
+	"HowManyPlayers"
+	{
+		"tr"		"Bir takımda kaç kişi olacak?"
+	}
+	"MapChoiceMenuTitle"
+	{
+		"tr"		"Harita nasıl seçilsin?"
+	}
+	"MapChoiceCurrent"
+	{
+		"tr"		"Bu haritayı kullan"
+	}
+	"MapChoiceVote"
+	{
+		"tr"		"Bir harita için oyla"
+	}
+	"MapChoiceVeto"
+	{
+		"tr"		"1 harita kalana kadar kaptanlar veto etsin"
+	}
+	"MapChoiceCurrentShort"
+	{
+		"tr"		"bu haritayı kullan"
+	}
+	"MapChoiceVoteShort"
+	{
+		"tr"		"harita oyla"
+	}
+	"MapChoiceVetoShort"
+	{
+		"tr"		"kaptan harita vetosu"
+	}
+	"Yes"
+	{
+		"tr"		"evet"
+	}
+	"No"
+	{
+		"tr"		"hayır"
+	}
+	"Enabled"
+	{
+		"tr"		"etkin"
+	}
+	"Disabled"
+	{
+		"tr"		"devre dışı"
+	}
+	"InitialPickTitle"
+	{
+		"tr"		"Hangisini tercih ediyorsun:"
+	}
+	"InitialPickSides"
+	{
+		"tr"		"Taraf seçmeye başlayın"
+	}
+	"InitialPickPlayer"
+	{
+		"tr"		"İlk oyuncuyu seçin"
+	}
+	"InitialPickPlayerChoice"
+	{
+		"#format"	"{1:s}"
+		"tr"		"{1}, {GREEN}ilk oyuncu seçimi {NORMAL}için seçildi."
+	}
+	"InitialPickSideChoice"
+	{
+		"#format"	"{1:s}"
+		"tr"		"{1}, {GREEN}taraf seçimi {NORMAL}için seçildi."
+	}
+	"SideChoiceTitle"
+	{
+		"tr"		"İlk hangi tarafı istiyorsun:"
+	}
+	"SideChoiceSelected"
+	{
+		"#format"	"{1:s},{2:s}"
+		"tr"		"{1}, ilk olarak {GREEN}{2} {NORMAL}seçti."
+	}
+	"PlayerPickTitle"
+	{
+		"tr"		"Oyuncularınızı seçin:"
+	}
+	"PlayerPickChoice"
+	{
+		"#format"	"{1:s},{2:s}"
+		"tr"		"{1}, {2} seçti."
+	}
+	"SpecCantReady"
+	{
+		"tr"		"İzleyenlerdeyken durumunuzu hazır olarak değiştiremezsiniz."
+	}
+	"RestartCounter"
+	{
+		"#format"	"{1:d}"
+		"tr"		"Yeniden başlat {1}/3"
+	}
+	"Live"
+	{
+		"tr"		"Maç {GREEN}BAŞLADI"
+	}
+	"VetoMenuTitle"
+	{
+		"tr"		"Veto edilecek haritayı seçin"
+	}
+	"PlayerVetoed"
+	{
+		"#format"	"{1:s},{2:s}"
+		"tr"		"{1}, {LIGHT_RED}{2} {NORMAL}haritasını veto etti."
+	}
+	"MapsLeft"
+	{
+		"tr"		"Kalan haritalar:"
+	}
+	"VoteMenuTitle"
+	{
+		"tr"		"Bir harita için oyla"
+	}
+	"Random"
+	{
+		"tr"		"Rastgele"
+	}
+	"RandomMapVote"
+	{
+		"tr"		"rastgele"
+	}
+	"NotLiveYet"
+	{
+		"tr"		"Maç daha başlamadı."
+	}
+	"EndMatchMenuTitle"
+	{
+		"tr"		"Maçı bitirmek istediğinden emin misin?"
+	}
+	"EndMatch"
+	{
+		"tr"		"Evet, maçı bitir"
+	}
+	"ContinueMatch"
+	{
+		"tr"		"Hayır, maça devam et"
+	}
+	"MutualUnpauseMessage"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"
+		"tr"		"{1} takımı maçı sürdürmek istiyor, {2} takımının {GREEN}{3} {NORMAL}yazması bekleniyor"
+	}
+	"CancelCountdownMessage"
+	{
+		"tr"		"Maç iptal edildi."
+	}
+	"Countdown"
+	{
+		"#format"	"{1:d}"
+		"tr"		"Geri sayım: {GREEN}{1} {NORMAL}saniye"
+	}
+	"Ready"
+	{
+		"tr"		"[Hazır]"
+	}
+	"NotReady"
+	{
+		"tr"		"[Hazır değil]"
+	}
+	"KnifeRound"
+	{
+		"tr"		"BIÇAK!"
+	}
+	"KnifeRoundOption"
+	{
+		"tr"		"Bıçak roundu"
+	}
+	"KnifeRoundWinner"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"
+		"tr"		"{1} takımı bıçak roundunu kazandı. {GREEN}{2} {NORMAL}veya {GREEN}{3} {NORMAL}yazmaları bekleniyor"
+	}
+	"KnifeRoundWinnerVote"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"
+		"tr"		"{1} takımı bıçak roundunu kazandı. {GREEN}{2} {NORMAL}veya {GREEN}{3} {NORMAL}yazarak oylamaları bekleniyor"
+	}
+	"TVDisabled"
+	{
+		"tr"		"GOTV devre dışı olduğu için bir demo kayıt edilemiyor. {GREEN}tv_enable 1{NORMAL} yazarak GOTVyi aktif hale getir."
+	}
+	"FinishSetup"
+	{
+		"tr"		"Maç öncesini bitir"
+	}
+	"CancelSetup"
+	{
+		"tr"		"Maç öncesini iptal et"
+	}
+	"Back"
+	{
+		"tr"		"Geri"
+	}
+	"sm_capt_alias"
+	{
+		"tr"		".capt"
+	}
+	"sm_endgame_alias"
+	{
+		"tr"		".endgame"
+	}
+	"sm_notready_alias"
+	{
+		"tr"		".notready"
+	}
+	"sm_pause_alias"
+	{
+		"tr"		".pause"
+	}
+	"sm_ready_alias"
+	{
+		"tr"		".ready"
+	}
+	"sm_setup_alias"
+	{
+		"tr"		".setup"
+	}
+	"sm_stay_alias"
+	{
+		"tr"		".stay"
+	}
+	"sm_swap_alias"
+	{
+		"tr"		".swap"
+	}
+	"sm_unpause_alias"
+	{
+		"tr"		".unpause"
+	}
+	"sm_start_alias"
+	{
+		"tr"		".start"
+	}
+	"ChooseCaptainTitle"
+	{
+		"#format"	"{1:d}"
+		"tr"		"Kaptan seç {1}:"
+	}
+	"ChooseLeaderTitle"
+	{
+		"tr"		"Oyun yöneticisini seçin:"
+	}
+	"WaitingForStart"
+	{
+		"#format"		"{1:N},{2:s}"
+		"tr"		"Tüm oyuncular hazır, {GREEN}{1} {NORMAL}tarafından {GREEN}{2} {NORMAL}yazılması bekleniyor"
+	}
+	"StartMatchMenuOption"
+	{
+		"tr"		"Maçı başlat"
+	}
+	"SetCaptainsMenuOption"
+	{
+		"tr"		"Kaptanları ayarla"
+	}
+	"AimWarmupMenuOption"
+	{
+		"tr"		"Aim map ısınmasını başlat"
+	}
+	"ChangeMapMenuOption"
+	{
+		"tr"		"Haritayı değiştir"
+	}
+	"ChangeMapMenuTitle"
+	{
+		"tr"		"Haritayı seç"
+	}
+	"Autobalanced"
+	{
+		"tr"		"Dengelendi"
+	}
+	"IsNowReady"
+	{
+		"#format"		"{1:N}"
+		"tr"		"{1} artık hazır."
+	}
+	"IsNoLongerReady"
+	{
+		"#format"		"{1:N}"
+		"tr"		"{1} artık hazır değil."
+	}
+	"SavedReadyMessage"
+	{
+		"tr"		"Özel hazır mesajı başarıyla kaydedildi."
+	}
+	"PlayoutOption"
+	{
+		"tr"		"Maksimum el sayısı"
+	}
+	"KnifeRoundVoteStay"
+	{
+		"tr"		"Kalmak için oyladı"
+	}
+	"KnifeRoundVoteSwap"
+	{
+		"tr"		"Değişmek için oyladı"
+	}
+	"ChangeMapMessage"
+	{
+		"#format"		"{1:s}"
+		"tr"		"Harita {GREEN}{1}{NORMAL} olarak değiştiriliyor..."
+	}
+	"TimeLeftInVoteHint"
+	{
+		"#format"		"{1:d}"
+		"tr"		"Oylamanın bitmesine {1} saniye..."
+	}
+	"IRVMenuTitle"
+	{
+		"#format"		"{1:d}"
+		"tr"		"#{1}. seçiminizi yapın"
+	}
+	"IRVSelectionMessage"
+	{
+		"#format"		"{1:s},{2:d}"
+		"tr"		"{GREEN}{1} {NORMAL}, {GREEN}#{2} {NORMAL}seçiminiz olarak seçildi."
+	}
+	"MapVoteWinnerHintText"
+	{
+		"#format"		"{1:s}"
+		"tr"		"Oylama bitti... {1} won!"
+	}
+	"IRVResultMessage"
+	{
+		"#format"		"{1:s},{2:s},{3:s}"
+		"tr"		"{GREEN}{1}{NORMAL} kazandı, {GREEN}{2}{NORMAL} ikinci oldu, {GREEN}{3}{NORMAL} üçüncü oldu"
+	}
+}

@@ -1,0 +1,435 @@
+"Phrases"
+{
+	"SetupMenuTitle"
+	{
+		"jp"		"ゲーム設定"
+	}
+	"MapTypeOption"
+	{
+		"jp"		"マップ選択方法"
+	}
+	"TeamTypeOption"
+	{
+		"jp"		"チーム構成"
+	}
+	"TeamSizeOption"
+	{
+		"jp"		"チーム人数"
+	}
+	"DemoOption"
+	{
+		"jp"		"demoを記録"
+	}
+	"AutoLiveOption"
+	{
+		"jp"		"自動で試合を開始"
+	}
+	"VetoMessage"
+	{
+		"jp"		"まもなくマップBAN投票が始まります。"
+	}
+	"VoteMessage"
+	{
+		"jp"		"まもなくマップ投票が始まります。"
+	}
+	"AlreadyLive"
+	{
+		"jp"		"試合は既に始まっています！"
+	}
+	"ReadyStatus"
+	{
+		"jp"		"{2}人中{1}人が準備完了しました。\n{3} で準備完了"
+	}
+	"ReadyStatusCaptains"
+	{
+		"jp"		"{2}人中{1}人が準備完了しました。\nCaptain 1: {3}\nCaptain 2: {4}"
+	}
+	"CaptainNotSelected"
+	{
+		"jp"		"未選択"
+	}
+	"SetCaptainsHint"
+	{
+		"jp"		"{GREEN}{1}{NORMAL}がキャプテンを決めるために{GREEN}{2}{NORMAL}を実行するのを待っています。"
+	}
+	"ReadyCommandHint"
+	{
+		"jp"		"{GREEN}{1}{NORMAL}を実行して準備完了を知らせる必要があります。"
+	}
+	"NoPermission"
+	{
+		"jp"		"あなたにはこれを実行する権限がありません。"
+	}
+	"NotUsingCaptains"
+	{
+		"jp"		"この試合ではキャプテンを使用しません。"
+	}
+	"Scrambling"
+	{
+		"jp"		"{GREEN}チームをスクランブルします。"
+	}
+	"ForceEnd"
+	{
+		"jp"		"この試合は{GREEN}{1}{NORMAL}によって強制終了されました。"
+	}
+	"Pause"
+	{
+		"jp"		"{GREEN}{1}{NORMAL}はポーズを宣言しました。"
+	}
+	"Unpause"
+	{
+		"jp"		"{GREEN}{1}{NORMAL}は試合の再開を希望しています。"
+	}
+	"SetupBy"
+	{
+		"jp"		"ゲームリーダー: {GREEN}{1}"
+	}
+	"NewLeader"
+	{
+		"jp"		"新しいリーダーは{GREEN}{1}{NORMAL}になりました。"
+	}
+	"CaptMessage"
+	{
+		"jp"		"Captain {1} は{2}に指名されました。"
+	}
+	"TeamSetupMenuTitle"
+	{
+		"jp"		"どのようなチーム構成にしますか。"
+	}
+	"TeamSetupMenuCaptains"
+	{
+		"jp"		"指名されたキャプテンがメンバーを選ぶ。"
+	}
+	"TeamSetupMenuRandom"
+	{
+		"jp"		"ランダムで構成されたチーム"
+	}
+	"TeamSetupMenuManual"
+	{
+		"jp"		"手動"
+	}
+	"TeamSetupCaptainsShort"
+	{
+		"jp"		"キャプテンが構成したチーム"
+	}
+	"TeamSetupRandomShort"
+	{
+		"jp"		"ランダムで構成されたチーム"
+	}
+	"TeamSetupManualShort"
+	{
+		"jp"		"手動"
+	}
+	"HowManyPlayers"
+	{
+		"jp"		"1チームあたりの人数は何人ですか？"
+	}
+	"MapChoiceMenuTitle"
+	{
+		"jp"		"どうやってマップを選びますか？"
+	}
+	"MapChoiceCurrent"
+	{
+		"jp"		"現在のマップ"
+	}
+	"MapChoiceVote"
+	{
+		"jp"		"投票"
+	}
+	"MapChoiceVeto"
+	{
+		"jp"		"キャプテンによるマップBAN"
+	}
+	"MapChoiceCurrentShort"
+	{
+		"jp"		"現在のマップ"
+	}
+	"MapChoiceVoteShort"
+	{
+		"jp"		"投票"
+	}
+	"MapChoiceVetoShort"
+	{
+		"jp"		"キャプテンによるマップBAN"
+	}
+	"Yes"
+	{
+		"jp"		"はい"
+	}
+	"No"
+	{
+		"jp"		"いいえ"
+	}
+	"Enabled"
+	{
+		"jp"		"有効"
+	}
+	"Disabled"
+	{
+		"jp"		"無効"
+	}
+	"InitialPickTitle"
+	{
+		"jp"		"どちらにしますか？"
+	}
+	"InitialPickSides"
+	{
+		"jp"		"最初に陣営を選ぶ"
+	}
+	"InitialPickPlayer"
+	{
+		"jp"		"最初にプレイヤーを選ぶ"
+	}
+	"InitialPickPlayerChoice"
+	{
+		"jp"		"{1}は最初に{GREEN}プレイヤーを選ぶ{NORMAL}を選択しました。"
+	}
+	"InitialPickSideChoice"
+	{
+		"jp"		"{1}は最初に{GREEN}陣営を選ぶ{NORMAL}を選択しました。"
+	}
+	"SideChoiceTitle"
+	{
+		"jp"		"あなたはどちらから始めますか？"
+	}
+	"SideChoiceSelected"
+	{
+		"jp"		"{1}は{GREEN}{2}{NORMAL}スタートを選択しました。"
+	}
+	"PlayerPickTitle"
+	{
+		"jp"		"次の中からプレイヤーを選んでください"
+	}
+	"PlayerPickChoice"
+	{
+		"jp"		"{1}は{GREEN}{2}{NORMAL}を選びました。"
+	}
+	"SpecCantReady"
+	{
+		"jp"		"あなたは観戦にいるため、準備完了を知らせることはできません。"
+	}
+	"RestartCounter"
+	{
+		"jp"		"Restart {1}/3"
+	}
+	"Live"
+	{
+		"jp"		"Match is {GREEN}LIVE"
+	}
+	"VetoMenuTitle"
+	{
+		"jp"		"BANするマップを選択"
+	}
+	"PlayerVetoed"
+	{
+		"jp"		"{1}{NORMAL}は{LIGHT_RED}{2}{NORMAL}をBANしました。"
+	}
+	"MapsLeft"
+	{
+		"jp"		"残りのマップ:"
+	}
+	"VoteMenuTitle"
+	{
+		"jp"		"プレイしたいマップを選んでください。"
+	}
+	"Random"
+	{
+		"jp"		"ランダム"
+	}
+	"RandomMapVote"
+	{
+		"jp"		"ランダム"
+	}
+	"NotLiveYet"
+	{
+		"jp"		"試合はまだ始まっていません。"
+	}
+	"EndMatchMenuTitle"
+	{
+		"jp"		"本当に試合を終了してもよろしいですか？"
+	}
+	"EndMatch"
+	{
+		"jp"		"はい、試合を終了します。"
+	}
+	"ContinueMatch"
+	{
+		"jp"		"いいえ、試合を継続します。"
+	}
+	"MutualUnpauseMessage"
+	{
+		"jp"		"{1}チームが試合の再開を希望しています。{2}チームが{GREEN}{3}{NORMAL}を実行するのを待っています。"
+	}
+	"CancelCountdownMessage"
+	{
+		"jp"		"この試合はキャンセルされました。"
+	}
+	"Countdown"
+	{
+		"jp"		"カウントダウン: {GREEN}{1}{NORMAL}秒前"
+	}
+	"Ready"
+	{
+		"jp"		"[Ready]"
+	}
+	"NotReady"
+	{
+		"jp"		"[Not Ready]"
+	}
+	"KnifeRound"
+	{
+		"jp"		"KNIFE!"
+	}
+	"KnifeRoundOption"
+	{
+		"jp"		"ナイフラウンド"
+	}
+	"KnifeRoundWinner"
+	{
+		"jp"		"{1}チームがナイフラウンドで勝利しました。{GREEN}{2}{NORMAL}または{GREEN}{3}{NORMAL}を実行するのを待っています。"
+	}
+	"KnifeRoundWinnerVote"
+	{
+		"jp"		"{1}チームがナイフラウンドで勝利しました。{GREEN}{2}{NORMAL}または{GREEN}{3}{NORMAL}で陣営を投票してください。"
+	}
+	"TVDisabled"
+	{
+		"jp"		"GOTVが無効になっているためdemoを記録することができません。{GREEN}tv_enable 1{NORMAL}でGOTVを有効にしてください。"
+	}
+	"FinishSetup"
+	{
+		"jp"		"設定を適用する"
+	}
+	"CancelSetup"
+	{
+		"jp"		"設定をキャンセルする"
+	}
+	"Back"
+	{
+		"jp"		"戻る"
+	}
+	"sm_capt_alias"
+	{
+		"jp"		".capt"
+	}
+	"sm_endgame_alias"
+	{
+		"jp"		".endgame"
+	}
+	"sm_notready_alias"
+	{
+		"jp"		".notready"
+	}
+	"sm_pause_alias"
+	{
+		"jp"		".pause"
+	}
+	"sm_ready_alias"
+	{
+		"jp"		".ready"
+	}
+	"sm_setup_alias"
+	{
+		"jp"		".setup"
+	}
+	"sm_stay_alias"
+	{
+		"jp"		".stay"
+	}
+	"sm_swap_alias"
+	{
+		"jp"		".swap"
+	}
+	"sm_unpause_alias"
+	{
+		"jp"		".unpause"
+	}
+	"sm_start_alias"
+	{
+		"jp"		".start"
+	}
+	"ChooseCaptainTitle"
+	{
+		"jp"		"Captain {1}を選んでください"
+	}
+	"ChooseLeaderTitle"
+	{
+		"jp"		"この試合のリーダーを選んでください"
+	}
+	"WaitingForStart"
+	{
+		"jp"		"全てのプレイヤーが準備完了しました。{GREEN}{1}{NORMAL}が{GREEN}{2}{NORMAL}を実行するのを待っています。"
+	}
+	"StartMatchMenuOption"
+	{
+		"jp"		"試合を開始する"
+	}
+	"SetCaptainsMenuOption"
+	{
+		"jp"		"キャプテンを指名する"
+	}
+	"AimWarmupMenuOption"
+	{
+		"jp"		"ウォーミングアップのマップを使用する"
+	}
+	"ChangeMapMenuOption"
+	{
+		"jp"		"マップを変更する"
+	}
+	"ChangeMapMenuTitle"
+	{
+		"jp"		"マップを選んでください。"
+	}
+	"Autobalanced"
+	{
+		"jp"		"自動調整"
+	}
+	"IsNowReady"
+	{
+		"jp"		"{1}は準備完了しました。"
+	}
+	"IsNoLongerReady"
+	{
+		"jp"		"{1}は準備完了を解除しました。"
+	}
+	"SavedReadyMessage"
+	{
+		"jp"		"カスタム準備完了メッセージを保存しました。"
+	}
+	"PlayoutOption"
+	{
+		"jp"		"最後のラウンドまでプレイする"
+	}
+	"KnifeRoundVoteStay"
+	{
+		"jp"		"stayに投票しました。"
+	}
+	"KnifeRoundVoteSwap"
+	{
+		"jp"		"swapに投票しました。"
+	}
+	"ChangeMapMessage"
+	{
+		"jp"		"{GREEN}{1}{NORMAL}にマップを変更しています。"
+	}
+	"TimeLeftInVoteHint"
+	{
+		"jp"		"投票締切まであと{1}秒"
+	}
+	"IRVMenuTitle"
+	{
+		"jp"		"プレイしたいマップの第{1}希望を選んでください。"
+	}
+	"IRVSelectionMessage"
+	{
+		"jp"		"あなたは第{2}希望に{GREEN}{1}{NORMAL}を選びました。"
+	}
+	"MapVoteWinnerHintText"
+	{
+		"jp"		"投票の結果{1}になりました。"
+	}
+	"IRVResultMessage"
+	{
+		"jp"		"1位:{GREEN}{1}{NORMAL}, 2位:{GREEN}{2}{NORMAL}, 3位:{GREEN}{3}{NORMAL}"
+	}
+}

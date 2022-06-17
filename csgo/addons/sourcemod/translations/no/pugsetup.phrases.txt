@@ -1,0 +1,339 @@
+"Phrases"
+{
+
+	"MapChoiceVetoShort"
+	{
+		"no"		"kapteinene velger kart."
+	}
+
+	"ReadyStatusCaptains"
+	{
+		"no"		"{1} av {2} spillere er klare\nKaptein 1: {3}\nKaptein 2: {4}"
+	}
+
+	"PlayerPickChoice"
+	{
+		"no"		"{1} har vlagt {2}."
+	}
+
+	"TeamSetupMenuManual"
+	{
+		"no"		"Spillerne bytter lag manuelt."
+	}
+
+	"MapChoiceVoteShort"
+	{
+		"no"		"stem for et kart"
+	}
+
+	"CancelCountdownMessage"
+	{
+		"no"		"Kampen har blitt stoppet."
+	}
+
+	"TeamSetupCaptainsShort"
+	{
+		"no"		"kapteiner velg spillere"
+	}
+
+	"SpecCantReady"
+	{
+		"no"		"Du kan ikke 'ready up' når du er i spectator."
+	}
+
+	"ContinueMatch"
+	{
+		"no"		"Nei, fortsett kampen"
+	}
+
+	"MapChoiceCurrent"
+	{
+		"no"		"Bruk dette mappet"
+	}
+
+	"PlayerPickTitle"
+	{
+		"no"		"Velg dine Spillere:"
+	}
+
+	"VetoMessage"
+	{
+		"no"		"Jobben med å velge kart, vil begynne om noen få sekunder."
+	}
+
+	"Disabled"
+	{
+		"no"		"deaktivert"
+	}
+
+	"NewLeader"
+	{
+		"no"		"Den nye lederen er {GREEN}{1}"
+	}
+
+	"GameType"
+	{
+		"no"		"Spill type: {GREEN}{1}"
+	}
+
+	"EndMatchMenuTitle"
+	{
+		"no"		"Er du sikker på at du vil avslutte kampen?"
+	}
+
+	"GameTypeTitle"
+	{
+		"no"		"Vilken spill type skal brukes?"
+	}
+
+	"SetupBy"
+	{
+		"no"		"Spillet har blitt laget av {GREEN}{1}"
+	}
+
+	"NotLiveYet"
+	{
+		"no"		"Denne kampen har ikke startet enda."
+	}
+
+	"Yes"
+	{
+		"no"		"Ja"
+	}
+
+	"SideChoiceTitle"
+	{
+		"no"		"Vilken side vil du ha først:"
+	}
+
+	"ForceEnd"
+	{
+		"no"		"Kampen ble tvunget til å stoppe av {GREEN}{1}{NORMAL}."
+	}
+
+	"EndMatch"
+	{
+		"no"		"Ja, Stop kampen"
+	}
+
+	"TeamSetupManualShort"
+	{
+		"no"		"manuelt byttet"
+	}
+
+	"No"
+	{
+		"no"		"Nei"
+	}
+
+	"TeamType"
+	{
+		"no"		"Lag: ({GREEN}{1} mot {2}) {GREEN}{3}"
+	}
+
+	"TeamSetupMenuCaptains"
+	{
+		"no"		"Valgte kapteiner velger sine lag"
+	}
+
+	"TeamSetupMenuRandom"
+	{
+		"no"		"Tilfeldige lag"
+	}
+
+	"Scrambling"
+	{
+		"no"		"{GREEN}Setter sammen lagene!"
+	}
+
+	"TeamSetupRandomShort"
+	{
+		"no"		"Tilfeldige lag"
+	}
+
+	"MapType"
+	{
+		"no"		"Kart: {GREEN}{1}"
+	}
+
+	"MutualUnpauseMessage"
+	{
+		"no"		"Det {1} laget ønsker å unpause, venter på det {2} laget skal skrive {GREEN}{3}"
+	}
+
+	"TeamSetupMenuTitle"
+	{
+		"no"		"Hvordan vil lag bli sattop?"
+	}
+
+	"InitialPickPlayer"
+	{
+		"no"		"Velg den første spilleren"
+	}
+
+	"Unpause"
+	{
+		"no"		"{GREEN}{1} {NORMAL}har unpaused."
+	}
+
+	"InitialPickTitle"
+	{
+		"no"		"Hvilken ville du foretrekke:"
+	}
+
+	"Enabled"
+	{
+		"no"		"aktivert"
+	}
+
+	"Pause"
+	{
+		"no"		"{GREEN}{1} {NORMAL}har bedt om en pause."
+	}
+
+	"MapChoiceMenuTitle"
+	{
+		"no"		"Hvordan skal kartet bli valgt?"
+	}
+
+	"MapChoiceCurrentShort"
+	{
+		"no"		"bruk dette kartet"
+	}
+
+	"AlreadyLive"
+	{
+		"no"		"Spillet er allerede i gang!"
+	}
+
+	"Countdown"
+	{
+		"no"		"Nedtelling: {GREEN}%d {NORMAL}sekunder"
+	}
+
+	"SideChoiceSelected"
+	{
+		"no"		"{1} har valgt {GREEN}{2} {NORMAL}først."
+	}
+
+	"PlayerVetoed"
+	{
+		"no"		"{1} {NORMAL}stemte {LIGHT_RED}{2}."
+	}
+
+	"MapChoiceVeto"
+	{
+		"no"		"Kapteinene velger kart intl 1 kart er i gjen"
+	}
+
+	"NotUsingCaptains"
+	{
+		"no"		"Sette spillet bruker ikke lag kapteiner."
+	}
+
+	"VoteMenuTitle"
+	{
+		"no"		"Stem for et kart"
+	}
+
+	"InitialPickSides"
+	{
+		"no"		"Velg den startende siden"
+	}
+
+	"ReadyStatusPlayers"
+	{
+		"no"		"{1} av {2} spillere er klare"
+	}
+
+	"ReadyStatus"
+	{
+		"no"		"{1} av {2} spillere er klare\nSkriv .ready for å vise at du er klar"
+	}
+
+	"LO3Setting"
+	{
+		"no"		"Automatisk start-på-3: {GREEN}{1}"
+	}
+
+	"MapsLeft"
+	{
+		"no"		"Kart i gjen:"
+	}
+
+	"RestartCounter"
+	{
+		"no"		"Omstart {1}/3"
+	}
+
+	"InitialPickPlayerChoice"
+	{
+		"no"		"{1} ble valgt til å få det {GREEN}første spillerer valget."
+	}
+
+	"VoteMessage"
+	{
+		"no"		"Valget av kart vil starte om noen få sekunder."
+	}
+
+	"InitialPickSideChoice"
+	{
+		"no"		"{1} har valgt og velge {GREEN}startende side."
+	}
+
+	"Random"
+	{
+		"no"		"Tilfeldig"
+	}
+
+	"MapChoiceVote"
+	{
+		"no"		"Stem for et kart"
+	}
+
+	"VoteMenuTitle"
+	{
+		"no"		"Stem for et kart"
+	}
+
+	"HowManyPlayers"
+	{
+		"no"		"Hvor mange spillere for hvert lag?"
+	}
+
+	"CaptainNotSelected"
+	{
+		"no"		"ikke valgt"
+	}
+
+	"Live"
+	{
+		"no"		"Kampen har {GREEN} STARTET"
+	}
+
+	"ReadyToStart"
+	{
+		"no"		"Alle er klare! Venter på at {GREEN}{1} {NORMAL}skal skrive {PINK}!start{NORMAL}."
+	}
+
+	"NoPermission"
+	{
+		"no"		"Du har ikke tilgang til  å gjøre det."
+	}
+
+	"AutoLO3MenuTitle"
+	{
+		"no"		"Starte kampen Automatisk når alle er klare?"
+	}
+
+	"CaptMessage"
+	{
+		"no"		"Kaptein {1} vil bli {2}"
+	}
+
+	"VetoMenuTitle"
+	{
+		"no"		"Velg et kart for valg"
+	}
+
+}
