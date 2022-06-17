@@ -41,7 +41,7 @@ fi
 
 echo "Installing required packages..."
 apt-get update -y -q >/dev/null
-apt-get install -y -q libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5 lib32z1 wget gdb screen tar unzip nano >/dev/null
+apt-get install -y -q curl wget screen nano file tar bzip2 gzip unzip bsdmainutils python3 util-linux ca-certificates binutils bc jq tmux netcat lib32gcc1 lib32stdc++6 libsdl2-2.0-0:i386 >/dev/null
 if [ "$?" -ne "0" ]; then
 	echo "ERROR: Cannot install required packages..."
 	exit 1
