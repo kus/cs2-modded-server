@@ -18,7 +18,6 @@ A single modded Counter-Strike: Global Offensive Dedicated Server that you can c
  - Red Bull Flick (only Flux map which has surfing and jump pads [Steam API key](#playing-workshop-maps-collections) required)
  - Deathrun
  - Surf
- - Kreedz Climbing ([this must be changed to as the first mod. It can't be loaded after another mod](#loading-kreedz-climbing))
  - Soccer
  - Capture The Flag
 
@@ -48,8 +47,7 @@ Mod | Version | Why
 [Retakes MyWeaponAllocator](https://forums.alliedmods.net/showthread.php?p=2604368) | `2.3` | This weapon allocator simulates different kinds of rounds
 [Instant Defuse](https://forums.alliedmods.net/showthread.php?p=2558854) | `1.2.1` | Instantly defuse the bomb if no Terrorists are alive and there is a sufficient amount of time remaining
 [RankMe Kento Edition](https://forums.alliedmods.net/showthread.php?t=290063) | `3.0.3` | Stats
-[DHooks](https://forums.alliedmods.net/showpost.php?p=2588686) | `2.2.0-detours17` | Required by KZTimer
-[KZTimer](https://bitbucket.org/kztimerglobalteam/kztimerglobal/src/master/) | `1.100` | KZTimer is a powerful, feature rich SourceMod climb timer plugin for CS:GO servers
+[DHooks](https://forums.alliedmods.net/showpost.php?p=2588686) | `2.2.0-detours17` | Required by Practice Mod
 [SoccerMod](https://github.com/marcoboogers/soccermod) | `2017.5.5` | Soccer gamemode
 [Command Time-Traveler](https://forums.alliedmods.net/showthread.php?t=134288) | `1.2.0` | Run a command in the future
 [P Tools and Hooks](https://forums.alliedmods.net/showthread.php?t=289289) | `1.1.3-build19` | Additional CS:GO Hooks and Natives 
@@ -181,24 +179,22 @@ You need to create a Steam [Game Login Token](https://steamcommunity.com/dev/man
 
 To download maps from the workshop, your server needs access to the steam web api. To allow this you'll need an authorization key which you can generate [here](http://steamcommunity.com/dev/apikey) and set `API_KEY` to the key.
 
-If you don't want to make a [preemptible](https://cloud.google.com/compute/docs/instances/create-start-preemptible-instance#gcloud) instace; remove `--preemptible` from the below command.
+If you have issues with the server not handling load, you may want to consider [compute-optimized](https://cloud.google.com/compute/vm-instance-pricing#compute-optimized_machine_types) machine `c2-standard-4`.
 
 ```
 gcloud beta compute instances create <instance-name> \
 --maintenance-policy=TERMINATE \
---preemptible \
 --project=<project> \
---zone=australia-southeast1-a \
---machine-type=n1-standard-2 \
+--zone=australia-southeast1-c \
+--machine-type=n2-standard-2 \
 --network-tier=PREMIUM \
---metadata=RCON_PASSWORD=changeme,STEAM_ACCOUNT=changeme,API_KEY=changeme,FAST_DL_URL=https://raw.githubusercontent.com/kus/csgo-modded-server-assets/master/csgo,DUCK_DOMAIN=changeme,DUCK_TOKEN=changeme,MOD_URL=https://github.com/kus/csgo-modded-server/archive/master.zip,startup-script=echo\ "Delaying\ for\ 30\ seconds..."\ &&\ sleep\ 30\ &&\ cd\ /\ &&\ /gcp.sh \
+--metadata=RCON_PASSWORD=changeme,STEAM_ACCOUNT=changeme,API_KEY=changeme,FAST_DL_URL=https://raw.githubusercontent.com/kus/csgo-modded-server-assets/master/csgo,DUCK_DOMAIN=changeme,DUCK_TOKEN=changeme,MOD_URL=https://github.com/kus/csgo-modded-server/archive/master.zip,startup-script="echo \"Delaying for 30 seconds...\" && sleep 30 && cd / && /gcp.sh" \
 --no-restart-on-failure \
---maintenance-policy=MIGRATE \
 --scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/compute.readonly,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append \
 --tags=source \
---image-family=ubuntu-1804-lts \
+--image-family=ubuntu-2004-lts \
 --image-project=ubuntu-os-cloud \
---boot-disk-size=40GB \
+--boot-disk-size=60GB \
 --boot-disk-type=pd-standard \
 --boot-disk-device-name=<instance-name>
 ```
@@ -206,7 +202,7 @@ gcloud beta compute instances create <instance-name> \
 ### SSH to server
 ```
 gcloud compute ssh <instance-name> \
---zone=australia-southeast1-a
+--zone=australia-southeast1-c
 ```
 
 ### Install mod
@@ -218,19 +214,19 @@ cd / && curl --silent --output "gcp.sh" "https://raw.githubusercontent.com/kus/c
 ### Stop server
 ```
 gcloud compute instances stop <instance-name> \
---zone australia-southeast1-a
+--zone australia-southeast1-c
 ```
 
 ### Start server
 ```
 gcloud compute instances start <instance-name> \
---zone australia-southeast1-a
+--zone australia-southeast1-c
 ```
 
 ### Delete server
 ```
 gcloud compute instances delete <instance-name> \
---zone australia-southeast1-a
+--zone australia-southeast1-c
 ```
 
 ### Push file to server from local machine
@@ -241,7 +237,7 @@ For example a map:
 On local:
 gcloud config set project <project>
 cd /path/to/folder
-gcloud compute scp soccer_breezeway_lite.bsp root@<instance-name>:/home/steam/csgo/csgo/maps --zone australia-southeast1-a
+gcloud compute scp soccer_breezeway_lite.bsp root@<instance-name>:/home/steam/csgo/csgo/maps --zone australia-southeast1-c
 
 On server SSH:
 cd /home/steam/csgo/csgo/maps
@@ -367,15 +363,6 @@ When you join the server you can [change game modes](#changing-game-modes).
 
 ### Why can't I set the server to start automatically with a mod loaded
 Because the way the server is setup with several mods it's not possible. You can't use `+exec` in the server launcher as that executes to quick before SourceMod is loaded. You can monitor the server once it's started (via RCON) and then load a mod i.e. `exec gg.cfg`.
-
-### Loading Kreedz Climbing
-KZTimer can't be hot loaded anymore like every other mod in my collection [#12](https://github.com/kus/csgo-modded-server/issues/12).
-
-So the solution is to have it always load with the server, and based on the map type to unload it if it's not a KZ/bhop map.
-
-If you want to play KZ, you must do it as the first mod after the server has booted. You can't do it after another mod. So when the server starts up, via admin menu, RCON or server console run `exec kz`.
-
-If you want to play KZ AFTER having another mod already loaded (i.e. GunGame) you need to restart the server and then load it, you can do this by running the command `exec sourcemod/restart` via the admin menu (Server EXEC > Restart), RCON or from the server console.
 
 ### How do I restart the server quickly?
 Run the command `exec sourcemod/restart` via the admin menu (Server EXEC > Restart), RCON or from the server console. It is best to restart the server when changing between mods as some code/settings aren't fully removed when changing between mods.

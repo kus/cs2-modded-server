@@ -17,7 +17,6 @@ Configs
 	"cfg/mg.cfg"			"Minigames"
 	"cfg/deathrun.cfg"		"Death run"
 	"cfg/surf.cfg"			"Surf"
-	"cfg/kz.cfg"			"Kreedz Climbing"
 	"cfg/soccermod.cfg"		"Soccer"
 	"cfg/ctf.cfg"			"Capture The Flag"
 	"cfg/squidgame.cfg"		"Squid Game"
