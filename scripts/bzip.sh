@@ -21,7 +21,7 @@
 # ---models
 
 # And be accessible from http://yoursite.com/fastdl/csgo/maps
-# Set FAST_DL_URL on your server to http://yoursite.com/fastdl/csgo
+# Follow instructions at https://github.com/kus/csgo-modded-server#fast-dl to set your Fast DL server
 
 if [ ! -d fastdl/csgo ]
 then

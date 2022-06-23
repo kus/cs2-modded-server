@@ -4,6 +4,7 @@
 user="steam"
 IP="0.0.0.0"
 PUBLIC_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
+CUSTOM_FILES="${CUSTOM_FOLDER:-custom_files}"
 
 # Download latest stop script
 curl --silent --output "stop.sh" "https://raw.githubusercontent.com/kus/csgo-modded-server/master/stop.sh" && chmod +x stop.sh
@@ -87,36 +88,27 @@ unzip -o -qq master.zip
 cp -rlf csgo-modded-server-master/csgo/ /home/${user}/csgo/
 rm -r csgo-modded-server-master master.zip
 
-echo "Dynamically writing /home/$user/csgo/csgo/cfg/env.cfg"
-echo "rcon_password						\"$RCON_PASSWORD\"" > /home/${user}/csgo/csgo/cfg/env.cfg
-echo "sv_setsteamaccount					\"$STEAM_ACCOUNT\"			// Required for online https://steamcommunity.com/dev/managegameservers" >> /home/${user}/csgo/csgo/cfg/env.cfg
+echo "Dynamically writing /home/$user/csgo/csgo/cfg/secrets.cfg"
+if [ -z "$RCON_PASSWORD" ]; then
+	# empty
+else
+	echo "rcon_password						\"$RCON_PASSWORD\"" > /home/${user}/csgo/csgo/cfg/secrets.cfg
+fi
+if [ -z "$STEAM_ACCOUNT" ]; then
+	# empty
+else
+	echo "sv_setsteamaccount					\"$STEAM_ACCOUNT\"			// Required for online https://steamcommunity.com/dev/managegameservers" >> /home/${user}/csgo/csgo/cfg/secrets.cfg
+fi
 if [ -z "$SERVER_PASSWORD" ]; then
-	echo "sv_password							\"\"" >> /home/${user}/csgo/csgo/cfg/env.cfg
+	# empty
 else
-	echo "sv_password							\"$SERVER_PASSWORD\"" >> /home/${user}/csgo/csgo/cfg/env.cfg
+	echo "sv_password							\"$SERVER_PASSWORD\"" >> /home/${user}/csgo/csgo/cfg/secrets.cfg
 fi
-if [ "$LAN" = "1" ]; then
-	echo "sv_lan								1" >> /home/${user}/csgo/csgo/cfg/env.cfg
-else
-	echo "sv_lan								0" >> /home/${user}/csgo/csgo/cfg/env.cfg
-fi
-echo "sv_downloadurl						\"$FAST_DL_URL\"			// Fast download (custom files uploaded to web server)" >> /home/${user}/csgo/csgo/cfg/env.cfg
-echo "sv_allowupload						0" >> /home/${user}/csgo/csgo/cfg/env.cfg
-if [ -z "$FAST_DL_URL" ]; then
-	# No Fast DL
-	echo "sv_allowdownload					1			// If using Fast download change to 0" >> /home/${user}/csgo/csgo/cfg/env.cfg
-else
-	# Has Fast DL
-	echo "sv_allowdownload					0			// If using Fast download change to 0" >> /home/${user}/csgo/csgo/cfg/env.cfg
-fi
-echo "" >> /home/${user}/csgo/csgo/cfg/env.cfg
-echo "echo \"env.cfg executed\"" >> /home/${user}/csgo/csgo/cfg/env.cfg
+echo "" >> /home/${user}/csgo/csgo/cfg/secrets.cfg
+echo "echo \"secrets.cfg executed\"" >> /home/${user}/csgo/csgo/cfg/secrets.cfg
 
-# Uncomment below for custom admins
-# echo "Dynamically writing /home/$user/csgo/csgo/addons/sourcemod/configs/admins_simple.ini"
-# echo "\"STEAM_0:0:56050\"	\"9:z\"	// Kus" > /home/${user}/csgo/csgo/addons/sourcemod/configs/admins_simple.ini
-# echo "\"STEAM_0:0:2\"	\"8:z\"	// Second user" >> /home/${user}/csgo/csgo/addons/sourcemod/configs/admins_simple.ini
-# echo "\"STEAM_0:0:3\"	\"8:z\"	// Third user" >> /home/${user}/csgo/csgo/addons/sourcemod/configs/admins_simple.ini
+echo "Merging in custom files from ${CUSTOM_FILES}"
+cp -RT /home/${user}/csgo/${CUSTOM_FILES}/ /home/${user}/csgo/csgo/
 
 chown -R ${user}:${user} /home/${user}/csgo
 

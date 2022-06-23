@@ -27,11 +27,9 @@ META_MOD_URL=$(get_metadata MOD_URL)
 META_PORT=$(get_metadata PORT)
 META_TICKRATE=$(get_metadata TICKRATE)
 META_MAXPLAYERS=$(get_metadata MAXPLAYERS)
-export LAN="${LAN:-$(get_metadata LAN)}"
 export RCON_PASSWORD="${META_RCON_PASSWORD:-changeme}"
 export API_KEY="${META_API_KEY:-changeme}"
 export STEAM_ACCOUNT="${STEAM_ACCOUNT:-$(get_metadata STEAM_ACCOUNT)}"
-export FAST_DL_URL="${FAST_DL_URL:-$(get_metadata FAST_DL_URL)}"
 export MOD_URL="${META_MOD_URL:-https://github.com/kus/csgo-modded-server/archive/master.zip}"
 export SERVER_PASSWORD="${SERVER_PASSWORD:-$(get_metadata SERVER_PASSWORD)}"
 export PORT="${META_PORT:-27015}"
@@ -39,6 +37,7 @@ export TICKRATE="${META_TICKRATE:-128}"
 export MAXPLAYERS="${META_MAXPLAYERS:-32}"
 export DUCK_DOMAIN="${DUCK_DOMAIN:-$(get_metadata DUCK_DOMAIN)}"
 export DUCK_TOKEN="${DUCK_TOKEN:-$(get_metadata DUCK_TOKEN)}"
+export CUSTOM_FOLDER="${CUSTOM_FOLDER:-$(get_metadata CUSTOM_FOLDER)}"
 
 cd /
 

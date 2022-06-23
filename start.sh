@@ -27,11 +27,9 @@ META_MOD_URL=$(get_metadata MOD_URL)
 META_PORT=$(get_metadata PORT)
 META_TICKRATE=$(get_metadata TICKRATE)
 META_MAXPLAYERS=$(get_metadata MAXPLAYERS)
-export LAN="${LAN:-$(get_metadata LAN)}"
 export RCON_PASSWORD="${META_RCON_PASSWORD:-changeme}"
 export API_KEY="${META_API_KEY:-changeme}"
 export STEAM_ACCOUNT="${STEAM_ACCOUNT:-$(get_metadata STEAM_ACCOUNT)}"
-export FAST_DL_URL="${FAST_DL_URL:-$(get_metadata FAST_DL_URL)}"
 export MOD_URL="${META_MOD_URL:-https://github.com/kus/csgo-modded-server/archive/master.zip}"
 export SERVER_PASSWORD="${SERVER_PASSWORD:-$(get_metadata SERVER_PASSWORD)}"
 export PORT="${META_PORT:-27015}"
@@ -39,6 +37,7 @@ export TICKRATE="${META_TICKRATE:-128}"
 export MAXPLAYERS="${META_MAXPLAYERS:-32}"
 export DUCK_DOMAIN="${DUCK_DOMAIN:-$(get_metadata DUCK_DOMAIN)}"
 export DUCK_TOKEN="${DUCK_TOKEN:-$(get_metadata DUCK_TOKEN)}"
+export CUSTOM_FOLDER="${CUSTOM_FOLDER:-$(get_metadata CUSTOM_FOLDER)}"
 
 cd /
 
@@ -51,6 +50,7 @@ fi
 user="steam"
 IP="0.0.0.0"
 PUBLIC_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
+CUSTOM_FILES="${CUSTOM_FOLDER:-custom_files}"
 
 # Check distrib
 if ! command -v apt-get &> /dev/null; then
@@ -85,7 +85,7 @@ fi
 
 echo "Installing required packages..."
 apt-get update -y -q >/dev/null
-apt-get install -y -q libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5 lib32z1 wget gdb screen tar unzip nano >/dev/null
+apt-get install -y -q curl wget screen nano file tar bzip2 gzip unzip bsdmainutils python3 util-linux ca-certificates binutils bc jq tmux netcat lib32gcc1 lib32stdc++6 libsdl2-2.0-0:i386 >/dev/null
 if [ "$?" -ne "0" ]; then
 	echo "ERROR: Cannot install required packages..."
 	exit 1
@@ -125,36 +125,27 @@ cd /home/${user}/csgo/csgo/warmod/ && python3 -m http.server 80 </dev/null &>/de
 
 cd /home/${user}
 
-echo "Dynamically writing /home/$user/csgo/csgo/cfg/env.cfg"
-echo "rcon_password						\"$RCON_PASSWORD\"" > /home/${user}/csgo/csgo/cfg/env.cfg
-echo "sv_setsteamaccount					\"$STEAM_ACCOUNT\"			// Required for online https://steamcommunity.com/dev/managegameservers" >> /home/${user}/csgo/csgo/cfg/env.cfg
+echo "Dynamically writing /home/$user/csgo/csgo/cfg/secrets.cfg"
+if [ -z "$RCON_PASSWORD" ]; then
+	# empty
+else
+	echo "rcon_password						\"$RCON_PASSWORD\"" > /home/${user}/csgo/csgo/cfg/secrets.cfg
+fi
+if [ -z "$STEAM_ACCOUNT" ]; then
+	# empty
+else
+	echo "sv_setsteamaccount					\"$STEAM_ACCOUNT\"			// Required for online https://steamcommunity.com/dev/managegameservers" >> /home/${user}/csgo/csgo/cfg/secrets.cfg
+fi
 if [ -z "$SERVER_PASSWORD" ]; then
-	echo "sv_password							\"\"" >> /home/${user}/csgo/csgo/cfg/env.cfg
+	# empty
 else
-	echo "sv_password							\"$SERVER_PASSWORD\"" >> /home/${user}/csgo/csgo/cfg/env.cfg
+	echo "sv_password							\"$SERVER_PASSWORD\"" >> /home/${user}/csgo/csgo/cfg/secrets.cfg
 fi
-if [ "$LAN" = "1" ]; then
-	echo "sv_lan								1" >> /home/${user}/csgo/csgo/cfg/env.cfg
-else
-	echo "sv_lan								0" >> /home/${user}/csgo/csgo/cfg/env.cfg
-fi
-echo "sv_downloadurl						\"$FAST_DL_URL\"			// Fast download (custom files uploaded to web server)" >> /home/${user}/csgo/csgo/cfg/env.cfg
-echo "sv_allowupload						0" >> /home/${user}/csgo/csgo/cfg/env.cfg
-if [ -z "$FAST_DL_URL" ]; then
-	# No Fast DL
-	echo "sv_allowdownload					1			// If using Fast download change to 0" >> /home/${user}/csgo/csgo/cfg/env.cfg
-else
-	# Has Fast DL
-	echo "sv_allowdownload					0			// If using Fast download change to 0" >> /home/${user}/csgo/csgo/cfg/env.cfg
-fi
-echo "" >> /home/${user}/csgo/csgo/cfg/env.cfg
-echo "echo \"env.cfg executed\"" >> /home/${user}/csgo/csgo/cfg/env.cfg
+echo "" >> /home/${user}/csgo/csgo/cfg/secrets.cfg
+echo "echo \"secrets.cfg executed\"" >> /home/${user}/csgo/csgo/cfg/secrets.cfg
 
-# Uncomment below for custom admins
-# echo "Dynamically writing /home/$user/csgo/csgo/addons/sourcemod/configs/admins_simple.ini"
-# echo "\"STEAM_0:0:56050\"	\"9:z\"	// Kus" > /home/${user}/csgo/csgo/addons/sourcemod/configs/admins_simple.ini
-# echo "\"STEAM_0:0:2\"	\"8:z\"	// Second user" >> /home/${user}/csgo/csgo/addons/sourcemod/configs/admins_simple.ini
-# echo "\"STEAM_0:0:3\"	\"8:z\"	// Third user" >> /home/${user}/csgo/csgo/addons/sourcemod/configs/admins_simple.ini
+echo "Merging in custom files from ${CUSTOM_FILES}"
+cp -RT /home/${user}/csgo/${CUSTOM_FILES}/ /home/${user}/csgo/csgo/
 
 chown -R ${user}:${user} /home/${user}/csgo
 
