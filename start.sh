@@ -126,19 +126,13 @@ cd /home/${user}/csgo/csgo/warmod/ && python3 -m http.server 80 </dev/null &>/de
 cd /home/${user}
 
 echo "Dynamically writing /home/$user/csgo/csgo/cfg/secrets.cfg"
-if [ -z "$RCON_PASSWORD" ]; then
-	# empty
-else
+if [ ! -z "$RCON_PASSWORD" ]; then
 	echo "rcon_password						\"$RCON_PASSWORD\"" > /home/${user}/csgo/csgo/cfg/secrets.cfg
 fi
-if [ -z "$STEAM_ACCOUNT" ]; then
-	# empty
-else
+if [ ! -z "$STEAM_ACCOUNT" ]; then
 	echo "sv_setsteamaccount					\"$STEAM_ACCOUNT\"			// Required for online https://steamcommunity.com/dev/managegameservers" >> /home/${user}/csgo/csgo/cfg/secrets.cfg
 fi
-if [ -z "$SERVER_PASSWORD" ]; then
-	# empty
-else
+if [ ! -z "$SERVER_PASSWORD" ]; then
 	echo "sv_password							\"$SERVER_PASSWORD\"" >> /home/${user}/csgo/csgo/cfg/secrets.cfg
 fi
 echo "" >> /home/${user}/csgo/csgo/cfg/secrets.cfg
