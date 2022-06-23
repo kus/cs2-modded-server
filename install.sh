@@ -86,6 +86,8 @@ echo "Downloading mod files..."
 wget --quiet https://github.com/kus/csgo-modded-server/archive/master.zip
 unzip -o -qq master.zip
 cp -rlf csgo-modded-server-master/csgo/ /home/${user}/csgo/
+cp -R csgo-modded-server-master/custom_files/ /home/${user}/csgo/custom_files/
+cp -R csgo-modded-server-master/custom_files_example/ /home/${user}/csgo/custom_files_example/
 rm -r csgo-modded-server-master master.zip
 
 echo "Dynamically writing /home/$user/csgo/csgo/cfg/secrets.cfg"
