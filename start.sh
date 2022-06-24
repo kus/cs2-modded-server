@@ -2,7 +2,7 @@
 
 # Install
 # As root (sudo su)
-# cd / && curl --silent --output "gcp.sh" "https://raw.githubusercontent.com/kus/csgo-modded-server/master/gcp.sh" && chmod +x gcp.sh && bash gcp.sh
+# cd / && curl --silent --output "start.sh" "https://raw.githubusercontent.com/kus/csgo-modded-server/master/start.sh" && chmod +x start.sh && bash start.sh
 
 METADATA_URL="${METADATA_URL:-http://metadata.google.internal/computeMetadata/v1/instance/attributes}"
 
