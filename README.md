@@ -18,6 +18,7 @@ A single modded Counter-Strike: Global Offensive Dedicated Server that you can c
 - Minigames
 - Squid Game ([Steam API key](#playing-workshop-maps-collections) required)
 - Red Bull Flick (only Flux map which has surfing and jump pads [Steam API key](#playing-workshop-maps-collections) required)
+- Fortnite [Steam API key](#playing-workshop-maps-collections) required)
 - Deathrun
 - Surf
 - Soccer

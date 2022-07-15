@@ -14,6 +14,7 @@ Configs
 	"cfg/1v1.cfg"			"1v1"
 	"cfg/scoutsknives.cfg"	"Scoutz Knivez"
 	"cfg/deathmatch.cfg"	"Deathmatch"
+	"cfg/fortnite.cfg"		"Fortnite"
 	"cfg/redbull.cfg"		"Red Bull Flick"
 	"cfg/mg.cfg"			"Minigames"
 	"cfg/deathrun.cfg"		"Death run"
