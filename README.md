@@ -21,6 +21,7 @@ A single modded Counter-Strike: Global Offensive Dedicated Server that you can c
 - Fortnite ([Steam API key](#playing-workshop-maps-collections) required)
 - Go Kart ([Steam API key](#playing-workshop-maps-collections) required)
 - Fall Guys ([Steam API key](#playing-workshop-maps-collections) required)
+- WarOwl Teleport Gamemode ([Steam API key](#playing-workshop-maps-collections) required)
 - Deathrun
 - Surf
 - Soccer

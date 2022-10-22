@@ -8,6 +8,7 @@ Configs
 	"cfg/gg_ffa.cfg"		"Gun Game FFA"
 	"cfg/pug.cfg"			"Competitive [Pug]"
 	"cfg/comp.cfg"			"Competitive [Warmod]"
+	"cfg/teleport.cfg"		"Teleport [Pug]"
 	"cfg/retake.cfg"		"Retakes"
 	"cfg/wingman.cfg"		"Wingman"
 	"cfg/practice.cfg"		"Practice"
