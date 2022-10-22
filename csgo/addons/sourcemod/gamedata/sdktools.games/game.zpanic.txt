@@ -48,8 +48,8 @@
 			}
 			"CommitSuicide"
 			{
-				"windows"	"453"
-				"linux"		"453"
+				"windows"	"452"
+				"linux"		"452"
 			}
 			"GetVelocity"
 			{
@@ -83,8 +83,23 @@
 			}
 			"PlayerRunCmd"
 			{
-				"windows"	"433"
-				"linux"		"434"
+				"windows"	"432"
+				"linux"		"433"
+			}
+			"GetAttachment"
+			{
+				"windows"	"216"
+				"linux"		"217"
+			}
+			"SetOwnerEntity"
+			{
+				"windows"	"25"
+				"linux"		"26"
+			}
+			"GiveAmmo"
+			{
+				"windows"	"264"
+				"linux"		"265"
 			}
 		}
 		"Signatures"
@@ -95,6 +110,17 @@
 				"windows"	"\x55\x8B\xEC\x81\xEC\x30\x01\x00\x00\xA1\x2A\x2A\x2A\x2A\x33\xC5\x89\x45\xFC\x53\x8B\x5D\x20"
 				"linux"		"@_ZN17CBaseEntityOutput10FireOutputE9variant_tP11CBaseEntityS2_f"
 			}
+			"LookupAttachment"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x56\x8B\xF1\x80\xBE\x7D\x06\x00\x00\x00\x75\x2A\x83\xBE\x9C\x07\x00\x00\x00\x75\x2A\xE8\x2A\x2A\x2A\x2A\x85\xC0\x74\x2A\x8B\xCE\xE8\x2A\x2A\x2A\x2A\x8B\x86\x9C\x07\x00\x00\x85\xC0\x74\x2A\x83\x38\x00\x74\x2A\xFF\x75\x08\x50\xE8\x2A\x2A\x2A\x2A\x83\xC4\x08\x40"
+				"linux"		"@_ZN14CBaseAnimating16LookupAttachmentEPKc"
+			}
+		}
+		"Keys"
+		{
+			"GameRulesProxy"	"CGameMode_Manager"
+			"GameRulesDataTable"	"zps_gamerules_data"
 		}
 	}
 }
