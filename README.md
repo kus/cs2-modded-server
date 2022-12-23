@@ -61,7 +61,7 @@ Getting up and running:
 Mod | Version | Why
 --- | --- | ---
 [Metamod:Source](http://www.sourcemm.net/downloads.php?branch=stable) | `1.11.0-1148` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
-[SourceMod](https://www.sourcemod.net/downloads.php?branch=stable) | `1.11.0-6913` | SourceMod is server modification for any game that runs on the Half-Life 2 engine
+[SourceMod](https://www.sourcemod.net/downloads.php?branch=stable) | `1.11.0-6926` | SourceMod is server modification for any game that runs on the Half-Life 2 engine
 [GunGame](https://github.com/nvrm/sourcemod-plugin-gungame) | `1.2.16` | Kill an enemy with the current weapon to get next weapon, first person to go through every weapon wins
 [DeathMatch](https://forums.alliedmods.net/showthread.php?t=103242) | `1.8.0` | Required for GunGame to enable spawn protection and other things to the game
 [Quake Sounds](https://forums.alliedmods.net/showthread.php?t=224316) | `3.5.0` | Plays sounds and displays text at certain events sometimes based on the number of kills
@@ -84,7 +84,7 @@ Mod | Version | Why
 [Command Time-Traveler](https://forums.alliedmods.net/showthread.php?t=134288) | `1.2.0` | Run a command in the future
 [P Tools and Hooks](https://forums.alliedmods.net/showthread.php?t=289289) | `1.1.3-build19` | Additional CS:GO Hooks and Natives 
 [Gloves](https://forums.alliedmods.net/showthread.php?t=299977) | `1.0.5` | Custom gloves
-[Weapon & Knives](https://forums.alliedmods.net/showthread.php?t=298770) | `1.7.1` | Custom weapon skins
+[Weapon & Knives](https://forums.alliedmods.net/showthread.php?t=298770) | `1.7.7` | Custom weapon skins
 [Accelerator](https://forums.alliedmods.net/showthread.php?t=277703) | `2.5.0-cd575aa` | Crash Reporting That Doesn't Suck
 [Capture the flag](https://forums.alliedmods.net/showthread.php?p=2466337) | `1.2` | Capture the flag for CS:GO
 [Models in map](https://forums.alliedmods.net/showthread.php?p=2389415) | `1.2` | Allows you to place models in map. Required for CTF
