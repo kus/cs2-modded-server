@@ -9,23 +9,47 @@ body:
     attributes:
       value: |
         Thanks for helping us locate and squash bugs!
+  - type: checkboxes
+    id: up-to-date
+    attributes:
+      label: Server is up to date
+      description: You are using the latest version from this github.
+      options:
+        - label: My server is up-to-date and I'm using the latest version of this mod from this github.
+          required: true
+  - type: checkboxes
+    id: instructions
+    attributes:
+      label: I've followed the instructions
+      description: I've followed the [simple quick setup](https://github.com/kus/csgo-modded-server#about) instructions.
+      options:
+        - label: I've followed the instructions
+          required: true
+  - type: checkboxes
+    id: token
+    attributes:
+      label: Game Server Login Token
+      description: If hosting online; I've made a [Game Server Login Token](https://steamcommunity.com/dev/managegameservers) and it hasn't expired. If hosting on LAN; you do not need this.
+      options:
+        - label: I'm using a valid Game Server Login Token or running on LAN
+          required: true
   - type: dropdown
     id: os
     attributes:
       label: Operating System
       multiple: true
       options:
-        - "Linux - Ubuntu 22.04"
-        - "Linux - Ubuntu 20.04"
-        - "Linux - Ubuntu 18.04"
-        - "Linux - Ubuntu 16.04"
-        - "Linux - Debian 11
-        - "Linux - Debian 10"
-        - "Linux - Debian 9"
-        - "Linux - RedHat 9"
-        - "Linux - RedHat 8"
-        - "Linux - RedHat 7"
-        - "Linux - Other (please specify)"
+        - "Linux Ubuntu 22.04"
+        - "Linux Ubuntu 20.04"
+        - "Linux Ubuntu 18.04"
+        - "Linux Ubuntu 16.04"
+        - "Linux Debian 11
+        - "Linux Debian 10"
+        - "Linux Debian 9"
+        - "Linux RedHat 9"
+        - "Linux RedHat 8"
+        - "Linux RedHat 7"
+        - "Linux Other (please specify)"
         - "Windows 11"
         - "Windows 10"
         - "Windows 8.1"
