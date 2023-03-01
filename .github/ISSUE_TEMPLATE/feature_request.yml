@@ -2,7 +2,7 @@
 name: Feature Request
 description: Suggest a feature
 title: "[Feature]: "
-labels: "feature"
+labels: feature
 assignees: kus
 body:
   - type: markdown

@@ -2,7 +2,7 @@
 name: Bug Report
 description: File a bug report
 title: "[Bug]: "
-labels: "bug"
+labels: bug
 assignees: kus
 body:
   - type: markdown
@@ -39,27 +39,27 @@ body:
       label: Operating System
       multiple: true
       options:
-        - "Linux Ubuntu 22.04"
-        - "Linux Ubuntu 20.04"
-        - "Linux Ubuntu 18.04"
-        - "Linux Ubuntu 16.04"
-        - "Linux Debian 11
-        - "Linux Debian 10"
-        - "Linux Debian 9"
-        - "Linux RedHat 9"
-        - "Linux RedHat 8"
-        - "Linux RedHat 7"
-        - "Linux Other (please specify)"
-        - "Windows 11"
-        - "Windows 10"
-        - "Windows 8.1"
-        - "Windows 8"
-        - "Windows 7"
-        - "Windows Server 2022"
-        - "Windows Server 2019"
-        - "Windows Server 2016"
-        - "Windows Server 2012"
-        - "Other (please specify)"
+        - Linux Ubuntu 22.04
+        - Linux Ubuntu 20.04
+        - Linux Ubuntu 18.04
+        - Linux Ubuntu 16.04
+        - Linux Debian 11
+        - Linux Debian 10
+        - Linux Debian 9
+        - Linux RedHat 9
+        - Linux RedHat 8
+        - Linux RedHat 7
+        - Linux Other (please specify)
+        - Windows 11
+        - Windows 10
+        - Windows 8.1
+        - Windows 8
+        - Windows 7
+        - Windows Server 2022
+        - Windows Server 2019
+        - Windows Server 2016
+        - Windows Server 2012
+        - Other (please specify)
     validations:
       required: true
   - type: dropdown
@@ -68,30 +68,30 @@ body:
       label: Which mod are you playing
       multiple: true
       options:
-        - "No mod"
-        - "GunGame +Turbo"
-        - "GunGame +FFA"
-        - "Pug Setup"
-        - "WarMod"
-        - "Scoutz Knivez"
-        - "Deathmatch Free For All"
-        - "Prop Hunt / Hide n Seek"
-        - "Retakes"
-        - "Wingman"
-        - "Multi 1v1"
-        - "Practice"
-        - "Minigames"
-        - "Squid Game"
-        - "Red Bull Flick"
-        - "Fortnite"
-        - "Go Kart"
-        - "Fall Guys"
-        - "WarOwl Teleport Gamemode"
-        - "Deathrun"
-        - "Surf"
-        - "Soccer"
-        - "Capture The Flag"
-        - "Other (please specify)"
+        - No mod
+        - GunGame +Turbo
+        - GunGame +FFA
+        - Pug Setup
+        - WarMod
+        - Scoutz Knivez
+        - Deathmatch Free For All
+        - Prop Hunt / Hide n Seek
+        - Retakes
+        - Wingman
+        - Multi 1v1
+        - Practice
+        - Minigames
+        - Squid Game
+        - Red Bull Flick
+        - Fortnite
+        - Go Kart
+        - Fall Guys
+        - WarOwl Teleport Gamemode
+        - Deathrun
+        - Surf
+        - Soccer
+        - Capture The Flag
+        - Other (please specify)
     validations:
       required: true
   - type: dropdown
@@ -100,12 +100,12 @@ body:
       label: Are you trying to host online or on LAN?
       multiple: true
       options:
-        - "Online on a cloud host Google, AWS, Azure etc (please specify host)"
-        - "Online on a game hosting network (please specify host)"
-        - "Online off a machine on my local network"
-        - "Online off my machine"
-        - "LAN off a machine on my local network"
-        - "LAN off my machine"
+        - Online on a cloud host Google, AWS, Azure etc (please specify host)
+        - Online on a game hosting network (please specify host)
+        - Online off a machine on my local network
+        - Online off my machine
+        - LAN off a machine on my local network
+        - LAN off my machine
     validations:
       required: true
   - type: input
