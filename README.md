@@ -82,9 +82,9 @@ Mod | Version | Why
 [DHooks](https://forums.alliedmods.net/showpost.php?p=2588686) | `2.2.0-detours17` | Required by Practice Mod
 [SoccerMod](https://github.com/marcoboogers/soccermod) | `2017.5.5` | Soccer gamemode
 [Command Time-Traveler](https://forums.alliedmods.net/showthread.php?t=134288) | `1.2.0` | Run a command in the future
-[P Tools and Hooks](https://forums.alliedmods.net/showthread.php?t=289289) | `1.1.3-build19` | Additional CS:GO Hooks and Natives 
+[P Tools and Hooks](https://forums.alliedmods.net/showthread.php?t=289289) | `1.1.3-build20` | Additional CS:GO Hooks and Natives 
 [Gloves](https://forums.alliedmods.net/showthread.php?t=299977) | `1.0.5` | Custom gloves
-[Weapon & Knives](https://forums.alliedmods.net/showthread.php?t=298770) | `1.7.7` | Custom weapon skins
+[Weapon & Knives](https://forums.alliedmods.net/showthread.php?t=298770) | `1.7.7-2fa2527` | Custom weapon skins
 [Accelerator](https://forums.alliedmods.net/showthread.php?t=277703) | `2.5.0-cd575aa` | Crash Reporting That Doesn't Suck
 [Capture the flag](https://forums.alliedmods.net/showthread.php?p=2466337) | `1.2` | Capture the flag for CS:GO
 [Models in map](https://forums.alliedmods.net/showthread.php?p=2389415) | `1.2` | Allows you to place models in map. Required for CTF

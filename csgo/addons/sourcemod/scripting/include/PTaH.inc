@@ -345,7 +345,7 @@ methodmap CAttributeList	// < Address
 	 *
 	 * @noreturn
 	 *
-	 * @error              CEconItemAttributeDefinition == NULL.
+	 * @error              CAttributeList == NULL.
 	 */
 	public native void DestroyAllAttributes();
 
@@ -354,7 +354,7 @@ methodmap CAttributeList	// < Address
 	 *
 	 * @return             Returns the attributes count.
 	 *
-	 * @error              CEconItemAttributeDefinition == NULL.
+	 * @error              CAttributeList == NULL.
 	 */
 	public native int GetAttributesCount();
 
@@ -363,7 +363,7 @@ methodmap CAttributeList	// < Address
 	 *
 	 * @return             Returns the pointer in CEconItemAttribute.
 	 *
-	 * @error              CEconItemAttributeDefinition == NULL.
+	 * @error              CAttributeList == NULL.
 	 */
 	public native CEconItemAttribute GetAttribute(int iIndex);
 
@@ -374,7 +374,7 @@ methodmap CAttributeList	// < Address
 	 *
 	 * @return             Returns the pointer in CEconItemAttribute.
 	 *
-	 * @error              CEconItemAttributeDefinition == NULL.
+	 * @error              CAttributeList == NULL.
 	 */
 	public native CEconItemAttribute GetAttributeByDefIndex(int iDefIndex);
 
@@ -385,7 +385,7 @@ methodmap CAttributeList	// < Address
 	 *
 	 * @noreturn
 	 *
-	 * @error              CEconItemAttributeDefinition == NULL.
+	 * @error              CAttributeList == NULL.
 	 */
 	public native void RemoveAttribute(int iIndex);
 
@@ -396,7 +396,7 @@ methodmap CAttributeList	// < Address
 	 *
 	 * @noreturn
 	 *
-	 * @error              CEconItemAttributeDefinition == NULL.
+	 * @error              CAttributeList == NULL.
 	 */
 	public native void RemoveAttributeByDefIndex(int iDefIndex);
 
@@ -408,7 +408,7 @@ methodmap CAttributeList	// < Address
 	 *
 	 * @noreturn
 	 *
-	 * @error              CEconItemAttributeDefinition == NULL.
+	 * @error              CAttributeList == NULL.
 	 */
 	public native void SetOrAddAttributeValue(int iDefIndex, any Value);
 };
