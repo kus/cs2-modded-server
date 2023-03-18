@@ -310,7 +310,7 @@
         "KnifePro" "1"
 
         /* Enables Knife Pro when a player is on hegrenade level */
-        "KnifeProHE"    "1"
+        "KnifeProHE"    "0"
 
         /* The minimum level that a player must be at before another player can knife steal from. Requires KnifePro on */
         "KnifeProMinLevel" "0"
