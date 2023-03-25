@@ -527,7 +527,7 @@
          * 0 - Disable
          * 1 and above - Minimum number of players in each team for UnlimitedNames to be on.
          */
-        "UnlimitedNadesMinPlayers" "0"
+        "UnlimitedNadesMinPlayers" "99"
         
         /**
          * Number of nades on the nade level.
