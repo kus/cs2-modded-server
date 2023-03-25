@@ -589,7 +589,7 @@
          * Gives unlimited hegrenades to the player if warmup is enabled.
          * If you are using WarmupRandomWeaponMode, you can nou use WarmupNades or WarmupWeapon.
          */
-        "WarmupNades" "1"
+        "WarmupNades" "0"
 
         /**
          * Weapon for warmup.
