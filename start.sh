@@ -165,6 +165,13 @@ cd /home/${user}/csgo/csgo/warmod/ && python3 -m http.server 80 </dev/null &>/de
 
 cd /home/${user}
 
+if [ "${DISTRO_OS}" == "Ubuntu" ]; then
+	if [ "${DISTRO_VERSION}" == "22.04" ]; then
+		# https://forums.alliedmods.net/showthread.php?t=336183
+		rm /home/${user}/csgo/bin/libgcc_s.so.1
+	fi
+fi
+
 echo "Dynamically writing /home/$user/csgo/csgo/cfg/secrets.cfg"
 if [ ! -z "$RCON_PASSWORD" ]; then
 	echo "rcon_password						\"$RCON_PASSWORD\"" > /home/${user}/csgo/csgo/cfg/secrets.cfg

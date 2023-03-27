@@ -384,6 +384,14 @@ Accept both Private and Public connections on Windows Firewall.
 When you join the server you can [change game modes](#changing-game-modes).
 ## FAQ
 
+# Failed to open libtier0.so
+
+`Failed to open libtier0.so (/home/steam/csgo/bin/libgcc_s.so.1: version 'GCC_7.0.0' not found (required by /lib/i386-linux-gnu/libstdc++.so.6))`
+
+This is because Valve ships their own copies of those libraries. As modern systems will have newer versions, you can safely delete the listed file from the server install. Do not delete the file in the system path (usually lib or lib32)[*](https://wiki.alliedmods.net/Installing_metamod:source).
+
+`cd /home/steam/csgo/bin/` and `rm libgcc_s.so.1` and restart the server.
+
 ## How do I connect to RCON remotely?
 
 [Download SourceAdminTool](https://users.alliedmods.net/~drifter/SAT/) for your OS (you can read about it [here](https://forums.alliedmods.net/showthread.php?t=289370)) and click `Servers > Add Servers` and put in the `<IP>:27015` and when you see the server show in the list, down the bottom left type in your RCON password and click `Login` and you should be able to execute commands from the bottom text box i.e. `exec gg.cfg`
