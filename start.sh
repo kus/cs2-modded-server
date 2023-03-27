@@ -51,10 +51,33 @@ user="steam"
 IP="0.0.0.0"
 PUBLIC_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
 CUSTOM_FILES="${CUSTOM_FOLDER:-custom_files}"
+if [ -f /etc/os-release ]; then
+	# freedesktop.org and systemd
+	. /etc/os-release
+	DISTRO_OS=$NAME
+	DISTRO_VERSION=$VERSION_ID
+elif type lsb_release >/dev/null 2>&1; then
+	# linuxbase.org
+	DISTRO_OS=$(lsb_release -si)
+	DISTRO_VERSION=$(lsb_release -sr)
+elif [ -f /etc/lsb-release ]; then
+	# For some versions of Debian/Ubuntu without lsb_release command
+	. /etc/lsb-release
+	DISTRO_OS=$DISTRIB_ID
+	DISTRO_VERSION=$DISTRIB_RELEASE
+elif [ -f /etc/debian_version ]; then
+	# Older Debian/Ubuntu/etc.
+	DISTRO_OS=Debian
+	DISTRO_VERSION=$(cat /etc/debian_version)
+else
+	# Fall back to uname, e.g. "Linux <version>", also works for BSD, etc.
+	DISTRO_OS=$(uname -s)
+	DISTRO_VERSION=$(uname -r)
+fi
 
 # Check distrib
 if ! command -v apt-get &> /dev/null; then
-	echo "ERROR: OS distribution not supported..."
+	echo "ERROR: OS distribution not supported... $DISTRO_OS $DISTRO_VERSION"
 	exit 1
 fi
 
@@ -83,9 +106,26 @@ if [ "$?" -ne "0" ]; then
 	exit 1
 fi
 
-echo "Installing required packages..."
+echo "Installing required packages for $DISTRO_OS $DISTRO_VERSION..."
 apt-get update -y -q >/dev/null
-apt-get install -y -q curl wget screen nano file tar bzip2 gzip unzip bsdmainutils python3 util-linux ca-certificates binutils bc jq tmux netcat lib32gcc1 lib32stdc++6 libsdl2-2.0-0:i386 >/dev/null
+if [ "${DISTRO_OS}" == "Ubuntu" ]; then
+	if [ "${DISTRO_VERSION}" == "22.04" ]; then
+		apt-get install -y -q curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc-s1 steamcmd >/dev/null
+	elif [ "${DISTRO_VERSION}" == "20.04" ]; then
+		apt-get install -y -q curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc1 steamcmd >/dev/null
+	elif [ "${DISTRO_VERSION}" == "18.04" ]; then
+		apt-get install -y -q curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc1 steamcmd >/dev/null
+	elif [ "${DISTRO_VERSION}" == "16.04" ]; then
+		apt-get install -y -q curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 lib32gcc1 steamcmd >/dev/null
+	else
+		echo "ERROR: Ubuntu distribution not supported. $DISTRO_OS $DISTRO_VERSION"
+		exit 1
+	fi
+else
+	echo "ERROR: OS distribution not supported. $DISTRO_OS $DISTRO_VERSION"
+	exit 1
+fi
+
 if [ "$?" -ne "0" ]; then
 	echo "ERROR: Cannot install required packages..."
 	exit 1

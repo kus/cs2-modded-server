@@ -218,7 +218,7 @@ gcloud beta compute instances create <instance-name> \
 --no-restart-on-failure \
 --scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/compute.readonly,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append \
 --tags=source \
---image-family=ubuntu-2004-lts \
+--image-family=ubuntu-2204-lts \
 --image-project=ubuntu-os-cloud \
 --boot-disk-size=60GB \
 --boot-disk-type=pd-standard \
@@ -236,6 +236,8 @@ gcloud compute ssh <instance-name> \
 sudo su
 cd / && curl --silent --output "gcp.sh" "https://raw.githubusercontent.com/kus/csgo-modded-server/master/gcp.sh" && chmod +x gcp.sh && bash gcp.sh
 ```
+
+If the installation has paused for a long time, restart the server and do it again.
 
 ### Stop server
 ```
