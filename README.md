@@ -384,7 +384,21 @@ Accept both Private and Public connections on Windows Firewall.
 When you join the server you can [change game modes](#changing-game-modes).
 ## FAQ
 
-# Failed to open libtier0.so
+### How do I add more bots?
+
+By default bots are enabled in deathmatch, gungame, gungame ffa, retakes, scoutsknives and wingman.
+
+The default is set to add 1 bot if only 1 human is in the server, and then if there is 2 or more humans there will be no bots.
+
+You can overwrite the settings for the bots by creating a "[custom file](#custom-files)" for this file [custom_bots.cfg](https://github.com/kus/csgo-modded-server/blob/master/csgo/cfg/custom_bots.cfg).
+
+If you copy [custom_bots.cfg](https://github.com/kus/csgo-modded-server/blob/master/csgo/cfg/custom_bots.cfg) and put it in the `/csgo/custom_files/cfg/` directory (`/home/steam/csgo/custom_files/cfg/` on default linux setup) and you can modify it and change say `bot_quota` to `10` if you want 10 players at all times. When the server starts (if using linux) it will merge this file into the game cfg and it will execute every time `bots.cfg` executes.
+
+You can also just login to RCON `rcon_password yourpassword` and use `rcon bot_add_ct` and `rcon bot_add_t`.
+
+If you want to remove bots you use `rcon bot_kick`.
+
+### Failed to open libtier0.so
 
 `Failed to open libtier0.so (/home/steam/csgo/bin/libgcc_s.so.1: version 'GCC_7.0.0' not found (required by /lib/i386-linux-gnu/libstdc++.so.6))`
 
@@ -392,7 +406,7 @@ This is because Valve ships their own copies of those libraries. As modern syste
 
 `cd /home/steam/csgo/bin/` and `rm libgcc_s.so.1` and restart the server.
 
-## How do I connect to RCON remotely?
+### How do I connect to RCON remotely?
 
 [Download SourceAdminTool](https://users.alliedmods.net/~drifter/SAT/) for your OS (you can read about it [here](https://forums.alliedmods.net/showthread.php?t=289370)) and click `Servers > Add Servers` and put in the `<IP>:27015` and when you see the server show in the list, down the bottom left type in your RCON password and click `Login` and you should be able to execute commands from the bottom text box i.e. `exec gg.cfg`
 
