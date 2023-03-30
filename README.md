@@ -106,7 +106,7 @@ For example; if you want to add yourself as an admin, that file is located `/csg
 
 If you want to change the server name, or make any changes to any mod settings use the `/cfg/custom_MOD.cfg` as it executes at the end and can overwrite any setting. So if you wanted to change the server name for GunGame, you would copy `/csgo/cfg/custom_gg.cfg` to `/custom_files/cfg/custom_gg.cfg` and and write `hostname "shipREKT GunGame +Deathmatch +Turbo"` and any other settings you want and this file will overwrite `/csgo/cfg/custom_gg.cfg` each time the `gcp.sh`/`install.sh` script is ran, and these settings will run at the end when you load the GunGame mod.
 
-To generate this directory, you can run the `gcp.sh` script (if on Google Cloud) or `install.sh` script (on Linux) once, and once it finishes you should have the directory `/home/steam/csgo/custom_files/` and this is where you would put your custom modifications.
+To generate this directory, you can run the `gcp.sh` script (if on Google Cloud), `install.sh` script on Linux once or on Windows where you extracted the mod zip and this is where you would put your custom modifications.
 
 ## Creating an online server
 
@@ -392,7 +392,7 @@ The default is set to add 1 bot if only 1 human is in the server, and then if th
 
 You can overwrite the settings for the bots by creating a "[custom file](#custom-files)" for this file [custom_bots.cfg](https://github.com/kus/csgo-modded-server/blob/master/csgo/cfg/custom_bots.cfg).
 
-If you copy [custom_bots.cfg](https://github.com/kus/csgo-modded-server/blob/master/csgo/cfg/custom_bots.cfg) and put it in the `/csgo/custom_files/cfg/` directory (`/home/steam/csgo/custom_files/cfg/` on default linux setup) and you can modify it and change say `bot_quota` to `10` if you want 10 players at all times. When the server starts (if using linux) it will merge this file into the game cfg and it will execute every time `bots.cfg` executes.
+If you copy [custom_bots.cfg](https://github.com/kus/csgo-modded-server/blob/master/csgo/cfg/custom_bots.cfg) and put it in the `custom_files/cfg/` directory (`/home/steam/csgo/custom_files/cfg/` on default Linux setup) and you can modify it and change say `bot_quota` to `10` if you want 10 players at all times. When the server starts (on Linux and Windows) it will merge this file into the game cfg and it will execute every time `bots.cfg` executes.
 
 You can also just login to RCON `rcon_password yourpassword` and use `rcon bot_add_ct` and `rcon bot_add_t`.
 

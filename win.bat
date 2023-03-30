@@ -10,6 +10,8 @@ echo (%time%) Using SteamCMD to check for updates.
 start /wait %ROOT_DIR%steamcmd\steamcmd.exe +login anonymous +force_install_dir ../server +app_update 740 +quit
 echo (%time%) Copying mod files.
 xcopy "%ROOT_DIR%csgo\*" "%ROOT_DIR%server\csgo\" /K /S /E /I /H /Y >NUL
+echo (%time%) Copying custom files from "%custom_folder%".
+xcopy "%ROOT_DIR%%custom_folder%\*" "%ROOT_DIR%server\csgo\" /K /S /E /I /H /Y >NUL
 echo (%time%) SRCDS started.
 start /wait %ROOT_DIR%server\srcds.exe -game csgo -console -debug -condebug -usercon +game_type 0 +game_mode 0 +mapgroup mg_active +map de_dust2 +hostport %csgo_port% -ip 0.0.0.0 +net_public_adr %ip_internet% -tickrate %csgo_tickrate% -maxplayers_override %csgo_players%
 echo (%time%) WARNING: SRCDS closed or crashed.
