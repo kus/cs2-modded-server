@@ -110,13 +110,13 @@ To generate this directory, you can run the `gcp.sh` script (if on Google Cloud)
 
 ## Creating an online server
 
-If you are hosting an online server, you need to create a Steam [Game Login Token](https://steamcommunity.com/dev/managegameservers), your server will not run online without this. Put this value in the `STEAM_ACCOUNT` environment variable or create a custom file for `/csgo/cfg/secrets.cfg` following the [custom files](#custom-files) steps and set it in `sv_setsteamaccount`.
+If you are hosting an online server, you need to create a Steam [Game Login Token](https://steamcommunity.com/dev/managegameservers), your server will not run online without this. Put this value in the `STEAM_ACCOUNT` environment variable or create a custom file for `/csgo/cfg/secrets.cfg` following the [custom files](#custom-files) steps (`/custom_files/cfg/secrets.cfg`) and set it in `sv_setsteamaccount`.
 
 You also need to create an [authorization key](http://steamcommunity.com/dev/apikey) which will allow your server to download maps from the workshop. Put this value in the `API_KEY` environment variable.
 
 ## Creating a LAN server
 
-Create a custom file for `/csgo/cfg/env.cfg` following the [custom files](#custom-files) steps and set `sv_lan` to `1`, `sv_downloadurl` to `""` and `sv_allowdownload` to `1`.
+Create a custom file for `/csgo/cfg/env.cfg` following the [custom files](#custom-files) steps (`/custom_files/cfg/env.cfg`) and set `sv_lan` to `1`, `sv_downloadurl` to `""` and `sv_allowdownload` to `1`.
 
 ## Environment variables
 
@@ -178,7 +178,7 @@ By default the download limit of CS:GO is capped at 20kb/s and also adds additio
 
 A [bash script](https://github.com/kus/csgo-modded-server/blob/master/scripts/bzip.sh) is included to make this process easy and automatically create the correct directory structure and compress your files with [bzip2](https://en.wikipedia.org/wiki/Bzip2) and create a "fastdl" folder which you simply host on a webserver.
 
-Create a custom file for `/csgo/cfg/env.cfg` following the [custom files](#custom-files) steps and set `sv_downloadurl` to `http://yoursite.com/fastdl/csgo`, and `sv_allowdownload` to `0`.
+Create a custom file for `/csgo/cfg/env.cfg` following the [custom files](#custom-files) steps (`/custom_files/cfg/env.cfg`) and set `sv_downloadurl` to `http://yoursite.com/fastdl/csgo`, and `sv_allowdownload` to `0`.
 
 Windows users can [download this](http://gnuwin32.sourceforge.net/packages/bzip2.htm) and manually create the directory structure and compress the files. Anything in `maps`, `sounds`, `materials`, `models` and you need to keep the same directory structure. You should end up with something like:
 
@@ -436,13 +436,9 @@ From `/addons/metamod/` copy `bin` to your servers `/addons/metamod/` and *Merge
 
 Bind a key to `sm_admin` from console i.e. `bind p sm_admin` then press `p` and the admin menu should open.
 
-If you want to add admins, you need to edit this file `/addons/sourcemod/configs/admins_simple.ini` and add the admin to the bottom i.e. `"STEAM_0:0:56050" "9:z"` save the file and if the server is running run `sm_reloadadmins` and reconnect to the server.
+If you want to add admins, the admins are located at the bottom of this file `/addons/sourcemod/configs/admins_simple.ini` but we can't edit it directly as it gets overwritten when the mod updates. So we need to create a custom file following the [custom files](#custom-files) steps (copy the file to `/custom_files/addons/sourcemod/configs/admins_simple.ini`) and add the admin(s) to the bottom i.e. `"STEAM_0:0:56050" "9:z"` save the file and if the server is running you will need to close the server and start it again (with `gcp.sh`/`start.sh`/`install.sh`/`win.bat`) so the custom file is merged into your server.
 
 If you want to read more about admin flags you can do that [here](https://wiki.alliedmods.net/Adding_Admins_(SourceMod)).
-
-Note: `/addons/sourcemod/configs/admins_simple.ini` will be overwritten by my script defaultly each time `install.sh` runs so once you have `install.sh` on your server you may want to update `gcp.sh` and comment out the `curl` line which downloads the latest `install.sh` as it shouldn't change too much.
-
-Open `install.sh` and after it dynamically creates `cfg/env.cfg` you there is commented out code that will dynamically overwrite `/addons/sourcemod/configs/admins_simple.ini` with your own admins. Simply update the Steam ID's and uncomment the lines.
 
 ## Changing game modes
 
