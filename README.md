@@ -104,9 +104,9 @@ You can see an example of what I use on my server in the `/custom_files_example/
 
 For example; if you want to add yourself as an admin, that file is located `/csgo/addons/sourcemod/configs/admins_simple.ini`. So to make your tweak to it, you would copy that file to `/custom_files/addons/sourcemod/configs/admins_simple.ini` and add yourself as an admin at the bottom. Then when the update scripts run, it will copy your custom file at `/custom_files/addons/sourcemod/configs/admins_simple.ini` and overwrite the default mod file at `/csgo/addons/sourcemod/configs/admins_simple.ini`.
 
-If you want to change the server name, or make any changes to any mod settings use the `/cfg/custom_MOD.cfg` as it executes at the end and can overwrite any setting. So if you wanted to change the server name for GunGame, you would copy `/csgo/cfg/custom_gg.cfg` to `/custom_files/cfg/custom_gg.cfg` and and write `hostname "shipREKT GunGame +Deathmatch +Turbo"` and any other settings you want and this file will overwrite `/csgo/cfg/custom_gg.cfg` each time the `gcp.sh`/`install.sh` script is ran, and these settings will run at the end when you load the GunGame mod.
+If you want to change the server name, or make any changes to any mod settings use the `/cfg/custom_MOD.cfg` as it executes at the end and can overwrite any setting. So if you wanted to change the server name for GunGame, you would copy `/csgo/cfg/custom_gg.cfg` to `/custom_files/cfg/custom_gg.cfg` and and write `hostname "shipREKT GunGame +Deathmatch +Turbo"` and any other settings you want and this file will overwrite `/csgo/cfg/custom_gg.cfg` each time the `gcp.sh`/`install.sh`/`win.bat` script is ran, and these settings will run at the end when you load the GunGame mod.
 
-To generate this directory, you can run the `gcp.sh` script (if on Google Cloud), `install.sh` script on Linux once or on Windows where you extracted the mod zip and this is where you would put your custom modifications.
+To generate this directory, you can run the `gcp.sh` script (if on Google Cloud), `install.sh` script on Linux once or on `win.bat` script on Windows where you extracted the mod zip and this is where you would put your custom modifications.
 
 ## Creating an online server
 
