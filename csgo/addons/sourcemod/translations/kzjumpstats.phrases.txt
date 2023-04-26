@@ -1,0 +1,288 @@
+﻿"Phrases"
+{
+	"LJblock1"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"en"        "[{1}JS{2}] {3}Invalid destination (height offset > 0.0)"
+	}
+	"LJblock2"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"en"        "[{1}JS{2}] {3}Invalid destination (failed to detect edges)"
+	}	
+	"LJblock3"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"en"        "[{1}JS{2}] {3}Invalid destination (selected destination is too large)"
+	}
+	"LJblock4"
+	{
+		"#format"   "{1:c},{2:c},{3:c}"
+		"en"        "[{1}JS{2}] {3}Invalid destination"
+	}
+	"LJblock5"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:d},{6:c}"
+		"en"        "[{1}JS{2}] {3}Longjump Block ({4}{5} units{6}) registered!"
+	}
+	"LJblock6"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:i},{6:c}"
+		"en"        "[{1}JS{2}] {3}You can only register blocks down to 226 units! (current gap: {4}{5} units{6})"
+	}
+	"LJblock7"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:i},{6:c}"
+		"en"        "[{1}JS{2}] {3}You can only register blocks up to 300 units! (current gap: {4}{5} units{6})"
+	}	
+	"noJumpRecords"
+	{
+		"#format"   "{1:c},{2:c}"
+		"en"        "[{1}JS{2}] No jump records found!"
+	}
+	"PlayerNotFound"
+	{
+		"#format"   "{1:c},{2:c},{3:s}"
+		"en"        "[{1}JS{2}] Player {3} not found in local database."
+	}
+	"SpeedMeter1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"en"        "[{1}JS{2}] Speed meter enabled."
+	}
+	"SpeedMeter2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"en"        "[{1}JS{2}] Speed meter disabled."
+	}
+	"Jumpstats_LjAll"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:.3f},{8:c},{9:c},{10:s}"
+		"en"        "[{1}JS{2}] {3}{4}{5} jumped {6}{7} units{8} with a {9}LongJump{10}"
+	}
+	"Jumpstats_BhopAll"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:.3f},{8:c},{9:c}"
+		"en"        "[{1}JS{2}] {3}{4}{5} jumped {6}{7} units{8} with a {9}Bunnyhop"
+	}
+	"Jumpstats_WeirdAll"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:.3f},{8:c},{9:c}"
+		"en"        "[{1}JS{2}] {3}{4}{5} jumped {6}{7} units{8} with a {9}WeirdJump"
+	}
+	"Jumpstats_DropBhopAll"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:.3f},{8:c},{9:c}"
+		"en"        "[{1}JS{2}] {3}{4}{5} jumped {6}{7} units{8} with a {9}DropBhop"
+	}
+	"Jumpstats_MultiBhopAll"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:c},{6:c},{7:.3f},{8:c},{9:c}"
+		"en"        "[{1}JS{2}] {3}{4}{5} jumped {6}{7} units{8} with a {9}MultiBhop"
+	}
+	"Jumpstats_OnRampage"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s}"
+		"en"        "[{1}JS{2}] {3}{4} is on rampage [3 leet jumps in a row]"
+	}
+	"Jumpstats_IsDominating"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s}"
+		"en"        "[{1}JS{2}] {3}{4} is dominating [5 leet jumps in a row]"
+	}
+	"Jumpstats_BeatLjBest"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.3f}"
+		"en"        "[{1}JS{2}] {3}You beat your personal best for LongJump with a {4} jump!"
+	}
+	"Jumpstats_BeatLjBlockBest"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c}{4:i},{5:.3f}"
+		"en"        "[{1}JS{2}] {3}You beat your personal best for Block LongJump with a {4} block and {5} jump!"
+	}
+	"Jumpstats_BeatWjBest"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.3f}"
+		"en"        "[{1}JS{2}] {3}You beat your personal best for WeirdJump with a {4} jump!"
+	}
+	"Jumpstats_BeatDropBhopBest"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.3f}"
+		"en"        "[{1}JS{2}] {3}You beat your personal best for Drop-Bunnyhop with a {4} jump!"
+	}
+	"Jumpstats_BeatBhopBest"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.3f}"
+		"en"        "[{1}JS{2}] {3}You beat your personal best for Bunnyhop with a {4} jump!"
+	}
+	"Jumpstats_BeatMultiBhopBest"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.3f}"
+		"en"        "[{1}JS{2}] {3}You beat your personal best for Multi-Bunnyhop with a {4} jump!"
+	}
+	"Jumpstats_LjTop"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:i},{6:.3f}"
+		"en"        "[{1}JS{2}] {3}{4} is now #{5} in the LongJump Top 20! [{6} units]"
+	}
+	"Jumpstats_LjBlockTop"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:i},{6:i},{7:.3f}"
+		"en"        "[{1}JS{2}] {3}{4} is now #{5} in the Block LongJump Top 20! [{6} units block/{7} units jump]"
+	}
+	"Jumpstats_WjTop"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:i},{6:.3f}"
+		"en"        "[{1}JS{2}] {3}{4} is now #{5} in the WeirdJump Top 20! [{6} units]"
+	}
+	"Jumpstats_DropBhopTop"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:i},{6:.3f}"
+		"en"        "[{1}JS{2}] {3}{4} is now #{5} in the Drop-Bunnyhop Top 20! [{6} units]"
+	}
+	"Jumpstats_BhopTop"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:i},{6:.3f}"
+		"en"        "[{1}JS{2}] {3}{4} is now #{5} in the Bunnyhop Top 20! [{6} units]"
+	}
+	"Jumpstats_MultiBhopTop"
+ 	{
+		"#format"   "{1:c},{2:c},{3:c},{4:s},{5:i},{6:.3f}"
+		"en"        "[{1}JS{2}] {3}{4} is now #{5} in the Multi-Bunnyhop Top 20! [{6} units]"
+	}
+	"Colorchat1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"en"        "[{1}JS{2}] Colorchat enabled."
+	}
+	"Colorchat2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"en"        "[{1}JS{2}] Colorchat disabled."
+	}
+	"Info1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"en"        "[{1}JS{2}] Info panel enabled."
+	}
+	"Info2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"en"        "[{1}JS{2}] Info panel disabled."
+	}
+	"ShowKeys1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"en"        "[{1}JS{2}] Show keys enabled."
+	}
+	"ShowKeys2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"en"        "[{1}JS{2}] Show keys disabled."
+	}
+	"QuakeSounds1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"en"        "[{1}JS{2}] Quake sounds enabled."
+	}
+	"QuakeSounds2"
+	{
+		"#format"   "{1:c},{2:c}"
+		"en"        "[{1}JS{2}] Quake sounds disabled."
+	}
+	"StrafeSync1"
+	{
+		"#format"   "{1:c},{2:c}"
+		"en"        "[{1}JS{2}] Strafe sync in chat enabled."
+	}
+	"Bhop1"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.3f},{5:c},{6:c},{7:.3f},{8:c},{9:c},{10:c}"
+		"en"       "[{1}JS{2}] Your Prestrafe is too high. ({3}{4}{5}/{6}{7}{8} max) {9}Bhop{10}"
+	}
+	"DropBhop1"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.1f},{5:c},{6:c},{7:c},{8:c},{9:c}"
+		"en"       "[{1}JS{2}] You fell too far. ({3}{4}{5}/{6}132.0{7} max) {8}DropBhop{9}"
+	}	
+	"DropBhop2"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.3f},{5:c},{6:c},{7:.3f},{8:c},{9:c},{10:c}"
+		"en"       "[{1}JS{2}] Your Prestrafe is too high. ({3}{4}{5}/{6}{7}{8} max) {9}DropBhop{10}"
+	}
+	"Wj1"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.1f},{5:c},{6:c},{7:c},{8:c},{9:c}"
+		"en"       "[{1}JS{2}] You fell too far. ({3}{4}{5}/{6}132.0{7} max) {8}WJ{9}"
+	}	
+	"Wj2"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.3f},{5:c},{6:c},{7:c},{8:c},{9:c}"
+		"en"       "[{1}JS{2}] Your Prestrafe is too high. ({3}{4}{5}/{6}300.0{7} max) {8}WJ{9}"
+	}
+	"ClientLongJump1"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.2f},{5:c},{6:i},{7:c},{8:c},{9:.0f},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:i},{19:c},{20:c},{21:s}"
+		"en"       "[{1}JS{2}] {3}LJ: {4} units [{5}{6}{7} Strafes | {8}{9}{10} Pre | {11}{12}{13} Max | {14}{15}{16} Height | {17}{18}{19}{20} Sync]{21}"
+	}
+	"ClientLongJump2"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.2f},{5:c},{6:i},{7:c},{8:c},{9:.0f},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:i},{19:c},{20:c},{21:s}"
+		"en"       "[{1}JS{2}] {3}LJ: {4} units [{5}{6}{7} Strafes | {8}{9}{10} TakeOff | {11}{12}{13} Max | {14}{15}{16} Height | {17}{18}{19}{20} Sync]{21}"
+	}
+	"ClientLongJump3"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:c},{6:.2f},{7:c},{8:c},{9:i},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:.0f},{19:c},{20:c},{21:i},{22:c},{23:c},{24:s}"
+		"en"       "[{1}JS{2}] {3}LJ{4}: {5}{6} units{7} [{8}{9}{10} Strafes | {11}{12}{13} Pre | {14}{15}{16} Max | {17}{18}{19} Height | {20}{21}{22}{23} Sync]{24}"
+	}
+	"ClientLongJump4"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:c},{6:.2f},{7:c},{8:c},{9:i},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:.0f},{19:c},{20:c},{21:i},{22:c},{23:c},{24:s}"
+		"en"       "[{1}JS{2}] {3}LJ{4}: {5}{6} units{7} [{8}{9}{10} Strafes | {11}{12}{13} TakeOff | {14}{15}{16} Max | {17}{18}{19} Height | {20}{21}{22}{23} Sync]{24}"
+	}	
+	"ClientMultiBhop1"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.2f},{5:c},{6:i},{7:c},{8:c},{9:.0f},{10:c}{11:c},{12:i},{13:c},{14:c}"
+		"en"       "[{1}JS{2}] {3}MBhop: {4} units [{5}{6}{7} Strafes | {8}{9}{10} Pre | {11}{12}{13}{14} Sync]"
+	}
+	"ClientMultiBhop2"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:c},{6:.2f},{7:c},{8:c},{9:i},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:.0f},{19:c},{20:c},{21:s},{22:c},{23:c},{24:i},{25:c},{26:c}"
+		"en"       "[{1}JS{2}] {3}MBhop{4}: {5}{6} units{7} [{8}{9}{10} Strafes | {11}{12}{13} Pre | {14}{15}{16} Max | {17}{18}{19} Height | {20}{21}{22} Bhops | {23}{24}{25}{26} Sync]"
+	}
+	"ClientDropBhop1"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.2f},{5:c},{6:i},{7:c},{8:c},{9:.0f},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:i},{16:c},{17:c}"
+		"en"       "[{1}JS{2}] {3}DBhop: {4} units [{5}{6}{7} Strafes | {8}{9}{10} Pre | {11}{12}{13} Height | {14}{15}{16}{17} Sync]"
+	}
+	"ClientDropBhop2"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:c},{6:.2f},{7:c},{8:c},{9:i},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:.0f},{19:c},{20:c},{21:i},{22:c},{23:c}"
+		"en"       "[{1}JS{2}] {3}DBhop{4}: {5}{6} units{7} [{8}{9}{10} Strafes | {11}{12}{13} Pre | {14}{15}{16} Max | {17}{18}{19} Height | {20}{21}{22}{23} Sync]"
+	}
+	"ClientWeirdJump1"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.2f},{5:c},{6:i},{7:c},{8:c},{9:.0f},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:i},{16:c},{17:c}"
+		"en"       "[{1}JS{2}] {3}WJ: {4} units [{5}{6}{7} Strafes | {8}{9}{10} Pre | {11}{12}{13} Height | {14}{15}{16}{17} Sync]"
+	}
+	"ClientWeirdJump2"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:c},{6:.2f},{7:c},{8:c},{9:i},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:.0f},{19:c},{20:c},{21:i},{22:c},{23:c}"
+		"en"       "[{1}JS{2}] {3}WJ{4}: {5}{6} units{7} [{8}{9}{10} Strafes | {11}{12}{13} Pre | {14}{15}{16} Max | {17}{18}{19} Height | {20}{21}{22}{23} Sync]"
+	}
+	"ClientBunnyhop1"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:.2f},{5:c},{6:i},{7:c},{8:c},{9:.0f},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:i},{16:c},{17:c}"
+		"en"       "[{1}JS{2}] {3}Bhop: {4} units [{5}{6}{7} Strafes | {8}{9}{10} Pre | {11}{12}{13} Height | {14}{15}{16}{17} Sync]"
+	}
+	"ClientBunnyhop2"
+	{
+		"#format"   "{1:c},{2:c},{3:c},{4:c},{5:c},{6:.2f},{7:c},{8:c},{9:i},{10:c},{11:c},{12:.0f},{13:c},{14:c},{15:.0f},{16:c},{17:c},{18:.0f},{19:c},{20:c},{21:i},{22:c},{23:c}"
+		"en"       "[{1}JS{2}] {3}Bhop{4}: {5}{6} units{7} [{8}{9}{10} Strafes | {11}{12}{13} Pre | {14}{15}{16} Max | {17}{18}{19} Height | {20}{21}{22}{23} Sync]"
+	}
+		"LjBlock"
+	{
+		"#format"   "{1:c},{2:c},{3:i},{4:c}"
+		"en"        " {1}[{2}{3} block{4}]"
+	}
+}

@@ -70,6 +70,7 @@ Mod | Version | Why
 [PugSetup RoundRestore](https://forums.alliedmods.net/showthread.php?p=2707964) | `1.2` | Restore the match to the previous round for pug setup
 [WarMod](https://forums.alliedmods.net/showthread.php?t=225474) | `20.07.15.1214` | Used for competitive matches, and provides the flexibility to suit any form of competition, including large tournaments down to clan matches
 [Practice Mod](https://github.com/splewis/csgo-practice-mode) | `1.3.3` | Private team/individual practice servers
+[KZTimer Jumpstats](https://forums.alliedmods.net/showthread.php?t=317121) | `2.3` | KZTimer Jumpstats With Ownages & More!
 [Multi 1v1](https://forums.alliedmods.net/showthread.php?t=241056) | `1.1.9` | Sets up 2+ players in separate 1v1 arenas, when all the arenas are done fighting, the winners move up an arena and the losers move down an arena
 [AbNeR DeathRun Manager](https://forums.alliedmods.net/showthread.php?t=272017) | `2.6` | Automates Deathrun Server
 [Map configs](https://forums.alliedmods.net/showthread.php?p=607079) | `1.3` | Load mod settings on map change for mods that don't have exec's on map change
