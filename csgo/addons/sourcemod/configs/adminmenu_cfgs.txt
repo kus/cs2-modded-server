@@ -16,6 +16,7 @@ Configs
 	"cfg/scoutsknives.cfg"	"Scoutz Knivez"
 	"cfg/deathmatch.cfg"	"Deathmatch"
 	"cfg/training.cfg"		"Jump Training"
+	"cfg/deathracers.cfg"	"Death Racers"
 	"cfg/fortnite.cfg"		"Fortnite"
 	"cfg/gokart.cfg"		"Go Kart"
 	"cfg/fallguys.cfg"		"Fall Guys"
