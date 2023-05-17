@@ -17,7 +17,7 @@ Configs
 	"cfg/deathmatch.cfg"	"Deathmatch"
 	"cfg/training.cfg"		"Jump Training"
 	"cfg/deathracers.cfg"	"Death Racers"
-	"cfg/zombiereloaded.cfg"	"Death Racers"
+	"cfg/zombiereloaded.cfg"	"Zombie:Reloaded"
 	"cfg/fortnite.cfg"		"Fortnite"
 	"cfg/gokart.cfg"		"Go Kart"
 	"cfg/fallguys.cfg"		"Fall Guys"
