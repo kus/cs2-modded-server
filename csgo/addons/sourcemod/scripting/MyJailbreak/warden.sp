@@ -56,6 +56,7 @@
 
 // Defines
 #define MAX_BUTTONS 25
+#define WARDEN_SPAM 5
 
 // Console Variables
 ConVar gc_bPlugin;
@@ -113,6 +114,7 @@ bool gp_bDeadGames = false;
 // Integers
 int g_iApplicationTime= 0;
 int g_iCMDCoolDown[MAXPLAYERS+1] = 0;
+int g_iCMDCoolDownSpam[MAXPLAYERS+1] = 0;
 int g_iWarden = -1;
 int g_iLastWarden = -1;
 int g_iTempWarden[MAXPLAYERS+1] = -1;
@@ -658,10 +660,14 @@ public Action Command_BecomeWarden(int client, int args)
 		CReplyToCommand(client, "%s %t", g_sPrefix, "warden_wait", RoundFloat(gc_fCMDCooldown.FloatValue));
 		return Plugin_Handled;
 	}
-
+	
 	if (GetLimit(client) < gc_iLimitWarden.IntValue || gc_iLimitWarden.IntValue == 0 || (gc_iCoolDownMinPlayer.IntValue > GetTeamPlayersCount(CS_TEAM_CT)))
 	{
-		if (SetTheWarden(client, client) != Plugin_Handled)
+		if (g_iCMDCoolDownSpam[client] > GetTime())
+		{
+			CReplyToCommand(client, "%s %t", g_sPrefix, "warden_wait_spam_become");
+		}
+		else if (SetTheWarden(client, client) != Plugin_Handled)
 		{
 			Forward_OnWardenCreatedByUser(client);
 		}
@@ -703,6 +709,13 @@ public Action Command_ExitWarden(int client, int args)
 		}
 		return Plugin_Handled;
 	}
+	
+	if (g_iCMDCoolDownSpam[client] > GetTime())
+	{
+		CReplyToCommand(client, "%s %t", g_sPrefix, "warden_wait_spam_retire");
+		return Plugin_Handled;
+	}
+	g_iCMDCoolDownSpam[client] = GetTime() + WARDEN_SPAM;
 
 	Forward_OnWardenRemovedBySelf(client);
 	RemoveTheWarden();
@@ -845,12 +858,7 @@ public void Event_PlayerDeath(Event event, const char[] name, bool dontBroadcast
 			EmitSoundToAllAny(g_sUnWarden);
 		}
 
-	//	delete g_hTimerOpen; // why delete don't work?
-		if (g_hTimerRandom != null)
-		{
-			KillTimer(g_hTimerRandom);
-		}
-		g_hTimerRandom = null;
+		delete g_hTimerRandom;
 
 		g_hTimerRandom = CreateTimer(gc_fRandomTimer.FloatValue, Timer_ChooseRandom);
 
@@ -891,12 +899,7 @@ public void Event_PostRoundStart(Event event, const char[] name, bool dontBroadc
 
 	if ((g_iWarden == -1) && gc_bBecomeWarden.BoolValue && !gc_bChoiceWarden.BoolValue)
 	{
-		//	delete g_hTimerOpen; // why delete don't work?
-		if (g_hTimerRandom != null)
-		{
-			KillTimer(g_hTimerRandom);
-		}
-		g_hTimerRandom = null;
+		delete g_hTimerRandom;
 
 		g_hTimerRandom = CreateTimer(gc_fRandomTimer.FloatValue, Timer_ChooseRandom);
 
@@ -1241,6 +1244,8 @@ public void OnClientPutInServer(int client)
 // Warden disconnect
 public void OnClientDisconnect(int client)
 {
+	HandCuffs_OnClientDisconnect(client); // this is prioritised to fix a crash with the StripZeus function
+	
 	if (IsClientWarden(client))
 	{
 		CPrintToChatAll("%s %t", g_sPrefix, "warden_disconnected", client);
@@ -1272,7 +1277,6 @@ public void OnClientDisconnect(int client)
 
 	Deputy_OnClientDisconnect(client);
 	Painter_OnClientDisconnect(client);
-	HandCuffs_OnClientDisconnect(client);
 	Freedays_OnClientDisconnect(client);
 }
 
@@ -1388,6 +1392,8 @@ Action SetTheWarden(int client, int caller)
 		{
 			SetLimit(client, 1);
 		}
+		
+		g_iCMDCoolDownSpam[client] = GetTime() + WARDEN_SPAM;
 
 		GetEntPropString(client, Prop_Data, "m_ModelName", g_sModelPathPrevious, sizeof(g_sModelPathPrevious));
 
@@ -1420,12 +1426,7 @@ Action SetTheWarden(int client, int caller)
 			}
 		}
 
-	//	delete g_hTimerRandom; // why delete don't work?
-		if (g_hTimerRandom != null)
-		{
-			KillTimer(g_hTimerRandom);
-		}
-		g_hTimerRandom = null;
+		delete g_hTimerRandom;
 	}
 	else CReplyToCommand(client, "%s %t", g_sPrefix, "warden_disabled");
 
@@ -1694,9 +1695,10 @@ public int Handler_SetWardenOverwrite(Menu menu, MenuAction action, int client, 
 // Choose a random Warden after a defined time
 public Action Timer_ChooseRandom(Handle timer)
 {
+	g_hTimerRandom = null;
+	
 	if (!gc_bPlugin.BoolValue || !g_bEnabled || (g_bIsLR && gc_bRemoveLR.BoolValue) || g_iWarden != -1 || !gc_bChooseRandom.BoolValue)
 	{
-		g_hTimerRandom = null;
 		return Plugin_Stop;
 	}
 
@@ -1706,9 +1708,11 @@ public Action Timer_ChooseRandom(Handle timer)
 	{
 		CPrintToChatAll("%s %t", g_sPrefix, "warden_randomwarden");
 	}
-	else CreateTimer (0.1, Timer_ChooseRandom);
+	else
+	{
+		g_hTimerRandom = CreateTimer(0.1, Timer_ChooseRandom);
+	}
 
-	g_hTimerRandom = null;
 	return Plugin_Stop;
 }
 

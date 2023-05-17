@@ -564,7 +564,7 @@ public Action Command_JoinGuardQueue(int client, int iArgNum)
 		{
 			ForcePlayerSuicide(client);
 			ChangeClientTeam(client, CS_TEAM_CT);
-			SetClientListeningFlags(client, VOICE_NORMAL); // unmute if sm_hosties or admin has muted prisoners on round start
+			//SetClientListeningFlags(client, VOICE_NORMAL); // unmute if sm_hosties or admin has muted prisoners on round start
 			MinusDeath(client);
 			CS_RespawnPlayer(client);
 		}
@@ -1055,7 +1055,7 @@ public int Handler_AcceptGuardRules(Handle menu, MenuAction action, int param1, 
 
 					if (gc_bRespawn.BoolValue)
 					{
-						SetClientListeningFlags(client, VOICE_NORMAL); // unmute if sm_hosties or admin has muted prisoners on round start
+						//SetClientListeningFlags(client, VOICE_NORMAL); // unmute if sm_hosties or admin has muted prisoners on round start
 						MinusDeath(client);
 						CS_RespawnPlayer(client);
 					}
@@ -1160,7 +1160,7 @@ public int Handler_GuardQuestions(Handle menu, MenuAction action, int param1, in
 						{
 							ForcePlayerSuicide(client);
 							ChangeClientTeam(client, CS_TEAM_CT);
-							SetClientListeningFlags(client, VOICE_NORMAL); // unmute if sm_hosties or admin has muted prisoners on round start
+							//SetClientListeningFlags(client, VOICE_NORMAL); // unmute if sm_hosties or admin has muted prisoners on round start
 							if (gc_bRespawn.BoolValue)
 							{
 								MinusDeath(client);
@@ -1199,7 +1199,7 @@ public int Handler_GuardQuestions(Handle menu, MenuAction action, int param1, in
 						{
 							ForcePlayerSuicide(client);
 							ChangeClientTeam(client, CS_TEAM_CT);
-							SetClientListeningFlags(client, VOICE_NORMAL); // unmute if sm_hosties or admin has muted prisoners on round start
+							//SetClientListeningFlags(client, VOICE_NORMAL); // unmute if sm_hosties or admin has muted prisoners on round start
 							if (gc_bRespawn.BoolValue)
 							{
 								MinusDeath(client);
@@ -1237,7 +1237,7 @@ public int Handler_GuardQuestions(Handle menu, MenuAction action, int param1, in
 						{
 							ForcePlayerSuicide(client);
 							ChangeClientTeam(client, CS_TEAM_CT);
-							SetClientListeningFlags(client, VOICE_NORMAL); // unmute if sm_hosties or admin has muted prisoners on round start
+							//SetClientListeningFlags(client, VOICE_NORMAL); // unmute if sm_hosties or admin has muted prisoners on round start
 							if (gc_bRespawn.BoolValue)
 							{
 								MinusDeath(client);
@@ -1424,7 +1424,7 @@ void FixTeamRatio()
 		}
 
 		SetClientPendingTeam(client, CS_TEAM_CT);
-		SetClientListeningFlags(client, VOICE_NORMAL); // unmute if sm_hosties or admin has muted prisoners on round start
+		//SetClientListeningFlags(client, VOICE_NORMAL); // unmute if sm_hosties or admin has muted prisoners on round start
 		MinusDeath(client);
 		bMovedPlayers = true;
 	}
@@ -1697,7 +1697,7 @@ public int ChangeMenu(Menu menu, MenuAction action, int client, int selection)
 					}
 
 					ChangeClientTeam(newGuard, CS_TEAM_CT);
-					SetClientListeningFlags(newGuard, VOICE_NORMAL);
+					//SetClientListeningFlags(newGuard, VOICE_NORMAL);
 					MinusDeath(newGuard);
 				}
 			}

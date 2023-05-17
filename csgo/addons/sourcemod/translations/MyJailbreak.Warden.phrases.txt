@@ -1,5 +1,5 @@
 // Exported from SourceMod Translator
-// Date: 2020-03-19 11:34:20 UTC
+// Date: 2018-08-13 17:29:21 UTC
 // Language: English (en)
 // 
 // To view other translations for this plugin, please visit:
@@ -950,6 +950,16 @@
 		"#format"	"{1:i}"
 		"en"		"As {green}last round warden{default} you have to wait {purple}{1} seconds{default} to become warden again."
 	}
+	
+	"warden_wait_spam_become"
+	{
+		"en"		"You just decided to {green}retire as warden{default}! Please wait {purple}a few seconds{default} to become warden again."
+	}
+	
+	"warden_wait_spam_retire"
+	{
+		"en"		"You just {green}became warden{default}! Please wait {purple}a few seconds{default} to retire."
+	}
 
 	"warden_deputy_removed"
 	{
@@ -1057,6 +1067,17 @@
 		"en"		"{1} seconds time to apply for warden"
 	}
 
+	"warden_apply_added"
+	{
+		"#format"	"{1:N}"
+		"en"		"{purple}{1}{default} applies as warden"
+	}
+
+	"warden_apply_removed"
+	{
+		"en"		"You've been removed from the Warden's application list."
+	}
+
 	"warden_no_applications"
 	{
 		"en"		"No one applied for the position of warden. {purple}A random warden{default} was selected."
@@ -1072,6 +1093,11 @@
 		"en"		"Application time is over. \n Vote your new warden!"
 	}
 
+	"warden_cooldown_reset"
+	{
+		"en"		"The cooldown for all wardens has been reset."
+	}
+
 	"warden_vote_applicants"
 	{
 		"en"		"The vote ended in a 50/50 draw! A random warden was chosen."
@@ -1081,22 +1107,6 @@
 	{
 		"#format"	"{1:N}"
 		"en"		"{purple}{1}{default} with the most votes becomes your {purple}new warden."
-	}
-
-	"warden_apply_added"
-	{
-		"#format"	"{1:N}"
-		"en"		"{purple}{1}{default} applies as warden"
-	}
-
-	"warden_apply_removed"
-	{
-		"en"		"You've been removed from the Warden's application list."
-	}
-
-	"warden_cooldown_reset"
-	{
-		"en"		"The cooldown for all wardens has been reset."
 	}
 
 }

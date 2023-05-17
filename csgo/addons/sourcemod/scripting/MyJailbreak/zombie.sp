@@ -83,7 +83,7 @@ ConVar gc_fBeaconTime;
 ConVar gc_iCooldownDay;
 ConVar gc_iFreezeTime;
 ConVar gc_bSpawnCell;
-ConVar gc_bAmmo;
+ConVar gc_iAmmo;
 ConVar gc_iZombieHP;
 ConVar gc_iZombieHPincrease;
 ConVar gc_iHumanHP;
@@ -130,6 +130,7 @@ int g_iTsLR;
 Handle g_hTimerFreeze;
 Handle g_hTimerBeacon;
 Handle g_hTimerRegen;
+Handle g_hTimerReplenish;
 
 // floats
 float g_fPos[3];
@@ -191,7 +192,7 @@ public void OnPluginStart()
 	gc_bTeleportSpawn = AutoExecConfig_CreateConVar("sm_zombie_teleport_spawn", "0", "0 - start event in current round from current player positions, 1 - teleport players to spawn when start event on current round(only when sm_*_begin_admin, sm_*_begin_warden, sm_*_begin_vote or sm_*_begin_daysvote is on '1')", _, true, 0.0, true, 1.0);
 
 	gc_bSpawnCell = AutoExecConfig_CreateConVar("sm_zombie_spawn", "0", "0 - T teleport to CT spawn, 1 - cell doors auto open", _, true, 0.0, true, 1.0);
-	gc_bAmmo = AutoExecConfig_CreateConVar("sm_zombie_ammo", "0", "0 - disabled, 1 - enable infinty ammo (with reload) for humans", _, true, 0.0, true, 1.0);
+	gc_iAmmo = AutoExecConfig_CreateConVar("sm_zombie_ammo", "0", "0 - disabled, 1 - enable infinite ammo and nades (with reload) for humans, 2 - enable infinite ammo (with reload) for humans", _, true, 0.0, true, 2.0);
 	gc_iRounds = AutoExecConfig_CreateConVar("sm_zombie_rounds", "1", "Rounds to play in a row", _, true, 1.0);
 	gc_iRoundTime = AutoExecConfig_CreateConVar("sm_zombie_roundtime", "5", "Round time in minutes for a single zombie round", _, true, 1.0);
 	gc_fBeaconTime = AutoExecConfig_CreateConVar("sm_zombie_beacon_time", "240", "Time in seconds until the beacon turned on (set to 0 to disable)", _, true, 0.0);
@@ -227,6 +228,7 @@ public void OnPluginStart()
 	HookEvent("round_end", Event_RoundEnd_Pre, EventHookMode_Pre);
 	HookEvent("player_hurt", Event_PlayerHurt);
 	HookEvent("player_death", Event_PlayerDeath);
+	HookEvent("weapon_reload", Event_WeaponReload); // sadly, this event is not triggered by auto-reloads (not clicking the reload button)
 	HookConVarChange(gc_sOverlayStartPath, OnSettingChanged);
 	HookConVarChange(gc_sModelPathZombie, OnSettingChanged);
 	HookConVarChange(gc_sSoundStartPath, OnSettingChanged);
@@ -715,6 +717,7 @@ public void Event_RoundEnd_Pre(Event event, char[] name, bool dontBroadcast)
 		delete g_hTimerFreeze;
 		delete g_hTimerBeacon;
 		delete g_hTimerRegen;
+		delete g_hTimerReplenish;
 		g_iFreezeTime = gc_iFreezeTime.IntValue;
 
 		int winner = event.GetInt("winner");
@@ -920,6 +923,7 @@ public void OnMapEnd()
 	delete g_hTimerFreeze;
 	delete g_hTimerBeacon;
 	delete g_hTimerRegen;
+	delete g_hTimerReplenish;
 
 	g_iVoteCount = 0;
 	g_iRound = 0;
@@ -992,6 +996,7 @@ void ResetEventDay()
 	delete g_hTimerFreeze;
 	delete g_hTimerBeacon;
 	delete g_hTimerRegen;
+	delete g_hTimerReplenish;
 	g_iFreezeTime = gc_iFreezeTime.IntValue;
 
 	if (g_iRound == g_iMaxRound)
@@ -1034,6 +1039,7 @@ public void OnClientPutInServer(int client)
 {
 	SDKHook(client, SDKHook_WeaponCanUse, OnWeaponCanUse);
 	SDKHook(client, SDKHook_TraceAttack, OnTraceAttack);
+	SDKHook(client, SDKHook_WeaponEquipPost, OnWeaponEquipPost);
 }
 
 // Knife only for Zombies
@@ -1073,6 +1079,70 @@ public Action OnTraceAttack(int victim, int &attacker, int &inflictor, float &da
 		return Plugin_Handled;
 
 	return Plugin_Continue;
+}
+
+// Fixes maps that set the ammo of a weapon to 1 or weird values for sm_zombie_ammo 1 and 2
+public Action OnWeaponEquipPost(int client, int weapon)
+{
+	if (!g_bIsZombie || !gc_iAmmo.BoolValue)
+	{
+		return Plugin_Continue;
+	}
+	
+	if (!IsValidClient(client, false, false) || GetClientTeam(client) != CS_TEAM_T)
+	{
+		return Plugin_Continue;
+	}
+	if (!IsValidEdict(weapon))
+	{
+		return Plugin_Continue;
+	}
+	
+	// If the weapon isn't a firearm (not a primary or secondary weapon), exit the function.
+	if (GetPlayerWeaponSlot(client, CS_SLOT_PRIMARY) != weapon && GetPlayerWeaponSlot(client, CS_SLOT_SECONDARY) != weapon)
+	{
+		return Plugin_Continue;
+	}
+	
+	// Gives up to 1k ammo to the player. Caps at the maximum for the weapon.
+	GivePlayerAmmo(client, 1000, GetEntProp(weapon, Prop_Send, "m_iPrimaryAmmoType"), true);
+	return Plugin_Continue;
+}
+
+// for "sm_zombie_ammo 2": infinite ammo, without having infinite nades
+public void Event_WeaponReload(Event event, const char[] name, bool dontBroadcast)
+{
+	if (!g_bIsZombie || gc_iAmmo.IntValue != 2)
+	{
+		return;
+	}
+	
+	int client = GetClientOfUserId(event.GetInt("userid"));
+	ReplenishWeapons(client);
+}
+
+// Replenishes a player's weapons if necessary
+void ReplenishWeapons(int client)
+{
+	if (!IsValidClient(client, false, false) || GetClientTeam(client) != CS_TEAM_T)
+	{
+		return;
+	}
+	
+	// Find and replenish the primary weapon if it exists
+	int weapon = GetPlayerWeaponSlot(client, CS_SLOT_PRIMARY);
+	if (weapon != -1)
+	{
+		GivePlayerAmmo(client, 1000, GetEntProp(weapon, Prop_Send, "m_iPrimaryAmmoType"), true);
+	}
+	
+	// Find and replenish the secondary weapon if it exists
+	weapon = GetPlayerWeaponSlot(client, CS_SLOT_SECONDARY);
+	if (weapon != -1)
+	{
+		GivePlayerAmmo(client, 1000, GetEntProp(weapon, Prop_Send, "m_iPrimaryAmmoType"), true);
+	}
+	return;
 }
 
 /******************************************************************************
@@ -1246,7 +1316,7 @@ void PrepareDay(bool thisround)
 		SetCvar("sm_hosties_lr", 0);
 	}
 
-	if (gc_bAmmo.BoolValue)
+	if (gc_iAmmo.IntValue == 1)
 	{
 		SetCvar("sv_infinite_ammo", 2);
 	}
@@ -1516,7 +1586,14 @@ public Action Timer_StartEvent(Handle timer)
 
 	if (gc_iRegen.IntValue != 0)
 	{
-		g_hTimerRegen = CreateTimer(5.0, Timer_ReGenHealth, _, TIMER_REPEAT | TIMER_FLAG_NO_MAPCHANGE);
+		delete g_hTimerRegen;
+		g_hTimerRegen = CreateTimer(5.0, Timer_ReGenHealth, _, TIMER_REPEAT);
+	}
+	
+	if (gc_iAmmo.IntValue == 2)
+	{
+		delete g_hTimerReplenish;
+		g_hTimerReplenish = CreateTimer(5.0, Timer_ReplenishWeapon, _, TIMER_REPEAT);
 	}
 
 	PrintCenterTextAll("%t", "zombie_start_nc");
@@ -1569,6 +1646,14 @@ public Action Timer_ReGenHealth(Handle timer)
 		{
 			SetEntityHealth(i, GetClientHealth(i)+gc_iRegen.IntValue);
 		}
+	}
+}
+
+public Action Timer_ReplenishWeapon(Handle timer)
+{
+	for (int i = 1; i <= MaxClients; i++)
+	{
+		ReplenishWeapons(i);
 	}
 }
 

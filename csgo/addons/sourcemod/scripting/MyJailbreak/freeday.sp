@@ -50,6 +50,12 @@
 #pragma semicolon 1
 #pragma newdecls required
 
+// m_takedamage values
+#define DAMAGE_NO 0
+#define DAMAGE_EVENTS_ONLY 1 // Call damage functions, but don't modify health
+#define DAMAGE_YES 2
+#define DAMAGE_AIM 3
+
 // Booleans
 bool g_bIsFreeday = false;
 bool g_bStartFreeday = false;
@@ -704,9 +710,12 @@ void StartEventRound(bool thisround)
 			if (!IsClientInGame(i))
 				continue;
 
-			SetEntProp(i, Prop_Data, "m_takedamage", 0, 1);
+			if (IsPlayerAlive(i))
+			{
+				SetEntProp(i, Prop_Data, "m_takedamage", DAMAGE_NO, 1);
 
-			SetEntityMoveType(i, MOVETYPE_NONE);
+				SetEntityMoveType(i, MOVETYPE_NONE);
+			}
 		}
 
 		CreateTimer(3.0, Timer_PrepareEvent);
@@ -770,14 +779,21 @@ void PrepareDay()
 
 		CreateInfoPanel(i);
 
-		SetEntProp(i, Prop_Send, "m_CollisionGroup", 2);  // 2 - none / 5 - 'default'
-
-		if (!gc_bdamage.BoolValue && IsValidClient(i))
+		if (IsPlayerAlive(i))
 		{
-			SetEntProp(i, Prop_Data, "m_takedamage", 0, 1);
-		}
+			SetEntProp(i, Prop_Send, "m_CollisionGroup", 2);  // 2 - none / 5 - 'default'
 
-		SetEntityMoveType(i, MOVETYPE_WALK);
+			if (!gc_bdamage.BoolValue)
+			{
+				SetEntProp(i, Prop_Data, "m_takedamage", DAMAGE_NO, 1); // Disable damage received (godmode)
+			}
+			else
+			{
+				SetEntProp(i, Prop_Data, "m_takedamage", DAMAGE_YES, 1); // Allow damage receive (no godmode, normal)
+			}
+
+			SetEntityMoveType(i, MOVETYPE_WALK);
+		}
 	}
 
 	if (gp_bMyJailbreak)

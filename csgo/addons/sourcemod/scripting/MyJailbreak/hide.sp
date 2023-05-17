@@ -174,7 +174,7 @@ public void OnPluginStart()
 	gc_bVote = AutoExecConfig_CreateConVar("sm_hide_vote", "1", "0 - disabled, 1 - allow player to vote for hide round", _, true, 0.0, true, 1.0);
 	gc_bFreezeHider = AutoExecConfig_CreateConVar("sm_hide_freezehider", "1", "0 - disabled, 1 - enable freeze hider when hidetime gone", _, true, 0.0, true, 1.0);
 	gc_bBlackout = AutoExecConfig_CreateConVar("sm_hide_blackout", "1", "0 - disabled, 1 - enable black out seekers screen on hide time", _, true, 0.0, true, 1.0);
-	gc_iTAgrenades = AutoExecConfig_CreateConVar("sm_hide_tagrenades", "3", "how many tagrenades a guard have?", _, true, 1.0);
+	gc_iTAgrenades = AutoExecConfig_CreateConVar("sm_hide_tagrenades", "3", "how many tagrenades a guard have?", _, true, 0.0);
 
 	gc_bBeginSetA = AutoExecConfig_CreateConVar("sm_hide_begin_admin", "1", "When admin set event (!sethide) = 0 - start event next round, 1 - start event current round", _, true, 0.0, true, 1.0);
 	gc_bBeginSetW = AutoExecConfig_CreateConVar("sm_hide_begin_warden", "1", "When warden set event (!sethide) = 0 - start event next round, 1 - start event current round", _, true, 0.0, true, 1.0);
@@ -810,7 +810,7 @@ public void Event_TA_Detonate(Event event, const char[] name, bool dontBroadcast
 			return;
 		}
 
-		if (g_iTA[target] != g_iMaxTA)
+		if (g_iTA[target] < g_iMaxTA)
 		{
 			GivePlayerItem(target, "weapon_tagrenade");
 			int g_iTAgot = (g_iMaxTA - g_iTA[target]);
@@ -1205,7 +1205,10 @@ void PrepareDay(bool thisround)
 		}
 		else if (GetClientTeam(i) == CS_TEAM_CT)
 		{
-			GivePlayerItem(i, "weapon_tagrenade");
+			if (gc_iTAgrenades.BoolValue) // same as gc_iTAgrenades.IntValue != 0
+			{
+				GivePlayerItem(i, "weapon_tagrenade");
+			}
 
 			if (gc_bBlackout.BoolValue)
 			{

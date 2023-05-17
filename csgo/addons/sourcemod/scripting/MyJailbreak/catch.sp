@@ -113,6 +113,8 @@ ConVar gc_bBeginSetV;
 ConVar gc_bBeginSetVW;
 ConVar gc_bTeleportSpawn;
 
+ConVar gc_fCTSpeed;
+
 // Extern Convars
 ConVar g_iTerrorForLR;
 
@@ -216,6 +218,8 @@ public void OnPluginStart()
 	gc_fSprintTime = AutoExecConfig_CreateConVar("sm_catch_sprint_time", "3.0", "Time in seconds the player will sprint", _, true, 1.0);
 	gc_bAllowLR = AutoExecConfig_CreateConVar("sm_catch_allow_lr", "0", "0 - disabled, 1 - enable LR for last round and end eventday", _, true, 0.0, true, 1.0);
 	gc_bKillLoser = AutoExecConfig_CreateConVar("sm_catch_kill_loser", "0", "0 - disabled, 1 - Kill loserteam on event end / not for sm_catch_allow_lr '1'", _, true, 0.0, true, 1.0);
+	
+	gc_fCTSpeed = AutoExecConfig_CreateConVar("sm_catch_ct_speed", "1.4", "Ratio for how fast the CT move", _, true, 0.8);
 
 	AutoExecConfig_ExecuteFile();
 	AutoExecConfig_CleanFile();
@@ -1458,7 +1462,7 @@ public Action Timer_StartEvent(Handle timer)
 
 		if (GetClientTeam(i) == CS_TEAM_CT)
 		{
-			SetEntPropFloat(i, Prop_Data, "m_flLaggedMovementValue", 1.4);
+			SetEntPropFloat(i, Prop_Data, "m_flLaggedMovementValue", gc_fCTSpeed.FloatValue);
 		}
 
 		SetEntityMoveType(i, MOVETYPE_WALK);
