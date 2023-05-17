@@ -1,0 +1,13 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/player/colateam/zombie1/slow_body"
+	"$bumpmap" "models/player/colateam/zombie1/slow_body_bump"
+
+
+
+ 	"$phong" "1"
+	"$phongexponent" "10"
+	"$phongboost"	"20"
+	"$phongfresnelranges"	"[.15 .5 1]"
+
+}

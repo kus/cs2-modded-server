@@ -95,6 +95,8 @@ Mod | Version | Why
 [Easy Downloader](https://forums.alliedmods.net/showthread.php?t=292207) | `1.03` | Downloads and Precaches Files/Folders. Required for CTF
 [PropHunt](https://gitlab.com/Zipcore/Prophunt) | `3.0.0` | Terrorists choose a model and hide, and CTs try to find and kill them.
 [Zombie:Reloaded](https://forums.alliedmods.net/showthread.php?t=277597) | `3.6.5` | Zombie Escape.
+[-N- Arms Fix](https://forums.alliedmods.net/showthread.php?t=293295) | `2.0.3` | -N- Arms Fix helps you to fix arms/gloves in your plugin.
+[ZR Custom arms](https://forums.alliedmods.net/showthread.php?p=2277249) | `5.1` | Set custom arms in CS:GO for zombiereloaded servers
 [Sound Info Library](https://forums.alliedmods.net/showthread.php?t=105816) | `1.0.1` | Better calculation of sound length and information required for PropHunt
 [SpeedRules](https://gitlab.com/Zipcore/speedrules) | `1.0` | Advanced system to sync speed rules required for PropHunt
 [Simple-Downloader](https://github.com/JakubKosmaty/Simple-Downloader) | `1.0` | Force clients to download files (audio for PropHunt)

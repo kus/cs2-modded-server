@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/player/colateam/zombie1/slow_pants"
+	"$bumpmap" "models/player/colateam/zombie1/slow_body_bump"
+
+	"$translucent" 1
+}

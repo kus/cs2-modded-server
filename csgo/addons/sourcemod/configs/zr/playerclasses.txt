@@ -41,7 +41,7 @@
 //                                      "infect" - Humans are immune to infections until HP go below a threshold. Threshold at zero enable stabbing to death.
 //                                      "damage" - Zombies are immune to damage from humans/grenades, but still vulnerable to knock back.
 //                                      "delay"  - Delay infection for a certain number of seconds.
-//                                      "shield" - Shield against infections (humans) or knock back (zombies) for a certain amount of seconds (similar to TF2's übercharge). Deploy with "zshield" command.
+//                                      "shield" - Shield against infections (humans) or knock back (zombies) for a certain amount of seconds (similar to TF2's ï¿½bercharge). Deploy with "zshield" command.
 // immunity_amount          number      Immunity data value (humans only). Depends on the immunity mode above:
 //                                      "infect" - HP threshold. Infection will be allowed when HP go below this value. Zero will enable stabbing to death.
 //                                      "delay"  - Number of seconds the infection is delayed since first hit by a zombie.
@@ -82,6 +82,7 @@
         
         // Model
         "model_path"            "models/player/kuristaja/zombies/gozombie/gozombie.mdl"
+        "arms_path"             "models/player/colateam/zombie1/arms.mdl"
         "model_skin_index"      "0"
         "alpha_initial"         "255"
         "alpha_damaged"         "255"
@@ -129,6 +130,7 @@
         
         // Model
         "model_path"            "models/player/kuristaja/zombies/gozombie/gozombie.mdl"
+        "arms_path"             "models/player/colateam/zombie1/arms.mdl"
         "model_skin_index"      "0"
         "alpha_initial"         "255"
         "alpha_damaged"         "255"

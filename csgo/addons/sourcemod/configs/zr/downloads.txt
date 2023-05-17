@@ -11,6 +11,17 @@
 // Defaults:
 // ----------------------------------------------------------------------------
 
+// zombie claws
+models/player/colateam/zombie1/arms.dx90.vtx
+models/player/colateam/zombie1/arms.mdl
+models/player/colateam/zombie1/arms.vvd
+
+materials/models/player/colateam/zombie1/slow_body.vmt
+materials/models/player/colateam/zombie1/slow_body.vtf
+materials/models/player/colateam/zombie1/slow_body_bump.vtf
+materials/models/player/colateam/zombie1/slow_pants.vmt
+materials/models/player/colateam/zombie1/slow_pants.vtf
+
 // team win overlays
 materials/overlays/zr/zombies_win.vtf
 materials/overlays/zr/zombies_win.vmt
