@@ -1,0 +1,1 @@
+native int Franug_GetKnife(client);

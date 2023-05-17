@@ -1,0 +1,47 @@
+"Information"
+{
+    "Version"
+    {
+        "Latest"	"1.1"
+    }
+    
+    "Notes"	"Updater setup"
+}
+    
+"Files"
+{
+    "Plugin"    "Path_SM/gamedata/entityIO.games.txt"
+    "Plugin"    "Path_SM/gamedata/csgo_movement_unlocker.games.txt"
+    
+    
+    "Plugin"	"Path_SM/plugins/CrossbowAPI.smx"
+    "Plugin"	"Path_SM/plugins/customweapons.smx"
+    "Plugin"	"Path_SM/plugins/noblock.smx"
+    "Plugin"	"Path_SM/plugins/csgo_movement_unlocker.smx"
+    "Plugin"	"Path_SM/plugins/DisableRadar.smx"
+    "Plugin"	"Path_SM/plugins/DamageIndicator.smx"
+    "Plugin"	"Path_SM/plugins/entityIO.smx"
+                    
+    "Plugin"	"Path_SM/plugins/noradiochat.smx"
+    "Plugin"	"Path_SM/plugins/force_alltalk.smx"
+
+    "Plugin"	"Path_SM/plugins/JBPack/JB_AutoJoinT.smx"
+    "Plugin"	"Path_SM/plugins/JBPack/JB_Ball.smx"
+    "Plugin"	"Path_SM/plugins/JBPack/JB_BanCT.smx"
+    "Plugin"	"Path_SM/plugins/JBPack/JB_Bhop.smx"
+    "Plugin"	"Path_SM/plugins/JBPack/JB_Config.smx"
+    "Plugin"	"Path_SM/plugins/JBPack/JB_Core.smx"
+    "Plugin"	"Path_SM/plugins/JBPack/JB_CTCommands.smx"
+    "Plugin"	"Path_SM/plugins/JBPack/JB_Days.smx"
+    "Plugin"	"Path_SM/plugins/JBPack/JB_Gangs.smx"
+    "Plugin"	"Path_SM/plugins/JBPack/JB_Jackpot.smx"
+    "Plugin"	"Path_SM/plugins/JBPack/JB_LR.smx"
+    "Plugin"	"Path_SM/plugins/JBPack/JB_Parachute.smx"
+    "Plugin"	"Path_SM/plugins/JBPack/JB_SmartOpen.smx"
+    "Plugin"	"Path_SM/plugins/JBPack/JB_StudySecrets.smx"
+    "Plugin"	"Path_SM/plugins/JBPack/JB_VoteCT.smx"
+    "Plugin"	"Path_SM/plugins/JBPack/JB_WeaponHandling.smx"
+    "Plugin"	"Path_SM/plugins/JBPack/JB_WeaponMenu.smx"
+    "Plugin"	"Path_SM/plugins/JBPack/JB_Wheel.smx"
+    
+}

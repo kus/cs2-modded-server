@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\eminem\advanced_crossbow/hand"
+	"$bumpMap" "models\weapons\eminem\advanced_crossbow/hand_normal"
+
+	"$phong"                   "1"
+	"$phongboost"              "1"
+	"$phongexponent"           "50"
+	"$phongtint"               "[1 1 1]"
+	"$phongfresnelranges"      "[.2 .2 1]"
+	"$phongdisablehalflambert" "1"
+	"$rimlight"                "1"
+	"$rimlightexponent"        "15"
+	"$rimlightboost"           ".2"
+}

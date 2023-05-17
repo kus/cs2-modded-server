@@ -1,0 +1,195 @@
+"Games"
+{
+	"#default"
+	{
+		"Offsets"
+		{
+			"CBaseEntity::AcceptInput"
+			{
+				"windows"		"36"
+				"linux"			"37"
+				"mac"			"37"
+			}
+			
+			"variant_t::fieldType"
+			{
+				"windows"		"16"
+				"linux"			"16"
+				"mac"			"16"
+			}
+			
+			"sizeof::variant_t"
+			{
+				"windows"		"20"
+				"linux"			"20"
+				"mac"			"20"
+			}
+			
+			"CBaseEntityOutput::m_ActionList"
+			{
+				"windows"		"20"
+				"linux"			"20"
+				"mac"			"20"
+			}
+			
+			"CEventAction::m_iTarget"
+			{
+				"windows"		"0"
+				"linux"			"0"
+				"mac"			"0"
+			}
+			
+			"CEventAction::m_iTargetInput"
+			{
+				"windows"		"4"
+				"linux"			"4"
+				"mac"			"4"
+			}
+			
+			"CEventAction::m_iParameter"
+			{
+				"windows"		"8"
+				"linux"			"8"
+				"mac"			"8"
+			}
+			
+			"CEventAction::m_flDelay"
+			{
+				"windows"		"12"
+				"linux"			"12"
+				"mac"			"12"
+			}
+			
+			"CEventAction::m_nTimesToFire"
+			{
+				"windows"		"16"
+				"linux"			"16"
+				"mac"			"16"
+			}
+			
+			"CEventAction::m_iIDStamp"
+			{
+				"windows"		"20"
+				"linux"			"20"
+				"mac"			"20"
+			}
+			
+			"CEventAction::s_iNextIDStamp"
+			{
+				"windows"		"24"
+				"linux"			"24"
+				"mac"			"24"
+			}
+			
+			"CBaseEntity::GetDataDescMap"
+			{
+				"windows"		"11"
+				"linux"			"12"
+				"mac"			"12"
+			}
+			
+			"datamap_t::dataDesc"
+			{
+				"windows"		"0"
+				"linux"			"0"
+				"mac"			"0"
+			}
+			
+			"datamap_t::dataNumFields"
+			{
+				"windows"		"4"
+				"linux"			"4"
+				"mac"			"4"
+			}
+			
+			"datamap_t::dataClassName"
+			{
+				"windows"		"8"
+				"linux"			"8"
+				"mac"			"8"
+			}
+			
+			"datamap_t::baseMap"
+			{
+				"windows"		"12"
+				"linux"			"12"
+				"mac"			"12"
+			}
+			
+			"typedescription_t::fieldOffset"
+			{
+				"windows"		"8"
+				"linux"			"8"
+				"mac"			"8"
+			}
+			
+			"typedescription_t::flags"
+			{
+				"windows"		"18"
+				"linux"			"18"
+				"mac"			"18"
+			}
+			
+			"typedescription_t::externalName"
+			{
+				"windows"		"20"
+				"linux"			"20"
+				"mac"			"20"
+			}
+			
+			"sizeof::typedescription_t"
+			{
+				"windows"		"52"
+				"linux"			"52"
+				"mac"			"52"
+			}
+		}
+	}
+	
+	"csgo"
+	{
+		"Offsets"
+		{
+			"CBaseEntity::AcceptInput"
+			{
+				"windows"		"41"
+				"linux"			"42"
+				"mac"			"42"
+			}
+			
+			"typedescription_t::flags"
+			{
+				"windows"		"14"
+				"linux"			"14"
+				"mac"			"14"
+			}
+			
+			"typedescription_t::externalName"
+			{
+				"windows"		"16"
+				"linux"			"16"
+				"mac"			"16"
+			}
+			
+			"sizeof::typedescription_t"
+			{
+				"windows"		"60"
+				"linux"			"64"
+				"mac"			"64"
+			}
+		}
+	}
+	
+	"left4dead2"
+	{
+		"Offsets"
+		{
+			"CBaseEntity::AcceptInput"
+			{
+				"windows"		"44"
+				"linux"			"45"
+				"mac"			"45"
+			}
+		}
+	}
+}
