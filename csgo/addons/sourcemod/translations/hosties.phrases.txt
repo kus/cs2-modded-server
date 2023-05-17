@@ -1,0 +1,666 @@
+"Phrases"
+{
+	"Knife Fight"
+	{
+		"en"		"Knife Fight"
+	}
+	"Shot4Shot"
+	{
+		"en"		"Shot4Shot"
+	}
+	"Gun Toss"
+	{
+		"en"		"Gun Toss"
+	}
+	"Chicken Fight"
+	{
+		"en"		"Chicken Fight"
+	}
+	"Hot Potato"
+	{
+		"en"		"Hot Potato"
+	}
+	"Dodgeball"
+	{
+		"en"		"Dodgeball"
+	}
+	"No Scope Battle"
+	{
+		"en"		"No Scope Battle"
+	}
+	"Rock Paper Scissors"
+	{
+		"en"		"Rock Paper Scissors"
+	}
+	"Russian Roulette"
+	{
+		"en"		"Russian Roulette"
+	}
+	"Jumping Contest"
+	{
+		"en"		"Jumping Contest"
+	}
+	"Rebel!"
+	{
+		"en"		"Rebel!"
+	}
+	"Mag4Mag"
+	{
+		"en"		"Mag4Mag"
+	}
+	"Race"
+	{
+		"en"		"Race"
+	}
+	"Already Dropped Deagle"
+	{
+		"en"		"You have already dropped your deagle!"
+	}
+	"Hot Potato PickUp"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} picked up the hot potato!"
+	}
+	"Powered By Hosties"
+	{
+		"en"		"This server is powered by SM_Hosties v2, enjoy!"
+	}
+	"Please Follow Rules"
+	{
+		"en"		"Please follow the rules listed in !rules."
+	}
+	"Knife Fight Gun Attack Slay"
+	{
+		"#format"	"{1:N},{2:N},{3:s}"
+		"en"		"{1} was slain for attacking {2} with {3} during Knife Fight."
+	}
+	"Knife Fight Gun Attack Abort"
+	{
+		"#format"	"{1:N},{2:N},{3:s}"
+		"en"		"{1} attacked {2} with {3} - Knife Fight aborted."
+	}
+	"Chicken Fight Gun Attack Slay"
+	{
+		"#format"	"{1:N},{2:N},{3:s}"
+		"en"		"{1} was slain for attacking {2} with {3} during Chicken Fight."
+	}
+	"Chicken Fight Gun Attack Abort"
+	{
+		"#format"	"{1:N},{2:N},{3:s}"
+		"en"		"{1} attacked {2} with {3} - Chicken Fight aborted."
+	}
+	"Hot Potato Attack Slay"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} was slain for attacking {2} during Hot Potato competition."
+	}
+	"Hot Potato Attack Abort"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} attacked {2} - Hot Potato competition aborted."
+	}
+	"New Rebel"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} is now a rebel."
+	}
+	"Freeattack"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} attacked {2}."
+	}
+	"Non LR Kill LR Slay"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"Non LR-player {1} was slain for killing LR-player {2}."
+	}
+	"Non LR Kill LR Abort"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"Non LR-player {1} killed LR-player {2} - LR aborted."
+	}
+	"Rebel Kill"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} killed the rebel {2}."
+	}
+	"LR Available"
+	{
+		"en"		"Terrorists can now type !lr to have a last request."
+	}
+	"LR Player Disconnect"
+	{
+		"#format"	"{1:N}"
+		"en"		"LR-player {1} disconnected - LR aborted."
+	}
+	"Chicken Fight Win And Slay"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} won the Chicken Fight - {2} slayed."
+	}
+	"Chicken Fight Win"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} won the Chicken Fight."
+	}
+	"Chicken Fight Kill Loser"
+	{
+		"#format"	"{1:N}"
+		"en"		"Kill {1}!"
+	}
+	"S4S Shot Taken"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} has taken his shot."
+	}
+	"Distance Meter"
+	{
+		"en"		"Distance meter:"
+	}
+	"LR Rebel Not Allowed"
+	{
+		"en"		"You can not have an LR when you're rebel."
+	}
+	"LR Choose"
+	{
+		"en"		"Choose a Last Request"
+	}
+	"No CTs Alive"
+	{
+		"en"		"There are no CT's (alive) to have your LR with."
+	}
+	"Too Many Ts"
+	{
+		"en"		"There are too many terrorists alive to have an LR now!"
+	}
+	"Not Alive Or In Wrong Team"
+	{
+		"en"		"You're not alive or in the wrong team for LR."
+	}
+	"Another LR In Progress"
+	{
+		"en"		"There's already an LR in progress."
+	}
+	"LR Disabled"
+	{
+		"en"		"Sorry, last requests are disabled on this server."
+	}
+	"Choose A Player"
+	{
+		"en"		"Choose a player"
+	}
+	"Rebel Ask CT For LR"
+	{
+		"#format"	"{1:N},{2:s}"
+		"en"		"Rebel {1} wants to have {2} with you. Accept?"
+	}
+	"Yes"
+	{
+		"en"		"Yes"
+	}
+	"No"
+	{
+		"en"		"No"
+	}
+	"Asking For Permission"
+	{
+		"#format"	"{1:N}"
+		"en"		"Asking {1} for permission because you are a rebel..."
+	}
+	"Target Is Not Alive Or In Wrong Team"
+	{
+		"en"		"The target player is not alive or in the wrong team for LR."
+	}
+	"Declined LR Request"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} declined your LR request."
+	}
+	"LR Partner Died"
+	{
+		"en"		"Your LR partner died."
+	}
+	"Too Slow Another LR In Progress"
+	{
+		"en"		"Oops, too slow. There's already another LR in progress."
+	}
+	"LR Request Decline Or Too Long"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} declined your LR request or took to long to answer it."
+	}
+	"LR KF Start"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} chose to have Knife Fight with {2}."
+	}
+	"LR S4S Start"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} chose to have Shot4Shot with {2}."
+	}
+	"LR GT Start"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} chose to have Gun Toss with {2}."
+	}
+	"LR CF Start"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} chose to have Chicken Fight with {2}."
+	}
+	"LR HP Start"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} chose to have Hot Potato with {2}."
+	}
+	"LR DB Start"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} chose to have Dodgeball with {2}."
+	}
+	"LR NS Start"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} chose to have a No Scope Battle with {2}."
+	}
+	"LR RPS Start"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} chose to play Rock Paper Scissors with {2}."
+	}
+	"LR Mag4Mag Start"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} chose to have Mag4Mag with {2}."
+	}
+	"LR RR Start"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} chose to play Russian Roulette with {2}."
+	}
+	"LR Has Chosen to Rebel!"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} has chosen to rebel!"
+	}
+	"Start Jump Contest"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} selected a Most Jumps Contest with {2}."
+	}
+	"Start Brink of Death"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} selected a To The Brink of Death Contest with {2}."
+	}
+	"Start Farthest Jump"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} selected to have a Farthest Jumping competition with {2}."
+	}
+	"No Rebels ATM"
+	{
+		"en"		"There are no rebelling terrorists at the moment."
+	}
+	"Rebelling Terrorists"
+	{
+		"en"		"Rebelling terrorists:"
+	}
+	"CheckPlayers CMD Disabled"
+	{
+		"en"		"The !checkplayers-command is disabled on this server."
+	}
+	"Server Rules"
+	{
+		"en"		"Server rules:"
+	}
+	"HP Win"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} won the Hot Potato contest - {2} slayed."
+	}
+	"HP Last One To Have The Potato"
+	{
+		"en"		"You were the last one who has the potato!"
+	}
+	"Ts Muted"
+	{
+		"#format"	"{1:d}"
+		"en"		"Terrorists are muted the first {1} seconds of the round!"
+	}
+	"Ts Can Speak Again"
+	{
+		"en"		"Terrorists can now speak... quietly..."
+	}
+	"Now Muted"
+	{
+		"en"		"You are now muted, you will be unmuted at the end of the round."
+	}
+	"NS Weapon Chooser Menu"
+	{
+		"en"		"Please choose a weapon to use in the No Scope Battle:"
+	}
+	"CT Attack T Gun"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} attacked {2} who has a gun..."
+	}
+	"Rock"
+	{
+		"en"		"Rock"
+	}
+	"Paper"
+	{
+		"en"		"Paper"
+	}
+	"Scissors"
+	{
+		"en"		"Scissors"
+	}
+	"LR RPS No Answer"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} didn't choose rock, paper or scissors, or didn't choose in time."
+	}
+	"LR RPS Done"
+	{
+		"#format"	"{1:N},{2:s},{3:N},{4:s},{5:N}"
+		"en"		"{1} chose {2}, {3} chose {4} - {5} wins"
+	}
+	"LR RPS Tie"
+	{
+		"#format"	"{1:N},{2:s},{3:N},{4:s}"
+		"en"		"{1} chose {2}, {3} chose {4} - tie"
+	}
+	"LR Not With Bot"
+	{
+		"en"		"Sorry, you can't have that LR with a bot."
+	}
+	"LR Not Available"
+	{
+		"en"		"You can't have a last request right now."
+	}
+	"LR Delay Announcement"
+	{
+		"#format"	"{1:d}"
+		"en"		"Terrorists cannot have last requests until {1} second(s) has elapsed!"
+	}
+	"Freekill Slay"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} was slain for killing too many non-rebelling terrorists."
+	}
+	"Freekill Kick"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} was kicked for killing too many non-rebelling terrorists."
+	}
+	"Freekill Kick Reason"
+	{
+		"en"		"Kicked for killing too many non-rebelling terrorists"
+	}
+	"Freekill Ban"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} was banned for killing too many non-rebelling terrorists."
+	}
+	"Freekill Ban Reason"
+	{
+		"en"		"Banned for killing too many non-rebelling terrorists"
+	}
+	"Freekill Record Increased"
+	{
+		"#format"	"{1:d},{2:d}"
+		"en"		"You have {1} of {2} non-rebel kills (before action is taken)..."
+	}
+	"Race Won"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} won the Race!"
+	}
+	"Won Jump Contest"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} won the Jumping Contest!"
+	}
+	"Russian Roulette - Hit"
+	{
+		"#format"	"{1:N}"
+		"en"		"Russian Roulette: Bullet hit {1}!"
+	}
+	"Russian Roulette - Miss"
+	{
+		"en"		"Russian Roulette: Missed. Spinning again..."
+	}
+	"Randomly Chose First Player"
+	{
+		"#format"	"{1:N}"
+		"en"		"Randomly selected {1} to shoot first."
+	}
+	"LR Interference Slay"
+	{
+		"#format"	"{1:N},{2:N},{3:s}"
+		"en"		"{1} was slain for attacking {2} with {3} during LR."
+	}
+	"LR Interference Abort"
+	{
+		"#format"	"{1:N},{2:N},{3:s}"
+		"en"		"{1} attacked {2} with {3}. LR aborted."
+	}
+	"LR Interference Slay - No Victim"
+	{
+		"#format"	"{1:N},{2:s}"
+		"en"		"{1} was slain for attacking with {2} during LR."
+	}
+	"LR Interference Abort - No Victim"
+	{
+		"#format"	"{1:N},{2:s}"
+		"en"		"{1} attacked with {2}. LR aborted."
+	}
+	"LR Cheating Abort"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} cheated! LR aborted."
+	}
+	"LR Cheating Slay"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} was slain for cheating during LR."
+	}
+	"Noscope Knife Attack Slay"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} was slain for attacking {2} with a knife during No Scope."
+	}
+	"Noscope Knife Attack Abort"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} attacked {2} with a knife - No Scope aborted."
+	}
+	"S4S Rebel Slayed"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} was slain for rebelling during S4S."
+	}
+	"S4S Rebel Aborted"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} rebelled during LR - S4S aborted."
+	}
+	"M4M Mag Used"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} has used their magazine."
+	}
+	"LR No CTs Available"
+	{
+		"en"		"There are currently no CTs available to have your LR with."
+	}
+	"LR Aborted"
+	{
+		"en"		"Aborted all active Last Requests!"
+	}
+	"Knife Fight Selection Menu"
+	{
+		"en"		"Choose Your Knife Fight:"
+	}
+	"Knife_Vintage"
+	{
+		"en"		"Vintage Knife"
+	}
+	"Knife_Drunk"
+	{
+		"en"		"Drunken Boxing"
+	}
+	"Knife_LowGrav"
+	{
+		"en"		"Moon Shoes"
+	}
+	"Knife_HiSpeed"
+	{
+		"en"		"Meep-Meep Speed"
+	}
+	"Knife_Drugs"
+	{
+		"en"		"Trippy"
+	}
+	"Knife_ThirdPerson"
+	{
+		"en"		"Third Person"
+	}
+	"Pistol Selection Menu"
+	{
+		"en"		"Choose a Pistol:"
+	}
+	"Pistol_Deagle"
+	{
+		"en"		"Deagle"
+	}
+	"Pistol_P228"
+	{
+		"en"		"P228"
+	}
+	"Pistol_P250"
+	{
+		"en"		"P250"
+	}
+	"Pistol_Glock"
+	{
+		"en"		"Glock"
+	}
+	"Pistol_FiveSeven"
+	{
+		"en"		"Five-Seven"
+	}
+	"Pistol_Dualies"
+	{
+		"en"		"Dualies"
+	}
+	"Pistol_USP"
+	{
+		"en"		"USP"
+	}
+	"Pistol_P2000"
+	{
+		"en"		"P2000"
+	}
+	"Pistol_Tec9"
+	{
+		"en"		"Tec 9"
+	}
+	"NSW_AWP"
+	{
+		"en"		"AWP"
+	}
+	"NSW_Scout"
+	{
+		"en"		"Scout"
+	}
+	"NSW_SSG08"
+	{
+		"en"		"SSG08 (Scout)"
+	}
+	"NSW_SG550"
+	{
+		"en"		"SG550"
+	}
+	"NSW_SCAR20"
+	{
+		"en"		"SCAR20"
+	}
+	"NSW_G3SG1"
+	{
+		"en"		"G3SG1"
+	}
+	"Find a Starting Location"
+	{
+		"en"		"Select a Starting Location"
+	}
+	"Choose an End Point"
+	{
+		"en"		"Select an Ending Location"
+	}
+	"Use Current Position"
+	{
+		"en"		"Use Current Position"
+	}
+	"Race Points too Close"
+	{
+		"en"		"Your ending point was too close to the starting point."
+	}
+	"Too Near Obstruction"
+	{
+		"en"		"Something is blocking the way. Move into the open and try again."
+	}
+	"Jump Contest Menu"
+	{
+		"en"		"Choose a Jump Contest:"
+	}
+	"Jump_TheMost"
+	{
+		"en"		"Most Jumps"
+	}
+	"Jump_Farthest"
+	{
+		"en"		"Farthest Jump"
+	}
+	"Jump_BrinkOfDeath"
+	{
+		"en"		"Brink of Death"
+	}
+	"Must Be On Ground"
+	{
+		"en"		"You must be on the ground to select this option."
+	}
+	"Farthest Jump Won"
+	{
+		"#format"	"{1:N},{2:N},{3:3.1f},{4:3.1f}"
+		"en"		"{1} won the farthest jump with {3} compared to {2}'s {4}."
+	}
+	"Race Could Start Soon"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} picked the Race LR. Watch for starting & ending points!"
+	}
+	"Respawned Target"
+	{
+		"#format"	"{1:s}"
+		"en"		"Respawned {1}"
+	}
+	
+	"Player Alive"
+	{
+		"en"		"Player is already alive."
+	}
+	"Respawn Player"
+	{
+		"en"		"Respawn Player"
+	}
+	
+	"Respawn Data Unavailable"
+	{
+		"#format"	"{1:N}"
+		"en"		"Player {1} did not have respawn data yet and was sent back to cells."
+	}
+}

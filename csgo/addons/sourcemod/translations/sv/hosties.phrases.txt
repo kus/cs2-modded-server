@@ -1,0 +1,563 @@
+"Phrases"
+{
+	"Knife Fight"
+	{
+		"sv"		"Knivduell"
+	}
+	"Shot4Shot"
+	{
+		"sv"		"Skott För Skott"
+	}
+	"Gun Toss"
+	{
+		"sv"		"Kasta Deagle"
+	}
+	"Chicken Fight"
+	{
+		"sv"		"Tuppfäktning"
+	}
+	"Hot Potato"
+	{
+		"sv"		"Het Potatis"
+	}
+	"Dodgeball"
+	{
+		"sv"		"Spökboll"
+	}
+	"No Scope Battle"
+	{
+		"sv"		"No Scope-duell"
+	}
+	"Rock Paper Scissors"
+	{
+		"sv"		"Sten Sax Påse"
+	}
+	"Russian Roulette"
+	{
+		"sv"		"Rysk Roulette"
+	}
+	"Jumping Contest"
+	{
+		"sv"		"Hopptävling"
+	}
+	"Rebel!"
+	{
+		"sv"		"Rebell!"
+	}
+	"Mag4Mag"
+	{
+		"sv"		"Magasin För Magasin"
+	}
+	"Race"
+	{
+		"sv"		"Race"
+	}
+	"Already Dropped Deagle"
+	{
+		"sv"		"Du har redan kastat din deagle!"
+	}
+	"Hot Potato PickUp"
+	{
+		"sv"		"{1} plockade upp potatisen!"
+	}
+	"Powered By Hosties"
+	{
+		"sv"		"Denna servern kränger falukorv tack vare SM_Hosties v2, njut!"
+	}
+	"Please Follow Rules"
+	{
+		"sv"		"Vänligen följ reglerna enligt !rules."
+	}
+	"Knife Fight Gun Attack Slay"
+	{
+		"sv"		"{1} blev dräpt efter att ha attackerat {2} med {3} under Knivduell."
+	}
+	"Knife Fight Gun Attack Abort"
+	{
+		"sv"		"{1} attackerade {2} med {3} - Knivduell avbruten."
+	}
+	"Chicken Fight Gun Attack Slay"
+	{
+		"sv"		"{1} blev dräpt efter att ha attackerat {2} med {3} under Tuppfäktning."
+	}
+	"Chicken Fight Gun Attack Abort"
+	{
+		"sv"		"{1} attackerade {2} med {3} - Tuppfäktning avbruten."
+	}
+	"Hot Potato Attack Slay"
+	{
+		"sv"		"{1} blev dräpt efter att ha attackerat {2} under Het Potatis-tävling."
+	}
+	"Hot Potato Attack Abort"
+	{
+		"sv"		"{1} attackerade {2} - Het Potatis-tävling avbruten."
+	}
+	"New Rebel"
+	{
+		"sv"		"{1} är nu rebell."
+	}
+	"Freeattack"
+	{
+		"sv"		"{1} attackerade {2}."
+	}
+	"Non LR Kill LR Slay"
+	{
+		"sv"		"Icke LR-spelare {1} blev dräpt efter att ha dödat LR-spelare {2}."
+	}
+	"Non LR Kill LR Abort"
+	{
+		"sv"		"Icke LR-spelare {1} dödade LR-spelare {2} - LR avbrutet."
+	}
+	"Rebel Kill"
+	{
+		"sv"		"{1} dödade rebellen {2}."
+	}
+	"LR Available"
+	{
+		"sv"		"Terrorister kan nu skriva !lr för att få en sista önskan."
+	}
+	"LR Player Disconnect"
+	{
+		"sv"		"LR-spelare {1} kopplade från - sista önskan avbrutet."
+	}
+	"Chicken Fight Win And Slay"
+	{
+		"sv"		"{1} vann Tuppfäktningen - {2} dräpt."
+	}
+	"Chicken Fight Win"
+	{
+		"sv"		"{1} vann Tuppfäktningen."
+	}
+	"Chicken Fight Kill Loser"
+	{
+		"sv"		"Döda {1}!"
+	}
+	"S4S Shot Taken"
+	{
+		"sv"		"{1} har skjutit sitt skott."
+	}
+	"Distance Meter"
+	{
+		"sv"		"Måttband:"
+	}
+	"LR Rebel Not Allowed"
+	{
+		"sv"		"Du kan tyvärr inte få en sista önskan när du är rebell."
+	}
+	"LR Choose"
+	{
+		"sv"		"Välj en sista önskan"
+	}
+	"No CTs Alive"
+	{
+		"sv"		"Det finns inga CTs (vid liv) att ha din sista önskan med."
+	}
+	"Too Many Ts"
+	{
+		"sv"		"Det är för många terrorister vid liv för att ha en sista önskan just nu!"
+	}
+	"Not Alive Or In Wrong Team"
+	{
+		"sv"		"Du är inte vid liv eller i fel lag för en sista önskan."
+	}
+	"Another LR In Progress"
+	{
+		"sv"		"En annan sista önskan pågår redan."
+	}
+	"LR Disabled"
+	{
+		"sv"		"Tyvärr, sista önskningar är inaktiverade på denna server."
+	}
+	"Choose A Player"
+	{
+		"sv"		"Välj en spelare"
+	}
+	"Rebel Ask CT For LR"
+	{
+		"sv"		"Rebellen {1} vill ha {2} med dig. Accepterar du?"
+	}
+	"Yes"
+	{
+		"sv"		"Ja"
+	}
+	"No"
+	{
+		"sv"		"Nej"
+	}
+	"Asking For Permission"
+	{
+		"sv"		"Ber {1} om lov eftersom du är rebell..."
+	}
+	"Target Is Not Alive Or In Wrong Team"
+	{
+		"sv"		"Din önskade partner är inte vid liv eller i fel lag för en sista önskan."
+	}
+	"Declined LR Request"
+	{
+		"sv"		"{1} avböjde din sista önskan."
+	}
+	"LR Partner Died"
+	{
+		"sv"		"Din partner dog."
+	}
+	"Too Slow Another LR In Progress"
+	{
+		"sv"		"Tjolahopp, för sent. En annan sista önskan pågår redan."
+	}
+	"LR Request Decline Or Too Long"
+	{
+		"sv"		"{1} avböjde din sista önskan eller tog för lång tid att svara på den."
+	}
+	"LR KF Start"
+	{
+		"sv"		"{1} valde att ha Knivduell med {2}."
+	}
+	"LR S4S Start"
+	{
+		"sv"		"{1} valde att ha Skott För Skott med {2}."
+	}
+	"LR GT Start"
+	{
+		"sv"		"{1} valde att ha Kasta Deagle med {2}."
+	}
+	"LR CF Start"
+	{
+		"sv"		"{1} valde att ha Tuppfäktning med {2}."
+	}
+	"LR HP Start"
+	{
+		"sv"		"{1} valde att ha Het Potatis-tävling med {2}."
+	}
+	"LR DB Start"
+	{
+		"sv"		"{1} valde att ha Spökboll med {2}."
+	}
+	"LR NS Start"
+	{
+		"sv"		"{1} valde att ha No Scope-duell med {2}."
+	}
+	"LR RPS Start"
+	{
+		"sv"		"{1} valde att ha Sten Sax Påse med {2}."
+	}
+	"LR Mag4Mag Start"
+	{
+		"sv"		"{1} valde att ha Magasin För Magasin med {2}."
+	}
+	"LR RR Start"
+	{
+		"sv"		"{1} valde att ha Rysk Roulette med {2}."
+	}
+	"LR Has Chosen to Rebel!"
+	{
+		"sv"		"{1} valde att bli en tungt beväpnad rebell!"
+	}
+	"Start Jump Contest"
+	{
+		"sv"		"{1} valde att ha en Hopptävling (om flest hopp) med {2}."
+	}
+	"Start Brink of Death"
+	{
+		"sv"		"{1} valde att ha en Självmordsbenägen Hopptävling med {2}."
+	}
+	"Start Farthest Jump"
+	{
+		"sv"		"{1} valde att ha en Hopptävling (om längd) med {2}."
+	}
+	"No Rebels ATM"
+	{
+		"sv"		"Det finns inga rebeller just nu."
+	}
+	"Rebelling Terrorists"
+	{
+		"sv"		"Rebeller:"
+	}
+	"CheckPlayers CMD Disabled"
+	{
+		"sv"		"!checkplayers-kommandot är tyvärr inaktiverat på denna server."
+	}
+	"Server Rules"
+	{
+		"sv"		"Serverregler:"
+	}
+	"HP Win"
+	{
+		"sv"		"{1} vann Het Potatis-tävlingen - {2} dräpt."
+	}
+	"HP Last One To Have The Potato"
+	{
+		"sv"		"Du var den sista som höll i potatisen!"
+	}
+	"Ts Muted"
+	{
+		"sv"		"Terroristerna är tystade de första {1} sekunderna av rundan!"
+	}
+	"Ts Can Speak Again"
+	{
+		"sv"		"Terroristerna kan nu prata... lagom högt..."
+	}
+	"Now Muted"
+	{
+		"sv"		"Du är nu tystad, du kommer kunna höras igen i slutet av rundan."
+	}
+	"NS Weapon Chooser Menu"
+	{
+		"sv"		"Välj ett vapen att använda i No Scope-duellen:"
+	}
+	"CT Attack T Gun"
+	{
+		"sv"		"{1} attackerade {2} som har ett vapen..."
+	}
+	"Rock"
+	{
+		"sv"		"Sten"
+	}
+	"Paper"
+	{
+		"sv"		"Påse"
+	}
+	"Scissors"
+	{
+		"sv"		"Sax"
+	}
+	"LR RPS No Answer"
+	{
+		"sv"		"{1} valde inte sten, sax eller påse, eller tog för lång tid på sig."
+	}
+	"LR RPS Done"
+	{
+		"sv"		"{1} valde {2}, {3} valde {4} - {5} vann"
+	}
+	"LR RPS Tie"
+	{
+		"sv"		"{1} valde {2}, {3} valde {4} - oavgjort"
+	}
+	"LR Not With Bot"
+	{
+		"sv"		"Tyvärr, en bot kan inte hjälpa dig uppfylla den där sista önskningen."
+	}
+	"LR Not Available"
+	{
+		"sv"		"Du kan inte få en sista önskan just nu."
+	}
+	"LR Delay Announcement"
+	{
+		"sv"		"Terrorister kan inte få sista önskningar förrän {1} sekund(er) har gått!"
+	}
+	"Freekill Slay"
+	{
+		"sv"		"{1} blev dräpt för att ha dödat för många icke-rebeller."
+	}
+	"Freekill Kick"
+	{
+		"sv"		"{1} blev utkastad för att ha dödar för många icke-rebeller."
+	}
+	"Freekill Kick Reason"
+	{
+		"sv"		"Utkastad eftersom du dödade för många icke-rebeller"
+	}
+	"Freekill Ban"
+	{
+		"sv"		"{1} blev bannlyst för att ha dödat för många icke-rebeller."
+	}
+	"Freekill Ban Reason"
+	{
+		"sv"		"Bannlyst för att ha dödar för många icke-rebeller"
+	}
+	"Freekill Record Increased"
+	{
+		"sv"		"Du har gjort {1} av {2} tillåtna mord på icke-rebeller (innan åtgärder vidtas)..."
+	}
+	"Race Won"
+	{
+		"sv"		"{1} vann Racet!"
+	}
+	"Won Jump Contest"
+	{
+		"sv"		"{1} vann Hopptävlingen!"
+	}
+	"Russian Roulette - Hit"
+	{
+		"sv"		"Rysk Roulette: Skottet träffade {1}!"
+	}
+	"Russian Roulette - Miss"
+	{
+		"sv"		"Rysk Roulette: Miss. Snurrar igen..."
+	}
+	"Randomly Chose First Player"
+	{
+		"sv"		"Slumpen valde {1} att skjuta först."
+	}
+	"LR Interference Slay"
+	{
+		"sv"		"{1} blev dräpt efter att ha attackerat {2} med {3} under sista önskan."
+	}
+	"LR Interference Abort"
+	{
+		"sv"		"{1} attackerade {2} med {3}. Sista önskan avbruten."
+	}
+	"LR Interference Slay - No Victim"
+	{
+		"sv"		"{1} blev dräpt efter att ha attackerat med {2} under sista önskan."
+	}
+	"LR Interference Abort - No Victim"
+	{
+		"sv"		"{1} attackade med {2}. Sista önskan avbruten."
+	}
+	"LR Cheating Abort"
+	{
+		"sv"		"{1} fuskade! Sista önskan avbruten."
+	}
+	"LR Cheating Slay"
+	{
+		"sv"		"{1} blev dräpt för fusk under sista önskan."
+	}
+	"Noscope Knife Attack Slay"
+	{
+		"sv"		"{1} blev dräpt efter att ha knivhuggit {2} under No Scope-duell."
+	}
+	"Noscope Knife Attack Abort"
+	{
+		"sv"		"{1} knivhögg {2} - No Scope-duell avbruten."
+	}
+	"S4S Rebel Slayed"
+	{
+		"sv"		"{1} blev dräpt efter att ha uppvisat dålig koncentration i Skott För Skott."
+	}
+	"S4S Rebel Aborted"
+	{
+		"sv"		"{1} uppvisade dålig koncentration och avbröt därmed Skott För Skott-duellen."
+	}
+	"M4M Mag Used"
+	{
+		"sv"		"{1} sköt upp sitt magasin."
+	}
+	"LR No CTs Available"
+	{
+		"sv"		"Det finns inga CTs tillgängliga att ha din sista önskan med just nu."
+	}
+	"LR Aborted"
+	{
+		"sv"		"Avbröt alla pågående sista önskningar!"
+	}
+	"Knife Fight Selection Menu"
+	{
+		"sv"		"Välj en Knivduell:"
+	}
+	"Knife_Vintage"
+	{
+		"sv"		"Slö Gammal Bordskniv"
+	}
+	"Knife_Drunk"
+	{
+		"sv"		"Fyllekniv"
+	}
+	"Knife_LowGrav"
+	{
+		"sv"		"Månskor"
+	}
+	"Knife_HiSpeed"
+	{
+		"sv"		"Speedad kniv"
+	}
+	"Knife_Drugs"
+	{
+		"sv"		"Drogad"
+	}
+	"Knife_ThirdPerson"
+	{
+		"sv"		"Tredjepersonsvy"
+	}
+	"Pistol Selection Menu"
+	{
+		"sv"		"Välj en pistol:"
+	}
+	"Pistol_Deagle"
+	{
+		"sv"		"Deagle"
+	}
+	"Pistol_P228"
+	{
+		"sv"		"P228"
+	}
+	"Pistol_Glock"
+	{
+		"sv"		"Glock"
+	}
+	"Pistol_FiveSeven"
+	{
+		"sv"		"Five-Seven"
+	}
+	"Pistol_Dualies"
+	{
+		"sv"		"Dubbelkraft"
+	}
+	"Pistol_USP"
+	{
+		"sv"		"USP"
+	}
+	"NSW_AWP"
+	{
+		"sv"		"AWP"
+	}
+	"NSW_Scout"
+	{
+		"sv"		"Scout"
+	}
+	"NSW_SG550"
+	{
+		"sv"		"SG550"
+	}
+	"NSW_G3SG1"
+	{
+		"sv"		"G3SG1"
+	}
+	"Find a Starting Location"
+	{
+		"sv"		"Välj en startpunkt"
+	}
+	"Choose an End Point"
+	{
+		"sv"		"Välj målgång"
+	}
+	"Use Current Position"
+	{
+		"sv"		"Använd nuvarande position"
+	}
+	"Race Points too Close"
+	{
+		"sv"		"Din målgång var för nära startpunkten."
+	}
+	"Too Near Obstruction"
+	{
+		"sv"		"Någonting är ivägen för de tävlande just där. Rör dig ut i en mer fri miljö och försök igen."
+	}
+	"Jump Contest Menu"
+	{
+		"sv"		"Välj en Hopptävling:"
+	}
+	"Jump_TheMost"
+	{
+		"sv"		"Flest hopp"
+	}
+	"Jump_Farthest"
+	{
+		"sv"		"Längst hopp"
+	}
+	"Jump_BrinkOfDeath"
+	{
+		"sv"		"Självmordsbenägen"
+	}
+	"Must Be On Ground"
+	{
+		"sv"		"Du måste vara på marken för att göra detta val."
+	}
+	"Farthest Jump Won"
+	{
+		"sv"		"{1} gjorde det längsta hoppet med {3} jämfört med {2}s {4}."
+	}
+	"Race Could Start Soon"
+	{
+		"sv"		"{1} valde Race som sin sista önskan. Håll utkik efter start- och målgång!"
+	}
+}

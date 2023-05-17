@@ -1,0 +1,563 @@
+"Phrases"
+{
+	"Knife Fight"
+	{
+		"ru"		"Бой на Ножах"
+	}
+	"Shot4Shot"
+	{
+		"ru"		"Рулетка"
+	}
+	"Gun Toss"
+	{
+		"ru"		"Метание"
+	}
+	"Chicken Fight"
+	{
+		"ru"		"Петушиный Бой"
+	}
+	"Hot Potato"
+	{
+		"ru"		"Картошка"
+	}
+	"Dodgeball"
+	{
+		"ru"		"Вышибалы"
+	}
+	"No Scope Battle"
+	{
+		"ru"		"Битва без Прицела"
+	}
+	"Rock Paper Scissors"
+	{
+		"ru"		"Камень-Ножницы-Бумага"
+	}
+	"Russian Roulette"
+	{
+		"ru"		"Русская Рулетка"
+	}
+	"Jumping Contest"
+	{
+		"ru"		"Попрыгунчики"
+	}
+	"Rebel!"
+	{
+		"ru"		"Бунтовать"
+	}
+	"Mag4Mag"
+	{
+		"ru"		"Обойма на Обойму"
+	}
+	"Race"
+	{
+		"ru"		"Гонка"
+	}
+	"Already Dropped Deagle"
+	{
+		"ru"		"Ты уже бросил свой пистолет!"
+	}
+	"Hot Potato PickUp"
+	{
+		"ru"		"{1} подобрал картошку!"
+	}
+	"Powered By Hosties"
+	{
+		"ru"		"Сервер использует SM_Hosties 2!"
+	}
+	"Please Follow Rules"
+	{
+		"ru"		""
+	}
+	"Knife Fight Gun Attack Slay"
+	{
+		"ru"		"{1} был убит за атаку {2} с помощью {3} во время Боя на Ножах."
+	}
+	"Knife Fight Gun Attack Abort"
+	{
+		"ru"		"{1} ранил {2} с помощью {3} - Бой на Ножах отменен."
+	}
+	"Chicken Fight Gun Attack Slay"
+	{
+		"ru"		"{1} был убит за атаку {2} с помощью {3} во время Петушиного Боя."
+	}
+	"Chicken Fight Gun Attack Abort"
+	{
+		"ru"		"{1} ранил {2} с помощью {3} - Петушиный Бой отменен."
+	}
+	"Hot Potato Attack Slay"
+	{
+		"ru"		"{1} был убит за атаку {2} во время Горячей Картошки."
+	}
+	"Hot Potato Attack Abort"
+	{
+		"ru"		"{1} ранил {2} - Горячая Картошка отменена."
+	}
+	"New Rebel"
+	{
+		"ru"		"{1} бунтует!"
+	}
+	"Freeattack"
+	{
+		"ru"		"{1} атаковал {2}."
+	}
+	"Non LR Kill LR Slay"
+	{
+		"ru"		"Не-LR-игрок {1} был убит за убийство LR-игрока {2}."
+	}
+	"Non LR Kill LR Abort"
+	{
+		"ru"		"Не-LR-игрок {1} убил LR-игрока {2} - LR отменено."
+	}
+	"Rebel Kill"
+	{
+		"ru"		"{1} предотвратил бунт {2}."
+	}
+	"LR Available"
+	{
+		"ru"		"Заключенные могут написать !lr для Последнего Желания"
+	}
+	"LR Player Disconnect"
+	{
+		"ru"		"LR-игрок {1} покинул сервер - LR отменено."
+	}
+	"Chicken Fight Win And Slay"
+	{
+		"ru"		"{1} выиграл Петушиный Бой - {2} убит."
+	}
+	"Chicken Fight Win"
+	{
+		"ru"		"{1} выиграл Петушиный Бой."
+	}
+	"Chicken Fight Kill Loser"
+	{
+		"ru"		"Убейте {1}!"
+	}
+	"S4S Shot Taken"
+	{
+		"ru"		"{1} сделал выстрел."
+	}
+	"Distance Meter"
+	{
+		"ru"		"Дистанция:"
+	}
+	"LR Rebel Not Allowed"
+	{
+		"ru"		"Бунтующие заключенные не имеют право на Последнее Желание."
+	}
+	"LR Choose"
+	{
+		"ru"		"Список LR-соревнований:"
+	}
+	"No CTs Alive"
+	{
+		"ru"		"Не осталось живых тюремщиков для Последнего Желания."
+	}
+	"Too Many Ts"
+	{
+		"ru"		"Слишком много живых заключенных для Последнего Желания!"
+	}
+	"Not Alive Or In Wrong Team"
+	{
+		"ru"		"LR невозможно: вы умерли или вы не заключенный."
+	}
+	"Another LR In Progress"
+	{
+		"ru"		"Кто-то уже играет Последнее Желание."
+	}
+	"LR Disabled"
+	{
+		"ru"		"На этом сервере отключены Последние Желания"
+	}
+	"Choose A Player"
+	{
+		"ru"		"Выберите оппонента"
+	}
+	"Rebel Ask CT For LR"
+	{
+		"ru"		"Бунтующий {1} хочет играть в {2} с тобой. Принять вызов?"
+	}
+	"Yes"
+	{
+		"ru"		"Да"
+	}
+	"No"
+	{
+		"ru"		"Нет"
+	}
+	"Asking For Permission"
+	{
+		"ru"		"Спрашиваем разрешение у {1} на игру, т.к. вы - бунтовщик..."
+	}
+	"Target Is Not Alive Or In Wrong Team"
+	{
+		"ru"		"Оппонент уже не очень живой или не очень тюремщик для Последнего Желания."
+	}
+	"Declined LR Request"
+	{
+		"ru"		"{1} отклонил запрос на Последнее Желание."
+	}
+	"LR Partner Died"
+	{
+		"ru"		"Твой оппонент в LR умер."
+	}
+	"Too Slow Another LR In Progress"
+	{
+		"ru"		"Слишком медленно. Кто-то уже играет Последнее Желание."
+	}
+	"LR Request Decline Or Too Long"
+	{
+		"ru"		"{1} отклонил запрос на Последнее Желание или слишком долго думал."
+	}
+	"LR KF Start"
+	{
+		"ru"		"{1} выбрал Бой на ножах с {2}."
+	}
+	"LR S4S Start"
+	{
+		"ru"		"{1} выбрал Рулетку с {2}."
+	}
+	"LR GT Start"
+	{
+		"ru"		"{1} выбрал Метание с {2}."
+	}
+	"LR CF Start"
+	{
+		"ru"		"{1} выбрал Петушиный Бой с {2}."
+	}
+	"LR HP Start"
+	{
+		"ru"		"{1} выбрал Горячую Картошку с {2}."
+	}
+	"LR DB Start"
+	{
+		"ru"		"{1} выбрал Вышибалы с {2}."
+	}
+	"LR NS Start"
+	{
+		"ru"		"{1} выбрал Битву без Прицела с {2}."
+	}
+	"LR RPS Start"
+	{
+		"ru"		"{1} выбрал Камень-Ножницы-Бумагу с {2}."
+	}
+	"LR Mag4Mag Start"
+	{
+		"ru"		"{1} выбрал Обойма на Обойму с {2}."
+	}
+	"LR RR Start"
+	{
+		"ru"		"{1} выбрал Русскую Рулетку с {2}."
+	}
+	"LR Has Chosen to Rebel!"
+	{
+		"ru"		"{1} решил взбунтоваться вместо LR"
+	}
+	"Start Jump Contest"
+	{
+		"ru"		"{1} выбрал Попрыгунчики с {2}."
+	}
+	"Start Brink of Death"
+	{
+		"ru"		"{1} выбрал Игра с Огнем с {2}."
+	}
+	"Start Farthest Jump"
+	{
+		"ru"		"{1} выбрал Прыжки в Длину с {2}."
+	}
+	"No Rebels ATM"
+	{
+		"ru"		"Никто сейчас не бунтует."
+	}
+	"Rebelling Terrorists"
+	{
+		"ru"		"Список нарушителей:"
+	}
+	"CheckPlayers CMD Disabled"
+	{
+		"ru"		"Команда !checkplayers отключена на этом сервере."
+	}
+	"Server Rules"
+	{
+		"ru"		"Правила сервера:"
+	}
+	"HP Win"
+	{
+		"ru"		"{1} выиграл Горячую Картошку - {2} убит."
+	}
+	"HP Last One To Have The Potato"
+	{
+		"ru"		"Картошка последний раз была у вас!"
+	}
+	"Ts Muted"
+	{
+		"ru"		"Заключенным отключены микрофоны на {1} секунд!"
+	}
+	"Ts Can Speak Again"
+	{
+		"ru"		"Заключенным включены микрофоны"
+	}
+	"Now Muted"
+	{
+		"ru"		"Сейчас вам отключен микрофон, он будет включен в конце раунда."
+	}
+	"NS Weapon Chooser Menu"
+	{
+		"ru"		"Выберите винтовку для Битвы без Прицела:"
+	}
+	"CT Attack T Gun"
+	{
+		"ru"		"{1} атаковал {2} у которого есть оружие"
+	}
+	"Rock"
+	{
+		"ru"		"Камень"
+	}
+	"Paper"
+	{
+		"ru"		"Бумага"
+	}
+	"Scissors"
+	{
+		"ru"		"Ножницы"
+	}
+	"LR RPS No Answer"
+	{
+		"ru"		"{1} ничего не выбрал"
+	}
+	"LR RPS Done"
+	{
+		"ru"		"{1} выбрал {2}, {3} выбрал {4} - {5} выиграл!"
+	}
+	"LR RPS Tie"
+	{
+		"ru"		"{1} выбрал {2}, {3} тоже выбрал {4} - ничья!"
+	}
+	"LR Not With Bot"
+	{
+		"ru"		"Нельзя играть в LR с ботом."
+	}
+	"LR Not Available"
+	{
+		"ru"		"Сейчас нельзя играть Последнее Желание."
+	}
+	"LR Delay Announcement"
+	{
+		"ru"		"Заключенные не могут играть Последнее Желание первые {1} секунд!"
+	}
+	"Freekill Slay"
+	{
+		"ru"		"{1} был убит за массовый фрикилл"
+	}
+	"Freekill Kick"
+	{
+		"ru"		"{1} был кикнут с сервера за массовый фрикилл"
+	}
+	"Freekill Kick Reason"
+	{
+		"ru"		"Кик: Массовый фрикилл"
+	}
+	"Freekill Ban"
+	{
+		"ru"		"{1} забанен за массовый фрикилл"
+	}
+	"Freekill Ban Reason"
+	{
+		"ru"		"Бан: Массовый фрикилл"
+	}
+	"Freekill Record Increased"
+	{
+		"ru"		"Тобой сделано {1} из {2} возможных убийств мирных заключенных..."
+	}
+	"Race Won"
+	{
+		"ru"		"{1} выиграл Гонку!"
+	}
+	"Won Jump Contest"
+	{
+		"ru"		"{1} выиграл в Попрыгунчики!"
+	}
+	"Russian Roulette - Hit"
+	{
+		"ru"		"Русская Рулетка: попадание в {1}!"
+	}
+	"Russian Roulette - Miss"
+	{
+		"ru"		"Русская Рулетка: мимо. Играем дальше..."
+	}
+	"Randomly Chose First Player"
+	{
+		"ru"		"Компьютер решил, что {1} будет стрелять первым."
+	}
+	"LR Interference Slay"
+	{
+		"ru"		"{1} был убит за атаку {2} с помощью {3} во время Последнего Желания."
+	}
+	"LR Interference Abort"
+	{
+		"ru"		"{1} ранил {2} с помощью {3}. Последнее Желание отменено."
+	}
+	"LR Interference Slay - No Victim"
+	{
+		"ru"		"{1} был убит за атаку с помощью {2} во время Последнего Желания."
+	}
+	"LR Interference Abort - No Victim"
+	{
+		"ru"		"{1} атаковал с помощью {2}. Последнее Желание отменено."
+	}
+	"LR Cheating Abort"
+	{
+		"ru"		"{1} попытался смухлевать! Последнее Желание отменено."
+	}
+	"LR Cheating Slay"
+	{
+		"ru"		"{1} был убит за попытку смухлевать во время Последнего Желания."
+	}
+	"Noscope Knife Attack Slay"
+	{
+		"ru"		"{1} был убит за атаку ножом {2} во время Битвы без Прицела"
+	}
+	"Noscope Knife Attack Abort"
+	{
+		"ru"		"{1} ранил ножом {2} - Битва без Прицела отменена."
+	}
+	"S4S Rebel Slayed"
+	{
+		"ru"		"{1} был убит за попытку бунтовать во время Рулетки."
+	}
+	"S4S Rebel Aborted"
+	{
+		"ru"		"{1} бунтует во время Рулетки - Рулетка отменена."
+	}
+	"M4M Mag Used"
+	{
+		"ru"		"В обойме {1} кончились патроны."
+	}
+	"LR No CTs Available"
+	{
+		"ru"		"Сейчас нет свободных тюремщиков для Последнего Желания"
+	}
+	"LR Aborted"
+	{
+		"ru"		"Все Последние Желания отменены!"
+	}
+	"Knife Fight Selection Menu"
+	{
+		"ru"		"Выбери стиль Боя на Ножах:"
+	}
+	"Knife_Vintage"
+	{
+		"ru"		"Стандарт"
+	}
+	"Knife_Drunk"
+	{
+		"ru"		"Пьяный Бокс"
+	}
+	"Knife_LowGrav"
+	{
+		"ru"		"Лунный Бой"
+	}
+	"Knife_HiSpeed"
+	{
+		"ru"		"Скоростной"
+	}
+	"Knife_Drugs"
+	{
+		"ru"		"Наркостайл"
+	}
+	"Knife_ThirdPerson"
+	{
+		"ru"		"От 3-го лица"
+	}
+	"Pistol Selection Menu"
+	{
+		"ru"		"Выбери пистолет:"
+	}
+	"Pistol_Deagle"
+	{
+		"ru"		"Deagle"
+	}
+	"Pistol_P228"
+	{
+		"ru"		"P228"
+	}
+	"Pistol_Glock"
+	{
+		"ru"		"Glock"
+	}
+	"Pistol_FiveSeven"
+	{
+		"ru"		"Five-Seven"
+	}
+	"Pistol_Dualies"
+	{
+		"ru"		"Dual Elites"
+	}
+	"Pistol_USP"
+	{
+		"ru"		"USP"
+	}
+	"NSW_AWP"
+	{
+		"ru"		"AWP"
+	}
+	"NSW_Scout"
+	{
+		"ru"		"Scout"
+	}
+	"NSW_SG550"
+	{
+		"ru"		"SG550"
+	}
+	"NSW_G3SG1"
+	{
+		"ru"		"G3SG1"
+	}
+	"Find a Starting Location"
+	{
+		"ru"		"Выбери место Старта"
+	}
+	"Choose an End Point"
+	{
+		"ru"		"Выбери место Финиша"
+	}
+	"Use Current Position"
+	{
+		"ru"		"Место, где я стою"
+	}
+	"Race Points too Close"
+	{
+		"ru"		"Финиш слишком близок к Старту!"
+	}
+	"Too Near Obstruction"
+	{
+		"ru"		"Что-то блочит путь. Найди свободное пространтсво."
+	}
+	"Jump Contest Menu"
+	{
+		"ru"		"Выбери стиль Попрыгунчиков:"
+	}
+	"Jump_TheMost"
+	{
+		"ru"		"На количество"
+	}
+	"Jump_Farthest"
+	{
+		"ru"		"Прыжок в Длину"
+	}
+	"Jump_BrinkOfDeath"
+	{
+		"ru"		"Игра с Огнем"
+	}
+	"Must Be On Ground"
+	{
+		"ru"		"Сначала приземлись."
+	}
+	"Farthest Jump Won"
+	{
+		"ru"		"{1} выиграл Прыжок в Длину с {3} против {4} у {2}."
+	}
+	"Race Could Start Soon"
+	{
+		"ru"		"{1} выбрал Гонку. Ищите Старт и Финиш!"
+	}
+}

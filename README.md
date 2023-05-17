@@ -14,6 +14,7 @@ A single modded Counter-Strike: Global Offensive Dedicated Server that you can c
 - Retakes
 - Wingman
 - Zombie:Reloaded
+- JailBreak
 - Multi 1v1
 - Practice (record grenade throws etc)
 - Minigames
@@ -97,6 +98,9 @@ Mod | Version | Why
 [Zombie:Reloaded](https://forums.alliedmods.net/showthread.php?t=277597) | `3.6.5` | Zombie Escape.
 [-N- Arms Fix](https://forums.alliedmods.net/showthread.php?t=293295) | `2.0.3` | -N- Arms Fix helps you to fix arms/gloves in your plugin.
 [ZR Custom arms](https://forums.alliedmods.net/showthread.php?p=2277249) | `5.1` | Set custom arms in CS:GO for zombiereloaded servers
+[SM_Hosties v2](https://forums.alliedmods.net/showthread.php?t=108810) | `2.2.0` | Required by MyJailbreak
+[MyJailbreak](https://forums.alliedmods.net/showthread.php?t=283212) | `b14.0` | MyJailbreak is a redux rewrite of Franugs Special Jailbreak a merge/redux of eccas, ESK0s & zipcores Jailbreak warden and many other plugins.
+[MyJailbreak patches by azalty](https://github.com/azalty/MyJailbreak/releases) | `v9` | Patches to fix MyJailbreak by azalty
 [Sound Info Library](https://forums.alliedmods.net/showthread.php?t=105816) | `1.0.1` | Better calculation of sound length and information required for PropHunt
 [SpeedRules](https://gitlab.com/Zipcore/speedrules) | `1.0` | Advanced system to sync speed rules required for PropHunt
 [Simple-Downloader](https://github.com/JakubKosmaty/Simple-Downloader) | `1.0` | Force clients to download files (audio for PropHunt)

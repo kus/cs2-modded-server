@@ -1,0 +1,599 @@
+"Phrases"
+{
+	"Knife Fight"
+	{
+		"chi"		"拼刀"
+	}
+	"Shot4Shot"
+	{
+		"chi"		"爆头"
+	}
+	"Gun Toss"
+	{
+		"chi"		"丢枪"
+	}
+	"Chicken Fight"
+	{
+		"chi"		"斗鸡"
+	}
+	"Hot Potato"
+	{
+		"chi"		"烫手山芋"
+	}
+	"Dodgeball"
+	{
+		"chi"		"躲避球"
+	}
+	"No Scope Battle"
+	{
+		"chi"		"无镜狙击"
+	}
+	"Rock Paper Scissors"
+	{
+		"chi"		"剪刀石头布"
+	}
+	"Russian Roulette"
+	{
+		"chi"		"生死赌博"
+	}
+	"Jumping Contest"
+	{
+		"chi"		"跳跃比赛"
+	}
+	"Rebel!"
+	{
+		"chi"		"造反!"
+	}
+	"Mag4Mag"
+	{
+		"chi"		"回合枪战"
+	}
+	"Race"
+	{
+		"chi"		"赛跑"
+	}
+	"Already Dropped Deagle"
+	{
+		"chi"		"你丢了你的沙漠之鹰!"
+	}
+	"Hot Potato PickUp"
+	{
+		"chi"		"{1} 拿起了烫手山芋!"
+	}
+	"Powered By Hosties"
+	{
+		"chi"		"本服务器由 SM_Hosties v2 插件支持, 祝大家玩的开心!"
+	}
+	"Please Follow Rules"
+	{
+		"chi"		"请遵循 !rules 中列出的规则"
+	}
+	"Knife Fight Gun Attack Slay"
+	{
+		"chi"		"{1} 在拼刀期间使用 {3} 攻击 {2} 被处死"
+	}
+	"Knife Fight Gun Attack Abort"
+	{
+		"chi"		"{1} 使用 {3} 攻击了 {2} - 拼刀中止"
+	}
+	"Chicken Fight Gun Attack Slay"
+	{
+		"chi"		"{1} 在斗鸡期间使用 {3} 攻击 {2} 被处死"
+	}
+	"Chicken Fight Gun Attack Abort"
+	{
+		"chi"		"{1} 使用 {3} 攻击了 {2} - 斗鸡中止"
+	}
+	"Hot Potato Attack Slay"
+	{
+		"chi"		"{1} 在烫手山芋游戏期间攻击 {2} 被处死"
+	}
+	"Hot Potato Attack Abort"
+	{
+		"chi"		"{1} 攻击了 {2} - 烫手山芋游戏中止"
+	}
+	"New Rebel"
+	{
+		"chi"		"囚犯 {1} 造反了"
+	}
+	"Freeattack"
+	{
+		"chi"		"狱警 {1} 攻击了没有武器的 {2}."
+	}
+	"Non LR Kill LR Slay"
+	{
+		"chi"		"非 LR 玩家 {1} 杀死了 LR 玩家 {2} 被处死"
+	}
+	"Non LR Kill LR Abort"
+	{
+		"chi"		"非 LR 玩家 {1} 杀死了 LR 玩家 {2} - LR 中止"
+	}
+	"Rebel Kill"
+	{
+		"chi"		"狱警 {1} 打死了造反者 {2}"
+	}
+	"LR Available"
+	{
+		"chi"		"囚犯现在可以输入 !lr 提出最后一个请求"
+	}
+	"LR Player Disconnect"
+	{
+		"chi"		"LR 玩家 {1} 离线 - LR 中止"
+	}
+	"Chicken Fight Win And Slay"
+	{
+		"chi"		"{1} 赢得了斗鸡比赛的胜利 - {2} 被处死"
+	}
+	"Chicken Fight Win"
+	{
+		"chi"		"{1} 赢得了斗鸡比赛的胜利"
+	}
+	"Chicken Fight Kill Loser"
+	{
+		"chi"		"杀死 {1}!"
+	}
+	"S4S Shot Taken"
+	{
+		"chi"		"{1} 射击回合结束"
+	}
+	"Distance Meter"
+	{
+		"chi"		"测距仪:"
+	}
+	"LR Rebel Not Allowed"
+	{
+		"chi"		"造反后, 不能 LR"
+	}
+	"LR Choose"
+	{
+		"chi"		"选择一个最后请求"
+	}
+	"No CTs Alive"
+	{
+		"chi"		"没有任何活着的狱警可以与你 LR"
+	}
+	"Too Many Ts"
+	{
+		"chi"		"还有很多囚犯活着现在不能 LR!"
+	}
+	"Not Alive Or In Wrong Team"
+	{
+		"chi"		"你已经死了或不是囚犯, 不能 LR"
+	}
+	"Another LR In Progress"
+	{
+		"chi"		"他已有了一个进行中的 LR"
+	}
+	"LR Disabled"
+	{
+		"chi"		"抱歉, 服务器关闭了 LR 功能"
+	}
+	"Choose A Player"
+	{
+		"chi"		"选择一个玩家"
+	}
+	"Rebel Ask CT For LR"
+	{
+		"chi"		"造反者 {1} 想与你 {2}, 是否接受?"
+	}
+	"Yes"
+	{
+		"chi"		"是"
+	}
+	"No"
+	{
+		"chi"		"否"
+	}
+	"Asking For Permission"
+	{
+		"chi"		"正在询问 {1} 是否同意, 因为你是一个造反者..."
+	}
+	"Target Is Not Alive Or In Wrong Team"
+	{
+		"chi"		"目标玩家已经死了或不是囚犯, 不能 LR"
+	}
+	"Declined LR Request"
+	{
+		"chi"		"{1} 拒绝了你的 LR 请求"
+	}
+	"LR Partner Died"
+	{
+		"chi"		"与你 LR 的小伙伴已经死了"
+	}
+	"Too Slow Another LR In Progress"
+	{
+		"chi"		"哎呦, 太慢了, 他已与其他人进行 LR "
+	}
+	"LR Request Decline Or Too Long"
+	{
+		"chi"		"{1} 拒绝了你的 LR 请求或太久没有答复"
+	}
+	"LR KF Start"
+	{
+		"chi"		"{1} 选择与 {2} 进行拼刀"
+	}
+	"LR S4S Start"
+	{
+		"chi"		"{1} 选择与 {2} 进行爆头比赛"
+	}
+	"LR GT Start"
+	{
+		"chi"		"{1} 选择与 {2} 进行丢枪比赛"
+	}
+	"LR CF Start"
+	{
+		"chi"		"{1} 选择与 {2} 进行斗鸡"
+	}
+	"LR HP Start"
+	{
+		"chi"		"{1} 选择与 {2} 进行烫手山芋游戏"
+	}
+	"LR DB Start"
+	{
+		"chi"		"{1} 选择与 {2} 进行躲避球游戏"
+	}
+	"LR NS Start"
+	{
+		"chi"		"{1} 选择与 {2} 进行无镜狙击"
+	}
+	"LR RPS Start"
+	{
+		"chi"		"{1} 选择与 {2} 进行剪刀石头布"
+	}
+	"LR Mag4Mag Start"
+	{
+		"chi"		"{1} 选择与 {2} 进行回合枪战"
+	}
+	"LR RR Start"
+	{
+		"chi"		"{1} 选择与 {2} 进行生死赌博"
+	}
+	"LR Has Chosen to Rebel!"
+	{
+		"chi"		"{1} 选择去造反!"
+	}
+	"Start Jump Contest"
+	{
+		"chi"		"{1} 选择与 {2} 进行最多跳比赛"
+	}
+	"Start Brink of Death"
+	{
+		"chi"		"{1} 选择与 {2} 进行濒死边缘比赛"
+	}
+	"Start Farthest Jump"
+	{
+		"chi"		"{1}选择与 {2} 进行跳远比赛"
+	}
+	"No Rebels ATM"
+	{
+		"chi"		"此刻没有造反的囚犯"
+	}
+	"Rebelling Terrorists"
+	{
+		"chi"		"造反囚犯:"
+	}
+	"CheckPlayers CMD Disabled"
+	{
+		"chi"		"服务器禁用 !checkplayers 命令"
+	}
+	"Server Rules"
+	{
+		"chi"		"服务器规则:"
+	}
+	"HP Win"
+	{
+		"chi"		"{1} 赢得了烫手山芋比赛的胜利 - {2} 被处死"
+	}
+	"HP Last One To Have The Potato"
+	{
+		"chi"		"你是最后有山芋的那个!"
+	}
+	"Ts Muted"
+	{
+		"chi"		"囚犯在回合前 {1} 秒静音!"
+	}
+	"Ts Can Speak Again"
+	{
+		"chi"		"囚犯现在可以说了..."
+	}
+	"Now Muted"
+	{
+		"chi"		"你现在已被静音, 你将在回合结束解除静音"
+	}
+	"NS Weapon Chooser Menu"
+	{
+		"chi"		"请选择一个武器在无镜狙击中使用:"
+	}
+	"CT Attack T Gun"
+	{
+		"chi"		"狱警 {1} 攻击了囚犯 {2}, 但囚犯有一个热武器..."
+	}
+	"Rock"
+	{
+		"chi"		"石头"
+	}
+	"Paper"
+	{
+		"chi"		"布"
+	}
+	"Scissors"
+	{
+		"chi"		"剪刀"
+	}
+	"LR RPS No Answer"
+	{
+		"chi"		"{1} 没有选择石头剪刀布, 或没有在时间内选择"
+	}
+	"LR RPS Done"
+	{
+		"chi"		"{1} 选择 {2}, {3} 选择 {4} - {5} 赢"
+	}
+	"LR RPS Tie"
+	{
+		"chi"		"{1} 选择 {2}, {3} 选择 {4} - 平局"
+	}
+	"LR Not With Bot"
+	{
+		"chi"		"对不起, 你不能与一个 BOT 进行 LR"
+	}
+	"LR Not Available"
+	{
+		"chi"		"你现在不能进行 LR"
+	}
+	"LR Delay Announcement"
+	{
+		"chi"		"囚犯现在不能 LR, 直到 {1} 秒过去后!"
+	}
+	"Freekill Slay"
+	{
+		"chi"		"{1} 杀了太多并没有造反的囚犯被处死"
+	}
+	"Freekill Kick"
+	{
+		"chi"		"{1} 杀了太多并没有造反的囚犯被踢出"
+	}
+	"Freekill Kick Reason"
+	{
+		"chi"		"杀了太多并没有造反的囚犯被踢出"
+	}
+	"Freekill Ban"
+	{
+		"chi"		"{1} 杀了太多并没有造反的囚犯被封禁"
+	}
+	"Freekill Ban Reason"
+	{
+		"chi"		"杀了太多并没有造反的囚犯被封禁"
+	}
+	"Freekill Record Increased"
+	{
+		"chi"		"你已经杀死了 {1} 个没有造反的囚犯, 杀死 {2} 个将对你自动采取管理行动..."
+	}
+	"Race Won"
+	{
+		"chi"		"{1} 赢得了比赛!"
+	}
+	"Won Jump Contest"
+	{
+		"chi"		"{1} 赢得了跳跃比赛!"
+	}
+	"Russian Roulette - Hit"
+	{
+		"chi"		"生死赌博: 子弹击中了 {1}!"
+	}
+	"Russian Roulette - Miss"
+	{
+		"chi"		"生死赌博: 幸运, 再来..."
+	}
+	"Randomly Chose First Player"
+	{
+		"chi"		"随机选择了 {1} 第一个去射击"
+	}
+	"LR Interference Slay"
+	{
+		"chi"		"{1} 使用 {3} 干扰 {2} 的 LR 被处死"
+	}
+	"LR Interference Abort"
+	{
+		"chi"		"{1} 使用 {3} 干扰 {2} 的 LR, LR 被中止"
+	}
+	"LR Interference Slay - No Victim"
+	{
+		"chi"		"{1} 使用 {2} 攻击干扰 LR 被处死"
+	}
+	"LR Interference Abort - No Victim"
+	{
+		"chi"		"{1} 使用 {2} 攻击干扰 LR, LR 被中止"
+	}
+	"LR Cheating Abort"
+	{
+		"chi"		"{1} 作弊! LR 被中止"
+	}
+	"LR Cheating Slay"
+	{
+		"chi"		"{1} 在 LR 中作弊被处死"
+	}
+	"Noscope Knife Attack Slay"
+	{
+		"chi"		"{1} 在无镜狙击比赛中使用匕首攻击 {2} 被处死"
+	}
+	"Noscope Knife Attack Abort"
+	{
+		"chi"		"{1} 使用匕首攻击 {2} - 无镜狙击比赛被中止"
+	}
+	"S4S Rebel Slayed"
+	{
+		"chi"		"{1} 在爆头比赛中造反被处死"
+	}
+	"S4S Rebel Aborted"
+	{
+		"chi"		"{1} 在爆头比赛中造反, 爆头比赛被中止"
+	}
+	"M4M Mag Used"
+	{
+		"chi"		"{1} 用完了他的弹夹!"
+	}
+	"LR No CTs Available"
+	{
+		"chi"		"狱警不能使用 LR"
+	}
+	"LR Aborted"
+	{
+		"chi"		"所有活动中的 LR 被中止!"
+	}
+	"Knife Fight Selection Menu"
+	{
+		"chi"		"选择你的拼刀方式:"
+	}
+	"Knife_Vintage"
+	{
+		"chi"		"普通"
+	}
+	"Knife_Drunk"
+	{
+		"chi"		"醉拳"
+	}
+	"Knife_LowGrav"
+	{
+		"chi"		"月球重力"
+	}
+	"Knife_HiSpeed"
+	{
+		"chi"		"高速"
+	}
+	"Knife_Drugs"
+	{
+		"chi"		"迷幻"
+	}
+	"Knife_ThirdPerson"
+	{
+		"chi"		"第三人称"
+	}
+	"Pistol Selection Menu"
+	{
+		"chi"		"选择一把手枪:"
+	}
+	"Pistol_Deagle"
+	{
+		"chi"		"Deagle"
+	}
+	"Pistol_P228"
+	{
+		"chi"		"P228"
+	}
+	"Pistol_P250"
+	{
+		"chi"		"P250"
+	}
+	"Pistol_Glock"
+	{
+		"chi"		"Glock"
+	}
+	"Pistol_FiveSeven"
+	{
+		"chi"		"Five-Seven"
+	}
+	"Pistol_Dualies"
+	{
+		"chi"		"Dualies"
+	}
+	"Pistol_USP"
+	{
+		"chi"		"USP"
+	}
+	"Pistol_P2000"
+	{
+		"chi"		"P2000"
+	}
+	"Pistol_Tec9"
+	{
+		"chi"		"Tec 9"
+	}
+	"NSW_AWP"
+	{
+		"chi"		"AWP"
+	}
+	"NSW_Scout"
+	{
+		"chi"		"Scout"
+	}
+	"NSW_SSG08"
+	{
+		"chi"		"SSG08 (Scout)"
+	}
+	"NSW_SG550"
+	{
+		"chi"		"SG550"
+	}
+	"NSW_SCAR20"
+	{
+		"chi"		"SCAR20"
+	}
+	"NSW_G3SG1"
+	{
+		"chi"		"G3SG1"
+	}
+	"Find a Starting Location"
+	{
+		"chi"		"选择一个起点"
+	}
+	"Choose an End Point"
+	{
+		"chi"		"选择一个终点"
+	}
+	"Use Current Position"
+	{
+		"chi"		"使用当前坐标"
+	}
+	"Race Points too Close"
+	{
+		"chi"		"你的终点太靠近起点了"
+	}
+	"Too Near Obstruction"
+	{
+		"chi"		"有东西挡住了去路, 移开再试试"
+	}
+	"Jump Contest Menu"
+	{
+		"chi"		"选择一个跳跃比赛类型:"
+	}
+	"Jump_TheMost"
+	{
+		"chi"		"最多跳"
+	}
+	"Jump_Farthest"
+	{
+		"chi"		"跳远"
+	}
+	"Jump_BrinkOfDeath"
+	{
+		"chi"		"濒死边缘"
+	}
+	"Must Be On Ground"
+	{
+		"chi"		"你必须在地上选择此项目"
+	}
+	"Farthest Jump Won"
+	{
+		"chi"		"{1} 跳了 {3} 赢得了比赛胜利, 相比之下 {2} 跳了 {4}"
+	}
+	"Race Could Start Soon"
+	{
+		"chi"		"{1} 放置赛跑的起点和终点, 注意关注!"
+	}
+	"Respawned Target"
+	{
+		"chi"		"重生 {1}"
+	}
+	"Player Alive"
+	{
+		"chi"		"玩家已经是活的了"
+	}
+	"Respawn Player"
+	{
+		"chi"		"重生玩家"
+	}
+	"Respawn Data Unavailable"
+	{
+		"chi"		"玩家 {1} 没有重生数据, 并尚未发送到返回到单元"
+	}
+}
