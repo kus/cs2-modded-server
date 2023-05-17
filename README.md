@@ -13,7 +13,7 @@ A single modded Counter-Strike: Global Offensive Dedicated Server that you can c
 - Prop Hunt / Hide n Seek
 - Retakes
 - Wingman
-- Zombie Reloaded
+- Zombie:Reloaded
 - Multi 1v1
 - Practice (record grenade throws etc)
 - Minigames
