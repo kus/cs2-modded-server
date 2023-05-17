@@ -16,6 +16,8 @@ A single modded Counter-Strike: Global Offensive Dedicated Server that you can c
 - Multi 1v1
 - Practice (record grenade throws etc)
 - Minigames
+- Death Racers (Wipeout) ([Steam API key](#playing-workshop-maps-collections) required)
+- Jump Training ([Steam API key](#playing-workshop-maps-collections) required)
 - Squid Game ([Steam API key](#playing-workshop-maps-collections) required)
 - Red Bull Flick (only Flux map which has surfing and jump pads [Steam API key](#playing-workshop-maps-collections) required)
 - Fortnite ([Steam API key](#playing-workshop-maps-collections) required)
