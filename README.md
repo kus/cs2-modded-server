@@ -98,7 +98,8 @@ Mod | Version | Why
 [Sound Info Library](https://forums.alliedmods.net/showthread.php?t=105816) | `1.0.1` | Better calculation of sound length and information required for PropHunt
 [SpeedRules](https://gitlab.com/Zipcore/speedrules) | `1.0` | Advanced system to sync speed rules required for PropHunt
 [Simple-Downloader](https://github.com/JakubKosmaty/Simple-Downloader) | `1.0` | Force clients to download files (audio for PropHunt)
-[Disable Radar](<https://forums.alliedmods.net/showthread.php?t=240500>) | `1.2.2` | Simply hides the radar for everyone that spawns
+[Disable Radar](https://forums.alliedmods.net/showthread.php?t=240500) | `1.2.2` | Simply hides the radar for everyone that spawns
+[Fortnite like damage](https://forums.alliedmods.net/showthread.php?p=2604384) | `1.2.0` | Plugin that shows total damage like in fortnite
 
 ## Custom files
 

@@ -1,0 +1,41 @@
+"Phrases"
+{
+	//Available colors:
+	//----------------------------
+	//FULL NAME		- SHORT NAME
+	//----------------------------
+	//{DEFAULT} 	- {D}
+	//{RED} 		- {R}
+	//{LIGHTPURPLE} - {LP}
+	//{GREEN} 		- {G}
+	//{LIME} 		- {LM}
+	//{LIGHTGREEN} 	- {LG}
+	//{LIGHTRED} 	- {LR}
+	//{GRAY}		- {GR}
+	//{LIGHTOLIVE}	- {LO}
+	//{LIGHTBLUE} 	- {LB}
+	//{BLUE} 		- {B}
+	//{PURPLE} 		- {P}
+	//{DARKORANGE} 	- {DO}
+	//{GOLD} 		- {GL}
+	//
+	//NOTE: Names are case insensitive!
+	
+	"display_toggle_on"
+	{
+		"ru"		"{GL}[{D}Fortnite hits{GL}] {D}Вы {G}включили {D}показ урона!"
+		"en"		"{GL}[{D}Fortnite hits{GL}] {D}You {G}enable {D}damage display!"
+	}
+	
+	"display_toggle_off"
+	{
+		"ru"		"{GL}[{D}Fortnite hits{GL}] {D}Вы {R}выключили {D}показ урона!"
+		"en"		"{GL}[{D}Fortnite hits{GL}] {D}You {R}disable {D}damage display!"
+	}
+	
+	"no_access"
+	{
+		"ru"		"{GL}[{D}Fortnite hits{GL}] {R}Недостаточно прав для использования данной функции!"
+		"en"		"{GL}[{D}Fortnite hits{GL}] {R}You have no access to that command!"
+	}
+}
