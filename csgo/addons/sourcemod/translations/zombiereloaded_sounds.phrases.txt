@@ -1,0 +1,139 @@
+"Phrases"
+{
+	// ===========================
+	// Zr Sound (module)
+	// ===========================
+	
+	"Select Countdown"
+	{
+		"en"	  	"Voice Countdown:"
+	}
+
+	"Volume Menu Title"
+	{
+		"en"	  	"[ZR] Sounds Volume:"
+	}
+	
+	"Volume Current"
+	{
+		"#format"	"{1:i}"
+		"en"	  	"Current Volume: {1}%%%"
+	}
+
+	"v100"
+	{
+		"en"	  	"100%"
+	}
+
+	"v75"
+	{
+		"en"	  	"75%"
+	}
+
+	"v50"
+	{
+		"en"	  	"50%"
+	}
+
+	"v25"
+	{
+		"en"	  	"25%"
+	}
+
+	"v10"
+	{
+		"en"	  	"10%"
+	}
+
+	"v05"
+	{
+		"en"	  	"5%"
+	}
+
+	"zr sounds"
+	{
+		"en"	  	"[ZR] Sounds:"
+	}
+	
+	"RoundEnd_Sounds"
+	{
+		"#format"	"{1:s}"
+		"en"		"RoundEnd Songs: {1}"
+	}
+	
+	"Volume updated"
+	{
+		"en"	  	"The volume will be updated on the next song."
+	}
+	
+	"Volume set to"
+	{
+		"en"	  	"Volume set to: %i%."
+	}
+	
+	"voz_1"
+	{
+		"en"	  	"Male."
+	}
+
+	"voz_2"
+	{
+		"en"	  	"Women."
+	}
+	
+	"voz_3"
+	{
+		"en"	  	"Disabled."
+	}
+	
+	"CountDown select 0"
+	{
+		"en"	  	"Countdown without sound."
+	}
+
+	"CountDown select 1"
+	{
+		"en"	  	"Countdown With Male Voice."
+	}
+
+	"CountDown select 2"
+	{
+		"en"	  	"Countdown With Female Voice."
+	}
+
+	"zr_volume"
+	{
+		"en" 		"Current Volume:"
+	}
+	
+	"Zombis sounds enable"
+	{
+		"en" 		"Zombie Sounds Enabled."
+	}
+	
+	"Zombis sounds disable"
+	{
+		"en" 		"Zombie Sounds Disabled."
+	}
+	
+	"Zombies_Sounds"
+	{
+		"#format"	"{1:s}"
+		"en"		"Zombie Sounds: {1}"
+	}
+	
+	"RoundEnd sounds enable"
+	{
+		"en" 		"RoundEnd music enabled."
+	}
+	
+	"RoundEnd sounds disable"
+	{
+		"en" 		"RoundEnd music disabled."
+	}
+
+	"Must be player"
+	{
+		"en"		"This feature is reserved for players only."
+	}
+}

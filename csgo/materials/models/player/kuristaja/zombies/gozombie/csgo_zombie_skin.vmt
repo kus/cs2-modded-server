@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/player/zombie/csgo_zombie_skin"
+	"$bumpmap"	 "models/player/kuristaja/zombies/gozombie/csgo_zombie_normal"
+
+	"$phong" "1"
+	"$phongexponent" "60"
+	"$phongboost" ".007"
+	"$phongfresnelranges" "[5 6 8]"
+	"$PhongAlbedoTint" "1"
+
+	"$selfillum" "1"
+	"$selfillummask" "models/player/zombie/csgo_zombie_eye_glow"
+}

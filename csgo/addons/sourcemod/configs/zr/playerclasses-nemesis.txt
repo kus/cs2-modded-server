@@ -1,0 +1,298 @@
+// ============================================================================
+//
+//                    Zombie:Reloaded Class configuration
+//
+// See Class Configuration (3.7) in the manual for detailed info.
+//
+// ============================================================================
+//
+// SHORT DESCRIPTIONS
+//
+// Attribute:               Values:     Description:
+// ----------------------------------------------------------------------------
+// enabled                  yes/no      Enables or disables a class.
+// team                     number      Specifies what team the class belongs to:
+//                                      0 - Zombies
+//                                      1 - Humans
+//                                      2 - Admin mode classes (incomplete feautre!)
+// team_default             yes/no      Marks the class as the default class in the team.
+// flags                    number      Special class flags (bit field). To combine multiple flags
+//                                      use a sum of the flag values. Available flags:
+//                                      1 - Admins only
+//                                      2 - Mother zombies only
+// group                    text        Restrict class to member of this SourceMod group. Leave blank for no restriction.
+// name                     text        The class name used in class menu.
+// description              text        The class description used in class menu.
+// model_path               text        Path to model to use. Relative to cstrike folder.
+// alpha_initial            number      Initial transparency setting.
+// alpha_damaged            number      Transparency when damaged.
+// alpha_damage             number      How much damage to do before switching alpha.
+// overlay_path             text        Overlay displayed at the player.
+// nvgs                     yes/no      Give and turn on night vision.
+// fov                      number      Field of view value. 90 is default.
+// has_napalm               yes/no      Allows player to throw napalm grenades. Humans only.
+// napalm_time              decimal     Napalm burn duration. Zombies only.
+// immunity_mode            text        Special immunity modes. Some modes only works on humans or zombies:
+//                                      "none"   - Instant infection.
+//                                      "kill"   - Humans are instantly killed instead of turning zombies when attacked by zombies.
+//                                      "full"   - Completely immune. Humans can't be infected, zombies don't receive damage or knock back. Careful with this, it might not be that fun.
+//                                      "infect" - Humans are immune to infections until HP go below a threshold. Threshold at zero enable stabbing to death.
+//                                      "damage" - Zombies are immune to damage from humans/grenades, but still vulnerable to knock back.
+//                                      "delay"  - Delay infection for a certain number of seconds.
+//                                      "shield" - Shield against infections (humans) or knock back (zombies) for a certain amount of seconds (similar to TF2's übercharge). Deploy with "zshield" command.
+// immunity_amount          number      Immunity data value (humans only). Depends on the immunity mode above:
+//                                      "infect" - HP threshold. Infection will be allowed when HP go below this value. Zero will enable stabbing to death.
+//                                      "delay"  - Number of seconds the infection is delayed since first hit by a zombie.
+//                                      "shield" - Number of seconds the shield is active.
+// immunity_cooldown        number      Number of seconds of cooldown for temporary immunity actions, depending on mode.
+//                                      "delay"  - Number of seconds the delay is reduced every time a zombie attack, while a delayed infection is in progress.
+//                                      "shield" - Number of seconds the player has to wait before the shield can be used again.
+// no_fall_damage           on/off      Disables fall damage.
+// health                   number      How many health points to give.
+// health_regen_interval    decimal     Sets the regeneration interval. 0 to disable.
+// health_regen_amount      number      How much HP to give per interval.
+// health_infect_gain       number      How much HP to give when the player infects someone. Zombies only.
+// kill_bonus               number      How many points to give per kill. Zombies only.
+// speed                    decimal     The player speed. In LMV mode 300 is normal speed, 600 is double speed.
+// knockback                decimal     Force of the knockback when shot at. Zombies only.
+// jump_height              decimal     Multiplier of the players jump height. 0.0 means no jump boost, 1.0 is normal.
+// jump_distance            decimal     Multiplier of the players jump distance. 0.0 means no forward jump boost, 1.0 is normal.
+
+"classes"
+{
+    // ------------------------------------------
+    //
+    // Zombie classes
+    //
+    // ------------------------------------------
+    "zombie_nemesis"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "0"
+        "team_default"          "yes"
+        "flags"                 "0"
+        "group"                 ""
+        
+        "name"                  "Nemesis"
+        "description"           "+++ Everything!"
+        
+        // Model
+        "model_path"            "models/player/ics/hellknight_red/t_guerilla.mdl"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          "overlays/zr/zvision"
+        "nvgs"                  "no"
+        "fov"                   "120"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "15.0"
+        
+        // Player behavior
+        "immunity_mode"         "none"
+        "immunity_amount"       "1"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "64000"
+        "health_regen_interval" "0.0"
+        "health_regen_amount"   "0"
+        "health_infect_gain"    "100"
+        "kill_bonus"            "2"
+        
+        "speed"                 "400"
+        "knockback"             "1.8"
+        "jump_height"           "1.3"
+        "jump_distance"         "1.6"
+    }
+    
+    // ------------------------------------------
+    //
+    // Human classes
+    //
+    // ------------------------------------------
+    
+    "human_normal"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "1"
+        "team_default"          "yes"
+        "flags"                 "0"
+        "group"                 ""
+        
+        "name"                  "Normal Human"
+        "description"           "Default Counter-Strike settings"
+        
+        // Model
+        "model_path"            "default"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "yes"
+        "napalm_time"           "0.0"
+        
+        // Player behavior
+        "immunity_mode"         "kill"
+        "immunity_amount"       "1"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "no"
+        
+        "health"                "100"
+        "health_regen_interval" "0.0"
+        "health_regen_amount"   "0"
+        "health_infect_gain"    "0"
+        "kill_bonus"            "2"
+        
+        "speed"                 "300"
+        "knockback"             "0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+    
+    "human_speedy"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "1"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+        
+        "name"                  "Speedy"
+        "description"           "+Speed"
+        
+        // Model
+        "model_path"            "default"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "no"
+        "napalm_time"           "0.0"
+        
+        // Player behavior
+        "immunity_mode"         "kill"
+        "immunity_amount"       "1"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "0"
+        
+        "health"                "100"
+        "health_regen_interval" "0.0"
+        "health_regen_amount"   "0"
+        "health_infect_gain"    "0"
+        "kill_bonus"            "1"
+        
+        "speed"                 "360"
+        "knockback"             "0"
+        "jump_height"           "1.0"
+        "jump_distance"         "1.0"
+    }
+    
+    "human_light"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "1"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+        
+        "name"                  "Light"
+        "description"           "-Speed | +Jump | +Immunity"
+        
+        // Model
+        "model_path"            "default"
+        "alpha_initial"         "255"
+        "alpha_damaged"         "255"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "yes"
+        "napalm_time"           "0.0"
+        
+        // Player behavior
+        "immunity_mode"         "kill"
+        "immunity_amount"       "1"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "100"
+        "health_regen_interval" "0.0"
+        "health_regen_amount"   "0"
+        "health_infect_gain"    "0"
+        "kill_bonus"            "1"
+        
+        "speed"                 "260"
+        "knockback"             "0"
+        "jump_height"           "1.4"
+        "jump_distance"         "1.4"
+    }
+    
+    "human_stealth"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "1"
+        "team_default"          "no"
+        "flags"                 "0"
+        "group"                 ""
+        
+        "name"                  "Stealth"
+        "description"           "Slow, but almost invisible"
+        
+        // Model
+        "model_path"            "default"
+        "alpha_initial"         "15"
+        "alpha_damaged"         "15"
+        "alpha_damage"          "0"
+        
+        // Hud
+        "overlay_path"          ""
+        "nvgs"                  "no"
+        "fov"                   "90"
+        
+        // Effects
+        "has_napalm"            "yes"
+        "napalm_time"           "0.0"
+        
+        // Player behavior
+        "immunity_mode"         "kill"
+        "immunity_amount"       "1"
+        "immunity_cooldown"     "60"
+        "no_fall_damage"        "yes"
+        
+        "health"                "100"
+        "health_regen_interval" "0.0"
+        "health_regen_amount"   "0"
+        "health_infect_gain"    "0"
+        "kill_bonus"            "1"
+        
+        "speed"                 "260"
+        "knockback"             "0"
+        "jump_height"           "1.4"
+        "jump_distance"         "1.4"
+    }
+}

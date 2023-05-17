@@ -1,0 +1,139 @@
+"Phrases"
+{
+	// ===========================
+	// Zr Sound (module)
+	// ===========================
+	
+	"Select Countdown"
+	{
+		"no"	  	"Stemmetelling:"
+	}
+
+	"Volume Menu Title"
+	{
+		"no"	  	"[ZR] Høres volum:"
+	}
+	
+	"Volume Current"
+	{
+		"#format"	"{1:i}"
+		"no"	  	"Nåværende volum: {1}%%%"
+	}
+
+	"v100"
+	{
+		"no"	  	"100%"
+	}
+
+	"v75"
+	{
+		"no"	  	"75%"
+	}
+
+	"v50"
+	{
+		"no"	  	"50%"
+	}
+
+	"v25"
+	{
+		"no"	  	"25%"
+	}
+
+	"v10"
+	{
+		"no"	  	"10%"
+	}
+
+	"v05"
+	{
+		"no"	  	"5%"
+	}
+
+	"zr sounds"
+	{
+		"no"	  	"[ZR] Høres ut:"
+	}
+	
+	"RoundEnd_Sounds"
+	{
+		"#format"	"{1:s}"
+		"no"		"Sanger RoundEnd: {1}"
+	}
+	
+	"Volume updated"
+	{
+		"no"	  	"Volumet blir oppdatert på neste sang."
+	}
+	
+	"Volume set to"
+	{
+		"no"	  	"Volum satt til: %i%."
+	}
+	
+	"voz_1"
+	{
+		"no"	  	"Mann."
+	}
+
+	"voz_2"
+	{
+		"no"	  	"Kvinner."
+	}
+	
+	"voz_3"
+	{
+		"no"	  	"Funksjonshemmet."
+	}
+	
+	"CountDown select 0"
+	{
+		"no"	  	"Nedtelling uten lyd."
+	}
+
+	"CountDown select 1"
+	{
+		"no"	  	"Nedtelling med mannstemme."
+	}
+
+	"CountDown select 2"
+	{
+		"no"	  	"Nedtelling med kvinnestemme."
+	}
+
+	"zr_volume"
+	{
+		"no" 		"Nåværende volum:"
+	}
+	
+	"Zombis sounds enable"
+	{
+		"no" 		"Zombie lyder aktivert."
+	}
+	
+	"Zombis sounds disable"
+	{
+		"no" 		"Zombie lyder deaktivert."
+	}
+	
+	"Zombies_Sounds"
+	{
+		"#format"	"{1:s}"
+		"no"		"Zombie lyder: {1}"
+	}
+	
+	"RoundEnd sounds enable"
+	{
+		"no" 		"RoundEnd-musikk aktivert."
+	}
+	
+	"RoundEnd sounds disable"
+	{
+		"no" 		"RoundEnd-musikk deaktivert."
+	}
+
+	"Must be player"
+	{
+		"no"		"Denne funksjonen er kun reservert for spillere."
+	}
+}

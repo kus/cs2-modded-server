@@ -13,6 +13,7 @@ A single modded Counter-Strike: Global Offensive Dedicated Server that you can c
 - Prop Hunt / Hide n Seek
 - Retakes
 - Wingman
+- Zombie Reloaded
 - Multi 1v1
 - Practice (record grenade throws etc)
 - Minigames
@@ -93,6 +94,7 @@ Mod | Version | Why
 [Models in map](https://forums.alliedmods.net/showthread.php?p=2389415) | `1.2` | Allows you to place models in map. Required for CTF
 [Easy Downloader](https://forums.alliedmods.net/showthread.php?t=292207) | `1.03` | Downloads and Precaches Files/Folders. Required for CTF
 [PropHunt](https://gitlab.com/Zipcore/Prophunt) | `3.0.0` | Terrorists choose a model and hide, and CTs try to find and kill them.
+[Zombie:Reloaded](https://forums.alliedmods.net/showthread.php?t=277597) | `3.6.5` | Zombie Escape.
 [Sound Info Library](https://forums.alliedmods.net/showthread.php?t=105816) | `1.0.1` | Better calculation of sound length and information required for PropHunt
 [SpeedRules](https://gitlab.com/Zipcore/speedrules) | `1.0` | Advanced system to sync speed rules required for PropHunt
 [Simple-Downloader](https://github.com/JakubKosmaty/Simple-Downloader) | `1.0` | Force clients to download files (audio for PropHunt)

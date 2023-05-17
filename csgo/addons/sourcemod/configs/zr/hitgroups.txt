@@ -1,0 +1,127 @@
+// ============================================================================
+//
+//                              ZOMBIE:RELOADED
+//                          Hitgroup configuration
+//
+// Check the hitgroup configuration section in the manual for detailed info.
+//
+// ============================================================================
+//
+// SHORT DESCRIPTIONS
+//
+// Attribute:               Values:     Description:
+// ----------------------------------------------------------------------------
+// index                    number      The hitgroup index.
+// damage                   on/off      Allow damage to be done on this hitgroup for zombies.
+// knockback                decimal     The knockback multiplier for this hitgroup.
+
+"hitgroups" // Counter-Strike: Source hitgroups
+{
+	"Generic"
+	{
+		// General
+		"index"		"0"
+
+		// Damage
+		"damage"	"on"
+
+		// Knockback
+		"knockback"	"1.0"
+	}
+
+	"Head"
+	{
+		// General
+		"index"		"1"
+
+		// Damage
+		"damage"	"on"
+
+		// Knockback
+		"knockback"	"1.2"
+	}
+
+	"Chest"
+	{
+		// General
+		"index"		"2"
+
+		// Damage
+		"damage"	"on"
+
+		// Knockback
+		"knockback"	"1.0"
+	}
+
+	"Stomach"
+	{
+		// General
+		"index"		"3"
+
+		// Damage
+		"damage"	"on"
+
+		// Knockback
+		"knockback"	"1.0"
+	}
+
+	"LeftArm"
+	{
+		// General
+		"index"		"4"
+
+		// Damage
+		"damage"	"on"
+
+		// Knockback
+		"knockback"	"0.9"
+	}
+
+	"RightArm"
+	{
+		// General
+		"index"		"5"
+
+		// Damage
+		"damage"	"on"
+
+		// Knockback
+		"knockback"	"0.9"
+	}
+
+	"LeftLeg"
+	{
+		// General
+		"index"		"6"
+
+		// Damage
+		"damage"	"on"
+
+		// Knockback
+		"knockback"	"0.9"
+	}
+
+	"RightLeg"
+	{
+		// General
+		"index"		"7"
+
+		// Damage
+		"damage"	"on"
+
+		// Knockback
+		"knockback"	"0.9"
+	}
+
+	"Gear"
+	{
+		// General
+		"index"		"8"
+
+		// Damage
+		"damage"	"on"
+
+		// Knockback
+		"knockback"	"1.0"
+	}
+}

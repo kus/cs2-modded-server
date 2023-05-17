@@ -1,0 +1,1086 @@
+﻿"Phrases"
+{
+	// ===========================
+	// General (base)
+	// ===========================
+
+	"General round objective"
+	{
+		"no"		"Spillet går ut på at @greenmennesker og zombier@default kjemper mot hverandre. Målet for zombiene er å infisere alle med kniven."
+	}
+
+	"General zmenu reminder"
+	{
+		"no"		"For å få hjelp om kommandoer til Zombie:Reloaded, skriv \"{1}{2}\" i samtaleområdet."
+	}
+
+	// ===========================
+	// Generic (base)
+	// ===========================
+
+	// General
+
+	"Literal text"
+	{
+		"no"		"{1}"
+	}
+
+	"Feature is disabled"
+	{
+		"no"		"Denne funksjonen er deaktivert av tjeneren."
+	}
+
+	"Not enough money"
+	{
+		"no"		"Du har ikke nok penger til å kjøpe denne gjenstanden."
+	}
+
+	"Must be player"
+	{
+		"no"		"Denne funksjonen gjelder kun for spillere."
+	}
+
+	"Must be admin"
+	{
+		"no"		"Denne funksjonen gjelder kun for administratorer."
+	}
+
+	"No access to command"
+	{
+		"no"		"Du har ikke tilgang til denne kommandoen."
+	}
+
+	"Must be alive"
+	{
+		"no"		"Denne funksjonen gjelder kun for levende spillere."
+	}
+
+	"Must be dead"
+	{
+		"no"		"Denne funksjonen gjelder kun før døde spillere."
+	}
+
+	"Must be on team"
+	{
+		"no"		"Du må være på et lag for å kunne bruke denne funksjonen."
+	}
+
+	"Must be zombie"
+	{
+		"no"		"Du må være zombie for å kunne bruke denne funksjonen."
+	}
+
+	"Must be human"
+	{
+		"no"		"Du må være menneske for å kunne bruke denne funksjonen."
+	}
+	
+	"Increase by"
+	{
+		"no"		"Økning med {1}"
+	}
+
+	"Decrease by"
+	{
+		"no"		"Reduser med {1}"
+	}
+
+	"Current Value"
+	{
+		"no"		"Gjeldende verdi:"
+	}
+
+	"Zombie"
+	{
+		"no"		"Zombie"
+	}
+
+	"Human"
+	{
+		"no"		"Menneske"
+	}
+
+	// Menu
+
+	"Menu empty"
+	{
+		"no"		"(Tom)"
+	}
+
+	// ===========================
+	// Config (core)
+	// ===========================
+
+	// Commands
+
+	"Config command reload syntax"
+	{
+		"no"		"Syntaks: zr_reloadconfig <fil 1> [fil 2] ... - Laster om en konfigurasjonsfil."
+	}
+
+	"Config command reload related commands"
+	{
+		"no"		"Relaterte kommandoer: zr_config_reloadall"
+	}
+
+	"Config command reload syntax aliases"
+	{
+		"no"		"Filalias:\n* \"{1}\"\n* \"{2}\"\n* \"{3}\"\n* \"{4}\"\n* \"{5}\""
+	}
+
+	"Config command reload invalid"
+	{
+		"no"		"Ugyldig filalias: \"{1}\""
+	}
+
+	"Config command reload not loaded"
+	{
+		"no"		"Kunne ikke laste konfigurasjonsfilen \"{1}\". Filen har ugyldig innhold eller funksjonen er deaktivert."
+	}
+
+	"Config command reload all stats begin"
+	{
+		"no"		"Laster om alle konfigurasjonsfilene til Zombie:Reloaded...\n------------------------------------------------"
+	}
+
+	"Config command reload all stats successful"
+	{
+		"no"		"\"{1}\" - Vellykket."
+	}
+
+	"Config command reload all stats failed"
+	{
+		"no"		"\"{1}\" - Feilet. Filen har ugyldig innhold eller funksjonen er deaktivert."
+	}
+
+	// ===========================
+	// Log (core)
+	// ===========================
+
+	"Log Generic Flag"
+	{
+		// Max length: 19 characters.
+		"no"		"Generisk flagg:"
+	}
+
+	"Log Value"
+	{
+		// Max length: 7 characters:
+		"no"		"Verdi:"
+	}
+
+	"Log Module"
+	{
+		// Max length: 23 characters:
+		"no"		"Modul:"
+	}
+
+	"Log Status"
+	{
+		"no"		"Filterstatus:"
+	}
+
+	"Log Module Filtering"
+	{
+		"no"		"Modulfiltrering:"
+	}
+
+	"Log Module Short Name"
+	{
+		"no"		"Kort navn:"
+	}
+
+	// ===========================
+	// Classes
+	// ===========================
+
+	// General
+
+	"Classes admin mode enabled"
+	{
+		"no"		"Administratormodus er aktivert!"
+	}
+
+	"Classes random assignment"
+	{
+		"no"		"Du er blitt tilfeldig tildelt klassen @green\"{1}\"@default."
+	}
+
+	// Center Text/HUD
+
+	"Classes overlay toggle"
+	{
+		"no"		"Kommandoer for å veksle mellom overlegg: {1}"
+	}
+
+	// Menu
+
+	"Classes menu title"
+	{
+		"no"		"Klassevalg:"
+	}
+
+	"Classes menu active"
+	{
+		"no"		"Aktiv: {1}"
+	}
+
+	"Classes menu next"
+	{
+		"no"		"Påfølgende: {1}"
+	}
+
+	"Classes menu select zombie"
+	{
+		"no"		"Velg zombieklasse"
+	}
+
+	"Classes menu select human"
+	{
+		"no"		"Velg menneskeklasse"
+	}
+
+	"Classes menu select admin"
+	{
+		"no"		"Velg administratormodusklasse"
+	}
+
+	"Classes menu admin mode toggle"
+	{
+		"no"		"Veksle mellom administratormodus"
+	}
+
+	"Classes Menu Team Select Title"
+	{
+		"no"		"Velg lag:"
+	}
+
+	"Classes Menu Zombies"
+	{
+		"no"		"Zombier"
+	}
+
+	"Classes Menu Humans"
+	{
+		"no"		"Mennesker"
+	}
+
+	"Classes Menu Multiplier Select Title"
+	{
+		"no"		"Velg multiplikator:"
+	}
+
+	"Classes Menu Adjust Value"
+	{
+		"no"		"Juster verdi:"
+	}
+
+	// Attributes
+
+	"Classes Attrib Napalm Time"
+	{
+		"no"		"Varighet for brannbombegranater"
+	}
+
+	"Classes Attrib Health"
+	{
+		"no"		"Helse"
+	}
+
+	"Classes Attrib Regen Interval"
+	{
+		"no"		"Interval for helseregenerasjon"
+	}
+
+	"Classes Attrib Regen Amount"
+	{
+		"no"		"Mengde for helseregenerasjon"
+	}
+
+	"Classes Attrib Infect Gain"
+	{
+		"no"		"Helsegevinst ved infeksjon"
+	}
+
+	"Classes Attrib Speed"
+	{
+		"no"		"Løpehastighet"
+	}
+
+	"Classes Attrib Knockback"
+	{
+		"no"		"Tilbakeslag"
+	}
+
+	"Classes Attrib Jump Height"
+	{
+		"no"		"Hoppehøyde"
+	}
+
+	"Classes Attrib Jump Distance"
+	{
+		"no"		"Hoppelengde"
+	}
+
+	"Classes Selection Not Allowed"
+	{
+		"no"		"Endring av klasse er ikke tillatt."
+	}
+
+	// ===========================
+	// Immunity
+	// ===========================
+
+	"Immunity Shield Not Available"
+	{
+		"en"		"Du har ikke skjold."
+	}
+
+	"Immunity Shield Cooldown"
+	{
+		"en"		"{1} sekunder igjen til skjoldet er tilgjengelig."
+	}
+
+	"Immunity Shield Time Left"
+	{
+		"en"		"Tid igjen med skjold: {1}"
+	}
+
+	// ===========================
+	// Overlays (core)
+	// ===========================
+
+	"Overlays not supported"
+	{
+		"no"		"Blokkerer overlegg - DirectX {1} oppdaget, men DirectX {2} er påkrevd."
+	}
+
+	// ===========================
+	// Infect (core)
+	// ===========================
+
+	// General
+
+	"Infect infected"
+	{
+		"no"		"Du er blitt infisert! Smitt så mange mennesker du klarer ved å bruke kniven."
+	}
+
+	"Infect human"
+	{
+		"no"		"De barmhjertige gudene (kjent som administratorer) har berget sjelen din. Finn et gjemmested!"
+	}
+
+	"Infect disconnect"
+	{
+		"no"		"Den siste zombien har forlatt spillet. Du er blitt valgt som erstatning."
+	}
+
+	// Center Text
+
+	"Infect countdown"
+	{
+		"no"		"Første infeksjon om {1} sekunder."
+	}
+
+	// Menu
+
+	"Infect menu clients title"
+	{
+		"no"		"Spillerbehandling\nVeksle mellom zombie og menneske:\n[] = Infisert"
+	}
+
+	// Commands
+
+	"Infect command infect syntax"
+	{
+		"no"		"Infiserer en spiller. Syntaks: zr_infect <mål> [teleporter - 1/0]"
+	}
+
+	"Infect command human syntax"
+	{
+		"no"		"Gjør en spiller om til et menneske. Syntaks: zr_human <mål> [teleporter - 1/0] [beskyttelse - 1/0]"
+	}
+
+	"Infect command infect successful"
+	{
+		"no"		"@green{1}@default ble vellykket infisert."
+	}
+
+	"Infect command infect mother successful"
+	{
+		"no"		"@green{1}@default ble vellykket infisert som moderzombie."
+	}
+
+	"Infect command infect unsuccessful"
+	{
+		"no"		"@green{1}@default er allerede en zombie."
+	}
+
+	"Infect command human successful"
+	{
+		"no"		"@green{1}@default ble vellykket gjort om til et menneske."
+	}
+
+	"Infect command human unsuccessful"
+	{
+		"no"		"@green{1}@default er allerede et menneske."
+	}
+
+	// ===========================
+	// Damage (core)
+	// ===========================
+
+	"Damage suicide intercept"
+	{
+		"no"		"Selvmordsforsøk hindret."
+	}
+
+	// ===========================
+	// Menu (core)
+	// ===========================
+
+	// General
+
+	"Menu main title"
+	{
+		"no"		"ZR-kommandoer:\nStart kommandoen med \"{1}\" or \"{2}\" (skjules) i samtaleområdet."
+	}
+
+	"Menu main zadmin"
+	{
+		"no"		"ZAdmin - Åpne administrasjonsmeny"
+	}
+
+	"Menu main zclass"
+	{
+		"no"		"ZClass - Endre klasseinstillinger"
+	}
+
+	"Menu main zcookies"
+	{
+		"no"		"ZCookies - Endre lagrede instillinger"
+	}
+
+	"Menu main zspawn"
+	{
+		"no"		"ZSpawn - Bli med i spillet øyeblikkelig"
+	}
+
+	"Menu main ztele"
+	{
+		"no"		"ZTele - Teleporter til startområde"
+	}
+
+	"Menu main zhp"
+	{
+		"no"		"ZHP - Vis nåværende helsenivå"
+	}
+
+	"Menu main zmarket"
+	{
+		"no"		"ZMarket - Endre våpeninstillinger"
+	}
+
+	// ===========================
+	// Weapons (core)
+	// ===========================
+
+	// General
+
+	"Zombie cant use weapon"
+	{
+		"no"		"Zombier kan ikke bruke våpen."
+	}
+
+	// Restrict
+
+	"Restrict weapon"
+	{
+		"no"		"Våpenet @green\"{1}\"@default ble sperret."
+	}
+
+	"Unrestrict weapon"
+	{
+		"no"		"Våpenet @green\"{1}\"@default er ikke lenger sperret."
+	}
+
+	"Restrict weapon stopped"
+	{
+		"no"		"Våpenet @green\"{1}\"@default er allerede sperret."
+	}
+
+	"Unrestrict weapon stopped"
+	{
+		"no"		"Våpenet @green\"{1}\"@default er ikke sperret."
+	}
+
+	"Restrict weapon type"
+	{
+		"no"		"Våpentypen @green\"{1}\"@default er sperret."
+	}
+
+	"Unrestrict weapon type"
+	{
+		"no"		"Våpentypen @green\"{1}\"@default er ikke lenger sperret."
+	}
+
+	"Restrict weapon type stopped"
+	{
+		"no"		"Våpentypen @green\"{1}\"@default er allerede sperret."
+	}
+
+	"Unrestrict weapon type stopped"
+	{
+		"no"		"Våpentypen @green\"{1}\"@default er ikke sperret."
+	}
+
+	"Restrict weapon untoggleable"
+	{
+		"no"		"Våpenet @green\"{1}\"@default kan ikke sperres."
+	}
+
+	"Weapon invalid"
+	{
+		"no"		"Våpenet eller våpentypen @green\"{1}\"@default er ugyldig."
+	}
+
+	"Weapon is restricted"
+	{
+		"no"		"Våpenet @green{1}@default er sperret."
+	}
+
+	// ZMarket
+
+	"Weapons zmarket buyzone"
+	{
+		"no"		"Du må være i en kjøpesone for å kunne bruke ZMarket."
+	}
+
+	"Weapons zmarket purchase"
+	{
+		"no"		"Du har kjøpt våpenet @green{1}@default. Velg gjenstanden igjen for å kjøpe mer ammunisjon."
+	}
+
+	"Weapons zmarket purchase max"
+	{
+		"no"		"Våpenet @green{1}@default har en kjøpegrense på @green{2}@default enheter. Vent til neste runde eller gjenoppliving."
+	}
+
+	"Weapons zmarket grenade max"
+	{
+		"no"		"Du kan bare holde {1} granat(er) av denne typen."
+	}
+
+	"Weapons zmarket auto-rebuy toggle on"
+	{
+		"no"		"Autokjøp er aktivert, dine valg vil automatisk bli kjøpt hver runde eller hver gjenoppliving."
+	}
+
+	"Weapons zmarket auto-rebuy toggle off"
+	{
+		"no"		"Autokjøp er deaktivert."
+	}
+
+	"Weapons zmarket updated loadout"
+	{
+		"no"		"Du kan ikke kjøpe våpen for øyeblikket, men våpenvalget er blitt lagret."
+	}
+
+	"Weapons zmarket get current loadout"
+	{
+		"no"		"Våpenvalg oppdatert. Bruk gjenkjøpvalget for å kjøpe disse våpnene igjen."
+	}
+
+	// Commands
+
+	"Weapons command restrict syntax"
+	{
+		"no"		"Sperrer et våpen eller en våpentype. Syntaks: zr_restrict <våpen|våpentype> [våpen|våpentype] ..."
+	}
+
+	"Weapons command unrestrict syntax"
+	{
+		"no"		"Fjerner sperre av et våpen eller en våpentype. Syntaks: zr_unrestrict <våpen|våpentype> [våpen|våpentype] ..."
+	}
+
+	// Menu (Restrict)
+
+	"Weapons menu restrict main title"
+	{
+		"no"		"Våpenbehandling"
+	}
+
+	"Weapons menu restrict main restrict"
+	{
+		"no"		"Våpensperringer"
+	}
+
+	"Weapons menu restrict main market"
+	{
+		"no"		"ZMarket"
+	}
+
+	"Weapons menu restrict types title"
+	{
+		"no"		"Våpensperringer\nVelg våpentype:"
+	}
+
+	"Weapons menu restrict types weapon type title"
+	{
+		"no"		"Våpensperringer\nVåpentype: {1}\n[] = Sperret"
+	}
+
+	"Weapons menu restrict types restrict all"
+	{
+		"no"		"Sperr våpentypen \"{1}\""
+	}
+
+	"Weapons menu restrict types unrestrict all"
+	{
+		"no"		"Fjern sperre for våpentypen \"{1}\""
+	}
+
+	"Weapons menu restrict zmarket title"
+	{
+		"no"		"ZMarket\nVelg instilling:"
+	}
+
+	"Weapons menu restrict zmarket buyzone"
+	{
+		"no"		"Kun i kjøpesoner - {1}"
+	}
+
+	// Menu (ZMarket)
+
+	"Weapons menu zmarket main title"
+	{
+		"no"		"ZMarket"
+	}
+
+	"Weapons menu zmarket main get loadout"
+	{
+		"no"		"Lagre gjeldende våpenvalg"
+	}
+
+	"Weapons menu zmarket main view loadout"
+	{
+		"no"		"Vis våpenvalg"
+	}
+
+	"Weapons menu zmarket main rebuy"
+	{
+		"no"		"Kjøp lagret våpenvalg"
+	}
+
+	"Weapons menu zmarket main auto-rebuy"
+	{
+		"no"		"Autokjøp: {1}"
+	}
+
+	"Weapons menu zmarket main weapons list"
+	{
+		"no"		"Vis våpenliste"
+	}
+
+	"Weapons menu zmarket loadout title"
+	{
+		"no"		"ZMarket\nGjeldende våpenvalg:\nFjern våpen ved å velge det."
+	}
+
+	"Weapons menu zmarket loadout primary"
+	{
+		"no"		"Primærvåpen: {1}"
+	}
+
+	"Weapons menu zmarket loadout secondary"
+	{
+		"no"		"sekundærvåpen: {1}"
+	}
+
+	"Weapons menu zmarket loadout melee"
+	{
+		"no"		"Nærkamp: {1}"
+	}
+
+	"Weapons menu zmarket loadout projectile"
+	{
+		"no"		"Prosjektiler: {1}"
+	}
+
+	"Weapons menu zmarket loadout explosive"
+	{
+		"no"		"Granater: {1}"
+	}
+
+	"Weapons menu zmarket loadout nvgs"
+	{
+		"no"		"Nattsyn: {1}"
+	}
+
+	"Weapons menu zmarket loadout empty"
+	{
+		"no"		"(Ingen)"
+	}
+
+	"Weapons menu zmarket types title"
+	{
+		"no"		"ZMarket\nVelg våpentype:"
+	}
+
+	"Weapons menu zmarket types weapon type title"
+	{
+		"no"		"ZMarket\nVåpentype: {1}\n[] = Sperret"
+	}
+
+	"Weapons menu zmarket types weapon info"
+	{
+		"no"		"{1} (${2})\nAntall kjøp igjen: {3}"
+	}
+
+	"Weapons menu zmarket types weapon ammo"
+	{
+		"no"		"Ammunisjon"
+	}
+
+	// ===========================
+	// Hitgroups (core)
+	// ===========================
+
+	// Menu
+
+	"Hitgroups menu hitgroups title"
+	{
+		"no"		"Treffgruppebehandling\nKommandoer: zr_hitgroup(_enable_all/_headshots_only)\nVelg en treffgruppe for å aktivere/deaktivere:"
+	}
+
+	"Hitgroups menu hitgroups enable all"
+	{
+		"no"		"Aktiver alle treffgrupper"
+	}
+
+	"Hitgroups menu hitgroups headshots only"
+	{
+		"no"		"Kun hodeskudd"
+	}
+
+	// Commands
+
+	"Hitgroups command syntax"
+	{
+		"no"		"Veksle, aktiver eller deaktiver en treffgruppe til zombiene. Usage: zr_hitgroup <treffgruppe> [aktiv - 1/0]"
+	}
+
+	"Hitgroups command related commands"
+	{
+		"no"		"Relaterte kommandoer: zr_hitgroup_enable_all, zr_hitgroup_headshots_only"
+	}
+
+	"Hitgroups command syntax names"
+	{
+		"no"		"Treffgruppenavn:"
+	}
+
+	"Hitgroups command successful on"
+	{
+		"no"		"Skade for treffgruppen \"{1}\" er aktivert."
+	}
+
+	"Hitgroups command successful off"
+	{
+		"no"		"Skade for treffgruppen \"{1}\" er deaktivert."
+	}
+
+	"Hitgroups command invalid hitgroup"
+	{
+		"no"		"\"{1}\" er ikke en gyldig treffgruppe. Bruk zr_hitgroup for å se alle treffgruppenavnene."
+	}
+
+	"Hitgroups command enable all successful"
+	{
+		"no"		"Alle treffgruppene er aktivert."
+	}
+
+	"Hitgroups command headshots only successful"
+	{
+		"no"		"Zombiene kan nå kun bli skadet av hodeskudd."
+	}
+
+	// ===========================
+	// ZAdmin (core)
+	// ===========================
+
+	"ZAdmin main title"
+	{
+		"no"		"ZAdmin\nVelg kategori:"
+	}
+
+	"ZAdmin main class multipliers"
+	{
+		"no"		"Klassemultiplikatorer"
+	}
+
+	"ZAdmin main weapons"
+	{
+		"no"		"Våpenbehandling"
+	}
+
+	"ZAdmin main hitgroups"
+	{
+		"no"		"Treffgruppebehandling"
+	}
+
+	"ZAdmin main zombie"
+	{
+		"no"		"Spillerbehandling"
+	}
+
+	"ZAdmin main force zspawn"
+	{
+		"no"		"Tving gjenoppliving"
+	}
+
+	"ZAdmin main force ztele"
+	{
+		"no"		"Tving teleport"
+	}
+
+	// ===========================
+	// AntiStick (module)
+	// ===========================
+
+	// Commands
+	
+	// Not translating antistick phrases because hull width settings had no effect. To be removed.
+
+	"AntiStick command set width syntax"
+	{
+		"no"		"Sets the width of a model's hull. (See zr_antistick_list_models) Usage: zr_antistick_set_width <model/player> <width>"
+	}
+
+	"AntiStick command list models list"
+	{
+		"no"		"Player name:                        Model:                                              Hull width:\n-------------------------------------------------------------------------------------------------------------"
+	}
+
+	"AntiStick command list models name"
+	{
+		"no"		"{1} {2} {3}"
+	}
+
+	"AntiStick command set width successful"
+	{
+		"no"		"Model hull width for model \"{1}\" has been changed to \"{2}.\""
+	}
+
+	"AntiStick command set width invalid model"
+	{
+		"no"		"Invalid model/player specified: \"{1}\""
+	}
+
+	"AntiStick command set width invalid width"
+	{
+		"no"		"Invalid model hull width specified: \"{1}\""
+	}
+
+	// ===========================
+	// Spawn Protect (module)
+	// ===========================
+
+	// General
+
+	"Spawn protection begin"
+	{
+		"no"		"Zombier tilstede, du er beskyttet og har {1} sekunder på å finne et trygt sted."
+	}
+
+	"Spawn protection end"
+	{
+		"no"		"Du er nå utsatt for å bli smittet av en zombie."
+	}
+
+	// HUD
+
+	"Spawn Protect"
+	{
+		"no"		"Zombiebeskyttelsen stopper om {1} sekunder."
+	}
+
+	// ===========================
+	// ZCookies (module)
+	// ===========================
+
+	"ZCookies Menu main title"
+	{
+		"no"		"ZCookies\nVelg informasjonskapsel:"
+	}
+
+	"ZCookies menu main auto-rebuy"
+	{
+		"no"		"Autokjøp (ZMarket): {1}"
+	}
+
+	"ZCookies menu main zhp"
+	{
+		"no"		"ZHP-skjerm: {1}"
+	}
+
+	"ZCookies menu main overlay"
+	{
+		"no"		"Vis klasseoverlegg: {1}"
+	}
+
+	"ZCookies zmarket loadout"
+	{
+		"no"		"Våpenvalg (ZMarket)"
+	}
+
+	// ===========================
+	// ZSpawn (module)
+	// ===========================
+
+	// General
+
+	"ZSpawn double spawn"
+	{
+		"no"		"ZSpawn kan kun bli brukt hvis du koblet til servern midt i en runde."
+	}
+
+	"ZSpawn timelimit"
+	{
+		"no"		"Tidsfristen ({1} sekunder) for å bruke ZSpawn har gått ut."
+	}
+
+	// Menu
+
+	"ZSpawn clients title"
+	{
+		"no"		"Tving gjenoppliving (zr_zspawn_force)\nVelg en spiller:"
+	}
+
+	// Commands
+
+	"ZSpawn command force syntax"
+	{
+		"no"		"Tving gjenoppliving på en spiller. Syntaks: zr_zspawn_force <spiller> ['0' = Menneske | '1' = Zombie]"
+	}
+
+	"ZSpawn command force successful"
+	{
+		"no"		"{1} ble vellykket gjenopplivet."
+	}
+
+	"ZSpawn command force unsuccessful"
+	{
+		"no"		"{1} kunne ikke bli gjenopplivet."
+	}
+
+	// ===========================
+	// ZTele (module)
+	// ===========================
+
+	// General
+
+	"ZTele restricted human"
+	{
+		"no"		"Mennesker kan ikke teleporteres for øyeblikket."
+	}
+
+	"ZTele max"
+	{
+		"no"		"Du har brukt opp alle teleportene ({1}) for denne runden."
+	}
+
+	"ZTele in progress"
+	{
+		"no"		"Du venter på allerede på en teleport."
+	}
+
+	"ZTele autocancel text"
+	{
+		"no"		"Teleport avbrutt. Du har forflyttet deg lengre enn tillatt da du ventet på en teleport. Maks lengde er {1} fot."
+	}
+
+	// Center Text
+
+	"ZTele countdown"
+	{
+		"no"		"Teleporterer til startområdet om {1} sekunder."
+	}
+
+	"ZTele autocancel centertext"
+	{
+		"no"		"Teleport avbrutt."
+	}
+
+	"ZTele countdown end"
+	{
+		"no"		"Teleportert til startområdet. (Antall: {1}/{2})"
+	}
+
+	// Menu
+
+	"ZTele clients title"
+	{
+		"no"		"Tving teleport (zr_ztele_force)\nVelg en spiller:"
+	}
+
+	// Commands
+
+	"ZTele command force syntax"
+	{
+		"no"		"Tving teleport på en spiller. Syntaks: zr_ztele_force <spiller>"
+	}
+
+	"ZTele command force successful"
+	{
+		"no"		"{1} ble vellykket teleportert."
+	}
+
+	"ZTele command force unsuccessful"
+	{
+		"no"		"{1} kunne ikke bli teleportert."
+	}
+
+	// ===========================
+	// ZHP (module)
+	// ===========================
+
+	// General
+
+	"ZHP enable"
+	{
+		"no"		"HP-skjerm aktivert. Du vil se din ekte helseverdi som zombie."
+	}
+
+	"ZHP disable"
+	{
+		"no"		"HP-skjerm deaktivert."
+	}
+
+	// HUD
+
+	"Display HP"
+	{
+		"no"		"HP: {1}"
+	}
+
+	// ===========================
+	// Volumetric features (module)
+	// ===========================
+
+	"Vol Anticamp Message"
+	{
+		"no"		"Dette området er sperret, vennligst gå videre."
+	}
+
+	"Vol Slay"
+	{
+		"no"		"Drepte \"{1}\" for opphold i sperret område (ID: {2})."
+	}
+
+	"Vol Ignite"
+	{
+		"no"		"Satt fyr på \"{1}\" for opphold i sperret område (ID: {2})."
+	}
+}

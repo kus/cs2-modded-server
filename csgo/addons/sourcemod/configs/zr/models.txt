@@ -1,0 +1,71 @@
+// ============================================================================
+//
+//                              ZOMBIE:RELOADED
+//                            Model configuration
+//
+// See Model Configuration (3.5) section in the manual for detailed info.
+//
+// ============================================================================
+//
+// SHORT DESCRIPTIONS
+//
+// Attribute:   Description:
+// ----------------------------------------------------------------------------
+// name     Name of model file, without extension.
+// path     Path to model files. MUST end with "/".
+// team     Model type:
+//              "zombies"
+//              "humans"
+// access   Access type:
+//              "public"        - Everyone can use the model.
+//              "admins"        - Model can only be used by admins.    
+//              "hidden"        - Model is excluded from public random selections.
+//              "motherzombies" - Model can only be used by mother zombies.
+//              "group"         - Use group authentication.
+// group    If access is "group": A SourceMod group name. Otherwise blank ("").
+
+"models"
+{
+    "gozombie"
+    {
+        "name"      "gozombie"
+        "path"      "models/player/kuristaja/zombies/gozombie/"
+        "team"      "zombies"
+        "access"    "public"
+        "group"     ""
+    }
+    
+    // Special model examples:
+    // -----------------------
+    
+    // Only admins can use this zombie model.
+    //"admin_zombie"
+    //{
+    //    "name"      "1337model"
+    //    "path"      "models/player/adminmodels/"
+    //    "team"      "zombies"
+    //    "access"    "admins"
+    //    "group"     ""
+    //}
+    
+    // Only members of the zr_vip group in SourceMod can use this human model.
+    //"vip_human"
+    //{
+    //    "name"      "vipmodel"
+    //    "path"      "models/player/vip/"
+    //    "team"      "humans"
+    //    "access"    "group"
+    //    "group"     "zr_vip"
+    //}
+    
+    // This model will be excluded from public random selections. Only classes
+    // that use "random_hidden" or explicit specify this model will be able to use it.
+    //"hidden"
+    //{
+    //    "name"      "hiddenmodel"
+    //    "path"      "models/player/"
+    //    "team"      "humans"
+    //    "access"    "hidden"
+    //    "group"     ""
+    //}
+}

@@ -1,0 +1,139 @@
+"Phrases"
+{
+	// ===========================
+	// Zr Sound (module)
+	// ===========================
+	
+	"Select Countdown"
+	{
+		"pt"	  	"Contagem Regressiva Voz:"
+	}
+
+	"Volume Menu Title"
+	{
+		"pt"	  	"[ZR] Sounds Volume:"
+	}
+	
+	"Volume Current"
+	{
+		"#format"	"{1:i}"
+		"pt"	  	"Volume Atual: {1}%%%"
+	}
+
+	"v100"
+	{
+		"pt"	  	"100%"
+	}
+
+	"v75"
+	{
+		"pt"	  	"75%"
+	}
+
+	"v50"
+	{
+		"pt"	  	"50%"
+	}
+
+	"v25"
+	{
+		"pt"	  	"25%"
+	}
+
+	"v10"
+	{
+		"pt"	  	"10%"
+	}
+
+	"v05"
+	{
+		"pt"	  	"5%"
+	}
+
+	"zr sounds"
+	{
+		"pt"	  	"[ZR] Sounds:"
+	}
+	
+	"RoundEnd_Sounds"
+	{
+		"#format"	"{1:s}"
+		"pt"		"Musicas RoundEnd: {1}"
+	}
+	
+	"Volume updated"
+	{
+		"pt"	  	"O volume será atualizado na próxima música."
+	}
+	
+	"Volume set to"
+	{
+		"pt"	  	"Volume definido para: %i%."
+	}
+	
+	"voz_1"
+	{
+		"pt"	  	"Homem."
+	}
+
+	"voz_2"
+	{
+		"pt"	  	"Mulher."
+	}
+	
+	"voz_3"
+	{
+		"pt"	  	"Desativado."
+	}
+	
+	"CountDown select 0"
+	{
+		"pt"	  	"Contagem Regressiva Sem Som."
+	}
+
+	"CountDown select 1"
+	{
+		"pt"	  	"Contagem Regressiva Com Voz Masculina."
+	}
+
+	"CountDown select 2"
+	{
+		"pt"	  	"Contagem Regressiva Com Voz Feminina."
+	}
+
+	"zr_volume"
+	{
+		"pt" 		"Volume Atual:"
+	}
+	
+	"Zombis sounds enable"
+	{
+		"pt" 		"Sons dos Zumbis Ativado."
+	}
+	
+	"Zombis sounds disable"
+	{
+		"pt" 		"Sons dos Zumbis Desativado."
+	}
+	
+	"Zombies_Sounds"
+	{
+		"#format"	"{1:s}"
+		"pt"		"Sons dos Zumbis: {1}"
+	}
+	
+	"RoundEnd sounds enable"
+	{
+		"pt" 		"Música do RoundEnd Ativada."
+	}
+	
+	"RoundEnd sounds disable"
+	{
+		"pt" 		"Música do RoundEnd Desativada."
+	}
+
+	"Must be player"
+	{
+		"pt"		"Este recurso é reservado apenas para jogadores."
+	}
+}

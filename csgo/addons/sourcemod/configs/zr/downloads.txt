@@ -1,0 +1,65 @@
+// ============================================================================
+//
+//                              ZOMBIE:RELOADED
+//                           Downloads configuration
+//
+// See Download List (3.6) section in the manual for detailed info.
+//
+// ============================================================================
+// * Each uncommented line will be used as a file path for clients to download.
+// ----------------------------------------------------------------------------
+// Defaults:
+// ----------------------------------------------------------------------------
+
+// team win overlays
+materials/overlays/zr/zombies_win.vtf
+materials/overlays/zr/zombies_win.vmt
+materials/overlays/zr/humans_win.vtf
+materials/overlays/zr/humans_win.vmt
+
+// zvision
+materials/overlays/zr/zvision.vtf
+materials/overlays/zr/zvision.vmt
+
+// csgo zombie sounds
+
+sound/zr/zombie_pain1.mp3
+sound/zr/zombie_pain2.mp3
+sound/zr/zombie_pain3.mp3
+sound/zr/zombie_pain4.mp3
+sound/zr/zombie_pain5.mp3
+sound/zr/zombie_pain6.mp3
+
+sound/zr/zombie_voice_idle1.mp3
+sound/zr/zombie_voice_idle2.mp3
+sound/zr/zombie_voice_idle3.mp3
+sound/zr/zombie_voice_idle4.mp3
+sound/zr/zombie_voice_idle5.mp3
+sound/zr/zombie_voice_idle6.mp3
+sound/zr/zombie_voice_idle7.mp3
+sound/zr/zombie_voice_idle8.mp3
+sound/zr/zombie_voice_idle9.mp3
+sound/zr/zombie_voice_idle10.mp3
+sound/zr/zombie_voice_idle11.mp3
+sound/zr/zombie_voice_idle12.mp3
+sound/zr/zombie_voice_idle13.mp3
+sound/zr/zombie_voice_idle14.mp3
+
+sound/zr/zombie_die1.mp3
+sound/zr/zombie_die2.mp3
+sound/zr/zombie_die3.mp3
+
+sound/ambient/zr/zr_ambience.mp3
+sound/zr/fz_scream1.mp3
+
+
+// -- GOZOMBIE
+
+materials/models/player/kuristaja/zombies/gozombie/csgo_zombie_skin.vmt
+materials/models/player/kuristaja/zombies/gozombie/csgo_zombie_normal.vtf
+
+// Player model
+models/player/kuristaja/zombies/gozombie/gozombie.dx90.vtx
+models/player/kuristaja/zombies/gozombie/gozombie.mdl
+models/player/kuristaja/zombies/gozombie/gozombie.phy
+models/player/kuristaja/zombies/gozombie/gozombie.vvd
