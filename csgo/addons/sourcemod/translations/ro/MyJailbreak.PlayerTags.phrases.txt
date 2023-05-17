@@ -1,0 +1,26 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:27 UTC
+// Language: Romanian (ro)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/181
+//
+"Phrases"
+{
+
+	"playertags_incognito_on"
+	{
+		"ro"		"Modul incognito {purple}este activat pentru {green}{1} secunde!"
+	}
+
+	"playertags_incognito_on_perm"
+	{
+		"ro"		"Modul incognito {purple}este activat permanent! {default}scrie /incognito pentru a dezactiva."
+	}
+
+	"playertags_incognito_off"
+	{
+		"ro"		"Modul incognito {purple}este dezactivat!"
+	}
+
+}

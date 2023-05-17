@@ -1,0 +1,391 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:23 UTC
+// Language: Czech (cze)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/196
+//
+"Phrases"
+{
+
+	"request_openrefuse"
+	{
+		"cze"		"Warden zapnul odmitani. {purple} Napis !refuse abys odmitl hru !"
+	}
+
+	"request_refusing"
+	{
+		"cze"		"{purple}{1} {default} {purple}odmitl hru !"
+	}
+
+	"request_alreadyrefused"
+	{
+		"cze"		"Uz jsi {purple} odmitl hru !"
+	}
+
+	"request_refuseallow"
+	{
+		"cze"		"Warden musi nejprve {purple}povolit odmitani napsanim !refuse"
+	}
+
+	"request_notalivect"
+	{
+		"cze"		"Jsi mrtvej nebo Dozorce !"
+	}
+
+	"request_fullhp"
+	{
+		"cze"		"Pekny pokus ! Mas plne HP !"
+	}
+
+	"request_refusedtimes"
+	{
+		"cze"		"Uz si {purple}odmitl {1} krat{default} v tomto kole !"
+	}
+
+	"request_capitulation"
+	{
+		"cze"		"{purple}{1} {default} {purple}kapituloval! {default}Bude Warden akceptovat tento pozadavek ?"
+	}
+
+	"request_alreadycapitulated"
+	{
+		"cze"		"Uz jsi se {purple}vzdal !"
+	}
+
+	"request_knifeback"
+	{
+		"cze"		"Dostal jsi zpet svuj {purple}nuz."
+	}
+
+	"request_accepted"
+	{
+		"cze"		"{2} akceptuje {1} pozadavek."
+	}
+
+	"request_noaccepted"
+	{
+		"cze"		"{2}  {purple}{default} neakceptoval {1} pozadavek."
+	}
+
+	"request_refuser"
+	{
+		"cze"		"Hrac odmita !"
+	}
+
+	"request_acceptcapitulation"
+	{
+		"cze"		"Akceptujes kapitulaci?"
+	}
+
+	"request_acceptheal"
+	{
+		"cze"		"Akceptujes uzdraveni?"
+	}
+
+	"request_health"
+	{
+		"cze"		"Ziskal si {purple} HP injekci{default}!"
+	}
+
+	"request_heal"
+	{
+		"cze"		"{purple}{1} {default}zazadal {purple}uzdraveni! {default}Bude Warden tento pozadavek akceptovat?"
+	}
+
+	"request_healtimes"
+	{
+		"cze"		"Uz jsi zadal o uzdraveni{purple}{1} krat{default} toto kolo !"
+	}
+
+	"request_alreadyhealed"
+	{
+		"cze"		"Uz jsi zadal o {purple} uzdraveni !"
+	}
+
+	"request_nodamage"
+	{
+		"cze"		"Nemuzes udelit {purple}poskozeni po tom jako kapitulujes !"
+	}
+
+	"request_processing"
+	{
+		"cze"		"Prave se jedna {purple}pozadavka spracouvava. Pockej chvili !"
+	}
+
+	"request_processing"
+	{
+		"cze"		"Prave se jedna {purple}pozadavka ktera sa spracouvava. Pockej chvili !"
+	}
+
+	"request_repeatpls"
+	{
+		"cze"		"{purple}{1} {default}zadal o {purple}opakovani t!{default}"
+	}
+
+	"request_repeattimes"
+	{
+		"cze"		"Uz jsi zadal o{purple} opakovani {1} krat{default} toto kolo !"
+	}
+
+	"request_alreadyrepeat"
+	{
+		"cze"		"Uz jsi zadal o {purple}opakovani !"
+	}
+
+	"request_repeat"
+	{
+		"cze"		"Hrac pozaduje opakovani !"
+	}
+
+	"request_repeat"
+	{
+		"cze"		"Hrac pozaduje opakovani !"
+	}
+
+	"request_menu_title"
+	{
+		"cze"		"Podat zadost"
+	}
+
+	"request_menu_repeat"
+	{
+		"cze"		"Zopakovat Oznameni"
+	}
+
+	"request_menu_refuse"
+	{
+		"cze"		"Odmitnout aktualni hru"
+	}
+
+	"request_menu_heal"
+	{
+		"cze"		"Zadost o Uzdraveni"
+	}
+
+	"request_menu_heal"
+	{
+		"cze"		"Zadani o Uzdraveni"
+	}
+
+	"request_menu_capitulation"
+	{
+		"cze"		"Kapitulace"
+	}
+
+	"request_menu_freekill"
+	{
+		"cze"		"Nahlasit Freekill"
+	}
+
+	"request_freekill"
+	{
+		"cze"		"{green}{1}{default} zaslal hlaseni o freekillu {darkred}{2}{default} k {purple}{3}!"
+	}
+
+	"request_pardonfreekill"
+	{
+		"cze"		"Byl to freekill ?"
+	}
+
+	"request_handlefreekill"
+	{
+		"cze"		"Co chces delat s tim freekillem ?"
+	}
+
+	"request_respawnvictim"
+	{
+		"cze"		"Respawnout obet"
+	}
+
+	"request_killfreekiller"
+	{
+		"cze"		"Zabit Freekillera"
+	}
+
+	"request_killfreekiller"
+	{
+		"cze"		"Zabijt Freekillera"
+	}
+
+	"request_freeday"
+	{
+		"cze"		"Dalsi kolo volny den"
+	}
+
+	"request_swapfreekiller"
+	{
+		"cze"		"Pohodit freekillera do tymu veznu"
+	}
+
+	"request_aliveorct"
+	{
+		"cze"		"Ty jsi nazivu nebo Dozorce !"
+	}
+
+	"request_nokiller"
+	{
+		"cze"		"Omlouvame se, nemuzeme najit tveho vraha !"
+	}
+
+	"request_respawned"
+	{
+		"cze"		"Byl jsi respawnovan"
+	}
+
+	"request_respawnedall"
+	{
+		"cze"		"{1} byl respawnovan protoze dostal {darkred}Freekill !"
+	}
+
+	"request_killbcfreekill"
+	{
+		"cze"		"Byl si zabit protoze si spachal {darkred}Freekill !"
+	}
+
+	"request_killbcfreekillall"
+	{
+		"cze"		"{green}{1}{default} byl zabit protoze spachal {darkred}Freekill !"
+	}
+
+	"request_swapbcfreekill"
+	{
+		"cze"		"Byl jsi prohozen do tymu veznu protoze si spachal {darkred}Freekill !"
+	}
+
+	"request_swapbcfreekillall"
+	{
+		"cze"		"{green}{1}{default} byl prohozen protoze spachal {darkred}freekill{default} na tymu veznu !"
+	}
+
+	"request_handlerespawn"
+	{
+		"cze"		"Kde se chces respawnout ?"
+	}
+
+	"request_respawnbody"
+	{
+		"cze"		"Respawnovat na miste smrti"
+	}
+
+	"request_respawncell"
+	{
+		"cze"		"Respawn v cele"
+	}
+
+	"request_respawnwarden"
+	{
+		"cze"		"Respawn hned pred Wardenem"
+	}
+
+	"request_freekilltimes"
+	{
+		"cze"		"Uz jsi nahlasil Freekill {purple}{1}{default} krat toto kolo."
+	}
+
+	"request_freedayvictim"
+	{
+		"cze"		"Dat obeti volny den dalsi kolo"
+	}
+
+	"request_killreason_title"
+	{
+		"cze"		"Zabil jsi {1}???"
+	}
+
+	"request_killreason_lostgame"
+	{
+		"cze"		"Prohral hru"
+	}
+
+	"request_killreason_rebel"
+	{
+		"cze"		"On byl Rebel"
+	}
+
+	"request_killreason_brokerule"
+	{
+		"cze"		"Porusil pravidla"
+	}
+
+	"request_killreason_notfollow"
+	{
+		"cze"		"On neposlouchal prikazy"
+	}
+
+	"request_killreason_sry"
+	{
+		"cze"		"Moje chyba, chtel bych rict promin"
+	}
+
+	"request_killreason_freekill"
+	{
+		"cze"		"Dal jsem mu freekill"
+	}
+
+	"request_killreason_lostgame_chat"
+	{
+		"cze"		"Dozorce {green}{1}{default} tvrdi {darkred}{2}{default} prohral hru"
+	}
+
+	"request_killreason_rebel_chat"
+	{
+		"cze"		"Dozorce {green}{1}{default} tvrdi ze {darkred}{2}{default} byl rebel"
+	}
+
+	"request_killreason_brokerule_chat"
+	{
+		"cze"		"Dozorce {green}{1}{default} tvrdi {darkred}{2}{default} porusil pravidla"
+	}
+
+	"request_killreason_notfollow_chat"
+	{
+		"cze"		"Dozorce {green}{1}{default} tvrdi {darkred}{2}{default} nedelal co mu bylo receno"
+	}
+
+	"request_killreason_sry_chat"
+	{
+		"cze"		"Dozorce {green}{1}{default} by chtel rict promin za nechtene zabiti {darkred}{2}{default}"
+	}
+
+	"request_killreason_freekill_chat"
+	{
+		"cze"		"Dozorce {green}{1}{default} priznal freeklill na {darkred}{2}{default}"
+	}
+
+	"request_killreason_noanswer"
+	{
+		"cze"		"Dozorce {green}{1}{default} nema prohlaseni pro zabiti na {darkred}{2}{default}"
+	}
+
+	"request_capitulated"
+	{
+		"cze"		"{purple}{1} {default}se {purple}vzdava !"
+	}
+
+	"request_close"
+	{
+		"cze"		"Exit"
+	}
+
+	"request_countdownstop"
+	{
+		"cze"		"{purple}STOP! {darkred}KONEC!"
+	}
+
+	"request_countdownstop_nc"
+	{
+		"cze"		"STOP ! KONEC !"
+	}
+
+	"request_stopcountdown_nc"
+	{
+		"cze"		"Stop/Konec v {1} sekundach !"
+	}
+
+	"request_stopcountdown"
+	{
+		"cze"		"Zastav v {purple}{1}{default} sekundach !"
+	}
+
+}

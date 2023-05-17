@@ -1,0 +1,281 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:25 UTC
+// Language: Lithuanian (lt)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/201
+//
+"Phrases"
+{
+
+	"ratio_auto"
+	{
+		"lt"		"Jūs negalite naudoti \"auto select\" norint prisijungti prie komandos."
+	}
+
+	"ratio_fullqueue"
+	{
+		"lt"		"Prižiūrėtojų komanda yra pilna. Jūs esate {green}#{1}{default} eilėje."
+	}
+
+	"ratio_info_title"
+	{
+		"lt"		"Prižiūrėtojų eilė:"
+	}
+
+	"ratio_empty"
+	{
+		"lt"		"Eilė šiuo metu {green}tuščia{default}."
+	}
+
+	"ratio_noct"
+	{
+		"lt"		"Jūs privalote būti {green}kalinys{default} norint prisijungti prie eilės."
+	}
+
+	"ratio_find"
+	{
+		"lt"		"Ieškomas kitas prižiūrėtojas iš eilės. {green}{1} {default}nuo šiol yra naujas prižiūrėtojas."
+	}
+
+	"ratio_random"
+	{
+		"lt"		"Prižiūrėtojų eilė yra šiuo metu tuščia. {green}{1} {default}buvo atsitiktinai parinktas kaip naujas prižiūrėtojas."
+	}
+
+	"ratio_novalid"
+	{
+		"lt"		"Nepavyko rasti {green} žaidėjo {default} kurį perkelti į prižiūrėtojus. Susisiekite su administracija."
+	}
+
+	"ratio_number"
+	{
+		"lt"		"Jūs esate {green}#{1}{default} prižiūrėtojų eilėje."
+	}
+
+	"ratio_thxvip"
+	{
+		"lt"		"Ačiū jog esate {darkred}VIP{default} žaidėjas! Jūs esate perkeltas į {green}eilės priekį!{default}"
+	}
+
+	"ratio_advip"
+	{
+		"lt"		"Tapkite {darkred}VIP{default} ir būsite perkeltas į eilės priekį."
+	}
+
+	"ratio_movetot"
+	{
+		"lt"		"Yra per daug prižiūrėtojų. {green}{1}{default} buvo atsitiktinai parinktas ir priskirtas į kalinius."
+	}
+
+	"ratio_removed"
+	{
+		"lt"		"Administratorius {1} pašalino {2} iš Prižiūrėtojų eilės"
+	}
+
+	"ratio_notonqueue"
+	{
+		"lt"		"Jūs nesate prižiūrėtojų eilėje!"
+	}
+
+	"ratio_leavedqueue"
+	{
+		"lt"		"Nuo šiol jūs nesate prižiūrėtojų eilėje!"
+	}
+
+	"ratio_accept_title"
+	{
+		"lt"		"Prižiūrėtojo kvalifikacijos"
+	}
+
+	"ratio_accept_line1"
+	{
+		"lt"		"Prieš tapdami prižiūrėtoju, jūs privalote sutikti su šiais terminais ir susitarimais:"
+	}
+
+	"ratio_accept_line2"
+	{
+		"lt"		"Aš patvirtinu, jog aš perskaičiau ir susipažinau su taisyklėmis."
+	}
+
+	"ratio_accept_line3"
+	{
+		"lt"		"Aš patvirtinu, jog perskaičiau Prižiūrėtojų taisykles du kartus!"
+	}
+
+	"ratio_accept_line4"
+	{
+		"lt"		"Aš patvirtintu, jog aš žaisiu sąžiningai ir laikysiuosi serverio taisyklių."
+	}
+
+	"ratio_accept_line5"
+	{
+		"lt"		"Nesilaikant taisyklių gausite CT blokavimą."
+	}
+
+	"ratio_accept"
+	{
+		"lt"		"Taip, aš patvirtinu šiuos terminus ir susitarimus."
+	}
+
+	"ratio_notaccept"
+	{
+		"lt"		"Ne, aš nenoriu tapti prižiūrėtoju."
+	}
+
+	"ratio_cooldown"
+	{
+		"lt"		"Jūs esate užblokuotas už neteisingą atsakymą. Pamėginkite kitą roundą."
+	}
+
+	"ratio_disabled"
+	{
+		"lt"		"Ratio yra išjungta Administratoriaus"
+	}
+
+	"ratio_hasdisabled"
+	{
+		"lt"		"Administracija išjungė žaidėjų santykį"
+	}
+
+	"ratio_hasactivated"
+	{
+		"lt"		"Administratorius aktyvavo Santykį. Santykis susitvarkys nuo kito raundo."
+	}
+
+	"ratio_active"
+	{
+		"lt"		"Ratio yra aktyvus! 1 Prižiūrėtotas prie {1} kalinių"
+	}
+
+	"ratio_stamm"
+	{
+		"lt"		"Jūs turite turėti bent {1} Stamm taškų norint žaisti už prižiūrėtoją"
+	}
+
+	"ratio_banned_nc"
+	{
+		"lt"		"Negalite žaisti už prižiūrėtojus nes turite CT blokavimą."
+	}
+
+	"ratio_clearqueue"
+	{
+		"lt"		"Administratorius išvalė prižiūrėtojų eilę!"
+	}
+
+	"ratio_reputation"
+	{
+		"lt"		"Jums reikia bent {1} reputacijos taškų norint tapti prižiūrėtoju"
+	}
+
+	"ratio_remove"
+	{
+		"lt"		"Pašalinti iš eilės:"
+	}
+
+	"ratio_banned"
+	{
+		"lt"		"Negalite žaisti už prižiūrėtojus, nes esate gavę {green}CT{default} blokavimą."
+	}
+
+	"ratio_rankme"
+	{
+		"lt"		"Jūs turite turėti bent {1} RankMe taškų norint tapti prižiūrėtoju"
+	}
+
+	"ratio_rankme"
+	{
+		"lt"		"Jūs turite turėti bent {1"
+	}
+
+	"ratio_close"
+	{
+		"lt"		"Išeiti"
+	}
+
+	"ratio_steamrep"
+	{
+		"lt"		"Negalite žaisti prižiūrėtoju nes esate {red}APGAVIKAS{default}. peržiūrėkite steamrep.com"
+	}
+
+	"ratio_sure"
+	{
+		"lt"		"Ar esate tikras?"
+	}
+
+	"ratio_yes"
+	{
+		"lt"		"Taip"
+	}
+
+	"ratio_no"
+	{
+		"lt"		"Ne"
+	}
+
+	"ratio_steamgroup"
+	{
+		"lt"		"Negalite žaisti už prižiūrėtojus, privalote prisijungti prie steam grupės."
+	}
+
+	"ratio_lvlranks"
+	{
+		"lt"		"Jūs privalote būti bent {1} lygio norint žaisti už prižiūrėtoją."
+	}
+
+	"ratio_hours"
+	{
+		"lt"		"valanda(os)"
+	}
+
+	"ratio_seconds"
+	{
+		"lt"		"sekundės"
+	}
+
+	"ratio_minutes"
+	{
+		"lt"		"minutė(s)"
+	}
+
+	"ratio_mostactive"
+	{
+		"lt"		"Jūs privalote būti pražaidę bent {1} norint tapti prižiūrėtoju."
+	}
+
+	"ratio_mostactive_terror"
+	{
+		"lt"		"Jūs privalote būti pražaidę bent {1} kaip kaliniui norint tapti prižiūrėtoju."
+	}
+
+	"ratio_guard_enable"
+	{
+		"lt"		"Jūs leidžiate būti parinktu kaip atsitiktiniu prižiūrėtoju kai prižiūrėtojų eilė yra tuščia"
+	}
+
+	"ratio_guard_disable"
+	{
+		"lt"		"Jūs neigiate būti atsitiktinai parinktas, kai prižiūrėtojų eilė yra tuščia."
+	}
+
+	"ratio_swap_spec"
+	{
+		"lt"		"Jūs buvote perkeltas į Kalinių komandą, kadangi prisijungėte prie prižiūrėtojų eilės."
+	}
+
+	"ratio_fullguards"
+	{
+		"lt"		"Prižiūrėtojų eilė šiuo metu yra pilna. Prašome pamėginti vėliau."
+	}
+
+	"ratio_voice"
+	{
+		"lt"		"Jūs dar nenaudojote mikrofono ankščiau, todėl negalite prisijungti prie prižiūrėtojų be mikrofono. Naudokite mikrofoną ir bandykite vėl."
+	}
+
+	"ratio_question_title"
+	{
+		"lt"		"Prašome atsakyti į duotus klausimus norint tapti Prižiūrėtoju."
+	}
+
+}

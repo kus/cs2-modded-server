@@ -1,0 +1,146 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:31 UTC
+// Language: Polish (pl)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/193
+//
+"Phrases"
+{
+
+	"hebattle_need"
+	{
+		"pl"		"{purple}{2}{default} zaglosowal {purple}{1}{default} pozostalo glosow do {darkred}hebattle"
+	}
+
+	"hebattle_rounds"
+	{
+		"pl"		"Runda {purple}{1}{default} z {purple}{2}"
+	}
+
+	"hebattle_minplayer"
+	{
+		"pl"		"Do HE Battle potrzebujesz przynajmniej {purple}jednego CT"
+	}
+
+	"hebattle_twin_nc"
+	{
+		"pl"		"Terrorysta przetrwal"
+	}
+
+	"hebattle_voting"
+	{
+		"pl"		"Glosowanie graczy na HE Battle jest {purple}wylaczone"
+	}
+
+	"hebattle_setbywarden"
+	{
+		"pl"		"Glosowanie na HE Battle przez Straznika jest {purple}wylaczone"
+	}
+
+	"hebattle_setbyadmin"
+	{
+		"pl"		"Wlaczenie Cowboy przez admina jest {purple}wylaczone"
+	}
+
+	"hebattle_ctwin_nc"
+	{
+		"pl"		"Counter-Terrorists przetrwal"
+	}
+
+	"hebattle_end"
+	{
+		"pl"		"{purple}HE Battle{default} zakonczony"
+	}
+
+	"hebattle_next"
+	{
+		"pl"		"Nastepna runda to {purple}HE Battle"
+	}
+
+	"hebattle_next_nc"
+	{
+		"pl"		"Nastepna runda to HE Battle"
+	}
+
+	"hebattle_start"
+	{
+		"pl"		"{purple}HE Battle{default} sie rozpoczal!"
+	}
+
+	"hebattle_start_nc"
+	{
+		"pl"		"HE Battle sie rozpoczal!"
+	}
+
+	"hebattle_voted"
+	{
+		"pl"		"Juz glosowales na {purple}HE Battle"
+	}
+
+	"hebattle_progress"
+	{
+		"pl"		"Zabawa {darkred}{1} {default}sie {purple}rozpoczela"
+	}
+
+	"hebattle_disabled"
+	{
+		"pl"		"HE Battle jest tymczasowo {purple}wylaczony."
+	}
+
+	"hebattle_timeuntilstart_nc"
+	{
+		"pl"		"{1} sekund do startu!"
+	}
+
+	"hebattle_info_title"
+	{
+		"pl"		"HE Battle jest aktywny"
+	}
+
+	"hebattle_info_line1"
+	{
+		"pl"		"FFA HE Battle z mala grawitacja"
+	}
+
+	"hebattle_info_line2"
+	{
+		"pl"		"Nie zdziw sie jak przeteleportuje cie do spawnu CT!"
+	}
+
+	"hebattle_info_line3"
+	{
+		"pl"		"mozna poruszac sie i wyjsc z wk podczas fazy nodamage"
+	}
+
+	"hebattle_info_line4"
+	{
+		"pl"		"Wszystkie normalne zasady wiezienia zostaly zastapione"
+	}
+
+	"hebattle_info_line5"
+	{
+		"pl"		"Nie ma ostatniego zyczenia!"
+	}
+
+	"hebattle_info_line6"
+	{
+		"pl"		"Zostan w glownym pomieszczeniu Wiezienia! Zakaz wejsc do SECRETOW!"
+	}
+
+	"hebattle_info_line7"
+	{
+		"pl"		"Nie badz DUPKIEM!"
+	}
+
+	"hebattle_wait"
+	{
+		"pl"		"Musisz poczekac  {1} rund"
+	}
+
+	"hebattle_name"
+	{
+		"pl"		"Bitwa na granaty"
+	}
+
+}

@@ -1,0 +1,161 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:28 UTC
+// Language: Italian (it)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/194
+//
+"Phrases"
+{
+
+	"hide_need"
+	{
+		"it"		"{purple}{2}{default} ha votato. {purple}{1}{default} voti richiesti per fare {darkred}Hide in the Dark."
+	}
+
+	"hide_twin_nc"
+	{
+		"it"		"Gli Hiders hanno vinto!"
+	}
+
+	"hide_rounds"
+	{
+		"it"		"Round {purple}{1}{default} di {purple}{2}"
+	}
+
+	"hide_ctwin_nc"
+	{
+		"it"		"I Seekers hanno vinto!"
+	}
+
+	"hide_end"
+	{
+		"it"		"{purple}Hide in the Dark{default} e' finito."
+	}
+
+	"hide_next_nc"
+	{
+		"it"		"Il prossimo round ci sara': Hide in the Dark."
+	}
+
+	"hide_next"
+	{
+		"it"		"Il prossimo round ci sara': {purple}Hide in the Dark."
+	}
+
+	"hide_start"
+	{
+		"it"		"{purple}Hide in the Dark{default} e' iniziato!"
+	}
+
+	"hide_start_nc"
+	{
+		"it"		"Hide in the Dark e' iniziato!"
+	}
+
+	"hide_voted"
+	{
+		"it"		"Hai gia' votato per {purple}Hide in the Dark!"
+	}
+
+	"hide_progress"
+	{
+		"it"		"L'evento {darkred}{1} {default}e' {purple}in corso"
+	}
+
+	"hide_minplayer"
+	{
+		"it"		"Per fare Hide in the Dark c'e bisogno di almeno{purple}una Guardia ed un Prigoniere"
+	}
+
+	"hide_disabled"
+	{
+		"it"		"Hide in the Dark e' {purple} disattivato!"
+	}
+
+	"hide_voting"
+	{
+		"it"		"Le votazioni per Hide in the Dark sono {purple}sono disattivate!"
+	}
+
+	"hide_setbyWarden"
+	{
+		"it"		"Impostare Duckhunt come CapoCT e' {purple}disattivato!"
+	}
+
+	"hide_setbyadmin"
+	{
+		"it"		"Impostare  Duckhunt come Admin e' {purple}disattivato!"
+	}
+
+	"hide_timetohide_nc"
+	{
+		"it"		"{1} secondi rimasti per nascondersi!"
+	}
+
+	"hide_timetounfreeze_nc"
+	{
+		"it"		"{1} secondi rimasti prima dello scongelamento!"
+	}
+
+	"hide_stillta"
+	{
+		"it"		"Hai {green}{1}{default} TAGrenade(s) rimaste."
+	}
+
+	"hide_nota"
+	{
+		"it"		"Hai {green}finito{default} le TAGrenades!"
+	}
+
+	"hide_info_title"
+	{
+		"it"		"Hide In The Dark e' inizato!"
+	}
+
+	"hide_info_line1"
+	{
+		"it"		"Gli Hider devono nascondersi all'inizio round!"
+	}
+
+	"hide_info_line2"
+	{
+		"it"		"Gli Hiders verranno congelati e i Hunter scongelati!"
+	}
+
+	"hide_info_line3"
+	{
+		"it"		"AI Seeker gli e' stata data una TAGrenades!"
+	}
+
+	"hide_info_line4"
+	{
+		"it"		"Tutte le normali regole del JB non vengono applicate durante questo round!"
+	}
+
+	"hide_info_line5"
+	{
+		"it"		"Gli LR sono disattivati durante questo round!"
+	}
+
+	"hide_info_line6"
+	{
+		"it"		"A tutti e' permesso andare ovunque in questo round!"
+	}
+
+	"hide_info_line7"
+	{
+		"it"		"Non fate i cani!"
+	}
+
+	"hide_wait"
+	{
+		"it"		"Devi aspettare {purple}{1}{default} prima di dare un altro evento!"
+	}
+
+	"hide_name"
+	{
+		"it"		"Hide in the Dark"
+	}
+
+}

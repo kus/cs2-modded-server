@@ -1,0 +1,396 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:23 UTC
+// Language: English (en)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/196
+//
+"Phrases"
+{
+
+	"request_openrefuse"
+	{
+		"en"		"The warden has enabled refusals.{purple} Type !refuse to refuse the game!"
+	}
+
+	"request_refusing"
+	{
+		"#format"	"{1:N}"
+		"en"		"{purple}{1} {default}has {purple}refused the game!"
+	}
+
+	"request_alreadyrefused"
+	{
+		"en"		"You have {purple}already refused the game!"
+	}
+
+	"request_refuseallow"
+	{
+		"en"		"The warden must first {purple}allow refusing by typing !refuse"
+	}
+
+	"request_notalivect"
+	{
+		"en"		"You are either dead or a Guard!"
+	}
+
+	"request_fullhp"
+	{
+		"en"		"Nice try! You're at full health!"
+	}
+
+	"request_refusedtimes"
+	{
+		"#format"	"{1:i}"
+		"en"		"You have already {purple}refused {1} times{default} during this round!"
+	}
+
+	"request_capitulation"
+	{
+		"#format"	"{1:N}"
+		"en"		"{purple}{1} {default}has {purple}capitulated! {default}Will the Warden accept the request?"
+	}
+
+	"request_alreadycapitulated"
+	{
+		"en"		"You have {purple}already capitulated!"
+	}
+
+	"request_knifeback"
+	{
+		"en"		"You've been given {purple}your knife back."
+	}
+
+	"request_accepted"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{2} has accepted {1}'s request."
+	}
+
+	"request_noaccepted"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{2} has {purple}not{default} accepted {1}s request."
+	}
+
+	"request_refuser"
+	{
+		"en"		"A Player is Refusing!"
+	}
+
+	"request_acceptcapitulation"
+	{
+		"en"		"Do you accept The Capitualation?"
+	}
+
+	"request_acceptheal"
+	{
+		"en"		"Do you accept the Healing?"
+	}
+
+	"request_health"
+	{
+		"en"		"You've received a {purple} Healthshot{default}!"
+	}
+
+	"request_heal"
+	{
+		"#format"	"{1:N}"
+		"en"		"{purple}{1} {default}has requested a {purple}Healing! {default}Will the Warden accept the request?"
+	}
+
+	"request_healtimes"
+	{
+		"#format"	"{1:i}"
+		"en"		"You have already requested healing{purple}{1} times{default} during this round!"
+	}
+
+	"request_alreadyhealed"
+	{
+		"en"		"You have already requested a{purple} Healing!"
+	}
+
+	"request_nodamage"
+	{
+		"en"		"You cannot do {purple}damage after capitulation!"
+	}
+
+	"request_processing"
+	{
+		"en"		"There is already a {purple}request in processing. Wait a moment!"
+	}
+
+	"request_repeatpls"
+	{
+		"#format"	"{1:N}"
+		"en"		"{purple}{1} {default}has requested a {purple}Repeat!{default}"
+	}
+
+	"request_repeattimes"
+	{
+		"#format"	"{1:i}"
+		"en"		"You have already requested a {purple} Repeat {1} times{default} during this round!"
+	}
+
+	"request_alreadyrepeat"
+	{
+		"en"		"You have already requested a {purple}repeat!"
+	}
+
+	"request_repeat"
+	{
+		"en"		"A Player is requesting a Repeat!"
+	}
+
+	"request_menu_title"
+	{
+		"en"		"Make a Request"
+	}
+
+	"request_menu_repeat"
+	{
+		"en"		"Repeat Announcement"
+	}
+
+	"request_menu_refuse"
+	{
+		"en"		"Refuse the Current Game"
+	}
+
+	"request_menu_heal"
+	{
+		"en"		"Request a Healing"
+	}
+
+	"request_menu_capitulation"
+	{
+		"en"		"Capitulation"
+	}
+
+	"request_menu_freekill"
+	{
+		"en"		"Report Freekill"
+	}
+
+	"request_freekill"
+	{
+		"#format"	"{1:N},{2:N},{3:N}"
+		"en"		"{green}{1}{default} sent a Freekill report of {darkred}{2}{default} to {purple}{3}!"
+	}
+
+	"request_pardonfreekill"
+	{
+		"en"		"Was that a Freekill?"
+	}
+
+	"request_handlefreekill"
+	{
+		"en"		"How do you want to handle this freekill?"
+	}
+
+	"request_respawnvictim"
+	{
+		"en"		"Respawn the Victim"
+	}
+
+	"request_killfreekiller"
+	{
+		"en"		"Slay the Freekiller"
+	}
+
+	"request_freeday"
+	{
+		"en"		"Next Round Freeday"
+	}
+
+	"request_swapfreekiller"
+	{
+		"en"		"Swap freekiller to Prisoner Team"
+	}
+
+	"request_aliveorct"
+	{
+		"en"		"You are either alive or a Guard!"
+	}
+
+	"request_nokiller"
+	{
+		"en"		"Sorry, we can't find your killer!"
+	}
+
+	"request_respawned"
+	{
+		"en"		"You were respawned!"
+	}
+
+	"request_respawnedall"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} was respawned due a {darkred}Freekill!"
+	}
+
+	"request_killbcfreekill"
+	{
+		"en"		"You were slain due to a {darkred}Freekill!"
+	}
+
+	"request_killbcfreekillall"
+	{
+		"#format"	"{1:N}"
+		"en"		"{green}{1}{default} was slain due to a {darkred}Freekill!"
+	}
+
+	"request_swapbcfreekill"
+	{
+		"en"		"You were swaped to the Prisoner's team due to a {darkred}Freekill!"
+	}
+
+	"request_swapbcfreekillall"
+	{
+		"#format"	"{1:N}"
+		"en"		"{green}{1}{default} was swaped due to a {darkred}freekill{default} to the Prisoner's team!"
+	}
+
+	"request_handlerespawn"
+	{
+		"en"		"Where do you want the respawn?"
+	}
+
+	"request_respawnbody"
+	{
+		"en"		"Respawn on Death Place"
+	}
+
+	"request_respawncell"
+	{
+		"en"		"Respawn in a Cell"
+	}
+
+	"request_respawnwarden"
+	{
+		"en"		"Respawn in Front of the Warden"
+	}
+
+	"request_freekilltimes"
+	{
+		"#format"	"{1:i}"
+		"en"		"You have already reported a Freekill {purple}{1}{default} times during this round."
+	}
+
+	"request_freedayvictim"
+	{
+		"en"		"Give Victim next Round Freeday"
+	}
+
+	"request_killreason_title"
+	{
+		"#format"	"{1:N}"
+		"en"		"You killed {1}???"
+	}
+
+	"request_killreason_lostgame"
+	{
+		"en"		"He lost the Game"
+	}
+
+	"request_killreason_rebel"
+	{
+		"en"		"He was a Rebel"
+	}
+
+	"request_killreason_brokerule"
+	{
+		"en"		"He broke the Rules"
+	}
+
+	"request_killreason_notfollow"
+	{
+		"en"		"He not listen to dictate"
+	}
+
+	"request_killreason_sry"
+	{
+		"en"		"My fault, wanna say sorry"
+	}
+
+	"request_killreason_freekill"
+	{
+		"en"		"I freekilled him"
+	}
+
+	"request_killreason_lostgame_chat"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"The Guard {green}{1}{default} claiming {darkred}{2}{default} lost the Game"
+	}
+
+	"request_killreason_rebel_chat"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"The Guard {green}{1}{default} claiming {darkred}{2}{default} was a rebel"
+	}
+
+	"request_killreason_brokerule_chat"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"The Guard {green}{1}{default} claiming {darkred}{2}{default} has broke the rules"
+	}
+
+	"request_killreason_notfollow_chat"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"The Guard {green}{1}{default} claiming {darkred}{2}{default} hasn't followed the dictation"
+	}
+
+	"request_killreason_sry_chat"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"The Guard {green}{1}{default} wanna say sorry for mistakly killing {darkred}{2}{default}"
+	}
+
+	"request_killreason_freekill_chat"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"The Guard {green}{1}{default} confess a freekill on {darkred}{2}{default}"
+	}
+
+	"request_killreason_noanswer"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"The Guard {green}{1}{default} has no declaration for the kill on {darkred}{2}{default}"
+	}
+
+	"request_capitulated"
+	{
+		"#format"	"{1:N}"
+		"en"		"{purple}{1} {default}has {purple}capitulated!"
+	}
+
+	"request_close"
+	{
+		"en"		"Exit"
+	}
+
+	"request_countdownstop"
+	{
+		"en"		"{purple}STOP! {darkred}END!"
+	}
+
+	"request_countdownstop_nc"
+	{
+		"en"		"STOP! END!"
+	}
+
+	"request_stopcountdown_nc"
+	{
+		"#format"	"{1:i}"
+		"en"		"Stop/End in {1} seconds!"
+	}
+
+	"request_stopcountdown"
+	{
+		"#format"	"{1:i}"
+		"en"		"Stop in {purple}{1}{default} seconds!"
+	}
+
+}

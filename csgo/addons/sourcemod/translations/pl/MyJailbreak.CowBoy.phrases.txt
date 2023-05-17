@@ -1,0 +1,141 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:26 UTC
+// Language: Polish (pl)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/190
+//
+"Phrases"
+{
+
+	"cowboy_need"
+	{
+		"pl"		"{purple}{2}{default} zaglosowal {purple}{1}{default} pozostalo glosow do {darkred}cowboy"
+	}
+
+	"cowboy_rounds"
+	{
+		"pl"		"Runda {purple}{1}{default} z {purple}{2}"
+	}
+
+	"cowboy_twin_nc"
+	{
+		"pl"		"Terrorysta przetrwal"
+	}
+
+	"cowboy_voting"
+	{
+		"pl"		"Glosowanie graczy na Cowboy jest {purple}wylaczone"
+	}
+
+	"cowboy_setbywarden"
+	{
+		"pl"		"Glosowanie na Cowboy przez Straznika jest {purple}wylaczone"
+	}
+
+	"cowboy_minplayer"
+	{
+		"pl"		"Do zabawy cowboy potrzeba przynajmniej {purple}jednego CT"
+	}
+
+	"cowboy_setbyadmin"
+	{
+		"pl"		"Wlaczenie Cowboy przez admina jest {purple}wylaczone"
+	}
+
+	"cowboy_ctwin_nc"
+	{
+		"pl"		"Counter-Terrorists przetrwal"
+	}
+
+	"cowboy_end"
+	{
+		"pl"		"{purple}Cowboy{default} zakonczony"
+	}
+
+	"cowboy_next"
+	{
+		"pl"		"Nastepna runda to {purple}Cowboy"
+	}
+
+	"cowboy_next_nc"
+	{
+		"pl"		"Nastepna runda to Cowboy"
+	}
+
+	"cowboy_start"
+	{
+		"pl"		"{purple}Cowboy{default} sie rozpoczal!"
+	}
+
+	"cowboy_start_nc"
+	{
+		"pl"		"Cowboy sie rozpoczal!"
+	}
+
+	"cowboy_voted"
+	{
+		"pl"		"Juz glosowales na {purple}Cowboy"
+	}
+
+	"cowboy_progress"
+	{
+		"pl"		"Zabawa  {darkred}{1} {default}sie {purple}rozpoczela"
+	}
+
+	"cowboy_disabled"
+	{
+		"pl"		"Cowboy jest tymczasowo {purple}wylaczony."
+	}
+
+	"cowboy_timeuntilstart_nc"
+	{
+		"pl"		"{1} sekund do startu!"
+	}
+
+	"cowboy_info_line1"
+	{
+		"pl"		"Cowboy - Free for All"
+	}
+
+	"cowboy_info_line2"
+	{
+		"pl"		"Pistol Battle - DM"
+	}
+
+	"cowboy_info_line3"
+	{
+		"pl"		"mozna poruszac sie i wyjsc ze zbrojowni podczas fazy nodamage"
+	}
+
+	"cowboy_info_line4"
+	{
+		"pl"		"Wszystkie normalne zasady wiezienia zostaly zastapione"
+	}
+
+	"cowboy_info_line5"
+	{
+		"pl"		"Nie ma ostatniego zyczenia!"
+	}
+
+	"cowboy_info_line6"
+	{
+		"pl"		"Zostan w glownym pomieszczeniu Wiezienia! Zakaz wejsc do SECRETOW!"
+	}
+
+	"cowboy_info_line7"
+	{
+		"pl"		"Nie badz DUPKIEM!"
+	}
+
+	"cowboy_wait"
+	{
+		"pl"		"Musisz poczekac  {1} rund"
+	}
+
+	"cowboy_info_title"
+	{
+		"pl"		"Cowboy jest aktywny"
+	}
+
+}

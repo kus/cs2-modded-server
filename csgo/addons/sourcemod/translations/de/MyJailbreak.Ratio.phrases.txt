@@ -1,0 +1,216 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:24 UTC
+// Language: German (de)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/201
+//
+"Phrases"
+{
+
+	"ratio_auto"
+	{
+		"de"		"Du kannst nicht die automatische Teamauswahl verwenden, um einem Team beizutreten."
+	}
+
+	"ratio_fullqueue"
+	{
+		"de"		"Wächterteam ist voll. Du bist {green}#{1]{default} in der Warteschlange."
+	}
+
+	"ratio_info_title"
+	{
+		"de"		"Wärter Warteliste:"
+	}
+
+	"ratio_empty"
+	{
+		"de"		"Die Warteschlange ist zur Zeit {green}leer{default}."
+	}
+
+	"ratio_noct"
+	{
+		"de"		"Du musst ein {green}Gefangener{default} sein, um der Warteschlange beizutreten."
+	}
+
+	"ratio_find"
+	{
+		"de"		"Wähle den nächsten Anwärter aus der Liste. {green}{1} {default}ist neuer Guard"
+	}
+
+	"ratio_random"
+	{
+		"de"		"Anwärter Liste ist leer. {green}{1} {default}wurde als neuer Zufälliger Guard gewählt"
+	}
+
+	"ratio_novalid"
+	{
+		"de"		"Konnte keinen {green}berechtigten Spieler{default} finden um ihn zu CT zu wechseln. Kontaktiere einen Admin."
+	}
+
+	"ratio_number"
+	{
+		"de"		"Du bist {green}#{1}{default} in der Wächter Warteschlange."
+	}
+
+	"ratio_thxvip"
+	{
+		"de"		"Danke dass du ein {darkred}VIP{default} bist! Du wurdest an den {green}Anfang der Warteschlange{default} gesetzt!"
+	}
+
+	"ratio_advip"
+	{
+		"de"		"Werde ein {darkred}VIP{default} um automatischj an die Spitze der Warteschlange gesetzt zu werden."
+	}
+
+	"ratio_movetot"
+	{
+		"de"		"Es gibt zu viele Wächter. {green}{1}{default} wurde zufällig ausgewählt und zu den Gefangenen gewechselt."
+	}
+
+	"ratio_removed"
+	{
+		"de"		"Der Admin {1} hat {2} von der Wächter Warteschlange entfernt."
+	}
+
+	"ratio_notonqueue"
+	{
+		"de"		"Du bist nicht in der Wächter Warteschlange!"
+	}
+
+	"ratio_leavedqueue"
+	{
+		"de"		"Du bist nicht mehr in der Wächter Warteschlange!"
+	}
+
+	"ratio_accept_title"
+	{
+		"de"		"Wächterqualifikationen"
+	}
+
+	"ratio_accept_line1"
+	{
+		"de"		"Befor du ein Wärter wirst musst du die folgenden Bedingungen akzeptieren:"
+	}
+
+	"ratio_accept_line2"
+	{
+		"de"		"Ich versichere dass ich die Regeln gelesen & verstanden habe."
+	}
+
+	"ratio_accept_line3"
+	{
+		"de"		"Ich bestätige dass ich die CT-Regeln zwei Mal gelesen habe!"
+	}
+
+	"ratio_accept_line4"
+	{
+		"de"		"Ich bestätige dass ich fair spielen & die Serverregeln befolgen werde."
+	}
+
+	"ratio_accept_line5"
+	{
+		"de"		"Fehler diese Regeln einzuhalten resultiert in einem CT Ban."
+	}
+
+	"ratio_accept"
+	{
+		"de"		"Ja, ich akzeptiere diese Bedingungen."
+	}
+
+	"ratio_notaccept"
+	{
+		"de"		"Nein, ich will kein Wächter werden."
+	}
+
+	"ratio_cooldown"
+	{
+		"de"		"Du bist aufgrund einer falschen Antwort geblockt. Versuch es nächste Runde."
+	}
+
+	"ratio_disabled"
+	{
+		"de"		"Rate wurde vom Admin deaktiviert."
+	}
+
+	"ratio_hasdisabled"
+	{
+		"de"		"Ein Admin hat die Rate deaktiviert."
+	}
+
+	"ratio_hasactivated"
+	{
+		"de"		"Ein Admin hat die Rate aktiviert. Ratenfix nächste Runde."
+	}
+
+	"ratio_active"
+	{
+		"de"		"Rate ist aktiv! 1 Wächter auf {1} Gefangene."
+	}
+
+	"ratio_stamm"
+	{
+		"de"		"Du brauchst mindestens {1} Stammpunkte um als Wächter zu spielen."
+	}
+
+	"ratio_banned_nc"
+	{
+		"de"		"Du kannst nicht als Wärter spielen. Du bist als CT gebanned."
+	}
+
+	"ratio_clearqueue"
+	{
+		"de"		"Ein Admin hat die Wächter Warteschlange geleert!"
+	}
+
+	"ratio_reputation"
+	{
+		"de"		"Du brauchst mindestsens {1} Rufpunkte um als Wächter zu spielen."
+	}
+
+	"ratio_remove"
+	{
+		"de"		"Entferne aus der Warteschlange:"
+	}
+
+	"ratio_banned"
+	{
+		"de"		"Du kannst nicht als Wärter spielen. Du bist als{green}CT{default} gebanned."
+	}
+
+	"ratio_rankme"
+	{
+		"de"		"Du brauchst mindestens {1} RankMe Punkte um als Wächter zu spielen."
+	}
+
+	"ratio_close"
+	{
+		"de"		"Schliessen"
+	}
+
+	"ratio_steamrep"
+	{
+		"de"		"Du kannst nicht als Wächter spielen weil du ein {red}BETRÜGER{default} bist. Schau auf steamrep.com"
+	}
+
+	"ratio_sure"
+	{
+		"de"		"Bist du dir sicher?"
+	}
+
+	"ratio_yes"
+	{
+		"de"		"Ja"
+	}
+
+	"ratio_no"
+	{
+		"de"		"Nein"
+	}
+
+	"ratio_steamgroup"
+	{
+		"de"		"Du kannst nicht als Wärter spielen, du musst erst unserer Steamgruppe beitreten."
+	}
+
+}

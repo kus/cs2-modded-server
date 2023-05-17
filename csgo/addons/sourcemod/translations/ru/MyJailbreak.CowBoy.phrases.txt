@@ -1,0 +1,156 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:26 UTC
+// Language: Russian (ru)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/190
+//
+"Phrases"
+{
+
+	"cowboy_need"
+	{
+		"ru"		"{purple}{2}{default} проголосовал. {purple}{1}{default} голосов осталось до {darkred}ковбоя"
+	}
+
+	"cowboy_rounds"
+	{
+		"ru"		"Раунд {purple}{1}{default} из {purple}{2}"
+	}
+
+	"cowboy_twin_nc"
+	{
+		"ru"		"Террористы выжили"
+	}
+
+	"cowboy_voting"
+	{
+		"ru"		"Голосования за ковбоя {purple}отключено"
+	}
+
+	"cowboy_setbywarden"
+	{
+		"ru"		"Командир {purple}отключил{default} выбор ковбоя"
+	}
+
+	"cowboy_minplayer"
+	{
+		"ru"		"Для ковбоя необходимо как минимум {purple}один КТ"
+	}
+
+	"cowboy_setbyadmin"
+	{
+		"ru"		"Администратор {purple}отключил{default} выбор ковбоя"
+	}
+
+	"cowboy_ctwin_nc"
+	{
+		"ru"		"КТ выжили"
+	}
+
+	"cowboy_end"
+	{
+		"ru"		"{purple}Ковбой{default} окончен!"
+	}
+
+	"cowboy_next"
+	{
+		"ru"		"Следующий раунд {purple}Ковбой"
+	}
+
+	"cowboy_next_nc"
+	{
+		"ru"		"Следующий раунд ковбой"
+	}
+
+	"cowboy_start"
+	{
+		"ru"		"{purple}Ковбой{default} начался!"
+	}
+
+	"cowboy_start_nc"
+	{
+		"ru"		"Ковбой начался!"
+	}
+
+	"cowboy_voted"
+	{
+		"ru"		"Вы уже проголосовали за {purple}ковбоя"
+	}
+
+	"cowboy_progress"
+	{
+		"ru"		"Игровой день {darkred}{1} {default}в {purple}процессе."
+	}
+
+	"cowboy_disabled"
+	{
+		"ru"		"Ковбой {purple}отключен."
+	}
+
+	"cowboy_timeuntilstart_nc"
+	{
+		"ru"		"{1} секунд до начала"
+	}
+
+	"cowboy_info_line1"
+	{
+		"ru"		"Ковбой - все против всех"
+	}
+
+	"cowboy_info_line2"
+	{
+		"ru"		"Борьба на пистолетах - DM"
+	}
+
+	"cowboy_info_line3"
+	{
+		"ru"		"Вы можете двигаться во время отсутствия урона"
+	}
+
+	"cowboy_info_line4"
+	{
+		"ru"		"Все нормальные правила тюрьмы отменяются"
+	}
+
+	"cowboy_info_line5"
+	{
+		"ru"		"Здесь нету последних желаний!"
+	}
+
+	"cowboy_info_line6"
+	{
+		"ru"		"Оставайтесь в главной камере! Не уходите в нычки!"
+	}
+
+	"cowboy_info_line7"
+	{
+		"ru"		"Не будь мудаком!"
+	}
+
+	"cowboy_wait"
+	{
+		"ru"		"Вы должны подождать больше {1} раундов"
+	}
+
+	"cowboy_name"
+	{
+		"ru"		"Ковбой"
+	}
+
+	"cowboy_info_title"
+	{
+		"ru"		"Ковбой активен"
+	}
+
+	"cowboy_now_nc"
+	{
+		"ru"		"Начинается ковбой раунд."
+	}
+
+	"cowboy_now"
+	{
+		"ru"		"Начинается {purple}Ковбой{default} раунд."
+	}
+
+}

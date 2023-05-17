@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/player/kuristaja/jailbreak/shared/brown_eye01_an_d"
+   	"$bumpmap"    "models/player/kuristaja/jailbreak/shared/brown_eye_normal"
+
+	"$phong" 			"1"
+	"$phongboost"			"50"
+	"$phongexponent"			"30"
+	"$phongfresnelranges"		"[.05 .1 .2]"
+}
+
+

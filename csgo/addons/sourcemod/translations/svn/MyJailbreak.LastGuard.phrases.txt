@@ -1,0 +1,156 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:24 UTC
+// Language: svn (svn)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/197
+//
+"Phrases"
+{
+
+	"lastguard_need"
+	{
+		"svn"		"{purple}{2}{default} je glasoval. Število glasov potrebnih za {darkred}Pravilo zadnjega paznika: {purple}{1}"
+	}
+
+	"lastguard_twin_nc"
+	{
+		"svn"		"Zaporniki so preživeli!"
+	}
+
+	"lastguard_minplayer"
+	{
+		"svn"		"Za pravilo zadnjega paznika potrebuješ največ {purple}enega Paznika & najmanj 2 Zapornika!"
+	}
+
+	"lastguard_hp"
+	{
+		"svn"		"{purple}{1} Zaporniki{default} imajo skupno: {purple}{2} HP{default}. Zadnji paznik {3} ima sedaj: {purple}{4} HP{default}."
+	}
+
+	"lastguard_setbyadmin"
+	{
+		"svn"		"Nastavitev pravila zadnjega paznika s strani adminov je {purple}onemogočena!"
+	}
+
+	"lastguard_ctwin_nc"
+	{
+		"svn"		"Pazniki zmagajo!"
+	}
+
+	"lastguard_end"
+	{
+		"svn"		"{purple}Pravilo zadnjega paznika{default} je zaključeno!"
+	}
+
+	"lastguard_startnow"
+	{
+		"svn"		"Pozor! {purple}Pravilo zadnjega paznika{default} is now Activated!"
+	}
+
+	"lastguard_startnow_nc"
+	{
+		"svn"		"Pozor! Pravilo zadnjega paznika je sedaj aktivirano!"
+	}
+
+	"lastguard_start"
+	{
+		"svn"		"{purple}Pravilo zadnjega paznika{default} se je začelo!"
+	}
+
+	"lastguard_lr"
+	{
+		"svn"		"{purple}Last Request{default} je že aktiven! Pravilo zadnjega paznika ni možno!"
+	}
+
+	"lastguard_start_nc"
+	{
+		"svn"		"Pravilo zadnjega paznika se je začelo!"
+	}
+
+	"lastguard_movenow"
+	{
+		"svn"		"Sedaj se {purple}lahko premikaš!"
+	}
+
+	"lastguard_movenow_nc"
+	{
+		"svn"		"Sedaj se lahko premikaš!"
+	}
+
+	"lastguard_voted"
+	{
+		"svn"		"Ti si že glasoval za {purple}Pravilo zadnjega paznika!"
+	}
+
+	"lastguard_notalive"
+	{
+		"svn"		"Za ta ukaz {purple}moraš biti živ{default}!"
+	}
+
+	"lastguard_progress"
+	{
+		"svn"		"Dogodek {darkred}{1} {default}se {purple}že izvaja! Pravilo zadnjega paznika je onemogočeno!"
+	}
+
+	"lastguard_running"
+	{
+		"svn"		"Pravilo zadnjega paznika {default}se {purple}že izvaja!"
+	}
+
+	"lastguard_disabled"
+	{
+		"svn"		"Pravilo zadnjega paznika je {purple}onemogočeno!"
+	}
+
+	"lastguard_timeuntilstart_nc"
+	{
+		"svn"		"{1} sekund do začetka runde!"
+	}
+
+	"lastguard_info_title"
+	{
+		"svn"		"Last Guard Rule er aktiveret!"
+	}
+
+	"lastguard_info_line1"
+	{
+		"svn"		"Pravilo zadnjega paznika - Zaporniki PROTI Pazniku."
+	}
+
+	"lastguard_info_line4"
+	{
+		"svn"		"To rundo ne veljajo običajna pravila Jailbreak-a!"
+	}
+
+	"lastguard_info_line5"
+	{
+		"svn"		"Last request(!lr) je to rundo onemogočen."
+	}
+
+	"lastguard_info_line7"
+	{
+		"svn"		"Pravila strežnika to rundo še vedno veljajo!"
+	}
+
+	"lastguard_info_line2"
+	{
+		"svn"		"Vsi zaporniki so uporniki!"
+	}
+
+	"lastguard_info_line3"
+	{
+		"svn"		"Zadnji paznik ima veliko več HP-ja!"
+	}
+
+	"lastguard_info_line6"
+	{
+		"svn"		"Vsakdo lahko gre kamorkoli na mapi!"
+	}
+
+	"lastguard_close"
+	{
+		"svn"		"Izhod"
+	}
+
+}

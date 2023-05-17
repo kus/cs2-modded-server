@@ -1,0 +1,191 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:34 UTC
+// Language: Chinese (Simplified) (chi)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/278
+//
+"Phrases"
+{
+
+	"armsrace_need"
+	{
+		"chi"		"{purple}{2}{default} 名玩家已经投票. 至少需要 {purple}{1}{default} 票来进行{darkred}武装竞赛."
+	}
+
+	"armsrace_voting"
+	{
+		"chi"		"为武装竞赛的投票被禁用!"
+	}
+
+	"armsrace_setbywarden"
+	{
+		"chi"		"狱警{purple}不能设置{default}武装竞赛!"
+	}
+
+	"armsrace_setbyadmin"
+	{
+		"chi"		"管理员{purple}无法设置{default}武装竞赛!"
+	}
+
+	"armsrace_youwon"
+	{
+		"chi"		"你{purple}赢{default}得了武装竞赛!"
+	}
+
+	"armsrace_winner"
+	{
+		"chi"		"{purple}{1}{default} 赢得了武装竞赛!"
+	}
+
+	"armsrace_minplayer"
+	{
+		"chi"		"武装竞赛至少需要{purple}一个狱警和囚犯!"
+	}
+
+	"armsrace_minplayer"
+	{
+		"chi"		"武装竞赛至少需要一个狱警和囚犯!"
+	}
+
+	"armsrace_end"
+	{
+		"chi"		"{purple}武装竞赛{default} 已经结束!"
+	}
+
+	"armsrace_next"
+	{
+		"chi"		"下一回合: {purple}武装竞赛"
+	}
+
+	"armsrace_next_nc"
+	{
+		"chi"		"下一回合: 武装竞赛"
+	}
+
+	"armsrace_rounds"
+	{
+		"chi"		"第 {purple}{1}{default} / {purple}{2}{default} 回合"
+	}
+
+	"armsrace_start"
+	{
+		"chi"		"{purple}武装竞赛{default}已经开始!"
+	}
+
+	"armsrace_start_nc"
+	{
+		"chi"		"武装竞赛已经开始!"
+	}
+
+	"armsrace_voted"
+	{
+		"chi"		"已经给{purple}武装竞赛{default}投票!"
+	}
+
+	"armsrace_progress"
+	{
+		"chi"		"活动 {darkred}{1} {default} {purple}正在进行中!"
+	}
+
+	"armsrace_disabled"
+	{
+		"chi"		"武装竞赛目前被禁用!"
+	}
+
+	"armsrace_damage_nc"
+	{
+		"chi"		"{1} 秒后无敌状态关闭"
+	}
+
+	"armsrace_info_title"
+	{
+		"chi"		"'武装竞赛'已激活!"
+	}
+
+	"armsrace_info_line1"
+	{
+		"chi"		"你有可能被钦定为 '复活带甲' !"
+	}
+
+	"armsrace_info_line2"
+	{
+		"chi"		"武装竞赛 - PvP - 第一个使用黄金匕首击杀将获取胜利!"
+	}
+
+	"armsrace_info_line3"
+	{
+		"chi"		"趁着 '无敌' 赶紧苟命!"
+	}
+
+	"armsrace_info_line4"
+	{
+		"chi"		"正常的越狱规则此回合可能不适用!"
+	}
+
+	"armsrace_info_line5"
+	{
+		"chi"		"上一次请求在此回合禁用!"
+	}
+
+	"armsrace_info_line6"
+	{
+		"chi"		"所有人都可以在地图找个洞躲起来!"
+	}
+
+	"armsrace_info_line7"
+	{
+		"chi"		"不要做一个傻吊!"
+	}
+
+	"RoundOne"
+	{
+		"chi"		"第 1 / 3 回合"
+	}
+
+	"RoundTwo"
+	{
+		"chi"		"第 2 / 3 回合"
+	}
+
+	"RoundThree"
+	{
+		"chi"		"这是最后一轮武装竞赛!"
+	}
+
+	"armsrace_wait"
+	{
+		"chi"		"活动日必须等多{purple}{1}{default}回合!"
+	}
+
+	"armsrace_name"
+	{
+		"chi"		"武装竞赛"
+	}
+
+	"armsrace_downgraded"
+	{
+		"chi"		"你被降级因为被匕首击杀"
+	}
+
+	"armsrace_downgrade"
+	{
+		"chi"		"你用匕首击杀了{purple}{1}{default}, 因此他被降级!"
+	}
+
+	"armsrace_levelup"
+	{
+		"chi"		"{purple}升级!{default} 你现在获得了 {1}!"
+	}
+
+	"armsrace_now_nc"
+	{
+		"chi"		"新一轮的武装竞赛开始."
+	}
+
+	"armsrace_now"
+	{
+		"chi"		"{purple}武装竞赛{default} 现在开始."
+	}
+
+}

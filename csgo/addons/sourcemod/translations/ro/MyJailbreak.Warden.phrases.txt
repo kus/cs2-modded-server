@@ -1,0 +1,1041 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:17 UTC
+// Language: Romanian (ro)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/178
+//
+"Phrases"
+{
+
+	"warden_new"
+	{
+		"ro"		"{purple}{1}{default} este acum {blue}Warden."
+	}
+
+	"warden_new_nc"
+	{
+		"ro"		"{1} este acum Warden."
+	}
+
+	"warden_playerdead"
+	{
+		"ro"		"Numai {purple}jucatorii in viata{default} pot deveni Warden!"
+	}
+
+	"warden_ctsonly"
+	{
+		"ro"		"Numai {purple}Counter-Terrorists{default} pot deveni Warden!"
+	}
+
+	"warden_exist"
+	{
+		"ro"		"Warden este : {purple}{1}{default}."
+	}
+
+	"warden_retire"
+	{
+		"ro"		"{purple}{1}{default} Warden a iesit, se alege alt Warden!"
+	}
+
+	"warden_retire_nc"
+	{
+		"ro"		"{1} a decis sa se retraga din pozitia Warden. Se alege alt Warden aleatoriu!"
+	}
+
+	"warden_notwarden"
+	{
+		"ro"		"Trebuie sa fi {purple}Warden{default} sa dai comanda!"
+	}
+
+	"warden_dead"
+	{
+		"ro"		"Warden este acum {darkred}MORT{default}."
+	}
+
+	"warden_nowarden"
+	{
+		"ro"		"Nu exista {purple}Warden{default}. Tasteaza {green}!w sau !simon{default} sa devi Warden!"
+	}
+
+	"warden_nowarden_nc"
+	{
+		"ro"		"Nu exista Warden. Tasteaza !w sau !simon sa devi Warden!"
+	}
+
+	"warden_dead_nc"
+	{
+		"ro"		"Warden este acum mort."
+	}
+
+	"warden_disconnected"
+	{
+		"ro"		"Warden a {purple}iesit{default}."
+	}
+
+	"warden_disconnected_nc"
+	{
+		"ro"		"Warden a iesit."
+	}
+
+	"warden_removed"
+	{
+		"ro"		"Admin: {purple}{1}{default} l-a dat afara pe Warden: {purple}{2}"
+	}
+
+	"warden_removed_nc"
+	{
+		"ro"		"Admin: {1} l-a dat afara pe Warden: {2}"
+	}
+
+	"warden_noexist"
+	{
+		"ro"		"Nu exista{purple} Warden!"
+	}
+
+	"warden_disabled"
+	{
+		"ro"		"Warden este momentan {purple}dezactivat{default}!"
+	}
+
+	"warden_nobecome"
+	{
+		"ro"		"Un nou Warden se alege {purple}aleatoriu{default}!"
+	}
+
+	"warden_adminset"
+	{
+		"ro"		"Admin: {purple}{1}{default} a pus Warden!"
+	}
+
+	"warden_randomwarden"
+	{
+		"ro"		"Warden a fost ales!"
+	}
+
+	"warden_dooropen"
+	{
+		"ro"		"Warden a {purple}deschis{default} celulele."
+	}
+
+	"warden_doorclose"
+	{
+		"ro"		"Warden a {purple}inchis{default} celulele."
+	}
+
+	"warden_openauto"
+	{
+		"ro"		"Celulele {purple}s-au deschis automat!{default}"
+	}
+
+	"warden_opentime"
+	{
+		"ro"		"Acum {purple}celulele{default} trebuie sa fie deschise!"
+	}
+
+	"warden_ffison"
+	{
+		"ro"		"Focul prietenos este {purple}activat!"
+	}
+
+	"warden_ffisoff"
+	{
+		"ro"		"Focul prietenos este {purple}dezactivat!"
+	}
+
+	"warden_voting"
+	{
+		"ro"		"Votul pentru a da afara {purple}Warden{default} este dezactivat!"
+	}
+
+	"warden_countdowncanceled"
+	{
+		"ro"		"Numaratoarea {darkred}dezactivata!"
+	}
+
+	"warden_startcountdown_nc"
+	{
+		"ro"		"Incepe in {1} secunde!"
+	}
+
+	"warden_stopcountdown_nc"
+	{
+		"ro"		"Se termina in {1} secunde!"
+	}
+
+	"warden_startcountdown"
+	{
+		"ro"		"Incepe in {purple}{1}{default} secunde!"
+	}
+
+	"warden_stopcountdown"
+	{
+		"ro"		"Opreste in {purple}{1}{default} secunde!"
+	}
+
+	"warden_startcountdownhint"
+	{
+		"ro"		"Atentie! Warden {purple}a inceput o NUMARATOARE!"
+	}
+
+	"warden_startcountdownhint_nc"
+	{
+		"ro"		"Atentie! Warden a inceput o numaratoare !"
+	}
+
+	"warden_startstopcountdownhint"
+	{
+		"ro"		"Atentie! Warden {purple}a inceput START / STOP Numaratoarea!"
+	}
+
+	"warden_startstopcountdownhint_nc"
+	{
+		"ro"		"Atentie! Warden a inceput START / STOP Numaratoarea!"
+	}
+
+	"warden_stopcountdownhint"
+	{
+		"ro"		"Atentie! Warden {purple}a oprit Numaratoarea!"
+	}
+
+	"warden_stopcountdownhint_nc"
+	{
+		"ro"		"Atentie! Warden a inceput STOP Numaratoarea! Grabeste-te!"
+	}
+
+	"warden_countdownstart"
+	{
+		"ro"		"{purple}GO! {darkred}START!"
+	}
+
+	"warden_countdownstop"
+	{
+		"ro"		"{purple}STOP! {darkred}END!"
+	}
+
+	"warden_countdownrunning"
+	{
+		"ro"		"Numaratoarea {purple}este deja in progres!"
+	}
+
+	"warden_countdownstart_nc"
+	{
+		"ro"		"GO! START!"
+	}
+
+	"warden_countdownstop_nc"
+	{
+		"ro"		"STOP! END!"
+	}
+
+	"warden_noblockoff"
+	{
+		"ro"		"Warden toggled {purple}NoBlock off!"
+	}
+
+	"warden_noblockon"
+	{
+		"ro"		"Warden toggled {purple}NoBlock on!"
+	}
+
+	"warden_need"
+	{
+		"ro"		"{1} voturi pentru a elimina {darkred} Warden!"
+	}
+
+	"warden_voted"
+	{
+		"ro"		"Deja ai votat pentru a elimina {purple}Warden{default}!"
+	}
+
+	"warden_israndom"
+	{
+		"ro"		"{1} a fost ales aleatoriu!"
+	}
+
+	"warden_gunplant"
+	{
+		"ro"		"Gardianul {purple}{1}{default} a scapat arma {green}{2}!"
+	}
+
+	"warden_gunplant_nc"
+	{
+		"ro"		"Gardianul {1} a scapat arma {2}!"
+	}
+
+	"warden_noplant"
+	{
+		"ro"		"Este {darkred}interzis{default} pentru gardieni sa arunce arme!"
+	}
+
+	"warden_choose"
+	{
+		"ro"		"Selecteaza Jucator"
+	}
+
+	"warden_remove"
+	{
+		"ro"		"Remove Warden?"
+	}
+
+	"warden_laseron"
+	{
+		"ro"		"Laser {purple}este activat!"
+	}
+
+	"warden_laseroff"
+	{
+		"ro"		"Laser {purple}este dezactivat"
+	}
+
+	"warden_draweron"
+	{
+		"ro"		"Drawer {purple}activat"
+	}
+
+	"warden_draweroff"
+	{
+		"ro"		"Drawer {purple}dezactivat"
+	}
+
+	"warden_drawert"
+	{
+		"ro"		"Toggle Drawer pentru prizonieri"
+	}
+
+	"warden_tdraweron"
+	{
+		"ro"		"Drawer for Prisoner is {purple}activat"
+	}
+
+	"warden_tdraweroff"
+	{
+		"ro"		"Drawer for Prisoner is {purple}dezactivat"
+	}
+
+	"warden_marker_set"
+	{
+		"ro"		"{1} Marcaj setat!"
+	}
+
+	"warden_marker_remove"
+	{
+		"ro"		"{1} Marcaj inlaturat!"
+	}
+
+	"warden_laser"
+	{
+		"ro"		"{1} Laser Pointer is now equipped!"
+	}
+
+	"warden_drawer"
+	{
+		"ro"		"{1} Drawer equipt!"
+	}
+
+	"warden_marker_faraway"
+	{
+		"ro"		"Your {1} Marker was removed! You were far away from it."
+	}
+
+	"warden_marker_title"
+	{
+		"ro"		"Marker Color"
+	}
+
+	"warden_laser_title"
+	{
+		"ro"		"Laser Pointer Color"
+	}
+
+	"warden_drawer_title"
+	{
+		"ro"		"Drawer Color"
+	}
+
+	"warden_laser_off"
+	{
+		"ro"		"Disable Laser Pointer"
+	}
+
+	"warden_drawer_off"
+	{
+		"ro"		"Deactivate Drawer"
+	}
+
+	"warden_rainbow"
+	{
+		"ro"		"Rainbow"
+	}
+
+	"warden_red"
+	{
+		"ro"		"Red"
+	}
+
+	"warden_blue"
+	{
+		"ro"		"Blue"
+	}
+
+	"warden_green"
+	{
+		"ro"		"Green"
+	}
+
+	"warden_orange"
+	{
+		"ro"		"Orange"
+	}
+
+	"warden_yellow"
+	{
+		"ro"		"Yellow"
+	}
+
+	"warden_white"
+	{
+		"ro"		"White"
+	}
+
+	"warden_cyan"
+	{
+		"ro"		"Cyan"
+	}
+
+	"warden_magenta"
+	{
+		"ro"		"Magenta"
+	}
+
+	"warden_range"
+	{
+		"ro"		"Pozitia este prea departe!"
+	}
+
+	"warden_wrong"
+	{
+		"ro"		"Ceva nu este bine, incearca din nou!"
+	}
+
+	"warden_mute"
+	{
+		"ro"		"{2} Warden mute {1} for {3} seconds!"
+	}
+
+	"warden_muteend"
+	{
+		"ro"		"{2} Warden mute {1} pentru tot sfarsitul rundei!"
+	}
+
+	"warden_unmute"
+	{
+		"ro"		"{1} a primit unmute."
+	}
+
+	"warden_cdmenu_title"
+	{
+		"ro"		"Numaratoare Menu"
+	}
+
+	"warden_cdmenu_start"
+	{
+		"ro"		"Incepe o numaratoare (10 sec)"
+	}
+
+	"warden_cdmenu_stop"
+	{
+		"ro"		"Termina o numaratoare (20 sec)"
+	}
+
+	"warden_cdmenu_startstop"
+	{
+		"ro"		"Seteaza oprit/pornit numaratoare"
+	}
+
+	"warden_cdmenu_title2"
+	{
+		"ro"		"Timpul intre oprit/pornit"
+	}
+
+	"warden_time_title"
+	{
+		"ro"		"Cat timp?"
+	}
+
+	"warden_allt"
+	{
+		"ro"		"Toti Prizonierii"
+	}
+
+	"warden_roundend"
+	{
+		"ro"		"Pana cand se termina runda"
+	}
+
+	"warden_15"
+	{
+		"ro"		"15 Secunde"
+	}
+
+	"warden_30"
+	{
+		"ro"		"30 Secunde"
+	}
+
+	"warden_45"
+	{
+		"ro"		"45 Secunde"
+	}
+
+	"warden_60"
+	{
+		"ro"		"1 Minut"
+	}
+
+	"warden_90"
+	{
+		"ro"		"1 Minut 30 Secunde"
+	}
+
+	"warden_120"
+	{
+		"ro"		"2 Minute"
+	}
+
+	"warden_180"
+	{
+		"ro"		"3 Minute"
+	}
+
+	"warden_300"
+	{
+		"ro"		"5 Minute"
+	}
+
+	"warden_math_correct"
+	{
+		"ro"		"{1} a dat{green} raspunsul corect!{default} Raspunsul era {purple}{2}!"
+	}
+
+	"warden_math_time"
+	{
+		"ro"		"Timpul s-a terminat! Nici un raspuns. {purple}Raspunsul era {1}"
+	}
+
+	"warden_startmathquiz"
+	{
+		"ro"		"Atentie! Warden a pornit {purple}o intrebare de matematica!"
+	}
+
+	"warden_startmathquiz_nc"
+	{
+		"ro"		"Atentie! Warden a inceput o problema de matematica!"
+	}
+
+	"warden_sure"
+	{
+		"ro"		"Esti sigur?"
+	}
+
+	"warden_yes"
+	{
+		"ro"		"DA"
+	}
+
+	"warden_no"
+	{
+		"ro"		"NU"
+	}
+
+	"warden_minrandom"
+	{
+		"ro"		"A mai ramas (non-rebeling) un singur Prizonier!"
+	}
+
+	"warden_nomuted"
+	{
+		"ro"		"Nu exista prizonieri cu mute!"
+	}
+
+	"warden_mute_title"
+	{
+		"ro"		"Mute Menu"
+	}
+
+	"warden_menu_mute"
+	{
+		"ro"		"Da mute unui prizonier"
+	}
+
+	"warden_menu_unmute"
+	{
+		"ro"		"Scoate Mute"
+	}
+
+	"warden_cuffs"
+	{
+		"ro"		"Utilizeaza Taser pe post de Catuse!"
+	}
+
+	"warden_cuffson"
+	{
+		"ro"		"{purple}{1}{default} l-a fost arestat pe {green}{2}{default}!"
+	}
+
+	"warden_cuffsoff"
+	{
+		"ro"		"{purple}{1}{default} a scos catusele lui {green}{2}{default}."
+	}
+
+	"warden_cuffsgot"
+	{
+		"ro"		"Mai ai {green}{1}{default} catuse!"
+	}
+
+	"warden_bulletmarkoff"
+	{
+		"ro"		"Bullet Impact Sparks {purple}dezactivat!"
+	}
+
+	"warden_bulletmarkon"
+	{
+		"ro"		"Bullet Impact Sparks {purple}activat!"
+	}
+
+	"warden_extend"
+	{
+		"ro"		"Warden {1} a extins runda cu {2} minute."
+	}
+
+	"warden_backstab"
+	{
+		"ro"		"Esti protejat impotriva loviturii din spate cu cutitul."
+	}
+
+	"warden_extendtimes"
+	{
+		"ro"		"Deja ai {purple}extins runda{1} timp{default} in aceeasta runda!"
+	}
+
+	"warden_close"
+	{
+		"ro"		"Exit"
+	}
+
+	"warden_gotpaperclip"
+	{
+		"ro"		"In secret ai {1} paperclip(s) in buzunar. Tine apasat +use (E)"
+	}
+
+	"warden_brokepaperclip"
+	{
+		"ro"		"Ai stricat paperclip!"
+	}
+
+	"warden_unlock"
+	{
+		"ro"		"Ai scapat de catuse!"
+	}
+
+	"warden_painter"
+	{
+		"ro"		"{1} Painter is now equipped!"
+	}
+
+	"warden_painter_title"
+	{
+		"ro"		"Painter Color"
+	}
+
+	"warden_painter_off"
+	{
+		"ro"		"Deactivate Painter"
+	}
+
+	"warden_painteron"
+	{
+		"ro"		"Painter {purple}activat"
+	}
+
+	"warden_painteroff"
+	{
+		"ro"		"Painter {purple}is disabled"
+	}
+
+	"warden_paintert"
+	{
+		"ro"		"Toggle Painter for Prisoners"
+	}
+
+	"warden_tpainteron"
+	{
+		"ro"		"The Painter for Prisoners is {purple}activat!"
+	}
+
+	"warden_tpainteroff"
+	{
+		"ro"		"The Painter for Prisoners is {purple}dezactivat!"
+	}
+
+	"warden_disarmed"
+	{
+		"ro"		"{1} l-a dezarmat pe {2}."
+	}
+
+	"warden_lostgun"
+	{
+		"ro"		"Ai fost lovit in mana! Ti-ai pierdut arma !"
+	}
+
+	"warden_remaining"
+	{
+		"ro"		"Ramas"
+	}
+
+	"warden_dooropen_unavailable"
+	{
+		"ro"		"{darkred}Celulele trebuiesc deschise de la buton"
+	}
+
+	"warden_doorclose_unavailable"
+	{
+		"ro"		"{darkred}Celulele trebuiesc deschise de la buton!"
+	}
+
+	"warden_openauto_unavailable"
+	{
+		"ro"		"{darkred}Celulele trebuiesc deschise de la butons!"
+	}
+
+	"warden_menu_muteall"
+	{
+		"ro"		"Mute all Prisoners"
+	}
+
+	"warden_menu_unmuteall"
+	{
+		"ro"		"Unmute all Prisoners"
+	}
+
+	"warden_votesuccess"
+	{
+		"ro"		"Votul pentru a elimina actualul {purple} Warden{default} a avut succes!"
+	}
+
+	"warden_mutedefault"
+	{
+		"ro"		"Toti prizonierii au mute."
+	}
+
+	"warden_rebel_title"
+	{
+		"ro"		"Rebels Menu"
+	}
+
+	"warden_rebel_mark"
+	{
+		"ro"		"Marcheaza un player rebel"
+	}
+
+	"warden_rebel_unmark"
+	{
+		"ro"		"Demarcheaza Rebel de la un player"
+	}
+
+	"warden_talkover"
+	{
+		"ro"		"Warden vorbeste , liniste."
+	}
+
+	"warden_info_counter"
+	{
+		"ro"		"Prizonieri in fata:"
+	}
+
+	"warden_counter"
+	{
+		"ro"		"Ai {1} prizonier in fata"
+	}
+
+	"warden_deputy_playerdead"
+	{
+		"ro"		"Numai {purple}playerii in viata{default} pot deveni Adjuncti!"
+	}
+
+	"warden_deputy_ctsonly"
+	{
+		"ro"		"Numai {purple}Counter-Terrorists{default} pot deveni Adjuncti!"
+	}
+
+	"warden_deputy_exist"
+	{
+		"ro"		"Actualul Adjunct este : {purple}{1}{default}."
+	}
+
+	"warden_deputy_disabled"
+	{
+		"ro"		"Actualul Adjunct este {purple}dezactivat{default}!"
+	}
+
+	"warden_deputy_nobecome"
+	{
+		"ro"		"Nu poti deveni adjunct , Warden trebuie sa aleaga"
+	}
+
+	"warden_deputy_retire"
+	{
+		"ro"		"{purple}{1}{default} a decis sa se retrage din pozitia Adjunct."
+	}
+
+	"warden_deputy_retire_nc"
+	{
+		"ro"		"{1} a decis sa se retrage din pozitia Adjunct!"
+	}
+
+	"warden_deputy_fired_nc"
+	{
+		"ro"		"Warden: {1} l-a dat afara pe Adjunct: {2}"
+	}
+
+	"warden_deputy_fired"
+	{
+		"ro"		"Warden: {purple}{1}{default} l-a dat afara pe Adjunct: {purple}{2}"
+	}
+
+	"warden_deputy_dead_nc"
+	{
+		"ro"		"Adjunctul a murit."
+	}
+
+	"warden_deputy_dead"
+	{
+		"ro"		"Adjunct este acum {darkred}mort{default}."
+	}
+
+	"warden_deputy_disconnected"
+	{
+		"ro"		"Adjunct este acum {purple}a iesit{default}."
+	}
+
+	"warden_deputy_disconnected_nc"
+	{
+		"ro"		"Adjunct-ul a iesit."
+	}
+
+	"warden_deputy_new_nc"
+	{
+		"ro"		"{1} Este acum Adjunct."
+	}
+
+	"warden_deputy_new"
+	{
+		"ro"		"{purple}{1}{default} Este acum Adjunct."
+	}
+
+	"warden_deputy_set"
+	{
+		"ro"		"Tu ca {purple}Warden{default} poti alege adjunct. Tasteaza {green}!deputy{default} pentru a alege Adjunct!"
+	}
+
+	"warden_deputy_become"
+	{
+		"ro"		"Momentan nu exista {purple}Adjunct{default}. Tasteaza {green}!deputy{default} sa devi Adjunct!"
+	}
+
+	"warden_picking"
+	{
+		"ro"		"Alege"
+	}
+
+	"warden_pickingaborted"
+	{
+		"ro"		"Alegerea abordata"
+	}
+
+	"warden_givefreeday"
+	{
+		"ro"		"Da Freeday lui:"
+	}
+
+	"warden_havefreeday"
+	{
+		"ro"		"{1} are acum FREEDAY!"
+	}
+
+	"warden_freeday_title"
+	{
+		"ro"		"Freeday pentru {1}"
+	}
+
+	"warden_freedaynext"
+	{
+		"ro"		"Urmatoarea Runda"
+	}
+
+	"warden_freedaynow"
+	{
+		"ro"		"Aceeasta Runda"
+	}
+
+	"warden_freedayforyou"
+	{
+		"ro"		"Ai {purple}FreeDay{default} runda urmatoare"
+	}
+
+	"warden_personalfreeday"
+	{
+		"ro"		"{green}{1}{default} a primit {purple}FreeDay{default} runda urmatoare"
+	}
+
+	"warden_cooldown"
+	{
+		"ro"		"Ai {purple}Warden cooldown{default}. Asteapta {green}{1}{default} runde"
+	}
+
+	"warden_limit"
+	{
+		"ro"		"Ai jucat {purple}{1} runde la rand{default} ca Warden. Asteapta {green}{2}{default} runde"
+	}
+
+	"warden_wait"
+	{
+		"ro"		"Ai fost {green}Warden runda trecuta{default} trebuie sa astepti {purple}{1} secunde{default} sa devii Warden."
+	}
+
+	"warden_deputy_removed"
+	{
+		"ro"		"Admin: {purple}{1}{default} a dat afara Adjunct-ul: {purple}{2}"
+	}
+
+	"warden_deputy_removed_nc"
+	{
+		"ro"		"Admin: {1} a dat afara Adjunct-ul: {2}"
+	}
+
+	"warden_steamgroup"
+	{
+		"ro"		"Nu poti juca Warden ,mai intai trebuie sa intri in grupul nostru de STEAM"
+	}
+
+	"warden_rankme"
+	{
+		"ro"		"Trebuie sa ai {1} RankMe Points sa joci Warden"
+	}
+
+	"warden_reputation"
+	{
+		"ro"		"Trebuie sa ai {1} Reputation Points sa joci Warden"
+	}
+
+	"warden_stamm"
+	{
+		"ro"		"Trebuie sa ai {1} Stamm Points sa joci Warden"
+	}
+
+	"warden_removefreeday"
+	{
+		"ro"		"Elimina Freeday jucatorului:"
+	}
+
+	"warden_removefreedayforyou"
+	{
+		"ro"		"Numai ai {purple}FreeDay{default} ."
+	}
+
+	"warden_removepersonalfreeday"
+	{
+		"ro"		"{green}{1}s{default} {purple}FreeDay{default} eliminat"
+	}
+
+	"warden_noplayer"
+	{
+		"ro"		"Nici un jucator de ales"
+	}
+
+	"warden_lvlranks"
+	{
+		"ro"		"Trebuie sa ai level {1} sa joci Warden"
+	}
+
+	"warden_mostactive"
+	{
+		"ro"		"Trebuie sa fi jucat cel putin {1} sa devi Warden."
+	}
+
+	"warden_mostactive_guard"
+	{
+		"ro"		"Trebuie sa fi jucat cel putin {1} ca CT sa devi Warden."
+	}
+
+	"warden_mostactive_terror"
+	{
+		"ro"		"Trebuie sa fi jucat cel putint {1} ca terorist sa poti fi Warden."
+	}
+
+	"warden_novalid"
+	{
+		"ro"		"Nu pot gasi {green}valid non-rebeling{default} prizonier in fata."
+	}
+
+	"warden_withhold_lr"
+	{
+		"ro"		"Warden {purple}withholds{default} your last request"
+	}
+
+	"warden_withhold_on"
+	{
+		"ro"		"Warden {purple}withhold{default} the last request"
+	}
+
+	"warden_withhold_off"
+	{
+		"ro"		"Warden {purple}has released{default} the last request"
+	}
+
+	"warden_apply_time"
+	{
+		"ro"		"secunde pentru a aplicat pentru SIMON."
+	}
+
+	"warden_no_applications"
+	{
+		"ro"		"Nimeni nu a aplicat pentru pozitia de Simon. Un {purple}SIMON{default} random a fost ales."
+	}
+
+	"warden_one_application"
+	{
+		"ro"		"Doar o aplicare pentru SIMON."
+	}
+
+	"warden_apply_time_over"
+	{
+		"ro"		"Aplicarile au luat sfarsit. \n Alege noul SIMON!"
+	}
+
+	"warden_vote_applicants"
+	{
+		"ro"		"Votul s-a terminat cu 50/50 ! Un SIMON random a fost ales!"
+	}
+
+	"warden_vote_won"
+	{
+		"ro"		"{purple}{1}{default} with the most votes becomes your {purple}new warden."
+	}
+
+	"warden_apply_added"
+	{
+		"ro"		"{purple}{1}{default} a aplicat pentru SIMON."
+	}
+
+	"warden_apply_removed"
+	{
+		"ro"		"Ai fost scos din lista de aplicare pentru SIMON."
+	}
+
+	"warden_cooldown_reset"
+	{
+		"ro"		"Timpul de asteptare pentru fiecare SIMON a fost resetat."
+	}
+
+}

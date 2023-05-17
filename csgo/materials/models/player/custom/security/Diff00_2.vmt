@@ -1,0 +1,13 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/player/custom/security/Diff00_2"
+       // "$envmap" 			"env_cubemap"
+        "$bumpmap" "models/player/custom/security/Norm00_2"
+
+
+	"$phong"			"1"
+	"$phongboost"		".2"
+	"$phongexponent"		"50"
+	"$phongfresnelranges"	"[.8 .8 .6]"
+
+}

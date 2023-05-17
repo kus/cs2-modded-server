@@ -1,0 +1,16 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:25 UTC
+// Language: Romanian (ro)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/201
+//
+"Phrases"
+{
+
+	"ratio_reputation"
+	{
+		"ro"		"Iti trebuie macar {1} puncte de Reputatie ca sa joci ca GARDIAN!"
+	}
+
+}

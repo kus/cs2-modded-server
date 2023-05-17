@@ -1,0 +1,171 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:34 UTC
+// Language: English (en)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/271
+//
+"Phrases"
+{
+
+	"ghosts_need"
+	{
+		"#format"	"{1:i},{2:N}"
+		"en"		"{purple}{2}{default} has voted. {purple}{1}{default} vote(s) required to play {darkred}Ghosts."
+	}
+
+	"ghosts_voting"
+	{
+		"en"		"Voting for Ghosts is {purple}disabled!"
+	}
+
+	"ghosts_setbywarden"
+	{
+		"en"		"Set Ghosts by Warden is {purple}disabled!"
+	}
+
+	"ghosts_setbyadmin"
+	{
+		"en"		"Set Ghosts by Admin is {purple}disabled!"
+	}
+
+	"ghosts_ctwin_nc"
+	{
+		"en"		"A Guard has survived!"
+	}
+
+	"ghosts_twin_nc"
+	{
+		"en"		"A Prisoner has survived!"
+	}
+
+	"ghosts_minplayer"
+	{
+		"en"		"For Ghosts you need at least {purple}one Guard, & one Prisoner!"
+	}
+
+	"ghosts_end"
+	{
+		"en"		"{purple}Ghosts{default} has ended!"
+	}
+
+	"ghosts_next"
+	{
+		"en"		"The following round will be: {purple}Ghosts."
+	}
+
+	"ghosts_next_nc"
+	{
+		"en"		"The following round will be: Ghosts."
+	}
+
+	"ghosts_rounds"
+	{
+		"#format"	"{1:i},{2:i}"
+		"en"		"Round {purple}{1}{default} of {purple}{2}"
+	}
+
+	"ghosts_start"
+	{
+		"en"		"{purple}Ghosts{default} has begun!"
+	}
+
+	"ghosts_start_nc"
+	{
+		"en"		"Ghosts has begun!"
+	}
+
+	"ghosts_voted"
+	{
+		"en"		"You have already voted for {purple}Ghosts!"
+	}
+
+	"ghosts_progress"
+	{
+		"#format"	"{1:s}"
+		"en"		"The event {darkred}{1} {default}is {purple}already in progress!"
+	}
+
+	"ghosts_disabled"
+	{
+		"en"		"Ghosts is currently {purple}disabled!"
+	}
+
+	"ghosts_damage_nc"
+	{
+		"#format"	"{1:i}"
+		"en"		"{1} seconds until damage enabled"
+	}
+
+	"ghosts_info_title"
+	{
+		"en"		"Ghosts War is now Activated!"
+	}
+
+	"ghosts_info_line1"
+	{
+		"en"		"You are Invisible & Immortal!"
+	}
+
+	"ghosts_info_line2"
+	{
+		"en"		"Every 10sec. all players become visible & hurtable"
+	}
+
+	"ghosts_info_line3"
+	{
+		"en"		"Free for All - Player VS Player - The last man standing wins!"
+	}
+
+	"ghosts_info_line4"
+	{
+		"en"		"All usual Jailbreak Rules do not apply during this round!"
+	}
+
+	"ghosts_info_line5"
+	{
+		"en"		"Last Request is disabled during this round!"
+	}
+
+	"ghosts_info_line6"
+	{
+		"en"		"Everyone is allowed to go anywhere within the map!"
+	}
+
+	"ghosts_info_line7"
+	{
+		"en"		"Don't be an Asshole!"
+	}
+
+	"ghosts_wait"
+	{
+		"#format"	"{1:i}"
+		"en"		"You must wait {purple}{1}{default} more rounds for an Event Day!"
+	}
+
+	"ghosts_name"
+	{
+		"en"		"Ghosts War"
+	}
+
+	"ghosts_visible"
+	{
+		"en"		"VISIBLE"
+	}
+
+	"ghosts_invisible"
+	{
+		"en"		"INVISIBLE"
+	}
+
+	"ghosts_now_nc"
+	{
+		"en"		"Now a ghosts round begins."
+	}
+
+	"ghosts_now"
+	{
+		"en"		"Now a {purple}ghosts{default} round begins."
+	}
+
+}

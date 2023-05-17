@@ -1,0 +1,31 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:33 UTC
+// Language: Korean (ko)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/195
+//
+"Phrases"
+{
+
+	"knifefight_ctwin_nc"
+	{
+		"ko"		"간수가 살아남았습니다!"
+	}
+
+	"knifefight_end"
+	{
+		"ko"		"{purple}칼전이{default}막을 내렸습니다."
+	}
+
+	"knifefight_disabled"
+	{
+		"ko"		"칼전은 현재 {purple}비활성화 되어있습니다."
+	}
+
+	"knifefight_name"
+	{
+		"ko"		"칼전"
+	}
+
+}

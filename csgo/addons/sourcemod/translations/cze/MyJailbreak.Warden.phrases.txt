@@ -1,0 +1,971 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:18 UTC
+// Language: Czech (cze)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/178
+//
+"Phrases"
+{
+
+	"warden_new"
+	{
+		"cze"		"{purple}{1}{default} se stal wardenem."
+	}
+
+	"warden_new_nc"
+	{
+		"cze"		"{1} je nyni Wardenem."
+	}
+
+	"warden_playerdead"
+	{
+		"cze"		"Pouze {purple}zivi hraci {default}se muzou stat wardenem!"
+	}
+
+	"warden_ctsonly"
+	{
+		"cze"		"Jenom {purple}Counter-Terrorists{default} se muze stat Wardenem !"
+	}
+
+	"warden_exist"
+	{
+		"cze"		"Aktualni warden je : {purple}{1}{default}."
+	}
+
+	"warden_retire"
+	{
+		"cze"		"{purple}{1}{default} se vzdal wardena. Meli byste vybrat noveho!"
+	}
+
+	"warden_retire_nc"
+	{
+		"cze"		"{1} se vzdal wardena. Meli byste vybrat noveho!"
+	}
+
+	"warden_notwarden"
+	{
+		"cze"		"Musis byt {purple}Warden{default} abys pouzil tento prikaz !"
+	}
+
+	"warden_dead"
+	{
+		"cze"		"Warden je {darkred}mrtvy{default}. Muzete si zvolit noveho."
+	}
+
+	"warden_nowarden"
+	{
+		"cze"		"Momentalne neni zadny {purple}Warden{default}. Napis {green}!w{default} aby ses stal wardenem!"
+	}
+
+	"warden_nowarden"
+	{
+		"cze"		"Momentalne neni zadny {purple}Warden{default}. Napis {green}!w{default} aby ses stal wardenem!"
+	}
+
+	"warden_nowarden"
+	{
+		"cze"		"Momentalne neni zadny {purple}Warden{default}. Napis {green}!w{default} aby ses stal wardenem!"
+	}
+
+	"warden_nowarden"
+	{
+		"cze"		"Momentalne neni zadny {purple}Warden{default}. Napis {green}!w{default} aby ses stal wardenem!"
+	}
+
+	"warden_nowarden"
+	{
+		"cze"		"Momentalne neni zadny {purple}Warden{default}. Napis {green}!w{default} aby ses stal wardenem!"
+	}
+
+	"warden_nowarden"
+	{
+		"cze"		"Momentalne neni zadny {purple}Warden{default}. Napis {green}!w{default} aby ses stal wardenem!"
+	}
+
+	"warden_nowarden"
+	{
+		"cze"		"Momentalne neni zadny {purple}Warden{default}. Napis {green}!w{default} aby ses stal wardenem!"
+	}
+
+	"warden_nowarden_nc"
+	{
+		"cze"		"Momentalne neni zadny warden. Napis !w a stan se jim!"
+	}
+
+	"warden_dead_nc"
+	{
+		"cze"		"warden je mrtvy. Muzete si zvolit noveho."
+	}
+
+	"warden_disconnected"
+	{
+		"cze"		"Warden se {purple}odpojil{default}. Muzete si ted zvolit noveho."
+	}
+
+	"warden_disconnected_nc"
+	{
+		"cze"		"Warden se odpojil. Mutete si ted zvolit noveho."
+	}
+
+	"warden_removed"
+	{
+		"cze"		"Admin {purple}{1}{default} propustil Wardena: {purple}{2}"
+	}
+
+	"warden_removed_nc"
+	{
+		"cze"		"Admin: {1} propustil wardena: {2}"
+	}
+
+	"warden_noexist"
+	{
+		"cze"		"Momentalne neni zadny{purple} Warden !"
+	}
+
+	"warden_disabled"
+	{
+		"cze"		"Warden je prave {purple}vypnuty{default}!"
+	}
+
+	"warden_nobecome"
+	{
+		"cze"		"Novy Warden bude vybran {purple}nahodne{default}!"
+	}
+
+	"warden_adminset"
+	{
+		"cze"		"Admin: Hrac {purple}{1}{default} je nyni Warden!"
+	}
+
+	"warden_randomwarden"
+	{
+		"cze"		"Nahodny warden byl zvolen!"
+	}
+
+	"warden_dooropen"
+	{
+		"cze"		"Warden {purple}otevrel{default} cely."
+	}
+
+	"warden_doorclose"
+	{
+		"cze"		"Warden {purple}zavrel{default} cely."
+	}
+
+	"warden_openauto"
+	{
+		"cze"		"Cely byly {purple}automaticky otevreny!{default}"
+	}
+
+	"warden_opentime"
+	{
+		"cze"		"Tak a ted by meli byt otevreny {purple}cely."
+	}
+
+	"warden_ffison"
+	{
+		"cze"		"Strelba do vlastnich je {purple}zapnuta !"
+	}
+
+	"warden_ffisoff"
+	{
+		"cze"		"Strelba do vlastnich je {purple}vypnuta!"
+	}
+
+	"warden_voting"
+	{
+		"cze"		"Hlasovani o vyhozeni {purple}Wardena{default} je prave vypnuto !"
+	}
+
+	"warden_countdowncanceled"
+	{
+		"cze"		"Tvuj odpocet byl {darkred}zrusen !"
+	}
+
+	"warden_startcountdown_nc"
+	{
+		"cze"		"Start za {1} sekund!"
+	}
+
+	"warden_stopcountdown_nc"
+	{
+		"cze"		"Stop/Konec za {1} sekund!"
+	}
+
+	"warden_startcountdown"
+	{
+		"cze"		"Start za {purple}{1}{default} sekund!"
+	}
+
+	"warden_stopcountdown"
+	{
+		"cze"		"Stop za {purple}{1}{default} sekund!"
+	}
+
+	"warden_startcountdownhint"
+	{
+		"cze"		"Pozor! Warden {purple}zahajil START odpocet!"
+	}
+
+	"warden_startcountdownhint_nc"
+	{
+		"cze"		"Pozor! Warden zahajil START odpocet!"
+	}
+
+	"warden_startstopcountdownhint"
+	{
+		"cze"		"Pozor! Warden {purple}zahajil START / STOP odpocet!"
+	}
+
+	"warden_startstopcountdownhint_nc"
+	{
+		"cze"		"Pozor! Warden zahajil START / STOP odpocet!"
+	}
+
+	"warden_stopcountdownhint"
+	{
+		"cze"		"Pozor! Warden {purple}zahajil STOP odpocet!"
+	}
+
+	"warden_stopcountdownhint_nc"
+	{
+		"cze"		"Pozor! Warden zahajil STOP odpocet! Pospes si!"
+	}
+
+	"warden_countdownstart"
+	{
+		"cze"		"{purple}GO! {darkred}START!"
+	}
+
+	"warden_countdownstop"
+	{
+		"cze"		"{purple}STOP! {darkred}END!"
+	}
+
+	"warden_countdownrunning"
+	{
+		"cze"		"Odpocet uz {purple} bezi!"
+	}
+
+	"warden_countdownstart_nc"
+	{
+		"cze"		"GO! START!"
+	}
+
+	"warden_countdownstop_nc"
+	{
+		"cze"		"STOP! END!"
+	}
+
+	"warden_noblockoff"
+	{
+		"cze"		"Warden vypl {purple}NoBlock"
+	}
+
+	"warden_noblockon"
+	{
+		"cze"		"Warden zapl {purple}NoBlock !"
+	}
+
+	"warden_need"
+	{
+		"cze"		"Je potreba {1} hlasu pro {darkred}vyhozeni wardena!"
+	}
+
+	"warden_voted"
+	{
+		"cze"		"Uz jsi hlasoval o vyhozeni aktualniho {purple}Wardena{default}!"
+	}
+
+	"warden_israndom"
+	{
+		"cze"		"{1} byl nahodne vybran!"
+	}
+
+	"warden_gunplant"
+	{
+		"cze"		"Dozorce {purple}{1}{default} upustil zbran {green}{2}!"
+	}
+
+	"warden_gunplant_nc"
+	{
+		"cze"		"Dozorce {1} zahodil {2}!"
+	}
+
+	"warden_gunplant_nc"
+	{
+		"cze"		"Dozorce {1} upustil zbran {2}!"
+	}
+
+	"warden_noplant"
+	{
+		"cze"		"Strazcum {darkred}zakazano{default} zahazovat zbrane!"
+	}
+
+	"warden_choose"
+	{
+		"cze"		"Vybrat Hrace"
+	}
+
+	"warden_remove"
+	{
+		"cze"		"Propustit aktualniho Wardena?"
+	}
+
+	"warden_laseron"
+	{
+		"cze"		"Laser {purple} je zapnuty!"
+	}
+
+	"warden_laseroff"
+	{
+		"cze"		"Laser {purple} je vypnuty!"
+	}
+
+	"warden_draweron"
+	{
+		"cze"		"Kresleni {purple} zapnuto"
+	}
+
+	"warden_draweroff"
+	{
+		"cze"		"Znackovac {purple}vypnuty"
+	}
+
+	"warden_drawert"
+	{
+		"cze"		"Prepnout Znackovac pro Teroristy"
+	}
+
+	"warden_tdraweron"
+	{
+		"cze"		"Znackovac pro Teroristy je {purple}zapnuty"
+	}
+
+	"warden_tdraweroff"
+	{
+		"cze"		"Znackovac je pro teroristy {purple} vypnuty"
+	}
+
+	"warden_marker_set"
+	{
+		"cze"		"Kolecko barvy {1} vytvoreno."
+	}
+
+	"warden_marker_remove"
+	{
+		"cze"		"Odstraneno kolecko barvy {1}!"
+	}
+
+	"warden_laser"
+	{
+		"cze"		"{1} Laserem vybaven !"
+	}
+
+	"warden_drawer"
+	{
+		"cze"		"{1} Znackovac vybaven !"
+	}
+
+	"warden_marker_faraway"
+	{
+		"cze"		"Tvuj {1} znackovac byl odstranen! Byl jsi prilis daleko od nej."
+	}
+
+	"warden_marker_title"
+	{
+		"cze"		"Barva kolecka"
+	}
+
+	"warden_laser_title"
+	{
+		"cze"		"Barva Laseru"
+	}
+
+	"warden_drawer_title"
+	{
+		"cze"		"Barva Znackovace"
+	}
+
+	"warden_laser_off"
+	{
+		"cze"		"Vypnout Laser"
+	}
+
+	"warden_drawer_off"
+	{
+		"cze"		"Znackovac deaktivovan"
+	}
+
+	"warden_rainbow"
+	{
+		"cze"		"Duha"
+	}
+
+	"warden_red"
+	{
+		"cze"		"Cervena"
+	}
+
+	"warden_blue"
+	{
+		"cze"		"Modra"
+	}
+
+	"warden_green"
+	{
+		"cze"		"Zelena"
+	}
+
+	"warden_orange"
+	{
+		"cze"		"Oranzova"
+	}
+
+	"warden_yellow"
+	{
+		"cze"		"Zluta"
+	}
+
+	"warden_white"
+	{
+		"cze"		"Bila"
+	}
+
+	"warden_cyan"
+	{
+		"cze"		"Tyrkysova"
+	}
+
+	"warden_magenta"
+	{
+		"cze"		"Magenta"
+	}
+
+	"warden_range"
+	{
+		"cze"		"Pozice je z dosahu !"
+	}
+
+	"warden_wrong"
+	{
+		"cze"		"Neco se pokazilo ! Prosim skus to znovu !"
+	}
+
+	"warden_mute"
+	{
+		"cze"		"{2} byl Umlcen Wardenem {1} na {3} sekund !"
+	}
+
+	"warden_muteend"
+	{
+		"cze"		"{2} byl mutnuty wardenem {1} do konce kola."
+	}
+
+	"warden_unmute"
+	{
+		"cze"		"{1} byl odmutovan."
+	}
+
+	"warden_cdmenu_title"
+	{
+		"cze"		"Menu odpoctu"
+	}
+
+	"warden_cdmenu_start"
+	{
+		"cze"		"Zacatek START odpoctu (10 sek)"
+	}
+
+	"warden_cdmenu_stop"
+	{
+		"cze"		"Zacit STOP odpocet (20 sek)"
+	}
+
+	"warden_cdmenu_startstop"
+	{
+		"cze"		"Nastavit Start/Stop odpocet"
+	}
+
+	"warden_cdmenu_title2"
+	{
+		"cze"		"Cas  mezi Start & Stop"
+	}
+
+	"warden_time_title"
+	{
+		"cze"		"Jak dlouho?"
+	}
+
+	"warden_allt"
+	{
+		"cze"		"Vsichni vezni"
+	}
+
+	"warden_roundend"
+	{
+		"cze"		"Do konce kole"
+	}
+
+	"warden_15"
+	{
+		"cze"		"15 Sekund"
+	}
+
+	"warden_30"
+	{
+		"cze"		"30 Sekund"
+	}
+
+	"warden_45"
+	{
+		"cze"		"45 Sekund"
+	}
+
+	"warden_60"
+	{
+		"cze"		"1 Minuta"
+	}
+
+	"warden_90"
+	{
+		"cze"		"1 Minuta 30 sekund"
+	}
+
+	"warden_120"
+	{
+		"cze"		"2 Minuty"
+	}
+
+	"warden_180"
+	{
+		"cze"		"3 Minuty"
+	}
+
+	"warden_300"
+	{
+		"cze"		"5 Minut"
+	}
+
+	"warden_math_correct"
+	{
+		"cze"		"{1} odpovedel {green}spravne!{default} Odpoved byla {purple}{2}"
+	}
+
+	"warden_math_time"
+	{
+		"cze"		"Cas vyprcel! Zadna spravna odpoved. {purple}odpoved byla {1}"
+	}
+
+	"warden_startmathquiz"
+	{
+		"cze"		"Pozornost ! Warden zacal {purple}matematicky quiz !"
+	}
+
+	"warden_startmathquiz_nc"
+	{
+		"cze"		"Pozor! Warden zapl matematicky kviz!"
+	}
+
+	"warden_sure"
+	{
+		"cze"		"Jsi si isty ?"
+	}
+
+	"warden_yes"
+	{
+		"cze"		"Ano"
+	}
+
+	"warden_no"
+	{
+		"cze"		"Ne"
+	}
+
+	"warden_minrandom"
+	{
+		"cze"		"Zbyva pouze jeden nerebelujici vezen."
+	}
+
+	"warden_nomuted"
+	{
+		"cze"		"Zadny vezen nema mute!"
+	}
+
+	"warden_mute_title"
+	{
+		"cze"		"Menu umlceni"
+	}
+
+	"warden_menu_mute"
+	{
+		"cze"		"Umlcet vezne"
+	}
+
+	"warden_menu_unmute"
+	{
+		"cze"		"Odmutovat vezne"
+	}
+
+	"warden_cuffs"
+	{
+		"cze"		"Pouzij Taser ako Pouta !"
+	}
+
+	"warden_cuffson"
+	{
+		"cze"		"{purple}{1}{default} Zatknul {green}{2}{default}!"
+	}
+
+	"warden_cuffsoff"
+	{
+		"cze"		"{purple}{1}{default} odstranil {green}{2}{default} Pouta."
+	}
+
+	"warden_cuffsgot"
+	{
+		"cze"		"Mas jenom {green}{1}{default} pouta !"
+	}
+
+	"warden_bulletmarkoff"
+	{
+		"cze"		"Efekty kulek jsou {purple}vypnuty !"
+	}
+
+	"warden_bulletmarkon"
+	{
+		"cze"		"Efekty kulek jsou {purple}zapnuty !"
+	}
+
+	"warden_extend"
+	{
+		"cze"		"Warden {1} prodlouzil cas kola o {2} minuty."
+	}
+
+	"warden_backstab"
+	{
+		"cze"		"Bodnuti do zad ochrana je aktivovana"
+	}
+
+	"warden_extendtimes"
+	{
+		"cze"		"Jiz jsi {purple} prodlouzil kolo {1}krat{default} v tomto kole!"
+	}
+
+	"warden_close"
+	{
+		"cze"		"Exit"
+	}
+
+	"warden_gotpaperclip"
+	{
+		"cze"		"Mas {1} sponku  ve sve kapse. Drz {purple}+use (E)"
+	}
+
+	"warden_brokepaperclip"
+	{
+		"cze"		"Zlomil si sponku !"
+	}
+
+	"warden_unlock"
+	{
+		"cze"		"Dostal jsi se z Pout !"
+	}
+
+	"warden_painter"
+	{
+		"cze"		"Jsi vybaven malovatkem s barvou: {1}"
+	}
+
+	"warden_painter_title"
+	{
+		"cze"		"Barva malovatka"
+	}
+
+	"warden_painter_off"
+	{
+		"cze"		"Vypnout Malovatko"
+	}
+
+	"warden_painteron"
+	{
+		"cze"		"Malovatko {purple}je zapnuto"
+	}
+
+	"warden_painteroff"
+	{
+		"cze"		"Malovatko {purpel}je vypnuto"
+	}
+
+	"warden_paintert"
+	{
+		"cze"		"Prepnout Malovatko pro Vezne"
+	}
+
+	"warden_tpainteron"
+	{
+		"cze"		"Malovatko pro vezne je {purple}zapnuto !"
+	}
+
+	"warden_tpainteroff"
+	{
+		"cze"		"Malovatko pro Vezne je {purple}vypnuto !"
+	}
+
+	"warden_disarmed"
+	{
+		"cze"		"{1} byl odzbrojen od {2}."
+	}
+
+	"warden_lostgun"
+	{
+		"cze"		"Tvoje ruka byla zranena ! Stratil jsi svou zbran !"
+	}
+
+	"warden_remaining"
+	{
+		"cze"		"Zbyvajici"
+	}
+
+	"warden_dooropen_unavailable"
+	{
+		"cze"		"{darkred}Tato mapa nepodporuje vzdálené otevírání dveří. {default}Musíš je {purple}otevřít ručně!"
+	}
+
+	"warden_doorclose_unavailable"
+	{
+		"cze"		"{darkred}Tato mapa nepodporuje vzdálené zavírání dveří. {default}Musíš je {purple}zavřít ručně!"
+	}
+
+	"warden_openauto_unavailable"
+	{
+		"cze"		"{darkred}Tato mapa nepodporuje automatické otevírání dveří. {default}Warden je musí {purple}otevřít ručně!"
+	}
+
+	"warden_menu_muteall"
+	{
+		"cze"		"Umlcet vsechny Vezne"
+	}
+
+	"warden_menu_unmuteall"
+	{
+		"cze"		"Odmuteovat vsechny vezne."
+	}
+
+	"warden_votesuccess"
+	{
+		"cze"		"Hlasovani o {purple}vyhozeni Wardena{default} bylo uspesne !"
+	}
+
+	"warden_mutedefault"
+	{
+		"cze"		"Vsichni vezni jsou umlceni."
+	}
+
+	"warden_rebel_title"
+	{
+		"cze"		"Menu rebelu"
+	}
+
+	"warden_rebel_mark"
+	{
+		"cze"		"Oznacit Hrace jako Rebela"
+	}
+
+	"warden_rebel_unmark"
+	{
+		"cze"		"Odstranit hrace od Rebelu"
+	}
+
+	"warden_talkover"
+	{
+		"cze"		"Warden mluvi, byls umlcen."
+	}
+
+	"warden_info_counter"
+	{
+		"cze"		"Vezen na dohled :"
+	}
+
+	"warden_counter"
+	{
+		"cze"		"Vidis {1} vezne"
+	}
+
+	"warden_deputy_playerdead"
+	{
+		"cze"		"Jenom {purple}zivy hraci{default} se muzou stat Zastupci !"
+	}
+
+	"warden_deputy_ctsonly"
+	{
+		"cze"		"Jenom {purple}Counter-Terrorists{default} muzou byt Zastupci ! "
+	}
+
+	"warden_deputy_exist"
+	{
+		"cze"		"Aktualni Zastupce je: {purple}{1}{default}."
+	}
+
+	"warden_deputy_disabled"
+	{
+		"cze"		"Zastupce je prave {purple}vypnuty{default}!"
+	}
+
+	"warden_deputy_nobecome"
+	{
+		"cze"		"Nemuzes se stat Zastupcem, Warden te musi zvolit"
+	}
+
+	"warden_deputy_retire"
+	{
+		"cze"		"{purple}{1}{default} se rozhodnul ze odstoupi z pozice Zastupce. Muzete si ted zvolit noveho Zastupce !"
+	}
+
+	"warden_deputy_retire_nc"
+	{
+		"cze"		"{1} se rozhodnul ze odstoupi z pozice Zastupce. Mutete si ted zvolit noveho Zastupce !"
+	}
+
+	"warden_deputy_fired_nc"
+	{
+		"cze"		"Warden: {1} propustil Zastupce: {2}"
+	}
+
+	"warden_deputy_fired"
+	{
+		"cze"		"Warden: {purple}{1}{default} propustil Zastupce: {purple}{2}"
+	}
+
+	"warden_deputy_dead_nc"
+	{
+		"cze"		"Zastupce je mrtvy. Muzete si zvolit noveho."
+	}
+
+	"warden_deputy_dead"
+	{
+		"cze"		"Zastupce je {darkred}mrtvy{default}. Muzete si zvolit noveho."
+	}
+
+	"warden_deputy_disconnected"
+	{
+		"cze"		"Zastupce se {purple}odpojil{default}. Muzete si zvolit noveho."
+	}
+
+	"warden_deputy_disconnected_nc"
+	{
+		"cze"		"Zastupce se odpojil. Muzete si zvolit noveho."
+	}
+
+	"warden_deputy_new_nc"
+	{
+		"cze"		"{1} je ted Zastupce Wardena."
+	}
+
+	"warden_deputy_new"
+	{
+		"cze"		"{purple}{1}{default} je ted Zastupce Wardena."
+	}
+
+	"warden_deputy_set"
+	{
+		"cze"		"Ty jako {purple}Warden{default} muzes pridelit Zastupce. Napis {green}!deputy{default} pro prideleni Zastupce !"
+	}
+
+	"warden_deputy_become"
+	{
+		"cze"		"Prave nemate {purple}Zastupce{default}. Napis {green}!deputy{default} aby ses stal Zastupcem !"
+	}
+
+	"warden_picking"
+	{
+		"cze"		"Vybira"
+	}
+
+	"warden_pickingaborted"
+	{
+		"cze"		"Vybirani zruseno "
+	}
+
+	"warden_givefreeday"
+	{
+		"cze"		"Dat volny den :"
+	}
+
+	"warden_havefreeday"
+	{
+		"cze"		"{1} ma nyni volny den!"
+	}
+
+	"warden_freeday_title"
+	{
+		"cze"		"Volny den pro {1}"
+	}
+
+	"warden_freedaynext"
+	{
+		"cze"		"Dalsi kolo"
+	}
+
+	"warden_freedaynow"
+	{
+		"cze"		"Toto kolo"
+	}
+
+	"warden_freedayforyou"
+	{
+		"cze"		"Dostanes {purple}volny den{default} dalsi kolo"
+	}
+
+	"warden_personalfreeday"
+	{
+		"cze"		"{green}{1}{default} bude mit dalsi kolo {purple}volny den"
+	}
+
+	"warden_cooldown"
+	{
+		"cze"		"Mas {purple}warden cooldown{default}. Pockej {green}{1}{default} kola"
+	}
+
+	"warden_limit"
+	{
+		"cze"		"Hral jsi {purple}{1} kol po sobe{default} jako warden. Pockej {green}{2}{default} kol"
+	}
+
+	"warden_wait"
+	{
+		"cze"		"Jako {green}warden v poslednim kole{default} musis cekat {purple}{1} sekund{default} aby ses opet mohl stat Wardenem."
+	}
+
+	"warden_deputy_removed"
+	{
+		"cze"		"Admin: {purple}{1}{default} propustil Zastupce: {purple}{2}"
+	}
+
+	"warden_deputy_removed_nc"
+	{
+		"cze"		"Admin: {1} propustil Zastupce: {2}"
+	}
+
+	"warden_steamgroup"
+	{
+		"cze"		"Nemuzes hrat jako warden, musis se nejprve pripojit do nasi steam skupiny"
+	}
+
+	"warden_rankme"
+	{
+		"cze"		"Potrebujes alespon {1} RankMe bodu abys mohl hrat za wardena"
+	}
+
+	"warden_reputation"
+	{
+		"cze"		"Potrebujes alespon {1} bodu reputace, abys mohl hrat za wardena"
+	}
+
+	"warden_stamm"
+	{
+		"cze"		"Potrebujes alespon {1} stamm bodu, abys mohl byt warden"
+	}
+
+}

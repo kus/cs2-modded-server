@@ -1,0 +1,391 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:22 UTC
+// Language: Italian (it)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/180
+//
+"Phrases"
+{
+
+	"menu_info"
+	{
+		"it"		"Per aprire il Menu digita !menu"
+	}
+
+	"menu_info_title"
+	{
+		"it"		"EzicJailbreak Menu"
+	}
+
+	"menu_countdown"
+	{
+		"it"		"Inizia un conto alla rovescia"
+	}
+
+	"menu_opencell"
+	{
+		"it"		"Apri le porte delle celle"
+	}
+
+	"menu_seteventdays"
+	{
+		"it"		"Eventi"
+	}
+
+	"menu_voteeventdays"
+	{
+		"it"		"Vota per un Evento"
+	}
+
+	"menu_math"
+	{
+		"it"		"Starta un quiz di Matematica"
+	}
+
+	"menu_guns"
+	{
+		"it"		"Menu Armi"
+	}
+
+	"menu_laser"
+	{
+		"it"		"Laser Pointer Menu"
+	}
+
+	"menu_noblock"
+	{
+		"it"		"Toggle NoBlock"
+	}
+
+	"menu_sparks"
+	{
+		"it"		"Toggle BulletImpact Sparks"
+	}
+
+	"menu_extend"
+	{
+		"it"		"Estendere il tempo del round"
+	}
+
+	"menu_ffon"
+	{
+		"it"		"Abilita il Friendly Fire per i T"
+	}
+
+	"menu_ffoff"
+	{
+		"it"		"Disattiva il Friendly Fire per i T"
+	}
+
+	"menu_randomdead"
+	{
+		"it"		"Uccidi a caso un prigioniero"
+	}
+
+	"menu_unwarden"
+	{
+		"it"		"Ritirati da CapoCT"
+	}
+
+	"menu_getwarden"
+	{
+		"it"		"Diventa CapoCT"
+	}
+
+	"menu_joint"
+	{
+		"it"		"Diventa Prigioniere"
+	}
+
+	"menu_check"
+	{
+		"it"		"Cerca i Ribelli"
+	}
+
+	"menu_lr"
+	{
+		"it"		"Last Request"
+	}
+
+	"menu_removewarden"
+	{
+		"it"		"Rimuovi CapoCT"
+	}
+
+	"menu_setwarden"
+	{
+		"it"		"Metti un nuovo CapoCT"
+	}
+
+	"menu_rules"
+	{
+		"it"		"Regole"
+	}
+
+	"menu_joinct"
+	{
+		"it"		"Diventa Guardia"
+	}
+
+	"menu_guardct"
+	{
+		"it"		"Mettiti in coda per andare nei CT (!guard)"
+	}
+
+	"menu_request"
+	{
+		"it"		"Richieste"
+	}
+
+	"menu_votewarden"
+	{
+		"it"		"Votare per il fuoco di CapoCT"
+	}
+
+	"menu_event_Titlestart"
+	{
+		"it"		"Startarte un evento il prossimo round"
+	}
+
+	"menu_event_Titlevote"
+	{
+		"it"		"Vota per un Evento"
+	}
+
+	"menu_war"
+	{
+		"it"		"War"
+	}
+
+	"menu_ffa"
+	{
+		"it"		"FFA"
+	}
+
+	"menu_zeus"
+	{
+		"it"		"Zeus"
+	}
+
+	"menu_zombie"
+	{
+		"it"		"Zombie"
+	}
+
+	"menu_hide"
+	{
+		"it"		"Hide in The Dark"
+	}
+
+	"menu_suicidebomber"
+	{
+		"it"		"Suicide Bomber"
+	}
+
+	"menu_catch"
+	{
+		"it"		"Catch & Freeze"
+	}
+
+	"menu_knifefight"
+	{
+		"it"		"Knife Fight"
+	}
+
+	"menu_hebattle"
+	{
+		"it"		"HE Battle"
+	}
+
+	"menu_cowboy"
+	{
+		"it"		"Cowboy"
+	}
+
+	"menu_drunk"
+	{
+		"it"		"Drunk"
+	}
+
+	"menu_torch"
+	{
+		"it"		"Torch Relay"
+	}
+
+	"menu_noscope"
+	{
+		"it"		"Battaglia NoScope"
+	}
+
+	"menu_duckhunt"
+	{
+		"it"		"DuckHunt"
+	}
+
+	"menu_admin"
+	{
+		"it"		"Admin Menu"
+	}
+
+	"menu_mute"
+	{
+		"it"		"Mute Menu"
+	}
+
+	"menu_painter"
+	{
+		"it"		"Menu Pennarelli"
+	}
+
+	"menu_closecell"
+	{
+		"it"		"Chiudi le celle"
+	}
+
+	"menu_voting"
+	{
+		"it"		"Vota per un Evento:"
+	}
+
+	"menu_voteday"
+	{
+		"it"		"Starto il voto per un evento"
+	}
+
+	"menu_votingwon"
+	{
+		"it"		"La votazione si e' conclusa con ancora {2} voti. {green}{1} {default}ha vinto con {3} voti."
+	}
+
+	"menu_minplayer"
+	{
+		"it"		"per la votazione di un evento servono {purple}un CT e un T"
+	}
+
+	"menu_progress"
+	{
+		"it"		"L'evento {darkred}{1} {default}e' {purple}gia' in corso!"
+	}
+
+	"menu_wait"
+	{
+		"it"		"Devi aspettare {purple}{1}{default} round per un altro evento!"
+	}
+
+	"menu_votingdraw"
+	{
+		"it"		"La votazione si e' conclusa con 50/50. L'evento verra' scelto a caso!"
+	}
+
+	"menu_disabled"
+	{
+		"it"		"Il Voto per gli eventi e' {purple}disabilitato!"
+	}
+
+	"menu_playerfreeday"
+	{
+		"it"		"Freeday per un Player"
+	}
+
+	"menu_teamgamesmenu"
+	{
+		"it"		"Team Games - Menù"
+	}
+
+	"menu_teamgamesgames"
+	{
+		"it"		"Team Games - Giochi"
+	}
+
+	"menu_undeputy"
+	{
+		"it"		"Ritirati da Deputato"
+	}
+
+	"menu_removedeputy"
+	{
+		"it"		"Rimuovi Deputato"
+	}
+
+	"menu_deputybecome"
+	{
+		"it"		"Diventa il custode del deputato"
+	}
+
+	"menu_deputyset"
+	{
+		"it"		"Setta il tuo deputato"
+	}
+
+	"menu_rebel"
+	{
+		"it"		"Togli il Ribelle da un giocatore"
+	}
+
+	"menu_count"
+	{
+		"it"		"calcolare i prigionieri"
+	}
+
+	"menu_jailshop"
+	{
+		"it"		"Apri lo shop"
+	}
+
+	"menu_orders"
+	{
+		"it"		"Ordini"
+	}
+
+	"menu_ghosts"
+	{
+		"it"		"Ghosts War"
+	}
+
+	"menu_votingcancel"
+	{
+		"it"		"Il voto è stato cancellato, Perchè l'evento {purple}{1}{default} era gia settato!"
+	}
+
+	"menu_removequeue"
+	{
+		"it"		"Remuovi un giocatore dalla coda per i CT"
+	}
+
+	"menu_endround"
+	{
+		"it"		"Fai finire il round"
+	}
+
+	"menu_clearqueue"
+	{
+		"it"		"Svuota la coda per i CT"
+	}
+
+	"menu_noevent"
+	{
+		"it"		"No Event Day"
+	}
+
+	"menu_joinspec"
+	{
+		"it"		"Vai negli spettatori"
+	}
+
+	"menu_gangs"
+	{
+		"it"		"Menu delle gang"
+	}
+
+	"menu_dealdamage"
+	{
+		"it"		"Deal Damage"
+	}
+
+	"menu_freeday"
+	{
+		"it"		"Freeday"
+	}
+
+}

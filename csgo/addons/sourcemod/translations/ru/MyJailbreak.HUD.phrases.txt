@@ -1,0 +1,61 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:21 UTC
+// Language: Russian (ru)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/231
+//
+"Phrases"
+{
+
+	"hud_planned"
+	{
+		"ru"		"Следующий раунд:"
+	}
+
+	"hud_running"
+	{
+		"ru"		"Этот раунд:"
+	}
+
+	"hud_warden"
+	{
+		"ru"		"Командир:"
+	}
+
+	"hud_nowarden"
+	{
+		"ru"		"Нет командира"
+	}
+
+	"hud_guards"
+	{
+		"ru"		"Охранники:"
+	}
+
+	"hud_prisoner"
+	{
+		"ru"		"Заключённые:"
+	}
+
+	"hud_on"
+	{
+		"ru"		"HUD {purple}активен"
+	}
+
+	"hud_off"
+	{
+		"ru"		"HUD {purple}отключен"
+	}
+
+	"hud_lastCT"
+	{
+		"ru"		"Последний охранник:"
+	}
+
+	"hud_youwarden"
+	{
+		"ru"		"Вы командир!"
+	}
+
+}

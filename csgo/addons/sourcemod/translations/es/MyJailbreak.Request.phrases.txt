@@ -1,0 +1,371 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:23 UTC
+// Language: Spanish (es)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/196
+//
+"Phrases"
+{
+
+	"request_openrefuse"
+	{
+		"es"		"El guardia ha permitido rechazos.{purple} Escribe !refuse para rechazar el juego!"
+	}
+
+	"request_refusing"
+	{
+		"es"		"{purple}{1} {default}ha {purple}rechazado el juego!"
+	}
+
+	"request_alreadyrefused"
+	{
+		"es"		"Ya has {purple}rechazado {default}el juego!"
+	}
+
+	"request_refuseallow"
+	{
+		"es"		"El Capitán debe primero {purple}habilitar el rechazo escribiendo !refuse"
+	}
+
+	"request_notalivect"
+	{
+		"es"		"Estas muerto o eres un Guardia!"
+	}
+
+	"request_fullhp"
+	{
+		"es"		"Buen intento! Tiene la vida completa!"
+	}
+
+	"request_refusedtimes"
+	{
+		"es"		"Ya has {purple}rechazado {1} veces{default} durante esta ronda!"
+	}
+
+	"request_capitulation"
+	{
+		"es"		"{purple}{1} {default}se ha {purple}rendido! {default}¿El Capitán aceptará la rendición?"
+	}
+
+	"request_alreadycapitulated"
+	{
+		"es"		"Ya te has {purple}rendido!"
+	}
+
+	"request_knifeback"
+	{
+		"es"		"Te han dado tu{purple} cuchillo de vuelta."
+	}
+
+	"request_accepted"
+	{
+		"es"		"{2} ha aceptado la petición de {1}."
+	}
+
+	"request_noaccepted"
+	{
+		"es"		"{2} {purple} no ha aceptado{default} la petición de {1}."
+	}
+
+	"request_refuser"
+	{
+		"es"		"El jugador ha rechazado!"
+	}
+
+	"request_acceptcapitulation"
+	{
+		"es"		"Aceptas la rendición?"
+	}
+
+	"request_acceptheal"
+	{
+		"es"		"¿Aceptas la curación?"
+	}
+
+	"request_health"
+	{
+		"es"		"Has recibido un{purple} Kit de Curación{default}!"
+	}
+
+	"request_heal"
+	{
+		"es"		"{purple}{1} {default}ha pedido {purple}curarse! {default}¿El Capitán aceptará la rendición?"
+	}
+
+	"request_healtimes"
+	{
+		"es"		"Ya has pedido curarte{purple}{1} veces{default} durante esta ronda!"
+	}
+
+	"request_alreadyhealed"
+	{
+		"es"		"Ya has pedido{purple} curarte!"
+	}
+
+	"request_nodamage"
+	{
+		"es"		"No puedes hacer daño{purple} luego de rendirte!"
+	}
+
+	"request_processing"
+	{
+		"es"		"Ya hay una {purple}petición en progreso. Espera un momento!"
+	}
+
+	"request_repeatpls"
+	{
+		"es"		"{purple}{1} {default}ha pedido una {purple}repetición!{default}"
+	}
+
+	"request_repeattimes"
+	{
+		"es"		"Ya has pedido una {purple}Repetición {1} veces{default} durante esta ronda!"
+	}
+
+	"request_alreadyrepeat"
+	{
+		"es"		"Ya has pedido una {purple}repetición!"
+	}
+
+	"request_repeat"
+	{
+		"es"		"Un jugador esta pidiendo una Repetición!"
+	}
+
+	"request_menu_title"
+	{
+		"es"		"Hacer una petición"
+	}
+
+	"request_menu_repeat"
+	{
+		"es"		"Repetir Anuncio"
+	}
+
+	"request_menu_refuse"
+	{
+		"es"		"Rechazar el juego actual"
+	}
+
+	"request_menu_heal"
+	{
+		"es"		"Pedir una curación"
+	}
+
+	"request_menu_capitulation"
+	{
+		"es"		"Rendición"
+	}
+
+	"request_menu_freekill"
+	{
+		"es"		"Reportar Freekill"
+	}
+
+	"request_freekill"
+	{
+		"es"		"{green}{1}{default} envió un reporte de Freekill {darkred}{2}{default} de {purple}{3}!"
+	}
+
+	"request_pardonfreekill"
+	{
+		"es"		"Fue un Freekill?"
+	}
+
+	"request_handlefreekill"
+	{
+		"es"		"Como quieres solucionar este freekill?"
+	}
+
+	"request_respawnvictim"
+	{
+		"es"		"Revivir a la victima"
+	}
+
+	"request_killfreekiller"
+	{
+		"es"		"Matar al Freekiller"
+	}
+
+	"request_freeday"
+	{
+		"es"		"Que la siguiente ronda sea Freeday"
+	}
+
+	"request_swapfreekiller"
+	{
+		"es"		"Mover al freekiller al los Prisioneros"
+	}
+
+	"request_aliveorct"
+	{
+		"es"		"Debes estar vivo o ser Guardia!"
+	}
+
+	"request_nokiller"
+	{
+		"es"		"Lo sentimos, no podemos encontrar a tu asesino!"
+	}
+
+	"request_respawned"
+	{
+		"es"		"Fuiste revivido!"
+	}
+
+	"request_respawnedall"
+	{
+		"es"		"{1} fue revivido debido a un {darkred}Freekill!"
+	}
+
+	"request_killbcfreekill"
+	{
+		"es"		"Fuiste slayerado por un {darkred}Freekill!"
+	}
+
+	"request_killbcfreekillall"
+	{
+		"es"		"{green}{1}{default} fue slayeado por hacer {darkred}Freekill!"
+	}
+
+	"request_swapbcfreekill"
+	{
+		"es"		"Fue movido a los Prisioneros por hacer {darkred}Freekill!"
+	}
+
+	"request_swapbcfreekillall"
+	{
+		"es"		"{green}{1}{default} fue movido a los Prisioneros por hacer {darkred}freekill{default} !"
+	}
+
+	"request_handlerespawn"
+	{
+		"es"		"¿Dónde deseas revivir?"
+	}
+
+	"request_respawnbody"
+	{
+		"es"		"Revivir en el lugar de muerte"
+	}
+
+	"request_respawncell"
+	{
+		"es"		"Revivir en las celdas"
+	}
+
+	"request_respawnwarden"
+	{
+		"es"		"Revivir en frente del Capitán"
+	}
+
+	"request_freekilltimes"
+	{
+		"es"		"Ya has reportado Freekills {purple}{1}{default} veces durante esta ronda."
+	}
+
+	"request_freedayvictim"
+	{
+		"es"		"Dar a la victima Freeday la siguiente ronda"
+	}
+
+	"request_killreason_title"
+	{
+		"es"		"¿¿¿Mataste a {1}???"
+	}
+
+	"request_killreason_lostgame"
+	{
+		"es"		"Perdió en el juego"
+	}
+
+	"request_killreason_rebel"
+	{
+		"es"		"Era un rebelde"
+	}
+
+	"request_killreason_brokerule"
+	{
+		"es"		"Rompió las reglas"
+	}
+
+	"request_killreason_notfollow"
+	{
+		"es"		"No escucho la orden"
+	}
+
+	"request_killreason_sry"
+	{
+		"es"		"Mi error, lo siento"
+	}
+
+	"request_killreason_freekill"
+	{
+		"es"		"Lo maté, fue Freekill"
+	}
+
+	"request_killreason_lostgame_chat"
+	{
+		"es"		"El Capitán {green}{1}{default} declara que {darkred}{2}{default} Perdió el juego"
+	}
+
+	"request_killreason_rebel_chat"
+	{
+		"es"		"El Capitán {green}{1}{default} declara que {darkred}{2}{default} era un rebelde"
+	}
+
+	"request_killreason_brokerule_chat"
+	{
+		"es"		"El Capitán {green}{1}{default} declara que {darkred}{2}{default} rompio las reglas"
+	}
+
+	"request_killreason_notfollow_chat"
+	{
+		"es"		"El Capitán {green}{1}{default} declara que {darkred}{2}{default} no siguió las ordenes"
+	}
+
+	"request_killreason_sry_chat"
+	{
+		"es"		"El Capitán {green}{1}{default} quiere pedir disculpas por el error, {darkred}{2}{default}"
+	}
+
+	"request_killreason_freekill_chat"
+	{
+		"es"		"El Capitán {green}{1}{default} confesó el freekill en {darkred}{2}{default}"
+	}
+
+	"request_killreason_noanswer"
+	{
+		"es"		"El Capitán {green}{1}{default} no ha declarado por el asesinato de {darkred}{2}{default}"
+	}
+
+	"request_capitulated"
+	{
+		"es"		"{purple}{1} {default}se ha{purple} rendido!"
+	}
+
+	"request_close"
+	{
+		"es"		"Salir"
+	}
+
+	"request_countdownstop"
+	{
+		"es"		"{purple}PARA! {darkred}SE TERMINÓ!"
+	}
+
+	"request_countdownstop_nc"
+	{
+		"es"		"PARA! SE TERMINÓ!"
+	}
+
+	"request_stopcountdown_nc"
+	{
+		"es"		"Parar/terminar en {1} segundos!"
+	}
+
+	"request_stopcountdown"
+	{
+		"es"		"Parar en {purple}{1}{default} segundos!"
+	}
+
+}

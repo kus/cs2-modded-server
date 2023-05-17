@@ -1,0 +1,401 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:21 UTC
+// Language: Spanish (es)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/180
+//
+"Phrases"
+{
+
+	"menu_info"
+	{
+		"es"		"Para abrir el Menu Jailbreak, escribe !menu en el chat!"
+	}
+
+	"menu_info_title"
+	{
+		"es"		"PhoenixJail Menu"
+	}
+
+	"menu_countdown"
+	{
+		"es"		"Comenzar el temporizador"
+	}
+
+	"menu_opencell"
+	{
+		"es"		"Abrir las celdas"
+	}
+
+	"menu_seteventdays"
+	{
+		"es"		"Setear Eventos"
+	}
+
+	"menu_voteeventdays"
+	{
+		"es"		"Votar por Eventos"
+	}
+
+	"menu_math"
+	{
+		"es"		"Comenzar Math Quiz"
+	}
+
+	"menu_guns"
+	{
+		"es"		"Menu de Armas"
+	}
+
+	"menu_laser"
+	{
+		"es"		"Menu de Puntero Laser"
+	}
+
+	"menu_noblock"
+	{
+		"es"		"Conmutar NoBlock"
+	}
+
+	"menu_sparks"
+	{
+		"es"		"Conmutar Chispas de balas"
+	}
+
+	"menu_extend"
+	{
+		"es"		"Extender el Tiempo de Ronda"
+	}
+
+	"menu_ffon"
+	{
+		"es"		"Habilitar FriendlyFire para Ts"
+	}
+
+	"menu_ffoff"
+	{
+		"es"		"Deshabilitar FriendlyFire para Ts"
+	}
+
+	"menu_randomdead"
+	{
+		"es"		"Matar un prisionero Aleatorio"
+	}
+
+	"menu_unwarden"
+	{
+		"es"		"El Alcalde se ha retirado"
+	}
+
+	"menu_getwarden"
+	{
+		"es"		"Convertirse en Alcalde"
+	}
+
+	"menu_joint"
+	{
+		"es"		"Become a Prisoner"
+	}
+
+	"menu_check"
+	{
+		"es"		"Check Rebellers"
+	}
+
+	"menu_lr"
+	{
+		"es"		"Ultima Voluntad"
+	}
+
+	"menu_removewarden"
+	{
+		"es"		"Remover Capitán"
+	}
+
+	"menu_setwarden"
+	{
+		"es"		"Elegir nuevo Alcalde"
+	}
+
+	"menu_rules"
+	{
+		"es"		"Reglas"
+	}
+
+	"menu_joinct"
+	{
+		"es"		"Ser un Guardia"
+	}
+
+	"menu_guardct"
+	{
+		"es"		"Unirse a la cola de guardias (!guard)"
+	}
+
+	"menu_request"
+	{
+		"es"		"Petición"
+	}
+
+	"menu_votewarden"
+	{
+		"es"		"Votar quemar al Capitán"
+	}
+
+	"menu_event_Titlestart"
+	{
+		"es"		"Comenzar un Evento la siguiente Ronda"
+	}
+
+	"menu_event_Titlevote"
+	{
+		"es"		"Votar por un Evento"
+	}
+
+	"menu_war"
+	{
+		"es"		"War"
+	}
+
+	"menu_ffa"
+	{
+		"es"		"Free for All"
+	}
+
+	"menu_zeus"
+	{
+		"es"		"Zeus Day"
+	}
+
+	"menu_zombie"
+	{
+		"es"		"Zombie Day"
+	}
+
+	"menu_hide"
+	{
+		"es"		"Hide in The Dark"
+	}
+
+	"menu_suicidebomber"
+	{
+		"es"		"Suicide Bomber"
+	}
+
+	"menu_catch"
+	{
+		"es"		"Catch & Freeze"
+	}
+
+	"menu_knifefight"
+	{
+		"es"		"Knife Fight"
+	}
+
+	"menu_hebattle"
+	{
+		"es"		"HE Battle"
+	}
+
+	"menu_cowboy"
+	{
+		"es"		"Cowboy"
+	}
+
+	"menu_drunk"
+	{
+		"es"		"Drunk Day"
+	}
+
+	"menu_torch"
+	{
+		"es"		"Torch Relay"
+	}
+
+	"menu_noscope"
+	{
+		"es"		"No Scope"
+	}
+
+	"menu_duckhunt"
+	{
+		"es"		"DuckHunt"
+	}
+
+	"menu_admin"
+	{
+		"es"		"Admin Menu"
+	}
+
+	"menu_mute"
+	{
+		"es"		"Mute Menu"
+	}
+
+	"menu_painter"
+	{
+		"es"		"Painter Menu"
+	}
+
+	"menu_closecell"
+	{
+		"es"		"Cerrar las Celdas"
+	}
+
+	"menu_voting"
+	{
+		"es"		"Votar por un Evento:"
+	}
+
+	"menu_voteday"
+	{
+		"es"		"Comenzar un Evento votado"
+	}
+
+	"menu_votingwon"
+	{
+		"es"		"El voto ha terminado con {2} votos. {green}{1} {default}ganó con {3} votos."
+	}
+
+	"menu_minplayer"
+	{
+		"es"		"Para un voto de Eventos, debe haber como minimo {purple}un Guardia y un Prisionero"
+	}
+
+	"menu_progress"
+	{
+		"es"		"El evento {darkred}{1} {default}ya {purple}está en progreso!"
+	}
+
+	"menu_wait"
+	{
+		"es"		"Debes esperar {purple}{1}{default} rondas más para un voto de Evento!"
+	}
+
+	"menu_votingdraw"
+	{
+		"es"		"¡La votación terminó en un sorteo 50/50! Se eligió aleatoriamente un Evento!"
+	}
+
+	"menu_disabled"
+	{
+		"es"		"El voto de Eventos actualmente está {purple}deshabilitdo!"
+	}
+
+	"menu_playerfreeday"
+	{
+		"es"		"Dar a un jugador Free Day"
+	}
+
+	"menu_teamgamesmenu"
+	{
+		"es"		"Juego de Equipos - Menu"
+	}
+
+	"menu_teamgamesgames"
+	{
+		"es"		"Juego de Equipos - Juegos"
+	}
+
+	"menu_undeputy"
+	{
+		"es"		"Retirarse de Comisario"
+	}
+
+	"menu_removedeputy"
+	{
+		"es"		"Remover Comisario"
+	}
+
+	"menu_deputybecome"
+	{
+		"es"		"Ser Comisario"
+	}
+
+	"menu_deputyset"
+	{
+		"es"		"Setear Comisario"
+	}
+
+	"menu_rebel"
+	{
+		"es"		"Des/Macar un jugador como Rebelde"
+	}
+
+	"menu_count"
+	{
+		"es"		"Contar Prisioneros a la vista"
+	}
+
+	"menu_jailshop"
+	{
+		"es"		"Abrir tienda PhoenixJail"
+	}
+
+	"menu_orders"
+	{
+		"es"		"Ordenes"
+	}
+
+	"menu_ghosts"
+	{
+		"es"		"Guerra Fantasma"
+	}
+
+	"menu_votingcancel"
+	{
+		"es"		"La votacion fue cancelada, porque un Evento {purple}{1}{default} ya estaba seteado!"
+	}
+
+	"menu_removequeue"
+	{
+		"es"		"Remover un jugador de la cola de Guardias"
+	}
+
+	"menu_endround"
+	{
+		"es"		"Final de Ronda"
+	}
+
+	"menu_clearqueue"
+	{
+		"es"		"Limpiar Cola de Guardias"
+	}
+
+	"menu_noevent"
+	{
+		"es"		"Sin Eventos"
+	}
+
+	"menu_joinspec"
+	{
+		"es"		"Ir a espectador"
+	}
+
+	"menu_gangs"
+	{
+		"es"		"Menu de Grupo"
+	}
+
+	"menu_teleport"
+	{
+		"es"		"Teleport War"
+	}
+
+	"menu_armsrace"
+	{
+		"es"		"Armas"
+	}
+
+	"menu_dealdamage"
+	{
+		"es"		"Deal Damage Day"
+	}
+
+	"menu_freeday"
+	{
+		"es"		"Freeday"
+	}
+
+}

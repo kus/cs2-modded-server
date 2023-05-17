@@ -1,0 +1,134 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:28 UTC
+// Language: English (en)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/192
+//
+"Phrases"
+{
+
+	"freeday_end"
+	{
+		"en"		"{purple}Freeday{default} has ended."
+	}
+
+	"freeday_need"
+	{
+		"#format"	"{1:i},{2:N}"
+		"en"		"{purple}{2}{default} has voted. {purple}{1}{default} vote(s) required to play {darkred}Freeday."
+	}
+
+	"freeday_next"
+	{
+		"en"		"The following round will be: {purple}Freeday."
+	}
+
+	"freeday_next_nc"
+	{
+		"en"		"The following round will be: Freeday."
+	}
+
+	"freeday_voting"
+	{
+		"en"		"Voting for Freeday is {purple}disabled!"
+	}
+
+	"freeday_setbywarden"
+	{
+		"en"		"Set Freeday by Warden is {purple}disabled!"
+	}
+
+	"freeday_setbyadmin"
+	{
+		"en"		"Set Freeday by Admin is {purple}disabled!"
+	}
+
+	"freeday_start_nc"
+	{
+		"en"		"Freeday has begun!"
+	}
+
+	"freeday_start"
+	{
+		"en"		"{purple}Freeday{default} has begun!"
+	}
+
+	"freeday_voted"
+	{
+		"en"		"You have already voted for {purple}Freeday!"
+	}
+
+	"freeday_progress"
+	{
+		"#format"	"{1:s}"
+		"en"		"The event {darkred}{1} {default}is {purple}already in progress!"
+	}
+
+	"freeday_disabled"
+	{
+		"en"		"Freeday is currently {purple}disabled!"
+	}
+
+	"freeday_info_title"
+	{
+		"en"		"It's a Freeday!"
+	}
+
+	"freeday_info_line1"
+	{
+		"en"		"It's a Freeday!"
+	}
+
+	"freeday_info_line2"
+	{
+		"en"		"-----------------------------------"
+	}
+
+	"freeday_info_line3"
+	{
+		"en"		"-----------------------------------"
+	}
+
+	"freeday_info_line4"
+	{
+		"en"		"All usual Jailbreak rules do not apply during this round!"
+	}
+
+	"freeday_info_line5"
+	{
+		"en"		"Last Requests are disabled during this round!"
+	}
+
+	"freeday_info_line6"
+	{
+		"en"		"Everyone is allowed to go anywhere within the map!"
+	}
+
+	"freeday_info_line7"
+	{
+		"en"		"Don't be an Asshole!"
+	}
+
+	"freeday_wait"
+	{
+		"#format"	"{1:i}"
+		"en"		"You must wait {purple}{1}{default} more rounds for an Event Day!"
+	}
+
+	"freeday_name"
+	{
+		"en"		"Freeday"
+	}
+
+	"freeday_now_nc"
+	{
+		"en"		"Now a freeday round begins."
+	}
+
+	"freeday_now"
+	{
+		"en"		"Now a {purple}freeday{default} round begins."
+	}
+
+}

@@ -1,0 +1,56 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:21 UTC
+// Language: Spanish (es)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/231
+//
+"Phrases"
+{
+
+	"hud_planned"
+	{
+		"es"		"Siguiente Ronda:"
+	}
+
+	"hud_running"
+	{
+		"es"		"Esta ronda:"
+	}
+
+	"hud_warden"
+	{
+		"es"		"Capitán:"
+	}
+
+	"hud_nowarden"
+	{
+		"es"		"Actualmente no hay Capitán"
+	}
+
+	"hud_guards"
+	{
+		"es"		"Guardias:"
+	}
+
+	"hud_prisoner"
+	{
+		"es"		"Prisioneros:"
+	}
+
+	"hud_on"
+	{
+		"es"		"HUD {purple}is enabled!"
+	}
+
+	"hud_off"
+	{
+		"es"		"HUD {purple}is disabled"
+	}
+
+	"hud_lastCT"
+	{
+		"es"		"Último Guardia:"
+	}
+
+}

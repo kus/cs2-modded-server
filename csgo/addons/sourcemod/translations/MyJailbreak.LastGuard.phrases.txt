@@ -1,0 +1,165 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:24 UTC
+// Language: English (en)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/197
+//
+"Phrases"
+{
+
+	"lastguard_need"
+	{
+		"#format"	"{1:i},{2:N}"
+		"en"		"{purple}{2}{default} has voted. {purple}{1}{default} votes required to play {darkred}The Last Guard Rule."
+	}
+
+	"lastguard_twin_nc"
+	{
+		"en"		"The Prisoners have survived!"
+	}
+
+	"lastguard_minplayer"
+	{
+		"en"		"For The Last Guard Rule you need at maximum pf {purple}one Guard & minimum 2 Prisoners!"
+	}
+
+	"lastguard_hp"
+	{
+		"#format"	"{1:i},{2:i},{3:N},{4:i}"
+		"en"		"The {purple}{1} Prisoners{default} have a combined total of: {purple}{2} HP{default}. The Last Guard {3} now has: {purple}{4} HP{default}."
+	}
+
+	"lastguard_setbyadmin"
+	{
+		"en"		"Set Last Guard Rule by Admin is {purple}disabled!"
+	}
+
+	"lastguard_ctwin_nc"
+	{
+		"en"		"Guards win!"
+	}
+
+	"lastguard_end"
+	{
+		"en"		"The {purple}Last Guard Rule{default} has ended!"
+	}
+
+	"lastguard_startnow"
+	{
+		"en"		"Attention! {purple}Last Guard Rule{default} is now Activated!"
+	}
+
+	"lastguard_startnow_nc"
+	{
+		"en"		"Attention! Last Guard is now Activated!"
+	}
+
+	"lastguard_start"
+	{
+		"en"		"The {purple}Last Guard Rule{default} has begun!"
+	}
+
+	"lastguard_lr"
+	{
+		"en"		"A {purple}Last Request{default} is already active! The Last Guard Rule not available!"
+	}
+
+	"lastguard_start_nc"
+	{
+		"en"		"The Last Guard Rule begun!"
+	}
+
+	"lastguard_movenow"
+	{
+		"en"		"You can {purple}move now!"
+	}
+
+	"lastguard_movenow_nc"
+	{
+		"en"		"You can move now!"
+	}
+
+	"lastguard_voted"
+	{
+		"en"		"You have already voted for {purple}The Last Guard Rule!"
+	}
+
+	"lastguard_notalive"
+	{
+		"en"		"You {purple}must be alive{default} to use this command!"
+	}
+
+	"lastguard_progress"
+	{
+		"#format"	"{1:s}"
+		"en"		"The event {darkred}{1} {default}is {purple}already in progress! The Last Guard Rule Rule is disabled!"
+	}
+
+	"lastguard_running"
+	{
+		"en"		"The Last Guard Rule {default}is {purple}already in progress!"
+	}
+
+	"lastguard_disabled"
+	{
+		"en"		"The Last Guard Rule is currently {purple}disabled!"
+	}
+
+	"lastguard_timeuntilstart_nc"
+	{
+		"#format"	"{1:i}"
+		"en"		"{1} seconds until round start!"
+	}
+
+	"lastguard_info_title"
+	{
+		"en"		"Last Guard Rule er aktiveret!"
+	}
+
+	"lastguard_info_title"
+	{
+		"en"		"Last Guard Rule er aktiveret!"
+	}
+
+	"lastguard_info_line1"
+	{
+		"en"		"The Last Guard Rule - Prisoners VS Guard."
+	}
+
+	"lastguard_info_line4"
+	{
+		"en"		"All usual Jail Rules do not apply during this round!"
+	}
+
+	"lastguard_info_line5"
+	{
+		"en"		"Last Request is disabled during this round!"
+	}
+
+	"lastguard_info_line7"
+	{
+		"en"		"Don't be an Asshole!"
+	}
+
+	"lastguard_info_line2"
+	{
+		"en"		"All Terrorists are Rebels!"
+	}
+
+	"lastguard_info_line3"
+	{
+		"en"		"The last Guard has a lot more health!"
+	}
+
+	"lastguard_info_line6"
+	{
+		"en"		"Everyone is allowed to go anywhere within the map!"
+	}
+
+	"lastguard_close"
+	{
+		"en"		"Exit"
+	}
+
+}

@@ -1,0 +1,171 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:28 UTC
+// Language: Russian (ru)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/194
+//
+"Phrases"
+{
+
+	"hide_need"
+	{
+		"ru"		"{purple}{2}{default} проголосовал. {purple}{1}{default} голосов осталось до {darkred}Пряток в Темноте"
+	}
+
+	"hide_twin_nc"
+	{
+		"ru"		"Т одержали победу!"
+	}
+
+	"hide_rounds"
+	{
+		"ru"		"Раунд {purple}{1}{default} о {purple}{2}"
+	}
+
+	"hide_ctwin_nc"
+	{
+		"ru"		"КТ одержали победу"
+	}
+
+	"hide_end"
+	{
+		"ru"		"{purple}Прятки в Темноте{default} окончены!"
+	}
+
+	"hide_next_nc"
+	{
+		"ru"		"Следующий раунд Прятки в Темноте"
+	}
+
+	"hide_next"
+	{
+		"ru"		"Следующий раунд {purple}Прятки в Темноте"
+	}
+
+	"hide_start"
+	{
+		"ru"		"{purple}Прятки в Темноте{default} начались!"
+	}
+
+	"hide_start_nc"
+	{
+		"ru"		"Прятки в Темноте начались!"
+	}
+
+	"hide_voted"
+	{
+		"ru"		"Вы уже проголосовали за {purple}Прятки в Темноте"
+	}
+
+	"hide_progress"
+	{
+		"ru"		"Игровой день {darkred}{1} {default} в {purple}процессе."
+	}
+
+	"hide_minplayer"
+	{
+		"ru"		"Для пряток в темноте вам нужно, по крайней мере {purple} один КТ и один Т"
+	}
+
+	"hide_disabled"
+	{
+		"ru"		"Прятки в Темноте {purple}отключены."
+	}
+
+	"hide_voting"
+	{
+		"ru"		"Голосования за прятки в темноте {purple}отключено"
+	}
+
+	"hide_setbyWarden"
+	{
+		"ru"		"Командир {purple}отключил{default} выбор Пряток в Темноте"
+	}
+
+	"hide_setbyadmin"
+	{
+		"ru"		"Администратор {purple}отключил{default} выбор пряток в темноте"
+	}
+
+	"hide_timetohide_nc"
+	{
+		"ru"		"{1} секунд, чтобы спрятаться"
+	}
+
+	"hide_timetounfreeze_nc"
+	{
+		"ru"		"{1} секунд до разморозки"
+	}
+
+	"hide_stillta"
+	{
+		"ru"		"Вы получили {green}{1}{default} ВХ гранат."
+	}
+
+	"hide_nota"
+	{
+		"ru"		"У вас больше {green}нет{default} ВХ гранат."
+	}
+
+	"hide_info_title"
+	{
+		"ru"		"Прятки в Темноте активны"
+	}
+
+	"hide_info_line1"
+	{
+		"ru"		"Т получили время в начале раунде, чтобы спрятаться"
+	}
+
+	"hide_info_line2"
+	{
+		"ru"		"Прежде чем КТ будут разморожены Т будут заморожены"
+	}
+
+	"hide_info_line3"
+	{
+		"ru"		"КТ получили несколько ВХ гранат."
+	}
+
+	"hide_info_line4"
+	{
+		"ru"		"Все нормальный правила тюрьмы отключены."
+	}
+
+	"hide_info_line5"
+	{
+		"ru"		"Здесь нету последних желаний!"
+	}
+
+	"hide_info_line6"
+	{
+		"ru"		"Каждый может идти туда, куда захочет."
+	}
+
+	"hide_info_line7"
+	{
+		"ru"		"Не будь мудаком!"
+	}
+
+	"hide_wait"
+	{
+		"ru"		"Вы должны подождать больше {purple}{1}{default} раундов"
+	}
+
+	"hide_name"
+	{
+		"ru"		"Прятки в Темноте"
+	}
+
+	"hide_now_nc"
+	{
+		"ru"		"Начинается Прятки раунд."
+	}
+
+	"hide_now"
+	{
+		"ru"		"Начинается {purple}Прятки{default} раунд."
+	}
+
+}

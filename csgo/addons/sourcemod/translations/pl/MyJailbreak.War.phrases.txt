@@ -1,0 +1,166 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:21 UTC
+// Language: Polish (pl)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/179
+//
+"Phrases"
+{
+
+	"war_need"
+	{
+		"pl"		"{purple}{2}{default} zaglosowal {purple}{1}{default} pozostalo glosow do {darkred}Wojny"
+	}
+
+	"war_rounds"
+	{
+		"pl"		"Runda {purple}{1}{default} z {purple}{2}"
+	}
+
+	"war_twin_nc"
+	{
+		"pl"		"Terrorysci WYGRALI"
+	}
+
+	"war_ctwin_nc"
+	{
+		"pl"		"Counter-Terrorists WYGRALO"
+	}
+
+	"war_end"
+	{
+		"pl"		"{purple}Wojna{default} Zakonczona"
+	}
+
+	"war_next"
+	{
+		"pl"		"Nastepna runda to  {purple}Wojna"
+	}
+
+	"war_next_nc"
+	{
+		"pl"		"Nastepna runda to Wojna"
+	}
+
+	"war_start"
+	{
+		"pl"		" {purple}Wojna{default} sie rozpoczela!"
+	}
+
+	"war_start_nc"
+	{
+		"pl"		" Wojna sie rozpoczela!"
+	}
+
+	"war_voted"
+	{
+		"pl"		"Juz glosowales na {purple}Wojne"
+	}
+
+	"war_progress"
+	{
+		"pl"		"Zabawa  {darkred}{1} {default}sie {purple}rozpoczela"
+	}
+
+	"war_minplayer"
+	{
+		"pl"		"Do zabawy Wojna potrzeba przynajmniej {purple}jednego CT"
+	}
+
+	"war_disabled"
+	{
+		"pl"		"Wojna jest {purple}wylaczona."
+	}
+
+	"war_damage_nc"
+	{
+		"pl"		"{1} sekund do ponownegowlaczenie przyjmowania uszkodzen"
+	}
+
+	"war_voting"
+	{
+		"pl"		"Glosowanie graczy na Wojne jest {purple}wylaczone"
+	}
+
+	"war_setbywarden"
+	{
+		"pl"		"Glosowanie na Wojne przez Straznika jest {purple}wylaczone"
+	}
+
+	"war_setbyadmin"
+	{
+		"pl"		"Wlaczenie Wojny przez admina jest {purple}wylaczone"
+	}
+
+	"war_info_title"
+	{
+		"pl"		"Wojna jest aktywna"
+	}
+
+	"war_info_line1"
+	{
+		"pl"		"Nie zdziw sie jak zamrozi cie w powietrzu!! "
+	}
+
+	"war_info_line2"
+	{
+		"pl"		"Podczas Wojny CT gra przeciwko T "
+	}
+
+	"war_info_line3"
+	{
+		"pl"		"Podczas fazy NODAMAGE mozesz sie przemieszczac i zajac pozycje "
+	}
+
+	"war_info_line4"
+	{
+		"pl"		"Wszystkie normalne zasady wiezienia zostaly zastapione"
+	}
+
+	"war_info_line5"
+	{
+		"pl"		"Nie ma ostatniego zyczenia!"
+	}
+
+	"war_info_line6"
+	{
+		"pl"		"Każdy może iść wszędzie tam, gdzie chce"
+	}
+
+	"war_info_line7"
+	{
+		"pl"		"Nie badz DUPKIEM!"
+	}
+
+	"war_wait"
+	{
+		"pl"		"Musisz poczekac  {1} rund"
+	}
+
+	"war_timetounfreeze_nc"
+	{
+		"pl"		"{1} sekund do odmrozenia"
+	}
+
+	"war_timetohide_nc"
+	{
+		"pl"		"{1} sekund do startu!"
+	}
+
+	"war_name"
+	{
+		"pl"		"Wojna"
+	}
+
+	"war_now_nc"
+	{
+		"pl"		"Teraz rozpoczyna się wojna"
+	}
+
+	"war_now"
+	{
+		"pl"		"Teraz rozpoczyna się wojna {purple}  {default}."
+	}
+
+}

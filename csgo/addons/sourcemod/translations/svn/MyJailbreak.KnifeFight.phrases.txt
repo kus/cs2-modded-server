@@ -1,0 +1,146 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:33 UTC
+// Language: svn (svn)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/195
+//
+"Phrases"
+{
+
+	"knifefight_need"
+	{
+		"svn"		"{purple}{2}{default} je glasoval. Število glasov potrebnih za {darkred}Boj z noži: {purple}{1}"
+	}
+
+	"knifefight_rounds"
+	{
+		"svn"		"Runda {purple}{1}{default} od {purple}{2}"
+	}
+
+	"knifefight_twin_nc"
+	{
+		"svn"		"Zapornik je preživel!"
+	}
+
+	"knifefight_voting"
+	{
+		"svn"		"Glasovanje za boj z noži je {purple}onemogočeno!"
+	}
+
+	"knifefight_setbywarden"
+	{
+		"svn"		"Nastavitev Boja z noži s strani vodje je {purple}onemogočena!"
+	}
+
+	"knifefight_setbyadmin"
+	{
+		"svn"		"Nastavitev Boja z noži s strani adminov je {purple}onemogočena!"
+	}
+
+	"knifefight_ctwin_nc"
+	{
+		"svn"		"Paznik je preživel!"
+	}
+
+	"knifefight_minplayer"
+	{
+		"svn"		"Za boj z noži potrebujep vsaj {purple}enega Paznika in enega Zapornika!"
+	}
+
+	"knifefight_end"
+	{
+		"svn"		"{purple}Boj z noži{default} je zaključen."
+	}
+
+	"knifefight_next"
+	{
+		"svn"		"Naslednja runda bo: {purple}Boj z noži."
+	}
+
+	"knifefight_next_nc"
+	{
+		"svn"		"Naslednja runda bo: Boj z noži."
+	}
+
+	"knifefight_start"
+	{
+		"svn"		"{purple}Boj z noži{default} se je začel!"
+	}
+
+	"knifefight_start_nc"
+	{
+		"svn"		"Boj z noži se je začel!"
+	}
+
+	"knifefight_voted"
+	{
+		"svn"		"Du har allerede stemt på {purple}Knife Fight"
+	}
+
+	"knifefight_progress"
+	{
+		"svn"		"Dogodek {darkred}{1} {default}se {purple}že izvaja!"
+	}
+
+	"knifefight_disabled"
+	{
+		"svn"		"Boj z noži je trenutno {purple}onemogočen!"
+	}
+
+	"knifefight_timeuntilstart_nc"
+	{
+		"svn"		"{1} sekund do začetka runde!"
+	}
+
+	"knifefight_info_title"
+	{
+		"svn"		"FFA Boj z noži - Vsak proti vsakem je sedaj aktiviran"
+	}
+
+	"knifefight_info_line1"
+	{
+		"svn"		"Ne biti presenečen če se pojaviš v orožarni"
+	}
+
+	"knifefight_info_line2"
+	{
+		"svn"		"Drsanje, Thirdperson & nizka gravitacija omogočeni."
+	}
+
+	"knifefight_info_line3"
+	{
+		"svn"		"Steči vstran med 'NoDamage' fazo!"
+	}
+
+	"knifefight_info_line4"
+	{
+		"svn"		"To rundo ne veljajo običajna pravila Jailbreak-a!"
+	}
+
+	"knifefight_info_line5"
+	{
+		"svn"		"Last request(!lr) je to rundo onemogočen."
+	}
+
+	"knifefight_info_line6"
+	{
+		"svn"		"Ostati moraš v glavnih prostorih! Ne vstopaj v zračnike in skrivne prostore!"
+	}
+
+	"knifefight_info_line7"
+	{
+		"svn"		"Pravila strežnika to rundo še vedno veljajo!"
+	}
+
+	"knifefight_wait"
+	{
+		"svn"		"Počakati moraš še {purple}{1}{default} rund za Dan Dogodkov!"
+	}
+
+	"knifefight_name"
+	{
+		"svn"		"Boj z noži"
+	}
+
+}

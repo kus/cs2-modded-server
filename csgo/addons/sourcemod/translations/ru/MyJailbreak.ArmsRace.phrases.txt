@@ -1,0 +1,186 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:34 UTC
+// Language: Russian (ru)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/278
+//
+"Phrases"
+{
+
+	"armsrace_need"
+	{
+		"ru"		"{purple}{2}{default} проголосовал. {purple}{1}{default} голос(а/ов), необходимых для игры {darkred}Гонка Вооружений."
+	}
+
+	"armsrace_voting"
+	{
+		"ru"		"Голосование за Гонку Вооружений {purple}отключено!"
+	}
+
+	"armsrace_setbywarden"
+	{
+		"ru"		"Выбор Гонки Вооружений {purple}отключен{default} командиром!"
+	}
+
+	"armsrace_setbyadmin"
+	{
+		"ru"		"Выбор Гонки Вооружений {purple}отключен{default} администратором!"
+	}
+
+	"armsrace_youwon"
+	{
+		"ru"		"{purple}Вы ПОБЕДИЛИ{default} в Гонке Вооружений!"
+	}
+
+	"armsrace_winner"
+	{
+		"ru"		"{purple}{1}{default} победил в Гонке Вооружений!"
+	}
+
+	"armsrace_minplayer"
+	{
+		"ru"		"Для Войну Вооружений необходимо минимум {purple}один Охранник, и один Заключённый!"
+	}
+
+	"armsrace_end"
+	{
+		"ru"		"{purple}Гонка Вооружений{default} окончена!"
+	}
+
+	"armsrace_next"
+	{
+		"ru"		"Следующий раунд будет: {purple}Гонка Вооружений."
+	}
+
+	"armsrace_next_nc"
+	{
+		"ru"		"Следующий раунд будет: Гонка Вооружений."
+	}
+
+	"armsrace_rounds"
+	{
+		"ru"		"Раунд {purple}{1}{default} из {purple}{2}"
+	}
+
+	"armsrace_start"
+	{
+		"ru"		"{purple}Гонка Вооружений{default} началась!"
+	}
+
+	"armsrace_start_nc"
+	{
+		"ru"		"Гонка Вооружений началась!"
+	}
+
+	"armsrace_voted"
+	{
+		"ru"		"Вы уже проголосовали за {purple}Гонку вооружений!"
+	}
+
+	"armsrace_progress"
+	{
+		"ru"		"Игровой день {darkred}{1} {default} уже {purple}идёт!"
+	}
+
+	"armsrace_disabled"
+	{
+		"ru"		" В настоящее время гонка вооружений {purple}отключена!"
+	}
+
+	"armsrace_damage_nc"
+	{
+		"ru"		"{1} секунд(а) до активации урона"
+	}
+
+	"armsrace_info_title"
+	{
+		"ru"		"Война Вооружений запущена!"
+	}
+
+	"armsrace_info_line1"
+	{
+		"ru"		" Не удивляйтесь, если вы появились в Оружейной!"
+	}
+
+	"armsrace_info_line2"
+	{
+		"ru"		"Гонка Вооружений - Игроки VS Игроки - Первый получивший золотой нож побеждает!"
+	}
+
+	"armsrace_info_line3"
+	{
+		"ru"		"Убегайте во время фазы 'Никакого урона'!"
+	}
+
+	"armsrace_info_line4"
+	{
+		"ru"		"Все обычные правила тюрьме неактивны в течение этого раунда!"
+	}
+
+	"armsrace_info_line5"
+	{
+		"ru"		"Последние желания отключены в течение этого раунда!"
+	}
+
+	"armsrace_info_line6"
+	{
+		"ru"		"Каждому позволено идти в любое место карты!"
+	}
+
+	"armsrace_info_line7"
+	{
+		"ru"		"Не будьте мудаком!"
+	}
+
+	"RoundOne"
+	{
+		"ru"		"Раунд 1 из 3"
+	}
+
+	"RoundTwo"
+	{
+		"ru"		"Раунд 2 из 3"
+	}
+
+	"RoundThree"
+	{
+		"ru"		"Это последний раунд Гонки Вооружений!"
+	}
+
+	"armsrace_wait"
+	{
+		"ru"		"Вы должны подождать {purple}{1}{default} раундов для Игрового Дня!"
+	}
+
+	"armsrace_name"
+	{
+		"ru"		"Гонка Вооружений"
+	}
+
+	"armsrace_downgraded"
+	{
+		"ru"		"Вы были зарезаны! Ваше оружие ухудшено!"
+	}
+
+	"armsrace_downgrade"
+	{
+		"ru"		"Зарезав {purple}1{default}, Вы ухудшили его оружие!"
+	}
+
+	"armsrace_levelup"
+	{
+		"ru"		"{purple}Уровень повышен!{default} Вы получили {1}!"
+	}
+
+	"armsrace_now_nc"
+	{
+		"ru"		"Начинается Гонка Вооружений раунд."
+	}
+
+	"armsrace_now"
+	{
+		"ru"		"Начинается {purple}Гонка Вооружений{default} раунд."
+	}
+
+}

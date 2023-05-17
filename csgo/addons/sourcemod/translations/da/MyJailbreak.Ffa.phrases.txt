@@ -1,0 +1,136 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:27 UTC
+// Language: Danish (da)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/187
+//
+"Phrases"
+{
+
+	"ffa_need"
+	{
+		"da"		"{purple}{2}{default} har afstemt. {purple}{1}{default} stemmer tilbage til {darkred}FFA runde"
+	}
+
+	"ffa_voting"
+	{
+		"da"		"Afstemning for FFA er {purple}slået fra"
+	}
+
+	"ffa_setbywarden"
+	{
+		"da"		"Warden kan vælge FFA runde er {purple}slået fra"
+	}
+
+	"ffa_setbyadmin"
+	{
+		"da"		"Admin kan vælge FFA runde er {purple}slået fra"
+	}
+
+	"ffa_ctwin_nc"
+	{
+		"da"		"En Counter-Terrorists har overlevet!"
+	}
+
+	"ffa_twin_nc"
+	{
+		"da"		"En Terrorists har overlevet!"
+	}
+
+	"ffa_minplayer"
+	{
+		"da"		"For FFA skal der mindst være {purple}en CT"
+	}
+
+	"ffa_end"
+	{
+		"da"		"{purple}FFA{default} er afsluttet!"
+	}
+
+	"ffa_next"
+	{
+		"da"		"Næste runde er {purple}FFA"
+	}
+
+	"ffa_next_nc"
+	{
+		"da"		"Næste runde er FFA"
+	}
+
+	"ffa_rounds"
+	{
+		"da"		"Runde {purple}{1}{default} af {purple}{2}"
+	}
+
+	"ffa_start"
+	{
+		"da"		"{purple}FFA{default} er startet!"
+	}
+
+	"ffa_start_nc"
+	{
+		"da"		"FFA er startet!"
+	}
+
+	"ffa_voted"
+	{
+		"da"		"Du har allerede stemt for {purple}FFA runde!"
+	}
+
+	"ffa_disabled"
+	{
+		"da"		"FFA er midlertidigt {purple}slået fra."
+	}
+
+	"ffa_damage_nc"
+	{
+		"da"		"{1} sekunder til man kan skade hinanden!"
+	}
+
+	"ffa_info_title"
+	{
+		"da"		"Free for All Deathmatch er aktiveret!"
+	}
+
+	"ffa_info_line1"
+	{
+		"da"		"Bliv ikke overrasket hvis du starter i CT spawn!"
+	}
+
+	"ffa_info_line2"
+	{
+		"da"		"Free for All - alle mod alle - Sidste man vinder!"
+	}
+
+	"ffa_info_line3"
+	{
+		"da"		"Du kan ikke skade andre spillere når mappet er mørkt!"
+	}
+
+	"ffa_info_line4"
+	{
+		"da"		"Alle jail regler er ophævet!"
+	}
+
+	"ffa_info_line5"
+	{
+		"da"		"!lr er deaktiveret i denne runde!"
+	}
+
+	"ffa_info_line6"
+	{
+		"da"		"Alle må gå der hen de har lyst til !"
+	}
+
+	"ffa_info_line7"
+	{
+		"da"		"Alle server regler skal overholdes!"
+	}
+
+	"ffa_wait"
+	{
+		"da"		"Du skal vente {purple}{1}{default} flere runder!"
+	}
+
+}

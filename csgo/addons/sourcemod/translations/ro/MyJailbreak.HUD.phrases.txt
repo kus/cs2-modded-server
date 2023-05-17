@@ -1,0 +1,61 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:21 UTC
+// Language: Romanian (ro)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/231
+//
+"Phrases"
+{
+
+	"hud_planned"
+	{
+		"ro"		"Urmatoarea runda:"
+	}
+
+	"hud_running"
+	{
+		"ro"		"Runda actuala:"
+	}
+
+	"hud_warden"
+	{
+		"ro"		"Simon:"
+	}
+
+	"hud_nowarden"
+	{
+		"ro"		"Nimeni nu este SIMON!"
+	}
+
+	"hud_guards"
+	{
+		"ro"		"Gardieni:"
+	}
+
+	"hud_prisoner"
+	{
+		"ro"		"Prizonieri:"
+	}
+
+	"hud_on"
+	{
+		"ro"		"HUD {purple}este activat!"
+	}
+
+	"hud_off"
+	{
+		"ro"		"HUD {purple}este dezactivat"
+	}
+
+	"hud_lastCT"
+	{
+		"ro"		"Ultimul Gardian:"
+	}
+
+	"hud_youwarden"
+	{
+		"ro"		"Tu esti SIMON!"
+	}
+
+}

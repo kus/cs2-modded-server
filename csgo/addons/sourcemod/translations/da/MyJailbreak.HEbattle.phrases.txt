@@ -1,0 +1,121 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:31 UTC
+// Language: Danish (da)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/193
+//
+"Phrases"
+{
+
+	"hebattle_need"
+	{
+		"da"		"{purple}{2}{default} har stemt. {purple}{1}{default} afstemninger tilbage til {darkred}hebattle"
+	}
+
+	"hebattle_rounds"
+	{
+		"da"		"Runde {purple}{1}{default} af {purple}{2}"
+	}
+
+	"hebattle_minplayer"
+	{
+		"da"		"For HE Battle skal der mindst være {purple}en CT"
+	}
+
+	"hebattle_twin_nc"
+	{
+		"da"		"En Terrorists har overlevet!"
+	}
+
+	"hebattle_voting"
+	{
+		"da"		"Afstemninger for HE Battle er {purple}slået fra"
+	}
+
+	"hebattle_setbywarden"
+	{
+		"da"		"HE Battle for Warden er {purple}slået fra"
+	}
+
+	"hebattle_setbyadmin"
+	{
+		"da"		"HE Battle for Admin er {purple}slået fra"
+	}
+
+	"hebattle_ctwin_nc"
+	{
+		"da"		"En Counter-Terrorists har overlevet"
+	}
+
+	"hebattle_end"
+	{
+		"da"		"{purple}HE Battle{default} er afsluttet!"
+	}
+
+	"hebattle_next"
+	{
+		"da"		"Næste runde er {purple}HE Battle"
+	}
+
+	"hebattle_next_nc"
+	{
+		"da"		"Næste runde er HE Battle"
+	}
+
+	"hebattle_start"
+	{
+		"da"		"{purple}HE Battle{default} er startet!"
+	}
+
+	"hebattle_start_nc"
+	{
+		"da"		"HE Battle er startet!"
+	}
+
+	"hebattle_disabled"
+	{
+		"da"		"HE Battle er midlertidigt {purple}slået fra."
+	}
+
+	"hebattle_timeuntilstart_nc"
+	{
+		"da"		"{1} sekunder til runden starter!"
+	}
+
+	"hebattle_info_title"
+	{
+		"da"		"HE Battleer aktiv"
+	}
+
+	"hebattle_info_line1"
+	{
+		"da"		"I høvdingebold er det FFA høvdingebold"
+	}
+
+	"hebattle_info_line2"
+	{
+		"da"		"Bliv ikke overrasket hvis du bliver teleportet til CT Spawn!"
+	}
+
+	"hebattle_info_line4"
+	{
+		"da"		"Alle jail regler er ophævet!"
+	}
+
+	"hebattle_info_line5"
+	{
+		"da"		"Der kan ikke laves !lr i denne runde!"
+	}
+
+	"hebattle_info_line7"
+	{
+		"da"		"Alle server regler skal holdes!"
+	}
+
+	"hebattle_wait"
+	{
+		"da"		"Du skal vente {1} flere runder"
+	}
+
+}

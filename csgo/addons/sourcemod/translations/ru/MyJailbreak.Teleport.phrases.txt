@@ -1,0 +1,156 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:34 UTC
+// Language: Russian (ru)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/277
+//
+"Phrases"
+{
+
+	"teleport_need"
+	{
+		"ru"		"{purple}{2}{default} проголосовал. {purple}{1}{default} голос(а/ов), необходимых для игры {darkred}Телепорт Война."
+	}
+
+	"teleport_voting"
+	{
+		"ru"		"Голосование за Телепорт Войну {purple}отключено!"
+	}
+
+	"teleport_setbywarden"
+	{
+		"ru"		"Выбор Телепорт Войны {purple}отключен{default} командиром!"
+	}
+
+	"teleport_setbyadmin"
+	{
+		"ru"		"Выбор Телепорт Войны {purple}отключен{default} администратором!"
+	}
+
+	"teleport_ctwin_nc"
+	{
+		"ru"		"Охранник выжил!"
+	}
+
+	"teleport_twin_nc"
+	{
+		"ru"		"Заключённый выжил!"
+	}
+
+	"teleport_minplayer"
+	{
+		"ru"		"Для Телепорт Войны вам необходимо хотя бы {purple}один Охранник, и один Заключённый!"
+	}
+
+	"teleport_end"
+	{
+		"ru"		"{purple}Телепорт Война{default} окончена!"
+	}
+
+	"teleport_next"
+	{
+		"ru"		"Следующий раунд будет: {purple}Телепорт Война."
+	}
+
+	"teleport_next_nc"
+	{
+		"ru"		"Следующий раунд будет: Телепорт Война."
+	}
+
+	"teleport_rounds"
+	{
+		"ru"		"Раунд {purple}{1}{default} из {purple}{2}"
+	}
+
+	"teleport_start"
+	{
+		"ru"		"{purple}Телепорт Война{default} началась!"
+	}
+
+	"teleport_start_nc"
+	{
+		"ru"		"Телепорт Война началась!"
+	}
+
+	"teleport_voted"
+	{
+		"ru"		"Вы уже проголосовали за {purple}Телепорт Войну!"
+	}
+
+	"teleport_progress"
+	{
+		"ru"		"Игровой день {darkred}{1} {default} уже {purple}идёт!"
+	}
+
+	"teleport_disabled"
+	{
+		"ru"		"Телепорт Война в настоящее время {purple}отключена!"
+	}
+
+	"teleport_damage_nc"
+	{
+		"ru"		"{1} секунд(а) до активации урона"
+	}
+
+	"teleport_info_title"
+	{
+		"ru"		"Телепорт Война запущена!"
+	}
+
+	"teleport_info_line1"
+	{
+		"ru"		"Измените позицию с атакующим/жертвой при попадании"
+	}
+
+	"teleport_info_line2"
+	{
+		"ru"		"Телепорт Война - Игроки VS Игроки - Последний побеждает!"
+	}
+
+	"teleport_info_line3"
+	{
+		"ru"		"Убегайте во время фазы 'Никакого урона'!"
+	}
+
+	"teleport_info_line4"
+	{
+		"ru"		"Все обычные правила тюрьме неактивны в течение этого раунда!"
+	}
+
+	"teleport_info_line5"
+	{
+		"ru"		"Последние желания отключены в течение этого раунда!"
+	}
+
+	"teleport_info_line6"
+	{
+		"ru"		"Каждому позволено идти в любое место карты!"
+	}
+
+	"teleport_info_line7"
+	{
+		"ru"		"Не будьте мудаком!"
+	}
+
+	"teleport_wait"
+	{
+		"ru"		"Вы должны подождать {purple}{1}{default} раундов для Игрового Дня!"
+	}
+
+	"teleport_name"
+	{
+		"ru"		"Телепорт Война"
+	}
+
+	"teleport_now_nc"
+	{
+		"ru"		"Начинается Телепорт Война раунд."
+	}
+
+	"teleport_now"
+	{
+		"ru"		"Начинается {purple}Телепорт Война{default} раунд."
+	}
+
+}

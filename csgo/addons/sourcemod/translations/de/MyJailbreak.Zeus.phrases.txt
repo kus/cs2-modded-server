@@ -1,0 +1,146 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:29 UTC
+// Language: German (de)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/189
+//
+"Phrases"
+{
+
+	"zeus_need"
+	{
+		"de"		"{purple}{2}{default} hat gevotet. Jetzt noch {purple}{1}{default} votes bis {darkred}zeus{default} beginnt"
+	}
+
+	"zeus_rounds"
+	{
+		"de"		"Runde {purple}{1}{default} von {purple}{2}"
+	}
+
+	"zeus_twin_nc"
+	{
+		"de"		"Ein Terrorists hat als einziger überlebt"
+	}
+
+	"zeus_voting"
+	{
+		"de"		"Voting für Zeus Day ist {purple}deaktiviert"
+	}
+
+	"zeus_setbywarden"
+	{
+		"de"		"Zeus Day Aktivierung durch den Warden ist {purple}deaktiviert"
+	}
+
+	"zeus_setbyadmin"
+	{
+		"de"		"Zeus Day Aktivierung durch den Admin ist {purple}deaktiviert"
+	}
+
+	"zeus_minplayer"
+	{
+		"de"		"Für Zeus brauchen wir mindestens {purple}einen CT"
+	}
+
+	"zeus_ctwin_nc"
+	{
+		"de"		"Ein Counter-Terrorists hat als einziger überlebt"
+	}
+
+	"zeus_end"
+	{
+		"de"		"{purple}Zeus Day{default} beendet"
+	}
+
+	"zeus_next"
+	{
+		"de"		"Nächste Runde ist {purple}Zeus Day"
+	}
+
+	"zeus_next_nc"
+	{
+		"de"		"Nächste Runde ist Zeus Day"
+	}
+
+	"zeus_start"
+	{
+		"de"		"{purple}Zeus Day{default} ist gestartet!"
+	}
+
+	"zeus_start_nc"
+	{
+		"de"		"Zeus Day ist gestartet!"
+	}
+
+	"zeus_voted"
+	{
+		"de"		"Du hast schon für {purple}Zeus Day {default}gevotet"
+	}
+
+	"zeus_progress"
+	{
+		"de"		"Event {darkred}{1} {default}ist {purple}bereits gesetzt."
+	}
+
+	"zeus_disabled"
+	{
+		"de"		"Zeus Day ist vorübergehend {purple}deaktiviert."
+	}
+
+	"zeus_timeuntilstart_nc"
+	{
+		"de"		"{1} Sekunden bis zum Start"
+	}
+
+	"zeus_info_title"
+	{
+		"de"		"Zeus Day ist aktiv"
+	}
+
+	"zeus_info_line1"
+	{
+		"de"		"Zeus Day Jeder gegen Jeden"
+	}
+
+	"zeus_info_line2"
+	{
+		"de"		"Du hast in der Zeus nur einen Schuss"
+	}
+
+	"zeus_info_line3"
+	{
+		"de"		"Bei einem Kill mit Zeus oder Messer bekommst du einen neue Zeus"
+	}
+
+	"zeus_info_line4"
+	{
+		"de"		"Alle normalen Jailregeln sind aufgehoben!"
+	}
+
+	"zeus_info_line5"
+	{
+		"de"		"Der letzte Terrorist hat keinen Wunsch frei!"
+	}
+
+	"zeus_info_line6"
+	{
+		"de"		"Bleib im Haupt Jail Raum! Verstecke sind verboten!"
+	}
+
+	"zeus_info_line7"
+	{
+		"de"		"Bau keine Scheisse!"
+	}
+
+	"zeus_wait"
+	{
+		"de"		"Du musst noch {1} Runden warten"
+	}
+
+	"zeus_name"
+	{
+		"de"		"Zeus Day"
+	}
+
+}

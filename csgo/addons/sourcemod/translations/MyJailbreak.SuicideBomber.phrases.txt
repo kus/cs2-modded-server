@@ -1,0 +1,183 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:27 UTC
+// Language: English (en)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/182
+//
+"Phrases"
+{
+
+	"suicidebomber_need"
+	{
+		"#format"	"{1:i},{2:N}"
+		"en"		"{purple}{2}{default} has voted. {purple}{1}{default} votes required to play {darkred}Suicide Bomber."
+	}
+
+	"suicidebomber_rounds"
+	{
+		"#format"	"{1:i},{2:i}"
+		"en"		"Round {purple}{1}{default} of {purple}{2}"
+	}
+
+	"suicidebomber_twin_nc"
+	{
+		"en"		"All of the Guards were Eliminated!"
+	}
+
+	"suicidebomber_voting"
+	{
+		"en"		"Voting for Suicide Bomber is {purple}disabled!"
+	}
+
+	"suicidebomber_setbywarden"
+	{
+		"en"		"Set Suicide Bomber by Warden is {purple}disabled!"
+	}
+
+	"suicidebomber_minplayer"
+	{
+		"en"		"For Suicide Bomber you need at least {purple}one Guard & one Prisoner!"
+	}
+
+	"suicidebomber_setbyadmin"
+	{
+		"en"		"Set Suicide Bomber by Admin is {purple}disabled!"
+	}
+
+	"suicidebomber_ctwin_nc"
+	{
+		"en"		"A Guard has survived!"
+	}
+
+	"suicidebomber_end"
+	{
+		"en"		"{purple}Suicide Bomber{default} has ended."
+	}
+
+	"suicidebomber_next"
+	{
+		"en"		"The following round will be: {purple}Suicide Bomber."
+	}
+
+	"suicidebomber_next_nc"
+	{
+		"en"		"The following round will be: Suicide Bomber."
+	}
+
+	"suicidebomber_start"
+	{
+		"en"		"{purple}Suicide Bomber{default} has begun!"
+	}
+
+	"suicidebomber_start_nc"
+	{
+		"en"		"Suicide Bomber has begun!"
+	}
+
+	"suicidebomber_voted"
+	{
+		"en"		"You have already voted for {purple}Suicide Bomber!"
+	}
+
+	"suicidebomber_progress"
+	{
+		"#format"	"{1:s}"
+		"en"		"The event {darkred}{1} {default}is {purple}already in progress!"
+	}
+
+	"suicidebomber_disabled"
+	{
+		"en"		"Suicide Bomber is currently {purple}disabled!"
+	}
+
+	"suicidebomber_sprint"
+	{
+		"en"		"You are now {blue}Sprinting!"
+	}
+
+	"suicidebomber_sprintend"
+	{
+		"#format"	"{1:i}"
+		"en"		"{blue}You're too tired to sprint!{default} Rest for {1} Seconds."
+	}
+
+	"suicidebomber_sprintagain"
+	{
+		"en"		"You caught your breath. You can {blue}sprint {default}again!"
+	}
+
+	"suicidebomber_timetohide_nc"
+	{
+		"#format"	"{1:i}"
+		"en"		"{1} seconds left to hide!"
+	}
+
+	"suicidebomber_timeuntilopen_nc"
+	{
+		"#format"	"{1:i}"
+		"en"		"{1} Seconds until the Cells open!"
+	}
+
+	"suicidebomber_info_title"
+	{
+		"en"		"Suicide Bomber is now Activated!"
+	}
+
+	"suicidebomber_info_line1"
+	{
+		"en"		"Suicide Bombers are everywhere!"
+	}
+
+	"suicidebomber_info_line2"
+	{
+		"en"		"Prisoners now have Jihads and can suicide with +lookweapon 'F' -key!"
+	}
+
+	"suicidebomber_info_line3"
+	{
+		"en"		"Hold E to sprint!"
+	}
+
+	"suicidebomber_info_line4"
+	{
+		"en"		"All usual Jailbreak Rules do not apply during this round!"
+	}
+
+	"suicidebomber_info_line5"
+	{
+		"en"		"Last Requests are disabled during this round!"
+	}
+
+	"suicidebomber_info_line6"
+	{
+		"en"		"Everyone is allowed to go anywhere within the map!"
+	}
+
+	"suicidebomber_info_line7"
+	{
+		"en"		"Don't be an Asshole!"
+	}
+
+	"suicidebomber_wait"
+	{
+		"#format"	"{1:i}"
+		"en"		"You must wait {purple}{1}{default} more rounds for an Event Day!"
+	}
+
+	"suicidebomber_name"
+	{
+		"en"		"Suicide Bomber"
+	}
+
+	"suicidebomber_now_nc"
+	{
+		"en"		"Now a suicidebomber round begins."
+	}
+
+	"suicidebomber_now"
+	{
+		"en"		"Now a {purple}suicidebomber{default} round begins."
+	}
+
+}

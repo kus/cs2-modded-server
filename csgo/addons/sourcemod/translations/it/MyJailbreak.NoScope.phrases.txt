@@ -1,0 +1,146 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:30 UTC
+// Language: Italian (it)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/198
+//
+"Phrases"
+{
+
+	"noscope_need"
+	{
+		"it"		"{purple}{2}{default} ha votato. {purple}{1}{default} voti richiesti per fare {darkred}No Scope Battle."
+	}
+
+	"noscope_rounds"
+	{
+		"it"		"Round {purple}{1}{default} di {purple}{2}"
+	}
+
+	"noscope_twin_nc"
+	{
+		"it"		"Un Prigioniere e' sopravvissuto!"
+	}
+
+	"noscope_voting"
+	{
+		"it"		"Le votazioni per No Scope Battle sono {purple}disattivate!"
+	}
+
+	"noscope_setbywarden"
+	{
+		"it"		"Impostare No Scope Battle come CapoCT e' {purple}disattivato!"
+	}
+
+	"noscope_minplayer"
+	{
+		"it"		"Per fare No Scope Battle c'e bisogno almeno di {purple}una Guardia, & un Prigioniere!"
+	}
+
+	"noscope_setbyadmin"
+	{
+		"it"		"Impostare No Scope Battle come Admin e' {purple}disabled!"
+	}
+
+	"noscope_ctwin_nc"
+	{
+		"it"		"Una Guardia e' sopravvissuta!"
+	}
+
+	"noscope_end"
+	{
+		"it"		"{purple}No Scope Battle{default} e' finito."
+	}
+
+	"noscope_next"
+	{
+		"it"		"Il prossimo round ci sara': {purple}No Scope Battle."
+	}
+
+	"noscope_next_nc"
+	{
+		"it"		"Il prossimo round ci sara': No Scope Battle."
+	}
+
+	"noscope_start"
+	{
+		"it"		"The {purple}No Scope Battle Battle{default} e' iniziato!"
+	}
+
+	"noscope_start_nc"
+	{
+		"it"		"The No Scope Battle Battle e' iniziato!"
+	}
+
+	"noscope_voted"
+	{
+		"it"		"Hai gia' votato per{purple}No Scope Battle!"
+	}
+
+	"noscope_progress"
+	{
+		"it"		"L'evento {darkred}{1} {default}e' {purple}in corso"
+	}
+
+	"noscope_disabled"
+	{
+		"it"		"No Scope Battle e' {purple}disattivato!"
+	}
+
+	"noscope_timeuntilstart_nc"
+	{
+		"it"		"{1} secondi prima che inizi il round!"
+	}
+
+	"noscope_info_title"
+	{
+		"it"		"NoScope e' attivato!"
+	}
+
+	"noscope_info_line1"
+	{
+		"it"		"No Scope Battle - Free for All!"
+	}
+
+	"noscope_info_line2"
+	{
+		"it"		"Bassa gravita'!"
+	}
+
+	"noscope_info_line3"
+	{
+		"it"		"Scappa durante la fase di 'no-damage'!"
+	}
+
+	"noscope_info_line4"
+	{
+		"it"		"Tutte le normali regole del JB non vengono applicate durante questo round!"
+	}
+
+	"noscope_info_line5"
+	{
+		"it"		"Gli LR sono disattivati durante questo round!"
+	}
+
+	"noscope_info_line6"
+	{
+		"it"		"Devi stare nella zona celle. E' vietato andare condotti o aree segrete!"
+	}
+
+	"noscope_info_line7"
+	{
+		"it"		"Non fate i cani!"
+	}
+
+	"noscope_wait"
+	{
+		"it"		"Devi aspettare {purple}{1}{default} prima di dare un altro evento!"
+	}
+
+	"noscope_name"
+	{
+		"it"		"No Scope Battle"
+	}
+
+}

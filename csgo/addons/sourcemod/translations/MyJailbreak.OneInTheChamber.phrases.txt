@@ -1,0 +1,161 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:35 UTC
+// Language: English (en)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/283
+//
+"Phrases"
+{
+
+	"oneinthechamber_need"
+	{
+		"#format"	"{1:i},{2:N}"
+		"en"		"{purple}{2}{default} has voted. {purple}{1}{default} votes required to play {darkred}OneInTheChamber Day."
+	}
+
+	"oneinthechamber_rounds"
+	{
+		"#format"	"{1:i},{2:i}"
+		"en"		"Round {purple}{1}{default} of {purple}{2}"
+	}
+
+	"oneinthechamber_twin_nc"
+	{
+		"en"		"A Prisoner has survived!"
+	}
+
+	"oneinthechamber_voting"
+	{
+		"en"		"Voting for OneInTheChamber Day is {purple}disabled!"
+	}
+
+	"oneinthechamber_setbywarden"
+	{
+		"en"		"Set OneInTheChamber Day by Warden is {purple}disabled!"
+	}
+
+	"oneinthechamber_setbyadmin"
+	{
+		"en"		"Set OneInTheChamber Day by Admin is {purple}disabled!"
+	}
+
+	"oneinthechamber_minplayer"
+	{
+		"en"		"For OneInTheChamber Day you need at least {purple}one Guard and one Prisoner!"
+	}
+
+	"oneinthechamber_ctwin_nc"
+	{
+		"en"		"A Guard has survived!"
+	}
+
+	"oneinthechamber_end"
+	{
+		"en"		"{purple}OneInTheChamber Day{default} has ended."
+	}
+
+	"oneinthechamber_next"
+	{
+		"en"		"The following round will be: {purple}OneInTheChamber Day."
+	}
+
+	"oneinthechamber_next_nc"
+	{
+		"en"		"The following round will be: OneInTheChamber Day."
+	}
+
+	"oneinthechamber_now_nc"
+	{
+		"en"		"Now a OneInTheChamber round begins."
+	}
+
+	"oneinthechamber_now"
+	{
+		"en"		"Now a {purple}OneInTheChamber{default} round begins."
+	}
+
+	"oneinthechamber_start"
+	{
+		"en"		"{purple}OneInTheChamber Day{default} has begun!"
+	}
+
+	"oneinthechamber_start_nc"
+	{
+		"en"		"OneInTheChamber Day has begun!"
+	}
+
+	"oneinthechamber_voted"
+	{
+		"en"		"You have already voted for {purple}OneInTheChamber Day!"
+	}
+
+	"oneinthechamber_progress"
+	{
+		"#format"	"{1:s}"
+		"en"		"The event {darkred}{1} {default}is {purple}already in progress!"
+	}
+
+	"oneinthechamber_disabled"
+	{
+		"en"		"OneInTheChamber Day is currently {purple}disabled!"
+	}
+
+	"oneinthechamber_timeuntilstart_nc"
+	{
+		"#format"	"{1:i}"
+		"en"		"{1} seconds until round start!"
+	}
+
+	"oneinthechamber_info_title"
+	{
+		"en"		"OneInTheChamber Day is now Activated!"
+	}
+
+	"oneinthechamber_info_line1"
+	{
+		"en"		"OneInTheChamber Day - Free for All!"
+	}
+
+	"oneinthechamber_info_line2"
+	{
+		"en"		"You only have one shot in your deagle!"
+	}
+
+	"oneinthechamber_info_line3"
+	{
+		"en"		"When you get a kill, you will be rewarded with another bullet!"
+	}
+
+	"oneinthechamber_info_line4"
+	{
+		"en"		"All usual Jailbreak Rules do not apply during this round!"
+	}
+
+	"oneinthechamber_info_line5"
+	{
+		"en"		"Last Request is disabled during this round!"
+	}
+
+	"oneinthechamber_info_line6"
+	{
+		"en"		"You must stay in the main Jailroom! Don't enter vents or secrets!"
+	}
+
+	"oneinthechamber_info_line7"
+	{
+		"en"		"Don't be an Asshole!"
+	}
+
+	"oneinthechamber_wait"
+	{
+		"#format"	"{1:i}"
+		"en"		"You must wait {purple}{1}{default} more rounds for an Event Day!"
+	}
+
+	"oneinthechamber_name"
+	{
+		"en"		"OneInTheChamber Day"
+	}
+
+}

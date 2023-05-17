@@ -1,0 +1,91 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:31 UTC
+// Language: Spanish (es)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/188
+//
+"Phrases"
+{
+
+	"weapons_disabled"
+	{
+		"es"		"El {purple}Menu de armas {default} esta desactivado!"
+	}
+
+	"weapons_same"
+	{
+		"es"		"Obtendrás la {purple}Misma Arma{default}."
+	}
+
+	"weapons_sameall"
+	{
+		"es"		"Ahora obtendrás la{purple} Misma Arma{default} todas la rondas."
+	}
+
+	"weapons_random"
+	{
+		"es"		"Obtendrás un {purple} Arma Aleatoria{default}."
+	}
+
+	"weapons_randomall"
+	{
+		"es"		"Ahora obtendrás una{purple} Arma Aleatoria{default} todas la rondas."
+	}
+
+	"weapons_next"
+	{
+		"es"		"Tus configuraciones serán{purple} aplicadas{default} la siguiente ronda."
+	}
+
+	"weapons_ta"
+	{
+		"es"		"Has recibido una {purple} TAGrenade{default}!"
+	}
+
+	"weapons_health"
+	{
+		"es"		"Tienes un{purple} Kit de Curacion{default}"
+	}
+
+	"weapons_info_title"
+	{
+		"es"		"Phoenix - Menu de armas"
+	}
+
+	"weapons_info_choose"
+	{
+		"es"		"Elige un Arma"
+	}
+
+	"weapons_info_same"
+	{
+		"es"		"Misma Arma"
+	}
+
+	"weapons_info_sameall"
+	{
+		"es"		"Misma Arma Todas las Rondas"
+	}
+
+	"weapons_info_random"
+	{
+		"es"		"Armas Aleatorias"
+	}
+
+	"weapons_info_randomall"
+	{
+		"es"		"Armas Aleatorias Todas las Rondas"
+	}
+
+	"weapons_info_prim"
+	{
+		"es"		"Arma Primaria:"
+	}
+
+	"weapons_info_sec"
+	{
+		"es"		"Arma Secundaria:"
+	}
+
+}

@@ -1,0 +1,146 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:32 UTC
+// Language: svn (svn)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/186
+//
+"Phrases"
+{
+
+	"duckhunt_rounds"
+	{
+		"svn"		"Runda {purple}{1}{default} od {purple}{2}"
+	}
+
+	"duckhunt_need"
+	{
+		"svn"		"{purple}{2}{default} je glasoval. Število potrebnih glasov za {darkred}Racolov: {purple}{1}"
+	}
+
+	"duckhunt_voting"
+	{
+		"svn"		"Glasovanje za Racolov je {purple}onemogočeno!"
+	}
+
+	"duckhunt_setbywarden"
+	{
+		"svn"		"Nastavitev s strani vodje je {purple}onemogočena!"
+	}
+
+	"duckhunt_setbyadmin"
+	{
+		"svn"		"Nastavitev racolova s strani adminov je {purple}onemogočena!"
+	}
+
+	"duckhunt_ctwin_nc"
+	{
+		"svn"		"Vse race so bile polovljene!"
+	}
+
+	"duckhunt_twin_nc"
+	{
+		"svn"		"Racolovec je bil ulovljen!"
+	}
+
+	"duckhunt_end"
+	{
+		"svn"		"{purple}Racolov{default} se je zaključil."
+	}
+
+	"duckhunt_next"
+	{
+		"svn"		"Naslednja runda bo: {purple}Racolov."
+	}
+
+	"duckhunt_next_nc"
+	{
+		"svn"		"Naslednja runda bo: Racolov."
+	}
+
+	"duckhunt_start"
+	{
+		"svn"		"{purple}Racolov{default} se je začel!"
+	}
+
+	"duckhunt_start_nc"
+	{
+		"svn"		"Racolov se je začel!"
+	}
+
+	"duckhunt_voted"
+	{
+		"svn"		"Ti si že glasoval za {purple}Racolov!"
+	}
+
+	"duckhunt_progress"
+	{
+		"svn"		"Event {darkred}{1} {default}is {purple}already in progress."
+	}
+
+	"duckhunt_minplayer"
+	{
+		"svn"		"Za racolov potrebuješ vsaj {purple}enega Paznika & enega Zapornika"
+	}
+
+	"duckhunt_disabled"
+	{
+		"svn"		"Racolov je trenutno {purple}onemogočen!"
+	}
+
+	"duckhunt_timeuntilstart_nc"
+	{
+		"svn"		"{1} sekund pred začetkom runde!"
+	}
+
+	"duckhunt_info_title"
+	{
+		"svn"		"Racolov je sedaj aktiviran!"
+	}
+
+	"duckhunt_info_line1"
+	{
+		"svn"		"Streljaj vse race!"
+	}
+
+	"duckhunt_info_line2"
+	{
+		"svn"		"Pazniki imajo šibrovke!"
+	}
+
+	"duckhunt_info_line3"
+	{
+		"svn"		"Zaporniki so sedaj kokoši in imajo granate. Samo desni klik!"
+	}
+
+	"duckhunt_info_line4"
+	{
+		"svn"		"To rundo ne veljajo običajna pravila Jailbreak-a!"
+	}
+
+	"duckhunt_info_line5"
+	{
+		"svn"		"Last request(!lr) je to rundo onemogočen."
+	}
+
+	"duckhunt_info_line6"
+	{
+		"svn"		"Ostati moraš v glavnih prostorih! Ne vstopaj v zračnike in skrivne prostore!"
+	}
+
+	"duckhunt_info_line7"
+	{
+		"svn"		"Pravila strežnika to rundo še vedno veljajo!"
+	}
+
+	"duckhunt_name"
+	{
+		"svn"		"Racolov"
+	}
+
+	"duckhunt_wait"
+	{
+		"svn"		"Počakati moraš še {purple}{1}{default} rund za Dan Dogodkov!"
+	}
+
+}

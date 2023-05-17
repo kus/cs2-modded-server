@@ -1,0 +1,171 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:29 UTC
+// Language: Czech (cze)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/183
+//
+"Phrases"
+{
+
+	"torch_need"
+	{
+		"cze"		"{purple}{2}{default} hlasoval. {purple}{1}{default} pozadovanych hlasu pro hrani {darkred}Zive Pochodne."
+	}
+
+	"torch_rounds"
+	{
+		"cze"		"Kolo {purple}{1}{default} ze {purple}{2}"
+	}
+
+	"torch_end"
+	{
+		"cze"		"{purple}Ziva Pochoden{default} skoncila."
+	}
+
+	"torch_voting"
+	{
+		"cze"		"Hlasovani pro Zivou Pochoden je {purple}vypnuto"
+	}
+
+	"torch_setbywarden"
+	{
+		"cze"		"Nastaveni Zive Pochodne je {purple}vypnuto Wardenem !"
+	}
+
+	"torch_setbyadmin"
+	{
+		"cze"		"Nastaveni Zive Pochodne je {purple}vypnuto adminem !"
+	}
+
+	"torch_next"
+	{
+		"cze"		"Nasledujici kolo bude: {purple}Ziva Pochoden."
+	}
+
+	"torch_next_nc"
+	{
+		"cze"		"Nasledujici kolo bude: Ziva Pochoden."
+	}
+
+	"torch_start"
+	{
+		"cze"		"{purple}Ziva Pochoden{default} se prave zacala !"
+	}
+
+	"torch_start_nc"
+	{
+		"cze"		"Ziva Pochoden prave zacala !"
+	}
+
+	"torch_voted"
+	{
+		"cze"		"Uz jsi hlasoval pro {purple}Zivou Pochoden !"
+	}
+
+	"torch_progress"
+	{
+		"cze"		"Udalost {darkred}{1} {default}je {purple}již v plnem proudu ! "
+	}
+
+	"torch_minplayer"
+	{
+		"cze"		"Pro Zivou Pochoden potrebujes alespon {purple}tri hrace, jeden z nich musi byt Dozorce !"
+	}
+
+	"torch_sprint"
+	{
+		"cze"		"Prave {blue}Sprintujes !"
+	}
+
+	"torch_sprintend"
+	{
+		"cze"		"{blue}Jsi moc utahanej abys mohl sprintovat !{default} Odpocin si {1} Sekund."
+	}
+
+	"torch_random"
+	{
+		"cze"		"{darkred}Nahodna pochoden je... {1}"
+	}
+
+	"torch_sprintagain"
+	{
+		"cze"		"Chytil jsi druhy dech. Muzes {default}opet pouzit {blue}sprint !"
+	}
+
+	"torch_disabled"
+	{
+		"cze"		"Ziva Pochoden je prave {purple}vypnuta !"
+	}
+
+	"torch_info_title"
+	{
+		"cze"		"Ziva Pochoden je ted Aktivni !"
+	}
+
+	"torch_info_line1"
+	{
+		"cze"		"Nahodny hrac bude zapalen !"
+	}
+
+	"torch_info_line2"
+	{
+		"cze"		"Presun plamen na ineho hrace kuchnutim !"
+	}
+
+	"torch_info_line3"
+	{
+		"cze"		"Drz E abys sprintoval ! Pochoden je rychlejsi nez ty !"
+	}
+
+	"torch_info_line4"
+	{
+		"cze"		"Vsechny bezne Jail pravidla se pro toto kolo nevstahuji !"
+	}
+
+	"torch_info_line5"
+	{
+		"cze"		"Posledni prani je vypnuto po dobu tohoto kola !"
+	}
+
+	"torch_info_line6"
+	{
+		"cze"		"Musis zustat v hlavni mistnosti ! Nelez do ventilacek nebo secretu !"
+	}
+
+	"torch_info_line7"
+	{
+		"cze"		"Musis se drzet pravidel servru !"
+	}
+
+	"torch_wait"
+	{
+		"cze"		"Musis cekat {purple}{1}{default} vice kol pro udalost !"
+	}
+
+	"torch_damage_nc"
+	{
+		"cze"		"Nahodny hrac bude zapalen za {1} sekund !"
+	}
+
+	"torch_torchem"
+	{
+		"cze"		"{purple}{1}{default} je pochoden !"
+	}
+
+	"torch_untorch"
+	{
+		"cze"		"{purple}{1}{default} uz neni Pochoden !"
+	}
+
+	"torch_win"
+	{
+		"cze"		"Pochoden byla uhasena !"
+	}
+
+	"torch_name"
+	{
+		"cze"		"Ziva Pochoden"
+	}
+
+}

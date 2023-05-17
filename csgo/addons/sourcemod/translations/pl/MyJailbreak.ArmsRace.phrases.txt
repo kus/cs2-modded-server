@@ -1,0 +1,186 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:34 UTC
+// Language: Polish (pl)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/278
+//
+"Phrases"
+{
+
+	"armsrace_need"
+	{
+		"pl"		"{purple} {2} {default} oddało głos. {purple} {1} {default} głos (y) wymagane do gry {darkred} Wyścig Zbrojeń!"
+	}
+
+	"armsrace_voting"
+	{
+		"pl"		"Głosowanie na Wyścig Zbrojeń jest aktualnie {purple}wyłączone!"
+	}
+
+	"armsrace_setbywarden"
+	{
+		"pl"		"Ustawienie Wyścigu Zbrojeń przez Wardena jest {purple}wyłączone!"
+	}
+
+	"armsrace_setbyadmin"
+	{
+		"pl"		"Ustawienie Wyścigu Zbrojeń przez Admina jest {purple}wyłączone!"
+	}
+
+	"armsrace_youwon"
+	{
+		"pl"		"{purple} Wygrałeś{default} wyścig zbrojeń!"
+	}
+
+	"armsrace_winner"
+	{
+		"pl"		"{purple} {1} {default} wygrał wyścig zbrojeń!"
+	}
+
+	"armsrace_minplayer"
+	{
+		"pl"		"Do wyścigu zbrojeń potrzeba przynajmniej {fioletowego} jednego Strażnika i jednego Więźnia!"
+	}
+
+	"armsrace_end"
+	{
+		"pl"		"{purple} Wyścig zbrojeń {default} dobiegł końca!"
+	}
+
+	"armsrace_next"
+	{
+		"pl"		"Kolejna runda to: {purple} Wyścig Zbrojeń."
+	}
+
+	"armsrace_next_nc"
+	{
+		"pl"		"Następna runda to: Wyścig Zbrojeń!"
+	}
+
+	"armsrace_rounds"
+	{
+		"pl"		"Runda {purple}{1}{default} z {purple}{2}"
+	}
+
+	"armsrace_start"
+	{
+		"pl"		"{purple} Rozpoczął się wyścig zbrojeń {default}!"
+	}
+
+	"armsrace_start_nc"
+	{
+		"pl"		"Wyścig Zbrojeń rozpoczął się!"
+	}
+
+	"armsrace_voted"
+	{
+		"pl"		"Głosowałeś już na {purple} Wyścig Zbrojeń!"
+	}
+
+	"armsrace_progress"
+	{
+		"pl"		"Wydarzenie {darkred} {1} {default} już trwa {purpura}!"
+	}
+
+	"armsrace_disabled"
+	{
+		"pl"		"Wyścig zbrojeń jest obecnie {fioletowy} wyłączony!"
+	}
+
+	"armsrace_damage_nc"
+	{
+		"pl"		"{1} sekunda do momentu włączenia obrażeń"
+	}
+
+	"armsrace_info_title"
+	{
+		"pl"		"Wyścig Zbrojeń jest teraz aktywowany!"
+	}
+
+	"armsrace_info_line1"
+	{
+		"pl"		"Nie zdziw się, jeśli pojawiłeś się w Gun Roomie!"
+	}
+
+	"armsrace_info_line2"
+	{
+		"pl"		"Wyścig Zbrojeń - Gracz VS Gracz - Pierwszy ze złotym nożem wygrywa!"
+	}
+
+	"armsrace_info_line3"
+	{
+		"pl"		"Uciekaj podczas fazy 'NoDamage'!"
+	}
+
+	"armsrace_info_line4"
+	{
+		"pl"		"Wszystkie zwykłe Zasady Jailbreak nie mają zastosowania podczas tej rundy!"
+	}
+
+	"armsrace_info_line5"
+	{
+		"pl"		"Ostatnie życzenie jest wyłączone w tej rundzie!"
+	}
+
+	"armsrace_info_line6"
+	{
+		"pl"		"Każdy może iść do każdego miejsca na mapie!"
+	}
+
+	"armsrace_info_line7"
+	{
+		"pl"		"Nie bądź dupkiem!"
+	}
+
+	"RoundOne"
+	{
+		"pl"		"Runda 1 z 3"
+	}
+
+	"RoundTwo"
+	{
+		"pl"		"Runda 2 z 3"
+	}
+
+	"RoundThree"
+	{
+		"pl"		"Ostatnia runda Wyścigu Zbrojeń!"
+	}
+
+	"armsrace_wait"
+	{
+		"pl"		"Musisz poczekać {purple} {1} {default} kilka rund na wydarzenie!"
+	}
+
+	"armsrace_name"
+	{
+		"pl"		"Wyścig Zbrojeń"
+	}
+
+	"armsrace_downgraded"
+	{
+		"pl"		"Zostałeś zadźgany! Twój poziom się obniżył"
+	}
+
+	"armsrace_downgrade"
+	{
+		"pl"		"Spadłeś z poziomu {purple}{1}{default} z nożem!"
+	}
+
+	"armsrace_levelup"
+	{
+		"pl"		"{purple} Level Up! {default} Teraz masz {1}!"
+	}
+
+	"armsrace_now_nc"
+	{
+		"pl"		"Teraz rozpoczyna się Wyścig Zbrojeń!"
+	}
+
+	"armsrace_now"
+	{
+		"pl"		"Teraz rozpoczyna się {purple}Wyścig Zbrojeń."
+	}
+
+}

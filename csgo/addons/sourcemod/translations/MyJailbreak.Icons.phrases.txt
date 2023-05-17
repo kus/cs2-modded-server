@@ -1,0 +1,21 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:35 UTC
+// Language: English (en)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/298
+//
+"Phrases"
+{
+
+	"icons_on"
+	{
+		"en"		"Icons {purple}are enabled!"
+	}
+
+	"icons_off"
+	{
+		"en"		"Icons {purple}are disabled"
+	}
+
+}

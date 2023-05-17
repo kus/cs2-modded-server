@@ -1,0 +1,156 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:24 UTC
+// Language: Czech (cze)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/197
+//
+"Phrases"
+{
+
+	"lastguard_need"
+	{
+		"cze"		"{purple}{2}{default} hlasoval. {purple}{1}{default} hlasu pozadovano pro hrani {darkred}Posledni dozorcovo pravidlo."
+	}
+
+	"lastguard_twin_nc"
+	{
+		"cze"		"Vezni prezili !"
+	}
+
+	"lastguard_minplayer"
+	{
+		"cze"		"Pro Posledni dozorcovo pravidlo potrebujes nanejvys {purple}jednoho Dozorce a minimalne 2 vezne !"
+	}
+
+	"lastguard_hp"
+	{
+		"cze"		"{purple}{1} Vezni{default} maji dohromady: {purple}{2} HP{default}. Posledni dozorce {3} prave ma: {purple}{4} HP{default}."
+	}
+
+	"lastguard_setbyadmin"
+	{
+		"cze"		"Posledni dozorcovo pravidlo je {purple}vypnuto adminem !"
+	}
+
+	"lastguard_ctwin_nc"
+	{
+		"cze"		"Dozorci vyhrali !"
+	}
+
+	"lastguard_end"
+	{
+		"cze"		"{purple}Posledni dozorcovo pravidlo{default} skoncilo!"
+	}
+
+	"lastguard_startnow"
+	{
+		"cze"		"Pozornost ! {purple}Posledni dozorcovo pravidlo{default} je ted aktivni !"
+	}
+
+	"lastguard_startnow_nc"
+	{
+		"cze"		"Pozornost ! Posledni dozorce je ted aktivni !"
+	}
+
+	"lastguard_start"
+	{
+		"cze"		"{purple}Posledni dozorcovo pravidlo{default} zacalo !"
+	}
+
+	"lastguard_lr"
+	{
+		"cze"		"{purple}Posledni prani{default} je jiz aktivni ! Posledni dozorcovo pravidlo neni k dizpozici !"
+	}
+
+	"lastguard_start_nc"
+	{
+		"cze"		"Posledni dozorcovo prani zacalo !"
+	}
+
+	"lastguard_movenow"
+	{
+		"cze"		"Muzes se {purple} hejbat!"
+	}
+
+	"lastguard_movenow_nc"
+	{
+		"cze"		"Muzes se hejbat !"
+	}
+
+	"lastguard_voted"
+	{
+		"cze"		"Uz jsi hlasoval pro {purple}Posledni dozorcovo pravidlo !"
+	}
+
+	"lastguard_notalive"
+	{
+		"cze"		"{purple}Musis byt nazivu{default} abys mohl pouzit tenhle prikaz !"
+	}
+
+	"lastguard_progress"
+	{
+		"cze"		"Udalost {darkred}{1} {default}je {purple}prave v plnem proudu! Posledni dozorocovo pravidlo je vypnuty !"
+	}
+
+	"lastguard_running"
+	{
+		"cze"		"Posledni dozorcovo prani {default}je {purple}prave v plnem proudu !"
+	}
+
+	"lastguard_disabled"
+	{
+		"cze"		"Posledni dozorcovo prani je prave {purple}vypnuto!"
+	}
+
+	"lastguard_timeuntilstart_nc"
+	{
+		"cze"		"{1} sekund nez zacne nove kolo !"
+	}
+
+	"lastguard_info_title"
+	{
+		"cze"		"Posledni dozorcovo pravidlo je aktivovano !"
+	}
+
+	"lastguard_info_line1"
+	{
+		"cze"		"Posledni dozorcovo pravidlo - Vezni VS Dozorci."
+	}
+
+	"lastguard_info_line4"
+	{
+		"cze"		"Vsechny bezne Jail pravidla se pro toto kolo nevstahuji !"
+	}
+
+	"lastguard_info_line5"
+	{
+		"cze"		"Posledni prani je vypnuto po dobu tohoto kola !"
+	}
+
+	"lastguard_info_line7"
+	{
+		"cze"		"Nebud kreten !"
+	}
+
+	"lastguard_info_line2"
+	{
+		"cze"		"Vsichni vezni jsou Rebelove !"
+	}
+
+	"lastguard_info_line3"
+	{
+		"cze"		"Posledni dozorce ma vice zivotu !"
+	}
+
+	"lastguard_info_line6"
+	{
+		"cze"		"Vsichni maji povoleny jit kdekoliv na mape !"
+	}
+
+	"lastguard_close"
+	{
+		"cze"		"Exit"
+	}
+
+}

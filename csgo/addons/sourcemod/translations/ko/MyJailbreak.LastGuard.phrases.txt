@@ -1,0 +1,21 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:24 UTC
+// Language: Korean (ko)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/197
+//
+"Phrases"
+{
+
+	"lastguard_ctwin_nc"
+	{
+		"ko"		"간수팀이 이겼습니다!"
+	}
+
+	"lastguard_close"
+	{
+		"ko"		"닫힘"
+	}
+
+}

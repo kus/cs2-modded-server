@@ -1,0 +1,96 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:32 UTC
+// Language: Polish (pl)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/188
+//
+"Phrases"
+{
+
+	"weapons_disabled"
+	{
+		"pl"		"Menu BRONI {purple}jest {default} WYLACZONE."
+	}
+
+	"weapons_same"
+	{
+		"pl"		"Dostaniesz  {purple} te sama bron {default}"
+	}
+
+	"weapons_sameall"
+	{
+		"pl"		"Dostaniesz {purple} te sama bron {default}w nastepnych rundach"
+	}
+
+	"weapons_random"
+	{
+		"pl"		"Dostaniesz {purple} randomowo wylosowana bron{default}"
+	}
+
+	"weapons_randomall"
+	{
+		"pl"		"Dostaniesz {purple} randomowo wylosowana bron  {default}w nastepnych rundach"
+	}
+
+	"weapons_next"
+	{
+		"pl"		"Dostaniesz swoja {purple} Nowa Bron {default} w nastepnej rundzie"
+	}
+
+	"weapons_ta"
+	{
+		"pl"		"Posiadasz {purple} Granat TA{default}"
+	}
+
+	"weapons_health"
+	{
+		"pl"		"Posiadasz zastrzyk  {purple} ADRENALINY {default}"
+	}
+
+	"weapons_info_title"
+	{
+		"pl"		"MyJailbreak Weapon Menu"
+	}
+
+	"weapons_info_choose"
+	{
+		"pl"		"wybierz bron"
+	}
+
+	"weapons_info_same"
+	{
+		"pl"		"ta sama bron"
+	}
+
+	"weapons_info_sameall"
+	{
+		"pl"		"ta sama bron zawsze"
+	}
+
+	"weapons_info_random"
+	{
+		"pl"		"randomowa bron"
+	}
+
+	"weapons_info_randomall"
+	{
+		"pl"		"randomowa bron zawsze"
+	}
+
+	"weapons_info_prim"
+	{
+		"pl"		"Glowna Bron:"
+	}
+
+	"weapons_info_sec"
+	{
+		"pl"		"Bron Podreczna:"
+	}
+
+	"weapon_menu_max_usages"
+	{
+		"pl"		"Osiągnąłeś już maksymalne użycie broni!"
+	}
+
+}

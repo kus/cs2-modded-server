@@ -1,0 +1,167 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:31 UTC
+// Language: English (en)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/184
+//
+"Phrases"
+{
+
+	"zombie_need"
+	{
+		"#format"	"{1:i},{2:N}"
+		"en"		"{purple}{2}{default} has voted. {purple}{1}{default} votes required to play {darkred}Zombie."
+	}
+
+	"zombie_rounds"
+	{
+		"#format"	"{1:i},{2:i}"
+		"en"		"Round {purple}{1}{default} of {purple}{2}"
+	}
+
+	"zombie_voting"
+	{
+		"en"		"Voting for Zombie is {purple}disabled!"
+	}
+
+	"zombie_setbywarden"
+	{
+		"en"		"Set Zombie by Warden is {purple}disabled!"
+	}
+
+	"zombie_setbyadmin"
+	{
+		"en"		"Set Zombie by Admin is {purple}disabled!"
+	}
+
+	"zombie_ctwin_nc"
+	{
+		"en"		"The Zombies have killed all the Humans!"
+	}
+
+	"zombie_twin_nc"
+	{
+		"en"		"Humans has survived!"
+	}
+
+	"zombie_end"
+	{
+		"en"		"{purple}Zombie{default} has ended."
+	}
+
+	"zombie_next_nc"
+	{
+		"en"		"The following round will be: Zombie."
+	}
+
+	"zombie_next"
+	{
+		"en"		"The following round will be: {purple}Zombie."
+	}
+
+	"zombie_start"
+	{
+		"en"		"{purple}Zombie{default} has begun!"
+	}
+
+	"zombie_start_nc"
+	{
+		"en"		"Zombie has begun!"
+	}
+
+	"zombie_voted"
+	{
+		"en"		"You have already voted for {purple}Zombie!"
+	}
+
+	"zombie_progress"
+	{
+		"#format"	"{1:s}"
+		"en"		"The event {darkred}{1} {default}is {purple}already in progress!"
+	}
+
+	"zombie_minplayer"
+	{
+		"en"		"For Zombie you need at least {purple}one Guard & one Prisoner!"
+	}
+
+	"zombie_timeuntilzombie_nc"
+	{
+		"#format"	"{1:i}"
+		"en"		"{1} seconds left to hide!"
+	}
+
+	"zombie_timetounfreeze_nc"
+	{
+		"#format"	"{1:i}"
+		"en"		"{1} seconds until you will be unfreezed!"
+	}
+
+	"zombie_info_title"
+	{
+		"en"		"Zombie is now Activated!"
+	}
+
+	"zombie_info_line1"
+	{
+		"en"		"Zombies(Guards) VS Humans(Prisoners)!"
+	}
+
+	"zombie_info_line2"
+	{
+		"en"		"Zombies are freezed! Humans should run!"
+	}
+
+	"zombie_info_line3"
+	{
+		"en"		"Zombies have a large amount of HP!"
+	}
+
+	"zombie_info_line4"
+	{
+		"en"		"All usual Jailbreak Rules do not apply during this round!"
+	}
+
+	"zombie_info_line5"
+	{
+		"en"		"Last Request is disabled during this round!"
+	}
+
+	"zombie_info_line6"
+	{
+		"en"		"Everyone is allowed to go anywhere within the map!"
+	}
+
+	"zombie_info_line7"
+	{
+		"en"		"Don't be an Asshole!"
+	}
+
+	"zombie_wait"
+	{
+		"#format"	"{1:i}"
+		"en"		"You must wait {purple}{1}{default} more rounds for an Event Day!"
+	}
+
+	"zombie_disabled"
+	{
+		"en"		"Zombie is currently {purple}disabled."
+	}
+
+	"zombie_name"
+	{
+		"en"		"Zombie Day"
+	}
+
+	"zombie_now_nc"
+	{
+		"en"		"Now a Zombie round begins."
+	}
+
+	"zombie_now"
+	{
+		"en"		"Now a {purple}Zombie{default} round begins."
+	}
+
+}

@@ -1,0 +1,5 @@
+"MonitorScreen"
+{
+	"$basetexture" "overlays/MyJailbreak/red"
+	"$translucent" 1
+}

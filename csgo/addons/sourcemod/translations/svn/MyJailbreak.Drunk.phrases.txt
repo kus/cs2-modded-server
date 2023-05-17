@@ -1,0 +1,141 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:29 UTC
+// Language: svn (svn)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/191
+//
+"Phrases"
+{
+
+	"drunk_need"
+	{
+		"svn"		"{purple}{2}{default} je glasoval. Število glasov potrebnih za {darkred}Vinjen dan: {purple}{1}{default}"
+	}
+
+	"drunk_rounds"
+	{
+		"svn"		"Runda {purple}{1}{default} od {purple}{2}."
+	}
+
+	"drunk_twin_nc"
+	{
+		"svn"		"Zapornik je preživel"
+	}
+
+	"drunk_voting"
+	{
+		"svn"		"Glasovanje za vinjen dan je {purple}onemogočeno!"
+	}
+
+	"drunk_setbywarden"
+	{
+		"svn"		"Nastavitev vinjenega dne s strani wardena je {purple}onemogočena!"
+	}
+
+	"drunk_setbyadmin"
+	{
+		"svn"		"Nastavitev vinjenega dne s strani adminov je {purple}onemogočena!"
+	}
+
+	"drunk_ctwin_nc"
+	{
+		"svn"		"Paznik je preživel!"
+	}
+
+	"drunk_end"
+	{
+		"svn"		"{purple}Vinjen dan{default} se je zaključil."
+	}
+
+	"drunk_next"
+	{
+		"svn"		"Naslednja runda bo: {purple}Vinjen dan."
+	}
+
+	"drunk_next_nc"
+	{
+		"svn"		"Naslednja runda bo: Vinjen dan."
+	}
+
+	"drunk_start"
+	{
+		"svn"		"{purple}Vinjen dan{default} se je začel!"
+	}
+
+	"drunk_start_nc"
+	{
+		"svn"		"Vinjen dan se je začel!"
+	}
+
+	"drunk_voted"
+	{
+		"svn"		"Ti si že glasoval za {purple}Vinjen dan!"
+	}
+
+	"drunk_progress"
+	{
+		"svn"		"Dogodek {darkred}{1} {default}se {purple}že izvaja!"
+	}
+
+	"drunk_disabled"
+	{
+		"svn"		"Vinjen dan je trenutno {purple}onemogočen!"
+	}
+
+	"drunk_timeuntilstart_nc"
+	{
+		"svn"		"{1} sekund pred začetkom runde!"
+	}
+
+	"drunk_info_title"
+	{
+		"svn"		"Vinjen dan je sedaj aktiviran!"
+	}
+
+	"drunk_info_line1"
+	{
+		"svn"		"Vinjen dan je sedaj aktiviran"
+	}
+
+	"drunk_info_line2"
+	{
+		"svn"		"-----------------------------------"
+	}
+
+	"drunk_info_line3"
+	{
+		"svn"		"-----------------------------------"
+	}
+
+	"drunk_info_line4"
+	{
+		"svn"		"To rundo ne veljajo običajna pravila Jailbreak-a!"
+	}
+
+	"drunk_info_line5"
+	{
+		"svn"		"Last request(!lr) je to rundo onemogočen!"
+	}
+
+	"drunk_info_line6"
+	{
+		"svn"		"Vsakdo lahko gre kamorkoli na mapi!"
+	}
+
+	"drunk_info_line7"
+	{
+		"svn"		"Pravila strežnika to rundo še vedno veljajo!"
+	}
+
+	"drunk_wait"
+	{
+		"svn"		"Počakati moraš še {purple}{1}{default} rund za Dan Dogodkov!"
+	}
+
+	"drunk_name"
+	{
+		"svn"		"Vinjen dan"
+	}
+
+}

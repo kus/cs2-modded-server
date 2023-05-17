@@ -1,0 +1,416 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:22 UTC
+// Language: Danish (da)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/180
+//
+"Phrases"
+{
+
+	"menu_info"
+	{
+		"da"		"Skriv !Menu i chatten, for at åbne Jail menuen."
+	}
+
+	"menu_info_title"
+	{
+		"da"		"MyJailBreak Menu"
+	}
+
+	"menu_countdown"
+	{
+		"da"		"Start en nedtælling"
+	}
+
+	"menu_opencell"
+	{
+		"da"		"Åben celle dørene"
+	}
+
+	"menu_seteventdays"
+	{
+		"da"		"Angiv begivenhedsdag"
+	}
+
+	"menu_voteeventdays"
+	{
+		"da"		"Stem på begivenhedsdage"
+	}
+
+	"menu_math"
+	{
+		"da"		"Start en matematik quiz"
+	}
+
+	"menu_guns"
+	{
+		"da"		"Våben menu"
+	}
+
+	"menu_laser"
+	{
+		"da"		"Laser Pointer Menu"
+	}
+
+	"menu_noblock"
+	{
+		"da"		"Slå NoBLock Til/Fra"
+	}
+
+	"menu_sparks"
+	{
+		"da"		"Slå skud gnister til/fra"
+	}
+
+	"menu_extend"
+	{
+		"da"		"Forlæng rundetiden"
+	}
+
+	"menu_ffon"
+	{
+		"da"		"Slå Team-Skade til for T's"
+	}
+
+	"menu_ffoff"
+	{
+		"da"		"Slå holdskade fra for T's"
+	}
+
+	"menu_randomdead"
+	{
+		"da"		"Dræb en tilfældig fange"
+	}
+
+	"menu_unwarden"
+	{
+		"da"		"Sig op som Warden"
+	}
+
+	"menu_getwarden"
+	{
+		"da"		"Bliv warden"
+	}
+
+	"menu_joint"
+	{
+		"da"		"Bliv en fange"
+	}
+
+	"menu_check"
+	{
+		"da"		"Tjek for rebeller"
+	}
+
+	"menu_lr"
+	{
+		"da"		"Last Request"
+	}
+
+	"menu_removewarden"
+	{
+		"da"		"Fjern Warden"
+	}
+
+	"menu_setwarden"
+	{
+		"da"		"Sæt ny warden"
+	}
+
+	"menu_rules"
+	{
+		"da"		"Regler"
+	}
+
+	"menu_joinct"
+	{
+		"da"		"Bliv en vagt"
+	}
+
+	"menu_guardct"
+	{
+		"da"		"Gå i vagt køen (!Guard)"
+	}
+
+	"menu_request"
+	{
+		"da"		"Anmodninger"
+	}
+
+	"menu_votewarden"
+	{
+		"da"		"Stem om at fyre Warden"
+	}
+
+	"menu_event_Titlestart"
+	{
+		"da"		"Start begivenhedsdag næste runde."
+	}
+
+	"menu_event_Titlevote"
+	{
+		"da"		"Stem om en begivenhedsdag"
+	}
+
+	"menu_war"
+	{
+		"da"		"War"
+	}
+
+	"menu_ffa"
+	{
+		"da"		"Alle mod alle"
+	}
+
+	"menu_zeus"
+	{
+		"da"		"Zeus dag"
+	}
+
+	"menu_zombie"
+	{
+		"da"		"Zombie dag"
+	}
+
+	"menu_hide"
+	{
+		"da"		"Gem dig i mørket!"
+	}
+
+	"menu_suicidebomber"
+	{
+		"da"		"Selvmordsbombe "
+	}
+
+	"menu_catch"
+	{
+		"da"		"Fang og frys"
+	}
+
+	"menu_knifefight"
+	{
+		"da"		"Kniv kamp"
+	}
+
+	"menu_hebattle"
+	{
+		"da"		"Håndgranat kamp"
+	}
+
+	"menu_cowboy"
+	{
+		"da"		"Cowboy"
+	}
+
+	"menu_drunk"
+	{
+		"da"		"Fulde dag"
+	}
+
+	"menu_torch"
+	{
+		"da"		"Fakkel Relæ"
+	}
+
+	"menu_noscope"
+	{
+		"da"		"No Scope"
+	}
+
+	"menu_duckhunt"
+	{
+		"da"		"Andejagt"
+	}
+
+	"menu_admin"
+	{
+		"da"		"Admin menu"
+	}
+
+	"menu_mute"
+	{
+		"da"		"Gør menu lydløs"
+	}
+
+	"menu_painter"
+	{
+		"da"		"Maler menu"
+	}
+
+	"menu_closecell"
+	{
+		"da"		"Luk celledørene"
+	}
+
+	"menu_voting"
+	{
+		"da"		"Stem om en begivenhedsdag:"
+	}
+
+	"menu_voteday"
+	{
+		"da"		"Start en afstemning om begivenhedsdag"
+	}
+
+	"menu_votingwon"
+	{
+		"da"		"Afstemningen endte med {2} stemmer. {green}{1} {default} vandt med {3} stemmer"
+	}
+
+	"menu_minplayer"
+	{
+		"da"		"For at stemme om en begivenhedsdag, skal du have minimum {purple}En vagt & en fange"
+	}
+
+	"menu_progress"
+	{
+		"da"		"Begivenhedsdagen {darkred}{1} {default}er {purple}allerede igang"
+	}
+
+	"menu_wait"
+	{
+		"da"		"Du skal vente {purple}{1}{default} før du må stemme på begivenhedsdage igen."
+	}
+
+	"menu_votingdraw"
+	{
+		"da"		"Afstemningen endte 50/50 uafgjort. En tilfældig begivenhedsdag blev valgt tilfældigt. "
+	}
+
+	"menu_disabled"
+	{
+		"da"		"Event voting runde er midlertidigt {purple}slÃ¥et fra."
+	}
+
+	"menu_playerfreeday"
+	{
+		"da"		"Giv en spiller Freeday"
+	}
+
+	"menu_teamgamesmenu"
+	{
+		"da"		"Hold Spil - Menu"
+	}
+
+	"menu_teamgamesgames"
+	{
+		"da"		"Hold spil - Spil"
+	}
+
+	"menu_undeputy"
+	{
+		"da"		"Træk dig som delegeret"
+	}
+
+	"menu_removedeputy"
+	{
+		"da"		"Fjern delegeret"
+	}
+
+	"menu_deputybecome"
+	{
+		"da"		"Bliv Wardens delegeret"
+	}
+
+	"menu_deputyset"
+	{
+		"da"		"Angiv din delegeret"
+	}
+
+	"menu_rebel"
+	{
+		"da"		"Af/Marker en spiller som Rebel"
+	}
+
+	"menu_count"
+	{
+		"da"		"Tæl fanger i rækkevide"
+	}
+
+	"menu_jailshop"
+	{
+		"da"		"Åben fængselbutikken"
+	}
+
+	"menu_orders"
+	{
+		"da"		"Kommandoer "
+	}
+
+	"menu_ghosts"
+	{
+		"da"		"Spøgelseskrig "
+	}
+
+	"menu_votingcancel"
+	{
+		"da"		"Afstemningen blev annulleret, fordi begivenhedsdagen {purple}1{default} allerede er valgt"
+	}
+
+	"menu_removequeue"
+	{
+		"da"		"Fjern en spiller fra vagt køen"
+	}
+
+	"menu_endround"
+	{
+		"da"		"Force runden til at stoppe"
+	}
+
+	"menu_clearqueue"
+	{
+		"da"		"Ryd vagt kø"
+	}
+
+	"menu_noevent"
+	{
+		"da"		"Ingen begivenhedsdag"
+	}
+
+	"menu_joinspec"
+	{
+		"da"		"Bliv spectator"
+	}
+
+	"menu_gangs"
+	{
+		"da"		"Bande menu"
+	}
+
+	"menu_teleport"
+	{
+		"da"		"Teleport krig"
+	}
+
+	"menu_armsrace"
+	{
+		"da"		"Arms Race"
+	}
+
+	"menu_playerremovefreeday"
+	{
+		"da"		"Fjern Freeday fra en spiller"
+	}
+
+	"menu_oneinthechamber"
+	{
+		"da"		"En i kammeret "
+	}
+
+	"menu_nolr"
+	{
+		"da"		"Slå Last Request Til/Fra"
+	}
+
+	"menu_dealdamage"
+	{
+		"da"		"Forsag skade dag"
+	}
+
+	"menu_freeday"
+	{
+		"da"		"Freeday"
+	}
+
+}

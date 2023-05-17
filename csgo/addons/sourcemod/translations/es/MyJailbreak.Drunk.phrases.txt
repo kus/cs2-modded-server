@@ -1,0 +1,141 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:29 UTC
+// Language: Spanish (es)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/191
+//
+"Phrases"
+{
+
+	"drunk_need"
+	{
+		"es"		"{purple}{2}{default} ha votado. {purple}{1}{default} voto(s) requerido para jugar {darkred}Drunken Day."
+	}
+
+	"drunk_rounds"
+	{
+		"es"		"Ronda {purple}{1}{default} de {purple}{2}."
+	}
+
+	"drunk_twin_nc"
+	{
+		"es"		"A Prisoner has surrived"
+	}
+
+	"drunk_voting"
+	{
+		"es"		"El voto para Drunken Day está {purple}deshabilitado!"
+	}
+
+	"drunk_setbywarden"
+	{
+		"es"		"El seteo de Drunken Day por el Guardia está {purple}deshabilitado!"
+	}
+
+	"drunk_setbyadmin"
+	{
+		"es"		"El seteo de Drunken Day por el Admin está {purple}deshabilitado!"
+	}
+
+	"drunk_ctwin_nc"
+	{
+		"es"		"Un Guardia ha sobrevivido!"
+	}
+
+	"drunk_end"
+	{
+		"es"		"{purple}Drunken Day{default} ha terminado."
+	}
+
+	"drunk_next"
+	{
+		"es"		"La siguiente ronda será: {purple}Drunken Day."
+	}
+
+	"drunk_next_nc"
+	{
+		"es"		"La siguiente ronda será: Drunken Day."
+	}
+
+	"drunk_start"
+	{
+		"es"		"{purple}Drunken Day{default} ha comenzado!"
+	}
+
+	"drunk_start_nc"
+	{
+		"es"		"Drunken Day begun!"
+	}
+
+	"drunk_voted"
+	{
+		"es"		"Ya has votado por {purple}Drunken Day!"
+	}
+
+	"drunk_progress"
+	{
+		"es"		"El evento {darkred}{1} {default}ya {purple}está en progreso!"
+	}
+
+	"drunk_disabled"
+	{
+		"es"		"Drunken Day actualmente está {purple}deshabilitdo!"
+	}
+
+	"drunk_timeuntilstart_nc"
+	{
+		"es"		"{1} segundos hasta que la ronda comience!"
+	}
+
+	"drunk_info_title"
+	{
+		"es"		"Drunken Day esta ahora Activado!"
+	}
+
+	"drunk_info_line1"
+	{
+		"es"		"Drunken Day is now Activated"
+	}
+
+	"drunk_info_line2"
+	{
+		"es"		"-----------------------------------"
+	}
+
+	"drunk_info_line3"
+	{
+		"es"		"-----------------------------------"
+	}
+
+	"drunk_info_line4"
+	{
+		"es"		"Las reglas usuales de Jailbreak no aplican en este modo!"
+	}
+
+	"drunk_info_line5"
+	{
+		"es"		"LR esta deshabilitado durante esta ronda!"
+	}
+
+	"drunk_info_line6"
+	{
+		"es"		"Todo el mundo está autorizado a ir a cualquier parte dentro del mapa!"
+	}
+
+	"drunk_info_line7"
+	{
+		"es"		"No seas un idiota!"
+	}
+
+	"drunk_wait"
+	{
+		"es"		"Debes esperar {purple}{1}{default} rondas mas para otro {purple} Evento!"
+	}
+
+	"drunk_name"
+	{
+		"es"		"DRUNKEN DAY"
+	}
+
+}

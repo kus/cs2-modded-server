@@ -1,0 +1,371 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:23 UTC
+// Language: Russian (ru)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/196
+//
+"Phrases"
+{
+
+	"request_openrefuse"
+	{
+		"ru"		"Командир принимает отказы.{purple} Напишите !refuse , чтобы отказаться от игры"
+	}
+
+	"request_refusing"
+	{
+		"ru"		"{purple}{1} {purple}отказался от этой игры."
+	}
+
+	"request_alreadyrefused"
+	{
+		"ru"		"Вы уже {purple} отказались."
+	}
+
+	"request_refuseallow"
+	{
+		"ru"		"Командир должен сначало {purple}разрешить написать !refuse"
+	}
+
+	"request_notalivect"
+	{
+		"ru"		"Вы не мертвы или не КТ"
+	}
+
+	"request_fullhp"
+	{
+		"ru"		"Хорошая попытка, у Вас полное здоровье"
+	}
+
+	"request_refusedtimes"
+	{
+		"ru"		"Вы {purple}отказывались слишком много раз{default} в этом раунде."
+	}
+
+	"request_capitulation"
+	{
+		"ru"		"{purple}{1} {purple}капитулировал! {default}Будет ли командир одобрять?"
+	}
+
+	"request_alreadycapitulated"
+	{
+		"ru"		"Вы уже {purple}капитулировали"
+	}
+
+	"request_knifeback"
+	{
+		"ru"		"Вы получили {purple}нож обратно."
+	}
+
+	"request_accepted"
+	{
+		"ru"		"{2} одобрил {1} запрос. "
+	}
+
+	"request_noaccepted"
+	{
+		"ru"		"К{2} НЕ одобрил {1} запрос."
+	}
+
+	"request_refuser"
+	{
+		"ru"		"Игрок, который отказывается"
+	}
+
+	"request_acceptcapitulation"
+	{
+		"ru"		"Одобрить Капитуляцию?"
+	}
+
+	"request_acceptheal"
+	{
+		"ru"		"Принять исцеление?"
+	}
+
+	"request_health"
+	{
+		"ru"		"У вас есть {purple} healthshot{default}"
+	}
+
+	"request_heal"
+	{
+		"ru"		"{purple}{1} {default}запросил {purple}исцеление! {default}Будет ли командир одобрять?"
+	}
+
+	"request_healtimes"
+	{
+		"ru"		"Вы запросили {purple}слишком много исцелений{default} в этом раунде."
+	}
+
+	"request_alreadyhealed"
+	{
+		"ru"		"Вы уже {purple}запросили исцеление."
+	}
+
+	"request_nodamage"
+	{
+		"ru"		"Вы не можете наносить {purple}урон после капитуляции."
+	}
+
+	"request_processing"
+	{
+		"ru"		"Ваш запрос уже в {purple}обработке. Подождите минутку"
+	}
+
+	"request_repeatpls"
+	{
+		"ru"		"{purple}{1} {default}просит повторить! {default}Или он не знает правила игры."
+	}
+
+	"request_repeattimes"
+	{
+		"ru"		"Вы запросили {purple}слишком много повторов{default} в этом раунде."
+	}
+
+	"request_alreadyrepeat"
+	{
+		"ru"		"Вы уже {purple}попросили повторить."
+	}
+
+	"request_repeat"
+	{
+		"ru"		"Игрок, который просит повторить"
+	}
+
+	"request_menu_title"
+	{
+		"ru"		"Задать вопрос"
+	}
+
+	"request_menu_repeat"
+	{
+		"ru"		"Повторите объявление"
+	}
+
+	"request_menu_refuse"
+	{
+		"ru"		"Отказаться от игры"
+	}
+
+	"request_menu_heal"
+	{
+		"ru"		"Запросить исцеление"
+	}
+
+	"request_menu_capitulation"
+	{
+		"ru"		"Капитуляция"
+	}
+
+	"request_menu_freekill"
+	{
+		"ru"		"Пожаловаться на фрикилл"
+	}
+
+	"request_freekill"
+	{
+		"ru"		"{green}{1}{default} Отправил отчёт {darkred}{3}{default} о фрикилле {purple}{2}"
+	}
+
+	"request_pardonfreekill"
+	{
+		"ru"		"Был ли это фрикилл?"
+	}
+
+	"request_handlefreekill"
+	{
+		"ru"		"Как справиться с этим фрикиллом?"
+	}
+
+	"request_respawnvictim"
+	{
+		"ru"		"Возродил жертву."
+	}
+
+	"request_killfreekiller"
+	{
+		"ru"		"Убить фрикиллера"
+	}
+
+	"request_freeday"
+	{
+		"ru"		"Следующий раунд фридей."
+	}
+
+	"request_swapfreekiller"
+	{
+		"ru"		"Перевести фрикиллера за Т"
+	}
+
+	"request_aliveorct"
+	{
+		"ru"		"Вы живы или КТ"
+	}
+
+	"request_nokiller"
+	{
+		"ru"		"Простите, мы не можем найти Вашего убийцу"
+	}
+
+	"request_respawned"
+	{
+		"ru"		"Вы возрождены"
+	}
+
+	"request_respawnedall"
+	{
+		"ru"		"{1} был возрождён из-за {darkred}фрикилла"
+	}
+
+	"request_killbcfreekill"
+	{
+		"ru"		"Вы были убиты из-за {darkred}фрикилла"
+	}
+
+	"request_killbcfreekillall"
+	{
+		"ru"		"{green}{1}{default} был убит в из-за {darkred}фрикилла"
+	}
+
+	"request_swapbcfreekill"
+	{
+		"ru"		"Вы были переведены за команду террористов из-за {darkred}фрикилла."
+	}
+
+	"request_swapbcfreekillall"
+	{
+		"ru"		"{green}{1}{default} был переведён из-за {darkred}фрикилла{default} в команду террористов."
+	}
+
+	"request_handlerespawn"
+	{
+		"ru"		"Где возродить?"
+	}
+
+	"request_respawnbody"
+	{
+		"ru"		"Возродить в теле"
+	}
+
+	"request_respawncell"
+	{
+		"ru"		"Возродить в камере"
+	}
+
+	"request_respawnwarden"
+	{
+		"ru"		"Воскрешение перед командиром."
+	}
+
+	"request_freekilltimes"
+	{
+		"ru"		"Вы уже отправили {purple} {1} жалоб о фрикилле{default} в этом раунде."
+	}
+
+	"request_freedayvictim"
+	{
+		"ru"		"Выдать фридей в следующем раунде"
+	}
+
+	"request_killreason_title"
+	{
+		"ru"		"Причина убийства {1}?"
+	}
+
+	"request_killreason_lostgame"
+	{
+		"ru"		"Проигрыш в игре"
+	}
+
+	"request_killreason_rebel"
+	{
+		"ru"		"Взбунтовал"
+	}
+
+	"request_killreason_brokerule"
+	{
+		"ru"		"Нарушение правил"
+	}
+
+	"request_killreason_notfollow"
+	{
+		"ru"		"Неподчинение приказу"
+	}
+
+	"request_killreason_sry"
+	{
+		"ru"		"Моя вина, я извинюсь"
+	}
+
+	"request_killreason_freekill"
+	{
+		"ru"		"Я убил его просто так"
+	}
+
+	"request_killreason_lostgame_chat"
+	{
+		"ru"		"Охранник {green}{1}{default} наказал {darkred}{2}{default} из-за проигрыша в игре"
+	}
+
+	"request_killreason_rebel_chat"
+	{
+		"ru"		"Охранник {green}{1}{default} наказал {darkred}{2}{default} из-за бунта"
+	}
+
+	"request_killreason_brokerule_chat"
+	{
+		"ru"		"Охранник {green}{1}{default} наказал {darkred}{2}{default} за нарушение правил"
+	}
+
+	"request_killreason_notfollow_chat"
+	{
+		"ru"		"Охранник {green}{1}{default} наказал {darkred}{2}{default} за неисполнение приказа"
+	}
+
+	"request_killreason_sry_chat"
+	{
+		"ru"		"Охранник {green}{1}{default} хочет извиниться перед {darkred}{2}{default} за случайное убийство"
+	}
+
+	"request_killreason_freekill_chat"
+	{
+		"ru"		"Охранник {green}{1}{default} признается в фрикилле {darkred}{2}{default}"
+	}
+
+	"request_killreason_noanswer"
+	{
+		"ru"		"Охранник {green}{1}{default} не имеет никакого заявления на убийство {darkred}{2}{default}"
+	}
+
+	"request_capitulated"
+	{
+		"ru"		"{purple}{1} {purple}капитулировал!"
+	}
+
+	"request_close"
+	{
+		"ru"		"Закрыть"
+	}
+
+	"request_countdownstop"
+	{
+		"ru"		"{purple}СТОП! {darkred} КОНЕЦ!"
+	}
+
+	"request_countdownstop_nc"
+	{
+		"ru"		"СТОП! КОНЕЦ!"
+	}
+
+	"request_stopcountdown_nc"
+	{
+		"ru"		"Конеч через {1} секунд!"
+	}
+
+	"request_stopcountdown"
+	{
+		"ru"		"Конец через {purple}{1}{default} секунд!"
+	}
+
+}

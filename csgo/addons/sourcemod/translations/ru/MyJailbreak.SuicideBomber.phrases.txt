@@ -1,0 +1,176 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:27 UTC
+// Language: Russian (ru)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/182
+//
+"Phrases"
+{
+
+	"suicidebomber_need"
+	{
+		"ru"		"{purple}{2}{default} проголосовал. {purple}{1}{default} голосов осталось до {darkred}игры Смертник"
+	}
+
+	"suicidebomber_rounds"
+	{
+		"ru"		"Раунд {purple}{1} с {purple}{2}"
+	}
+
+	"suicidebomber_twin_nc"
+	{
+		"ru"		"Все КТ мертвы"
+	}
+
+	"suicidebomber_voting"
+	{
+		"ru"		"Голосование игроков за Смертник {purple}отключено"
+	}
+
+	"suicidebomber_setbywarden"
+	{
+		"ru"		"Установка игры Смертник админом {purple}отменена"
+	}
+
+	"suicidebomber_minplayer"
+	{
+		"ru"		"Для игры Смертник Вам нужно {purple}1 КТ & 1 Т"
+	}
+
+	"suicidebomber_setbyadmin"
+	{
+		"ru"		"Установка игры Смертник админом {purple}отменено"
+	}
+
+	"suicidebomber_ctwin_nc"
+	{
+		"ru"		"КТ выжили"
+	}
+
+	"suicidebomber_end"
+	{
+		"ru"		"{purple}Игра Смертник{default} закончилась"
+	}
+
+	"suicidebomber_next"
+	{
+		"ru"		"Следующий раунд - игра {purple}Смертник"
+	}
+
+	"suicidebomber_next_nc"
+	{
+		"ru"		"Следующий раунд - игра Смертник"
+	}
+
+	"suicidebomber_start"
+	{
+		"ru"		"Играй {purple}Смертник{default} началась!"
+	}
+
+	"suicidebomber_start_nc"
+	{
+		"ru"		"Игра Смертник началась!"
+	}
+
+	"suicidebomber_voted"
+	{
+		"ru"		"Вы уже проголосовали за {purple}игру Смертник"
+	}
+
+	"suicidebomber_progress"
+	{
+		"ru"		"Игра {darked}{1} {defalult}уже {purple}началась"
+	}
+
+	"suicidebomber_disabled"
+	{
+		"ru"		"Игра Смертник {purple}выключена"
+	}
+
+	"suicidebomber_sprint"
+	{
+		"ru"		"Вы не используете {blue}спринт!"
+	}
+
+	"suicidebomber_sprintend"
+	{
+		"ru"		"{blue}Забег закончен!{default} Время восстановления {1} секунд"
+	}
+
+	"suicidebomber_sprintagain"
+	{
+		"ru"		"Вы можете{blue}ускориться снова!{default}"
+	}
+
+	"suicidebomber_timetohide_nc"
+	{
+		"ru"		"{1} секунд, чтобы спрятаться"
+	}
+
+	"suicidebomber_timeuntilopen_nc"
+	{
+		"ru"		"{1} секунд до открытия клеток"
+	}
+
+	"suicidebomber_info_title"
+	{
+		"ru"		"Игра Смертник активирована"
+	}
+
+	"suicidebomber_info_line1"
+	{
+		"ru"		"Смертники повсюду! "
+	}
+
+	"suicidebomber_info_line2"
+	{
+		"ru"		"Террористам выдана c4, они могут взорвать себя с помощью +lookweapon 'F' - кнопка"
+	}
+
+	"suicidebomber_info_line3"
+	{
+		"ru"		"Нажмите 'E', чтобы использовать ускоренный бег!"
+	}
+
+	"suicidebomber_info_line4"
+	{
+		"ru"		"Стандартные правила джайлов отменены"
+	}
+
+	"suicidebomber_info_line5"
+	{
+		"ru"		"Нет последнего желания!"
+	}
+
+	"suicidebomber_info_line6"
+	{
+		"ru"		"Каждому разрешено ходить везде, где хочет"
+	}
+
+	"suicidebomber_info_line7"
+	{
+		"ru"		"Не будь засранцем!"
+	}
+
+	"suicidebomber_wait"
+	{
+		"ru"		"Вы должны подождать ещё {purple}{1}{default} пару раундов"
+	}
+
+	"suicidebomber_name"
+	{
+		"ru"		"Смертник"
+	}
+
+	"suicidebomber_now_nc"
+	{
+		"ru"		"Начинается Суицид раунд."
+	}
+
+	"suicidebomber_now"
+	{
+		"ru"		"Начинается {purple}Суицид{default} раунд."
+	}
+
+}

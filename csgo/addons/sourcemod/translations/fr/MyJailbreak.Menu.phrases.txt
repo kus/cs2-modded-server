@@ -1,0 +1,31 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:22 UTC
+// Language: French (fr)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/180
+//
+"Phrases"
+{
+
+	"menu_ffoff"
+	{
+		"fr"		"Désactiver FF pour les T. "
+	}
+
+	"menu_getwarden"
+	{
+		"fr"		"Devenir le Gardien "
+	}
+
+	"menu_joinct"
+	{
+		"fr"		"Devenir un Garde"
+	}
+
+	"menu_mute"
+	{
+		"fr"		"vip"
+	}
+
+}

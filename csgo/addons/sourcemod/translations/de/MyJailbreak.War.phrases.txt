@@ -1,0 +1,156 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:20 UTC
+// Language: German (de)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/179
+//
+"Phrases"
+{
+
+	"war_need"
+	{
+		"de"		"{purple}{2}{default} hat gevotet. Jetzt noch {purple}{1}{default} votes bis {darkred}War{default} beginnt"
+	}
+
+	"war_rounds"
+	{
+		"de"		"Runde {purple}{1}{default} von {purple}{2}"
+	}
+
+	"war_twin_nc"
+	{
+		"de"		"Terrorists haben gewonnen"
+	}
+
+	"war_ctwin_nc"
+	{
+		"de"		"Counter-Terrorists haben gewonnen"
+	}
+
+	"war_end"
+	{
+		"de"		"{purple}War{default} beendet"
+	}
+
+	"war_next"
+	{
+		"de"		"Nächste Runde ist {purple}War"
+	}
+
+	"war_next_nc"
+	{
+		"de"		"Nächste Runde ist War"
+	}
+
+	"war_start"
+	{
+		"de"		"{purple}War{default} ist gestartet!"
+	}
+
+	"war_start_nc"
+	{
+		"de"		"War ist gestartet!"
+	}
+
+	"war_voted"
+	{
+		"de"		"Du hast schon für {purple}War {default}gevotet"
+	}
+
+	"war_progress"
+	{
+		"de"		"Event {darkred}{1} {default}ist {purple}bereits gesetzt."
+	}
+
+	"war_minplayer"
+	{
+		"de"		"Für war brauchen wir mindestens {purple}einen CT"
+	}
+
+	"war_disabled"
+	{
+		"de"		"War ist vorübergehend {purple}deaktiviert."
+	}
+
+	"war_damage_nc"
+	{
+		"de"		"{1} Sekunden bis Schaden aktiv ist"
+	}
+
+	"war_voting"
+	{
+		"de"		"Voting für War ist {purple}deaktiviert"
+	}
+
+	"war_setbywarden"
+	{
+		"de"		"War Aktivierung durch den Warden ist {purple}deaktiviert"
+	}
+
+	"war_setbyadmin"
+	{
+		"de"		"War Aktivierung durch den Admin ist {purple}deaktiviert"
+	}
+
+	"war_info_title"
+	{
+		"de"		"War ist aktiv"
+	}
+
+	"war_info_line1"
+	{
+		"de"		"Nicht wundern falls ihr in der Luft hängt und dich nicht bewegen kannst"
+	}
+
+	"war_info_line2"
+	{
+		"de"		"In Kriegrunden spielen CT's gegen T's"
+	}
+
+	"war_info_line3"
+	{
+		"de"		"Während der Nodamage Phase darfst du dich bewegen und in Position gehen"
+	}
+
+	"war_info_line4"
+	{
+		"de"		"Alle normalen Jailregeln sind aufgehoben!"
+	}
+
+	"war_info_line5"
+	{
+		"de"		"Der letzte Terrorist hat keinen Wunsch frei!"
+	}
+
+	"war_info_line6"
+	{
+		"de"		"Jeder darf überall hin wo er will!"
+	}
+
+	"war_info_line7"
+	{
+		"de"		"Bau keine Scheisse!"
+	}
+
+	"war_wait"
+	{
+		"de"		"Du musst noch {purple}{1}{default} Runden warten"
+	}
+
+	"war_timetounfreeze_nc"
+	{
+		"de"		"{1} Sekunden bis zum unfreeze"
+	}
+
+	"war_timetohide_nc"
+	{
+		"de"		"{1} Sekunden zum verstecken"
+	}
+
+	"war_name"
+	{
+		"de"		"Krieg"
+	}
+
+}

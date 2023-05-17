@@ -1,0 +1,71 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:21 UTC
+// Language: Polish (pl)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/231
+//
+"Phrases"
+{
+
+	"hud_planned"
+	{
+		"pl"		"Nastepna runda:"
+	}
+
+	"hud_running"
+	{
+		"pl"		"W tej rundzie:"
+	}
+
+	"hud_warden"
+	{
+		"pl"		"Warden:"
+	}
+
+	"hud_nowarden"
+	{
+		"pl"		"Brak wardena"
+	}
+
+	"hud_guards"
+	{
+		"pl"		"Straznikow:"
+	}
+
+	"hud_prisoner"
+	{
+		"pl"		"Wiezniow:"
+	}
+
+	"hud_on"
+	{
+		"pl"		"HUD {purple}wlaczony"
+	}
+
+	"hud_off"
+	{
+		"pl"		"HUD {purple}wylaczony"
+	}
+
+	"hud_lastCT"
+	{
+		"pl"		"Ostatni Straznik:"
+	}
+
+	"hud_youwarden"
+	{
+		"pl"		"Jesteś Wardenem!"
+	}
+
+	"hud_youwarden"
+	{
+		"pl"		"Jesteś Wardenem!"
+	}
+
+	"hud_youwarden"
+	{
+		"pl"		"Jesteś Wardenem!"
+	}
+
+}

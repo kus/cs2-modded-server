@@ -1,0 +1,266 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:23 UTC
+// Language: Polish (pl)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/196
+//
+"Phrases"
+{
+
+	"request_openrefuse"
+	{
+		"pl"		"Warden otwiera rezygnacje.{purple} wpisz !refuse by zrezygnowac z trybu gry."
+	}
+
+	"request_refusing"
+	{
+		"pl"		"{purple}{1} {default}. {purple}odmawia gry."
+	}
+
+	"request_alreadyrefused"
+	{
+		"pl"		"Juz {purple}przeciez odmowiles gry."
+	}
+
+	"request_refuseallow"
+	{
+		"pl"		"Warden musi najpierw zarzadzic ODMOWY {purple}poprzez wpisanie !refuse"
+	}
+
+	"request_notalivect"
+	{
+		"pl"		"Jestes martwy lub nie w CT."
+	}
+
+	"request_fullhp"
+	{
+		"pl"		"Nie kombinuj , masz full HP"
+	}
+
+	"request_refusedtimes"
+	{
+		"pl"		"juz {purple}odmawiales za duzo razy{default} w tej rundzie."
+	}
+
+	"request_capitulation"
+	{
+		"pl"		"{purple}{1} {default}. {purple}skapitulowal! {default}Czy Warden to zaakceptuje ?"
+	}
+
+	"request_alreadycapitulated"
+	{
+		"pl"		"przeciez ty {purple}sie juz zbuntowales."
+	}
+
+	"request_knifeback"
+	{
+		"pl"		"Masz {purple}swoj noz z powrotem."
+	}
+
+	"request_accepted"
+	{
+		"pl"		"{2} zaakceptowal twoje  {1}zyczenie."
+	}
+
+	"request_noaccepted"
+	{
+		"pl"		"{2} NIE zaakceptowal twojego  {1}zyczenia."
+	}
+
+	"request_refuser"
+	{
+		"pl"		"Gracz ktory odmawia"
+	}
+
+	"request_acceptcapitulation"
+	{
+		"pl"		"Zaakceptowac kapitulacje ?"
+	}
+
+	"request_acceptheal"
+	{
+		"pl"		"Zaakceptowac uleczenie?"
+	}
+
+	"request_health"
+	{
+		"pl"		"Posiadasz {purple} healthshot{default}"
+	}
+
+	"request_heal"
+	{
+		"pl"		"{purple}{1} {default}ma zyczenie {purple}healing! {default}Czy Warden to zaakceptuje ?"
+	}
+
+	"request_healtimes"
+	{
+		"pl"		"ty juz {purple}skladales zyczenia za duzo razy {default} w tej rundzie."
+	}
+
+	"request_alreadyhealed"
+	{
+		"pl"		"Przeciez juz {purple}chciales uzdrowienia."
+	}
+
+	"request_nodamage"
+	{
+		"pl"		"nie mozesz zadac obrazen  {purple}po kapitulacji."
+	}
+
+	"request_processing"
+	{
+		"pl"		"takie rzadanie jest juz przetwarzane {purple}Poczekaj chwile!!"
+	}
+
+	"request_repeatpls"
+	{
+		"pl"		"{purple}{1} {default}prosi o  {purple}Powtorzenie ostatniego zdania  {default}albo nie zna zasad GRY! "
+	}
+
+	"request_repeattimes"
+	{
+		"pl"		"ty juz  {purple}miales zbyt wiele zyczen {default} w tej rundzie."
+	}
+
+	"request_alreadyrepeat"
+	{
+		"pl"		"Ty juz prosiles o {purple} powtorzenie zasad."
+	}
+
+	"request_repeat"
+	{
+		"pl"		"Gracze, ktorzy prosili o powtorzenie"
+	}
+
+	"request_menu_title"
+	{
+		"pl"		"Popros o zyczenie"
+	}
+
+	"request_menu_repeat"
+	{
+		"pl"		"Popros o powtorzenie"
+	}
+
+	"request_menu_refuse"
+	{
+		"pl"		"Odmowa gry"
+	}
+
+	"request_menu_heal"
+	{
+		"pl"		"Popros o uzdrowienie"
+	}
+
+	"request_menu_capitulation"
+	{
+		"pl"		"Zbuntuj Sie"
+	}
+
+	"request_menu_freekill"
+	{
+		"pl"		"Zgłoś Freekill'a"
+	}
+
+	"request_pardonfreekill"
+	{
+		"pl"		"Czy to był Freekill?"
+	}
+
+	"request_killfreekiller"
+	{
+		"pl"		"Zgładź Freekiller'a"
+	}
+
+	"request_freeday"
+	{
+		"pl"		"Następna runda Freeday"
+	}
+
+	"request_aliveorct"
+	{
+		"pl"		"Jesteś albo żywy albo strażnikiem!"
+	}
+
+	"request_respawned"
+	{
+		"pl"		"Zostałeś odrodzony!"
+	}
+
+	"request_respawnedall"
+	{
+		"pl"		"{1} został odrodzony dzięki {darkred}Freekill'owi!"
+	}
+
+	"request_killbcfreekill"
+	{
+		"pl"		"Zostałeś zabity z powodu {darkred}Freekill'a!"
+	}
+
+	"request_handlerespawn"
+	{
+		"pl"		"Gdzie chciałbyś respawn?"
+	}
+
+	"request_respawncell"
+	{
+		"pl"		"Odrodzenie w celi"
+	}
+
+	"request_killreason_title"
+	{
+		"pl"		"Zabiłeś {1}???"
+	}
+
+	"request_killreason_lostgame"
+	{
+		"pl"		"On przegrał grę"
+	}
+
+	"request_killreason_brokerule"
+	{
+		"pl"		"On złamał zasady"
+	}
+
+	"request_killreason_sry"
+	{
+		"pl"		"Mój błąd, przepraszam"
+	}
+
+	"request_killreason_sry_chat"
+	{
+		"pl"		"Strażnik {green}{1}{default} chce przeprosić za przypadkowe zabicie {darkred}{2}{default}"
+	}
+
+	"request_capitulated"
+	{
+		"pl"		"{purple}{1} {default}. {purple}skapitulowal!"
+	}
+
+	"request_close"
+	{
+		"pl"		"Wyjście"
+	}
+
+	"request_countdownstop"
+	{
+		"pl"		"{purple}STOP! {darkred}Koniec!"
+	}
+
+	"request_countdownstop_nc"
+	{
+		"pl"		"STOP! KONIEC!"
+	}
+
+	"request_stopcountdown_nc"
+	{
+		"pl"		"Stop/koniec  za {1} sekund!"
+	}
+
+	"request_stopcountdown"
+	{
+		"pl"		"Stop za {purple}{1}{default} sekund!"
+	}
+
+}

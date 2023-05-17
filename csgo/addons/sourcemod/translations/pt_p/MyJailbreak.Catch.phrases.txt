@@ -1,0 +1,106 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:33 UTC
+// Language: Portuguese (pt_p)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/185
+//
+"Phrases"
+{
+
+	"catch_twin_nc"
+	{
+		"pt_p"		"Os terroristas escaparam!"
+	}
+
+	"catch_ctwin_nc"
+	{
+		"pt_p"		"Todos os terroristas foram pegos!"
+	}
+
+	"catch_end"
+	{
+		"pt_p"		"{purple}PegaPega{default} terminou."
+	}
+
+	"catch_setbywarden"
+	{
+		"pt_p"		"Setar PegaPega como diretor esta {purple}desabilitado!"
+	}
+
+	"catch_setbyadmin"
+	{
+		"pt_p"		"Colocar PegaPega pelo Admin esta {purple}desabilitado!"
+	}
+
+	"catch_next_nc"
+	{
+		"pt_p"		"A rodada seguinte sera: PegaPega."
+	}
+
+	"catch_sprintagain"
+	{
+		"pt_p"		"Voce pegou um ar. Voce pode {blue}correr {default}novamente!"
+	}
+
+	"catch_disabled"
+	{
+		"pt_p"		"PegaPega esta {purple}desabilitado."
+	}
+
+	"catch_info_title"
+	{
+		"pt_p"		"PiqueGelo foi ativado!"
+	}
+
+	"catch_info_line1"
+	{
+		"pt_p"		"Os guardas precisam pegar e congelar os prisioneiros com suas facas."
+	}
+
+	"catch_info_line2"
+	{
+		"pt_p"		"Prisioneiros podem descongelar outros Prisioneiros. Dando uma facada!"
+	}
+
+	"catch_info_line3"
+	{
+		"pt_p"		"Segure E para {blue}correr!"
+	}
+
+	"catch_info_line5"
+	{
+		"pt_p"		"Ultimo Pedido esta desabilitado durante esta rodada."
+	}
+
+	"catch_info_line6"
+	{
+		"pt_p"		"Voce precisa ficar na sala central! Nao entre em dutos ou areas secretas!"
+	}
+
+	"catch_info_line7"
+	{
+		"pt_p"		"As regras do servidor ainda se aplicam durante esta rodada!"
+	}
+
+	"catch_win"
+	{
+		"pt_p"		"Todos os prisioneiros foram {purple}pegos!"
+	}
+
+	"catch_name"
+	{
+		"pt_p"		"Pique Gelo"
+	}
+
+	"catch_timetounfreeze_nc"
+	{
+		"pt_p"		"segundos antes de voce ser descongelado!"
+	}
+
+	"catch_timeuntilstart_nc"
+	{
+		"pt_p"		"segundos restantes para se esconder!"
+	}
+
+}

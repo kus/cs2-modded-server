@@ -1,0 +1,36 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:35 UTC
+// Language: Polish (pl)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/283
+//
+"Phrases"
+{
+
+	"oneinthechamber_twin_nc"
+	{
+		"pl"		"Więzień przetrwał!"
+	}
+
+	"oneinthechamber_voting"
+	{
+		"pl"		"Głosowanie na OITC jest {purple}wyłaczone!"
+	}
+
+	"oneinthechamber_ctwin_nc"
+	{
+		"pl"		"Strażnicy wygrali!"
+	}
+
+	"oneinthechamber_info_title"
+	{
+		"pl"		"OITC jest teraz aktywne"
+	}
+
+	"oneinthechamber_info_line7"
+	{
+		"pl"		"Nie bądź dupkiem!"
+	}
+
+}

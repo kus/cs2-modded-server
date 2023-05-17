@@ -1,0 +1,401 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:21 UTC
+// Language: German (de)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/180
+//
+"Phrases"
+{
+
+	"menu_info"
+	{
+		"de"		"Um das Jailbreak Menü zu öffnen drücke , oder schreibe !menu in den chat!"
+	}
+
+	"menu_info_title"
+	{
+		"de"		"MyJailBreak Menu"
+	}
+
+	"menu_countdown"
+	{
+		"de"		"Countdown starten"
+	}
+
+	"menu_opencell"
+	{
+		"de"		"Öffne die Zellen"
+	}
+
+	"menu_seteventdays"
+	{
+		"de"		"Event Day festlegen"
+	}
+
+	"menu_voteeventdays"
+	{
+		"de"		"Für einen Event Day abstimmen"
+	}
+
+	"menu_math"
+	{
+		"de"		"Mathe Quiz starten"
+	}
+
+	"menu_guns"
+	{
+		"de"		"Waffenmenü"
+	}
+
+	"menu_laser"
+	{
+		"de"		"Laserpointer Menü"
+	}
+
+	"menu_noblock"
+	{
+		"de"		"NoBlock umschalten"
+	}
+
+	"menu_sparks"
+	{
+		"de"		"Einschuss Markierung Ein/Ausschalten"
+	}
+
+	"menu_extend"
+	{
+		"de"		"Rundenzeit verlängern"
+	}
+
+	"menu_ffon"
+	{
+		"de"		"Aktiviere FF für Ts"
+	}
+
+	"menu_ffoff"
+	{
+		"de"		"Friendly Fire für Häftlinge deaktivieren"
+	}
+
+	"menu_randomdead"
+	{
+		"de"		"Töte einen zufälligen Häftling"
+	}
+
+	"menu_unwarden"
+	{
+		"de"		"Als Warden zurücktreten"
+	}
+
+	"menu_getwarden"
+	{
+		"de"		"Warden werden"
+	}
+
+	"menu_joint"
+	{
+		"de"		"Werde Häftling"
+	}
+
+	"menu_check"
+	{
+		"de"		"Rebellen überprüfen"
+	}
+
+	"menu_lr"
+	{
+		"de"		"Wunsch"
+	}
+
+	"menu_removewarden"
+	{
+		"de"		"Warden entfernen"
+	}
+
+	"menu_setwarden"
+	{
+		"de"		"Neuen Warden einteilen"
+	}
+
+	"menu_rules"
+	{
+		"de"		"Regeln"
+	}
+
+	"menu_joinct"
+	{
+		"de"		"Werde ein Wächter"
+	}
+
+	"menu_guardct"
+	{
+		"de"		"Wärter Warteschlange beitretet (!guard)"
+	}
+
+	"menu_request"
+	{
+		"de"		"Anfragen"
+	}
+
+	"menu_votewarden"
+	{
+		"de"		"Vote um den Warden zu entlassen"
+	}
+
+	"menu_event_Titlestart"
+	{
+		"de"		"Nächste Runde ein Event starten"
+	}
+
+	"menu_event_Titlestart"
+	{
+		"de"		"Nächste Runde ein Event starten"
+	}
+
+	"menu_event_Titlevote"
+	{
+		"de"		"Stimme für einen Event Tag ab"
+	}
+
+	"menu_war"
+	{
+		"de"		"Krieg"
+	}
+
+	"menu_ffa"
+	{
+		"de"		"Free for All"
+	}
+
+	"menu_zeus"
+	{
+		"de"		"Zeus Day"
+	}
+
+	"menu_zombie"
+	{
+		"de"		"Zombietag"
+	}
+
+	"menu_hide"
+	{
+		"de"		"Verstecken im Dunkeln"
+	}
+
+	"menu_suicidebomber"
+	{
+		"de"		"Suicide Bomber"
+	}
+
+	"menu_catch"
+	{
+		"de"		"Catch & Freeze"
+	}
+
+	"menu_knifefight"
+	{
+		"de"		"Messerkampf"
+	}
+
+	"menu_hebattle"
+	{
+		"de"		"HE Kampf"
+	}
+
+	"menu_cowboy"
+	{
+		"de"		"Cowboy"
+	}
+
+	"menu_drunk"
+	{
+		"de"		"Betrunkentag"
+	}
+
+	"menu_torch"
+	{
+		"de"		"Fackellauf"
+	}
+
+	"menu_noscope"
+	{
+		"de"		"No Scope"
+	}
+
+	"menu_duckhunt"
+	{
+		"de"		"DuckHunt"
+	}
+
+	"menu_admin"
+	{
+		"de"		"Adminmenü"
+	}
+
+	"menu_mute"
+	{
+		"de"		"Mute Menu"
+	}
+
+	"menu_painter"
+	{
+		"de"		"Maler Menü"
+	}
+
+	"menu_closecell"
+	{
+		"de"		"Zellentüren schließen"
+	}
+
+	"menu_voting"
+	{
+		"de"		"Stimme für einen Event Tag:"
+	}
+
+	"menu_voteday"
+	{
+		"de"		"Starte eine Eventtagsabstimmung."
+	}
+
+	"menu_votingwon"
+	{
+		"de"		"Die Abstimmung wurde beendet. {purple}{1}{default} mit {3}/{2} Stimmen gewonnen."
+	}
+
+	"menu_minplayer"
+	{
+		"de"		"Für eine Eventtagsabstimmung brauchst du mindestens {purple}einen Wächter & einen Gefangenen"
+	}
+
+	"menu_progress"
+	{
+		"de"		"Das Event {darkred}{1} {default}ist {purple} breits im Gange!"
+	}
+
+	"menu_wait"
+	{
+		"de"		"Du musst {purple}{1}{default} warten bevor ein Event Day Voting starten kann!"
+	}
+
+	"menu_votingdraw"
+	{
+		"de"		"Die Abstimmung war 50/50. Ein Event Day wurde zufällig ausgesucht!"
+	}
+
+	"menu_disabled"
+	{
+		"de"		"Event voting ist vorübergehend {purple}deaktiviert."
+	}
+
+	"menu_playerfreeday"
+	{
+		"de"		"Gib einem Spieler einen Freeday"
+	}
+
+	"menu_teamgamesmenu"
+	{
+		"de"		"Teamspiele - Menü"
+	}
+
+	"menu_teamgamesgames"
+	{
+		"de"		"Team Games - Spiele"
+	}
+
+	"menu_undeputy"
+	{
+		"de"		"Als Deputy zurücktreten"
+	}
+
+	"menu_removedeputy"
+	{
+		"de"		"Deputy entfernen"
+	}
+
+	"menu_deputybecome"
+	{
+		"de"		"Werde Deputy vom Warden"
+	}
+
+	"menu_deputyset"
+	{
+		"de"		"Deputy ernennen"
+	}
+
+	"menu_rebel"
+	{
+		"de"		"Un/Markiere einen Spieler als Rebell."
+	}
+
+	"menu_count"
+	{
+		"de"		"Häftlinge in Sichtweite zählen"
+	}
+
+	"menu_jailshop"
+	{
+		"de"		"Jail Shop öffnen"
+	}
+
+	"menu_orders"
+	{
+		"de"		"Befehle"
+	}
+
+	"menu_ghosts"
+	{
+		"de"		"Ghosts War"
+	}
+
+	"menu_votingcancel"
+	{
+		"de"		"Die Abstimmung wurde abgebrochen, weil der Event Day {purple}{1}{default} bereits festgelegt war!"
+	}
+
+	"menu_removequeue"
+	{
+		"de"		"Spieler von der Wächter Warteschlange entfernen"
+	}
+
+	"menu_endround"
+	{
+		"de"		"Rundenende erzwingen"
+	}
+
+	"menu_clearqueue"
+	{
+		"de"		"Wärter Warteschlange leeren"
+	}
+
+	"menu_noevent"
+	{
+		"de"		"Kein Event Day"
+	}
+
+	"menu_joinspec"
+	{
+		"de"		"Zu Spectator wechseln"
+	}
+
+	"menu_gangs"
+	{
+		"de"		"Gangs Menü"
+	}
+
+	"menu_armsrace"
+	{
+		"de"		"Wettrüsten"
+	}
+
+	"menu_dealdamage"
+	{
+		"de"		"Schaden austeilen Tag"
+	}
+
+	"menu_freeday"
+	{
+		"de"		"Freeday"
+	}
+
+}

@@ -1,0 +1,26 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:34 UTC
+// Language: Polish (pl)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/271
+//
+"Phrases"
+{
+
+	"ghosts_voting"
+	{
+		"pl"		"Głosowanie na Ducha zostało {purple} wyłączone!"
+	}
+
+	"ghosts_ctwin_nc"
+	{
+		"pl"		"Strażnik przetrwał!"
+	}
+
+	"ghosts_wait"
+	{
+		"pl"		"Musisz poczekać 1 rundę więcej, aby ustawić Event!"
+	}
+
+}

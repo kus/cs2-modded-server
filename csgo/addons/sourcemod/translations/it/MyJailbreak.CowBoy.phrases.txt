@@ -1,0 +1,146 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:26 UTC
+// Language: Italian (it)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/190
+//
+"Phrases"
+{
+
+	"cowboy_need"
+	{
+		"it"		"{purple}{2}{default} ha votato. {purple}{1}{default} voto(i) richiesti per fare {darkred}Cowboy!"
+	}
+
+	"cowboy_rounds"
+	{
+		"it"		"Round {purple}{1}{default} di {purple}{2}."
+	}
+
+	"cowboy_twin_nc"
+	{
+		"it"		"I Prigionieri sono sopravvissuti!"
+	}
+
+	"cowboy_voting"
+	{
+		"it"		"Le votazioni per Cowboy sono{purple} disattivate!"
+	}
+
+	"cowboy_setbywarden"
+	{
+		"it"		"Impostare Cowboy tramite CapoCT e' {purple}disattivato!"
+	}
+
+	"cowboy_minplayer"
+	{
+		"it"		"Per fare Cowboy c'e bisogno di almeno {purple}una Guardia, & un Prigioniere"
+	}
+
+	"cowboy_setbyadmin"
+	{
+		"it"		"Impostare Cowboy tramite Admin e' {purple}disattivato!"
+	}
+
+	"cowboy_ctwin_nc"
+	{
+		"it"		"Una Guardia e' sopravvisuta!"
+	}
+
+	"cowboy_end"
+	{
+		"it"		"{purple}Cowboy{default} e' finito."
+	}
+
+	"cowboy_next"
+	{
+		"it"		"Il prossimo round ci sara': {purple}Cowboy."
+	}
+
+	"cowboy_next_nc"
+	{
+		"it"		"Il prossimo round ci sara': Cowboy."
+	}
+
+	"cowboy_start"
+	{
+		"it"		"{purple}Cowboy{default} e' iniziato!"
+	}
+
+	"cowboy_start_nc"
+	{
+		"it"		"Cowboy e' iniziato!"
+	}
+
+	"cowboy_voted"
+	{
+		"it"		"Hai gia votato per {purple}Cowboy!"
+	}
+
+	"cowboy_progress"
+	{
+		"it"		"L'evento {darkred}{1} {default}e' gia' {purple}in progresso!"
+	}
+
+	"cowboy_disabled"
+	{
+		"it"		"Cowboy e' {purple}disabilitato!"
+	}
+
+	"cowboy_timeuntilstart_nc"
+	{
+		"it"		"{1} secondi rimasti per iniziare il round!"
+	}
+
+	"cowboy_info_line1"
+	{
+		"it"		"Cowboy - FFFA"
+	}
+
+	"cowboy_info_line2"
+	{
+		"it"		"Pistol Battle - DM"
+	}
+
+	"cowboy_info_line3"
+	{
+		"it"		"Puoi muoverti durante la fase di NO-Damage!"
+	}
+
+	"cowboy_info_line4"
+	{
+		"it"		"Le normale regole del JB non sono applicate durante questo round!"
+	}
+
+	"cowboy_info_line5"
+	{
+		"it"		"Gli LR sono disattivati durante questo round!"
+	}
+
+	"cowboy_info_line6"
+	{
+		"it"		"Rimanere nella zona celle! Vietato andare condotti o aree segrete!"
+	}
+
+	"cowboy_info_line7"
+	{
+		"it"		"Non fate i cani!"
+	}
+
+	"cowboy_wait"
+	{
+		"it"		"Devi aspettare {purple}{1}{default} round per dare un Event Day!"
+	}
+
+	"cowboy_name"
+	{
+		"it"		"Cowboy"
+	}
+
+	"cowboy_info_title"
+	{
+		"it"		"Cowboy  e' iniziato!"
+	}
+
+}

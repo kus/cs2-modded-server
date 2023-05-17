@@ -1,0 +1,156 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:34 UTC
+// Language: Spanish (es)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/271
+//
+"Phrases"
+{
+
+	"ghosts_need"
+	{
+		"es"		"{purple}{2}{default} ha votado. {purple}{1}{default} voto(s) requerido para jugar {darkred}Ghosts."
+	}
+
+	"ghosts_voting"
+	{
+		"es"		"El voto para Ghosts está {purple}deshabilitado!"
+	}
+
+	"ghosts_setbywarden"
+	{
+		"es"		"El seteo de Ghosts por el Guardia está {purple}deshabilitado!"
+	}
+
+	"ghosts_setbyadmin"
+	{
+		"es"		"El seteo de Ghosts por el Admin está {purple}deshabilitado!"
+	}
+
+	"ghosts_ctwin_nc"
+	{
+		"es"		"Un Guardia ha sobrevivido!"
+	}
+
+	"ghosts_twin_nc"
+	{
+		"es"		"Un prisionero ha sobrevivido!"
+	}
+
+	"ghosts_minplayer"
+	{
+		"es"		"Para Ghosts necesitas al menos {purple}un Guardia y un Prisionero!"
+	}
+
+	"ghosts_end"
+	{
+		"es"		"{purple}Ghosts{default} ha terminado!"
+	}
+
+	"ghosts_next"
+	{
+		"es"		"La siguiente ronda será: {purple}Ghosts."
+	}
+
+	"ghosts_next_nc"
+	{
+		"es"		"La siguiente ronda será: Ghosts."
+	}
+
+	"ghosts_rounds"
+	{
+		"es"		"Ronda {purple}{1}{default} de {purple}{2}"
+	}
+
+	"ghosts_start"
+	{
+		"es"		"{purple}Ghosts{default} ha comenzado!"
+	}
+
+	"ghosts_start_nc"
+	{
+		"es"		"Ghosts ha comenzado!"
+	}
+
+	"ghosts_voted"
+	{
+		"es"		"Ya has votado por {purple}Ghosts!"
+	}
+
+	"ghosts_progress"
+	{
+		"es"		"El evento {darkred}{1} {default}ya {purple}está en progreso!"
+	}
+
+	"ghosts_disabled"
+	{
+		"es"		"Ghosts actualmente está {purple}deshabilitdo!"
+	}
+
+	"ghosts_damage_nc"
+	{
+		"es"		"{1} segundos hasta que el daño sea activado"
+	}
+
+	"ghosts_info_title"
+	{
+		"es"		"Ghosts War esta ahora Activado!"
+	}
+
+	"ghosts_info_line1"
+	{
+		"es"		"Eres invisible e inmortal!"
+	}
+
+	"ghosts_info_line2"
+	{
+		"es"		"Cada 10seg. todos los jugadores se volveran visibles y podrán hacerse daño"
+	}
+
+	"ghosts_info_line3"
+	{
+		"es"		"Todos contra todos - Jugador VS Jugador - El ultimo hombre de pie gana!"
+	}
+
+	"ghosts_info_line4"
+	{
+		"es"		"Las reglas usuales de Jailbreak no aplican en este modo!"
+	}
+
+	"ghosts_info_line5"
+	{
+		"es"		"LR esta deshabilitado durante esta ronda!"
+	}
+
+	"ghosts_info_line6"
+	{
+		"es"		"Todo el mundo está autorizado a ir a cualquier parte dentro del mapa!"
+	}
+
+	"ghosts_info_line7"
+	{
+		"es"		"No seas un idiota!"
+	}
+
+	"ghosts_wait"
+	{
+		"es"		"Debes esperar {purple}{1}{default} rondas mas para otro {purple} Evento!"
+	}
+
+	"ghosts_name"
+	{
+		"es"		"GHOSTS WAR"
+	}
+
+	"ghosts_visible"
+	{
+		"es"		"VISIBLE"
+	}
+
+	"ghosts_invisible"
+	{
+		"es"		"INVISIBLE"
+	}
+
+}

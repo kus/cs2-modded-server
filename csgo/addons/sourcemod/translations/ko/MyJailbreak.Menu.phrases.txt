@@ -1,0 +1,456 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:22 UTC
+// Language: Korean (ko)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/180
+//
+"Phrases"
+{
+
+	"menu_info"
+	{
+		"ko"		"감옥 메뉴를 열려면 , 키를 누르시거나 !menu 를 채팅에 쳐주세요!"
+	}
+
+	"menu_info_title"
+	{
+		"ko"		"감옥 메뉴"
+	}
+
+	"menu_countdown"
+	{
+		"ko"		"카운트 다운 타이머 시작하기"
+	}
+
+	"menu_opencell"
+	{
+		"ko"		"감옥 문 열기"
+	}
+
+	"menu_seteventdays"
+	{
+		"ko"		"이벤트 설정"
+	}
+
+	"menu_math"
+	{
+		"ko"		"수학 퀴즈 시작"
+	}
+
+	"menu_guns"
+	{
+		"ko"		"무기 메뉴"
+	}
+
+	"menu_laser"
+	{
+		"ko"		"레이저 포인터 메뉴"
+	}
+
+	"menu_noblock"
+	{
+		"ko"		"NoBlock 켜기/끄기"
+	}
+
+	"menu_sparks"
+	{
+		"ko"		"총알 임팩트 켜기/끄기"
+	}
+
+	"menu_extend"
+	{
+		"ko"		"라운드 시간 연장"
+	}
+
+	"menu_ffon"
+	{
+		"ko"		"죄수 팀킬 켜기"
+	}
+
+	"menu_ffoff"
+	{
+		"ko"		"죄수 팀킬 끄기"
+	}
+
+	"menu_randomdead"
+	{
+		"ko"		"랜덤 죄수 죽이기"
+	}
+
+	"menu_unwarden"
+	{
+		"ko"		"소장 은퇴하기"
+	}
+
+	"menu_getwarden"
+	{
+		"ko"		"소장이 되기"
+	}
+
+	"menu_joint"
+	{
+		"ko"		"죄수로 변경하기"
+	}
+
+	"menu_check"
+	{
+		"ko"		"반란수 확인"
+	}
+
+	"menu_lr"
+	{
+		"ko"		"Last Request"
+	}
+
+	"menu_lr"
+	{
+		"ko"		"Last Request"
+	}
+
+	"menu_removewarden"
+	{
+		"ko"		"소장 제거"
+	}
+
+	"menu_setwarden"
+	{
+		"ko"		"새로운 소장 지정"
+	}
+
+	"menu_setwarden"
+	{
+		"ko"		"새로운 소장 지정"
+	}
+
+	"menu_rules"
+	{
+		"ko"		"규칙"
+	}
+
+	"menu_joinct"
+	{
+		"ko"		"간수로 변경하기"
+	}
+
+	"menu_guardct"
+	{
+		"ko"		"간수 대기열 들어가기 (!guard)"
+	}
+
+	"menu_request"
+	{
+		"ko"		"간수에게 요청"
+	}
+
+	"menu_votewarden"
+	{
+		"ko"		"소장 해임 투표"
+	}
+
+	"menu_event_Titlestart"
+	{
+		"ko"		"다음라운드에 이벤트가 시작됩니다."
+	}
+
+	"menu_event_Titlevote"
+	{
+		"ko"		"이벤트 투표하기"
+	}
+
+	"menu_war"
+	{
+		"ko"		"전쟁"
+	}
+
+	"menu_ffa"
+	{
+		"ko"		"Free for All"
+	}
+
+	"menu_zeus"
+	{
+		"ko"		"테이저"
+	}
+
+	"menu_zombie"
+	{
+		"ko"		"좀비의 날"
+	}
+
+	"menu_hide"
+	{
+		"ko"		"Hide in The Dark"
+	}
+
+	"menu_hide"
+	{
+		"ko"		"Hide in The Dark"
+	}
+
+	"menu_suicidebomber"
+	{
+		"ko"		"Suicide Bomber"
+	}
+
+	"menu_suicidebomber"
+	{
+		"ko"		"Suicide Bomber"
+	}
+
+	"menu_catch"
+	{
+		"ko"		"얼음땡"
+	}
+
+	"menu_knifefight"
+	{
+		"ko"		"칼전"
+	}
+
+	"menu_hebattle"
+	{
+		"ko"		"수류탄 배틀"
+	}
+
+	"menu_cowboy"
+	{
+		"ko"		"카우보이"
+	}
+
+	"menu_drunk"
+	{
+		"ko"		"Drunk Day"
+	}
+
+	"menu_torch"
+	{
+		"ko"		"Torch Relay"
+	}
+
+	"menu_noscope"
+	{
+		"ko"		"No Scope"
+	}
+
+	"menu_duckhunt"
+	{
+		"ko"		"DuckHunt"
+	}
+
+	"menu_admin"
+	{
+		"ko"		"어드민 메뉴"
+	}
+
+	"menu_mute"
+	{
+		"ko"		"차단 메뉴"
+	}
+
+	"menu_mute"
+	{
+		"ko"		"차단 메뉴"
+	}
+
+	"menu_painter"
+	{
+		"ko"		"페인터 메뉴"
+	}
+
+	"menu_closecell"
+	{
+		"ko"		"감옥 문 닫기"
+	}
+
+	"menu_voting"
+	{
+		"ko"		"이벤트 투표 : "
+	}
+
+	"menu_voting"
+	{
+		"ko"		"이벤트 투표 : "
+	}
+
+	"menu_voteday"
+	{
+		"ko"		"이벤트 투표 시작하기"
+	}
+
+	"menu_votingwon"
+	{
+		"ko"		"투표가 {2} 표로 마감되었습니다. {1} 이 {3} 표로 결정되었습니다."
+	}
+
+	"menu_minplayer"
+	{
+		"ko"		"이벤트를 투표하려면, 각 팀에 최소한 1명씩은 있어야 합니다."
+	}
+
+	"menu_progress"
+	{
+		"ko"		"{1} 이벤트가 이미 진행 중 입니다!"
+	}
+
+	"menu_wait"
+	{
+		"ko"		"이벤트 투표를 하려면 {1} 라운드를 더 기다려야 합니다!"
+	}
+
+	"menu_votingdraw"
+	{
+		"ko"		"이벤트 투표의 비율이 50/50 으로 비겼습니다! 랜덤으로 이벤트가 정해집니다!"
+	}
+
+	"menu_disabled"
+	{
+		"ko"		"이벤트 투표가 현재 비활성화 되었습니다!"
+	}
+
+	"menu_disabled"
+	{
+		"ko"		"이벤트 투표가 현재 비활성화 되었습니다!"
+	}
+
+	"menu_disabled"
+	{
+		"ko"		"이벤트 투표가 현재 비활성화 되었습니다!"
+	}
+
+	"menu_disabled"
+	{
+		"ko"		"이벤트 투표가 현재 비활성화 되었습니다!"
+	}
+
+	"menu_disabled"
+	{
+		"ko"		"이벤트 투표가 현재 비활성화 되었습니다!"
+	}
+
+	"menu_disabled"
+	{
+		"ko"		"이벤트 투표가 현재 비활성화 되었습니다!"
+	}
+
+	"menu_playerfreeday"
+	{
+		"ko"		" Give a Player a Freeday"
+	}
+
+	"menu_playerfreeday"
+	{
+		"ko"		"플레이어에게 자유의 날 주기"
+	}
+
+	"menu_teamgamesmenu"
+	{
+		"ko"		"팀 게임 - 메뉴"
+	}
+
+	"menu_teamgamesgames"
+	{
+		"ko"		"팀 게임 - 게임"
+	}
+
+	"menu_undeputy"
+	{
+		"ko"		"부소장 그만두기"
+	}
+
+	"menu_removedeputy"
+	{
+		"ko"		"부소장 제거하기"
+	}
+
+	"menu_deputybecome"
+	{
+		"ko"		"Become Wardens Deputy"
+	}
+
+	"menu_deputyset"
+	{
+		"ko"		"부소장 선택"
+	}
+
+	"menu_rebel"
+	{
+		"ko"		"죄수를 반란수로 표시/표시안함"
+	}
+
+	"menu_count"
+	{
+		"ko"		"시야에 보이는 죄수를 셉니다."
+	}
+
+	"menu_jailshop"
+	{
+		"ko"		"감옥 상점 열기"
+	}
+
+	"menu_orders"
+	{
+		"ko"		"명령들"
+	}
+
+	"menu_ghosts"
+	{
+		"ko"		"유령 전쟁"
+	}
+
+	"menu_votingcancel"
+	{
+		"ko"		"이벤트 {1} 가 이미 설정되었기 때문에 투표가 취소 되었습니다."
+	}
+
+	"menu_votingcancel"
+	{
+		"ko"		"이벤트 {1} 가 이미 설정되었기 때문에 투표가 취소되었습니다."
+	}
+
+	"menu_removequeue"
+	{
+		"ko"		"간수 대기 목록에서 플레이어를 제거합니다."
+	}
+
+	"menu_endround"
+	{
+		"ko"		"강제 라운드 종료"
+	}
+
+	"menu_endround"
+	{
+		"ko"		"강제 라운드 종료"
+	}
+
+	"menu_clearqueue"
+	{
+		"ko"		"간수 대기 목록 초기화"
+	}
+
+	"menu_noevent"
+	{
+		"ko"		"이벤트 날이 아닙니다."
+	}
+
+	"menu_joinspec"
+	{
+		"ko"		"관전자로 이동하기"
+	}
+
+	"menu_gangs"
+	{
+		"ko"		"Gangs Menu"
+	}
+
+	"menu_teleport"
+	{
+		"ko"		"순간이동 전쟁"
+	}
+
+	"menu_armsrace"
+	{
+		"ko"		"군비 경쟁"
+	}
+
+}

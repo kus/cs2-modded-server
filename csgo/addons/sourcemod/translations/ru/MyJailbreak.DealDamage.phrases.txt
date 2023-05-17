@@ -1,0 +1,261 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:26 UTC
+// Language: Russian (ru)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/281
+//
+"Phrases"
+{
+
+	"dealdamage_need"
+	{
+		"ru"		"{purple}{2}{default} проголосовал. {purple}{1}{default} голосов осталось до {darkred}Дня Урона"
+	}
+
+	"dealdamage_rounds"
+	{
+		"ru"		"Раунд {purple}{1}{default} о {purple}{2}"
+	}
+
+	"dealdamage_twin_nc"
+	{
+		"ru"		"Команда КРАСНЫХ победила нанеся {1} урона!"
+	}
+
+	"dealdamage_voting"
+	{
+		"ru"		"Голосования за День Урона {purple}отключено"
+	}
+
+	"dealdamage_setbywarden"
+	{
+		"ru"		"Командир {purple}отключил{default} выбор День Урона"
+	}
+
+	"dealdamage_setbyadmin"
+	{
+		"ru"		"Администратор {purple}отключил{default} выбор День Урона"
+	}
+
+	"dealdamage_ctwin_nc"
+	{
+		"ru"		"Команда СИНИХ победила нанеся {1} урона!"
+	}
+
+	"dealdamage_end"
+	{
+		"ru"		"{purple}День урона{default} окончен"
+	}
+
+	"dealdamage_next"
+	{
+		"ru"		"Следующий раунд {purple}День Урона"
+	}
+
+	"dealdamage_next_nc"
+	{
+		"ru"		"Следующий раунд День Урона"
+	}
+
+	"dealdamage_start"
+	{
+		"ru"		"{purple}День урона{default} начался!"
+	}
+
+	"dealdamage_now_nc"
+	{
+		"ru"		"Начинается Наноси Урон раунд."
+	}
+
+	"dealdamage_now"
+	{
+		"ru"		"Начинается {purple}Наноси Урон{default} раунд."
+	}
+
+	"dealdamage_start_nc"
+	{
+		"ru"		"День урона начался!"
+	}
+
+	"dealdamage_voted"
+	{
+		"ru"		"Вы уже проголосовали за {purple}День Урона"
+	}
+
+	"dealdamage_progress"
+	{
+		"ru"		"Игровой день {darkred}{1} {default}в {purple}процессе."
+	}
+
+	"dealdamage_disabled"
+	{
+		"ru"		"День урона {purple}отключен."
+	}
+
+	"dealdamage_timeuntilstart_nc"
+	{
+		"ru"		"{1} секунд до начала"
+	}
+
+	"dealdamage_info_title"
+	{
+		"ru"		"День урона активен"
+	}
+
+	"dealdamage_info_line1"
+	{
+		"ru"		"День Урона активен"
+	}
+
+	"dealdamage_info_line2"
+	{
+		"ru"		"Нанесите как можно больше урона вражеского команде"
+	}
+
+	"dealdamage_info_line3"
+	{
+		"ru"		"Команда, которая нанесла больше урона победит"
+	}
+
+	"dealdamage_info_line4"
+	{
+		"ru"		"Все нормальные правила тюрьмы отменяются"
+	}
+
+	"dealdamage_info_line5"
+	{
+		"ru"		"Здесь нету последних желаний!"
+	}
+
+	"dealdamage_info_line6"
+	{
+		"ru"		"Каждый может идти туда, куда захочет."
+	}
+
+	"dealdamage_info_line7"
+	{
+		"ru"		"Не будь мудаком!"
+	}
+
+	"dealdamage_wait"
+	{
+		"ru"		"Вы должны подождать больше {1} раундов"
+	}
+
+	"dealdamage_result"
+	{
+		"ru"		"Результаты Дня Урона"
+	}
+
+	"dealdamage_total"
+	{
+		"ru"		"Всего урона: {1} жизни"
+	}
+
+	"dealdamage_most"
+	{
+		"ru"		"Большинство урона: {1} урона: {2} жизни"
+	}
+
+	"dealdamage_ct"
+	{
+		"ru"		"СИНИЕ нанесли: {1} ХП"
+	}
+
+	"dealdamage_t"
+	{
+		"ru"		"урон КРАСНЫХ: {1} ХП"
+	}
+
+	"dealdamage_bestct"
+	{
+		"ru"		"Лучший СИНИХ: {1} урон: {2} ХП"
+	}
+
+	"dealdamage_bestt"
+	{
+		"ru"		"Лучший КРАСНЫХ: {1} урон: {2} ХП"
+	}
+
+	"dealdamage_client"
+	{
+		"ru"		"Ваш урон: {1} жизни"
+	}
+
+	"dealdamage_ctdealed"
+	{
+		"ru"		"СИНИЕ нанесли:"
+	}
+
+	"dealdamage_tdealed"
+	{
+		"ru"		"КРАСНЫЕ нанесли:"
+	}
+
+	"dealdamage_clientdealed"
+	{
+		"ru"		"Вы нанесли:"
+	}
+
+	"dealdamage_hpdamage"
+	{
+		"ru"		"нанесено урона"
+	}
+
+	"dealdamage_name"
+	{
+		"ru"		"День урона"
+	}
+
+	"dealdamage_teamblue"
+	{
+		"ru"		"Вы в {blue}команде СИНИХ"
+	}
+
+	"dealdamage_teamred"
+	{
+		"ru"		"Вы в {darkred}команде КРАСНЫХ"
+	}
+
+	"dealdamage_teamblue_nc"
+	{
+		"ru"		"Вы в команде СИНИХ"
+	}
+
+	"dealdamage_teamred_nc"
+	{
+		"ru"		"Вы в команде КРАСНЫХ"
+	}
+
+	"dealdamage_playerteamblue"
+	{
+		"ru"		"{purple}{1}{default} в {darkred}команде СИНИХ"
+	}
+
+	"dealdamage_playerteamred"
+	{
+		"ru"		"{purple}{1}{default} в {darkred}команде КРАСНЫХ"
+	}
+
+	"dealdamage_blue_nc"
+	{
+		"ru"		"СИНИЙ"
+	}
+
+	"dealdamage_red_nc"
+	{
+		"ru"		"КРАСНЫЙ"
+	}
+
+	"dealdamage_info_blueteam"
+	{
+		"ru"		"Вы в команде СИНИХ"
+	}
+
+	"dealdamage_info_redteam"
+	{
+		"ru"		"Вы в команде КРАСНЫХ"
+	}
+
+}

@@ -1,0 +1,586 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:19 UTC
+// Language: Swedish (sv)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/178
+//
+"Phrases"
+{
+
+	"warden_new"
+	{
+		"sv"		"{purple}{1}{default} har blivit fängelsedirektör över detta fängelse."
+	}
+
+	"warden_new_nc"
+	{
+		"sv"		"{1} har blivit fängelsedirektör över detta fängelse."
+	}
+
+	"warden_playerdead"
+	{
+		"sv"		"Endast levande spelare kan bli fängelsedirektör."
+	}
+
+	"warden_ctsonly"
+	{
+		"sv"		"Endast {purple}Anti-Terrorister{default} kan bli fängelsedirektör."
+	}
+
+	"warden_exist"
+	{
+		"sv"		"nuvarande fängelsedirektör är: {purple}{1}{default}"
+	}
+
+	"warden_retire"
+	{
+		"sv"		"{purple}{1}{default} har bestämt sig för att avgå. Ni bör nu välja en ny."
+	}
+
+	"warden_retire_nc"
+	{
+		"sv"		"{1} har bestämt sig för att avgå. Ni bör nu välja en ny."
+	}
+
+	"warden_dead"
+	{
+		"sv"		"fängelsedirektören är död. Ni bör nu välja en ny."
+	}
+
+	"warden_nowarden"
+	{
+		"sv"		"Det finns ingen {purple}Fängelsedirektör{default} just nu. Skriv {green}!w{default} för att bli fängelsedirektör!"
+	}
+
+	"warden_nowarden_nc"
+	{
+		"sv"		"Det finns ingen fängelsedirektör just nu. Skriv !w för att bli fängelsedirektör."
+	}
+
+	"warden_dead_nc"
+	{
+		"sv"		"fängelsedirektören är död. Ni bör nu välja en ny."
+	}
+
+	"warden_disconnected"
+	{
+		"sv"		"fängelsedirektören har lämnat. Ni bör nu välja en ny."
+	}
+
+	"warden_disconnected_nc"
+	{
+		"sv"		"fängelsedirektören har lämnat. Ni bör nu välja en ny."
+	}
+
+	"warden_removed"
+	{
+		"sv"		"Admin: {purple}{1}{default} avskedade Fängelsedirektören: {purple}{2}"
+	}
+
+	"warden_removed_nc"
+	{
+		"sv"		"Admin: {1} avskedade Fängelsedirektören: {2}"
+	}
+
+	"warden_disabled"
+	{
+		"sv"		"Waren är nuvarande {purple}avstängd{default}!"
+	}
+
+	"warden_adminset"
+	{
+		"sv"		"Admin: {purple}{1}{default} har satts som fängelsedirektör !"
+	}
+
+	"warden_randomwarden"
+	{
+		"sv"		"En slumpmässig Warden har blivit vald!"
+	}
+
+	"warden_dooropen"
+	{
+		"sv"		"Fängelsedirektören har {purple}öppnat{default} cellarna."
+	}
+
+	"warden_doorclose"
+	{
+		"sv"		"Fängelsedirektören {purple}har stängt{default} cellarna."
+	}
+
+	"warden_openauto"
+	{
+		"sv"		"Cell dörrarna {purple}öppnades automatiskt!{default}"
+	}
+
+	"warden_opentime"
+	{
+		"sv"		"Nu borde {purple}celldörrarna{default} vara öppna!"
+	}
+
+	"warden_ffison"
+	{
+		"sv"		"Friendly fire är {purple}igång!"
+	}
+
+	"warden_ffisoff"
+	{
+		"sv"		"Vådabeskjutning har {purple}aktiverats!"
+	}
+
+	"warden_voting"
+	{
+		"sv"		"Röstning för att sparka den nuvarande {purple}fängelsedirektören{default} har stängts av."
+	}
+
+	"warden_countdowncanceled"
+	{
+		"sv"		"Nedräkningen har {darkred}stängts av!"
+	}
+
+	"warden_startcountdown_nc"
+	{
+		"sv"		"Startar om {1} sekunder!"
+	}
+
+	"warden_stopcountdown_nc"
+	{
+		"sv"		"Stop/Sluta om {1} sekunder!"
+	}
+
+	"warden_stopcountdown"
+	{
+		"sv"		"Stanna inom {purple}{1}{default} sekunder!"
+	}
+
+	"warden_startcountdownhint"
+	{
+		"sv"		"Se upp! Fängelsedirektören {purple}har startat en START-nedräkning."
+	}
+
+	"warden_startcountdownhint_nc"
+	{
+		"sv"		"Se upp! Fängelsedirektören har startat en START-nedräkning."
+	}
+
+	"warden_startstopcountdownhint"
+	{
+		"sv"		"Se upp! Fängelsedirektören har {purple}startat en START-/ STOP-nedräkning. "
+	}
+
+	"warden_countdownrunning"
+	{
+		"sv"		"En Nedräkning är {purple}redan igång!"
+	}
+
+	"warden_countdownstart_nc"
+	{
+		"sv"		"GÅ! STARTA!"
+	}
+
+	"warden_countdownstop_nc"
+	{
+		"sv"		"STANNA! SLUTA!"
+	}
+
+	"warden_noblockoff"
+	{
+		"sv"		"Fängelsedirektören har {purple}stängt av NoBlock."
+	}
+
+	"warden_voted"
+	{
+		"sv"		"Du har redan röstat mot den nuvarande{purple}fängelsedirektören{default}!"
+	}
+
+	"warden_israndom"
+	{
+		"sv"		"{1} var vald slumpmässigt."
+	}
+
+	"warden_gunplant"
+	{
+		"sv"		"Vakt {purple}{1}{default} har tappat vapnet! {green}{2}!"
+	}
+
+	"warden_noplant"
+	{
+		"sv"		"Det är {darkred}förbjudet{default} för vakter att tappa vapen!"
+	}
+
+	"warden_remove"
+	{
+		"sv"		"Ta bort den nuvarande fängelsedirektören."
+	}
+
+	"warden_laseroff"
+	{
+		"sv"		"Laser {purple}har stängts av"
+	}
+
+	"warden_draweron"
+	{
+		"sv"		"Målare {purple} aktiverat"
+	}
+
+	"warden_drawert"
+	{
+		"sv"		"Växla Målare för terrorister."
+	}
+
+	"warden_tdraweron"
+	{
+		"sv"		"Målare för Terrorister har {purple}aktiverats"
+	}
+
+	"warden_tdraweroff"
+	{
+		"sv"		"Målare för terrorister har {purple}stängts av"
+	}
+
+	"warden_marker_set"
+	{
+		"sv"		"{1} Markering Placerad!"
+	}
+
+	"warden_marker_remove"
+	{
+		"sv"		"{1} Markör borttagen."
+	}
+
+	"warden_laser"
+	{
+		"sv"		"{1} Laserpekare har nu aktiverats."
+	}
+
+	"warden_drawer"
+	{
+		"sv"		"{1} Målare aktiverat."
+	}
+
+	"warden_marker_faraway"
+	{
+		"sv"		"Din {1} markör har tagits bort. Du var för långt ifrån den."
+	}
+
+	"warden_marker_title"
+	{
+		"sv"		"Markörfärg"
+	}
+
+	"warden_laser_title"
+	{
+		"sv"		"Laser Pointer Color"
+	}
+
+	"warden_drawer_title"
+	{
+		"sv"		"Målarfärg"
+	}
+
+	"warden_laser_off"
+	{
+		"sv"		"Stäng av Laserpekare"
+	}
+
+	"warden_drawer_off"
+	{
+		"sv"		"Stäng av målare"
+	}
+
+	"warden_red"
+	{
+		"sv"		"Röd"
+	}
+
+	"warden_orange"
+	{
+		"sv"		"Orange"
+	}
+
+	"warden_yellow"
+	{
+		"sv"		"Gul"
+	}
+
+	"warden_white"
+	{
+		"sv"		"vit"
+	}
+
+	"warden_cyan"
+	{
+		"sv"		"Turkos"
+	}
+
+	"warden_range"
+	{
+		"sv"		"Positionen är för långt bort."
+	}
+
+	"warden_wrong"
+	{
+		"sv"		"Någonting gick fel! Var snäll och försök igen."
+	}
+
+	"warden_muteend"
+	{
+		"sv"		"{2} har blivit tystad av fängelsedirektören {1} för resten av rundan!"
+	}
+
+	"warden_cdmenu_title"
+	{
+		"sv"		"Nedräkningsmeny"
+	}
+
+	"warden_cdmenu_startstop"
+	{
+		"sv"		"Starta en Start-/Stop-nedräkning"
+	}
+
+	"warden_allt"
+	{
+		"sv"		"Alla Fångar"
+	}
+
+	"warden_roundend"
+	{
+		"sv"		"Ända till rundans slut"
+	}
+
+	"warden_30"
+	{
+		"sv"		"30 sekunder"
+	}
+
+	"warden_60"
+	{
+		"sv"		"1 minut"
+	}
+
+	"warden_180"
+	{
+		"sv"		"3 minuter"
+	}
+
+	"warden_300"
+	{
+		"sv"		"5 minuter"
+	}
+
+	"warden_math_correct"
+	{
+		"sv"		"{1} har gett ett{green} korrekt svar!{default} Svaret var {purple}{2}!"
+	}
+
+	"warden_startmathquiz"
+	{
+		"sv"		"Lystring! Warden har startat ett {purple}Math Quiz!"
+	}
+
+	"warden_sure"
+	{
+		"sv"		"Är du säker"
+	}
+
+	"warden_yes"
+	{
+		"sv"		"Ja"
+	}
+
+	"warden_no"
+	{
+		"sv"		"Nej"
+	}
+
+	"warden_minrandom"
+	{
+		"sv"		"Det finns bara en icke-rebellande fånge kvar!"
+	}
+
+	"warden_nomuted"
+	{
+		"sv"		"Det finns inga tystade fångar."
+	}
+
+	"warden_mute_title"
+	{
+		"sv"		"Mute Menu"
+	}
+
+	"warden_menu_mute"
+	{
+		"sv"		"Tysta en fånge"
+	}
+
+	"warden_cuffs"
+	{
+		"sv"		"Använd Taser som Handfängsel!"
+	}
+
+	"warden_cuffsoff"
+	{
+		"sv"		"{purple}{1}{default} har tagit bort {green}{2}'s{default} Handfängsel."
+	}
+
+	"warden_cuffsgot"
+	{
+		"sv"		"Du har bara {green}{1}{default} handklov(ar) kvar!"
+	}
+
+	"warden_bulletmarkoff"
+	{
+		"sv"		"Skotträffsgnistor har nu {purple}stängts av!"
+	}
+
+	"warden_bulletmarkon"
+	{
+		"sv"		"Skottträffsgnistor {purple}har aktiverats!"
+	}
+
+	"warden_extend"
+	{
+		"sv"		"Fängelsedirektören har sträckt ut rundan med {2} minuter."
+	}
+
+	"warden_extendtimes"
+	{
+		"sv"		"Du har redan {purple}förlängt rundan {1} gånger{default} i denna runda!"
+	}
+
+	"warden_close"
+	{
+		"sv"		"Gå ut"
+	}
+
+	"warden_gotpaperclip"
+	{
+		"sv"		"Du har i hemlighet {1} paperclip(s) i din ficka. Använd +use (E)"
+	}
+
+	"warden_painter_title"
+	{
+		"sv"		"Målarfärg"
+	}
+
+	"warden_painter_off"
+	{
+		"sv"		"Stäng av målare"
+	}
+
+	"warden_painteron"
+	{
+		"sv"		"Målare {purple}har aktiverats."
+	}
+
+	"warden_painteroff"
+	{
+		"sv"		"Målare {purple}är avstängd."
+	}
+
+	"warden_paintert"
+	{
+		"sv"		"Toggla Målare för Prisoners"
+	}
+
+	"warden_tpainteron"
+	{
+		"sv"		"Målare för fångar har {purple}stängts av."
+	}
+
+	"warden_tpainteroff"
+	{
+		"sv"		"Målare för fångar har {purple}stängts av!"
+	}
+
+	"warden_doorclose_unavailable"
+	{
+		"sv"		"{darkred}Denna map har inte support för att öppna dörrarna på avstånd. {default}Du {purple}måste manuellt stänga dörrarna!"
+	}
+
+	"warden_menu_unmuteall"
+	{
+		"sv"		"Låt alla fångar prata"
+	}
+
+	"warden_votesuccess"
+	{
+		"sv"		"Röstningen för att {purple}ta bort fängelsedirektören{default} vart lyckad."
+	}
+
+	"warden_mutedefault"
+	{
+		"sv"		"Alla Fångar har blivit mutade av förinställt värde."
+	}
+
+	"warden_rebel_title"
+	{
+		"sv"		"Rebellmeny"
+	}
+
+	"warden_rebel_unmark"
+	{
+		"sv"		"Ta bort en spelare från rebellistan"
+	}
+
+	"warden_counter"
+	{
+		"sv"		"Det finns {1} fånge i ditt sikte."
+	}
+
+	"warden_deputy_playerdead"
+	{
+		"sv"		"Endast {purple}levande spelare{default} kan bli Deputy!"
+	}
+
+	"warden_deputy_ctsonly"
+	{
+		"sv"		"Endast {purple}vakter{default} kan bli Vice fängelsedirektör."
+	}
+
+	"warden_deputy_nobecome"
+	{
+		"sv"		"Du kan inte bli vice fängelsedirektör, fängelsedirektören måste välja dig"
+	}
+
+	"warden_deputy_fired_nc"
+	{
+		"sv"		"Fängelsedirektören: {1} har sparkat Vice fängelsedirektören: {2}"
+	}
+
+	"warden_deputy_fired"
+	{
+		"sv"		"Fängelsedirektören: {purple}{1}{default} har sparkat Vice fängelsedirektören: {purple}{2}"
+	}
+
+	"warden_deputy_dead_nc"
+	{
+		"sv"		"Deputy är nu död. Du kan nu välja en ny."
+	}
+
+	"warden_deputy_new"
+	{
+		"sv"		"{purple}{1}{default} är nu Vice fängelsedirektör."
+	}
+
+	"warden_pickingaborted"
+	{
+		"sv"		"Val avbrutit"
+	}
+
+	"warden_havefreeday"
+	{
+		"sv"		"{1} har nu ledigt."
+	}
+
+	"warden_freedaynext"
+	{
+		"sv"		"Nästa Runda"
+	}
+
+	"warden_personalfreeday"
+	{
+		"sv"		"{green}{1}{default} är {purple}ledig{default} nästa runda"
+	}
+
+}

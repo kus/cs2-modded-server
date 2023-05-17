@@ -1,0 +1,156 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:34 UTC
+// Language: Italian (it)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/271
+//
+"Phrases"
+{
+
+	"ghosts_need"
+	{
+		"it"		"{purple}{2}{default} ha votato. {purple}{1}{default} voto(i) richiesti per fare {darkred}Ghosts."
+	}
+
+	"ghosts_voting"
+	{
+		"it"		":e votazioni per ghost sono {purple}disattivate!"
+	}
+
+	"ghosts_setbywarden"
+	{
+		"it"		"Impostare ghost come CapoCT e' {purple}disattivato!"
+	}
+
+	"ghosts_setbyadmin"
+	{
+		"it"		"Impostare ghost come Admin e' {purple}disattivato!"
+	}
+
+	"ghosts_ctwin_nc"
+	{
+		"it"		"Una Guardia e' sopravvissuta!"
+	}
+
+	"ghosts_twin_nc"
+	{
+		"it"		"I prigionieri sono sopravvisuti!"
+	}
+
+	"ghosts_minplayer"
+	{
+		"it"		"Per fare ghost c'e bisogno almeno di {purple}una Guardia, & un Prigioniere!"
+	}
+
+	"ghosts_end"
+	{
+		"it"		"{purple}Ghosts{default}e' finito!"
+	}
+
+	"ghosts_next"
+	{
+		"it"		"Il prossimo round ci sara': {purple}Ghosts."
+	}
+
+	"ghosts_next_nc"
+	{
+		"it"		"Il prossimo round ci sara': Ghosts."
+	}
+
+	"ghosts_rounds"
+	{
+		"it"		"Round {purple}{1}{default} di {purple}{2}"
+	}
+
+	"ghosts_start"
+	{
+		"it"		"{purple}Ghosts{default} e' iniziato!"
+	}
+
+	"ghosts_start_nc"
+	{
+		"it"		"Ghosts e' iniziato!"
+	}
+
+	"ghosts_voted"
+	{
+		"it"		"Hai gia' votato per {purple}Ghosts!"
+	}
+
+	"ghosts_progress"
+	{
+		"it"		"L'evento {darkred}{1} {default}e' {purple}in corso!"
+	}
+
+	"ghosts_disabled"
+	{
+		"it"		"Ghosts e' {purple}disabiliato!"
+	}
+
+	"ghosts_damage_nc"
+	{
+		"it"		"{1} secondi prima del attiavazioni del danno"
+	}
+
+	"ghosts_info_title"
+	{
+		"it"		"Ghosts War e' iniziato!"
+	}
+
+	"ghosts_info_line1"
+	{
+		"it"		"Sei invisibile & Imoortale!"
+	}
+
+	"ghosts_info_line2"
+	{
+		"it"		"Ogni 10sec. Tutti i player diventanto visibili & mortali"
+	}
+
+	"ghosts_info_line3"
+	{
+		"it"		"Free for All - Player VS Player - L'ultimo player che rimane vince!"
+	}
+
+	"ghosts_info_line4"
+	{
+		"it"		"Tutte le normali regole del JB non vengono applicate durante questo round!"
+	}
+
+	"ghosts_info_line5"
+	{
+		"it"		"Gli LR sono disattivati durante questo round!"
+	}
+
+	"ghosts_info_line6"
+	{
+		"it"		"A tutti e' permesso andare ovunque durante questo round!"
+	}
+
+	"ghosts_info_line7"
+	{
+		"it"		"Non fate i cani!"
+	}
+
+	"ghosts_wait"
+	{
+		"it"		"Devi aspettare{purple}{1}{default} ancora per dare un nuovo evento!"
+	}
+
+	"ghosts_name"
+	{
+		"it"		"Ghosts War"
+	}
+
+	"ghosts_visible"
+	{
+		"it"		"VISIBILE"
+	}
+
+	"ghosts_invisible"
+	{
+		"it"		"INVISIBILE"
+	}
+
+}

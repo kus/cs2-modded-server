@@ -1,0 +1,21 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:32 UTC
+// Language: French (fr)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/188
+//
+"Phrases"
+{
+
+	"weapons_health"
+	{
+		"fr"		"Vous avez un {purple}Medi-Shot{default}"
+	}
+
+	"weapons_info_prim"
+	{
+		"fr"		"Arme principale:"
+	}
+
+}

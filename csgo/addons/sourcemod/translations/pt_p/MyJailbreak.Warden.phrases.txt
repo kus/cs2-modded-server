@@ -1,0 +1,256 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:18 UTC
+// Language: Portuguese (pt_p)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/178
+//
+"Phrases"
+{
+
+	"warden_new"
+	{
+		"pt_p"		"{purple}{1}{default} é agora o Warden desta prisão."
+	}
+
+	"warden_retire_nc"
+	{
+		"pt_p"		"{1} decidiu se reformar como Warden. Podem agora escolher um novo Warden!"
+	}
+
+	"warden_nowarden"
+	{
+		"pt_p"		"Não existe nenhum {purple}Warden!{default}. Escreve {green}!w{default} para seres o Warden!"
+	}
+
+	"warden_nowarden_nc"
+	{
+		"pt_p"		"Não existe nenhum Warden. Escreve !w para seres o Warden!"
+	}
+
+	"warden_removed"
+	{
+		"pt_p"		"Admin: {purple}{1}{default} despediu o Warden: {purple}{2}"
+	}
+
+	"warden_noexist"
+	{
+		"pt_p"		"Não existe nenhum {purple}Warden!"
+	}
+
+	"warden_adminset"
+	{
+		"pt_p"		"Admin: {purple}{1}{default} escolheu o Warden!"
+	}
+
+	"warden_dooropen"
+	{
+		"pt_p"		"O Warden {purple}abriu{default} as celas."
+	}
+
+	"warden_ffisoff"
+	{
+		"pt_p"		"O Fogo Amigavel está {purple}desactivo!"
+	}
+
+	"warden_startstopcountdownhint_nc"
+	{
+		"pt_p"		"Atenção! O Warden começou uma contagem de START / STOP!"
+	}
+
+	"warden_stopcountdownhint_nc"
+	{
+		"pt_p"		"Atenção! O Warden começou uma contagem de STOP! Despachem-se!"
+	}
+
+	"warden_countdownrunning"
+	{
+		"pt_p"		"Uma contagem está {purple}actualmente em progresso!"
+	}
+
+	"warden_countdownstart_nc"
+	{
+		"pt_p"		"VAI! COMEÇOU!"
+	}
+
+	"warden_need"
+	{
+		"pt_p"		"{1} votos requeridos para {darkred}explusar o Warden!"
+	}
+
+	"warden_voted"
+	{
+		"pt_p"		"Tu já votas-te contra o {purple}Warden{default} actual!"
+	}
+
+	"warden_gunplant"
+	{
+		"pt_p"		"O Guarda {purple}{1}{default} deixou cair a arma {green}{2}!"
+	}
+
+	"warden_choose"
+	{
+		"pt_p"		"Seleciona o Jogador"
+	}
+
+	"warden_draweron"
+	{
+		"pt_p"		"Lapis {purple}activo"
+	}
+
+	"warden_tdraweron"
+	{
+		"pt_p"		"Lapis para os Terroristas está {purple}ligado"
+	}
+
+	"warden_tdraweroff"
+	{
+		"pt_p"		"Lapis para os Terroristas está {purple}desligado"
+	}
+
+	"warden_drawer"
+	{
+		"pt_p"		"{1} Lapis está agora equipado!"
+	}
+
+	"warden_laser_title"
+	{
+		"pt_p"		"Cor do Apontador Laser"
+	}
+
+	"warden_laser_off"
+	{
+		"pt_p"		"Desactivar o Apontador Laser"
+	}
+
+	"warden_drawer_off"
+	{
+		"pt_p"		"Desactivar Lapis"
+	}
+
+	"warden_white"
+	{
+		"pt_p"		"Branco"
+	}
+
+	"warden_cyan"
+	{
+		"pt_p"		"Azul-claro"
+	}
+
+	"warden_mute"
+	{
+		"pt_p"		"{2} foi mutado pelo Warden {1} por {3} segundos!"
+	}
+
+	"warden_muteend"
+	{
+		"pt_p"		"{2} foi mutado pelo Warden {1} durante o resto da ronda!"
+	}
+
+	"warden_cdmenu_title"
+	{
+		"pt_p"		"Menu Contagem Decrescente"
+	}
+
+	"warden_cdmenu_startstop"
+	{
+		"pt_p"		"Começa e para uma contagem"
+	}
+
+	"warden_cdmenu_title2"
+	{
+		"pt_p"		"Tempo entre Começar e Acabar"
+	}
+
+	"warden_roundend"
+	{
+		"pt_p"		"Até a Ronda acabar"
+	}
+
+	"warden_60"
+	{
+		"pt_p"		"1 Minuto"
+	}
+
+	"warden_120"
+	{
+		"pt_p"		"2 Minutos"
+	}
+
+	"warden_180"
+	{
+		"pt_p"		"3 Minutos"
+	}
+
+	"warden_300"
+	{
+		"pt_p"		"5 Minutos"
+	}
+
+	"warden_math_time"
+	{
+		"pt_p"		"Acabou o tempo! Ninguem respondeu. {purple}A resposta era {1}"
+	}
+
+	"warden_startmathquiz"
+	{
+		"pt_p"		"Atenção! O warden começou um {purple}Quiz de Matemática!"
+	}
+
+	"warden_yes"
+	{
+		"pt_p"		"Sim"
+	}
+
+	"warden_minrandom"
+	{
+		"pt_p"		"Só falta apenas 1 prisioneiro! (não rebelde)"
+	}
+
+	"warden_menu_mute"
+	{
+		"pt_p"		"Mutar um Prisioneiro"
+	}
+
+	"warden_cuffs"
+	{
+		"pt_p"		"Usa o Taser como algemas!"
+	}
+
+	"warden_cuffson"
+	{
+		"pt_p"		"{purple}{1}{default} prendeu {green}{2}{default}!"
+	}
+
+	"warden_cuffsoff"
+	{
+		"pt_p"		"{purple}{1}{default} removeu as algemas de {green}{2}'s{default}."
+	}
+
+	"warden_painter"
+	{
+		"pt_p"		"{1} Pincel está agora equipado!"
+	}
+
+	"warden_paintert"
+	{
+		"pt_p"		"Alternar ligar/desligar o Pincel para os Prisioneiros"
+	}
+
+	"warden_dooropen_unavailable"
+	{
+		"pt_p"		"Este mapa não suporta celas automáticas. Tu deves abrir manualmente as celas!"
+	}
+
+	"warden_menu_unmuteall"
+	{
+		"pt_p"		"Desmutar todos os prisioneiros"
+	}
+
+	"warden_mutedefault"
+	{
+		"pt_p"		"Todos os prisioneiros foram mutados como normal."
+	}
+
+}

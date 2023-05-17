@@ -1,0 +1,416 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:22 UTC
+// Language: Russian (ru)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/180
+//
+"Phrases"
+{
+
+	"menu_info"
+	{
+		"ru"		"Откройте игровое меню, написав !menu или нажмите ,"
+	}
+
+	"menu_info_title"
+	{
+		"ru"		"MyJailBreak меню"
+	}
+
+	"menu_countdown"
+	{
+		"ru"		"Начать отсчёт"
+	}
+
+	"menu_opencell"
+	{
+		"ru"		"Открыть двери камер"
+	}
+
+	"menu_seteventdays"
+	{
+		"ru"		"Выбрать игровой день"
+	}
+
+	"menu_voteeventdays"
+	{
+		"ru"		"Голосуйте за игровой день"
+	}
+
+	"menu_math"
+	{
+		"ru"		"Викторина"
+	}
+
+	"menu_guns"
+	{
+		"ru"		"Меню оружия"
+	}
+
+	"menu_laser"
+	{
+		"ru"		"Меню лазерного указатель"
+	}
+
+	"menu_noblock"
+	{
+		"ru"		"Вкл/Выкл No Block"
+	}
+
+	"menu_sparks"
+	{
+		"ru"		"Вкл/Выкл искры от пуль"
+	}
+
+	"menu_extend"
+	{
+		"ru"		"Продлить время раунда"
+	}
+
+	"menu_ffon"
+	{
+		"ru"		"Включить FF для террористов"
+	}
+
+	"menu_ffoff"
+	{
+		"ru"		"Отключить FF для террористов"
+	}
+
+	"menu_randomdead"
+	{
+		"ru"		"Убить случайного Террориста"
+	}
+
+	"menu_unwarden"
+	{
+		"ru"		"Покинуть пост"
+	}
+
+	"menu_getwarden"
+	{
+		"ru"		"Занять пост КМД"
+	}
+
+	"menu_joint"
+	{
+		"ru"		"Зайти за террористов"
+	}
+
+	"menu_check"
+	{
+		"ru"		"Проверка игроков"
+	}
+
+	"menu_lr"
+	{
+		"ru"		"Последнее желание"
+	}
+
+	"menu_removewarden"
+	{
+		"ru"		"Уволить командира"
+	}
+
+	"menu_setwarden"
+	{
+		"ru"		"Выбрать нового командира"
+	}
+
+	"menu_rules"
+	{
+		"ru"		"Правила"
+	}
+
+	"menu_joinct"
+	{
+		"ru"		"Зайти за КТ"
+	}
+
+	"menu_guardct"
+	{
+		"ru"		"Занять очередь за КТ (!guard)"
+	}
+
+	"menu_request"
+	{
+		"ru"		"Запросы"
+	}
+
+	"menu_votewarden"
+	{
+		"ru"		"Проголосовать за увольнение КМД"
+	}
+
+	"menu_event_Titlestart"
+	{
+		"ru"		"Начало игрового дня в следующем раунде"
+	}
+
+	"menu_event_Titlevote"
+	{
+		"ru"		"Проголосовать за игровой день"
+	}
+
+	"menu_war"
+	{
+		"ru"		"Война"
+	}
+
+	"menu_ffa"
+	{
+		"ru"		"Все против ВСЕХ"
+	}
+
+	"menu_zeus"
+	{
+		"ru"		"День зевса"
+	}
+
+	"menu_zombie"
+	{
+		"ru"		"Зомби день"
+	}
+
+	"menu_hide"
+	{
+		"ru"		"Прятки в темноте"
+	}
+
+	"menu_suicidebomber"
+	{
+		"ru"		"Смертник"
+	}
+
+	"menu_catch"
+	{
+		"ru"		"Поймай и заморозь"
+	}
+
+	"menu_knifefight"
+	{
+		"ru"		"Битва на ножах"
+	}
+
+	"menu_hebattle"
+	{
+		"ru"		"Бой гранатами"
+	}
+
+	"menu_cowboy"
+	{
+		"ru"		"Ковбой"
+	}
+
+	"menu_drunk"
+	{
+		"ru"		"Пьяный"
+	}
+
+	"menu_torch"
+	{
+		"ru"		"Эстафета Олимпийского огня"
+	}
+
+	"menu_noscope"
+	{
+		"ru"		"Без прицела"
+	}
+
+	"menu_duckhunt"
+	{
+		"ru"		"Охота на уток"
+	}
+
+	"menu_admin"
+	{
+		"ru"		"Меню администратора"
+	}
+
+	"menu_mute"
+	{
+		"ru"		"Меню мутов"
+	}
+
+	"menu_painter"
+	{
+		"ru"		"Меню рисовальщика"
+	}
+
+	"menu_closecell"
+	{
+		"ru"		"Закрыть двери камер"
+	}
+
+	"menu_voting"
+	{
+		"ru"		"Голосование за игровой день:"
+	}
+
+	"menu_voteday"
+	{
+		"ru"		"Начать голосование за игровой день"
+	}
+
+	"menu_votingwon"
+	{
+		"ru"		"Голосование закончилось {2} голосов было. {green}{1} {default}победил с {3} голосами."
+	}
+
+	"menu_minplayer"
+	{
+		"ru"		"Для голосование за игровой дня, вы должны иметь как минимум {purple}одного КТ и 1 Т"
+	}
+
+	"menu_progress"
+	{
+		"ru"		"Игровой день {darkred}{1} {default}в {purple}процессе!"
+	}
+
+	"menu_wait"
+	{
+		"ru"		"Вы должны подождать больше {1} раундов для голосования за игровой день!"
+	}
+
+	"menu_votingdraw"
+	{
+		"ru"		"Голосование закончилось в 50/50! Игровой день был выбран случайно!"
+	}
+
+	"menu_disabled"
+	{
+		"ru"		"Голосование за игровой день {purple}отключен!"
+	}
+
+	"menu_playerfreeday"
+	{
+		"ru"		"Выдать игроку фридей"
+	}
+
+	"menu_teamgamesmenu"
+	{
+		"ru"		"Командные игры - меню"
+	}
+
+	"menu_teamgamesgames"
+	{
+		"ru"		"Командные игры - игры"
+	}
+
+	"menu_undeputy"
+	{
+		"ru"		"Уволить заместителя"
+	}
+
+	"menu_removedeputy"
+	{
+		"ru"		"Уволить заместителя"
+	}
+
+	"menu_deputybecome"
+	{
+		"ru"		"Стать заместителем командира"
+	}
+
+	"menu_deputyset"
+	{
+		"ru"		"Выбрать заместителя"
+	}
+
+	"menu_rebel"
+	{
+		"ru"		"Офф/Пометить игрока как бунтующего"
+	}
+
+	"menu_count"
+	{
+		"ru"		"Посчитать заключённых"
+	}
+
+	"menu_jailshop"
+	{
+		"ru"		"Открыть магазин тюрьмы"
+	}
+
+	"menu_orders"
+	{
+		"ru"		"Приказы"
+	}
+
+	"menu_ghosts"
+	{
+		"ru"		"Война призраков"
+	}
+
+	"menu_votingcancel"
+	{
+		"ru"		"Голосование было отменено, поскольку игровой день {purple}{1}{default} уже выбран!"
+	}
+
+	"menu_removequeue"
+	{
+		"ru"		"Удалить игрока из очереди за КТ"
+	}
+
+	"menu_endround"
+	{
+		"ru"		"Закончить раунд досрочно"
+	}
+
+	"menu_clearqueue"
+	{
+		"ru"		"Очистить очередь за КТ"
+	}
+
+	"menu_noevent"
+	{
+		"ru"		"Нет игровому дню"
+	}
+
+	"menu_joinspec"
+	{
+		"ru"		"Перейти за наблюдателя"
+	}
+
+	"menu_gangs"
+	{
+		"ru"		"Меню банд"
+	}
+
+	"menu_teleport"
+	{
+		"ru"		"Телепорт Война"
+	}
+
+	"menu_armsrace"
+	{
+		"ru"		"Гонка вооружений"
+	}
+
+	"menu_playerremovefreeday"
+	{
+		"ru"		"Закончить свободный день игроков"
+	}
+
+	"menu_oneinthechamber"
+	{
+		"ru"		"Один в камере"
+	}
+
+	"menu_nolr"
+	{
+		"ru"		"Вкл/Выкл LR"
+	}
+
+	"menu_dealdamage"
+	{
+		"ru"		"День урона"
+	}
+
+	"menu_freeday"
+	{
+		"ru"		"Фридей"
+	}
+
+}

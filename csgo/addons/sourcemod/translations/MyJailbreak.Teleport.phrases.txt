@@ -1,0 +1,161 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:34 UTC
+// Language: English (en)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/277
+//
+"Phrases"
+{
+
+	"teleport_need"
+	{
+		"#format"	"{1:i},{2:N}"
+		"en"		"{purple}{2}{default} has voted. {purple}{1}{default} vote(s) required to play {darkred}Teleport War."
+	}
+
+	"teleport_voting"
+	{
+		"en"		"Voting for Teleport War is {purple}disabled!"
+	}
+
+	"teleport_setbywarden"
+	{
+		"en"		"Set Teleport War by Warden is {purple}disabled!"
+	}
+
+	"teleport_setbyadmin"
+	{
+		"en"		"Set Teleport War by Admin is {purple}disabled!"
+	}
+
+	"teleport_ctwin_nc"
+	{
+		"en"		"A Guard has survived!"
+	}
+
+	"teleport_twin_nc"
+	{
+		"en"		"A Prisoner has survived!"
+	}
+
+	"teleport_minplayer"
+	{
+		"en"		"For Teleport War you need at least {purple}one Guard, & one Prisoner!"
+	}
+
+	"teleport_end"
+	{
+		"en"		"{purple}Teleport War{default} has ended!"
+	}
+
+	"teleport_next"
+	{
+		"en"		"The following round will be: {purple}Teleport War."
+	}
+
+	"teleport_next_nc"
+	{
+		"en"		"The following round will be: Teleport War."
+	}
+
+	"teleport_rounds"
+	{
+		"#format"	"{1:i},{2:i}"
+		"en"		"Round {purple}{1}{default} of {purple}{2}"
+	}
+
+	"teleport_start"
+	{
+		"en"		"{purple}Teleport War{default} has begun!"
+	}
+
+	"teleport_start_nc"
+	{
+		"en"		"Teleport War has begun!"
+	}
+
+	"teleport_voted"
+	{
+		"en"		"You have already voted for {purple}Teleport War!"
+	}
+
+	"teleport_progress"
+	{
+		"#format"	"{1:s}"
+		"en"		"The event {darkred}{1} {default}is {purple}already in progress!"
+	}
+
+	"teleport_disabled"
+	{
+		"en"		"Teleport War is currently {purple}disabled!"
+	}
+
+	"teleport_damage_nc"
+	{
+		"#format"	"{1:i}"
+		"en"		"{1} seconds until damage enabled"
+	}
+
+	"teleport_info_title"
+	{
+		"en"		"Teleport War is now Activated!"
+	}
+
+	"teleport_info_line1"
+	{
+		"en"		"Change postion with your attacker / victim on hit"
+	}
+
+	"teleport_info_line2"
+	{
+		"en"		"Teleport War - Player VS Player - The last man standing wins!"
+	}
+
+	"teleport_info_line3"
+	{
+		"en"		"Run away during the 'NoDamage' phase!"
+	}
+
+	"teleport_info_line4"
+	{
+		"en"		"All usual Jailbreak Rules do not apply during this round!"
+	}
+
+	"teleport_info_line5"
+	{
+		"en"		"Last Request is disabled during this round!"
+	}
+
+	"teleport_info_line6"
+	{
+		"en"		"Everyone is allowed to go anywhere within the map!"
+	}
+
+	"teleport_info_line7"
+	{
+		"en"		"Don't be an Asshole!"
+	}
+
+	"teleport_wait"
+	{
+		"#format"	"{1:i}"
+		"en"		"You must wait {purple}{1}{default} more rounds for an Event Day!"
+	}
+
+	"teleport_name"
+	{
+		"en"		"Teleport War"
+	}
+
+	"teleport_now_nc"
+	{
+		"en"		"Now a teleport round begins."
+	}
+
+	"teleport_now"
+	{
+		"en"		"Now a {purple}teleport{default} round begins."
+	}
+
+}

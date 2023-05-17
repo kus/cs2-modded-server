@@ -1,0 +1,200 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:33 UTC
+// Language: English (en)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/185
+//
+"Phrases"
+{
+
+	"catch_need"
+	{
+		"#format"	"{1:i},{2:N}"
+		"en"		"{purple}{2}{default} has voted. {purple}{1}{default} vote(s) required to play {darkred}Catch!"
+	}
+
+	"catch_rounds"
+	{
+		"#format"	"{1:i},{2:i}"
+		"en"		"Round {purple}{1}{default} of {purple}{2}"
+	}
+
+	"catch_twin_nc"
+	{
+		"en"		"The terrorists have escaped!"
+	}
+
+	"catch_ctwin_nc"
+	{
+		"en"		"All the terrorists have been caught!"
+	}
+
+	"catch_end"
+	{
+		"en"		"{purple}Catch{default} has ended."
+	}
+
+	"catch_voting"
+	{
+		"en"		"Voting for Catch is currently {purple}disabled!"
+	}
+
+	"catch_setbywarden"
+	{
+		"en"		"Set Catch by warden is currently {purple}disabled!"
+	}
+
+	"catch_setbyadmin"
+	{
+		"en"		"Set Catch by Admin is currently {purple}disabled!"
+	}
+
+	"catch_next"
+	{
+		"en"		"The following round will be: {purple}Catch."
+	}
+
+	"catch_next_nc"
+	{
+		"en"		"The following round will be: Catch."
+	}
+
+	"catch_start"
+	{
+		"en"		"{purple}Catch{default} has begun!"
+	}
+
+	"catch_start_nc"
+	{
+		"en"		"Catch has Begun!"
+	}
+
+	"catch_voted"
+	{
+		"en"		"You have already voted for {purple}Catch!"
+	}
+
+	"catch_progress"
+	{
+		"#format"	"{1:s}"
+		"en"		"The event {darkred}{1} {default}is {purple}already in progress!"
+	}
+
+	"catch_minplayer"
+	{
+		"en"		"For Catch, you must have at least {purple}one Guard, & one Prisoner"
+	}
+
+	"catch_sprint"
+	{
+		"en"		"You are now {blue}Sprinting!"
+	}
+
+	"catch_sprintend"
+	{
+		"#format"	"{1:i}"
+		"en"		"{blue}You're too tired to sprint!{default} Rest for {1} Seconds."
+	}
+
+	"catch_sprintagain"
+	{
+		"en"		"You caught your breath. You can {blue}sprint {default}again!"
+	}
+
+	"catch_disabled"
+	{
+		"en"		"Catch is {purple}disabled."
+	}
+
+	"catch_info_title"
+	{
+		"en"		"Catch is now activated!"
+	}
+
+	"catch_info_line1"
+	{
+		"en"		"The Guards must catch and freeze the Prisoners with their knife."
+	}
+
+	"catch_info_line2"
+	{
+		"en"		"Prisoners can unfreeze Other Prisoners. Knife them!"
+	}
+
+	"catch_info_line3"
+	{
+		"en"		"Hold E to sprint!"
+	}
+
+	"catch_info_line4"
+	{
+		"en"		"No usual Jailbreak rules apply for this round!"
+	}
+
+	"catch_info_line5"
+	{
+		"en"		"Last requests are disabled during this round."
+	}
+
+	"catch_info_line6"
+	{
+		"en"		"You must stay in the main Jailroom! Don't enter vents or secret areas!"
+	}
+
+	"catch_info_line7"
+	{
+		"en"		"Server Rules still apply during this round!"
+	}
+
+	"catch_wait"
+	{
+		"#format"	"{1:i}"
+		"en"		"You must wait {purple}{1}{default} more rounds for an Event Day!"
+	}
+
+	"catch_unfreeze"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"Prisoner {purple}{1}{default} has unfreezed {blue}{2}!"
+	}
+
+	"catch_catch"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"Guard {purple}{1}{default} has freezed {blue}{2}{default}!"
+	}
+
+	"catch_win"
+	{
+		"en"		"All the prisoners have been {purple}caught!"
+	}
+
+	"catch_name"
+	{
+		"en"		"Catch and Freeze"
+	}
+
+	"catch_timetounfreeze_nc"
+	{
+		"#format"	"{1:i}"
+		"en"		"{1} seconds until you will be unfreezed!"
+	}
+
+	"catch_timeuntilstart_nc"
+	{
+		"#format"	"{1:i}"
+		"en"		"{1} seconds left to hide!"
+	}
+
+	"catch_now_nc"
+	{
+		"en"		"Now a Catch round begins."
+	}
+
+	"catch_now"
+	{
+		"en"		"Now a {purple}Catch{default} round begins."
+	}
+
+}

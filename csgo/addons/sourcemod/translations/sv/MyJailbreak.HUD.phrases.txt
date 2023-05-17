@@ -1,0 +1,46 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:21 UTC
+// Language: Swedish (sv)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/231
+//
+"Phrases"
+{
+
+	"hud_planned"
+	{
+		"sv"		"Nästa runda:"
+	}
+
+	"hud_running"
+	{
+		"sv"		"Denna runda:"
+	}
+
+	"hud_warden"
+	{
+		"sv"		"Warden:"
+	}
+
+	"hud_nowarden"
+	{
+		"sv"		"Nuvarande ingen Warden"
+	}
+
+	"hud_on"
+	{
+		"sv"		"HUD {purple}är igångsatt!"
+	}
+
+	"hud_off"
+	{
+		"sv"		"HUD {purple}är avstängd"
+	}
+
+	"hud_lastCT"
+	{
+		"sv"		"Sista Vakten:"
+	}
+
+}

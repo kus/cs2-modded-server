@@ -1,0 +1,46 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:21 UTC
+// Language: Danish (da)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/231
+//
+"Phrases"
+{
+
+	"hud_planned"
+	{
+		"da"		"Næste runde:"
+	}
+
+	"hud_running"
+	{
+		"da"		"Denne runde:"
+	}
+
+	"hud_warden"
+	{
+		"da"		"Fængselsinspektør:"
+	}
+
+	"hud_guards"
+	{
+		"da"		"Vagter:"
+	}
+
+	"hud_on"
+	{
+		"da"		"HUD {purple}aktiveret!"
+	}
+
+	"hud_off"
+	{
+		"da"		"HUD {purple}deaktiveret!"
+	}
+
+	"hud_lastCT"
+	{
+		"da"		"Sidste Vagt:"
+	}
+
+}

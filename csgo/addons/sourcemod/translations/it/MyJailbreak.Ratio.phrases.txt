@@ -1,0 +1,86 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:25 UTC
+// Language: Italian (it)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/201
+//
+"Phrases"
+{
+
+	"ratio_auto"
+	{
+		"it"		"Non puoi usare l'auto select per entrare in un team."
+	}
+
+	"ratio_fullqueue"
+	{
+		"it"		"i CT sono pieni. Sei {green}#{1}{default} nella coda."
+	}
+
+	"ratio_info_title"
+	{
+		"it"		"Coda:"
+	}
+
+	"ratio_empty"
+	{
+		"it"		"La coda e' {green}vuota{default}."
+	}
+
+	"ratio_noct"
+	{
+		"it"		"Devi essere un {green}T{default} per entrare nella coda."
+	}
+
+	"ratio_find"
+	{
+		"it"		"Cercando un CT dalla coda... {green}{1} {default}e' il nuovo CT!"
+	}
+
+	"ratio_random"
+	{
+		"it"		"La coda e' vuota... {green}{1} {default}e' stato scelto casualmente ed e' stato spostato nei CT."
+	}
+
+	"ratio_novalid"
+	{
+		"it"		"C'e' stato un errore... per cortesia contatta un amministratore su steam o su teamspeak"
+	}
+
+	"ratio_number"
+	{
+		"it"		"Sei {green}#{1}{default} nella coda."
+	}
+
+	"ratio_thxvip"
+	{
+		"it"		"Grazie per Aver acquistato il {green}VIP"
+	}
+
+	"ratio_advip"
+	{
+		"it"		"Se non vuoi fare la coda prendi il {green}VIP"
+	}
+
+	"ratio_movetot"
+	{
+		"it"		"Ci sono troppi CT... {green}{1}{default} e' stato scelto casualmente ed e' stato spostato nei Prigionieri."
+	}
+
+	"ratio_removed"
+	{
+		"it"		"L'admin {1} ha rimosso {2} dalla coda!"
+	}
+
+	"ratio_notonqueue"
+	{
+		"it"		"Non sei in coda!"
+	}
+
+	"ratio_leavedqueue"
+	{
+		"it"		"Non sei più in coda!"
+	}
+
+}

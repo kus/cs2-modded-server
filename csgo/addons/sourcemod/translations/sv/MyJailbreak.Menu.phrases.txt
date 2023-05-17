@@ -1,0 +1,86 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:22 UTC
+// Language: Swedish (sv)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/180
+//
+"Phrases"
+{
+
+	"menu_math"
+	{
+		"sv"		"Starta ett Math Quiz"
+	}
+
+	"menu_noblock"
+	{
+		"sv"		"Toggle Noblock"
+	}
+
+	"menu_ffon"
+	{
+		"sv"		"Enable FF for Ts"
+	}
+
+	"menu_ffoff"
+	{
+		"sv"		"Stäng av FF för Ts"
+	}
+
+	"menu_unwarden"
+	{
+		"sv"		"Avgå som Warden"
+	}
+
+	"menu_getwarden"
+	{
+		"sv"		"Bli Warden"
+	}
+
+	"menu_check"
+	{
+		"sv"		"Check Rebellers"
+	}
+
+	"menu_lr"
+	{
+		"sv"		"Sista Förfrågan"
+	}
+
+	"menu_rules"
+	{
+		"sv"		"Regler"
+	}
+
+	"menu_joinct"
+	{
+		"sv"		"Bli en Vakt"
+	}
+
+	"menu_votewarden"
+	{
+		"sv"		"Rösta för att sparka Warden"
+	}
+
+	"menu_event_Titlestart"
+	{
+		"sv"		"Starta Event Nästa Runda"
+	}
+
+	"menu_suicidebomber"
+	{
+		"sv"		"Självmordsbombare"
+	}
+
+	"menu_mute"
+	{
+		"sv"		"Mute Menu"
+	}
+
+	"menu_disabled"
+	{
+		"sv"		"Event röstning är för nuvarande {purple}avstängd!"
+	}
+
+}

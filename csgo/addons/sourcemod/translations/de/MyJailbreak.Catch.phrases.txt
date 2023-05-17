@@ -1,0 +1,181 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:33 UTC
+// Language: German (de)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/185
+//
+"Phrases"
+{
+
+	"catch_need"
+	{
+		"de"		"{purple}{2}{default} hat gevotet. Jetzt noch {purple}{1}{default} votes bis {darkred}Catch{default} beginnt"
+	}
+
+	"catch_rounds"
+	{
+		"de"		"Runde {purple}{1}{default} von {purple}{2}"
+	}
+
+	"catch_twin_nc"
+	{
+		"de"		"Terroristen sind entkommen"
+	}
+
+	"catch_ctwin_nc"
+	{
+		"de"		"Alle Terroristen wurden wieder eingefangen"
+	}
+
+	"catch_end"
+	{
+		"de"		"{purple}Catch{default} beendet"
+	}
+
+	"catch_voting"
+	{
+		"de"		"Voting für Catch ist {purple}deaktiviert"
+	}
+
+	"catch_setbywarden"
+	{
+		"de"		"Catch Aktivierung durch den Warden ist {purple}deaktiviert"
+	}
+
+	"catch_setbyadmin"
+	{
+		"de"		"Catch Aktivierung durch den Admin ist {purple}deaktiviert"
+	}
+
+	"catch_next"
+	{
+		"de"		"Nächste Runde ist {purple}Catch"
+	}
+
+	"catch_next_nc"
+	{
+		"de"		"Nächste Runde ist Catch"
+	}
+
+	"catch_start"
+	{
+		"de"		"{purple}Catch{default} ist gestartet!"
+	}
+
+	"catch_start_nc"
+	{
+		"de"		"Fangen ist gestartet!"
+	}
+
+	"catch_voted"
+	{
+		"de"		"Du hast schon für {purple}Catch {default}gevotet"
+	}
+
+	"catch_progress"
+	{
+		"de"		"Event {darkred}{1} {default}ist {purple}bereits gesetzt."
+	}
+
+	"catch_minplayer"
+	{
+		"de"		"Für Catch brauchen wir mindestens {purple}einen CT und einen T"
+	}
+
+	"catch_sprint"
+	{
+		"de"		"Du {blue}sprintest!"
+	}
+
+	"catch_sprintend"
+	{
+		"de"		"Du kannst nicht mehr {blue}sprinten! {default}warte {1} Sekunden!"
+	}
+
+	"catch_sprintagain"
+	{
+		"de"		"Du kannst wieder {blue}sprinten!"
+	}
+
+	"catch_disabled"
+	{
+		"de"		"Catch ist vorübergehend {purple}deaktiviert."
+	}
+
+	"catch_info_title"
+	{
+		"de"		"Fangen ist aktiv"
+	}
+
+	"catch_info_line1"
+	{
+		"de"		"Die CT müssen alle T mit dem Messer einfangen und freezen"
+	}
+
+	"catch_info_line2"
+	{
+		"de"		"T können gefreezte T mit dem messer befreien"
+	}
+
+	"catch_info_line3"
+	{
+		"de"		"mit der BENUTZEN-Taste kannst du sprinten"
+	}
+
+	"catch_info_line4"
+	{
+		"de"		"Alle normalen Jailregeln sind aufgehoben!"
+	}
+
+	"catch_info_line5"
+	{
+		"de"		"Der letzte Terrorist hat keinen Wunsch frei!"
+	}
+
+	"catch_info_line6"
+	{
+		"de"		"Bleib im Haupt Jail Raum! Verstecke sind verboten!"
+	}
+
+	"catch_info_line7"
+	{
+		"de"		"Bau keine Scheisse!"
+	}
+
+	"catch_wait"
+	{
+		"de"		"Du musst noch {purple}{1}{default} Runden warten"
+	}
+
+	"catch_unfreeze"
+	{
+		"de"		"Häftling {purple}{1}{default} hat {blue}{2}{default} befreit"
+	}
+
+	"catch_catch"
+	{
+		"de"		"Wärter {purple}{1}{default} hat {blue}{2}{default} gefangen"
+	}
+
+	"catch_win"
+	{
+		"de"		"Alle Häftlinge wurden {purple}eingefangen"
+	}
+
+	"catch_name"
+	{
+		"de"		"Catch and Freeze"
+	}
+
+	"catch_timetounfreeze_nc"
+	{
+		"de"		"{1} Sekunden bis zum unfreeze"
+	}
+
+	"catch_timeuntilstart_nc"
+	{
+		"de"		"{1} Sekunden zum verstecken"
+	}
+
+}

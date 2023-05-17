@@ -1,0 +1,146 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:33 UTC
+// Language: Spanish (es)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/195
+//
+"Phrases"
+{
+
+	"knifefight_need"
+	{
+		"es"		"{purple}{2}{default} ha votado. {purple}{1}{default} votos requeridos para jugar {darkred}Knife Fight."
+	}
+
+	"knifefight_rounds"
+	{
+		"es"		"Ronda {purple}{1}{default} de {purple}{2}"
+	}
+
+	"knifefight_twin_nc"
+	{
+		"es"		"Un prisionero ha sobrevivido!"
+	}
+
+	"knifefight_voting"
+	{
+		"es"		"El voto para Knife Fight está {purple}deshabilitado!"
+	}
+
+	"knifefight_setbywarden"
+	{
+		"es"		"El seteo de Knife Fight por el Guardia está {purple}deshabilitado!"
+	}
+
+	"knifefight_setbyadmin"
+	{
+		"es"		"El seteo de Knife Fight por el Admin está {purple}deshabilitado!"
+	}
+
+	"knifefight_ctwin_nc"
+	{
+		"es"		"Un Guardia ha sobrevivido!"
+	}
+
+	"knifefight_minplayer"
+	{
+		"es"		"Para Knife Fight necesitas por lo menos {purple}un Guardia y un Prisionero!"
+	}
+
+	"knifefight_end"
+	{
+		"es"		"{purple}Knife Fight{default} ha terminado."
+	}
+
+	"knifefight_next"
+	{
+		"es"		"La siguiente ronda será: {purple}Knife Fight."
+	}
+
+	"knifefight_next_nc"
+	{
+		"es"		"La siguiente ronda será: Knife Fight."
+	}
+
+	"knifefight_start"
+	{
+		"es"		"{purple}Knife Fight{default} ha comenzado!"
+	}
+
+	"knifefight_start_nc"
+	{
+		"es"		"Knife Fight ha comenzado!"
+	}
+
+	"knifefight_voted"
+	{
+		"es"		"Ya has votado por {purple}Knife Fight"
+	}
+
+	"knifefight_progress"
+	{
+		"es"		"El evento {darkred}{1} {default}ya {purple}está en progreso!"
+	}
+
+	"knifefight_disabled"
+	{
+		"es"		"Knife Fight currently {purple}disabled!"
+	}
+
+	"knifefight_timeuntilstart_nc"
+	{
+		"es"		"{1} segundos hasta que la ronda comience!"
+	}
+
+	"knifefight_info_title"
+	{
+		"es"		"FFA Knife Fight - Free for All is now activated"
+	}
+
+	"knifefight_info_line1"
+	{
+		"es"		"Do not be surprised if ported to CT Spawn"
+	}
+
+	"knifefight_info_line2"
+	{
+		"es"		"IceSkates, Thirdperson y Poca Gravedad Activados."
+	}
+
+	"knifefight_info_line3"
+	{
+		"es"		"Huye durante la fase 'Sin Daño'!"
+	}
+
+	"knifefight_info_line4"
+	{
+		"es"		"Las reglas usuales de Jailbreak no aplican durante esta ronda!"
+	}
+
+	"knifefight_info_line5"
+	{
+		"es"		"LR esta deshabilitado durante esta ronda!"
+	}
+
+	"knifefight_info_line6"
+	{
+		"es"		"¡Debes permanecer en la Sala Principal de la Carcel! ¡No entres en tuberias o áreas secretas!"
+	}
+
+	"knifefight_info_line7"
+	{
+		"es"		"No seas un idiota!"
+	}
+
+	"knifefight_wait"
+	{
+		"es"		"Debes esperar {purple}{1}{default} rondas mas para otro {purple} Evento!"
+	}
+
+	"knifefight_name"
+	{
+		"es"		"Knife Fight"
+	}
+
+}

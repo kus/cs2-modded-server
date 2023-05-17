@@ -1,0 +1,91 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:32 UTC
+// Language: svn (svn)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/188
+//
+"Phrases"
+{
+
+	"weapons_disabled"
+	{
+		"svn"		"{purple}Orožja so trenutno {default} onemogočena!"
+	}
+
+	"weapons_same"
+	{
+		"svn"		"Dobil boš {purple}isto orožje{default}."
+	}
+
+	"weapons_sameall"
+	{
+		"svn"		"Dobil boš {purple} ista orožja{default} vsako rundo."
+	}
+
+	"weapons_random"
+	{
+		"svn"		"Dobil boš {purple} naključno orožje{default}."
+	}
+
+	"weapons_randomall"
+	{
+		"svn"		"Dobil boš {purple} naključno orožje{default} vsako rundo."
+	}
+
+	"weapons_next"
+	{
+		"svn"		"Tvoje nastavitve bodo{purple} omogočene{default} naslednjo rundo."
+	}
+
+	"weapons_ta"
+	{
+		"svn"		"Dobil si {purple} TAGrenade{default}!"
+	}
+
+	"weapons_health"
+	{
+		"svn"		"Dobil si {purple} healthshot{default}"
+	}
+
+	"weapons_info_title"
+	{
+		"svn"		"MyJB.Orožja"
+	}
+
+	"weapons_info_choose"
+	{
+		"svn"		"Izberi orožje"
+	}
+
+	"weapons_info_same"
+	{
+		"svn"		"Isto orožje"
+	}
+
+	"weapons_info_sameall"
+	{
+		"svn"		"Isto orožje vsako rundo"
+	}
+
+	"weapons_info_random"
+	{
+		"svn"		"Naključno orožje"
+	}
+
+	"weapons_info_randomall"
+	{
+		"svn"		"Naključno orožje vsako rundo"
+	}
+
+	"weapons_info_prim"
+	{
+		"svn"		"Glavno orožje:"
+	}
+
+	"weapons_info_sec"
+	{
+		"svn"		"Drugo orožje:"
+	}
+
+}

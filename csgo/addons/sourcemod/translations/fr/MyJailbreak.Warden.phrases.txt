@@ -1,0 +1,51 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:18 UTC
+// Language: French (fr)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/178
+//
+"Phrases"
+{
+
+	"warden_exist"
+	{
+		"fr"		"Le gardien actuel est: {purple}{1}{default}."
+	}
+
+	"warden_retire"
+	{
+		"fr"		"{purple}{1}{default} a décidé de quitter son rôle de Gardien. Vous pouvez maintenant en choisir un nouveau ! "
+	}
+
+	"warden_dead"
+	{
+		"fr"		"Le gardien est maintenant {darkred}mort{default}. Vous pouvez maintenant en choisir un nouveau."
+	}
+
+	"warden_nowarden"
+	{
+		"fr"		"Il n'y a pas actuellement de {purple}Gardien{default}.Ecrit {green}!w{default} pour devenir le gardien!"
+	}
+
+	"warden_removed"
+	{
+		"fr"		"Admin: {purple}{1}{default} a renvoyé le gardien: {purple}{2}"
+	}
+
+	"warden_removed_nc"
+	{
+		"fr"		"Admin: {1} a renvoyé le gardien: {2}"
+	}
+
+	"warden_15"
+	{
+		"fr"		"15 secondes"
+	}
+
+	"warden_startmathquiz"
+	{
+		"fr"		"Attention ! Le Gardien a commencé un  {purple} quiz de Maths ! "
+	}
+
+}

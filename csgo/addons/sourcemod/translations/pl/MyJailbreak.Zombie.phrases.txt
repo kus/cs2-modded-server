@@ -1,0 +1,146 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:31 UTC
+// Language: Polish (pl)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/184
+//
+"Phrases"
+{
+
+	"zombie_need"
+	{
+		"pl"		"{purple}{2}{default} zaglosowal {purple}{1}{default} pozostalo glosow do {darkred}ZOMBIE"
+	}
+
+	"zombie_rounds"
+	{
+		"pl"		"Runda {purple}{1}{default} z {purple}{2}"
+	}
+
+	"zombie_voting"
+	{
+		"pl"		"Glosowanie graczy na Zombie jest {purple}wylaczone"
+	}
+
+	"zombie_setbywarden"
+	{
+		"pl"		"Glosowanie na Zombie przez Straznika jest {purple}wylaczone"
+	}
+
+	"zombie_setbyadmin"
+	{
+		"pl"		"Wlaczenie Zombie przez admina jest {purple}wylaczone"
+	}
+
+	"zombie_ctwin_nc"
+	{
+		"pl"		"Zombie zabily wszystkich Ludzi"
+	}
+
+	"zombie_twin_nc"
+	{
+		"pl"		"Ludzie przetrwali"
+	}
+
+	"zombie_end"
+	{
+		"pl"		"{purple}Zombie{default} zakonczony"
+	}
+
+	"zombie_next_nc"
+	{
+		"pl"		"Nastepna runda to Zombie"
+	}
+
+	"zombie_next"
+	{
+		"pl"		"Nastepna runda to {purple}Zombie"
+	}
+
+	"zombie_start"
+	{
+		"pl"		"{purple}ZombieDay{default} sie rozpoczal!"
+	}
+
+	"zombie_start_nc"
+	{
+		"pl"		"ZombieDay sie rozpoczal!"
+	}
+
+	"zombie_voted"
+	{
+		"pl"		"Juz glosowales na {purple}Zombie"
+	}
+
+	"zombie_progress"
+	{
+		"pl"		"Zabawa  {darkred}{1} {default}sie {purple}rozpoczela"
+	}
+
+	"zombie_minplayer"
+	{
+		"pl"		"Do zabawy Zombie potrzeba przynajmniej {purple}jednego CT"
+	}
+
+	"zombie_timeuntilzombie_nc"
+	{
+		"pl"		"{1} sekund do startu!"
+	}
+
+	"zombie_timetounfreeze_nc"
+	{
+		"pl"		"{1} sekund do odmrozenia"
+	}
+
+	"zombie_info_title"
+	{
+		"pl"		"Zombie jest Aktywne"
+	}
+
+	"zombie_info_line1"
+	{
+		"pl"		"Zombies(ct) przeciwko Ludzkosci (t)"
+	}
+
+	"zombie_info_line2"
+	{
+		"pl"		"Zombie zamarzly , czas sie schowac!!! "
+	}
+
+	"zombie_info_line3"
+	{
+		"pl"		"Uwaga, Zombie maja o wiele wiecej HP."
+	}
+
+	"zombie_info_line4"
+	{
+		"pl"		"Wszystkie normalne zasady wiezienia zostaly zastapione"
+	}
+
+	"zombie_info_line5"
+	{
+		"pl"		"Nie ma ostatniego zyczenia!"
+	}
+
+	"zombie_info_line6"
+	{
+		"pl"		"Kazdy moze isc i chowac sie gdzie chce "
+	}
+
+	"zombie_info_line7"
+	{
+		"pl"		"Nie badz DUPKIEM!"
+	}
+
+	"zombie_wait"
+	{
+		"pl"		"Musisz poczekac  {1} rund"
+	}
+
+	"zombie_disabled"
+	{
+		"pl"		"Zombie jest tymczasowo {purple}wylaczony."
+	}
+
+}

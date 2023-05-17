@@ -1,0 +1,91 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:32 UTC
+// Language: Russian (ru)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/188
+//
+"Phrases"
+{
+
+	"weapons_disabled"
+	{
+		"ru"		"{purple}Меню оружий {default} отключено."
+	}
+
+	"weapons_same"
+	{
+		"ru"		"Вы получите {purple} это же оружие{default}"
+	}
+
+	"weapons_sameall"
+	{
+		"ru"		"Вы получите {purple} это же оружие{default} в следующих раундах"
+	}
+
+	"weapons_random"
+	{
+		"ru"		"Вы получите {purple} случайное оружие{default}"
+	}
+
+	"weapons_randomall"
+	{
+		"ru"		"Вы получите {purple} случайное оружие{default} в следующих раундах"
+	}
+
+	"weapons_next"
+	{
+		"ru"		"Вы получите {purple} новое оружие{default} в следующем раунде"
+	}
+
+	"weapons_ta"
+	{
+		"ru"		"У вас есть {purple} TA  граната{default}"
+	}
+
+	"weapons_health"
+	{
+		"ru"		"У вас есть {purple} шприц адреналина {default}"
+	}
+
+	"weapons_info_title"
+	{
+		"ru"		"Меню оружий"
+	}
+
+	"weapons_info_choose"
+	{
+		"ru"		"Выберите оружие"
+	}
+
+	"weapons_info_same"
+	{
+		"ru"		"Одинаковое оружие"
+	}
+
+	"weapons_info_sameall"
+	{
+		"ru"		"Одинаковое оружие каждый раунд"
+	}
+
+	"weapons_info_random"
+	{
+		"ru"		"Случайное оружие"
+	}
+
+	"weapons_info_randomall"
+	{
+		"ru"		"Случайное оружие каждый раунд"
+	}
+
+	"weapons_info_prim"
+	{
+		"ru"		"Основное оружие:"
+	}
+
+	"weapons_info_sec"
+	{
+		"ru"		"Второе оружие:"
+	}
+
+}

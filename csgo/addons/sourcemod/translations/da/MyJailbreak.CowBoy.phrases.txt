@@ -1,0 +1,121 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:26 UTC
+// Language: Danish (da)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/190
+//
+"Phrases"
+{
+
+	"cowboy_need"
+	{
+		"da"		"{purple}{2}{default} har afstemt!. {purple}{1}{default} afstemninger tilbage til {darkred}cowboy"
+	}
+
+	"cowboy_rounds"
+	{
+		"da"		"Runde {purple}{1}{default} af {purple}{2}"
+	}
+
+	"cowboy_twin_nc"
+	{
+		"da"		"En Terrorists har overlevet!"
+	}
+
+	"cowboy_voting"
+	{
+		"da"		"Afstemninger for No Scope er {purple}slået fra"
+	}
+
+	"cowboy_setbywarden"
+	{
+		"da"		"Warden bestemmer runde for No Scope er {purple}slået fra"
+	}
+
+	"cowboy_minplayer"
+	{
+		"da"		"For cowboy skal der mindst være {purple}en CT"
+	}
+
+	"cowboy_setbyadmin"
+	{
+		"da"		"Admin bestemmer runde for No Scope er {purple}slået fra"
+	}
+
+	"cowboy_ctwin_nc"
+	{
+		"da"		"En Counter-Terrorists har overlevet!"
+	}
+
+	"cowboy_end"
+	{
+		"da"		"{purple}Cowboy{default} er afsluttet!"
+	}
+
+	"cowboy_next"
+	{
+		"da"		"Næste runde er {purple}Cowboy"
+	}
+
+	"cowboy_next_nc"
+	{
+		"da"		"Næste runde er Cowboy"
+	}
+
+	"cowboy_start"
+	{
+		"da"		"{purple}Cowboy{default} er startet!"
+	}
+
+	"cowboy_start_nc"
+	{
+		"da"		"No Scope er startet!"
+	}
+
+	"cowboy_voted"
+	{
+		"da"		"Du har allerede stemt for {purple}Cowboy!"
+	}
+
+	"cowboy_disabled"
+	{
+		"da"		"Cowboy er midlertidigt {purple}slået fra."
+	}
+
+	"cowboy_timeuntilstart_nc"
+	{
+		"da"		"{1} sekunder til runden starter!"
+	}
+
+	"cowboy_info_line1"
+	{
+		"da"		"Cowboy - er hver mod hver!"
+	}
+
+	"cowboy_info_line3"
+	{
+		"da"		"Den sidste som overlever vinder runden!"
+	}
+
+	"cowboy_info_line4"
+	{
+		"da"		"Alle jail regler er ophævet!"
+	}
+
+	"cowboy_info_line5"
+	{
+		"da"		"Der kan ikke laves Last Request i denne runde!"
+	}
+
+	"cowboy_info_line7"
+	{
+		"da"		"Alle server regler skal overholdes!"
+	}
+
+	"cowboy_wait"
+	{
+		"da"		"Du skal vente {1} flere runder!"
+	}
+
+}

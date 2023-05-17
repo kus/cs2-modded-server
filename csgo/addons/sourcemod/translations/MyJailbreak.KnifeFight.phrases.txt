@@ -1,0 +1,161 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:33 UTC
+// Language: English (en)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/195
+//
+"Phrases"
+{
+
+	"knifefight_need"
+	{
+		"#format"	"{1:i},{2:N}"
+		"en"		"{purple}{2}{default} has voted. {purple}{1}{default} votes required to play {darkred}Knife Fight."
+	}
+
+	"knifefight_rounds"
+	{
+		"#format"	"{1:i},{2:i}"
+		"en"		"Round {purple}{1}{default} of {purple}{2}"
+	}
+
+	"knifefight_twin_nc"
+	{
+		"en"		"A Prisoner has survived!"
+	}
+
+	"knifefight_voting"
+	{
+		"en"		"Voting for Knife Fight is {purple}disabled!"
+	}
+
+	"knifefight_setbywarden"
+	{
+		"en"		"Set Knife Fight by Warden is {purple}disabled!"
+	}
+
+	"knifefight_setbyadmin"
+	{
+		"en"		"Set Knife Fight by Admin is {purple}disabled!"
+	}
+
+	"knifefight_ctwin_nc"
+	{
+		"en"		"A Guard has survived!"
+	}
+
+	"knifefight_minplayer"
+	{
+		"en"		"For Knife Fight you need at least {purple}one Guard and one Prisoner!"
+	}
+
+	"knifefight_end"
+	{
+		"en"		"{purple}Knife Fight{default} has ended."
+	}
+
+	"knifefight_next"
+	{
+		"en"		"The following round will be: {purple}Knife Fight."
+	}
+
+	"knifefight_next_nc"
+	{
+		"en"		"The following round will be: Knife Fight."
+	}
+
+	"knifefight_start"
+	{
+		"en"		"{purple}Knife Fight{default} has begun!"
+	}
+
+	"knifefight_start_nc"
+	{
+		"en"		"Knife Fight has begun!"
+	}
+
+	"knifefight_voted"
+	{
+		"en"		"You have already voted for {purple}Knife Fight"
+	}
+
+	"knifefight_progress"
+	{
+		"#format"	"{1:s}"
+		"en"		"The event {darkred}{1} {default}is {purple}already in progress!"
+	}
+
+	"knifefight_disabled"
+	{
+		"en"		"Knife Fight currently {purple}disabled!"
+	}
+
+	"knifefight_timeuntilstart_nc"
+	{
+		"#format"	"{1:i}"
+		"en"		"{1} seconds until round start!"
+	}
+
+	"knifefight_info_title"
+	{
+		"en"		"FFA Knife Fight - Free for All is now activated"
+	}
+
+	"knifefight_info_line1"
+	{
+		"en"		"Do not be surprised if ported to CT Spawn"
+	}
+
+	"knifefight_info_line2"
+	{
+		"en"		"IceSkates, Thirdperson & Low Gravity activatet."
+	}
+
+	"knifefight_info_line3"
+	{
+		"en"		"Run away during the 'NoDamage' phase!"
+	}
+
+	"knifefight_info_line4"
+	{
+		"en"		"All ususal Jailbreak Rules do not apply during this round!"
+	}
+
+	"knifefight_info_line5"
+	{
+		"en"		"Last Request is disabled during this round!"
+	}
+
+	"knifefight_info_line6"
+	{
+		"en"		"You must stay in the main Jailroom! Don't enter vents or secret areas!"
+	}
+
+	"knifefight_info_line7"
+	{
+		"en"		"Don't be an Asshole!"
+	}
+
+	"knifefight_wait"
+	{
+		"#format"	"{1:i}"
+		"en"		"You must wait {purple}{1}{default} more rounds for an Event Day!"
+	}
+
+	"knifefight_name"
+	{
+		"en"		"Knife Fight"
+	}
+
+	"knifefight_now_nc"
+	{
+		"en"		"Now a knifefight round begins."
+	}
+
+	"knifefight_now"
+	{
+		"en"		"Now a {purple}knifefight{default} round begins."
+	}
+
+}

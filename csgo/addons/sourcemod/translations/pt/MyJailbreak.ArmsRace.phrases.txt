@@ -1,0 +1,61 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:34 UTC
+// Language: Brazilian Portuguese (pt)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/278
+//
+"Phrases"
+{
+
+	"armsrace_voting"
+	{
+		"pt"		"Votação para Corrida Armada está {purple}desabilitada!"
+	}
+
+	"armsrace_winner"
+	{
+		"pt"		"{purple}{1}{default} Venceu a Corrida Armada!"
+	}
+
+	"armsrace_next_nc"
+	{
+		"pt"		"O proximo round será: Corrida Armada."
+	}
+
+	"armsrace_start"
+	{
+		"pt"		"{purple}Corrida Armada{default} começou!"
+	}
+
+	"armsrace_info_line1"
+	{
+		"pt"		"Não fique surpreso se você nascer no Arsenal!"
+	}
+
+	"armsrace_info_line1"
+	{
+		"pt"		"Não fique surpreso se você spawnar no Arsenal!"
+	}
+
+	"armsrace_info_line3"
+	{
+		"pt"		"Corra durante o período de 'ZeroDano'!"
+	}
+
+	"armsrace_info_line7"
+	{
+		"pt"		"Não seja um Cuzão!"
+	}
+
+	"RoundThree"
+	{
+		"pt"		"Este é o ultimo round de Corrida Armada!"
+	}
+
+	"armsrace_levelup"
+	{
+		"pt"		"{purple}Subiu de Nível!{default} Agora você tem um {1}!"
+	}
+
+}

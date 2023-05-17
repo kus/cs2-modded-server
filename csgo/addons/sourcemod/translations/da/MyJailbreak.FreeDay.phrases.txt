@@ -1,0 +1,96 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:28 UTC
+// Language: Danish (da)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/192
+//
+"Phrases"
+{
+
+	"freeday_end"
+	{
+		"da"		"{purple}Freeday{default} er afsluttet!"
+	}
+
+	"freeday_need"
+	{
+		"da"		"{purple}{2}{default} har afstemt. {purple}{1}{default} afstemninger tilbage til {darkred}Freeday"
+	}
+
+	"freeday_next"
+	{
+		"da"		"Næste runde er {purple}Freeday"
+	}
+
+	"freeday_next_nc"
+	{
+		"da"		"Næste runde er Freeday"
+	}
+
+	"freeday_voting"
+	{
+		"da"		"Afstemninger er {purple}slået fra"
+	}
+
+	"freeday_setbywarden"
+	{
+		"da"		"Warden vælger runde er {purple}slået fra"
+	}
+
+	"freeday_setbyadmin"
+	{
+		"da"		"Admin vælger runde er {purple}slået fra"
+	}
+
+	"freeday_start_nc"
+	{
+		"da"		"Freeday er startet!"
+	}
+
+	"freeday_start"
+	{
+		"da"		"{purple}Freeday{default} er startet!"
+	}
+
+	"freeday_voted"
+	{
+		"da"		"Du har allerede stemt for {purple}Freeday runde!"
+	}
+
+	"freeday_disabled"
+	{
+		"da"		"Freeday er midlertidigt {purple}slået fra."
+	}
+
+	"freeday_info_line4"
+	{
+		"da"		"Alle jail regler er ophævet!"
+	}
+
+	"freeday_info_line5"
+	{
+		"da"		"Der kan ikke laves !lr i Freeday"
+	}
+
+	"freeday_info_line6"
+	{
+		"da"		"T kan gå hvor hen de vil - De må bare ikke have våben!"
+	}
+
+	"freeday_info_line7"
+	{
+		"da"		"Serverne regler skal overholdes!"
+	}
+
+	"freeday_wait"
+	{
+		"da"		"Du skal vente {1} flere runder!"
+	}
+
+	"freeday_now"
+	{
+		"da"		"En {purple}freeday{default} runde begynder nu"
+	}
+
+}

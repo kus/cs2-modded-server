@@ -1,0 +1,173 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:21 UTC
+// Language: English (en)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/179
+//
+"Phrases"
+{
+
+	"war_need"
+	{
+		"#format"	"{1:i},{2:N}"
+		"en"		"{purple}{2}{default} has voted. {purple}{1}{default} votes required to play {darkred}War."
+	}
+
+	"war_rounds"
+	{
+		"#format"	"{1:i},{2:i}"
+		"en"		"Round {purple}{1}{default} of {purple}{2}"
+	}
+
+	"war_twin_nc"
+	{
+		"en"		"Prisoners win!"
+	}
+
+	"war_ctwin_nc"
+	{
+		"en"		"The Guards win!"
+	}
+
+	"war_end"
+	{
+		"en"		"{purple}War{default} has ended."
+	}
+
+	"war_next"
+	{
+		"en"		"The following round will be: {purple}War."
+	}
+
+	"war_next_nc"
+	{
+		"en"		"The following round will be: War."
+	}
+
+	"war_start"
+	{
+		"en"		"The {purple}War{default} has begun!"
+	}
+
+	"war_start_nc"
+	{
+		"en"		"The War has begun!"
+	}
+
+	"war_voted"
+	{
+		"en"		"You have already voted for {purple}War!"
+	}
+
+	"war_progress"
+	{
+		"#format"	"{1:s}"
+		"en"		"The event {darkred}{1} {default}is {purple}already in progress!"
+	}
+
+	"war_minplayer"
+	{
+		"en"		"For a War you need at least {purple}one Guard & one Prisoner!"
+	}
+
+	"war_disabled"
+	{
+		"en"		"War is currently {purple}disabled!"
+	}
+
+	"war_damage_nc"
+	{
+		"#format"	"{1:i}"
+		"en"		"{1} seconds until damage is enabled!"
+	}
+
+	"war_voting"
+	{
+		"en"		"Voting for War {purple}is disabled"
+	}
+
+	"war_setbywarden"
+	{
+		"en"		"Set War by Warden is {purple}disabled!"
+	}
+
+	"war_setbyadmin"
+	{
+		"en"		"Set War by Admin is {purple}disabled!"
+	}
+
+	"war_info_title"
+	{
+		"en"		"War is now Activated!"
+	}
+
+	"war_info_line1"
+	{
+		"en"		"Do not be surprised if you are frozen in the air!"
+	}
+
+	"war_info_line2"
+	{
+		"en"		"The Guards are at war with the Prisoners!"
+	}
+
+	"war_info_line3"
+	{
+		"en"		"Run away during the 'NoDamage' phase!"
+	}
+
+	"war_info_line4"
+	{
+		"en"		"All usual Jailbreak Rules do not apply during this round!"
+	}
+
+	"war_info_line5"
+	{
+		"en"		"Last Request is disabled during this round!"
+	}
+
+	"war_info_line6"
+	{
+		"en"		"Everyone is allowed to go everywhere where he wants"
+	}
+
+	"war_info_line7"
+	{
+		"en"		"Don't be an Asshole!"
+	}
+
+	"war_wait"
+	{
+		"#format"	"{1:i}"
+		"en"		"You must wait {purple}{1}{default} more rounds for an Event Day!"
+	}
+
+	"war_timetounfreeze_nc"
+	{
+		"#format"	"{1:i}"
+		"en"		"{1} seconds until you will be unfreezed!"
+	}
+
+	"war_timetohide_nc"
+	{
+		"#format"	"{1:i}"
+		"en"		"{1} seconds left to hide!"
+	}
+
+	"war_name"
+	{
+		"en"		"War"
+	}
+
+	"war_now_nc"
+	{
+		"en"		"Now a war round begins."
+	}
+
+	"war_now"
+	{
+		"en"		"Now a {purple}war{default} round begins."
+	}
+
+}

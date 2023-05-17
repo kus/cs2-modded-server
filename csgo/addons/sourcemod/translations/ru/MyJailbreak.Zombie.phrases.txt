@@ -1,0 +1,166 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:31 UTC
+// Language: Russian (ru)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/184
+//
+"Phrases"
+{
+
+	"zombie_need"
+	{
+		"ru"		"{purple}{2}{default} проголосовал. {purple}{1}{default} голосов осталось до {darkred}Зомби дня"
+	}
+
+	"zombie_rounds"
+	{
+		"ru"		"Раунд {purple}{1}{default} о {purple}{2}"
+	}
+
+	"zombie_voting"
+	{
+		"ru"		"Голосования за зомби день {purple}отключено"
+	}
+
+	"zombie_setbywarden"
+	{
+		"ru"		"Командир {purple}отключил{default} выбор Зомби дня"
+	}
+
+	"zombie_setbyadmin"
+	{
+		"ru"		"Администратор {purple}отключил{default} выбор Зомби дня"
+	}
+
+	"zombie_ctwin_nc"
+	{
+		"ru"		"Зомби убили всех людей"
+	}
+
+	"zombie_twin_nc"
+	{
+		"ru"		"Люди выжили"
+	}
+
+	"zombie_end"
+	{
+		"ru"		"{purple}Зомби день{default} окончен!"
+	}
+
+	"zombie_next_nc"
+	{
+		"ru"		"Следующий раунд Зомби день"
+	}
+
+	"zombie_next"
+	{
+		"ru"		"Следующий раунд {purple}Зомби день"
+	}
+
+	"zombie_start"
+	{
+		"ru"		"{purple}Зомби день{default} начались!"
+	}
+
+	"zombie_start"
+	{
+		"ru"		"{purple}Зомби день{default} начались!"
+	}
+
+	"zombie_start_nc"
+	{
+		"ru"		"Зомби день начался!"
+	}
+
+	"zombie_voted"
+	{
+		"ru"		"Вы проголосовали за {purple}Зомби день"
+	}
+
+	"zombie_progress"
+	{
+		"ru"		"Игровой день {darkred}{1} {default}в {purple}процессе."
+	}
+
+	"zombie_minplayer"
+	{
+		"ru"		"Для зомби дня нужен минимум {purple} один КТ"
+	}
+
+	"zombie_timeuntilzombie_nc"
+	{
+		"ru"		"{1} секунд, чтобы спрятаться"
+	}
+
+	"zombie_timetounfreeze_nc"
+	{
+		"ru"		"{1} секунд до разморозки"
+	}
+
+	"zombie_info_title"
+	{
+		"ru"		"Зомби день активен"
+	}
+
+	"zombie_info_line1"
+	{
+		"ru"		"Зомби(ct) против Людей(t)"
+	}
+
+	"zombie_info_line2"
+	{
+		"ru"		"Зомби заморожены и Люди могут спрятаться"
+	}
+
+	"zombie_info_line3"
+	{
+		"ru"		"Зомби получили очень много ХП."
+	}
+
+	"zombie_info_line4"
+	{
+		"ru"		"Все нормальные правила тюрьмы отменяются"
+	}
+
+	"zombie_info_line5"
+	{
+		"ru"		"Здесь нету последних желаний!"
+	}
+
+	"zombie_info_line6"
+	{
+		"ru"		"Каждый может идти туда, куда захочет."
+	}
+
+	"zombie_info_line7"
+	{
+		"ru"		"Не будь мудаком!"
+	}
+
+	"zombie_wait"
+	{
+		"ru"		"Вы должны подождать больше {purple}{1}{default} раундов"
+	}
+
+	"zombie_disabled"
+	{
+		"ru"		"Зомби день {purple}отключен."
+	}
+
+	"zombie_name"
+	{
+		"ru"		"Зомби день"
+	}
+
+	"zombie_now_nc"
+	{
+		"ru"		"Начинается Зомби раунд."
+	}
+
+	"zombie_now"
+	{
+		"ru"		"Начинается {purple}Зомби{default} раунд."
+	}
+
+}

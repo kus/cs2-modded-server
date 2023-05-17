@@ -1,0 +1,146 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:30 UTC
+// Language: svn (svn)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/189
+//
+"Phrases"
+{
+
+	"zeus_need"
+	{
+		"svn"		"{purple}{2}{default} je glasoval {purple}{1}{default} potrebnih, da se začne {darkred}Zeus dan."
+	}
+
+	"zeus_rounds"
+	{
+		"svn"		"Runda {purple}{1}{default} od {purple}{2}"
+	}
+
+	"zeus_twin_nc"
+	{
+		"svn"		"Zapornik je preživel!"
+	}
+
+	"zeus_voting"
+	{
+		"svn"		"Glasovanje za Zeus dan  je {purple}onemogočeno"
+	}
+
+	"zeus_setbywarden"
+	{
+		"svn"		"Nastavitev Zeus dneva je {purple}onemogočena!"
+	}
+
+	"zeus_setbyadmin"
+	{
+		"svn"		"Nastavitev Zeus dneva je {purple}onemogočena!"
+	}
+
+	"zeus_minplayer"
+	{
+		"svn"		"Za Zeus dan potrebuješ vsaj {purple}enega zapornika in enega policaja!"
+	}
+
+	"zeus_ctwin_nc"
+	{
+		"svn"		"Paznik je preživel!"
+	}
+
+	"zeus_end"
+	{
+		"svn"		"{purple}Zeus dan{default} se je končal."
+	}
+
+	"zeus_next"
+	{
+		"svn"		"Prihajajoča runda bo: {purple}Zeus Dan."
+	}
+
+	"zeus_next_nc"
+	{
+		"svn"		"Prihajajoča runda bo: Zeus Dan."
+	}
+
+	"zeus_start"
+	{
+		"svn"		"{purple}Zeus Dan{default} se je začel!"
+	}
+
+	"zeus_start_nc"
+	{
+		"svn"		"Zeus Dan se je začel!"
+	}
+
+	"zeus_voted"
+	{
+		"svn"		"Si že glasoval za {purple}Zeus Dan!"
+	}
+
+	"zeus_progress"
+	{
+		"svn"		"Poseben dan{darkred}{1} {default}že {purple}poteka!"
+	}
+
+	"zeus_disabled"
+	{
+		"svn"		"Zeus dan je trenutno {purple}onemogočen!"
+	}
+
+	"zeus_timeuntilstart_nc"
+	{
+		"svn"		"{1} sekund, preden se začne Zeus dan!"
+	}
+
+	"zeus_info_title"
+	{
+		"svn"		"Zeus dan je sedaj aktiviran!"
+	}
+
+	"zeus_info_line1"
+	{
+		"svn"		"Zeus dan - Vsak za sebe!"
+	}
+
+	"zeus_info_line2"
+	{
+		"svn"		"V Zeusu imaš samo 1 strel!"
+	}
+
+	"zeus_info_line3"
+	{
+		"svn"		"Ko nekoga z Zeusom ubiješ, dobiš nov strel!"
+	}
+
+	"zeus_info_line4"
+	{
+		"svn"		"Vsa ostala pravila so to rundo onemogočena!"
+	}
+
+	"zeus_info_line5"
+	{
+		"svn"		"LR bitka je to rundo onemogočena!"
+	}
+
+	"zeus_info_line6"
+	{
+		"svn"		"Ostati moraš v glavnih sobah mape, jaški in skrivni prostori ne veljajo!"
+	}
+
+	"zeus_info_line7"
+	{
+		"svn"		"Spoštuj igralce!"
+	}
+
+	"zeus_wait"
+	{
+		"svn"		"Počakati moraš še {purple}{1}{default} rund, da začneš z Zeus dnevom!"
+	}
+
+	"zeus_name"
+	{
+		"svn"		"Zeus dan"
+	}
+
+}

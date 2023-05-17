@@ -1,0 +1,91 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:32 UTC
+// Language: Chinese (Simplified) (chi)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/188
+//
+"Phrases"
+{
+
+	"weapons_disabled"
+	{
+		"chi"		"{purple}武器菜单{default}已停用!"
+	}
+
+	"weapons_same"
+	{
+		"chi"		"将会领取{purple}相同武器{default}."
+	}
+
+	"weapons_sameall"
+	{
+		"chi"		"每回合领取{purple}随机武器{default}."
+	}
+
+	"weapons_random"
+	{
+		"chi"		"将会领取 {purple}相同武器{default}."
+	}
+
+	"weapons_randomall"
+	{
+		"chi"		"每回合领取{purple}相同武器{default}."
+	}
+
+	"weapons_next"
+	{
+		"chi"		"你的设置在{purple}下回合生效{default}."
+	}
+
+	"weapons_ta"
+	{
+		"chi"		"已获得{purple}战术探测手雷{default}!"
+	}
+
+	"weapons_health"
+	{
+		"chi"		"已获得{purple} 医疗针{default}!"
+	}
+
+	"weapons_info_title"
+	{
+		"chi"		"越狱逃亡-武器菜单"
+	}
+
+	"weapons_info_choose"
+	{
+		"chi"		"选择一个武器"
+	}
+
+	"weapons_info_same"
+	{
+		"chi"		"相同武器"
+	}
+
+	"weapons_info_sameall"
+	{
+		"chi"		"每回合使用相同武器"
+	}
+
+	"weapons_info_random"
+	{
+		"chi"		"随机武器"
+	}
+
+	"weapons_info_randomall"
+	{
+		"chi"		"每回合使用随机武器"
+	}
+
+	"weapons_info_prim"
+	{
+		"chi"		"主武器:"
+	}
+
+	"weapons_info_sec"
+	{
+		"chi"		"副武器:"
+	}
+
+}

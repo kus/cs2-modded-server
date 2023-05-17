@@ -1,0 +1,146 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:30 UTC
+// Language: German (de)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/193
+//
+"Phrases"
+{
+
+	"hebattle_need"
+	{
+		"de"		"{purple}{2}{default} hat gevotet. Jetzt noch {purple}{1}{default} votes bis {darkred}hebattle{default} beginnt"
+	}
+
+	"hebattle_rounds"
+	{
+		"de"		"Runde {purple}{1}{default} von {purple}{2}"
+	}
+
+	"hebattle_minplayer"
+	{
+		"de"		"Für HE Battle brauchen wir mindestens {purple}einen CT"
+	}
+
+	"hebattle_twin_nc"
+	{
+		"de"		"Ein Terrorist hat als einziger überlebt"
+	}
+
+	"hebattle_voting"
+	{
+		"de"		"Voting für HE Battle ist {purple}deaktiviert"
+	}
+
+	"hebattle_setbywarden"
+	{
+		"de"		"HE Battle Aktivierung durch den Warden ist {purple}deaktiviert"
+	}
+
+	"hebattle_setbyadmin"
+	{
+		"de"		"HE Battle Aktivierung durch den Admin ist {purple}deaktiviert"
+	}
+
+	"hebattle_ctwin_nc"
+	{
+		"de"		"Ein Counter-Terrorists hat als einziger überlebt"
+	}
+
+	"hebattle_end"
+	{
+		"de"		"{purple}HE Battle{default} beendet"
+	}
+
+	"hebattle_next"
+	{
+		"de"		"Nächste Runde ist {purple}HE Battle"
+	}
+
+	"hebattle_next_nc"
+	{
+		"de"		"Nächste Runde ist HE Battle"
+	}
+
+	"hebattle_start"
+	{
+		"de"		"{purple}HE Battle{default} ist gestartet!"
+	}
+
+	"hebattle_start_nc"
+	{
+		"de"		"HE Battle ist gestartet!"
+	}
+
+	"hebattle_voted"
+	{
+		"de"		"Du hast schon für {purple}HE Battle {default}gevotet"
+	}
+
+	"hebattle_progress"
+	{
+		"de"		"Event {darkred}{1} {default}ist {purple}bereits gesetzt."
+	}
+
+	"hebattle_disabled"
+	{
+		"de"		"HE Battle ist vorübergehend {purple}deaktiviert."
+	}
+
+	"hebattle_timeuntilstart_nc"
+	{
+		"de"		"{1} Sekunden bis zum Start!"
+	}
+
+	"hebattle_info_title"
+	{
+		"de"		"HE Battle ist aktiv"
+	}
+
+	"hebattle_info_line1"
+	{
+		"de"		"FFA HE Battle mit low Gravity"
+	}
+
+	"hebattle_info_line2"
+	{
+		"de"		"Nicht wundern falls ihr zum CT Spawngeportet wurdet!"
+	}
+
+	"hebattle_info_line3"
+	{
+		"de"		"Du machst bis zum Start keinen Schaden"
+	}
+
+	"hebattle_info_line4"
+	{
+		"de"		"Alle normalen Jailregeln sind aufgehoben!"
+	}
+
+	"hebattle_info_line5"
+	{
+		"de"		"Der letzte Terrorist hat keinen Wunsch frei!"
+	}
+
+	"hebattle_info_line6"
+	{
+		"de"		"Bleib im Haupt Jail Raum! Verstecke sind verboten!"
+	}
+
+	"hebattle_info_line7"
+	{
+		"de"		"Bau keine Scheisse!"
+	}
+
+	"hebattle_wait"
+	{
+		"de"		"Du musst noch {1} Runden warten"
+	}
+
+	"hebattle_name"
+	{
+		"de"		"HE Battle"
+	}
+
+}

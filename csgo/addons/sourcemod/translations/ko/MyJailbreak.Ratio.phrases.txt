@@ -1,0 +1,246 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:25 UTC
+// Language: Korean (ko)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/201
+//
+"Phrases"
+{
+
+	"ratio_auto"
+	{
+		"ko"		"팀을 자동 선택하는것은 금지되어있습니다."
+	}
+
+	"ratio_fullqueue"
+	{
+		"ko"		"간수가 가득 찼습니다. 당신은 간수 대기 목록에 #{1} 순위 입니다."
+	}
+
+	"ratio_info_title"
+	{
+		"ko"		"간수 대기 목록 :"
+	}
+
+	"ratio_empty"
+	{
+		"ko"		"대기열은 현재 비어있습니다."
+	}
+
+	"ratio_noct"
+	{
+		"ko"		"간수 대기목록에 참여하기 위해서는 당신은 죄수 이어야 합니다."
+	}
+
+	"ratio_find"
+	{
+		"ko"		"간수 대기 목록에 등록된 플레이어를 찾는 중... {1} 님이 새로운 간수가 됩니다."
+	}
+
+	"ratio_random"
+	{
+		"ko"		"간수 대기목록이 비어있습니다. {1} 님이 랜덤으로 간수가 됩니다."
+	}
+
+	"ratio_novalid"
+	{
+		"ko"		"Could not find a{green} valid player{default} to switch to guards. Contact an admin."
+	}
+
+	"ratio_number"
+	{
+		"ko"		"간수 대기 목록의 당신의 순위는 #{1} 위 입니다."
+	}
+
+	"ratio_thxvip"
+	{
+		"ko"		"VIP가 되어 주셔서 감사합니다! 당신은 제일 앞 간수 대기자가 되었습니다!"
+	}
+
+	"ratio_advip"
+	{
+		"ko"		"VIP가 되면 간수 대기 목록에 제일 앞 순위로 배치됩니다."
+	}
+
+	"ratio_movetot"
+	{
+		"ko"		"간수가 너무 많습니다. {1} 님이 무작위로 뽑혀 죄수로 옮겨졌습니다."
+	}
+
+	"ratio_removed"
+	{
+		"ko"		"{1} 어드민이 {2} 님을 간수 대기 목록에서 지웠습니다!"
+	}
+
+	"ratio_notonqueue"
+	{
+		"ko"		"당신은 간수 대기 목록에 없습니다!"
+	}
+
+	"ratio_leavedqueue"
+	{
+		"ko"		"당신은 더 이상 대기열에 없습니다!"
+	}
+
+	"ratio_accept_title"
+	{
+		"ko"		"간수 자격"
+	}
+
+	"ratio_accept_line1"
+	{
+		"ko"		"간수가 되기 위해서는, 이 이용 약관에 동의해야합니다."
+	}
+
+	"ratio_accept_line2"
+	{
+		"ko"		"나는 내가 규칙을 읽고 이해했다는 것을 확인합니다."
+	}
+
+	"ratio_accept_line3"
+	{
+		"ko"		"간수 규칙을 두번 읽었습니다!"
+	}
+
+	"ratio_accept_line4"
+	{
+		"ko"		"나는 규칙을 확인 했고 공정하게 플레이 할 것 입니다."
+	}
+
+	"ratio_accept_line5"
+	{
+		"ko"		"규칙을 제대로 지키기 않으면 간수로 플레이 하는것이 금지됩니다."
+	}
+
+	"ratio_accept"
+	{
+		"ko"		"예, 본 이용 약관에 동의합니다."
+	}
+
+	"ratio_notaccept"
+	{
+		"ko"		"저는 간수가 하고 싶지 않습니다."
+	}
+
+	"ratio_cooldown"
+	{
+		"ko"		"답이 틀렸습니다. 다음라운드에 다시 시도해보세요."
+	}
+
+	"ratio_disabled"
+	{
+		"ko"		"Ratio is disabled by Admin"
+	}
+
+	"ratio_hasdisabled"
+	{
+		"ko"		"어드민이 밸런스(비율) 사용을 중지했습니다."
+	}
+
+	"ratio_hasactivated"
+	{
+		"ko"		"Admin has activated the Ratio. Ratio fix next round."
+	}
+
+	"ratio_active"
+	{
+		"ko"		"비율이 활성화 되었습니다! 1 간수 당 {1} 죄수 입니다."
+	}
+
+	"ratio_stamm"
+	{
+		"ko"		"당신은 간수로 플레이하기 위해서 최소 {1} Stamm 포인트가 필요합니다."
+	}
+
+	"ratio_banned_nc"
+	{
+		"ko"		"간수가 금지되어 있기 때문에 간수로 게임을 할 수 없습니다."
+	}
+
+	"ratio_clearqueue"
+	{
+		"ko"		"어드민이 간수 대기 목록을 지웠습니다!"
+	}
+
+	"ratio_reputation"
+	{
+		"ko"		"당신은 간수로 플레이 하기 위해 {1} 평판 포인트가 필요합니다."
+	}
+
+	"ratio_remove"
+	{
+		"ko"		"대기 목록에서 제거 됨 : "
+	}
+
+	"ratio_banned"
+	{
+		"ko"		"당신은 간수가 금지되었기 때문에 간수로 플레이할 수 없습니다."
+	}
+
+	"ratio_rankme"
+	{
+		"ko"		"당신은 간수로 플레이 하기 위해서 {1} RankMe 포인트가 필요합니다."
+	}
+
+	"ratio_close"
+	{
+		"ko"		"종료"
+	}
+
+	"ratio_steamrep"
+	{
+		"ko"		"당신은 사기꾼이기 때문에 간수로 플레이할 수 없습니다. steamrep.com 에서 본인을 조회해 보시기 바랍니다."
+	}
+
+	"ratio_sure"
+	{
+		"ko"		"정말입니까?"
+	}
+
+	"ratio_yes"
+	{
+		"ko"		"예"
+	}
+
+	"ratio_no"
+	{
+		"ko"		"아니오"
+	}
+
+	"ratio_steamgroup"
+	{
+		"ko"		"스팀 그룹에 가입하지 않았기 때문에 당신은 간수로 플레이할 수 없습니다. "
+	}
+
+	"ratio_lvlranks"
+	{
+		"ko"		"당신은 레벨 {1} 이 되어야만 간수를 플레이할 수 있습니다."
+	}
+
+	"ratio_hours"
+	{
+		"ko"		"시간"
+	}
+
+	"ratio_seconds"
+	{
+		"ko"		"초"
+	}
+
+	"ratio_minutes"
+	{
+		"ko"		"분"
+	}
+
+	"ratio_mostactive"
+	{
+		"ko"		"간수로 플레이 하려면 {1} 이상을 {2}로 플레이 했어야합니다."
+	}
+
+	"ratio_mostactive_terror"
+	{
+		"ko"		"간수로 게임하기 위해서는 적어도 {1} 죄수로 플레이 했어야합니다."
+	}
+
+}

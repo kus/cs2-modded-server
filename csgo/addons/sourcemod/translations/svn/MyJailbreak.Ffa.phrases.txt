@@ -1,0 +1,146 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:27 UTC
+// Language: svn (svn)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/187
+//
+"Phrases"
+{
+
+	"ffa_need"
+	{
+		"svn"		"{purple}{2}{default} je glasoval. Število potrebnih glasov za {darkred}FFA: {purple}{1}"
+	}
+
+	"ffa_voting"
+	{
+		"svn"		"Glasovanje za FFA je {purple}onemogočeno!"
+	}
+
+	"ffa_setbywarden"
+	{
+		"svn"		"Nastavitev FFA s strani vodje je {purple}onemogočena!"
+	}
+
+	"ffa_setbyadmin"
+	{
+		"svn"		"Nastavitev FFA s strani adminov je {purple}onemogočena!"
+	}
+
+	"ffa_ctwin_nc"
+	{
+		"svn"		"Paznik je preživel!"
+	}
+
+	"ffa_twin_nc"
+	{
+		"svn"		"Zapornik je preživel!"
+	}
+
+	"ffa_minplayer"
+	{
+		"svn"		"Za FFA potrebuješ vsaj {purple}enega Paznika & enega Zapornika!"
+	}
+
+	"ffa_end"
+	{
+		"svn"		"{purple}FFA{default} je zaključen!"
+	}
+
+	"ffa_next"
+	{
+		"svn"		"Naslednjo rundo bo: {purple}FFA."
+	}
+
+	"ffa_next_nc"
+	{
+		"svn"		"Naslednjo rundo bo: FFA."
+	}
+
+	"ffa_rounds"
+	{
+		"svn"		"Runda {purple}{1}{default} od {purple}{2}"
+	}
+
+	"ffa_start"
+	{
+		"svn"		"{purple}FFA{default} se je začel!"
+	}
+
+	"ffa_start_nc"
+	{
+		"svn"		"FFA se je začel!"
+	}
+
+	"ffa_voted"
+	{
+		"svn"		"Ti si že glasoval za {purple}FFA!"
+	}
+
+	"ffa_progress"
+	{
+		"svn"		"Dogodek {darkred}{1} {default}se {purple}že izvaja!"
+	}
+
+	"ffa_disabled"
+	{
+		"svn"		"FFA je trenutno {purple}onemogočen!"
+	}
+
+	"ffa_damage_nc"
+	{
+		"svn"		"{1} sekund pred aktivacijo igre!"
+	}
+
+	"ffa_info_title"
+	{
+		"svn"		"Free for All Deathmatch je sedaj aktiviran!"
+	}
+
+	"ffa_info_line1"
+	{
+		"svn"		"Ne biti presenečen če se pojaviš v orožarni!"
+	}
+
+	"ffa_info_line2"
+	{
+		"svn"		"Free for All - Igralec PROTI Igralcu - Zadnji preživeli zmaga!"
+	}
+
+	"ffa_info_line3"
+	{
+		"svn"		"Steči vstran med 'NoDamage' fazo!"
+	}
+
+	"ffa_info_line4"
+	{
+		"svn"		"To rundo ne veljajo običajna pravila Jailbreak-a!"
+	}
+
+	"ffa_info_line5"
+	{
+		"svn"		"Last request(!lr) je to rundo onemogočen."
+	}
+
+	"ffa_info_line6"
+	{
+		"svn"		"Kdorkoli lahko gre kamorkoli na mapi!"
+	}
+
+	"ffa_info_line7"
+	{
+		"svn"		"Pravila strežnika to rundo še vedno veljajo!"
+	}
+
+	"ffa_wait"
+	{
+		"svn"		"Počakati moraš še {purple}{1}{default} za Dan Dogodkov!"
+	}
+
+	"ffa_name"
+	{
+		"svn"		"Vsak Proti Vsakem(FFA)"
+	}
+
+}

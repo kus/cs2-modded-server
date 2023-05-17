@@ -1,0 +1,156 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:28 UTC
+// Language: Polish (pl)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/194
+//
+"Phrases"
+{
+
+	"hide_need"
+	{
+		"pl"		"{purple}{2}{default} zaglosowal {purple}{1}{default} pozostalo glosow do {darkred}Chowanego"
+	}
+
+	"hide_twin_nc"
+	{
+		"pl"		"Chowajacy sie wygrywaja"
+	}
+
+	"hide_rounds"
+	{
+		"pl"		"Runda {purple}{1}{default} z {purple}{2}"
+	}
+
+	"hide_ctwin_nc"
+	{
+		"pl"		"Szukajacy Wygrywa"
+	}
+
+	"hide_end"
+	{
+		"pl"		"{purple}Chowany{default} zakonczony"
+	}
+
+	"hide_next_nc"
+	{
+		"pl"		"Nastepna runda to Chowany"
+	}
+
+	"hide_next"
+	{
+		"pl"		"Nastepna runda to {purple}Chowanego"
+	}
+
+	"hide_start"
+	{
+		"pl"		" {purple}Chowany{default} sie rozpoczela!"
+	}
+
+	"hide_start_nc"
+	{
+		"pl"		"Chowany sie rozpoczal!"
+	}
+
+	"hide_voted"
+	{
+		"pl"		"Juz glosowales na {purple}Chowanego"
+	}
+
+	"hide_progress"
+	{
+		"pl"		"Zabawa  {darkred}{1} {default}sie {purple}rozpoczela"
+	}
+
+	"hide_minplayer"
+	{
+		"pl"		"Do zabawy w Chowanego potrzeba przynajmniej {purple}jednego  CT i jednego Terro"
+	}
+
+	"hide_disabled"
+	{
+		"pl"		"Chowany jest tymczasowo {purple}wylaczony."
+	}
+
+	"hide_voting"
+	{
+		"pl"		"Glosowanie graczy na Chowyny jest {purple}wylaczone"
+	}
+
+	"hide_setbyWarden"
+	{
+		"pl"		"Glosowanie na Chowany przez Straznika jest {purple}wylaczone"
+	}
+
+	"hide_setbyadmin"
+	{
+		"pl"		"Wlaczenie Chowany przez admina jest {purple}wylaczone"
+	}
+
+	"hide_timetohide_nc"
+	{
+		"pl"		"{1} sekund zeby sie schowac!"
+	}
+
+	"hide_timetounfreeze_nc"
+	{
+		"pl"		"{1} sekund do odmrozenia!"
+	}
+
+	"hide_stillta"
+	{
+		"pl"		"Masz jeszcze {green}{1}{default} TA granat."
+	}
+
+	"hide_nota"
+	{
+		"pl"		"nie masz juz {green}zadnych{default} TA granatow."
+	}
+
+	"hide_info_title"
+	{
+		"pl"		"Chowany jest aktywny"
+	}
+
+	"hide_info_line1"
+	{
+		"pl"		"Chowajacy sie maja czas na schowanie sie "
+	}
+
+	"hide_info_line2"
+	{
+		"pl"		"Gdy Szukajacy sie odmrozi , automatycznie zamraza Chowajacych sie"
+	}
+
+	"hide_info_line3"
+	{
+		"pl"		"Szukajacy zdobadz granaty TA"
+	}
+
+	"hide_info_line4"
+	{
+		"pl"		"Wszystkie normalne zasady wiezienia zostaly zastapione"
+	}
+
+	"hide_info_line5"
+	{
+		"pl"		"Nie ma ostatniego zyczenia!"
+	}
+
+	"hide_info_line6"
+	{
+		"pl"		"Kazdy moze isc gdzie chce "
+	}
+
+	"hide_info_line7"
+	{
+		"pl"		"Nie badz DUPKIEM!"
+	}
+
+	"hide_wait"
+	{
+		"pl"		"Musisz poczekac  {1} rund"
+	}
+
+}

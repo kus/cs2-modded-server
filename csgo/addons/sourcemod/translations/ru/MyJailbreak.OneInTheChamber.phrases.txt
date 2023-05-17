@@ -1,0 +1,156 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:35 UTC
+// Language: Russian (ru)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/283
+//
+"Phrases"
+{
+
+	"oneinthechamber_need"
+	{
+		"ru"		"{purple}{2}{default} проголосовал. {purple}{1}{default} голосов осталось до {darkred}Один Патрон."
+	}
+
+	"oneinthechamber_rounds"
+	{
+		"ru"		"Раунд {purple}{1}{default} из {purple}{2}"
+	}
+
+	"oneinthechamber_twin_nc"
+	{
+		"ru"		"Заключенные выжили!"
+	}
+
+	"oneinthechamber_voting"
+	{
+		"ru"		"Голосования за Один Патрон {purple}отключено!"
+	}
+
+	"oneinthechamber_setbywarden"
+	{
+		"ru"		"Командир {purple}отключил{default} выбирать Один Патрон"
+	}
+
+	"oneinthechamber_setbyadmin"
+	{
+		"ru"		"Администратор {purple}отключил{default} выбирать Один Патрон"
+	}
+
+	"oneinthechamber_minplayer"
+	{
+		"ru"		"Для Одного Патрона необходимо как минимум {purple}один КТ и один Т"
+	}
+
+	"oneinthechamber_ctwin_nc"
+	{
+		"ru"		"Охранники выжили!"
+	}
+
+	"oneinthechamber_end"
+	{
+		"ru"		"{purple}Один Патрон{default} окончен."
+	}
+
+	"oneinthechamber_next"
+	{
+		"ru"		"Следующий раунд: {purple}Один Патрон."
+	}
+
+	"oneinthechamber_next_nc"
+	{
+		"ru"		"Следующий раунд: Один Патрон."
+	}
+
+	"oneinthechamber_now_nc"
+	{
+		"ru"		"Сейчас начнётся Один Патрон."
+	}
+
+	"oneinthechamber_now"
+	{
+		"ru"		"Сейчас начнётся {purple}Один Патрон{default}."
+	}
+
+	"oneinthechamber_start"
+	{
+		"ru"		"{purple}Один Патрон{default} начался!"
+	}
+
+	"oneinthechamber_start_nc"
+	{
+		"ru"		"Один Патрон начался!"
+	}
+
+	"oneinthechamber_voted"
+	{
+		"ru"		"Вы уже проголосовали за {purple}Один Патрон!"
+	}
+
+	"oneinthechamber_progress"
+	{
+		"ru"		"Игра {darkred}{1} {purple}уже в начата!"
+	}
+
+	"oneinthechamber_disabled"
+	{
+		"ru"		"Один Патрон сейчас {purple}отключен!"
+	}
+
+	"oneinthechamber_timeuntilstart_nc"
+	{
+		"ru"		"{1} секунд до начала!"
+	}
+
+	"oneinthechamber_info_title"
+	{
+		"ru"		"Один Патрон Начался!"
+	}
+
+	"oneinthechamber_info_line1"
+	{
+		"ru"		"Один Патрон - Все Против Всех!"
+	}
+
+	"oneinthechamber_info_line2"
+	{
+		"ru"		"Вы имеете один патрон в дигле!"
+	}
+
+	"oneinthechamber_info_line3"
+	{
+		"ru"		"Когда вы убиваете,вы получаете ещё один патрон!"
+	}
+
+	"oneinthechamber_info_line4"
+	{
+		"ru"		"В этом раунде все правила Тюрьмы отменяются!"
+	}
+
+	"oneinthechamber_info_line5"
+	{
+		"ru"		"ЛР отключен в этом раунде!"
+	}
+
+	"oneinthechamber_info_line6"
+	{
+		"ru"		"Оставайтесь в главной камере! Не уходите в нычки!"
+	}
+
+	"oneinthechamber_info_line7"
+	{
+		"ru"		"Не будь мудаком!"
+	}
+
+	"oneinthechamber_wait"
+	{
+		"ru"		"Вы должны подождать больше {purple}{1}{default} раундов!"
+	}
+
+	"oneinthechamber_name"
+	{
+		"ru"		"Один Патрон"
+	}
+
+}

@@ -1,0 +1,91 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:31 UTC
+// Language: German (de)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/188
+//
+"Phrases"
+{
+
+	"weapons_disabled"
+	{
+		"de"		"Das {purple} Waffen Menü{default} ist im Moment deaktiviert!"
+	}
+
+	"weapons_same"
+	{
+		"de"		"Du bekommst {purple}die gleiche Waffe{default}."
+	}
+
+	"weapons_sameall"
+	{
+		"de"		"Du bekommst immer {purple}die gleiche Waffe{default} in den nächsten Runden."
+	}
+
+	"weapons_random"
+	{
+		"de"		"Du bekommst {purple}eine Zufalls Waffe{default}."
+	}
+
+	"weapons_randomall"
+	{
+		"de"		"Du bekommst immer {purple}eine Zufalls Waffe{default} in den nächsten Runden."
+	}
+
+	"weapons_next"
+	{
+		"de"		"Du bekommst {purple}deine neue Waffe{default} in der nächsten Runde."
+	}
+
+	"weapons_ta"
+	{
+		"de"		"Du haste eine {purple}TA Granate{default} bekommen."
+	}
+
+	"weapons_health"
+	{
+		"de"		"Du haste eine {purple}healthshot{default} bekommen."
+	}
+
+	"weapons_info_title"
+	{
+		"de"		"MyJailbreak Waffen Menu"
+	}
+
+	"weapons_info_choose"
+	{
+		"de"		"Waffe wählen"
+	}
+
+	"weapons_info_same"
+	{
+		"de"		"Gleiche Waffe"
+	}
+
+	"weapons_info_sameall"
+	{
+		"de"		"Jedesmal gleiche Waffe"
+	}
+
+	"weapons_info_random"
+	{
+		"de"		"Zufalls Waffe"
+	}
+
+	"weapons_info_randomall"
+	{
+		"de"		"Jedesmal zufalls Waffe"
+	}
+
+	"weapons_info_prim"
+	{
+		"de"		"Hauptwaffe:"
+	}
+
+	"weapons_info_sec"
+	{
+		"de"		"Handwaffe:"
+	}
+
+}

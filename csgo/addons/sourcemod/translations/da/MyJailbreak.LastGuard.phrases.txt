@@ -1,0 +1,71 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:24 UTC
+// Language: Danish (da)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/197
+//
+"Phrases"
+{
+
+	"lastguard_need"
+	{
+		"da"		"{purple}{2}{default} har afstemt!. {purple}{1}{default} afstemninger tilbage til {darkred}Last Guard Rule"
+	}
+
+	"lastguard_setbyadmin"
+	{
+		"da"		"Admin bestemmer runde for Last Guard Rule er {purple}slået fra"
+	}
+
+	"lastguard_end"
+	{
+		"da"		"{purple}Last Guard Rule{default} er afsluttet!"
+	}
+
+	"lastguard_start"
+	{
+		"da"		"{purple}Last Guard Rule{default} er startet!"
+	}
+
+	"lastguard_start_nc"
+	{
+		"da"		"Last Guard Rule er startet!"
+	}
+
+	"lastguard_voted"
+	{
+		"da"		"Du har allerede stemt for {purple}Last Guard Rule!"
+	}
+
+	"lastguard_disabled"
+	{
+		"da"		"Last Guard Rule er midlertidigt {purple}slået fra."
+	}
+
+	"lastguard_timeuntilstart_nc"
+	{
+		"da"		"{1} sekunder til runden starter!"
+	}
+
+	"lastguard_info_title"
+	{
+		"da"		"Last Guard Rule er aktiveret!"
+	}
+
+	"lastguard_info_line5"
+	{
+		"da"		"Der kan ikke laves Last Request i denne runde!"
+	}
+
+	"lastguard_info_line7"
+	{
+		"da"		"Alle server regler skal overholdes!"
+	}
+
+	"lastguard_info_line6"
+	{
+		"da"		"T kan gå hvor hen de vil - De må bare ikke have våben!"
+	}
+
+}

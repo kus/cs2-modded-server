@@ -1,0 +1,146 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:26 UTC
+// Language: svn (svn)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/190
+//
+"Phrases"
+{
+
+	"cowboy_need"
+	{
+		"svn"		"{purple}{2}{default} je glasoval. Število potrebnih glasov za {darkred}Kavboja: {purple}{1} !"
+	}
+
+	"cowboy_rounds"
+	{
+		"svn"		"Runda {purple}{1}{default} od {purple}{2}."
+	}
+
+	"cowboy_twin_nc"
+	{
+		"svn"		"Zapornik je preživel!"
+	}
+
+	"cowboy_voting"
+	{
+		"svn"		"Glasovanje za Kavboja je trenutno {purple}onemogočeno!"
+	}
+
+	"cowboy_setbywarden"
+	{
+		"svn"		"Nastavitev kavboja s strani wardena je {purple}onemogočena!"
+	}
+
+	"cowboy_minplayer"
+	{
+		"svn"		"Za Kavboja potrebuješ vsaj {purple}enega paznika, & enega zapornika"
+	}
+
+	"cowboy_setbyadmin"
+	{
+		"svn"		"Nastavitev Kavboja s strani Adminov je {purple}onemogočena!"
+	}
+
+	"cowboy_ctwin_nc"
+	{
+		"svn"		"Paznik je preživel!"
+	}
+
+	"cowboy_end"
+	{
+		"svn"		"{purple}Kavboj{default} se je zaključil."
+	}
+
+	"cowboy_next"
+	{
+		"svn"		"Naslednja runda bo: {purple}Kavboj."
+	}
+
+	"cowboy_next_nc"
+	{
+		"svn"		"Naslednja runda bo: Kavboj."
+	}
+
+	"cowboy_start"
+	{
+		"svn"		"{purple}Kavboj{default} se je pričel!"
+	}
+
+	"cowboy_start_nc"
+	{
+		"svn"		"Kavboj se je pričel!"
+	}
+
+	"cowboy_voted"
+	{
+		"svn"		"Si že glasoval za {purple}Kavboja!"
+	}
+
+	"cowboy_progress"
+	{
+		"svn"		"Dogodek {darkred}{1} {default}se {purple}že izvaja!"
+	}
+
+	"cowboy_disabled"
+	{
+		"svn"		"Kavboj je trenutno {purple}onemogočen!"
+	}
+
+	"cowboy_timeuntilstart_nc"
+	{
+		"svn"		"Število sekund pred začetkom runde: {1}"
+	}
+
+	"cowboy_info_line1"
+	{
+		"svn"		"Kavboj - Vsak zase!"
+	}
+
+	"cowboy_info_line2"
+	{
+		"svn"		"Pistol Battle - DM"
+	}
+
+	"cowboy_info_line3"
+	{
+		"svn"		"Lahko se premikaš med fazo 'NoDamage'!"
+	}
+
+	"cowboy_info_line4"
+	{
+		"svn"		"Vsa običajna jailbreak pravila ne veljajo to rundo!"
+	}
+
+	"cowboy_info_line5"
+	{
+		"svn"		"Last request(!lr) je to rundo onemogočen!"
+	}
+
+	"cowboy_info_line6"
+	{
+		"svn"		"Ostani v glavnih prostorih! Ne vstopaj v skrivne prostore!"
+	}
+
+	"cowboy_info_line7"
+	{
+		"svn"		"Vsa pravila strežnika še vedno veljajo!"
+	}
+
+	"cowboy_wait"
+	{
+		"svn"		"Počakati moraš še {purple}{1}{default} rund za Dan Dogodkov!"
+	}
+
+	"cowboy_name"
+	{
+		"svn"		"Kavboj"
+	}
+
+	"cowboy_info_title"
+	{
+		"svn"		"Cowboy er aktiveret!"
+	}
+
+}

@@ -1,0 +1,10 @@
+vertexlitgeneric
+{
+	"$basetexture" 		"models\player\kuristaja\jailbreak\guard3\policeman_head_ai_d"
+	"$bumpmap" 		"models\player\kuristaja\jailbreak\guard3\policeman_head_ai_normal"
+
+	$phong 1
+	$phongexponent 35
+	$phongboost .04
+	$phongfresnelranges "[5 6 8]"
+}

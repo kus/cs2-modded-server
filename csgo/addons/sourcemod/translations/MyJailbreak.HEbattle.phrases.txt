@@ -1,0 +1,166 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:31 UTC
+// Language: English (en)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/193
+//
+"Phrases"
+{
+
+	"hebattle_need"
+	{
+		"#format"	"{1:i},{2:N}"
+		"en"		"{purple}{2}{default} has voted. {purple}{1}{default} votes required to play {darkred}HE Battle."
+	}
+
+	"hebattle_rounds"
+	{
+		"#format"	"{1:i},{2:i}"
+		"en"		"Round {purple}{1}{default} of {purple}{2}"
+	}
+
+	"hebattle_minplayer"
+	{
+		"en"		"For a HE Battle you need at least {purple}one CT"
+	}
+
+	"hebattle_minplayer"
+	{
+		"en"		"For a HE Battle you need at least {purple}one CT"
+	}
+
+	"hebattle_twin_nc"
+	{
+		"en"		"A Prisoner has survived!"
+	}
+
+	"hebattle_voting"
+	{
+		"en"		"Voting for HE Battle is {purple}disabled!"
+	}
+
+	"hebattle_setbywarden"
+	{
+		"en"		"Set HE Battle by Warden is {purple}disabled"
+	}
+
+	"hebattle_setbyadmin"
+	{
+		"en"		"Set HE Battle by Admin is {purple}disabled!"
+	}
+
+	"hebattle_ctwin_nc"
+	{
+		"en"		"A Guard has survived!"
+	}
+
+	"hebattle_end"
+	{
+		"en"		"{purple}HE Battle{default} has ended."
+	}
+
+	"hebattle_next"
+	{
+		"en"		"The following round will be: {purple}HE Battle."
+	}
+
+	"hebattle_next_nc"
+	{
+		"en"		"The following round will be: HE Battle"
+	}
+
+	"hebattle_start"
+	{
+		"en"		"{purple}HE Battle{default} has begun!"
+	}
+
+	"hebattle_start_nc"
+	{
+		"en"		"HE Battle has begun!"
+	}
+
+	"hebattle_voted"
+	{
+		"en"		"You have already voted for {purple}HE Battle"
+	}
+
+	"hebattle_progress"
+	{
+		"#format"	"{1:s}"
+		"en"		"The event {darkred}{1} {default}is {purple}already in progress!"
+	}
+
+	"hebattle_disabled"
+	{
+		"en"		"HE Battle is currently {purple}disabled!"
+	}
+
+	"hebattle_timeuntilstart_nc"
+	{
+		"#format"	"{1:i}"
+		"en"		"{1} seconds until round start!"
+	}
+
+	"hebattle_info_title"
+	{
+		"en"		"HE Battle is now Activated"
+	}
+
+	"hebattle_info_line1"
+	{
+		"en"		"FFA HE Battle with Low-Gravity enabled!"
+	}
+
+	"hebattle_info_line2"
+	{
+		"en"		"Don't be suprised if you've spawned in the Armory!"
+	}
+
+	"hebattle_info_line3"
+	{
+		"en"		"Damage is disabled until round start!"
+	}
+
+	"hebattle_info_line4"
+	{
+		"en"		"All usual Jailbreak Rules do not apply during this round!"
+	}
+
+	"hebattle_info_line5"
+	{
+		"en"		"Last Request is disabled during this round!"
+	}
+
+	"hebattle_info_line6"
+	{
+		"en"		"You must stay in the main Jailroom! Don't enter vents or secret areas!"
+	}
+
+	"hebattle_info_line7"
+	{
+		"en"		"Don't be an Asshole!"
+	}
+
+	"hebattle_wait"
+	{
+		"#format"	"{1:i}"
+		"en"		"You must wait {purple}{1}{default} more rounds for an Event Day!"
+	}
+
+	"hebattle_name"
+	{
+		"en"		"HE Battle"
+	}
+
+	"hebattle_now_nc"
+	{
+		"en"		"Now a hebattle round begins."
+	}
+
+	"hebattle_now"
+	{
+		"en"		"Now a {purple}hebattle{default} round begins."
+	}
+
+}

@@ -1,0 +1,111 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:19 UTC
+// Language: Turkish (tr)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/178
+//
+"Phrases"
+{
+
+	"warden_playerdead"
+	{
+		"tr"		"Sadece {purple} canlı oyuncular {default} komutçu olabilir!"
+	}
+
+	"warden_retire"
+	{
+		"tr"		"{purple}{1}{default} Komutçu Atıldı. Yeni bir Komutçu seçebilirsin!"
+	}
+
+	"warden_retire_nc"
+	{
+		"tr"		"{1} Komuttan çıktı. Yeni komutçu seçebilirsiniz."
+	}
+
+	"warden_noexist"
+	{
+		"tr"		"Şuan Herhangi bir {purple} Komutçu Bulunmamakta !"
+	}
+
+	"warden_dooropen"
+	{
+		"tr"		"Komutçu, hücre kapılarını {purple}Açtı{default}"
+	}
+
+	"warden_ffison"
+	{
+		"tr"		"Dost ateşi {purple}açıldı!"
+	}
+
+	"warden_ffisoff"
+	{
+		"tr"		"Dost ateşi {purple}kapatıldı!"
+	}
+
+	"warden_countdownstart_nc"
+	{
+		"tr"		"GİT! BAŞLADI!"
+	}
+
+	"warden_need"
+	{
+		"tr"		"{1} oy sonra {darkred}Komutçu Atılabilecek!"
+	}
+
+	"warden_israndom"
+	{
+		"tr"		"{1} rasgele seçildi!"
+	}
+
+	"warden_gunplant"
+	{
+		"tr"		"Komutçu {purple}{1}{default} silahını düşürdü {green}{2}!"
+	}
+
+	"warden_drawert"
+	{
+		"tr"		"İsyancılar için işaretçiyi aç"
+	}
+
+	"warden_marker_remove"
+	{
+		"tr"		"{1} İşaretçi kaldırıldı."
+	}
+
+	"warden_laser_title"
+	{
+		"tr"		"Lazer işaretçi rengi"
+	}
+
+	"warden_cdmenu_title"
+	{
+		"tr"		"Geri sayım menüsü"
+	}
+
+	"warden_15"
+	{
+		"tr"		"15 saniye"
+	}
+
+	"warden_sure"
+	{
+		"tr"		"Eminmisin?"
+	}
+
+	"warden_mute_title"
+	{
+		"tr"		"Susturma Menüsü"
+	}
+
+	"warden_cuffsoff"
+	{
+		"tr"		"{purple}{1}{default} adlı oyuncu {green}{2}'oyuncunun{default} kelepçesini kaldırdı"
+	}
+
+	"warden_doorclose_unavailable"
+	{
+		"tr"		"{darkred}Bu harita uzaktan kapı kontrolünü desteklemiyor. {default} Kapıları elle kapatman gerek."
+	}
+
+}

@@ -1,0 +1,146 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:31 UTC
+// Language: Spanish (es)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/184
+//
+"Phrases"
+{
+
+	"zombie_need"
+	{
+		"es"		"{purple}{2}{default} ha votado. {purple}{1}{default} votos requeridos para jugar {darkred}Zombie."
+	}
+
+	"zombie_rounds"
+	{
+		"es"		"Ronda {purple}{1}{default} de {purple}{2}"
+	}
+
+	"zombie_voting"
+	{
+		"es"		"El voto para zombie está {purple}deshabilitado!"
+	}
+
+	"zombie_setbywarden"
+	{
+		"es"		"El seteo de zombie por el Guardia está {purple}deshabilitado!"
+	}
+
+	"zombie_setbyadmin"
+	{
+		"es"		"El seteo de zombie por el Admin  está {purple}deshabilitado!"
+	}
+
+	"zombie_ctwin_nc"
+	{
+		"es"		"Los zombies tienen que exterminar a todos los humanos!"
+	}
+
+	"zombie_twin_nc"
+	{
+		"es"		"Los humanos sobrevivieron!"
+	}
+
+	"zombie_end"
+	{
+		"es"		"{purple}Zombie{default} ha terminado."
+	}
+
+	"zombie_next_nc"
+	{
+		"es"		"La siguiente ronda será: Zombie."
+	}
+
+	"zombie_next"
+	{
+		"es"		"La siguiente ronda será: {purple}Zombie."
+	}
+
+	"zombie_start"
+	{
+		"es"		"{purple}Zombie{default} ha comenzado!"
+	}
+
+	"zombie_start_nc"
+	{
+		"es"		"Zombie ha comenzado!"
+	}
+
+	"zombie_voted"
+	{
+		"es"		"Ya has votado por {purple}Zombie!"
+	}
+
+	"zombie_progress"
+	{
+		"es"		"El evento {darkred}{1} {default}ya {purple}está en progreso!"
+	}
+
+	"zombie_minplayer"
+	{
+		"es"		"Para zombie se necesita al menos {purple}un Guardia y un Prisionero!"
+	}
+
+	"zombie_timeuntilzombie_nc"
+	{
+		"es"		"{1} segundos para esconderse!"
+	}
+
+	"zombie_timetounfreeze_nc"
+	{
+		"es"		"{1} segundos para que te descongeles!"
+	}
+
+	"zombie_info_title"
+	{
+		"es"		"Zombie ahora esta activado!"
+	}
+
+	"zombie_info_line1"
+	{
+		"es"		"Zombies(Guardias) VS Humanos(Prisioneros)!"
+	}
+
+	"zombie_info_line2"
+	{
+		"es"		"Los Zombies estan congelados! Los Humanos deben correr!"
+	}
+
+	"zombie_info_line3"
+	{
+		"es"		"Los Zombies tienen una gran cantidad de HP!"
+	}
+
+	"zombie_info_line4"
+	{
+		"es"		"Las reglas usuales de Jailbreak no aplican en este modo!"
+	}
+
+	"zombie_info_line5"
+	{
+		"es"		"LR esta deshabilitado durante esta ronda!"
+	}
+
+	"zombie_info_line6"
+	{
+		"es"		"Todo el mundo está autorizado a ir a cualquier parte dentro del mapa!"
+	}
+
+	"zombie_info_line7"
+	{
+		"es"		"No seas un idiota!"
+	}
+
+	"zombie_wait"
+	{
+		"es"		"Debes esperar {purple}{1}{default} rondas mas para otro {purple}Evento!"
+	}
+
+	"zombie_name"
+	{
+		"es"		"DIA ZOMBIE"
+	}
+
+}

@@ -1,0 +1,91 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:34 UTC
+// Language: Polish (pl)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/277
+//
+"Phrases"
+{
+
+	"teleport_voting"
+	{
+		"pl"		"Głosowanie na Wojnę na Teleporty {purple}zakończone!"
+	}
+
+	"teleport_setbywarden"
+	{
+		"pl"		"Ustawienie Bitwy na Teleporty przez Wardena zostało {purple}wyłączone!"
+	}
+
+	"teleport_setbyadmin"
+	{
+		"pl"		"Ustawienie Bitwy na Teleporty przez Admina zostało {purple}wyłączone!"
+	}
+
+	"teleport_ctwin_nc"
+	{
+		"pl"		"Strażnik przetrwał!"
+	}
+
+	"teleport_twin_nc"
+	{
+		"pl"		"Więzień przetrwał!"
+	}
+
+	"teleport_next"
+	{
+		"pl"		"Następna runda to: {purple}Bitwa na Teleporty."
+	}
+
+	"teleport_next_nc"
+	{
+		"pl"		"Następna runda to: Bitwa na Teleporty"
+	}
+
+	"teleport_rounds"
+	{
+		"pl"		"Runda {purple}{1}{default} z {purple}{2}"
+	}
+
+	"teleport_start"
+	{
+		"pl"		"{purple}Wojna na Teleporty{default} rozpoczęta!"
+	}
+
+	"teleport_start_nc"
+	{
+		"pl"		"Wojna na Teleporty rozpoczęta!"
+	}
+
+	"teleport_voted"
+	{
+		"pl"		"Już zagłosowałeś na {purple}Wojnę na Teleporty"
+	}
+
+	"teleport_progress"
+	{
+		"pl"		"Event jest {darkred}{1} {default}jest {purple}własnie rozgrywany!"
+	}
+
+	"teleport_disabled"
+	{
+		"pl"		"Bitwa na Teleporty jest obecnie {purple}wyłączona!"
+	}
+
+	"teleport_damage_nc"
+	{
+		"pl"		"{1} sekunda do wlączenia obrażeń"
+	}
+
+	"teleport_wait"
+	{
+		"pl"		"Musisz poczekać 1 rundę, aby ustawić Event!"
+	}
+
+	"teleport_name"
+	{
+		"pl"		"Bitwa na Teleporty"
+	}
+
+}

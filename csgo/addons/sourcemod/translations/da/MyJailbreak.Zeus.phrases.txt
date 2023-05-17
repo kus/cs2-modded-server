@@ -1,0 +1,121 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:30 UTC
+// Language: Danish (da)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/189
+//
+"Phrases"
+{
+
+	"zeus_need"
+	{
+		"da"		"{purple}{2}{default} har afstemt!. {purple}{1}{default} afstemninger tilbage til {darkred}zeus"
+	}
+
+	"zeus_rounds"
+	{
+		"da"		"Runde {purple}{1}{default} af {purple}{2}"
+	}
+
+	"zeus_twin_nc"
+	{
+		"da"		"En Terrorists har overlevet!"
+	}
+
+	"zeus_voting"
+	{
+		"da"		"Afstemninger for No Scope er {purple}slået fra"
+	}
+
+	"zeus_setbywarden"
+	{
+		"da"		"Warden bestemmer runde for No Scope er {purple}slået fra"
+	}
+
+	"zeus_setbyadmin"
+	{
+		"da"		"Admin bestemmer runde for No Scope er {purple}slået fra"
+	}
+
+	"zeus_minplayer"
+	{
+		"da"		"For Zeus skal der mindst være {purple}en CT"
+	}
+
+	"zeus_ctwin_nc"
+	{
+		"da"		"En Counter-Terrorists har overlevet!"
+	}
+
+	"zeus_end"
+	{
+		"da"		"{purple}Zeus Day{default} er afsluttet!"
+	}
+
+	"zeus_next"
+	{
+		"da"		"Næste runde er {purple}Zeus Day"
+	}
+
+	"zeus_next_nc"
+	{
+		"da"		"Næste runde er Zeus Day"
+	}
+
+	"zeus_start"
+	{
+		"da"		"{purple}Zeus Day{default} er startet!"
+	}
+
+	"zeus_start_nc"
+	{
+		"da"		"No Scope er startet!"
+	}
+
+	"zeus_voted"
+	{
+		"da"		"Du har allerede stemt for {purple}Zeus Day!"
+	}
+
+	"zeus_disabled"
+	{
+		"da"		"Zeus Day er midlertidigt {purple}slået fra."
+	}
+
+	"zeus_timeuntilstart_nc"
+	{
+		"da"		"{1} sekunder til runden starter!"
+	}
+
+	"zeus_info_title"
+	{
+		"da"		"Zeus Day er aktiveret!"
+	}
+
+	"zeus_info_line1"
+	{
+		"da"		"Zeus Day er hvor mod hvor!"
+	}
+
+	"zeus_info_line4"
+	{
+		"da"		"Alle jail regler er ophævet!"
+	}
+
+	"zeus_info_line5"
+	{
+		"da"		"Der kan ikke laves Last Request i denne runde!"
+	}
+
+	"zeus_info_line7"
+	{
+		"da"		"Alle server regler skal overholdes!"
+	}
+
+	"zeus_wait"
+	{
+		"da"		"Du skal vente {1} flere runder!"
+	}
+
+}

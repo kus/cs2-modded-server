@@ -1,0 +1,146 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:26 UTC
+// Language: Spanish (es)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/190
+//
+"Phrases"
+{
+
+	"cowboy_need"
+	{
+		"es"		"{purple}{2}{default} ha votado. {purple}{1}{default} voto(s) requerido para jugar {darkred}Cowboy!"
+	}
+
+	"cowboy_rounds"
+	{
+		"es"		"Ronda {purple}{1}{default} de {purple}{2}."
+	}
+
+	"cowboy_twin_nc"
+	{
+		"es"		"Un Prisionero ha sobrevivido!"
+	}
+
+	"cowboy_voting"
+	{
+		"es"		"El voto para Cowboy actualmente está {purple}deshabilitdo!"
+	}
+
+	"cowboy_setbywarden"
+	{
+		"es"		"El seteo de Cowboy por el Guardia está {purple}deshabilitado!"
+	}
+
+	"cowboy_minplayer"
+	{
+		"es"		"Para Cowboy, debe haber como mínimo {purple}un Guardia y un Prisionero"
+	}
+
+	"cowboy_setbyadmin"
+	{
+		"es"		"El seteo de Cowboy por el Admin está {purple}deshabilitado!"
+	}
+
+	"cowboy_ctwin_nc"
+	{
+		"es"		"Un Guardia ha sobrevivido!"
+	}
+
+	"cowboy_end"
+	{
+		"es"		"{purple}Cowboy{default} ha terminado."
+	}
+
+	"cowboy_next"
+	{
+		"es"		"La siguiente ronda será: {purple}Cowboy."
+	}
+
+	"cowboy_next_nc"
+	{
+		"es"		"La siguiente ronda será: Cowboy."
+	}
+
+	"cowboy_start"
+	{
+		"es"		"{purple}Cowboy{default} ha comenzado!"
+	}
+
+	"cowboy_start_nc"
+	{
+		"es"		"Cowboy ha comenzado!"
+	}
+
+	"cowboy_voted"
+	{
+		"es"		"Ya has votado por {purple}Cowboy!"
+	}
+
+	"cowboy_progress"
+	{
+		"es"		"El evento {darkred}{1} {default}ya {purple}está en progreso!"
+	}
+
+	"cowboy_disabled"
+	{
+		"es"		"Cowboy actualmente está {purple}deshabilitdo!"
+	}
+
+	"cowboy_timeuntilstart_nc"
+	{
+		"es"		"{1} segundos hasta que la ronda comience!"
+	}
+
+	"cowboy_info_line1"
+	{
+		"es"		"Cowboy - Todos contra todos!"
+	}
+
+	"cowboy_info_line2"
+	{
+		"es"		"Batalla de Pistolas - DM"
+	}
+
+	"cowboy_info_line3"
+	{
+		"es"		"Puedes moverte durante la fase 'Sin Daño'!"
+	}
+
+	"cowboy_info_line4"
+	{
+		"es"		"Las reglas usuales de Jailbreak no aplican en este modo!"
+	}
+
+	"cowboy_info_line5"
+	{
+		"es"		"LR esta deshabilitado durante esta ronda!"
+	}
+
+	"cowboy_info_line6"
+	{
+		"es"		"Mantente en la Sala Principal! No entres a secretos!"
+	}
+
+	"cowboy_info_line7"
+	{
+		"es"		"No seas un idiota!"
+	}
+
+	"cowboy_wait"
+	{
+		"es"		"Debes esperar {purple}{1}{default} rondas mas para otro {purple} Evento!"
+	}
+
+	"cowboy_name"
+	{
+		"es"		"COWBOY"
+	}
+
+	"cowboy_info_title"
+	{
+		"es"		"Cowboy esta ahora Activado!"
+	}
+
+}

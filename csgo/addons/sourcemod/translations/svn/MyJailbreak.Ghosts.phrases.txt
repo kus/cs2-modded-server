@@ -1,0 +1,156 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:34 UTC
+// Language: svn (svn)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/271
+//
+"Phrases"
+{
+
+	"ghosts_need"
+	{
+		"svn"		"{purple}{2}{default} Je glasoval. {purple}{1}{default} glasov potrebnih za igranje {darkred}Duhov."
+	}
+
+	"ghosts_voting"
+	{
+		"svn"		"Glasovanje za Duhove je {purple}onemogočeno!"
+	}
+
+	"ghosts_setbywarden"
+	{
+		"svn"		"Nastavitev Duhov s strani Vodje je {purple}onemogočeno!"
+	}
+
+	"ghosts_setbyadmin"
+	{
+		"svn"		"Nastavitev Duhov s strani Adminov je {purple}onemogočeno!"
+	}
+
+	"ghosts_ctwin_nc"
+	{
+		"svn"		"Preživel je paznik!"
+	}
+
+	"ghosts_twin_nc"
+	{
+		"svn"		"Preživel je zapornik!"
+	}
+
+	"ghosts_minplayer"
+	{
+		"svn"		"Za Duhove potrebuješ vsaj {purple}enega Paznika in enega Zapornika!"
+	}
+
+	"ghosts_end"
+	{
+		"svn"		"{purple}Duhovi{default} so se zaključili!"
+	}
+
+	"ghosts_next"
+	{
+		"svn"		"Naslednja runda bodo: {purple}Duhovi."
+	}
+
+	"ghosts_next_nc"
+	{
+		"svn"		"Naslednja runda bodo: Duhovi."
+	}
+
+	"ghosts_rounds"
+	{
+		"svn"		"Runda {purple}{1}{default} od {purple}{2}"
+	}
+
+	"ghosts_start"
+	{
+		"svn"		"{purple}Duhovi{default} so se začeli!"
+	}
+
+	"ghosts_start_nc"
+	{
+		"svn"		"Duhovi so se začeli!"
+	}
+
+	"ghosts_voted"
+	{
+		"svn"		"Si že glasoval za {purple}Duhove!"
+	}
+
+	"ghosts_progress"
+	{
+		"svn"		"Dogodek {darkred}{1} {default}se {purple}že izvaja!"
+	}
+
+	"ghosts_disabled"
+	{
+		"svn"		"Duhovi so trenutno {purple}onemogočeni!"
+	}
+
+	"ghosts_damage_nc"
+	{
+		"svn"		"{1} sekund pred omogočenjem škode!"
+	}
+
+	"ghosts_info_title"
+	{
+		"svn"		"Vojna Duhov je sedaj Aktivirana!"
+	}
+
+	"ghosts_info_line1"
+	{
+		"svn"		"Ti si neviden in nesmrten!"
+	}
+
+	"ghosts_info_line2"
+	{
+		"svn"		"Vsakih 10 sekund postanejo vsi igralci vidni in umrljivi"
+	}
+
+	"ghosts_info_line3"
+	{
+		"svn"		"Vsak proti Vsakem - Igralec proti Igralcu - Zadnji preživeli zmaga!"
+	}
+
+	"ghosts_info_line4"
+	{
+		"svn"		"Navadna pravila jailbreaka to rundo ne veljajo!"
+	}
+
+	"ghosts_info_line5"
+	{
+		"svn"		"Last request(!lr) je to rundo onemogočen!"
+	}
+
+	"ghosts_info_line6"
+	{
+		"svn"		"Vsak lahko gre kamorkoli na mapi!"
+	}
+
+	"ghosts_info_line7"
+	{
+		"svn"		"Vsa pravila strežnika še vedno veljajo!"
+	}
+
+	"ghosts_wait"
+	{
+		"svn"		"Počakati moraš še {purple}{1}{default} rund za Dan Dogodkov!"
+	}
+
+	"ghosts_name"
+	{
+		"svn"		"Vojna duhov"
+	}
+
+	"ghosts_visible"
+	{
+		"svn"		"VIDEN"
+	}
+
+	"ghosts_invisible"
+	{
+		"svn"		"NEVIDEN"
+	}
+
+}

@@ -1,0 +1,961 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:19 UTC
+// Language: Italian (it)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/178
+//
+"Phrases"
+{
+
+	"warden_new"
+	{
+		"it"		"{purple}{1}{default} ora e' il CapoCT."
+	}
+
+	"warden_new_nc"
+	{
+		"it"		"{1} ora e' il CapoCT."
+	}
+
+	"warden_playerdead"
+	{
+		"it"		"Solo i player {purple}vivi{default} posso diventare CapoCT!"
+	}
+
+	"warden_ctsonly"
+	{
+		"it"		"Solo i {purple}CT{default} possono diventare CapoCT!"
+	}
+
+	"warden_exist"
+	{
+		"it"		"Il CapoCT attuale e': {purple}{1}{default}."
+	}
+
+	"warden_retire"
+	{
+		"it"		"{purple}{1}{default} ha deciso di ritirarsi!"
+	}
+
+	"warden_retire_nc"
+	{
+		"it"		"{1} ha deciso di ritirarsi!"
+	}
+
+	"warden_notwarden"
+	{
+		"it"		"Devi essere il {purple}CapoCT{default} per usare questo comando!"
+	}
+
+	"warden_dead"
+	{
+		"it"		"Il CapoCT e' stato ucciso {darkred}ucciso{default}!"
+	}
+
+	"warden_nowarden"
+	{
+		"it"		"Non c'e' nessun {purple}CapoCT {default}. Scrivi {green}!w{default} per diventarlo!"
+	}
+
+	"warden_nowarden_nc"
+	{
+		"it"		"Non c'e' nessun CapoCT. Scrivi !w per diventarlo!"
+	}
+
+	"warden_dead_nc"
+	{
+		"it"		"Il CapoCT e' morto!"
+	}
+
+	"warden_disconnected"
+	{
+		"it"		"Il CapoCT si e' {purple}disconnesso!{default}!"
+	}
+
+	"warden_disconnected_nc"
+	{
+		"it"		"Il CapoCT si e' disconnesso!"
+	}
+
+	"warden_removed"
+	{
+		"it"		"L'admin: {purple}{1}{default} ha rimosso: {purple}{2}{default} come CapoCT"
+	}
+
+	"warden_removed_nc"
+	{
+		"it"		"L'admin: {1} ha rimosso: {2} come CapoCT"
+	}
+
+	"warden_noexist"
+	{
+		"it"		"Non c'e nessun {purple} CapoCT!"
+	}
+
+	"warden_disabled"
+	{
+		"it"		"Il CapoCT e' {purple}disattivato{default}!"
+	}
+
+	"warden_nobecome"
+	{
+		"it"		"In nuovo CapoCT sara' scelto {purple}casualmente{default}!"
+	}
+
+	"warden_adminset"
+	{
+		"it"		"L'admin: {purple}{1}{default} ha impostato un CapoCT!"
+	}
+
+	"warden_randomwarden"
+	{
+		"it"		"Un CapoCT casuale e' stato scelto!"
+	}
+
+	"warden_dooropen"
+	{
+		"it"		"Il CapoCT ha {purple}aperto{default} le celle."
+	}
+
+	"warden_doorclose"
+	{
+		"it"		"Il CapoCT ha {purple}chiuso{default} le celle."
+	}
+
+	"warden_openauto"
+	{
+		"it"		"Le celle si sono {purple}aperte automaticamente!{default}"
+	}
+
+	"warden_opentime"
+	{
+		"it"		"{purple}Le porte ora{default} dovrebbero essere aperte!"
+	}
+
+	"warden_ffison"
+	{
+		"it"		"Il Fuoco amico e' stato{purple} attivato!"
+	}
+
+	"warden_ffisoff"
+	{
+		"it"		"Il Fuoco amico e' stato{purple} disattivato!"
+	}
+
+	"warden_voting"
+	{
+		"it"		"La votazione per licenziare il  {purple}CapoCT{default} e' disattivata!"
+	}
+
+	"warden_countdowncanceled"
+	{
+		"it"		"Il CountDown {darkred}e' stato cancellato!"
+	}
+
+	"warden_startcountdown_nc"
+	{
+		"it"		"Inizio tra {1} secondi!"
+	}
+
+	"warden_stopcountdown_nc"
+	{
+		"it"		"Fine tra {1} secondi!"
+	}
+
+	"warden_startcountdown"
+	{
+		"it"		"Inizio tra {purple}{1}{default} secondi!"
+	}
+
+	"warden_stopcountdown"
+	{
+		"it"		"Fine tra {purple}{1}{default} secondi!"
+	}
+
+	"warden_startcountdownhint"
+	{
+		"it"		"Il CapoCT {purple} ha iniziato un CountDown!"
+	}
+
+	"warden_startcountdownhint_nc"
+	{
+		"it"		"Il CapoCT ha iniziato un CountDown!"
+	}
+
+	"warden_startstopcountdownhint"
+	{
+		"it"		"Il CapoCT ha {purple}iniziato un CountDown (START/STOP)!"
+	}
+
+	"warden_startstopcountdownhint_nc"
+	{
+		"it"		"Il CapoCT ha iniziato un CountDown(START/STOP)!"
+	}
+
+	"warden_stopcountdownhint"
+	{
+		"it"		"Il CapoCT ha {purple}iniziato un  CountDown(STOP)!"
+	}
+
+	"warden_stopcountdownhint_nc"
+	{
+		"it"		"Attenzione il CapoCT ha iniziato un CountDown(STOP)!"
+	}
+
+	"warden_countdownstart"
+	{
+		"it"		"{purple}VIA! {darkred}START!"
+	}
+
+	"warden_countdownstop"
+	{
+		"it"		"{purple}STOP! {darkred}FINE!"
+	}
+
+	"warden_countdownrunning"
+	{
+		"it"		"C'e gia' un CountDown  {purple}in corso!"
+	}
+
+	"warden_countdownstart_nc"
+	{
+		"it"		"GO! START!"
+	}
+
+	"warden_countdownstop_nc"
+	{
+		"it"		"STOP! END!"
+	}
+
+	"warden_noblockoff"
+	{
+		"it"		"Il CapoCT ha disattivato il {purple}NoBlock!"
+	}
+
+	"warden_noblockon"
+	{
+		"it"		"Il CapoCT ha attivato il {purple}NoBlock!"
+	}
+
+	"warden_need"
+	{
+		"it"		"{1} voti richiesti per {darkred}licenziare il warden!"
+	}
+
+	"warden_voted"
+	{
+		"it"		"Ha gia' votato contro il {purple}CapoCT{default}!"
+	}
+
+	"warden_israndom"
+	{
+		"it"		"{1} e' stato scelto casualmente!"
+	}
+
+	"warden_israndom"
+	{
+		"it"		"{1} E'stato scelto a caso"
+	}
+
+	"warden_gunplant"
+	{
+		"it"		"La Guardia {purple}{1}{default} ha gettato l'arma: {green}{2}!"
+	}
+
+	"warden_gunplant_nc"
+	{
+		"it"		"La Guard {1} has ha gettato l'arma: {2}!"
+	}
+
+	"warden_noplant"
+	{
+		"it"		"E' {darkred}vietato{default} alle guardie gettare le armi!"
+	}
+
+	"warden_choose"
+	{
+		"it"		"Seleziona un player"
+	}
+
+	"warden_remove"
+	{
+		"it"		"Rimuovere il CapoCT?"
+	}
+
+	"warden_laseron"
+	{
+		"it"		"Il laser {purple}e' attivo!"
+	}
+
+	"warden_laseroff"
+	{
+		"it"		"Il laser {purple}e' disattivato"
+	}
+
+	"warden_draweron"
+	{
+		"it"		"Il pennarello {purple} e' attivo"
+	}
+
+	"warden_draweroff"
+	{
+		"it"		"Il pennarello {purple} e' disattivato"
+	}
+
+	"warden_drawert"
+	{
+		"it"		"Attivato/Disattivato il pennello per i T"
+	}
+
+	"warden_tdraweron"
+	{
+		"it"		"Il pennello per i T e' {purple}disattivato"
+	}
+
+	"warden_tdraweroff"
+	{
+		"it"		"Il pennaello per i T e' {purple}disattivato"
+	}
+
+	"warden_marker_set"
+	{
+		"it"		"Il Marker: {1} e' stato piazzato!"
+	}
+
+	"warden_marker_remove"
+	{
+		"it"		"Il Marker: {1} e' stato rimosso!"
+	}
+
+	"warden_laser"
+	{
+		"it"		"{1}  il puntatore laser!"
+	}
+
+	"warden_drawer"
+	{
+		"it"		"{1} pennello equipaggiato!"
+	}
+
+	"warden_marker_faraway"
+	{
+		"it"		"Il tuo {1} Marker e' stato rimosso! Eri troppo lontano da esso."
+	}
+
+	"warden_marker_title"
+	{
+		"it"		"Colore del marker"
+	}
+
+	"warden_laser_title"
+	{
+		"it"		"Colore del puntatore laser"
+	}
+
+	"warden_drawer_title"
+	{
+		"it"		"Colore del pennarello"
+	}
+
+	"warden_laser_off"
+	{
+		"it"		"Disattiva il puntatore laser!"
+	}
+
+	"warden_drawer_off"
+	{
+		"it"		"Disattiva il pennello"
+	}
+
+	"warden_rainbow"
+	{
+		"it"		"Arcobaleno"
+	}
+
+	"warden_red"
+	{
+		"it"		"Rosso"
+	}
+
+	"warden_blue"
+	{
+		"it"		"Blu"
+	}
+
+	"warden_green"
+	{
+		"it"		"Verde"
+	}
+
+	"warden_orange"
+	{
+		"it"		"Orancione"
+	}
+
+	"warden_yellow"
+	{
+		"it"		"Giallo"
+	}
+
+	"warden_white"
+	{
+		"it"		"Bianco"
+	}
+
+	"warden_cyan"
+	{
+		"it"		"Ciano"
+	}
+
+	"warden_magenta"
+	{
+		"it"		"Magenta"
+	}
+
+	"warden_range"
+	{
+		"it"		"La posizione e' fuori dal tuo raggio!"
+	}
+
+	"warden_wrong"
+	{
+		"it"		"Qualcosa e' andato storto! Riprova!"
+	}
+
+	"warden_mute"
+	{
+		"it"		"Il CapoCT: {1} ha mutato {2} per {3} secondi!"
+	}
+
+	"warden_muteend"
+	{
+		"it"		"Il CapoCT: {1} ha mutato {2} fino a fine round!"
+	}
+
+	"warden_unmute"
+	{
+		"it"		"{1} e' stato smutato."
+	}
+
+	"warden_cdmenu_title"
+	{
+		"it"		"Menu del CountDown"
+	}
+
+	"warden_cdmenu_start"
+	{
+		"it"		"Inizia uno START CountDown (10 sec)"
+	}
+
+	"warden_cdmenu_stop"
+	{
+		"it"		"Inizia uno STOP CountDown (20 sec)"
+	}
+
+	"warden_cdmenu_startstop"
+	{
+		"it"		"Imposta uno Start/Stop CountDown"
+	}
+
+	"warden_cdmenu_title2"
+	{
+		"it"		"Tempo tra l'inizio & la fine"
+	}
+
+	"warden_time_title"
+	{
+		"it"		"Quando lungo?"
+	}
+
+	"warden_allt"
+	{
+		"it"		"Tutti i prigionieri"
+	}
+
+	"warden_roundend"
+	{
+		"it"		"Fine a fine round"
+	}
+
+	"warden_15"
+	{
+		"it"		"15 Secondi"
+	}
+
+	"warden_30"
+	{
+		"it"		"30 Secondi"
+	}
+
+	"warden_45"
+	{
+		"it"		"45 Secondi"
+	}
+
+	"warden_60"
+	{
+		"it"		"1 Minuto"
+	}
+
+	"warden_90"
+	{
+		"it"		"1 Minuto 30 secondi"
+	}
+
+	"warden_120"
+	{
+		"it"		"2 Minuti"
+	}
+
+	"warden_180"
+	{
+		"it"		"3 Minuti"
+	}
+
+	"warden_300"
+	{
+		"it"		"5 Minuti"
+	}
+
+	"warden_math_correct"
+	{
+		"it"		"{1} ha {green} risposto correttamente: {purple}{2}!"
+	}
+
+	"warden_math_time"
+	{
+		"it"		"Tempo finito! Nessuno ha risposto: {purple}{1}"
+	}
+
+	"warden_startmathquiz"
+	{
+		"it"		"Il CapoCT ha iniziato un {purple}Quiz matematico!"
+	}
+
+	"warden_startmathquiz_nc"
+	{
+		"it"		"Il CapoCT ha iniziato un Quiz matematico!"
+	}
+
+	"warden_sure"
+	{
+		"it"		"Sei sicuro?"
+	}
+
+	"warden_yes"
+	{
+		"it"		"Si"
+	}
+
+	"warden_no"
+	{
+		"it"		"No"
+	}
+
+	"warden_minrandom"
+	{
+		"it"		"C'e solo un Priginiero (non-ribelle) rimasto!"
+	}
+
+	"warden_nomuted"
+	{
+		"it"		"Non ci sono prigionieri mutati!"
+	}
+
+	"warden_mute_title"
+	{
+		"it"		"Menu del mute"
+	}
+
+	"warden_menu_mute"
+	{
+		"it"		"Muta un prigioniero"
+	}
+
+	"warden_menu_unmute"
+	{
+		"it"		"Smuta un prigioniero"
+	}
+
+	"warden_cuffs"
+	{
+		"it"		"Usa il taser come manette!"
+	}
+
+	"warden_cuffson"
+	{
+		"it"		"{purple}{1}{default} ha arrestato {green}{2}{default}!"
+	}
+
+	"warden_cuffsoff"
+	{
+		"it"		"{purple}{1}{default} ha rimosso le manette di {green}{2}{default}."
+	}
+
+	"warden_cuffsgot"
+	{
+		"it"		"Hai solo {green}{1}{default} manetta(e) rimaste!"
+	}
+
+	"warden_bulletmarkoff"
+	{
+		"it"		"Le scintille all'impatto sono {purple}disattivate!"
+	}
+
+	"warden_bulletmarkon"
+	{
+		"it"		"Le scintille all' impatto sono {purple}attivate!"
+	}
+
+	"warden_extend"
+	{
+		"it"		"Il CapoCT {1} ha esteso il tempo di gioco di {2} minuti."
+	}
+
+	"warden_backstab"
+	{
+		"it"		"La protezione alle spalle e' attiva."
+	}
+
+	"warden_extendtimes"
+	{
+		"it"		"Hai gia' {purple}esteso il round {1} volte{default} in questo round!"
+	}
+
+	"warden_close"
+	{
+		"it"		"Esci"
+	}
+
+	"warden_gotpaperclip"
+	{
+		"it"		"Hai segretamente {1} graffetta(e) nelle tue tasche. Tieni premuto +use (E)"
+	}
+
+	"warden_brokepaperclip"
+	{
+		"it"		"Hai rotto le tue graffette!"
+	}
+
+	"warden_unlock"
+	{
+		"it"		"Hai scassinato le manette!"
+	}
+
+	"warden_painter"
+	{
+		"it"		"{1} il pennello e' stato attivato!"
+	}
+
+	"warden_painter_title"
+	{
+		"it"		"Colore del pennello"
+	}
+
+	"warden_painter_off"
+	{
+		"it"		"Disattiva il pennello"
+	}
+
+	"warden_painteron"
+	{
+		"it"		"Il pennello {purple}e' attivo"
+	}
+
+	"warden_painteroff"
+	{
+		"it"		"Il pennello {purple}e' disattivato"
+	}
+
+	"warden_paintert"
+	{
+		"it"		"Attiva/Disattiva il pennello"
+	}
+
+	"warden_tpainteron"
+	{
+		"it"		"Il pennello per i T e' stato {purple}attivato!"
+	}
+
+	"warden_tpainteroff"
+	{
+		"it"		"Il pennello per i T e' stato {purple}disattivato!"
+	}
+
+	"warden_disarmed"
+	{
+		"it"		"{1} e' stato disarmato da {2}."
+	}
+
+	"warden_lostgun"
+	{
+		"it"		"Sei stato colpito alla mano! Hai perso la tua arma!"
+	}
+
+	"warden_remaining"
+	{
+		"it"		"Rimasti"
+	}
+
+	"warden_dooropen_unavailable"
+	{
+		"it"		"{darkred}Questa mappa non supporta l'apertura automatica delle celle. {purple}Devi aprirle manualmente!"
+	}
+
+	"warden_doorclose_unavailable"
+	{
+		"it"		"{darkred}Questa mappa non supporta la chiusura automatica delle celle. {purple}Devi chuderle manualmente!"
+	}
+
+	"warden_openauto_unavailable"
+	{
+		"it"		"{darkred}Questa mappa non supporta l'apertura automatica delle celle. {purple}Il CapoCT deve aprirle manualmente!"
+	}
+
+	"warden_menu_muteall"
+	{
+		"it"		"Muta tutti i prigionieri"
+	}
+
+	"warden_menu_unmuteall"
+	{
+		"it"		"Smuta tutti i prigionieri"
+	}
+
+	"warden_votesuccess"
+	{
+		"it"		"La votazione per {purple}licenziare il CapoCT{default} e' avvenuta con sucesso!"
+	}
+
+	"warden_mutedefault"
+	{
+		"it"		"Tutti i prigionieri sono mutati fino a fine round."
+	}
+
+	"warden_rebel_title"
+	{
+		"it"		"Menu dei ribelli"
+	}
+
+	"warden_rebel_mark"
+	{
+		"it"		"Setta un player come ribelle"
+	}
+
+	"warden_rebel_unmark"
+	{
+		"it"		"Rimuovi un player dai ribelli"
+	}
+
+	"warden_talkover"
+	{
+		"it"		"Il CapoCT sta parlando, sei stato mutato."
+	}
+
+	"warden_info_counter"
+	{
+		"it"		"Prigioniero in vista:"
+	}
+
+	"warden_counter"
+	{
+		"it"		"Ci sono {1} prigionieri in vista"
+	}
+
+	"warden_deputy_playerdead"
+	{
+		"it"		"Solo i {purple}player vivi{default} possono diventare ViceCapoCT!"
+	}
+
+	"warden_deputy_ctsonly"
+	{
+		"it"		"Solo i  {purple}CT{default} possono diventare ViceCapoCT!"
+	}
+
+	"warden_deputy_exist"
+	{
+		"it"		"Il ViceCapoCT corrente è: {purple}{1}{default}."
+	}
+
+	"warden_deputy_disabled"
+	{
+		"it"		"Il ViceCapoCT è {purple}disabilitato{default}!"
+	}
+
+	"warden_deputy_nobecome"
+	{
+		"it"		"Non puoi diventare ViceCapoCT, il CapoCT lo decide."
+	}
+
+	"warden_deputy_retire"
+	{
+		"it"		"{purple}{1}{default} ha deciso di ritirarsi come ViceCapoCT. Dovresti sceglierne uno nuovo!"
+	}
+
+	"warden_deputy_retire_nc"
+	{
+		"it"		"{1} ha deciso di ritirarsi come ViceCapoCT. Dovresti sceglierne uno nuovo!"
+	}
+
+	"warden_deputy_fired_nc"
+	{
+		"it"		"Il CapoCT: {1} ha licenziato il ViceCapoCT: {2}"
+	}
+
+	"warden_deputy_fired"
+	{
+		"it"		"Il CapoCT: {purple}{1}{default} ha licenziato il ViceCapoCT: {purple}{2}"
+	}
+
+	"warden_deputy_dead_nc"
+	{
+		"it"		"Il ViceCapoCT è morto. Dovresti sceglierne uno nuovo."
+	}
+
+	"warden_deputy_dead"
+	{
+		"it"		"Il ViceCapoCT è {darkred}morto{default}. Dovresti sceglierne uno nuovo."
+	}
+
+	"warden_deputy_disconnected"
+	{
+		"it"		"Il ViceCapoCT si è {purple}disconnesso{default}. Dovresti sceglierne uno nuovo."
+	}
+
+	"warden_deputy_disconnected_nc"
+	{
+		"it"		"Il ViceCapoCT si è disconnesso. Dovresti sceglierne uno nuovo."
+	}
+
+	"warden_deputy_new_nc"
+	{
+		"it"		"{1} è ora ViceCapoCT."
+	}
+
+	"warden_deputy_new"
+	{
+		"it"		"{purple}{1}{default} è ora il ViceCapoCT."
+	}
+
+	"warden_deputy_set"
+	{
+		"it"		"Come {purple}CapoCT{default} puoi eleggere un ViceCapoCT. Fai {green}!deputy{default} per settare un ViceCapoCT!"
+	}
+
+	"warden_deputy_become"
+	{
+		"it"		"Non c'è nessun {purple}ViceCapoCT{default}. Fai {green}!deputy{default} per diventare ViceCapoCT!"
+	}
+
+	"warden_picking"
+	{
+		"it"		"Scelta"
+	}
+
+	"warden_pickingaborted"
+	{
+		"it"		"Scelta abortita"
+	}
+
+	"warden_givefreeday"
+	{
+		"it"		"Dai il freeday a:"
+	}
+
+	"warden_havefreeday"
+	{
+		"it"		"{1} ha ora un FreeDay!"
+	}
+
+	"warden_freeday_title"
+	{
+		"it"		"Freeday per {1}"
+	}
+
+	"warden_freedaynext"
+	{
+		"it"		"Prossimo round"
+	}
+
+	"warden_freedaynow"
+	{
+		"it"		"Questo round"
+	}
+
+	"warden_freedayforyou"
+	{
+		"it"		"Hai ottenuto un {purple}FreeDay{default} per il prossimo round"
+	}
+
+	"warden_personalfreeday"
+	{
+		"it"		"{green}{1}{default} ha ricevuto un {purple}FreeDay{default} per il prossimo round"
+	}
+
+	"warden_cooldown"
+	{
+		"it"		"Hai un {purple}conto alla rovescia per essere CapoCT{default}. Aspetta {green}{1}{default} rounds"
+	}
+
+	"warden_limit"
+	{
+		"it"		"Hai giocato {purple}{1} round di fila{default} come CapoCT. Aspetta {green}{2}{default}  altri rounds"
+	}
+
+	"warden_wait"
+	{
+		"it"		"Come {green}ultimo round da CapoCT{default} devi aspettare {purple}{1} secondi{default} per diventare di nuovo CapoCT."
+	}
+
+	"warden_deputy_removed"
+	{
+		"it"		"L'Admin: {purple}{1}{default} ha licenziato il ViceCapoCT: {purple}{2}"
+	}
+
+	"warden_deputy_removed_nc"
+	{
+		"it"		"L'Admin: {1} ha licenziato il ViceCapoCT: {2}"
+	}
+
+	"warden_steamgroup"
+	{
+		"it"		"Non puoi giocare come CapoCT, devi prima entrare nel nostro gruppo steam"
+	}
+
+	"warden_rankme"
+	{
+		"it"		"Devi avere almento {1} punti RankMe per giocare come CapoCT"
+	}
+
+	"warden_reputation"
+	{
+		"it"		"Devi avere alemno {1} punti di reputazione per giocare come CapoCT"
+	}
+
+	"warden_stamm"
+	{
+		"it"		"Devi avere almeno {1} punti Stamm per giocare come CapoCT"
+	}
+
+	"warden_removefreeday"
+	{
+		"it"		"Rimuovi il tuo freeday da:"
+	}
+
+	"warden_removefreedayforyou"
+	{
+		"it"		"Il tuo {purple}FreeDay{default} è stato rimosso."
+	}
+
+	"warden_removepersonalfreeday"
+	{
+		"it"		"Il {purple}FreeDay{default} di {green}{1}{default} è stato rimosso"
+	}
+
+	"warden_noplayer"
+	{
+		"it"		"Nessun player scelto"
+	}
+
+}

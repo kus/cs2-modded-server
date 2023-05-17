@@ -1,0 +1,21 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:25 UTC
+// Language: French (fr)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/201
+//
+"Phrases"
+{
+
+	"ratio_stamm"
+	{
+		"fr"		"Vous avez besoin d'au moins {1} Points de Stamm pour jouer comme une garde"
+	}
+
+	"ratio_reputation"
+	{
+		"fr"		"Vous avez besoin d'au moins {1} Points de Réputation pour jouer comme une garde."
+	}
+
+}

@@ -1,0 +1,56 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:21 UTC
+// Language: Czech (cze)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/231
+//
+"Phrases"
+{
+
+	"hud_planned"
+	{
+		"cze"		"Další kolo:"
+	}
+
+	"hud_running"
+	{
+		"cze"		"Toto kolo:"
+	}
+
+	"hud_warden"
+	{
+		"cze"		"Warden:"
+	}
+
+	"hud_nowarden"
+	{
+		"cze"		"Momentálně není žádný warden"
+	}
+
+	"hud_guards"
+	{
+		"cze"		"Dozorců:"
+	}
+
+	"hud_prisoner"
+	{
+		"cze"		"Vezňů:"
+	}
+
+	"hud_on"
+	{
+		"cze"		"HUD {purple}je zapnutý!"
+	}
+
+	"hud_off"
+	{
+		"cze"		"HUD {purple}je vypnutý"
+	}
+
+	"hud_lastCT"
+	{
+		"cze"		"Poslední dozorce:"
+	}
+
+}

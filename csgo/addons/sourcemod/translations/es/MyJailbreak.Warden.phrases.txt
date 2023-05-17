@@ -1,0 +1,161 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:17 UTC
+// Language: Spanish (es)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/178
+//
+"Phrases"
+{
+
+	"warden_new"
+	{
+		"es"		"{purple}{1}{default} Es ahora el Capitán de esta Prision."
+	}
+
+	"warden_new_nc"
+	{
+		"es"		"{1} Es ahora el Capitán de esta Prision."
+	}
+
+	"warden_playerdead"
+	{
+		"es"		"Solo los {purple}jugadores vivos{default}, pueden ser el Capitán."
+	}
+
+	"warden_ctsonly"
+	{
+		"es"		"Solo los {purple}Anti-Terroristas{default} pueden ser el Capitán."
+	}
+
+	"warden_exist"
+	{
+		"es"		"Capitán Actual: {purple}{1}{default}"
+	}
+
+	"warden_retire"
+	{
+		"es"		"{purple}{1}{default} ha decidido jubilarse. Ahora toca elegir uno nuevo."
+	}
+
+	"warden_retire_nc"
+	{
+		"es"		"{1} ha decidido jubilarse. Ahora toca elegir uno nuevo."
+	}
+
+	"warden_dead"
+	{
+		"es"		"El Capitán ha {darkred}muerto{default}! Ahora toca elegir uno nuevo."
+	}
+
+	"warden_dead_nc"
+	{
+		"es"		"El Capitán ha muerto! Ahora toca elegir uno nuevo."
+	}
+
+	"warden_disconnected"
+	{
+		"es"		"El Capitán ha desertado. Ahora toca elegir uno nuevo."
+	}
+
+	"warden_disconnected_nc"
+	{
+		"es"		"El Capitán ha desertado. Ahora toca elegir uno nuevo."
+	}
+
+	"warden_removed"
+	{
+		"es"		"Administrador: {purple}{1}{default} ha jubilado al Capitán: {purple}{2}"
+	}
+
+	"warden_removed_nc"
+	{
+		"es"		"Administrador: {1} ha prejubilado al Capitán: {2}"
+	}
+
+	"warden_ffison"
+	{
+		"es"		"¡El fuego amigo está {purple}habilitado!"
+	}
+
+	"warden_marker_remove"
+	{
+		"es"		"Marcador {1} Removido!"
+	}
+
+	"warden_laser_off"
+	{
+		"es"		"Deshabilitar puntero láser"
+	}
+
+	"warden_orange"
+	{
+		"es"		"Naranja"
+	}
+
+	"warden_white"
+	{
+		"es"		"Blanco"
+	}
+
+	"warden_15"
+	{
+		"es"		"15 segundos"
+	}
+
+	"warden_120"
+	{
+		"es"		"2 Minutos"
+	}
+
+	"warden_180"
+	{
+		"es"		"3 Minutos"
+	}
+
+	"warden_300"
+	{
+		"es"		"5 minutos"
+	}
+
+	"warden_math_correct"
+	{
+		"es"		"¡{1} ha dado una{green} respuesta correcta!{default} La respuesta era {purple}{2}!"
+	}
+
+	"warden_menu_unmute"
+	{
+		"es"		"Desmutear un Prisionero"
+	}
+
+	"warden_cuffsgot"
+	{
+		"es"		"Solo te queda(n) {green}{1}{default} esposa(s)!"
+	}
+
+	"warden_painteron"
+	{
+		"es"		"La pintura {purple}esta habilitada"
+	}
+
+	"warden_remaining"
+	{
+		"es"		"Restante"
+	}
+
+	"warden_counter"
+	{
+		"es"		"Estas viendo a {1} prisioneros"
+	}
+
+	"warden_deputy_playerdead"
+	{
+		"es"		"Solo los {purple}jugadores vivos{default} pueden ser el Comisario!"
+	}
+
+	"warden_deputy_playerdead"
+	{
+		"es"		"Solo los {purple}jugadores vivos{default} pueden ser el Comisario!"
+	}
+
+}

@@ -1,0 +1,171 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:29 UTC
+// Language: Italian (it)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/183
+//
+"Phrases"
+{
+
+	"torch_need"
+	{
+		"it"		"{purple}{2}{default} ha votato. {purple}{1}{default} voti richiesti per fare {darkred}Torch Relay."
+	}
+
+	"torch_rounds"
+	{
+		"it"		"Round {purple}{1}{default} di {purple}{2}"
+	}
+
+	"torch_end"
+	{
+		"it"		"{purple}Torch Relay{default} e' finito."
+	}
+
+	"torch_voting"
+	{
+		"it"		"Le votazioni per Torch Relay is {purple}disabled"
+	}
+
+	"torch_setbywarden"
+	{
+		"it"		"Impostare Torch Relay come CapoCT e' {purple}disattivato!"
+	}
+
+	"torch_setbyadmin"
+	{
+		"it"		"Impostare Torch Relay come Admin e' {purple}disabled!"
+	}
+
+	"torch_next"
+	{
+		"it"		"Il prossimo round ci sara': {purple}Torch Relay."
+	}
+
+	"torch_next_nc"
+	{
+		"it"		"Il prossimo round ci sara': Torch Relay."
+	}
+
+	"torch_start"
+	{
+		"it"		"{purple}Torch Relay{default} e' iniziato!"
+	}
+
+	"torch_start_nc"
+	{
+		"it"		"Torch Relay e' iniziato!"
+	}
+
+	"torch_voted"
+	{
+		"it"		"Hai gia' votato per{purple}Torch Relay!"
+	}
+
+	"torch_progress"
+	{
+		"it"		"L'evento {darkred}{1} {default}e' {purple}in corso"
+	}
+
+	"torch_minplayer"
+	{
+		"it"		"Per fare Torch Relay ci devono essere {purple}tree player, di cui uno deve essere Guardie!"
+	}
+
+	"torch_sprint"
+	{
+		"it"		"Ora stai {blue}Spritando!"
+	}
+
+	"torch_sprintend"
+	{
+		"it"		"{blue}Sei troppo stanco per usare lo sprint{default} Riposati per {1} secondi."
+	}
+
+	"torch_random"
+	{
+		"it"		"{darkred}La torcia e'... {1}"
+	}
+
+	"torch_sprintagain"
+	{
+		"it"		"Ti sei ripostato! Puoi usare {blue}lo sprint {default}di nuovo!"
+	}
+
+	"torch_disabled"
+	{
+		"it"		"Torch Relay e' {purple}disattivato!"
+	}
+
+	"torch_info_title"
+	{
+		"it"		"Torch Relay e' inizato!"
+	}
+
+	"torch_info_line1"
+	{
+		"it"		"Un player casuale brucera'!"
+	}
+
+	"torch_info_line2"
+	{
+		"it"		"Passa la fiammia danneggiando gli altri giocatori!"
+	}
+
+	"torch_info_line3"
+	{
+		"it"		"Tieni premuto E per sprintare! La Torcia e' piu' veloce di te!"
+	}
+
+	"torch_info_line4"
+	{
+		"it"		"Tutte le normali regole del JB non vengono applicate durante questo round!"
+	}
+
+	"torch_info_line5"
+	{
+		"it"		"Gli LR sono disattivati durante questo round!"
+	}
+
+	"torch_info_line6"
+	{
+		"it"		"Devi stare nella zona celle. E' vietato andare condotti o aree segrete!"
+	}
+
+	"torch_info_line7"
+	{
+		"it"		"Devi seguire le regole del server!"
+	}
+
+	"torch_wait"
+	{
+		"it"		"Devi aspettare {purple}{1}{default} prima di dare un altro evento!"
+	}
+
+	"torch_damage_nc"
+	{
+		"it"		"Un player casuale brucera' tra {1} secondi!"
+	}
+
+	"torch_torchem"
+	{
+		"it"		"{purple}{1}{default} e' la torcia!"
+	}
+
+	"torch_untorch"
+	{
+		"it"		"{purple}{1}{default} non e' piu' la torcia!"
+	}
+
+	"torch_win"
+	{
+		"it"		"The torch si e' estinta!"
+	}
+
+	"torch_name"
+	{
+		"it"		"Torch Relay"
+	}
+
+}

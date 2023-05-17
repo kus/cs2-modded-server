@@ -1,0 +1,21 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:33 UTC
+// Language: Turkish (tr)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/195
+//
+"Phrases"
+{
+
+	"knifefight_next"
+	{
+		"tr"		"Bir sonraki round : {purple}Bıçak Dövüşü olacak."
+	}
+
+	"knifefight_info_line3"
+	{
+		"tr"		"Run away during the 'NoDamage' phase!"
+	}
+
+}

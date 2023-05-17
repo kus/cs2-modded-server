@@ -1,0 +1,161 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:25 UTC
+// Language: Spanish (es)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/281
+//
+"Phrases"
+{
+
+	"dealdamage_need"
+	{
+		"es"		"{purple}{2}{default} ha votado. {purple}{1}{default} voto(s) requerido para jugar {darkred}DealDamage."
+	}
+
+	"dealdamage_rounds"
+	{
+		"es"		"Ronda {purple}{1}{default} de {purple}{2}."
+	}
+
+	"dealdamage_voting"
+	{
+		"es"		"El voto para Deal Damage Day está {purple}deshabilitado"
+	}
+
+	"dealdamage_setbywarden"
+	{
+		"es"		"El seteo de Deal Damage Day por el Guardia está {purple}deshabilitado!"
+	}
+
+	"dealdamage_setbyadmin"
+	{
+		"es"		"El seteo de Deal Damage Day por el Admin está {purple}deshabilitado!"
+	}
+
+	"dealdamage_end"
+	{
+		"es"		"{purple}Deal Damage Day{default} ha terminado!"
+	}
+
+	"dealdamage_next"
+	{
+		"es"		"La siguiente ronda será: {purple}Deal Damage Day."
+	}
+
+	"dealdamage_next_nc"
+	{
+		"es"		"La siguiente ronda será: Deal Damage Day."
+	}
+
+	"dealdamage_start"
+	{
+		"es"		"{purple}Deal Damage Day{default} ha comenzado!"
+	}
+
+	"dealdamage_start_nc"
+	{
+		"es"		"Deal Damage Day ha comenzado!"
+	}
+
+	"dealdamage_voted"
+	{
+		"es"		"Ya has votado por {purple}Deal Damage Day!"
+	}
+
+	"dealdamage_progress"
+	{
+		"es"		"El evento {darkred}{1} {default}ya {purple}está en progreso!"
+	}
+
+	"dealdamage_disabled"
+	{
+		"es"		"Deal Damage Day actualmente está {purple}deshabilitdo!"
+	}
+
+	"dealdamage_timeuntilstart_nc"
+	{
+		"es"		"{1} segundos hasta que la ronda comience!"
+	}
+
+	"dealdamage_info_title"
+	{
+		"es"		"Deal Damage Day esta ahora Activado"
+	}
+
+	"dealdamage_info_line1"
+	{
+		"es"		"Deal Damage Day esta ahora Activado!"
+	}
+
+	"dealdamage_info_line2"
+	{
+		"es"		"Has el mayor daño posible que puedas al equipo contrario!"
+	}
+
+	"dealdamage_info_line3"
+	{
+		"es"		"El equipo con más daño infringido gana!"
+	}
+
+	"dealdamage_info_line4"
+	{
+		"es"		"Las reglas usuales de Jailbreak no aplican en este modo!"
+	}
+
+	"dealdamage_info_line5"
+	{
+		"es"		"LR esta deshabilitado durante esta ronda!"
+	}
+
+	"dealdamage_info_line6"
+	{
+		"es"		"Todo el mundo está autorizado a ir a cualquier parte dentro del mapa!"
+	}
+
+	"dealdamage_info_line7"
+	{
+		"es"		"No seas un idiota!"
+	}
+
+	"dealdamage_wait"
+	{
+		"es"		"Debes esperar {purple}{1}{default} rondas mas para otro {purple} Evento!"
+	}
+
+	"dealdamage_result"
+	{
+		"es"		"Resultados de la partida:"
+	}
+
+	"dealdamage_total"
+	{
+		"es"		"Daño total: {1} HP"
+	}
+
+	"dealdamage_most"
+	{
+		"es"		"Mayor daño hecho: {1} Damage: {2} HP"
+	}
+
+	"dealdamage_client"
+	{
+		"es"		"Tu daño: {1} HP"
+	}
+
+	"dealdamage_clientdealed"
+	{
+		"es"		"Infringiste:"
+	}
+
+	"dealdamage_hpdamage"
+	{
+		"es"		"Daño (HP)"
+	}
+
+	"dealdamage_name"
+	{
+		"es"		"DEAL DAMAGE DAY"
+	}
+
+}

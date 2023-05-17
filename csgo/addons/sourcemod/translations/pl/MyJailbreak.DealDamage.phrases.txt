@@ -1,0 +1,236 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:26 UTC
+// Language: Polish (pl)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/281
+//
+"Phrases"
+{
+
+	"dealdamage_need"
+	{
+		"pl"		"{purple}{2}{default} zagłosował. {purple}{1}{default} głos(ów) potrzebny(ch), aby zagrać {darkred}DealDamage."
+	}
+
+	"dealdamage_rounds"
+	{
+		"pl"		"Runda {purple}{1}{default} z {purple}{2}."
+	}
+
+	"dealdamage_twin_nc"
+	{
+		"pl"		"DRUŻYNA CZERWONYCH wygrywa z {1} zadanych HP"
+	}
+
+	"dealdamage_voting"
+	{
+		"pl"		"Głosowanie na Deal Damage Day jest {purple}wyłączone"
+	}
+
+	"dealdamage_ctwin_nc"
+	{
+		"pl"		"DRUŻYNA NIEBIESKICH wygrywa z {1} zadanych HP!"
+	}
+
+	"dealdamage_end"
+	{
+		"pl"		"{purple}Deal Damage Day{default} zakończył się!"
+	}
+
+	"dealdamage_next"
+	{
+		"pl"		"Następna runda to: {purple}Deal Damage Day."
+	}
+
+	"dealdamage_next_nc"
+	{
+		"pl"		"Następna runda to: Deal Damage Day."
+	}
+
+	"dealdamage_start"
+	{
+		"pl"		"{purple}Deal Damage Day{default} zaczął się!"
+	}
+
+	"dealdamage_now_nc"
+	{
+		"pl"		"Runda Deal Damage zaczyna się."
+	}
+
+	"dealdamage_now"
+	{
+		"pl"		"Runda {purple}Deal Damage{default} zaczyna się."
+	}
+
+	"dealdamage_start_nc"
+	{
+		"pl"		"Deal Damage Day zaczął się!"
+	}
+
+	"dealdamage_voted"
+	{
+		"pl"		"Już zagłosowałeś na {purple}Deal Damage Day!"
+	}
+
+	"dealdamage_progress"
+	{
+		"pl"		"Event {darkred}{1} {purple}już trwa!"
+	}
+
+	"dealdamage_disabled"
+	{
+		"pl"		"Deal Damage Day jest obecnie {purple}wyłączony!"
+	}
+
+	"dealdamage_timeuntilstart_nc"
+	{
+		"pl"		"{1} sekund do rozpoczęcia rundy!"
+	}
+
+	"dealdamage_info_title"
+	{
+		"pl"		"Deal Damage Day jest teraz aktywny"
+	}
+
+	"dealdamage_info_line2"
+	{
+		"pl"		"Zadaj tak wiele obrażeń jak potrafisz drużynie przeciwnej!"
+	}
+
+	"dealdamage_info_line3"
+	{
+		"pl"		"Drużyna z największą ilością zadanych obrażeń wygrywa!"
+	}
+
+	"dealdamage_info_line4"
+	{
+		"pl"		"Wszystkie zwykłe zasady Jailbreak są uchylone"
+	}
+
+	"dealdamage_info_line5"
+	{
+		"pl"		"Ostatnie Życzenia są wyłączone w tej rundzie!"
+	}
+
+	"dealdamage_info_line6"
+	{
+		"pl"		"Każdy może iść dokąd zechce w obrębie mapy!"
+	}
+
+	"dealdamage_info_line7"
+	{
+		"pl"		"Nie bądź dupkiem!"
+	}
+
+	"dealdamage_wait"
+	{
+		"pl"		"Musisz jeszcze zaczekać {purple}{1}{default} rund(y) do Dnia Eventu!"
+	}
+
+	"dealdamage_result"
+	{
+		"pl"		"Wyniki Deal Damage Day:"
+	}
+
+	"dealdamage_total"
+	{
+		"pl"		"Całkowite obrażenia: {1} HP"
+	}
+
+	"dealdamage_most"
+	{
+		"pl"		"Najwięcej zadanych obrażeń: {1} Obrażenia: {2} HP"
+	}
+
+	"dealdamage_ct"
+	{
+		"pl"		"Obrażenia NIEBIESKICH: {1} HP"
+	}
+
+	"dealdamage_t"
+	{
+		"pl"		"Obrażenia CZERWONYCH: {1} HP"
+	}
+
+	"dealdamage_client"
+	{
+		"pl"		"Twoje obrażenia: {1} HP"
+	}
+
+	"dealdamage_ctdealed"
+	{
+		"pl"		"NIEBIESCY zadali:"
+	}
+
+	"dealdamage_tdealed"
+	{
+		"pl"		"CZERWONI zadali:"
+	}
+
+	"dealdamage_clientdealed"
+	{
+		"pl"		"Zadałeś:"
+	}
+
+	"dealdamage_hpdamage"
+	{
+		"pl"		"Obrażenia HP"
+	}
+
+	"dealdamage_name"
+	{
+		"pl"		"Deal Damage Day"
+	}
+
+	"dealdamage_teamblue"
+	{
+		"pl"		"Jesteś w {blue}DRUŻYNIE NIEBIESKIEJ"
+	}
+
+	"dealdamage_teamred"
+	{
+		"pl"		"Jesteś w {darkred}DRUŻYNIE CZERWONEJ"
+	}
+
+	"dealdamage_teamblue_nc"
+	{
+		"pl"		"Jesteś w DRUŻYNIE NIEBIESKIEJ"
+	}
+
+	"dealdamage_teamred_nc"
+	{
+		"pl"		"Jesteś w DRUŻYNIE CZERWONEJ"
+	}
+
+	"dealdamage_playerteamblue"
+	{
+		"pl"		"{purple}{1}{default} jest w {blue}DRUŻYNIE NIEBIESKIEJ"
+	}
+
+	"dealdamage_playerteamred"
+	{
+		"pl"		"{purple}{1}{default} jest w {darkred}DRUŻYNIE CZERWONEJ"
+	}
+
+	"dealdamage_blue_nc"
+	{
+		"pl"		"NIEBIESKI"
+	}
+
+	"dealdamage_red_nc"
+	{
+		"pl"		"CZERWONY"
+	}
+
+	"dealdamage_info_blueteam"
+	{
+		"pl"		"Jesteś w DRUŻYNIE NIEBIESKIEJ"
+	}
+
+	"dealdamage_info_redteam"
+	{
+		"pl"		"Jesteś w DRUŻYNIE CZERWONEJ"
+	}
+
+}

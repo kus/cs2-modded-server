@@ -1,0 +1,156 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:24 UTC
+// Language: Spanish (es)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/197
+//
+"Phrases"
+{
+
+	"lastguard_need"
+	{
+		"es"		"{purple}{2}{default} ha votado. {purple}{1}{default} votos requeridos para jugar {darkred}The Last Guard Rule."
+	}
+
+	"lastguard_twin_nc"
+	{
+		"es"		"Los Prisioneros han sobrevivido!"
+	}
+
+	"lastguard_minplayer"
+	{
+		"es"		"Para la Última regla del Guardia necesitas como maximo {purple}un Guardia y mínimo 2 Prisioneros!"
+	}
+
+	"lastguard_hp"
+	{
+		"es"		"El {purple}{1} Prisionero{default} tiene una combinacion total de: {purple}{2} HP{default}. El ultimo Guardia {3} ahora tiene: {purple}{4} HP{default}."
+	}
+
+	"lastguard_setbyadmin"
+	{
+		"es"		"El seteo de la Última regla del Guardia por el Admin está {purple}deshabilitado!"
+	}
+
+	"lastguard_ctwin_nc"
+	{
+		"es"		"El Guardia Gana!"
+	}
+
+	"lastguard_end"
+	{
+		"es"		"La {purple}Última regla del Guardia{default} ha terminado!"
+	}
+
+	"lastguard_startnow"
+	{
+		"es"		"Atencion! {purple}Última regla del Guardia{default} esta ahora Activado!"
+	}
+
+	"lastguard_startnow_nc"
+	{
+		"es"		"Attention! Última regla del Guardia esta ahora Activado!"
+	}
+
+	"lastguard_start"
+	{
+		"es"		"La {purple}Última regla del Guardiae{default} ha comenzado!"
+	}
+
+	"lastguard_lr"
+	{
+		"es"		"La {purple}Ultima Voluntad{default} esta activada! Última regla del Guardia no esta disponible!"
+	}
+
+	"lastguard_start_nc"
+	{
+		"es"		"La Última regla del Guardia ha comenzado!"
+	}
+
+	"lastguard_movenow"
+	{
+		"es"		"Ahora puedes {purple}moverte!"
+	}
+
+	"lastguard_movenow_nc"
+	{
+		"es"		"Ahora puedes moverte!"
+	}
+
+	"lastguard_voted"
+	{
+		"es"		"Ya has votado por {purple}La Última regla del Guardia!"
+	}
+
+	"lastguard_notalive"
+	{
+		"es"		"Tu {purple}debes estar vivo{default} para usar este comando!"
+	}
+
+	"lastguard_progress"
+	{
+		"es"		"El Evento {darkred}{1} {default}ya esta {purple}en progreso! La Última regla del Guardia esta desactivada!"
+	}
+
+	"lastguard_running"
+	{
+		"es"		"The Last Guard Rule {default}is {purple}already in progress!"
+	}
+
+	"lastguard_disabled"
+	{
+		"es"		"La Última regla del Guardia actualmente está {purple}deshabilitdo!"
+	}
+
+	"lastguard_timeuntilstart_nc"
+	{
+		"es"		"{1} segundos hasta que la ronda comience!"
+	}
+
+	"lastguard_info_title"
+	{
+		"es"		"La Última regla del Guardia esta habilitado!"
+	}
+
+	"lastguard_info_line1"
+	{
+		"es"		"La Última regla del Guardia - Prisioneros VS Guardias."
+	}
+
+	"lastguard_info_line4"
+	{
+		"es"		"Las reglas usuales de Jailbreak no aplican en este modo!"
+	}
+
+	"lastguard_info_line5"
+	{
+		"es"		"LR esta deshabilitado durante esta ronda!"
+	}
+
+	"lastguard_info_line7"
+	{
+		"es"		"No seas un idiota!"
+	}
+
+	"lastguard_info_line2"
+	{
+		"es"		"Todos los terroristas son rebeldes!"
+	}
+
+	"lastguard_info_line3"
+	{
+		"es"		"El ultimo guardia tiene mas puntos de vida!"
+	}
+
+	"lastguard_info_line6"
+	{
+		"es"		"Todo el mundo está autorizado a ir a cualquier parte dentro del mapa!"
+	}
+
+	"lastguard_close"
+	{
+		"es"		"Salir"
+	}
+
+}

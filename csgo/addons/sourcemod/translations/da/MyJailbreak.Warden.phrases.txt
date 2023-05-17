@@ -1,0 +1,586 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:17 UTC
+// Language: Danish (da)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/178
+//
+"Phrases"
+{
+
+	"warden_new"
+	{
+		"da"		"{purple}{1}{default} er nu warden!"
+	}
+
+	"warden_new_nc"
+	{
+		"da"		"{1} er nu warden!"
+	}
+
+	"warden_playerdead"
+	{
+		"da"		"Kun {purple}spillere i live{default} kan blive warden."
+	}
+
+	"warden_ctsonly"
+	{
+		"da"		"Kun {purple}Counter-Terrorister{default} kan blive warden."
+	}
+
+	"warden_exist"
+	{
+		"da"		"Nuværende Warden er: {purple}{1}{default}"
+	}
+
+	"warden_retire"
+	{
+		"da"		"{purple}{1}{default} har valgt at stoppe som warden. Andre CT kan skrive !w for at blive warden."
+	}
+
+	"warden_retire_nc"
+	{
+		"da"		"{1} har valgt at stoppe som warden. Andre CT kan skrive !w for at blive warden."
+	}
+
+	"warden_notwarden"
+	{
+		"da"		"Du SKAL være {purple}Warden{default} for at bruge denne command."
+	}
+
+	"warden_dead"
+	{
+		"da"		"Warden er nu {darkred}DØD{default}. Andre CT kan skrive !w for at blive warden."
+	}
+
+	"warden_nowarden"
+	{
+		"da"		"Der er ingen {purple}Fængselsinspektør{default}. Skriv {green}!w{default} for at blive Fængselsinspektør!"
+	}
+
+	"warden_nowarden_nc"
+	{
+		"da"		"Der er ingen Fængelsesinspektør på nuværende tidspunkt. Skriv !w for at blive Fængselsinspektør!"
+	}
+
+	"warden_dead_nc"
+	{
+		"da"		"Warden er nu DØD. Andre CT kan skrive !w for at blive warden."
+	}
+
+	"warden_disconnected"
+	{
+		"da"		"Warden har {purple}disconnected{default}. Andre CT kan skrive !w for at blive warden."
+	}
+
+	"warden_disconnected_nc"
+	{
+		"da"		"Warden har disconnected. Andre CT kan skrive !w for at blive warden."
+	}
+
+	"warden_removed"
+	{
+		"da"		"Admin: {purple}{1}{default} har fyret Warden: {purple}{2}"
+	}
+
+	"warden_removed_nc"
+	{
+		"da"		"Admin: {1} har fyret Warden: {2}"
+	}
+
+	"warden_noexist"
+	{
+		"da"		"Der var {purple}ingen warden."
+	}
+
+	"warden_disabled"
+	{
+		"da"		"Warden er {purple}deaktiveret{default}."
+	}
+
+	"warden_nobecome"
+	{
+		"da"		"En ny warden bliver valgt {purple}tilfældigt{default}!"
+	}
+
+	"warden_adminset"
+	{
+		"da"		"Admin: {purple}{1}{default} er warden - Valgt af admin!"
+	}
+
+	"warden_randomwarden"
+	{
+		"da"		"En tilfældig warden er blevet valgt!"
+	}
+
+	"warden_dooropen"
+	{
+		"da"		"Warden har {purple}åbnet{default} cellerne."
+	}
+
+	"warden_doorclose"
+	{
+		"da"		"Warden har {purple}lukket{default} cellerne."
+	}
+
+	"warden_openauto"
+	{
+		"da"		"Dørene har {purple}åbnet automatisk{default}"
+	}
+
+	"warden_opentime"
+	{
+		"da"		"Nu skulle {purple}celle dørene{default} være åbne!"
+	}
+
+	"warden_ffison"
+	{
+		"da"		"Friendly fire {purple}aktiveret!"
+	}
+
+	"warden_ffisoff"
+	{
+		"da"		"Friendly fire {purple}deaktiveret!"
+	}
+
+	"warden_voting"
+	{
+		"da"		"Afstemning om at kick {purple}warden{default} er deaktiveret!"
+	}
+
+	"warden_countdowncanceled"
+	{
+		"da"		"Nedtælling blev {darkred} annulleret "
+	}
+
+	"warden_startcountdown_nc"
+	{
+		"da"		"Starter om {1} sekunder!"
+	}
+
+	"warden_stopcountdown_nc"
+	{
+		"da"		"Stopper om {1} sekunder!"
+	}
+
+	"warden_startcountdown"
+	{
+		"da"		"Starter om {purple}{1}{default} sekunder!"
+	}
+
+	"warden_stopcountdown"
+	{
+		"da"		"Stopper om {purple}{1}{default} sekunder!"
+	}
+
+	"warden_startcountdownhint"
+	{
+		"da"		"ADVARSEL! Warden har {purple}startet en CountDown!"
+	}
+
+	"warden_startcountdownhint_nc"
+	{
+		"da"		"ADVARSEL! Warden har startet en CountDown!"
+	}
+
+	"warden_startstopcountdownhint"
+	{
+		"da"		"ADVARSEL! Warden har {purple}startet en START/STOP CountDown!"
+	}
+
+	"warden_startstopcountdownhint_nc"
+	{
+		"da"		"ADVARSEL! Warden har startet en START/STOP CountDown!"
+	}
+
+	"warden_stopcountdownhint"
+	{
+		"da"		"ADVARSEL! Warden har {purple}STOPPET en CountDown!"
+	}
+
+	"warden_stopcountdownhint_nc"
+	{
+		"da"		"ADVARSEL! Warden har startet et STOP CountDown. Skynd dig!"
+	}
+
+	"warden_countdownstart"
+	{
+		"da"		"{purple}GO! {darkred}START! {green}AFSTED!"
+	}
+
+	"warden_countdownstop"
+	{
+		"da"		"{purple}STOP! {darkred}SLUT! {green}AFSLUTTET!"
+	}
+
+	"warden_countdownrunning"
+	{
+		"da"		"En countdown er {purple}allerede i gang!"
+	}
+
+	"warden_countdownstart_nc"
+	{
+		"da"		"GO! START!"
+	}
+
+	"warden_countdownstop_nc"
+	{
+		"da"		"STOP! SLUT!"
+	}
+
+	"warden_noblockoff"
+	{
+		"da"		"Warden har {purple}deaktiveret NOBLOCK!"
+	}
+
+	"warden_noblockon"
+	{
+		"da"		"Warden har {purple}aktiveret NOBLOCK!"
+	}
+
+	"warden_need"
+	{
+		"da"		"{1} afstemninger tilbage til {darkred}kick warden"
+	}
+
+	"warden_voted"
+	{
+		"da"		"Du har allerede stemt på at kicke {purple}warden{default}"
+	}
+
+	"warden_israndom"
+	{
+		"da"		"{1} blev valgt tilfældigt!"
+	}
+
+	"warden_gunplant"
+	{
+		"da"		"Vagt{purple}{1}{default} Har droppet våbnet {green}{2}!"
+	}
+
+	"warden_gunplant_nc"
+	{
+		"da"		"Vagt {1} har droppet våbnet "
+	}
+
+	"warden_noplant"
+	{
+		"da"		"Det er {darkred}forbudt{default} for vagter at droppe våben!"
+	}
+
+	"warden_laseron"
+	{
+		"da"		"Laser {purple}aktiveret!"
+	}
+
+	"warden_laseroff"
+	{
+		"da"		"Laser {purple}deaktiveret!"
+	}
+
+	"warden_draweron"
+	{
+		"da"		"Drawer {purple}aktiveret!"
+	}
+
+	"warden_draweroff"
+	{
+		"da"		"Drawer {purple}deaktiveret!"
+	}
+
+	"warden_drawert"
+	{
+		"da"		"Slå skuffe til/fra for terrorister"
+	}
+
+	"warden_marker_set"
+	{
+		"da"		"{1} område er sat!"
+	}
+
+	"warden_marker_remove"
+	{
+		"da"		"{1} Markør fjernet!"
+	}
+
+	"warden_laser"
+	{
+		"da"		"{1} Laster pointer er nu slået til"
+	}
+
+	"warden_marker_faraway"
+	{
+		"da"		"Din {1} markør er blevet fjernet. Du var for langt væk fra den."
+	}
+
+	"warden_marker_title"
+	{
+		"da"		"Markør Farve"
+	}
+
+	"warden_laser_title"
+	{
+		"da"		"Laserpen Farve"
+	}
+
+	"warden_laser_off"
+	{
+		"da"		"Slå laster pointer fra"
+	}
+
+	"warden_green"
+	{
+		"da"		"Grøn"
+	}
+
+	"warden_white"
+	{
+		"da"		"Hvid"
+	}
+
+	"warden_magenta"
+	{
+		"da"		"Magenta"
+	}
+
+	"warden_range"
+	{
+		"da"		"Positionen er for langt væk"
+	}
+
+	"warden_muteend"
+	{
+		"da"		"{2}Blev muted af Warden {1} For resten af runden!"
+	}
+
+	"warden_cdmenu_title"
+	{
+		"da"		"Countdown Menu"
+	}
+
+	"warden_cdmenu_title2"
+	{
+		"da"		"Tid mellem start og stop"
+	}
+
+	"warden_time_title"
+	{
+		"da"		"Hvor lang tid?"
+	}
+
+	"warden_15"
+	{
+		"da"		"15 Sekunder"
+	}
+
+	"warden_30"
+	{
+		"da"		"30 Sekunder"
+	}
+
+	"warden_120"
+	{
+		"da"		"2 Minutter"
+	}
+
+	"warden_300"
+	{
+		"da"		"5 Minutter"
+	}
+
+	"warden_math_correct"
+	{
+		"da"		"{1} har givet et{green} korrekt svar!{default} Svaret var {purple}{2}!"
+	}
+
+	"warden_startmathquiz"
+	{
+		"da"		"ADVARSEL! Warden har {purple}startet en  Math Quiz!"
+	}
+
+	"warden_startmathquiz_nc"
+	{
+		"da"		"ADVARSEL! Warden har startet en Math Quiz!"
+	}
+
+	"warden_yes"
+	{
+		"da"		"Ja"
+	}
+
+	"warden_minrandom"
+	{
+		"da"		"Der er kun én (ikke oprørsk) Fange tilbage!"
+	}
+
+	"warden_menu_unmute"
+	{
+		"da"		"Unmute en fange"
+	}
+
+	"warden_cuffsoff"
+	{
+		"da"		"{purple}{1}{default} har fjernet {green}{2}'s{default} Håndjern."
+	}
+
+	"warden_cuffsgot"
+	{
+		"da"		"Du har kun {green}{1}{default} håndjern tilbage!"
+	}
+
+	"warden_bulletmarkoff"
+	{
+		"da"		"Skud gnister er nu {purple}slået fra"
+	}
+
+	"warden_backstab"
+	{
+		"da"		"Beskyttelse mod knivstik i ryggen er nu aktiveret."
+	}
+
+	"warden_close"
+	{
+		"da"		"Luk"
+	}
+
+	"warden_gotpaperclip"
+	{
+		"da"		"Du har hemmeligt {1} papirklip(s) i din lomme! Hold +brug (E) For at bruge"
+	}
+
+	"warden_brokepaperclip"
+	{
+		"da"		"Du ødelagde din papirklips!"
+	}
+
+	"warden_painter_title"
+	{
+		"da"		"Maler farve"
+	}
+
+	"warden_painter_off"
+	{
+		"da"		"Deaktiver maler"
+	}
+
+	"warden_painteron"
+	{
+		"da"		"Painter {purple}aktiveret!"
+	}
+
+	"warden_painteroff"
+	{
+		"da"		"Painter {purple}deaktiveret!"
+	}
+
+	"warden_paintert"
+	{
+		"da"		"Slå maler til/fra for fanger"
+	}
+
+	"warden_tpainteron"
+	{
+		"da"		"Maleren for fanger er {purple} slået til!"
+	}
+
+	"warden_disarmed"
+	{
+		"da"		"{1} har fået sit våben fjernet af {2}"
+	}
+
+	"warden_lostgun"
+	{
+		"da"		"Du er blevet skadet i armen! Du har mistet dit våben!"
+	}
+
+	"warden_remaining"
+	{
+		"da"		"Tilbage"
+	}
+
+	"warden_dooropen_unavailable"
+	{
+		"da"		"{darkred}Denne bane understøtter ikke fjern åbning af døre. {default}Du {purple} skal selv åbne manuelt!"
+	}
+
+	"warden_votesuccess"
+	{
+		"da"		"Afstemningen om at {purple}fjerne Warden{default} var successful. "
+	}
+
+	"warden_mutedefault"
+	{
+		"da"		"Alle fanger er muted som standard"
+	}
+
+	"warden_rebel_mark"
+	{
+		"da"		"Marker spiller som rebel"
+	}
+
+	"warden_rebel_unmark"
+	{
+		"da"		"Fjern en spiller som rebel"
+	}
+
+	"warden_talkover"
+	{
+		"da"		"Warden snakker! Du er blevet muted."
+	}
+
+	"warden_deputy_ctsonly"
+	{
+		"da"		"Kun {purple}Counter-Terrorister{default} Kan blive delegeret"
+	}
+
+	"warden_deputy_disabled"
+	{
+		"da"		"Deputy er {purple}deaktiveret{default}."
+	}
+
+	"warden_deputy_nobecome"
+	{
+		"da"		"Du kan ikke blive deligerede. Warden skal selv vælge dig"
+	}
+
+	"warden_deputy_retire_nc"
+	{
+		"da"		"{1} Har trukket sig som delegeret. Du kan nu vælge en ny!"
+	}
+
+	"warden_deputy_fired_nc"
+	{
+		"da"		"Warden {1} Har fyret den {2} som delegeret"
+	}
+
+	"warden_deputy_fired"
+	{
+		"da"		"Warden: {purple}{1}{default} Har fyret den delegerede : {purple}{2}"
+	}
+
+	"warden_deputy_dead_nc"
+	{
+		"da"		"Den delegerede død. Du kan nu vælge en ny"
+	}
+
+	"warden_deputy_dead"
+	{
+		"da"		"Den delegerede er nu {darkred}død{default}. Du kan nu vælge en ny."
+	}
+
+	"warden_wait"
+	{
+		"da"		"Som  {green}Warden sidste runde{default} Skal du nu vente{purple}{1} sekunder{default} før du kan blive warden igen"
+	}
+
+	"warden_reputation"
+	{
+		"da"		"Du skal bruge minimum {1} Omdømme point, for at spille som warden"
+	}
+
+	"warden_removefreeday"
+	{
+		"da"		"Fjern freeday fra:"
+	}
+
+}

@@ -1,0 +1,451 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:18 UTC
+// Language: Korean (ko)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/178
+//
+"Phrases"
+{
+
+	"warden_new"
+	{
+		"ko"		"{purple}{1}{default} 님이 이제 이 감옥의 보안관 입니다."
+	}
+
+	"warden_new_nc"
+	{
+		"ko"		"{1} 님이 이제 이 감옥의 소장 입니다."
+	}
+
+	"warden_playerdead"
+	{
+		"ko"		"오직 {purple}살아있는 플레이어{default}만 보안관이 될 수 있습니다!"
+	}
+
+	"warden_retire_nc"
+	{
+		"ko"		"{1} 님이 소장을 포기했습니다. 이제 새로운 소장을 선택할 수 있습니다!"
+	}
+
+	"warden_dead"
+	{
+		"ko"		"소장이 {darkred}죽었습니다{default}. 이제 새로운 소장을 선택할 수 있습니다."
+	}
+
+	"warden_nowarden_nc"
+	{
+		"ko"		"현재 소장이 없습니다. !w 를 입력하면 소장이 될 수 있습니다!"
+	}
+
+	"warden_disconnected_nc"
+	{
+		"ko"		"소장님의 연결이 끊겼습니다. 이제 새로운 소장을 선택할 수 있습니다."
+	}
+
+	"warden_removed"
+	{
+		"ko"		"어드민 : {1} 님이 {2} 소장을 해고했습니다."
+	}
+
+	"warden_noexist"
+	{
+		"ko"		"현재 소장이 없습니다!"
+	}
+
+	"warden_disabled"
+	{
+		"ko"		"소장이 {purple}비활성화 되었습니다!"
+	}
+
+	"warden_randomwarden"
+	{
+		"ko"		"랜덤으로 소장님이 선택되었습니다!"
+	}
+
+	"warden_openauto"
+	{
+		"ko"		"감옥 문이 {purple}자동으로 열렸습니다."
+	}
+
+	"warden_opentime"
+	{
+		"ko"		"이제 감옥 문이 열릴 것 입니다!"
+	}
+
+	"warden_ffison"
+	{
+		"ko"		"아군 사격이 {purple}활성화 되었습니다!"
+	}
+
+	"warden_ffisoff"
+	{
+		"ko"		"아군 사격이 {purple}비활성화{default} 되었습니다!"
+	}
+
+	"warden_countdowncanceled"
+	{
+		"ko"		"카운트 다운이 {darkred}취소{default}되었습니다!"
+	}
+
+	"warden_stopcountdown_nc"
+	{
+		"ko"		"{1} 초 내에 중지 / 종료 됩니다!"
+	}
+
+	"warden_startcountdown"
+	{
+		"ko"		"{1} 초 내에 시작합니다!"
+	}
+
+	"warden_stopcountdown"
+	{
+		"ko"		"{purple}{1}{default} 초 안에 멈춥니다!"
+	}
+
+	"warden_startstopcountdownhint"
+	{
+		"ko"		"주목! 소장님이 {purple}카운트다운을 시작합니다!"
+	}
+
+	"warden_countdownrunning"
+	{
+		"ko"		"카운트 다운이 {purple}이미 진행 중입니다!"
+	}
+
+	"warden_countdownstop_nc"
+	{
+		"ko"		"중지! 멈춰!"
+	}
+
+	"warden_need"
+	{
+		"ko"		"소장을 강퇴하기 위해서는 {1} 명의 투표가 필요합니다."
+	}
+
+	"warden_voted"
+	{
+		"ko"		"현재 {purple}소장{default}에 대해 이미 투표 했습니다!"
+	}
+
+	"warden_israndom"
+	{
+		"ko"		"{1} 님이 랜덤으로 선택되었습니다!"
+	}
+
+	"warden_gunplant_nc"
+	{
+		"ko"		"간수 {1} 님이 {2} 무기를 떨어트렸습니다!"
+	}
+
+	"warden_noplant"
+	{
+		"ko"		"간수가 무기를 버리는것은 {darkred}금지되어있습니다!"
+	}
+
+	"warden_remove"
+	{
+		"ko"		"현재 소장을 제거하겠습니까?"
+	}
+
+	"warden_tdraweron"
+	{
+		"ko"		"Drawer for Terrorists is {purple}enabled"
+	}
+
+	"warden_tdraweroff"
+	{
+		"ko"		"Drawer for Terrorists is {purple}disabled"
+	}
+
+	"warden_marker_set"
+	{
+		"ko"		"{1} 마커 설정!"
+	}
+
+	"warden_marker_remove"
+	{
+		"ko"		"{1} 마커가 제거되었습니다!"
+	}
+
+	"warden_laser"
+	{
+		"ko"		"{1} 레이저 포인터가 장착되었습니다!"
+	}
+
+	"warden_drawer"
+	{
+		"ko"		"{1} Drawer equipt!"
+	}
+
+	"warden_marker_title"
+	{
+		"ko"		"마커 색상"
+	}
+
+	"warden_drawer_title"
+	{
+		"ko"		"Drawer Color Text"
+	}
+
+	"warden_red"
+	{
+		"ko"		"빨강"
+	}
+
+	"warden_green"
+	{
+		"ko"		"녹색"
+	}
+
+	"warden_orange"
+	{
+		"ko"		"오렌지"
+	}
+
+	"warden_yellow"
+	{
+		"ko"		"노랑"
+	}
+
+	"warden_wrong"
+	{
+		"ko"		"무언가 잘못되었습니다! 다시 시도해주세요!"
+	}
+
+	"warden_muteend"
+	{
+		"ko"		"{2}님이 {1} 소장님에 의해 라운드가 끝날때까지 벙어리가 됩니다!"
+	}
+
+	"warden_cdmenu_stop"
+	{
+		"ko"		"정지 카운트다운 시작 (20초)"
+	}
+
+	"warden_cdmenu_title2"
+	{
+		"ko"		"시작 & 중지 사이의 시간"
+	}
+
+	"warden_allt"
+	{
+		"ko"		"모든 죄수"
+	}
+
+	"warden_roundend"
+	{
+		"ko"		"라운드가 끝날때 까지"
+	}
+
+	"warden_15"
+	{
+		"ko"		"15 초"
+	}
+
+	"warden_30"
+	{
+		"ko"		"30 초"
+	}
+
+	"warden_60"
+	{
+		"ko"		"1 분"
+	}
+
+	"warden_120"
+	{
+		"ko"		"2 분"
+	}
+
+	"warden_300"
+	{
+		"ko"		"5 분"
+	}
+
+	"warden_math_correct"
+	{
+		"ko"		"{1}님 {green} 정답! {default} 답은 {purple} {2}이었습니다!"
+	}
+
+	"warden_math_time"
+	{
+		"ko"		"시간 종료! 정답자 없음. 정답은 바로 {1} 이었습니다!"
+	}
+
+	"warden_startmathquiz"
+	{
+		"ko"		"주목! 소장님이 {purple}수학 퀴즈{default}를 시작했습니다!"
+	}
+
+	"warden_yes"
+	{
+		"ko"		"예"
+	}
+
+	"warden_no"
+	{
+		"ko"		"아니오"
+	}
+
+	"warden_minrandom"
+	{
+		"ko"		"단 한명의 반란하지 않은 죄수가 남았습니다!"
+	}
+
+	"warden_nomuted"
+	{
+		"ko"		"음소거된 죄수가 없습니다!"
+	}
+
+	"warden_menu_unmute"
+	{
+		"ko"		"죄수 음소거 해제"
+	}
+
+	"warden_cuffs"
+	{
+		"ko"		"테이저로 수갑을 채울 수 있습니다!"
+	}
+
+	"warden_cuffson"
+	{
+		"ko"		"{purple}{1}{default}님이 {green}{2}{default} 님을 체포했습니다!"
+	}
+
+	"warden_cuffsoff"
+	{
+		"ko"		"{purple}{1}{default}님이 {green}{2}{default}님의 수갑을 풀었습니다."
+	}
+
+	"warden_cuffsgot"
+	{
+		"ko"		"{green}{1}{default} 수갑만 남았습니다!"
+	}
+
+	"warden_bulletmarkoff"
+	{
+		"ko"		"총알 임팩트가 {purple}비활성화 되었습니다."
+	}
+
+	"warden_extendtimes"
+	{
+		"ko"		"당신은 이미 이미 라운드 {1} 번을 확장했습니다!"
+	}
+
+	"warden_close"
+	{
+		"ko"		"닫힘"
+	}
+
+	"warden_painteron"
+	{
+		"ko"		"Painter가 {purple}활성화 되었습니다"
+	}
+
+	"warden_paintert"
+	{
+		"ko"		"Toggle Painter for Prisoners"
+	}
+
+	"warden_tpainteroff"
+	{
+		"ko"		"죄수를 위한 Painter는 {purple}비활성화 되었습니다!"
+	}
+
+	"warden_remaining"
+	{
+		"ko"		"남은"
+	}
+
+	"warden_doorclose_unavailable"
+	{
+		"ko"		"{darkred}이 맵은 원격으로 문을 닫을 수 없습니다. {default}당신은 반드시 {purple}수동{default}으로 문을 닫아야 합니다!"
+	}
+
+	"warden_menu_muteall"
+	{
+		"ko"		"모든 죄수 뮤트"
+	}
+
+	"warden_menu_unmuteall"
+	{
+		"ko"		"모든 죄수의 음소거 해제"
+	}
+
+	"warden_rebel_title"
+	{
+		"ko"		"반란 메뉴"
+	}
+
+	"warden_counter"
+	{
+		"ko"		"당신의 시야에 {1}명의 죄수가 있습니다."
+	}
+
+	"warden_deputy_playerdead"
+	{
+		"ko"		"오직 살아있는 플레이어만 부소장이 될 수 있습니다!"
+	}
+
+	"warden_deputy_ctsonly"
+	{
+		"ko"		"오직 간수만 부소장일 될 수 있습니다!"
+	}
+
+	"warden_deputy_exist"
+	{
+		"ko"		"현재 부소장 : {1}"
+	}
+
+	"warden_deputy_disabled"
+	{
+		"ko"		"부관은 현재 {purple}비활성화{default}! 되었습니다."
+	}
+
+	"warden_deputy_nobecome"
+	{
+		"ko"		"소장이 부소장을 직접 선택해야만 부소장이 될 수 있습니다."
+	}
+
+	"warden_deputy_fired_nc"
+	{
+		"ko"		"소장 : {1} 님이 부소장 {2} 님을 해고했습니다."
+	}
+
+	"warden_deputy_disconnected"
+	{
+		"ko"		"부소장이 연결을 끊었습니다. 이제 새로운 부소장을 선택할 수 있습니다."
+	}
+
+	"warden_deputy_new"
+	{
+		"ko"		"{1} 님이 이제 부소장입니다."
+	}
+
+	"warden_deputy_become"
+	{
+		"ko"		"현재 부소장이 없습니다. !deputy 로 부소장이 될 수 있습니다!"
+	}
+
+	"warden_pickingaborted"
+	{
+		"ko"		"선택이 중단되었습니다."
+	}
+
+	"warden_freedaynow"
+	{
+		"ko"		"이번 라운드"
+	}
+
+	"warden_freedayforyou"
+	{
+		"ko"		"다음 라운드에 FreeDay 가 됩니다."
+	}
+
+	"warden_limit"
+	{
+		"ko"		"당신은 {1} 라운드 동안 소장을 했습니다. {2} 라운드 동안 기다려야 합니다."
+	}
+
+}

@@ -1,0 +1,5 @@
+"MonitorScreen"
+{
+	"$basetexture" "overlays/MyJailbreak/warden"
+	"$translucent" 1
+}

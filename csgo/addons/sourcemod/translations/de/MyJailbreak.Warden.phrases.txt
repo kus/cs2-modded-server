@@ -1,0 +1,941 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:17 UTC
+// Language: German (de)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/178
+//
+"Phrases"
+{
+
+	"warden_new"
+	{
+		"de"		"{purple}{1}{default} ist der neue Warden dieses Gefängnisses."
+	}
+
+	"warden_new_nc"
+	{
+		"de"		"{1} ist der neue Warden dieses Gefängnisses."
+	}
+
+	"warden_playerdead"
+	{
+		"de"		"Nur {purple}lebende Spieler{default} können Warden werden."
+	}
+
+	"warden_ctsonly"
+	{
+		"de"		"nur {purple}Counter-Terrorists{default} können Warden werden."
+	}
+
+	"warden_exist"
+	{
+		"de"		"Derzeitiger Warden ist {purple}{1}{default}"
+	}
+
+	"warden_retire"
+	{
+		"de"		"{purple}{1}{default} ist zurückgetreten. Wir brauchen einen neuen Warden!"
+	}
+
+	"warden_retire_nc"
+	{
+		"de"		"{1} ist zurückgetreten. Wir brauchen einen neuen Warden!"
+	}
+
+	"warden_notwarden"
+	{
+		"de"		"Du musst {purple}Warden{default} sein um diesen Befehl zu benutzten."
+	}
+
+	"warden_dead"
+	{
+		"de"		"Der Warden ist {darkred}Tod{default}! Ihr solltet jetzt einen neuen wählen!"
+	}
+
+	"warden_nowarden"
+	{
+		"de"		"Es gibt zur Zeit {purple}keinen Warden{default}. Schreibe {green}!w{default} um neuer Warden zu werden!"
+	}
+
+	"warden_nowarden_nc"
+	{
+		"de"		"Es gibt zur Zeit keinen Warden. Schreibe !w um neuer Warden zu werden!"
+	}
+
+	"warden_dead_nc"
+	{
+		"de"		"Der Warden ist Tod! Ihr solltet jetzt einen neuen wählen!"
+	}
+
+	"warden_disconnected"
+	{
+		"de"		"Der Warden ist {purple}disconnected{default}. Wir brauchen einen neuen Warden!"
+	}
+
+	"warden_disconnected_nc"
+	{
+		"de"		"Der Warden ist disconnected. Wir brauchen einen neuen Warden!"
+	}
+
+	"warden_removed"
+	{
+		"de"		"Admin: {purple}{1}{default} hat Warden {purple}{2}{default} seines Amtes enthoben."
+	}
+
+	"warden_removed_nc"
+	{
+		"de"		"Admin {1} hat Warden {2} seines Amtes enthoben."
+	}
+
+	"warden_noexist"
+	{
+		"de"		"Es gibt {purple}keinen Warden."
+	}
+
+	"warden_disabled"
+	{
+		"de"		"Warden ist {purple}deaktiviert{default}."
+	}
+
+	"warden_nobecome"
+	{
+		"de"		"Warden wird {purple}zufällig ausgewählt.{default}."
+	}
+
+	"warden_adminset"
+	{
+		"de"		"Admin: {purple}{1}{default} wurde zum Warden ernannt"
+	}
+
+	"warden_randomwarden"
+	{
+		"de"		"Neuer Warden wurde zufällig gewählt."
+	}
+
+	"warden_dooropen"
+	{
+		"de"		"Warden hat hat die Zellentüren {purple}geöffnet{default}."
+	}
+
+	"warden_doorclose"
+	{
+		"de"		"Warden hat hat die Zellentüren {purple}geschlossen{default}."
+	}
+
+	"warden_openauto"
+	{
+		"de"		"Zellentüren wurden {purple}automatisch geöffnet{default}"
+	}
+
+	"warden_opentime"
+	{
+		"de"		"jetzt sollten zeitlich die {purple}Zellen{default} geöffnet werden"
+	}
+
+	"warden_ffison"
+	{
+		"de"		"Friendly Fire {purple}ist aktiv!"
+	}
+
+	"warden_ffisoff"
+	{
+		"de"		"Friendly Fire {purple}ist deaktiviert!"
+	}
+
+	"warden_voting"
+	{
+		"de"		"Voting gegen den {purple}Warden{default} ist deaktiviert!"
+	}
+
+	"warden_countdowncanceled"
+	{
+		"de"		"Der Countdown wurde {darkred}abgebrochen"
+	}
+
+	"warden_startcountdown_nc"
+	{
+		"de"		"Start in {1} Sekunden!"
+	}
+
+	"warden_stopcountdown_nc"
+	{
+		"de"		"Stop/Ende in {1} Sekunden!"
+	}
+
+	"warden_startcountdown"
+	{
+		"de"		"Start in {purple}{1}{default} Sekunden!"
+	}
+
+	"warden_stopcountdown"
+	{
+		"de"		"Stop in {purple}{1}{default} Sekunden!"
+	}
+
+	"warden_startcountdownhint"
+	{
+		"de"		"Aufgepasst! Der Warden hat einen {purple}START! CountDown gestartet!"
+	}
+
+	"warden_startcountdownhint_nc"
+	{
+		"de"		"Aufgepasst! Der Warden hat einen START! CountDown gestartet!"
+	}
+
+	"warden_startstopcountdownhint"
+	{
+		"de"		"Aufgepasst! Der Warden hat einen {purple}START! / STOP! CountDown gestartet!"
+	}
+
+	"warden_startstopcountdownhint_nc"
+	{
+		"de"		"Aufgepasst! Der Warden hat einen START! / STOP! CountDown gestartet!"
+	}
+
+	"warden_stopcountdownhint"
+	{
+		"de"		"Aufgepasst! Der Warden hat einen {purple}STOP! CountDown gestartet!"
+	}
+
+	"warden_stopcountdownhint_nc"
+	{
+		"de"		"Aufgepasst! Der Warden hat einen STOP! CountDown gestartet! Beeilt euch!"
+	}
+
+	"warden_countdownstart"
+	{
+		"de"		"{purple}GO! {darkred}START! {green}LOS!"
+	}
+
+	"warden_countdownstop"
+	{
+		"de"		"{purple}ENDE! {darkred}STOP! {green}Fertig!"
+	}
+
+	"warden_countdownrunning"
+	{
+		"de"		"Ein Countdown {purple}läuft bereits"
+	}
+
+	"warden_countdownstart_nc"
+	{
+		"de"		"GO! START! LOS!"
+	}
+
+	"warden_countdownstop_nc"
+	{
+		"de"		"HALT ENDE FERTIG!"
+	}
+
+	"warden_noblockoff"
+	{
+		"de"		"Der Warden hat {purple}noblock deaktiviert!"
+	}
+
+	"warden_noblockon"
+	{
+		"de"		"Der Warden hat {purple}noblock eingeschaltet!"
+	}
+
+	"warden_need"
+	{
+		"de"		"Noch {1} votes bis der {darkred}warden{default} geht"
+	}
+
+	"warden_voted"
+	{
+		"de"		"Du hast schon {purple}gegen den Warden{default} gestimmt"
+	}
+
+	"warden_israndom"
+	{
+		"de"		"{1} wurde als Zufallskanidat gewählt"
+	}
+
+	"warden_gunplant"
+	{
+		"de"		"Wärter {purple}{1}{default} hat eine {green}{2}{default} fallen lassen."
+	}
+
+	"warden_gunplant_nc"
+	{
+		"de"		"Wärter {1} hat eine {2} fallen lassen."
+	}
+
+	"warden_noplant"
+	{
+		"de"		"Es ist für CTs {darkred}verboten{default} Waffen fallen zu lassen!"
+	}
+
+	"warden_choose"
+	{
+		"de"		"Wähle Spieler"
+	}
+
+	"warden_remove"
+	{
+		"de"		"Derzeitigen Warden entfernen?"
+	}
+
+	"warden_laseron"
+	{
+		"de"		"Laser {purple}ist aktiv!"
+	}
+
+	"warden_laseroff"
+	{
+		"de"		"Laser {purple}ist deaktiviert!"
+	}
+
+	"warden_draweron"
+	{
+		"de"		"Drawer {purple}ist aktiv!"
+	}
+
+	"warden_draweroff"
+	{
+		"de"		"Drawer {purple}ist deaktiviert!"
+	}
+
+	"warden_drawert"
+	{
+		"de"		"Drawer für Terroristen ein/ausschalten"
+	}
+
+	"warden_tdraweron"
+	{
+		"de"		"Drawer für Terroristen {purple}ist aktiv!"
+	}
+
+	"warden_tdraweroff"
+	{
+		"de"		"Drawer für Terroristen {purple}ist deaktiviert!"
+	}
+
+	"warden_marker_set"
+	{
+		"de"		"Marker {1} gesetzt."
+	}
+
+	"warden_marker_remove"
+	{
+		"de"		"Marker {1} entfernt."
+	}
+
+	"warden_laser"
+	{
+		"de"		"Laser Pointer {1} ausgerüstet."
+	}
+
+	"warden_drawer"
+	{
+		"de"		"Drawer {1} ausgerüstet."
+	}
+
+	"warden_marker_faraway"
+	{
+		"de"		"Marker {1} entfernt. Du warst zu weit weg."
+	}
+
+	"warden_marker_title"
+	{
+		"de"		"Marker Farbauswahl"
+	}
+
+	"warden_laser_title"
+	{
+		"de"		"Laser Pointer Farbauswahl"
+	}
+
+	"warden_drawer_title"
+	{
+		"de"		"Drawer Farbauswahl"
+	}
+
+	"warden_laser_off"
+	{
+		"de"		"Laser Pointer ausschalten"
+	}
+
+	"warden_drawer_off"
+	{
+		"de"		"Drawer ausschalten"
+	}
+
+	"warden_rainbow"
+	{
+		"de"		"Regenbogen"
+	}
+
+	"warden_red"
+	{
+		"de"		"Rot"
+	}
+
+	"warden_blue"
+	{
+		"de"		"Blau"
+	}
+
+	"warden_green"
+	{
+		"de"		"Grün"
+	}
+
+	"warden_orange"
+	{
+		"de"		"Orange"
+	}
+
+	"warden_yellow"
+	{
+		"de"		"Gelb"
+	}
+
+	"warden_white"
+	{
+		"de"		"Weiß"
+	}
+
+	"warden_cyan"
+	{
+		"de"		"Türkis"
+	}
+
+	"warden_magenta"
+	{
+		"de"		"Magenta"
+	}
+
+	"warden_range"
+	{
+		"de"		"Diese Position ist zu weit entfernt!"
+	}
+
+	"warden_wrong"
+	{
+		"de"		"Irgendwas ist schiefgelaufen. Probiere es nochmal!"
+	}
+
+	"warden_mute"
+	{
+		"de"		"{2} wurde vom Warden {1} für {3} Sekunden gemutet"
+	}
+
+	"warden_muteend"
+	{
+		"de"		"{2} wurde vom Warden {1} bis zum Ende de Runde gemutet"
+	}
+
+	"warden_unmute"
+	{
+		"de"		"{1} wurde entmutet"
+	}
+
+	"warden_cdmenu_title"
+	{
+		"de"		"Countdown Menu"
+	}
+
+	"warden_cdmenu_start"
+	{
+		"de"		"Beginne einen Start Countdown (10Sek.)"
+	}
+
+	"warden_cdmenu_stop"
+	{
+		"de"		"Beginne einen Stop Countdown (20Sek.)"
+	}
+
+	"warden_cdmenu_startstop"
+	{
+		"de"		"Setzte einen Start/Stop Countdown"
+	}
+
+	"warden_cdmenu_title2"
+	{
+		"de"		"Zeit zwischen Start & Stop"
+	}
+
+	"warden_time_title"
+	{
+		"de"		"Für wie lange?"
+	}
+
+	"warden_allt"
+	{
+		"de"		"Alle Terroristen"
+	}
+
+	"warden_roundend"
+	{
+		"de"		"Bis zum Ende der Runde"
+	}
+
+	"warden_15"
+	{
+		"de"		"15 Sekunden"
+	}
+
+	"warden_30"
+	{
+		"de"		"30 Sekunden"
+	}
+
+	"warden_45"
+	{
+		"de"		"45 Sekunden"
+	}
+
+	"warden_60"
+	{
+		"de"		"1 Minute"
+	}
+
+	"warden_90"
+	{
+		"de"		"1 Minute 30 Sekunden"
+	}
+
+	"warden_120"
+	{
+		"de"		"2 Minuten"
+	}
+
+	"warden_180"
+	{
+		"de"		"3 Minuten"
+	}
+
+	"warden_300"
+	{
+		"de"		"5 Minuten"
+	}
+
+	"warden_math_correct"
+	{
+		"de"		"{1} hat die{green} richtige Antwort!{default} Die Antwort war {purple}{2}"
+	}
+
+	"warden_math_time"
+	{
+		"de"		"Zeit vorbei! Keine richitige Antwort. {purple}Die Antwort war {1}"
+	}
+
+	"warden_startmathquiz"
+	{
+		"de"		"Aufgepasst! Der Warden hat ein {purple} Mathe Quiz gestartet!"
+	}
+
+	"warden_startmathquiz_nc"
+	{
+		"de"		"Aufgepasst! Der Warden hat einen Mathe Quiz gestartet!"
+	}
+
+	"warden_sure"
+	{
+		"de"		"Bist du dir sicher?"
+	}
+
+	"warden_yes"
+	{
+		"de"		"Ja"
+	}
+
+	"warden_no"
+	{
+		"de"		"Nein"
+	}
+
+	"warden_minrandom"
+	{
+		"de"		"Es ist nur noch ein (nicht rebelierender) Terrorist am Leben."
+	}
+
+	"warden_nomuted"
+	{
+		"de"		"Es gibt keinen Terror zum unmuten"
+	}
+
+	"warden_mute_title"
+	{
+		"de"		"Mute Menu"
+	}
+
+	"warden_menu_mute"
+	{
+		"de"		"Einen Terrorist muten"
+	}
+
+	"warden_menu_unmute"
+	{
+		"de"		"Einen Terrorist unmuten"
+	}
+
+	"warden_cuffs"
+	{
+		"de"		"Benutze den Taser als Handschellen"
+	}
+
+	"warden_cuffson"
+	{
+		"de"		"{purple}{1}{default} hat {green}{2}{default} Handschellen angelegt"
+	}
+
+	"warden_cuffsoff"
+	{
+		"de"		"{purple}{1}{default} hat {green}{2}{default} Handschellen abgenommen"
+	}
+
+	"warden_cuffsgot"
+	{
+		"de"		"Du hast noch {green}{1}{default} Handschellen übrig"
+	}
+
+	"warden_bulletmarkoff"
+	{
+		"de"		"Bullet Impact Sparks {purple}deaktiviert!"
+	}
+
+	"warden_bulletmarkon"
+	{
+		"de"		"Bullet Impact Sparks {purple}eingeschaltet!"
+	}
+
+	"warden_extend"
+	{
+		"de"		"Warden {1} hat die Runde um {2} Minuten verlängert"
+	}
+
+	"warden_backstab"
+	{
+		"de"		"Backstab protection aktiv"
+	}
+
+	"warden_extendtimes"
+	{
+		"de"		"Du hast in dieser Runde schon {purple}{1} mal verlängert{default}."
+	}
+
+	"warden_close"
+	{
+		"de"		"Schliessen"
+	}
+
+	"warden_gotpaperclip"
+	{
+		"de"		"Du hast geheim {1} Büroklammern in deiner Tasche. Halte +use (E)"
+	}
+
+	"warden_brokepaperclip"
+	{
+		"de"		"Die Büroklammer ist zerbrochen!"
+	}
+
+	"warden_unlock"
+	{
+		"de"		"Du hast dich aus den Handschellen befreit!"
+	}
+
+	"warden_painter"
+	{
+		"de"		"Painter {1} ausgerüstet."
+	}
+
+	"warden_painter_title"
+	{
+		"de"		"Painter Farbauswahl"
+	}
+
+	"warden_painter_off"
+	{
+		"de"		"Painter ausschalten"
+	}
+
+	"warden_painteron"
+	{
+		"de"		"Painter {purple}ist aktiv!"
+	}
+
+	"warden_painteroff"
+	{
+		"de"		"Painter {purple}ist deaktiviert!"
+	}
+
+	"warden_paintert"
+	{
+		"de"		"Painter für Terroristen ein/ausschalten"
+	}
+
+	"warden_tpainteron"
+	{
+		"de"		"Painter für Terroristen {purple}ist aktiv!"
+	}
+
+	"warden_tpainteroff"
+	{
+		"de"		"Painter für Terroristen {purple}ist deaktiviert!"
+	}
+
+	"warden_disarmed"
+	{
+		"de"		"{1} wurde entwaffnet von {2}"
+	}
+
+	"warden_lostgun"
+	{
+		"de"		"Du wurdest am Arm verletzt! Du hast deine Waffe verloren!"
+	}
+
+	"warden_remaining"
+	{
+		"de"		"verbleibend"
+	}
+
+	"warden_dooropen_unavailable"
+	{
+		"de"		"{darkred}Diese Map unterstützt das öffnen der Türen aus der Ferne. {default}Du {purple} musst die Türen manuell öffnen!"
+	}
+
+	"warden_doorclose_unavailable"
+	{
+		"de"		"{darkred}Diese Map unterstützt kein Fernschließen der Türen. {default}Du {purple}musst die Türen manuell schließen!"
+	}
+
+	"warden_openauto_unavailable"
+	{
+		"de"		"{darkred}Diese Map unterstützt kein automatisches Türöffnen. {default} Der Warden {purple} muss die Türen manuell öffnen!"
+	}
+
+	"warden_menu_muteall"
+	{
+		"de"		"Alle Häftlinge muten"
+	}
+
+	"warden_menu_unmuteall"
+	{
+		"de"		"Alle Häftlinge entmuten"
+	}
+
+	"warden_menu_unmuteall"
+	{
+		"de"		"Alle Häftlinge entmuten"
+	}
+
+	"warden_votesuccess"
+	{
+		"de"		"Die Abstimmung {purple}gegen den Warden{default} war erfolgreich!"
+	}
+
+	"warden_mutedefault"
+	{
+		"de"		"Alle Gefangenen sind standartmäßig gemutet"
+	}
+
+	"warden_rebel_title"
+	{
+		"de"		"Rebellenmenü"
+	}
+
+	"warden_rebel_mark"
+	{
+		"de"		"Einen Gefangenen als rebellierend markieren"
+	}
+
+	"warden_rebel_unmark"
+	{
+		"de"		"Einen Rebellierenden begandigen"
+	}
+
+	"warden_talkover"
+	{
+		"de"		"Der Wärter spricht nun, du wurdest gemutet."
+	}
+
+	"warden_info_counter"
+	{
+		"de"		"Gefangene in Sicht:"
+	}
+
+	"warden_counter"
+	{
+		"de"		"Es befinden sich {1} Gefangene in deinem Sichtfeld."
+	}
+
+	"warden_deputy_playerdead"
+	{
+		"de"		"Nur {purple}lebende Spieler{default} können Deputy werden."
+	}
+
+	"warden_deputy_ctsonly"
+	{
+		"de"		"Nur {purple}Counter-Terrorists{default} können Deputy werden."
+	}
+
+	"warden_deputy_exist"
+	{
+		"de"		"Derzeitiger Deputy ist {purple}{1}{default}"
+	}
+
+	"warden_deputy_disabled"
+	{
+		"de"		"Deputy ist {purple}deaktiviert{default}."
+	}
+
+	"warden_deputy_nobecome"
+	{
+		"de"		"Du kannst kein Deputy werden, der Warden muss dich auswählen."
+	}
+
+	"warden_deputy_retire"
+	{
+		"de"		"{purple}{1}{default} ist zurückgetreten. Wir brauchen einen neuen Deputy!"
+	}
+
+	"warden_deputy_retire_nc"
+	{
+		"de"		"{1} ist zurückgetreten. Wir brauchen einen neuen Deputy!"
+	}
+
+	"warden_deputy_fired_nc"
+	{
+		"de"		"Warden {1} hat Deputy {2} seines Amtes enthoben."
+	}
+
+	"warden_deputy_fired"
+	{
+		"de"		"Warden: {purple}{1}{default} hat Deputy {purple}{2}{default} seines Amtes enthoben."
+	}
+
+	"warden_deputy_dead_nc"
+	{
+		"de"		"Der Deputy ist Tod! Ihr solltet jetzt einen neuen wählen!"
+	}
+
+	"warden_deputy_dead"
+	{
+		"de"		"Der Deputy ist {darkred}Tod{default}! Ihr solltet jetzt einen neuen wählen!"
+	}
+
+	"warden_deputy_disconnected"
+	{
+		"de"		"Der Deputy ist {purple}disconnected{default}. Wir brauchen einen neuen Deputy!"
+	}
+
+	"warden_deputy_disconnected_nc"
+	{
+		"de"		"Der Deputy ist disconnected. Wir brauchen einen neuen Deputy!"
+	}
+
+	"warden_deputy_new_nc"
+	{
+		"de"		"{1} ist der neue Deputy des Wardens."
+	}
+
+	"warden_deputy_new"
+	{
+		"de"		"{purple}{1}{default} ist der neue Deputy des Wardens."
+	}
+
+	"warden_deputy_set"
+	{
+		"de"		"Du kannst als {purple}Warden{default} einen {purple}Deputy{default} bestimmen. Schreibe {green}!deputy{default} um einen Stellvertreter zu wählen!"
+	}
+
+	"warden_deputy_become"
+	{
+		"de"		"Es gibt zur Zeit {purple}keinen Deputy{default}. Schreibe {green}!deputy{default} um neuer Deputy zu werden!"
+	}
+
+	"warden_picking"
+	{
+		"de"		"Knacke Schloss"
+	}
+
+	"warden_pickingaborted"
+	{
+		"de"		"Schloss knacken abgebrochen"
+	}
+
+	"warden_givefreeday"
+	{
+		"de"		"Freeday vergeben:"
+	}
+
+	"warden_havefreeday"
+	{
+		"de"		"{1} hat jetzt einen FreeDay!"
+	}
+
+	"warden_freeday_title"
+	{
+		"de"		"Freeday für {1}"
+	}
+
+	"warden_freedaynext"
+	{
+		"de"		"Nächste Runde"
+	}
+
+	"warden_freedaynow"
+	{
+		"de"		"Diese Runde"
+	}
+
+	"warden_freedayforyou"
+	{
+		"de"		"Du bekommst nächste Runde einen Freeday"
+	}
+
+	"warden_personalfreeday"
+	{
+		"de"		"{1} bekommst nächste Runde einen FreeDay"
+	}
+
+	"warden_cooldown"
+	{
+		"de"		"Du hast einen {purple} Warden Cooldown{default}. Warte {green}{1}{default} Runden."
+	}
+
+	"warden_limit"
+	{
+		"de"		"Du hast {purple}{1} Runden hintereinander{default} als Warden gespielt. Warte {green}{2}{default} Runden"
+	}
+
+	"warden_wait"
+	{
+		"de"		"Du musst noch {purple}{1} Sekunden{default} warten bevor du wieder Warden sein darfst."
+	}
+
+	"warden_deputy_removed"
+	{
+		"de"		"Admin: {purple}{1}{default} hat den Deputy {purple}{2}{default} gefeuert"
+	}
+
+	"warden_deputy_removed_nc"
+	{
+		"de"		"Admin: {1} hat den Deputy {2} gefeuert"
+	}
+
+	"warden_steamgroup"
+	{
+		"de"		"Du kannst nicht als Warden spielen. Du musst erst unserer Steamgruppe beitreten!"
+	}
+
+	"warden_rankme"
+	{
+		"de"		"Du brauchst mindestens {1} RankMe Punkte um als Warden zu spielen."
+	}
+
+	"warden_reputation"
+	{
+		"de"		"Du brauchst mindestens {1} Reputation Punkte um als Warden zu spielen."
+	}
+
+	"warden_stamm"
+	{
+		"de"		"Du brauchst {1} Stamm Punkte um als Warden zu spielen."
+	}
+
+}

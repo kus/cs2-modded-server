@@ -1,0 +1,56 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:21 UTC
+// Language: French (fr)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/231
+//
+"Phrases"
+{
+
+	"hud_planned"
+	{
+		"fr"		" Nouveau round"
+	}
+
+	"hud_running"
+	{
+		"fr"		"Ce round"
+	}
+
+	"hud_warden"
+	{
+		"fr"		"Warden:"
+	}
+
+	"hud_guards"
+	{
+		"fr"		" Gardes:"
+	}
+
+	"hud_prisoner"
+	{
+		"fr"		"Prisonnier"
+	}
+
+	"hud_on"
+	{
+		"fr"		"HUD {purple} est permis!"
+	}
+
+	"hud_off"
+	{
+		"fr"		" HUD {purple}est des handicapés"
+	}
+
+	"hud_lastCT"
+	{
+		"fr"		" Dernière garde"
+	}
+
+	"hud_youwarden"
+	{
+		"fr"		"Vous êtes le Warden!"
+	}
+
+}

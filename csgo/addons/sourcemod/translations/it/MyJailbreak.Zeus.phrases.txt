@@ -1,0 +1,146 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:30 UTC
+// Language: Italian (it)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/189
+//
+"Phrases"
+{
+
+	"zeus_need"
+	{
+		"it"		"{purple}{2}{default} ha votato. {purple}{1}{default} voti richiesti per fare {darkred}Zeus Day."
+	}
+
+	"zeus_rounds"
+	{
+		"it"		"Round {purple}{1}{default} di {purple}{2}"
+	}
+
+	"zeus_twin_nc"
+	{
+		"it"		"Un Prigioniere e' sopravvissuto!"
+	}
+
+	"zeus_voting"
+	{
+		"it"		"Le votazioni per Zeus Day sono {purple}disattivate!"
+	}
+
+	"zeus_setbywarden"
+	{
+		"it"		"Impostare Zeus come CapoCT e' {purple}disattivato!"
+	}
+
+	"zeus_setbyadmin"
+	{
+		"it"		"Impostare Zeus come Admin e' {purple}disattivato!"
+	}
+
+	"zeus_minplayer"
+	{
+		"it"		"Per fare Zeus Day c'e bisogno di almeno{purple}una Guardia ed un Prigoniere"
+	}
+
+	"zeus_ctwin_nc"
+	{
+		"it"		"Una Guardia e' sopravvissuta!"
+	}
+
+	"zeus_end"
+	{
+		"it"		"{purple}Zeus Day{default} e' finito."
+	}
+
+	"zeus_next"
+	{
+		"it"		"Il prossimo round ci sara': {purple}Zeus Day."
+	}
+
+	"zeus_next_nc"
+	{
+		"it"		"Il prossimo round ci sara': Zeus Day."
+	}
+
+	"zeus_start"
+	{
+		"it"		"{purple}Zeus Day{default} e' iniziato!"
+	}
+
+	"zeus_start_nc"
+	{
+		"it"		"Zeus Day e' iniziato!"
+	}
+
+	"zeus_voted"
+	{
+		"it"		"Hai gia' votato per{purple}Zeus Day!"
+	}
+
+	"zeus_progress"
+	{
+		"it"		"L'evento {darkred}{1} {default}e' {purple}in corso"
+	}
+
+	"zeus_disabled"
+	{
+		"it"		"Zeus Day e' {purple}disattivato !"
+	}
+
+	"zeus_timeuntilstart_nc"
+	{
+		"it"		"{1} secondi prima che inizi il round!"
+	}
+
+	"zeus_info_title"
+	{
+		"it"		"Zeus Day e' inizato!"
+	}
+
+	"zeus_info_line1"
+	{
+		"it"		"Zeus Day - Free for All!"
+	}
+
+	"zeus_info_line2"
+	{
+		"it"		"Hai solo un colpo nella Zeus!"
+	}
+
+	"zeus_info_line3"
+	{
+		"it"		"Quando uccidi qualcuno te ne viene aggiunto un altro colpo!"
+	}
+
+	"zeus_info_line4"
+	{
+		"it"		"Tutte le normali regole del JB non vengono applicate durante questo round!"
+	}
+
+	"zeus_info_line5"
+	{
+		"it"		"Gli LR sono disattivati durante questo round!"
+	}
+
+	"zeus_info_line6"
+	{
+		"it"		"Devi stare nella zona celle. E' vietato andare condotti o aree segrete!"
+	}
+
+	"zeus_info_line7"
+	{
+		"it"		"Non fate i cani!"
+	}
+
+	"zeus_wait"
+	{
+		"it"		"Devi aspettare {purple}{1}{default} prima di dare un altro evento!"
+	}
+
+	"zeus_name"
+	{
+		"it"		"Zeus Day"
+	}
+
+}

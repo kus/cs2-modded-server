@@ -1,0 +1,156 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:33 UTC
+// Language: Danish (da)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/185
+//
+"Phrases"
+{
+
+	"catch_need"
+	{
+		"da"		"{purple}{2}{default} har stemt. {purple}{1}{default} stemmer tilbage til {darkred}Catch{default} starter!"
+	}
+
+	"catch_rounds"
+	{
+		"da"		"Runde {purple}{1}{default} af {purple}{2}"
+	}
+
+	"catch_twin_nc"
+	{
+		"da"		"Terroristerne slap væk og vandt!"
+	}
+
+	"catch_ctwin_nc"
+	{
+		"da"		"Alle terrorister er blevet fanget!"
+	}
+
+	"catch_end"
+	{
+		"da"		"{purple}Catch{default} er afsluttet!"
+	}
+
+	"catch_voting"
+	{
+		"da"		"Afstemning for Catch er {purple}slået fra"
+	}
+
+	"catch_setbywarden"
+	{
+		"da"		"Start Catch som Warden er {purple}slået fra"
+	}
+
+	"catch_setbyadmin"
+	{
+		"da"		"Start Catch som Admin er {purple}slået fra"
+	}
+
+	"catch_next"
+	{
+		"da"		"Næste runde er {purple}Catch"
+	}
+
+	"catch_next_nc"
+	{
+		"da"		"Næste runde er Catch"
+	}
+
+	"catch_start"
+	{
+		"da"		"{purple}Catch{default} er startet!"
+	}
+
+	"catch_start_nc"
+	{
+		"da"		"Catch er startet!"
+	}
+
+	"catch_voted"
+	{
+		"da"		"Du har allerede stemt på {purple}Catch"
+	}
+
+	"catch_minplayer"
+	{
+		"da"		"For Catch mangler du mindst {purple}en CT & en T"
+	}
+
+	"catch_sprint"
+	{
+		"da"		"Du bruger nu {blue}Sprint!"
+	}
+
+	"catch_disabled"
+	{
+		"da"		"Catch er midlertidigt {purple}slået fra."
+	}
+
+	"catch_info_title"
+	{
+		"da"		"Catch er aktiveret!"
+	}
+
+	"catch_info_line1"
+	{
+		"da"		"CTs skal fange & fryse alle T ved at knife dem"
+	}
+
+	"catch_info_line2"
+	{
+		"da"		"T kan unfreeze fanget Ts med kniv"
+	}
+
+	"catch_info_line3"
+	{
+		"da"		"Brug E til at Sprint!"
+	}
+
+	"catch_info_line4"
+	{
+		"da"		"Ingen jail regler gælder i denne runde!"
+	}
+
+	"catch_info_line5"
+	{
+		"da"		"Der kan ikke laves !lr"
+	}
+
+	"catch_info_line7"
+	{
+		"da"		"Server Reglerne skal stadig holdes!"
+	}
+
+	"catch_wait"
+	{
+		"da"		"Du skal vente {purple}{1}{default} flere runder"
+	}
+
+	"catch_unfreeze"
+	{
+		"da"		"Fangen {purple}{1}{default} har unfreezet {blue}{2}"
+	}
+
+	"catch_catch"
+	{
+		"da"		"Vagten {purple}{1}{default} har frosset {blue}{2}{default}"
+	}
+
+	"catch_win"
+	{
+		"da"		"Alle fanger er {purple}FANGET!"
+	}
+
+	"catch_timetounfreeze_nc"
+	{
+		"da"		"{1} sekunder til du bliver unfreezet"
+	}
+
+	"catch_timeuntilstart_nc"
+	{
+		"da"		"{1} sekunder til at gemme dig i "
+	}
+
+}

@@ -1,0 +1,96 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:18 UTC
+// Language: Chinese (Simplified) (chi)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/178
+//
+"Phrases"
+{
+
+	"warden_noexist"
+	{
+		"chi"		"目前没有狱警!"
+	}
+
+	"warden_disabled"
+	{
+		"chi"		"狱警目前被{purple}禁用{default}!"
+	}
+
+	"warden_countdowncanceled"
+	{
+		"chi"		"倒数已{darkred}取消!"
+	}
+
+	"warden_startcountdown_nc"
+	{
+		"chi"		"将在{1}秒内开始!"
+	}
+
+	"warden_stopcountdown_nc"
+	{
+		"chi"		"将在{1}秒内结束!"
+	}
+
+	"warden_startcountdown"
+	{
+		"chi"		"将在 {purple}{1}{default} 秒内开始!"
+	}
+
+	"warden_countdownstop_nc"
+	{
+		"chi"		"停止! 已经结束!"
+	}
+
+	"warden_israndom"
+	{
+		"chi"		"{1} 选择了看运气!"
+	}
+
+	"warden_marker_title"
+	{
+		"chi"		"记号颜色"
+	}
+
+	"warden_laser_title"
+	{
+		"chi"		"激光笔颜色"
+	}
+
+	"warden_orange"
+	{
+		"chi"		"橙色"
+	}
+
+	"warden_60"
+	{
+		"chi"		"1分钟"
+	}
+
+	"warden_300"
+	{
+		"chi"		"5分钟"
+	}
+
+	"warden_math_correct"
+	{
+		"chi"		"{1} 给出了{green}正确答案: {purple} {2}!"
+	}
+
+	"warden_nomuted"
+	{
+		"chi"		"没有被静音的匪徒!"
+	}
+
+	"warden_bulletmarkoff"
+	{
+		"chi"		"子弹命中粒子效果{purple}已禁用!"
+	}
+
+	"warden_votesuccess"
+	{
+		"chi"		"狱警成功{purple}被踢出{default}!"
+	}
+
+}

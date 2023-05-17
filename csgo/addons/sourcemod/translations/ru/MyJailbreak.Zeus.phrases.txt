@@ -1,0 +1,156 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:30 UTC
+// Language: Russian (ru)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/189
+//
+"Phrases"
+{
+
+	"zeus_need"
+	{
+		"ru"		"{purple}{2}{default} проголосовал. {purple}{1}{default} голосов осталось до {darkred}дня зевса"
+	}
+
+	"zeus_rounds"
+	{
+		"ru"		"Раунд {purple}{1}{default} из {purple}{2}"
+	}
+
+	"zeus_twin_nc"
+	{
+		"ru"		"Т выжили"
+	}
+
+	"zeus_voting"
+	{
+		"ru"		"Голосования за день зевса {purple}отключено"
+	}
+
+	"zeus_setbywarden"
+	{
+		"ru"		"Командир {purple}отключил{default} выбор дня зевса"
+	}
+
+	"zeus_setbyadmin"
+	{
+		"ru"		"Администратор {purple}отключил{default} выбор дня зевса"
+	}
+
+	"zeus_minplayer"
+	{
+		"ru"		"Для дня Зевса необходимо как минимум {purple}один КТ"
+	}
+
+	"zeus_ctwin_nc"
+	{
+		"ru"		"КТ выжили"
+	}
+
+	"zeus_end"
+	{
+		"ru"		"{purple}День зевса{default} окончен!"
+	}
+
+	"zeus_next"
+	{
+		"ru"		"Следующий день {purple}День зевса"
+	}
+
+	"zeus_next_nc"
+	{
+		"ru"		"Следующий день День Зевса"
+	}
+
+	"zeus_start"
+	{
+		"ru"		"{purple}День зевса{default} начался!"
+	}
+
+	"zeus_start_nc"
+	{
+		"ru"		"День Зевса начался!"
+	}
+
+	"zeus_voted"
+	{
+		"ru"		"Вы уже проголосовали за {purple}День Зевса"
+	}
+
+	"zeus_progress"
+	{
+		"ru"		"Игровой день {darkred}{1} {default}в {purple}процессе."
+	}
+
+	"zeus_disabled"
+	{
+		"ru"		"День зевса {purple}отключен."
+	}
+
+	"zeus_timeuntilstart_nc"
+	{
+		"ru"		"{1} секунд до начала"
+	}
+
+	"zeus_info_title"
+	{
+		"ru"		"День зевса активен"
+	}
+
+	"zeus_info_line1"
+	{
+		"ru"		"День зевса - все против всех"
+	}
+
+	"zeus_info_line2"
+	{
+		"ru"		"У вас есть только один выстрел c Zeus"
+	}
+
+	"zeus_info_line3"
+	{
+		"ru"		"Убейте зевсом или ножом, чтобы получить новый зевс"
+	}
+
+	"zeus_info_line4"
+	{
+		"ru"		"Все нормальные правила тюрьмы отменяются"
+	}
+
+	"zeus_info_line5"
+	{
+		"ru"		"Здесь нету последних желаний!"
+	}
+
+	"zeus_info_line6"
+	{
+		"ru"		"Оставайтесь в главной камере! Не уходите в нычки!"
+	}
+
+	"zeus_info_line7"
+	{
+		"ru"		"Не будь мудаком!"
+	}
+
+	"zeus_wait"
+	{
+		"ru"		"Вы должны подождать больше {1} раундов"
+	}
+
+	"zeus_name"
+	{
+		"ru"		"День зевса"
+	}
+
+	"zeus_now_nc"
+	{
+		"ru"		"Начинается Зевс раунд."
+	}
+
+	"zeus_now"
+	{
+		"ru"		"Начинается {purple}Зевс{default} раунд."
+	}
+
+}

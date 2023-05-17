@@ -1,0 +1,156 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:27 UTC
+// Language: Polish (pl)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/187
+//
+"Phrases"
+{
+
+	"ffa_need"
+	{
+		"pl"		"{purple}{2}{default} zaglosowal {purple}{1}{default} pozostalo glosow do {darkred}FFA"
+	}
+
+	"ffa_voting"
+	{
+		"pl"		"Glosowanie graczy na FFA jest {purple}wylaczone"
+	}
+
+	"ffa_setbywarden"
+	{
+		"pl"		"Glosowanie na FFA przez Straznika jest {purple}wylaczone"
+	}
+
+	"ffa_setbyadmin"
+	{
+		"pl"		"Wlaczenie FFA przez admina jest {purple}wylaczone"
+	}
+
+	"ffa_ctwin_nc"
+	{
+		"pl"		"Counter-Terrorists przetrwal"
+	}
+
+	"ffa_twin_nc"
+	{
+		"pl"		"Terrorysta przetrwal"
+	}
+
+	"ffa_minplayer"
+	{
+		"pl"		"Do zabawy cowboy potrzeba przynajmniej {purple}jednego CT"
+	}
+
+	"ffa_end"
+	{
+		"pl"		"{purple}FFA{default} zakonczony"
+	}
+
+	"ffa_next"
+	{
+		"pl"		"Nastepna runda to {purple}FFA"
+	}
+
+	"ffa_next_nc"
+	{
+		"pl"		"Nastepna runda to FFA"
+	}
+
+	"ffa_rounds"
+	{
+		"pl"		"Runda {purple}{1}{default} z {purple}{2}"
+	}
+
+	"ffa_start"
+	{
+		"pl"		" {purple}FFA{default} sie rozpoczal!"
+	}
+
+	"ffa_start_nc"
+	{
+		"pl"		"FFA sie rozpoczal!"
+	}
+
+	"ffa_voted"
+	{
+		"pl"		"Juz glosowales na {purple}FFA"
+	}
+
+	"ffa_progress"
+	{
+		"pl"		"Zabawa  {darkred}{1} {default}sie {purple}rozpoczela"
+	}
+
+	"ffa_disabled"
+	{
+		"pl"		"FFA jest tymczasowo {purple}wylaczony."
+	}
+
+	"ffa_damage_nc"
+	{
+		"pl"		"{1} sekunda do wlączenia obrażeń"
+	}
+
+	"ffa_info_title"
+	{
+		"pl"		"Free for All Deathmatch jest aktywny"
+	}
+
+	"ffa_info_line1"
+	{
+		"pl"		"Nie zdziw sie jak przeniesie cie na Spawn CT "
+	}
+
+	"ffa_info_line2"
+	{
+		"pl"		"Free for All - Jeden na Jednego - Ostatni Zywy"
+	}
+
+	"ffa_info_line3"
+	{
+		"pl"		"Podczas NODAMAGE mapa przybiera cieni!!!"
+	}
+
+	"ffa_info_line4"
+	{
+		"pl"		"Wszystkie normalne zasady wiezienia zostaly zastapione"
+	}
+
+	"ffa_info_line5"
+	{
+		"pl"		"Nie ma ostatniego zyczenia!"
+	}
+
+	"ffa_info_line6"
+	{
+		"pl"		"Kazdy moze isc gdzie chce"
+	}
+
+	"ffa_info_line7"
+	{
+		"pl"		"Nie badz DUPKIEM!"
+	}
+
+	"ffa_wait"
+	{
+		"pl"		"Musisz poczekac  {1} rund"
+	}
+
+	"ffa_name"
+	{
+		"pl"		"Wszyscy na Wszystkich!"
+	}
+
+	"ffa_now_nc"
+	{
+		"pl"		"Rozpoczęła się runda FFA."
+	}
+
+	"ffa_now"
+	{
+		"pl"		"Teraz rozpoczyna się ffa  {purple}  {default}"
+	}
+
+}

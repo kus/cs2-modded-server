@@ -1,0 +1,126 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:33 UTC
+// Language: Danish (da)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/195
+//
+"Phrases"
+{
+
+	"knifefight_need"
+	{
+		"da"		"{purple}{2}{default} har stemt. {purple}{1}{default} afstemninger tilbage til {darkred}Knife Fight"
+	}
+
+	"knifefight_rounds"
+	{
+		"da"		"Runde {purple}{1}{default} af {purple}{2}"
+	}
+
+	"knifefight_twin_nc"
+	{
+		"da"		"En Terrorists har overlevet!"
+	}
+
+	"knifefight_voting"
+	{
+		"da"		"Afstemninger for Knife Fight er {purple}slået fra"
+	}
+
+	"knifefight_setbywarden"
+	{
+		"da"		"Knife Fight for Warden er {purple}slået fra"
+	}
+
+	"knifefight_setbyadmin"
+	{
+		"da"		"Knife Fight for Admin er {purple}slået fra"
+	}
+
+	"knifefight_ctwin_nc"
+	{
+		"da"		"En Counter-Terrorists har overlevet"
+	}
+
+	"knifefight_minplayer"
+	{
+		"da"		"For Knife Fight skal der mindst være {purple}en CT & en T"
+	}
+
+	"knifefight_end"
+	{
+		"da"		"{purple}Knife Fight{default} er afsluttet!"
+	}
+
+	"knifefight_next"
+	{
+		"da"		"Næste runde er {purple}Knife Fight"
+	}
+
+	"knifefight_next_nc"
+	{
+		"da"		"Næste runde er Knife Fight"
+	}
+
+	"knifefight_start"
+	{
+		"da"		"{purple}Knife Fight{default} er startet!"
+	}
+
+	"knifefight_start_nc"
+	{
+		"da"		"Knife Fight er startet!"
+	}
+
+	"knifefight_voted"
+	{
+		"da"		"Du har allerede stemt på {purple}Knife Fight"
+	}
+
+	"knifefight_disabled"
+	{
+		"da"		"Knife Fight er midlertidigt {purple}slået fra."
+	}
+
+	"knifefight_timeuntilstart_nc"
+	{
+		"da"		"{1} sekunder til runden starter!"
+	}
+
+	"knifefight_info_title"
+	{
+		"da"		"FFA Knifefighter- er hver mod hver aktiv!"
+	}
+
+	"knifefight_info_line1"
+	{
+		"da"		"Bliv ikke overrasket hvis du bliver teleportet til CT Spawn!"
+	}
+
+	"knifefight_info_line3"
+	{
+		"da"		"Du kan ikke skade andre spillere indtil runden starter"
+	}
+
+	"knifefight_info_line4"
+	{
+		"da"		"Alle jail regler er ophævet!"
+	}
+
+	"knifefight_info_line5"
+	{
+		"da"		"Der kan ikke laves !lr i denne runde!"
+	}
+
+	"knifefight_info_line7"
+	{
+		"da"		"Alle server regler skal holdes!"
+	}
+
+	"knifefight_wait"
+	{
+		"da"		"Du skal vente {1} flere runder"
+	}
+
+}

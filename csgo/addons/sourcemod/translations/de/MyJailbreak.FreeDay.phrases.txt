@@ -1,0 +1,121 @@
+// Exported from SourceMod Translator
+// Date: 2020-03-19 11:34:28 UTC
+// Language: German (de)
+// 
+// To view other translations for this plugin, please visit:
+// http://translator.mitchdempsey.com/sourcemod_plugins/192
+//
+"Phrases"
+{
+
+	"freeday_end"
+	{
+		"de"		"{purple}Freeday{default} beendet"
+	}
+
+	"freeday_need"
+	{
+		"de"		"{purple}{2}{default} hat gevotet. Jetzt noch {purple}{1}{default} votes bis {darkred}FreeDay{default} beginnt"
+	}
+
+	"freeday_next"
+	{
+		"de"		"Nächste Runde ist {purple}Freeday"
+	}
+
+	"freeday_next_nc"
+	{
+		"de"		"Nächste Runde ist Freeday"
+	}
+
+	"freeday_voting"
+	{
+		"de"		"Voting für Freeday ist {purple}deaktiviert"
+	}
+
+	"freeday_setbywarden"
+	{
+		"de"		"Freeday Aktivierung durch den Warden ist {purple}deaktiviert"
+	}
+
+	"freeday_setbyadmin"
+	{
+		"de"		"Freeday Aktivierung durch den Admin ist {purple}deaktiviert"
+	}
+
+	"freeday_start_nc"
+	{
+		"de"		"Freeday ist gestartet!"
+	}
+
+	"freeday_start"
+	{
+		"de"		"{purple}Freeday{default} ist gestartet!"
+	}
+
+	"freeday_voted"
+	{
+		"de"		"Du hast schon für {purple}Freeday {default}gevotet"
+	}
+
+	"freeday_progress"
+	{
+		"de"		"Event {darkred}{1} {default}ist {purple}bereits gesetzt."
+	}
+
+	"freeday_disabled"
+	{
+		"de"		"Freeday ist vorübergehend {purple}deaktiviert."
+	}
+
+	"freeday_info_title"
+	{
+		"de"		"Es ist Freeday!"
+	}
+
+	"freeday_info_line1"
+	{
+		"de"		"Es ist Freeday"
+	}
+
+	"freeday_info_line2"
+	{
+		"de"		"-----------------------------------"
+	}
+
+	"freeday_info_line3"
+	{
+		"de"		"-----------------------------------"
+	}
+
+	"freeday_info_line4"
+	{
+		"de"		"Alle normalen Jailregeln sind aufgehoben!"
+	}
+
+	"freeday_info_line5"
+	{
+		"de"		"Der letzte Terrorist hat keinen Wunsch frei!"
+	}
+
+	"freeday_info_line6"
+	{
+		"de"		"Jeder darf überall hin wo er will!"
+	}
+
+	"freeday_info_line7"
+	{
+		"de"		"Bau keine Scheisse!"
+	}
+
+	"freeday_wait"
+	{
+		"de"		"Du musst noch {1} Runden warten"
+	}
+
+	"freeday_name"
+	{
+		"de"		"Freeday"
+	}
+
+}
