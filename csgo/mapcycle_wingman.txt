@@ -15,3 +15,5 @@ workshop/1595985187/de_mirage_custom
 workshop/1318698056/de_subzero
 workshop/2238701164/cs_extraction
 workshop/2387176217/de_nukefun
+workshop/2966743364/bump_arena
+workshop/128677037/splat_valley
