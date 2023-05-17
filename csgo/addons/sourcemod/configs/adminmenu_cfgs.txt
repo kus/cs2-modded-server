@@ -18,7 +18,6 @@ Configs
 	"cfg/training.cfg"		"Jump Training"
 	"cfg/deathracers.cfg"	"Death Racers"
 	"cfg/zombiereloaded.cfg"	"Zombie:Reloaded"
-	"cfg/jailbreak.cfg"		"Jail Break"
 	"cfg/fortnite.cfg"		"Fortnite"
 	"cfg/gokart.cfg"		"Go Kart"
 	"cfg/fallguys.cfg"		"Fall Guys"

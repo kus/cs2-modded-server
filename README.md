@@ -13,8 +13,7 @@ A single modded Counter-Strike: Global Offensive Dedicated Server that you can c
 - Prop Hunt / Hide n Seek
 - Retakes
 - Wingman
-- Zombie:Reloaded
-- JailBreak
+- Zombie Reloaded
 - Multi 1v1
 - Practice (record grenade throws etc)
 - Minigames
@@ -98,7 +97,6 @@ Mod | Version | Why
 [Zombie:Reloaded](https://forums.alliedmods.net/showthread.php?t=277597) | `3.6.5` | Zombie Escape.
 [-N- Arms Fix](https://forums.alliedmods.net/showthread.php?t=293295) | `2.0.3` | -N- Arms Fix helps you to fix arms/gloves in your plugin.
 [ZR Custom arms](https://forums.alliedmods.net/showthread.php?p=2277249) | `5.1` | Set custom arms in CS:GO for zombiereloaded servers
-[Ultimate JailBreak](https://forums.alliedmods.net/showthread.php?p=2781733) | `1.1` | This JailBreak package is the pinnacle of JailBreak
 [Sound Info Library](https://forums.alliedmods.net/showthread.php?t=105816) | `1.0.1` | Better calculation of sound length and information required for PropHunt
 [SpeedRules](https://gitlab.com/Zipcore/speedrules) | `1.0` | Advanced system to sync speed rules required for PropHunt
 [Simple-Downloader](https://github.com/JakubKosmaty/Simple-Downloader) | `1.0` | Force clients to download files (audio for PropHunt)
