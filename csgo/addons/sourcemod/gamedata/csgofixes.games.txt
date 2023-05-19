@@ -1,0 +1,207 @@
+"Games"
+{
+	"csgo"
+	{
+		"Signatures"
+		{
+			// Patch within CGameUI::Think
+			"ThinkAddFlag"
+			{
+				"library"	"server"
+				"linux"		"\x72\x34\x83\xEC\x08\x6A\x10\x53\xE8"
+				"windows"	"\x8D\x9F\xD8\x00\x00\x00\x89\x45\xF8\x83\xC8\x10"
+			}
+			// Patch within CMovementSpeedMod::InputSpeedMod
+			"InputSpeedModFlashlight"
+			{
+				"library"	"server"
+				"linux"		"\x83\xEC\x0C\x53\xFF\x90\x54\x06\x00\x00\x83\xC4\x10\x85\xC0\x0F\x85\x38\x02\x00\x00"
+				"windows"	"\x8B\xCE\xFF\x90\x50\x06\x00\x00\x85\xC0\x74\x0C"
+			}
+			// Only ever referenced right next to string "TestActivator"
+			"CBaseFilter::InputTestActivator"
+			{
+				"library"	"server"
+				"linux"		"\x55\x89\xE5\x56\x53\x8B\x5D\x08\x8B\x75\x0C\x83\xEC\x04\x8B\x03"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x14\x56\x57\x8B\x7D\x08\x8B\xF1\x8B\x06"
+			}
+			// Contains string "%s Deactivate(): I have no player when called by %s!"
+			"CGameUI::Deactivate"
+			{
+				"library"	"server"
+				"linux"		"\x55\x89\xE5\x57\x56\x53\x83\xEC\x4C\x8B\x5D\x08\x8B\x93\x68\x05\x00\x00"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x14\x53\x56\x8B\xF1\x57\x8B\x8E\x50\x05\x00\x00"
+			}
+			// Contains string "Inserted %s with no model"
+			"CBaseEntity::PhysicsTouchTriggers"
+			{
+				"library"	"server"
+				"linux"		"\x55\x89\xE5\x57\x56\x53\x83\xEC\x2C\x8B\x55\x08\x8B\x7D\x0C\x8B\x5A\x24"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x0C\x57\x8B\xF9\x8B\x47\x1C"
+			}
+			// Contains string "Warning: Deleting orphaned child of"
+			"CBaseEntity::UpdateOnRemove"
+			{
+				"library"	"server"
+				"linux"		"\x55\x89\xE5\x57\x56\x53\x83\xEC\x2C\x8B\x7D\x08\xC6\x05\x2A\x2A\x2A\x2A\x01"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x1C\x53\x56\x8B\xF1\x57\x8B\x06\xFF\x90\xC0\x01\x00\x00"
+			}
+			// This is only ever called twice from the above function
+			"CGameStringPool::Remove"
+			{
+				"library"	"server"
+				"linux"		"\x55\x89\xE5\x57\x56\x53\x83\xEC\x2C\x8B\x45\x08\x0F\xB7\x1D\x2A\x2A\x2A\x2A"
+				"windows"	"\x55\x8B\xEC\x56\x8D\x45\x08"
+			}
+			// Contains strings "impact_physics_sparks" and "impact_physics_dust"
+			// Two functions meet this criteria, you want the one called from a function and not in a vtable
+			"PhysFrictionEffect"
+			{
+				"library"	"server"
+				"linux"		"\x55\x89\xE5\x56\x53\x8D\x45\xEC\x83\xEC\x28\x8B\x5D\x08\x50\x8D\x45\x0C"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x14\x53\x56\x57\x8B\xF2"
+			}
+		}
+		"Functions"
+		{
+			"CBaseFilter::InputTestActivator"
+			{
+				"signature"		"CBaseFilter::InputTestActivator"
+				"callconv"		"thiscall"
+				"return"		"void"
+				"this"			"ignore"
+				"arguments"
+				{
+					"inputdata"
+					{
+						"type"	"objectptr"
+					}
+				}
+			}
+			"CGameUI::Deactivate"
+			{
+				"signature"		"CGameUI::Deactivate"
+				"callconv"		"thiscall"
+				"return"		"void"
+				"this"			"address"
+				"arguments"
+				{
+					"pActivator"
+					{
+						"type"	"int"
+					}
+				}
+			}
+			"CBaseEntity::PhysicsTouchTriggers"
+			{
+				"signature"		"CBaseEntity::PhysicsTouchTriggers"
+				"callconv"		"thiscall"
+				"return"		"void"
+				"this"			"entity"
+				"arguments"
+				{
+					"pPrevAbsOrigin"
+					{
+						"type"	"vectorptr"
+					}
+				}
+			}
+			"CBaseEntity::UpdateOnRemove"
+			{
+				"signature"		"CBaseEntity::UpdateOnRemove"
+				"callconv"		"thiscall"
+				"return"		"void"
+				"this"			"entity"
+			}
+			"CBaseGrenade::Explode"
+			{
+				"offset"		"CBaseGrenade::Explode"
+				"hooktype"		"entity"
+				"return"		"void"
+				"this"			"entity"
+				"arguments"
+				{
+					"pTrace"
+					{
+						"type"	"objectptr"
+					}
+					"bitsDamageType"
+					{
+						"type"	"int"
+					}
+				}
+			}
+			"PhysFrictionEffect"
+			{
+				"signature"		"PhysFrictionEffect"
+				"callconv"		"cdecl"
+				"return"		"void"
+				"this"			"ignore"
+				"arguments"
+				{
+					"vecPos"
+					{
+						"type"	"vectorptr"
+						"windows"
+						{
+							"register"	"ecx"
+						}
+					}
+					"vecVel"
+					{
+						"type"	"object"
+						"size"	"12"
+						"windows"
+						{
+							"register"	"edx"
+						}
+					}
+					"energy"
+					{
+						"type"	"float"
+						"windows"
+						{
+							"register"	"xmm2"
+						}
+					}
+					"surfaceProps"
+					{
+						"type"	"int"
+					}
+					"surfacePropsHit"
+					{
+						"type"	"int"
+					}
+				}
+			}
+		}
+		"Offsets"
+		{
+			"CBaseGrenade::Explode"
+			{
+				"windows"	"237"
+				"linux"		"238"
+			}
+			"CappingOffset_ThinkAddFlag"
+			{
+				"windows"	"9"
+				"linux"		"8"
+			}
+			"PatchBytes_ThinkAddFlag"
+			{
+				"windows"	"3"
+				"linux"		"5"
+			}
+			"CappingOffset_InputSpeedModFlashlight"
+			{
+				"windows"	"2"
+				"linux"		"4"
+			}
+			"PatchBytes_InputSpeedModFlashlight"
+			{
+				"windows"	"22"
+				"linux"		"31"
+			}
+		}
+	}
+}

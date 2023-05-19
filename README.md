@@ -91,6 +91,8 @@ Mod | Version | Why
 [Gloves](https://forums.alliedmods.net/showthread.php?t=299977) | `1.0.5` | Custom gloves
 [Weapon & Knives](https://forums.alliedmods.net/showthread.php?t=298770) | `1.7.7-2fa2527` | Custom weapon skins
 [Accelerator](https://forums.alliedmods.net/showthread.php?t=277703) | `2.5.0-cd575aa` | Crash Reporting That Doesn't Suck
+[Fix Mapchange Crash](https://forums.alliedmods.net/showthread.php?p=2748951) | `1.0` |  Fix players crash on map change. This plugin will reconnect all players before the map is changed.
+[CSGOFixes](https://github.com/Vauff/CSGOFixes) | `2.0` |  A collection of various fixes for CS:GO
 [Capture the flag](https://forums.alliedmods.net/showthread.php?p=2466337) | `1.2` | Capture the flag for CS:GO
 [Models in map](https://forums.alliedmods.net/showthread.php?p=2389415) | `1.2` | Allows you to place models in map. Required for CTF
 [Easy Downloader](https://forums.alliedmods.net/showthread.php?t=292207) | `1.03` | Downloads and Precaches Files/Folders. Required for CTF
