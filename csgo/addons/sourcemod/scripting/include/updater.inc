@@ -10,7 +10,7 @@
  * @param url		URL to your plugin's update file.
  * @noreturn
  */
-native int Updater_AddPlugin(const char[] url);
+native Updater_AddPlugin(const String:url[]);
 
 /**
  * Removes your plugin from the updater. This does not need to 
@@ -18,7 +18,7 @@ native int Updater_AddPlugin(const char[] url);
  *
  * @noreturn
  */
-native int Updater_RemovePlugin();
+native Updater_RemovePlugin();
 
 /**
  * Forces your plugin to be checked for updates. The behaviour 
@@ -27,21 +27,21 @@ native int Updater_RemovePlugin();
  * @return		True if an update was triggered. False otherwise.
  * @error		Plugin not found in updater.
  */
-native bool Updater_ForceUpdate();
+native bool:Updater_ForceUpdate();
 
 /**
  * Called when your plugin is about to be checked for updates.
  *
  * @return		Plugin_Handled to prevent checking, Plugin_Continue to allow it.
  */
-forward Action Updater_OnPluginChecking();
+forward Action:Updater_OnPluginChecking();
 
 /**
  * Called when your plugin is about to begin downloading an available update.
  *
  * @return		Plugin_Handled to prevent downloading, Plugin_Continue to allow it.
  */
-forward Action Updater_OnPluginDownloading();
+forward Action:Updater_OnPluginDownloading();
 
 /**
  * Called when your plugin's update files have been fully downloaded 
@@ -52,7 +52,7 @@ forward Action Updater_OnPluginDownloading();
  *
  * @noreturn
  */
-forward int Updater_OnPluginUpdating();
+forward Updater_OnPluginUpdating();
 
 /**
  * Called when your plugin's update has been completed. It is safe
@@ -60,7 +60,7 @@ forward int Updater_OnPluginUpdating();
  *
  * @noreturn
  */
-forward int Updater_OnPluginUpdated();
+forward Updater_OnPluginUpdated();
 
 /**
  * @brief Reloads a plugin.
@@ -68,15 +68,15 @@ forward int Updater_OnPluginUpdated();
  * @param plugin	Plugin Handle (INVALID_HANDLE uses the calling plugin).
  * @noreturn
  */
-stock int ReloadPlugin(Handle plugin=INVALID_HANDLE)
+stock ReloadPlugin(Handle:plugin=INVALID_HANDLE)
 {
-	char filename[64];
+	decl String:filename[64];
 	GetPluginFilename(plugin, filename, sizeof(filename));
 	ServerCommand("sm plugins reload %s", filename);
 }
 
 
-public SharedPlugin __pl_updater = 
+public SharedPlugin:__pl_updater = 
 {
 	name = "updater",
 	file = "updater.smx",
@@ -88,7 +88,7 @@ public SharedPlugin __pl_updater =
 };
 
 #if !defined REQUIRE_PLUGIN
-public bool __pl_updater_SetNTVOptional()
+public __pl_updater_SetNTVOptional()
 {
 	MarkNativeAsOptional("Updater_AddPlugin");
 	MarkNativeAsOptional("Updater_RemovePlugin");

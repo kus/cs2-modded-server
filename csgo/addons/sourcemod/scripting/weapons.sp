@@ -21,6 +21,8 @@
 #include <cstrike>
 #include <PTaH>
 #include <weapons>
+#undef REQUIRE_PLUGIN
+#include <updater>
 
 #pragma semicolon 1
 #pragma newdecls required
@@ -33,6 +35,9 @@
 #include "weapons/config.sp"
 #include "weapons/menus.sp"
 #include "weapons/natives.sp"
+
+#define UPDATE_URL "https://raw.githubusercontent.com/kgns/weapons/master/addons/sourcemod/updatefile.txt"
+
 
 //#define DEBUG
 
@@ -94,9 +99,11 @@ public void OnPluginStart()
 	RegConsoleCmd("sm_ws", CommandWeaponSkins);
 	RegConsoleCmd("buyammo2", CommandKnife);
 	RegConsoleCmd("sm_knife", CommandKnife);
+	RegConsoleCmd("sm_kf", CommandKnife);
 	RegConsoleCmd("sm_nametag", CommandNameTag);
 	RegConsoleCmd("sm_wslang", CommandWSLang);
 	RegConsoleCmd("sm_seed", CommandSeedMenu);
+	RegAdminCmd("sm_wsreset", CommandResetWeaponSkins, ADMFLAG_ROOT, "Resets weapon skins and knife of a specific player.");
 	
 	PTaH(PTaH_GiveNamedItemPre, Hook, GiveNamedItemPre);
 	PTaH(PTaH_GiveNamedItemPost, Hook, GiveNamedItemPost);
@@ -124,6 +131,19 @@ public void OnPluginStart()
 		{
 			g_iWeaponSeed[i][j] = -1;
 		}
+	}
+
+	if (LibraryExists("updater"))
+	{
+		Updater_AddPlugin(UPDATE_URL);
+	}
+}
+
+public void OnLibraryAdded(const char[] name)
+{
+	if (StrEqual(name, "updater"))
+	{
+		Updater_AddPlugin(UPDATE_URL);
 	}
 }
 
@@ -189,6 +209,40 @@ public Action CommandWeaponSkins(int client, int args)
 			PrintToChat(client, " %s \x02%t", g_ChatPrefix, "GracePeriod", g_iGracePeriod);
 		}
 	}
+	return Plugin_Handled;
+}
+
+public Action CommandResetWeaponSkins(int client, int args)
+{
+	if(args != 1)
+	{
+		ReplyToCommand(client, "[SM] Usage: sm_wsreset <playername>");
+		return Plugin_Handled;
+	}
+
+	char buffer[32];
+	GetCmdArg(1, buffer, sizeof(buffer));
+
+	int target = FindTarget(client, buffer);
+	if(target == -1)
+	{
+		ReplyToCommand(client, "[SM] Please enter valid playername!");
+		return Plugin_Handled;
+	}
+	
+	for(int i = 0; i < sizeof(g_WeaponClasses); i++)
+	{
+		g_iSkins[target][i] = 0;
+		g_iStatTrak[target][i] = 0;
+		g_iStatTrakCount[target][i] = 0;
+		g_NameTag[target][i] = "";
+		g_fFloatValue[target][i] = 0.0;
+		g_iWeaponSeed[target][i] = -1;
+	}
+	g_iKnife[target] = 0;
+
+	ResetPlayerData(target);
+
 	return Plugin_Handled;
 }
 

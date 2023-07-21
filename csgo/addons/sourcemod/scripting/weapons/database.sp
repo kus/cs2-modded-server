@@ -37,16 +37,7 @@ public void T_GetPlayerDataCallback(Database database, DBResultSet results, cons
 		}
 		else if (results.RowCount == 0)
 		{
-			char steamid[32];
-			if(GetClientAuthId(clientIndex, AuthId_Steam2, steamid, sizeof(steamid), true))
-			{
-				char query[255];
-				FormatEx(query, sizeof(query), "INSERT INTO %sweapons (steamid) VALUES ('%s')", g_TablePrefix, steamid);
-				DataPack pack = new DataPack();
-				pack.WriteString(steamid);
-				pack.WriteString(query);
-				db.Query(T_InsertCallback, query, pack);
-			}
+			CreatePlayerData(clientIndex);
 		}
 		else
 		{
@@ -904,6 +895,51 @@ public void T_DeleteInactivePlayerDataCallback(Database database, DBResultSet re
 		{
 			LogMessage("Inactive players' data has been deleted");
 		}
+	}
+	delete pack;
+}
+
+void CreatePlayerData(int client)
+{
+	char steamid[32];
+	if(GetClientAuthId(client, AuthId_Steam2, steamid, sizeof(steamid), true))
+	{
+		char query[255];
+		FormatEx(query, sizeof(query), "INSERT INTO %sweapons (steamid) VALUES ('%s')", g_TablePrefix, steamid);
+		DataPack pack = new DataPack();
+		pack.WriteString(steamid);
+		pack.WriteString(query);
+		db.Query(T_InsertCallback, query, pack);
+	}
+}
+
+void ResetPlayerData(int client)
+{
+	char steamid[32];
+	if(GetClientAuthId(client, AuthId_Steam2, steamid, sizeof(steamid), true))
+	{
+		char query[255];
+		FormatEx(query, sizeof(query), "DELETE FROM %sweapons WHERE steamid = '%s'", g_TablePrefix, steamid);
+		DataPack pack = new DataPack();
+		pack.WriteCell(GetClientUserId(client));
+		pack.WriteString(query);
+		db.Query(T_DeletePlayerDataCallback, query, pack);
+	}
+}
+
+public void T_DeletePlayerDataCallback(Database database, DBResultSet results, const char[] error, DataPack pack)
+{
+	pack.Reset();
+	int client = GetClientOfUserId(pack.ReadCell());
+	if (results == null)
+	{
+		char buffer[255];
+		pack.ReadString(buffer, 255);
+		LogError("Delete Query failed! query: \"%s\" error: \"%s\"", buffer, error);
+	}
+	else if (client > 0)
+	{
+		CreatePlayerData(client);
 	}
 	delete pack;
 }

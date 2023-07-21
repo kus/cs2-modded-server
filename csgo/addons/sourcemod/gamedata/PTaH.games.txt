@@ -9,11 +9,11 @@
 				"signature" "g_CPlayerVoiceListener"
 				"windows"
 				{
-					"read"  "3"
+					"read"  "0x3"
 				}
 				"linux"
 				{
-					"read"  "231"
+					"read"  "0xE7"
 				}
 			}
 		}
@@ -64,18 +64,18 @@
 			}
 			"CEconItemSchema::m_mapItems"
 			{
-				"windows"       "172"
-				"linux"         "172"
+				"windows"       "0xAC"
+				"linux"         "0xAC"
 			}
 			"CEconItemSchema::m_mapAttributesContainer"
 			{
-				"windows"       "284"
-				"linux"         "284"
+				"windows"       "0x11C"
+				"linux"         "0x11C"
 			}
 			"CCStrike15ItemDefinition::m_vbClassUsability"
 			{
-				"windows"       "648"
-				"linux"         "648"
+				"windows"       "0x288"
+				"linux"         "0x288"
 			}
 			"CEconItemDefinition::GetNumSupportedStickerSlots"
 			{
@@ -104,23 +104,13 @@
 			}
 			"CEconItemDefinition::m_pszDefinitionName"
 			{
-				"windows"       "476"
-				"linux"         "476"
+				"windows"       "0x1DC"
+				"linux"         "0x1DC"
 			}
 			"CGameClient::UpdateAcknowledgedFramecount"
 			{
 				"windows"       "17"
 				"linux"         "55"
-			}
-			"CGameClient::ExecuteStringCommand"
-			{
-				"windows"       "30"
-				"linux"         "25"
-			}
-			"CBaseClient::ClientPrintf"
-			{
-				"windows"       "32"
-				"linux"         "27"
 			}
 			"CPlayerInventory::SendInventoryUpdateEvent"
 			{
@@ -129,8 +119,8 @@
 			}
 			"CPlayerInventory::m_vecInventoryItems"
 			{
-				"windows"       "44"
-				"linux"         "44"
+				"windows"       "0x2C"
+				"linux"         "0x2C"
 			}
 		}
 	}

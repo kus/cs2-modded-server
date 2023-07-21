@@ -48,6 +48,11 @@ int GetRandomSkin(int client, int index)
 	return StringToInt(idStr);
 }
 
+int GetRandomKnife()
+{
+	return g_iKnifeIndices[GetRandomInt(0, sizeof(g_iKnifeIndices) - 1)];
+}
+
 bool IsValidClient(int client)
 {
 	if (!(1 <= client <= MaxClients) || !IsClientInGame(client) || IsFakeClient(client) || IsClientSourceTV(client) || IsClientReplay(client))
@@ -200,6 +205,10 @@ void GetClientKnife(int client, char[] KnifeName, int Size)
 	if(g_iKnife[client] == 0)
 	{
 		Format(KnifeName, Size, "weapon_knife");
+	}
+	else if(g_iKnife[client] == -1)
+	{
+		Format(KnifeName, Size, "random");
 	}
 	else
 	{

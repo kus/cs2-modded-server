@@ -87,9 +87,9 @@ Mod | Version | Why
 [DHooks](https://forums.alliedmods.net/showpost.php?p=2588686) | `2.2.0-detours17` | Required by Practice Mod
 [SoccerMod](https://github.com/marcoboogers/soccermod) | `2017.5.5` | Soccer gamemode
 [Command Time-Traveler](https://forums.alliedmods.net/showthread.php?t=134288) | `1.2.0` | Run a command in the future
-[P Tools and Hooks](https://forums.alliedmods.net/showthread.php?t=289289) | `1.1.3-build20` | Additional CS:GO Hooks and Natives 
+[P Tools and Hooks](https://forums.alliedmods.net/showthread.php?t=289289) | `1.1.4` | Additional CS:GO Hooks and Natives 
 [Gloves](https://forums.alliedmods.net/showthread.php?t=299977) | `1.0.5` | Custom gloves
-[Weapon & Knives](https://forums.alliedmods.net/showthread.php?t=298770) | `1.7.7-2fa2527` | Custom weapon skins
+[Weapon & Knives](https://forums.alliedmods.net/showthread.php?t=298770) | `1.7.8` | Custom weapon skins
 [Accelerator](https://forums.alliedmods.net/showthread.php?t=277703) | `2.5.0-cd575aa` | Crash Reporting That Doesn't Suck
 [Fix Mapchange Crash](https://forums.alliedmods.net/showthread.php?p=2748951) | `1.0` |  Fix players crash on map change. This plugin will reconnect all players before the map is changed.
 [CSGOFixes](https://github.com/Vauff/CSGOFixes) | `2.0` |  A collection of various fixes for CS:GO

@@ -96,6 +96,10 @@
 	{
 		"en"	"★ Your own knife"
 	}
+	"RandomKnife"
+	{
+		"en"	"★ Random knife"
+	}
 	"SetSkin"
 	{
 		"en"	"Choose Skin"

@@ -34,7 +34,14 @@ Action GiveNamedItemPre(int client, char classname[64], CEconItemView &item, boo
 		if (g_iKnife[client] != 0 && IsKnifeClass(classname))
 		{
 			ignoredCEconItemView = true;
-			strcopy(classname, sizeof(classname), g_WeaponClasses[g_iKnife[client]]);
+			if (g_iKnife[client] == -1)
+			{
+				strcopy(classname, sizeof(classname), g_WeaponClasses[GetRandomKnife()]);
+			}
+			else
+			{
+				strcopy(classname, sizeof(classname), g_WeaponClasses[g_iKnife[client]]);
+			}
 			return Plugin_Changed;
 		}
 	}
@@ -59,10 +66,15 @@ void GiveNamedItemPost(int client, const char[] classname, const CEconItemView i
 
 public Action ChatListener(int client, const char[] command, int args)
 {
+	if (client < 1)
+	{
+		return Plugin_Continue;
+	}
+	
 	char msg[128];
 	GetCmdArgString(msg, sizeof(msg));
 	StripQuotes(msg);
-	if (StrEqual(msg, "!ws") || StrEqual(msg, "!knife") || StrEqual(msg, "!wslang") || StrContains(msg, "!nametag") == 0 || StrContains(msg, "!seed") == 0)
+	if (StrEqual(msg, "!ws") || StrEqual(msg, "!knife") || StrEqual(msg, "!wslang") || StrContains(msg, "!nametag") == 0 || StrContains(msg, "!seed") == 0 || StrContains(msg, "!wsreset") == 0)
 	{
 		return Plugin_Handled;
 	}
