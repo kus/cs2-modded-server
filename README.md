@@ -23,6 +23,7 @@ A single modded Counter-Strike: Global Offensive Dedicated Server that you can c
 - Squid Game ([Steam API key](#playing-workshop-maps-collections) required)
 - Red Bull Flick (only Flux map which has surfing and jump pads [Steam API key](#playing-workshop-maps-collections) required)
 - Fortnite ([Steam API key](#playing-workshop-maps-collections) required)
+- Only Up! ([Steam API key](#playing-workshop-maps-collections) required)
 - Go Kart ([Steam API key](#playing-workshop-maps-collections) required)
 - Fall Guys ([Steam API key](#playing-workshop-maps-collections) required)
 - WarOwl Teleport Gamemode ([Steam API key](#playing-workshop-maps-collections) required)

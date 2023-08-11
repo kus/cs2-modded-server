@@ -20,6 +20,7 @@ Configs
 	"cfg/zombiereloaded.cfg"	"Zombie:Reloaded"
 	"cfg/jailbreak.cfg"		"Jail Break"
 	"cfg/fortnite.cfg"		"Fortnite"
+	"cfg/onlyup.cfg"		"Only Up!"
 	"cfg/gokart.cfg"		"Go Kart"
 	"cfg/fallguys.cfg"		"Fall Guys"
 	"cfg/redbull.cfg"		"Red Bull Flick"
