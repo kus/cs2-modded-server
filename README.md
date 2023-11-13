@@ -360,10 +360,10 @@ Because the way the server is setup with several mods it's not possible. You can
 
 The current state of admins managing a server in CS2 is very messy. You have to add admins multiple times to multiple files (see my example files). This will hopefully be minimized to one file when plugins update to use the new [Admin Framework](https://docs.cssharp.dev/features/admin-framework/) on [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp):
 
-- [/custom_files_example/addons/counterstrikesharp/configs/admins.json]https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/addons/counterstrikesharp/configs/admins.json)
-- [/custom_files_example/addons/counterstrikesharp/plugins/CS2Rcon/rconAllow.cfg]https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/addons/counterstrikesharp/plugins/CS2Rcon/rconAllow.cfg)
-- [/custom_files_example/cfg/MatchZy/admins.json]https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/cfg/MatchZy/admins.json])
-- [/custom_files_example/cfg/custom_all.cfg]https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/cfg/custom_all.cfg)
+- [/custom_files_example/addons/counterstrikesharp/configs/admins.json](https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/addons/counterstrikesharp/configs/admins.json)
+- [/custom_files_example/addons/counterstrikesharp/plugins/CS2Rcon/rconAllow.cfg](https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/addons/counterstrikesharp/plugins/CS2Rcon/rconAllow.cfg)
+- [/custom_files_example/cfg/MatchZy/admins.json](https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/cfg/MatchZy/admins.json])
+- [/custom_files_example/cfg/custom_all.cfg](https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/cfg/custom_all.cfg)
 
 ## Changing game modes
 
