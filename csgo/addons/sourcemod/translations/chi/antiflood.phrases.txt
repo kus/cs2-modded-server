@@ -1,8 +1,0 @@
-"Phrases"
-{
-	"Flooding the server"
-	{
-		"chi"		"请勿刷屏!"
-	}
-
-}

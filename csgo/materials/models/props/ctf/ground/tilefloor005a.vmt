@@ -1,7 +1,0 @@
-"vertexlitgeneric"
-{
-	// original shader: basetimeslightmap
-	"$basetexture" "tile/tilefloor005a"
-	"$surfaceprop" "tile"
-	"%keywords" "c17downtown"
-}

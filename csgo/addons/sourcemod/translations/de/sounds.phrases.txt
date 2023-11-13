@@ -1,8 +1,0 @@
-"Phrases"
-{
-	"Played sound to target"
-	{
-		"de"		"Ton wurde bei {1} abgespielt"
-	}
-
-}

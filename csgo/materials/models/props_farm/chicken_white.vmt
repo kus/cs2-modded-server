@@ -1,6 +1,0 @@
-"VertexlitGeneric"
-{
-	"$basetexture" "models/props_farm/chicken_white"
-	"$alphatest" 1
-	"$nocull" 1
-}

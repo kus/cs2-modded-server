@@ -1,8 +1,0 @@
-"Phrases"
-{
-	"Played sound to target"
-	{
-		"zho"		"播放音樂給 {1}"
-	}
-
-}

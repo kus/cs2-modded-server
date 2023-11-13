@@ -1,8 +1,0 @@
-"Phrases"
-{
-	"Flooding the server"
-	{
-		"ua"		"Ви засмічуєте чат!"
-	}
-
-}

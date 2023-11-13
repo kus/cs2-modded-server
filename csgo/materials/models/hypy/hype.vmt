@@ -1,8 +1,0 @@
-"UnlitGeneric"
-{
-	"$model" 1
-
-	"$basetexture" "models/spree/spree"
-	"$translucent" "1"
-	"$nocull" 1
-}

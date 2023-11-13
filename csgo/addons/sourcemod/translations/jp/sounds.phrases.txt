@@ -1,8 +1,0 @@
-"Phrases"
-{
-	"Played sound to target"
-	{
-		"jp"		"{1}にサウンドを再生しました。"
-	}
-
-}

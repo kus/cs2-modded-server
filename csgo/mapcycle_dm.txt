@@ -1,7 +1,0 @@
-aim_map
-aim_redline
-dm_delusion
-dm_wallbang
-aim_deathmatch
-workshop/2966743364/bump_arena
-workshop/128677037/splat_valley

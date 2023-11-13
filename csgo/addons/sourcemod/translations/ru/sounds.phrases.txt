@@ -1,8 +1,0 @@
-"Phrases"
-{
-	"Played sound to target"
-	{
-		"ru"		"Проигран звук для игрока {1}"
-	}
-
-}

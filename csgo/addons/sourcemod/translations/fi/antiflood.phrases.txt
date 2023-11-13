@@ -1,8 +1,0 @@
-"Phrases"
-{
-	"Flooding the server"
-	{
-		"fi"		"Lähetät viestejä liian nopeasti!"
-	}
-
-}
