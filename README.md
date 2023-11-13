@@ -4,7 +4,7 @@ If you are looking for the CS:GO version you can still access that [here](https:
 
 ## About
 
-A single modded Counter-Strike 2 Dedicated Server that you can change the active mod on the server from the admin menu and is setup for:
+A single modded Counter-Strike 2 Dedicated Server that you can [change the active mod](#changing-game-modes) on the server from chat or server console. [Maps are configured per game mode](#setting-maps-for-different-game-modes) and change when the game mode changes.
 
 - 1v1 ([Steam API key](#playing-workshop-mapscollections) required)
 - Deathmatch ([Steam API key](#playing-workshop-mapscollections) required)
@@ -17,7 +17,7 @@ A single modded Counter-Strike 2 Dedicated Server that you can change the active
 
 Every time you want to boot the server, you should run `gcp.sh` (if on Google Cloud) or `install.sh` (on Linux) and it will ensure your OS is up to date, CS2 is up to date, and pull down the latest patches from this mod (any updates that I push up).
 
-Obviously, any changes you have made to the files in this mod will be overwritten so I have created a "[custom files](#custom-files)" folder where you mirror the contents of the `csgo/` folder, and any files you want to tweak, you put in there in the same spot and they will always overwrite the mods default files. Read more about it [here](#custom-files).
+Obviously, any changes you have made to the files in this mod will be overwritten so I have created a "[custom files](#custom-files)" folder where you mirror the contents of the `game/csgo/` folder, and any files you want to tweak, you put in there in the same spot and they will always overwrite the mods default files. Read more about it [here](#custom-files).
 
 The simple quick setup:
 
@@ -33,8 +33,8 @@ Your server should be up and running!
 
 To check everything is working correctly run the following commands in the server console:
 
-- `meta list` and you should see `CounterStrikeSharp` in there
-- `css_plugins list` and you should see a few plugins in there
+- `meta list` and you should see `CounterStrikeSharp` in the output
+- `css_plugins list` and you should see a few plugins in the output
 
 If you see content in both; everything is working.
 
@@ -71,19 +71,19 @@ You can see an example of what I use on my server in the `/custom_files_example/
 
 For example; if you want to add yourself as an admin, that file is located `/game/csgo/addons/counterstrikesharp/configs/admins.json`. So to make your tweak to it, you would copy that file to `/custom_files/addons/counterstrikesharp/configs/admins.json` and add yourself as an admin at the bottom. Then when the update scripts run, it will copy your custom file at `/custom_files/addons/counterstrikesharp/configs/admins.json` and overwrite the default mod file at `/game/csgo/addons/counterstrikesharp/configs/admins.json`.
 
-If you want to change the server name, or make any changes to any mod settings use the `/cfg/custom_MOD.cfg` as it executes at the end and can overwrite any setting. So if you wanted to change the server name for GunGame, you would copy `/csgo/cfg/custom_dm.cfg` to `/custom_files/cfg/custom_dm.cfg` and and write `hostname "shipREKT GunGame +Deathmatch +Turbo"` and any other settings you want and this file will overwrite `/csgo/cfg/custom_dm.cfg` each time the `gcp.sh`/`install.sh`/`win.bat` script is ran, and these settings will run at the end when you load the GunGame mod.
+If you want to change the server name, or make any changes to any mod settings use the `/cfg/custom_MOD.cfg` as it executes at the end and can overwrite any setting. So if you wanted to change the server name for GunGame, you would copy `/game/csgo/cfg/custom_dm.cfg` to `/custom_files/cfg/custom_dm.cfg` and and write `hostname "shipREKT GunGame +Deathmatch +Turbo"` and any other settings you want and this file will overwrite `/game/csgo/cfg/custom_dm.cfg` each time the `gcp.sh`/`install.sh`/`win.bat` script is ran, and these settings will run at the end when you load the GunGame mod.
 
 To generate this directory, you can run the `gcp.sh` script (if on Google Cloud), `install.sh` script on Linux once or on `win.bat` script on Windows where you extracted the mod zip and this is where you would put your custom modifications.
 
 ## Creating an online server
 
-If you are hosting an online server, you need to create a Steam [Game Login Token](https://steamcommunity.com/dev/managegameservers), your server will not run online without this. Put this value in the `STEAM_ACCOUNT` environment variable or create a custom file for `/csgo/cfg/secrets.cfg` following the [custom files](#custom-files) steps (`/custom_files/cfg/secrets.cfg`) and set it in `sv_setsteamaccount`.
+If you are hosting an online server, you need to create a Steam [Game Login Token](https://steamcommunity.com/dev/managegameservers), your server will not run online without this. Put this value in the `STEAM_ACCOUNT` environment variable or create a custom file for `/game/csgo/cfg/secrets.cfg` following the [custom files](#custom-files) steps (`/custom_files/cfg/secrets.cfg`) and set it in `sv_setsteamaccount`.
 
 You also need to create an [authorization key](http://steamcommunity.com/dev/apikey) which will allow your server to download maps from the workshop. Put this value in the `API_KEY` environment variable.
 
 ## Creating a LAN server
 
-Create a custom file for `/csgo/cfg/env.cfg` following the [custom files](#custom-files) steps (`/custom_files/cfg/env.cfg`) and set `sv_lan` to `1`, `sv_downloadurl` to `""` and `sv_allowdownload` to `1`.
+Create a custom file for `/game/csgo/cfg/env.cfg` following the [custom files](#custom-files) steps (`/custom_files/cfg/env.cfg`) and set `sv_lan` to `1`, `sv_downloadurl` to `""` and `sv_allowdownload` to `1`.
 
 ## Environment variables
 
@@ -103,7 +103,7 @@ Key | Default value | What is it
 ### Can be configured via config file in custom files directory
 
 These values can be set via environment variable or a config file in the custom files directory.
-Copy `/csgo/cfg/secrets.cfg` to `/custom_files/cfg/secrets.cfg` and write the values you want and this file will overwrite `/csgo/cfg/secrets.cfg` each time the `gcp.sh`/`install.sh` script is ran.
+Copy `/game/csgo/cfg/secrets.cfg` to `/custom_files/cfg/secrets.cfg` and write the values you want and this file will overwrite `/game/csgo/cfg/secrets.cfg` each time the `gcp.sh`/`install.sh` script is ran.
 
 Key | Value | What is it
 --- | --- | ---
@@ -118,6 +118,10 @@ To download maps from the workshop, your server needs access to the steam web ap
 The console command for hosting a workshop map is `host_workshop_map fileid` where `fileid` is the number that comes after `?id=` in the workshop URL for example: [https://steamcommunity.com/sharedfiles/filedetails/?id=2433686680](https://steamcommunity.com/sharedfiles/filedetails/?id=2433686680)
 
 The console command for hosting a workshop collection is `host_workshop_collection collectionid` where `collectionid` is the number that comes after `?id=` in the workshop URL for example: [https://steamcommunity.com/sharedfiles/filedetails/?id=1092904694](https://steamcommunity.com/sharedfiles/filedetails/?id=1092904694). This command will then download all maps in the collection and create a mapgroup out of them, then host it.
+
+### Setting maps for different game modes
+
+Copy the file `/game/csgo/gamemodes_server.txt` following the [custom files](#custom-files) steps (`/custom_files/gamemodes_server.txt`) and add the maps you want per gamemode. Most gamemodes fall under casual, but I have created unique groups for each mode so adding your own maps is easy by updating this one file.
 
 ## Running on Google Cloud
 
@@ -197,12 +201,12 @@ For example a map:
 On local:
 gcloud config set project <project>
 cd /path/to/folder
-gcloud compute scp soccer_breezeway_lite.bsp root@<instance-name>:/home/steam/csgo/csgo/maps --zone australia-southeast1-c
+gcloud compute scp de_kus.vpk root@<instance-name>:/home/steam/cs2/game/csgo/maps --zone australia-southeast1-c
 
 On server SSH:
-cd /home/steam/csgo/csgo/maps
-chown steam:steam soccer_breezeway_lite.bsp
-chmod 644 soccer_breezeway_lite.bsp
+cd /home/steam/cs2/game/csgo/maps
+chown steam:steam de_kus.vpk
+chmod 644 de_kus.vpk
 ```
 
 ### Download from server
@@ -262,8 +266,8 @@ cd / && curl --silent --output "install.sh" "https://raw.githubusercontent.com/k
 
 To check everything is working correctly run the following commands in the server console:
 
-- `meta list` and you should see `CounterStrikeSharp` in there
-- `css_plugins list` and you should see a few plugins in there
+- `meta list` and you should see `CounterStrikeSharp` in the output
+- `css_plugins list` and you should see a few plugins in the output
 
 If you see content in both; everything is working.
 
@@ -307,14 +311,14 @@ Accept both Private and Public connections on Windows Firewall.
 
    Once the CS2 server has started close it
 
-   If you want to use my bundled maps and this server setup you can use `https://raw.githubusercontent.com/kus/cs2-modded-server-assets/master/csgo` for your your `sv_downloadurl` in `cfg/env.cfg`. Make sure you change `sv_allowdownload` to `0`.
+   If you want to use my bundled maps and this server setup you can use `https://raw.githubusercontent.com/kus/cs2-modded-server-assets/master/game/csgo` for your your `sv_downloadurl` in `cfg/env.cfg`. Make sure you change `sv_allowdownload` to `0`.
 
    Run `win.bat` again
 
 To check everything is working correctly run the following commands in the server console:
 
-- `meta list` and you should see `CounterStrikeSharp` in there
-- `css_plugins list` and you should see a few plugins in there
+- `meta list` and you should see `CounterStrikeSharp` in the output
+- `css_plugins list` and you should see a few plugins in the output
 
 If you see content in both; everything is working.
 
@@ -328,9 +332,9 @@ By default bots are enabled in deathmatch, gungame, gungame ffa, retakes, scouts
 
 The default is set to add 1 bot if only 1 human is in the server, and then if there is 2 or more humans there will be no bots.
 
-You can overwrite the settings for the bots by creating a "[custom file](#custom-files)" for this file [custom_bots.cfg](https://github.com/kus/cs2-modded-server/blob/master/csgo/cfg/custom_bots.cfg).
+You can overwrite the settings for the bots by creating a "[custom file](#custom-files)" for this file [custom_bots.cfg](https://github.com/kus/cs2-modded-server/blob/master/game/csgo/cfg/custom_bots.cfg).
 
-If you copy [custom_bots.cfg](https://github.com/kus/cs2-modded-server/blob/master/csgo/cfg/custom_bots.cfg) and put it in the `custom_files/cfg/` directory (`/home/steam/csgo/custom_files/cfg/` on default Linux setup) and you can modify it and change say `bot_quota` to `10` if you want 10 players at all times. When the server starts (on Linux and Windows) it will merge this file into the game cfg and it will execute every time `bots.cfg` executes.
+If you copy [custom_bots.cfg](https://github.com/kus/cs2-modded-server/blob/master/game/csgo/cfg/custom_bots.cfg) and put it in the `custom_files/cfg/` directory (`/home/steam/cs2/custom_files/cfg/` on default Linux setup) and you can modify it and change say `bot_quota` to `10` if you want 10 players at all times. When the server starts (on Linux and Windows) it will merge this file into the game cfg and it will execute every time `bots.cfg` executes.
 
 You can also just login to RCON `rcon_password yourpassword` and use `rcon bot_add_ct` and `rcon bot_add_t`.
 
@@ -338,11 +342,11 @@ If you want to remove bots you use `rcon bot_kick`.
 
 ### Failed to open libtier0.so
 
-`Failed to open libtier0.so (/home/steam/csgo/bin/libgcc_s.so.1: version 'GCC_7.0.0' not found (required by /lib/i386-linux-gnu/libstdc++.so.6))`
+`Failed to open libtier0.so (/home/steam/cs2/bin/libgcc_s.so.1: version 'GCC_7.0.0' not found (required by /lib/i386-linux-gnu/libstdc++.so.6))`
 
 This is because Valve ships their own copies of those libraries. As modern systems will have newer versions, you can safely delete the listed file from the server install. Do not delete the file in the system path (usually lib or lib32)[*](https://wiki.alliedmods.net/Installing_metamod:source).
 
-`cd /home/steam/csgo/bin/` and `rm libgcc_s.so.1` and restart the server.
+`cd /home/steam/cs2/bin/` and `rm libgcc_s.so.1` and restart the server.
 
 ### How do I connect to RCON remotely?
 
@@ -356,23 +360,31 @@ Because the way the server is setup with several mods it's not possible. You can
 
 The current state of admins managing a server in CS2 is very messy. You have to add admins multiple times to multiple files (see my example files). This will hopefully be minimized to one file when plugins update to use the new [Admin Framework](https://docs.cssharp.dev/features/admin-framework/) on [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp):
 
-- /custom_files_example/addons/counterstrikesharp/configs/admins.json
-- /custom_files_example/addons/counterstrikesharp/plugins/CS2Rcon/rconAllow.cfg
-- /custom_files_example/addons/cs2scrim/configs/admins.cfg
-- /custom_files_example/cfg/MatchZy/admins.json
-- /custom_files_example/cfg/custom_all.cfg
-
-There is no "menu" feature in CS2, so it's all via the chat window.
-
-The easiest way to manage the server is to use the Rcon commands via chat i.e. `!rcon exec dm` will change to death match. You can use `!rcon exec` with any of the following `1v1 dm comp prac surf bhop wingman` to change the game mode. Changing between gamemodes multiple times is not recommended, and it is better if you restart the CS2 server in-between.
-
-To view what other commands are available view the plugins at the top of the page.
+- [/custom_files_example/addons/counterstrikesharp/configs/admins.json]https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/addons/counterstrikesharp/configs/admins.json)
+- [/custom_files_example/addons/counterstrikesharp/plugins/CS2Rcon/rconAllow.cfg]https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/addons/counterstrikesharp/plugins/CS2Rcon/rconAllow.cfg)
+- [/custom_files_example/cfg/MatchZy/admins.json]https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/cfg/MatchZy/admins.json])
+- [/custom_files_example/cfg/custom_all.cfg]https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/cfg/custom_all.cfg)
 
 ## Changing game modes
 
-As there is no "menu" feature in CS2 yet, it's all via the chat window.
+There is no "menu" feature in CS2, so it's all via the chat window or server console.
 
-The easiest way to manage the server is to use the Rcon commands via chat i.e. `!rcon exec dm` will change to death match. You can use `!rcon exec` with any of the following `1v1 dm comp prac surf bhop wingman` to change the game mode. Changing between gamemodes multiple times is not recommended, and it is better if you restart the CS2 server in-between.
+The easiest way to manage the server is to use the Rcon commands via chat i.e. `!rcon exec dm` will change to deathmatch.
+
+These are all the available chat commands to change the game mode:
+
+Command | Game mode
+--- | ---
+`!rcon exec 1v1` | 1 v 1 maps
+`!rcon exec bhop` | Bunny hop maps
+`!rcon exec comp` | Competitive using [MatchZy](https://github.com/shobhit-pathak/MatchZy#usage-commands)
+`!rcon exec dm` | Deathmatch
+`!rcon exec kz` | Kreedz Climbing
+`!rcon exec prac` | Practice (grenade lineups etc)
+`!rcon exec surf` | Surf
+`!rcon exec wingman` | Wingman (but allows more than 2v2)
+
+Changing between gamemodes multiple times is not recommended, and it is better if you restart the CS2 server in-between.
 
 To view what other commands are available view the plugins at the top of the page.
 
