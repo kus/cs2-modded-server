@@ -21,7 +21,7 @@ body:
     id: instructions
     attributes:
       label: I've followed the instructions
-      description: I've followed the [simple quick setup](https://github.com/kus/csgo-modded-server#about) instructions.
+      description: I've followed the [simple quick setup](https://github.com/kus/cs2-modded-server#about) instructions.
       options:
         - label: I've followed the instructions
           required: true

@@ -141,7 +141,7 @@ Create a custom file for `/csgo/cfg/env.cfg` following the [custom files](#custo
 Key | Default value | What is it
 --- | --- | ---
 `API_KEY` | `changeme` | To download maps from the workshop, your server needs access to the steam web api. To allow this you'll need an authorization key which you can generate [here](http://steamcommunity.com/dev/apikey)
-`MOD_URL` | `https://github.com/kus/csgo-modded-server/archive/master.zip` | The zip for mod files to download and extract (defaultly this repo)
+`MOD_URL` | `https://github.com/kus/cs2-modded-server/archive/csgo.zip` | The zip for mod files to download and extract (defaultly this repo)
 `PORT` | `27015` | Server port
 `TICKRATE` | `128` | Server tickrate MM is 64, Faceit is 128
 `MAXPLAYERS` | `32` | Max player limit
@@ -192,7 +192,7 @@ By default the download limit of CS:GO is capped at 20kb/s and also adds additio
 
 [sv_downloadurl](https://developer.valvesoftware.com/wiki/Sv_downloadurl) allows CS:GO clients to get custom server content (maps/sounds etc) at high speeds from web servers using HTTP which also takes the strain off the game server.
 
-A [bash script](https://github.com/kus/csgo-modded-server/blob/master/scripts/bzip.sh) is included to make this process easy and automatically create the correct directory structure and compress your files with [bzip2](https://en.wikipedia.org/wiki/Bzip2) and create a "fastdl" folder which you simply host on a webserver.
+A [bash script](https://github.com/kus/cs2-modded-server/blob/csgo/scripts/bzip.sh) is included to make this process easy and automatically create the correct directory structure and compress your files with [bzip2](https://en.wikipedia.org/wiki/Bzip2) and create a "fastdl" folder which you simply host on a webserver.
 
 Create a custom file for `/csgo/cfg/env.cfg` following the [custom files](#custom-files) steps (`/custom_files/cfg/env.cfg`) and set `sv_downloadurl` to `http://yoursite.com/fastdl/csgo`, and `sv_allowdownload` to `0`.
 
@@ -230,7 +230,7 @@ gcloud beta compute instances create <instance-name> \
 --zone=australia-southeast1-c \
 --machine-type=n2-standard-2 \
 --network-tier=PREMIUM \
---metadata=RCON_PASSWORD=changeme,STEAM_ACCOUNT=changeme,API_KEY=changeme,DUCK_DOMAIN=changeme,DUCK_TOKEN=changeme,MOD_URL=https://github.com/kus/csgo-modded-server/archive/master.zip,startup-script="echo \"Delaying for 30 seconds...\" && sleep 30 && cd / && /gcp.sh" \
+--metadata=RCON_PASSWORD=changeme,STEAM_ACCOUNT=changeme,API_KEY=changeme,DUCK_DOMAIN=changeme,DUCK_TOKEN=changeme,MOD_URL=https://github.com/kus/cs2-modded-server/archive/csgo.zip,startup-script="echo \"Delaying for 30 seconds...\" && sleep 30 && cd / && /gcp.sh" \
 --no-restart-on-failure \
 --scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/compute.readonly,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append \
 --tags=source \
@@ -250,7 +250,7 @@ gcloud compute ssh <instance-name> \
 ### Install mod
 ```
 sudo su
-cd / && curl --silent --output "gcp.sh" "https://raw.githubusercontent.com/kus/csgo-modded-server/master/gcp.sh" && chmod +x gcp.sh && bash gcp.sh
+cd / && curl --silent --output "gcp.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/csgo/gcp.sh" && chmod +x gcp.sh && bash gcp.sh
 ```
 
 If the installation has paused for a long time, restart the server and do it again.
@@ -332,12 +332,12 @@ sudo su
 export RCON_PASSWORD="changeme"
 export API_KEY="changeme"
 export STEAM_ACCOUNT=""
-export MOD_URL="https://github.com/kus/csgo-modded-server/archive/master.zip"
+export MOD_URL="https://github.com/kus/cs2-modded-server/archive/csgo.zip"
 export SERVER_PASSWORD=""
 export PORT="27015"
 export TICKRATE="128"
 export MAXPLAYERS="32"
-cd / && curl --silent --output "install.sh" "https://raw.githubusercontent.com/kus/csgo-modded-server/master/install.sh" && chmod +x install.sh && bash install.sh
+cd / && curl --silent --output "install.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/csgo/install.sh" && chmod +x install.sh && bash install.sh
 ```
 
 * **If running for the first time**
@@ -357,7 +357,7 @@ When you join the server you can [change game modes](#changing-game-modes).
 ## Running on Windows
 Make sure you have **40GB free space**.
 
-[Download this repo](https://github.com/kus/csgo-modded-server/archive/master.zip) and extract it to where you want your server (i.e. `C:\Server\csgo-modded-server`). All the following instructions will use this as the root.
+[Download this repo](https://github.com/kus/cs2-modded-server/archive/csgo.zip) and extract it to where you want your server (i.e. `C:\Server\cs2-modded-server`). All the following instructions will use this as the root.
 
 Create a folder `steamcmd` and [download SteamCMD](https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip) and extract it inside `steamcmd` so you should have `\steamcmd\steamcmd.exe`.
 
@@ -406,9 +406,9 @@ By default bots are enabled in deathmatch, gungame, gungame ffa, retakes, scouts
 
 The default is set to add 1 bot if only 1 human is in the server, and then if there is 2 or more humans there will be no bots.
 
-You can overwrite the settings for the bots by creating a "[custom file](#custom-files)" for this file [custom_bots.cfg](https://github.com/kus/csgo-modded-server/blob/master/csgo/cfg/custom_bots.cfg).
+You can overwrite the settings for the bots by creating a "[custom file](#custom-files)" for this file [custom_bots.cfg](https://github.com/kus/cs2-modded-server/blob/csgo/csgo/cfg/custom_bots.cfg).
 
-If you copy [custom_bots.cfg](https://github.com/kus/csgo-modded-server/blob/master/csgo/cfg/custom_bots.cfg) and put it in the `custom_files/cfg/` directory (`/home/steam/csgo/custom_files/cfg/` on default Linux setup) and you can modify it and change say `bot_quota` to `10` if you want 10 players at all times. When the server starts (on Linux and Windows) it will merge this file into the game cfg and it will execute every time `bots.cfg` executes.
+If you copy [custom_bots.cfg](https://github.com/kus/cs2-modded-server/blob/csgo/csgo/cfg/custom_bots.cfg) and put it in the `custom_files/cfg/` directory (`/home/steam/csgo/custom_files/cfg/` on default Linux setup) and you can modify it and change say `bot_quota` to `10` if you want 10 players at all times. When the server starts (on Linux and Windows) it will merge this file into the game cfg and it will execute every time `bots.cfg` executes.
 
 You can also just login to RCON `rcon_password yourpassword` and use `rcon bot_add_ct` and `rcon bot_add_t`.
 
@@ -472,7 +472,7 @@ On Windows:
 Open up a command prompt (Start > Run > "cmd")
 
 ```
-cd /d C:\git\csgo-modded-server\csgo\addons\sourcemod\scripting
+cd /d C:\git\cs2-modded-server\csgo\addons\sourcemod\scripting
 spcomp warmod.sp -o compiled/warmod.smx
 ```
 

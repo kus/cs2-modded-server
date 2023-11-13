@@ -30,7 +30,7 @@ else
 fi
 
 # Download latest stop script
-curl --silent --output "stop.sh" "https://raw.githubusercontent.com/kus/csgo-modded-server/master/stop.sh" && chmod +x stop.sh
+curl --silent --output "stop.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/csgo/stop.sh" && chmod +x stop.sh
 
 # Check distrib
 if ! command -v apt-get &> /dev/null; then
@@ -125,12 +125,12 @@ if [ "${DISTRO_OS}" == "Ubuntu" ]; then
 fi
 
 echo "Downloading mod files..."
-wget --quiet https://github.com/kus/csgo-modded-server/archive/master.zip
-unzip -o -qq master.zip
-cp -rlf csgo-modded-server-master/csgo/ /home/${user}/csgo/
-cp -R csgo-modded-server-master/custom_files/ /home/${user}/csgo/custom_files/
-cp -R csgo-modded-server-master/custom_files_example/ /home/${user}/csgo/custom_files_example/
-rm -r csgo-modded-server-master master.zip
+wget --quiet https://github.com/kus/cs2-modded-server/archive/csgo.zip
+unzip -o -qq csgo.zip
+cp -rlf csgo-modded-server-csgo/csgo/ /home/${user}/csgo/
+cp -R csgo-modded-server-csgo/custom_files/ /home/${user}/csgo/custom_files/
+cp -R csgo-modded-server-csgo/custom_files_example/ /home/${user}/csgo/custom_files_example/
+rm -r csgo-modded-server-csgo csgo.zip
 
 echo "Dynamically writing /home/$user/csgo/csgo/cfg/secrets.cfg"
 if [ ! -z "$RCON_PASSWORD" ]; then
