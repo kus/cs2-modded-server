@@ -2,7 +2,7 @@
 
 # Install
 # As root (sudo su)
-# cd / && curl --silent --output "start.sh" "https://raw.githubusercontent.com/kus/csgo-modded-server/master/start.sh" && chmod +x start.sh && bash start.sh
+# cd / && curl --silent --output "start.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/master/start.sh" && chmod +x start.sh && bash start.sh
 
 METADATA_URL="${METADATA_URL:-http://metadata.google.internal/computeMetadata/v1/instance/attributes}"
 
@@ -30,7 +30,7 @@ META_MAXPLAYERS=$(get_metadata MAXPLAYERS)
 export RCON_PASSWORD="${META_RCON_PASSWORD:-changeme}"
 export API_KEY="${META_API_KEY:-changeme}"
 export STEAM_ACCOUNT="${STEAM_ACCOUNT:-$(get_metadata STEAM_ACCOUNT)}"
-export MOD_URL="${META_MOD_URL:-https://github.com/kus/csgo-modded-server/archive/master.zip}"
+export MOD_URL="${META_MOD_URL:-https://github.com/kus/cs2-modded-server/archive/master.zip}"
 export SERVER_PASSWORD="${SERVER_PASSWORD:-$(get_metadata SERVER_PASSWORD)}"
 export PORT="${META_PORT:-27015}"
 export TICKRATE="${META_TICKRATE:-128}"
@@ -75,6 +75,9 @@ else
 	DISTRO_VERSION=$(uname -r)
 fi
 
+# Download latest stop script
+curl --silent --output "stop.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/master/stop.sh" && chmod +x stop.sh
+
 # Check distrib
 if ! command -v apt-get &> /dev/null; then
 	echo "ERROR: OS distribution not supported... $DISTRO_OS $DISTRO_VERSION"
@@ -93,11 +96,13 @@ if [ -z "$PUBLIC_IP" ]; then
 fi
 
 echo "Updating Operating System..."
-apt update -y -q && apt upgrade -y -q >/dev/null
+apt-get update -y -q && apt-get upgrade -y -q >/dev/null
 if [ "$?" -ne "0" ]; then
 	echo "ERROR: Updating Operating System..."
 	exit 1
 fi
+
+dpkg --configure -a >/dev/null
 
 echo "Adding i386 architecture..."
 dpkg --add-architecture i386 >/dev/null
@@ -126,11 +131,6 @@ else
 	exit 1
 fi
 
-if [ "$?" -ne "0" ]; then
-	echo "ERROR: Cannot install required packages..."
-	exit 1
-fi
-
 echo "Checking $user user exists..."
 getent passwd ${user} >/dev/null 2&>1
 if [ "$?" -ne "0" ]; then
@@ -138,8 +138,8 @@ if [ "$?" -ne "0" ]; then
 	addgroup ${user} && \
 	adduser --system --home /home/${user} --shell /bin/false --ingroup ${user} ${user} && \
 	usermod -a -G tty ${user} && \
-	mkdir -m 777 /home/${user}/csgo && \
-	chown -R ${user}:${user} /home/${user}/csgo
+	mkdir -m 777 /home/${user}/cs2 && \
+	chown -R ${user}:${user} /home/${user}/cs2
 	if [ "$?" -ne "0" ]; then
 		echo "ERROR: Cannot add user $user..."
 		exit 1
@@ -152,58 +152,94 @@ if [ ! -d "/steamcmd" ]; then
 	wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
 	tar -xvzf steamcmd_linux.tar.gz
 	mkdir -p /root/.steam/sdk32/
-	ln -s /steamcmd/linux32/steamclient.so /root/.steam/sdk32/steamclient.so
+	ln -s /steamcmd/linux32/steamclient.so /root/.steam/sdk32/
+	mkdir -p /root/.steam/sdk64/
+	ln -s /steamcmd/linux64/steamclient.so /root/.steam/sdk64/
 fi
 
-echo "Downloading any updates for CS:GO..."
-/steamcmd/steamcmd.sh +login anonymous \
-  +force_install_dir /home/${user}/csgo \
-  +app_update 740 \
+chown -R ${user}:${user} /steamcmd
+
+# /root/.steam/sdk64/steamclient.so
+
+echo "Downloading any updates for CS2..."
+sudo -u $user /steamcmd/steamcmd.sh \
+  +force_install_dir /home/${user}/cs2 \
+  +login anonymous \
+  +app_update 730 \
   +quit
 
-cd /home/${user}/csgo/csgo/warmod/ && python3 -m http.server 80 </dev/null &>/dev/null &
-
 cd /home/${user}
+
+mkdir -p /root/.steam/sdk32/
+ln -s /steamcmd/linux32/steamclient.so /root/.steam/sdk32/
+mkdir -p /root/.steam/sdk64/
+ln -s /steamcmd/linux64/steamclient.so /root/.steam/sdk64/
+
+mkdir -p /home/${user}/.steam/sdk32/
+ln -s /steamcmd/linux32/steamclient.so /home/${user}/.steam/sdk32/
+mkdir -p /home/${user}/.steam/sdk64/
+ln -s /steamcmd/linux64/steamclient.so /home/${user}/.steam/sdk64/
 
 if [ "${DISTRO_OS}" == "Ubuntu" ]; then
 	if [ "${DISTRO_VERSION}" == "22.04" ]; then
 		# https://forums.alliedmods.net/showthread.php?t=336183
-		rm /home/${user}/csgo/bin/libgcc_s.so.1
+		rm /home/${user}/cs2/bin/libgcc_s.so.1
 	fi
 fi
 
-echo "Dynamically writing /home/$user/csgo/csgo/cfg/secrets.cfg"
+echo "Dynamically writing /home/$user/cs2/game/csgo/cfg/secrets.cfg"
 if [ ! -z "$RCON_PASSWORD" ]; then
-	echo "rcon_password						\"$RCON_PASSWORD\"" > /home/${user}/csgo/csgo/cfg/secrets.cfg
+	echo "rcon_password						\"$RCON_PASSWORD\"" > /home/${user}/cs2/game/csgo/cfg/secrets.cfg
 fi
 if [ ! -z "$STEAM_ACCOUNT" ]; then
-	echo "sv_setsteamaccount					\"$STEAM_ACCOUNT\"			// Required for online https://steamcommunity.com/dev/managegameservers" >> /home/${user}/csgo/csgo/cfg/secrets.cfg
+	echo "sv_setsteamaccount					\"$STEAM_ACCOUNT\"			// Required for online https://steamcommunity.com/dev/managegameservers" >> /home/${user}/cs2/game/csgo/cfg/secrets.cfg
 fi
 if [ ! -z "$SERVER_PASSWORD" ]; then
-	echo "sv_password							\"$SERVER_PASSWORD\"" >> /home/${user}/csgo/csgo/cfg/secrets.cfg
+	echo "sv_password							\"$SERVER_PASSWORD\"" >> /home/${user}/cs2/game/csgo/cfg/secrets.cfg
 fi
-echo "" >> /home/${user}/csgo/csgo/cfg/secrets.cfg
-echo "echo \"secrets.cfg executed\"" >> /home/${user}/csgo/csgo/cfg/secrets.cfg
+echo "" >> /home/${user}/cs2/game/csgo/cfg/secrets.cfg
+echo "echo \"secrets.cfg executed\"" >> /home/${user}/cs2/game/csgo/cfg/secrets.cfg
 
-echo "Merging in custom files from ${CUSTOM_FILES}"
-cp -RT /home/${user}/csgo/${CUSTOM_FILES}/ /home/${user}/csgo/csgo/
+chown -R ${user}:${user} /home/${user}/cs2
 
-chown -R ${user}:${user} /home/${user}/csgo
+cd /home/${user}/cs2
 
-cd /home/${user}/csgo
+# Define the file name
+FILE="game/csgo/gameinfo.gi"
+
+# Define the pattern to search for and the line to add
+PATTERN="Game_LowViolence[[:space:]]*csgo_lv // Perfect World content override"
+LINE_TO_ADD="\t\t\tGame\tcsgo/addons/metamod"
+
+# Use a regular expression to ignore spaces when checking if the line exists
+REGEX_TO_CHECK="^[[:space:]]*Game[[:space:]]*csgo/addons/metamod"
+
+# Check if the line already exists in the file, ignoring spaces
+if grep -qE "$REGEX_TO_CHECK" "$FILE"; then
+    echo "$FILE already patched for Metamod."
+else
+    # If the line isn't there, use awk to add it after the pattern
+    awk -v pattern="$PATTERN" -v lineToAdd="$LINE_TO_ADD" '{
+        print $0;
+        if ($0 ~ pattern) {
+            print lineToAdd;
+        }
+    }' "$FILE" > tmp_file && mv tmp_file "$FILE"
+    echo "$FILE successfully patched for Metamod."
+fi
 
 echo "Starting server on $PUBLIC_IP:$PORT"
-./srcds_run \
+sudo -u $user ./game/bin/linuxsteamrt64/cs2 \
+    -dedicated \
     -console \
     -usercon \
     -autoupdate \
-    -game csgo \
     -tickrate $TICKRATE \
     -port $PORT \
     +map de_dust2 \
     -maxplayers_override $MAXPLAYERS \
-    -authkey $API_KEY
-    +ip $IP \
+    -authkey $API_KEY \
+	+sv_setsteamaccount $STEAM_ACCOUNT \
     +game_type 0 \
     +game_mode 0 \
     +mapgroup mg_active

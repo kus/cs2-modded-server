@@ -21,7 +21,7 @@ body:
     id: instructions
     attributes:
       label: I've followed the instructions
-      description: I've followed the [simple quick setup](https://github.com/kus/csgo-modded-server#about) instructions.
+      description: I've followed the [simple quick setup](https://github.com/kus/cs2-modded-server#about) instructions.
       options:
         - label: I've followed the instructions
           required: true
@@ -69,28 +69,14 @@ body:
       multiple: true
       options:
         - No mod
-        - GunGame +Turbo
-        - GunGame +FFA
-        - Pug Setup
-        - WarMod
-        - Scoutz Knivez
-        - Deathmatch Free For All
-        - Prop Hunt / Hide n Seek
-        - Retakes
+        - Competitive
+        - Deathmatch
         - Wingman
-        - Multi 1v1
+        - 1v1
         - Practice
-        - Minigames
-        - Squid Game
-        - Red Bull Flick
-        - Fortnite
-        - Go Kart
-        - Fall Guys
-        - WarOwl Teleport Gamemode
-        - Deathrun
         - Surf
-        - Soccer
-        - Capture The Flag
+        - Bhop
+        - KZ
         - Other (please specify)
     validations:
       required: true
@@ -123,17 +109,17 @@ body:
     validations:
       required: true
   - type: input
-    id: sm-version
+    id: css-version
     attributes:
-      label: SourceMod Version
-      description: Output of `sm` from console.
+      label: CounterStrikeSharp Version
+      description: Output of `css` from console.
     validations:
       required: true
   - type: input
-    id: sm-list
+    id: css-list
     attributes:
-      label: SourceMod Plugins loaded
-      description: Output of `sm plugins` from console. You may need to go through pages with `sm plugins 11` etc. List ALL plugins from every page.
+      label: CounterStrikeSharp Plugins loaded
+      description: Output of `css_plugins list` from console.
     validations:
       required: true
   - type: textarea
