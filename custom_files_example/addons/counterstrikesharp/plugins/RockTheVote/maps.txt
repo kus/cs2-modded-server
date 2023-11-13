@@ -1,0 +1,13 @@
+cs_italy
+cs_office
+cs_vertigo
+de_ancient
+de_anubis
+de_dust2
+de_inferno
+de_mirage
+de_nuke
+de_overpass
+de_vertigo
+ws:3070923343
+ws:3074758439

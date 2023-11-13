@@ -1,0 +1,196 @@
+// Values here override the default gamemodes.txt
+// https://developer.valvesoftware.com/wiki/Counter-Strike:_Global_Offensive/Game_Modes
+
+"GameModes_Server.txt"
+{
+	"gameTypes"
+	{
+		"classic"
+		{
+			"gameModes"
+			{
+				"casual"
+				{
+					"exec"
+					{
+						"exec" "gamemode_casual_last.cfg"
+					}
+					// Map groups for online modes
+					"mapgroupsMP"
+					{
+						//Other Maps Groups
+						"mg_1v1"			"50"
+						"mg_bhop"			"51"
+						"mg_kz"				"52"
+						"mg_surf"			"53"
+					}
+				}
+
+				"competitive"
+				{
+					"exec"
+					{
+						"exec" "gamemode_competitive_last.cfg"
+					}
+					// Map groups for online modes
+					"mapgroupsMP"
+					{
+						// team lobby map veto
+						"mg_comp"			"50"
+					}
+				}
+
+				// Wingman
+				"scrimcomp2v2"
+				{
+					"exec"
+					{
+						"exec" "gamemode_competitive2v2_last.cfg"
+					}
+					// Map groups for online modes
+					"mapgroupsMP"
+					{
+						"mg_wingman"		"50"
+					}
+				}
+
+				"deathmatch"
+				{
+					"exec"
+					{
+						"exec" "gamemode_deathmatch_last.cfg"
+					}
+					// Map groups for online modes
+					"mapgroupsMP"
+					{
+						"mg_dm"		"50"
+					}
+				}
+			}
+		}
+	}
+	"mapgroups"
+	{
+		"mg_comp"
+		{
+			"name"			"mg_comp"
+			"maps"
+			{
+				"cs_italy"			""
+				"cs_office"			""
+				"cs_vertigo"		""
+				"de_ancient"		""
+				"de_anubis"			""
+				"de_dust2"			""
+				"de_inferno"		""
+				"de_mirage"			""
+				"de_nuke"			""
+				"de_overpass"		""
+				"de_vertigo"		""
+				"workshop/3071005299/de_assembly"		""
+				"workshop/3070212801/de_cbble"		""
+				"workshop/3070596702/de_cache"		""
+				"workshop/3079872050/de_pipeline"		""
+				"workshop/3075706807/de_biome"		""
+			}
+		}
+		"mg_wingman"
+		{
+			"name"			"mg_wingman"
+			"maps"
+			{
+				"cs_italy"			""
+				"cs_office"			""
+				"cs_vertigo"		""
+				"de_ancient"		""
+				"de_anubis"			""
+				"de_dust2"			""
+				"de_inferno"		""
+				"de_mirage"			""
+				"de_nuke"			""
+				"de_overpass"		""
+				"de_vertigo"		""
+				"workshop/3070923343/fy_pool_day"		""
+				"workshop/3071005299/de_assembly"		""
+				"workshop/3070212801/de_cbble"		""
+				"workshop/3070596702/de_cache"		""
+				"workshop/3079872050/de_pipeline"		""
+				"workshop/3075706807/de_biome"		""
+				"workshop/3077599381/dm_desk"		""
+				"workshop/3070581293/de_bank"		""
+				"workshop/3070563536/de_lake"		""
+				"workshop/3070553020/ar_dizzy"		""
+				"workshop/3070552133/ar_shoots"		""
+				"workshop/3070550406/de_safehouse"		""
+			}
+		}
+		"mg_dm"
+		{
+			"name"			"mg_dm"
+			"maps"
+			{
+				"cs_italy"			""
+				"cs_office"			""
+				"cs_vertigo"		""
+				"de_ancient"		""
+				"de_anubis"			""
+				"de_dust2"			""
+				"de_inferno"		""
+				"de_mirage"			""
+				"de_nuke"			""
+				"de_overpass"		""
+				"de_vertigo"		""
+				"workshop/3070923343/fy_pool_day"		""
+				"workshop/3071005299/de_assembly"		""
+				"workshop/3070212801/de_cbble"		""
+				"workshop/3070596702/de_cache"		""
+				"workshop/3079872050/de_pipeline"		""
+				"workshop/3075706807/de_biome"		""
+				"workshop/3077599381/dm_desk"		""
+				"workshop/3070581293/de_bank"		""
+				"workshop/3070563536/de_lake"		""
+				"workshop/3070553020/ar_dizzy"		""
+				"workshop/3070552133/ar_shoots"		""
+				"workshop/3070550406/de_safehouse"		""
+			}
+		}
+		"mg_1v1"
+		{
+			"name"			"mg_1v1"
+			"maps"
+			{
+				"workshop/3070549948/aim_map"		""
+				"workshop/3070308285/aim_newagewip"		""
+				"workshop/3070423167/aim_movement"		""
+				"workshop/3070923343/fy_pool_day"		""
+			}
+		}
+		"mg_bhop"
+		{
+			"name"			"mg_bhop"
+			"maps"
+			{
+				"workshop/3071726325/bhop_colour"		""
+				"workshop/3070665979/bhop_emevaelx3"		""
+			}
+		}
+		"mg_kz"
+		{
+			"name"			"mg_kz"
+			"maps"
+			{
+				"workshop/3074758439/only_up"		""
+				"workshop/3070220367/kz_hub.vpk"		""
+			}
+		}
+		"mg_surf"
+		{
+			"name"			"mg_surf"
+			"maps"
+			{
+				"workshop/3076153623/surf_kitsune"		""
+				"workshop/3073875025/surf_utopia_njv"		""
+			}
+		}
+	}
+}

@@ -1,0 +1,53 @@
+{
+  "Kus": {
+    "identity": "76561197960377828",
+    "flags": [
+      "@css/root"
+    ]
+  },
+  "Kus smurf": {
+    "identity": "76561198041470060",
+    "flags": [
+      "@css/root"
+    ]
+  },
+  "Murc": {
+    "identity": "76561197995565506",
+    "flags": [
+      "@css/reservation",
+      "@css/generic",
+      "@css/kick",
+      "@css/ban",
+      "@css/unban",
+      "@css/slay",
+      "@css/changemap",
+      "@css/vote"
+    ]
+  },
+  "Dunx": {
+    "identity": "76561197979545410",
+    "flags": [
+      "@css/reservation",
+      "@css/generic",
+      "@css/kick",
+      "@css/ban",
+      "@css/unban",
+      "@css/slay",
+      "@css/changemap",
+      "@css/vote"
+    ]
+  },
+  "Def": {
+    "identity": "76561198806908843",
+    "flags": [
+      "@css/reservation",
+      "@css/generic",
+      "@css/kick",
+      "@css/ban",
+      "@css/unban",
+      "@css/slay",
+      "@css/changemap",
+      "@css/vote"
+    ]
+  }
+}
