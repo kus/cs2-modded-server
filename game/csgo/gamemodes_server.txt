@@ -23,6 +23,8 @@
 						"mg_bhop"			"51"
 						"mg_kz"				"52"
 						"mg_surf"			"53"
+						"mg_minigames"		"54"
+						"mg_scoutzknivez"	"55"
 					}
 				}
 
@@ -180,7 +182,7 @@
 			"maps"
 			{
 				"workshop/3074758439/only_up"		""
-				"workshop/3070220367/kz_hub.vpk"		""
+				"workshop/3070220367/kz_hub"		""
 			}
 		}
 		"mg_surf"
@@ -190,6 +192,22 @@
 			{
 				"workshop/3076153623/surf_kitsune"		""
 				"workshop/3073875025/surf_utopia_njv"		""
+			}
+		}
+		"mg_minigames"
+		{
+			"name"			"mg_minigames"
+			"maps"
+			{
+				"workshop/3070439729/mg_switch_course_v2"		""
+			}
+		}
+		"mg_scoutzknivez"
+		{
+			"name"			"mg_scoutzknivez"
+			"maps"
+			{
+				"workshop/3073929825/scoutzknivez_pure_cs2"		""
 			}
 		}
 	}

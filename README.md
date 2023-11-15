@@ -1,10 +1,10 @@
-# C2 Modded Server
+# Counter-Strike 2 (CS2) Modded Dedicated Server
 
 If you are looking for the CS:GO version you can still access that [here](https://github.com/kus/csgo-modded-server/tree/csgo).
 
 ## About
 
-A single modded Counter-Strike 2 Dedicated Server that you can [change the active mod](#changing-game-modes) on the server from chat or server console. [Maps are configured per game mode](#setting-maps-for-different-game-modes) and change when the game mode changes.
+A single modded Counter-Strike 2 (CS2) Modded Dedicated Server that you can [change the active mod](#changing-game-modes) on the server from chat or server console. [Maps are configured per game mode](#setting-maps-for-different-game-modes) and change when the game mode changes.
 
 - 1v1 ([Steam API key](#playing-workshop-mapscollections) required)
 - Deathmatch ([Steam API key](#playing-workshop-mapscollections) required)
@@ -14,6 +14,8 @@ A single modded Counter-Strike 2 Dedicated Server that you can [change the activ
 - KZ ([Steam API key](#playing-workshop-mapscollections) required)
 - BHop ([Steam API key](#playing-workshop-mapscollections) required)
 - Surf ([Steam API key](#playing-workshop-mapscollections) required)
+- ScoutzKnivez ([Steam API key](#playing-workshop-mapscollections) required)
+- Mini Games ([Steam API key](#playing-workshop-mapscollections) required)
 
 Every time you want to boot the server, you should run `gcp.sh` (if on Google Cloud) or `install.sh` (on Linux) and it will ensure your OS is up to date, CS2 is up to date, and pull down the latest patches from this mod (any updates that I push up).
 
@@ -373,16 +375,18 @@ The easiest way to manage the server is to use the Rcon commands via chat i.e. `
 
 These are all the available chat commands to change the game mode:
 
-Command | Game mode
---- | ---
-`!rcon exec 1v1` | 1 v 1 maps
-`!rcon exec bhop` | Bunny hop maps
-`!rcon exec comp` | Competitive using [MatchZy](https://github.com/shobhit-pathak/MatchZy#usage-commands)
-`!rcon exec dm` | Deathmatch
-`!rcon exec kz` | Kreedz Climbing
-`!rcon exec prac` | Practice (grenade lineups etc)
-`!rcon exec surf` | Surf
-`!rcon exec wingman` | Wingman (but allows more than 2v2)
+| Command                | Game mode                                                                         |
+| ---------------------- | --------------------------------------------------------------------------------- |
+| `!rcon exec 1v1`     | 1 v 1 maps                                                                        |
+| `!rcon exec bhop`    | Bunny hop maps                                                                    |
+| `!rcon exec comp`    | Competitive using[MatchZy](https://github.com/shobhit-pathak/MatchZy#usage-commands) |
+| `!rcon exec dm`      | Deathmatch                                                                        |
+| `!rcon exec kz`      | Kreedz Climbing                                                                   |
+| `!rcon exec minigames` | Mini Games
+| `!rcon exec prac`    | Practice (grenade lineups etc)                                                    |
+| `!rcon exec scoutzknivez` | ScoutzKnivez                                                                 |
+| `!rcon exec surf`    | Surf                                                                              |
+| `!rcon exec wingman` | Wingman (but allows more than 2v2)                                                |
 
 Changing between gamemodes multiple times is not recommended, and it is better if you restart the CS2 server in-between.
 
