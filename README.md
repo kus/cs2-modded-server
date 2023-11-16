@@ -54,14 +54,14 @@ Getting up and running:
 
 Mod | Version | Why
 --- | --- | ---
-[Metamod:Source](http://www.sourcemm.net/downloads.php?branch=master) | `2.0.0-1256` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
-[CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `16` | Attempts to implement a .NET Core scripting layer on top of a Metamod Source Plugin, allowing developers to create plugins that interact with the game server in a modern language (C#)
-[CS2_DamageInfo](<https://github.com/K4ryuu/CS2_DamageInfo>) | `1.3.0` | Displays the amount of damage players have inflicted on the victim's HP and Armor, as well as the hit groups they have hit.
-[MatchZy](https://github.com/shobhit-pathak/MatchZy) | `0.2.0` | MatchZy is a plugin for CS2 for running and managing practice/pugs/scrims/matches with easy configuration!
+[Metamod:Source](http://www.sourcemm.net/downloads.php?branch=master) | `2.0.0-1259` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
+[CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `53` | Attempts to implement a .NET Core scripting layer on top of a Metamod Source Plugin, allowing developers to create plugins that interact with the game server in a modern language (C#)
+[CS2_DamageInfo](<https://github.com/K4ryuu/CS2_DamageInfo>) | `1.3.2` | Displays the amount of damage players have inflicted on the victim's HP and Armor, as well as the hit groups they have hit.
+[MatchZy](https://github.com/shobhit-pathak/MatchZy) | `0.3.0` | MatchZy is a plugin for CS2 for running and managing practice/pugs/scrims/matches with easy configuration!
 [MapConfigurator](https://github.com/ManifestManah/MapConfigurator)| `1.0.1` | Allows you to quick and easily create unique configuration files for each map on your server.
-[Mini Admin](https://github.com/partiusfabaa/cs2-MiniAdmin)| `1.0.4` | Adds basic administrator functions
+[Mini Admin](https://github.com/partiusfabaa/cs2-MiniAdmin)| `1.0.4.1` | Adds basic administrator functions
 [LiteMapChooser](https://github.com/PhantomYopta/LiteMapChooser)| `1.0.2` | This plugin allows you to change map, nominate map, rtv
-[CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon)| `1.1.1` | This is a rudimentary implementation of a RCON plugin for CS2 using CounterStrikeSharp
+[CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon)| `1.2.0` | This is a rudimentary implementation of a RCON plugin for CS2 using CounterStrikeSharp
 [CS2_Speedometer](https://github.com/PhantomYopta/CS2_Speedometer)| `1.0.2` | Just a speedometer for CS2
 
 ## Custom files
