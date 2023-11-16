@@ -12,7 +12,7 @@
           "Dapper": "2.1.15",
           "Microsoft.Data.Sqlite": "7.0.13",
           "SQLitePCLRaw.bundle_e_sqlite3": "2.1.6",
-          "CounterStrikeSharp.API": "1.0.0.0"
+          "CounterStrikeSharp.API": "1.0.50.0"
         },
         "runtime": {
           "MatchZy.dll": {}
@@ -190,11 +190,11 @@
         }
       },
       "System.Memory/4.5.3": {},
-      "CounterStrikeSharp.API/1.0.0.0": {
+      "CounterStrikeSharp.API/1.0.50.0": {
         "runtime": {
           "CounterStrikeSharp.API.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "assemblyVersion": "1.0.50.0",
+            "fileVersion": "1.0.50.0"
           }
         }
       }
@@ -269,7 +269,7 @@
       "path": "system.memory/4.5.3",
       "hashPath": "system.memory.4.5.3.nupkg.sha512"
     },
-    "CounterStrikeSharp.API/1.0.0.0": {
+    "CounterStrikeSharp.API/1.0.50.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
