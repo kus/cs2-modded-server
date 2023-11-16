@@ -24,6 +24,7 @@ get_metadata () {
 META_RCON_PASSWORD=$(get_metadata RCON_PASSWORD)
 META_API_KEY=$(get_metadata API_KEY)
 META_MOD_URL=$(get_metadata MOD_URL)
+META_MOD_BRANCH=$(get_metadata MOD_BRANCH)
 META_PORT=$(get_metadata PORT)
 META_TICKRATE=$(get_metadata TICKRATE)
 META_MAXPLAYERS=$(get_metadata MAXPLAYERS)
@@ -31,6 +32,7 @@ export RCON_PASSWORD="${META_RCON_PASSWORD:-changeme}"
 export API_KEY="${META_API_KEY:-changeme}"
 export STEAM_ACCOUNT="${STEAM_ACCOUNT:-$(get_metadata STEAM_ACCOUNT)}"
 export MOD_URL="${META_MOD_URL:-https://github.com/kus/cs2-modded-server/archive/master.zip}"
+export MOD_BRANCH="${META_MOD_BRANCH:-master}"
 export SERVER_PASSWORD="${SERVER_PASSWORD:-$(get_metadata SERVER_PASSWORD)}"
 export PORT="${META_PORT:-27015}"
 export TICKRATE="${META_TICKRATE:-128}"
@@ -47,7 +49,7 @@ if [ ! -z "$DUCK_TOKEN" ]; then
 fi
 
 # Download latest installer
-curl --silent --output "install.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/master/install.sh" && chmod +x install.sh
+curl --silent --output "install.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${MOD_BRANCH}/install.sh" && chmod +x install.sh
 
 # Run
 bash install.sh |& tee /install.log

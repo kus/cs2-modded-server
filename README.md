@@ -62,6 +62,7 @@ Mod | Version | Why
 [Mini Admin](https://github.com/partiusfabaa/cs2-MiniAdmin)| `1.0.4` | Adds basic administrator functions
 [LiteMapChooser](https://github.com/PhantomYopta/LiteMapChooser)| `1.0.2` | This plugin allows you to change map, nominate map, rtv
 [CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon)| `1.1.1` | This is a rudimentary implementation of a RCON plugin for CS2 using CounterStrikeSharp
+[CS2_Speedometer](https://github.com/PhantomYopta/CS2_Speedometer)| `1.0.2` | Just a speedometer for CS2
 
 ## Custom files
 

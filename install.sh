@@ -39,7 +39,7 @@ else
 fi
 
 # Download latest stop script
-curl --silent --output "stop.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/master/stop.sh" && chmod +x stop.sh
+curl --silent --output "stop.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${MOD_BRANCH}/stop.sh" && chmod +x stop.sh
 
 # Check distrib
 if ! command -v apt-get &> /dev/null; then
@@ -154,12 +154,12 @@ fi
 rm -r /home/${user}/cs2/game/csgo/addons
 
 echo "Downloading mod files..."
-wget --quiet https://github.com/kus/cs2-modded-server/archive/master.zip
-unzip -o -qq master.zip
+wget --quiet https://github.com/kus/cs2-modded-server/archive/${MOD_BRANCH}.zip
+unzip -o -qq ${MOD_BRANCH}.zip
 rm -r /home/${user}/cs2/custom_files/ /home/${user}/cs2/custom_files_example/
-cp -R cs2-modded-server-master/game/csgo/ /home/${user}/cs2/game/
-cp -R cs2-modded-server-master/custom_files/ /home/${user}/cs2/custom_files/
-cp -R cs2-modded-server-master/custom_files_example/ /home/${user}/cs2/custom_files_example/
+cp -R cs2-modded-server-${MOD_BRANCH}/game/csgo/ /home/${user}/cs2/game/
+cp -R cs2-modded-server-${MOD_BRANCH}/custom_files/ /home/${user}/cs2/custom_files/
+cp -R cs2-modded-server-${MOD_BRANCH}/custom_files_example/ /home/${user}/cs2/custom_files_example/
 
 echo "Dynamically writing /home/$user/cs2/game/csgo/cfg/secrets.cfg"
 if [ ! -z "$RCON_PASSWORD" ]; then
@@ -280,7 +280,7 @@ else
     echo "MySQL is already installed."
 fi
 
-rm -r /home/${user}/cs2-modded-server-master /home/${user}/master.zip
+rm -r /home/${user}/cs2-modded-server-${MOD_BRANCH} /home/${user}/${MOD_BRANCH}.zip
 
 echo "Starting server on $PUBLIC_IP:$PORT"
 sudo -u $user ./game/bin/linuxsteamrt64/cs2 \
