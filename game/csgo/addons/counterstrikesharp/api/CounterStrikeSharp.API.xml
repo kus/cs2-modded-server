@@ -1,0 +1,566 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CounterStrikeSharp.API</name>
+    </assembly>
+    <members>
+        <member name="M:CounterStrikeSharp.API.Api.GetVersion">
+            <summary>
+            Returns the API version of CounterStrikeSharp running on the server
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Attributes.CastFromAttribute">
+            Indicates that the parameter should be pulled from the ScriptContext as the passed in type,
+            then cast/converted to the parameter type.
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.Attributes.MinimumApiVersion.#ctor(System.Int32)">
+            <summary>
+            API version that this plugin requires to work correctly.
+            </summary>
+            <param name="version"></param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterEventHandler``1(CounterStrikeSharp.API.Core.BasePlugin.GameEventHandler{``0},CounterStrikeSharp.API.Core.HookMode)">
+            <summary>
+            Registers a game event handler.
+            </summary>
+            <typeparam name="T">The type of the game event.</typeparam>
+            <param name="handler">The event handler to register.</param>
+            <param name="hookMode">The mode in which the event handler is hooked. Default is `HookMode.Post`.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.AddCommand(System.String,System.String,CounterStrikeSharp.API.Modules.Commands.CommandInfo.CommandCallback)">
+            <summary>
+            Registers a new server command.
+            </summary>
+            <param name="name">The name of the command.</param>
+            <param name="description">The description of the command.</param>
+            <param name="handler">The callback function to be invoked when the command is executed.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterAttributeHandlers(System.Object)">
+            <summary>
+            Registers all game event handlers that are decorated with the `[GameEventHandler]` attribute.
+            </summary>
+            <param name="instance">The instance of the object where the event handlers are defined.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.CoreConfigData">
+            <summary>
+            Serializable instance of the CoreConfig
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.CoreConfig">
+            <summary>
+            Configuration related to the Core API.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.CoreConfig.PublicChatTrigger">
+            <summary>
+            List of characters to use for public chat triggers.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.CoreConfig.SilentChatTrigger">
+            <summary>
+            List of characters to use for silent chat triggers.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.CoreConfig.FollowCS2ServerGuidelines">
+             <summary>
+             <para>
+             Per <see href="http://blog.counter-strike.net/index.php/server_guidelines/"/>, certain plugin
+             functionality will trigger all of the game server owner's Game Server Login Tokens
+             (GSLTs) to get banned when executed on a Counter-Strike 2 game server.
+             </para>
+            
+             <para>
+             Enabling this option will block plugins from using functionality that is known to cause this.
+            
+             Note that this does NOT guarantee that you cannot
+            
+             receive a ban.
+             </para>
+            
+             <para>
+             Disable this option at your own risk.
+             </para>
+             </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.HookMode">
+            <summary>
+            Specifies the hook mode.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Core.HookMode.Pre">
+            <summary>
+            The hook is called before the original method.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Core.HookMode.Post">
+            <summary>
+            The hook is called after the original method.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.HookResult">
+            <summary>
+            Represents the result of a hook.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Core.HookResult.Continue">
+            <summary>
+            Continue processing the hook to other listeners.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Core.HookResult.Changed">
+            <summary>
+            The hook result has been changed. Currently unused.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Core.HookResult.Handled">
+            <summary>
+            The hook has been handled. The original method will not be called, but other hooks will still be called.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Core.HookResult.Stop">
+            <summary>
+            Stop processing the hook. The original method will not be called, and other hooks will not proceed after this one.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.IPlugin">
+            <summary>
+            Interface which every CounterStrikeSharp plugin must implement. Module will be created with parameterless constructor and then Load method will be called.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.IPlugin.ModuleName">
+            <summary>
+            Name of the plugin.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.IPlugin.ModuleVersion">
+            <summary>
+            Module version.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.IPlugin.Load(System.Boolean)">
+            <summary>
+            This method is called by CounterStrikeSharp on plugin load and should be treated as plugin constructor.
+            Called with `true` on a hot reload (DLL file replaced in plugins folder)
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.IPlugin.Unload(System.Boolean)">
+            <summary>
+            Will be called by CounterStrikeSharp on plugin unload. In this method the plugin should cleanup any extra resources.
+            Event handlers, listeners etc. will automatically be deregistered.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.IPluginConfig`1">
+            <summary>
+            An interface that describes a plugin configuration.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnEntitySpawned">
+            <summary>
+            Called when an entity is spawned.
+            </summary>
+            <param name="entity">The spawned entity.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnEntityCreated">
+            <summary>
+            Called when an entity is created.
+            </summary>
+            <param name="entity">The created entity.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnEntityDeleted">
+            <summary>
+            Called when an entity is deleted.
+            </summary>
+            <param name="entity">The deleted entity.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnEntityParentChanged">
+            <summary>
+            Called when an entity's parent is changed.
+            </summary>
+            <param name="entity">The entity whose parent was changed.</param>
+            <param name="newParent">The new parent entity.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnTick">
+            <summary>
+            Called on every server tick (64 per second).
+            This handler should avoid containing expensive operations.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnMapStart">
+            <summary>
+            Called when a new map is loaded.
+            </summary>
+            <param name="mapName">The name of the map that was started.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnMapEnd">
+            <summary>
+            Called when the current map is about to end.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnClientConnect">
+            <summary>
+            Called when a client connects to the server.
+            </summary>
+            <param name="playerSlot">The player slot of the connected client.</param>
+            <param name="name">The name of the connected client.</param>
+            <param name="ipAddress">The IP address of the connected client.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnClientConnected">
+            <summary>
+            Called when a client connects to the server.
+            </summary>
+            <param name="playerSlot">The player slot of the connected client.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnClientPutInServer">
+            <summary>
+            Called when a client is entering the game.
+            </summary>
+            <param name="playerSlot">The player slot of the client.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnClientDisconnect">
+            <summary>
+            Called when a client disconnects from the server.
+            </summary>
+            <param name="playerSlot">The player slot of the disconnected client.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnClientDisconnectPost">
+            <summary>
+            Called after a client has disconnected from the server.
+            </summary>
+            <param name="playerSlot">The player slot of the disconnected client.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnClientAuthorized">
+            <summary>
+            Called when a client has been authorized by Steam.
+            </summary>
+            <param name="playerSlot">The player slot of the authorized client.</param>
+            <param name="steamId">The Steam ID of the authorized client.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnServerHibernationUpdate">
+            <summary>
+            Called when the server is updating the hibernation state.
+            </summary>
+            <param name="isHibernating"><see langword="true"/> if the server is hibernating, <see langword="false"/> otherwise</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnGameServerSteamAPIActivated">
+            <summary>
+            Called when the Steam API is activated.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnGameServerSteamAPIDeactivated">
+            <summary>
+            Called when the Steam API is deactivated.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnHostNameChanged">
+            <summary>
+            Called when the server has changed hostname.
+            </summary>
+            <param name="hostname">New hostname of the server</param>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.CBaseEntity.AbsOrigin">
+            <summary>
+            Shorthand for accessing an entity's CBodyComponent?.SceneNode?.AbsOrigin;
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.CBaseEntity.AbsRotation">
+            <summary>
+            Shorthand for accessing an entity's CBodyComponent?.SceneNode?.AbsRotation;
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.SwitchTeam(CounterStrikeSharp.API.Modules.Utils.CsTeam)">
+            <summary>
+            Forcibly switches the team of the player, the player will remain alive and keep their weapons.
+            </summary>
+            <param name="team">The team to switch to</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.ChangeTeam(CounterStrikeSharp.API.Modules.Utils.CsTeam)">
+            <summary>
+            Switches the team of the player, has the same effect as the "jointeam" console command.
+            <remarks>
+            This follows gamemode rules, so this will usually cause a player suicide/loss of weapons.
+            </remarks>
+            </summary>
+            <param name="team">The team to change to</param>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.CCSPlayerController.Buttons">
+            <summary>
+            Gets the active pawns button state. Will work even if the player is dead or observing.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.GetPlayerAdminData(CounterStrikeSharp.API.Modules.Entities.SteamID)">
+            <summary>
+            Grabs the admin data for a player that was loaded from "configs/admins.json".
+            </summary>
+            <param name="steamId">SteamID object of the player.</param>
+            <returns>AdminData class if data found, null if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.PlayerHasPermissions(CounterStrikeSharp.API.Core.CCSPlayerController,System.String[])">
+            <summary>
+            Checks to see if a player has access to a certain set of permission flags.
+            </summary>
+            <param name="player">Player or server console.</param>
+            <param name="flags">Flags to look for in the players permission flags.</param>
+            <returns>True if flags are present, false if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.PlayerHasPermissions(CounterStrikeSharp.API.Modules.Entities.SteamID,System.String[])">
+            <summary>
+            Checks to see if a player has access to a certain set of permission flags.
+            </summary>
+            <param name="steamId">Steam ID object.</param>
+            <param name="flags">Flags to look for in the players permission flags.</param>
+            <returns>True if flags are present, false if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.AddPlayerPermissions(CounterStrikeSharp.API.Core.CCSPlayerController,System.String[])">
+            <summary>
+            Temporarily adds a permission flag to the player. These flags are not saved to
+            "configs/admins.json".
+            </summary>
+            <param name="player">Player controller to add a flag to.</param>
+            <param name="flags">Flags to add for the player.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.AddPlayerPermissions(CounterStrikeSharp.API.Modules.Entities.SteamID,System.String[])">
+            <summary>
+            Temporarily adds a permission flag to the player. These flags are not saved to
+            "configs/admins.json".
+            </summary>
+            <param name="steamId">SteamID to add a flag to.</param>
+            <param name="flags">Flags to add for the player.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.RemovePlayerPermissions(CounterStrikeSharp.API.Core.CCSPlayerController,System.String[])">
+            <summary>
+            Temporarily removes a permission flag to the player. These flags are not saved to
+            "configs/admins.json".
+            </summary>
+            <param name="player">Player controller to remove flags from.</param>
+            <param name="flags">Flags to remove from the player.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.RemovePlayerPermissions(CounterStrikeSharp.API.Modules.Entities.SteamID,System.String[])">
+            <summary>
+            Temporarily removes a permission flag to the player. These flags are not saved to
+            "configs/admins.json".
+            </summary>
+            <param name="steamId">Steam ID to remove flags from.</param>
+            <param name="flags">Flags to remove from the player.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.RemovePlayerAdminData(CounterStrikeSharp.API.Core.CCSPlayerController)">
+            <summary>
+            Removes a players admin data. This is not saved to "configs/admins.json"
+            </summary>
+            <param name="player">Player controller to remove admin data from.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.RemovePlayerAdminData(CounterStrikeSharp.API.Modules.Entities.SteamID)">
+            <summary>
+            Removes a players admin data. This is not saved to "configs/admins.json"
+            </summary>
+            <param name="steamId">Steam ID remove admin data from.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Commands.CommandHelperAttribute.#ctor(System.Int32,System.String,CounterStrikeSharp.API.Modules.Commands.CommandUsage)">
+            <summary>
+            
+            </summary>
+            <param name="minArgs">The minimum amount of arguments required to execute this command.</param>
+            <param name="usage">If the command fails, this string is printed to the caller to show the CommandUtils intended usage.</param>
+            <param name="whoCanExecute">Restricts the command so it can only be executed by players, the server console, or both (see CommandUsage).</param>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Cvars.ConVar.Type">
+            <summary>
+            The underlying data type of the ConVar.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Cvars.ConVar.Flags">
+            <summary>
+            The ConVar flags as defined by <see cref="T:CounterStrikeSharp.API.ConVarFlags"/>.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Cvars.ConVar.GetPrimitiveValue``1">
+            <summary>
+            Used to access primitive value types, i.e. <see langword="bool"/>, <see langword="float"/>, <see langword="int"/>, etc.
+            </summary>
+            <typeparam name="T">The type of value to retrieve</typeparam>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Cvars.ConVar.GetNativeValue``1">
+            <summary>
+            Used to access reference value types, i.e. Vector, QAngle
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Cvars.ConVar.StringValue">
+            <summary>
+            String value of the ConVar.
+            </summary>
+            <remarks>String is a special exception as we have to marshal the string to UTF8 on the send/receive to unmanaged code.
+            </remarks>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Cvars.ConVar.Public">
+            <summary>
+            Shorthand for checking the <see cref="F:CounterStrikeSharp.API.ConVarFlags.FCVAR_NOTIFY"/> flag.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Cvars.ConVar.Find(System.String)">
+            <summary>
+            Finds a ConVar by name.
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Memory.Schema.GetString(System.IntPtr,System.String,System.String)">
+            <summary>
+            Reads a string from the specified pointer, class name, and member name.
+            These are for non-networked strings, which are just stored as raw char bytes on the server.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Memory.Schema.GetUtf8String(System.IntPtr,System.String,System.String)">
+            <summary>
+            Reads a UTF8 encoded string from the specified pointer, class name, and member name.
+            These are for networked strings, which need to be read differently.
+            </summary>
+            <param name="pointer"></param>
+            <param name="className"></param>
+            <param name="memberName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Modules.Utils.Angle">
+            <summary>
+            A <c>Angle</c> object represents 3D Euler angle, offset from the cardinal Z axis.
+            Each angle contains three rotation values.
+            <list type="bullet">
+            <item><term>X</term><description>pitch +down/-up</description></item>
+            <item><term>Y</term><description>yaw +left/-right</description></item>
+            <item><term>Z</term><description>roll +right/-left</description></item>
+            </list>
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.Angle.#ctor(System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single})">
+            <summary>
+            Creates new angle with the supplied Pitch, Yaw and Roll values.
+            </summary>
+            <param name="x">Pitch</param>
+            <param name="y">Yaw</param>
+            <param name="z">Roll</param>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Utils.Angle.Pitch">
+            <summary>
+            Pitch of angle
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Utils.Angle.Yaw">
+            <summary>
+            Yaw of angle
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Utils.Angle.Roll">
+            <summary>
+            Roll of angle
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Utils.Angle.P">
+            <summary>
+            Pitch of angle
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Utils.Angle.R">
+            <summary>
+            Roll of angle
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Utils.Angle.X">
+            <summary>
+            Pitch of angle
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Utils.Angle.Y">
+            <summary>
+            Yaw of angle
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Utils.Angle.Z">
+            <summary>
+            Roll of angle
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Modules.Utils.Vector">
+            <summary>
+            A <c>Vector</c> object represents a line with a direction and length.
+            Each vector contains three co-ordinates:
+            <list type="bullet">
+            <item><term>X</term><description>+forward/-backward</description></item>
+            <item><term>Y</term><description>+left/-right</description></item>
+            <item><term>Z</term><description>+up/-down</description></item>
+            </list>
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.Vector.With(System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single})">
+            <summary>
+            Returns a copy of the vector with values replaced.
+            </summary>
+            <param name="x">X value to replace with</param>
+            <param name="y">Y value to replace with</param>
+            <param name="z">Z value to replace with</param>
+            <returns>Copy of vector</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.Vector.Add(CounterStrikeSharp.API.Modules.Utils.Vector)">
+            <summary>
+            Adds values of argument vector to the original vector. Does not create a new vector object, skipping object construction.
+            </summary>
+            <param name="vector"></param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.Vector.Angle">
+            <summary>
+            Returns an angle that represents the normal of the vector.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.Vector.Angle(CounterStrikeSharp.API.Modules.Utils.Vector)">
+            <summary>
+            Returns the angle of the vector, but allows the use of a different 'up' direction.
+            </summary>
+            <param name="up">Direction for up</param>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.Vector.IsZero">
+            <summary>
+            Returns whether all fields on the Vector are 0.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.Vector.Length">
+            <summary>
+            Returns the Euclidean length of the vector: √x² + y² + z² 
+            </summary>
+            <returns>Euclidean length of vector</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.Vector.Length2D">
+            <summary>
+            Returns length of Vector excluding Z axis.
+            </summary>
+            <returns>2D Length</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.Vector.LengthSqr">
+            <summary>
+            Returns the squared length of the vector, x² + y² + z². Faster than <see cref="M:CounterStrikeSharp.API.Modules.Utils.Vector.Length"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.Vector.Length2DSqr">
+            <summary>
+            Returns the squared length of the vectors x and y value, x² + y². Faster than <see cref="M:CounterStrikeSharp.API.Modules.Utils.Vector.Length2D"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:CounterStrikeSharp.API.PlayerButtons.Walk" -->
+        <!-- Badly formed XML comment ignored for member "F:CounterStrikeSharp.API.PlayerButtons.Zoom" -->
+        <!-- Badly formed XML comment ignored for member "F:CounterStrikeSharp.API.PlayerButtons.Weapon1" -->
+        <!-- Badly formed XML comment ignored for member "F:CounterStrikeSharp.API.PlayerButtons.Weapon2" -->
+        <!-- Badly formed XML comment ignored for member "F:CounterStrikeSharp.API.PlayerButtons.Bullrush" -->
+        <!-- Badly formed XML comment ignored for member "F:CounterStrikeSharp.API.PlayerButtons.Grenade2" -->
+        <!-- Badly formed XML comment ignored for member "F:CounterStrikeSharp.API.PlayerButtons.Attack3" -->
+        <member name="M:CounterStrikeSharp.API.Utilities.GetPlayers">
+            <summary>
+            Returns a list of <see cref="T:CounterStrikeSharp.API.Core.CCSPlayerController"/> that are valid and have a valid <see cref="P:CounterStrikeSharp.API.Core.CCSPlayerController.UserId"/> >= 0
+            </summary>
+        </member>
+    </members>
+</doc>
