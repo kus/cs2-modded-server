@@ -10,7 +10,7 @@
         "dependencies": {
           "Dapper": "2.1.15",
           "MySqlConnector": "2.3.0-beta.3",
-          "CounterStrikeSharp.API": "1.0.0.0"
+          "CounterStrikeSharp.API": "1.0.53.0"
         },
         "runtime": {
           "MiniAdmin.dll": {}
@@ -43,11 +43,11 @@
           }
         }
       },
-      "CounterStrikeSharp.API/1.0.0.0": {
+      "CounterStrikeSharp.API/1.0.53.0": {
         "runtime": {
           "CounterStrikeSharp.API.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "assemblyVersion": "1.0.53.0",
+            "fileVersion": "1.0.53.0"
           }
         }
       }
@@ -80,7 +80,7 @@
       "path": "mysqlconnector/2.3.0-beta.3",
       "hashPath": "mysqlconnector.2.3.0-beta.3.nupkg.sha512"
     },
-    "CounterStrikeSharp.API/1.0.0.0": {
+    "CounterStrikeSharp.API/1.0.53.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
