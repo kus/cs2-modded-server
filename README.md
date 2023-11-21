@@ -6,6 +6,8 @@ If you are looking for the CS:GO version you can still access that [here](https:
 
 A single modded Counter-Strike 2 (CS2) Modded Dedicated Server that you can [change the active mod](#changing-game-modes) on the server from chat or server console. [Maps are configured per game mode](#setting-maps-for-different-game-modes) and change when the game mode changes.
 
+Each game mode has a hand full of maps preset so you are ready to go and it's [easy to add more](#setting-maps-for-different-game-modes).
+
 - 1v1 ([Steam API key](#playing-workshop-mapscollections) required)
 - Deathmatch ([Steam API key](#playing-workshop-mapscollections) required)
 - Competitive
@@ -58,7 +60,7 @@ Mod | Version | Why
 [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `53` | Attempts to implement a .NET Core scripting layer on top of a Metamod Source Plugin, allowing developers to create plugins that interact with the game server in a modern language (C#)
 [CS2_DamageInfo](<https://github.com/K4ryuu/CS2_DamageInfo>) | `1.3.2` | Displays the amount of damage players have inflicted on the victim's HP and Armor, as well as the hit groups they have hit.
 [MatchZy](https://github.com/shobhit-pathak/MatchZy) | `0.3.0` | MatchZy is a plugin for CS2 for running and managing practice/pugs/scrims/matches with easy configuration!
-[MapConfigurator](https://github.com/ManifestManah/MapConfigurator)| `1.0.1` | Allows you to quick and easily create unique configuration files for each map on your server.
+[MapConfigurator](https://github.com/ManifestManah/MapConfigurator)| `1.0.2` | Allows you to quick and easily create unique configuration files for each map on your server.
 [Mini Admin](https://github.com/partiusfabaa/cs2-MiniAdmin)| `1.0.4.1` | Adds basic administrator functions
 [LiteMapChooser](https://github.com/PhantomYopta/LiteMapChooser)| `1.0.2` | This plugin allows you to change map, nominate map, rtv
 [CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon)| `1.2.0` | This is a rudimentary implementation of a RCON plugin for CS2 using CounterStrikeSharp
@@ -364,9 +366,8 @@ Because the way the server is setup with several mods it's not possible. You can
 The current state of admins managing a server in CS2 is very messy. You have to add admins multiple times to multiple files (see my example files). This will hopefully be minimized to one file when plugins update to use the new [Admin Framework](https://docs.cssharp.dev/features/admin-framework/) on [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp):
 
 - [/custom_files_example/addons/counterstrikesharp/configs/admins.json](https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/addons/counterstrikesharp/configs/admins.json)
-- [/custom_files_example/addons/counterstrikesharp/plugins/CS2Rcon/rconAllow.cfg](https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/addons/counterstrikesharp/plugins/CS2Rcon/rconAllow.cfg)
-- [/custom_files_example/cfg/MatchZy/admins.json](https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/cfg/MatchZy/admins.json])
-- [/custom_files_example/cfg/custom_all.cfg](https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/cfg/custom_all.cfg)
+- [/custom_files_example/cfg/MatchZy/admins.json](https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/cfg/MatchZy/admins.json]) ([#11](https://github.com/shobhit-pathak/MatchZy/issues/11))
+- [/custom_files_example/cfg/custom_all.cfg](https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/cfg/custom_all.cfg) ([#12](https://github.com/partiusfabaa/cs2-MiniAdmin/issues/12))
 
 ## Changing game modes
 
