@@ -8,16 +8,19 @@ A single modded Counter-Strike 2 (CS2) Modded Dedicated Server that you can [cha
 
 Each game mode has a hand full of maps preset so you are ready to go and it's [easy to add more](#setting-maps-for-different-game-modes).
 
-- 1v1 ([Steam API key](#playing-workshop-mapscollections) required)
+- 1v1 (allows more than 2 players) ([Steam API key](#playing-workshop-mapscollections) required)
 - Deathmatch ([Steam API key](#playing-workshop-mapscollections) required)
-- Competitive
+- Competitive (using [MatchZy](https://github.com/shobhit-pathak/MatchZy#usage-commands))
 - Practice (record grenade throws etc)
-- Wingman ([Steam API key](#playing-workshop-mapscollections) required)
+- Wingman (allows more than 4 players) ([Steam API key](#playing-workshop-mapscollections) required)
 - KZ ([Steam API key](#playing-workshop-mapscollections) required)
 - BHop ([Steam API key](#playing-workshop-mapscollections) required)
 - Surf ([Steam API key](#playing-workshop-mapscollections) required)
 - ScoutzKnivez ([Steam API key](#playing-workshop-mapscollections) required)
 - Mini Games ([Steam API key](#playing-workshop-mapscollections) required)
+- Course format (tests players with different traps, kz, surf, bhop) ([Steam API key](#playing-workshop-mapscollections) required)
+- Hide n Seek ([Steam API key](#playing-workshop-mapscollections) required)
+- Soccer ([Steam API key](#playing-workshop-mapscollections) required)
 
 Every time you want to boot the server, you should run `gcp.sh` (if on Google Cloud) or `install.sh` (on Linux) and it will ensure your OS is up to date, CS2 is up to date, and pull down the latest patches from this mod (any updates that I push up).
 
@@ -379,16 +382,19 @@ These are all the available chat commands to change the game mode:
 
 | Command                | Game mode                                                                         |
 | ---------------------- | --------------------------------------------------------------------------------- |
-| `!rcon exec 1v1`     | 1 v 1 maps                                                                        |
+| `!rcon exec 1v1`     | 1v1 (allows more than 2 players)                                                    |
 | `!rcon exec bhop`    | Bunny hop maps                                                                    |
-| `!rcon exec comp`    | Competitive using[MatchZy](https://github.com/shobhit-pathak/MatchZy#usage-commands) |
+| `!rcon exec comp`    | Competitive using [MatchZy](https://github.com/shobhit-pathak/MatchZy#usage-commands) |
+| `!rcon exec course`  | Tests players with different traps, kz, surf, bhop                                |
 | `!rcon exec dm`      | Deathmatch                                                                        |
+| `!rcon exec hns`     | Hide n Seek                                                                       |
 | `!rcon exec kz`      | Kreedz Climbing                                                                   |
-| `!rcon exec minigames` | Mini Games
+| `!rcon exec minigames` | Mini Games                                                                      |
 | `!rcon exec prac`    | Practice (grenade lineups etc)                                                    |
 | `!rcon exec scoutzknivez` | ScoutzKnivez                                                                 |
+| `!rcon exec soccer`  | Soccer                                                                            |
 | `!rcon exec surf`    | Surf                                                                              |
-| `!rcon exec wingman` | Wingman (but allows more than 2v2)                                                |
+| `!rcon exec wingman` | Wingman (allows more than 4 players)                                              |
 
 Changing between gamemodes multiple times is not recommended, and it is better if you restart the CS2 server in-between.
 

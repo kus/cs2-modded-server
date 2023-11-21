@@ -25,6 +25,9 @@
 						"mg_surf"			"53"
 						"mg_minigames"		"54"
 						"mg_scoutzknivez"	"55"
+						"mg_course"			"56"
+						"mg_hns"			"57"
+						"mg_soccer"			"58"
 					}
 				}
 
@@ -94,6 +97,10 @@
 				"workshop/3070596702/de_cache"		""
 				"workshop/3079872050/de_pipeline"		""
 				"workshop/3075706807/de_biome"		""
+				"workshop/3070346180/mp_raid"		""
+				"workshop/3070766070/de_mutiny"		""
+				"workshop/3070594412/cs_assault"		""
+				"workshop/3072352643/de_ruins_d_prefab"		""
 			}
 		}
 		"mg_wingman"
@@ -121,9 +128,12 @@
 				"workshop/3077599381/dm_desk"		""
 				"workshop/3070581293/de_bank"		""
 				"workshop/3070563536/de_lake"		""
-				"workshop/3070553020/ar_dizzy"		""
 				"workshop/3070552133/ar_shoots"		""
 				"workshop/3070550406/de_safehouse"		""
+				"workshop/3070346180/mp_raid"		""
+				"workshop/3070766070/de_mutiny"		""
+				"workshop/3070594412/cs_assault"		""
+				"workshop/3072352643/de_ruins_d_prefab"		""
 			}
 		}
 		"mg_dm"
@@ -143,6 +153,9 @@
 				"de_overpass"		""
 				"de_vertigo"		""
 				"workshop/3070923343/fy_pool_day"		""
+				"workshop/3070238628/fy_iceworld"		""
+				"workshop/3072640420/daymare"		""
+				"workshop/3070348309/aim_theorem"		""
 				"workshop/3071005299/de_assembly"		""
 				"workshop/3070212801/de_cbble"		""
 				"workshop/3070596702/de_cache"		""
@@ -151,7 +164,6 @@
 				"workshop/3077599381/dm_desk"		""
 				"workshop/3070581293/de_bank"		""
 				"workshop/3070563536/de_lake"		""
-				"workshop/3070553020/ar_dizzy"		""
 				"workshop/3070552133/ar_shoots"		""
 				"workshop/3070550406/de_safehouse"		""
 			}
@@ -165,6 +177,9 @@
 				"workshop/3070308285/aim_newagewip"		""
 				"workshop/3070423167/aim_movement"		""
 				"workshop/3070923343/fy_pool_day"		""
+				"workshop/3070238628/fy_iceworld"		""
+				"workshop/3072640420/daymare"		""
+				"workshop/3070348309/aim_theorem"		""
 			}
 		}
 		"mg_bhop"
@@ -174,6 +189,7 @@
 			{
 				"workshop/3071726325/bhop_colour"		""
 				"workshop/3070665979/bhop_emevaelx3"		""
+				"workshop/3074292729/bhop_bridge_cybershoke"		""
 			}
 		}
 		"mg_kz"
@@ -183,6 +199,8 @@
 			{
 				"workshop/3074758439/only_up"		""
 				"workshop/3070220367/kz_hub"		""
+				"workshop/3070194623/kz_checkmate"		""
+				"workshop/3072219045/kz_rc_stonehenge"		""
 			}
 		}
 		"mg_surf"
@@ -192,6 +210,8 @@
 			{
 				"workshop/3076153623/surf_kitsune"		""
 				"workshop/3073875025/surf_utopia_njv"		""
+				"workshop/3070321829/surf_beginner"		""
+				"workshop/3070280215/surf_greatriver_xdre4m_so_kg"		""
 			}
 		}
 		"mg_minigames"
@@ -199,7 +219,30 @@
 			"name"			"mg_minigames"
 			"maps"
 			{
+				"workshop/3082120895/mg_skeet_multigames_v7"		""
+				"workshop/3076765511/mg_warmcup_headshot"		""
+				"workshop/3083325292/deathrun_iceworld_cs2"		""
+			}
+		}
+		"mg_course"
+		{
+			"name"			"mg_course"
+			"maps"
+			{
+				"workshop/3076483842/cr_devisland_p1_v1"		""
 				"workshop/3070439729/mg_switch_course_v2"		""
+				"workshop/3070896876/cr_minecraft_jb_v2"		""
+				"workshop/3070463151/mg_metro_course_v1"		""
+				"workshop/3070455802/mg_alley_course_v2"		""
+				"workshop/3070445185/mg_glave_course_v2"		""
+				"workshop/3070459211/mg_office_course_v3"		""
+				"workshop/3070464208/mg_metal_course_v2"		""
+				"workshop/3070463620/mg_acrophobia_run_v2"		""
+				"workshop/3071040020/mg_metro_course_s2"		""
+				"workshop/3070434475/mg_circle_course_v3"		""
+				"workshop/3070447697/mg_simpsons_course_v2"		""
+				"workshop/3070452642/mg_sonic_course_v2"		""
+				"workshop/3070451616/mg_sky_realm_v3"		""
 			}
 		}
 		"mg_scoutzknivez"
@@ -208,6 +251,26 @@
 			"maps"
 			{
 				"workshop/3073929825/scoutzknivez_pure_cs2"		""
+				"workshop/3070553020/ar_dizzy"		""
+			}
+		}
+		"mg_hns"
+		{
+			"name"			"mg_hns"
+			"maps"
+			{
+				"workshop/3074479691/seek_town_bs"		""
+				"workshop/3070951079/winterday_bs"		""
+				"workshop/3070541369/minus_denhet"		""
+				"workshop/3071094345/hs_lake"		""
+			}
+		}
+		"mg_soccer"
+		{
+			"name"			"mg_soccer"
+			"maps"
+			{
+				"workshop/3070198374/ka_soccer_2009"		""
 			}
 		}
 	}
