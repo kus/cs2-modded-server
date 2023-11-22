@@ -51,6 +51,13 @@ fi
 # Variables
 user="steam"
 IP="0.0.0.0"
+BRANCH="master"
+
+# Check if MOD_BRANCH is set and not empty
+if [ -n "$MOD_BRANCH" ]; then
+    BRANCH="$MOD_BRANCH"
+fi
+
 PUBLIC_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
 CUSTOM_FILES="${CUSTOM_FOLDER:-custom_files}"
 if [ -f /etc/os-release ]; then
@@ -78,7 +85,7 @@ else
 fi
 
 # Download latest stop script
-curl --silent --output "stop.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${MOD_BRANCH}/stop.sh" && chmod +x stop.sh
+curl --silent --output "stop.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${BRANCH}/stop.sh" && chmod +x stop.sh
 
 # Check distrib
 if ! command -v apt-get &> /dev/null; then

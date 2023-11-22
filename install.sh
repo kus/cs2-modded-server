@@ -48,6 +48,9 @@ fi
 # Download latest stop script
 curl --silent --output "stop.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${BRANCH}/stop.sh" && chmod +x stop.sh
 
+# Download latest start script
+curl --silent --output "start.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${BRANCH}/start.sh" && chmod +x start.sh
+
 # Check distrib
 if ! command -v apt-get &> /dev/null; then
 	echo "ERROR: OS distribution not supported... $DISTRO_OS $DISTRO_VERSION"
