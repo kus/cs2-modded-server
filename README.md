@@ -46,7 +46,11 @@ To check everything is working correctly run the following commands in the serve
 If you see content in both; everything is working.
 
 > [!IMPORTANT]
-> Using RCON whilst connected to the server does not work. See discussion [here](https://www.reddit.com/r/GlobalOffensive/comments/167spzi/cs2_rcon/). The current work arounds are disconnect from the server and use `rcon_address IP:PORT` in console and you can use rcon commands or use an external RCON program which has implemented the RCON protocol such as [this](https://github.com/fpaezf/CS2-RCON-Tool-V2).
+> Using RCON whilst connected to the server does not work. See discussion [here](https://www.reddit.com/r/GlobalOffensive/comments/167spzi/cs2_rcon/).
+> The current work arounds are:
+> I have included [CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon) which allows admins to use !rcon in chat.
+> You can disconnect from the server and use `rcon_address IP:PORT` in console and you can use rcon commands.
+> Use an external RCON program which has implemented the RCON protocol such as [this](https://github.com/fpaezf/CS2-RCON-Tool-V2).
 
 Useful things to know:
 
@@ -69,7 +73,7 @@ Mod | Version | Why
 [MapConfigurator](https://github.com/ManifestManah/MapConfigurator)| `1.0.2` | Allows you to quick and easily create unique configuration files for each map on your server.
 [Mini Admin](https://github.com/partiusfabaa/cs2-MiniAdmin)| `1.0.4.1` | Adds basic administrator functions
 [LiteMapChooser](https://github.com/PhantomYopta/LiteMapChooser)| `1.0.2` | This plugin allows you to change map, nominate map, rtv
-[CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon)| `1.2.0` | This is a rudimentary implementation of a RCON plugin for CS2 using CounterStrikeSharp
+[CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon)| `1.2.0` | This is a rudimentary implementation of a RCON plugin for CS2 using CounterStrikeSharp as RCON does not work whilst connected to the server
 [CS2_Speedometer](https://github.com/PhantomYopta/CS2_Speedometer)| `1.0.2` | Just a speedometer for CS2
 
 ## Custom files
@@ -405,7 +409,11 @@ To view what other commands are available view the plugins at the top of the pag
 
 ## RCON doesn't work
 
-Using RCON whilst connected to the server does not work. See discussion [here](https://www.reddit.com/r/GlobalOffensive/comments/167spzi/cs2_rcon/). The current work arounds are disconnect from the server and use `rcon_address IP:PORT` in console and you can use rcon commands or use an external RCON program which has implemented the RCON protocol such as [this](https://github.com/fpaezf/CS2-RCON-Tool-V2).
+Using RCON whilst connected to the server does not work. See discussion [here](https://www.reddit.com/r/GlobalOffensive/comments/167spzi/cs2_rcon/).
+The current work arounds are:
+I have included [CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon) which allows admins to use !rcon in chat.
+You can disconnect from the server and use `rcon_address IP:PORT` in console and you can use rcon commands.
+Use an external RCON program which has implemented the RCON protocol such as [this](https://github.com/fpaezf/CS2-RCON-Tool-V2).
 
 ## License
 
