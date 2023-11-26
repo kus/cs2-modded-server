@@ -301,7 +301,7 @@ sudo -u $user ./game/bin/linuxsteamrt64/cs2 \
     -tickrate $TICKRATE \
     -port $PORT \
     +map de_dust2 \
-    -maxplayers_override $MAXPLAYERS \
+    -maxplayers $MAXPLAYERS \
     -authkey $API_KEY \
 	+sv_setsteamaccount $STEAM_ACCOUNT \
     +game_type 0 \

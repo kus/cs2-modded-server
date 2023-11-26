@@ -45,6 +45,9 @@ To check everything is working correctly run the following commands in the serve
 
 If you see content in both; everything is working.
 
+> [!IMPORTANT]
+> Using RCON whilst connected to the server does not work. See discussion [here](https://www.reddit.com/r/GlobalOffensive/comments/167spzi/cs2_rcon/). The current work arounds are disconnect from the server and use `rcon_address IP:PORT` in console and you can use rcon commands or use an external RCON program which has implemented the RCON protocol such as [this](https://github.com/fpaezf/CS2-RCON-Tool-V2).
+
 Useful things to know:
 
 - [Access admin menu](#acessing-admin-menu)
@@ -237,7 +240,7 @@ Save `CTRL + X`
 
 ## Running on Linux
 
-Make sure you have **40GB free space**.
+Make sure you have **60GB free space**.
 
 Ensure you have all the settings for your [environment variables](#environment-variables).
 
@@ -283,7 +286,7 @@ When you join the server you can [change game modes](#changing-game-modes).
 
 ## Running on Windows
 
-Make sure you have **40GB free space**.
+Make sure you have **60GB free space**.
 
 [Download this repo](https://github.com/kus/cs2-modded-server/archive/master.zip) and extract it to where you want your server (i.e. `C:\Server\cs2-modded-server`). All the following instructions will use this as the root.
 
@@ -399,6 +402,10 @@ These are all the available chat commands to change the game mode:
 Changing between gamemodes multiple times is not recommended, and it is better if you restart the CS2 server in-between.
 
 To view what other commands are available view the plugins at the top of the page.
+
+## RCON doesn't work
+
+Using RCON whilst connected to the server does not work. See discussion [here](https://www.reddit.com/r/GlobalOffensive/comments/167spzi/cs2_rcon/). The current work arounds are disconnect from the server and use `rcon_address IP:PORT` in console and you can use rcon commands or use an external RCON program which has implemented the RCON protocol such as [this](https://github.com/fpaezf/CS2-RCON-Tool-V2).
 
 ## License
 
