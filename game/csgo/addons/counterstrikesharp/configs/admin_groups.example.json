@@ -1,6 +1,5 @@
 {
-  "Erikj": {
-    "identity": "76561197960265731",
+  "#css/admin": {
     "flags": [
       "@css/reservation",
       "@css/generic",
@@ -18,10 +17,7 @@
       "@css/rcon",
       "@css/cheats",
       "@css/root"
-    ]
-  },
-  "Another erikj": {
-    "identity": "STEAM_0:1:1",
-    "flags": ["@mycustomplugin/admin"]
+    ],
+    "immunity": 100
   }
 }

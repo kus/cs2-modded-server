@@ -1,86 +1,32 @@
 {
   "Kus": {
     "identity": "76561197960377828",
-    "flags": [
-      "@css/reservation",
-      "@css/generic",
-      "@css/kick",
-      "@css/ban",
-      "@css/unban",
-      "@css/vip",
-      "@css/slay",
-      "@css/changemap",
-      "@css/cvar",
-      "@css/config",
-      "@css/chat",
-      "@css/vote",
-      "@css/password",
-      "@css/rcon",
-      "@css/cheats",
-      "@css/root"
+    "groups": [
+      "#css/admin"
     ]
   },
   "Kus smurf": {
     "identity": "76561198041470060",
-    "flags": [
-      "@css/reservation",
-      "@css/generic",
-      "@css/kick",
-      "@css/ban",
-      "@css/unban",
-      "@css/vip",
-      "@css/slay",
-      "@css/changemap",
-      "@css/cvar",
-      "@css/config",
-      "@css/chat",
-      "@css/vote",
-      "@css/password",
-      "@css/rcon",
-      "@css/cheats",
-      "@css/root"
+    "groups": [
+      "#css/admin"
     ]
   },
   "Murc": {
     "identity": "76561197995565506",
-    "flags": [
-      "@css/reservation",
-      "@css/generic",
-      "@css/kick",
-      "@css/ban",
-      "@css/unban",
-      "@css/slay",
-      "@css/changemap",
-      "@css/vote",
-      "@css/rcon"
+    "groups": [
+      "#css/moderator"
     ]
   },
   "Dunx": {
     "identity": "76561197979545410",
-    "flags": [
-      "@css/reservation",
-      "@css/generic",
-      "@css/kick",
-      "@css/ban",
-      "@css/unban",
-      "@css/slay",
-      "@css/changemap",
-      "@css/vote",
-      "@css/rcon"
+    "groups": [
+      "#css/moderator"
     ]
   },
   "Def": {
     "identity": "76561198806908843",
-    "flags": [
-      "@css/reservation",
-      "@css/generic",
-      "@css/kick",
-      "@css/ban",
-      "@css/unban",
-      "@css/slay",
-      "@css/changemap",
-      "@css/vote",
-      "@css/rcon"
+    "groups": [
+      "#css/moderator"
     ]
   }
 }

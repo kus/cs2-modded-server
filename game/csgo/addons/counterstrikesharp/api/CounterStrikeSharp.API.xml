@@ -123,6 +123,35 @@
             Stop processing the hook. The original method will not be called, and other hooks will not proceed after this one.
             </summary>
         </member>
+        <member name="T:CounterStrikeSharp.API.Core.Hosting.IScriptHostConfiguration">
+            <summary>
+            Provides information about the CounterStrikeSharp host configuration.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.Hosting.IScriptHostConfiguration.RootPath">
+            <summary>
+            Gets the absolute path to the directory that contains CounterStrikeSharp files.
+            e.g. /game/csgo/addons/counterstrikesharp
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.Hosting.IScriptHostConfiguration.PluginPath">
+            <summary>
+            Gets the absolute path to the directory that contains CounterStrikeSharp plugins.
+            e.g. /game/csgo/addons/counterstrikesharp/plugins
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.Hosting.IScriptHostConfiguration.ConfigsPath">
+            <summary>
+            Gets the absolute path to the directory that contains CounterStrikeSharp configs.
+            e.g. /game/csgo/addons/counterstrikesharp/configs
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.Hosting.IScriptHostConfiguration.GameDataPath">
+            <summary>
+            Gets the absolute path to the directory that contains CounterStrikeSharp game data.
+            e.g. /game/csgo/addons/counterstrikesharp/gamedata
+            </summary>
+        </member>
         <member name="T:CounterStrikeSharp.API.Core.IPlugin">
             <summary>
             Interface which every CounterStrikeSharp plugin must implement. Module will be created with parameterless constructor and then Load method will be called.
@@ -153,6 +182,17 @@
         <member name="T:CounterStrikeSharp.API.Core.IPluginConfig`1">
             <summary>
             An interface that describes a plugin configuration.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.IPluginServiceCollection`1">
+            <summary>
+            Represents a service collection configuration for a plugin.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.IPluginServiceCollection`1.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Used to configure services exposed for dependency injection.
             </summary>
         </member>
         <member name="T:CounterStrikeSharp.API.Core.Listeners.OnEntitySpawned">
@@ -268,6 +308,40 @@
             Shorthand for accessing an entity's CBodyComponent?.SceneNode?.AbsRotation;
             </summary>
         </member>
+        <member name="M:CounterStrikeSharp.API.Core.CBasePlayerPawn.CommitSuicide(System.Boolean,System.Boolean)">
+            <summary>
+            Force player suicide
+            </summary>
+            <param name="explode"></param>
+            <param name="force"></param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSGameRules.TerminateRound(System.Single,CounterStrikeSharp.API.Modules.Entities.Constants.RoundEndReason)">
+            <summary>
+            Terminate the round with the given delay and reason.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.DropActiveWeapon">
+            <summary>
+            Drops the active player weapon on the ground.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.RemoveWeapons">
+            <summary>
+            Removes every weapon from the player.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.CommitSuicide(System.Boolean,System.Boolean)">
+            <summary>
+            Force player suicide
+            </summary>
+            <param name="explode"></param>
+            <param name="force"></param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.Respawn">
+            <summary>
+            Respawn player
+            </summary>
+        </member>
         <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.SwitchTeam(CounterStrikeSharp.API.Modules.Utils.CsTeam)">
             <summary>
             Forcibly switches the team of the player, the player will remain alive and keep their weapons.
@@ -288,12 +362,144 @@
             Gets the active pawns button state. Will work even if the player is dead or observing.
             </summary>
         </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerPawn.Respawn">
+            <summary>
+            Respawn player
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayer_ItemServices.DropActivePlayerWeapon(CounterStrikeSharp.API.Core.CBasePlayerWeapon)">
+            <summary>
+            Drops the active player weapon on the ground.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayer_ItemServices.RemoveWeapons">
+            <summary>
+            Removes every weapon from the player.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CGameSceneNode.GetSkeletonInstance">
+            <summary>
+            Gets the <see cref="T:CounterStrikeSharp.API.Core.CSkeletonInstance"/> instance from the node.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.CommandIsOverriden(System.String)">
+            <summary>
+            Checks to see if a command has overriden permissions.
+            </summary>
+            <param name="commandName">Name of the command.</param>
+            <returns>True if the command has overriden permissions, false if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.GetCommandOverrideData(System.String)">
+            <summary>
+            Grabs the data for a command override that was loaded from "configs/admin_overrides.json".
+            </summary>
+            <param name="commandName">Name of the command.</param>
+            <returns>CommandData class if found, null if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.GetPermissionOverrides(System.String)">
+            <summary>
+            Grabs the new, overriden flags for a command.
+            </summary>
+            <param name="commandName">Name of the command.</param>
+            <returns>If the command is valid, a valid array of flags.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.AddPermissionOverride(System.String,System.String[])">
+            <summary>
+            Adds a new permission to a command override. 
+            This is not saved to "configs/admin_overrides.json".
+            </summary>
+            <param name="commandName">Name of the command.</param>
+            <param name="permissions">Permissions to add to the command override.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.RemovePermissionOverride(System.String,System.String[])">
+            <summary>
+            Removes a permission from a command override.
+            This is not saved to "configs/admin_overrides.json".
+            </summary>
+            <param name="commandName">Name of the command.</param>
+            <param name="permissions">Permissions to remove from the command override.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.ClearPermissionOverride(System.String,System.Boolean)">
+            <summary>
+            Clears all permissions from a command override.
+            This is not saved to "configs/admin_overrides.json".
+            </summary>
+            <param name="commandName">Name of the command.</param>
+            <param name="disable">Whether to disable the command override after clearing.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.DeleteCommandOverride(System.String)">
+            <summary>
+            Deletes a command override.
+            This is not saved to "configs/admin_overrides.json".
+            </summary>
+            <param name="commandName">Name of the command.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.SetCommandOverideState(System.String,System.Boolean)">
+            <summary>
+            Sets a command override to be enabled or disabled.
+            This is not saved to "configs/admin_overrides.json".
+            </summary>
+            <param name="commandName">Name of the command.</param>
+            <param name="state">New state of the command override.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.PlayerInGroup(CounterStrikeSharp.API.Core.CCSPlayerController,System.String[])">
+            <summary>
+            Checks to see if the player is part of an admin group.
+            </summary>
+            <param name="player">Player controller.</param>
+            <param name="groups">Groups to check for.</param>
+            <returns>True if a player is part of all of the groups provided, false if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.PlayerInGroup(CounterStrikeSharp.API.Modules.Entities.SteamID,System.String[])">
+            <summary>
+            Checks to see if the player is part of an admin group.
+            </summary>
+            <param name="steamId">SteamID of the player.</param>
+            <param name="groups">Groups to check for.</param>
+            <returns>True if a player is part of all of the groups provided, false if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.AddPlayerToGroup(CounterStrikeSharp.API.Core.CCSPlayerController,System.String[])">
+            <summary>
+            Adds a player to a group.
+            </summary>
+            <param name="player">Player controller.</param>
+            <param name="groups">Groups to add the player to.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.AddPlayerToGroup(CounterStrikeSharp.API.Modules.Entities.SteamID,System.String[])">
+            <summary>
+            Adds a player to a group.
+            </summary>
+            <param name="steamId">SteamID of the player.</param>
+            <param name="groups">Groups to add the player to.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.RemovePlayerFromGroup(CounterStrikeSharp.API.Core.CCSPlayerController,System.Boolean,System.String[])">
+            <summary>
+            Removes a player from a group.
+            </summary>
+            <param name="player">Player controller.</param>
+            <param name="removeInheritedFlags">If true, all of the flags that the player inherited from being in the group will be removed.</param>
+            <param name="groups"></param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.RemovePlayerFromGroup(CounterStrikeSharp.API.Modules.Entities.SteamID,System.Boolean,System.String[])">
+            <summary>
+            Removes a player from a group.
+            </summary>
+            <param name="steamId">SteamID of the player.</param>
+            <param name="removeInheritedFlags">If true, all of the flags that the player inherited from being in the group will be removed.</param>
+            <param name="groups"></param>
+        </member>
         <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.GetPlayerAdminData(CounterStrikeSharp.API.Modules.Entities.SteamID)">
             <summary>
             Grabs the admin data for a player that was loaded from "configs/admins.json".
             </summary>
             <param name="steamId">SteamID object of the player.</param>
             <returns>AdminData class if data found, null if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.RemovePlayerAdminData(CounterStrikeSharp.API.Modules.Entities.SteamID)">
+            <summary>
+            Removes a players admin data. This is not saved to "configs/admins.json"
+            </summary>
+            <param name="steamId">Steam ID remove admin data from.</param>
         </member>
         <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.PlayerHasPermissions(CounterStrikeSharp.API.Core.CCSPlayerController,System.String[])">
             <summary>
@@ -310,6 +516,56 @@
             <param name="steamId">Steam ID object.</param>
             <param name="flags">Flags to look for in the players permission flags.</param>
             <returns>True if flags are present, false if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.PlayerHasCommandOverride(CounterStrikeSharp.API.Core.CCSPlayerController,System.String)">
+            <summary>
+            Checks to see if a player has a command override. This does NOT return the actual
+            state of the override.
+            </summary>
+            <param name="player">Player or server console.</param>
+            <param name="command">Name of the command to check for.</param>
+            <returns>True if override exists, false if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.PlayerHasCommandOverride(CounterStrikeSharp.API.Modules.Entities.SteamID,System.String)">
+            <summary>
+            Checks to see if a player has a command override. This does NOT return the actual
+            state of the override.
+            </summary>
+            <param name="steamId">Steam ID object.</param>
+            <param name="command">Name of the command to check for.</param>
+            <returns>True if override exists, false if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.GetPlayerCommandOverrideState(CounterStrikeSharp.API.Core.CCSPlayerController,System.String)">
+            <summary>
+            Gets the value of a command override state.
+            </summary>
+            <param name="player">Player or server console.</param>
+            <param name="command">Name of the command to check for.</param>
+            <returns>True if override is active, false if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.GetPlayerCommandOverrideState(CounterStrikeSharp.API.Modules.Entities.SteamID,System.String)">
+            <summary>
+            Gets the value of a command override state.
+            </summary>
+            <param name="steamId">Steam ID object.</param>
+            <param name="command">Name of the command to check for.</param>
+            <returns>True if override is active, false if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.SetPlayerCommandOverride(CounterStrikeSharp.API.Core.CCSPlayerController,System.String,System.Boolean)">
+            <summary>
+            Sets a player command override. This is not saved to "configs/admins.json".
+            </summary>
+            <param name="player">Player or server console.</param>
+            <param name="command">Name of the command to check for.</param>
+            <param name="state">New state of the command override.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.SetPlayerCommandOverride(CounterStrikeSharp.API.Modules.Entities.SteamID,System.String,System.Boolean)">
+            <summary>
+            Sets a player command override. This is not saved to "configs/admins.json".
+            </summary>
+            <param name="steamId">SteamID to add a flag to.</param>
+            <param name="command">Name of the command to check for.</param>
+            <param name="state">New state of the command override.</param>
         </member>
         <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.AddPlayerPermissions(CounterStrikeSharp.API.Core.CCSPlayerController,System.String[])">
             <summary>
@@ -343,17 +599,69 @@
             <param name="steamId">Steam ID to remove flags from.</param>
             <param name="flags">Flags to remove from the player.</param>
         </member>
-        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.RemovePlayerAdminData(CounterStrikeSharp.API.Core.CCSPlayerController)">
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.ClearPlayerPermissions(CounterStrikeSharp.API.Core.CCSPlayerController)">
             <summary>
-            Removes a players admin data. This is not saved to "configs/admins.json"
+            Temporarily removes all permission flags from a player. These flags are not saved to
+            "configs/admins.json".
             </summary>
-            <param name="player">Player controller to remove admin data from.</param>
+            <param name="player">Player controller to remove flags from.</param>
         </member>
-        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.RemovePlayerAdminData(CounterStrikeSharp.API.Modules.Entities.SteamID)">
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.ClearPlayerPermissions(CounterStrikeSharp.API.Modules.Entities.SteamID)">
             <summary>
-            Removes a players admin data. This is not saved to "configs/admins.json"
+            Temporarily removes all permission flags from a player. These flags are not saved to
+            "configs/admins.json".
             </summary>
-            <param name="steamId">Steam ID remove admin data from.</param>
+            <param name="steamId">Steam ID to remove flags from.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.SetPlayerImmunity(CounterStrikeSharp.API.Core.CCSPlayerController,System.UInt32)">
+            <summary>
+            Sets the immunity value for a player.
+            </summary>
+            <param name="player">Player controller.</param>
+            <param name="value">New immunity value.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.SetPlayerImmunity(CounterStrikeSharp.API.Modules.Entities.SteamID,System.UInt32)">
+            <summary>
+            Sets the immunity value for a player.
+            </summary>
+            <param name="steamId">Steam ID of the player.</param>
+            <param name="value">New immunity value.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.CanPlayerTarget(CounterStrikeSharp.API.Core.CCSPlayerController,CounterStrikeSharp.API.Core.CCSPlayerController)">
+            <summary>
+            Checks to see if a player can target another player based on their immunity value.
+            </summary>
+            <param name="caller">Caller of the command.</param>
+            <param name="target">Target of the command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.CanPlayerTarget(CounterStrikeSharp.API.Modules.Entities.SteamID,CounterStrikeSharp.API.Modules.Entities.SteamID)">
+            <summary>
+            Checks to see if a player can target another player based on their immunity value.
+            </summary>
+            <param name="caller">Caller of the command.</param>
+            <param name="target">Target of the command.</param>
+            <returns></returns>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Admin.BaseRequiresPermissions.Permissions">
+            <summary>
+            The permissions for the command.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Admin.BaseRequiresPermissions.Command">
+            <summary>
+            The name of the command that is attached to this attribute.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Admin.BaseRequiresPermissions.Enabled">
+            <summary>
+            Whether this attribute should be used for permission checks.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Commands.CommandExtensions.GetArgTargetResult(CounterStrikeSharp.API.Modules.Commands.CommandInfo,System.Int32)">
+            <summary>
+            Treats the argument at the specified index as a target string (@all, @me etc.) and returns the result.
+            </summary>
         </member>
         <member name="M:CounterStrikeSharp.API.Modules.Commands.CommandHelperAttribute.#ctor(System.Int32,System.String,CounterStrikeSharp.API.Modules.Commands.CommandUsage)">
             <summary>
