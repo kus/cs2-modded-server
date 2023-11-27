@@ -76,6 +76,20 @@
 	}
 	"mapgroups"
 	{
+		"mg_active"
+		{
+			"name"					"mg_active"
+			"maps"
+			{
+				"de_inferno"	""
+				"de_train"		""
+				"de_mirage"		""
+				"de_nuke"		""
+				"de_dust2"		""
+				"de_overpass"	""
+				"de_vertigo"		""
+			}
+		}
 		"mg_comp"
 		{
 			"name"			"mg_comp"
