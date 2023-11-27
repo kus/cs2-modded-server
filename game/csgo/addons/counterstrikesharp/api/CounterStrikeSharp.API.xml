@@ -123,35 +123,6 @@
             Stop processing the hook. The original method will not be called, and other hooks will not proceed after this one.
             </summary>
         </member>
-        <member name="T:CounterStrikeSharp.API.Core.Hosting.IScriptHostConfiguration">
-            <summary>
-            Provides information about the CounterStrikeSharp host configuration.
-            </summary>
-        </member>
-        <member name="P:CounterStrikeSharp.API.Core.Hosting.IScriptHostConfiguration.RootPath">
-            <summary>
-            Gets the absolute path to the directory that contains CounterStrikeSharp files.
-            e.g. /game/csgo/addons/counterstrikesharp
-            </summary>
-        </member>
-        <member name="P:CounterStrikeSharp.API.Core.Hosting.IScriptHostConfiguration.PluginPath">
-            <summary>
-            Gets the absolute path to the directory that contains CounterStrikeSharp plugins.
-            e.g. /game/csgo/addons/counterstrikesharp/plugins
-            </summary>
-        </member>
-        <member name="P:CounterStrikeSharp.API.Core.Hosting.IScriptHostConfiguration.ConfigsPath">
-            <summary>
-            Gets the absolute path to the directory that contains CounterStrikeSharp configs.
-            e.g. /game/csgo/addons/counterstrikesharp/configs
-            </summary>
-        </member>
-        <member name="P:CounterStrikeSharp.API.Core.Hosting.IScriptHostConfiguration.GameDataPath">
-            <summary>
-            Gets the absolute path to the directory that contains CounterStrikeSharp game data.
-            e.g. /game/csgo/addons/counterstrikesharp/gamedata
-            </summary>
-        </member>
         <member name="T:CounterStrikeSharp.API.Core.IPlugin">
             <summary>
             Interface which every CounterStrikeSharp plugin must implement. Module will be created with parameterless constructor and then Load method will be called.
@@ -182,17 +153,6 @@
         <member name="T:CounterStrikeSharp.API.Core.IPluginConfig`1">
             <summary>
             An interface that describes a plugin configuration.
-            </summary>
-        </member>
-        <member name="T:CounterStrikeSharp.API.Core.IPluginServiceCollection`1">
-            <summary>
-            Represents a service collection configuration for a plugin.
-            </summary>
-            <typeparam name="T"></typeparam>
-        </member>
-        <member name="M:CounterStrikeSharp.API.Core.IPluginServiceCollection`1.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
-            <summary>
-            Used to configure services exposed for dependency injection.
             </summary>
         </member>
         <member name="T:CounterStrikeSharp.API.Core.Listeners.OnEntitySpawned">
@@ -297,6 +257,12 @@
             Called when the server has changed hostname.
             </summary>
             <param name="hostname">New hostname of the server</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.Logging.PluginLogging.CreatePluginLogger(CounterStrikeSharp.API.Core.PluginContext)">
+            <summary>
+            Creates a logger scoped to a specific plugin
+            <remarks>Eventually this should probably come from a service collection</remarks>
+            </summary>
         </member>
         <member name="P:CounterStrikeSharp.API.Core.CBaseEntity.AbsOrigin">
             <summary>
@@ -656,11 +622,6 @@
         <member name="P:CounterStrikeSharp.API.Modules.Admin.BaseRequiresPermissions.Enabled">
             <summary>
             Whether this attribute should be used for permission checks.
-            </summary>
-        </member>
-        <member name="M:CounterStrikeSharp.API.Modules.Commands.CommandExtensions.GetArgTargetResult(CounterStrikeSharp.API.Modules.Commands.CommandInfo,System.Int32)">
-            <summary>
-            Treats the argument at the specified index as a target string (@all, @me etc.) and returns the result.
             </summary>
         </member>
         <member name="M:CounterStrikeSharp.API.Modules.Commands.CommandHelperAttribute.#ctor(System.Int32,System.String,CounterStrikeSharp.API.Modules.Commands.CommandUsage)">
