@@ -16,7 +16,8 @@
       "@css/password",
       "@css/rcon",
       "@css/cheats",
-      "@css/root"
+      "@css/root",
+      "@custom/prac"
     ],
     "immunity": 100
   },
@@ -33,7 +34,8 @@
       "@css/config",
       "@css/chat",
       "@css/vote",
-      "@css/rcon"
+      "@css/rcon",
+      "@custom/prac"
     ],
     "immunity": 99
   }

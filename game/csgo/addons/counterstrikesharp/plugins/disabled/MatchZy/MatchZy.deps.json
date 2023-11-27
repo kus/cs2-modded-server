@@ -11,8 +11,9 @@
           "CsvHelper": "30.0.1",
           "Dapper": "2.1.15",
           "Microsoft.Data.Sqlite": "7.0.13",
+          "MySqlConnector": "2.3.0",
           "SQLitePCLRaw.bundle_e_sqlite3": "2.1.6",
-          "CounterStrikeSharp.API": "1.0.50.0"
+          "CounterStrikeSharp.API": "1.0.65.0"
         },
         "runtime": {
           "MatchZy.dll": {}
@@ -48,6 +49,25 @@
           "lib/net6.0/Microsoft.Data.Sqlite.dll": {
             "assemblyVersion": "7.0.13.0",
             "fileVersion": "7.0.1323.51806"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/7.0.1": {
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.723.27404"
+          }
+        }
+      },
+      "MySqlConnector/2.3.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
+        },
+        "runtime": {
+          "lib/net7.0/MySqlConnector.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.3.0.0"
           }
         }
       },
@@ -190,11 +210,11 @@
         }
       },
       "System.Memory/4.5.3": {},
-      "CounterStrikeSharp.API/1.0.50.0": {
+      "CounterStrikeSharp.API/1.0.65.0": {
         "runtime": {
           "CounterStrikeSharp.API.dll": {
-            "assemblyVersion": "1.0.50.0",
-            "fileVersion": "1.0.50.0"
+            "assemblyVersion": "1.0.65.0",
+            "fileVersion": "1.0.65.0"
           }
         }
       }
@@ -234,6 +254,20 @@
       "path": "microsoft.data.sqlite.core/7.0.13",
       "hashPath": "microsoft.data.sqlite.core.7.0.13.nupkg.sha512"
     },
+    "Microsoft.Extensions.Logging.Abstractions/7.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pkeBFx0vqMW/A3aUVHh7MPu3WkBhaVlezhSZeb1c9XD0vUReYH1TLFSy5MxJgZfmz5LZzYoErMorlYZiwpOoNA==",
+      "path": "microsoft.extensions.logging.abstractions/7.0.1",
+      "hashPath": "microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512"
+    },
+    "MySqlConnector/2.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CpW2vvPvqfjSR8MIhRTjoM7xoR3fzRbO4b8EAcjIfPv8/ecVmFItJkDmZ9wkHsiiL0XSUCOmxCmdYBEla616PQ==",
+      "path": "mysqlconnector/2.3.0",
+      "hashPath": "mysqlconnector.2.3.0.nupkg.sha512"
+    },
     "SQLitePCLRaw.bundle_e_sqlite3/2.1.6": {
       "type": "package",
       "serviceable": true,
@@ -269,7 +303,7 @@
       "path": "system.memory/4.5.3",
       "hashPath": "system.memory.4.5.3.nupkg.sha512"
     },
-    "CounterStrikeSharp.API/1.0.50.0": {
+    "CounterStrikeSharp.API/1.0.65.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
