@@ -1,8 +1,0 @@
-{
-	"Connection": {
-		"Host": "localhost",
-		"Database": "cs",
-		"User": "root",
-		"Password": "password"
-	}
-}

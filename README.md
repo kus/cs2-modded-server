@@ -48,9 +48,10 @@ If you see content in both; everything is working.
 > [!IMPORTANT]
 > Using RCON whilst connected to the server does not work. See discussion [here](https://www.reddit.com/r/GlobalOffensive/comments/167spzi/cs2_rcon/).
 > The current work arounds are:
-> I have included [CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon) which allows admins to use !rcon in chat.
-> You can disconnect from the server and use `rcon_address IP:PORT` in console and you can use rcon commands.
-> Use an external RCON program which has implemented the RCON protocol such as [this](https://github.com/fpaezf/CS2-RCON-Tool-V2).
+>
+> - I have included [CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon) which allows admins to use !rcon in chat.
+> - You can disconnect from the server and use `rcon_address IP:PORT` in console and you can use rcon commands.
+> - Use an external RCON program which has implemented the RCON protocol such as [this](https://github.com/fpaezf/CS2-RCON-Tool-V2).
 
 Useful things to know:
 
@@ -71,7 +72,7 @@ Mod | Version | Why
 [CS2_DamageInfo](https://github.com/K4ryuu/CS2_DamageInfo) | `1.3.3` | Displays the amount of damage players have inflicted on the victim's HP and Armor, as well as the hit groups they have hit.
 [MatchZy](https://github.com/shobhit-pathak/MatchZy) | `0.4.3` | MatchZy is a plugin for CS2 for running and managing practice/pugs/scrims/matches with easy configuration!
 [MapConfigurator](https://github.com/ManifestManah/MapConfigurator)| `1.0.2` | Allows you to quick and easily create unique configuration files for each map on your server.
-[Mini Admin](https://github.com/partiusfabaa/cs2-MiniAdmin)| `1.0.4.1` | Adds basic administrator functions
+[SimpleAdmin](https://github.com/connercsbn/SimpleAdmin/)| `0.0.3` | Adds basic administrator functions
 [LiteMapChooser](https://github.com/PhantomYopta/LiteMapChooser)| `1.0.2` | This plugin allows you to change map, nominate map, rtv
 [CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon)| `1.2.0` | This is a rudimentary implementation of a RCON plugin for CS2 using CounterStrikeSharp as RCON does not work whilst connected to the server
 [CS2_Speedometer](https://github.com/PhantomYopta/CS2_Speedometer)| `1.0.2` | Just a speedometer for CS2
@@ -373,11 +374,9 @@ Because the way the server is setup with several mods it's not possible. You can
 
 ## Acessing admin menu
 
-The current state of admins managing a server in CS2 is very messy. You have to add admins multiple times to multiple files (see my example files). This will hopefully be minimized to one file when plugins update to use the new [Admin Framework](https://docs.cssharp.dev/features/admin-framework/) on [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp):
+Admins are managed by [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) using the [Admin Framework](https://docs.cssharp.dev/admin-framework/defining-admins/). You define admins and their flags and most plugins now utilise this framework.
 
-- [/custom_files_example/addons/counterstrikesharp/configs/admins.json](https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/addons/counterstrikesharp/configs/admins.json)
-- [/custom_files_example/cfg/MatchZy/admins.json](https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/cfg/MatchZy/admins.json]) ([#11](https://github.com/shobhit-pathak/MatchZy/issues/11))
-- [/custom_files_example/cfg/custom_all.cfg](https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/cfg/custom_all.cfg) ([#12](https://github.com/partiusfabaa/cs2-MiniAdmin/issues/12))
+To see an example of my admins you can look at this file [/custom_files_example/addons/counterstrikesharp/configs/admins.json](https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/addons/counterstrikesharp/configs/admins.json). To set your admins on your own server use this file as a reference and use the [custom files](#custom-files) system to have your own version.
 
 ## Changing game modes
 
@@ -411,9 +410,20 @@ To view what other commands are available view the plugins at the top of the pag
 
 Using RCON whilst connected to the server does not work. See discussion [here](https://www.reddit.com/r/GlobalOffensive/comments/167spzi/cs2_rcon/).
 The current work arounds are:
-I have included [CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon) which allows admins to use !rcon in chat.
-You can disconnect from the server and use `rcon_address IP:PORT` in console and you can use rcon commands.
-Use an external RCON program which has implemented the RCON protocol such as [this](https://github.com/fpaezf/CS2-RCON-Tool-V2).
+
+- I have included [CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon) which allows admins to use !rcon in chat.
+- You can disconnect from the server and use `rcon_address IP:PORT` in console and you can use rcon commands.
+- Use an external RCON program which has implemented the RCON protocol such as [this](https://github.com/fpaezf/CS2-RCON-Tool-V2).
+
+If it still doesn't work, make sure you try connect from CS2 outside of a game via console:
+
+```bash
+rcon_address ip:port
+rcon_password "password"
+rcon say "hi"
+```
+
+And check the ports cs2 is using on your OS i.e. on Ubuntu `sudo lsof -i -P -n | head -n 1; sudo lsof -i -P -n | grep cs2`.
 
 ## License
 

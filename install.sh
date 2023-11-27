@@ -1,14 +1,5 @@
 #!/usr/bin/env bash
 
-# Function to check if MySQL is installed
-check_mysql() {
-    if dpkg -l | grep -qw mysql-server; then
-        return 1
-    else
-        return 0
-    fi
-}
-
 # Variables
 user="steam"
 IP="0.0.0.0"
@@ -213,81 +204,6 @@ else
         }
     }' "$FILE" > tmp_file && mv tmp_file "$FILE"
     echo "$FILE successfully patched for Metamod."
-fi
-
-# Check if MySQL is installed
-if check_mysql; then
-    echo "MySQL is not installed. Proceeding with installation and configuration."
-
-    # Update system package index
-    apt-get update
-
-    # Install MySQL Server without prompt
-	#echo "mysql-server mysql-server/root_password password root" | sudo debconf-set-selections
-	#echo "mysql-server mysql-server/root_password_again password root" | sudo debconf-set-selections
-    DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-server
-
-	# Command to check MySQL connection
-	mysql -uroot -e "quit" 2>/dev/null
-
-	# Check the exit status of the MySQL command
-	if [ $? -eq 0 ]; then
-		echo "Successfully connected to MySQL."
-	else
-		echo "Failed to connect to MySQL."
-	fi
-
-	echo "Configure MySQL with non-interactive secure installation"
-
-	# Search for the line that needs to be commented out
-	# LINE_TO_COMMENT="Instead of skip-networking the default is now to listen only on"
-	# Check if the line exists and is not already commented out
-	# if grep -q "^\s*$LINE_TO_COMMENT" /etc/mysql/mysql.conf.d/mysqld.cnf; then
-	# 	# The line exists and is not commented, so comment it out
-	# 	sed -i "s/^\s*$LINE_TO_COMMENT/# $LINE_TO_COMMENT/" /etc/mysql/mysql.conf.d/mysqld.cnf
-	# 	echo "Error line commented out successfully."
-	# else
-	# 	echo "The error line is already commented out or does not exist."
-	# fi
-
-    # Disable remote access
-    #sed -i '/bind-address/s/^/#/' /etc/mysql/mysql.conf.d/mysqld.cnf
-    #sed -i '/skip-networking/s/^#//' /etc/mysql/mysql.conf.d/mysqld.cnf
-
-	mkdir -p /var/log/mysql/
-	chown mysql:mysql -R /var/log/mysql
-
-    # Configure MySQL with non-interactive secure installation
-    mysql --user=root <<_EOF_
-	-- Set root password and remove anonymous users
-	ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
-	DELETE FROM mysql.user WHERE User='';
-
-	-- Disallow root login remotely
-	DELETE FROM mysql.user WHERE User='root' AND Host NOT IN ('localhost', '127.0.0.1', '::1');
-
-	-- Remove test database and access to it
-	DROP DATABASE IF EXISTS test;
-	DELETE FROM mysql.db WHERE Db='test' OR Db='test\\_%';
-
-	-- Reload privilege tables now
-	FLUSH PRIVILEGES;
-_EOF_
-
-    # Restart MySQL service to apply changes
-    systemctl restart mysql
-
-    # Enable MySQL service to start on boot
-    systemctl enable mysql
-
-    # Create a default database
-    DB_NAME="cs"
-    mysql --user=root --password='password' -e "CREATE DATABASE ${DB_NAME};"
-
-    echo "Database $DB_NAME created."
-
-else
-    echo "MySQL is already installed."
 fi
 
 rm -r /home/${user}/cs2-modded-server-${BRANCH} /home/${user}/${BRANCH}.zip
