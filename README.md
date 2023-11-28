@@ -98,6 +98,8 @@ If you are hosting an online server, you need to create a Steam [Game Login Toke
 
 You also need to create an [authorization key](http://steamcommunity.com/dev/apikey) which will allow your server to download maps from the workshop. Put this value in the `API_KEY` environment variable.
 
+**You must connect to the server from the public IP, not the LAN IP even if you are on the same network. The script logs the public IP `Starting server on XXX.XXX.XXX.XXX:27015`**
+
 ## Creating a LAN server
 
 Create a custom file for `/game/csgo/cfg/env.cfg` following the [custom files](#custom-files) steps (`/custom_files/cfg/env.cfg`) and set `sv_lan` to `1`, `sv_downloadurl` to `""` and `sv_allowdownload` to `1`.
@@ -256,6 +258,8 @@ Ensure you have all the settings for your [environment variables](#environment-v
 
    Make sure you [port forward](https://portforward.com/router.htm) on your router TCP: `27015` and UDP: `27015` & `27020` so players can connect from the internet.
 
+   **You must connect to the server from the public IP, not the LAN IP even if you are on the same network. The script logs the public IP `Starting server on XXX.XXX.XXX.XXX:27015`**
+
 - **If setting up LAN server:**
 
    Set environment variable `LAN` to `1`
@@ -312,6 +316,8 @@ Create a folder `steamcmd` and [download SteamCMD](https://steamcdn-a.akamaihd.n
 
    Make sure you [port forward](https://portforward.com/router.htm) on your router TCP: `27015` and UDP: `27015` & `27020` so players can connect from the internet.
 
+   **You must connect to the server from the public IP, not the LAN IP even if you are on the same network.**
+
 - **If setting up LAN server:**
 
    Open `\csgo\cfg\env.cfg`
@@ -367,7 +373,9 @@ This is because Valve ships their own copies of those libraries. As modern syste
 
 ### How do I connect to RCON remotely?
 
-[Download SourceAdminTool](https://users.alliedmods.net/~drifter/SAT/) for your OS (you can read about it [here](https://forums.alliedmods.net/showthread.php?t=289370)) and click `Servers > Add Servers` and put in the `<IP>:27015` and when you see the server show in the list, down the bottom left type in your RCON password and click `Login` and you should be able to execute commands from the bottom text box i.e. `exec dm.cfg`
+[Download SourceAdminTool](https://nightly.link/Drifter321/admintool/workflows/build/master) ([source](https://github.com/Drifter321/admintool)) for your OS (you can read about it [here](https://forums.alliedmods.net/showthread.php?t=289370)) and click `Servers > Add Servers` and put in the `<IP>:27015` and when you see the server show in the list, down the bottom left type in your RCON password and click `Login` and you should be able to execute commands from the bottom text box i.e. `exec dm.cfg`
+
+**You must connect to the server from the public IP if hosting an online server, not the LAN IP even if you are on the same network. The script logs the public IP `Starting server on XXX.XXX.XXX.XXX:27015`**
 
 ### Why can't I set the server to start automatically with a mod loaded
 
@@ -417,6 +425,8 @@ The current work arounds are:
 - Use an external RCON program which has implemented the RCON protocol such as [this](https://github.com/fpaezf/CS2-RCON-Tool-V2).
 
 If it still doesn't work, make sure you try connect from CS2 outside of a game via console:
+
+**You must connect to the server from the public IP if hosting an online server, not the LAN IP even if you are on the same network. The script logs the public IP `Starting server on XXX.XXX.XXX.XXX:27015`**
 
 ```bash
 rcon_address ip:port
