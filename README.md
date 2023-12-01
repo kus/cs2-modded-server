@@ -4,7 +4,7 @@ If you are looking for the CS:GO version you can still access that [here](https:
 
 ## About
 
-A single modded Counter-Strike 2 (CS2) Modded Dedicated Server that you can [change the active mod](#changing-game-modes) on the server from chat or server console. [Maps are configured per game mode](#setting-maps-for-different-game-modes) and change when the game mode changes.
+A single modded Counter-Strike 2 (CS2) Modded Dedicated Server that you can [change the active mod](#changing-game-modes) on the server from chat or server console. [Maps are pre setup and configured per game mode](#setting-maps-for-different-game-modes) and change when the game mode changes.
 
 Each game mode has a hand full of maps preset so you are ready to go and it's [easy to add more](#setting-maps-for-different-game-modes).
 
