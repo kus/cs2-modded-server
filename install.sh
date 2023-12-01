@@ -43,10 +43,10 @@ else
 fi
 
 # Download latest stop script
-curl --silent --output "stop.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${BRANCH}/stop.sh" && chmod +x stop.sh
+curl --silent --output -H "Cache-Control: no-cache" "stop.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${BRANCH}/stop.sh" && chmod +x stop.sh
 
 # Download latest start script
-curl --silent --output "start.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${BRANCH}/start.sh" && chmod +x start.sh
+curl --silent --output -H "Cache-Control: no-cache" "start.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${BRANCH}/start.sh" && chmod +x start.sh
 
 # Check distrib
 if ! command -v apt-get &> /dev/null; then
@@ -167,14 +167,14 @@ unzip -o -qq ${BRANCH}.zip
 rm -r /home/${user}/cs2/custom_files_example/
 cp -R cs2-modded-server-${BRANCH}/custom_files_example/ /home/${user}/cs2/custom_files_example/
 # Merge mod files into server files
-cp -r "cs2-modded-server-${BRANCH}/game/csgo/*" "/home/${user}/cs2/game/"
+cp -R cs2-modded-server-${BRANCH}/game/csgo/ /home/${user}/cs2/game/
 # Merge custom files into server files
 if [ ! -d "/home/${user}/cs2/custom_files/" ]; then
     # If the target directory doesn't exist, copy the source directory to the target location
-    cp -r "cs2-modded-server-${BRANCH}/custom_files/" "/home/${user}/cs2/custom_files/"
+    cp -R cs2-modded-server-${BRANCH}/custom_files/ /home/${user}/cs2/custom_files/
 else
     # If the target directory exists, copy all the contents of the source directory to the target directory
-    cp -r "cs2-modded-server-${BRANCH}/custom_files/*" "/home/${user}/cs2/custom_files/"
+    cp -RT cs2-modded-server-${BRANCH}/custom_files/ /home/${user}/cs2/custom_files/
 fi
 
 echo "Dynamically writing /home/$user/cs2/game/csgo/cfg/secrets.cfg"
@@ -191,7 +191,7 @@ echo "" >> /home/${user}/cs2/game/csgo/cfg/secrets.cfg
 echo "echo \"secrets.cfg executed\"" >> /home/${user}/cs2/game/csgo/cfg/secrets.cfg
 
 echo "Merging in custom files from ${CUSTOM_FILES}"
-cp -r "/home/${user}/cs2/${CUSTOM_FILES}/*" "/home/${user}/cs2/game/csgo/"
+cp -RT /home/${user}/cs2/${CUSTOM_FILES}/ /home/${user}/cs2/game/csgo/
 
 chown -R ${user}:${user} /home/${user}/cs2
 

@@ -91,7 +91,7 @@ else
 fi
 
 # Download latest stop script
-curl --silent --output "stop.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${BRANCH}/stop.sh" && chmod +x stop.sh
+curl --silent --output -H "Cache-Control: no-cache" "stop.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${BRANCH}/stop.sh" && chmod +x stop.sh
 
 # Check distrib
 if ! command -v apt-get &> /dev/null; then
