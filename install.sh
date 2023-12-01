@@ -12,9 +12,10 @@ fi
 PUBLIC_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
 CUSTOM_FILES="${CUSTOM_FOLDER:-custom_files}"
 
-# Set IP to PUBLIC_IP if IP is empty
-if [ -z "$IP" ]; then
-    IP="$PUBLIC_IP"
+if [[ -z $IP ]]; then
+    IP_ARGS=""
+else
+    IP_ARGS="-ip ${IP}"
 fi
 
 if [ -f /etc/os-release ]; then
@@ -213,7 +214,7 @@ fi
 
 rm -r /home/${user}/cs2-modded-server-${BRANCH} /home/${user}/${BRANCH}.zip
 
-echo "Starting server on $IP:$PORT"
+echo "Starting server on $PUBLIC_IP:$PORT"
 # https://developer.valvesoftware.com/wiki/Counter-Strike_2/Dedicated_Servers#Command-Line_Parameters
 echo ./game/bin/linuxsteamrt64/cs2 \
     -dedicated \
@@ -221,7 +222,7 @@ echo ./game/bin/linuxsteamrt64/cs2 \
     -usercon \
     -autoupdate \
     -tickrate $TICKRATE \
-	-ip $IP \
+	$IP_ARGS \
     -port $PORT \
     +map de_dust2 \
     -maxplayers $MAXPLAYERS \
@@ -236,7 +237,7 @@ sudo -u $user ./game/bin/linuxsteamrt64/cs2 \
     -usercon \
     -autoupdate \
     -tickrate $TICKRATE \
-	-ip $IP \
+	$IP_ARGS \
     -port $PORT \
     +map de_dust2 \
     -maxplayers $MAXPLAYERS \
