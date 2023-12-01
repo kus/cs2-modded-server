@@ -163,7 +163,8 @@ rm -r /home/${user}/cs2/game/csgo/addons
 echo "Downloading mod files..."
 wget --quiet https://github.com/kus/cs2-modded-server/archive/${BRANCH}.zip
 unzip -o -qq ${BRANCH}.zip
-rm -r /home/${user}/cs2/custom_files/ /home/${user}/cs2/custom_files_example/
+# Delete custom_files_example as I use this for my server and as a demo for others and I want it to always reflect git
+rm -r /home/${user}/cs2/custom_files_example/
 cp -R cs2-modded-server-${BRANCH}/game/csgo/ /home/${user}/cs2/game/
 cp -R cs2-modded-server-${BRANCH}/custom_files/ /home/${user}/cs2/custom_files/
 cp -R cs2-modded-server-${BRANCH}/custom_files_example/ /home/${user}/cs2/custom_files_example/
