@@ -49,7 +49,7 @@ if [ ! -z "$DUCK_TOKEN" ]; then
 fi
 
 # Download latest installer
-curl --silent --output -H "Cache-Control: no-cache" "install.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${MOD_BRANCH}/install.sh" && chmod +x install.sh
+curl --silent -H "Cache-Control: no-cache" --output "install.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${MOD_BRANCH}/install.sh" && chmod +x install.sh
 
 # Run
 bash install.sh |& tee /install.log
