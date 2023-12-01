@@ -165,9 +165,17 @@ wget --quiet https://github.com/kus/cs2-modded-server/archive/${BRANCH}.zip
 unzip -o -qq ${BRANCH}.zip
 # Delete custom_files_example as I use this for my server and as a demo for others and I want it to always reflect git
 rm -r /home/${user}/cs2/custom_files_example/
-cp -R cs2-modded-server-${BRANCH}/game/csgo/ /home/${user}/cs2/game/
-cp -R cs2-modded-server-${BRANCH}/custom_files/ /home/${user}/cs2/custom_files/
 cp -R cs2-modded-server-${BRANCH}/custom_files_example/ /home/${user}/cs2/custom_files_example/
+# Merge mod files into server files
+cp -r "cs2-modded-server-${BRANCH}/game/csgo/*" "/home/${user}/cs2/game/"
+# Merge custom files into server files
+if [ ! -d "/home/${user}/cs2/custom_files/" ]; then
+    # If the target directory doesn't exist, copy the source directory to the target location
+    cp -r "cs2-modded-server-${BRANCH}/custom_files/" "/home/${user}/cs2/custom_files/"
+else
+    # If the target directory exists, copy all the contents of the source directory to the target directory
+    cp -r "cs2-modded-server-${BRANCH}/custom_files/*" "/home/${user}/cs2/custom_files/"
+fi
 
 echo "Dynamically writing /home/$user/cs2/game/csgo/cfg/secrets.cfg"
 if [ ! -z "$RCON_PASSWORD" ]; then
@@ -183,7 +191,7 @@ echo "" >> /home/${user}/cs2/game/csgo/cfg/secrets.cfg
 echo "echo \"secrets.cfg executed\"" >> /home/${user}/cs2/game/csgo/cfg/secrets.cfg
 
 echo "Merging in custom files from ${CUSTOM_FILES}"
-cp -RT /home/${user}/cs2/${CUSTOM_FILES}/ /home/${user}/cs2/game/csgo/
+cp -r "/home/${user}/cs2/${CUSTOM_FILES}/*" "/home/${user}/cs2/game/csgo/"
 
 chown -R ${user}:${user} /home/${user}/cs2
 
