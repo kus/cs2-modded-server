@@ -3,7 +3,7 @@ PUBLIC_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
 
 # Set IP to PUBLIC_IP if IP is empty
 if [ -z "$IP" ]; then
-    $IP="$PUBLIC_IP"
+    IP="$PUBLIC_IP"
 fi
 
 echo "Downloading any updates for CS2..."

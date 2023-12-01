@@ -14,7 +14,7 @@ CUSTOM_FILES="${CUSTOM_FOLDER:-custom_files}"
 
 # Set IP to PUBLIC_IP if IP is empty
 if [ -z "$IP" ]; then
-    $IP="$PUBLIC_IP"
+    IP="$PUBLIC_IP"
 fi
 
 if [ -f /etc/os-release ]; then
