@@ -280,12 +280,6 @@ cd / && curl --silent --output "install.sh" "https://raw.githubusercontent.com/k
 
 - **If running for the first time**
 
-   Once the CS2 server has started close it
-
-   Open `/install.sh` and after it dynamically creates `cfg/env.cfg` you there is commented out code that will dynamically overwrite `/addons/sourcemod/configs/admins_simple.ini` with your own admins. Simply update the Steam ID's and uncomment the lines.
-
-   Run `./install.sh` again
-
 To check everything is working correctly run the following commands in the server console:
 
 - `meta list` and you should see `CounterStrikeSharp` in the output
