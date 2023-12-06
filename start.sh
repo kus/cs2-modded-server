@@ -5,7 +5,7 @@
 # Useful for testing and modifying files on the server
 
 # As root (sudo su)
-# cd / && curl --silent --output "start.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/master/start.sh" && chmod +x start.sh && bash start.sh
+# cd / && curl -s -H "Cache-Control: no-cache" -o "start.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/master/start.sh" && chmod +x start.sh && bash start.sh
 
 METADATA_URL="${METADATA_URL:-http://metadata.google.internal/computeMetadata/v1/instance/attributes}"
 
@@ -87,9 +87,16 @@ else
 	DISTRO_VERSION=$(uname -r)
 fi
 
+echo "Starting on $DISTRO_OS: $DISTRO_VERSION..."
+
+# Get the free space on the root filesystem in GB
+FREE_SPACE=$(df / --output=avail -BG | tail -n 1 | tr -d 'G')
+
+echo "With $FREE_SPACE Gb free space..."
+
 # Check distrib
 if ! command -v apt-get &> /dev/null; then
-	echo "ERROR: OS distribution not supported... $DISTRO_OS $DISTRO_VERSION"
+	echo "ERROR: OS distribution not supported (apt-get not available). $DISTRO_OS: $DISTRO_VERSION"
 	exit 1
 fi
 
@@ -115,7 +122,7 @@ if [ "$?" -ne "0" ]; then
 	exit 1
 fi
 
-echo "Installing required packages for $DISTRO_OS $DISTRO_VERSION..."
+echo "Installing required packages for $DISTRO_OS: $DISTRO_VERSION..."
 apt-get update -y -q >/dev/null
 if [ "${DISTRO_OS}" == "Ubuntu" ]; then
 	if [ "${DISTRO_VERSION}" == "16.04" ]; then
@@ -130,8 +137,18 @@ if [ "${DISTRO_OS}" == "Ubuntu" ]; then
 		echo "$DISTRO_OS $DISTRO_VERSION not officially supported; using Ubuntu 22.04 config"
 		apt-get install -y -q dnsutils curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc-s1 steamcmd >/dev/null
 	fi
+elif [ $DISTRO_OS == Debian* ]; then
+	if [ "${DISTRO_VERSION}" == "10" ]; then
+		apt-get install -y -q dnsutils curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc1 steamcmd >/dev/null
+	elif [ "${DISTRO_VERSION}" == "11" ]; then
+		apt-get install -y -q dnsutils curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc-s1 steamcmd >/dev/null
+	elif [ "${DISTRO_VERSION}" == "12" ]; then
+		apt-get install -y -q dnsutils curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc-s1 steamcmd >/dev/null
+	elif [ "${DISTRO_VERSION}" == "13" ]; then
+		apt-get install -y -q dnsutils curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc-s1 steamcmd >/dev/null
+	fi
 else
-	echo "ERROR: OS distribution not supported. $DISTRO_OS $DISTRO_VERSION"
+	echo "ERROR: OS distribution not supported. $DISTRO_OS: $DISTRO_VERSION"
 	exit 1
 fi
 
