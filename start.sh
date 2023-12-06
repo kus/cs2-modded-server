@@ -140,14 +140,14 @@ curl -s -H "Cache-Control: no-cache" -o "stop.sh" "https://raw.githubusercontent
 
 PUBLIC_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
 
-# Update DuckDNS with our current IP
-if [ ! -z "$DUCK_TOKEN" ]; then
-    echo url="http://www.duckdns.org/update?domains=$DUCK_DOMAIN&token=$DUCK_TOKEN&ip=$PUBLIC_IP" | curl -k -o /duck.log -K -
-fi
-
 if [ -z "$PUBLIC_IP" ]; then
 	echo "ERROR: Cannot retrieve your public IP address..."
 	exit 1
+fi
+
+# Update DuckDNS with our current IP
+if [ ! -z "$DUCK_TOKEN" ]; then
+    echo url="http://www.duckdns.org/update?domains=$DUCK_DOMAIN&token=$DUCK_TOKEN&ip=$PUBLIC_IP" | curl -k -o /duck.log -K -
 fi
 
 echo "Checking $user user exists..."

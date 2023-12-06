@@ -53,11 +53,6 @@ if [ "$EUID" -ne 0 ]; then
 	exit 1
 fi
 
-if [ -z "$PUBLIC_IP" ]; then
-	echo "ERROR: Cannot retrieve your public IP address..."
-	exit 1
-fi
-
 echo "Updating Operating System..."
 apt-get update -y -q && apt-get upgrade -y -q >/dev/null
 if [ "$?" -ne "0" ]; then
@@ -101,6 +96,11 @@ curl -s -H "Cache-Control: no-cache" -o "stop.sh" "https://raw.githubusercontent
 curl -s -H "Cache-Control: no-cache" -o "start.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${BRANCH}/start.sh" && chmod +x start.sh
 
 PUBLIC_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
+
+if [ -z "$PUBLIC_IP" ]; then
+	echo "ERROR: Cannot retrieve your public IP address..."
+	exit 1
+fi
 
 # Update DuckDNS with our current IP
 if [ ! -z "$DUCK_TOKEN" ]; then
