@@ -1,8 +1,0 @@
-"Phrases"
-{
-	"Flooding the server"
-	{
-		"da"		"Du overbelaster serveren!"
-	}
-
-}
