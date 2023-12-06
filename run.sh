@@ -1,6 +1,11 @@
 user="steam"
 PUBLIC_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
 
+# 32 or 64 bit Operating System
+if [ -z "$BITS" ]; then
+    export BITS=64
+fi
+
 if [[ -z $IP ]]; then
     IP_ARGS=""
 else
@@ -8,7 +13,11 @@ else
 fi
 
 echo "Downloading any updates for CS2..."
+# https://developer.valvesoftware.com/wiki/Command_line_options
 sudo -u $user /steamcmd/steamcmd.sh \
+  +api_logging 1 1 \
+  +@sSteamCmdForcePlatformType linux \
+  +@sSteamCmdForcePlatformBitness $BITS \
   +force_install_dir /home/${user}/cs2 \
   +login anonymous \
   +app_update 730 \

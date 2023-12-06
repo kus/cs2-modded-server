@@ -14,6 +14,11 @@ fi
 
 CUSTOM_FILES="${CUSTOM_FOLDER:-custom_files}"
 
+# 32 or 64 bit Operating System
+if [ -z "$BITS" ]; then
+    export BITS=64
+fi
+
 if [[ -z $IP ]]; then
     IP_ARGS=""
 else
@@ -158,10 +163,12 @@ fi
 
 chown -R ${user}:${user} /steamcmd
 
-# /root/.steam/sdk64/steamclient.so
-
 echo "Downloading any updates for CS2..."
+# https://developer.valvesoftware.com/wiki/Command_line_options
 sudo -u $user /steamcmd/steamcmd.sh \
+  +api_logging 1 1 \
+  +@sSteamCmdForcePlatformType linux \
+  +@sSteamCmdForcePlatformBitness $BITS \
   +force_install_dir /home/${user}/cs2 \
   +login anonymous \
   +app_update 730 \
