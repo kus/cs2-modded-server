@@ -4,6 +4,14 @@
 # As root (sudo su)
 # cd / && curl --silent --output "gcp.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/master/gcp.sh" && chmod +x gcp.sh && bash gcp.sh
 
+# Check bare minimum dependencies
+# Check if curl is installed
+if ! command -v curl &> /dev/null
+then
+    echo "Warning: curl is not installed. Please install it to continue. sudo apt update && sudo apt install curl"
+    exit 1
+fi
+
 METADATA_URL="${METADATA_URL:-http://metadata.google.internal/computeMetadata/v1/instance/attributes}"
 
 get_metadata () {
@@ -42,11 +50,6 @@ export DUCK_TOKEN="${DUCK_TOKEN:-$(get_metadata DUCK_TOKEN)}"
 export CUSTOM_FOLDER="${CUSTOM_FOLDER:-$(get_metadata CUSTOM_FOLDER)}"
 
 cd /
-
-# Update DuckDNS with our current IP
-if [ ! -z "$DUCK_TOKEN" ]; then
-    echo url="http://www.duckdns.org/update?domains=$DUCK_DOMAIN&token=$DUCK_TOKEN&ip=$(dig +short myip.opendns.com @resolver1.opendns.com)" | curl -k -o /duck.log -K -
-fi
 
 # Download latest installer
 curl -s -H "Cache-Control: no-cache" -o "install.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${MOD_BRANCH}/install.sh" && chmod +x install.sh

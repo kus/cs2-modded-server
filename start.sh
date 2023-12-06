@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-# Install
+# This is used for Google Cloud
+# It skips downloading the mod and overwriting addons folder
+# Useful for testing and modifying files on the server
+
 # As root (sudo su)
 # cd / && curl --silent --output "start.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/master/start.sh" && chmod +x start.sh && bash start.sh
 
@@ -43,11 +46,6 @@ export CUSTOM_FOLDER="${CUSTOM_FOLDER:-$(get_metadata CUSTOM_FOLDER)}"
 
 cd /
 
-# Update DuckDNS with our current IP
-if [ ! -z "$DUCK_TOKEN" ]; then
-    echo url="http://www.duckdns.org/update?domains=$DUCK_DOMAIN&token=$DUCK_TOKEN&ip=$(dig +short myip.opendns.com @resolver1.opendns.com)" | curl -k -o /duck.log -K -
-fi
-
 # Variables
 user="steam"
 BRANCH="master"
@@ -57,7 +55,6 @@ if [ -n "$MOD_BRANCH" ]; then
     BRANCH="$MOD_BRANCH"
 fi
 
-PUBLIC_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
 CUSTOM_FILES="${CUSTOM_FOLDER:-custom_files}"
 
 if [[ -z $IP ]]; then
@@ -90,9 +87,6 @@ else
 	DISTRO_VERSION=$(uname -r)
 fi
 
-# Download latest stop script
-curl -s -H "Cache-Control: no-cache" -o "stop.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${BRANCH}/stop.sh" && chmod +x stop.sh
-
 # Check distrib
 if ! command -v apt-get &> /dev/null; then
 	echo "ERROR: OS distribution not supported... $DISTRO_OS $DISTRO_VERSION"
@@ -102,11 +96,6 @@ fi
 # Check root
 if [ "$EUID" -ne 0 ]; then
 	echo "ERROR: Please run this script as root..."
-	exit 1
-fi
-
-if [ -z "$PUBLIC_IP" ]; then
-	echo "ERROR: Cannot retrieve your public IP address..."
 	exit 1
 fi
 
@@ -130,19 +119,34 @@ echo "Installing required packages for $DISTRO_OS $DISTRO_VERSION..."
 apt-get update -y -q >/dev/null
 if [ "${DISTRO_OS}" == "Ubuntu" ]; then
 	if [ "${DISTRO_VERSION}" == "16.04" ]; then
-		apt-get install -y -q curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 lib32gcc1 steamcmd >/dev/null
+		apt-get install -y -q dnsutils curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 lib32gcc1 steamcmd >/dev/null
 	elif [ "${DISTRO_VERSION}" == "18.04" ]; then
-		apt-get install -y -q curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc1 steamcmd >/dev/null
+		apt-get install -y -q dnsutils curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc1 steamcmd >/dev/null
 	elif [ "${DISTRO_VERSION}" == "20.04" ]; then
-		apt-get install -y -q curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc1 steamcmd >/dev/null
+		apt-get install -y -q dnsutils curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc1 steamcmd >/dev/null
 	elif [ "${DISTRO_VERSION}" == "22.04" ]; then
-		apt-get install -y -q curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc-s1 steamcmd >/dev/null
+		apt-get install -y -q dnsutils curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc-s1 steamcmd >/dev/null
 	else
 		echo "$DISTRO_OS $DISTRO_VERSION not officially supported; using Ubuntu 22.04 config"
-		apt-get install -y -q curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc-s1 steamcmd >/dev/null
+		apt-get install -y -q dnsutils curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc-s1 steamcmd >/dev/null
 	fi
 else
 	echo "ERROR: OS distribution not supported. $DISTRO_OS $DISTRO_VERSION"
+	exit 1
+fi
+
+# Download latest stop script
+curl -s -H "Cache-Control: no-cache" -o "stop.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${BRANCH}/stop.sh" && chmod +x stop.sh
+
+PUBLIC_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
+
+# Update DuckDNS with our current IP
+if [ ! -z "$DUCK_TOKEN" ]; then
+    echo url="http://www.duckdns.org/update?domains=$DUCK_DOMAIN&token=$DUCK_TOKEN&ip=$PUBLIC_IP" | curl -k -o /duck.log -K -
+fi
+
+if [ -z "$PUBLIC_IP" ]; then
+	echo "ERROR: Cannot retrieve your public IP address..."
 	exit 1
 fi
 
