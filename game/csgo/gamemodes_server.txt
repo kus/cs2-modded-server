@@ -81,13 +81,13 @@
 			"name"					"mg_active"
 			"maps"
 			{
+				"de_ancient"	""
+				"de_anubis"		""
 				"de_inferno"	""
-				"de_train"		""
 				"de_mirage"		""
 				"de_nuke"		""
-				"de_dust2"		""
 				"de_overpass"	""
-				"de_vertigo"		""
+				"de_vertigo"	""
 			}
 		}
 		"mg_comp"
@@ -97,7 +97,7 @@
 			{
 				"cs_italy"			""
 				"cs_office"			""
-				"cs_vertigo"		""
+				"de_vertigo"		""
 				"de_ancient"		""
 				"de_anubis"			""
 				"de_dust2"			""
@@ -126,7 +126,7 @@
 			{
 				"cs_italy"			""
 				"cs_office"			""
-				"cs_vertigo"		""
+				"de_vertigo"		""
 				"de_ancient"		""
 				"de_anubis"			""
 				"de_dust2"			""
@@ -159,7 +159,7 @@
 			{
 				"cs_italy"			""
 				"cs_office"			""
-				"cs_vertigo"		""
+				"de_vertigo"		""
 				"de_ancient"		""
 				"de_anubis"			""
 				"de_dust2"			""
@@ -260,7 +260,6 @@
 				"workshop/3082548297/surf_rookie"		""
 				"workshop/3098972556/surf_benevolent"		""
 				"workshop/3088413071/surf_ace"		""
-				"workshop/3070621355/surf_boomer"		""
 			}
 		}
 		"mg_minigames"

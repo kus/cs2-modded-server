@@ -1,6 +1,5 @@
 cs_italy
 cs_office
-cs_vertigo
 de_ancient
 de_anubis
 de_dust2
