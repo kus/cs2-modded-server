@@ -15,8 +15,20 @@ fi
 CUSTOM_FILES="${CUSTOM_FOLDER:-custom_files}"
 
 # 32 or 64 bit Operating System
+# If BITS environment variable is not set, try determine it
 if [ -z "$BITS" ]; then
-    export BITS=64
+    # Determine the operating system architecture
+    architecture=$(uname -m)
+
+    # Set OS_BITS based on the architecture
+    if [[ $architecture == *"64"* ]]; then
+        export BITS=64
+    elif [[ $architecture == *"i386"* ]] || [[ $architecture == *"i686"* ]]; then
+        export BITS=32
+    else
+        echo "Unknown architecture: $architecture"
+        exit 1
+    fi
 fi
 
 if [[ -z $IP ]]; then
