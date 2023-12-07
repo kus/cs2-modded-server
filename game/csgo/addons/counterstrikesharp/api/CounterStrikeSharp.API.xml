@@ -200,6 +200,12 @@
             An interface that describes a plugin configuration.
             </summary>
         </member>
+        <member name="M:CounterStrikeSharp.API.Core.IPluginConfig`1.OnConfigParsed(`0)">
+            <summary>
+            Called when the `ConfigManager` has parsed the configuration file for this plugin
+            </summary>
+            <param name="config">Parsed config instance</param>
+        </member>
         <member name="T:CounterStrikeSharp.API.Core.IPluginServiceCollection`1">
             <summary>
             Represents a service collection configuration for a plugin.
@@ -314,6 +320,24 @@
             </summary>
             <param name="hostname">New hostname of the server</param>
         </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnServerPreFatalShutdown">
+            <summary>
+            Called before the server enters fatal shutdown.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnUpdateWhenNotInGame">
+            <summary>
+            Called when the server is in a loading stage.
+            </summary>
+            <param name="frameTime"></param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnServerPreWorldUpdate">
+            <summary>
+            Called before the world updates.
+            This seems to be called even when the server is hibernating.
+            </summary>
+            <param name="simulating"><see langword="true"/> if simulating, <see langword="false"/> otherwise</param>
+        </member>
         <member name="P:CounterStrikeSharp.API.Core.CBaseEntity.AbsOrigin">
             <summary>
             Shorthand for accessing an entity's CBodyComponent?.SceneNode?.AbsOrigin;
@@ -373,9 +397,42 @@
             </summary>
             <param name="team">The team to change to</param>
         </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.GetConVarValue(System.String)">
+            <summary>
+            Get a ConVar value for given player
+            </summary>
+            <param name="conVar">Name of the convar to retrieve</param>
+            <returns>ConVar string value</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.SetFakeClientConVar(System.String,System.String)">
+            <summary>
+            Sets a ConVar value on a fake client (bot).
+            </summary>
+            <param name="conVar">Console variable name</param>
+            <param name="value">String value to set</param>
+            <exception cref="T:System.InvalidOperationException">Player is not a bot</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.SetFakeClientConVar(CounterStrikeSharp.API.Modules.Cvars.ConVar,System.String)">
+            <summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Core.CCSPlayerController.SetFakeClientConVar(System.String,System.String)"/>
+            </summary>
+            <exception cref="T:System.ArgumentException"><paramref name="conVar"/> is <see langword="null"/></exception>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Core.CCSPlayerController.SetFakeClientConVar(System.String,System.String)" select="exception"/>
+        </member>
         <member name="P:CounterStrikeSharp.API.Core.CCSPlayerController.Buttons">
             <summary>
             Gets the active pawns button state. Will work even if the player is dead or observing.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.CCSPlayerController.AuthorizedSteamID">
+            <summary>
+            Returns the authorized SteamID of this user which has been validated with the SteamAPI.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.CCSPlayerController.IpAddress">
+            <summary>
+            Returns the IP address (and possibly port) of this player.
+            <remarks>Returns 127.0.0.1 if the player is a bot.</remarks>
             </summary>
         </member>
         <member name="M:CounterStrikeSharp.API.Core.CCSPlayerPawn.Respawn">
@@ -734,6 +791,131 @@
             <param name="name"></param>
             <returns></returns>
         </member>
+        <member name="T:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountInstance">
+            <summary>
+            Represents the instance types for a Steam account.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountInstance.Invalid">
+            <summary>
+            Invalid instance.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountInstance.All">
+            <summary>
+            All instances.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountInstance.Desktop">
+            <summary>
+            Desktop instance.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountInstance.Console">
+            <summary>
+            Console instance.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountInstance.Web">
+            <summary>
+            Web instance.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType">
+            <summary>
+            Represents the types of Steam accounts.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.Invalid">
+            <summary>
+            Invalid account type.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.Individual">
+            <summary>
+            Individual account type.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.MultiSeat">
+            <summary>
+            MultiSeat account type.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.GameServer">
+            <summary>
+            Game Server account type.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.AnonGameServer">
+            <summary>
+            Anonymous Game Server account type.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.Pending">
+            <summary>
+            Pending account type.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.ContentServer">
+            <summary>
+            Content Server account type.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.Clan">
+            <summary>
+            Clan account type.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.Chat">
+            <summary>
+            Chat account type.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.ConsoleUser">
+            <summary>
+            Console user account type.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.P2PSuperSeeder">
+            <summary>
+            P2P Super Seeder account type.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.AnonUser">
+            <summary>
+            Anonymous user account type.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountUniverse">
+            <summary>
+            Represents the universe of a Steam account.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountUniverse.Unspecified">
+            <summary>
+            Individual / unspecified universe.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountUniverse.Public">
+            <summary>
+            Public universe.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountUniverse.Beta">
+            <summary>
+            Beta universe.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountUniverse.Internal">
+            <summary>
+            Internal universe.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountUniverse.Dev">
+            <summary>
+            Development universe.
+            </summary>
+        </member>
         <member name="M:CounterStrikeSharp.API.Modules.Memory.Schema.GetString(System.IntPtr,System.String,System.String)">
             <summary>
             Reads a string from the specified pointer, class name, and member name.
@@ -884,13 +1066,40 @@
             </summary>
             <returns></returns>
         </member>
-        <!-- Badly formed XML comment ignored for member "F:CounterStrikeSharp.API.PlayerButtons.Walk" -->
-        <!-- Badly formed XML comment ignored for member "F:CounterStrikeSharp.API.PlayerButtons.Zoom" -->
-        <!-- Badly formed XML comment ignored for member "F:CounterStrikeSharp.API.PlayerButtons.Weapon1" -->
-        <!-- Badly formed XML comment ignored for member "F:CounterStrikeSharp.API.PlayerButtons.Weapon2" -->
-        <!-- Badly formed XML comment ignored for member "F:CounterStrikeSharp.API.PlayerButtons.Bullrush" -->
-        <!-- Badly formed XML comment ignored for member "F:CounterStrikeSharp.API.PlayerButtons.Grenade2" -->
-        <!-- Badly formed XML comment ignored for member "F:CounterStrikeSharp.API.PlayerButtons.Attack3" -->
+        <member name="F:CounterStrikeSharp.API.PlayerButtons.Walk">
+            Player is holding the speed key 
+        </member>
+        <member name="F:CounterStrikeSharp.API.PlayerButtons.Zoom">
+            Player holding walk key 
+        </member>
+        <member name="F:CounterStrikeSharp.API.PlayerButtons.Weapon1">
+            Zoom key for HUD zoom 
+        </member>
+        <member name="F:CounterStrikeSharp.API.PlayerButtons.Weapon2">
+            weapon defines these bits 
+        </member>
+        <member name="F:CounterStrikeSharp.API.PlayerButtons.Bullrush">
+            weapon defines these bits 
+        </member>
+        <member name="F:CounterStrikeSharp.API.PlayerButtons.Grenade2">
+            grenade 1 
+        </member>
+        <member name="F:CounterStrikeSharp.API.PlayerButtons.Attack3">
+            grenade 2 
+        </member>
+        <member name="M:CounterStrikeSharp.API.Server.NextFrame(System.Action)">
+            <summary>
+            Queue a task to be executed on the next game frame.
+            <remarks>Does not execute if the server is hibernating.</remarks>
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Server.NextWorldUpdate(System.Action)">
+            <summary>
+            Queue a task to be executed on the next pre world update.
+            <remarks>Executes if the server is hibernating.</remarks>
+            </summary>
+            <param name="task"></param>
+        </member>
         <member name="M:CounterStrikeSharp.API.Utilities.GetPlayers">
             <summary>
             Returns a list of <see cref="T:CounterStrikeSharp.API.Core.CCSPlayerController"/> that are valid and have a valid <see cref="P:CounterStrikeSharp.API.Core.CCSPlayerController.UserId"/> >= 0
