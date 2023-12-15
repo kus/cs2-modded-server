@@ -1,13 +1,13 @@
 {
   "runtimeTarget": {
-    "name": ".NETCoreApp,Version=v7.0/linux-x64",
+    "name": ".NETCoreApp,Version=v7.0/win-x64",
     "signature": ""
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {},
-    ".NETCoreApp,Version=v7.0/linux-x64": {
-      "Microsoft.AspNetCore.App.Runtime.linux-x64/7.0.11": {
+    ".NETCoreApp,Version=v7.0/win-x64": {
+      "Microsoft.AspNetCore.App.Runtime.win-x64/7.0.11": {
         "runtime": {
           "Microsoft.Extensions.Caching.Abstractions.dll": {
             "assemblyVersion": "7.0.0.0",
@@ -140,6 +140,10 @@
           "Microsoft.Extensions.Primitives.dll": {
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.22.51805"
+          },
+          "System.Diagnostics.EventLog.Messages.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "0.0.0.0"
           },
           "System.Diagnostics.EventLog.dll": {
             "assemblyVersion": "7.0.0.0",
@@ -545,16 +549,21 @@
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.1123.42502"
           }
+        },
+        "native": {
+          "aspnetcorev2_inprocess.dll": {
+            "fileVersion": "17.0.23237.11"
+          }
         }
       }
     }
   },
   "libraries": {
-    "Microsoft.AspNetCore.App.Runtime.linux-x64/7.0.11": {
+    "Microsoft.AspNetCore.App.Runtime.win-x64/7.0.11": {
       "type": "package",
       "serviceable": true,
       "sha512": "",
-      "path": "microsoft.aspnetcore.app.runtime.linux-x64/7.0.11"
+      "path": "microsoft.aspnetcore.app.runtime.win-x64/7.0.11"
     }
   }
 }

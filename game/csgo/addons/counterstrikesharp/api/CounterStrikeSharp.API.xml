@@ -424,6 +424,13 @@
             Gets the active pawns button state. Will work even if the player is dead or observing.
             </summary>
         </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.SetListenOverride(CounterStrikeSharp.API.Core.CCSPlayerController,CounterStrikeSharp.API.ListenOverride)">
+            <summary>
+            Overrides who a player can hear in voice chat.
+            </summary>
+            <param name="sender">Player talking in the voice chat</param>
+            <param name="override">Whether the talker should be heard</param>
+        </member>
         <member name="P:CounterStrikeSharp.API.Core.CCSPlayerController.AuthorizedSteamID">
             <summary>
             Returns the authorized SteamID of this user which has been validated with the SteamAPI.
@@ -433,6 +440,11 @@
             <summary>
             Returns the IP address (and possibly port) of this player.
             <remarks>Returns 127.0.0.1 if the player is a bot.</remarks>
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.CCSPlayerController.VoiceFlags">
+            <summary>
+            Determines how the player interacts with voice chat.
             </summary>
         </member>
         <member name="M:CounterStrikeSharp.API.Core.CCSPlayerPawn.Respawn">
@@ -458,6 +470,18 @@
         <member name="M:CounterStrikeSharp.API.Core.CGameSceneNode.GetSkeletonInstance">
             <summary>
             Gets the <see cref="T:CounterStrikeSharp.API.Core.CSkeletonInstance"/> instance from the node.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.CVariant">
+            <summary>
+            Placeholder for CVariant
+            <see href="https://github.com/alliedmodders/hl2sdk/blob/cs2/public/variant.h"/>
+            <remarks>A lot of entity outputs do not use this value</remarks>
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.Translations.PlayerLanguageExtensions.GetLanguage(CounterStrikeSharp.API.Core.CCSPlayerController)">
+            <summary>
+            Returns the players configured language, as set using the "css_lang" command.
             </summary>
         </member>
         <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.CommandIsOverriden(System.String)">
@@ -719,6 +743,25 @@
             </summary>
             <param name="caller">Caller of the command.</param>
             <param name="target">Target of the command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminData.DomainHasRootFlag(System.String)">
+            <summary>
+            Checks to see if a domain has a root flag inside of it.
+            </summary>
+            <param name="domain">Domain to check for.</param>
+            <returns>True if "@{domain}/root" or "@{domain}/*" is present, false if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminData.GetFlagDomains">
+            <summary>
+            Returns a list of all domains for flags.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminData.GetAllFlags">
+            <summary>
+            Returns a HashSet of all flags.
+            </summary>
             <returns></returns>
         </member>
         <member name="P:CounterStrikeSharp.API.Modules.Admin.BaseRequiresPermissions.Permissions">

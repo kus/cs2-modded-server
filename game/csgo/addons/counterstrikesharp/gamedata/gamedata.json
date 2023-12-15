@@ -28,8 +28,8 @@
   },
   "CCSPlayerController_Respawn": {
     "offsets": {
-        "windows": 241,
-        "linux": 243
+        "windows": 242,
+        "linux": 244
     }
   },
   "CCSPlayerPawn_Respawn": {
@@ -122,14 +122,14 @@
   },
   "CBasePlayerPawn_CommitSuicide": {
     "offsets": {
-      "windows": 356,
-      "linux": 356
+      "windows": 357,
+      "linux": 357
     }
   },
   "CBaseEntity_Teleport": {
     "offsets": {
-      "windows": 148,
-      "linux": 147
+      "windows": 149,
+      "linux": 148
     }
   },
   "CBaseEntity_TakeDamageOld": {
@@ -163,6 +163,13 @@
     "offsets": {
       "windows": 91,
       "linux": 91
+    }
+  },
+  "CEntityIOOutput_FireOutputInternal": {
+    "signatures": {
+      "library": "server",
+      "windows": "\\x48\\x8B\\xC4\\x4C\\x89\\x48\\x20\\x55\\x57\\x41\\x54\\x41\\x56",
+      "linux": "\\x55\\x48\\x89\\xE5\\x41\\x57\\x41\\x56\\x41\\x55\\x41\\x54\\x53\\x48\\x83\\xEC\\x58\\x4C\\x8B\\x6F\\x08"
     }
   }
 }
