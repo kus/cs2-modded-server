@@ -8,8 +8,8 @@
     ".NETCoreApp,Version=v7.0": {
       "SharpTimer/1.0.0": {
         "dependencies": {
-          "Nexd.MySQL": "1.0.1",
-          "CounterStrikeSharp.API": "1.0.84.0"
+          "Nexd.MySQL": "1.0.2",
+          "CounterStrikeSharp.API": "1.0.125.0"
         },
         "runtime": {
           "SharpTimer.dll": {}
@@ -23,22 +23,22 @@
           }
         }
       },
-      "Nexd.MySQL/1.0.1": {
+      "Nexd.MySQL/1.0.2": {
         "dependencies": {
           "MySqlConnector": "2.2.7"
         },
         "runtime": {
           "lib/net7.0/Nexd.MySQL.dll": {
-            "assemblyVersion": "1.0.1.0",
-            "fileVersion": "1.0.1.0"
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
           }
         }
       },
-      "CounterStrikeSharp.API/1.0.84.0": {
+      "CounterStrikeSharp.API/1.0.125.0": {
         "runtime": {
           "CounterStrikeSharp.API.dll": {
-            "assemblyVersion": "1.0.84.0",
-            "fileVersion": "1.0.84.0"
+            "assemblyVersion": "1.0.125.0",
+            "fileVersion": "1.0.125.0"
           }
         }
       }
@@ -57,14 +57,14 @@
       "path": "mysqlconnector/2.2.7",
       "hashPath": "mysqlconnector.2.2.7.nupkg.sha512"
     },
-    "Nexd.MySQL/1.0.1": {
+    "Nexd.MySQL/1.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Z7+FBaVDfXfz6jL8rP7nWmKCj1Zr6Qz31REh/cwH07c/QLfqBNUyDknUHF4GVdbYPfWV15M+dh1RxZLkoIL0KQ==",
-      "path": "nexd.mysql/1.0.1",
-      "hashPath": "nexd.mysql.1.0.1.nupkg.sha512"
+      "sha512": "sha512-0Erd5nw7G/K98q3e/JSGBi+mulxzl4FtNsqwRm2aHRV6ClsrDPrSswFtDmPSn4xBBh4yH8ziLBoCwRNAR/+p3w==",
+      "path": "nexd.mysql/1.0.2",
+      "hashPath": "nexd.mysql.1.0.2.nupkg.sha512"
     },
-    "CounterStrikeSharp.API/1.0.84.0": {
+    "CounterStrikeSharp.API/1.0.125.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

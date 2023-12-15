@@ -1,0 +1,4 @@
+{
+  "MapStartTrigger": "map_start",
+  "MapEndTrigger": "map_end"
+}
