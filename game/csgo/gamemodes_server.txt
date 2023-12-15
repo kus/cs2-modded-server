@@ -117,6 +117,7 @@
 				"workshop/3072352643/de_ruins_d_prefab"		""
 				"workshop/3089953774/cs_militia"		""
 				"workshop/3070960099/de_aztec"		""
+				"workshop/3108513658/de_akiba"		""
 			}
 		}
 		"mg_wingman"
@@ -190,6 +191,12 @@
 				"workshop/3082113929/aim_ag_texture_city_advanced"		""
 				"workshop/3080973179/traningoutside"		""
 				"workshop/3086555291/shipment_version_1_0"		""
+				"workshop/3074961197/aim_ag_texture2"		""
+				"workshop/3095778105/aim_ag_texture_jungle"		""
+				"workshop/3071890065/cs2_bloodstrike"		""
+				"workshop/3109232789/gg_simpsons_vs_flanders_v2"		""
+				"workshop/3108513658/de_akiba"		""
+				"workshop/3112806723/cs_facingworlds-99"		""
 			}
 		}
 		"mg_1v1"
@@ -307,6 +314,7 @@
 			"name"			"mg_hns"
 			"maps"
 			{
+				"workshop/3097563690/infernohideandseek"		""
 				"workshop/3074479691/seek_town_bs"		""
 				"workshop/3070951079/winterday_bs"		""
 				"workshop/3070541369/minus_denhet"		""
