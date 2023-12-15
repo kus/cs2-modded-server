@@ -31,7 +31,6 @@ get_metadata () {
 # Get meta data from GCP and set environment variables
 META_RCON_PASSWORD=$(get_metadata RCON_PASSWORD)
 META_API_KEY=$(get_metadata API_KEY)
-META_MOD_URL=$(get_metadata MOD_URL)
 META_MOD_BRANCH=$(get_metadata MOD_BRANCH)
 META_PORT=$(get_metadata PORT)
 META_TICKRATE=$(get_metadata TICKRATE)
@@ -39,7 +38,6 @@ META_MAXPLAYERS=$(get_metadata MAXPLAYERS)
 export RCON_PASSWORD="${META_RCON_PASSWORD:-changeme}"
 export API_KEY="${META_API_KEY:-changeme}"
 export STEAM_ACCOUNT="${STEAM_ACCOUNT:-$(get_metadata STEAM_ACCOUNT)}"
-export MOD_URL="${META_MOD_URL:-https://github.com/kus/cs2-modded-server/archive/master.zip}"
 export MOD_BRANCH="${META_MOD_BRANCH:-master}"
 export SERVER_PASSWORD="${SERVER_PASSWORD:-$(get_metadata SERVER_PASSWORD)}"
 export PORT="${META_PORT:-27015}"

@@ -118,7 +118,6 @@ Create a custom file for `/game/csgo/cfg/env.cfg` following the [custom files](#
 Key | Default value | What is it
 --- | --- | ---
 `API_KEY` | `changeme` | To download maps from the workshop, your server needs access to the steam web api. To allow this you'll need an authorization key which you can generate [here](http://steamcommunity.com/dev/apikey)
-`MOD_URL` | `https://github.com/kus/cs2-modded-server/archive/master.zip` | The zip for mod files to download and extract (defaultly this repo)
 `IP` | `` | Not required. Allows the server IP to be set. Useful if a CS2 server needs to be bound to a specific IP address.
 `PORT` | `27015` | Server port
 `TICKRATE` | `128` | Server tickrate MM is 64, Faceit is 128
@@ -172,7 +171,7 @@ gcloud beta compute instances create <instance-name> \
 --zone=australia-southeast1-c \
 --machine-type=n2-standard-2 \
 --network-tier=PREMIUM \
---metadata=RCON_PASSWORD=changeme,STEAM_ACCOUNT=changeme,API_KEY=changeme,DUCK_DOMAIN=changeme,DUCK_TOKEN=changeme,MOD_URL=https://github.com/kus/cs2-modded-server/archive/master.zip,startup-script="echo \"Delaying for 30 seconds...\" && sleep 30 && cd / && /gcp.sh" \
+--metadata=RCON_PASSWORD=changeme,STEAM_ACCOUNT=changeme,API_KEY=changeme,DUCK_DOMAIN=changeme,DUCK_TOKEN=changeme,startup-script="echo \"Delaying for 30 seconds...\" && sleep 30 && cd / && /gcp.sh" \
 --no-restart-on-failure \
 --scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/compute.readonly,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append \
 --tags=source \
@@ -277,7 +276,6 @@ sudo su
 export RCON_PASSWORD="changeme"
 export API_KEY="changeme"
 export STEAM_ACCOUNT=""
-export MOD_URL="https://github.com/kus/cs2-modded-server/archive/master.zip"
 export SERVER_PASSWORD=""
 export PORT="27015"
 export TICKRATE="128"
