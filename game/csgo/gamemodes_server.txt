@@ -11,6 +11,7 @@
 			{
 				"casual"
 				{
+					"maxplayers"			"64"
 					"exec"
 					{
 						"exec" "gamemode_casual_last.cfg"
@@ -33,6 +34,7 @@
 
 				"competitive"
 				{
+					"maxplayers"			"64"
 					"exec"
 					{
 						"exec" "gamemode_competitive_last.cfg"
@@ -48,6 +50,7 @@
 				// Wingman
 				"scrimcomp2v2"
 				{
+					"maxplayers"			"64"
 					"exec"
 					{
 						"exec" "gamemode_competitive2v2_last.cfg"
@@ -61,6 +64,7 @@
 
 				"deathmatch"
 				{
+					"maxplayers"			"64"
 					"exec"
 					{
 						"exec" "gamemode_deathmatch_last.cfg"
