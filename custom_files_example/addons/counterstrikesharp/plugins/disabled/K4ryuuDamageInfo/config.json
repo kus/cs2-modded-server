@@ -1,6 +1,6 @@
 {
 	"ChatPrefix": "{Green}[shipREKT]",
-	"CenterPrint": true,
+	"CenterPrint": false,
 	"RoundEndPrint": true,
 	"FFAMode": false
 }

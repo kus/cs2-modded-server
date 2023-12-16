@@ -333,5 +333,38 @@
 				"workshop/3070198374/ka_soccer_2009"		""
 			}
 		}
+		"mg_test"
+		{
+			"name"			"mg_test"
+			"maps"
+			{
+				"de_anubis"			""
+				"de_dust2"			""
+				"workshop/3085490518/gd_rialto"		""
+				"workshop/3070550406/de_safehouse"		""
+				"workshop/3070552133/ar_shoots"		""
+			}
+		}
+	}
+	"maps"
+	{
+		"gd_rialto"
+		{
+			"nameID"				"#SFUI_Map_gd_rialto"
+			"name"					"gd_rialto"
+			"imagename"				"map-gd_rialto-overall"
+		}
+		"de_safehouse"
+		{
+			"nameID"				"#SFUI_Map_de_safehouse"
+			"name"					"de_safehouse"
+			"imagename"				"map-de_safehouse-overall"
+		}
+		"ar_shoots"
+		{
+			"nameID"				"#SFUI_Map_ar_shoots"
+			"name"					"ar_shoots"
+			"imagename"				"map-ar_shoots-overall"
+		}
 	}
 }
