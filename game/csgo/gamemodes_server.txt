@@ -346,24 +346,4 @@
 			}
 		}
 	}
-	"maps"
-	{
-		"workshop/3085490518/gd_rialto"
-		{
-			"nameID"				"#SFUI_Map_gd_rialto"
-			"name"					"gd_rialto"
-			"imagename"				"map-gd_rialto-overall"
-		}
-		"workshop/3070550406/de_safehouse"
-		{
-			"nameID"				"#SFUI_Map_de_safehouse"
-			"name"					"de_safehouse"
-		}
-		"workshop/3070552133/ar_shoots"
-		{
-			"nameID"				"#SFUI_Map_ar_shoots"
-			"name"					"ar_shoots"
-			"imagename"				"map-ar_shoots-overall"
-		}
-	}
 }
