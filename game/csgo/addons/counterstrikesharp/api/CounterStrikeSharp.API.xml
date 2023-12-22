@@ -291,6 +291,12 @@
             </summary>
             <param name="playerSlot">The player slot of the disconnected client.</param>
         </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnClientVoice">
+            <summary>
+            Called when a client transmits voice data
+            </summary>
+            <param name="playerSlot">The player slot of the client.</param>
+        </member>
         <member name="T:CounterStrikeSharp.API.Core.Listeners.OnClientAuthorized">
             <summary>
             Called when a client has been authorized by Steam.
@@ -354,6 +360,12 @@
             </summary>
             <param name="explode"></param>
             <param name="force"></param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CBasePlayerPawn.RemovePlayerItem(CounterStrikeSharp.API.Core.CBasePlayerWeapon)">
+            <summary>
+            Remove Player Item
+            </summary>
+            <param name="weapon"></param>
         </member>
         <member name="M:CounterStrikeSharp.API.Core.CCSGameRules.TerminateRound(System.Single,CounterStrikeSharp.API.Modules.Entities.Constants.RoundEndReason)">
             <summary>
