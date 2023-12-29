@@ -11,7 +11,7 @@
         "dependencies": {
           "Microsoft.Data.Sqlite": "8.0.0",
           "Microsoft.Extensions.Logging": "8.0.0",
-          "CounterStrikeSharp.API": "1.0.87.0"
+          "CounterStrikeSharp.API": "1.0.132.0"
         },
         "runtime": {
           "SimpleAdmin.dll": {}
@@ -139,11 +139,11 @@
         }
       },
       "System.Memory/4.5.3": {},
-      "CounterStrikeSharp.API/1.0.87.0": {
+      "CounterStrikeSharp.API/1.0.132.0": {
         "runtime": {
           "CounterStrikeSharp.API.dll": {
-            "assemblyVersion": "1.0.87.0",
-            "fileVersion": "1.0.87.0"
+            "assemblyVersion": "1.0.132.0",
+            "fileVersion": "1.0.132.0"
           }
         }
       },
@@ -160,6 +160,14 @@
           "Scrutor.dll": {
             "assemblyVersion": "4.0.0.0",
             "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.Localization.Abstractions/7.0.0.0": {
+        "runtime": {
+          "Microsoft.Extensions.Localization.Abstractions.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.323.8009"
           }
         }
       },
@@ -470,7 +478,7 @@
       "path": "system.memory/4.5.3",
       "hashPath": "system.memory.4.5.3.nupkg.sha512"
     },
-    "CounterStrikeSharp.API/1.0.87.0": {
+    "CounterStrikeSharp.API/1.0.132.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -481,6 +489,11 @@
       "sha512": ""
     },
     "Scrutor/4.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Localization.Abstractions/7.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
