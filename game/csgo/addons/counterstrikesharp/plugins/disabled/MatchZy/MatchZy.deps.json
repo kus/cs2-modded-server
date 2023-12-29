@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "MatchZy/1.0.0": {
         "dependencies": {
-          "CounterStrikeSharp.API": "1.0.107",
+          "CounterStrikeSharp.API": "1.0.140",
           "CsvHelper": "30.0.1",
           "Dapper": "2.1.15",
           "Microsoft.Data.Sqlite": "7.0.13",
@@ -20,12 +20,14 @@
           "MatchZy.dll": {}
         }
       },
-      "CounterStrikeSharp.API/1.0.107": {
+      "CounterStrikeSharp.API/1.0.140": {
         "dependencies": {
           "McMaster.NETCore.Plugins": "1.4.0",
           "Microsoft.CSharp": "4.7.0",
+          "Microsoft.DotNet.ApiCompat.Task": "7.0.404",
           "Microsoft.Extensions.Hosting": "7.0.0",
           "Microsoft.Extensions.Hosting.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Localization.Abstractions": "7.0.3",
           "Microsoft.Extensions.Logging": "7.0.0",
           "Scrutor": "4.2.2",
           "Serilog.Extensions.Logging": "7.0.0",
@@ -74,6 +76,7 @@
           }
         }
       },
+      "Microsoft.DotNet.ApiCompat.Task/7.0.404": {},
       "Microsoft.DotNet.PlatformAbstractions/3.1.6": {},
       "Microsoft.Extensions.Configuration/7.0.0": {
         "dependencies": {
@@ -189,6 +192,7 @@
           "Microsoft.Extensions.FileProviders.Abstractions": "7.0.0"
         }
       },
+      "Microsoft.Extensions.Localization.Abstractions/7.0.3": {},
       "Microsoft.Extensions.Logging/7.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
@@ -468,12 +472,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "CounterStrikeSharp.API/1.0.107": {
+    "CounterStrikeSharp.API/1.0.140": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3QHbu3FFE21gTGvlcS7EtV5ZL1KpPUTG7iWx7X6kdQAELJJGOKK1Ch8WOrhnFNRmqYZDLUsWUcA2QBUojShf/A==",
-      "path": "counterstrikesharp.api/1.0.107",
-      "hashPath": "counterstrikesharp.api.1.0.107.nupkg.sha512"
+      "sha512": "sha512-edHKoTvYtvhj5Ojt2zEdrxgHmYLO4zbE90itaGmpDhXfTtYmuSv+gY32iiVLkQVjN76GOjbC+M+k7wD+1QbhBw==",
+      "path": "counterstrikesharp.api/1.0.140",
+      "hashPath": "counterstrikesharp.api.1.0.140.nupkg.sha512"
     },
     "CsvHelper/30.0.1": {
       "type": "package",
@@ -516,6 +520,13 @@
       "sha512": "sha512-acRUY0iRrdIrhUXxu9GnonxV9P3VIeMnpnmHoY9vE9D5CAJeThro7vr63urSD0Qmav2gS2sxNAQ/NkP09OZJBQ==",
       "path": "microsoft.data.sqlite.core/7.0.13",
       "hashPath": "microsoft.data.sqlite.core.7.0.13.nupkg.sha512"
+    },
+    "Microsoft.DotNet.ApiCompat.Task/7.0.404": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ahSvImDcyjf6QwE9zg/HU3A+7LeoCnPWmJdk7pK557BrEtRXQ58oLuK2ANZeQT3GSydIYeRlolHtJ5gSKSw/lg==",
+      "path": "microsoft.dotnet.apicompat.task/7.0.404",
+      "hashPath": "microsoft.dotnet.apicompat.task.7.0.404.nupkg.sha512"
     },
     "Microsoft.DotNet.PlatformAbstractions/3.1.6": {
       "type": "package",
@@ -635,6 +646,13 @@
       "sha512": "sha512-43n9Je09z0p/7ViPxfRqs5BUItRLNVh5b6JH40F2Agkh2NBsY/jpNYTtbCcxrHCsA3oRmbR6RJBzUutB4VZvNQ==",
       "path": "microsoft.extensions.hosting.abstractions/7.0.0",
       "hashPath": "microsoft.extensions.hosting.abstractions.7.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Localization.Abstractions/7.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2sEhpRPiWY3iJ+nxHnLUqM8qNoGqQQqduk0QXd3iEt0fc4fw8EwFElqtT4OJMV0qnGGAwYykdOtrzZ1BIqdvpQ==",
+      "path": "microsoft.extensions.localization.abstractions/7.0.3",
+      "hashPath": "microsoft.extensions.localization.abstractions.7.0.3.nupkg.sha512"
     },
     "Microsoft.Extensions.Logging/7.0.0": {
       "type": "package",
