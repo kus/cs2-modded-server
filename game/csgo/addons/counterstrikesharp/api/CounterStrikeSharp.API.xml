@@ -479,6 +479,21 @@
             Checks that the entity handle is valid and the handle points to a valid entity
             </summary>
         </member>
+        <member name="M:CounterStrikeSharp.API.Core.CEntityInstance.AcceptInput(System.String,CounterStrikeSharp.API.Core.CEntityInstance,CounterStrikeSharp.API.Core.CEntityInstance,System.String,System.Int32)">
+            <summary>
+            Calls a named input method on an entity.
+            <example>
+            <code>
+            entity.AcceptInput("Break");
+            </code>
+            </example>
+            </summary>
+            <param name="inputName">Input action name</param>
+            <param name="activator">Entity which initiated the action, <see langword="null"/> for no entity</param>
+            <param name="caller">Entity that is sending the event, <see langword="null"/> for no entity</param>
+            <param name="value">String variant value to send with the event</param>
+            <param name="outputId">Unknown, defaults to 0</param>
+        </member>
         <member name="M:CounterStrikeSharp.API.Core.CGameSceneNode.GetSkeletonInstance">
             <summary>
             Gets the <see cref="T:CounterStrikeSharp.API.Core.CSkeletonInstance"/> instance from the node.
@@ -1159,6 +1174,16 @@
             <summary>
             Returns a list of <see cref="T:CounterStrikeSharp.API.Core.CCSPlayerController"/> that are valid and have a valid <see cref="P:CounterStrikeSharp.API.Core.CCSPlayerController.UserId"/> >= 0
             </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Utilities.SetStateChanged(CounterStrikeSharp.API.Core.CBaseEntity,System.String,System.String,System.Int32)">
+            <summary>
+            Marks a field as changed for network transmission.
+            Not all schema fields are network enabled, so please check the schema before using this.
+            </summary>
+            <param name="entity">Entity to update</param>
+            <param name="className" example="CBaseEntity">Schema field class name</param>
+            <param name="fieldName" example="m_iHealth">Schema field name</param>
+            <param name="extraOffset">Any additional offset to the schema field</param>
         </member>
     </members>
 </doc>

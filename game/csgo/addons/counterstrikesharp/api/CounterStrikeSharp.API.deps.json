@@ -6,10 +6,11 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "CounterStrikeSharp.API/1.0.130": {
+      "CounterStrikeSharp.API/1.0.142": {
         "dependencies": {
           "McMaster.NETCore.Plugins": "1.4.0",
           "Microsoft.CSharp": "4.7.0",
+          "Microsoft.DotNet.ApiCompat.Task": "7.0.404",
           "Microsoft.Extensions.Hosting": "7.0.0",
           "Microsoft.Extensions.Hosting.Abstractions": "7.0.0",
           "Microsoft.Extensions.Localization.Abstractions": "7.0.3",
@@ -37,6 +38,7 @@
         }
       },
       "Microsoft.CSharp/4.7.0": {},
+      "Microsoft.DotNet.ApiCompat.Task/7.0.404": {},
       "Microsoft.DotNet.PlatformAbstractions/3.1.6": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.DotNet.PlatformAbstractions.dll": {
@@ -489,7 +491,7 @@
     }
   },
   "libraries": {
-    "CounterStrikeSharp.API/1.0.130": {
+    "CounterStrikeSharp.API/1.0.142": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -507,6 +509,13 @@
       "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
       "path": "microsoft.csharp/4.7.0",
       "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
+    },
+    "Microsoft.DotNet.ApiCompat.Task/7.0.404": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ahSvImDcyjf6QwE9zg/HU3A+7LeoCnPWmJdk7pK557BrEtRXQ58oLuK2ANZeQT3GSydIYeRlolHtJ5gSKSw/lg==",
+      "path": "microsoft.dotnet.apicompat.task/7.0.404",
+      "hashPath": "microsoft.dotnet.apicompat.task.7.0.404.nupkg.sha512"
     },
     "Microsoft.DotNet.PlatformAbstractions/3.1.6": {
       "type": "package",
