@@ -227,8 +227,6 @@
 				"workshop/3095778105/aim_ag_texture_jungle"		""
 				"workshop/3071890065/cs2_bloodstrike"		""
 				"workshop/3109232789/gg_simpsons_vs_flanders_v2"		""
-				"workshop/3112806723/cs_facingworlds-99"		""
-				"workshop/3077599381/dm_desk"		""
 			}
 		}
 		"mg_1v1"
