@@ -1,0 +1,144 @@
+[
+    {
+      "KitName": "NoNades",
+      "GrenadeList": [],
+      "Team": 0,
+      "RoundType": "Undefined",
+      "KitLimit": -1
+    },
+    {
+      "KitName": "OnlySmoke",
+      "GrenadeList": [
+        "Smoke"
+      ],
+      "Team": 0,
+      "RoundType": "Undefined",
+      "KitLimit": -1
+    },
+    {
+      "KitName": "OnlyFlash",
+      "GrenadeList": [
+        "Flashbang"
+      ],
+      "Team": 0,
+      "RoundType": "Undefined",
+      "KitLimit": -1
+    },
+    {
+      "KitName": "DoubleFlash",
+      "GrenadeList": [
+        "Flashbang",
+        "Flashbang"
+      ],
+      "Team": 3,
+      "RoundType": "Undefined",
+      "KitLimit": -1
+    },
+    {
+      "KitName": "OnlyHE",
+      "GrenadeList": [
+        "HighExplosive"
+      ],
+      "Team": 0,
+      "RoundType": "Undefined",
+      "KitLimit": -1
+    },
+    {
+      "KitName": "SmokeFlash",
+      "GrenadeList": [
+        "Smoke",
+        "Flashbang"
+      ],
+      "Team": 0,
+      "RoundType": "Undefined",
+      "KitLimit": -1
+    },
+    {
+      "KitName": "OnlyIncendiary",
+      "GrenadeList": [
+        "Incendiary"
+      ],
+      "Team": 3,
+      "RoundType": "Undefined",
+      "KitLimit": -1
+    },
+    {
+        "KitName": "OnlyMolotov",
+        "GrenadeList": [
+          "Molotov"
+        ],
+        "Team": 2,
+        "RoundType": "Undefined",
+        "KitLimit": -1
+    },
+    {
+      "KitName": "IncendiaryFlash",
+      "GrenadeList": [
+        "Incendiary",
+        "Flashbang"
+      ],
+      "Team": 3,
+      "RoundType": "Undefined",
+      "KitLimit": -1
+    },
+    {
+      "KitName": "MolotovFlash",
+      "GrenadeList": [
+        "Molotov",
+        "Flashbang"
+      ],
+      "Team": 2,
+      "RoundType": "Undefined",
+      "KitLimit": -1
+    },
+    {
+      "KitName": "SmokeFlashIncendiary",
+      "GrenadeList": [
+        "Smoke",
+        "Flashbang",
+        "Incendiary"
+      ],
+      "Team": 3,
+      "RoundType": "Undefined",
+      "KitLimit": -1
+    },
+    {
+      "KitName": "OnlyFlashCT",
+      "GrenadeList": [
+        "Flashbang"
+      ],
+      "Team": 3,
+      "RoundType": "Undefined",
+      "KitLimit": -1
+    },
+    {
+      "KitName": "SmokeFlash",
+      "GrenadeList": [
+        "Flashbang",
+        "Smoke"
+      ],
+      "Team": 2,
+      "RoundType": "Undefined",
+      "KitLimit": -1
+    },
+    {
+      "KitName": "FlashHE",
+      "GrenadeList": [
+        "Flashbang",
+        "HighExplosive"
+      ],
+      "Team": 0,
+      "RoundType": "Undefined",
+      "KitLimit": -1
+    },
+    {
+      "KitName": "SmokeHE",
+      "GrenadeList": [
+        "Smoke",
+        "HighExplosive"
+      ],
+      "Team": 3,
+      "RoundType": "Undefined",
+      "KitLimit": -1
+    }
+  ]

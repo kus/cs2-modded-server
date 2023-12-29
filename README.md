@@ -13,6 +13,7 @@ Each game mode has a hand full of maps preset so you are ready to go and it's [e
 - Competitive (using [MatchZy](https://github.com/shobhit-pathak/MatchZy#usage-commands))
 - Practice (record grenade throws etc)
 - GunGame
+- Retake
 - Wingman (allows more than 4 players) ([Steam API key](#playing-workshop-mapscollections) required)
 - KZ ([Steam API key](#playing-workshop-mapscollections) required)
 - BHop ([Steam API key](#playing-workshop-mapscollections) required)
@@ -78,6 +79,7 @@ Mod | Version | Why
 [CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon)| `1.2.0` | This is a rudimentary implementation of a RCON plugin for CS2 using CounterStrikeSharp as RCON does not work whilst connected to the server
 [SharpTimer](https://github.com/DEAFPS/SharpTimer/)| `0.1.3b` | SharpTimer is a simple Surf/KZ/Bhop/MG/Deathrun/etc CS2 Timer plugin
 [GunGame](https://github.com/ssypchenko/cs2-gungame)| `1.0.2` | GunGame mode on Counter Strike Sharp
+[Retake](https://github.com/LordFetznschaedl/CS2Retake/)| `1.0.5` | Retake plugin for CS2 using CounterStrikeSharp
 
 ## Custom files
 
@@ -466,6 +468,7 @@ These are all the available chat commands to change the game mode:
 | `!rcon exec kz`      | Kreedz Climbing                                                                   |
 | `!rcon exec minigames` | Mini Games                                                                      |
 | `!rcon exec prac`    | Practice (grenade lineups etc)                                                    |
+| `!rcon exec retake`  | Retakes                                                                           |
 | `!rcon exec scoutzknivez` | ScoutzKnivez                                                                 |
 | `!rcon exec soccer`  | Soccer                                                                            |
 | `!rcon exec surf`    | Surf                                                                              |
