@@ -29,6 +29,7 @@
 						"mg_course"			"56"
 						"mg_hns"			"57"
 						"mg_soccer"			"58"
+						"mg_gg"				"59"
 					}
 				}
 
@@ -201,6 +202,33 @@
 				"workshop/3109232789/gg_simpsons_vs_flanders_v2"		""
 				"workshop/3108513658/de_akiba"		""
 				"workshop/3112806723/cs_facingworlds-99"		""
+			}
+		}
+		"mg_gg"
+		{
+			"name"			"mg_gg"
+			"maps"
+			{
+				"workshop/3070923343/fy_pool_day"		""
+				"workshop/3070238628/fy_iceworld"		""
+				"workshop/3072640420/daymare"		""
+				"workshop/3070348309/aim_theorem"		""
+				"workshop/3070550406/de_safehouse"		""
+				"workshop/3070552133/ar_shoots"		""
+				"workshop/3070563536/de_lake"		""
+				"workshop/3070581293/de_bank"		""
+				"workshop/3088183343/fun_bounce"		""
+				"workshop/3082605693/1v1aim_map_longdustversion_d"		""
+				"workshop/3070291913/ar_churches_s2r"		""
+				"workshop/3082113929/aim_ag_texture_city_advanced"		""
+				"workshop/3080973179/traningoutside"		""
+				"workshop/3086555291/shipment_version_1_0"		""
+				"workshop/3074961197/aim_ag_texture2"		""
+				"workshop/3095778105/aim_ag_texture_jungle"		""
+				"workshop/3071890065/cs2_bloodstrike"		""
+				"workshop/3109232789/gg_simpsons_vs_flanders_v2"		""
+				"workshop/3112806723/cs_facingworlds-99"		""
+				"workshop/3077599381/dm_desk"		""
 			}
 		}
 		"mg_1v1"

@@ -1,0 +1,7 @@
+{
+  "DatabaseHost": "",
+  "DatabasePort": 3306,
+  "DatabaseUser": "",
+  "DatabasePassword": "",
+  "DatabaseName": ""
+}

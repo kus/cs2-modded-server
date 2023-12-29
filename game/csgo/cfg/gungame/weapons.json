@@ -1,0 +1,411 @@
+{
+  "knife": {
+    "index": 1,
+    "slot": 3,
+    "clipsize": 0,
+    "ammotype": 0,
+    "level_index": 1,
+    "fullname": "weapon_knife"
+  },
+  "knifegg": {
+    "index": 2,
+    "slot": 3,
+    "clipsize": 0,
+    "ammotype": 0,
+    "level_index": 1,
+    "fullname": "weapon_knifegg"
+  },
+  "taser": {
+    "index": 3,
+    "slot": 3,
+    "clipsize": 1,
+    "ammotype": 18,
+    "level_index": 3,
+    "fullname": "weapon_taser"
+  },
+  "glock": {
+    "index": 4,
+    "slot": 2,
+    "clipsize": 20,
+    "ammotype": 0,
+    "level_index": 4,
+    "fullname": "weapon_glock"
+  },
+  "p250": {
+    "index": 5,
+    "slot": 2,
+    "clipsize": 13,
+    "ammotype": 0,
+    "level_index": 5,
+    "fullname": "weapon_p250"
+  },
+  "fiveseven": {
+    "index": 6,
+    "slot": 2,
+    "clipsize": 20,
+    "ammotype": 0,
+    "level_index": 6,
+    "fullname": "weapon_fiveseven"
+  },
+  "deagle": {
+    "index": 7,
+    "slot": 2,
+    "clipsize": 7,
+    "ammotype": 0,
+    "level_index": 7,
+    "fullname": "weapon_deagle"
+  },
+  "elite": {
+    "index": 8,
+    "slot": 2,
+    "clipsize": 30,
+    "ammotype": 0,
+    "level_index": 8,
+    "fullname": "weapon_elite"
+  },
+  "hkp2000": {
+    "index": 9,
+    "slot": 2,
+    "clipsize": 13,
+    "ammotype": 0,
+    "level_index": 9,
+    "fullname": "weapon_hkp2000"
+  },
+  "tec9": {
+    "index": 10,
+    "slot": 2,
+    "clipsize": 32,
+    "ammotype": 0,
+    "level_index": 10,
+    "fullname": "weapon_tec9"
+  },
+  "nova": {
+    "index": 11,
+    "slot": 1,
+    "clipsize": 8,
+    "ammotype": 0,
+    "level_index": 11,
+    "fullname": "weapon_nova"
+  },
+  "xm1014": {
+    "index": 12,
+    "slot": 1,
+    "clipsize": 7,
+    "ammotype": 0,
+    "level_index": 12,
+    "fullname": "weapon_xm1014"
+  },
+  "sawedoff": {
+    "index": 13,
+    "slot": 1,
+    "clipsize": 7,
+    "ammotype": 0,
+    "level_index": 13,
+    "fullname": "weapon_sawedoff"
+  },
+  "m249": {
+    "index": 14,
+    "slot": 1,
+    "clipsize": 100,
+    "ammotype": 0,
+    "level_index": 14,
+    "fullname": "weapon_m249"
+  },
+  "negev": {
+    "index": 15,
+    "slot": 1,
+    "clipsize": 150,
+    "ammotype": 0,
+    "level_index": 15,
+    "fullname": "weapon_negev"
+  },
+  "mag7": {
+    "index": 16,
+    "slot": 1,
+    "clipsize": 5,
+    "ammotype": 0,
+    "level_index": 16,
+    "fullname": "weapon_mag7"
+  },
+  "mp7": {
+    "index": 17,
+    "slot": 1,
+    "clipsize": 30,
+    "ammotype": 0,
+    "level_index": 17,
+    "fullname": "weapon_mp7"
+  },
+  "ump45": {
+    "index": 18,
+    "slot": 1,
+    "clipsize": 25,
+    "ammotype": 0,
+    "level_index": 18,
+    "fullname": "weapon_ump45"
+  },
+  "p90": {
+    "index": 19,
+    "slot": 1,
+    "clipsize": 50,
+    "ammotype": 0,
+    "level_index": 19,
+    "fullname": "weapon_p90"
+  },
+  "bizon": {
+    "index": 20,
+    "slot": 1,
+    "clipsize": 64,
+    "ammotype": 0,
+    "level_index": 20,
+    "fullname": "weapon_bizon"
+  },
+  "mp9": {
+    "index": 21,
+    "slot": 1,
+    "clipsize": 30,
+    "ammotype": 0,
+    "level_index": 21,
+    "fullname": "weapon_mp9"
+  },
+  "mac10": {
+    "index": 22,
+    "slot": 1,
+    "clipsize": 30,
+    "ammotype": 0,
+    "level_index": 22,
+    "fullname": "weapon_mac10"
+  },
+  "famas": {
+    "index": 23,
+    "slot": 1,
+    "clipsize": 25,
+    "ammotype": 0,
+    "level_index": 23,
+    "fullname": "weapon_famas"
+  },
+  "m4a1": {
+    "index": 24,
+    "slot": 1,
+    "clipsize": 30,
+    "ammotype": 0,
+    "level_index": 24,
+    "fullname": "weapon_m4a1"
+  },
+  "aug": {
+    "index": 25,
+    "slot": 1,
+    "clipsize": 30,
+    "ammotype": 0,
+    "level_index": 25,
+    "fullname": "weapon_aug"
+  },
+  "galilar": {
+    "index": 26,
+    "slot": 1,
+    "clipsize": 35,
+    "ammotype": 0,
+    "level_index": 26,
+    "fullname": "weapon_galilar"
+  },
+  "ak47": {
+    "index": 27,
+    "slot": 1,
+    "clipsize": 30,
+    "ammotype": 0,
+    "level_index": 27,
+    "fullname": "weapon_ak47"
+  },
+  "sg556":
+ {
+    "index": 28,
+    "slot": 1,
+    "clipsize": 30,
+    "ammotype": 0,
+    "level_index": 28,
+    "fullname": "weapon_sg556"
+  },
+  "ssg08": {
+    "index": 29,
+    "slot": 1,
+    "clipsize": 10,
+    "ammotype": 0,
+    "level_index": 29,
+    "fullname": "weapon_ssg08"
+  },
+  "awp": {
+    "index": 30,
+    "slot": 1,
+    "clipsize": 10,
+    "ammotype": 0,
+    "level_index": 30,
+    "fullname": "weapon_awp"
+  },
+  "scar20": {
+    "index": 31,
+    "slot": 1,
+    "clipsize": 20,
+    "ammotype": 0,
+    "level_index": 31,
+    "fullname": "weapon_scar20"
+  },
+  "g3sg1": {
+    "index": 32,
+    "slot": 1,
+    "clipsize": 20,
+    "ammotype": 0,
+    "level_index": 32,
+    "fullname": "weapon_g3sg1"
+  },
+  "decoy": {
+    "index": 33,
+    "slot": 4,
+    "clipsize": 0,
+    "ammotype": 0,
+    "level_index": 33,
+    "fullname": "weapon_decoy"
+  },
+  "flashbang": {
+    "index": 34,
+    "slot": 4,
+    "clipsize": 0,
+    "ammotype": 14,
+    "level_index": 34,
+    "fullname": "weapon_flashbang"
+  },
+  "hegrenade": {
+    "index": 35,
+    "slot": 4,
+    "clipsize": 0,
+    "ammotype": 13,
+    "level_index": 35,
+    "fullname": "weapon_hegrenade"
+  },
+  "smokegrenade": {
+    "index": 36,
+    "slot": 4,
+    "clipsize": 0,
+    "ammotype": 15,
+    "level_index": 36,
+    "fullname": "weapon_smokegrenade"
+  },
+  "incgrenade": {
+    "index": 37,
+    "slot": 4,
+    "clipsize": 0,
+    "ammotype": 16,
+    "level_index": 37,
+    "fullname": "weapon_incgrenade"
+  },
+  "molotov": {
+    "index": 38,
+    "slot": 4,
+    "clipsize": 0,
+    "ammotype": 16,
+    "level_index": 37,
+    "fullname": "weapon_molotov"
+  },
+  "c4": {
+    "index": 39,
+    "slot": 5,
+    "clipsize": 0,
+    "ammotype": 0,
+    "level_index": 39,
+    "fullname": "weapon_c4"
+  },
+  "inferno": {
+    "index": 40,
+    "slot": 4,
+    "clipsize": 0,
+    "ammotype": 0,
+    "level_index": 37,
+    "fullname": "weapon_inferno"
+  },
+  "usp_silencer": {
+    "index": 41,
+    "slot": 2,
+    "clipsize": 12,
+    "ammotype": 0,
+    "level_index": 9,
+    "fullname": "weapon_usp_silencer"
+  },
+  "usp_silencer_off": {
+    "index": 42,
+    "slot": 2,
+    "clipsize": 12,
+    "ammotype": 0,
+    "level_index": 9,
+    "fullname": "weapon_usp_silencer_off"
+  },
+  "m4a1_silencer": {
+    "index": 43,
+    "slot": 1,
+    "clipsize": 20,
+    "ammotype": 0,
+    "level_index": 24,
+    "fullname": "weapon_m4a1_silencer"
+  },
+  "m4a1_silencer_off": {
+    "index": 44,
+    "slot": 1,
+    "clipsize": 20,
+    "ammotype": 0,
+    "level_index": 24,
+    "fullname": "weapon_m4a1_silencer_off"
+  },
+  "bayonet": {
+    "index": 45,
+    "slot": 3,
+    "clipsize": 0,
+    "ammotype": 0,
+    "level_index": 1,
+    "fullname": "weapon_bayonet"
+  },
+  "prop_physics": {
+    "index": 46,
+    "slot": 1,
+    "clipsize": 0,
+    "ammotype": 0,
+    "level_index": 46,
+    "fullname": "weapon_prop_physics"
+  },
+  "prop_physics_multiplayer": {
+    "index": 47,
+    "slot": 1,
+    "clipsize": 0,
+    "ammotype": 0,
+    "level_index": 47,
+    "fullname": "weapon_prop_physics_multiplayer"
+  },
+  "cz75a": {
+    "index": 48,
+    "slot": 2,
+    "clipsize": 12,
+    "ammotype": 0,
+    "level_index": 5,
+    "fullname": "weapon_cz75a"
+  },
+  "revolver": {
+    "index": 49,
+    "slot": 2,
+    "clipsize": 8,
+    "ammotype": 0,
+    "level_index": 7,
+    "fullname": "weapon_revolver"
+  },
+  "mp5sd": {
+    "index": 50,
+    "slot": 1,
+    "clipsize": 30,
+    "ammotype": 0,
+    "level_index": 17,
+    "fullname": "weapon_mp5sd"
+  },
+  "snowball": {
+    "index": 51,
+    "slot": 4,
+    "clipsize": 0,
+    "ammotype": 25,
+    "level_index": 51,
+    "fullname": "weapon_snowball"
+  }
+}

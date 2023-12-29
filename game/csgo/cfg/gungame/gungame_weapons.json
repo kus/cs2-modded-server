@@ -1,0 +1,41 @@
+ {
+  "WeaponOrder": {
+    "1": "xm1014",
+    "2": "awp",
+    "3": "p90",
+    "4": "mp7",
+    "5": "galilar",
+    "6": "mp9",
+    "7": "mag7",
+    "8": "g3sg1",
+    "9": "negev",
+    "10": "scar20",
+    "11": "bizon",
+    "12": "ak47",
+    "13": "mac10",
+    "14": "m4a1_silencer",
+    "15": "m249",
+    "16": "sg556",
+    "17": "ump45",
+    "18": "aug",
+    "19": "famas",
+    "20": "nova",
+    "21": "ssg08",
+    "22": "elite",
+    "23": "revolver",
+    "24": "cz75a",
+    "25": "hkp2000",
+    "26": "tec9",
+    "27": "sawedoff",
+    "28": "p250",
+    "29": "hegrenade",
+    "30": "knife"
+  },
+  "MultipleKillsPerLevel": {
+    "1": "4",
+    "29": "2",
+    "30": "2"
+  },
+  "RandomWeaponReserveLevels": "29,30",
+  "RandomWeaponOrder": false
+}
