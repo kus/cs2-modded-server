@@ -1,0 +1,14 @@
+{
+  "queue.joined": "Вы в очереди. Ожидайте.",
+  "queue.waiting": "Сейчас играет максимальное количество игроков - [GREEN]{0}[NORMAL]. Вы в очереди.",
+
+  "bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} T[NORMAL] против [PURPLE]{2} CT",
+
+  "teams.scramble": "Террористы выиграли [GREEN]{0}[NORMAL] раундов подряд. [PURPLE]Команды были перемешаны!",
+  "teams.almost_scramble": "Террористы выиграли [GREEN]{0}[NORMAL] раундов подряд - если они выиграют еще [GREEN]{1}, то [PURPLE]команды будут перемешаны.",
+  "teams.win_streak": "Террористы выиграли [GREEN]{0}[NORMAL] раундов подряд!",
+  "teams.win_streak_over": "Контр-Террористы завершили серию побед Террористов из [GREEN]{0}[NORMAL] раундов!",
+  "teams.admin_scramble": "{0} включил перемешивание команд со следующего раунда.",
+
+  "bombsite.failed_to_plant": "[PURPLE]{0}[NORMAL] не установил бомбу..."
+}

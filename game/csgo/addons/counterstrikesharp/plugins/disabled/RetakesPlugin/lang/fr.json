@@ -1,0 +1,14 @@
+{
+  "queue.joined": "Vous avez été placé dans la file d'attente.",
+  "queue.waiting": "La partie est actuellement complète avec [GREEN]{0}[NORMAL] joueurs. Vous êtes dans la file d'attente.",
+
+  "bombsite.announcement": "Reprise [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Terroristes[NORMAL] contre [PURPLE]{2} CTs",
+
+  "teams.scramble": "Les terroristes ont gagné [GREEN]{0}[NORMAL] tours d'affilée. [PURPLE]Mélange des équipes en cours !",
+  "teams.almost_scramble": "Les terroristes ont gagné [GREEN]{0}[NORMAL] tours d'affilée - s'ils en gagnent encore [GREEN]{1}, [PURPLE]les équipes seront mélangées.",
+  "teams.win_streak": "Les terroristes ont gagné [GREEN]{0}[NORMAL] tours d'affilée !",
+  "teams.win_streak_over": "Les CTs ont mis fin à [GREEN]{0}[NORMAL] tours gagnés d'affilée !",
+  "teams.admin_scramble": "{0} a imposé le mélange des équipes au prochain tour.",
+
+  "bombsite.failed_to_plant": "[PURPLE]{0}[NORMAL] n'a pas réussi à poser la bombe…"
+}

@@ -79,8 +79,11 @@ Mod | Version | Why
 [CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon)| `1.2.0` | This is a rudimentary implementation of a RCON plugin for CS2 using CounterStrikeSharp as RCON does not work whilst connected to the server
 [SharpTimer](https://github.com/DEAFPS/SharpTimer/)| `0.1.9` | SharpTimer is a simple Surf/KZ/Bhop/MG/Deathrun/etc CS2 Timer plugin
 [GunGame](https://github.com/ssypchenko/cs2-gungame)| `1.0.3` | GunGame mode on Counter Strike Sharp
-[Retake](https://github.com/LordFetznschaedl/CS2Retake/)| `1.0.5` | Retake plugin for CS2 using CounterStrikeSharp
 [CS2-Multi-1v1](https://github.com/rockCityMath/CS2-Multi-1v1)| `1.0.0` | A CS2 plugin that allows players to fight 1v1 in ranked arenas.
+[CS2 Retakes](https://github.com/B3none/cs2-retakes)| `1.2.4` | CS2 implementation of retakes. Based on the version for CS:GO by Splewis.
+[CS2 Instadefuse](https://github.com/B3none/cs2-instadefuse)| `1.3.1` | Allows a CT to instantly defuse the bomb when nothing can prevent defusal. Written in C# for CounterStrikeSharp.
+[CS2 Instaplant](https://github.com/B3none/cs2-instaplant)| `1.0.0` | Allows terrorists to plant the bomb instantly
+[CS2 Retakes Allocator](https://github.com/yonilerner/cs2-retakes-allocator)| `1.0.8` | Advanced weapon allocation for B3none/cs2-retakes
 
 ## Custom files
 

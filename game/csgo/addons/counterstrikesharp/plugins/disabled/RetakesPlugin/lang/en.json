@@ -1,0 +1,14 @@
+﻿{
+  "queue.joined": "You have been placed in the waiting queue.",
+  "queue.waiting": "The game is currently full with [GREEN]{0}[NORMAL] players. You are in the waiting queue.",
+
+  "bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Ts[NORMAL] vs [PURPLE]{2} CTs",
+  
+  "teams.scramble": "The terrorists won [GREEN]{0}[NORMAL] rounds in a row. [PURPLE]Teams are being scrambled!",
+  "teams.almost_scramble": "The terrorists have won [GREEN]{0}[NORMAL] rounds in a row - if they win [GREEN]{1} more, [PURPLE]teams will be scrambled.",
+  "teams.win_streak": "The terrorists have won [GREEN]{0}[NORMAL] rounds in a row!",
+  "teams.win_streak_over": "The CTs have ended a [GREEN]{0}[NORMAL]-round long win streak!",
+  "teams.admin_scramble": "{0} has set the teams to be scrambled next round.",
+
+  "bombsite.failed_to_plant": "[PURPLE]{0}[NORMAL] failed to plant..."
+}

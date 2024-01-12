@@ -1,0 +1,14 @@
+{
+  "queue.joined": "Zostałeś dodany do kolejki.",
+  "queue.waiting": "Gra jest pełna z [GREEN]{0}[NORMAL] graczami. Jesteś aktualnie w kolejce.",
+
+  "bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Ts[NORMAL] vs [PURPLE]{2} CTs",
+
+  "teams.scramble": "Terroryści wygrali [GREEN]{0}[NORMAL] rund pod rząd. [PURPLE]Drużyny zostaną wymieszane!",
+  "teams.almost_scramble": "Terroryści wygrali [GREEN]{0}[NORMAL] rund pod rząd - jeśli wygrają [GREEN]{1} raz(y), [PURPLE]drużyny zostaną wymieszane.",
+  "teams.win_streak": "Terroryści wygrali [GREEN]{0}[NORMAL] rund pod rząd!",
+  "teams.win_streak_over": "CT zakończyli [GREEN]{0}[NORMAL] zwycięską serie rund!",
+  "teams.admin_scramble": "{0} ustawił wymieszanie drużyn na następną rundę.",
+
+  "bombsite.failed_to_plant": "[PURPLE]{0}[NORMAL] nie udało się podłożyć bomby..."
+}
