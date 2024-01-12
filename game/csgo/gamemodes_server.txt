@@ -234,19 +234,7 @@
 			"name"			"mg_1v1"
 			"maps"
 			{
-				"workshop/3070549948/aim_map"		""
-				"workshop/3070308285/aim_newagewip"		""
-				"workshop/3070423167/aim_movement"		""
-				"workshop/3070923343/fy_pool_day"		""
-				"workshop/3070238628/fy_iceworld"		""
-				"workshop/3072640420/daymare"		""
-				"workshop/3070348309/aim_theorem"		""
-				"workshop/3088183343/fun_bounce"		""
-				"workshop/3082605693/1v1aim_map_longdustversion_d"		""
-				"workshop/3070291913/ar_churches_s2r"		""
-				"workshop/3082113929/aim_ag_texture_city_advanced"		""
-				"workshop/3080973179/traningoutside"		""
-				"workshop/3086555291/shipment_version_1_0"		""
+				"workshop/3070253400/aim_redline_fp"		""
 			}
 		}
 		"mg_bhop"

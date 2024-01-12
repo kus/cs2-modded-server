@@ -8,7 +8,7 @@ A single modded Counter-Strike 2 (CS2) Modded Dedicated Server that you can [cha
 
 Each game mode has a hand full of maps preset so you are ready to go and it's [easy to add more](#setting-maps-for-different-game-modes).
 
-- 1v1 (allows more than 2 players) ([Steam API key](#playing-workshop-mapscollections) required)
+- 1v1 (with arenas) ([Steam API key](#playing-workshop-mapscollections) required)
 - Deathmatch ([Steam API key](#playing-workshop-mapscollections) required)
 - Competitive (using [MatchZy](https://github.com/shobhit-pathak/MatchZy#usage-commands))
 - Practice (record grenade throws etc)
@@ -80,6 +80,7 @@ Mod | Version | Why
 [SharpTimer](https://github.com/DEAFPS/SharpTimer/)| `0.1.9` | SharpTimer is a simple Surf/KZ/Bhop/MG/Deathrun/etc CS2 Timer plugin
 [GunGame](https://github.com/ssypchenko/cs2-gungame)| `1.0.3` | GunGame mode on Counter Strike Sharp
 [Retake](https://github.com/LordFetznschaedl/CS2Retake/)| `1.0.5` | Retake plugin for CS2 using CounterStrikeSharp
+[CS2-Multi-1v1](https://github.com/rockCityMath/CS2-Multi-1v1)| `1.0.0` | A CS2 plugin that allows players to fight 1v1 in ranked arenas.
 
 ## Custom files
 
