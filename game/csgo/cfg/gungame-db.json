@@ -1,7 +1,4 @@
 {
-  "DatabaseHost": "",
-  "DatabasePort": 3306,
-  "DatabaseUser": "",
-  "DatabasePassword": "",
-  "DatabaseName": ""
+  "DatabaseType": "SQLite",
+  "DatabaseFilePath": "/csgo/cfg/gungame-db.sqlite"
 }
