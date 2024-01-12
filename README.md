@@ -78,7 +78,7 @@ Mod | Version | Why
 [SimpleAdmin](https://github.com/connercsbn/SimpleAdmin/)| `0.1.2` | Adds basic administrator functions
 [CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon)| `1.2.0` | This is a rudimentary implementation of a RCON plugin for CS2 using CounterStrikeSharp as RCON does not work whilst connected to the server
 [SharpTimer](https://github.com/DEAFPS/SharpTimer/)| `0.1.9` | SharpTimer is a simple Surf/KZ/Bhop/MG/Deathrun/etc CS2 Timer plugin
-[GunGame](https://github.com/ssypchenko/cs2-gungame)| `1.0.2` | GunGame mode on Counter Strike Sharp
+[GunGame](https://github.com/ssypchenko/cs2-gungame)| `1.0.3` | GunGame mode on Counter Strike Sharp
 [Retake](https://github.com/LordFetznschaedl/CS2Retake/)| `1.0.5` | Retake plugin for CS2 using CounterStrikeSharp
 
 ## Custom files

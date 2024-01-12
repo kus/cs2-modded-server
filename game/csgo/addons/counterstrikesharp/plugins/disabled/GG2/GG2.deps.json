@@ -9,6 +9,7 @@
       "GG2/1.0.0": {
         "dependencies": {
           "CounterStrikeSharp.API": "1.0.142",
+          "Dapper": "2.1.24",
           "Microsoft.Data.Sqlite": "8.0.0",
           "Microsoft.Extensions.Logging": "8.0.0",
           "MySqlConnector": "2.3.3",
@@ -37,6 +38,14 @@
           "lib/net7.0/CounterStrikeSharp.API.dll": {
             "assemblyVersion": "1.0.142.0",
             "fileVersion": "1.0.142.0"
+          }
+        }
+      },
+      "Dapper/2.1.24": {
+        "runtime": {
+          "lib/net7.0/Dapper.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.1.24.50284"
           }
         }
       },
@@ -693,6 +702,13 @@
       "sha512": "sha512-d1MdKKeVSUc1WAidjkK9B5FdSLnX/SOS9zFD/IMjaMpMiezIzznOUWluGkjx3FOyyZs4imZzZfS1BLC8ChR9bA==",
       "path": "counterstrikesharp.api/1.0.142",
       "hashPath": "counterstrikesharp.api.1.0.142.nupkg.sha512"
+    },
+    "Dapper/2.1.24": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/2t2vsdJyZRsk13AsWigZpsuFvEwK+o3v862cEULXoww905gyKhJFSuwmZI/4Ui9COX9ZCFCI09UHyH4wVYl3A==",
+      "path": "dapper/2.1.24",
+      "hashPath": "dapper.2.1.24.nupkg.sha512"
     },
     "McMaster.NETCore.Plugins/1.4.0": {
       "type": "package",

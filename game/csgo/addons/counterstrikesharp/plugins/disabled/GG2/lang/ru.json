@@ -31,5 +31,8 @@
   "cantknife.leveluponbot": "За бота {lightpurple}не дают уровень с ножа",
   "cantknife.leveluponbotwithhumans": "За бота {lightpurple}не дают уровень с ножа, если есть другие игроки",
   "canthe.leveluponbot": "За бота {lightpurple}не дают уровень на гранате",
-  "canthe.leveluponbotwithhumans": "За бота {lightpurple}не дают уровень на гранате, если есть другие игроки"
+  "canthe.leveluponbotwithhumans": "За бота {lightpurple}не дают уровень на гранате, если есть другие игроки",
+  "music.off": "Вся специфические для GunGame звуки {lightred}ВЫКЛЮЧЕНЫ",
+  "music.on": "Вся специфические для GunGame звуки {olive}ВКЛЮЧЕНЫ",
+  "player.rank": "Твой ранг - {olive}{0}"
 } 

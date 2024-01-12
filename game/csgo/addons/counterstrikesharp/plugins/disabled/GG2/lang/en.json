@@ -33,5 +33,8 @@
   "cantknife.leveluponbot": "You can not {lightpurple}level up on bot with knife",
   "cantknife.leveluponbotwithhumans": "You can not {lightpurple}level up on bot with knife{default} if there is other human",
   "canthe.leveluponbot": "You can not {lightpurple}level up on bot with hegrenade",
-  "canthe.leveluponbotwithhumans": "You can not {lightpurple}level up on bot with hegrenade{default} if there is other human"
+  "canthe.leveluponbotwithhumans": "You can not {lightpurple}level up on bot with hegrenade{default} if there is other human",
+  "music.off": "All specific GunGame sounds for you are {lightred}OFF",
+  "music.on": "All specific GunGame sounds for you are {olive}ON",
+  "player.rank": "Your rank - {olive}{0}"
 } 
