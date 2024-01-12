@@ -1,0 +1,10 @@
+{
+	"Version": 3,
+	"MaxPlayers": 9,
+	"TerroristRatio": 0.45,
+	"RoundsToScramble": 5,
+	"IsScrambleEnabled": true,
+	"EnableFallbackAllocation": false,
+	"EnableBombsiteAnnouncementVoices": true,
+	"EnableBombsiteAnnouncementCenter": true
+}
