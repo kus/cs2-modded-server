@@ -173,7 +173,7 @@ fi
 # Download latest stop script
 curl -s -H "Cache-Control: no-cache" -o "stop.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${BRANCH}/stop.sh" && chmod +x stop.sh
 
-PUBLIC_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
+PUBLIC_IP=$(curl -4 ifconfig.me)
 
 if [ -z "$PUBLIC_IP" ]; then
 	echo "ERROR: Cannot retrieve your public IP address..."
