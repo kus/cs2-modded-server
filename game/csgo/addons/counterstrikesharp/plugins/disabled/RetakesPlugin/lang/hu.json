@@ -8,7 +8,5 @@
   "teams.almost_scramble": "Terroristák [GREEN]{0}[NORMAL] kört nyertek egymás után - ha még nyernek [GREEN]{1} kört, [PURPLE]a csapatok össze lesznek keverve.",
   "teams.win_streak": "Terroristák [GREEN]{0}[NORMAL] kört nyertek egymás után!",
   "teams.win_streak_over": "TE-k megállították a [GREEN]{0}[NORMAL] kör hosszú győzelem sorozatot!",
-  "teams.admin_scramble": "{0} beállította, hogy a csapatok össze legyenek keverve a következő körben.",
-
-  "bombsite.failed_to_plant": "[PURPLE]{0}[NORMAL] nem rakta le a bombát..."
+  "teams.admin_scramble": "{0} beállította, hogy a csapatok össze legyenek keverve a következő körben."
 }

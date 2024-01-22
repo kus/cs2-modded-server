@@ -8,7 +8,5 @@
   "teams.almost_scramble": "The terrorists have won [GREEN]{0}[NORMAL] rounds in a row - if they win [GREEN]{1} more, [PURPLE]teams will be scrambled.",
   "teams.win_streak": "The terrorists have won [GREEN]{0}[NORMAL] rounds in a row!",
   "teams.win_streak_over": "The CTs have ended a [GREEN]{0}[NORMAL]-round long win streak!",
-  "teams.admin_scramble": "{0} has set the teams to be scrambled next round.",
-
-  "bombsite.failed_to_plant": "[PURPLE]{0}[NORMAL] failed to plant..."
+  "teams.admin_scramble": "{0} has set the teams to be scrambled next round."
 }

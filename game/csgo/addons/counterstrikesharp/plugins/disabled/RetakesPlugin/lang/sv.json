@@ -8,7 +8,5 @@
   "teams.almost_scramble": "Terroristerna har vunnit [GREEN]{0}[NORMAL] rundor i rad - vinner de [GREEN]{1} till, [PURPLE]så blandas lagen om.",
   "teams.win_streak": "Terroristerna har vunnit [GREEN]{0}[NORMAL] rundor i rad!",
   "teams.win_streak_over": "Anti-terroristerna har avbrutit terroristernas [GREEN]{0}[NORMAL] raka vinster!",
-  "teams.admin_scramble": "{0} har satt lagen att blandas om nästa runda.",
-
-  "bombsite.failed_to_plant": "[PURPLE]{0}[NORMAL] misslyckades med att plantera C4..."
+  "teams.admin_scramble": "{0} har satt lagen att blandas om nästa runda."
 }

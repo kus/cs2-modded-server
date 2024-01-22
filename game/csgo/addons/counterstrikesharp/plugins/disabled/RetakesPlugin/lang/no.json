@@ -8,7 +8,5 @@
   "teams.almost_scramble": "Terroristene har vunnet [GREEN]{0}[NORMAL] runder på rad - hvis de vinner [GREEN]{1} mer, [PURPLE]vil lagene bli endret.",
   "teams.win_streak": "Terroristene har vunnet [GREEN]{0}[NORMAL] runder på rad!",
   "teams.win_streak_over": "CT har sluttet en [GREEN]{0}[NORMAL]-runders lang seiersrekke!",
-  "teams.admin_scramble": "{0} har satt lagene til å bli samlet neste runde.",
-
-  "bombsite.failed_to_plant": "[PURPLE]{0}[NORMAL] klarte ikke å plante bomben..."
+  "teams.admin_scramble": "{0} har satt lagene til å bli samlet neste runde."
 }
