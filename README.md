@@ -70,7 +70,7 @@ Getting up and running:
 Mod | Version | Why
 --- | --- | ---
 [Metamod:Source](http://www.sourcemm.net/downloads.php?branch=master) | `2.0.0-1278` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
-[CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `142` | Attempts to implement a .NET Core scripting layer on top of a Metamod Source Plugin, allowing developers to create plugins that interact with the game server in a modern language (C#)
+[CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `153` | Attempts to implement a .NET Core scripting layer on top of a Metamod Source Plugin, allowing developers to create plugins that interact with the game server in a modern language (C#)
 [CS2_ExecAfter](https://github.com/kus/CS2_ExecAfter) | `1.0.0` | Executes a command after server event (i.e. OnMapStart) or a delay.
 [CS2_DamageInfo](https://github.com/K4ryuu/CS2_DamageInfo) | `1.3.3` | Displays the amount of damage players have inflicted on the victim's HP and Armor, as well as the hit groups they have hit.
 [MatchZy](https://github.com/shobhit-pathak/MatchZy) | `0.6.1` | MatchZy is a plugin for CS2 for running and managing practice/pugs/scrims/matches with easy configuration!
@@ -80,9 +80,8 @@ Mod | Version | Why
 [SharpTimer](https://github.com/DEAFPS/SharpTimer/)| `0.1.9` | SharpTimer is a simple Surf/KZ/Bhop/MG/Deathrun/etc CS2 Timer plugin
 [GunGame](https://github.com/ssypchenko/cs2-gungame)| `1.0.3` | GunGame mode on Counter Strike Sharp
 [CS2-Multi-1v1](https://github.com/rockCityMath/CS2-Multi-1v1)| `1.0.0` | A CS2 plugin that allows players to fight 1v1 in ranked arenas.
-[CS2 Retakes](https://github.com/B3none/cs2-retakes)| `1.2.4` | CS2 implementation of retakes. Based on the version for CS:GO by Splewis.
-[CS2 Instadefuse](https://github.com/B3none/cs2-instadefuse)| `1.3.1` | Allows a CT to instantly defuse the bomb when nothing can prevent defusal. Written in C# for CounterStrikeSharp.
-[CS2 Instaplant](https://github.com/B3none/cs2-instaplant)| `1.0.0` | Allows terrorists to plant the bomb instantly
+[CS2 Retakes](https://github.com/B3none/cs2-retakes)| `1.3.14` | CS2 implementation of retakes. Based on the version for CS:GO by Splewis.
+[CS2 Instadefuse](https://github.com/B3none/cs2-instadefuse)| `1.3.2` | Allows a CT to instantly defuse the bomb when nothing can prevent defusal. Written in C# for CounterStrikeSharp.
 [CS2 Retakes Allocator](https://github.com/yonilerner/cs2-retakes-allocator)| `1.0.8` | Advanced weapon allocation for B3none/cs2-retakes
 
 ## Custom files
