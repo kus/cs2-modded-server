@@ -589,14 +589,14 @@
         </member>
         <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.AddPlayerToGroup(CounterStrikeSharp.API.Core.CCSPlayerController,System.String[])">
             <summary>
-            Adds a player to a group.
+            Adds a player to a group. This does NOT modify the immunity of the player (see SetPlayerImmunity).
             </summary>
             <param name="player">Player controller.</param>
             <param name="groups">Groups to add the player to.</param>
         </member>
         <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.AddPlayerToGroup(CounterStrikeSharp.API.Modules.Entities.SteamID,System.String[])">
             <summary>
-            Adds a player to a group.
+            Adds a player to a group. This does NOT modify the immunity of the player (see SetPlayerImmunity).
             </summary>
             <param name="steamId">SteamID of the player.</param>
             <param name="groups">Groups to add the player to.</param>
@@ -617,12 +617,25 @@
             <param name="removeInheritedFlags">If true, all of the flags that the player inherited from being in the group will be removed.</param>
             <param name="groups"></param>
         </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.GetPlayerAdminData(CounterStrikeSharp.API.Core.CCSPlayerController)">
+            <summary>
+            Grabs the admin data for a player that was loaded from "configs/admins.json" and "configs/admins_groups.json".
+            </summary>
+            <param name="player">Player controller</param>
+            <returns>AdminData class if data found, null if not.</returns>
+        </member>
         <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.GetPlayerAdminData(CounterStrikeSharp.API.Modules.Entities.SteamID)">
             <summary>
-            Grabs the admin data for a player that was loaded from "configs/admins.json".
+            Grabs the admin data for a player that was loaded from "configs/admins.json" and "configs/admins_groups.json".
             </summary>
             <param name="steamId">SteamID object of the player.</param>
             <returns>AdminData class if data found, null if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.RemovePlayerAdminData(CounterStrikeSharp.API.Core.CCSPlayerController)">
+            <summary>
+            Removes a players admin data. This is not saved to "configs/admins.json"
+            </summary>
+            <param name="player">Player controller</param>
         </member>
         <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.RemovePlayerAdminData(CounterStrikeSharp.API.Modules.Entities.SteamID)">
             <summary>
@@ -755,6 +768,24 @@
             </summary>
             <param name="steamId">Steam ID of the player.</param>
             <param name="value">New immunity value.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.GetPlayerImmunity(CounterStrikeSharp.API.Core.CCSPlayerController)">
+            <summary>
+            Returns the immunity value for a player.
+            </summary>
+            <param name="player">Player controller.</param>
+            <returns> If an immunity value is present in "configs/admins_groups.json" 
+            and in "configs/admins.json", the returned value will be the greater of the two.
+            If the value is overriden with SetPlayerImmunity, that value is returned instead.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.GetPlayerImmunity(CounterStrikeSharp.API.Modules.Entities.SteamID)">
+            <summary>
+            Returns the immunity value for a player.
+            </summary>
+            <param name="steamId">Steam ID of the player.</param>
+            <returns> If an immunity value is present in "configs/admins_groups.json" 
+            and in "configs/admins.json", the returned value will be the greater of the two.
+            If the value is overriden with SetPlayerImmunity, that value is returned instead.</returns>
         </member>
         <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.CanPlayerTarget(CounterStrikeSharp.API.Core.CCSPlayerController,CounterStrikeSharp.API.Core.CCSPlayerController)">
             <summary>
