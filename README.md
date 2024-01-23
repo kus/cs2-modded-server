@@ -84,6 +84,7 @@ Mod | Version | Why
 [CS2 Instadefuse](https://github.com/B3none/cs2-instadefuse)| `1.3.1` | Allows a CT to instantly defuse the bomb when nothing can prevent defusal. Written in C# for CounterStrikeSharp.
 [CS2 Instaplant](https://github.com/B3none/cs2-instaplant)| `1.0.0` | Allows terrorists to plant the bomb instantly
 [CS2 Retakes Allocator](https://github.com/yonilerner/cs2-retakes-allocator)| `1.0.8` | Advanced weapon allocation for B3none/cs2-retakes
+[CS2 Whitelist](https://github.com/PhantomYopta/CS2_WhiteList)|`2.0`| Restricts access to the server for SteamID members/employees listed in the whitelist
 
 ## Custom files
 
