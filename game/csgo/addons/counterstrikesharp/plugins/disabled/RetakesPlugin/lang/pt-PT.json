@@ -1,0 +1,12 @@
+{
+  "queue.joined": "Você foi colocado na fila de espera, aguarda a próxima ronda.",
+  "queue.waiting": "As equipas estão cheias de momento com [GREEN]{0}[NORMAL] players. Você está na fila de espera.",
+
+  "bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Ts[NORMAL] vs [PURPLE]{2} CTs",
+
+  "teams.scramble": "Terroristas venceram [GREEN]{0}[NORMAL] rondas consecutivas. [PURPLE]Equipas estão sendo embaralhadas!",
+  "teams.almost_scramble": "Terroristas venceram [GREEN]{0}[NORMAL] rondas consecutivas - se ganharem mais [GREEN]{1} ronda, [PURPLE]as equipas serão embaralhadas.",
+  "teams.win_streak": "Terroristas venceram [GREEN]{0}[NORMAL] rondas consecutivas!",
+  "teams.win_streak_over": "Contra-Terroristas terminaram uma sequência de rondas consecutivas [GREEN]{0}[NORMAL]!",
+  "teams.admin_scramble": "{0} definiu para as equipas serem embaralhadas na próxima ronda."
+}

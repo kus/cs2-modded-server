@@ -1,0 +1,12 @@
+﻿{
+  "queue.joined": "您已被放入等待队列。",
+  "queue.waiting": "游戏当前已满，共有[GREEN]{0}[NORMAL]名玩家。您正在等待队列中。",
+  
+  "bombsite.announcement": "回防[GREEN]{0}[NORMAL]包点：[LIGHT_RED]{1}个T恐怖分子[NORMAL]对阵[PURPLE]{2}个CT反恐精英",
+  
+  "teams.scramble": "T连续赢得[GREEN]{0}[NORMAL]个回合。[PURPLE]正在重新打乱队伍！",
+  "teams.almost_scramble": "T连续赢得[GREEN]{0}[NORMAL]个回合 - 如果他们再赢[GREEN]{1}个回合，[PURPLE]将重新打乱队伍。",
+  "teams.win_streak": "T连续赢得[GREEN]{0}[NORMAL]个回合！",
+  "teams.win_streak_over": "CT结束了[GREEN]{0}[NORMAL]个回合的连胜！",
+  "teams.admin_scramble": "{0}已设置下一回合重新打乱队伍。"
+}

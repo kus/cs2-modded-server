@@ -8,7 +8,5 @@
   "teams.almost_scramble": "Teröristler [GREEN]{0}[NORMAL] el arka arkaya kazandı - eğer [GREEN]{1} el daha alırlarsa, [PURPLE]takımlar karıştırılacak.",
   "teams.win_streak": "Teröristler [GREEN]{0}[NORMAL] el arka arkaya kazandı!",
   "teams.win_streak_over": "Anti-Teröristler, [GREEN]{0}[NORMAL]-el devam eden seriyi bozdu!",
-  "teams.admin_scramble": "{0}, takımları gelecek el karıştırılmaya ayarladı.",
-
-  "bombsite.failed_to_plant": "[PURPLE]{0}[NORMAL] bombayı kuramadı..."
+  "teams.admin_scramble": "{0}, takımları gelecek el karıştırılmaya ayarladı."
 }
