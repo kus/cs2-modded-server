@@ -512,6 +512,14 @@ rcon say "hi"
 
 And check the ports cs2 is using on your OS i.e. on Ubuntu `sudo lsof -i -P -n | head -n 1; sudo lsof -i -P -n | grep cs2`.
 
+## Manually updating Metamod:Source and CounterStrikeSharp
+
+Go to the Releases page for [Metamod:Source](http://www.sourcemm.net/downloads.php?branch=master) and [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) and download the latest. You need to merge the `addons` folder from the zips into the `/game/csgo/addons` of this repo. This is easy to do with unix based systems with rsync:
+
+First open terminal and `cd` into the folder where you unzipped the zips i.e.: `cd ~/Downloads` then update the command below with the full path to the repo and run it:
+
+`rsync -rhavz --exclude "._*" --exclude ".DS_Store" --partial --progress --stats ./addons/ /Users/kus/dev/personal/counter-strike/cs2-modded-server/game/csgo/addons/`
+
 ## License
 
 See `LICENSE` for more details.
