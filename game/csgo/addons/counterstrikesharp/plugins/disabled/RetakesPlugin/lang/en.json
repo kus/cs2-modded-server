@@ -1,12 +1,17 @@
 ﻿{
-  "queue.joined": "You have been placed in the waiting queue.",
-  "queue.waiting": "The game is currently full with [GREEN]{0}[NORMAL] players. You are in the waiting queue.",
-
-  "bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Ts[NORMAL] vs [PURPLE]{2} CTs",
+  "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
   
-  "teams.scramble": "The terrorists won [GREEN]{0}[NORMAL] rounds in a row. [PURPLE]Teams are being scrambled!",
-  "teams.almost_scramble": "The terrorists have won [GREEN]{0}[NORMAL] rounds in a row - if they win [GREEN]{1} more, [PURPLE]teams will be scrambled.",
-  "teams.win_streak": "The terrorists have won [GREEN]{0}[NORMAL] rounds in a row!",
-  "teams.win_streak_over": "The CTs have ended a [GREEN]{0}[NORMAL]-round long win streak!",
-  "teams.admin_scramble": "{0} has set the teams to be scrambled next round."
+  "retakes.queue.joined": "You have been placed in the waiting queue.",
+  "retakes.queue.waiting": "The game is currently full with [GREEN]{0}[NORMAL] players. You are in the waiting queue.",
+  "retakes.queue.replaced_by_vip": "You have been replaced by VIP player [GREEN]{0}[NORMAL].",
+  "retakes.queue.vip_took_place": "You have taken [GREEN]{0}[NORMAL]'s place in the game.",
+
+  "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Ts[NORMAL] vs [PURPLE]{2} CTs",
+  "retakes.voices.toggle": "You have {0} voice announcements!",
+  
+  "retakes.teams.scramble": "The terrorists won [GREEN]{0}[NORMAL] rounds in a row. [PURPLE]Teams are being scrambled!",
+  "retakes.teams.almost_scramble": "The terrorists have won [GREEN]{0}[NORMAL] rounds in a row - if they win [GREEN]{1} more, [PURPLE]teams will be scrambled.",
+  "retakes.teams.win_streak": "The terrorists have won [GREEN]{0}[NORMAL] rounds in a row!",
+  "retakes.teams.win_streak_over": "The CTs have ended a [GREEN]{0}[NORMAL]-round long win streak!",
+  "retakes.teams.admin_scramble": "{0} has set the teams to be scrambled next round."
 }

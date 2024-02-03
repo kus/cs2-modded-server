@@ -1,12 +1,14 @@
 {
-  "queue.joined": "Du är placerad i kön.",
-  "queue.waiting": "Matchen är just nu full med [GREEN]{0}[NORMAL] spelare. Du är i kö.",
+  "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
+  
+  "retakes.queue.joined": "Du är placerad i kön.",
+  "retakes.queue.waiting": "Matchen är just nu full med [GREEN]{0}[NORMAL] spelare. Du är i kö.",
 
-  "bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Terrorister[NORMAL] vs [PURPLE]{2} Anti-terrorister.",
+  "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Terrorister[NORMAL] vs [PURPLE]{2} Anti-terrorister.",
 
-  "teams.scramble": "Terroristerna har vunnit [GREEN]{0}[NORMAL] rundor i rad. [PURPLE]Blandar om lagen!",
-  "teams.almost_scramble": "Terroristerna har vunnit [GREEN]{0}[NORMAL] rundor i rad - vinner de [GREEN]{1} till, [PURPLE]så blandas lagen om.",
-  "teams.win_streak": "Terroristerna har vunnit [GREEN]{0}[NORMAL] rundor i rad!",
-  "teams.win_streak_over": "Anti-terroristerna har avbrutit terroristernas [GREEN]{0}[NORMAL] raka vinster!",
-  "teams.admin_scramble": "{0} har satt lagen att blandas om nästa runda."
+  "retakes.teams.scramble": "Terroristerna har vunnit [GREEN]{0}[NORMAL] rundor i rad. [PURPLE]Blandar om lagen!",
+  "retakes.teams.almost_scramble": "Terroristerna har vunnit [GREEN]{0}[NORMAL] rundor i rad - vinner de [GREEN]{1} till, [PURPLE]så blandas lagen om.",
+  "retakes.teams.win_streak": "Terroristerna har vunnit [GREEN]{0}[NORMAL] rundor i rad!",
+  "retakes.teams.win_streak_over": "Anti-terroristerna har avbrutit terroristernas [GREEN]{0}[NORMAL] raka vinster!",
+  "retakes.teams.admin_scramble": "{0} har satt lagen att blandas om nästa runda."
 }

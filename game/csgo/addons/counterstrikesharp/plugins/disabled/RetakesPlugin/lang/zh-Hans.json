@@ -1,0 +1,14 @@
+﻿{
+  "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
+  
+  "retakes.queue.joined": "您已被放入等待队列。",
+  "retakes.queue.waiting": "游戏当前已满，共有[GREEN]{0}[NORMAL]名玩家。您正在等待队列中。",
+  
+  "retakes.bombsite.announcement": "回防[GREEN]{0}[NORMAL]包点：[LIGHT_RED]{1}名T[NORMAL]对阵[PURPLE]{2}名CT",
+  
+  "retakes.teams.scramble": "T连续赢得[GREEN]{0}[NORMAL]个回合。[PURPLE]正在重新打乱队伍！",
+  "retakes.teams.almost_scramble": "T连续赢得[GREEN]{0}[NORMAL]个回合 - 如果他们再赢[GREEN]{1}个回合，[PURPLE]将重新打乱队伍。",
+  "retakes.teams.win_streak": "T连续赢得[GREEN]{0}[NORMAL]个回合！",
+  "retakes.teams.win_streak_over": "CT结束了[GREEN]{0}[NORMAL]个回合的连胜！",
+  "retakes.teams.admin_scramble": "{0}已设置下一回合重新打乱队伍。"
+}

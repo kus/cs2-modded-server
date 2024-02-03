@@ -1,12 +1,14 @@
 {
-  "queue.joined": "Fuiste puesto en la lista de espera.",
-  "queue.waiting": "La partida está llena con [GREEN]{0}[NORMAL] jugadores. Te encuentras en la lista de espera.",
+  "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
+  
+  "retakes.queue.joined": "Fuiste puesto en la lista de espera.",
+  "retakes.queue.waiting": "La partida está llena con [GREEN]{0}[NORMAL] jugadores. Te encuentras en la lista de espera.",
 
-  "bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Ts[NORMAL] vs [PURPLE]{2} CTs",
+  "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Ts[NORMAL] vs [PURPLE]{2} CTs",
 
-  "teams.scramble": "Los terroristas ganaron [GREEN]{0}[NORMAL] rondas seguidas. [PURPLE]Los equipos serán mezclados!",
-  "teams.almost_scramble": "Los terroristas van ganando [GREEN]{0}[NORMAL] rondas seguidas - Si ganan [GREEN]{1} más, [PURPLE]los equipos serán a mezclados.",
-  "teams.win_streak": "Los terroristas ganaron [GREEN]{0}[NORMAL] rondas seguidas!",
-  "teams.win_streak_over": "Los CTs habían perdido [GREEN]{0}[NORMAL] rondas, pero al fin ganaron 1.",
-  "teams.admin_scramble": "{0} Los equipos serán a mezclados en la siguiente ronda."
+  "retakes.teams.scramble": "Los terroristas ganaron [GREEN]{0}[NORMAL] rondas seguidas. [PURPLE]Los equipos serán mezclados!",
+  "retakes.teams.almost_scramble": "Los terroristas van ganando [GREEN]{0}[NORMAL] rondas seguidas - Si ganan [GREEN]{1} más, [PURPLE]los equipos serán a mezclados.",
+  "retakes.teams.win_streak": "Los terroristas ganaron [GREEN]{0}[NORMAL] rondas seguidas!",
+  "retakes.teams.win_streak_over": "Los CTs habían perdido [GREEN]{0}[NORMAL] rondas, pero al fin ganaron 1.",
+  "retakes.teams.admin_scramble": "{0} Los equipos serán a mezclados en la siguiente ronda."
 }

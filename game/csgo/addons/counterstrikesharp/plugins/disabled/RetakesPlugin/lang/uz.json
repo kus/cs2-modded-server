@@ -1,0 +1,17 @@
+{
+  "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
+  
+  "retakes.queue.joined": "Siz kutish navbatiga qo‘shildingiz.",
+  "retakes.queue.waiting": "O‘yin hozirda [GREEN]{0}[NORMAL] o‘yinchilar bilan to‘la. Siz kutish navbatidasiz.",
+  "retakes.queue.replaced_by_vip": "Siz vip o‘yinchi [GREEN]{0}[NORMAL] bilan almashtirildingiz.",
+  "retakes.queue.vip_took_place": "Siz [GREEN]{0}[NORMAL]ning o‘rniga o‘yinga kirdingiz.",
+
+  "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Tlar[NORMAL] va [BLUE]{2} KTlar",
+  "retakes.voices.toggle": "Siz ovozli e‘lonlarni {0}!",
+  
+  "retakes.teams.scramble": "Terrorchilar ketma-ket [GREEN]{0}[NORMAL] raundda g‘alaba qozonishdi. [PURPLE]Jamoalar aralashtirildi!",
+  "retakes.teams.almost_scramble": "Terrorchilar ketma-ket [GREEN]{0}[NORMAL] raundda g‘alaba qozonishdi - agar ular yana [GREEN]{1} ta g‘alaba qozonishsa, [PURPLE]jamoalar aralashtiriladi.",
+  "retakes.teams.win_streak": "Terrorchilar ketma-ket [GREEN]{0}[NORMAL] raundda g‘alaba qozonishdi!",
+  "retakes.teams.win_streak_over": "KTlar [GREEN]{0}[NORMAL]-raundlik uzoq davom etgan g‘alabali seriyasini tugatdi!",
+  "retakes.teams.admin_scramble": "{0} keyingi raundda jamoalarni aralashtirishni o‘rnatdi."
+}

@@ -1,12 +1,14 @@
 {
-  "queue.joined": "Du har blitt plassert i kø for å bli med.",
-  "queue.waiting": "Spillet er for øyeblikket fullt med [GREEN]{0}[NORMAL] spillere. Du er nå i køen for å bli med.",
+  "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
+  
+  "retakes.queue.joined": "Du har blitt plassert i kø for å bli med.",
+  "retakes.queue.waiting": "Spillet er for øyeblikket fullt med [GREEN]{0}[NORMAL] spillere. Du er nå i køen for å bli med.",
 
-  "bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Ts[NORMAL] mot [PURPLE]{2} CTs",
+  "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Ts[NORMAL] mot [PURPLE]{2} CTs",
 
-  "teams.scramble": "Terroristene har vunnet [GREEN]{0}[NORMAL] runder på rad. [PURPLE]Lagene blir samlet!",
-  "teams.almost_scramble": "Terroristene har vunnet [GREEN]{0}[NORMAL] runder på rad - hvis de vinner [GREEN]{1} mer, [PURPLE]vil lagene bli endret.",
-  "teams.win_streak": "Terroristene har vunnet [GREEN]{0}[NORMAL] runder på rad!",
-  "teams.win_streak_over": "CT har sluttet en [GREEN]{0}[NORMAL]-runders lang seiersrekke!",
-  "teams.admin_scramble": "{0} har satt lagene til å bli samlet neste runde."
+  "retakes.teams.scramble": "Terroristene har vunnet [GREEN]{0}[NORMAL] runder på rad. [PURPLE]Lagene blir samlet!",
+  "retakes.teams.almost_scramble": "Terroristene har vunnet [GREEN]{0}[NORMAL] runder på rad - hvis de vinner [GREEN]{1} mer, [PURPLE]vil lagene bli endret.",
+  "retakes.teams.win_streak": "Terroristene har vunnet [GREEN]{0}[NORMAL] runder på rad!",
+  "retakes.teams.win_streak_over": "CT har sluttet en [GREEN]{0}[NORMAL]-runders lang seiersrekke!",
+  "retakes.teams.admin_scramble": "{0} har satt lagene til å bli samlet neste runde."
 }

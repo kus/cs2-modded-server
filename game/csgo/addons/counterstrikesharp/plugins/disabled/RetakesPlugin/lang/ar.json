@@ -1,0 +1,17 @@
+{
+    "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
+    
+    "retakes.queue.joined": "لقد تم وضعك في قائمة الانتظار.",
+    "retakes.queue.waiting": "اللعبة ممتلئة حالياً ب[GREEN]{0}[NORMAL] لاعبين. أنت في قائمة الانتظار.",
+    "retakes.queue.replaced_by_vip": "لقد تم استبدالك بلاعب VIP [GREEN]{0}[NORMAL].",
+    "retakes.queue.vip_took_place": "لقد أخذت مكان [GREEN]{0}[NORMAL] في اللعبة.",
+  
+    "retakes.bombsite.announcement": "إعادة الاستيلاء على [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} من الإرهابيين[NORMAL] مقابل [PURPLE]{2} من قوات مكافحة الإرهاب",
+    
+    "retakes.teams.scramble": "فاز الإرهابيون [GREEN]{0}[NORMAL] جولات متتالية. [PURPLE]يتم خلط الفرق!",
+    "retakes.teams.almost_scramble": "فاز الإرهابيون [GREEN]{0}[NORMAL] جولات متتالية - إذا فازوا [GREEN]{1} مرة أخرى، [PURPLE]سيتم خلط الفرق.",
+    "retakes.teams.win_streak": "فاز الإرهابيون [GREEN]{0}[NORMAL] جولات متتالية!",
+    "retakes.teams.win_streak_over": "قوات مكافحة الإرهاب قد أنهت سلسلة انتصارات متتالية [GREEN]{0}[NORMAL] جولة!",
+    "retakes.teams.admin_scramble": "{0} قام بضبط الفرق لتُخلط في الجولة التالية."
+  }
+  

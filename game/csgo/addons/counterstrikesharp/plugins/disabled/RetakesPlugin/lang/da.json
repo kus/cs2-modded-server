@@ -1,12 +1,14 @@
 {
-  "queue.joined": "Du er blevet placeret i køen.",
-  "queue.waiting": "Dette spil er fuldt med [GREEN]{0}[NORMAL] spillere. Du er blevet placeret i køen.",
+  "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
+  
+  "retakes.queue.joined": "Du er blevet placeret i køen.",
+  "retakes.queue.waiting": "Dette spil er fuldt med [GREEN]{0}[NORMAL] spillere. Du er blevet placeret i køen.",
 
-  "bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} T'er[NORMAL] mod [PURPLE]{2} CT'er",
+  "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} T'er[NORMAL] mod [PURPLE]{2} CT'er",
 
-  "teams.scramble": "Terroristerne har vundet [GREEN]{0}[NORMAL] runder i træk. [PURPLE]Holdende bliver blandet!",
-  "teams.almost_scramble": "Terroristerne har vundet [GREEN]{0}[NORMAL] runder i træk - hvis de vinder [GREEN]{1} mere, [PURPLE]bliver holdende blandet.",
-  "teams.win_streak": "Terroristerne har vundet [GREEN]{0}[NORMAL] runder i træk!",
-  "teams.win_streak_over": "CT'erne har afsluttet en [GREEN]{0}[NORMAL]-runde lang win streak!",
-  "teams.admin_scramble": "{0} har sat holdende til at blive blandet."
+  "retakes.teams.scramble": "Terroristerne har vundet [GREEN]{0}[NORMAL] runder i træk. [PURPLE]Holdende bliver blandet!",
+  "retakes.teams.almost_scramble": "Terroristerne har vundet [GREEN]{0}[NORMAL] runder i træk - hvis de vinder [GREEN]{1} mere, [PURPLE]bliver holdende blandet.",
+  "retakes.teams.win_streak": "Terroristerne har vundet [GREEN]{0}[NORMAL] runder i træk!",
+  "retakes.teams.win_streak_over": "CT'erne har afsluttet en [GREEN]{0}[NORMAL]-runde lang win streak!",
+  "retakes.teams.admin_scramble": "{0} har sat holdende til at blive blandet."
 }

@@ -1,0 +1,16 @@
+{
+  "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
+
+  "retakes.queue.joined": "Sinut on laitettu jonoon odottamaan peliin siirtymistä.",
+  "retakes.queue.waiting": "Peli on tällä hetkellä täysi [GREEN]{0}[NORMAL] pelaajalla. Olet jonossa odottamassa peliin.",
+  "retakes.queue.replaced_by_vip": "Sinun paikkasi pelissä otti VIP pelaaja [GREEN]{0}[NORMAL].",
+  "retakes.queue.vip_took_place": "Olet ottanut pelaajan [GREEN]{0}[NORMAL] paikan pelissä.",
+
+  "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Ts[NORMAL] vs [PURPLE]{2} CTs",
+
+  "retakes.teams.scramble": "Terot ovat voittaneet [GREEN]{0}[NORMAL] kierrosta putkeen. [PURPLE]Tiimit sekoitetaan!",
+  "retakes.teams.almost_scramble": "Terot ovat voittanut [GREEN]{0}[NORMAL] kierrosta putkeen - Jos he voittavat [GREEN]{1} lisää, [PURPLE]tiimit sekoitetaan.",
+  "retakes.teams.win_streak": "Terot ovat voittaneet [GREEN]{0}[NORMAL] kierrosta putkeen!",
+  "retakes.teams.win_streak_over": "CT hävisi [GREEN]{0}[NORMAL]-kierrosta kestäneen voittoputken!",
+  "retakes.teams.admin_scramble": "{0} asetti tiimit sekoittumaan seuraavalla kierroksella."
+}

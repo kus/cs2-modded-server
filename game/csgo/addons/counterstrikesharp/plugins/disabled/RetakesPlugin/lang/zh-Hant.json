@@ -1,0 +1,14 @@
+﻿{
+  "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
+  
+  "retakes.queue.joined": "您已被放入等待佇列。",
+  "retakes.queue.waiting": "遊戲目前已滿，共有[GREEN]{0}[NORMAL]名玩家。您正在等待佇列中。",
+  
+  "retakes.bombsite.announcement": "回防[GREEN]{0}[NORMAL]炸彈點：[LIGHT_RED]{1}名恐怖份子[NORMAL]對陣[PURPLE]{2}名反恐小组",
+  
+  "retakes.teams.scramble": "T連續贏得[GREEN]{0}[NORMAL]個回合。[PURPLE]正在重新打亂隊伍！",
+  "retakes.teams.almost_scramble": "T連續贏得[GREEN]{0}[NORMAL]個回合 - 如果他們再贏[GREEN]{1}個回合，[PURPLE]將重新打亂隊伍。",
+  "retakes.teams.win_streak": "T連續贏得[GREEN]{0}[NORMAL]個回合！",
+  "retakes.teams.win_streak_over": "CT結束了[GREEN]{0}[NORMAL]個回合的連勝！",
+  "retakes.teams.admin_scramble": "{0}已設定下一回合重新打亂隊伍。"
+}
