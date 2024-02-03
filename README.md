@@ -79,7 +79,7 @@ Mod | Version | Why
 [SimpleAdmin](https://github.com/connercsbn/SimpleAdmin/)| `0.1.2` | Adds basic administrator functions
 [CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon)| `1.2.0` | This is a rudimentary implementation of a RCON plugin for CS2 using CounterStrikeSharp as RCON does not work whilst connected to the server
 [SharpTimer](https://github.com/DEAFPS/SharpTimer/)| `0.1.9` | SharpTimer is a simple Surf/KZ/Bhop/MG/Deathrun/etc CS2 Timer plugin
-[GunGame](https://github.com/ssypchenko/cs2-gungame)| `1.0.5` | GunGame mode on Counter Strike Sharp
+[GunGame](https://github.com/ssypchenko/cs2-gungame)| `1.0.4` | GunGame mode on Counter Strike Sharp
 [CS2-Multi-1v1](https://github.com/rockCityMath/CS2-Multi-1v1)| `1.0.0` | A CS2 plugin that allows players to fight 1v1 in ranked arenas.
 [CS2 Retakes](https://github.com/B3none/cs2-retakes)| `1.3.24` | CS2 implementation of retakes. Based on the version for CS:GO by Splewis.
 [CS2 Instadefuse](https://github.com/B3none/cs2-instadefuse)| `1.4.2` | Allows a CT to instantly defuse the bomb when nothing can prevent defusal. Written in C# for CounterStrikeSharp.
