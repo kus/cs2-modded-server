@@ -523,6 +523,14 @@ First open terminal and `cd` into the folder where you unzipped the zips i.e.: `
 
 `rsync -rhavz --exclude "._*" --exclude ".DS_Store" --partial --progress --stats ./addons/ /Users/kus/dev/personal/counter-strike/cs2-modded-server/game/csgo/addons/`
 
+## Enable Whitelist so only a list of people can play
+
+If you want to enable a whitelist on your server load the plugin by putting this `css_plugins load "plugins/disabled/WhiteList/WhiteList.dll"` in one of your `.cfg` files.
+
+If you want it to load on every mod on your server, you can put it in your `/custom_files/cfg/custom_all.cfg` file.
+
+The whitelist file is located at `/game/csgo/addons/counterstrikesharp/plugins/disabled/WhiteList/whitelist.txt` which you would put in `/custom_files/addons/counterstrikesharp/plugins/disabled/WhiteList/whitelist.txt` so it is not overwritten.
+
 ## License
 
 See `LICENSE` for more details.
