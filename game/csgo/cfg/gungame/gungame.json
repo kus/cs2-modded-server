@@ -61,8 +61,8 @@
   "_comment.KnifeFlash": "Gives a Flash grenade on knife level",
   "BlockWeaponSwitchIfKnife": false,
   "_comment.BlockWeaponSwitchIfKnife": "Block weapon switch if killer leveled up with knife: true - Block weapon switch, false - Do not block weapon switch (It does not work now)",
-  "KnifeInfoSound": "sounds/buttons/light_power_on_switch_01.wav",
-  "_comment.KnifeInfoSound": "Sound confirmation someone on the knife level",
+  "KnifeInfoSound": "sounds/ui/deathmatch_kill_bonus.wav",
+  "_comment.KnifeInfoSound": "Sound confirmation someone on the nade level",
   "NadeBonusWeapon": "glock",
   "_comment.NadeBonusWeapon": "Gives the player a weapon on nade level, 'NadeBonus' 'glock' - gives glock, 'NadeBonus' '' - feature disabled",
   "RemoveBonusWeaponAmmo": false,
@@ -232,15 +232,6 @@
   ],
   "LevelDownSound": "sounds/ui/armsrace_demoted.wav",
   "LevelUpSound": "sounds/ui/armsrace_level_up.wav",
-  "_comment.LevelUpSound": "Sound for player when he leveled up",
   "LevelStealUpSound": "sounds/training/pointscored.wav",
-  "_comment.LevelStealUpSound": "Sound for player when he stole level",
-  "KnifeStealSound": [
-    "sounds/vo/commander/commander_comment_07.wav",
-    "sounds/vo/commander/commander_comment_08.wav",
-    "sounds/vo/commander/commander_comment_09.wav",
-    "sounds/vo/commander/commander_comment_14.wav"
-  ],
-  "_comment.KnifeStealSound": "List of sounds for everyone when someone stole a level by knife",
   "ConfigVersion": 1
 }

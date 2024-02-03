@@ -8,18 +8,18 @@
     ".NETCoreApp,Version=v7.0": {
       "GG2/1.0.0": {
         "dependencies": {
-          "CounterStrikeSharp.API": "1.0.153",
-          "Dapper": "2.1.28",
-          "Microsoft.Data.Sqlite": "8.0.1",
+          "CounterStrikeSharp.API": "1.0.142",
+          "Dapper": "2.1.24",
+          "Microsoft.Data.Sqlite": "8.0.0",
           "Microsoft.Extensions.Logging": "8.0.0",
-          "MySqlConnector": "2.3.5",
+          "MySqlConnector": "2.3.3",
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
           "GG2.dll": {}
         }
       },
-      "CounterStrikeSharp.API/1.0.153": {
+      "CounterStrikeSharp.API/1.0.142": {
         "dependencies": {
           "McMaster.NETCore.Plugins": "1.4.0",
           "Microsoft.CSharp": "4.7.0",
@@ -36,16 +36,16 @@
         },
         "runtime": {
           "lib/net7.0/CounterStrikeSharp.API.dll": {
-            "assemblyVersion": "1.0.153.0",
-            "fileVersion": "1.0.153.0"
+            "assemblyVersion": "1.0.142.0",
+            "fileVersion": "1.0.142.0"
           }
         }
       },
-      "Dapper/2.1.28": {
+      "Dapper/2.1.24": {
         "runtime": {
           "lib/net7.0/Dapper.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.1.28.55233"
+            "fileVersion": "2.1.24.50284"
           }
         }
       },
@@ -62,20 +62,20 @@
         }
       },
       "Microsoft.CSharp/4.7.0": {},
-      "Microsoft.Data.Sqlite/8.0.1": {
+      "Microsoft.Data.Sqlite/8.0.0": {
         "dependencies": {
-          "Microsoft.Data.Sqlite.Core": "8.0.1",
+          "Microsoft.Data.Sqlite.Core": "8.0.0",
           "SQLitePCLRaw.bundle_e_sqlite3": "2.1.6"
         }
       },
-      "Microsoft.Data.Sqlite.Core/8.0.1": {
+      "Microsoft.Data.Sqlite.Core/8.0.0": {
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.6"
         },
         "runtime": {
           "lib/net6.0/Microsoft.Data.Sqlite.dll": {
-            "assemblyVersion": "8.0.1.0",
-            "fileVersion": "8.0.123.58002"
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
           }
         }
       },
@@ -445,14 +445,14 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
+      "MySqlConnector/2.3.3": {
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0"
         },
         "runtime": {
           "lib/net7.0/MySqlConnector.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.3.5.0"
+            "fileVersion": "2.3.3.0"
           }
         }
       },
@@ -696,19 +696,19 @@
       "serviceable": false,
       "sha512": ""
     },
-    "CounterStrikeSharp.API/1.0.153": {
+    "CounterStrikeSharp.API/1.0.142": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oA9QTvsRErmxnZ4AlEIn1ji0quumyqF4QkEHLjxaJ404zaMEuFlSIDVYvjsDz91LbIzxlBsfF2j+O8W2x2Wofw==",
-      "path": "counterstrikesharp.api/1.0.153",
-      "hashPath": "counterstrikesharp.api.1.0.153.nupkg.sha512"
+      "sha512": "sha512-d1MdKKeVSUc1WAidjkK9B5FdSLnX/SOS9zFD/IMjaMpMiezIzznOUWluGkjx3FOyyZs4imZzZfS1BLC8ChR9bA==",
+      "path": "counterstrikesharp.api/1.0.142",
+      "hashPath": "counterstrikesharp.api.1.0.142.nupkg.sha512"
     },
-    "Dapper/2.1.28": {
+    "Dapper/2.1.24": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ha49pzOEDmCPkMxwfPSR/wxa/6RD3r42TESIgpzpi7FXq/gNVUuJVEO+wtUzntNRhtmq3BKCl0s0aAlSZLkBUA==",
-      "path": "dapper/2.1.28",
-      "hashPath": "dapper.2.1.28.nupkg.sha512"
+      "sha512": "sha512-/2t2vsdJyZRsk13AsWigZpsuFvEwK+o3v862cEULXoww905gyKhJFSuwmZI/4Ui9COX9ZCFCI09UHyH4wVYl3A==",
+      "path": "dapper/2.1.24",
+      "hashPath": "dapper.2.1.24.nupkg.sha512"
     },
     "McMaster.NETCore.Plugins/1.4.0": {
       "type": "package",
@@ -724,19 +724,19 @@
       "path": "microsoft.csharp/4.7.0",
       "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
-    "Microsoft.Data.Sqlite/8.0.1": {
+    "Microsoft.Data.Sqlite/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+7uDWNYZmLrVq9eABAKwy1phGbpoFVohKCUoh/nGg9WiBwi856EkAJYFiQhTJWoXxzpInkLFj/6KACoSB7ODYg==",
-      "path": "microsoft.data.sqlite/8.0.1",
-      "hashPath": "microsoft.data.sqlite.8.0.1.nupkg.sha512"
+      "sha512": "sha512-H+iC5IvkCCKSNHXzL3JARvDn7VpkvuJM91KVB89sKjeTF/KX/BocNNh93ZJtX5MCQKb/z4yVKgkU2sVIq+xKfg==",
+      "path": "microsoft.data.sqlite/8.0.0",
+      "hashPath": "microsoft.data.sqlite.8.0.0.nupkg.sha512"
     },
-    "Microsoft.Data.Sqlite.Core/8.0.1": {
+    "Microsoft.Data.Sqlite.Core/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-s8C8xbwMb79EqzTaIhwiBrYtbv6ATnUW19pJed4fKVgN5K4VPQ7JUGqBLztknvD6EJIMKrfRnINGTjnZghrDGw==",
-      "path": "microsoft.data.sqlite.core/8.0.1",
-      "hashPath": "microsoft.data.sqlite.core.8.0.1.nupkg.sha512"
+      "sha512": "sha512-pujbzfszX7jAl7oTbHhqx7pxd9jibeyHHl8zy1gd55XMaKWjDtc5XhhNYwQnrwWYCInNdVoArbaaAvLgW7TwuA==",
+      "path": "microsoft.data.sqlite.core/8.0.0",
+      "hashPath": "microsoft.data.sqlite.core.8.0.0.nupkg.sha512"
     },
     "Microsoft.DotNet.ApiCompat.Task/7.0.404": {
       "type": "package",
@@ -941,12 +941,12 @@
       "path": "microsoft.extensions.primitives/8.0.0",
       "hashPath": "microsoft.extensions.primitives.8.0.0.nupkg.sha512"
     },
-    "MySqlConnector/2.3.5": {
+    "MySqlConnector/2.3.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AmEfUPkFl+Ev6jJ8Dhns3CYHBfD12RHzGYWuLt6DfG6/af6YvOMyPz74ZPPjBYQGRJkumD2Z48Kqm8s5DJuhLA==",
-      "path": "mysqlconnector/2.3.5",
-      "hashPath": "mysqlconnector.2.3.5.nupkg.sha512"
+      "sha512": "sha512-RmzpYUKmvf/hJcAOcymU+cUg6OopL+99q7P27hniyw2Nu907DBLsEZVejpqhBLI2qAYgEk9fKC9yn46vkQEUfQ==",
+      "path": "mysqlconnector/2.3.3",
+      "hashPath": "mysqlconnector.2.3.3.nupkg.sha512"
     },
     "Newtonsoft.Json/13.0.3": {
       "type": "package",
