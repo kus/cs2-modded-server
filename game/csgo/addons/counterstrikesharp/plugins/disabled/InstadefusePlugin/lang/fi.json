@@ -1,0 +1,7 @@
+{
+  "instadefuse.prefix": "[[GREEN]Retakes[NORMAL]] ",
+  
+  "instadefuse.unsuccessful": "{0} oli [DARK_RED]{1} sekuntia[WHITE] jäljessä pommin purusta.",
+  "instadefuse.successful": "{0} purki pommin [GREEN]{1} sekuntia[WHITE] ennen räjähdystä.",
+  "instadefuse.not_possible": "Pommin pikapurku ei mahdollista, kun kranaatti on uhkana!"
+}

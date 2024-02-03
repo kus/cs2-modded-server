@@ -1,0 +1,7 @@
+{
+  "instadefuse.prefix": "[[GREEN]Retakes[NORMAL]] ",
+  
+  "instadefuse.unsuccessful": "{0} كان على بُعد [DARK_RED]{1} ثوانٍ[WHITE] من نزع القنبلة.",
+  "instadefuse.successful": "{0} قام بنزع القنبلة مع تبقي [GREEN]{1} ثوانٍ[WHITE] على القنبلة.",
+  "instadefuse.not_possible": "لا يمكن نزع القنبلة فوراً، هناك تهديد بقنبلة يدوية!"
+}

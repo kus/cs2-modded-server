@@ -1,0 +1,7 @@
+{
+  "instadefuse.prefix": "[[GREEN]Retakes[NORMAL]] ",
+  
+  "instadefuse.unsuccessful": "{0} estava a [DARK_RED]{1} segundos[WHITE] da desativação.",
+  "instadefuse.successful": "{0} defusou com [GREEN]{1} segundos[WHITE] restantes na bomba.",
+  "instadefuse.not_possible": "Defuse instantâneo não é possível, há uma ameaça de granada!"
+}

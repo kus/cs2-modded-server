@@ -1,0 +1,7 @@
+{
+  "instadefuse.prefix": "[[GREEN]Retakes[NORMAL]] ",
+  
+  "instadefuse.unsuccessful": "{0} war [DARK_RED]{1} Sekunden[WHITE] davon entfernt, die Bombe zu entschärfen.",
+  "instadefuse.successful": "{0} entschärft mit noch [GREEN]{1} Sekunden.",
+  "instadefuse.not_possible": "Instant Entschärfen ist nicht möglich, da sich eine Granate in der nähe befindet!"
+}
