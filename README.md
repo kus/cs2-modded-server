@@ -14,6 +14,7 @@ Each game mode has a hand full of maps preset so you are ready to go and it's [e
 - Practice (record grenade throws etc)
 - GunGame
 - Retake
+- Executes
 - Wingman (allows more than 4 players) ([Steam API key](#playing-workshop-mapscollections) required)
 - KZ ([Steam API key](#playing-workshop-mapscollections) required)
 - BHop ([Steam API key](#playing-workshop-mapscollections) required)
@@ -85,6 +86,7 @@ Mod | Version | Why
 [CS2 Instadefuse](https://github.com/B3none/cs2-instadefuse)| `1.4.2` | Allows a CT to instantly defuse the bomb when nothing can prevent defusal. Written in C# for CounterStrikeSharp.
 [CS2 Retakes Allocator](https://github.com/yonilerner/cs2-retakes-allocator)| `1.2.12` | Advanced weapon allocation for B3none/cs2-retakes
 [CS2 Whitelist](https://github.com/PhantomYopta/CS2_WhiteList)| `1.0.0`| Restricts access to the server for SteamID members/employees listed in the whitelist
+[CS2 Executes](https://github.com/zwolof/cs2-executes)| `1.0.0` | CS2 implementation of executes. Based on the version for CS:GO by Splewis.
 
 ## Custom files
 
@@ -476,6 +478,7 @@ These are all the available chat commands to change the game mode:
 | `!rcon exec comp`    | Competitive using [MatchZy](https://github.com/shobhit-pathak/MatchZy#usage-commands) |
 | `!rcon exec course`  | Tests players with different traps, kz, surf, bhop                                |
 | `!rcon exec dm`      | Deathmatch                                                                        |
+| `!rcon exec executes`| Executes                                                                          |
 | `!rcon exec gg`      | Gun Game                                                                          |
 | `!rcon exec hns`     | Hide n Seek                                                                       |
 | `!rcon exec kz`      | Kreedz Climbing                                                                   |
