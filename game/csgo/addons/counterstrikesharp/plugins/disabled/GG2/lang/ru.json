@@ -21,8 +21,7 @@
   "leading.onlevel": "{green}{0}{default} лидирует на уровне {1}",
   "levels.behind": "Уровней до лидера: {green}{0}{default}",
   "tiedwith.leader": "{green}{0}{default} сравнялся с лидером на уровне {1}",
-  "winner.is": "Победитель - {0}",
-  "looser.is": "{0} был зарезан последним",
+  "winner.is": "<div>Победил {0}</div>",
   "dontshoot.knife": "Нельзя {lightred}стрелять и дорезать{default} у нас на сервере!",
   "triedshoot.knife": "{0} попробовал {lightred}пострелять и дорезать{default} и потерял уровень!",
   "kill.afk": "Фраг не засчитан, потому что ты убил afk!",
@@ -35,12 +34,5 @@
   "canthe.leveluponbotwithhumans": "За бота {lightpurple}не дают уровень на гранате, если есть другие игроки",
   "music.off": "Вся специфические для GunGame звуки {lightred}ВЫКЛЮЧЕНЫ",
   "music.on": "Вся специфические для GunGame звуки {olive}ВКЛЮЧЕНЫ",
-  "player.rank": "Твой ранг - {olive}{0}",
-  "set.sound": " {olive}Для переключения GunGame звуков команда '!music' в чате",
-  "top.list": " {lightpurple} 'Команда !top' в чате, чтобы посмотреть список лидеров",
-  "your.rank": " {blue} Твой ранг - '!rank' в чате",
-  "nomore.knives": "Только 2 уровня подряд ножом. Пройди уровень оружием",
-  "additionalfrags.left": "Осталось дополнительных фрагов: {0} ",
-  "additionalfrag.have": "У тебя {0} дополнительный фраг за прошлые победы!!!",
-  "additionalfrags.have": "У тебя {0} дополнительных фрага за прошлые победы!!!"
+  "player.rank": "Твой ранг - {olive}{0}"
 } 
