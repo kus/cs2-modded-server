@@ -9,7 +9,7 @@
       "SharpTimer/1.0.0": {
         "dependencies": {
           "Nexd.MySQL": "1.0.2",
-          "CounterStrikeSharp.API": "1.0.142.0"
+          "CounterStrikeSharp.API": "1.0.161.0"
         },
         "runtime": {
           "SharpTimer.dll": {}
@@ -34,11 +34,11 @@
           }
         }
       },
-      "CounterStrikeSharp.API/1.0.142.0": {
+      "CounterStrikeSharp.API/1.0.161.0": {
         "runtime": {
           "CounterStrikeSharp.API.dll": {
-            "assemblyVersion": "1.0.142.0",
-            "fileVersion": "1.0.142.0"
+            "assemblyVersion": "1.0.161.0",
+            "fileVersion": "1.0.161.0"
           }
         }
       }
@@ -64,7 +64,7 @@
       "path": "nexd.mysql/1.0.2",
       "hashPath": "nexd.mysql.1.0.2.nupkg.sha512"
     },
-    "CounterStrikeSharp.API/1.0.142.0": {
+    "CounterStrikeSharp.API/1.0.161.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
