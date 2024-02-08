@@ -1,5 +1,5 @@
 {
-  "Version": 4,
+  "Version": 6,
   "MaxPlayers": 9,
   "TerroristRatio": 0.45,
   "RoundsToScramble": 5,
@@ -8,5 +8,8 @@
   "EnableBombsiteAnnouncementVoices": true,
   "EnableBombsiteAnnouncementCenter": true,
   "ShouldBreakBreakables": false,
-  "ShouldOpenDoors": false
+  "ShouldOpenDoors": false,
+  "IsAutoPlantEnabled": true,
+  "QueuePriorityFlag": "@css/vip",
+  "IsDebugMode": false
 }
