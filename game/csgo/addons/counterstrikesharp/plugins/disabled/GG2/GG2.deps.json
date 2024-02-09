@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "GG2/1.0.0": {
         "dependencies": {
-          "CounterStrikeSharp.API": "1.0.159",
+          "CounterStrikeSharp.API": "1.0.163",
           "Dapper": "2.1.28",
           "MaxMind.GeoIP2": "5.2.0",
           "Microsoft.Data.Sqlite": "8.0.1",
@@ -20,7 +20,7 @@
           "GG2.dll": {}
         }
       },
-      "CounterStrikeSharp.API/1.0.159": {
+      "CounterStrikeSharp.API/1.0.163": {
         "dependencies": {
           "McMaster.NETCore.Plugins": "1.4.0",
           "Microsoft.CSharp": "4.7.0",
@@ -37,8 +37,8 @@
         },
         "runtime": {
           "lib/net7.0/CounterStrikeSharp.API.dll": {
-            "assemblyVersion": "1.0.159.0",
-            "fileVersion": "1.0.159.0"
+            "assemblyVersion": "1.0.163.0",
+            "fileVersion": "1.0.163.0"
           }
         }
       },
@@ -717,12 +717,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "CounterStrikeSharp.API/1.0.159": {
+    "CounterStrikeSharp.API/1.0.163": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-xt9fOqmK+tUBK4/p1UpvKtBjduQbAG2km8dSHFcjuc6an/Oh/A9J4nW+7gcvE/Ut5O8EdsByaZqUOHJt5a8egg==",
-      "path": "counterstrikesharp.api/1.0.159",
-      "hashPath": "counterstrikesharp.api.1.0.159.nupkg.sha512"
+      "sha512": "sha512-T5XDZH5APy+ylNY8l/nRswUb9lvMZKrh4WF+O2EkyBr9oA4BDfAKSz8UArP/NKTomEdEldkRSbt75aImfogg2g==",
+      "path": "counterstrikesharp.api/1.0.163",
+      "hashPath": "counterstrikesharp.api.1.0.163.nupkg.sha512"
     },
     "Dapper/2.1.28": {
       "type": "package",
