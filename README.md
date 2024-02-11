@@ -478,25 +478,26 @@ The easiest way to manage the server is to use the Rcon commands via chat i.e. `
 
 These are all the available chat commands to change the game mode:
 
-| Command                | Game mode                                                                         |
-| ---------------------- | --------------------------------------------------------------------------------- |
-| `!rcon exec 1v1`     | 1v1 (allows more than 2 players)                                                    |
-| `!rcon exec bhop`    | Bunny hop maps                                                                    |
-| `!rcon exec comp`    | Competitive using [MatchZy](https://github.com/shobhit-pathak/MatchZy#usage-commands) |
-| `!rcon exec course`  | Tests players with different traps, kz, surf, bhop                                |
-| `!rcon exec dm`      | Deathmatch                                                                        |
-| `!rcon exec dm-multicfg`| Deathmatch Multi Config                                                           |
-| `!rcon exec executes`| Executes                                                                          |
-| `!rcon exec gg`      | Gun Game                                                                          |
-| `!rcon exec hns`     | Hide n Seek                                                                       |
-| `!rcon exec kz`      | Kreedz Climbing                                                                   |
-| `!rcon exec minigames` | Mini Games                                                                      |
-| `!rcon exec prac`    | Practice (grenade lineups etc)                                                    |
-| `!rcon exec retake`  | Retakes                                                                           |
-| `!rcon exec scoutzknivez` | ScoutzKnivez                                                                 |
-| `!rcon exec soccer`  | Soccer                                                                            |
-| `!rcon exec surf`    | Surf                                                                              |
-| `!rcon exec wingman` | Wingman (allows more than 4 players)                                              |
+| Command                   | Game mode                                                                         |
+| ------------------------- | --------------------------------------------------------------------------------- |
+| `!rcon exec 1v1`          | 1v1 (allows more than 2 players)                                                  |
+| `!rcon exec ar`           | Arms Race                                                                         |
+| `!rcon exec bhop`         | Bunny hop maps                                                                    |
+| `!rcon exec comp`         | Competitive using [MatchZy](https://github.com/shobhit-pathak/MatchZy#usage-commands) |
+| `!rcon exec course`       | Tests players with different traps, kz, surf, bhop                                |
+| `!rcon exec dm`           | Deathmatch                                                                        |
+| `!rcon exec dm-multicfg`  | Deathmatch Multi Config                                                           |
+| `!rcon exec executes`     | Executes                                                                          |
+| `!rcon exec gg`           | Gun Game                                                                          |
+| `!rcon exec hns`          | Hide n Seek                                                                       |
+| `!rcon exec kz`           | Kreedz Climbing                                                                   |
+| `!rcon exec minigames`    | Mini Games                                                                        |
+| `!rcon exec prac`         | Practice (grenade lineups etc)                                                    |
+| `!rcon exec retake`       | Retakes                                                                           |
+| `!rcon exec scoutzknivez` | ScoutzKnivez                                                                      |
+| `!rcon exec soccer`       | Soccer                                                                            |
+| `!rcon exec surf`         | Surf                                                                              |
+| `!rcon exec wingman`      | Wingman (allows more than 4 players)                                              |
 
 Changing between gamemodes multiple times is not recommended, and it is better if you restart the CS2 server in-between.
 
