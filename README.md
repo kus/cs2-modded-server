@@ -91,6 +91,22 @@ Mod | Version | Why
 [CS2 Advertisement](https://github.com/partiusfabaa/cs2-advertisement)| `1.0.6.6` | Allows you to show ads in chat/center/panel. [How?](#enable-advertisements)
 [CS2 Deathmatch](https://github.com/NockyCZ/CS2-Deathmatch)| `1.0.4` | Custom Deathmatch CS2 plugin (Includes custom spawnpoints, multicfg, gun selection, spawn protection, etc)
 
+## Changelog
+
+### 2024-02-11
+
+- Disable GOTV for 1v1 [#50](https://github.com/kus/cs2-modded-server/issues/50) (Thanks @pnallinger)
+- Turn `sv_cheats` on whilst setting all game mode settings then turn off. This will also force cheats to be off if it was turned on then the mode was changed. (Thanks @mavproductions)
+- Delete MatchZy default `savednades.json` so it won't overwrite your own saved nades [#38](https://github.com/kus/cs2-modded-server/discussions/38) (Thanks @mavproductions)
+- ADDED: Arms Race (default CS2 mode)
+- ADDED: CS2 Deathmatch Multi CFG v1.0.4 (Thanks @mavproductions)
+- ADDED: CS2 Advertisement v1.0.6.6 [How to use?](#enable-advertisements) (Thanks @mavproductions)
+- UPDATED: CS2 Retakes Allocator to v1.2.15
+- UPDATED: CS2 Retakes to v1.3.27
+- UPDATED: SharpTimer to v0.2.1
+- UPDATED: MatchZy to v0.7.0
+- UPDATED: CounterStrikeSharp to v164
+
 ## Custom files
 
 > [!NOTE]  
