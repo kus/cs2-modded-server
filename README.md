@@ -95,12 +95,12 @@ Mod | Version | Why
 
 ### 2024-02-11
 
-- Disable GOTV for 1v1 [#50](https://github.com/kus/cs2-modded-server/issues/50) (Thanks @pnallinger)
-- Turn `sv_cheats` on whilst setting all game mode settings then turn off. This will also force cheats to be off if it was turned on then the mode was changed. (Thanks @mavproductions)
-- Delete MatchZy default `savednades.json` so it won't overwrite your own saved nades [#38](https://github.com/kus/cs2-modded-server/discussions/38) (Thanks @mavproductions)
+- Disable GOTV for 1v1 [#50](https://github.com/kus/cs2-modded-server/issues/50) (Thanks [@pnallinger](https://www.github.com/pnallinger))
+- Turn `sv_cheats` on whilst setting all game mode settings then turn off. This will also force cheats to be off if it was turned on then the mode was changed. (Thanks [@mavproductions](https://www.github.com/mavproductions))
+- Delete MatchZy default `savednades.json` so it won't overwrite your own saved nades [#38](https://github.com/kus/cs2-modded-server/discussions/38) (Thanks [@mavproductions](https://www.github.com/mavproductions))
 - ADDED: Arms Race (default CS2 mode)
-- ADDED: CS2 Deathmatch Multi CFG v1.0.4 (Thanks @mavproductions)
-- ADDED: CS2 Advertisement v1.0.6.6 [How to use?](#enable-advertisements) (Thanks @mavproductions)
+- ADDED: CS2 Deathmatch Multi CFG v1.0.4 (Thanks [@mavproductions](https://www.github.com/mavproductions))
+- ADDED: CS2 Advertisement v1.0.6.6 [How to use?](#enable-advertisements) (Thanks [@mavproductions](https://www.github.com/mavproductions))
 - UPDATED: CS2 Retakes Allocator to v1.2.15
 - UPDATED: CS2 Retakes to v1.3.27
 - UPDATED: SharpTimer to v0.2.1
