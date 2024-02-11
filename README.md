@@ -76,11 +76,11 @@ Mod | Version | Why
 [CS2_ExecAfter](https://github.com/kus/CS2_ExecAfter) | `1.0.0` | Executes a command after server event (i.e. OnMapStart) or a delay.
 [CS2 Remove Map Weapons](https://github.com/kus//CS2-Remove-Map-Weapons) | `1.0.0` | Remove weapons from the map in CS2 as `mp_weapons_allow_map_placed 0` does not work.
 [CS2_DamageInfo](https://github.com/K4ryuu/CS2_DamageInfo) | `2.0.3` | Displays the amount of damage players have inflicted on the victim's HP and Armor, as well as the hit groups they have hit.
-[MatchZy](https://github.com/shobhit-pathak/MatchZy) | `0.6.1` | MatchZy is a plugin for CS2 for running and managing practice/pugs/scrims/matches with easy configuration!
+[MatchZy](https://github.com/shobhit-pathak/MatchZy) | `0.7.0` | MatchZy is a plugin for CS2 for running and managing practice/pugs/scrims/matches with easy configuration!
 [MapConfigurator](https://github.com/ManifestManah/MapConfigurator)| `1.0.2` | Allows you to quick and easily create unique configuration files for each map on your server.
 [SimpleAdmin](https://github.com/connercsbn/SimpleAdmin/)| `0.1.2` | Adds basic administrator functions
 [CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon)| `1.2.0` | This is a rudimentary implementation of a RCON plugin for CS2 using CounterStrikeSharp as RCON does not work whilst connected to the server
-[SharpTimer](https://github.com/DEAFPS/SharpTimer/)| `0.2.0` | SharpTimer is a simple Surf/KZ/Bhop/MG/Deathrun/etc CS2 Timer plugin
+[SharpTimer](https://github.com/DEAFPS/SharpTimer/)| `0.2.1` | SharpTimer is a simple Surf/KZ/Bhop/MG/Deathrun/etc CS2 Timer plugin
 [GunGame](https://github.com/ssypchenko/cs2-gungame)| `1.0.7` | GunGame mode on Counter Strike Sharp
 [CS2-Multi-1v1](https://github.com/rockCityMath/CS2-Multi-1v1)| `1.0.0` | A CS2 plugin that allows players to fight 1v1 in ranked arenas.
 [CS2 Retakes](https://github.com/B3none/cs2-retakes)| `1.3.26` | CS2 implementation of retakes. Based on the version for CS:GO by Splewis.

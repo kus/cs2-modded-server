@@ -3,5 +3,6 @@
     "MySqlDatabase": "your_mysql_database",
     "MySqlUsername": "your_mysql_username",
     "MySqlPassword": "your_mysql_password",
-    "MySqlPort": 3306
+    "MySqlPort": 3306,
+    "MySqlTimeout": 30
 }
