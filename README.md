@@ -92,21 +92,17 @@ Mod | Version | Why
 [CS2 Advertisement](https://github.com/partiusfabaa/cs2-advertisement)| `1.0.6.7` | Allows you to show ads in chat/center/panel. [How?](#enable-advertisements)
 [CS2 Deathmatch](https://github.com/NockyCZ/CS2-Deathmatch)| `1.0.4` | Custom Deathmatch CS2 plugin (Includes custom spawnpoints, multicfg, gun selection, spawn protection, etc)
 
-## Changelog
+## Share the love
 
-### 2024-02-11
+If you appreciate the project then please take the time to star the repository 🙏
 
-- Disable GOTV for 1v1 [#50](https://github.com/kus/cs2-modded-server/issues/50) (Thanks [@pnallinger](https://www.github.com/pnallinger))
-- Turn `sv_cheats` on whilst setting all game mode settings then turn off. This will also force cheats to be off if it was turned on then the mode was changed. (Thanks [@mavproductions](https://www.github.com/mavproductions))
-- Delete MatchZy default `savednades.json` so it won't overwrite your own saved nades [#38](https://github.com/kus/cs2-modded-server/discussions/38) (Thanks [@mavproductions](https://www.github.com/mavproductions))
-- ADDED: Arms Race (default CS2 mode)
-- ADDED: CS2 Deathmatch Multi CFG v1.0.4 (Thanks [@mavproductions](https://www.github.com/mavproductions))
-- ADDED: CS2 Advertisement v1.0.6.6 [How to use?](#enable-advertisements) (Thanks [@mavproductions](https://www.github.com/mavproductions))
-- UPDATED: CS2 Retakes Allocator to v1.2.15
-- UPDATED: CS2 Retakes to v1.3.27
-- UPDATED: SharpTimer to v0.2.1
-- UPDATED: MatchZy to v0.7.0
-- UPDATED: CounterStrikeSharp to v164
+<img alt="Star the project" src="https://github.com/kus/cs2-modded-server/blob/assets/assets/star.png?raw=true&sanitize=true">
+
+## Stay up to date
+
+Subscribe to release notifications and stay up to date with the latest features and patches:
+
+<img alt="Subscribe to updates" src="https://github.com/kus/cs2-modded-server/blob/assets/assets/watch.png?raw=true&sanitize=true">
 
 ## Custom files
 
@@ -465,13 +461,13 @@ This is because Valve ships their own copies of those libraries. As modern syste
 
 Because the way the server is setup with several mods it's not possible. You can't use `+exec` in the server launcher as that executes to quick before SourceMod is loaded. You can monitor the server once it's started (via RCON) and then load a mod i.e. `exec dm.cfg`.
 
-## Acessing admin menu
+### Acessing admin menu
 
 Admins are managed by [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) using the [Admin Framework](https://docs.cssharp.dev/admin-framework/defining-admins/). You define admins and their flags and most plugins now utilise this framework.
 
 To see an example of my admins you can look at this file [/custom_files_example/addons/counterstrikesharp/configs/admins.json](https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/addons/counterstrikesharp/configs/admins.json). To set your admins on your own server use this file as a reference and use the [custom files](#custom-files) system to have your own version.
 
-## Changing maps
+### Changing maps
 
 Admins can type `!map` in chat and it will bring up a menu of all the maps for the current mod. When a map is selected it will change the map straight away.
 
@@ -479,7 +475,7 @@ At the end of the map (if time runs out or win conditions are met) it will autom
 
 I plan to add more features like !rtv, !nominate etc.
 
-## Changing game modes
+### Changing game modes
 
 There is no "menu" feature in CS2, so it's all via the chat window or server console.
 
@@ -512,7 +508,7 @@ Changing between gamemodes multiple times is not recommended, and it is better i
 
 To view what other commands are available view the plugins at the top of the page.
 
-## RCON doesn't work
+### RCON doesn't work
 
 Using RCON whilst connected to the server does not work. See discussion [here](https://www.reddit.com/r/GlobalOffensive/comments/167spzi/cs2_rcon/).
 The current work arounds are:
@@ -533,7 +529,7 @@ rcon say "hi"
 
 And check the ports cs2 is using on your OS i.e. on Ubuntu `sudo lsof -i -P -n | head -n 1; sudo lsof -i -P -n | grep cs2`.
 
-## Manually updating Metamod:Source and CounterStrikeSharp
+### Manually updating Metamod:Source and CounterStrikeSharp
 
 If you are on a unix based system, you can run `scripts/check-updates.sh` which will check the current versions of each plugin installed in this repo vs what the latest is, this makes it easier than going through each one manually.
 
@@ -543,7 +539,7 @@ First open terminal and `cd` into the folder where you unzipped the zips i.e.: `
 
 `rsync -rhavz --exclude "._*" --exclude ".DS_Store" --partial --progress --stats ./addons/ /Users/kus/dev/personal/counter-strike/cs2-modded-server/game/csgo/addons/`
 
-## Enable advertisements
+### Enable advertisements
 
 If you want to enable a whitelist on your server load the plugin by putting this `css_plugins load "plugins/disabled/Advertisement/Advertisement.dll"` in one of your `.cfg` files.
 
@@ -551,13 +547,42 @@ If you want it to load on every mod on your server, you can put it in your `/cus
 
 The config file is located at `/game/csgo/addons/counterstrikesharp/plugins/disabled/Advertisement/advertisement.json` which you would put in `/custom_files/addons/counterstrikesharp/plugins/disabled/Advertisement/advertisement.json` so it is not overwritten.
 
-## Enable Whitelist so only a list of people can play
+### Enable Whitelist so only a list of people can play
 
 If you want to enable a whitelist on your server load the plugin by putting this `css_plugins load "plugins/disabled/WhiteList/WhiteList.dll"` in one of your `.cfg` files.
 
 If you want it to load on every mod on your server, you can put it in your `/custom_files/cfg/custom_all.cfg` file.
 
 The whitelist file is located at `/game/csgo/addons/counterstrikesharp/plugins/disabled/WhiteList/whitelist.txt` which you would put in `/custom_files/addons/counterstrikesharp/plugins/disabled/WhiteList/whitelist.txt` so it is not overwritten.
+
+## Changelog
+
+### 2024-02-14 v1.0.23
+
+- Gave our Windows users some love.
+  - Fixed Windows server not loading CounterStrikeSharp (Thanks [@ALegitCookie](https://www.github.com/ALegitCookie))
+  - Updated Windows install instructions to make them clearer
+  - Added error checking
+  - Made `win.bat` automatically patch `gameinfo.gi` (this makes Metamod:Source load)
+- Added a [bash script](https://github.com/kus/cs2-modded-server/blob/master/scripts/check-updates.sh) to check for updates for all mods in this repo to make keeping up-to-date easier
+- FIXED: CS2Rcon was not being reloaded when switching mods after MatchZy has been loaded (Thanks [@mavproductions](https://www.github.com/mavproductions))
+- UPDATED: CS2 Retakes Allocator to `v1.2.16`
+- UPDATED: CS2 Advertisement to `v1.0.6.7`
+- UPDATED: CounterStrikeSharp to `v166`
+
+### 2024-02-11 v1.0.22
+
+- Disable GOTV for 1v1 [#50](https://github.com/kus/cs2-modded-server/issues/50) (Thanks [@pnallinger](https://www.github.com/pnallinger))
+- Turn `sv_cheats` on whilst setting all game mode settings then turn off. This will also force cheats to be off if it was turned on then the mode was changed. (Thanks [@mavproductions](https://www.github.com/mavproductions))
+- Delete MatchZy default `savednades.json` so it won't overwrite your own saved nades [#38](https://github.com/kus/cs2-modded-server/discussions/38) (Thanks [@mavproductions](https://www.github.com/mavproductions))
+- ADDED: Arms Race (default CS2 mode)
+- ADDED: CS2 Deathmatch Multi CFG v1.0.4 (Thanks [@mavproductions](https://www.github.com/mavproductions))
+- ADDED: CS2 Advertisement v1.0.6.6 [How to use?](#enable-advertisements) (Thanks [@mavproductions](https://www.github.com/mavproductions))
+- UPDATED: CS2 Retakes Allocator to v1.2.15
+- UPDATED: CS2 Retakes to v1.3.27
+- UPDATED: SharpTimer to v0.2.1
+- UPDATED: MatchZy to v0.7.0
+- UPDATED: CounterStrikeSharp to v164
 
 ## License
 
