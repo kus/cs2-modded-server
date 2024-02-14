@@ -17,7 +17,7 @@ for /f %%S in (win.ini) do set %%S
 
 cls
 
-echo If you want to quit, close the SRCDS window and type Y followed by Enter.
+echo If you want to quit, close the CS2 window and type Y followed by Enter.
 
 :: Ensure steamcmd exists
 if not exist "%ROOT_DIR%steamcmd\steamcmd.exe" (
@@ -26,37 +26,37 @@ if not exist "%ROOT_DIR%steamcmd\steamcmd.exe" (
 )
 
 :: Use SteamCMD to download CS2
-echo (%time%) Using SteamCMD to check for updates.
+echo Using SteamCMD to check for updates.
 start /wait %ROOT_DIR%steamcmd\steamcmd.exe +force_install_dir ../server +login anonymous +app_update 730 +quit
 
 :: Ensure gameinfo.gi exists
 if not exist "%ROOT_DIR%%gameinfo%" (
-    echo The file "%gameinfo%" does not exist.
+    echo The file %gameinfo% does not exist.
     goto end
 )
 
 :: Create a backup file if it doesn't exist
 if not exist "%bakFile%" (
-    echo Attempting to create backup file of "%gameinfo%"...
+    echo Attempting to create backup file of %gameinfo%...
     copy "%gameinfo%" "%bakFile%"
     if %errorlevel% neq 0 (
         echo Failed to create backup file. Error: %errorlevel%
         goto end
     ) else (
-        echo Backup file "%bakFile%" created successfully.
+        echo Backup file %bakFile% created successfully.
     )
 ) else (
-    echo Backup file "%gameinfo%" already exists.
+    echo Backup file %gameinfo% already exists.
 )
 
 :: Check if searchString exists in the file
-echo Checking if "%gameinfo%" has already been patched...
+echo Checking if %gameinfo% has already been patched...
 findstr /m /c:"%searchString%" "%gameinfo%" >nul
 if %errorlevel%==0 (
-    echo "%gameinfo%" has already been patched.
+    echo %gameinfo% has already been patched.
     goto start
 ) else (
-    echo "%gameinfo%" needs to be patched...
+    echo %gameinfo% needs to be patched...
 )
 
 :: Read the file, check each line for the insertAfter substring, and insert searchString
@@ -85,35 +85,35 @@ if %errorlevel%==0 (
 
 :: Replace the original file with the modified content
 if exist "%tempFile%" (
-    echo Temporary file "%tempFile%" created successfully. Preparing to replace "%gameinfo%"...
+    echo Temporary file %tempFile% created successfully. Preparing to replace %gameinfo%...
     move /y "%tempFile%" "%gameinfo%"
     if %errorlevel% neq 0 (
         echo Failed to replace original file. Error: %errorlevel%
         goto end
     ) else (
-        echo "%gameinfo%" has successfully been patched.
+        echo %gameinfo% has successfully been patched.
     )
 ) else (
-    echo Failed to create or modify temporary file "%tempFile%". Potential access issue or write protection.
+    echo Failed to create or modify temporary file %tempFile%. Potential access issue or write protection.
 )
 
 :start
 
 :: Patch server with mod files
-echo (%time%) Copying mod files.
+echo Copying mod files.
 xcopy "%ROOT_DIR%game\csgo\*" "%ROOT_DIR%server\game\csgo\" /K /S /E /I /H /Y >NUL
 
 :: Overwrite Metamod counterstrikesharp.vdf with the windows version
 copy /Y "%ROOT_DIR%%metamodCcsharpVdfWin%" "%ROOT_DIR%%metamodCcsharpVdf%"
 
 :: Merge your custom files in
-echo (%time%) Copying custom files from "%custom_folder%".
+echo Copying custom files from "%custom_folder%".
 xcopy "%ROOT_DIR%%custom_folder%\*" "%ROOT_DIR%server\game\csgo\" /K /S /E /I /H /Y >NUL
 
 :: Start the server
-echo (%time%) CS2 started.
+echo CS2 started.
 start /wait %ROOT_DIR%server\game\bin\win64\cs2.exe -dedicated -console -debug -condebug -conclearlog -usercon +game_type 0 +game_mode 0 +mapgroup mg_active +map de_dust2 +hostport %csgo_port% -ip 0.0.0.0 +net_public_adr %ip_internet% -tickrate %csgo_tickrate% -maxplayers %csgo_players% -authkey %csgo_api_key%
-echo (%time%) WARNING: SRCDS closed or crashed.
+echo WARNING: CS2 closed or crashed.
 
 :end
 pause
