@@ -66,6 +66,7 @@ Getting up and running:
 
 - [Running on Google Cloud](#running-on-google-cloud)
 - [Running on Linux](#running-on-linux)
+- [Running on Windows](#running-on-windows)
 
 ## Mods installed
 
@@ -331,17 +332,17 @@ When you join the server you can [change game modes](#changing-game-modes).
 
 Make sure you have **60GB free space**.
 
-[Download this repo](https://github.com/kus/cs2-modded-server/archive/master.zip) and extract it to where you want your server (i.e. `C:\Server\cs2-modded-server`). All the following instructions will use this as the root.
+You can either [Download this repo](https://github.com/kus/cs2-modded-server/archive/master.zip) and extract it to where you want your server (i.e. `C:\Server\cs2-modded-server`) or use git and clone the repo `git clone git@github.com:kus/cs2-modded-server.git` and run your server from inside of it. This way you can simply `git pull` updates.
 
-Edit `\game\csgo\gameinfo.gi` and search for `Game_LowViolence    csgo_lv` it should be under `GameInfo > FileSystem > SearchPaths` and below it add `Game    csgo/addons/metamod` and save the file. You can find detailed instructions [here](https://cs2.poggu.me/metamod/installation/).
+All the following instructions will use the repo folder location as the root.
 
 Create a folder `steamcmd` and [download SteamCMD](https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip) and extract it inside `steamcmd` so you should have `\steamcmd\steamcmd.exe`.
 
+To download maps from the workshop, your server [needs access](https://developer.valvesoftware.com/wiki/Counter-Strike:_Global_Offensive/Dedicated_Servers#Steam_Workshop) to the Steam Web API. To allow this, open `\win.ini` and set `cs_api_key` to your [Steam Web API Key](http://steamcommunity.com/dev/apikey).
+
 - **If setting up internet server:**
 
-   Open `\csgo\cfg\env.cfg`
-
-   Set `sv_setsteamaccount` to your [Game Server Login Token](https://steamcommunity.com/dev/managegameservers)
+   Copy `\game\csgo\cfg\secrets.cfg` to your [custom files](#custom-files) directory `\custom_files\cfg\secrets.cfg` and set `sv_setsteamaccount` to your [Game Server Login Token](https://steamcommunity.com/dev/managegameservers)
 
    Open `\win.ini`
 
@@ -353,9 +354,7 @@ Create a folder `steamcmd` and [download SteamCMD](https://steamcdn-a.akamaihd.n
 
 - **If setting up LAN server:**
 
-   Open `\csgo\cfg\env.cfg`
-
-   Set `sv_lan` to `1`
+   Copy `\game\csgo\cfg\env.cfg` to your [custom files](#custom-files) directory `\custom_files\cfg\env.cfg` and set `sv_lan` to `1`
 
 [Add admins](#acessing-admin-menu)
 
@@ -364,12 +363,6 @@ Run `win.bat`
 Accept both Private and Public connections on Windows Firewall.
 
 - **If running for the first time**
-
-   Once the CS2 server has started close it
-
-   If you want to use my bundled maps and this server setup you can use `https://raw.githubusercontent.com/kus/cs2-modded-server-assets/master/game/csgo` for your your `sv_downloadurl` in `cfg/env.cfg`. Make sure you change `sv_allowdownload` to `0`.
-
-   Run `win.bat` again
 
 To check everything is working correctly run the following commands in the server console:
 
@@ -541,6 +534,8 @@ rcon say "hi"
 And check the ports cs2 is using on your OS i.e. on Ubuntu `sudo lsof -i -P -n | head -n 1; sudo lsof -i -P -n | grep cs2`.
 
 ## Manually updating Metamod:Source and CounterStrikeSharp
+
+If you are on a unix based system, you can run `scripts/check-updates.sh` which will check the current versions of each plugin installed in this repo vs what the latest is, this makes it easier than going through each one manually.
 
 Go to the Releases page for [Metamod:Source](http://www.sourcemm.net/downloads.php?branch=master) and [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) and download the latest. You need to merge the `addons` folder from the zips into the `/game/csgo/addons` of this repo. This is easy to do with unix based systems with rsync:
 
