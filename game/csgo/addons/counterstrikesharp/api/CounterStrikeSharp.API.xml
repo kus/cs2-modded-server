@@ -436,6 +436,20 @@
             Gets the active pawns button state. Will work even if the player is dead or observing.
             </summary>
         </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.ExecuteClientCommand(System.String)">
+            <summary>
+            Issue the specified command to the specified client (mimics that client typing the command at the console).
+            Note: Only works for some commands, marked with the FCVAR_CLIENT_CAN_EXECUTE flag (not many).
+            </summary>
+            <param name="command"></param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.ExecuteClientCommandFromServer(System.String)">
+            <summary>
+            Issue the specified command directly from the server (mimics the server executing the command with the given player context).
+            <remarks>Works with server commands like `kill`, `explode`, `noclip`, etc. </remarks>
+            </summary>
+            <param name="command"></param>
+        </member>
         <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.SetListenOverride(CounterStrikeSharp.API.Core.CCSPlayerController,CounterStrikeSharp.API.ListenOverride)">
             <summary>
             Overrides who a player can hear in voice chat.
