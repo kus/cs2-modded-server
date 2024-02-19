@@ -8,14 +8,14 @@
     ".NETCoreApp,Version=v7.0": {
       "Deathmatch/1.0.0": {
         "dependencies": {
-          "CounterStrikeSharp.API": "1.0.164",
+          "CounterStrikeSharp.API": "1.0.166",
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
           "Deathmatch.dll": {}
         }
       },
-      "CounterStrikeSharp.API/1.0.164": {
+      "CounterStrikeSharp.API/1.0.166": {
         "dependencies": {
           "McMaster.NETCore.Plugins": "1.4.0",
           "Microsoft.CSharp": "4.7.0",
@@ -32,8 +32,8 @@
         },
         "runtime": {
           "lib/net7.0/CounterStrikeSharp.API.dll": {
-            "assemblyVersion": "1.0.164.0",
-            "fileVersion": "1.0.164.0"
+            "assemblyVersion": "1.0.166.0",
+            "fileVersion": "1.0.166.0"
           }
         }
       },
@@ -516,12 +516,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "CounterStrikeSharp.API/1.0.164": {
+    "CounterStrikeSharp.API/1.0.166": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pFqN71pxJd2HMw9j90tFFcTdNIWDo2q8s3m8VI+8FNiB/+WHn71uBh4Izlopa+ZqT4sLaOIXubs2TVgt3MRl5A==",
-      "path": "counterstrikesharp.api/1.0.164",
-      "hashPath": "counterstrikesharp.api.1.0.164.nupkg.sha512"
+      "sha512": "sha512-SCb28A30d52g84IeHpCnBP2VttzHnUBclExt+f4s0p/Ry5ikzYDbuxmHvpSSvT6S6UNZBegJaqF431R+jj57jw==",
+      "path": "counterstrikesharp.api/1.0.166",
+      "hashPath": "counterstrikesharp.api.1.0.166.nupkg.sha512"
     },
     "McMaster.NETCore.Plugins/1.4.0": {
       "type": "package",
