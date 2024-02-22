@@ -90,7 +90,7 @@ Mod | Version | Why
 [CS2 Whitelist](https://github.com/PhantomYopta/CS2_WhiteList)| `1.0.0`| Restricts access to the server for SteamID members/employees listed in the whitelist. [How?](#enable-whitelist-so-only-a-list-of-people-can-play)
 [CS2 Executes](https://github.com/B3none/cs2-executes)| `1.0.0` | CS2 implementation of executes. Based on the version for CS:GO by Splewis.
 [CS2 Advertisement](https://github.com/partiusfabaa/cs2-advertisement)| `1.0.6.7` | Allows you to show ads in chat/center/panel. [How?](#enable-advertisements)
-[CS2 Deathmatch](https://github.com/NockyCZ/CS2-Deathmatch)| `1.0.6` | Custom Deathmatch CS2 plugin (Includes custom spawnpoints, multicfg, gun selection, spawn protection, etc)
+[CS2 Deathmatch](https://github.com/NockyCZ/CS2-Deathmatch)| `1.0.7` | Custom Deathmatch CS2 plugin (Includes custom spawnpoints, multicfg, gun selection, spawn protection, etc)
 
 ## Share the love
 
