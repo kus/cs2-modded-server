@@ -53,6 +53,12 @@
             </summary>
             <param name="instance">The instance of the object where the event handlers are defined.</param>
         </member>
+        <member name="T:CounterStrikeSharp.API.Core.Commands.PluginCommandManagerDecorator">
+            <summary>
+            Decorator for <see cref="T:CounterStrikeSharp.API.Core.Commands.ICommandManager"/> that tracks registered commands and removes them when disposed.
+            Used for plugins that register commands to ensure they are removed when the plugin is unloaded.
+            </summary>
+        </member>
         <member name="T:CounterStrikeSharp.API.Core.CoreConfigData">
             <summary>
             Serializable instance of the CoreConfig
@@ -1214,6 +1220,15 @@
             <remarks>Executes if the server is hibernating.</remarks>
             </summary>
             <param name="task"></param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.ServiceCollectionExtensions.DecorateSingleton``2(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Decorates a given interface with a decorator class, keeping a local copy for singleton access.
+            </summary>
+            <param name="services"></param>
+            <typeparam name="TService"></typeparam>
+            <typeparam name="TDecoratedService"></typeparam>
+            <returns></returns>
         </member>
         <member name="M:CounterStrikeSharp.API.Utilities.GetPlayers">
             <summary>
