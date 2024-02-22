@@ -571,6 +571,7 @@ The whitelist file is located at `/game/csgo/addons/counterstrikesharp/plugins/d
 
 - FIXED: Reset `sv_showimpacts` staying on between MatchZy prac and other modes (Thanks [@mavproductions](https://www.github.com/mavproductions))
 - FIXED: Deathmatch MultiCFG settings executing `custom_deathmatch.cfg` instead of `custom_deathmatch-multicfg.cfg` (Thanks [@mavproductions](https://www.github.com/mavproductions))
+- ADDED: Deathmatch MultiCFG default configuration and custom modes (Thanks [@mavproductions](https://www.github.com/mavproductions))
 - ADDED: Awp only mode `!rcon exec awp` [#54](https://github.com/kus/cs2-modded-server/issues/#54) (Thanks [@ALegitCookie](https://www.github.com/ALegitCookie) [@mavproductions](https://www.github.com/mavproductions))
 - ADDED: Aim mode `!rcon exec aim` (Thanks [@mavproductions](https://www.github.com/mavproductions))
 - UPDATED: CS2 Deathmatch to `v1.0.7`
