@@ -486,7 +486,9 @@ These are all the available chat commands to change the game mode:
 | Command                   | Game mode                                                                         |
 | ------------------------- | --------------------------------------------------------------------------------- |
 | `!rcon exec 1v1`          | 1v1 (allows more than 2 players)                                                  |
+| `!rcon exec aim`          | Aim                                                                               |
 | `!rcon exec ar`           | Arms Race                                                                         |
+| `!rcon exec awp`          | Awp only                                                                          |
 | `!rcon exec bhop`         | Bunny hop maps                                                                    |
 | `!rcon exec comp`         | Competitive using [MatchZy](https://github.com/shobhit-pathak/MatchZy#usage-commands) |
 | `!rcon exec course`       | Tests players with different traps, kz, surf, bhop                                |

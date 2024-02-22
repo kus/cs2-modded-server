@@ -1,0 +1,83 @@
+{
+  "Gameplay Settings": {
+    "Free For All": true,
+    "Custom Modes": true,
+    "Random Selection Of Modes": false,
+    "Map Start Custom Mode": 0,
+    "New Mode Countdown": 10,
+    "Check Enemies Distance": true,
+    "Distance From Enemies for Respawn": 500,
+    "Default Weapons": 1,
+    "Switch Weapons": false,
+    "Allow Buymenu": true,
+    "Respawn Players After New Mode": false
+  },
+  "General Settings": {
+    "Hide Round Seconds": false,
+    "Block Radio Messages": true,
+    "Remove Breakable Entities": true,
+    "Remove Decals After Death": true,
+    "Force Map End": false
+  },
+  "Sounds Settings": {
+    "Weapon Cant Equip Sound": "sounds/ui/weapon_cant_buy.vsnd_c",
+    "New Mode Sound": "sounds/music/3kliksphilip_01/bombtenseccount.vsnd_c"
+  },
+  "Custom Commands": {
+    "Deatmatch Menu Commands": "dm,deathmatch",
+    "Weapons Select Commands": "gun,weapon,w,g",
+    "Weapons Select Shortcuts": "weapon_ak47:ak,weapon_ssg08:scout,weapon_revolver:r8,weapon_m4a1:m4a4,weapon_m4a1_silencer:m4a1s,weapon_awp:awp,weapon_usp_silencer:usp,weapon_glock:glock,weapon_deagle:deagle"
+  },
+  "Players Gameplay Settings": {
+    "VIP_flag": "@css/vip",
+    "respawn_time": 1.5,
+    "VIP_respawn_time": 1.5,
+    "spawn_protection_time": 1.2,
+    "VIP_spawn_protection_time": 1.2,
+    "reffil_ammo_kill": true,
+    "VIP_reffil_ammo_kill": true,
+    "reffil_ammo_headshot": true,
+    "VIP_reffil_ammo_headshot": true,
+    "refill_health_kill": 25,
+    "VIP_refill_health_kill": 25,
+    "refill_health_headshot": 50,
+    "VIP_refill_health_headshot": 50
+  },
+  "Client Preferences": {
+    "Kill Sound": {
+      "Enabled": true,
+      "Sound path": "sounds/ui/armsrace_kill_01.vsnd_c",
+      "Default value": false,
+      "Only for VIP": false
+    },
+    "Headshot Kill Sound": {
+      "Enabled": true,
+      "Sound path": "sounds/buttons/bell1.vsnd_c",
+      "Default value": false,
+      "Only for VIP": false
+    },
+    "Knife Kill Sound": {
+      "Enabled": true,
+      "Sound path": "sounds/ui/armsrace_final_kill_knife.vsnd_c",
+      "Default value": false,
+      "Only for VIP": false
+    },
+    "Hit Sound": {
+      "Enabled": true,
+      "Sound path": "sounds/ui/csgo_ui_contract_type2.vsnd_c",
+      "Default value": false,
+      "Only for VIP": false
+    },
+    "Only Headsnhot": {
+      "Enabled": true,
+      "Default value": false,
+      "Only for VIP": false
+    },
+    "Hud Messages": {
+      "Enabled": true,
+      "Default value": true,
+      "Only for VIP": false
+    }
+  },
+  "ConfigVersion": 1
+}

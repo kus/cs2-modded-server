@@ -30,6 +30,8 @@
 						"mg_hns"			"57"
 						"mg_soccer"			"58"
 						"mg_gg"				"59"
+						"mg_awp"			"60"
+						"mg_aim"			"61"
 					}
 				}
 
@@ -348,6 +350,24 @@
 			"maps"
 			{
 				"workshop/3070198374/ka_soccer_2009"		""
+			}
+		}
+		"mg_awp"
+		{
+			"name"			"mg_awp"
+			"maps"
+			{
+				"workshop/3142070597/awp_bhop_rocket"		""
+			}
+		}
+				"mg_aim"
+		{
+			"name"			"mg_aim"
+			"maps"
+			{
+				"workshop/3070549948/aim_map"			""
+				"workshop/3146122036/freebet_aim_map"	""
+				"workshop/3070923343/fy_pool_day"		""
 			}
 		}
 	}
