@@ -66,6 +66,7 @@ Getting up and running:
 
 - [Running on Google Cloud](#running-on-google-cloud)
 - [Running on Linux](#running-on-linux)
+- [Running in Docker](#running-in-docker)
 - [Running on Windows](#running-on-windows)
 
 ## Mods installed
