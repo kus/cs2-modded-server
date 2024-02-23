@@ -1,0 +1,19 @@
+services:
+  cs2_modded_server:
+    image: cs2-modded-server:latest
+    container_name: cs2-modded-server
+    env_file:
+      - .env
+    volumes:
+      - cs2-volume:/home/
+    ports:
+      - "27015:27015/tcp"
+      - "27015:27015/udp"
+      - "27020:27020/tcp"
+      - "27020:27020/udp"
+    cpu_count: 2
+    mem_limit: 3500m
+
+volumes:
+  cs2-volume:
+    external: true

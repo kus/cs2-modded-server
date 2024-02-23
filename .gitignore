@@ -1,3 +1,4 @@
 /tools/
 /server/
 /steamcmd/
+.env copy
