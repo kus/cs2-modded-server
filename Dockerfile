@@ -30,12 +30,16 @@ WORKDIR /home/cs2/
 
 RUN git clone https://github.com/kus/cs2-modded-server.git
 
+RUN echo cloned server
+
 RUN mv /home/cs2/cs2-modded-server/* /home/cs2
 
 COPY ./custom_files /home/cs2/custom_files/
+
+COPY ./install_docker.sh /home/cs2/install_docker.sh
 
 WORKDIR /home/cs2/
 
 USER steam
 
-CMD [ "sudo", "-E", "bash", "/home/cs2/install.sh" ]
+CMD [ "sudo", "-E", "bash", "/home/cs2/install_docker.sh" ]

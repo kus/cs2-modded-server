@@ -1,11 +1,14 @@
 services:
   cs2_modded_server:
-    image: cs2-modded-server:latest
+    image: cs2-modded-server
     container_name: cs2-modded-server
     env_file:
       - .env
     volumes:
-      - cs2-volume:/home/
+      - cs2-volume:/home/steam/
+      - type: bind
+        source: ./custom_files
+        target: /home/cs2/
     ports:
       - "27015:27015/tcp"
       - "27015:27015/udp"
@@ -13,6 +16,7 @@ services:
       - "27020:27020/udp"
     cpu_count: 2
     mem_limit: 3500m
+    # command: tail -F anything
 
 volumes:
   cs2-volume:
