@@ -28,7 +28,7 @@ RUN mkdir -p /home/cs2
 
 WORKDIR /home/cs2/
 
-RUN git clone https://github.com/kus/cs2-modded-server.git
+RUN git clone https://github.com/DanielDKnudsen/cs2-modded-server
 
 RUN echo cloned server
 
