@@ -341,9 +341,6 @@ You can either Download this repo and extract it to where you want your server (
 - **Build docker image:**
    
    `docker build -t cs2-modded-server .`
-- **Create Volume for persising server data**
-
-   `docker volume create cs2-volume`
 
 - **Run the server**
 

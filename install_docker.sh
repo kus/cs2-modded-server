@@ -68,72 +68,11 @@ FREE_SPACE=$(df / --output=avail -BG | tail -n 1 | tr -d 'G')
 
 echo "With $FREE_SPACE Gb free space..."
 
-# Check distrib
-if ! command -v apt-get &> /dev/null; then
-	echo "ERROR: OS distribution not supported (apt-get not available). $DISTRO_OS: $DISTRO_VERSION"
-	exit 1
-fi
-
 # Check root
 if [ "$EUID" -ne 0 ]; then
 	echo "ERROR: Please run this script as root..."
 	exit 1
 fi
-
-echo "Updating Operating System..."
-apt-get update -y -q && apt-get upgrade -y -q >/dev/null
-if [ "$?" -ne "0" ]; then
-	echo "ERROR: Updating Operating System..."
-	exit 1
-fi
-
-dpkg --configure -a >/dev/null
-
-echo "Adding i386 architecture..."
-dpkg --add-architecture i386 >/dev/null
-if [ "$?" -ne "0" ]; then
-	echo "ERROR: Cannot add i386 architecture..."
-	exit 1
-fi
-
-echo "Installing required packages for $DISTRO_OS: $DISTRO_VERSION..."
-apt-get update -y -q >/dev/null
-if [ "${DISTRO_OS}" == "Ubuntu" ]; then
-	if [ "${DISTRO_VERSION}" == "16.04" ]; then
-		apt-get install -y -q dnsutils curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 lib32gcc1 steamcmd >/dev/null
-	elif [ "${DISTRO_VERSION}" == "18.04" ]; then
-		apt-get install -y -q dnsutils curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc1 steamcmd >/dev/null
-	elif [ "${DISTRO_VERSION}" == "20.04" ]; then
-		apt-get install -y -q dnsutils curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc1 steamcmd >/dev/null
-	elif [ "${DISTRO_VERSION}" == "22.04" ]; then
-		apt-get install -y -q dnsutils curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc-s1 steamcmd >/dev/null
-	else
-		echo "$DISTRO_OS $DISTRO_VERSION not officially supported; using Ubuntu 22.04 config"
-		apt-get install -y -q dnsutils curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc-s1 steamcmd >/dev/null
-	fi
-elif [[ $DISTRO_OS == Debian* ]]; then
-	if [ "${DISTRO_VERSION}" == "10" ]; then
-		apt-get install -y dnsutils curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat-traditional lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc1 >/dev/null
-	elif [ "${DISTRO_VERSION}" == "11" ]; then
-		apt-get install -y dnsutils curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat-traditional lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc-s1 >/dev/null
-	elif [ "${DISTRO_VERSION}" == "12" ]; then
-		apt-get install -y dnsutils curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat-traditional lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc-s1 >/dev/null
-	elif [ "${DISTRO_VERSION}" == "13" ]; then
-		apt-get install -y dnsutils curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat-traditional lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc-s1 >/dev/null
-	else
-		echo "$DISTRO_OS: $DISTRO_VERSION not officially supported; using Debian 13 config"
-		apt-get install -y dnsutils curl wget screen nano file tar bzip2 gzip unzip hostname bsdmainutils python3 util-linux xz-utils ca-certificates binutils bc jq tmux netcat-traditional lib32stdc++6 libsdl2-2.0-0:i386 distro-info lib32gcc-s1 >/dev/null
-	fi
-else
-	echo "ERROR: OS distribution not supported. $DISTRO_OS: $DISTRO_VERSION"
-	exit 1
-fi
-
-# Download latest stop script
-curl -s -H "Cache-Control: no-cache" -o "stop.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${BRANCH}/stop.sh" && chmod +x stop.sh
-
-# Download latest start script
-curl -s -H "Cache-Control: no-cache" -o "start.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${BRANCH}/start.sh" && chmod +x start.sh
 
 PUBLIC_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
 
@@ -188,19 +127,75 @@ sudo -u $user /steamcmd/steamcmd.sh \
 
 cd /home/${user}
 
-mkdir -p /root/.steam/sdk32/
-ln -s /steamcmd/linux32/steamclient.so /root/.steam/sdk32/
-mkdir -p /root/.steam/sdk64/
-ln -s /steamcmd/linux64/steamclient.so /root/.steam/sdk64/
-
 mkdir -p /home/${user}/.steam/sdk32/
 ln -s /steamcmd/linux32/steamclient.so /home/${user}/.steam/sdk32/
 mkdir -p /home/${user}/.steam/sdk64/
 ln -s /steamcmd/linux64/steamclient.so /home/${user}/.steam/sdk64/
 
-if [ "${DISTRO_OS}" == "Ubuntu" ]; then
-	if [ "${DISTRO_VERSION}" == "22.04" ]; then
-		# https://forums.alliedmods.net/showthread.php?t=336183
-		rm /home/${user}/cs2/bin/libgcc_s.so.1
-	fi
+echo "Installing mods"
+cp -R /home/game/csgo/ /home/${user}/cs2/game/
+
+echo "Merging in custom files"
+cp -RT /home/custom_files/ /home/${user}/cs2/game/csgo/
+
+chown -R ${user}:${user} /home/${user}/cs2
+
+cd /home/${user}/cs2
+
+# Define the file name
+FILE="game/csgo/gameinfo.gi"
+
+# Define the pattern to search for and the line to add
+PATTERN="Game_LowViolence[[:space:]]*csgo_lv // Perfect World content override"
+LINE_TO_ADD="\t\t\tGame\tcsgo/addons/metamod"
+
+# Use a regular expression to ignore spaces when checking if the line exists
+REGEX_TO_CHECK="^[[:space:]]*Game[[:space:]]*csgo/addons/metamod"
+
+# Check if the line already exists in the file, ignoring spaces
+if grep -qE "$REGEX_TO_CHECK" "$FILE"; then
+    echo "$FILE already patched for Metamod."
+else
+    # If the line isn't there, use awk to add it after the pattern
+    awk -v pattern="$PATTERN" -v lineToAdd="$LINE_TO_ADD" '{
+        print $0;
+        if ($0 ~ pattern) {
+            print lineToAdd;
+        }
+    }' "$FILE" > tmp_file && mv tmp_file "$FILE"
+    echo "$FILE successfully patched for Metamod."
 fi
+
+echo "Starting server on $PUBLIC_IP:$PORT"
+# https://developer.valvesoftware.com/wiki/Counter-Strike_2/Dedicated_Servers#Command-Line_Parameters
+echo ./game/bin/linuxsteamrt64/cs2 \
+    -dedicated \
+    -console \
+    -usercon \
+    -autoupdate \
+    -tickrate $TICKRATE \
+	$IP_ARGS \
+    -port $PORT \
+    +map de_dust2 \
+    -maxplayers $MAXPLAYERS \
+    -authkey $API_KEY \
+	+sv_setsteamaccount $STEAM_ACCOUNT \
+    +game_type 0 \
+    +game_mode 0 \
+    +mapgroup mg_active
+
+sudo -u $user /home/steam/cs2/game/bin/linuxsteamrt64/cs2 \
+    -dedicated \
+    -console \
+    -usercon \
+    -autoupdate \
+    -tickrate $TICKRATE \
+	$IP_ARGS \
+    -port $PORT \
+    +map de_dust2 \
+    -maxplayers $MAXPLAYERS \
+    -authkey $API_KEY \
+	+sv_setsteamaccount $STEAM_ACCOUNT \
+    +game_type 0 \
+    +game_mode 0 \
+    +mapgroup mg_active

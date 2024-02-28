@@ -14,9 +14,11 @@ RUN apt-get update --fix-missing \
     locales \
     && sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen \
     && dpkg-reconfigure --frontend=noninteractive locales \
-    && rm -rf /var/lib/apt/lists/* \
-    && addgroup steam \
-    && useradd -m steam \
+    && rm -rf /var/lib/apt/lists/*
+
+
+RUN addgroup steam \
+    && useradd -g steam steam \
     && usermod -aG sudo steam
 
 ENV TICKRATE=""
@@ -42,10 +44,6 @@ RUN echo cloned repository
 RUN mv /home/cs2-modded-server/cs2-modded-server/* /home/cs2-modded-server
 
 RUN rm -rf /home/cs2-modded-server/cs2-modded-server
-
-COPY ./custom_files /home/cs2-modded-server/custom_files/
-
-COPY ./install_docker.sh /home/cs2-modded-server/install_docker.sh
 
 WORKDIR /home/cs2-modded-server/
 
