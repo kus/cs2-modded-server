@@ -1,0 +1,99 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v2",
+        "update_url": null
+    },
+    "exported_at": "2024-03-04T21:24:30+01:00",
+    "name": "Counter-Strike 2 (SteamRT3)",
+    "author": "infra@gflclan.com",
+    "description": "Counter-Strike is a multiplayer first-person shooter video game developed by Valve. This image is based on Valve's Steam Runtime 3 platform (codenamed SNIPER) and was created to run both CSGO and CS2 without issues.",
+    "features": [
+        "gsl_token",
+        "steam_disk_space"
+    ],
+    "docker_images": {
+        "SteamRT3": "ghcr.io\/1zc\/steamrt3-pterodactyl:latest",
+        "SteamRT3-PublicBeta": "ghcr.io\/1zc\/steamrt3-pterodactyl:beta-latest",
+        "SteamRT3-Dev": "ghcr.io\/1zc\/steamrt3-pterodactyl:dev",
+        "SteamRT3-PublicBetaDev": "ghcr.io\/1zc\/steamrt3-pterodactyl:beta-dev",
+        "SteamRT3-GFL": "registry.gitlab.gflclan.com\/infra\/cs2-pterodactyl:latest"
+    },
+    "file_denylist": [],
+    "startup": ".\/game\/cs2.sh -dedicated +ip 0.0.0.0 -port {{SERVER_PORT}} +map {{SRCDS_MAP}} -maxplayers {{SRCDS_MAXPLAYERS}} +sv_setsteamaccount {{STEAM_ACC}}",
+    "config": {
+        "files": "{}",
+        "startup": "{\r\n    \"done\": \"Connection to Steam servers successful\"\r\n}",
+        "logs": "{}",
+        "stop": "quit"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#!\/bin\/bash\r\n# steamcmd Base Installation Script\r\n#\r\n# Server Files: \/mnt\/server\r\n## just in case someone removed the defaults.\r\n\r\nif [ \"${STEAM_USER}\" == \"\" ]; then\r\nSTEAM_USER=anonymous\r\nSTEAM_PASS=\"\"\r\nSTEAM_AUTH=\"\"\r\nfi\r\n## download and install steamcmd\r\ncd \/tmp\r\nmkdir -p \/mnt\/server\/steamcmd\r\ncurl -sSL -o steamcmd.tar.gz https:\/\/steamcdn-a.akamaihd.net\/client\/installer\/steamcmd_linux.tar.gz\r\ntar -xzvf steamcmd.tar.gz -C \/mnt\/server\/steamcmd\r\nmkdir -p \/mnt\/server\/steamapps # Fix steamcmd disk write error when this folder is missing\r\ncd \/mnt\/server\/steamcmd\r\n# SteamCMD fails otherwise for some reason, even running as root.\r\n# This is changed at the end of the install process anyways.\r\nchown -R root:root \/mnt\r\nexport HOME=\/mnt\/server\r\n## install game using steamcmd\r\n.\/steamcmd.sh +force_install_dir \/mnt\/server +login ${STEAM_USER} ${STEAM_PASS} ${STEAM_AUTH} +app_update 730 ${EXTRA_FLAGS} +quit ## other flags may be needed depending on install. looking at you cs 1.6\r\n## set up 32 bit libraries\r\nmkdir -p \/mnt\/server\/.steam\/sdk32\r\ncp -v linux32\/steamclient.so ..\/.steam\/sdk32\/steamclient.so\r\n## set up 64 bit libraries\r\nmkdir -p \/mnt\/server\/.steam\/sdk64\r\ncp -v linux64\/steamclient.so ..\/.steam\/sdk64\/steamclient.so\r\n\r\nBRANCH=\"master\"\r\nCS_PATH=\"$HOME\/game\"\r\n\r\n\r\napt install unzip jq -y\r\n\r\n\r\ncd $HOME\r\n# Delete addons folder as if we remove something later in git it won't get deleted\r\nrm -r $CS_PATH\/csgo\/addons\r\n\r\necho \"Downloading mod files...\"\r\nwget --quiet https:\/\/github.com\/kus\/cs2-modded-server\/archive\/${BRANCH}.zip\r\nunzip -o -qq ${BRANCH}.zip\r\n# Merge mod files into server files\r\ncp -R cs2-modded-server-${BRANCH}\/game\/csgo\/ $CS_PATH\/\r\n# Merge custom files into server files\r\nif [ ! -d \"$HOME\/custom_files\/\" ]; then\r\n    # If the target directory doesn't exist, copy the source directory to the target location\r\n    cp -R cs2-modded-server-${BRANCH}\/custom_files\/ $HOME\/custom_files\/\r\nelse\r\n    # If the target directory exists, copy all the contents of the source directory to the target directory\r\n    cp -RT cs2-modded-server-${BRANCH}\/custom_files\/ $HOME\/custom_files\/\r\nfi\r\n\r\necho \"Merging in custom files from $HOME\/custom_files\"\r\ncp -RT $HOME\/custom_files\/ $CS_PATH\/csgo\/\r\n\r\ncd $HOME\r\n\r\n# Define the file name\r\nFILE=\"game\/csgo\/gameinfo.gi\"\r\n\r\n# Define the pattern to search for and the line to add\r\nPATTERN=\"Game_LowViolence[[:space:]]*csgo_lv \/\/ Perfect World content override\"\r\nLINE_TO_ADD=\"\\t\\t\\tGame\\tcsgo\/addons\/metamod\"\r\n\r\n# Use a regular expression to ignore spaces when checking if the line exists\r\nREGEX_TO_CHECK=\"^[[:space:]]*Game[[:space:]]*csgo\/addons\/metamod\"\r\n\r\n# Check if the line already exists in the file, ignoring spaces\r\nif grep -qE \"$REGEX_TO_CHECK\" \"$FILE\"; then\r\n    echo \"$FILE already patched for Metamod.\"\r\nelse\r\n    # If the line isn't there, use awk to add it after the pattern\r\n    awk -v pattern=\"$PATTERN\" -v lineToAdd=\"$LINE_TO_ADD\" '{\r\n        print $0;\r\n        if ($0 ~ pattern) {\r\n            print lineToAdd;\r\n        }\r\n    }' \"$FILE\" > tmp_file && mv tmp_file \"$FILE\"\r\n    echo \"$FILE successfully patched for Metamod.\"\r\nfi\r\n\r\nrm -r $HOME\/cs2-modded-server-${BRANCH} $HOME\/${BRANCH}.zip",
+            "container": "ghcr.io\/pterodactyl\/installers:debian",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": [
+        {
+            "name": "Map",
+            "description": "The default map for the server.",
+            "env_variable": "SRCDS_MAP",
+            "default_value": "de_mirage",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|alpha_dash",
+            "field_type": "text"
+        },
+        {
+            "name": "Source AppID",
+            "description": "NOT VISIBLE TO USERS. DO NOT EDIT.",
+            "env_variable": "SRCDS_APPID",
+            "default_value": "730",
+            "user_viewable": false,
+            "user_editable": false,
+            "rules": "required|numeric",
+            "field_type": "text"
+        },
+        {
+            "name": "Max Players",
+            "description": "The maximum number of players the server can host.",
+            "env_variable": "SRCDS_MAXPLAYERS",
+            "default_value": "64",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|numeric",
+            "field_type": "text"
+        },
+        {
+            "name": "Disable Updates",
+            "description": "Set to 1 to stop updates.",
+            "env_variable": "SRCDS_STOP_UPDATE",
+            "default_value": "0",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|numeric",
+            "field_type": "text"
+        },
+        {
+            "name": "Validate Install",
+            "description": "Toggles SteamCMD validation of game server files. Set to 0 to disable.",
+            "env_variable": "SRCDS_VALIDATE",
+            "default_value": "0",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|numeric",
+            "field_type": "text"
+        },
+        {
+            "name": "Game Server Login Token (GSLT)",
+            "description": "The Steam Account Token required for the server to be displayed publicly. https:\/\/steamcommunity.com\/dev\/managegameservers",
+            "env_variable": "STEAM_ACC",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "max:32|nullable",
+            "field_type": "text"
+        }
+    ]
+}
