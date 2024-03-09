@@ -112,6 +112,11 @@
             When enabled, plugins are automatically reloaded when their .dll file is updated.
             </summary>
         </member>
+        <member name="P:CounterStrikeSharp.API.Core.CoreConfig.PluginAutoLoadEnabled">
+            <summary>
+            When enabled, plugins are automatically loaded from the plugins directory on server start.
+            </summary>
+        </member>
         <member name="T:CounterStrikeSharp.API.Core.FunctionLifetime">
             <summary>
             Describes the lifetime of a function reference.
@@ -121,7 +126,23 @@
             <summary>Delegate will be removed after the first invocation.</summary> 
         </member>
         <member name="F:CounterStrikeSharp.API.Core.FunctionLifetime.Permanent">
-            <summary>Delegate will remain in memory for the lifetime of the application.</summary>
+            <summary>Delegate will remain in memory for the lifetime of the application (or until <see cref="M:CounterStrikeSharp.API.Core.FunctionReference.Remove(System.Int32)"/> is called).</summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.FunctionReference">
+            <summary>
+            Represents a reference to a function that can be called from native code.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.FunctionReference.Lifetime">
+            <summary>
+            <inheritdoc cref="T:CounterStrikeSharp.API.Core.FunctionLifetime"/>
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.FunctionReference.CompletionTask">
+            <summary>
+            For <see cref="F:CounterStrikeSharp.API.Core.FunctionLifetime.SingleUse"/> function references, this task will complete when
+            the function has finished invoking.
+            </summary>
         </member>
         <member name="T:CounterStrikeSharp.API.Core.HookMode">
             <summary>
@@ -180,6 +201,12 @@
             e.g. /game/csgo/addons/counterstrikesharp/plugins
             </summary>
         </member>
+        <member name="P:CounterStrikeSharp.API.Core.Hosting.IScriptHostConfiguration.SharedPath">
+            <summary>
+            Gets the absolute path to the directory that contains CounterStrikeSharp plugin shared APIS.
+            e.g. /game/csgo/addons/counterstrikesharp/shared
+            </summary>
+        </member>
         <member name="P:CounterStrikeSharp.API.Core.Hosting.IScriptHostConfiguration.ConfigsPath">
             <summary>
             Gets the absolute path to the directory that contains CounterStrikeSharp configs.
@@ -218,6 +245,14 @@
             Will be called by CounterStrikeSharp on plugin unload. In this method the plugin should cleanup any extra resources.
             Event handlers, listeners etc. will automatically be deregistered.
             </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.IPlugin.OnAllPluginsLoaded(System.Boolean)">
+            <summary>
+            Will be called by CounterStrikeSharp after all plugins have been loaded.
+            This will also be called for convenience after a reload or a late l oad, so that you don't have to handle
+            re-wiring everything.
+            </summary>
+            <param name="hotReload"></param>
         </member>
         <member name="T:CounterStrikeSharp.API.Core.IPluginConfig`1">
             <summary>
@@ -367,6 +402,12 @@
             This seems to be called even when the server is hibernating.
             </summary>
             <param name="simulating"><see langword="true"/> if simulating, <see langword="false"/> otherwise</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnServerPrecacheResources">
+            <summary>
+            Called when the server precaching resources (only when initial startup / changing map).
+            </summary>
+            <param name="manifest">Resource Manifest</param>
         </member>
         <member name="M:CounterStrikeSharp.API.Core.CBaseEntity.Teleport(CounterStrikeSharp.API.Modules.Utils.Vector,CounterStrikeSharp.API.Modules.Utils.QAngle,CounterStrikeSharp.API.Modules.Utils.Vector)">
             <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
@@ -1121,6 +1162,12 @@
             Development universe.
             </summary>
         </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Events.GameEvent.Free">
+            <summary>
+            Used to manually free the event.
+            <remarks>If <see cref="M:CounterStrikeSharp.API.Modules.Events.GameEvent.FireEvent(System.Boolean)"/> is called, Free will be called automatically.</remarks>
+            </summary>
+        </member>
         <member name="M:CounterStrikeSharp.API.Modules.Extensions.PlayerExtensions.GetChatColor(CounterStrikeSharp.API.Core.CCSPlayerController)">
             <summary>
             <inheritdoc cref="M:CounterStrikeSharp.API.Modules.Utils.ChatColors.ForPlayer(CounterStrikeSharp.API.Core.CCSPlayerController)"/>
@@ -1317,10 +1364,22 @@
         <member name="F:CounterStrikeSharp.API.PlayerButtons.Attack3">
             grenade 2 
         </member>
+        <member name="M:CounterStrikeSharp.API.Server.NextFrameAsync(System.Action)">
+            <summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Server.NextFrame(System.Action)"/>
+            Returns Task that completes once the synchronous task has been completed.
+            </summary>
+        </member>
         <member name="M:CounterStrikeSharp.API.Server.NextFrame(System.Action)">
             <summary>
             Queue a task to be executed on the next game frame.
             <remarks>Does not execute if the server is hibernating.</remarks>
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Server.NextWorldUpdateAsync(System.Action)">
+            <summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Server.NextWorldUpdate(System.Action)"/>
+            Returns Task that completes once the synchronous task has been completed.
             </summary>
         </member>
         <member name="M:CounterStrikeSharp.API.Server.NextWorldUpdate(System.Action)">

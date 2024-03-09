@@ -1,0 +1,28 @@
+{
+    "PrintToCenterHtml": false,
+    "WelcomeMessage": {
+      "MessageType": 0,
+      "Message": "To list available commands, type {LIGHTGREEN}.help"
+    },
+    "Ads": [
+      {
+        "Interval": 120,
+        "Messages": [
+          {
+            "Chat": "To list available commands, type {LIGHTGREEN}.help"
+          }
+        ]
+      }
+    ],
+    "Panel": [],
+    "DefaultLang": "US",
+    "LanguageMessages": {
+      "map_name": {
+        "US": "Current map: {MAP}"
+      },
+      "current_time": {
+        "US": "{GRAY}Current time: {RED}{TIME}"
+      }
+    },
+    "MapsName": {}
+  }
