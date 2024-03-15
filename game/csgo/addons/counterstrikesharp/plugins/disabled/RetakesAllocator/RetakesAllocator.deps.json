@@ -8,14 +8,15 @@
     ".NETCoreApp,Version=v7.0": {
       "RetakesAllocator/1.0.0": {
         "dependencies": {
-          "CounterStrikeSharp.API": "1.0.147",
-          "RetakesAllocatorCore": "1.0.0"
+          "CounterStrikeSharp.API": "1.0.188",
+          "RetakesAllocatorCore": "1.0.0",
+          "RetakesPluginShared": "1.0.0"
         },
         "runtime": {
           "RetakesAllocator.dll": {}
         }
       },
-      "CounterStrikeSharp.API/1.0.147": {
+      "CounterStrikeSharp.API/1.0.188": {
         "dependencies": {
           "McMaster.NETCore.Plugins": "1.4.0",
           "Microsoft.CSharp": "4.7.0",
@@ -32,8 +33,8 @@
         },
         "runtime": {
           "lib/net7.0/CounterStrikeSharp.API.dll": {
-            "assemblyVersion": "1.0.147.0",
-            "fileVersion": "1.0.147.0"
+            "assemblyVersion": "1.0.188.0",
+            "fileVersion": "1.0.188.0"
           }
         }
       },
@@ -526,6 +527,14 @@
           }
         }
       },
+      "RetakesPluginShared/1.0.0": {
+        "runtime": {
+          "lib/net7.0/RetakesPluginShared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Scrutor/4.2.2": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -755,7 +764,7 @@
       },
       "RetakesAllocatorCore/1.0.0": {
         "dependencies": {
-          "CounterStrikeSharp.API": "1.0.147",
+          "CounterStrikeSharp.API": "1.0.188",
           "Microsoft.EntityFrameworkCore": "7.0.14",
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.14",
           "MySqlConnector": "2.3.4",
@@ -774,12 +783,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "CounterStrikeSharp.API/1.0.147": {
+    "CounterStrikeSharp.API/1.0.188": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-16v1yZR5+r7S5fQ1Lv7AIW8O59PskpXM9/GixjGHPcWO4y1rouDsrAZf7Q+DGSuKmUuLLMg/rCHhsnqEshaKrg==",
-      "path": "counterstrikesharp.api/1.0.147",
-      "hashPath": "counterstrikesharp.api.1.0.147.nupkg.sha512"
+      "sha512": "sha512-0PiT8lWO0BHJWQNurF+CeNYTHnRL/Q5f5anXcFQ1jon+u/C9ecRdsM+eQU7lB+tfYXpnBrew1+DHfWte1DjJxA==",
+      "path": "counterstrikesharp.api/1.0.188",
+      "hashPath": "counterstrikesharp.api.1.0.188.nupkg.sha512"
     },
     "McMaster.NETCore.Plugins/1.4.0": {
       "type": "package",
@@ -1074,6 +1083,13 @@
       "sha512": "sha512-Qk5WB/skSZet5Yrz6AN2ywjZaB1pxfAmvQ+5I4khTkLwwIamI4QJoH2NphCWLFQL+2ar8HvsNCTmwYk0qhqL0w==",
       "path": "pomelo.entityframeworkcore.mysql/7.0.0",
       "hashPath": "pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512"
+    },
+    "RetakesPluginShared/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NgmXUe2KW+VFk+wK2lHXSyFiWQKK3qNe28iKgAfiZ1UWHwDyVje15dK1Q5O9Ymhg/o+96kpW/TIoqfrGURNT8g==",
+      "path": "retakespluginshared/1.0.0",
+      "hashPath": "retakespluginshared.1.0.0.nupkg.sha512"
     },
     "Scrutor/4.2.2": {
       "type": "package",
