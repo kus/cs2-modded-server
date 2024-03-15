@@ -197,6 +197,7 @@
 				"workshop/3088183343/fun_bounce"		""
 				"workshop/3082605693/1v1aim_map_longdustversion_d"		""
 				"workshop/3070291913/ar_churches_s2r"		""
+				"workshop/3134466699/mcdonalds"		""
 				"workshop/3082113929/aim_ag_texture_city_advanced"		""
 				"workshop/3080973179/traningoutside"		""
 				"workshop/3086555291/shipment_version_1_0"		""
@@ -218,6 +219,7 @@
 				"workshop/3070923343/fy_pool_day"		""
 				"workshop/3070238628/fy_iceworld"		""
 				"workshop/3072640420/daymare"		""
+				"workshop/3134466699/mcdonalds"		""
 				"workshop/3070348309/aim_theorem"		""
 				"workshop/3070550406/de_safehouse"		""
 				"workshop/3070563536/de_lake"		""
@@ -265,6 +267,7 @@
 			{
 				"workshop/3074758439/only_up"		""
 				"workshop/3070220367/kz_hub"		""
+				"workshop/3145779590/hellcasecyrilchallenge"		""
 				"workshop/3070194623/kz_checkmate"		""
 				"workshop/3086304337/kz_victoria"		""
 				"workshop/3072219045/kz_rc_stonehenge"		""
@@ -297,6 +300,7 @@
 			"name"			"mg_minigames"
 			"maps"
 			{
+				"workshop/3164611860/deathrun_playground"		""
 				"workshop/3082120895/mg_skeet_multigames_v7"		""
 				"workshop/3076765511/mg_warmcup_headshot"		""
 				"workshop/3083325292/deathrun_iceworld_cs2"		""
