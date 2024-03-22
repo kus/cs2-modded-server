@@ -73,7 +73,7 @@ Getting up and running:
 Mod | Version | Why
 --- | --- | ---
 [Metamod:Source](http://www.sourcemm.net/downloads.php?branch=master) | `2.0.0-1284` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
-[CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `195` | Attempts to implement a .NET Core scripting layer on top of a Metamod Source Plugin, allowing developers to create plugins that interact with the game server in a modern language (C#)
+[CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `197` | Attempts to implement a .NET Core scripting layer on top of a Metamod Source Plugin, allowing developers to create plugins that interact with the game server in a modern language (C#)
 [CS2_ExecAfter](https://github.com/kus/CS2_ExecAfter) | `1.0.0` | Executes a command after server event (i.e. OnMapStart) or a delay.
 [CS2 Remove Map Weapons](https://github.com/kus/CS2-Remove-Map-Weapons) | `1.0.1` | Remove weapons from the map in CS2 as `mp_weapons_allow_map_placed 0` does not work.
 [CS2_DamageInfo](https://github.com/K4ryuu/CS2_DamageInfo) | `2.1.1` | Displays the amount of damage players have inflicted on the victim's HP and Armor, as well as the hit groups they have hit.
@@ -84,7 +84,7 @@ Mod | Version | Why
 [SharpTimer](https://github.com/DEAFPS/SharpTimer/)| `0.2.3` | SharpTimer is a simple Surf/KZ/Bhop/MG/Deathrun/etc CS2 Timer plugin
 [GunGame](https://github.com/ssypchenko/cs2-gungame)| `1.0.8` | GunGame mode on Counter Strike Sharp
 [CS2-Multi-1v1](https://github.com/rockCityMath/CS2-Multi-1v1)| `1.0.0` | A CS2 plugin that allows players to fight 1v1 in ranked arenas.
-[CS2 Retakes](https://github.com/B3none/cs2-retakes)| `1.4.0` | CS2 implementation of retakes. Based on the version for CS:GO by Splewis.
+[CS2 Retakes](https://github.com/B3none/cs2-retakes)| `1.4.1` | CS2 implementation of retakes. Based on the version for CS:GO by Splewis.
 [CS2 Instadefuse](https://github.com/B3none/cs2-instadefuse)| `1.4.2` | Allows a CT to instantly defuse the bomb when nothing can prevent defusal. Written in C# for CounterStrikeSharp.
 [CS2 Retakes Allocator](https://github.com/yonilerner/cs2-retakes-allocator)| `1.4.1` | Advanced weapon allocation for B3none/cs2-retakes
 [CS2 Whitelist](https://github.com/PhantomYopta/CS2_WhiteList)| `1.0.0`| Restricts access to the server for SteamID members/employees listed in the whitelist. [How?](#enable-whitelist-so-only-a-list-of-people-can-play)
