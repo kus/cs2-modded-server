@@ -1,7 +1,7 @@
 {
   "StatsDB": {
     "DatabaseType": "SQLite",
-    "DatabaseFilePath": "/csgo/cfg/gungame-db-v106.sqlite",
+    "DatabaseFilePath": "/csgo/cfg/gungame-db-v109.sqlite",
     "GeoDatabaseFilePath": "/csgo/cfg/GeoLite2-Country.mmdb"
   }
 }
