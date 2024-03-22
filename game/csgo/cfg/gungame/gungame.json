@@ -1,6 +1,8 @@
 {
   "IsPluginEnabled": true,
   "_comment.IsPluginEnabled": "Enables or disables the plugin entirely",
+  "RespawnByPlugin": true,
+  "_comment.RespawnByPlugin": "Respawn managed by plugin",
   "RemoveObjectives": 3,
   "_comment.RemoveObjectives": "Remove objectives from map. 0 = Disabled, 1 = BOMB, 2 = HOSTAGE, 3 = BOTH (I'm not sure it works)",
   "StripDeadPlayersWeapon": 1,
