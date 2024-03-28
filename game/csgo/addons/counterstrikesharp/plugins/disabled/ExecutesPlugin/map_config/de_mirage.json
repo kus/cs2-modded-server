@@ -1,26 +1,15 @@
 {
 	"Scenarios": [
 		{
-			"Name": "1v2 A site",
-			"Description": "You are alone against 2 CTs, try to plant the bomb at {{site}} and win the round!",
-			"Bombsite": 0,
-			"RoundTime": 55,
-			"MinPlayerCount": 3,
-			"SpawnIds": [
-				1, 2, 3,
-				5, 9
-			],
-			"GrenadeIds": [2]
-		},
-		{
 			"Name": "A Execute",
 			"Description": "Execute the {{site}} site!",
 			"Bombsite": 0,
 			"RoundTime": 90,
 			"MinPlayerCount": 2,
 			"SpawnIds": [
-				1, 2, 3, 4, 20,
-				5, 7, 9, 18
+				1, 2, 3, 4, 12,
+				
+				5, 6, 7, 8, 9
 			],
 			"GrenadeIds": [
 				1, 2, 4, 12, 13
@@ -33,7 +22,8 @@
 			"RoundTime": 90,
 			"MinPlayerCount": 2,
 			"SpawnIds": [
-				3, 12, 14, 15, 22,
+				1, 2, 3, 4, 12,
+				
 				10, 11, 21
 			],
 			"GrenadeIds": [
@@ -44,10 +34,12 @@
 			"Name": "Mid Control",
 			"Description": "Take control of mid, and try to win the round from there!",
 			"Bombsite": -1,
+			"DisableOtherBombsite": false,
 			"RoundTime": 90,
 			"MinPlayerCount": 2,
 			"SpawnIds": [
-				1, 3, 4, 12, 15,
+				1, 2, 3, 4, 12,
+				
 				16, 17, 18, 19
 			],
 			"GrenadeIds": [

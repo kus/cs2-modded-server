@@ -2,11 +2,11 @@
    "custom_modes":{
       "0":{
          "mode_name":"Pistols Only",
-         "mode_interval":330,
+         "mode_interval":60,
          "armor":1,
          "only_hs":false,
          "allow_knife_damage":true,
-         "random_weapons":false,
+         "random_weapons":true,
          "allow_center_message":true,
          "center_message_text":"<font class='fontSize-l' color='orange'>Pistols Only</font>",
          "primary_weapons":[
@@ -25,13 +25,36 @@
             "weapon_deagle"
          ]
       },
-      "1":{
+      "1": {
+         "mode_name": "Pistols HS-Only",
+         "mode_interval": 60,
+         "armor": 1,
+         "only_hs": true,
+         "allow_knife_damage": true,
+         "random_weapons": true,
+         "allow_center_message": true,
+         "center_message_text": "<font class='fontSize-l' color='red'>Pistols HS-Only</font>",
+         "primary_weapons": [],
+         "secondary_weapons": [
+            "weapon_usp_silencer",
+            "weapon_p250",
+            "weapon_glock",
+            "weapon_cz75a",
+            "weapon_elite",
+            "weapon_fiveseven",
+            "weapon_hkp2000",
+            "weapon_tec9",
+            "weapon_revolver",
+            "weapon_deagle"
+         ]
+      },
+      "2":{
          "mode_name":"2nd Round Buy",
-         "mode_interval":330,
+         "mode_interval":120,
          "armor":2,
          "only_hs":false,
          "allow_knife_damage":true,
-         "random_weapons":false,
+         "random_weapons":true,
          "allow_center_message":true,
          "center_message_text":"<font class='fontSize-l' color='orange'>2nd Round Buy</font>",
          "primary_weapons":[
@@ -60,13 +83,13 @@
             "weapon_deagle"
          ]
       },
-      "2":{
+      "3":{
          "mode_name":"Rifles",
-         "mode_interval":480,
+         "mode_interval":180,
          "armor":2,
          "only_hs":false,
          "allow_knife_damage":true,
-         "random_weapons":false,
+         "random_weapons":true,
          "allow_center_message":true,
          "center_message_text":"<font class='fontSize-l' color='orange'>Rifles</font>",
          "primary_weapons":[
@@ -93,38 +116,13 @@
             "weapon_deagle"
          ]
       },
-      "3":{
-         "mode_name":"Pistols HS-Only",
-         "mode_interval":330,
-         "armor":1,
-         "only_hs":true,
-         "allow_knife_damage":true,
-         "random_weapons":false,
-         "allow_center_message":true,
-         "center_message_text":"<font class='fontSize-l' color='red'>Pistols HS-Only</font>",
-         "primary_weapons":[
-            
-         ],
-         "secondary_weapons":[
-            "weapon_usp_silencer",
-            "weapon_p250",
-            "weapon_glock",
-            "weapon_cz75a",
-            "weapon_elite",
-            "weapon_fiveseven",
-            "weapon_hkp2000",
-            "weapon_tec9",
-            "weapon_revolver",
-            "weapon_deagle"
-         ]
-      },
       "4":{
          "mode_name":"Rifles HS-Only",
-         "mode_interval":330,
+         "mode_interval":180,
          "armor":2,
          "only_hs":true,
          "allow_knife_damage":true,
-         "random_weapons":false,
+         "random_weapons":true,
          "allow_center_message":true,
          "center_message_text":"<font class='fontSize-l' color='red'>Rifles HS-Only</font>",
          "primary_weapons":[
