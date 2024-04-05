@@ -10,6 +10,12 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:CounterStrikeSharp.API.Api.GetVersionString">
+            <summary>
+            Returns the assembly version of CounterStrikeSharp running on the server as a string including git commit hash
+            </summary>
+            <example>1.0.0+9d8b6be</example>
+        </member>
         <member name="M:CounterStrikeSharp.API.NativeObject.As``1">
             <summary>
             Returns a new instance of the specified type using the pointer from the passed in object.
