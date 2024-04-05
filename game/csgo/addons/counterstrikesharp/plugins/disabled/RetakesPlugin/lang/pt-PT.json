@@ -3,7 +3,7 @@
   
   "retakes.queue.joined": "Você foi colocado na fila de espera, aguarda a próxima ronda.",
   "retakes.queue.waiting": "As equipas estão cheias de momento com [GREEN]{0}[NORMAL] players. Você está na fila de espera.",
-  "retakes.queue.replaced_by_vip": "Você foi substituído pelo jogador VIP [VERDE]{0}[NORMAL].",
+  "retakes.queue.replaced_by_vip": "Você foi substituído pelo jogador VIP [GREEN]{0}[NORMAL].",
   "retakes.queue.vip_took_place": "Você ocupou o lugar de [GREEN]{0}[NORMAL] no jogo.",
 
   "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Ts[NORMAL] vs [PURPLE]{2} CTs",
