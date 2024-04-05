@@ -1,0 +1,21 @@
+{
+    "matchzy.ready.markedready": "Você foi marcado como READY.",
+    "matchzy.ready.markedunready": "Você foi marcado como NOTREADY.",
+
+    "matchzy.knife.sidedecisionpending": "{green}{0}{default} venceu a rodada faca. Aguardando eles digitarem {green}.stay{default} ou {green}.switch{default}.",
+    "matchzy.knife.decidedtostay": "{green}{0}{default} decidiu ficar no mesmo time.",
+    "matchzy.knife.decidedtoswitch": "{green}{0}{default} decidiu trocar de time.",
+
+    "matchzy.pause.pausedthematch": "{green}{0}{default} pausou a partida. Digite .unpause para despausar a partida.",
+    "matchzy.pause.teamsunpausedthematch": "Ambas as equipes despausaram, retomando a partida!",
+    "matchzy.pause.teamwantstounpause": "{green}{0}{default} quer despausar a partida. {green}{1}{default}, por favor, escreva !unpause para confirmar.",
+    "matchzy.pause.adminpausedthematch": "{green}Admin{default} pausou a partida!",
+    "matchzy.pause.adminunpausedthematch": "{green}Admin{default} despausou, retomando a partida!",
+    "matchzy.pause.onlyadmincanunpause": "A partida foi pausada por um admin, portanto, só pode ser despausada por um admin.",
+    "matchzy.pause.pausedbecauserestore": "A partida foi pausada devido à Restauração de Rodada. Ambas as equipes precisam digitar {green}.unpause{default} para despausar a partida.",
+    "matchzy.pause.techpausenotenabled": "As pausas técnicas não estão ativadas.",
+    "matchzy.pause.notechpauseleft": "{green}{0}{default} não tem mais pausas técnicas!",
+
+    "matchzy.restore.teamwantstorestore": "{green}{0}{default} quer restaurar o jogo para o início da rodada atual. {green}{1}{default}, por favor, escreva {green}!stop{default} para confirmar.",
+    "matchzy.restore.restoredsuccessfully": "Arquivo de backup restaurado com sucesso: {0}"
+}

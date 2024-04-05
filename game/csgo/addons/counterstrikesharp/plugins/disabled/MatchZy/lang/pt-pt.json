@@ -1,0 +1,21 @@
+{
+    "matchzy.ready.markedready": "Foi marcado como Pronto.",
+    "matchzy.ready.markedunready": "Foi marcado como NÃO pronto",
+
+    "matchzy.knife.sidedecisionpending": "{green}{0}{default} ganhou a ronda de faca. À espera que escolham {green}.stay{default} ou {green}.switch{default}.",
+    "matchzy.knife.decidedtostay": "{green}{0}{default} decidiu ficar.",
+    "matchzy.knife.decidedtoswitch": "{green}{0}{default} decidiu trocar.",
+
+    "matchzy.pause.pausedthematch": "{green}{0}{default} colocou pausa na partida. Escreva .unpause para remover a pausa.",
+    "matchzy.pause.teamsunpausedthematch": "Ambas as equipas pediram para terminar a pausa, a resumir a partida!",
+    "matchzy.pause.teamwantstounpause": "{green}{0}{default} quer terminar a pausa. {green}{1}{default}, por favor escreva !unpause para confirmar.",
+    "matchzy.pause.adminpausedthematch": "{green}Admin{default} colocou a partida em pausa!",
+    "matchzy.pause.adminunpausedthematch": "{green}Admin{default} retirou a pausa, a remotar a partida!",
+    "matchzy.pause.onlyadmincanunpause": "Um admin colocou a partida em pausa, apenas este pode retomar a mesma.",
+    "matchzy.pause.pausedbecauserestore": "Partida em pausa devido à restauração da ronda. ambas as equipas têm que escrever {green}.unpause{default} para retomar a partida.",
+    "matchzy.pause.techpausenotenabled": "Pausas técnicas não se encontram ativas",
+    "matchzy.pause.notechpauseleft": "{green}{0}{default} não têm mais pausas técnicas!",
+                                                            
+    "matchzy.restore.teamwantstorestore": "{green}{0}{default} quer reinicar para o início desta ronda. {green}{1}{default}, escreva !stop para confirmar.",
+    "matchzy.restore.restoredsuccessfully": "Ficheiro Backup restaurado com sucesso: {0}"
+}

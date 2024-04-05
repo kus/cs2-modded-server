@@ -1,0 +1,21 @@
+{
+    "matchzy.ready.markedready": "You have been marked as ready.",
+    "matchzy.ready.markedunready": "You have been marked as NOT ready.",
+
+    "matchzy.knife.sidedecisionpending": "{green}{0}{default} won the knife round. Waiting for them to type {green}.stay{default} or {green}.switch{default}.",
+    "matchzy.knife.decidedtostay": "{green}{0}{default} has decided to stay.",
+    "matchzy.knife.decidedtoswitch": "{green}{0}{default} has decided to switch.",
+
+    "matchzy.pause.pausedthematch": "{green}{0}{default} has paused the match. Type .unpause to unpause the match.",
+    "matchzy.pause.teamsunpausedthematch": "Both teams have unpaused, resuming the match!",
+    "matchzy.pause.teamwantstounpause": "{green}{0}{default} wants to unpause the match. {green}{1}{default}, please write !unpause to confirm.",
+    "matchzy.pause.adminpausedthematch": "{green}Admin{default} has paused the match!",
+    "matchzy.pause.adminunpausedthematch": "{green}Admin{default} has unpaused, resuming the match!",
+    "matchzy.pause.onlyadmincanunpause": "Match has been paused by an admin, hence it can be unpaused by an admin only.",
+    "matchzy.pause.pausedbecauserestore": "Match has been paused because of Round Restore. Both teams need to type {green}.unpause{default} to unpause the match.",
+    "matchzy.pause.techpausenotenabled": "Technical pauses are not enabled.",
+    "matchzy.pause.notechpauseleft": "{green}{0}{default} has no more tech pauses!",
+                                                            
+    "matchzy.restore.teamwantstorestore": "{green}{0}{default} wants to restore the game to the beginning of the current round. {green}{1}{default}, please write !stop to confirm.",
+    "matchzy.restore.restoredsuccessfully": "Backup file restored successfully: {0}"
+}

@@ -1,0 +1,21 @@
+{
+    "matchzy.ready.markedready": "Вас отметили как готового.",
+    "matchzy.ready.markedunready": "Вас отметили как НЕ готового.",
+
+    "matchzy.knife.sidedecisionpending": "{green}{0}{default} выиграла ножевой раунд. Ждём, пока они введут {green}.stay{default} или {green}.switch{default}.",
+    "matchzy.knife.decidedtostay": "{green}{0}{default} решили остаться.",
+    "matchzy.knife.decidedtoswitch": "{green}{0}{default} решили сменить стороны.",
+
+    "matchzy.pause.pausedthematch": "{green}{0}{default} приостановила матч. Введите .unpause, чтобы возобновить матч.",
+    "matchzy.pause.teamsunpausedthematch": "Обе команды сняли паузу, возобновляю матч!",
+    "matchzy.pause.teamwantstounpause": "{green}{0}{default} хочет возобновить матч. {green}{1}{default}, пожалуйста, напишите !unpause для подтверждения.",
+    "matchzy.pause.adminpausedthematch": "{green}Администратор{default} приостановил матч!",
+    "matchzy.pause.adminunpausedthematch": "{green}Администратор{default} возобновил матч!",
+    "matchzy.pause.onlyadmincanunpause": "Матч был приостановлен администратором, поэтому паузу снять может только администратор",
+    "matchzy.pause.pausedbecauserestore": "Матч был приостановлен из-за восстановления раунда. Обе команды должны ввести {green}.unpause{default}, чтобы возобновить матч.",
+    "matchzy.pause.techpausenotenabled": "Технические паузы выключены.",
+    "matchzy.pause.notechpauseleft": "{green}{0}{default} технических пауз больше нет!",
+                                                            
+    "matchzy.restore.teamwantstorestore": "{green}{0}{default} хочет восстановить игру до начала текущего раунда. {green}{1}{default}, пожалуйста, напишите !stop для подтверждения.",
+    "matchzy.restore.restoredsuccessfully": "Резервная копия успешно восстановлена: {0}"
+}
