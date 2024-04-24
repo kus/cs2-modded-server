@@ -135,7 +135,7 @@ curl -s -H "Cache-Control: no-cache" -o "stop.sh" "https://raw.githubusercontent
 # Download latest start script
 curl -s -H "Cache-Control: no-cache" -o "start.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${BRANCH}/start.sh" && chmod +x start.sh
 
-PUBLIC_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
+PUBLIC_IP=$(dig -4 +short myip.opendns.com @resolver1.opendns.com)
 
 if [ -z "$PUBLIC_IP" ]; then
 	echo "ERROR: Cannot retrieve your public IP address..."
