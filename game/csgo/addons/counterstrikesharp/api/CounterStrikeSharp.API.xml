@@ -45,6 +45,12 @@
             <param name="handler">The event handler to register.</param>
             <param name="hookMode">The mode in which the event handler is hooked. Default is `HookMode.Post`.</param>
         </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.DeregisterEventHandler``1(CounterStrikeSharp.API.Core.BasePlugin.GameEventHandler{``0},CounterStrikeSharp.API.Core.HookMode)">
+            <summary>
+            De-registers a game event handler.
+            </summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterEventHandler``1(CounterStrikeSharp.API.Core.BasePlugin.GameEventHandler{``0},CounterStrikeSharp.API.Core.HookMode)"/>
+        </member>
         <member name="M:CounterStrikeSharp.API.Core.BasePlugin.AddCommand(System.String,System.String,CounterStrikeSharp.API.Modules.Commands.CommandInfo.CommandCallback)">
             <summary>
             Registers a new server command.
@@ -53,11 +59,89 @@
             <param name="description">The description of the command.</param>
             <param name="handler">The callback function to be invoked when the command is executed.</param>
         </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.AddCommandListener(System.String,CounterStrikeSharp.API.Modules.Commands.CommandInfo.CommandListenerCallback,CounterStrikeSharp.API.Core.HookMode)">
+            <summary>
+            Adds a command listener which will be called before or after the command is executed on the server by a player.
+            </summary>
+            <param name="name">Name of the command, e.g. `jointeam`</param>
+            <param name="handler">Code to run when command is executed. Return <see cref="F:CounterStrikeSharp.API.Core.HookResult.Handled"/> or higher to prevent command execution.</param>
+            <param name="mode">Whether to hook before or after the command is executed.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RemoveCommand(System.String,CounterStrikeSharp.API.Modules.Commands.CommandInfo.CommandCallback)">
+            <summary>
+            Removes a server command.
+            </summary>
+            <param name="name">The name of the command.</param>
+            <param name="handler">The callback function to be invoked when the command is executed.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RemoveCommandListener(System.String,CounterStrikeSharp.API.Modules.Commands.CommandInfo.CommandListenerCallback,CounterStrikeSharp.API.Core.HookMode)">
+            <summary>
+            Remove a command listener.
+            </summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Core.BasePlugin.AddCommandListener(System.String,CounterStrikeSharp.API.Modules.Commands.CommandInfo.CommandListenerCallback,CounterStrikeSharp.API.Core.HookMode)"/>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterListener``1(``0)">
+            <summary>
+            Registers a global listener, e.g. <see cref="T:CounterStrikeSharp.API.Core.Listeners.OnTick"/>, <see cref="T:CounterStrikeSharp.API.Core.Listeners.OnClientConnect"/>.
+            </summary>
+            <param name="handler"></param>
+            <typeparam name="T">Listener delegate type</typeparam>
+            <exception cref="T:System.ArgumentException">Invalid listener <see cref="!:T"/> provided</exception>
+            <example>
+            <code lang="C#">
+            RegisterListener&lt;Listeners.OnTick&gt;(OnTick);
+            </code>
+            </example>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RemoveListener``1(``0)">
+            <summary>
+            Removes a global listener.
+            </summary>
+            <param name="handler"></param>
+            <typeparam name="T"></typeparam>
+            <exception cref="T:System.ArgumentException">Invalid listener <see cref="!:T"/> provided</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RemoveListener(System.String,System.Delegate)">
+            <summary>
+            Removes a global listener.
+            </summary>
+            <param name="name"></param>
+            <param name="handler"></param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.AddTimer(System.Single,System.Action,System.Nullable{CounterStrikeSharp.API.Modules.Timers.TimerFlags})">
+            <summary>
+            Adds a timer that will call the given callback after the specified amount of seconds.
+            By default will only run once unless the <see cref="F:CounterStrikeSharp.API.Modules.Timers.TimerFlags.REPEAT"/> flag is set.
+            </summary>
+            <param name="interval">Interval/Delay in seconds</param>
+            <param name="callback">Code to run when timer elapses</param>
+            <param name="flags">Controls if the timer is a one-off, repeat or stops on map change etc.</param>
+            <returns>An instance of the <see cref="T:CounterStrikeSharp.API.Modules.Timers.Timer"/></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterAllAttributes(System.Object)">
+            <summary>
+            Registers all attribute handlers on the given instance.
+            Can be used to register event handlers, console commands, entity outputs etc. from classes that are not derived from `BasePlugin`.
+            </summary>
+            <param name="instance"></param>
+        </member>
         <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterAttributeHandlers(System.Object)">
             <summary>
-            Registers all game event handlers that are decorated with the `[GameEventHandler]` attribute.
+            Registers all game event handlers that are decorated with the <see cref="T:CounterStrikeSharp.API.Core.Attributes.Registration.GameEventHandlerAttribute"/> attribute.
             </summary>
             <param name="instance">The instance of the object where the event handlers are defined.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterConsoleCommandAttributeHandlers(System.Object)">
+            <summary>
+            Registers all console command handlers that are decorated with the <see cref="T:CounterStrikeSharp.API.Core.Attributes.Registration.ConsoleCommandAttribute"/> attribute.
+            </summary>
+            <param name="instance">The instance of the object where the console command handlers are defined.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterEntityOutputAttributeHandlers(System.Object)">
+            <summary>
+            Registers all entity output handlers that are decorated with the <see cref="T:CounterStrikeSharp.API.Core.Attributes.Registration.EntityOutputHookAttribute"/> attribute.
+            </summary>
+            <param name="instance">The instance of the object where entity output hook handlers are defined.</param>
         </member>
         <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterFakeConVars(System.Object)">
             <summary>
@@ -65,6 +149,34 @@
             </summary>
             <param name="convar"></param>
             <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.HookEntityOutput(System.String,System.String,CounterStrikeSharp.API.Modules.Entities.EntityIO.EntityOutputHandler,CounterStrikeSharp.API.Core.HookMode)">
+            <summary>
+            Hooks an <a href="https://developer.valvesoftware.com/wiki/Inputs_and_Outputs">entity output</a>.
+            </summary>
+            <param name="classname">Classname to hook, or `*` for wildcard</param>
+            <param name="outputName">Output name to hook, or `*` for wildcard</param>
+            <param name="handler">Handler to call</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.UnhookEntityOutput(System.String,System.String,CounterStrikeSharp.API.Modules.Entities.EntityIO.EntityOutputHandler,CounterStrikeSharp.API.Core.HookMode)">
+            <summary>
+            Unhooks an entity output.
+            </summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Core.BasePlugin.HookEntityOutput(System.String,System.String,CounterStrikeSharp.API.Modules.Entities.EntityIO.EntityOutputHandler,CounterStrikeSharp.API.Core.HookMode)"/>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.HookSingleEntityOutput(CounterStrikeSharp.API.Core.CEntityInstance,System.String,CounterStrikeSharp.API.Modules.Entities.EntityIO.EntityOutputHandler)">
+            <summary>
+            Hooks an entity output for a single entity instance.
+            </summary>
+            <param name="entityInstance">Entity instance to hook</param>
+            <param name="outputName">Output name to hook, or `*` for wildcard</param>
+            <param name="handler">Handler to call</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.UnhookSingleEntityOutput(CounterStrikeSharp.API.Core.CEntityInstance,System.String,CounterStrikeSharp.API.Modules.Entities.EntityIO.EntityOutputHandler)">
+            <summary>
+            Unhooks an entity output for a single entity instance.
+            </summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Core.BasePlugin.HookSingleEntityOutput(CounterStrikeSharp.API.Core.CEntityInstance,System.String,CounterStrikeSharp.API.Modules.Entities.EntityIO.EntityOutputHandler)"/>
         </member>
         <member name="T:CounterStrikeSharp.API.Core.Commands.PluginCommandManagerDecorator">
             <summary>
@@ -232,12 +344,22 @@
         </member>
         <member name="P:CounterStrikeSharp.API.Core.IPlugin.ModuleName">
             <summary>
-            Name of the plugin.
+            Name of the plugin as it will appear in the plugin list.
             </summary>
         </member>
         <member name="P:CounterStrikeSharp.API.Core.IPlugin.ModuleVersion">
             <summary>
-            Module version.
+            Module version as it will appear in the plugin list.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.IPlugin.ModuleAuthor">
+            <summary>
+            Author of the plugin as it will appear in the plugin list.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.IPlugin.ModuleDescription">
+            <summary>
+            Brief description of the plugin as it will appear in the plugin list.
             </summary>
         </member>
         <member name="M:CounterStrikeSharp.API.Core.IPlugin.Load(System.Boolean)">
@@ -259,6 +381,11 @@
             re-wiring everything.
             </summary>
             <param name="hotReload"></param>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.IPlugin.ModulePath">
+            <summary>
+            The path to the plugin's DLL file.
+            </summary>
         </member>
         <member name="T:CounterStrikeSharp.API.Core.IPluginConfig`1">
             <summary>
@@ -985,6 +1112,12 @@
             <param name="minArgs">The minimum amount of arguments required to execute this command.</param>
             <param name="usage">If the command fails, this string is printed to the caller to show the CommandUtils intended usage.</param>
             <param name="whoCanExecute">Restricts the command so it can only be executed by players, the server console, or both (see CommandUsage).</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Modules.Commands.CommandInfo.CommandListenerCallback">
+            <summary>
+            Command listener callback.
+            <returns>If returning <see cref="F:CounterStrikeSharp.API.Core.HookResult.Handled"/> or higher, will prevent the command from executing.</returns>
+            </summary>
         </member>
         <member name="P:CounterStrikeSharp.API.Modules.Commands.CommandInfo.CallingContext">
             <summary>
