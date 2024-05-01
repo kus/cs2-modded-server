@@ -597,6 +597,9 @@
         <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.PrintToCenter(System.String)">
             <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
         </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.PrintToCenterAlert(System.String)">
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
         <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.PrintToCenterHtml(System.String,System.Int32)">
             <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
         </member>
@@ -742,7 +745,7 @@
         </member>
         <member name="M:CounterStrikeSharp.API.Core.CEntityInstance.AcceptInput(System.String,CounterStrikeSharp.API.Core.CEntityInstance,CounterStrikeSharp.API.Core.CEntityInstance,System.String,System.Int32)">
             <summary>
-            Calls a named input method on an entity.
+            Calls a named input method on an entity, this will bypass the map IO event queue system.
             <example>
             <code>
             entity.AcceptInput("Break");
@@ -753,6 +756,23 @@
             <param name="activator">Entity which initiated the action, <see langword="null"/> for no entity</param>
             <param name="caller">Entity that is sending the event, <see langword="null"/> for no entity</param>
             <param name="value">String variant value to send with the event</param>
+            <param name="outputId">Unknown, defaults to 0</param>
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CEntityInstance.AddEntityIOEvent(System.String,CounterStrikeSharp.API.Core.CEntityInstance,CounterStrikeSharp.API.Core.CEntityInstance,System.String,System.Single,System.Int32)">
+            <summary>
+            Calls a named input method on an entity, conforming to the map IO event queue system.
+            <example>
+            <code>
+            entity.AddEntityIOEvent("Break");
+            </code>
+            </example>
+            </summary>
+            <param name="inputName">Input action name</param>
+            <param name="activator">Entity which initiated the action, <see langword="null"/> for no entity</param>
+            <param name="caller">Entity that is sending the event, <see langword="null"/> for no entity</param>
+            <param name="value">String variant value to send with the event</param>
+            <param name="delay">Delay in seconds before calling the input</param>
             <param name="outputId">Unknown, defaults to 0</param>
             <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
         </member>
@@ -1394,6 +1414,27 @@
             Roll of angle
             </summary>
         </member>
+        <member name="T:CounterStrikeSharp.API.Modules.Utils.CHandle`1">
+            <summary>
+            CHandle is a class that represents a 32-bit ID (entindex + serial number) unique to every past and present entity in a game.
+            It is used to refer to entities where pointers and entity indexes are unsafe; mainly across the client/server divide.
+            <a href="https://developer.valvesoftware.com/wiki/CHandle">More info</a>
+            </summary>
+            <typeparam name="T">Type of entity this handle refers to</typeparam>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Utils.CHandle`1.Value">
+            <inheritdoc cref="M:CounterStrikeSharp.API.Modules.Utils.CHandle`1.Get"/>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.CHandle`1.Get">
+            <summary>
+            Retrieves the instance of the entity this handle refers to.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Utils.CHandle`1.IsValid">
+            <summary>
+            Checks that the handle is valid and points to an entity.
+            </summary>
+        </member>
         <member name="M:CounterStrikeSharp.API.Modules.Utils.ChatColors.ForTeam(CounterStrikeSharp.API.Modules.Utils.CsTeam)">
             <summary>
             Returns a chat color based on a team.
@@ -1460,7 +1501,7 @@
         </member>
         <member name="M:CounterStrikeSharp.API.Modules.Utils.Vector.Length">
             <summary>
-            Returns the Euclidean length of the vector: √x² + y² + z² 
+            Returns the Euclidean length of the vector: √x² + y² + z²
             </summary>
             <returns>Euclidean length of vector</returns>
         </member>
