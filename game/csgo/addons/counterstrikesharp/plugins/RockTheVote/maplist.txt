@@ -1,0 +1,12 @@
+//Put your map list here
+de_thera:3121217565
+de_vertigo
+cs_italy
+de_inferno
+cs_office
+de_mirage
+de_ancient
+de_nuke
+de_anubis
+de_overpass
+de_dust2
