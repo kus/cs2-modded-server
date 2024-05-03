@@ -8,8 +8,9 @@
     ".NETCoreApp,Version=v8.0": {
       "GG2/1.0.0": {
         "dependencies": {
-          "CounterStrikeSharp.API": "1.0.219",
+          "CounterStrikeSharp.API": "1.0.228",
           "Dapper": "2.1.44",
+          "GunGameAPI": "1.0.0",
           "MaxMind.GeoIP2": "5.2.0",
           "Microsoft.Data.Sqlite": "8.0.4",
           "Microsoft.Extensions.Logging": "8.0.0",
@@ -20,7 +21,7 @@
           "GG2.dll": {}
         }
       },
-      "CounterStrikeSharp.API/1.0.219": {
+      "CounterStrikeSharp.API/1.0.228": {
         "dependencies": {
           "McMaster.NETCore.Plugins": "1.4.0",
           "Microsoft.CSharp": "4.7.0",
@@ -37,8 +38,8 @@
         },
         "runtime": {
           "lib/net8.0/CounterStrikeSharp.API.dll": {
-            "assemblyVersion": "1.0.219.0",
-            "fileVersion": "1.0.219.0"
+            "assemblyVersion": "1.0.228.0",
+            "fileVersion": "1.0.228.0"
           }
         }
       },
@@ -738,6 +739,15 @@
         "dependencies": {
           "System.Text.Encodings.Web": "8.0.0"
         }
+      },
+      "GunGameAPI/1.0.0": {
+        "dependencies": {
+          "CounterStrikeSharp.API": "1.0.228",
+          "Microsoft.Extensions.Logging": "8.0.0"
+        },
+        "runtime": {
+          "GunGameAPI.dll": {}
+        }
       }
     }
   },
@@ -747,12 +757,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "CounterStrikeSharp.API/1.0.219": {
+    "CounterStrikeSharp.API/1.0.228": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-X1TWLd0RvGgBQ3PJPX5KvQ6DUvkdlIfrVQNHNEoIUiwU8gy6Rbrza5e6wki5OqU/5E31L48ql5Yet3coyCaKyA==",
-      "path": "counterstrikesharp.api/1.0.219",
-      "hashPath": "counterstrikesharp.api.1.0.219.nupkg.sha512"
+      "sha512": "sha512-oJWeMCJt/uQZEOXucgugu3u+QBYBqxzONf/rHjBetIZCeqgUMilo3s10GgyRMhHBDS0nBO5POUcg6K96aTxwLg==",
+      "path": "counterstrikesharp.api/1.0.228",
+      "hashPath": "counterstrikesharp.api.1.0.228.nupkg.sha512"
     },
     "Dapper/2.1.44": {
       "type": "package",
@@ -1152,6 +1162,11 @@
       "sha512": "sha512-OdrZO2WjkiEG6ajEFRABTRCi/wuXQPxeV6g8xvUJqdxMvvuCCEk86zPla8UiIQJz3durtUEbNyY/3lIhS0yZvQ==",
       "path": "system.text.json/8.0.0",
       "hashPath": "system.text.json.8.0.0.nupkg.sha512"
+    },
+    "GunGameAPI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
