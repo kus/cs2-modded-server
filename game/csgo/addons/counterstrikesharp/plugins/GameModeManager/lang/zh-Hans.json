@@ -1,0 +1,7 @@
+{
+    "plugin.prefix": "[{GREEN}服务器{DEFAULT}]",  // Server = 服务器
+    "changemap.message": "管理员 {LIGHTRED}{0}{DEFAULT} 将地图更改为 {LIGHTRED}{1}{DEFAULT}.",  // Admin changed map to...
+    "changemode.message": "管理员 {LIGHTRED}{0}{DEFAULT} 将游戏模式更改为 {LIGHTRED}{1}{DEFAULT}.",  // Admin changed game mode to...
+    "mode.hud.menu-title": "游戏模式列表",  // List of game modes
+    "maps.hud.menu-title": "地图列表"  // List of maps
+  }

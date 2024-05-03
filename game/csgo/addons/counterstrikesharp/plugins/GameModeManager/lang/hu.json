@@ -1,0 +1,7 @@
+{
+    "plugin.prefix": "[{GREEN}Szerver{DEFAULT}]", 
+    "changemap.message": "Admin {LIGHTRED}{0}{DEFAULT} megváltoztatta a pályát erre: {LIGHTRED}{1}{DEFAULT}.",
+    "changemode.message": "Admin {LIGHTRED}{0}{DEFAULT} megváltoztatta a játékmódot erre: {LIGHTRED}{1}{DEFAULT}.", 
+    "mode.hud.menu-title": "Játékmód-lista", 
+    "maps.hud.menu-title": "Pályalista" 
+  }

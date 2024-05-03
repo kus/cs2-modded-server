@@ -1,0 +1,7 @@
+{
+  "plugin.prefix": "[{GREEN}Server{DEFAULT}]",  // Server = Server
+  "changemap.message": "Admin {LIGHTRED}{0}{DEFAULT} heeft de map gewijzigd in {LIGHTRED}{1}{DEFAULT}.",  // Admin changed map to...
+  "changemode.message": "Admin {LIGHTRED}{0}{DEFAULT} heeft de spelmodus gewijzigd in {LIGHTRED}{1}{DEFAULT}.",  // Admin changed game mode to...
+  "mode.hud.menu-title": "Lijst met spelmodi",  // List of game modes
+  "maps.hud.menu-title": "Kaartlijst"  // List of maps
+}

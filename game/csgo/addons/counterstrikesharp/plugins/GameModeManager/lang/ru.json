@@ -1,0 +1,7 @@
+{
+    "plugin.prefix": "[{GREEN}Сервер{DEFAULT}]",  // Server = Сервер
+    "changemap.message": "Администратор {LIGHTRED}{0}{DEFAULT} сменил карту на {LIGHTRED}{1}{DEFAULT}.",  // Admin changed map to...
+    "changemode.message": "Администратор {LIGHTRED}{0}{DEFAULT} сменил игровой режим на {LIGHTRED}{1}{DEFAULT}.",  // Admin changed game mode to...
+    "mode.hud.menu-title": "Список режимов игры",  // List of game modes
+    "maps.hud.menu-title": "Список карт"  // List of maps
+  }

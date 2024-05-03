@@ -1,0 +1,7 @@
+{
+    "plugin.prefix": "[{GREEN}Serwer{DEFAULT}]",
+    "changemap.message": "Admin {LIGHTRED}{0}{DEFAULT} zmienił mapę na {LIGHTRED}{1}{DEFAULT}.",
+    "changemode.message": "Admin {LIGHTRED}{0}{DEFAULT} zmienił tryb gry na {LIGHTRED}{1}{DEFAULT}.",
+    "mode.hud.menu-title": "Lista trybów gry",
+    "maps.hud.menu-title": "Lista map"
+  }

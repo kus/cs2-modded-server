@@ -1,0 +1,7 @@
+{
+    "plugin.prefix": "[{GREEN}Serveris{DEFAULT}]",
+    "changemap.message": "Admins {LIGHTRED}{0}{DEFAULT} ir nomainījis karti uz {LIGHTRED}{1}{DEFAULT}.",
+    "changemode.message": "Admins {LIGHTRED}{0}{DEFAULT} ir nomainījis spēles režīmu uz {LIGHTRED}{1}{DEFAULT}.",
+    "mode.hud.menu-title": "Spēles režīmu saraksts",
+    "maps.hud.menu-title": "Karšu Saraksts"
+  }

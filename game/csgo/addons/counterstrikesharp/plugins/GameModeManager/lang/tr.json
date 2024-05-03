@@ -1,0 +1,7 @@
+{
+  "plugin.prefix": "[{GREEN}Sunucu{DEFAULT}]",
+  "changemap.message": "Yönetici {LIGHTRED}{0}{DEFAULT} haritayı {LIGHTRED}{1}{DEFAULT} olarak değiştirdi.",
+  "changemode.message": "Yönetici {LIGHTRED}{0}{DEFAULT} oyun modunu {LIGHTRED}{1}{DEFAULT} olarak değiştirdi.",
+  "mode.hud.menu-title": "Oyun Modu Listesi",
+  "maps.hud.menu-title": "Harita Listesi"
+}
