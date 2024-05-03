@@ -1,0 +1,67 @@
+{
+  "k4.general.prefix": "{silver}[ {lime}K4-Arenas {silver}]",
+
+  "k4.general.arena": "ARENA",
+  "k4.general.afk": "AFK",
+  "k4.general.waiting": "WAITING",
+  "k4.general.no_opponent": "No opponent",
+  "k4.general.warmup": "WARMUP",
+  "k4.general.challenge": "CHALLENGE",
+  "k4.general.random": "Random",
+
+  "k4.general.challenge.tie": "{silver}The challenge between {lime}{0}{silver} and {lime}{1}{silver} ended in a tie.",
+  "k4.general.challenge.winner": "{lime}{0}{silver} won the challenge against {lime}{1}{silver}.",
+  "k4.general.challenge.waiting": "{silver}Waiting for {lime}{0}{silver} to response to the challenge.",
+  "k4.general.challenge.request": "{silver}You have been challenged by {lime}{0}{silver}. Use {lime}!{1} {silver}to accept or {lime}!{2} {silver}to decline.",
+  "k4.general.challenge.accepted": "{silver}You have accepted the challenge from {lime}{0}{silver}.",
+  "k4.general.challenge.acceptedby": "{lime}{0} {silver}has accepted your challenge.",
+  "k4.general.challenge.declined": "{silver}You have declined the challenge from {lime}{0}{silver}.",
+  "k4.general.challenge.declinedby": "{lime}{0} {silver}has declined your challenge.",
+  "k4.general.challenge.invalidtarget": "{lightred}Invalid target. You can only challenge players by their name.",
+  "k4.general.challenge.notavailable": "{lightred}The player is not available anymore.",
+  "k4.general.challenge.inchallenge": "{lightred}Challenge can be only requested, if both players are not in a challenge.",
+  "k4.general.challenge.notinarena": "{lightred}Challenge can be only requested, if both players are in the arena.",
+  "k4.general.challenge.notchallenged": "{lightred}You have no challenge requests or they have expired.",
+
+  "k4.general.commandclientonly": "{lightred}This command can only be used by clients.",
+  "k4.general.commandhelp": "{silver}Expected Usage: {lime}!{0} {1}",
+  "k4.general.commandnoperm": "{lightred}You do not have permission to use this command.",
+  "k4.general.commandserveronly": "{lightred}This command can only be used by the server.",
+
+  "k4.chat.queue_added": "{silver}You have been added to the queue. Your position is {lime}{0}{silver}.",
+  "k4.chat.queue_not_in_queue": "{silver}You are not in the queue.",
+  "k4.chat.queue_position": "{silver}You are in position {lime}{0}{silver} in the waiting queue.",
+
+  "k4.chat.round_preferences_added": "{silver}You have added {lime}{0}{silver} to your round preferences.",
+  "k4.chat.round_preferences_removed": "{silver}You have removed {lime}{0}{silver} from your round preferences.",
+  "k4.chat.round_preferences_atleastone": "{lightred}You cannot disable all rounds. At least one round must be enabled.",
+  "k4.chat.arena_roundstart": "{silver}You are in arena {lime}{0}{silver} against {lime}{1}{silver} and playing {lime}{2}{silver} round.",
+  "k4.chat.arena_commands": "{silver}You can change your preferences with {lime}!{0}{silver} and {lime}!{1}{silver}.",
+  "k4.chat.arena_afk": "{silver}You can go to AFK mode with {lime}!{0}{silver}.",
+
+  "k4.chat.afk_reminder": "{lightred}You are still AFK. Use {gold}!{0} {lightred}again to disable it.",
+  "k4.chat.afk_enabled": "{silver}You are now AFK. Use {gold}!{0} {silver}to disable it.",
+  "k4.chat.afk_disabled": "{silver}You are no longer AFK. ",
+
+  "k4.menu.roundpref.title": "{lightred}Arena Round Preferences",
+  "k4.menu.roundpref.item_enabled": "{0} {lime}Enabled",
+  "k4.menu.roundpref.item_disabled": "{0} {red}Disabled",
+
+  "k4.menu.weaponpref.title": "{lightred}Arena Weapon Preferences",
+  "k4.menu.weaponpref.item_enabled": "{gold}{0} {lime}(Selected)",
+  "k4.menu.weaponpref.item_disabled": "{gold}{0}",
+  "k4.chat.weapon_preferences_added": "{silver}You have added {lime}{0}{silver} to your weapon preferences.",
+
+  "k4.rounds.rifle": "Rifle",
+  "k4.rounds.pistol": "Pistol",
+  "k4.rounds.scout": "Scout",
+  "k4.rounds.sniper": "Sniper",
+  "k4.rounds.shotgun": "Shotgun",
+  "k4.rounds.smg": "SMG",
+  "k4.rounds.lmg": "LMG",
+  "k4.rounds.awp": "AWP",
+  "k4.rounds.deagle": "Deagle",
+  "k4.rounds.knife": "Knife",
+  "k4.rounds.2vs2": "2vs2",
+  "k4.rounds.3vs3": "3vs3"
+}

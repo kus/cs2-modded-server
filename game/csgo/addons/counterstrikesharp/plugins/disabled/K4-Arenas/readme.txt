@@ -1,0 +1,1 @@
+https://github.com/K4ryuu/K4-Arenas/wiki

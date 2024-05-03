@@ -1,0 +1,67 @@
+{
+  "k4.general.prefix": "{silver}[ {lime}K4-Arenas {silver}]",
+
+  "k4.general.arena": "ARENA",
+  "k4.general.afk": "AFK",
+  "k4.general.waiting": "OCZEKUJĄCY",
+  "k4.general.no_opponent": "Brak przeciwnika",
+  "k4.general.warmup": "ROZGRZEWKA",
+  "k4.general.challenge": "WYZWANIE",
+  "k4.general.random": "Losowo",
+
+  "k4.general.challenge.tie": "{silver}Wyzwanie pomiędzy {lime}{0}{silver} a {lime}{1}{silver} zakończyło się remisem.",
+  "k4.general.challenge.winner": "{lime}{0}{silver} wygrał wyzwanie z {lime}{1}{silver}.",
+  "k4.general.challenge.waiting": "{silver}Oczekiwanie na odpowiedź {lime}{0}{silver} na wyzwanie.",
+  "k4.general.challenge.request": "{silver}Zostałeś wyzwany przez {lime}{0}{silver}. Użyj {lime}!{1} {silver}aby zaakceptować lub {lime}!{2} {silver}aby odrzucić.",
+  "k4.general.challenge.accepted": "{silver}Zaakceptowałeś wyzwanie od {lime}{0}{silver}.",
+  "k4.general.challenge.acceptedby": "{lime}{0} {silver}zaakceptował twoje wyzwanie.",
+  "k4.general.challenge.declined": "{silver}Odrzuciłeś wyzwanie od {lime}{0}{silver}.",
+  "k4.general.challenge.declinedby": "{lime}{0} {silver}odrzucił twoje wyzwanie.",
+  "k4.general.challenge.invalidtarget": "{lightred}Nieprawidłowy gracz. Możesz wyzwać graczy tylko po nazwie.",
+  "k4.general.challenge.notavailable": "{lightred}Gracz nie jest już dostępny.",
+  "k4.general.challenge.inchallenge": "{lightred}Wyzwanie może zostać złożone tylko, jeśli obaj gracze nie są w trakcie innego wyzwania.",
+  "k4.general.challenge.notinarena": "{lightred}Wyzwanie może zostać złożone tylko, jeśli obaj gracze są na arenie.",
+  "k4.general.challenge.notchallenged": "{lightred}Nie masz żadnych zaproszeń do wyzwania lub zaproszenie wygasło.",
+
+  "k4.general.commandclientonly": "{lightred}To komenda może być użyta tylko przez graczy na serwerze.",
+  "k4.general.commandhelp": "{silver}Prawidłowe użycie: {lime}!{0} {1}",
+  "k4.general.commandnoperm": "{lightred}Nie masz uprawnień do używania tej komendy.",
+  "k4.general.commandserveronly": "{lightred}Ta komenda może zostać użyta tylko przez serwer.",
+
+  "k4.chat.queue_added": "{silver}Zostałeś dodany do kolejki. Twoja pozycja to {lime}{0}{silver}.",
+  "k4.chat.queue_not_in_queue": "{silver}Nie jesteś w kolejce.",
+  "k4.chat.queue_position": "{silver}Jesteś na pozycji {lime}{0}{silver} w kolejce oczekujących.",
+
+  "k4.chat.round_preferences_added": "{silver}Dodałeś {lime}{0}{silver} do swoich preferencji rundy.",
+  "k4.chat.round_preferences_removed": "{silver}Usunąłeś {lime}{0}{silver} ze swoich preferencji rundy.",
+  "k4.chat.round_preferences_atleastone": "{lightred}Nie możesz wyłączyć wszystkich rund. Przynajmniej jedna runda musi być włączona.",
+  "k4.chat.arena_roundstart": "{silver}Jesteś na arenie {lime}{0}{silver} przeciwko {lime}{1}{silver} i grasz rundę {lime}{2}{silver}.",
+  "k4.chat.arena_commands": "{silver}Możesz zmienić swoje preferencje za pomocą {lime}!{0}{silver} i {lime}!{1}{silver}.",
+  "k4.chat.arena_afk": "{silver}Możesz przejść do trybu AFK za pomocą {lime}!{0}{silver}.",
+
+  "k4.chat.afk_reminder": "{lightred}Nadal jesteś w trybie AFK. Użyj {gold}!{0} {lightred}ponownie, aby wrócić do gry.",
+  "k4.chat.afk_enabled": "{silver}Jesteś teraz w trybie AFK. Użyj {gold}!{0} {silver}, aby wrócić do gry.",
+  "k4.chat.afk_disabled": "{silver}Nie jesteś już w trybie AFK.",
+
+  "k4.menu.roundpref.title": "{lightred}Preferencje Rundy",
+  "k4.menu.roundpref.item_enabled": "{0} {lime}Włączone",
+  "k4.menu.roundpref.item_disabled": "{0} {red}Wyłączone",
+
+  "k4.menu.weaponpref.title": "{lightred}Preferencje Broni",
+  "k4.menu.weaponpref.item_enabled": "{gold}{0} {lime}(Wybrano)",
+  "k4.menu.weaponpref.item_disabled": "{gold}{0}",
+  "k4.chat.weapon_preferences_added": "{silver}Dodałeś {lime}{0}{silver} do swoich preferencji broni.",
+
+  "k4.rounds.rifle": "Karabiny",
+  "k4.rounds.pistol": "Pistolety",
+  "k4.rounds.scout": "Scout",
+  "k4.rounds.sniper": "Snajperki",
+  "k4.rounds.shotgun": "Strzelby",
+  "k4.rounds.smg": "SMG",
+  "k4.rounds.lmg": "LMG",
+  "k4.rounds.awp": "Tylko AWP",
+  "k4.rounds.deagle": "Tylko Deagle",
+  "k4.rounds.knife": "Runda Nożowa",
+  "k4.rounds.2vs2": "2vs2",
+  "k4.rounds.3vs3": "3vs3"
+}
