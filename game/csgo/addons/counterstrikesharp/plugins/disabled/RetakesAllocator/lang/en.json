@@ -29,6 +29,7 @@
   "weapon_preference.set_preference": "Weapon '{0}' is now your {1} preference for {2}.",
   "weapon_preference.receive_next_round": " You will get it at the next {0} round.",
   "weapon_preference.not_saved": "Without a valid Steam ID, your preferences will not be saved.",
+  "weapon_preference.only_vip_can_use": "Only VIP players can use this command!",
 
   "menu.timeout": "You did not interact with the menu in {0} seconds!",
   "menu.exit": "Exit",
@@ -52,10 +53,12 @@
   "menu.tprimary": "█ T Primary █",
   "menu.tsecondary": "█ T Secondary █",
   "menu.tPistol": "█ T Pistol Round █",
+  "menu.tHalfbuy": "█ T Half Buy █",
 
   "menu.ctprimary": "█ CT Primary █",
   "menu.ctsecondary": "█ CT Secondary █",
   "menu.ctPistol": "█ CT Pistol Round █",
+  "menu.ctHalfbuy": "█ CT Half Buy █",
 
   "menu.awp.always": "Always",
   "menu.awp.never": "Never",
@@ -63,5 +66,24 @@
   "menu.left.image": "<img src='https://raw.githubusercontent.com/yonilerner/cs2-retakes-allocator/main/Resources/left.gif' class=''>",
   "menu.right.image": "<img src='https://raw.githubusercontent.com/yonilerner/cs2-retakes-allocator/main/Resources/right.gif' class=''>",
   "menu.bottom.text": "<br>           <font color='cyan'>[ WASD - To Native ]</font> <br><font color='purple'>[ <img src='https://raw.githubusercontent.com/yonilerner/cs2-retakes-allocator/main/Resources/tab.gif' class=''> - To Exit ]<br>",
-  "menu.bottom.text.pistol": "<font color='purple'>[ <img src='https://raw.githubusercontent.com/yonilerner/cs2-retakes-allocator/main/Resources/tab.gif' class=''> - To Exit ]<br>"
+  "menu.bottom.text.pistol": "<font color='purple'>[ <img src='https://raw.githubusercontent.com/yonilerner/cs2-retakes-allocator/main/Resources/tab.gif' class=''> - To Exit ]<br>",
+
+  "BombSite.A": "<img src='https://raw.githubusercontent.com/yonilerner/cs2-retakes-allocator/main/Resources/ASITE.png' class=''>",
+  "BombSite.B": "<img src='https://raw.githubusercontent.com/yonilerner/cs2-retakes-allocator/main/Resources/BSITE.png' class=''>",
+  "T.Message": "<font color='red'>DEFEND</font> <font color='white'>SITE</font> <font color='red'>{0}</font> <br> {1} <br> {2} <font color='red'>T</font>  vs. {3} <font color='#0182FB'>CT</font>",
+  "CT.Message": "<font color='green'>RETAKE</font> <font color='white'>SITE</font> <font color='green'>{0}</font> <br> {1} <br> {2} <font color='red'>T</font>  vs. {3} <font color='#0182FB'>CT</font>",
+
+  "chatAsite.line1": "{DarkBlue}[Retakes] {Yellow} ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎回︎回︎回︎回︎",
+  "chatAsite.line2": "{DarkBlue}[Retakes] {Yellow} 回︎回︎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎回︎回︎",
+  "chatAsite.line3": "{DarkBlue}[Retakes] {Yellow} 回︎回︎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ 回︎回︎",
+  "chatAsite.line4": "{DarkBlue}[Retakes] {Yellow} 回︎回︎回︎回︎回︎回︎",
+  "chatAsite.line5": "{DarkBlue}[Retakes] {Yellow} 回︎回︎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ 回︎回︎",
+  "chatAsite.line6": "{DarkBlue}[Retakes] {Yellow} 回︎回︎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ 回︎回︎",
+
+  "chatBsite.line1": "{DarkBlue}[Retakes] {Yellow} 回︎回︎回︎回︎",
+  "chatBsite.line2": "{DarkBlue}[Retakes] {Yellow} 回︎回︎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎回︎",
+  "chatBsite.line3": "{DarkBlue}[Retakes] {Yellow} 回︎回︎回︎回︎",
+  "chatBsite.line4": "{DarkBlue}[Retakes] {Yellow} 回︎回︎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‎‏‏‎ ‎‏‏‎ 回︎",
+  "chatBsite.line5": "{DarkBlue}[Retakes] {Yellow} 回︎回︎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‎‏‏‎ ‎‏‏‎  回︎",
+  "chatBsite.line6": "{DarkBlue}[Retakes] {Yellow} 回︎回︎回︎回︎"
 }

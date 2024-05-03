@@ -1,8 +1,67 @@
 {
-    "roundtype.Pistol": "手枪",
-    "roundtype.HalfBuy": "半起",
-    "roundtype.FullBuy": "长枪",
-    "announcement.roundtype": "{0} 局",
-    "announcement.next_roundtype_set": "下一回合： {0} 局。",
-    "announcement.next_roundtype_set_invalid": "无效的回合类型：{0}。"
-  }
+  "roundtype.Pistol": "手枪",
+  "roundtype.HalfBuy": "半起",
+  "roundtype.FullBuy": "长枪",
+
+  "weapon_type.primary": "主武器",
+  "weapon_type.secondary": "手枪",
+
+  "teams.terrorist": "恐怖分子",
+  "teams.terrorist_short": "T",
+  "teams.counter_terrorist": "反恐精英",
+  "teams.counter_terrorist_short": "CT",
+
+  "announcement.roundtype": "{0} 局",
+  "announcement.next_roundtype_set": "下一回合将是 {0} 回合。",
+  "announcement.next_roundtype_set_invalid": "无效的回合类型：{0}。",
+
+  "weapon_preference.cannot_choose": "玩家无法在此服务器上选择他们的武器。",
+  "weapon_preference.gun_usage": "用法：!gun <gun>。将找到任何枪的部分匹配。\n{0} 的有效枪支：\n手枪：{1}\n半购买：{2}\n全购买：{3}",
+  "weapon_preference.invalid_team": "提供的队伍无效：{0}。",
+  "weapon_preference.join_team": "在运行此命令之前，您必须加入一个队伍。",
+  "weapon_preference.not_found": "未找到武器 '{0}'。",
+  "weapon_preference.not_allowed": "不允许选择武器 '{0}'。",
+  "weapon_preference.invalid_weapon": "无效的武器：'{0}'。",
+  "weapon_preference.not_valid_for_team": "武器 '{0}' 不适用于 {1}",
+  "weapon_preference.unset_preference_preferred": "您将不再获得 '{0}'。",
+  "weapon_preference.unset_preference": "武器 '{0}' 不再是您在 {2} 中的 {1} 偏好。",
+  "weapon_preference.set_preference_preferred": "轮到您使用狙击步枪时，您将获得一个 '{0}'。",
+  "weapon_preference.set_preference": "武器 '{0}' 现在是您在 {2} 中的 {1} 偏好。",
+  "weapon_preference.receive_next_round": " 您将在下一轮 {0} 中获得它。",
+  "weapon_preference.not_saved": "没有有效的 Steam ID，您的偏好设置将不会被保存。",
+
+  "menu.timeout": "您在 {0} 秒内未与菜单交互！",
+  "menu.exit": "退出",
+  "menu.already_in_menu": "您已经在使用另一个菜单！",
+
+  "vote_menu.select_vote": "选择您的投票！",
+
+  "guns_menu.invalid_steam_id": "您不能使用无效的 Steam ID 设置武器偏好。",
+  "guns_menu.complete": "您已经完成了武器设置！\n您选择的武器将在下一轮开始时给予您！",
+  "guns_menu.select_weapon": "选择一个 {0} {1} 武器",
+  "guns_menu.weapon_selected": "您选择了 {0} 作为 {1} {2} 武器！",
+  "guns_menu.awp_menu": "选择何时给予 AWP",
+  "guns_menu.awp_always": "始终",
+  "guns_menu.awp_never": "从不",
+  "guns_menu.awp_preference_selected": "您选择了 '{0}' 作为何时给予 AWP！",
+
+  "menu.main.tloadout": "█░ T 装备 ░█",
+  "menu.main.ctloadout": "█░ CT 装备 ░█",
+  "menu.main.awp": "█░ AWP ░█",
+
+  "menu.tprimary": "█ T 主武器 █",
+  "menu.tsecondary": "█ T 手枪 █",
+  "menu.tPistol": "█ T 手枪局 █",
+
+  "menu.ctprimary": "█ CT 主武器 █",
+  "menu.ctsecondary": "█ CT 手枪 █",
+  "menu.ctPistol": "█ CT 手枪局 █",
+
+  "menu.awp.always": "始终",
+  "menu.awp.never": "从不",
+
+  "menu.left.image": "<img src='https://raw.githubusercontent.com/yonilerner/cs2-retakes-allocator/main/Resources/left.gif' class=''>",
+  "menu.right.image": "<img src='https://raw.githubusercontent.com/yonilerner/cs2-retakes-allocator/main/Resources/right.gif' class=''>",
+  "menu.bottom.text": "<br>           <font color='cyan'>[ WASD - 进入 ]</font> <br><font color='purple'>[ <img src='https://raw.githubusercontent.com/yonilerner/cs2-retakes-allocator/main/Resources/tab.gif' class=''> - 退出 ]<br>",
+  "menu.bottom.text.pistol": "<font color='purple'>[ <img src='https://raw.githubusercontent.com/yonilerner/cs2-retakes-allocator/main/Resources/tab.gif' class=''> - 退出 ]<br>"
+}

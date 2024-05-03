@@ -1,0 +1,68 @@
+{
+  "roundtype.Pistol": "Pistola",
+  "roundtype.HalfBuy": "Compra Parcial",
+  "roundtype.FullBuy": "Compra Completa",
+
+  "weapon_type.primary": "Primária",
+  "weapon_type.secondary": "Secundária",
+
+  "teams.terrorist": "Terrorista",
+  "teams.terrorist_short": "T",
+  "teams.counter_terrorist": "Contra Terrorista",
+  "teams.counter_terrorist_short": "CT",
+
+  "announcement.roundtype": "Rodada {0}",
+  "announcement.next_roundtype_set": "A próxima rodada será uma rodada de {0}.",
+  "announcement.next_roundtype_set_invalid": "Tipo de rodada inválido: {0}.",
+
+  "weapon_preference.cannot_choose": "Os jogadores não podem escolher suas armas neste servidor.",
+  "weapon_preference.gun_usage": "Use: !gun <gun>. Correspondências parciais para qualquer arma serão encontradas.\nArmas válidas para {0}:\nPistolas: {1}\nCompra parcial: {2}\nCompra completa: {3}",
+  "weapon_preference.invalid_team": "Equipe fornecida inválida: {0}.",
+  "weapon_preference.join_team": "Você deve entrar em uma equipe antes de executar este comando.",
+  "weapon_preference.not_found": "Arma '{0}' não encontrada.",
+  "weapon_preference.not_allowed": "Arma '{0}' não é permitida ser selecionada.",
+  "weapon_preference.invalid_weapon": "Arma inválida: '{0}'.",
+  "weapon_preference.not_valid_for_team": "Arma '{0}' não é válida para {1}",
+  "weapon_preference.unset_preference_preferred": "Você não receberá mais '{0}'.",
+  "weapon_preference.unset_preference": "Arma '{0}' não é mais sua preferência de {1} para {2}.",
+  "weapon_preference.set_preference_preferred": "Você receberá agora um '{0}' quando for sua vez de um atirador de elite.",
+  "weapon_preference.set_preference": "Arma '{0}' agora é sua preferência de {1} para {2}.",
+  "weapon_preference.receive_next_round": " Você a receberá na próxima rodada de {0}.",
+  "weapon_preference.not_saved": "Sem um STEAM ID válido, suas preferências não serão salvas.",
+  "weapon_preference.only_vip_can_use": "Somente jogadores VIP podem usar este comando!",
+
+  "menu.timeout": "Você não interagiu com o menu em {0} segundos!",
+  "menu.exit": "Sair",
+  "menu.already_in_menu": "Você já está usando outro menu!",
+
+  "vote_menu.select_vote": "Selecione seu voto!",
+
+  "guns_menu.invalid_steam_id": "Você não pode definir preferências de armas com um STEAM ID inválido.",
+  "guns_menu.complete": "Você terminou de configurar suas armas!\nAs armas que você selecionou serão entregues a você no início da próxima rodada!",
+  "guns_menu.select_weapon": "Selecione uma arma {0} {1}",
+  "guns_menu.weapon_selected": "Você selecionou {0} como arma {1} {2}!",
+  "guns_menu.awp_menu": "Selecione quando receber a AWP",
+  "guns_menu.awp_always": "Sempre",
+  "guns_menu.awp_never": "Nunca",
+  "guns_menu.awp_preference_selected": "Você selecionou '{0}' para receber a AWP!",
+
+  "menu.main.tloadout": "█ Loadout T █",
+  "menu.main.ctloadout": "█ Loadout CT █",
+  "menu.main.awp": "█ AWP █",
+
+  "menu.tprimary": "█ Primária T █",
+  "menu.tsecondary": "█ Secundária T █",
+  "menu.tPistol": "█ Rodada de Pistola T █",
+
+  "menu.ctprimary": "█ Primária CT █",
+  "menu.ctsecondary": "█ Secundária CT █",
+  "menu.ctPistol": "█ Rodada de Pistola CT █",
+
+  "menu.awp.always": "Sempre",
+  "menu.awp.never": "Nunca",
+
+  "menu.left.image": "<img src='https://raw.githubusercontent.com/yonilerner/cs2-retakes-allocator/main/Resources/left.gif' class=''>",
+  "menu.right.image": "<img src='https://raw.githubusercontent.com/yonilerner/cs2-retakes-allocator/main/Resources/right.gif' class=''>",
+  "menu.bottom.text": "<br>           <font color='cyan'>[ WASD - Para Mover ]</font> <br><font color='purple'>[ <img src='https://raw.githubusercontent.com/yonilerner/cs2-retakes-allocator/main/Resources/tab.gif' class=''> - Para Sair ]<br>",
+  "menu.bottom.text.pistol": "<font color='purple'>[ <img src='https://raw.githubusercontent.com/yonilerner/cs2-retakes-allocator/main/Resources/tab.gif' class=''> - Para Sair ]<br>"
+}
