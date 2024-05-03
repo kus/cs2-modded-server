@@ -95,6 +95,7 @@ Mod | Version | Why
 [CS2 Executes](https://github.com/zwolof/cs2-executes)| `1.0.2` | CS2 implementation of executes. Based on the version for CS:GO by Splewis.
 [CS2 Advertisement](https://github.com/partiusfabaa/cs2-advertisement)| `1.0.6.8` | Allows you to show ads in chat/center/panel. [How?](#enable-advertisements)
 [CS2 Deathmatch](https://github.com/NockyCZ/CS2-Deathmatch)| `1.1.3` | Custom Deathmatch CS2 plugin (Includes custom spawnpoints, multicfg, gun selection, spawn protection, etc)
+[OpenPrefirePrac](https://github.com/lengran/OpenPrefirePrac)| `0.1.31` | Multiple prefire practices on competitive maps and support multiplayer practicing simultaneously.
 
 ## Share the love
 
@@ -464,6 +465,10 @@ When you join the server you can [change game modes](#changing-game-modes).
 
 <table><tr><td><table align="left"><tr><td><img height="112" src="https://github.com/kus/cs2-modded-server/blob/assets/images/aim_map.jpg?raw=true&sanitize=true"></td></tr><tr><td><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3084291314">aim_map</a><br><sup><sub>host_workshop_map 3084291314</sub></sup></td></tr></table><table align="left"><tr><td><img height="112" src="https://github.com/kus/cs2-modded-server/blob/assets/images/freebet_aim_map.jpg?raw=true&sanitize=true"></td></tr><tr><td><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3146122036">freebet_aim_map</a><br><sup><sub>host_workshop_map 3146122036</sub></sup></td></tr></table><table align="left"><tr><td><img height="112" src="https://github.com/kus/cs2-modded-server/blob/assets/images/fy_pool_day.jpg?raw=true&sanitize=true"></td></tr><tr><td><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3070923343">fy_pool_day</a><br><sup><sub>host_workshop_map 3070923343</sub></sup></td></tr></table></td></tr></table>
 
+#### mg_prefire
+
+<table><tr><td><table align="left"><tr><td><img height="112" src="https://github.com/kus/cs2-modded-server/blob/assets/images/de_ancient.jpg?raw=true&sanitize=true"></td></tr><tr><td>de_ancient<br><sup><sub>changelevel de_ancient</sub></sup></td></tr></table><table align="left"><tr><td><img height="112" src="https://github.com/kus/cs2-modded-server/blob/assets/images/de_dust2.jpg?raw=true&sanitize=true"></td></tr><tr><td>de_dust2<br><sup><sub>changelevel de_dust2</sub></sup></td></tr></table><table align="left"><tr><td><img height="112" src="https://github.com/kus/cs2-modded-server/blob/assets/images/de_inferno.jpg?raw=true&sanitize=true"></td></tr><tr><td>de_inferno<br><sup><sub>changelevel de_inferno</sub></sup></td></tr></table><table align="left"><tr><td><img height="112" src="https://github.com/kus/cs2-modded-server/blob/assets/images/de_mirage.jpg?raw=true&sanitize=true"></td></tr><tr><td>de_mirage<br><sup><sub>changelevel de_mirage</sub></sup></td></tr></table><table align="left"><tr><td><img height="112" src="https://github.com/kus/cs2-modded-server/blob/assets/images/de_overpass.jpg?raw=true&sanitize=true"></td></tr><tr><td>de_overpass<br><sup><sub>changelevel de_overpass</sub></sup></td></tr></table></td></tr></table>
+
 ### How do I add more bots?
 
 By default bots are enabled in deathmatch, gungame, gungame ffa, retakes, scoutsknives and wingman.
@@ -535,6 +540,7 @@ These are all the available chat commands to change the game mode:
 | `!rcon exec kz`           | Kreedz Climbing                                                                   |
 | `!rcon exec minigames`    | Mini Games                                                                        |
 | `!rcon exec prac`         | Practice (grenade lineups etc)                                                    |
+| `!rcon exec prefire`      | Prefire practice                                                                  |
 | `!rcon exec retake`       | Retakes                                                                           |
 | `!rcon exec scoutzknivez` | ScoutzKnivez                                                                      |
 | `!rcon exec soccer`       | Soccer                                                                            |
@@ -591,46 +597,6 @@ If you want to enable a whitelist on your server load the plugin by putting this
 If you want it to load on every mod on your server, you can put it in your `/custom_files/cfg/custom_all.cfg` file.
 
 The whitelist file is located at `/game/csgo/addons/counterstrikesharp/plugins/disabled/WhiteList/whitelist.txt` which you would put in `/custom_files/addons/counterstrikesharp/plugins/disabled/WhiteList/whitelist.txt` so it is not overwritten.
-
-## Changelog
-
-### 2024-02-22 v1.0.25
-
-- FIXED: Reset `sv_showimpacts` staying on between MatchZy prac and other modes (Thanks [@mavproductions](https://www.github.com/mavproductions))
-- FIXED: Deathmatch MultiCFG settings executing `custom_deathmatch.cfg` instead of `custom_deathmatch-multicfg.cfg` (Thanks [@mavproductions](https://www.github.com/mavproductions))
-- ADDED: Deathmatch MultiCFG default configuration and custom modes (Thanks [@mavproductions](https://www.github.com/mavproductions))
-- ADDED: Awp only mode `!rcon exec awp` [#54](https://github.com/kus/cs2-modded-server/issues/#54) (Thanks [@ALegitCookie](https://www.github.com/ALegitCookie) [@mavproductions](https://www.github.com/mavproductions))
-- ADDED: Aim mode `!rcon exec aim` (Thanks [@mavproductions](https://www.github.com/mavproductions))
-- UPDATED: CS2 Deathmatch to `v1.0.7`
-- UPDATED: CS2 Remove Map Weapons to `v1.0.1`
-- UPDATED: CounterStrikeSharp to `v168`
-
-### 2024-02-14 v1.0.23
-
-- Gave our Windows users some love.
-  - Fixed Windows server not loading CounterStrikeSharp (Thanks [@ALegitCookie](https://www.github.com/ALegitCookie))
-  - Updated Windows install instructions to make them clearer
-  - Added error checking
-  - Made `win.bat` automatically patch `gameinfo.gi` (this makes Metamod:Source load)
-- Added a [bash script](https://github.com/kus/cs2-modded-server/blob/master/scripts/check-updates.sh) to check for updates for all mods in this repo to make keeping up-to-date easier
-- FIXED: CS2Rcon was not being reloaded when switching mods after MatchZy has been loaded (Thanks [@mavproductions](https://www.github.com/mavproductions))
-- UPDATED: CS2 Retakes Allocator to `v1.2.16`
-- UPDATED: CS2 Advertisement to `v1.0.6.7`
-- UPDATED: CounterStrikeSharp to `v166`
-
-### 2024-02-11 v1.0.22
-
-- Disable GOTV for 1v1 [#50](https://github.com/kus/cs2-modded-server/issues/50) (Thanks [@pnallinger](https://www.github.com/pnallinger))
-- Turn `sv_cheats` on whilst setting all game mode settings then turn off. This will also force cheats to be off if it was turned on then the mode was changed. (Thanks [@mavproductions](https://www.github.com/mavproductions))
-- Delete MatchZy default `savednades.json` so it won't overwrite your own saved nades [#38](https://github.com/kus/cs2-modded-server/discussions/38) (Thanks [@mavproductions](https://www.github.com/mavproductions))
-- ADDED: Arms Race (default CS2 mode)
-- ADDED: CS2 Deathmatch Multi CFG v1.0.4 (Thanks [@mavproductions](https://www.github.com/mavproductions))
-- ADDED: CS2 Advertisement v1.0.6.6 [How to use?](#enable-advertisements) (Thanks [@mavproductions](https://www.github.com/mavproductions))
-- UPDATED: CS2 Retakes Allocator to v1.2.15
-- UPDATED: CS2 Retakes to v1.3.27
-- UPDATED: SharpTimer to v0.2.1
-- UPDATED: MatchZy to v0.7.0
-- UPDATED: CounterStrikeSharp to v164
 
 ## License
 

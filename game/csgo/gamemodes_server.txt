@@ -32,6 +32,7 @@
 						"mg_gg"				"59"
 						"mg_awp"			"60"
 						"mg_aim"			"61"
+						"mg_prefire"		"62"
 					}
 				}
 
@@ -93,7 +94,7 @@
 				"de_inferno"	""
 				"de_mirage"		""
 				"de_nuke"		""
-				"de_overpass"	""
+				"de_dust2"		""
 				"de_vertigo"	""
 			}
 		}
@@ -364,7 +365,7 @@
 				"workshop/3142070597/awp_bhop_rocket"		""
 			}
 		}
-				"mg_aim"
+		"mg_aim"
 		{
 			"name"			"mg_aim"
 			"maps"
@@ -373,6 +374,18 @@
 				"workshop/3146122036/freebet_aim_map"	""
 				"workshop/3070923343/fy_pool_day"		""
 				"workshop/3078701726/aim_ak-colt_CS2"   ""
+			}
+		}
+		"mg_prefire"
+		{
+			"name"			"mg_prefire"
+			"maps"
+			{
+				"de_ancient"		""
+				"de_dust2"			""
+				"de_inferno"		""
+				"de_mirage"			""
+				"de_overpass"		""
 			}
 		}
 	}

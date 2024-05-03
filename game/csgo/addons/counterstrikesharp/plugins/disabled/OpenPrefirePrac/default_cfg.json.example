@@ -1,0 +1,20 @@
+{
+    // Difficulty:
+    //   0: No healing
+    //   1: Init hp 500 with no healing
+    //   2: +25hp for each kill
+    //   3: +100hp for each kill (default)
+    //   4: +500hp for each kill
+    "Difficulty": 3,
+    // Training Mode:
+    //   0: Random mode, randomly spawn some targets.
+    //   1: Full mode, all targets.
+    "TrainingMode": 0,
+    // Bot Weapon:
+    //   0: Bots buy weapons randomly.
+    //   1: Bots use UMP45.
+    //   2: Bots use AK47.
+    //   3: Bots use Scout.
+    //   4: Bots use AWP.
+    "BotWeapon": 0
+}
