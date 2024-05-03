@@ -509,17 +509,17 @@ To see an example of my admins you can look at this file [/custom_files_example/
 
 ### Changing maps
 
-Admins can type `!map` in chat and it will bring up a menu of all the maps for the current mod. When a map is selected it will change the map straight away.
+Admins can type `!maps` in chat and it will bring up a menu of all the maps for the current mod. When a map is selected it will change the map straight away.
 
-At the end of the map (if time runs out or win conditions are met) it will automatically choose a map from the current mod.
-
-I plan to add more features like !rtv, !nominate etc.
+At the end of the map (if time runs out or win conditions are met) it a vote will show to choose a map from the current mod.
 
 ### Changing game modes
 
-There is no "menu" feature in CS2, so it's all via the chat window or server console.
+Admins can type `!modes` in chat and it will bring up a menu of all the game modes. Simply choose one and it will switch to that game mode and change to a default map for that game mode.
 
-The easiest way to manage the server is to use the Rcon commands via chat i.e. `!rcon exec dm` will change to deathmatch.
+The maps in `!maps` will also update to the new game mode when it has changed.
+
+You can also change directly to a game mode with the Rcon commands via chat i.e. `!rcon exec dm` will change to deathmatch.
 
 These are all the available chat commands to change the game mode:
 

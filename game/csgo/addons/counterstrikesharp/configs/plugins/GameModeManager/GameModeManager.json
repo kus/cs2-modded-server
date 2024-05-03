@@ -10,22 +10,29 @@
 		"File": "/home/steam/cs2/game/csgo/gamemodes_server.txt"
 	},
 	"GameMode": {
-		"ListEnabled": false,
+		"ListEnabled": true,
 		"List": [
 			"comp",
-			"1v1",
-			"aim",
-			"awp",
-			"scoutzknivez",
 			"wingman",
-			"gungame",
-			"surf",
-			"dm",
 			"dm-multicfg",
-			"course",
-			"hns",
+			"gg",
+			"1v1",
+			"awp",
+			"aim",
+			"prefire",
+			"executes",
+			"retake",
+			"prac",
+			"bhop",
 			"kz",
-			"minigames"
+			"surf",
+			"minigames",
+			"course",
+			"scoutzknivez",
+			"hns",
+			"soccer",
+			"dm",
+			"ar"
 		]
 	},
 	"ConfigVersion": 1
