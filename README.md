@@ -85,7 +85,7 @@ Mod | Version | Why
 [SharpTimer](https://github.com/DEAFPS/SharpTimer/)| `0.2.4` | SharpTimer is a simple Surf/KZ/Bhop/MG/Deathrun/etc CS2 Timer plugin
 [GunGame](https://github.com/ssypchenko/cs2-gungame)| `1.1.0` | GunGame mode on Counter Strike Sharp
 [CS2-Multi-1v1](https://github.com/rockCityMath/CS2-Multi-1v1)| `1.0.0` | A CS2 plugin that allows players to fight 1v1 in ranked arenas.
-[CS2 Retakes](https://github.com/B3none/cs2-retakes)| `2.0.1` | CS2 implementation of retakes. Based on the version for CS:GO by Splewis.
+[CS2 Retakes](https://github.com/B3none/cs2-retakes)| `2.0.4` | CS2 implementation of retakes. Based on the version for CS:GO by Splewis.
 [CS2 Retakes Shared](https://github.com/B3none/cs2-retakes)| `2.0.0` | Shared library for CS2 Retakes.
 [CS2 Instadefuse](https://github.com/B3none/cs2-instadefuse)| `1.4.2` | Allows a CT to instantly defuse the bomb when nothing can prevent defusal. Written in C# for CounterStrikeSharp.
 [CS2 Retakes Allocator](https://github.com/yonilerner/cs2-retakes-allocator)| `2.3.2` | Advanced weapon allocation for B3none/cs2-retakes
