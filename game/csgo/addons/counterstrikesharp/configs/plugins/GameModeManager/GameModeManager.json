@@ -1,0 +1,32 @@
+{
+	"RTV": {
+		"Enabled": true,
+		"Plugin": "/home/steam/cs2/game/csgo/addons/counterstrikesharp/plugins/RockTheVote/RockTheVote.dll",
+		"MapListFile": "/home/steam/cs2/game/csgo/addons/counterstrikesharp/plugins/RockTheVote/maplist.txt",
+		"DefaultMapFormat": false
+	},
+	"MapGroup": {
+		"Default": "mg_active",
+		"File": "/home/steam/cs2/game/csgo/gamemodes_server.txt"
+	},
+	"GameMode": {
+		"ListEnabled": false,
+		"List": [
+			"comp",
+			"1v1",
+			"aim",
+			"awp",
+			"scoutzknivez",
+			"wingman",
+			"gungame",
+			"surf",
+			"dm",
+			"dm-multicfg",
+			"course",
+			"hns",
+			"kz",
+			"minigames"
+		]
+	},
+	"ConfigVersion": 1
+}

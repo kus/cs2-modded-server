@@ -1,0 +1,201 @@
+{
+  "use-predefined-config": true,
+  "database-settings": {
+    "host": "localhost",
+    "username": "root",
+    "database": "database",
+    "password": "password",
+    "port": 3306,
+    "sslmode": "none",
+    "table-prefix": "",
+    "table-purge-days": 30
+  },
+  "command-settings": {
+    "gun-pref-commands": [
+      "guns",
+      "gunpref",
+      "weaponpref"
+    ],
+    "round-pref-commands": [
+      "rounds",
+      "roundpref"
+    ],
+    "queue-commands": [
+      "queue"
+    ],
+    "afk-commands": [
+      "afk"
+    ],
+    "challenge-commands": [
+      "challenge",
+      "duel"
+    ],
+    "challenge-accept-commands": [
+      "caccept",
+      "capprove"
+    ],
+    "challenge-decline-commands": [
+      "cdecline",
+      "cdeny"
+    ]
+  },
+  "round-settings": [
+    {
+      "TranslationName": "k4.rounds.rifle",
+      "TeamSize": 1,
+      "PrimaryWeapon": null,
+      "SecondaryWeapon": null,
+      "UsePreferredPrimary": true,
+      "PrimaryPreference": 0,
+      "UsePreferredSecondary": true,
+      "Armor": true,
+      "Helmet": true,
+      "EnabledByDefault": true
+    },
+    {
+      "TranslationName": "k4.rounds.sniper",
+      "TeamSize": 1,
+      "PrimaryWeapon": null,
+      "SecondaryWeapon": null,
+      "UsePreferredPrimary": true,
+      "PrimaryPreference": 1,
+      "UsePreferredSecondary": true,
+      "Armor": true,
+      "Helmet": true,
+      "EnabledByDefault": true
+    },
+    {
+      "TranslationName": "k4.rounds.shotgun",
+      "TeamSize": 1,
+      "PrimaryWeapon": null,
+      "SecondaryWeapon": null,
+      "UsePreferredPrimary": true,
+      "PrimaryPreference": 4,
+      "UsePreferredSecondary": true,
+      "Armor": true,
+      "Helmet": true,
+      "EnabledByDefault": true
+    },
+    {
+      "TranslationName": "k4.rounds.pistol",
+      "TeamSize": 1,
+      "PrimaryWeapon": null,
+      "SecondaryWeapon": null,
+      "UsePreferredPrimary": false,
+      "PrimaryPreference": null,
+      "UsePreferredSecondary": true,
+      "Armor": true,
+      "Helmet": true,
+      "EnabledByDefault": true
+    },
+    {
+      "TranslationName": "k4.rounds.scout",
+      "TeamSize": 1,
+      "PrimaryWeapon": "weapon_ssg08",
+      "SecondaryWeapon": null,
+      "UsePreferredPrimary": false,
+      "PrimaryPreference": null,
+      "UsePreferredSecondary": true,
+      "Armor": true,
+      "Helmet": true,
+      "EnabledByDefault": true
+    },
+    {
+      "TranslationName": "k4.rounds.awp",
+      "TeamSize": 1,
+      "PrimaryWeapon": "weapon_awp",
+      "SecondaryWeapon": null,
+      "UsePreferredPrimary": false,
+      "PrimaryPreference": null,
+      "UsePreferredSecondary": true,
+      "Armor": true,
+      "Helmet": true,
+      "EnabledByDefault": true
+    },
+    {
+      "TranslationName": "k4.rounds.deagle",
+      "TeamSize": 1,
+      "PrimaryWeapon": null,
+      "SecondaryWeapon": "weapon_deagle",
+      "UsePreferredPrimary": false,
+      "PrimaryPreference": null,
+      "UsePreferredSecondary": false,
+      "Armor": false,
+      "Helmet": false,
+      "EnabledByDefault": true
+    },
+    {
+      "TranslationName": "k4.rounds.smg",
+      "TeamSize": 1,
+      "PrimaryWeapon": null,
+      "SecondaryWeapon": null,
+      "UsePreferredPrimary": true,
+      "PrimaryPreference": 2,
+      "UsePreferredSecondary": true,
+      "Armor": true,
+      "Helmet": true,
+      "EnabledByDefault": true
+    },
+    {
+      "TranslationName": "k4.rounds.lmg",
+      "TeamSize": 1,
+      "PrimaryWeapon": null,
+      "SecondaryWeapon": null,
+      "UsePreferredPrimary": true,
+      "PrimaryPreference": 3,
+      "UsePreferredSecondary": true,
+      "Armor": true,
+      "Helmet": true,
+      "EnabledByDefault": true
+    },
+    {
+      "TranslationName": "k4.rounds.2vs2",
+      "TeamSize": 2,
+      "PrimaryWeapon": null,
+      "SecondaryWeapon": null,
+      "UsePreferredPrimary": true,
+      "PrimaryPreference": 6,
+      "UsePreferredSecondary": true,
+      "Armor": true,
+      "Helmet": true,
+      "EnabledByDefault": false
+    },
+    {
+      "TranslationName": "k4.rounds.3vs3",
+      "TeamSize": 3,
+      "PrimaryWeapon": null,
+      "SecondaryWeapon": null,
+      "UsePreferredPrimary": true,
+      "PrimaryPreference": 6,
+      "UsePreferredSecondary": true,
+      "Armor": true,
+      "Helmet": true,
+      "EnabledByDefault": false
+    },
+    {
+      "TranslationName": "k4.rounds.knife",
+      "TeamSize": 1,
+      "PrimaryWeapon": null,
+      "SecondaryWeapon": null,
+      "UsePreferredPrimary": false,
+      "PrimaryPreference": null,
+      "UsePreferredSecondary": false,
+      "Armor": false,
+      "Helmet": false,
+      "EnabledByDefault": true
+    }
+  ],
+  "compatibility-settings": {
+    "metamod-skinchanger-compatibility": false,
+    "force-arena-clantags": false
+  },
+  "default-weapon-settings": {
+    "default-rifle": null,
+    "default-sniper": null,
+    "default-smg": null,
+    "default-lmg": null,
+    "default-shotgun": null,
+    "default-pistol": null
+  },
+  "ConfigVersion": 1
+}

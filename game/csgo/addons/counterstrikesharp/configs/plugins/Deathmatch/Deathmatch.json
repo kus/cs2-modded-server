@@ -1,0 +1,242 @@
+{
+	"Gameplay Settings": {
+		"Free For All": true,
+		"Custom Modes": true,
+		"Random Selection Of Modes": false,
+		"Map Start Custom Mode": 0,
+		"New Mode Countdown": 10,
+		"Check Enemies Distance": true,
+		"Distance From Enemies for Respawn": 500,
+		"Default Weapons": 1,
+		"Switch Weapons": true,
+		"Allow Buymenu": true,
+		"Use Default Spawns": false,
+		"Respawn Players After New Mode": false
+	},
+	"General Settings": {
+		"Hide Round Seconds": true,
+		"Block Radio Messages": true,
+		"Remove Breakable Entities": true,
+		"Remove Decals After Death": true,
+		"Force Map End": false
+	},
+	"Sounds Settings": {
+		"Weapon Cant Equip Sound": "sounds/ui/weapon_cant_buy.vsnd_c",
+		"New Mode Sound": ""
+	},
+	"Custom Commands": {
+		"Deatmatch Menu Commands": "dm,deathmatch",
+		"Weapons Select Commands": "gun,weapon,w,g",
+		"Weapons Select Shortcuts": "weapon_ak47:ak,weapon_m4a1_silencer:m4,weapon_m4a1_silencer:m4a1s,weapon_m4a1_silencer:m4a1-s,weapon_m4a1:m4a4,weapon_awp:awp,weapon_ssg08:scout,weapon_usp_silencer:usp,weapon_glock:glock,weapon_mac10:mac,weapon_deagle:deagle"
+	},
+	"Players Gameplay Settings": {
+		"VIP_flag": "@css/vip",
+		"respawn_time": 1.1,
+		"VIP_respawn_time": 1.1,
+		"spawn_protection_time": 1.2,
+		"VIP_spawn_protection_time": 1.2,
+		"reffil_ammo_kill": true,
+		"VIP_reffil_ammo_kill": true,
+		"reffil_ammo_headshot": true,
+		"VIP_reffil_ammo_headshot": true,
+		"refill_health_kill": 25,
+		"VIP_refill_health_kill": 25,
+		"refill_health_headshot": 50,
+		"VIP_refill_health_headshot": 50
+	},
+	"Client Preferences": {
+		"Kill Sound": {
+			"Enabled": true,
+			"Sound path": "sounds/ui/armsrace_kill_01.vsnd_c",
+			"Default value": false,
+			"Only for VIP": false
+		},
+		"Headshot Kill Sound": {
+			"Enabled": true,
+			"Sound path": "sounds/buttons/bell1.vsnd_c",
+			"Default value": false,
+			"Only for VIP": false
+		},
+		"Knife Kill Sound": {
+			"Enabled": true,
+			"Sound path": "sounds/ui/armsrace_final_kill_knife.vsnd_c",
+			"Default value": false,
+			"Only for VIP": false
+		},
+		"Hit Sound": {
+			"Enabled": true,
+			"Sound path": "sounds/ui/csgo_ui_contract_type2.vsnd_c",
+			"Default value": false,
+			"Only for VIP": false
+		},
+		"Only Headshot": {
+			"Enabled": true,
+			"Default value": false,
+			"Only for VIP": false
+		},
+		"Hud Messages": {
+			"Enabled": true,
+			"Default value": true,
+			"Only for VIP": false
+		}
+	},
+	"Custom Modes": {
+		"0": {
+			"Name": "Pistols Only",
+			"Interval": 60,
+			"Armor": 1,
+			"OnlyHS": false,
+			"KnifeDamage": true,
+			"RandomWeapons": false,
+			"CenterMessageText": "<font class='fontSize-l' color='orange'>Pistols Only</font>",
+			"PrimaryWeapons": [],
+			"SecondaryWeapons": [
+				"weapon_usp_silencer",
+				"weapon_p250",
+				"weapon_glock",
+				"weapon_cz75a",
+				"weapon_elite",
+				"weapon_fiveseven",
+				"weapon_hkp2000",
+				"weapon_tec9",
+				"weapon_revolver",
+				"weapon_deagle"
+			],
+			"Utilities": [],
+			"ExecuteCommands": []
+		},
+		"1": {
+			"Name": "Pistols HS-Only",
+			"Interval": 60,
+			"Armor": 2,
+			"OnlyHS": true,
+			"KnifeDamage": true,
+			"RandomWeapons": false,
+			"CenterMessageText": "<font class='fontSize-l' color='red'>Pistols HS-Only</font>",
+			"PrimaryWeapons": [],
+			"SecondaryWeapons": [
+				"weapon_usp_silencer",
+				"weapon_p250",
+				"weapon_glock",
+				"weapon_cz75a",
+				"weapon_elite",
+				"weapon_fiveseven",
+				"weapon_hkp2000",
+				"weapon_tec9",
+				"weapon_revolver",
+				"weapon_deagle"
+			],
+			"Utilities": [],
+			"ExecuteCommands": []
+		},
+		"2": {
+			"Name": "2nd Round Buy",
+			"Interval": 120,
+			"Armor": 2,
+			"OnlyHS": false,
+			"KnifeDamage": true,
+			"RandomWeapons": false,
+			"CenterMessageText": "<font class='fontSize-l' color='orange'>2nd Round Buy</font>",
+			"PrimaryWeapons": [
+				"weapon_mac10",
+				"weapon_ssg08",
+				"weapon_bizon",
+				"weapon_mag7",
+				"weapon_sawedoff",
+				"weapon_nova",
+				"weapon_xm1014",
+				"weapon_mp5sd",
+				"weapon_mp7",
+				"weapon_mp9",
+				"weapon_p90"
+			],
+			"SecondaryWeapons": [
+				"weapon_p250",
+				"weapon_usp_silencer",
+				"weapon_glock",
+				"weapon_cz75a",
+				"weapon_elite",
+				"weapon_fiveseven",
+				"weapon_hkp2000",
+				"weapon_tec9",
+				"weapon_revolver",
+				"weapon_deagle"
+			],
+			"Utilities": [],
+			"ExecuteCommands": []
+		},
+		"3": {
+			"Name": "Rifles",
+			"Interval": 180,
+			"Armor": 2,
+			"OnlyHS": false,
+			"KnifeDamage": true,
+			"RandomWeapons": false,
+			"CenterMessageText": "<font class='fontSize-l' color='orange'>Rifles</font>",
+			"PrimaryWeapons": [
+				"weapon_ak47",
+				"weapon_m4a1",
+				"weapon_m4a1_silencer",
+				"weapon_aug",
+				"weapon_sg556",
+				"weapon_ssg08",
+				"weapon_galilar",
+				"weapon_awp",
+				"weapon_famas"
+			],
+			"SecondaryWeapons": [
+				"weapon_deagle",
+				"weapon_usp_silencer",
+				"weapon_p250",
+				"weapon_glock",
+				"weapon_cz75a",
+				"weapon_elite",
+				"weapon_fiveseven",
+				"weapon_hkp2000",
+				"weapon_tec9",
+				"weapon_revolver"
+			],
+			"Utilities": [],
+			"ExecuteCommands": []
+		},
+		"4": {
+			"Name": "Rifles HS-Only",
+			"Interval": 180,
+			"Armor": 2,
+			"OnlyHS": true,
+			"KnifeDamage": true,
+			"RandomWeapons": false,
+			"CenterMessageText": "<font class='fontSize-l' color='red'>Rifles HS-Only</font>",
+			"PrimaryWeapons": [
+				"weapon_ak47",
+				"weapon_m4a1",
+				"weapon_m4a1_silencer",
+				"weapon_aug",
+				"weapon_sg556",
+				"weapon_ssg08",
+				"weapon_galilar",
+				"weapon_awp",
+				"weapon_famas"
+			],
+			"SecondaryWeapons": [
+				"weapon_deagle",
+				"weapon_usp_silencer",
+				"weapon_p250",
+				"weapon_glock",
+				"weapon_cz75a",
+				"weapon_elite",
+				"weapon_fiveseven",
+				"weapon_hkp2000",
+				"weapon_tec9",
+				"weapon_revolver"
+			],
+			"Utilities": [],
+			"ExecuteCommands": []
+		}
+	},
+	"Weapons Restrict": {
+		"Global Restrict": false,
+		"Weapons": {}
+	},
+	"ConfigVersion": 1
+}
