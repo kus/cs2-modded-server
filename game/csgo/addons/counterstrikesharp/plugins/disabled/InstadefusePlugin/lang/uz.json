@@ -1,0 +1,7 @@
+{
+  "instadefuse.prefix": "[[GREEN]Retakes[NORMAL]] ",
+  
+  "instadefuse.unsuccessful": "{0} bombani zararsizlantirishga [DARK_RED]{1} soniya[WHITE] kechikdi.",
+  "instadefuse.successful": "{0} portlashga [GREEN]{1} soniya[WHITE] qolganda bombani zararsizlantirdi.",
+  "instadefuse.not_possible": "Darhol zararsizlantirish mumkin emas, granata tahdidi mavjud!"
+}

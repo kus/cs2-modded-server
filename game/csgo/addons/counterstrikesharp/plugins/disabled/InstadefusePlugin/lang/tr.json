@@ -1,0 +1,7 @@
+{
+  "instadefuse.prefix": "[[GREEN]Retakes[NORMAL]] ",
+  
+  "instadefuse.unsuccessful": "{0}, bombayı imha etmeye [DARK_RED]{1} saniye[WHITE] kalmıştı.",
+  "instadefuse.successful": "{0}, bombayı [GREEN]{1} saniye[WHITE] kala imha etti.",
+  "instadefuse.not_possible": "Bombayı imha etmek mümkün değil, yanıcı tehdidi var!"
+}

@@ -87,7 +87,7 @@ Mod | Version | Why
 [CS2-Multi-1v1](https://github.com/rockCityMath/CS2-Multi-1v1)| `1.0.0` | A CS2 plugin that allows players to fight 1v1 in ranked arenas.
 [CS2 Retakes](https://github.com/B3none/cs2-retakes)| `2.0.4` | CS2 implementation of retakes. Based on the version for CS:GO by Splewis.
 [CS2 Retakes Shared](https://github.com/B3none/cs2-retakes)| `2.0.0` | Shared library for CS2 Retakes.
-[CS2 Instadefuse](https://github.com/B3none/cs2-instadefuse)| `1.4.2` | Allows a CT to instantly defuse the bomb when nothing can prevent defusal. Written in C# for CounterStrikeSharp.
+[CS2 Instadefuse](https://github.com/B3none/cs2-instadefuse)| `1.4.3` | Allows a CT to instantly defuse the bomb when nothing can prevent defusal. Written in C# for CounterStrikeSharp.
 [CS2 Retakes Allocator](https://github.com/yonilerner/cs2-retakes-allocator)| `2.3.2` | Advanced weapon allocation for B3none/cs2-retakes
 [CS2 Whitelist](https://github.com/PhantomYopta/CS2_WhiteList)| `1.0.0`| Restricts access to the server for SteamID members/employees listed in the whitelist. [How?](#enable-whitelist-so-only-a-list-of-people-can-play)
 [CS2 Executes](https://github.com/zwolof/cs2-executes)| `1.0.2` | CS2 implementation of executes. Based on the version for CS:GO by Splewis.
