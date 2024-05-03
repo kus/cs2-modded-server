@@ -1,0 +1,12 @@
+{
+    "DiscordWebhookBotName": "SharpTimer",
+    "DiscordWebhookPFPUrl": "https://cdn.discordapp.com/icons/1196646791450472488/634963a8207fdb1b30bf909d31f05e57.webp",
+    "DiscordWebhookMapImageRepoUrl": "https://raw.githubusercontent.com/deafps/SharpTimerDiscordWebhookMapPics/main/images/",
+    "DiscordPBWebhookUrl": "your_discord_webhook_url",
+    "DiscordSRWebhookUrl": "your_discord_webhook_url",
+    "DiscordPBBonusWebhookUrl": "your_discord_webhook_url",
+    "DiscordSRBonusWebhookUrl": "your_discord_webhook_url",
+    "DiscordFooterString": "SharpTimer Discord Webhook",
+    "DiscordRareGifOdds": 10000,
+    "DiscordRareGifUrl": "https://files.catbox.moe/q99x7v.gif"
+}
