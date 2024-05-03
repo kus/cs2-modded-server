@@ -7,22 +7,21 @@
     "matchzy.knife.decidedtoswitch": "{green}{0}{default} a décidé de changer.",
   
     "matchzy.pause.pausedthematch": "{green}{0}{default} a mis en pause le match. Tapez .unpause pour reprendre le match.",
-    "matchzy.pause.teamsunpausedthematch": "Les deux équipes ont annulé la pause, le match reprend !",
+    "matchzy.pause.teamsunpausedthematch": "Les deux équipes ont annulé la pause, le match reprend!",
     "matchzy.pause.teamwantstounpause": "{green}{0}{default} souhaite annuler la pause du match. {green}{1}{default}, veuillez écrire !unpause pour confirmer.",
-    "matchzy.pause.adminpausedthematch": "{green}Admin{default} a mis en pause le match !",
-    "matchzy.pause.adminunpausedthematch": "{green}Admin{default} a annulé la pause, le match reprend !",
+    "matchzy.pause.adminpausedthematch": "{green}Admin{default} a mis en pause le match!",
+    "matchzy.pause.adminunpausedthematch": "{green}Admin{default} a annulé la pause, le match reprend!",
     "matchzy.pause.onlyadmincanunpause": "Le match a été mis en pause par un administrateur, donc seul un administrateur peut le reprendre.",
     "matchzy.pause.pausedbecauserestore": "Le match a été mis en pause en raison de la restauration de la manche. Les deux équipes doivent taper {green}.unpause{default} pour reprendre le match.",
     "matchzy.pause.techpausenotenabled": "Les pauses techniques ne sont pas activées.",
-    "matchzy.pause.notechpauseleft": "{green}{0}{default} n'a plus de pauses techniques !",
-    "matchzy.pause.notacpauseleft": "{green}{0}{default} n'a plus de pauses tactiques !",
+    "matchzy.pause.notechpauseleft": "{green}{0}{default} n'a plus de pauses techniques!",
     "matchzy.pause.ispaused": "Match is already paused!",
     "matchzy.pause.duringhalftime": "You cannot use this command during halftime.",
     "matchzy.pause.matchended": "You cannot use this command after the game has ended.",
     "matchzy.pause.tacticaltimeout": "You cannot use this command when tactical timeout is active.",
   
     "matchzy.restore.teamwantstorestore": "{green}{0}{default} souhaite restaurer le jeu au début du round actuel. {green}{1}{default}, veuillez écrire !stop pour confirmer.",
-    "matchzy.restore.restoredsuccessfully": "Fichier de sauvegarde restauré avec succès : {0}",
+    "matchzy.restore.restoredsuccessfully": "Fichier de sauvegarde restauré avec succès: {0}",
 
     "matchzy.backup.stopduringhalftime": "You cannot use this command during halftime.",
     "matchzy.backup.stopmatchended": "You cannot use this command after the game has ended.",
@@ -133,4 +132,3 @@
     "matchzy.pracc.damage": "{red}{0}{default} damage to {lightblue}{1}{default}({green}{2}{default} health)",
     "matchzy.pracc.blind": "{lightblue}{0}{default} has been blinded for {green}{1}{default}s"
   }
-  
