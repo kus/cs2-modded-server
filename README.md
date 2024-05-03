@@ -66,6 +66,7 @@ Getting up and running:
 
 - [Running on Google Cloud](#running-on-google-cloud)
 - [Running on Linux](#running-on-linux)
+- [Running in Docker](#running-in-docker)
 - [Running on Windows](#running-on-windows)
 
 ## Mods installed
@@ -324,6 +325,29 @@ To check everything is working correctly run the following commands in the serve
 If you see content in both; everything is working.
 
 When you join the server you can [change game modes](#changing-game-modes).
+
+## Running in Docker
+
+*Only tested on Windows 11 with WSL2 integration as backend*
+
+Make sure Docker is installed and about 40 GB disk space is free.
+
+You can either Download this repo and extract it to where you want your server (i.e. C:\Server\cs2-modded-server) or use git and clone the repo git clone git@github.com:kus/cs2-modded-server.git and run your server from inside of it. This way you can simply git pull updates.
+
+- **If setting up for internet server:**
+
+   Set 'STEAM_ACCOUNT' variable in '.env'-file in the root if the repository.
+   For workshop maps set 'API_KEY' in '.env'-file.
+
+- **Build docker image:**
+   
+   `docker build -t cs2-modded-server .`
+
+- **Run the server**
+
+   `docker compose up`
+
+
 
 ## Running on Windows
 
