@@ -33,6 +33,7 @@
 						"mg_awp"			"60"
 						"mg_aim"			"61"
 						"mg_prefire"		"62"
+						"mg_deathrun"		"63"
 					}
 				}
 
@@ -301,9 +302,16 @@
 			"name"			"mg_minigames"
 			"maps"
 			{
-				"workshop/3164611860/deathrun_playground"		""
 				"workshop/3082120895/mg_skeet_multigames_v7"		""
 				"workshop/3076765511/mg_warmcup_headshot"		""
+			}
+		}
+		"mg_deathrun"
+		{
+			"name"			"mg_deathrun"
+			"maps"
+			{
+				"workshop/3164611860/deathrun_playground"		""
 				"workshop/3083325292/deathrun_iceworld_cs2"		""
 			}
 		}

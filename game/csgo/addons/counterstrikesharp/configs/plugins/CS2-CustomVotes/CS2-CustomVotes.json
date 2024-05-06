@@ -106,6 +106,12 @@
             "exec minigames"
           ]
         },
+        "Deathrun": {
+          "Text": "{Green}Deathrun",
+          "Commands": [
+            "exec deathrun"
+          ]
+        },
         "Course": {
           "Text": "{Green}Course",
           "Commands": [
@@ -511,6 +517,31 @@
           "Text": "{Green}Yes",
           "Commands": [
             "exec minigames"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "deathrun",
+      "CommandAliases": [],
+      "Description": "Switch game mode to Deathrun?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "exec deathrun"
           ]
         },
         "No": {
