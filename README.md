@@ -12,6 +12,7 @@ Each game mode has a hand full of maps preset so you are ready to go and it's [e
 - Deathmatch ([Steam API key](#playing-workshop-mapscollections) required)
 - Competitive (using [MatchZy](https://github.com/shobhit-pathak/MatchZy#usage-commands))
 - Practice (record grenade throws etc)
+- Prefire practice
 - GunGame
 - Retake
 - Executes
@@ -61,6 +62,7 @@ Useful things to know:
 - [Access admin menu](#acessing-admin-menu)
 - [Changing game mode](#changing-game-modes)
 - [Changing maps](#changing-maps)
+- [Player commands](#player-commands)
 
 Getting up and running:
 
@@ -400,6 +402,20 @@ When you join the server you can [change game modes](#changing-game-modes).
 
 ## FAQ
 
+### Player commands
+
+#### !rtv
+
+Players can start a vote to change the map in the current mod by typing `!rtv` in chat.
+
+<img alt="Vote to change map" src="https://github.com/kus/cs2-modded-server/blob/assets/assets/rtv.png?raw=true&sanitize=true">
+
+#### !gamemode
+
+Players can start a vote to change the game mode by typing `!gamemode` in chat.
+
+<img alt="Vote to change game mode" src="https://github.com/kus/cs2-modded-server/blob/assets/assets/vote-gamemode.png?raw=true&sanitize=true">
+
 ### What maps are preconfigured with each mode?
 
 #### mg_active
@@ -508,13 +524,36 @@ Admins are managed by [CounterStrikeSharp](https://github.com/roflmuffin/Counter
 
 To see an example of my admins you can look at this file [/custom_files_example/addons/counterstrikesharp/configs/admins.json](https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/addons/counterstrikesharp/configs/admins.json). To set your admins on your own server use this file as a reference and use the [custom files](#custom-files) system to have your own version.
 
+### Use number keys to operate menu instead of typing !1 in chat
+
+If you don't like having to type in chat !number every time you want to use a menu item; you can use this trick to bind the corresponding !number command to the number key. So when you press 1 it will select the 1 option:
+
+_Note: This is assuming you are using the standard binds. You can change accordingly for your own setup._
+
+```
+bind "1" "slot1; css_1"
+bind "2" "slot2; css_2"
+bind "3" "slot3; css_3"
+bind "4" "slot4; css_4"
+bind "5" "slot5; css_5"
+bind "6" "slot6; css_6"
+bind "7" "slot7; css_7"
+bind "8" "slot8; css_8"
+bind "9" "slot9; css_9"
+bind "0" "slot10; css_0"
+```
+
 ### Changing maps
+
+<img alt="Admin change map menu" src="https://github.com/kus/cs2-modded-server/blob/assets/assets/admin-maps.png?raw=true&sanitize=true">
 
 Admins can type `!maps` in chat and it will bring up a menu of all the maps for the current mod. When a map is selected it will change the map straight away.
 
 At the end of the map (if time runs out or win conditions are met) it a vote will show to choose a map from the current mod.
 
 ### Changing game modes
+
+<img alt="Admin change game mode menu" src="https://github.com/kus/cs2-modded-server/blob/assets/assets/admin-modes.png?raw=true&sanitize=true">
 
 Admins can type `!modes` in chat and it will bring up a menu of all the game modes. Simply choose one and it will switch to that game mode and change to a default map for that game mode.
 
