@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "CS2-CustomVotes.Shared/1.0.0": {
+        "runtime": {
+          "CS2-CustomVotes.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CS2-CustomVotes.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

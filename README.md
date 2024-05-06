@@ -78,7 +78,7 @@ Mod | Version | Why
 [CS2_ExecAfter](https://github.com/kus/CS2_ExecAfter) | `1.0.0` | Executes a command after server event (i.e. OnMapStart) or a delay.
 [CS2 Remove Map Weapons](https://github.com/kus/CS2-Remove-Map-Weapons) | `1.0.1` | Remove weapons from the map in CS2 as `mp_weapons_allow_map_placed 0` does not work.
 [CS2_DamageInfo](https://github.com/K4ryuu/CS2_DamageInfo) | `2.3.2` | Displays the amount of damage players have inflicted on the victim's HP and Armor, as well as the hit groups they have hit.
-[GameModeManager](https://github.com/nickj609/GameModeManager)| `1.0.3` | A simple Counter-Strike 2 server plugin that helps admins manage game modes and map groups.
+[GameModeManager](https://github.com/nickj609/GameModeManager)| `1.0.3-custombuild` | A simple Counter-Strike 2 server plugin that helps admins manage game modes and map groups.
 [Rock The Vote](https://github.com/abnerfs/cs2-rockthevote)| `1.8.5` | General purpose cs2 map voting plugin, made with love from scratch
 [MatchZy](https://github.com/shobhit-pathak/MatchZy) | `0.7.8` | MatchZy is a plugin for CS2 for running and managing practice/pugs/scrims/matches with easy configuration!
 [MapConfigurator](https://github.com/ManifestManah/MapConfigurator)| `1.0.2` | Allows you to quick and easily create unique configuration files for each map on your server.
@@ -96,6 +96,7 @@ Mod | Version | Why
 [CS2 Advertisement](https://github.com/partiusfabaa/cs2-advertisement)| `1.0.6.8` | Allows you to show ads in chat/center/panel. [How?](#enable-advertisements)
 [CS2 Deathmatch](https://github.com/NockyCZ/CS2-Deathmatch)| `1.1.3` | Custom Deathmatch CS2 plugin (Includes custom spawnpoints, multicfg, gun selection, spawn protection, etc)
 [OpenPrefirePrac](https://github.com/lengran/OpenPrefirePrac)| `0.1.31` | Multiple prefire practices on competitive maps and support multiplayer practicing simultaneously.
+[CS2-CustomVotes](https://github.com/imi-tat0r/CS2-CustomVotes)| `1.0.1` | A plugin for Counter-Strike 2 to create custom votes for settings.
 
 ## Share the love
 

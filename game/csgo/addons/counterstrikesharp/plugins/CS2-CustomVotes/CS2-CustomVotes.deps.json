@@ -6,16 +6,16 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "GameModeManager/1.0.5": {
+      "CS2-CustomVotes/1.0.0": {
         "dependencies": {
-          "CounterStrikeSharp.API": "1.0.193",
-          "Gameloop.Vdf": "0.6.2.0"
+          "CS2-CustomVotes.Shared": "1.0.0",
+          "CounterStrikeSharp.API": "1.0.191"
         },
         "runtime": {
-          "GameModeManager.dll": {}
+          "CS2-CustomVotes.dll": {}
         }
       },
-      "CounterStrikeSharp.API/1.0.193": {
+      "CounterStrikeSharp.API/1.0.191": {
         "dependencies": {
           "McMaster.NETCore.Plugins": "1.4.0",
           "Microsoft.CSharp": "4.7.0",
@@ -32,8 +32,8 @@
         },
         "runtime": {
           "lib/net7.0/CounterStrikeSharp.API.dll": {
-            "assemblyVersion": "1.0.193.0",
-            "fileVersion": "1.0.193.0"
+            "assemblyVersion": "1.0.191.0",
+            "fileVersion": "1.0.191.0"
           }
         }
       },
@@ -482,7 +482,7 @@
             "rid": "win",
             "assetType": "runtime",
             "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.22.51805"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win/lib/net7.0/System.Diagnostics.EventLog.dll": {
             "rid": "win",
@@ -500,28 +500,25 @@
           "System.Text.Encodings.Web": "7.0.0"
         }
       },
-      "Gameloop.Vdf/0.6.2.0": {
+      "CS2-CustomVotes.Shared/1.0.0": {
         "runtime": {
-          "Gameloop.Vdf.dll": {
-            "assemblyVersion": "0.6.2.0",
-            "fileVersion": "0.6.2.0"
-          }
+          "CS2-CustomVotes.Shared.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "GameModeManager/1.0.5": {
+    "CS2-CustomVotes/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "CounterStrikeSharp.API/1.0.193": {
+    "CounterStrikeSharp.API/1.0.191": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8joDJBTDg8/GA25tYbXrhArNF1ZRDUrouiwYOTFRVIxmNq7lP+XtgnY48B9BHagEwz6odtbTJMWUFlpbdhJkFg==",
-      "path": "counterstrikesharp.api/1.0.193",
-      "hashPath": "counterstrikesharp.api.1.0.193.nupkg.sha512"
+      "sha512": "sha512-nBmw1nCgIVwFNU8dCviVXWcA9ZpC8mXt43Q+Xms8PbfPkeKMZHU3Qr2P97PoBiX1gxaNBZYoqPPbl7/4cFNT/Q==",
+      "path": "counterstrikesharp.api/1.0.191",
+      "hashPath": "counterstrikesharp.api.1.0.191.nupkg.sha512"
     },
     "McMaster.NETCore.Plugins/1.4.0": {
       "type": "package",
@@ -824,8 +821,8 @@
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
     },
-    "Gameloop.Vdf/0.6.2.0": {
-      "type": "reference",
+    "CS2-CustomVotes.Shared/1.0.0": {
+      "type": "project",
       "serviceable": false,
       "sha512": ""
     }

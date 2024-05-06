@@ -10,8 +10,6 @@ set "searchString=Game	csgo/addons/metamod"
 set "insertAfter=Game_LowViolence	csgo_lv"
 set "bakFile=%gameinfo%.bak"
 set "tempFile=%gameinfo%.tmp"
-set "metamodCcsharpVdf=server\game\csgo\addons\metamod\counterstrikesharp.vdf"
-set "metamodCcsharpVdfWin=server\game\csgo\addons\metamod\counterstrikesharp.win.vdf"
 if not exist win.ini copy NUL win.ini
 for /f %%S in (win.ini) do set %%S
 
@@ -99,12 +97,18 @@ if exist "%tempFile%" (
 
 :start
 
+:: Deleting addons folder so no old plugins are left to cause issues
+:: If you have modifications in your addons/ folder they should be in custom_files as these are merged at the end
+echo Deleting addons folder.
+rmdir /S /Q "%ROOT_DIR%server\game\csgo\addons\"
+
 :: Patch server with mod files
 echo Copying mod files.
 xcopy "%ROOT_DIR%game\csgo\*" "%ROOT_DIR%server\game\csgo\" /K /S /E /I /H /Y >NUL
 
-:: Overwrite Metamod counterstrikesharp.vdf with the windows version
-copy /Y "%ROOT_DIR%%metamodCcsharpVdfWin%" "%ROOT_DIR%%metamodCcsharpVdf%"
+:: Merge Windows specific files
+echo Merging Windows specific files.
+xcopy "%ROOT_DIR%game\csgo\addons\windows\*" "%ROOT_DIR%server\game\csgo\addons\" /K /S /E /I /H /Y >NUL
 
 :: Merge your custom files in
 echo Copying custom files from "%custom_folder%".

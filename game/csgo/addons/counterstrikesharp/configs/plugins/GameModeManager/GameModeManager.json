@@ -1,18 +1,28 @@
 {
-	"RTV": {
-		"Enabled": true,
-		"Plugin": "/home/steam/cs2/game/csgo/addons/counterstrikesharp/plugins/RockTheVote/RockTheVote.dll",
-		"MapListFile": "/home/steam/cs2/game/csgo/addons/counterstrikesharp/plugins/RockTheVote/maplist.txt",
-		"DefaultMapFormat": false
-	},
-	"MapGroup": {
-		"Default": "mg_active",
-		"File": "/home/steam/cs2/game/csgo/gamemodes_server.txt"
-	},
-	"GameMode": {
-		"ListEnabled": true,
-		"List": [
-			"comp",
+  "Version": 2,
+  "RTV": {
+    "Enabled": true,
+    "Plugin": "addons/counterstrikesharp/plugins/RockTheVote/RockTheVote.dll",
+    "MapListFile": "addons/counterstrikesharp/plugins/RockTheVote/maplist.txt",
+    "DefaultMapFormat": false
+  },
+  "MapGroup": {
+    "Delay": 1,
+    "Default": "mg_active",
+    "File": "gamemodes_server.txt"
+  },
+  "GameSettings": {
+    "Enabled": true,
+    "Home": "cfg",
+    "Folder": "settings"
+  },
+  "GameMode": {
+    "Rotation": false,
+    "Interval": 4,
+    "Delay": 1,
+    "ListEnabled": true,
+    "List": [
+      "comp",
 			"wingman",
 			"dm-multicfg",
 			"gg",
@@ -33,7 +43,7 @@
 			"soccer",
 			"dm",
 			"ar"
-		]
-	},
-	"ConfigVersion": 1
+    ]
+  },
+  "ConfigVersion": 2
 }
