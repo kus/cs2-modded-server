@@ -1,0 +1,989 @@
+{
+  "CustomVotesEnabled": true,
+  "VoteCooldown": 60,
+  "ChatPrefix": "[{Green}Vote{Default}]",
+  "ForceStyle": "none",
+  "CustomVotes": [
+    {
+      "Command": "mod",
+      "CommandAliases": [
+        "gamemode"
+      ],
+      "Description": "Switch game mode?",
+      "TimeToVote": 30,
+      "Options": {
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        },
+        "Competitive": {
+          "Text": "{Green}Competitive",
+          "Commands": [
+            "exec comp"
+          ]
+        },
+        "Wingman": {
+          "Text": "{Green}Wingman",
+          "Commands": [
+            "exec wingman"
+          ]
+        },
+        "Deathmatch": {
+          "Text": "{Green}Deathmatch",
+          "Commands": [
+            "exec dm-multicfg"
+          ]
+        },
+        "GunGame": {
+          "Text": "{Green}GunGame",
+          "Commands": [
+            "exec gg"
+          ]
+        },
+        "1v1": {
+          "Text": "{Green}1v1",
+          "Commands": [
+            "exec 1v1"
+          ]
+        },
+        "Practice": {
+          "Text": "{Green}Practice",
+          "Commands": [
+            "exec prac"
+          ]
+        },
+        "Prefire": {
+          "Text": "{Green}Prefire",
+          "Commands": [
+            "exec prefire"
+          ]
+        },
+        "Awp Only": {
+          "Text": "{Green}Awp Only",
+          "Commands": [
+            "exec awp"
+          ]
+        },
+        "Aim": {
+          "Text": "{Green}Aim",
+          "Commands": [
+            "exec aim"
+          ]
+        },
+        "Executes": {
+          "Text": "{Green}Executes",
+          "Commands": [
+            "exec executes"
+          ]
+        },
+        "Retakes": {
+          "Text": "{Green}Retakes",
+          "Commands": [
+            "exec retake"
+          ]
+        },
+        "Surf": {
+          "Text": "{Green}Surf",
+          "Commands": [
+            "exec surf"
+          ]
+        },
+        "KZ": {
+          "Text": "{Green}KZ",
+          "Commands": [
+            "exec kz"
+          ]
+        },
+        "BHop": {
+          "Text": "{Green}BHop",
+          "Commands": [
+            "exec bhop"
+          ]
+        },
+        "Mini Games": {
+          "Text": "{Green}Mini Games",
+          "Commands": [
+            "exec minigames"
+          ]
+        },
+        "Course": {
+          "Text": "{Green}Course",
+          "Commands": [
+            "exec course"
+          ]
+        },
+        "ScoutzKnivez": {
+          "Text": "{Green}ScoutzKnivez",
+          "Commands": [
+            "exec scoutzknivez"
+          ]
+        },
+        "Hide n Seek": {
+          "Text": "{Green}Hide n Seek",
+          "Commands": [
+            "exec hns"
+          ]
+        },
+        "Soccer": {
+          "Text": "{Green}Soccer",
+          "Commands": [
+            "exec soccer"
+          ]
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "comp",
+      "CommandAliases": [
+        "competitive"
+      ],
+      "Description": "Switch game mode to Competitive?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "exec comp"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "wingman",
+      "CommandAliases": [],
+      "Description": "Switch game mode to Wingman?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "exec wingman"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "dm",
+      "CommandAliases": [
+        "deathmatch"
+      ],
+      "Description": "Switch game mode to Deathmatch?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "exec dm-multicfg"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "gg",
+      "CommandAliases": [
+        "gungame"
+      ],
+      "Description": "Switch game mode to GunGame?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "exec gg"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "1v1",
+      "CommandAliases": [],
+      "Description": "Switch game mode to 1v1?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "exec 1v1"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "awp",
+      "CommandAliases": [],
+      "Description": "Switch game mode to Awp Only?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "exec awp"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "aim",
+      "CommandAliases": [],
+      "Description": "Switch game mode to Aim?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "exec aim"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "prefire",
+      "CommandAliases": [],
+      "Description": "Switch game mode to Prefire?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "exec prefire"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "executes",
+      "CommandAliases": [
+        "execute"
+      ],
+      "Description": "Switch game mode to Executes?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "exec executes"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "retake",
+      "CommandAliases": [
+        "retakes"
+      ],
+      "Description": "Switch game mode to Retakes?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "exec retake"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "prac",
+      "CommandAliases": [
+        "practice"
+      ],
+      "Description": "Switch game mode to Practice?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "exec prac"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "bhop",
+      "CommandAliases": [],
+      "Description": "Switch game mode to BHop?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "exec bhop"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "kz",
+      "CommandAliases": [],
+      "Description": "Switch game mode to KZ?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "exec kz"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "surf",
+      "CommandAliases": [],
+      "Description": "Switch game mode to Surf?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "exec surf"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "minigames",
+      "CommandAliases": [],
+      "Description": "Switch game mode to Mini Games?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "exec minigames"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "course",
+      "CommandAliases": [],
+      "Description": "Switch game mode to Course?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "exec course"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "scoutzknivez",
+      "CommandAliases": [
+        "scoutsknivez",
+        "scoutzknives",
+        "scoutsknives",
+        "scouts",
+        "scoutz"
+      ],
+      "Description": "Switch game mode to ScoutzKnivez?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "exec scoutzknivez"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "hns",
+      "CommandAliases": [
+        "hide"
+      ],
+      "Description": "Switch game mode to Hide n Seek?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "exec hns"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "soccer",
+      "CommandAliases": [],
+      "Description": "Switch game mode to Soccer?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "exec soccer"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "cs_italy",
+      "CommandAliases": [],
+      "Description": "Change map to cs_italy?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "changelevel cs_italy"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "cs_office",
+      "CommandAliases": [],
+      "Description": "Change map to cs_office?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "changelevel cs_office"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "de_vertigo",
+      "CommandAliases": [],
+      "Description": "Change map to de_vertigo?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "changelevel de_vertigo"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "de_ancient",
+      "CommandAliases": [],
+      "Description": "Change map to de_ancient?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "changelevel de_ancient"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "de_anubis",
+      "CommandAliases": [],
+      "Description": "Change map to de_anubis?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "changelevel de_anubis"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "de_dust2",
+      "CommandAliases": [],
+      "Description": "Change map to de_dust2?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "changelevel de_dust2"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "de_inferno",
+      "CommandAliases": [],
+      "Description": "Change map to de_inferno?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "changelevel de_inferno"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "de_mirage",
+      "CommandAliases": [],
+      "Description": "Change map to de_mirage?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "changelevel de_mirage"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "de_nuke",
+      "CommandAliases": [],
+      "Description": "Change map to de_nuke?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "changelevel de_nuke"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "de_overpass",
+      "CommandAliases": [],
+      "Description": "Change map to de_overpass?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "changelevel de_overpass"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "de_vertigo",
+      "CommandAliases": [],
+      "Description": "Change map to de_vertigo?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "changelevel de_vertigo"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "cs_assault",
+      "CommandAliases": [],
+      "Description": "Change map to cs_assault?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "host_workshop_map 3079872050"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "de_cbble",
+      "CommandAliases": [],
+      "Description": "Change map to de_cbble?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "host_workshop_map 3070212801"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "de_cache",
+      "CommandAliases": [],
+      "Description": "Change map to de_cache?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "host_workshop_map 3070244931"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    }
+  ],
+  "ConfigVersion": 2
+}
