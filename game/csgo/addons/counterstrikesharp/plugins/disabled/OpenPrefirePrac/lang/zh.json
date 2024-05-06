@@ -73,5 +73,6 @@
     "map.de_dust2.a_short": "A 小到 A 包点",
     "map.de_dust2.b_tunnel": "从 B 洞进攻 B 包点",
     "map.de_dust2.mid_to_b": "从中门进攻 B 包点",
-    "map.de_nuke.hut_to_a": "从黄房进攻 A 包点"
+    "map.de_nuke.hut_to_a": "从黄房进攻 A 包点",
+    "map.de_nuke.ramp_to_b": "从铁板进攻 B 包点"
 } 

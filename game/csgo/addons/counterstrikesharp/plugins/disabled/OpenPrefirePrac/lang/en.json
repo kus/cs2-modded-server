@@ -73,5 +73,6 @@
     "map.de_dust2.a_short": "Attack A site from A short",
     "map.de_dust2.b_tunnel": "Attack B site from tunnel",
     "map.de_dust2.mid_to_b": "Attack B site from mid",
-    "map.de_nuke.hut_to_a": "Attack A site from HUT"
+    "map.de_nuke.hut_to_a": "Attack A site from HUT",
+    "map.de_nuke.ramp_to_b": "Attack B site from ramp"
 } 
