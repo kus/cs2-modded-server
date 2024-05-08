@@ -127,6 +127,7 @@
 				"workshop/3089953774/cs_militia"		""
 				"workshop/3070960099/de_aztec"		""
 				"workshop/3108513658/de_akiba"		""
+				"workshop/3236615060/cs_insertion2"		""
 			}
 		}
 		"mg_wingman"
@@ -268,6 +269,7 @@
 			"maps"
 			{
 				"workshop/3074758439/only_up"		""
+				"workshop/3170668869/ewii_challenge"		""
 				"workshop/3070220367/kz_hub"		""
 				"workshop/3145779590/hellcasecyrilchallenge"		""
 				"workshop/3070194623/kz_checkmate"		""
@@ -303,7 +305,9 @@
 			"maps"
 			{
 				"workshop/3082120895/mg_skeet_multigames_v7"		""
+				"workshop/3202752274/mg_lego_course_2"		""
 				"workshop/3076765511/mg_warmcup_headshot"		""
+				"workshop/3186779271/minecraft"		""
 			}
 		}
 		"mg_deathrun"
@@ -312,6 +316,7 @@
 			"maps"
 			{
 				"workshop/3164611860/deathrun_playground"		""
+				"workshop/3188021118/deathrun_civilization"		""
 				"workshop/3083325292/deathrun_iceworld_cs2"		""
 			}
 		}
