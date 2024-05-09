@@ -367,7 +367,7 @@
                 		"workshop/3155733578/Cottage_KREVETKA03"           ""
                 		"workshop/3070653617/Autumn_House"           ""
                 		"workshop/3142354975/Depot"           ""
-                		"workshop/3070409575/CS2OFFIYOK"           ""
+                		"workshop/3070409575/ForceDrop"           ""
                 		"workshop/3216213823/Inside Pyramid"           ""
                    		"workshop/3204903088/Pool_Home"           ""
                 		"workshop/3099799704/SEEK SANDY AREA BS"           ""
