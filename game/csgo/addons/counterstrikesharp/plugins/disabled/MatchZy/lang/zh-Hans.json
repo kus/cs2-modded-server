@@ -10,7 +10,7 @@
     "matchzy.pause.teamsunpausedthematch": "双方均同意解除暂停, 比赛正在恢复！",
     "matchzy.pause.teamwantstounpause": "{green}{0}{default} 想要解除暂停。 {green}{1}{default}, 请输入 !unpause 来确定。",
     "matchzy.pause.adminpausedthematch": "{green}管理员{default} 暂停了比赛！",
-    "matchzy.pause.adminunpausedthematch": "{green}管理员{default} 结束了暂停, 比赛正在恢复！ ",
+    "matchzy.pause.adminunpausedthematch": "{green}管理员{default} 结束了暂停, 比赛正在恢复！",
     "matchzy.pause.onlyadmincanunpause": "比赛被管理员暂停, 因此, 只有管理员才能解除暂停。",
     "matchzy.pause.pausedbecauserestore": "比赛因为回合回溯暂停。双方需要输入 {green}.unpause{default} 以解除暂停。",
     "matchzy.pause.techpausenotenabled": "技术暂停暂未启用。",
