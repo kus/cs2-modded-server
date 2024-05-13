@@ -135,6 +135,12 @@
           "Commands": [
             "exec soccer"
           ]
+        },
+        "Casual-1.6": {
+          "Text": "{Green}Casual-1.6",
+          "Commands": [
+            "exec Casual-1.6.cfg"
+          ]
         }
       },
       "DefaultOption": "No",
@@ -650,6 +656,33 @@
           "Text": "{Green}Yes",
           "Commands": [
             "exec soccer"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "1.6",
+      "CommandAliases": [
+        "casual-1.6"
+      ],
+      "Description": "Switch game mode to Casual-1.6?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "exec Casual-1.6.cfg"
           ]
         },
         "No": {
