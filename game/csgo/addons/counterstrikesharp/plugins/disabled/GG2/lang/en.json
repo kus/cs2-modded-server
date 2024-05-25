@@ -1,8 +1,4 @@
 {
-  "test.translation": "This is the english translation",
-  "test.format": "This number has 2 decimal places {0:n2}",
-  "test.colors": "{orange}This{default} text has {green}green{default} text",
-  "test.colors.withformat": "{orange}{0:n2}{default}",
   "warmup.left": "{0} second(s) left",
   "warmup.notstarted": "Warmup round has not started yet",
   "warmup.started": "Warmup round is in progress",
@@ -43,7 +39,16 @@
   "your.rank": " {blue} Your rank - '!rank' in chat",
   "nomore.knives": "2 steals in the row only. Than you need level up with weapon",
   "additionalfrags.left": "{0} extra frags left",
-  "additionalfrag.have": "You have {0} extra frag because you was Winner!!!",
+  "additionalfrag.left": "1 extra frag left",
+  "additionalfrag.have": "You have 1 extra frag because you was Winner!!!",
   "additionalfrags.have": "You have {0} extra frags because you was Winner!!!",
-  "database.error": "Database does not connected. Can't run command."
+  "taserfrags.have": "You have {0} extra TASER frags because you was Winner!!!",
+  "taserfrag.have": "You have {0} extra TASER frag because you was Winner!!!",
+  "taserfrags.left": "{0} extra TASER frags left",
+  "taserfrag.left": "{0} extra TASER frag left",
+  "database.error": "Database does not connected. Can't run command.",
+  "change.language": "You can set Russian lanaguage by {olive}'!lang ru' command.",
+  "music.success": " {green}Your sound preference updates and saved.",
+  "music.error": " {red}Error updating your sound preference. Try again later.",
+  "notop.records": "Leaders list is empty"
 } 

@@ -244,6 +244,8 @@
     "sounds/vo/commander/commander_comment_14.wav"
   ],
   "_comment.KnifeStealSound": "List of sounds for everyone when someone stole a level by knife",
+  "MolotovKillSound": "",
+  "_comment.MolotovKillSound": "Sound for everyone when someone killed my Molotov and stole a level",
   "SpawnDistance": 60.0,
   "ConfigVersion": 1
 }
