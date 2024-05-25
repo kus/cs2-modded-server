@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "MatchZy/1.0.0": {
         "dependencies": {
-          "CounterStrikeSharp.API": "1.0.228",
+          "CounterStrikeSharp.API": "1.0.233",
           "CsvHelper": "30.0.1",
           "Dapper": "2.1.15",
           "Microsoft.Data.Sqlite": "7.0.13",
@@ -20,7 +20,7 @@
           "MatchZy.dll": {}
         }
       },
-      "CounterStrikeSharp.API/1.0.228": {
+      "CounterStrikeSharp.API/1.0.233": {
         "dependencies": {
           "McMaster.NETCore.Plugins": "1.4.0",
           "Microsoft.CSharp": "4.7.0",
@@ -499,12 +499,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "CounterStrikeSharp.API/1.0.228": {
+    "CounterStrikeSharp.API/1.0.233": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oJWeMCJt/uQZEOXucgugu3u+QBYBqxzONf/rHjBetIZCeqgUMilo3s10GgyRMhHBDS0nBO5POUcg6K96aTxwLg==",
-      "path": "counterstrikesharp.api/1.0.228",
-      "hashPath": "counterstrikesharp.api.1.0.228.nupkg.sha512"
+      "sha512": "sha512-s3h/hcMLzWrbAFqLUxk6Ld68J2IwUtxnHXD14zTQ7km1LCvsoI7XpxD335usNpRmsWTiZ5I+tG6PcvPBPw/2/A==",
+      "path": "counterstrikesharp.api/1.0.233",
+      "hashPath": "counterstrikesharp.api.1.0.233.nupkg.sha512"
     },
     "CsvHelper/30.0.1": {
       "type": "package",
