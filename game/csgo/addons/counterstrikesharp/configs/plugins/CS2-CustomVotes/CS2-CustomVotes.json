@@ -28,6 +28,12 @@
             "exec wingman"
           ]
         },
+        "Casual-1.6": {
+          "Text": "{Green}Casual-1.6",
+          "Commands": [
+            "exec Casual-1.6.cfg"
+          ]
+        },
         "Deathmatch": {
           "Text": "{Green}Deathmatch",
           "Commands": [
@@ -134,6 +140,12 @@
           "Text": "{Green}Soccer",
           "Commands": [
             "exec soccer"
+          ]
+        },
+        "Casual-1.6": {
+          "Text": "{Green}Casual-1.6",
+          "Commands": [
+            "exec Casual-1.6.cfg"
           ]
         }
       },
@@ -533,6 +545,33 @@
       }
     },
     {
+      "Command": "1.6",
+      "CommandAliases": [
+        "casual-1.6"
+      ],
+      "Description": "Switch game mode to Casual-1.6?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "exec Casual-1.6.cfg"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
       "Command": "deathrun",
       "CommandAliases": [],
       "Description": "Switch game mode to Deathrun?",
@@ -650,6 +689,33 @@
           "Text": "{Green}Yes",
           "Commands": [
             "exec soccer"
+          ]
+        },
+        "No": {
+          "Text": "{Red}No",
+          "Commands": []
+        }
+      },
+      "DefaultOption": "No",
+      "Style": "center",
+      "MinVotePercentage": 50,
+      "Permission": {
+        "RequiresAll": false,
+        "Permissions": []
+      }
+    },
+    {
+      "Command": "1.6",
+      "CommandAliases": [
+        "casual-1.6"
+      ],
+      "Description": "Switch game mode to Casual-1.6?",
+      "TimeToVote": 30,
+      "Options": {
+        "Yes": {
+          "Text": "{Green}Yes",
+          "Commands": [
+            "exec Casual-1.6.cfg"
           ]
         },
         "No": {
