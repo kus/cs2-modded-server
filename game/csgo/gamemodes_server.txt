@@ -387,6 +387,8 @@
 				"workshop/3146122036/freebet_aim_map"	""
 				"workshop/3070923343/fy_pool_day"		""
 				"workshop/3078701726/aim_ak-colt_CS2"   ""
+				"workshop/3085962528/aim_usp"		""
+				"workshop/3075996446/aim_deagle"		""
 			}
 		}
 		"mg_prefire"
