@@ -73,6 +73,15 @@
     "map.de_dust2.a_short": "A 小到 A 包点",
     "map.de_dust2.b_tunnel": "从 B 洞进攻 B 包点",
     "map.de_dust2.mid_to_b": "从中门进攻 B 包点",
+    "map.de_dust2.ct_push_lower": "CT 前压 B 下洞",
+    "map.de_dust2.ct_push_mid": "CT 中路前顶",
     "map.de_nuke.hut_to_a": "从黄房进攻 A 包点",
-    "map.de_nuke.ramp_to_b": "从铁板进攻 B 包点"
+    "map.de_nuke.ramp_to_b": "从铁板进攻 B 包点",
+    "map.de_nuke.t_side_entrance_of_lobby": "（匪家侧）匪厅入口",
+    "map.de_nuke.radio_to_ramp": "从连接进攻铁板",
+    "map.de_nuke.j_hall_to_upper": "从三楼下回防/进攻 A 区",
+    "map.de_nuke.t_outside_to_secret": "从匪家外场到 K1",
+    "map.de_nuke.secret_to_b": "从 K1 进攻 B 点",
+    "map.de_nuke.silo_to_mini": "水塔快提正门",
+    "map.de_nuke.mini_to_a": "从正门进攻 A 包点"
 } 

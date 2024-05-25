@@ -98,7 +98,7 @@ Mod | Version | Why
 [CS2 Executes](https://github.com/zwolof/cs2-executes)| `1.0.2` | CS2 implementation of executes. Based on the version for CS:GO by Splewis.
 [CS2 Advertisement](https://github.com/partiusfabaa/cs2-advertisement)| `1.0.6.8` | Allows you to show ads in chat/center/panel. [How?](#enable-advertisements)
 [CS2 Deathmatch](https://github.com/NockyCZ/CS2-Deathmatch)| `1.1.3` | Custom Deathmatch CS2 plugin (Includes custom spawnpoints, multicfg, gun selection, spawn protection, etc)
-[OpenPrefirePrac](https://github.com/lengran/OpenPrefirePrac)| `0.1.32` | Multiple prefire practices on competitive maps and support multiplayer practicing simultaneously.
+[OpenPrefirePrac](https://github.com/lengran/OpenPrefirePrac)| `0.1.34` | Multiple prefire practices on competitive maps and support multiplayer practicing simultaneously.
 [CS2-CustomVotes](https://github.com/imi-tat0r/CS2-CustomVotes)| `1.0.1` | A plugin for Counter-Strike 2 to create custom votes for settings.
 [deathrun-manager](https://github.com/leoskiline/cs2-deathrun-manager)| `0.0.8` | Deathrun Manager for CounterStrikeSharp Framework CS2.
 

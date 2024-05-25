@@ -73,6 +73,15 @@
     "map.de_dust2.a_short": "Attack A site from A short",
     "map.de_dust2.b_tunnel": "Attack B site from tunnel",
     "map.de_dust2.mid_to_b": "Attack B site from mid",
-    "map.de_nuke.hut_to_a": "Attack A site from HUT",
-    "map.de_nuke.ramp_to_b": "Attack B site from ramp"
+    "map.de_dust2.ct_push_lower": "CT aggressively push from lower tunnel",
+    "map.de_dust2.ct_push_mid": "CT aggressively push top mid",
+    "map.de_nuke.hut_to_a": "Attack A site from hut",
+    "map.de_nuke.ramp_to_b": "Attack B site from ramp",
+    "map.de_nuke.t_side_entrance_of_lobby": "Entrance of lobby (T side)",
+    "map.de_nuke.radio_to_ramp": "From radio to ramp",
+    "map.de_nuke.j_hall_to_upper": "Attack A site from Ramp/J-Hall",
+    "map.de_nuke.t_outside_to_secret": "From T-side outside to secret",
+    "map.de_nuke.secret_to_b": "Attack B site from secret",
+    "map.de_nuke.silo_to_mini": "Fast pace rush MINI from Silo",
+    "map.de_nuke.mini_to_a": "Attack A site from MINI"
 } 

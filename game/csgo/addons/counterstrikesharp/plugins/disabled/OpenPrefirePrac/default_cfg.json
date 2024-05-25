@@ -1,5 +1,6 @@
 {
-    "Difficulty": 0,
+    "Difficulty": 1,
     "TrainingMode": 0,
-    "BotWeapon": 2
+    "BotWeapon": 2,
+    "BotAimLock": false
 }

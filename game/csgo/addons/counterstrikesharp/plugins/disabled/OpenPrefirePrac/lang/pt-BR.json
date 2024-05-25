@@ -73,6 +73,15 @@
     "map.de_dust2.a_short": "Ataque ao site A do A curto",
     "map.de_dust2.b_tunnel": "Atacar o local B a partir do túnel",
     "map.de_dust2.mid_to_b": "Atacar o local B a partir do meio",
+    "map.de_dust2.ct_push_lower": "CT empurra agressivamente a partir do túnel inferior",
+    "map.de_dust2.ct_push_mid": "CT empurra agressivamente a parte superior do meio",
     "map.de_nuke.hut_to_a": "Atacar o local do A a partir do HUT",
-    "map.de_nuke.ramp_to_b": "Atacar o local B a partir da rampa"
+    "map.de_nuke.ramp_to_b": "Atacar o local B a partir da rampa",
+    "map.de_nuke.t_side_entrance_of_lobby": "Entrada do saguão (lado T)",
+    "map.de_nuke.radio_to_ramp": "Do rádio à rampa",
+    "map.de_nuke.j_hall_to_upper": "Ataque ao site A da rampa/J-Hall",
+    "map.de_nuke.t_outside_to_secret": "Do lado T externo ao secreto",
+    "map.de_nuke.secret_to_b": "Atacar o site B a partir do segredo",
+    "map.de_nuke.silo_to_mini": "MINI de ritmo acelerado da Silo",
+    "map.de_nuke.mini_to_a": "Ataque Um site da MINI"
 }

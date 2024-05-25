@@ -16,5 +16,9 @@
     //   2: Bots use AK47.
     //   3: Bots use Scout.
     //   4: Bots use AWP.
-    "BotWeapon": 0
+    "BotWeapon": 0,
+    // Aim lock for bots:
+    //   false: CS2's native bot behavior. It works in a consistant manner but is less powerful.
+    //   true: Bots always aim at players' heads. But this may conflict with CS2's native bot logic, causing bots to not react under certain circumstances.
+    "BotAimLock": true
 }
