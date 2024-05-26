@@ -10,6 +10,12 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:CounterStrikeSharp.API.Api.GetVersionString">
+            <summary>
+            Returns the assembly version of CounterStrikeSharp running on the server as a string including git commit hash
+            </summary>
+            <example>1.0.0+9d8b6be</example>
+        </member>
         <member name="M:CounterStrikeSharp.API.NativeObject.As``1">
             <summary>
             Returns a new instance of the specified type using the pointer from the passed in object.
@@ -39,6 +45,12 @@
             <param name="handler">The event handler to register.</param>
             <param name="hookMode">The mode in which the event handler is hooked. Default is `HookMode.Post`.</param>
         </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.DeregisterEventHandler``1(CounterStrikeSharp.API.Core.BasePlugin.GameEventHandler{``0},CounterStrikeSharp.API.Core.HookMode)">
+            <summary>
+            De-registers a game event handler.
+            </summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterEventHandler``1(CounterStrikeSharp.API.Core.BasePlugin.GameEventHandler{``0},CounterStrikeSharp.API.Core.HookMode)"/>
+        </member>
         <member name="M:CounterStrikeSharp.API.Core.BasePlugin.AddCommand(System.String,System.String,CounterStrikeSharp.API.Modules.Commands.CommandInfo.CommandCallback)">
             <summary>
             Registers a new server command.
@@ -47,11 +59,89 @@
             <param name="description">The description of the command.</param>
             <param name="handler">The callback function to be invoked when the command is executed.</param>
         </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.AddCommandListener(System.String,CounterStrikeSharp.API.Modules.Commands.CommandInfo.CommandListenerCallback,CounterStrikeSharp.API.Core.HookMode)">
+            <summary>
+            Adds a command listener which will be called before or after the command is executed on the server by a player.
+            </summary>
+            <param name="name">Name of the command, e.g. `jointeam`</param>
+            <param name="handler">Code to run when command is executed. Return <see cref="F:CounterStrikeSharp.API.Core.HookResult.Handled"/> or higher to prevent command execution.</param>
+            <param name="mode">Whether to hook before or after the command is executed.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RemoveCommand(System.String,CounterStrikeSharp.API.Modules.Commands.CommandInfo.CommandCallback)">
+            <summary>
+            Removes a server command.
+            </summary>
+            <param name="name">The name of the command.</param>
+            <param name="handler">The callback function to be invoked when the command is executed.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RemoveCommandListener(System.String,CounterStrikeSharp.API.Modules.Commands.CommandInfo.CommandListenerCallback,CounterStrikeSharp.API.Core.HookMode)">
+            <summary>
+            Remove a command listener.
+            </summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Core.BasePlugin.AddCommandListener(System.String,CounterStrikeSharp.API.Modules.Commands.CommandInfo.CommandListenerCallback,CounterStrikeSharp.API.Core.HookMode)"/>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterListener``1(``0)">
+            <summary>
+            Registers a global listener, e.g. <see cref="T:CounterStrikeSharp.API.Core.Listeners.OnTick"/>, <see cref="T:CounterStrikeSharp.API.Core.Listeners.OnClientConnect"/>.
+            </summary>
+            <param name="handler"></param>
+            <typeparam name="T">Listener delegate type</typeparam>
+            <exception cref="T:System.ArgumentException">Invalid listener <see cref="!:T"/> provided</exception>
+            <example>
+            <code lang="C#">
+            RegisterListener&lt;Listeners.OnTick&gt;(OnTick);
+            </code>
+            </example>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RemoveListener``1(``0)">
+            <summary>
+            Removes a global listener.
+            </summary>
+            <param name="handler"></param>
+            <typeparam name="T"></typeparam>
+            <exception cref="T:System.ArgumentException">Invalid listener <see cref="!:T"/> provided</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RemoveListener(System.String,System.Delegate)">
+            <summary>
+            Removes a global listener.
+            </summary>
+            <param name="name"></param>
+            <param name="handler"></param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.AddTimer(System.Single,System.Action,System.Nullable{CounterStrikeSharp.API.Modules.Timers.TimerFlags})">
+            <summary>
+            Adds a timer that will call the given callback after the specified amount of seconds.
+            By default will only run once unless the <see cref="F:CounterStrikeSharp.API.Modules.Timers.TimerFlags.REPEAT"/> flag is set.
+            </summary>
+            <param name="interval">Interval/Delay in seconds</param>
+            <param name="callback">Code to run when timer elapses</param>
+            <param name="flags">Controls if the timer is a one-off, repeat or stops on map change etc.</param>
+            <returns>An instance of the <see cref="T:CounterStrikeSharp.API.Modules.Timers.Timer"/></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterAllAttributes(System.Object)">
+            <summary>
+            Registers all attribute handlers on the given instance.
+            Can be used to register event handlers, console commands, entity outputs etc. from classes that are not derived from `BasePlugin`.
+            </summary>
+            <param name="instance"></param>
+        </member>
         <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterAttributeHandlers(System.Object)">
             <summary>
-            Registers all game event handlers that are decorated with the `[GameEventHandler]` attribute.
+            Registers all game event handlers that are decorated with the <see cref="T:CounterStrikeSharp.API.Core.Attributes.Registration.GameEventHandlerAttribute"/> attribute.
             </summary>
             <param name="instance">The instance of the object where the event handlers are defined.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterConsoleCommandAttributeHandlers(System.Object)">
+            <summary>
+            Registers all console command handlers that are decorated with the <see cref="T:CounterStrikeSharp.API.Core.Attributes.Registration.ConsoleCommandAttribute"/> attribute.
+            </summary>
+            <param name="instance">The instance of the object where the console command handlers are defined.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterEntityOutputAttributeHandlers(System.Object)">
+            <summary>
+            Registers all entity output handlers that are decorated with the <see cref="T:CounterStrikeSharp.API.Core.Attributes.Registration.EntityOutputHookAttribute"/> attribute.
+            </summary>
+            <param name="instance">The instance of the object where entity output hook handlers are defined.</param>
         </member>
         <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterFakeConVars(System.Object)">
             <summary>
@@ -59,6 +149,34 @@
             </summary>
             <param name="convar"></param>
             <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.HookEntityOutput(System.String,System.String,CounterStrikeSharp.API.Modules.Entities.EntityIO.EntityOutputHandler,CounterStrikeSharp.API.Core.HookMode)">
+            <summary>
+            Hooks an <a href="https://developer.valvesoftware.com/wiki/Inputs_and_Outputs">entity output</a>.
+            </summary>
+            <param name="classname">Classname to hook, or `*` for wildcard</param>
+            <param name="outputName">Output name to hook, or `*` for wildcard</param>
+            <param name="handler">Handler to call</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.UnhookEntityOutput(System.String,System.String,CounterStrikeSharp.API.Modules.Entities.EntityIO.EntityOutputHandler,CounterStrikeSharp.API.Core.HookMode)">
+            <summary>
+            Unhooks an entity output.
+            </summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Core.BasePlugin.HookEntityOutput(System.String,System.String,CounterStrikeSharp.API.Modules.Entities.EntityIO.EntityOutputHandler,CounterStrikeSharp.API.Core.HookMode)"/>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.HookSingleEntityOutput(CounterStrikeSharp.API.Core.CEntityInstance,System.String,CounterStrikeSharp.API.Modules.Entities.EntityIO.EntityOutputHandler)">
+            <summary>
+            Hooks an entity output for a single entity instance.
+            </summary>
+            <param name="entityInstance">Entity instance to hook</param>
+            <param name="outputName">Output name to hook, or `*` for wildcard</param>
+            <param name="handler">Handler to call</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.UnhookSingleEntityOutput(CounterStrikeSharp.API.Core.CEntityInstance,System.String,CounterStrikeSharp.API.Modules.Entities.EntityIO.EntityOutputHandler)">
+            <summary>
+            Unhooks an entity output for a single entity instance.
+            </summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Core.BasePlugin.HookSingleEntityOutput(CounterStrikeSharp.API.Core.CEntityInstance,System.String,CounterStrikeSharp.API.Modules.Entities.EntityIO.EntityOutputHandler)"/>
         </member>
         <member name="T:CounterStrikeSharp.API.Core.Commands.PluginCommandManagerDecorator">
             <summary>
@@ -226,12 +344,22 @@
         </member>
         <member name="P:CounterStrikeSharp.API.Core.IPlugin.ModuleName">
             <summary>
-            Name of the plugin.
+            Name of the plugin as it will appear in the plugin list.
             </summary>
         </member>
         <member name="P:CounterStrikeSharp.API.Core.IPlugin.ModuleVersion">
             <summary>
-            Module version.
+            Module version as it will appear in the plugin list.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.IPlugin.ModuleAuthor">
+            <summary>
+            Author of the plugin as it will appear in the plugin list.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.IPlugin.ModuleDescription">
+            <summary>
+            Brief description of the plugin as it will appear in the plugin list.
             </summary>
         </member>
         <member name="M:CounterStrikeSharp.API.Core.IPlugin.Load(System.Boolean)">
@@ -253,6 +381,11 @@
             re-wiring everything.
             </summary>
             <param name="hotReload"></param>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.IPlugin.ModulePath">
+            <summary>
+            The path to the plugin's DLL file.
+            </summary>
         </member>
         <member name="T:CounterStrikeSharp.API.Core.IPluginConfig`1">
             <summary>
@@ -464,6 +597,9 @@
         <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.PrintToCenter(System.String)">
             <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
         </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.PrintToCenterAlert(System.String)">
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
         <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.PrintToCenterHtml(System.String,System.Int32)">
             <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
         </member>
@@ -609,7 +745,7 @@
         </member>
         <member name="M:CounterStrikeSharp.API.Core.CEntityInstance.AcceptInput(System.String,CounterStrikeSharp.API.Core.CEntityInstance,CounterStrikeSharp.API.Core.CEntityInstance,System.String,System.Int32)">
             <summary>
-            Calls a named input method on an entity.
+            Calls a named input method on an entity, this will bypass the map IO event queue system.
             <example>
             <code>
             entity.AcceptInput("Break");
@@ -620,6 +756,23 @@
             <param name="activator">Entity which initiated the action, <see langword="null"/> for no entity</param>
             <param name="caller">Entity that is sending the event, <see langword="null"/> for no entity</param>
             <param name="value">String variant value to send with the event</param>
+            <param name="outputId">Unknown, defaults to 0</param>
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CEntityInstance.AddEntityIOEvent(System.String,CounterStrikeSharp.API.Core.CEntityInstance,CounterStrikeSharp.API.Core.CEntityInstance,System.String,System.Single,System.Int32)">
+            <summary>
+            Calls a named input method on an entity, conforming to the map IO event queue system.
+            <example>
+            <code>
+            entity.AddEntityIOEvent("Break");
+            </code>
+            </example>
+            </summary>
+            <param name="inputName">Input action name</param>
+            <param name="activator">Entity which initiated the action, <see langword="null"/> for no entity</param>
+            <param name="caller">Entity that is sending the event, <see langword="null"/> for no entity</param>
+            <param name="value">String variant value to send with the event</param>
+            <param name="delay">Delay in seconds before calling the input</param>
             <param name="outputId">Unknown, defaults to 0</param>
             <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
         </member>
@@ -980,6 +1133,12 @@
             <param name="usage">If the command fails, this string is printed to the caller to show the CommandUtils intended usage.</param>
             <param name="whoCanExecute">Restricts the command so it can only be executed by players, the server console, or both (see CommandUsage).</param>
         </member>
+        <member name="T:CounterStrikeSharp.API.Modules.Commands.CommandInfo.CommandListenerCallback">
+            <summary>
+            Command listener callback.
+            <returns>If returning <see cref="F:CounterStrikeSharp.API.Core.HookResult.Handled"/> or higher, will prevent the command from executing.</returns>
+            </summary>
+        </member>
         <member name="P:CounterStrikeSharp.API.Modules.Commands.CommandInfo.CallingContext">
             <summary>
             Whether or not the command was sent via Console or Chat.
@@ -1255,6 +1414,27 @@
             Roll of angle
             </summary>
         </member>
+        <member name="T:CounterStrikeSharp.API.Modules.Utils.CHandle`1">
+            <summary>
+            CHandle is a class that represents a 32-bit ID (entindex + serial number) unique to every past and present entity in a game.
+            It is used to refer to entities where pointers and entity indexes are unsafe; mainly across the client/server divide.
+            <a href="https://developer.valvesoftware.com/wiki/CHandle">More info</a>
+            </summary>
+            <typeparam name="T">Type of entity this handle refers to</typeparam>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Utils.CHandle`1.Value">
+            <inheritdoc cref="M:CounterStrikeSharp.API.Modules.Utils.CHandle`1.Get"/>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.CHandle`1.Get">
+            <summary>
+            Retrieves the instance of the entity this handle refers to.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Utils.CHandle`1.IsValid">
+            <summary>
+            Checks that the handle is valid and points to an entity.
+            </summary>
+        </member>
         <member name="M:CounterStrikeSharp.API.Modules.Utils.ChatColors.ForTeam(CounterStrikeSharp.API.Modules.Utils.CsTeam)">
             <summary>
             Returns a chat color based on a team.
@@ -1321,7 +1501,7 @@
         </member>
         <member name="M:CounterStrikeSharp.API.Modules.Utils.Vector.Length">
             <summary>
-            Returns the Euclidean length of the vector: √x² + y² + z² 
+            Returns the Euclidean length of the vector: √x² + y² + z²
             </summary>
             <returns>Euclidean length of vector</returns>
         </member>
@@ -1363,6 +1543,55 @@
         </member>
         <member name="F:CounterStrikeSharp.API.PlayerButtons.Attack3">
             grenade 2 
+        </member>
+        <member name="P:CounterStrikeSharp.API.Server.TickInterval">
+            <summary>
+            Duration of a single game tick in seconds, based on a 64 tick server (hard coded in CS2).
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Server.ExecuteCommand(System.String)">
+            <summary>
+            Executes a command on the server, as if it was entered from the console.
+            </summary>
+            <param name="command"></param>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Server.TickedTime">
+            <summary>
+            Returns the total time the server has been running in seconds.
+            </summary>
+            <remarks>Does not increment when server is hibernating</remarks>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Server.CurrentTime">
+            <summary>
+            Returns the current map time in seconds, as an interval of the server's tick interval.
+            e.g. 70.046875 would represent 70 seconds of map time and the 4483rd tick of the server (70.046875 / 0.015625).
+            </summary>
+            <remarks>Increments even when server is hibernating</remarks>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Server.TickCount">
+            <summary>
+            Returns the current map tick count.
+            CS2 is a 64 tick server, so the value will increment by 64 every second.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Server.EngineTime">
+            <summary>
+            Returns the total time the server has been running in seconds.
+            </summary>
+            <remarks>Increments even when server is hibernating</remarks>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Server.RunOnTickAsync(System.Int32,System.Action)">
+            <summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Server.RunOnTick(System.Int32,System.Action)"/>
+            Returns Task that completes once the synchronous task has been completed.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Server.RunOnTick(System.Int32,System.Action)">
+            <summary>
+            Queue a task to be executed on the specified tick.
+            See <see cref="P:CounterStrikeSharp.API.Server.TickCount"/> to retrieve the current tick.
+            <remarks>Does not execute if the server is hibernating.</remarks>
+            </summary>
         </member>
         <member name="M:CounterStrikeSharp.API.Server.NextFrameAsync(System.Action)">
             <summary>
