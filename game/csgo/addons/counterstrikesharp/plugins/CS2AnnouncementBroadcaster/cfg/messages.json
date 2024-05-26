@@ -1,0 +1,230 @@
+{
+    "OnCommandMsgs": [
+        {
+            "msg": "Type [GREEN]!modes[NORMAL] to switch server mode. [GREEN]!mode prac[NORMAL] works as well.\u2029Type [GREEN]!maps[NORMAL] for the current mode map list. [GREEN]!map de_inferno[NORMAL] works as well.\u2029\u2029To enter [GREEN]prefire practice[NORMAL] mode, please type [RED]!prefire[NORMAL] while on prefire mode.\u2029Some modes have a [GREEN]!help[NORMAL] chat command for a list of commands.",
+            "cmd": "serverhelp"
+        },
+		{
+            "msg": "Type [GREEN]!modes[NORMAL] to switch server mode. [GREEN]!mode prac[NORMAL] works as well.\u2029Type [GREEN]!maps[NORMAL] for the current mode map list. [GREEN]!map de_inferno[NORMAL] works as well.\u2029\u2029To enter [GREEN]prefire practice[NORMAL] mode, please type [RED]!prefire[NORMAL] while on prefire mode.\u2029Some modes have a [GREEN]!help[NORMAL] chat command for a list of commands.",
+            "cmd": "helpserver"
+        }
+    ],
+   "OnPlayerConnectMsgs": [
+       {
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Multi 1v1 Arenas",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 1                
+            }
+        },
+		{
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Aim_ Maps",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 2                
+            }
+        },
+		{
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Awp_ Maps",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 3                
+            }
+        },
+		{
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Movement - BHop",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 4                
+            }
+        },
+		{
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Casual (1.6)",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 5
+            }
+        },
+		{
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Casual",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 6
+            }
+        },
+		{
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]10-Mans",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 7
+            }
+        },
+		{
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Course",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 8
+            }
+        },
+		{
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]DM-MultiCFG",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 9
+            }
+        },
+		{
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]DM-Valve",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 10
+            }
+        },
+		{
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Deathrun",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 11
+            }
+        },
+		{
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Executes",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 12
+            }
+        },
+		{
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]GunGame",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 13
+            }
+        },
+		{
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Hide and Seek",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 14
+            }
+        },
+		{
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Movement - KZ",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 15
+            }
+        },
+		{
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]MiniGames",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 16
+            }
+        },
+		{
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]MiniMaps",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 17
+            }
+        },
+		{
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Prac-Mode",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 18
+            }
+        },
+		{
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Prefire",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 19
+            }
+        },
+		{
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Retakes",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 20
+            }
+        },
+		{
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Scoutzknivez",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 21
+            }
+        },
+		{
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Soccer",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 22
+            }
+        },
+		{
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Movement - Surf",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 23
+            }
+        },
+		{
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Wingman",
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 24
+            }
+        }
+   ]
+}
