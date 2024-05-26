@@ -5,7 +5,7 @@
     "mainmenu.exit": "Exit prefire mode.",
     "mainmenu.difficulty": "Current difficulty: {0}.",
     "mainmenu.mode": "Current practice mode: {0}.",
-    "mainmenu.help": "Usage: !prefire [PURPLE][Shortcut] [option][NORMAL]\u2029With no shortcuts, this command brings up the main menu.\u2029\u2029Available shortcuts:\u2029[PURPLE]prac[NORMAL] [1-{0}]: Start practicing on a selected route.\u2029[PURPLE]map[NORMAL] [map name]: Switch to another map.\u2029[PURPLE]df[NORMAL] [1-5]: Set the difficulty.\u2029[PURPLE]mode[NORMAL] [rand/full]: Set training mode.\u2029[PURPLE]bw[NORMAL] [rand/ump/ak/sct/awp]: Set weapons for bots.\u2029[PURPLE]lang[NORMAL] [en/pt/zh]: Set language. en for English, pt para português, 中文选择 zh。\u2029[PURPLE]exit[NORMAL]: Stop practicing.",
+    "mainmenu.help": "Usage: !prefire [PURPLE][Shortcut] [option][NORMAL]\u2029With no shortcuts, this command brings up the main menu.\u2029\u2029Available shortcuts:\u2029[PURPLE]prac[NORMAL] [1-{0}]: Start practicing on a selected route.\u2029[PURPLE]map[NORMAL] [map name]: Switch to another map.\u2029[PURPLE]df[NORMAL] [1-6]: Set the difficulty.\u2029[PURPLE]mode[NORMAL] [rand/full]: Set training mode.\u2029[PURPLE]bw[NORMAL] [rand/ump/ak/sct/awp]: Set weapons for bots.\u2029[PURPLE]lang[NORMAL] [en/pt/zh]: Set language. en for English, pt para português, 中文选择 zh。\u2029[PURPLE]exit[NORMAL]: Stop practicing.",
     "mainmenu.shortcut_prompt": "Type [PURPLE]!prefire help[NORMAL] for usage of shortcut commands.",
     "mainmenu.close_menu": "Exit this menu.",
     "mainmenu.menu_closed": "The menu has been closed.",
@@ -25,10 +25,11 @@
     "difficulty.0": "Hardest - 100HP",
     "difficulty.1": "Harder - 500HP",
     "difficulty.2": "Hard - +25HP per kill",
-    "difficulty.3": "Normal - +100HP per kill",
-    "difficulty.4": "Easy - +500HP per kill",
+    "difficulty.3": "Normal - Reheal to 100hp after a kill",
+    "difficulty.4": "Easier - +100HP per kill",
+    "difficulty.5": "Easy - +500HP per kill",
     "difficulty.set": "Difficulty has been set to: {0}.",
-    "difficulty.help": "Usage: !prefire df [PURPLE][1-5][NORMAL]",
+    "difficulty.help": "Usage: !prefire df [PURPLE][1-6][NORMAL]",
     "weaponmenu.title": "Set weapons for bots",
     "weaponmenu.random": "Random",
     "weaponmenu.set": "Bot weapon is set to {0}.",
@@ -83,5 +84,6 @@
     "map.de_nuke.t_outside_to_secret": "From T-side outside to secret",
     "map.de_nuke.secret_to_b": "Attack B site from secret",
     "map.de_nuke.silo_to_mini": "Fast pace rush MINI from Silo",
-    "map.de_nuke.mini_to_a": "Attack A site from MINI"
+    "map.de_nuke.mini_to_a": "Attack A site from MINI",
+    "map.de_vertigo.b_ramp": "Attack B site from stairs"
 } 

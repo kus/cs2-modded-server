@@ -5,7 +5,7 @@
     "mainmenu.exit": "退出预瞄训练",
     "mainmenu.difficulty": "当前难度： {0}。",
     "mainmenu.mode": "当前训练模式： {0}",
-    "mainmenu.help": "用法: !prefire [PURPLE][快捷命令] [选项][NORMAL]\u2029没有指定快捷命令时，该指令会打开预瞄插件主菜单。\u2029支持的快捷指令：\u2029[PURPLE]prac[NORMAL] [1-{0}]: 开始选定编号的训练。\u2029[PURPLE]map[NORMAL] [地图名]: 更换到指定的地图。\u2029[PURPLE]df[NORMAL] [1-5]: 设置难度\u2029[PURPLE]mode[NORMAL] [rand/full]: 设置训练模式。\u2029[PURPLE]bw[NORMAL] [rand/ump/ak/sct/awp]: 设置 bot 所使用的武器。\u2029[PURPLE]lang[NORMAL] [en/pt/zh]: 修改语言设定。en for English, pt para português, 中文选择 zh。\u2029[PURPLE]exit[NORMAL]: 强制退出当前训练。",
+    "mainmenu.help": "用法: !prefire [PURPLE][快捷命令] [选项][NORMAL]\u2029没有指定快捷命令时，该指令会打开预瞄插件主菜单。\u2029支持的快捷指令：\u2029[PURPLE]prac[NORMAL] [1-{0}]: 开始选定编号的训练。\u2029[PURPLE]map[NORMAL] [地图名]: 更换到指定的地图。\u2029[PURPLE]df[NORMAL] [1-6]: 设置难度\u2029[PURPLE]mode[NORMAL] [rand/full]: 设置训练模式。\u2029[PURPLE]bw[NORMAL] [rand/ump/ak/sct/awp]: 设置 bot 所使用的武器。\u2029[PURPLE]lang[NORMAL] [en/pt/zh]: 修改语言设定。en for English, pt para português, 中文选择 zh。\u2029[PURPLE]exit[NORMAL]: 强制退出当前训练。",
     "mainmenu.shortcut_prompt": "输入[PURPLE]!prefire help[NORMAL]可查询快捷指令的使用方法。",
     "mainmenu.close_menu": "退出当前菜单",
     "mainmenu.menu_closed": "菜单已关闭。",
@@ -25,10 +25,11 @@
     "difficulty.0": "惨烈 - 初始 100HP",
     "difficulty.1": "传奇 - 初始 500HP",
     "difficulty.2": "困难 - 每个击杀恢复 25HP",
-    "difficulty.3": "正常 - 每个击杀恢复 100HP",
-    "difficulty.4": "简单 - 每个击杀恢复 500HP",
+    "difficulty.3": "正常 - 击杀后回满血量",
+    "difficulty.4": "简单 - 每个击杀恢复 100HP",
+    "difficulty.5": "无害 - 每个击杀恢复 500HP",
     "difficulty.set": "难度已设置为：{0}。",
-    "difficulty.help": "用法: !prefire df [PURPLE][1-5][NORMAL]",
+    "difficulty.help": "用法: !prefire df [PURPLE][1-6][NORMAL]",
     "weaponmenu.title": "设置 bot 所使用的武器",
     "weaponmenu.random": "随机",
     "weaponmenu.set": "Bot 使用的武器已设置为 {0}。",
@@ -83,5 +84,6 @@
     "map.de_nuke.t_outside_to_secret": "从匪家外场到 K1",
     "map.de_nuke.secret_to_b": "从 K1 进攻 B 点",
     "map.de_nuke.silo_to_mini": "水塔快提正门",
-    "map.de_nuke.mini_to_a": "从正门进攻 A 包点"
+    "map.de_nuke.mini_to_a": "从正门进攻 A 包点",
+    "map.de_vertigo.b_ramp": "从楼梯进攻 B 包点"
 } 
