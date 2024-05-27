@@ -5,7 +5,7 @@
     "mainmenu.exit": "Sair do modo de prefire",
     "mainmenu.difficulty": "Dificuldade atual: {0}.",
     "mainmenu.mode": "Modo de prática atual: {0}",
-    "mainmenu.help": "Uso: !prefire [PURPLE][Shortcut] [option][NORMAL]\u2029Sem atalhos, esse comando abre o menu principal.\u2029Atalhos disponíveis:\u2029[PURPLE]prac[NORMAL] [1-{0}]: Iniciar a prática em uma rota selecionada.\u2029[PURPLE]map[NORMAL] [map name]: Mudar para outro mapa.\u2029[PURPLE]df[NORMAL] [1-5]: Definir a dificuldade.\u2029[PURPLE]mode[NORMAL] [rand/full]: Definir o modo de treinamento.\u2029[PURPLE]bw[NORMAL] [rand/ump/ak/sct/awp]: Definir armas para bots.\u2029[PURPLE]lang[NORMAL] [en/pt/zh]: Definir a configuração de idioma. en for English, pt para português, 中文选择 zh。\u2029[PURPLE]exit[NORMAL]: Pare de praticar.",
+    "mainmenu.help": "Uso: !prefire [PURPLE][Shortcut] [option][NORMAL]\u2029Sem atalhos, esse comando abre o menu principal.\u2029Atalhos disponíveis:\u2029[PURPLE]prac[NORMAL] [1-{0}]: Iniciar a prática em uma rota selecionada.\u2029[PURPLE]map[NORMAL] [map name]: Mudar para outro mapa.\u2029[PURPLE]df[NORMAL] [1-6]: Definir a dificuldade.\u2029[PURPLE]mode[NORMAL] [rand/full]: Definir o modo de treinamento.\u2029[PURPLE]bw[NORMAL] [rand/ump/ak/sct/awp]: Definir armas para bots.\u2029[PURPLE]lang[NORMAL] [en/pt/zh]: Definir a configuração de idioma. en for English, pt para português, 中文选择 zh。\u2029[PURPLE]exit[NORMAL]: Pare de praticar.",
     "mainmenu.shortcut_prompt": "Digite [PURPLE]!prefire help[NORMAL] para usar os comandos de atalho.",
     "mainmenu.close_menu": "Sair desse menu.",
     "mainmenu.menu_closed": "O menu foi fechado.",
@@ -25,10 +25,11 @@
     "difficulty.0": "Hardest - 100HP",
     "difficulty.1": "Harder - 500HP",
     "difficulty.2": "Hard - +25HP por eliminação",
-    "difficulty.3": "Normal - +100HP por eliminação",
-    "difficulty.4": "Easy - +500HP por eliminação",
+    "difficulty.3": "Normal - Recuperação de 100hp após uma morte",
+    "difficulty.4": "Easier - +100HP por eliminação",
+    "difficulty.5": "Easy - +500HP por eliminação",
     "difficulty.set": "A dificuldade foi definida para: {0}.",
-    "difficulty.help": "Uso: !prefire df [PURPLE][1-5][NORMAL]",
+    "difficulty.help": "Uso: !prefire df [PURPLE][1-6][NORMAL]",
     "weaponmenu.title": "Definir armas para bots",
     "weaponmenu.random": "Aleatório",
     "weaponmenu.set": "A arma do bot está definida como {0}.",
@@ -83,5 +84,6 @@
     "map.de_nuke.t_outside_to_secret": "Do lado T externo ao secreto",
     "map.de_nuke.secret_to_b": "Atacar o site B a partir do segredo",
     "map.de_nuke.silo_to_mini": "MINI de ritmo acelerado da Silo",
-    "map.de_nuke.mini_to_a": "Ataque Um site da MINI"
+    "map.de_nuke.mini_to_a": "Ataque Um site da MINI",
+    "map.de_vertigo.b_ramp": "Atacar o local B a partir das escadas"
 }

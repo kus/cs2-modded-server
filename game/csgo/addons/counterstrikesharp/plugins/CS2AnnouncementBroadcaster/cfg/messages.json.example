@@ -1,0 +1,53 @@
+{
+    "OnPlayerConnectMsgs": [
+        {
+            "msg": "A welcome message.",
+            "cond": {
+                "Flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 10
+            }
+        }
+    ],
+    "OnRoundStartMsgs": [
+        {
+            "msg": "Some info.",
+            "cond": {
+                "Flag": "CS2AB_flag_2",
+                "op": 2,
+                "value": 0
+            }
+        }
+    ],
+    "OnCommandMsgs": [
+        {
+            "msg": "Return message.",
+            "cmd": "help",
+            "cond": {
+                "Flag": "CS2AB_flag_3",
+                "op": 2,
+                "value": 0
+            }
+        }
+    ],
+    "TimerMsgs" : [
+        {
+            "msg": "A timer triggered message.",
+            "timer": 60.0,
+            "cond": {
+                "Flag": "CS2AB_flag_4",
+                "op": 2,
+                "value": 0
+            }
+        },
+        {
+            "msg": "A timer triggered message.",
+            "timer": 60.0,
+            "cond": {
+                "Flag": "CS2AB_flag_5",
+                "op": 2,
+                "value": 0
+            }
+        }
+    ]
+}
