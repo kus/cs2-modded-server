@@ -1,0 +1,123 @@
+{
+  "ar_shoots": {
+    "ws": false,
+    "minplayers": 1,
+    "maxplayers": 32,
+    "weight": 1
+  },
+  "ar_baggage": {
+    "ws": false,
+    "minplayers": 1,
+    "maxplayers": 32,
+    "weight": 2
+  },
+  "fy_pool_day": {
+    "ws": true,
+    "minplayers": 15,
+    "maxplayers": 20,
+    "weight": 1
+  },
+  "fy_iceworld": {
+    "ws": false,
+    "minplayers": 1,
+    "maxplayers": 32,
+    "weight": 1
+  },
+  "daymare": {
+    "ws": false,
+    "minplayers": 1,
+    "maxplayers": 32,
+    "weight": 1
+  },
+  "mcdonalds": {
+    "ws": false,
+    "minplayers": 1,
+    "maxplayers": 32,
+    "weight": 1
+  },
+  "aim_theorem": {
+    "ws": false,
+    "minplayers": 1,
+    "maxplayers": 32,
+    "weight": 1
+  },
+  "de_safehouse": {
+    "ws": false,
+    "minplayers": 1,
+    "maxplayers": 32,
+    "weight": 1
+  },
+  "de_lake": {
+    "ws": false,
+    "minplayers": 1,
+    "maxplayers": 32,
+    "weight": 1
+  },
+  "de_bank": {
+    "ws": false,
+    "minplayers": 1,
+    "maxplayers": 32,
+    "weight": 1
+  },
+  "fun_bounce": {
+    "ws": false,
+    "minplayers": 1,
+    "maxplayers": 32,
+    "weight": 1
+  },
+  "1v1aim_map_longdustversion_d": {
+    "ws": false,
+    "minplayers": 1,
+    "maxplayers": 32,
+    "weight": 1
+  },
+  "ar_churches_s2r": {
+    "ws": false,
+    "minplayers": 1,
+    "maxplayers": 32,
+    "weight": 1
+  },
+  "aim_ag_texture_city_advanced": {
+    "ws": false,
+    "minplayers": 1,
+    "maxplayers": 32,
+    "weight": 1
+  },
+  "traningoutside": {
+    "ws": false,
+    "minplayers": 1,
+    "maxplayers": 32,
+    "weight": 1
+  },
+  "shipment_version_1_0": {
+    "ws": false,
+    "minplayers": 1,
+    "maxplayers": 32,
+    "weight": 1
+  },
+  "aim_ag_texture2": {
+    "ws": false,
+    "minplayers": 1,
+    "maxplayers": 32,
+    "weight": 1
+  },
+  "aim_ag_texture_jungle": {
+    "ws": false,
+    "minplayers": 1,
+    "maxplayers": 32,
+    "weight": 1
+  },
+  "cs2_bloodstrike": {
+    "ws": false,
+    "minplayers": 1,
+    "maxplayers": 32,
+    "weight": 1
+  },
+  "gg_simpsons_vs_flanders_v2": {
+    "ws": false,
+    "minplayers": 1,
+    "maxplayers": 32,
+    "weight": 1
+  },  
+}
+
