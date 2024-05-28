@@ -192,7 +192,7 @@ echo ./game/bin/linuxsteamrt64/cs2 \
     +sv_lan $LAN \
 	+sv_password $SERVER_PASSWORD \
 	+rcon_password $RCON_PASSWORD \
-	-exec $EXEC
+	+exec $EXEC
 
 sudo -u $user /home/steam/cs2/game/bin/linuxsteamrt64/cs2 \
     -dedicated \
@@ -212,4 +212,4 @@ sudo -u $user /home/steam/cs2/game/bin/linuxsteamrt64/cs2 \
     +sv_lan $LAN \
 	+sv_password $SERVER_PASSWORD \
 	+rcon_password $RCON_PASSWORD \
-	-exec $EXEC
+	+exec $EXEC
