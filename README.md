@@ -142,19 +142,27 @@ To generate this directory, you can run the `gcp.sh` script (if on Google Cloud)
 
 ## Creating an online server
 
-If you are hosting an online server, you need to create a Steam [Game Login Token](https://steamcommunity.com/dev/managegameservers), your server will not run online without this. Put this value in the `STEAM_ACCOUNT` environment variable or create a custom file for `/game/csgo/cfg/secrets.cfg` following the [custom files](#custom-files) steps (`/custom_files/cfg/secrets.cfg`) and set it in `sv_setsteamaccount`.
+If you are hosting an online server, you need to create a Steam [Game Login Token](https://steamcommunity.com/dev/managegameservers), your server will not run online without this. Put this value in the `STEAM_ACCOUNT` environment variable.
 
 You also need to create an [authorization key](http://steamcommunity.com/dev/apikey) which will allow your server to download maps from the workshop. Put this value in the `API_KEY` environment variable.
+
+See all available [environment variables](#environment-variables).
 
 **You must connect to the server from the public IP, not the LAN IP even if you are on the same network. The script logs the public IP `Starting server on XXX.XXX.XXX.XXX:27015`**
 
 ## Creating a LAN server
 
-Create a custom file for `/game/csgo/cfg/env.cfg` following the [custom files](#custom-files) steps (`/custom_files/cfg/env.cfg`) and set `sv_lan` to `1`, `sv_downloadurl` to `""` and `sv_allowdownload` to `1`.
+Set the environment variable `LAN` to `1`.
+
+You also need to create an [authorization key](http://steamcommunity.com/dev/apikey) which will allow your server to download maps from the workshop. Put this value in the `API_KEY` environment variable.
+
+See all available [environment variables](#environment-variables).
 
 ## Environment variables
 
 ### Available via environment variable only
+
+*On Windows set these in `win.ini`.*
 
 Key | Default value | What is it
 --- | --- | ---
@@ -163,22 +171,16 @@ Key | Default value | What is it
 `PORT` | `27015` | Server port
 `TICKRATE` | `128` | Server tickrate MM is 64, Faceit is 128
 `MAXPLAYERS` | `32` | Max player limit
-`DUCK_DOMAIN` | `` | [Duck DNS](https://www.duckdns.org/) domain if you want to utalise the free service to get a domain for your server instead of IP
-`DUCK_TOKEN` | `` | [Duck DNS](https://www.duckdns.org/) access token to update domain when server boots
 `CUSTOM_FOLDER` | `custom_files` | Folder of your own modifications to the mod that mirror the csgo/ structure and overwrite the mode files. More on that [here](#custom-files)
-
-### Can be configured via config file in custom files directory
-
-These values can be set via environment variable or a config file in the custom files directory.
-Copy `/game/csgo/cfg/secrets.cfg` to `/custom_files/cfg/secrets.cfg` and write the values you want and this file will overwrite `/game/csgo/cfg/secrets.cfg` each time the `gcp.sh`/`install.sh` script is ran.
-
-Key | Value | What is it
---- | --- | ---
 `RCON_PASSWORD` | `changeme` | RCON password to control server from console also remotely configure
 `STEAM_ACCOUNT` | `` | To host a server online, you need to create a Steam [Game Login Token](https://steamcommunity.com/dev/managegameservers). Your server will not run online without this
 `SERVER_PASSWORD` | `` | If you want a password protected server
+`LAN` | `0` | If the server is a LAN only server
+`EXEC` | `on_boot.cfg` | Config file to run when server boots. If switching gamemode, it's recommended to do a delay see the example `on_boot.cfg` file
+`DUCK_DOMAIN` | `` | (Linux only) [Duck DNS](https://www.duckdns.org/) domain if you want to utalise the free service to get a domain for your server instead of IP
+`DUCK_TOKEN` | `` | (Linux only) [Duck DNS](https://www.duckdns.org/) access token to update domain when server boots
 
-### Playing workshop maps/collections
+## Playing workshop maps/collections
 
 To download maps from the workshop, your server needs access to the steam web api. To allow this you'll need an authorization key which you can generate [here](http://steamcommunity.com/dev/apikey) and set `API_KEY` to the key.
 
@@ -186,9 +188,11 @@ The console command for hosting a workshop map is `host_workshop_map fileid` whe
 
 The console command for hosting a workshop collection is `host_workshop_collection collectionid` where `collectionid` is the number that comes after `?id=` in the workshop URL for example: [https://steamcommunity.com/sharedfiles/filedetails/?id=1092904694](https://steamcommunity.com/sharedfiles/filedetails/?id=1092904694). This command will then download all maps in the collection and create a mapgroup out of them, then host it.
 
-### Setting maps for different game modes
+## Setting maps for different game modes
 
 Copy the file `/game/csgo/gamemodes_server.txt` following the [custom files](#custom-files) steps (`/custom_files/gamemodes_server.txt`) and add the maps you want per gamemode. Most gamemodes fall under casual, but I have created unique groups for each mode so adding your own maps is easy by updating this one file.
+
+It isn't required, but you should add the fileid into `/game/csgo/subscribed_file_ids.txt` following the [custom files](#custom-files) steps (`/custom_files/subscribed_file_ids.txt`) so the server keeps it up to date.
 
 ## Running on Google Cloud
 
@@ -341,7 +345,7 @@ When you join the server you can [change game modes](#changing-game-modes).
 
 Make sure Docker is installed and about 40 GB disk space is free.
 
-You can either Download this repo and extract it to where you want your server (i.e. C:\Server\cs2-modded-server) or use git and clone the repo git clone git@github.com:kus/cs2-modded-server.git and run your server from inside of it. This way you can simply git pull updates.
+You can either Download this repo and extract it to where you want your server (i.e. C:\Server\cs2-modded-server) or use git and clone the repo `git clone https://github.com/kus/cs2-modded-server.git` and run your server from inside of it. This way you can simply git pull updates.
 
 - **If setting up for internet server:**
 
@@ -349,20 +353,18 @@ You can either Download this repo and extract it to where you want your server (
    For workshop maps set 'API_KEY' in '.env'-file.
 
 - **Build docker image:**
-   
+
    `docker build -t cs2-modded-server .`
 
 - **Run the server**
 
    `docker compose up`
 
-
-
 ## Running on Windows
 
 Make sure you have **60GB free space**.
 
-You can either [Download this repo](https://github.com/kus/cs2-modded-server/archive/master.zip) and extract it to where you want your server (i.e. `C:\Server\cs2-modded-server`) or use git and clone the repo `git clone git@github.com:kus/cs2-modded-server.git` and run your server from inside of it. This way you can simply `git pull` updates.
+You can either [Download this repo](https://github.com/kus/cs2-modded-server/archive/master.zip) and extract it to where you want your server (i.e. `C:\Server\cs2-modded-server`) or use git and clone the repo `git clone https://github.com/kus/cs2-modded-server.git` and run your server from inside of it. This way you can simply `git pull` updates.
 
 All the following instructions will use the repo folder location as the root.
 
@@ -372,11 +374,13 @@ To download maps from the workshop, your server [needs access](https://developer
 
 - **If setting up internet server:**
 
-   Copy `\game\csgo\cfg\secrets.cfg` to your [custom files](#custom-files) directory `\custom_files\cfg\secrets.cfg` and set `sv_setsteamaccount` to your [Game Server Login Token](https://steamcommunity.com/dev/managegameservers)
-
    Open `\win.ini`
 
-   Set `ip_internet` to your [public ip](http://checkip.amazonaws.com/)
+   Set `IP` to your [public ip](http://checkip.amazonaws.com/)
+
+   Set `STEAM_ACCOUNT` to your [Game Server Login Token](https://steamcommunity.com/dev/managegameservers)
+
+   Set `API_KEY` to your [Steam Web API key](http://steamcommunity.com/dev/apikey) (required to play workshop maps)
 
    Make sure you [port forward](https://portforward.com/router.htm) on your router TCP: `27015` and UDP: `27015` & `27020` so players can connect from the internet.
 
@@ -384,7 +388,11 @@ To download maps from the workshop, your server [needs access](https://developer
 
 - **If setting up LAN server:**
 
-   Copy `\game\csgo\cfg\env.cfg` to your [custom files](#custom-files) directory `\custom_files\cfg\env.cfg` and set `sv_lan` to `1`
+   Open `\win.ini`
+
+   Set `LAN` to `1`
+
+   Set `API_KEY` to your [Steam Web API key](http://steamcommunity.com/dev/apikey) (required to play workshop maps)
 
 [Add admins](#acessing-admin-menu)
 

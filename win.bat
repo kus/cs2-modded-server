@@ -116,7 +116,7 @@ xcopy "%ROOT_DIR%%custom_folder%\*" "%ROOT_DIR%server\game\csgo\" /K /S /E /I /H
 
 :: Start the server
 echo CS2 started.
-start /wait %ROOT_DIR%server\game\bin\win64\cs2.exe -dedicated -console -debug -condebug -conclearlog -usercon +game_type 0 +game_mode 0 +mapgroup mg_active +map de_dust2 +hostport %cs_port% -ip 0.0.0.0 +net_public_adr %ip_internet% -tickrate %cs_tickrate% -maxplayers %cs_players% -authkey %cs_api_key%
+start /wait %ROOT_DIR%server\game\bin\win64\cs2.exe -dedicated -console -debug -condebug -conclearlog -usercon +game_type 0 +game_mode 0 +mapgroup mg_active +map de_dust2 -port %PORT% -ip 0.0.0.0 +net_public_adr %IP% -tickrate %TICKRATE% -maxplayers %MAXPLAYERS% -authkey %API_KEY% +sv_setsteamaccount %STEAM_ACCOUNT% +sv_lan %LAN% +sv_password %SERVER_PASSWORD% +rcon_password %RCON_PASSWORD% -exec %EXEC%
 echo WARNING: CS2 closed or crashed.
 
 :end
