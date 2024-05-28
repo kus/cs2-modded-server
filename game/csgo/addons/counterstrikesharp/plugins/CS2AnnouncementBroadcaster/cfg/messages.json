@@ -12,6 +12,7 @@
    "OnPlayerConnectMsgs": [
        {
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]Multi 1v1 Arenas\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
@@ -21,6 +22,7 @@
         },
 		{
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]Aim_ Maps\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
@@ -30,6 +32,7 @@
         },
 		{
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]Awp_ Maps\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
@@ -39,6 +42,7 @@
         },
 		{
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]Movement - BHop\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.\u2029 Type [RED]!help[NORMAL] to access the mode help menu.",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
@@ -48,6 +52,7 @@
         },
 		{
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]Casual (1.6)\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
@@ -57,6 +62,7 @@
         },
 		{
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]Casual\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
@@ -66,6 +72,7 @@
         },
 		{
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]10-Mans\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 Type [RED]!help[NORMAL] to access the 10-Man help menu.",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
@@ -75,6 +82,7 @@
         },
 		{
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]Course\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
@@ -84,6 +92,7 @@
         },
 		{
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]DM-MultiCFG\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
@@ -93,6 +102,7 @@
         },
 		{
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]DM-Valve\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
@@ -102,6 +112,7 @@
         },
 		{
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]Deathrun\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
@@ -111,6 +122,7 @@
         },
 		{
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]Executes\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
@@ -120,6 +132,7 @@
         },
 		{
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]GunGame\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
@@ -129,6 +142,7 @@
         },
 		{
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]Hide and Seek\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
@@ -138,6 +152,7 @@
         },
 		{
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]Movement - KZ\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.\u2029 Type [RED]!help[NORMAL] to access the mode help menu.",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
@@ -147,6 +162,7 @@
         },
 		{
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]MiniGames\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
@@ -156,6 +172,7 @@
         },
 		{
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]MiniMaps\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
@@ -165,6 +182,7 @@
         },
 		{
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]Prac-Mode\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 Type [RED]!help[NORMAL] to access the Prac-mode help menu.",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
@@ -174,6 +192,7 @@
         },
 		{
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]Prefire\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029\u2029 To enter [GREEN]prefire practice[NORMAL] mode, please type [RED]!prefire[NORMAL].",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
@@ -183,6 +202,7 @@
         },
 		{
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]Retakes\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
@@ -192,6 +212,7 @@
         },
 		{
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]Scoutzknivez\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
@@ -201,6 +222,7 @@
         },
 		{
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]Soccer\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
@@ -210,6 +232,7 @@
         },
 		{
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]Movement - Surf\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.\u2029 Type [RED]!help[NORMAL] to access the mode help menu.",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
@@ -219,6 +242,7 @@
         },
 		{
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]Wingman\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "delay": 3,
             "properties": "Value",
             "cond": {
                 "flag": "CS2AB_flag_1",
