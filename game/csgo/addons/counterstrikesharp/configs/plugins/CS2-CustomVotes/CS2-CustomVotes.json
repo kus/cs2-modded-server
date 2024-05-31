@@ -447,17 +447,29 @@
     {
       "Command": "bhop",
       "CommandAliases": [],
-      "Description": "Switch game mode to BHop?",
+      "Description": "What do you want?",
       "TimeToVote": 30,
       "Options": {
-        "Yes": {
-          "Text": "{Green}Yes",
+        "Enable": {
+          "Text": "{Green}Enable bunny hopping",
+          "Commands": [
+            "exec settings/bhop_on.cfg"
+          ]
+        },
+        "Disable": {
+          "Text": "{Red}Disable bunny hopping",
+          "Commands": [
+            "exec settings/bhop_off.cfg"
+          ]
+        },
+        "Switch": {
+          "Text": "{Green}Switch game mode to BHop",
           "Commands": [
             "exec bhop"
           ]
         },
         "No": {
-          "Text": "{Red}No",
+          "Text": "{Red}Leave it as it is",
           "Commands": []
         }
       },

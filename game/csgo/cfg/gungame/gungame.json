@@ -177,7 +177,7 @@
   "_comment.CanLevelUpWithNadeOnKnife": "Use 'CanLevelUpWithMapNades' option when a player is on knife level.",
   "DisableRtvLevel": 0,
   "_comment.DisableRtvLevel": "Disable rtv on defined level. 0 - disabled",
-  "EndGameDelay": 5,
+  "EndGameDelay": 30,
   "_comment.EndGameDelay": "Delay before the end of multiplayer game after a gungame win.",
   "EndGameSilent": false,
   "_comment.EndGameSilent": "Defines how to finish the game after someone has won. False - normal end, True - silent end.",
