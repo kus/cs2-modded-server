@@ -194,6 +194,7 @@ Copy the file `/game/csgo/gamemodes_server.txt` following the [custom files](#cu
 
 It isn't required, but you should add the fileid into `/game/csgo/subscribed_file_ids.txt` following the [custom files](#custom-files) steps (`/custom_files/subscribed_file_ids.txt`) so the server keeps it up to date.
 
+If you have python available, you can use our tool available to add a map to your custom game mode map groups: `python scripts/add-map.py <group_name> <map_name> [workshop_id] --custom`. Refer to 
 ## Running on Google Cloud
 
 ### Create firewall rule
