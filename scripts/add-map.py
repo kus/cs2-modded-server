@@ -9,6 +9,12 @@ Usage:
 
 Example:
 * python scripts/add-map.py mg_aim aim_ak-colt_CS2 123456789 --custom
+
+When you find a map in the workshop like, e.g.
+https://steamcommunity.com/sharedfiles/filedetails/?id=3070284539
+the workshop ID is the number at the end of the URL, in this case 3070284539.
+
+The map name is the displayed name of the map in the workshop, e.g. de_train.
 """
 
 import pathlib
