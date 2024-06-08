@@ -33,12 +33,12 @@
 
 快速设置步骤:
 
-1. [建立防火墙规则](#create-firewall-rule)
-2. [将服务器文件上传至谷歌云](#create-instance)
-3. [利用SSH登录服务器](#ssh-to-server)
-4. [安装 mod](#install-mod)
-5. [设置自定义文件，管理员等等](#custom-files)
-6. 确保你已完成了 [建立线上服务器](#creating-an-online-server) 或 [本地服务器](#creating-a-lan-server)的步骤
+1. [建立防火墙规则](#建立防火墙规则)
+2. [将服务器文件上传至谷歌云](#建立进程)
+3. [利用SSH登录服务器](#利用SSH登录服务器)
+4. [安装 mod](#安装mod)
+5. [设置自定义文件，管理员等等](#自定义文件)
+6. 确保你已完成了 [建立线上服务器](#建立线上服务器) 或 [本地服务器](#建立本地服务器)的步骤
 7. 关闭服务器： `./stop.sh` ，重启服务器 `gcp.sh` (使用Google Cloud时) or `install.sh` (使用Linux时)
 
 到此你的服务器就可以正常运行了!
@@ -60,17 +60,17 @@
 
 有用的东西:
 
-- [启用管理员菜单](#acessing-admin-menu)
-- [切换游戏模式](#changing-game-modes)
-- [更换地图](#changing-maps)
-- [玩家指令](#player-commands)
+- [启用管理员菜单](#启用管理员菜单)
+- [切换游戏模式](#更换游戏模式)
+- [更换地图](#更换地图)
+- [玩家指令](#玩家指令)
 
 服务器设置:
 
-- [Google Cloud](#running-on-google-cloud)
-- [Linux](#running-on-linux)
-- [Docker](#running-in-docker)
-- [Windows](#running-on-windows)
+- [Google Cloud](#GoogleCloud上运行)
+- [Linux](#Linux上运行)
+- [Docker](#Docker上运行)
+- [Windows](#Windows上运行)
 
 ## 包含的mod
 
@@ -124,7 +124,7 @@ Mod | Version | 介绍
 > `/custom_files/addons/counterstrikesharp/configs/admins.json` 完整路径应为 `/home/steam/cs2/custom_files/addons/counterstrikesharp/configs/admins.json`
 > `/game/csgo/addons/counterstrikesharp/configs/admins.json` 完整路径应为 `/home/steam/cs2/game/csgo/addons/counterstrikesharp/configs/admins.json`
 
-服务器文件更新时，你的服务端的文件可能会被覆盖. 我建立了 "[custom files](#custom-files)" 文件夹，以此模拟 `game/csgo/` 文件夹, 将你所要更改的文件放入此处，在服务器启动时便会自动将里面的文件复制到服务端文件夹中。 详情[见此](#custom-files).
+服务器文件更新时，你的服务端的文件可能会被覆盖. 我建立了 "[custom files]" 文件夹，以此模拟 `game/csgo/` 文件夹, 将你所要更改的文件放入此处，在服务器启动时便会自动将里面的文件复制到服务端文件夹中。
 
 这样一来，你就可以用来设置服务器名，设置管理员与RCON密码.
 
@@ -234,7 +234,7 @@ gcloud compute ssh <instance-name> \
 --zone=australia-southeast1-c
 ```
 
-### 安装 mod
+### 安装mod
 
 ```
 sudo su
