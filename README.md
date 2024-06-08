@@ -513,7 +513,7 @@ You can also start a specific game mode vote by typing `!comp`, `!wingman`, `!dm
 
 **You must connect to the server from the public IP if hosting an online server, not the LAN IP even if you are on the same network. The script logs the public IP `Starting server on XXX.XXX.XXX.XXX:27015`**
 
-### Acessing admin menu
+### Accessing admin menu
 
 Admins are managed by [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) using the [Admin Framework](https://docs.cssharp.dev/admin-framework/defining-admins/). You define admins and their flags and most plugins now utilise this framework.
 
