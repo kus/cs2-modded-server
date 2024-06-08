@@ -1,12 +1,5 @@
 {
   "Models": {
-  "m01": {
-		"name": "aqua",
-		"path": "characters/models/aquamaoer/aquamaoer.vmdl"
-	},
-  "m02": {
-		"name": "haku3",
-		"path": "characters/models/haku/haku.vmdl"
   }
   },
   "MenuType": "centerhtml",
@@ -22,8 +15,8 @@
   "DisableAutoCheck": false,
   "AutoResyncCache": true,
   "ModelForBots": {
-    "CT": "m01",
-    "T": "m02"
+    "CT": "",
+    "T": ""
   },
   "ConfigVersion": 1
 }
