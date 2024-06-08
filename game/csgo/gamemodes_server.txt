@@ -212,7 +212,6 @@
 				"workshop/3109232789/gg_simpsons_vs_flanders_v2"		""
 				"workshop/3108513658/de_akiba"		""
 				"workshop/3112806723/cs_facingworlds-99"		""
-				"workshop/3112806723/cs_facingworlds-99"		""
 				"workshop/3070596702/de_cache"		""
 			}
 		}
