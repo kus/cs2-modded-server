@@ -4,7 +4,7 @@
 
 ## 关于
 
-这是一个为CS2制作的预设多个 [可调整的模组](#changing-game-modes) 的服务器，这些模组模式可以通过游戏内聊天或服务器控制台更改. [所有地图都为这些游戏模式做了预设](#what-maps-are-preconfigured-with-each-mode) ，并且可以在游戏模式更换时随之更改.
+这是一个为CS2制作的预设多个 [可调整的模组](#更换游戏模式) 的服务器，这些模组模式可以通过游戏内聊天或服务器控制台更改. [所有地图都为这些游戏模式做了预设](#哪些地图已经被预先设置了呢?) ，并且可以在游戏模式更换时随之更改.
 
 所有游戏模式都有其相对应的地图池预设，同时也可以 [自由调整/添加](#setting-maps-for-different-game-modes).
 
@@ -29,7 +29,7 @@
 
 启动服务器前, 你需要先运行 `gcp.sh` (使用Google Cloud时) 或`install.sh` (使用Linux时) 以确保系统和CS2都处于最新状态, 并下载我上传的模组更新.
 
-也正因如此，更新可能导致你的服务器文件被还原，所以我建立了 "[custom files](#custom-files)" 文件夹，以此模拟 `game/csgo/` 文件夹, 将你所要更改的文件放入此处，在服务器启动时便会自动将里面的文件复制到服务端文件夹中。 详情[见此](#custom-files).
+也正因如此，更新可能导致你的服务器文件被还原，所以我建立了 "[custom files](#自定义文件)" 文件夹，以此模拟 `game/csgo/` 文件夹, 将你所要更改的文件放入此处，在服务器启动时便会自动将里面的文件复制到服务端文件夹中。 详情[见此](#自定义文件).
 
 快速设置步骤:
 
@@ -146,7 +146,7 @@ Mod | Version | 介绍
 
 同时你还需要建立 [API授权密钥](http://steamcommunity.com/dev/apikey) 以使你的服务器能够下载创意工坊上的地图. 将生成的密钥填入 `API_KEY` 环境变量中.
 
-详见 [环境变量](#environment-variables).
+详见 [环境变量](#环境变量).
 
 **若要连接服务器，你需要连接公开IP, 而非本地IP，即使在同一网络下也要如此. 脚本会以如下方式记录公开IP `Starting server on XXX.XXX.XXX.XXX:27015`**
 
@@ -156,7 +156,7 @@ Mod | Version | 介绍
 
 同时你还需要建立 [API授权密钥](http://steamcommunity.com/dev/apikey)以使你的服务器能够下载创意工坊上的地图. 将生成的密钥填入 `API_KEY` 环境变量中.
 
-详见 [环境变量](#environment-variables).
+详见 [环境变量](#环境变量).
 
 ## 环境变量
 
@@ -171,7 +171,7 @@ Mod | Version | 介绍
 `PORT` | `27015` | 服务器端口
 `TICKRATE` | `128` | 服务器tick,MM为64, Faceit 为128
 `MAXPLAYERS` | `32` | 最大玩家数
-`CUSTOM_FOLDER` | `custom_files` | 模拟服务器文件的文件夹，用于存储修改后的文件. 详见 [此处](#custom-files)
+`CUSTOM_FOLDER` | `custom_files` | 模拟服务器文件的文件夹，用于存储修改后的文件. 详见 [此处](#自定义文件)
 `RCON_PASSWORD` | `changeme` | RCON 登录密码，可用于在服务器内，或服务器外远程执行指令
 `STEAM_ACCOUNT` | `` | 若要建立线上服务器, 你需要Steam [游戏登陆密钥](https://steamcommunity.com/dev/managegameservers). 这是使你的服务器能公开加入的必要条件。
 `SERVER_PASSWORD` | `` | 可用于设置密码
@@ -190,9 +190,9 @@ Mod | Version | 介绍
 
 ## 针对不同模式设置地图
 
- 参考 [自定义文件](#custom-files) 中的步骤 复制`/game/csgo/gamemodes_server.txt`(`/custom_files/gamemodes_server.txt`) 并在文件中为游戏模式地图池中添加地图. 多数模式会以休闲模式为基础运行, 但我为不同游戏模式都做了相应的地图池，而你只需要对地图池中的内容做修改即可.
+ 参考 [自定义文件](#自定义文件) 中的步骤 复制`/game/csgo/gamemodes_server.txt`(`/custom_files/gamemodes_server.txt`) 并在文件中为游戏模式地图池中添加地图. 多数模式会以休闲模式为基础运行, 但我为不同游戏模式都做了相应的地图池，而你只需要对地图池中的内容做修改即可.
 
-此步骤不是必要的, 但你可以参考 [自定义文件](#custom-files) 中的步骤更新 `/game/csgo/subscribed_file_ids.txt`  (`/custom_files/subscribed_file_ids.txt`)中的（创意工坊id）以使服务器能自动更新地图.
+此步骤不是必要的, 但你可以参考 [自定义文件](#自定义文件) 中的步骤更新 `/game/csgo/subscribed_file_ids.txt`  (`/custom_files/subscribed_file_ids.txt`)中的（创意工坊id）以使服务器能自动更新地图.
 
 ## Google Cloud上运行
 
@@ -205,7 +205,7 @@ gcloud compute firewall-rules create source \
 
 ### 建立进程
 
-确保你已完成了 [环境变量](#environment-variables)的设置.
+确保你已完成了 [环境变量](#环境变量)的设置.
 
 如果你的已有服务器无法承载, 可以考虑 [compute-optimized](https://cloud.google.com/compute/vm-instance-pricing#compute-optimized_machine_types) 中的机器 `c2-standard-4`.
 
@@ -302,7 +302,7 @@ chmod 644 de_kus.vpk
 
 请确保你有 **60GB及以上的可用磁盘空间**.
 
-确保你已完成了 [环境变量](#environment-variables)的设置.
+确保你已完成了 [环境变量](#环境变量)的设置.
 
 - **设置线上服务器:**
 
@@ -337,7 +337,7 @@ cd / && curl --silent --output "install.sh" "https://raw.githubusercontent.com/k
 
 如果两个输出都正常，代表服务器在正常运行.
 
-在你加入服务器后，可以 [切换游戏模式](#changing-game-modes).
+在你加入服务器后，可以 [切换游戏模式](#切换游戏模式).
 
 ## Docker上运行
 
@@ -394,7 +394,7 @@ cd / && curl --silent --output "install.sh" "https://raw.githubusercontent.com/k
 
    将 `API_KEY` 设为 [Steam Web API key](http://steamcommunity.com/dev/apikey) (required to play workshop maps)
 
-[添加管理员](#acessing-admin-menu)
+[添加管理员](#访问管理员菜单)
 
 启动 `win.bat`
 
@@ -409,7 +409,7 @@ cd / && curl --silent --output "install.sh" "https://raw.githubusercontent.com/k
 
 如果两个输出都正常，代表服务器在正常运行.
 
-在你加入服务器后，可以 [切换游戏模式](#changing-game-modes).
+在你加入服务器后，可以 [切换游戏模式](#切换游戏模式).
 
 ## FAQ
 
@@ -517,7 +517,7 @@ cd / && curl --silent --output "install.sh" "https://raw.githubusercontent.com/k
 ### 访问管理员菜单
 
 管理员设置由[CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp)使用[Admin Framework](https://docs.cssharp.dev/admin-framework/defining-admins/)插件管理. 你可以在其配置文件中设置管理员及他们的权限标识。
-若想查看例子，可查看 [/custom_files_example/addons/counterstrikesharp/configs/admins.json](https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/addons/counterstrikesharp/configs/admins.json). 仿照这些例子并利用 [自定义文件](#custom-files) 系统来自行修改.
+若想查看例子，可查看 [/custom_files_example/addons/counterstrikesharp/configs/admins.json](https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/addons/counterstrikesharp/configs/admins.json). 仿照这些例子并利用 [自定义文件](#自定义文件) 系统来自行修改.
 
 ### 使用数字键控制菜单，省区输入!1的时间
 
