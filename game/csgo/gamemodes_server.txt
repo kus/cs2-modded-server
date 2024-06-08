@@ -130,6 +130,7 @@
 				"workshop/3108513658/de_akiba"		""
 				"workshop/3236615060/cs_insertion2"		""
 				"workshop/3070284539/de_train"		""
+				"workshop/3070596702/de_cache"		""
 			}
 		}
 		"mg_wingman"
@@ -214,6 +215,7 @@
 				"workshop/3108513658/de_akiba"		""
 				"workshop/3112806723/cs_facingworlds-99"		""
 				"workshop/3070284539/de_train"		""
+				"workshop/3070596702/de_cache"		""
 			}
 		}
 		"mg_gg"
