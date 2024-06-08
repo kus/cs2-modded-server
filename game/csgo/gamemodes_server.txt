@@ -254,7 +254,6 @@
 			"maps"
 			{
 				"workshop/3077211069/bhop_at_night"		""
-				"workshop/3076417347/bhop_asiimov"		""
 				"workshop/3077153735/bhop_ragnarok"		""
 				"workshop/3077475505/bhop_zunron"		""
 				"workshop/3077596014/bhop_1derland"		""
