@@ -1,4 +1,4 @@
-# Counter-Strike 2 (CS2) 模组服
+^# Counter-Strike 2 (CS2) 模组服
 
 如果你需要CS:GO版本的服务器文件，可以前往 [此处](https://github.com/kus/csgo-modded-server/tree/csgo).
 
@@ -74,7 +74,7 @@
 
 ## 包含的mod
 
-Mod | Version | 介绍
+Mod | 版本 | 介绍
 --- | --- | ---
 [Metamod:Source](http://www.sourcemm.net/downloads.php?branch=master) | `2.0.0-1293` | 作为游戏与引擎的“桥梁”，允许插件在其上运行，是很多CS2服务端插件的前置
 [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `237` |在Metamod Source插件上设置一个.NET核心插件运行层,使开发者们能以现代语言开发插件(C#)
@@ -308,9 +308,9 @@ chmod 644 de_kus.vpk
 
    将环境变量 `STEAM_ACCOUNT` 设为你的 [游戏登陆密钥](https://steamcommunity.com/dev/managegameservers)
 
-   确认你的路由器已 [开放端口](https://portforward.com/router.htm) TCP: `27015` 和UDP: `27015` & `27020` 以使玩家可以通过服务器浏览器加入你的服务器.
+   确认你的路由器已 [启动端口转发](https://portforward.com/router.htm) TCP: `27015` 和UDP: `27015` & `27020` 以使玩家可以通过服务器浏览器加入你的服务器.
 
-   **若要连接服务器，你需要连接公开IP, 而非本地IP，即使在同一网络下也要如此. 脚本会以如下方式记录公开IP `Starting server on XXX.XXX.XXX.XXX:27015`**
+   **若要连接服务器，你需要连接公网IP, 而非本地IP，即使在同一网络下也要如此. 脚本会以如下方式记录公开IP `Starting server on XXX.XXX.XXX.XXX:27015`**
 
 - **设置本地服务器:**
 
@@ -382,7 +382,7 @@ cd / && curl --silent --output "install.sh" "https://raw.githubusercontent.com/k
 
    将 `API_KEY` 设为你的 [Steam Web API密钥](http://steamcommunity.com/dev/apikey) (required to play workshop maps)
 
-   确认你的路由器已 [开放端口](https://portforward.com/router.htm) TCP: `27015` 和UDP: `27015` & `27020` 以使玩家可以通过服务器浏览器加入你的服务器.
+   确认你的路由器已 [启动端口转发](https://portforward.com/router.htm) TCP: `27015` 和UDP: `27015` & `27020` 以使玩家可以通过服务器浏览器加入你的服务器.
 
    **若要连接服务器，你需要连接公开IP, 而非本地IP，即使在同一网络下也要如此. 脚本会以如下方式记录公开IP `Starting server on XXX.XXX.XXX.XXX:27015`**
 
@@ -512,7 +512,7 @@ cd / && curl --silent --output "install.sh" "https://raw.githubusercontent.com/k
 为你的系统[下载 SourceAdminTool](https://nightly.link/Drifter321/admintool/workflows/build/master) ([源代码](https://github.com/Drifter321/admintool)) (详情 [见此](https://forums.alliedmods.net/showthread.php?t=289370)) 
 点击 `Servers > Add Servers` 然后输入 `<IP>:27015` 。当你看到服务器出现在列表中后, 在左下角输入你的RCON密码然后点击 `Login`至此，你就可以正常在下方输入框中输入指令了。 i.e. `exec dm.cfg`
 
-**若要连接服务器，你需要连接公开IP, 而非本地IP，即使在同一网络下也要如此. 脚本会以如下方式记录公开IP `Starting server on XXX.XXX.XXX.XXX:27015`**
+**若要连接服务器，你需要连接公网IP, 而非本地IP，即使在同一网络下也要如此. 脚本会以如下方式记录公开IP `Starting server on XXX.XXX.XXX.XXX:27015`**
 
 ### 访问管理员菜单
 
@@ -624,7 +624,7 @@ rcon say "hi"
 
 ### 为什么我无法在装载mod的情况下直接启动服务器？
 
-因为服务器在启动前就加载mod.  在SourceMod装载前你无法使用`+exec` 指令来执行mod的配置. 你可以在服务器启动后 (通过RCON) 监测然后装载mod i.e. `exec dm.cfg`.
+因为服务器无法在启动前就加载mod.  在SourceMod装载前你无法使用`+exec` 指令来执行mod的配置. 你可以在服务器启动后 (通过RCON) 监测然后装载mod i.e. `exec dm.cfg`.
 
 ### 手动更新 Metamod:Source 和 CounterStrikeSharp
 
@@ -659,7 +659,7 @@ rcon say "hi"
 
 `Failed to open libtier0.so (/home/steam/cs2/bin/libgcc_s.so.1: version 'GCC_7.0.0' not found (required by /lib/i386-linux-gnu/libstdc++.so.6))`
 
-这是应为Valve将其同游戏文件一同安装了进来。 由于目前该文件已有适配新系统的更新版本, 你可以安全的删除这些文件. 切记不要删除system文件夹内的文件 (通常有 lib 或 lib32)[*](https://wiki.alliedmods.net/Installing_metamod:source).
+这是因为Valve将其同游戏文件一同安装了进来。 由于目前该文件已有适配新系统的更新版本, 你可以安全的删除这些文件. 切记不要删除system文件夹内的文件 (通常有 lib 或 lib32)[*](https://wiki.alliedmods.net/Installing_metamod:source).
 
 执行`cd /home/steam/cs2/bin/` 和 `rm libgcc_s.so.1` 命令后重启服务器。
 
