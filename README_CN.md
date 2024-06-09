@@ -20,7 +20,7 @@
 - KZ (需要[Steam API key](#playing-workshop-mapscollections))
 - BHop//兔子跳 (需要[Steam API key](#playing-workshop-mapscollections))
 - Surf//滑行 (需要[Steam API key](#playing-workshop-mapscollections))
-- ScoutzKnivez//刀战 (需要[Steam API key](#playing-workshop-mapscollections) )
+- ScoutzKnivez (需要[Steam API key](#playing-workshop-mapscollections) )
 - Mini Games //小游戏(需要[Steam API key](#playing-workshop-mapscollections) )
 - Deathrun //死亡跑酷(需要[Steam API key](#playing-workshop-mapscollections))
 - Course format//闯关 (需要[Steam API key](#playing-workshop-mapscollections))
