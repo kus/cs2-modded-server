@@ -13,7 +13,7 @@
   "Chat.ListOfAllowedSecondaryWeapons": "ALLOWED SECONDARY WEAPONS:",
   "Chat.SetupWeaponsCommand": "You can set weapons using the command {green}/gun",
   "Hud.KnifeDamageIsDisabled": "Knife damage is disabled in this mode!",
-  "Hud.NewModeStarting": "New mode starts in {0} seconds!",
+  "Hud.NewModeStarting": "New mode starts in {0} seconds! ({1})",
   "Hud.NewModeStarted": "A new mode has started!",
   "Menu.Title": "Deathmatch Menu",
   "Menu.SoundsTitle": "Deathmatch Menu • Sounds",
