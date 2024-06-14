@@ -85,5 +85,8 @@
     "map.de_nuke.secret_to_b": "Atacar o site B a partir do segredo",
     "map.de_nuke.silo_to_mini": "MINI de ritmo acelerado da Silo",
     "map.de_nuke.mini_to_a": "Ataque Um site da MINI",
-    "map.de_vertigo.b_ramp": "Atacar o local B a partir das escadas"
+    "map.de_vertigo.b_ramp": "Atacar o local B a partir das escadas",
+    "map.de_vertigo.mid_to_ct": "Da metade à desova do CT",
+    "map.de_vertigo.a_ramp": "Atacar o local A a partir da rampa A",
+    "map.de_vertigo.a_short": "Atacar um local a partir de um andaime"
 }

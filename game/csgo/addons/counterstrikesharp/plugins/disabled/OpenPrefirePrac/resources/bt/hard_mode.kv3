@@ -1,0 +1,97 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	config = "addons//counterstrikesharp//plugins//OpenPrefirePrac//resources//bt//bt_hard_config.kv3"
+	root =
+	{
+		type = "decorator_bot_service"
+		memory_to_expire =
+		[
+			{
+				key = "ShortTermAttackMemory"
+				time = 0.1
+				distance = 0
+			},
+			{
+				key = "LongTermMemory"
+				time = 10
+				distance = 500
+			},
+			{
+				key = "ShortTermInvestigateMemory"
+				time = 3
+				distance = 200
+			}
+		]
+		child =
+		{
+			type = "parallel"
+			children =
+			[
+				{
+					type = "decorator_repeat"
+					child =
+					{
+						type = "parallel"
+						children =
+						[
+							{
+								type = "subtree"
+								file = "addons//counterstrikesharp//plugins//OpenPrefirePrac//resources//bt//bt_memorize_enemies_vision.kv3"
+								name = "MemorizeEnemiesVision"
+							},
+							{
+								type = "subtree"
+								file = "scripts/ai/modules/bt_memorize_noises.kv3"
+								name = "MemorizeNoises"
+							},
+							{
+								type = "subtree"
+								file = "scripts/ai/modules/bt_memorize_nearest_investigation.kv3"
+								name = "MemorizeNearestInvestigation"
+							},
+							{
+								type = "decorator_sensor"
+								entity_type_filter = "HUMAN_PLAYERS"
+								output = "Enemy"
+							}
+						]
+					}
+				},
+				{
+					type = "decorator_repeat"
+					child =
+					{
+						type = "parallel"
+						children =
+						[
+							{
+									type = "decorator_sensor"
+									entity_type_filter = "HUMAN_PLAYERS"
+									output = "Target"
+									priority = 0
+									child =
+									{
+										type = "condition_is_empty"
+										input = "Target"
+										negated = 1
+										child =
+										{
+											type = "action_aim"
+											input = "Target"
+											acquire_only = 1
+										}
+									}
+								},
+							// Else: attack if we see an enemy
+							{
+								type = "subtree"
+								file = "scripts/ai/modules/bt_attack.kv3"
+								name = "Attack"
+							}
+						]
+					}
+				}
+			]
+		}
+	}
+}

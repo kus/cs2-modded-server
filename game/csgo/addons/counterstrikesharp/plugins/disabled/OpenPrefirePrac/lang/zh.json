@@ -85,5 +85,8 @@
     "map.de_nuke.secret_to_b": "从 K1 进攻 B 点",
     "map.de_nuke.silo_to_mini": "水塔快提正门",
     "map.de_nuke.mini_to_a": "从正门进攻 A 包点",
-    "map.de_vertigo.b_ramp": "从楼梯进攻 B 包点"
+    "map.de_vertigo.b_ramp": "从楼梯进攻 B 包点",
+    "map.de_vertigo.mid_to_ct": "从中路到警家",
+    "map.de_vertigo.a_ramp": "从 A 斜坡进攻 A 包点",
+    "map.de_vertigo.a_short": "从 A 小进攻 A 包点"
 } 
