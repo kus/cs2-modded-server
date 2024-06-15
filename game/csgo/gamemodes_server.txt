@@ -131,7 +131,6 @@
 				"workshop/3070960099/de_aztec"		""
 				"workshop/3108513658/de_akiba"		""
 				"workshop/3236615060/cs_insertion2"		""
-				"workshop/3070284539/de_train"		""
 			}
 		}
 		"mg_wingman"
@@ -167,7 +166,7 @@
 				"workshop/3070766070/de_mutiny"		""
 				"workshop/3070594412/cs_assault"		""
 				"workshop/3072352643/de_ruins_d_prefab"		""
-				"workshop/3070284539/de_train"		""
+				"workshop/3082340867/de_sakura"		""
 			}
 		}
 		"mg_dm"
@@ -217,7 +216,7 @@
 				"workshop/3109232789/gg_simpsons_vs_flanders_v2"		""
 				"workshop/3108513658/de_akiba"		""
 				"workshop/3112806723/cs_facingworlds-99"		""
-				"workshop/3070284539/de_train"		""
+				"workshop/3082340867/de_sakura"		""
 			}
 		}
 		"mg_gg"
