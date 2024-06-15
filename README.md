@@ -519,6 +519,12 @@ Admins are managed by [CounterStrikeSharp](https://github.com/roflmuffin/Counter
 
 To see an example of my admins you can look at this file [/custom_files_example/addons/counterstrikesharp/configs/admins.json](https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/addons/counterstrikesharp/configs/admins.json). To set your admins on your own server use this file as a reference and use the [custom files](#custom-files) system to have your own version.
 
+Ensure your `.json` files are valid JSON by using [this website](https://jsonformatter.org/json-viewer).
+
+If you have added the admins correctly you should see `Loaded admin data with X admins.` in the server logs when it starts.
+
+If you modify the server whilst the server is on you can run `css_admins_reload` to reload the admins and see the admins with `css_admins_list`.
+
 ### Use number keys to operate menu instead of typing !1 in chat
 
 If you don't like having to type in chat !number every time you want to use a menu item; you can use this trick to bind the corresponding !number command to the number key. So when you press 1 it will select the 1 option:
