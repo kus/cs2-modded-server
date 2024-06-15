@@ -523,7 +523,7 @@ Ensure your `.json` files are valid JSON by using [this website](https://jsonfor
 
 If you have added the admins correctly you should see `Loaded admin data with X admins.` in the server logs when it starts.
 
-If you modify the server whilst the server is on you can run `css_admins_reload` to reload the admins and see the admins with `css_admins_list`.
+If you modify the server whilst the server is on you can run `css_admins_reload` and `css_groups_reload` to reload the admins and see the admins with `css_admins_list` and `css_groups_list`.
 
 ### Use number keys to operate menu instead of typing !1 in chat
 
