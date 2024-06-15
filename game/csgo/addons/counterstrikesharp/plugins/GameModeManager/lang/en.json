@@ -1,9 +1,22 @@
 {
   "plugin.prefix": "[{GREEN}Server{DEFAULT}]",
-  "changemap.message": "Admin {LIGHTRED}{0}{DEFAULT} has changed the map to {LIGHTRED}{1}{DEFAULT}.",
+  "changemap.message": "{LIGHTRED}{0}{DEFAULT} has changed the map to {LIGHTRED}{1}{DEFAULT}.",
   "changemode.message": "Admin {LIGHTRED}{0}{DEFAULT} has changed the game mode to {LIGHTRED}{1}{DEFAULT}.",
-  "changesetting.message": "Admin {LIGHTRED}{0}{DEFAULT} has changed the game setting {LIGHTRED}{1}{DEFAULT}.",
-  "setting.hud.menu-title": "Settings List",
-  "mode.hud.menu-title": "Game Mode List",
-  "maps.hud.menu-title": "Map List"
+  "enable.changesetting.message": "Admin {LIGHTRED}{0}{DEFAULT} has {LIGHTRED}Enabled{DEFAULT} setting {LIGHTRED}{1}{DEFAULT}.",
+  "disable.changesetting.message": "Admin {LIGHTRED}{0}{DEFAULT} has {LIGHTRED}Disabled{DEFAULT} setting {LIGHTRED}{1}{DEFAULT}.",
+  "menu.yes": "Yes",
+  "menu.no": "No",
+  "menu.enable": "Enable",
+  "menu.disable": "Disable",
+  "mode.show.menu-response": "Say {GREEN}!{0}{DEFAULT} to create a vote.",
+  "mode.vote.menu-title": "Change game mode to {GOLD}{0}{DEFAULT}?",
+  "modes.menu-title": "Game Mode List",
+  "modes.vote.menu-title": "Change game mode?",
+  "map.vote.menu-title": "Change map to {0}?",
+  "maps.menu-title": "Map List",
+  "maps.show.menu-response": "Say {GREEN}!{0}{DEFAULT} to create a vote.",
+  "setting.vote.menu-title": "Change setting {GOLD}{0}{DEFAULT}?",
+  "setting.show.menu-response": "Say {GREEN}!{0}{DEFAULT} to create a vote.",
+  "settings.menu-actions": "Setting Actions",
+  "settings.menu-title": "Setting List"
 }

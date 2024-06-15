@@ -1,7 +1,22 @@
 {
-    "plugin.prefix": "[{GREEN}Сервер{DEFAULT}]",
-    "changemap.message": "Адмін {LIGHTRED}{0}{DEFAULT} змінив карту на {LIGHTRED}{1}{DEFAULT}.",
-    "changemode.message": "Адмін {LIGHTRED}{0}{DEFAULT} змінив ігровий режим на {LIGHTRED}{1}{DEFAULT}.",
-    "mode.hud.menu-title": "Список ігрових режимів",
-    "maps.hud.menu-title": "Список карт"
+  "plugin.prefix": "[{GREEN}Сервер{DEFAULT}]",
+  "changemap.message": "{LIGHTRED}{0}{DEFAULT} змінив карту на {LIGHTRED}{1}{DEFAULT}.",
+  "changemode.message": "Адміністратор {LIGHTRED}{0}{DEFAULT} змінив режим гри на {LIGHTRED}{1}{DEFAULT}.",
+  "enable.changesetting.message": "Адміністратор {LIGHTRED}{0}{DEFAULT} {LIGHTRED}Увімкнув{DEFAULT} налаштування {LIGHTRED}{1}{DEFAULT}.",
+  "disable.changesetting.message": "Адміністратор {LIGHTRED}{0}{DEFAULT} {LIGHTRED}Вимкнув{DEFAULT} налаштування {LIGHTRED}{1}{DEFAULT}.",
+  "menu.yes": "Так",
+  "menu.no": "Ні",
+  "menu.enable": "Увімкнути",
+  "menu.disable": "Вимкнути",
+  "mode.show.menu-response": "Скажіть {GREEN}!{0}{DEFAULT}, щоб створити голосування.",
+  "mode.vote.menu-title": "Змінити режим гри на {GOLD}{0}{DEFAULT}?",
+  "modes.menu-title": "Список режимів гри",
+  "modes.vote.menu-title": "Змінити режим гри?",
+  "map.vote.menu-title": "Змінити карту на {0}?",
+  "maps.menu-title": "Список карт",
+  "maps.show.menu-response": "Скажіть {GREEN}!{0}{DEFAULT}, щоб створити голосування.",
+  "setting.vote.menu-title": "Змінити налаштування {GOLD}{0}{DEFAULT}?",
+  "setting.show.menu-response": "Скажіть {GREEN}!{0}{DEFAULT}, щоб створити голосування.",
+  "settings.menu-actions": "Дії налаштувань",
+  "settings.menu-title": "Список налаштувань"
   }

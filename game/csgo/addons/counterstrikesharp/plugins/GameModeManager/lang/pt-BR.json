@@ -1,7 +1,22 @@
 {
-    "plugin.prefix": "[{GREEN}Servidor{DEFAULT}]",  // Server = Servidor
-    "changemap.message": "O administrador {LIGHTRED}{0}{DEFAULT} alterou o mapa para {LIGHTRED}{1}{DEFAULT}.",  // Admin changed map to...
-    "changemode.message": "O administrador {LIGHTRED}{0}{DEFAULT} alterou o modo de jogo para {LIGHTRED}{1}{DEFAULT}.",  // Admin changed game mode to...
-    "mode.hud.menu-title": "Lista de modos de jogo",  // List of game modes
-    "maps.hud.menu-title": "Lista de mapas"  // List of maps
+  "plugin.prefix": "[{GREEN}Servidor{DEFAULT}]",
+  "changemap.message": "{LIGHTRED}{0}{DEFAULT} mudou o mapa para {LIGHTRED}{1}{DEFAULT}.",
+  "changemode.message": "Admin {LIGHTRED}{0}{DEFAULT} mudou o modo de jogo para {LIGHTRED}{1}{DEFAULT}.",
+  "enable.changesetting.message": "Admin {LIGHTRED}{0}{DEFAULT} {LIGHTRED}Habilitou{DEFAULT} a configuração {LIGHTRED}{1}{DEFAULT}.",
+  "disable.changesetting.message": "Admin {LIGHTRED}{0}{DEFAULT} {LIGHTRED}Desabilitou{DEFAULT} a configuração {LIGHTRED}{1}{DEFAULT}.",
+  "menu.yes": "Sim",
+  "menu.no": "Não",
+  "menu.enable": "Habilitar",
+  "menu.disable": "Desabilitar",
+  "mode.show.menu-response": "Digite {GREEN}!{0}{DEFAULT} para criar uma votação.",
+  "mode.vote.menu-title": "Mudar o modo de jogo para {GOLD}{0}{DEFAULT}?",
+  "modes.menu-title": "Lista de modos de jogo",
+  "modes.vote.menu-title": "Mudar o modo de jogo?",
+  "map.vote.menu-title": "Mudar o mapa para {0}?",
+  "maps.menu-title": "Lista de mapas",
+  "maps.show.menu-response": "Digite {GREEN}!{0}{DEFAULT} para criar uma votação.",
+  "setting.vote.menu-title": "Mudar a configuração {GOLD}{0}{DEFAULT}?",
+  "setting.show.menu-response": "Digite {GREEN}!{0}{DEFAULT} para criar uma votação.",
+  "settings.menu-actions": "Ações das configurações",
+  "settings.menu-title": "Lista de configurações"
   }

@@ -1,7 +1,22 @@
 {
-    "plugin.prefix": "[{GREEN}Servidor{DEFAULT}]",
-    "changemap.message": "El administrador {LIGHTRED}{0}{DEFAULT} ha cambiado el mapa a {LIGHTRED}{1}{DEFAULT}.",
-    "changemode.message": "El administrador {LIGHTRED}{0}{DEFAULT} ha cambiado el modo de juego a {LIGHTRED}{1}{DEFAULT}.",
-    "mode.hud.menu-title": "Lista de modos de juego",
-    "maps.hud.menu-title": "Lista de mapas"
+  "plugin.prefix": "[{GREEN}Servidor{DEFAULT}]",
+  "changemap.message": "{LIGHTRED}{0}{DEFAULT} ha cambiado el mapa a {LIGHTRED}{1}{DEFAULT}.",
+  "changemode.message": "Admin {LIGHTRED}{0}{DEFAULT} ha cambiado el modo de juego a {LIGHTRED}{1}{DEFAULT}.",
+  "enable.changesetting.message": "Admin {LIGHTRED}{0}{DEFAULT} ha {LIGHTRED}Habilitado{DEFAULT} el ajuste {LIGHTRED}{1}{DEFAULT}.",
+  "disable.changesetting.message": "Admin {LIGHTRED}{0}{DEFAULT} ha {LIGHTRED}Deshabilitado{DEFAULT} el ajuste {LIGHTRED}{1}{DEFAULT}.",
+  "menu.yes": "Sí",
+  "menu.no": "No",
+  "menu.enable": "Habilitar",
+  "menu.disable": "Deshabilitar",
+  "mode.show.menu-response": "Di {GREEN}!{0}{DEFAULT} para crear una votación.",
+  "mode.vote.menu-title": "¿Cambiar el modo de juego a {GOLD}{0}{DEFAULT}?",
+  "modes.menu-title": "Lista de modos de juego",
+  "modes.vote.menu-title": "¿Cambiar modo de juego?",
+  "map.vote.menu-title": "¿Cambiar mapa a {0}?",
+  "maps.menu-title": "Lista de mapas",
+  "maps.show.menu-response": "Di {GREEN}!{0}{DEFAULT} para crear una votación.",
+  "setting.vote.menu-title": "¿Cambiar ajuste {GOLD}{0}{DEFAULT}?",
+  "setting.show.menu-response": "Di {GREEN}!{0}{DEFAULT} para crear una votación.",
+  "settings.menu-actions": "Acciones de ajustes",
+  "settings.menu-title": "Lista de ajustes"
   }

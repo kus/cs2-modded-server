@@ -1,7 +1,22 @@
 {
-    "plugin.prefix": "[{GREEN}Serveris{DEFAULT}]",
-    "changemap.message": "Admins {LIGHTRED}{0}{DEFAULT} ir nomainījis karti uz {LIGHTRED}{1}{DEFAULT}.",
-    "changemode.message": "Admins {LIGHTRED}{0}{DEFAULT} ir nomainījis spēles režīmu uz {LIGHTRED}{1}{DEFAULT}.",
-    "mode.hud.menu-title": "Spēles režīmu saraksts",
-    "maps.hud.menu-title": "Karšu Saraksts"
+  "plugin.prefix": "[{GREEN}Serveris{DEFAULT}]",
+  "changemap.message": "{LIGHTRED}{0}{DEFAULT} ir mainījis karti uz {LIGHTRED}{1}{DEFAULT}.",
+  "changemode.message": "Administrators {LIGHTRED}{0}{DEFAULT} ir mainījis spēles režīmu uz {LIGHTRED}{1}{DEFAULT}.",
+  "enable.changesetting.message": "Administrators {LIGHTRED}{0}{DEFAULT} ir {LIGHTRED}iespējojis{DEFAULT} iestatījumu {LIGHTRED}{1}{DEFAULT}.",
+  "disable.changesetting.message": "Administrators {LIGHTRED}{0}{DEFAULT} ir {LIGHTRED}atspējojis{DEFAULT} iestatījumu {LIGHTRED}{1}{DEFAULT}.",
+  "menu.yes": "Jā",
+  "menu.no": "Nē",
+  "menu.enable": "Iespējot",
+  "menu.disable": "Atspējot",
+  "mode.show.menu-response": "Saki {GREEN}!{0}{DEFAULT}, lai izveidotu balsojumu.",
+  "mode.vote.menu-title": "Mainīt spēles režīmu uz {GOLD}{0}{DEFAULT}?",
+  "modes.menu-title": "Spēles režīmu saraksts",
+  "modes.vote.menu-title": "Mainīt spēles režīmu?",
+  "map.vote.menu-title": "Mainīt karti uz {0}?",
+  "maps.menu-title": "Karšu saraksts",
+  "maps.show.menu-response": "Saki {GREEN}!{0}{DEFAULT}, lai izveidotu balsojumu.",
+  "setting.vote.menu-title": "Mainīt iestatījumu {GOLD}{0}{DEFAULT}?",
+  "setting.show.menu-response": "Saki {GREEN}!{0}{DEFAULT}, lai izveidotu balsojumu.",
+  "settings.menu-actions": "Iestatījumu darbības",
+  "settings.menu-title": "Iestatījumu saraksts"
   }

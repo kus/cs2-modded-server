@@ -1,7 +1,22 @@
 {
-  "plugin.prefix": "[{GREEN}Server{DEFAULT}]",  // Server = Server
-  "changemap.message": "Admin {LIGHTRED}{0}{DEFAULT} heeft de map gewijzigd in {LIGHTRED}{1}{DEFAULT}.",  // Admin changed map to...
-  "changemode.message": "Admin {LIGHTRED}{0}{DEFAULT} heeft de spelmodus gewijzigd in {LIGHTRED}{1}{DEFAULT}.",  // Admin changed game mode to...
-  "mode.hud.menu-title": "Lijst met spelmodi",  // List of game modes
-  "maps.hud.menu-title": "Kaartlijst"  // List of maps
-}
+  "plugin.prefix": "[{GREEN}Server{DEFAULT}]",
+  "changemap.message": "{LIGHTRED}{0}{DEFAULT} heeft de kaart gewijzigd naar {LIGHTRED}{1}{DEFAULT}.",
+  "changemode.message": "Admin {LIGHTRED}{0}{DEFAULT} heeft de spelmodus gewijzigd naar {LIGHTRED}{1}{DEFAULT}.",
+  "enable.changesetting.message": "Admin {LIGHTRED}{0}{DEFAULT} heeft de instelling {LIGHTRED}{1}{DEFAULT} {LIGHTRED}Ingeschakeld{DEFAULT}.",
+  "disable.changesetting.message": "Admin {LIGHTRED}{0}{DEFAULT} heeft de instelling {LIGHTRED}{1}{DEFAULT} {LIGHTRED}Uitgeschakeld{DEFAULT}.",
+  "menu.yes": "Ja",
+  "menu.no": "Nee",
+  "menu.enable": "Inschakelen",
+  "menu.disable": "Uitschakelen",
+  "mode.show.menu-response": "Zeg {GREEN}!{0}{DEFAULT} om een stemming te creëren.",
+  "mode.vote.menu-title": "Spelmodus wijzigen naar {GOLD}{0}{DEFAULT}?",
+  "modes.menu-title": "Lijst met spelmodi",
+  "modes.vote.menu-title": "Spelmodus wijzigen?",
+  "map.vote.menu-title": "Kaart wijzigen naar {0}?",
+  "maps.menu-title": "Lijst met kaarten",
+  "maps.show.menu-response": "Zeg {GREEN}!{0}{DEFAULT} om een stemming te creëren.",
+  "setting.vote.menu-title": "Instelling {GOLD}{0}{DEFAULT} wijzigen?",
+  "setting.show.menu-response": "Zeg {GREEN}!{0}{DEFAULT} om een stemming te creëren.",
+  "settings.menu-actions": "Instellingsacties",
+  "settings.menu-title": "Lijst met instellingen"
+  }

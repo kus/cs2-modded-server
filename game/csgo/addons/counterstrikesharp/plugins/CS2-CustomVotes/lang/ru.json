@@ -1,9 +1,9 @@
 {
-  "vote.disabled": "Custom Votes {DarkBlue}отключен{Default}.",
+  "vote.disabled": "Custom Votes {LightRed}отключен{Default}.",
   "vote.active": "Голосование уже началось.",
-  "vote.started": "Игрок {DarkBlue}{0}{Default} начал голосование {DarkBlue}{1}{Default}.",
-  "vote.cooldown": "Пожалуйста, подождите {DarkBlue}{0}{Default} секунд между голосованиями.",
+  "vote.started": "Игрок {Green}{0}{Default} начал голосование {Green}{1}{Default}.",
+  "vote.cooldown": "Пожалуйста, подождите {LightRed}{0}{Default} секунд между голосованиями.",
   "vote.already_voted": "Вы уже проголосовали.",
-  "vote.finished_with": "Голосование {DarkBlue}{0}{Default} закончилось с {DarkBlue}{1}{Default} ({2} голосов).",
+  "vote.finished_with": "Голосование {Green}{0}{Default} закончилось с {Green}{1}{Default} ({2} голосов).",
   "vote.no_permission": "У вас нет прав для начала этого голосования."
 }

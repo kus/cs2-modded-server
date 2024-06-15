@@ -1,7 +1,22 @@
 {
   "plugin.prefix": "[{GREEN}Sunucu{DEFAULT}]",
-  "changemap.message": "Yönetici {LIGHTRED}{0}{DEFAULT} haritayı {LIGHTRED}{1}{DEFAULT} olarak değiştirdi.",
+  "changemap.message": "{LIGHTRED}{0}{DEFAULT} haritayı {LIGHTRED}{1}{DEFAULT} olarak değiştirdi.",
   "changemode.message": "Yönetici {LIGHTRED}{0}{DEFAULT} oyun modunu {LIGHTRED}{1}{DEFAULT} olarak değiştirdi.",
-  "mode.hud.menu-title": "Oyun Modu Listesi",
-  "maps.hud.menu-title": "Harita Listesi"
-}
+  "enable.changesetting.message": "Yönetici {LIGHTRED}{0}{DEFAULT} {LIGHTRED}Etkinleştirdi{DEFAULT} {LIGHTRED}{1}{DEFAULT} ayarını.",
+  "disable.changesetting.message": "Yönetici {LIGHTRED}{0}{DEFAULT} {LIGHTRED}Devre Dışı Bıraktı{DEFAULT} {LIGHTRED}{1}{DEFAULT} ayarını.",
+  "menu.yes": "Evet",
+  "menu.no": "Hayır",
+  "menu.enable": "Etkinleştir",
+  "menu.disable": "Devre Dışı Bırak",
+  "mode.show.menu-response": "Oylama oluşturmak için {GREEN}!{0}{DEFAULT} yazın.",
+  "mode.vote.menu-title": "Oyun modu {GOLD}{0}{DEFAULT} olarak değiştirilsin mi?",
+  "modes.menu-title": "Oyun Modları Listesi",
+  "modes.vote.menu-title": "Oyun modu değiştirilsin mi?",
+  "map.vote.menu-title": "Harita {0} olarak değiştirilsin mi?",
+  "maps.menu-title": "Haritalar Listesi",
+  "maps.show.menu-response": "Oylama oluşturmak için {GREEN}!{0}{DEFAULT} yazın.",
+  "setting.vote.menu-title": "{GOLD}{0}{DEFAULT} ayarı değiştirilsin mi?",
+  "setting.show.menu-response": "Oylama oluşturmak için {GREEN}!{0}{DEFAULT} yazın.",
+  "settings.menu-actions": "Ayar İşlemleri",
+  "settings.menu-title": "Ayarlar Listesi"
+  }

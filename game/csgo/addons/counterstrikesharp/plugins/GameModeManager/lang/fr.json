@@ -1,7 +1,22 @@
 {
-    "plugin.prefix": "[{GREEN}Serveur{DEFAULT}]",
-    "changemap.message": "Admin {LIGHTRED}{0}{DEFAULT} a changé la carte en {LIGHTRED}{1}{DEFAULT}.",
-    "changemode.message": "Admin {LIGHTRED}{0}{DEFAULT} a changé le mode de jeu en {LIGHTRED}{1}{DEFAULT}.",
-    "mode.hud.menu-title": "Liste des modes de jeu",
-    "maps.hud.menu-title": "Liste des cartes"
+  "plugin.prefix": "[{GREEN}Serveur{DEFAULT}]",
+  "changemap.message": "{LIGHTRED}{0}{DEFAULT} a changé la carte en {LIGHTRED}{1}{DEFAULT}.",
+  "changemode.message": "Admin {LIGHTRED}{0}{DEFAULT} a changé le mode de jeu en {LIGHTRED}{1}{DEFAULT}.",
+  "enable.changesetting.message": "Admin {LIGHTRED}{0}{DEFAULT} a {LIGHTRED}Activé{DEFAULT} le paramètre {LIGHTRED}{1}{DEFAULT}.",
+  "disable.changesetting.message": "Admin {LIGHTRED}{0}{DEFAULT} a {LIGHTRED}Désactivé{DEFAULT} le paramètre {LIGHTRED}{1}{DEFAULT}.",
+  "menu.yes": "Oui",
+  "menu.no": "Non",
+  "menu.enable": "Activer",
+  "menu.disable": "Désactiver",
+  "mode.show.menu-response": "Dites {GREEN}!{0}{DEFAULT} pour créer un vote.",
+  "mode.vote.menu-title": "Changer le mode de jeu en {GOLD}{0}{DEFAULT} ?",
+  "modes.menu-title": "Liste des modes de jeu",
+  "modes.vote.menu-title": "Changer de mode de jeu ?",
+  "map.vote.menu-title": "Changer la carte en {0} ?",
+  "maps.menu-title": "Liste des cartes",
+  "maps.show.menu-response": "Dites {GREEN}!{0}{DEFAULT} pour créer un vote.",
+  "setting.vote.menu-title": "Changer le paramètre {GOLD}{0}{DEFAULT} ?",
+  "setting.show.menu-response": "Dites {GREEN}!{0}{DEFAULT} pour créer un vote.",
+  "settings.menu-actions": "Actions des paramètres",
+  "settings.menu-title": "Liste des paramètres"
   }

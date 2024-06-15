@@ -1,9 +1,9 @@
 {
-  "vote.disabled": "Custom Votes sind {DarkBlue}deaktiviert{Default}.",
+  "vote.disabled": "Custom Votes sind {LightRed}deaktiviert{Default}.",
   "vote.active": "Es läuft bereits eine Abstimmung.",
-  "vote.started": "Spieler {DarkBlue}{0}{Default} hat eine Abstimmung über {DarkBlue}{1}{Default} gestartet.",
-  "vote.cooldown": "Bitte warte {DarkBlue}{0}{Default} Sekunden zwischen den Abstimmungen.",
+  "vote.started": "Spieler {Green}{0}{Default} hat eine Abstimmung über {Green}{1}{Default} gestartet.",
+  "vote.cooldown": "Bitte warte {LightRed}{0}{Default} Sekunden zwischen den Abstimmungen.",
   "vote.already_voted": "Du hast bereits abgestimmt.",
-  "vote.finished_with": "Abstimmung für {DarkBlue}{0}{Default} wurde mit {DarkBlue}{1}{Default} ({2} Stimmen) beendet.",
+  "vote.finished_with": "Abstimmung für {Green}{0}{Default} wurde mit {Green}{1}{Default} ({2} Stimmen) beendet.",
   "vote.no_permission": "Du hast nicht die nötigen Berechtigungen, um diese Abstimmung zu starten."
 }

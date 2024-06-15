@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Gameloop.Vdf</name>
+    </assembly>
+    <members>
+        <member name="M:Gameloop.Vdf.Utilities.CollectionUtils.AddRange``1(System.Collections.Generic.IList{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Adds the elements of the specified collection to the specified generic <see cref="T:System.Collections.Generic.IList`1"/>.
+            </summary>
+            <param name="initial">The list to add to.</param>
+            <param name="collection">The collection of elements to add.</param>
+        </member>
+        <member name="M:Gameloop.Vdf.Utilities.DynamicProxyMetaObject`1.CallMethodWithResult(System.String,System.Dynamic.DynamicMetaObjectBinder,System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression},Gameloop.Vdf.Utilities.DynamicProxyMetaObject{`0}.Fallback,Gameloop.Vdf.Utilities.DynamicProxyMetaObject{`0}.Fallback)">
+            <summary>
+            Helper method for generating a MetaObject which calls a
+            specific method on Dynamic that returns a result
+            </summary>
+        </member>
+        <member name="M:Gameloop.Vdf.Utilities.DynamicProxyMetaObject`1.CallMethodReturnLast(System.String,System.Dynamic.DynamicMetaObjectBinder,System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression},Gameloop.Vdf.Utilities.DynamicProxyMetaObject{`0}.Fallback)">
+            <summary>
+            Helper method for generating a MetaObject which calls a
+            specific method on Dynamic, but uses one of the arguments for
+            the result.
+            </summary>
+        </member>
+        <member name="M:Gameloop.Vdf.Utilities.DynamicProxyMetaObject`1.CallMethodNoResult(System.String,System.Dynamic.DynamicMetaObjectBinder,System.Linq.Expressions.Expression[],Gameloop.Vdf.Utilities.DynamicProxyMetaObject{`0}.Fallback)">
+            <summary>
+            Helper method for generating a MetaObject which calls a
+            specific method on Dynamic, but uses one of the arguments for
+            the result.
+            </summary>
+        </member>
+        <member name="M:Gameloop.Vdf.Utilities.DynamicProxyMetaObject`1.GetRestrictions">
+            <summary>
+            Returns a Restrictions object which includes our current restrictions merged
+            with a restriction limiting our type
+            </summary>
+        </member>
+        <member name="F:Gameloop.Vdf.VdfSerializerSettings.UsesEscapeSequences">
+            <summary>
+            Determines whether the parser should translate escape sequences (/n, /t, etc.).
+            </summary>
+        </member>
+        <member name="F:Gameloop.Vdf.VdfSerializerSettings.UsesConditionals">
+            <summary>
+            Determines whether the parser should evaluate conditional blocks ([$WINDOWS], etc.).
+            </summary>
+        </member>
+        <member name="F:Gameloop.Vdf.VdfSerializerSettings.MaximumTokenSize">
+            <summary>
+            Sets the size of the token buffer used for deserialization.
+            </summary>
+        </member>
+        <member name="M:Gameloop.Vdf.VdfTextReader.ReadToken">
+            <summary>
+            Reads a single token. The value is stored in the 'Value' property.
+            </summary>
+            <returns>True if a token was read, false otherwise.</returns>
+        </member>
+        <member name="M:Gameloop.Vdf.VdfTextReader.SeekToken">
+            <summary>
+            Moves the pointer to the location of the first token character.
+            </summary>
+            <returns>True if a token is found, false otherwise.</returns>
+        </member>
+        <member name="M:Gameloop.Vdf.VdfTextReader.EnsureBuffer">
+            <summary>
+            Refills the buffer if we're at the end.
+            </summary>
+            <returns>False if the stream is empty, true otherwise.</returns>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.NotNullAttribute">
+            <summary>Specifies that an output will not be null even if the corresponding type allows it.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute">
+            <summary>Specifies that when a method returns <see cref="P:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.ReturnValue"/>, the parameter will not be null even if the corresponding type allows it.</summary>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.#ctor(System.Boolean)">
+            <summary>Initializes the attribute with the specified return value condition.</summary>
+            <param name="returnValue">
+            The return value condition. If the method returns this value, the associated parameter will not be null.
+            </param>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.ReturnValue">
+            <summary>Gets the return value condition.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute">
+            <summary>Specifies that when a method returns <see cref="P:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.ReturnValue"/>, the parameter will not be null even if the corresponding type allows it.</summary>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.#ctor(System.Boolean)">
+            <summary>Initializes the attribute with the specified return value condition.</summary>
+            <param name="returnValue">
+            The return value condition. If the method returns this value, the associated parameter will not be null.
+            </param>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.ReturnValue">
+            <summary>Gets the return value condition.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.MaybeNullAttribute">
+            <summary>Specifies that an output may be null even if the corresponding type disallows it.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.AllowNullAttribute">
+            <summary>Specifies that null is allowed as an input even if the corresponding type disallows it.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute">
+            <summary>
+            Specifies that the method will not return if the associated Boolean parameter is passed the specified value.
+            </summary>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute.#ctor(System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute"/> class.
+            </summary>
+            <param name="parameterValue">
+            The condition parameter value. Code after the method will be considered unreachable by diagnostics if the argument to
+            the associated parameter matches this value.
+            </param>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute.ParameterValue">
+            <summary>Gets the condition parameter value.</summary>
+        </member>
+    </members>
+</doc>

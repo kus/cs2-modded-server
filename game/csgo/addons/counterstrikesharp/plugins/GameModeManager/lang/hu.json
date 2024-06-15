@@ -1,7 +1,22 @@
 {
-    "plugin.prefix": "[{GREEN}Szerver{DEFAULT}]", 
-    "changemap.message": "Admin {LIGHTRED}{0}{DEFAULT} megváltoztatta a pályát erre: {LIGHTRED}{1}{DEFAULT}.",
-    "changemode.message": "Admin {LIGHTRED}{0}{DEFAULT} megváltoztatta a játékmódot erre: {LIGHTRED}{1}{DEFAULT}.", 
-    "mode.hud.menu-title": "Játékmód-lista", 
-    "maps.hud.menu-title": "Pályalista" 
+  "plugin.prefix": "[{GREEN}Szerver{DEFAULT}]",
+  "changemap.message": "{LIGHTRED}{0}{DEFAULT} megváltoztatta a pályát {LIGHTRED}{1}{DEFAULT}-re.",
+  "changemode.message": "Admin {LIGHTRED}{0}{DEFAULT} megváltoztatta a játékmódot {LIGHTRED}{1}{DEFAULT}-re.",
+  "enable.changesetting.message": "Admin {LIGHTRED}{0}{DEFAULT} {LIGHTRED}Engedélyezte{DEFAULT} a {LIGHTRED}{1}{DEFAULT} beállítást.",
+  "disable.changesetting.message": "Admin {LIGHTRED}{0}{DEFAULT} {LIGHTRED}Letiltotta{DEFAULT} a {LIGHTRED}{1}{DEFAULT} beállítást.",
+  "menu.yes": "Igen",
+  "menu.no": "Nem",
+  "menu.enable": "Engedélyezés",
+  "menu.disable": "Letiltás",
+  "mode.show.menu-response": "Írj {GREEN}!{0}{DEFAULT} a szavazás létrehozásához.",
+  "mode.vote.menu-title": "Játékmód váltása {GOLD}{0}{DEFAULT}-re?",
+  "modes.menu-title": "Játékmód lista",
+  "modes.vote.menu-title": "Játékmód váltása?",
+  "map.vote.menu-title": "Pálya váltása {0}-ra?",
+  "maps.menu-title": "Pálya lista",
+  "maps.show.menu-response": "Írj {GREEN}!{0}{DEFAULT} a szavazás létrehozásához.",
+  "setting.vote.menu-title": "{GOLD}{0}{DEFAULT} beállítás módosítása?",
+  "setting.show.menu-response": "Írj {GREEN}!{0}{DEFAULT} a szavazás létrehozásához.",
+  "settings.menu-actions": "Beállítások műveletei",
+  "settings.menu-title": "Beállítások listája"
   }

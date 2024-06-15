@@ -1,7 +1,22 @@
 {
-    "plugin.prefix": "[{GREEN}Serwer{DEFAULT}]",
-    "changemap.message": "Admin {LIGHTRED}{0}{DEFAULT} zmienił mapę na {LIGHTRED}{1}{DEFAULT}.",
-    "changemode.message": "Admin {LIGHTRED}{0}{DEFAULT} zmienił tryb gry na {LIGHTRED}{1}{DEFAULT}.",
-    "mode.hud.menu-title": "Lista trybów gry",
-    "maps.hud.menu-title": "Lista map"
+  "plugin.prefix": "[{GREEN}Serwer{DEFAULT}]",
+  "changemap.message": "{LIGHTRED}{0}{DEFAULT} zmienił mapę na {LIGHTRED}{1}{DEFAULT}.",
+  "changemode.message": "Administrator {LIGHTRED}{0}{DEFAULT} zmienił tryb gry na {LIGHTRED}{1}{DEFAULT}.",
+  "enable.changesetting.message": "Administrator {LIGHTRED}{0}{DEFAULT} {LIGHTRED}Włączył{DEFAULT} ustawienie {LIGHTRED}{1}{DEFAULT}.",
+  "disable.changesetting.message": "Administrator {LIGHTRED}{0}{DEFAULT} {LIGHTRED}Wyłączył{DEFAULT} ustawienie {LIGHTRED}{1}{DEFAULT}.",
+  "menu.yes": "Tak",
+  "menu.no": "Nie",
+  "menu.enable": "Włącz",
+  "menu.disable": "Wyłącz",
+  "mode.show.menu-response": "Powiedz {GREEN}!{0}{DEFAULT}, aby utworzyć głosowanie.",
+  "mode.vote.menu-title": "Zmienić tryb gry na {GOLD}{0}{DEFAULT}?",
+  "modes.menu-title": "Lista trybów gry",
+  "modes.vote.menu-title": "Zmienić tryb gry?",
+  "map.vote.menu-title": "Zmienić mapę na {0}?",
+  "maps.menu-title": "Lista map",
+  "maps.show.menu-response": "Powiedz {GREEN}!{0}{DEFAULT}, aby utworzyć głosowanie.",
+  "setting.vote.menu-title": "Zmienić ustawienie {GOLD}{0}{DEFAULT}?",
+  "setting.show.menu-response": "Powiedz {GREEN}!{0}{DEFAULT}, aby utworzyć głosowanie.",
+  "settings.menu-actions": "Akcje ustawień",
+  "settings.menu-title": "Lista ustawień"
   }
