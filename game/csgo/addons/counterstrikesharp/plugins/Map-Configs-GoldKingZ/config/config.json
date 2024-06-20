@@ -1,0 +1,13 @@
+{
+  "RemoveMapCommands": true,
+  "InvertPathMode": false,
+  "ExecMode": "OnRoundStart,OnMapStart,OnMatchStart,OnWarmupStart",
+  "ExecXTimes": 3,
+  "empty": "-----------------------------------------------------------------------------------",
+  "ForceExecMode": "OnPlayerSpawn",
+  "ForceExecXTimes": 3,
+  "empty2": "-----------------------------------------------------------------------------------",
+  "EnableErrorLogChecker": false,
+  "empty3": "-----------------------------------------------------------------------------------",
+  "Information_For_You_Dont_Delete_it": " Vist  [https://github.com/oqyh/cs2-Map-Configs-GoldKingZ/tree/main?tab=readme-ov-file#-configuration-] To Understand All Above"
+}
