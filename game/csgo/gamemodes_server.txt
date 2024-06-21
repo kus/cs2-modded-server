@@ -134,6 +134,7 @@
 				"workshop/3070284539/de_train"		""
 				"workshop/3152430710/de_mills"		""
 				"workshop/3121217565/de_thera"		""
+				"workshop/3073892687/de_season"		""
 			}
 		}
 		"mg_wingman"
