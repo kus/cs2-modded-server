@@ -57,6 +57,7 @@
     "map.de_mirage.mid_to_b": "Ataque ao site B a partir do meio",
     "map.de_mirage.under_to_jungle": "Ataque ao site A a partir da passagem subterrânea",
     "map.de_mirage.b_retake": "Recuperação de B do spawn dos CTs",
+    "map.de_mirage.ct_push_palace": "CT pressiona agressivamente o A Palace",
     "map.de_overpass.b_long": "Ataque ao site B do B longo",
     "map.de_overpass.b_short": "Ataque ao site B do B curto",
     "map.de_overpass.under_to_mid": "Limpe a passagem subterrânea e suba até o meio",
@@ -88,5 +89,6 @@
     "map.de_vertigo.b_ramp": "Atacar o local B a partir das escadas",
     "map.de_vertigo.mid_to_ct": "Da metade à desova do CT",
     "map.de_vertigo.a_ramp": "Atacar o local A a partir da rampa A",
-    "map.de_vertigo.a_short": "Atacar um local a partir de um andaime"
+    "map.de_vertigo.a_short": "Atacar um local a partir de um andaime",
+    "map.de_vertigo.b_retake": "Retomar o local B do elevador"
 }

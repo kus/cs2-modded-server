@@ -57,6 +57,7 @@
     "map.de_mirage.mid_to_b": "Attack B site from mid",
     "map.de_mirage.under_to_jungle": "Attack A site from underpass",
     "map.de_mirage.b_retake": "Retake B site from CT spawn",
+    "map.de_mirage.ct_push_palace": "CT aggressively push A Palace",
     "map.de_overpass.b_long": "Attack B site from B long",
     "map.de_overpass.b_short": "Attack B site from B short",
     "map.de_overpass.under_to_mid": "Clear underpass and go upwards to mid",
@@ -88,5 +89,6 @@
     "map.de_vertigo.b_ramp": "Attack B site from stairs",
     "map.de_vertigo.mid_to_ct": "From mid to CT spawn",
     "map.de_vertigo.a_ramp": "Attack A site from A ramp",
-    "map.de_vertigo.a_short": "Attack A site from scaffold"
+    "map.de_vertigo.a_short": "Attack A site from scaffold",
+    "map.de_vertigo.b_retake": "Retake B site from elevator"
 } 

@@ -57,6 +57,7 @@
     "map.de_mirage.mid_to_b": "从中路进攻 B 包点",
     "map.de_mirage.under_to_jungle": "从下水道进攻 A 包点",
     "map.de_mirage.b_retake": "从警家回防 B 包点",
+    "map.de_mirage.ct_push_palace": "CT 前压 A 二楼",
     "map.de_overpass.b_long": "从长管进攻 B 包点",
     "map.de_overpass.b_short": "从工地进攻 B 包点",
     "map.de_overpass.under_to_mid": "清下水道，上到气球",
@@ -88,5 +89,6 @@
     "map.de_vertigo.b_ramp": "从楼梯进攻 B 包点",
     "map.de_vertigo.mid_to_ct": "从中路到警家",
     "map.de_vertigo.a_ramp": "从 A 斜坡进攻 A 包点",
-    "map.de_vertigo.a_short": "从 A 小进攻 A 包点"
+    "map.de_vertigo.a_short": "从 A 小进攻 A 包点",
+    "map.de_vertigo.b_retake": "从连接回防 B 区"
 } 
