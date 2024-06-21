@@ -1,5 +1,5 @@
 {
-	"Version": 2,
+	"Version": 3,
 	"RTV": {
 		"Enabled": false,
 		"Plugin": "addons/counterstrikesharp/plugins/RockTheVote/RockTheVote.dll",
@@ -9,6 +9,8 @@
 	"MapGroup": {
 		"Delay": 5,
 		"Default": "mg_active",
+		"DefaultMap": "de_dust2",
+		"Style": "center",
 		"File": "gamemodes_server.txt"
 	},
 	"Settings": {
@@ -55,5 +57,5 @@
 		"GameSetting": false,
 		"Style": "center"
 	},
-	"ConfigVersion": 2
+	"ConfigVersion": 3
 }

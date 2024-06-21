@@ -1,6 +1,9 @@
 {
   "plugin.prefix": "[{GREEN}Sunucu{DEFAULT}]",
-  "changemap.message": "{LIGHTRED}{0}{DEFAULT} haritayı {LIGHTRED}{1}{DEFAULT} olarak değiştirdi.",
+  "game.menu-title": "Oyun Komutları",
+  "currentmap.message": "{RED}[Geçerli harita]{DEFAULT} {0}",
+  "currentmode.message": "{GREEN}[Geçerli mod]{DEFAULT} {0}",
+  "changemap.message": "Yönetici {LIGHTRED}{0}{DEFAULT} haritayı {LIGHTRED}{1}{DEFAULT} olarak değiştirdi.",
   "changemode.message": "Yönetici {LIGHTRED}{0}{DEFAULT} oyun modunu {LIGHTRED}{1}{DEFAULT} olarak değiştirdi.",
   "enable.changesetting.message": "Yönetici {LIGHTRED}{0}{DEFAULT} {LIGHTRED}Etkinleştirdi{DEFAULT} {LIGHTRED}{1}{DEFAULT} ayarını.",
   "disable.changesetting.message": "Yönetici {LIGHTRED}{0}{DEFAULT} {LIGHTRED}Devre Dışı Bıraktı{DEFAULT} {LIGHTRED}{1}{DEFAULT} ayarını.",

@@ -1,6 +1,9 @@
 {
   "plugin.prefix": "[{GREEN}Server{DEFAULT}]",
-  "changemap.message": "{LIGHTRED}{0}{DEFAULT} heeft de kaart gewijzigd naar {LIGHTRED}{1}{DEFAULT}.",
+  "game.menu-title": "Spelopdrachten",
+  "currentmap.message": "{RED}[Huidige kaart]{DEFAULT} {0}",
+  "currentmode.message": "{GREEN}[Huidige modus]{DEFAULT} {0}",
+  "changemap.message": "Admin {LIGHTRED}{0}{DEFAULT} heeft de kaart gewijzigd naar {LIGHTRED}{1}{DEFAULT}.",
   "changemode.message": "Admin {LIGHTRED}{0}{DEFAULT} heeft de spelmodus gewijzigd naar {LIGHTRED}{1}{DEFAULT}.",
   "enable.changesetting.message": "Admin {LIGHTRED}{0}{DEFAULT} heeft de instelling {LIGHTRED}{1}{DEFAULT} {LIGHTRED}Ingeschakeld{DEFAULT}.",
   "disable.changesetting.message": "Admin {LIGHTRED}{0}{DEFAULT} heeft de instelling {LIGHTRED}{1}{DEFAULT} {LIGHTRED}Uitgeschakeld{DEFAULT}.",

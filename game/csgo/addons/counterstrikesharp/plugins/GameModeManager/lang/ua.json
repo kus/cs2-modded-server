@@ -1,6 +1,9 @@
 {
   "plugin.prefix": "[{GREEN}Сервер{DEFAULT}]",
-  "changemap.message": "{LIGHTRED}{0}{DEFAULT} змінив карту на {LIGHTRED}{1}{DEFAULT}.",
+  "game.menu-title": "Команди гри",
+  "currentmap.message": "{RED}[Поточна карта]{DEFAULT} {0}",
+  "currentmode.message": "{GREEN}[Поточний режим]{DEFAULT} {0}",
+  "changemap.message": "Адміністратор {LIGHTRED}{0}{DEFAULT} змінив карту на {LIGHTRED}{1}{DEFAULT}.",
   "changemode.message": "Адміністратор {LIGHTRED}{0}{DEFAULT} змінив режим гри на {LIGHTRED}{1}{DEFAULT}.",
   "enable.changesetting.message": "Адміністратор {LIGHTRED}{0}{DEFAULT} {LIGHTRED}Увімкнув{DEFAULT} налаштування {LIGHTRED}{1}{DEFAULT}.",
   "disable.changesetting.message": "Адміністратор {LIGHTRED}{0}{DEFAULT} {LIGHTRED}Вимкнув{DEFAULT} налаштування {LIGHTRED}{1}{DEFAULT}.",

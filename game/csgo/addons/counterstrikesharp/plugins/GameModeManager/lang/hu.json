@@ -1,6 +1,9 @@
 {
   "plugin.prefix": "[{GREEN}Szerver{DEFAULT}]",
-  "changemap.message": "{LIGHTRED}{0}{DEFAULT} megváltoztatta a pályát {LIGHTRED}{1}{DEFAULT}-re.",
+  "game.menu-title": "Játék parancsok",
+  "currentmap.message": "{RED}[Aktuális térkép]{DEFAULT} {0}",
+  "currentmode.message": "{GREEN}[Aktuális mód]{DEFAULT} {0}",
+  "changemap.message": "Admin {LIGHTRED}{0}{DEFAULT} megváltoztatta a pályát {LIGHTRED}{1}{DEFAULT}-re.",
   "changemode.message": "Admin {LIGHTRED}{0}{DEFAULT} megváltoztatta a játékmódot {LIGHTRED}{1}{DEFAULT}-re.",
   "enable.changesetting.message": "Admin {LIGHTRED}{0}{DEFAULT} {LIGHTRED}Engedélyezte{DEFAULT} a {LIGHTRED}{1}{DEFAULT} beállítást.",
   "disable.changesetting.message": "Admin {LIGHTRED}{0}{DEFAULT} {LIGHTRED}Letiltotta{DEFAULT} a {LIGHTRED}{1}{DEFAULT} beállítást.",

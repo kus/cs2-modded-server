@@ -1,6 +1,9 @@
 {
   "plugin.prefix": "[{GREEN}服务器{DEFAULT}]",
-  "changemap.message": "{LIGHTRED}{0}{DEFAULT} 将地图更改为 {LIGHTRED}{1}{DEFAULT}.",
+  "game.menu-title": "游戏命令",
+  "currentmap.message": "{RED}[当前地图]{DEFAULT} {0}",
+  "currentmode.message": "{GREEN}[当前模式]{DEFAULT} {0}",
+  "changemap.message": "管理员 {LIGHTRED}{0}{DEFAULT} 将地图更改为 {LIGHTRED}{1}{DEFAULT}.",
   "changemode.message": "管理员 {LIGHTRED}{0}{DEFAULT} 将游戏模式更改为 {LIGHTRED}{1}{DEFAULT}.",
   "enable.changesetting.message": "管理员 {LIGHTRED}{0}{DEFAULT} {LIGHTRED}启用{DEFAULT} 设置 {LIGHTRED}{1}{DEFAULT}.",
   "disable.changesetting.message": "管理员 {LIGHTRED}{0}{DEFAULT} {LIGHTRED}禁用{DEFAULT} 设置 {LIGHTRED}{1}{DEFAULT}.",

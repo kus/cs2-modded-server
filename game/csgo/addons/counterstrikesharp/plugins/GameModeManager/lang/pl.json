@@ -1,6 +1,9 @@
 {
   "plugin.prefix": "[{GREEN}Serwer{DEFAULT}]",
-  "changemap.message": "{LIGHTRED}{0}{DEFAULT} zmienił mapę na {LIGHTRED}{1}{DEFAULT}.",
+  "game.menu-title": "Polecenia gry",
+  "currentmap.message": "{RED}[Aktualna mapa]{DEFAULT} {0}",
+  "currentmode.message": "{GREEN}[Tryb aktualny]{DEFAULT} {0}",
+  "changemap.message": "Administrator {LIGHTRED}{0}{DEFAULT} zmienił mapę na {LIGHTRED}{1}{DEFAULT}.",
   "changemode.message": "Administrator {LIGHTRED}{0}{DEFAULT} zmienił tryb gry na {LIGHTRED}{1}{DEFAULT}.",
   "enable.changesetting.message": "Administrator {LIGHTRED}{0}{DEFAULT} {LIGHTRED}Włączył{DEFAULT} ustawienie {LIGHTRED}{1}{DEFAULT}.",
   "disable.changesetting.message": "Administrator {LIGHTRED}{0}{DEFAULT} {LIGHTRED}Wyłączył{DEFAULT} ustawienie {LIGHTRED}{1}{DEFAULT}.",

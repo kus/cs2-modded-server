@@ -1,6 +1,9 @@
 {
   "plugin.prefix": "[{GREEN}Server{DEFAULT}]",
-  "changemap.message": "{LIGHTRED}{0}{DEFAULT} hat die Karte zu {LIGHTRED}{1}{DEFAULT} geändert.",
+  "game.menu-title": "Spielbefehle",
+  "currentmap.message": "{RED}[Aktuelle Karte]{DEFAULT} {0}", 
+  "currentmode.message": "{GREEN}[Aktueller Modus]{DEFAULT} {0}", 
+  "changemap.message": "Admin {LIGHTRED}{0}{DEFAULT} hat die Karte zu {LIGHTRED}{1}{DEFAULT} geändert.",
   "changemode.message": "Admin {LIGHTRED}{0}{DEFAULT} hat den Spielmodus zu {LIGHTRED}{1}{DEFAULT} geändert.",
   "enable.changesetting.message": "Admin {LIGHTRED}{0}{DEFAULT} hat die Einstellung {LIGHTRED}{1}{DEFAULT} {LIGHTRED}Aktiviert{DEFAULT}.",
   "disable.changesetting.message": "Admin {LIGHTRED}{0}{DEFAULT} hat die Einstellung {LIGHTRED}{1}{DEFAULT} {LIGHTRED}Deaktiviert{DEFAULT}.",
