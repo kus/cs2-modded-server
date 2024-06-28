@@ -1,234 +1,61 @@
 {
-  "Version": 5,
+  "Version": 3,
   "RTV": {
-    "Enabled": true,
-    "Mode": 0,
-    "MapFormat": false,
+    "Enabled": false,
     "Plugin": "addons/counterstrikesharp/plugins/RockTheVote/RockTheVote.dll",
-    "MapList": "addons/counterstrikesharp/plugins/RockTheVote/maplist.txt"
+    "MapListFile": "addons/counterstrikesharp/plugins/RockTheVote/maplist.txt",
+    "DefaultMapFormat": false
   },
-  "Maps": {
+  "MapGroup": {
     "Delay": 5,
+    "Default": "mg_active",
+    "DefaultMap": "de_dust2",
     "Style": "center",
-    "Default": "de_dust2"
-  },
-  "Votes": {
-    "Enabled": true,
-    "Maps": true,
-    "AllMaps": false,
-    "GameModes": true,
-    "GameSettings": false,
-    "Style": "center"
+    "File": "gamemodes_server.txt"
   },
   "Settings": {
     "Enabled": true,
-    "Style": "center",
-    "Folder": "settings"
+    "Folder": "settings",
+    "Style": "center"
   },
-  "Commands": {
+  "GameMode": {
+    "Rotation": false,
+    "Interval": 4,
+    "Delay": 5,
+    "Style": "center",
+    "ListEnabled": true,
+    "List": {
+      "comp": "Competitive",
+      "wingman": "Wingman",
+      "dm-multicfg": "Deathmatch",
+      "gg": "Gun Game",
+      "1v1": "1 v 1",
+      "awp": "AWP Only",
+      "aim": "Aim",
+      "prefire": "Prefire",
+      "retake": "Retakes",
+      "executes": "Executes",
+      "prac": "Practice Mode",
+      "bhop": "BHop",
+      "kz": "Kreedz Climbing",
+      "surf": "Surf",
+      "minigames": "Mini Games",
+      "deathrun": "Deathrun",
+      "course": "Course",
+      "scoutzknivez": "ScoutzKnives",
+      "hns": "Hide N Seek",
+      "soccer": "Soccer",
+      "dm": "Deathmatch (Valve)",
+      "ar": "Arms Race (Valve)",
+      "Casual-1.6": "Casual (1.6)"
+    }
+  },
+  "Votes": {
+    "Enabled": true,
     "Map": true,
-    "Maps": true,
-    "AllMaps": true
+    "GameMode": true,
+    "GameSetting": false,
+    "Style": "center"
   },
-  "Rotation": {
-    "Enabled": false,
-    "Cycle": 0,
-    "MapGroups": [
-      "mg_active",
-      "mg_delta"
-    ],
-    "ModeRotation": false,
-    "ModeInterval": 4,
-    "ModeSchedules": false,
-    "Schedule": [
-      {
-        "Time": "10:00",
-        "Mode": "Casual"
-      },
-      {
-        "Time": "15:00",
-        "Mode": "Practice"
-      },
-      {
-        "Time": "17:00",
-        "Mode": "Competitive"
-      }
-    ]
-  },
-  "GameModes": {
-    "Delay": 2,
-    "Style": "center",
-    "Default": "Casual",
-    "MapGroupFile": "gamemodes_server.txt",
-    "List": [
-      {
-        "Name": "Competitive",
-        "Config": "comp.cfg",
-        "MapGroups": [
-          "mg_comp"
-        ]
-      },
-      {
-        "Name": "Wingman",
-        "Config": "wingman.cfg",
-        "MapGroups": [
-          "mg_wingman"
-        ]
-      },
-      {
-        "Name": "Deathmatch",
-        "Config": "dm-multicfg.cfg",
-        "MapGroups": [
-          "mg_dm"
-        ]
-      },
-      {
-        "Name": "Gun Game",
-        "Config": "gg.cfg",
-        "MapGroups": [
-          "mg_gg"
-        ]
-      },
-      {
-        "Name": "1 v 1",
-        "Config": "1v1.cfg",
-        "MapGroups": [
-          "mg_1v1"
-        ]
-      },
-      {
-        "Name": "AWP Only",
-        "Config": "awp.cfg",
-        "MapGroups": [
-          "mg_awp"
-        ]
-      },
-      {
-        "Name": "Aim",
-        "Config": "aim.cfg",
-        "MapGroups": [
-          "mg_aim"
-        ]
-      },
-      {
-        "Name": "Prefire",
-        "Config": "prefire.cfg",
-        "MapGroups": [
-          "mg_prefire"
-        ]
-      },
-      {
-        "Name": "Retakes",
-        "Config": "retake.cfg",
-        "MapGroups": [
-          "mg_retake"
-        ]
-      },
-      {
-        "Name": "Executes",
-        "Config": "executes.cfg",
-        "MapGroups": [
-          "mg_executes"
-        ]
-      },
-      {
-        "Name": "Practice Mode",
-        "Config": "prac.cfg",
-        "MapGroups": [
-          "mg_prac"
-        ]
-      },
-      {
-        "Name": "BHop",
-        "Config": "bhop.cfg",
-        "MapGroups": [
-          "mg_bhop"
-        ]
-      },
-      {
-        "Name": "Kreedz Climbing",
-        "Config": "kz.cfg",
-        "MapGroups": [
-          "mg_kz"
-        ]
-      },
-      {
-        "Name": "Surf",
-        "Config": "surf.cfg",
-        "MapGroups": [
-          "mg_surf"
-        ]
-      },
-      {
-        "Name": "Mini Games",
-        "Config": "minigames.cfg",
-        "MapGroups": [
-          "mg_minigames"
-        ]
-      },
-      {
-        "Name": "Deathrun",
-        "Config": "deathrun.cfg",
-        "MapGroups": [
-          "mg_deathrun"
-        ]
-      },
-      {
-        "Name": "Course",
-        "Config": "course.cfg",
-        "MapGroups": [
-          "mg_course"
-        ]
-      },
-      {
-        "Name": "ScoutzKnives",
-        "Config": "scoutzknivez.cfg",
-        "MapGroups": [
-          "mg_scoutzknivez"
-        ]
-      },
-      {
-        "Name": "Hide N Seek",
-        "Config": "hns.cfg",
-        "MapGroups": [
-          "mg_hns"
-        ]
-      },
-      {
-        "Name": "Soccer",
-        "Config": "soccer.cfg",
-        "MapGroups": [
-          "mg_soccer"
-        ]
-      },
-      {
-        "Name": "Deathmatch (Valve)",
-        "Config": "dm.cfg",
-        "MapGroups": [
-          "mg_dm"
-        ]
-      },
-      {
-        "Name": "Arms Race (Valve)",
-        "Config": "ar.cfg",
-        "MapGroups": [
-          "mg_gg"
-        ]
-      },
-      {
-        "Name": "Casual",
-        "Config": "casual.cfg",
-        "MapGroups": [
-          "mg_comp"
-        ]
-      },
-      {
-        "Name": "Casual (1.6)",
-        "Config": "Casual-1.6.cfg",
-        "MapGroups": [
-          "mg_Casual-1.6"
-        ]
-      }
-    ]
-  }
+  "ConfigVersion": 3
 }

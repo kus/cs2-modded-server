@@ -21,13 +21,5 @@
   "setting.vote.menu-title": "Сменить настройку {GOLD}{0}{DEFAULT}?",
   "setting.show.menu-response": "Скажите {GREEN}!{0}{DEFAULT}, чтобы создать голосование.",
   "settings.menu-actions": "Действия настроек",
-  "settings.menu-title": "Список настроек",
-  "timeleft.prefix": "{red}[Timeleft]{default}",
-  "timeleft.remaining-rounds": "{0} осталось раундов",
-  "timeleft.remaining-time-hour": "Осталось времени {0}:{1}:{2}",
-  "timeleft.remaining-time-minute": "Осталось времени {0} минут и {1} секунд",
-  "timeleft.remaining-time-second": "Осталось времени {0} секунд",
-  "timeleft.no-time-limit": "Ограничений по времени нет",
-  "timeleft.last-round": "Это последний раунд",
-  "timeleft.time-over": "Время закончилось, это последний раунд"
+  "settings.menu-title": "Список настроек"
   }

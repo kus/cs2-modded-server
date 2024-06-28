@@ -21,13 +21,5 @@
   "setting.vote.menu-title": "Mainīt iestatījumu {GOLD}{0}{DEFAULT}?",
   "setting.show.menu-response": "Saki {GREEN}!{0}{DEFAULT}, lai izveidotu balsojumu.",
   "settings.menu-actions": "Iestatījumu darbības",
-  "settings.menu-title": "Iestatījumu saraksts",
-  "timeleft.prefix": "{red}[Timeleft]{default}",
-  "timeleft.remaining-rounds": "{0} raundi(s) palikuši/is",
-  "timeleft.remaining-time-hour": "Atlikušais Laiks {0}:{1}:{2}",
-  "timeleft.remaining-time-minute": "Atlikušais Laiks {0} minūte(s) un {1} sekunde(s)",
-  "timeleft.remaining-time-second": "Atlikušais Laiks {0} sekunde(s)",
-  "timeleft.no-time-limit": "Nav laika limita",
-  "timeleft.last-round": "Šis ir pēdējais raunds",
-  "timeleft.time-over": "Laiks ir beidzies, šis ir pēdējāis raunds"
+  "settings.menu-title": "Iestatījumu saraksts"
   }
