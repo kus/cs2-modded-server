@@ -555,6 +555,10 @@ Admins can type `!maps` in chat and it will bring up a menu of all the maps for 
 
 At the end of the map (if time runs out or win conditions are met) it a vote will show to choose a map from the current mod.
 
+### Changing settings
+
+Admins can type `!settings` in chat and it will bring up a menu of all the settings you can enable or disable. i.e.: Bunnyhopping, fun mode etc.
+
 ### Changing game modes
 
 <img alt="Admin change game mode menu" src="https://github.com/kus/cs2-modded-server/blob/assets/assets/admin-modes.png?raw=true&sanitize=true">
