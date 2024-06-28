@@ -544,6 +544,7 @@
         </member>
         <member name="M:CounterStrikeSharp.API.Core.CBaseEntity.Teleport(CounterStrikeSharp.API.Modules.Utils.Vector,CounterStrikeSharp.API.Modules.Utils.QAngle,CounterStrikeSharp.API.Modules.Utils.Vector)">
             <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+            <exception cref="T:System.ArgumentNullException">No valid argument</exception>
         </member>
         <member name="M:CounterStrikeSharp.API.Core.CBaseEntity.DispatchSpawn">
             <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
