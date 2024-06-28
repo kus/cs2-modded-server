@@ -1,5 +1,5 @@
 {
-  "Version": 8,
+  "Version": 9,
   "MaxPlayers": 9,
   "TerroristRatio": 0.45,
   "RoundsToScramble": 5,
@@ -13,5 +13,6 @@
   "QueuePriorityFlag": "@css/vip",
   "IsDebugMode": false,
   "ShouldForceEvenTeamsWhenPlayerCountIsMultipleOf10": true,
-  "EnableFallbackBombsiteAnnouncement": true
+  "EnableFallbackBombsiteAnnouncement": true,
+  "ShouldRemoveSpectators": true
 }
