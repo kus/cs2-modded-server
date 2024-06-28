@@ -64,6 +64,7 @@
     "map.de_overpass.under_to_b": "Clear underpass and go towards B short",
     "map.de_overpass.a_long": "Attack A site from A long",
     "map.de_overpass.a_short": "Attack A site from A short (mid)",
+    "map.de_overpass.retake_b": "Retake B site from CT spawn",
     "map.de_anubis.b_main": "Attack B site from B main",
     "map.de_anubis.mid_to_b": "Attack B site from mid (B palace)",
     "map.de_anubis.water_to_b": "Attack B site from water (B connector/E-Box)",

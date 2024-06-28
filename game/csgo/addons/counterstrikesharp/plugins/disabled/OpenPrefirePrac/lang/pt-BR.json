@@ -64,6 +64,7 @@
     "map.de_overpass.under_to_b": "Limpe a passagem subterrânea e siga em direção a B curto",
     "map.de_overpass.a_long": "Ataque ao site A do A longo",
     "map.de_overpass.a_short": "Atacar o local A a partir de A curto (médio)",
+    "map.de_overpass.retake_b": "Retomar o local B da desova do CT",
     "map.de_anubis.b_main": "Atacar o local B a partir do local B principal",
     "map.de_anubis.mid_to_b": "Ataque o local B a partir do meio (conector b)",
     "map.de_anubis.water_to_b": "Atacar o local B a partir da água",
