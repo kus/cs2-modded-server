@@ -24,6 +24,7 @@ if not exist "%ROOT_DIR%steamcmd\steamcmd.exe" (
 )
 
 :: Use SteamCMD to download CS2
+:: If you want to validate files, put validate before +quit so it reads "+app_update 730 validate +quit"
 echo Using SteamCMD to check for updates.
 start /wait %ROOT_DIR%steamcmd\steamcmd.exe +force_install_dir ../server +login anonymous +app_update 730 +quit
 
