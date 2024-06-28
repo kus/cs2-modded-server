@@ -21,5 +21,13 @@
   "setting.vote.menu-title": "Changer le paramètre {GOLD}{0}{DEFAULT} ?",
   "setting.show.menu-response": "Dites {GREEN}!{0}{DEFAULT} pour créer un vote.",
   "settings.menu-actions": "Actions des paramètres",
-  "settings.menu-title": "Liste des paramètres"
+  "settings.menu-title": "Liste des paramètres",
+  "timeleft.prefix": "{red}[Timeleft]{default}",
+  "timeleft.remaining-rounds": "{0} tour(s) restant(s)",
+  "timeleft.remaining-time-hour": "Temps restant {0}:{1}:{2}",
+  "timeleft.remaining-time-minute": "Temps restant {0} minute(s) et {1} seconde(s)",
+  "timeleft.remaining-time-second": "Temps restant {0} seconde(s)",
+  "timeleft.no-time-limit": "Il n'y a pas de limite de temps",
+  "timeleft.last-round": "C'est le dernier tour",
+  "timeleft.time-over": "Le temps est écoulé, c'est le dernier tour"
   }

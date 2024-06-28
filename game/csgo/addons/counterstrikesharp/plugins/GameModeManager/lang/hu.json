@@ -21,5 +21,13 @@
   "setting.vote.menu-title": "{GOLD}{0}{DEFAULT} beállítás módosítása?",
   "setting.show.menu-response": "Írj {GREEN}!{0}{DEFAULT} a szavazás létrehozásához.",
   "settings.menu-actions": "Beállítások műveletei",
-  "settings.menu-title": "Beállítások listája"
+  "settings.menu-title": "Beállítások listája",
+  "timeleft.prefix": "{red}[Timeleft]{default}",
+  "timeleft.remaining-rounds": "{0} forduló(t) van hátra", 
+  "timeleft.remaining-time-hour": "Hátralévő idő: {0}:{1}:{2}",
+  "timeleft.remaining-time-minute": "Hátralévő idő: {0} perc és {1} másodperc",
+  "timeleft.remaining-time-second": "Hátralévő idő: {0} másodperc",
+  "timeleft.no-time-limit": "Nincs időkorlát",
+  "timeleft.remaining-last-round": "Ez az utolsó forduló",
+  "timeleft.remaining-time-over": "Lejárt az idő, ez az utolsó forduló"
   }

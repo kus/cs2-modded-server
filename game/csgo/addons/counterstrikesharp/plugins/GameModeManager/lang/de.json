@@ -21,5 +21,13 @@
   "setting.vote.menu-title": "Einstellung {GOLD}{0}{DEFAULT} ändern?",
   "setting.show.menu-response": "Sage {GREEN}!{0}{DEFAULT} um eine Abstimmung zu erstellen.",
   "settings.menu-actions": "Einstellungen-Aktionen",
-  "settings.menu-title": "Einstellungsliste"
+  "settings.menu-title": "Einstellungsliste",
+  "timeleft.prefix": "{red}[Timeleft]{default}",
+  "timeleft.remaining-rounds": "{0} Runde(n) verbleibend",
+  "timeleft.remaining-time-hour": "Verbleibende Zeit {0}:{1}:{2}",
+  "timeleft.remaining-time-minute": "Verbleibende Zeit {0} Minute(n) und {1} Sekunde(n)",
+  "timeleft.remaining-time-second": "Verbleibende Zeit {0} Sekunde(n)",
+  "timeleft.no-time-limit": "Es gibt kein Zeitlimit",
+  "timeleft.remaining-last-round": "Dies ist die letzte Runde",
+  "timeleft.remaining-time-over": "Die Zeit ist abgelaufen, dies ist die letzte Runde"
   }

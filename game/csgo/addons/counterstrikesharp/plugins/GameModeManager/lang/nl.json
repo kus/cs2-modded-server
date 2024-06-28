@@ -21,5 +21,13 @@
   "setting.vote.menu-title": "Instelling {GOLD}{0}{DEFAULT} wijzigen?",
   "setting.show.menu-response": "Zeg {GREEN}!{0}{DEFAULT} om een stemming te creëren.",
   "settings.menu-actions": "Instellingsacties",
-  "settings.menu-title": "Lijst met instellingen"
+  "settings.menu-title": "Lijst met instellingen",
+  "timeleft.prefix": "{red}[Timeleft]{default}",
+  "timeleft.remaining-rounds": "{0} ronde(s) resterend",
+  "timeleft.remaining-time-hour": "Resterende tijd {0}:{1}:{2}",
+  "timeleft.remaining-time-minute": "Resterende tijd {0} minuut(en) en {1} seconden",
+  "timeleft.remaining-time-second": "Resterende tijd {0} seconden",
+  "timeleft.no-time-limit": "Er is geen tijdslimiet",
+  "timeleft.remaining-last-round": "Dit is de laatste ronde",
+  "timeleft.remaining-time-over": "De tijd is om, dit is de laatste ronde"
   }

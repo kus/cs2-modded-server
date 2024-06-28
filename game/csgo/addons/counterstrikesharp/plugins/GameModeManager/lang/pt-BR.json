@@ -21,5 +21,13 @@
   "setting.vote.menu-title": "Mudar a configuração {GOLD}{0}{DEFAULT}?",
   "setting.show.menu-response": "Digite {GREEN}!{0}{DEFAULT} para criar uma votação.",
   "settings.menu-actions": "Ações das configurações",
-  "settings.menu-title": "Lista de configurações"
+  "settings.menu-title": "Lista de configurações",
+  "timeleft.prefix": "{red}[Timeleft]{default}",
+  "timeleft.remaining-rounds": "{0} rodada(s) restante(s)",
+  "timeleft.remaining-time-hour": "Tempo restante {0}:{1}:{2}",
+  "timeleft.remaining-time-minute": "Tempo restante {0} minuto(s) e {1} segundo(s)",
+  "timeleft.remaining-time-second": "Tempo restante {0} segundo(s)",
+  "timeleft.no-time-limit": "Não há limite de tempo",
+  "timeleft.last-round": "Esta é a última rodada",
+  "timeleft.time-over": "O tempo acabou, esta é a última rodada"
   }

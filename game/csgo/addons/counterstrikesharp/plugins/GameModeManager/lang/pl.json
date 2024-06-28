@@ -21,5 +21,13 @@
   "setting.vote.menu-title": "Zmienić ustawienie {GOLD}{0}{DEFAULT}?",
   "setting.show.menu-response": "Powiedz {GREEN}!{0}{DEFAULT}, aby utworzyć głosowanie.",
   "settings.menu-actions": "Akcje ustawień",
-  "settings.menu-title": "Lista ustawień"
+  "settings.menu-title": "Lista ustawień",
+  "timeleft.prefix": "{red}[Timeleft]{default}",
+  "timeleft.remaining-rounds": "Pozostało {0} rund(y)",
+  "timeleft.remaining-time-hour": "Pozostały czas {0}:{1}:{2}",
+  "timeleft.remaining-time-minute": "Pozostały czas {0} minut(y) i {1} sekund(y)",
+  "timeleft.remaining-time-second": "Pozostały czas {0} sekund(y)",
+  "timeleft.no-time-limit": "Nie ma limitu czasowego",
+  "timeleft.last-round": "To jest ostatnia runda",
+  "timeleft.time-over": "Czas minął, to jest ostatnia runda"
   }
