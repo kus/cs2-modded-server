@@ -31,7 +31,7 @@
     "AllMaps": true
   },
   "Rotation": {
-    "Enabled": true,
+    "Enabled": false,
     "Cycle": 0,
     "MapGroups": [
       "mg_active",
