@@ -76,7 +76,7 @@ Getting up and running:
 
 Mod | Version | Why
 --- | --- | ---
-[Metamod:Source](http://www.sourcemm.net/downloads.php?branch=master) | `2.0.0-1293` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
+[Metamod:Source](http://www.sourcemm.net/downloads.php?branch=master) | `2.0.0-1297` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
 [CleanerCS2](https://github.com/Source2ZE/CleanerCS2) | `1.0.3` | Allows you to filter out console prints with regular expressions
 [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `248` | Attempts to implement a .NET Core scripting layer on top of a Metamod Source Plugin, allowing developers to create plugins that interact with the game server in a modern language (C#)
 [CS2_ExecAfter](https://github.com/kus/CS2_ExecAfter) | `1.0.0` | Executes a command after server event (i.e. OnMapStart) or a delay.
