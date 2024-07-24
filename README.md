@@ -84,14 +84,14 @@ Mod | Version | Why
 [CS2_DamageInfo](https://github.com/K4ryuu/CS2_DamageInfo) | `2.3.2` | Displays the amount of damage players have inflicted on the victim's HP and Armor, as well as the hit groups they have hit.
 [GameModeManager](https://github.com/nickj609/GameModeManager)| `1.0.43` | A simple Counter-Strike 2 server plugin that helps admins manage game modes and map groups.
 [Rock The Vote](https://github.com/abnerfs/cs2-rockthevote)| `1.8.5-custombuild` | General purpose cs2 map voting plugin, made with love from scratch
-[MatchZy](https://github.com/shobhit-pathak/MatchZy) | `0.7.12` | MatchZy is a plugin for CS2 for running and managing practice/pugs/scrims/matches with easy configuration!
+[MatchZy](https://github.com/shobhit-pathak/MatchZy) | `0.7.13` | MatchZy is a plugin for CS2 for running and managing practice/pugs/scrims/matches with easy configuration!
 [MapConfigurator](https://github.com/ManifestManah/MapConfigurator)| `1.0.2` | Allows you to quick and easily create unique configuration files for each map on your server.
 [SimpleAdmin](https://github.com/connercsbn/SimpleAdmin/)| `0.1.2` | Adds basic administrator functions
 [CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon)| `1.2.0` | This is a rudimentary implementation of a RCON plugin for CS2 using CounterStrikeSharp as RCON does not work whilst connected to the server
 [SharpTimer](https://github.com/DEAFPS/SharpTimer/)| `0.2.5` | SharpTimer is a simple Surf/KZ/Bhop/MG/Deathrun/etc CS2 Timer plugin
 [GunGame](https://github.com/ssypchenko/cs2-gungame)| `1.1.2` | GunGame mode on Counter Strike Sharp
 [K4-Arenas](https://github.com/K4ryuu/K4-Arenas)| `1.4.4` | All in one arena plugin, that you can use to have a ladder type gameplay. Support all map, 2v2/3v3/etc
-[CS2 Retakes](https://github.com/B3none/cs2-retakes)| `2.0.6` | CS2 implementation of retakes. Based on the version for CS:GO by Splewis.
+[CS2 Retakes](https://github.com/B3none/cs2-retakes)| `2.0.7` | CS2 implementation of retakes. Based on the version for CS:GO by Splewis.
 [CS2 Retakes Shared](https://github.com/B3none/cs2-retakes)| `2.0.0` | Shared library for CS2 Retakes.
 [CS2 Instadefuse](https://github.com/B3none/cs2-instadefuse)| `1.4.3` | Allows a CT to instantly defuse the bomb when nothing can prevent defusal. Written in C# for CounterStrikeSharp.
 [CS2 Retakes Allocator](https://github.com/yonilerner/cs2-retakes-allocator)| `2.3.10` | Advanced weapon allocation for B3none/cs2-retakes
