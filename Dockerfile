@@ -37,15 +37,7 @@ WORKDIR /home/cs2-modded-server/
 
 RUN chown -R steam:steam /home/steam/cs2
 
-RUN git clone https://github.com/kus/cs2-modded-server
-
-RUN echo cloned repository
-
-RUN mv /home/cs2-modded-server/cs2-modded-server/* /home/cs2-modded-server
-
-RUN rm -rf /home/cs2-modded-server/cs2-modded-server
-
-WORKDIR /home/cs2-modded-server/
+COPY . /home/cs2-modded-server/
 
 USER steam
 
