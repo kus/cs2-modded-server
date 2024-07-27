@@ -3,11 +3,11 @@ on:
   push:
     branches: [master]
   workflow_dispatch:
-  permissions:
-    content: read
-    packages: write
 jobs:
   docker:
+    permissions:
+      contents: read
+      packages: write
     runs-on: ubuntu-latest
     steps:
       - name: Set up QEMU
