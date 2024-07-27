@@ -110,6 +110,7 @@ if [ ! -d "/steamcmd" ]; then
 fi
 
 chown -R ${user}:${user} /steamcmd
+chown -R ${user}:${user} /home/${user}
 
 echo "Downloading any updates for CS2..."
 # https://developer.valvesoftware.com/wiki/Command_line_options
@@ -123,8 +124,6 @@ sudo -u $user /steamcmd/steamcmd.sh \
     +quit
 
 cd /home/${user} || exit
-
-chown -R ${user}:${user} /home/${user}
 
 mkdir -p /root/.steam/sdk32/
 ln -sf /steamcmd/linux32/steamclient.so /root/.steam/sdk32/
