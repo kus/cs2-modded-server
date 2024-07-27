@@ -137,9 +137,6 @@ ln -sf /steamcmd/linux32/steamclient.so /home/${user}/.steam/sdk32/
 mkdir -p /home/${user}/.steam/sdk64/
 ln -sf /steamcmd/linux64/steamclient.so /home/${user}/.steam/sdk64/
 
-echo "Installing mods"
-cp -R /home/game/csgo/ /home/${user}/cs2/game/
-
 echo "Merging in custom files"
 cp -RT /home/custom_files/ /home/${user}/cs2/game/csgo/
 

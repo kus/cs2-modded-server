@@ -29,17 +29,16 @@ ENV STEAM_ACCOUNT=""
 RUN echo "steam ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/steam \
     && chmod 0440 /etc/sudoers.d/steam
 
-RUN mkdir -p /home/cs2-modded-server
+ENV HOME="/home/steam/cs2/"
 
-RUN mkdir -p /home/steam/cs2
+RUN mkdir -p $HOME
 
-ENV HOME="/home/cs2-modded-server/"
 WORKDIR $HOME
 
-RUN chown -R steam:steam /home/steam/cs2
+RUN chown -R steam:steam $HOME
 
-COPY . /home/cs2-modded-server/
+COPY . $HOME
 
 USER steam
 
-CMD [ "sudo", "-E", "bash", "/home/cs2-modded-server/install_docker.sh" ]
+CMD [ "sudo", "-E", "bash", "$HOME/install_docker.sh" ]
