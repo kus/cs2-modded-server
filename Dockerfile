@@ -33,7 +33,8 @@ RUN mkdir -p /home/cs2-modded-server
 
 RUN mkdir -p /home/steam/cs2
 
-WORKDIR /home/cs2-modded-server/
+ENV HOME="/home/cs2-modded-server/"
+WORKDIR $HOME
 
 RUN chown -R steam:steam /home/steam/cs2
 
