@@ -419,6 +419,7 @@
 				"workshop/3078701726/aim_ak-colt_CS2"   ""
 				"workshop/3085962528/aim_usp"		""
 				"workshop/3075996446/aim_deagle"		""
+				"workshop/3082605693/aim_long_dust"		""
 			}
 		}
 		"mg_prefire"
