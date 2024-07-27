@@ -177,13 +177,13 @@ sudo -u $user ./game/bin/linuxsteamrt64/cs2 \
     -tickrate "$TICKRATE" \
     "$IP_ARGS" \
     -port "$PORT" \
-    +map de_dust2 \
+    +map "${MAP-de_dust2}" \
     -maxplayers "$MAXPLAYERS" \
     -authkey "$API_KEY" \
     +sv_setsteamaccount "$STEAM_ACCOUNT" \
     +game_type "${GAME_TYPE-0}" \
     +game_mode "${GAME_MODE-0}" \
-    +mapgroup mg_active \
+    +mapgroup "${MAP_GROUP-mg_active}" \
     +sv_lan "$LAN" \
     +sv_password "$SERVER_PASSWORD" \
     +rcon_password "$RCON_PASSWORD" \
