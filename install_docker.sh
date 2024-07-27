@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# As root (sudo su)
-# cd / && curl -s -H "Cache-Control: no-cache" -o "install.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/master/install.sh" && chmod +x install.sh && bash install.sh
-
 # Variables
 user="steam"
 BRANCH="master"
@@ -127,10 +124,10 @@ sudo -u $user /steamcmd/steamcmd.sh \
 
 cd /home/${user} || exit
 
-# mkdir -p /root/.steam/sdk32/
-# ln -sf /steamcmd/linux32/steamclient.so /root/.steam/sdk32/
-# mkdir -p /root/.steam/sdk64/
-# ln -sf /steamcmd/linux64/steamclient.so /root/.steam/sdk64/
+mkdir -p /root/.steam/sdk32/
+ln -sf /steamcmd/linux32/steamclient.so /root/.steam/sdk32/
+mkdir -p /root/.steam/sdk64/
+ln -sf /steamcmd/linux64/steamclient.so /root/.steam/sdk64/
 
 mkdir -p /home/${user}/.steam/sdk32/
 ln -sf /steamcmd/linux32/steamclient.so /home/${user}/.steam/sdk32/
