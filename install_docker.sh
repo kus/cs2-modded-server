@@ -124,6 +124,8 @@ sudo -u $user /steamcmd/steamcmd.sh \
 
 cd /home/${user} || exit
 
+chown -R ${user}:${user} /home/${user}
+
 mkdir -p /root/.steam/sdk32/
 ln -sf /steamcmd/linux32/steamclient.so /root/.steam/sdk32/
 mkdir -p /root/.steam/sdk64/
@@ -137,7 +139,7 @@ ln -sf /steamcmd/linux64/steamclient.so /home/${user}/.steam/sdk64/
 echo "Merging in custom files"
 cp -RT /home/custom_files/ /home/${user}/cs2/game/csgo/
 
-chown -R ${user}:${user} /home/${user}/cs2
+chown -R ${user}:${user} /home/${user}
 
 cd /home/${user}/cs2 || exit
 
