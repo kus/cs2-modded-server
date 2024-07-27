@@ -181,8 +181,8 @@ sudo -u $user ./game/bin/linuxsteamrt64/cs2 \
     -maxplayers "$MAXPLAYERS" \
     -authkey "$API_KEY" \
     +sv_setsteamaccount "$STEAM_ACCOUNT" \
-    +game_type 0 \
-    +game_mode 0 \
+    +game_type "${GAME_TYPE-0}" \
+    +game_mode "${GAME_MODE-0}" \
     +mapgroup mg_active \
     +sv_lan "$LAN" \
     +sv_password "$SERVER_PASSWORD" \
