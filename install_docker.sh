@@ -169,24 +169,22 @@ fi
 
 echo "Starting server on $PUBLIC_IP:$PORT"
 # https://developer.valvesoftware.com/wiki/Counter-Strike_2/Dedicated_Servers#Command-Line_Parameters
-command="./game/bin/linuxsteamrt64/cs2 \
+sudo -u $user ./game/bin/linuxsteamrt64/cs2 \
     -dedicated \
     -console \
     -usercon \
     -autoupdate \
-    -tickrate $TICKRATE \
-	$IP_ARGS \
-    -port $PORT \
+    -tickrate "$TICKRATE" \
+    "$IP_ARGS" \
+    -port "$PORT" \
     +map de_dust2 \
-    -maxplayers $MAXPLAYERS \
-    -authkey $API_KEY \
-	+sv_setsteamaccount $STEAM_ACCOUNT \
+    -maxplayers "$MAXPLAYERS" \
+    -authkey "$API_KEY" \
+    +sv_setsteamaccount "$STEAM_ACCOUNT" \
     +game_type 0 \
     +game_mode 0 \
     +mapgroup mg_active \
-    +sv_lan $LAN \
-	+sv_password $SERVER_PASSWORD \
-	+rcon_password $RCON_PASSWORD \
-	+exec $EXEC"
-
-sudo -u $user "$command"
+    +sv_lan "$LAN" \
+    +sv_password "$SERVER_PASSWORD" \
+    +rcon_password "$RCON_PASSWORD" \
+    +exec "$EXEC"
