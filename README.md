@@ -315,6 +315,13 @@ Ensure you have all the settings for your [environment variables](#environment-v
 
    **You must connect to the server from the public IP, not the LAN IP even if you are on the same network. The script logs the public IP `Starting server on XXX.XXX.XXX.XXX:27015`**
 
+  **For steamcmd to work correctly, you may need to install the following packages:**
+`
+dpkg --add-architecture i386
+apt-get update
+apt-get install lib32gcc-s1
+`
+
 - **If setting up LAN server:**
 
    Set environment variable `LAN` to `1`
