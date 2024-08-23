@@ -78,7 +78,7 @@ Mod | Version | Why
 --- | --- | ---
 [Metamod:Source](http://www.sourcemm.net/downloads.php?branch=master) | `2.0.0-1297` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
 [CleanerCS2](https://github.com/Source2ZE/CleanerCS2) | `1.0.3` | Allows you to filter out console prints with regular expressions
-[CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `248` | Attempts to implement a .NET Core scripting layer on top of a Metamod Source Plugin, allowing developers to create plugins that interact with the game server in a modern language (C#)
+[CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `259` | Attempts to implement a .NET Core scripting layer on top of a Metamod Source Plugin, allowing developers to create plugins that interact with the game server in a modern language (C#)
 [CS2_ExecAfter](https://github.com/kus/CS2_ExecAfter) | `1.0.0` | Executes a command after server event (i.e. OnMapStart) or a delay.
 [CS2 Remove Map Weapons](https://github.com/kus/CS2-Remove-Map-Weapons) | `1.0.1` | Remove weapons from the map in CS2 as `mp_weapons_allow_map_placed 0` does not work.
 [CS2_DamageInfo](https://github.com/KitsuneLab-Development/CS2_DamageInfo) | `2.3.2` | Displays the amount of damage players have inflicted on the victim's HP and Armor, as well as the hit groups they have hit.

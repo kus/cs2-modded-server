@@ -790,6 +790,17 @@
             <remarks>A lot of entity outputs do not use this value</remarks>
             </summary>
         </member>
+        <member name="M:CounterStrikeSharp.API.Core.Translations.LocalizerExtensions.ForPlayer(Microsoft.Extensions.Localization.IStringLocalizer,CounterStrikeSharp.API.Core.CCSPlayerController,System.String)">
+            <summary>
+            Returns a localized string using the locale of the specified player.
+            <remarks>Defaults to the server language if the player is invalid.</remarks>
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.Translations.LocalizerExtensions.ForPlayer(Microsoft.Extensions.Localization.IStringLocalizer,CounterStrikeSharp.API.Core.CCSPlayerController,System.String,System.Object[])">
+            <summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Core.Translations.LocalizerExtensions.ForPlayer(Microsoft.Extensions.Localization.IStringLocalizer,CounterStrikeSharp.API.Core.CCSPlayerController,System.String)"/>
+            </summary>
+        </member>
         <member name="M:CounterStrikeSharp.API.Core.Translations.PlayerLanguageExtensions.GetLanguage(CounterStrikeSharp.API.Core.CCSPlayerController)">
             <summary>
             Returns the players configured language, as set using the "css_lang" command.
