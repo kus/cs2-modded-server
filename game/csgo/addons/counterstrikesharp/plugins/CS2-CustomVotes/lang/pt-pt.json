@@ -1,9 +1,9 @@
 {
-  "vote.disabled": "Os votos personalizados estão {DarkBlue}DESATIVADOS{Default}!",
+  "vote.disabled": "Os votos personalizados estão {LightRed}DESATIVADOS{Default}!",
   "vote.active": "Já está a decorrer uma votação!",
-  "vote.started": "O jogador {DarkBlue}{0}{Default} começou uma votação para {DarkBlue}{1}{Default}",
-  "vote.cooldown": "Por favor espere {DarkBlue}{0}{Default} segundos entre as votações!",
+  "vote.started": "O jogador {Green}{0}{Default} começou uma votação para {Green}{1}{Default}",
+  "vote.cooldown": "Por favor espere {LightRed}{0}{Default} segundos entre as votações!",
   "vote.already_voted": "Já votou!",
-  "vote.finished_with": "Votar para {DarkBlue}{0}{Default} acaba em {DarkBlue}{1}{Default} ({2} votos).",
+  "vote.finished_with": "Votar para {Green}{0}{Default} acaba em {Green}{1}{Default} ({2} votos).",
   "vote.no_permission": "Não tem a permissão necessária para iniciar esta votação..."
 }

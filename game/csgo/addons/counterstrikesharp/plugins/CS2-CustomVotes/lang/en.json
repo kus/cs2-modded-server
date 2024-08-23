@@ -1,9 +1,9 @@
 {
-  "vote.disabled": "Custom Votes are {DarkBlue}disabled{Default}.",
+  "vote.disabled": "Custom Votes are {LightRed}disabled{Default}.",
   "vote.active": "A vote is already in progress.",
-  "vote.started": "Player {DarkBlue}{0}{Default} started vote for {DarkBlue}{1}{Default}.",
-  "vote.cooldown": "Please wait {DarkBlue}{0}{Default} seconds between votes.",
+  "vote.started": "Player {Green}{0}{Default} started vote for {Green}{1}{Default}.",
+  "vote.cooldown": "Please wait {LightRed}{0}{Default} seconds between votes.",
   "vote.already_voted": "You have already voted.",
-  "vote.finished_with": "Vote for {DarkBlue}{0}{Default} ended with {DarkBlue}{1}{Default} ({2} votes).",
+  "vote.finished_with": "Vote for {Green}{0}{Default} ended with {Green}{1}{Default} ({2} votes).",
   "vote.no_permission": "You do not have the required permission to start this vote."
 }
