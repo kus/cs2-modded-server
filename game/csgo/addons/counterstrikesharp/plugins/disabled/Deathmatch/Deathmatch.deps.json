@@ -546,7 +546,10 @@
           "CounterStrikeSharp.API": "1.0.239"
         },
         "runtime": {
-          "DeathmatchAPI.dll": {}
+          "DeathmatchAPI.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
