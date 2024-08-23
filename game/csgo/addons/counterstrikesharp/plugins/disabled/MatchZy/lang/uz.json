@@ -1,6 +1,7 @@
 {
   "matchzy.ready.markedready": "Siz tayyor deb belgilandingiz.",
   "matchzy.ready.markedunready": "Siz tayyor emas deb belgilandingiz.",
+  "matchzy.ready.readytotestorebackupinfomessage": "Tayyormas oʻyinchilar: {0}. Oʻyinning zaxira nusxasini tiklashga tayyor boʻlganingizda .ready yozing. {1}",
 
   "matchzy.knife.sidedecisionpending": "{green}{0}{default} pichoq raundida g‘alaba qozondi. Ularni {green}.stay{default} yoki {green}.switch{default} yozishini kutmoqdamiz.",
   "matchzy.knife.decidedtostay": "{green}{0}{default} qolishga qaror qildi.",
@@ -21,6 +22,7 @@
   "matchzy.pause.tacticaltimeout": "Taktik taym-out faol boʻlganda siz ushbu buyruqdan foydalana olmaysiz.",
                                                           
   "matchzy.restore.teamwantstorestore": "{green}{0}{default} oʻyinni joriy raundning boshiga tiklamoqchi. {green}{1}{default}, tasdiqlash uchun !stop yozing.",
+  "matchzy.restore.loadedsuccessfully": "Zaxira fayli muvaffaqiyatli yuklandi: {0}",
   "matchzy.restore.restoredsuccessfully": "Zaxira fayli muvaffaqiyatli tiklandi: {0}",
 
   "matchzy.backup.stopduringhalftime": "Tanaffus paytida ushbu buyruqdan foydalana olmaysiz.",
