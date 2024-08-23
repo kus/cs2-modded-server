@@ -1,5 +1,5 @@
 {
-  "Version": 9,
+  "Version": 11,
   "MaxPlayers": 9,
   "TerroristRatio": 0.45,
   "RoundsToScramble": 5,
@@ -14,5 +14,7 @@
   "IsDebugMode": false,
   "ShouldForceEvenTeamsWhenPlayerCountIsMultipleOf10": true,
   "EnableFallbackBombsiteAnnouncement": true,
-  "ShouldRemoveSpectators": true
+  "ShouldRemoveSpectators": true,
+  "IsBalanceEnabled": true,
+  "ShouldPreventTeamChangesMidRound": true
 }
