@@ -102,7 +102,7 @@ Mod | Version | Why
 [OpenPrefirePrac](https://github.com/lengran/OpenPrefirePrac)| `0.1.41` | Multiple prefire practices on competitive maps and support multiplayer practicing simultaneously.
 [CS2-CustomVotes](https://github.com/imi-tat0r/CS2-CustomVotes)| `1.1.2` | A plugin for Counter-Strike 2 to create custom votes for settings.
 [deathrun-manager](https://github.com/leoskiline/cs2-deathrun-manager)| `0.0.8` | Deathrun Manager for CounterStrikeSharp Framework CS2.
-[AnnouncementBroadcaster](https://github.com/lengran/CS2AnnouncementBroadcaster) | `0.3.1` | Conditional messages, OnCommand, OnPlayerConnect, OnRoundStart, and TimerMsgs.
+[AnnouncementBroadcaster](https://github.com/lengran/CS2AnnouncementBroadcaster) | `0.5` | Conditional messages, OnCommand, OnPlayerConnect, OnRoundStart, and TimerMsgs.
 [CS2FunMatchPlugin](https://github.com/TitaniumLithium/CS2FunMatchPlugin) | `1.1.0` | Random fun mode every round
 
 ## Share the love
