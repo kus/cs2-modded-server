@@ -24,6 +24,7 @@
   "matchzy.restore.teamwantstorestore": "{green}{0}{default} ゲームを現在のラウンドの始めに戻します。 {green}{1}{default}, 確認するには !stop と入力してください。",
   "matchzy.restore.loadedsuccessfully": "Backup file loaded successfully: {0}",
   "matchzy.restore.restoredsuccessfully": "バックアップファイルが正常に復元されました: {0}",
+  "matchzy.restore.stopcommandrequiresnodamage": "A request to restart the round cannot be given once a player has damaged any opposing player.",
 
   "matchzy.backup.stopduringhalftime": "ハーフタイム中はこのコマンドは使用できません。",
   "matchzy.backup.stopmatchended": "ゲーム終了後はこのコマンドは使用できません。",

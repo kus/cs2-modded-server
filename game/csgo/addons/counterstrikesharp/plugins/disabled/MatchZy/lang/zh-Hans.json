@@ -24,6 +24,7 @@
     "matchzy.restore.teamwantstorestore": "{green}{0}{default} 想要回溯游戏至本回合开始时。 {green}{1}{default}, 请输入 !stop 来确定。",
     "matchzy.restore.loadedsuccessfully": "Backup file loaded successfully: {0}",
     "matchzy.restore.restoredsuccessfully": "成功恢复备份文件: {0}",
+    "matchzy.restore.stopcommandrequiresnodamage": "A request to restart the round cannot be given once a player has damaged any opposing player.",
 
     "matchzy.backup.stopduringhalftime": "你不能在半场期间使用此命令.",
     "matchzy.backup.stopmatchended": "你不能在比赛结束后使用此命令.",

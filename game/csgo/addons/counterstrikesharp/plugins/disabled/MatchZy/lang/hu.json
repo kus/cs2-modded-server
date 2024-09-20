@@ -21,6 +21,7 @@
   "matchzy.restore.teamwantstorestore": "{green}{0}{default} vissza szeretné állítani a játékot az aktuális kör elejére. {green}{1}{default}, kérlek írd be: !stop a megerősítéshez.",
   "matchzy.restore.loadedsuccessfully": "Backup file loaded successfully: {0}",
   "matchzy.restore.restoredsuccessfully": "Biztonsági mentés sikeresen visszaállítva: {0}",
+  "matchzy.restore.stopcommandrequiresnodamage": "A request to restart the round cannot be given once a player has damaged any opposing player.",
   "matchzy.backup.stopduringhalftime": "Nem használhatod ezt a parancsot a félidőben.",
   "matchzy.backup.stopmatchended": "Nem használhatod ezt a parancsot a meccs vége után.",
   "matchzy.backup.stoptacticaltimeout": "Nem használhatod ezt a parancsot taktikai szünet közben.",

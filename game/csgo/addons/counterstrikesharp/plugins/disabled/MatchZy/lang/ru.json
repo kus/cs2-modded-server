@@ -21,6 +21,7 @@
     "matchzy.restore.teamwantstorestore": "{green}{0}{default} хочет восстановить игру до начала текущего раунда. {green}{1}{default}, пожалуйста, напишите !stop для подтверждения.",
     "matchzy.restore.loadedsuccessfully": "Backup file loaded successfully: {0}",
     "matchzy.restore.restoredsuccessfully": "Резервная копия успешно восстановлена: {0}",
+    "matchzy.restore.stopcommandrequiresnodamage": "A request to restart the round cannot be given once a player has damaged any opposing player.",
     "matchzy.backup.stopduringhalftime": "Вы не можете использовать эту команду во время смены сторон.",
     "matchzy.backup.stopmatchended": "Вы не можете использовать эту команду после окончания игры.",
     "matchzy.backup.stoptacticaltimeout": "Вы не можете использовать эту команду, когда активен тактический перерыв.",

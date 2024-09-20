@@ -24,6 +24,7 @@
   "matchzy.restore.teamwantstorestore": "{green}{0}{default} wants to restore the game to the beginning of the current round. {green}{1}{default}, please write !stop to confirm.",
   "matchzy.restore.loadedsuccessfully": "Backup file loaded successfully: {0}",
   "matchzy.restore.restoredsuccessfully": "Backup restored successfully from file: {0}",
+  "matchzy.restore.stopcommandrequiresnodamage": "A request to restart the round cannot be given once a player has damaged any opposing player.",
 
   "matchzy.backup.stopduringhalftime": "You cannot use this command during halftime.",
   "matchzy.backup.stopmatchended": "You cannot use this command after the game has ended.",
