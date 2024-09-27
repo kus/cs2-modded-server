@@ -71,7 +71,7 @@
             }
         },
 		{
-            "msg": "[GREEN]Server Mode[NORMAL]: [RED]10-Mans\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 Type [RED]!help[NORMAL] to access the 10-Man help menu.",
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]10-Mans\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 Type [GREEN].start[NORMAL] to start or [RED]!help[NORMAL] to access the 10-Man help menu.",
             "delay": 3,
             "properties": "Value",
             "cond": {
