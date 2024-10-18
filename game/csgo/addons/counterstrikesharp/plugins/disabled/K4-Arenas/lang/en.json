@@ -22,6 +22,7 @@
   "k4.general.challenge.inchallenge": "{lightred}Challenge can be only requested, if both players are not in a challenge.",
   "k4.general.challenge.notinarena": "{lightred}Challenge can be only requested, if both players are in the arena.",
   "k4.general.challenge.notchallenged": "{lightred}You have no challenge requests or they have expired.",
+  "k4.general.challenge.cancelled": "{lightred}Your challenge has been cancelled due to AFK or the opponent left.",
 
   "k4.general.commandclientonly": "{lightred}This command can only be used by clients.",
   "k4.general.commandhelp": "{silver}Expected Usage: {lime}!{0} {1}",
