@@ -10,7 +10,8 @@
         },
         {
             "msg": "A welcome message with delay.",
-            "cond": 3.7415926
+            "delay": 3.1415926,
+            "admin": True
         }
     ],
     "OnRoundStartMsgs": [
@@ -31,7 +32,8 @@
                 "Flag": "CS2AB_flag_3",
                 "op": 2,
                 "value": 0
-            }
+            },
+            "admin": true
         }
     ],
     "TimerMsgs" : [

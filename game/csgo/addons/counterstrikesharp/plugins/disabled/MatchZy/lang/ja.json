@@ -1,6 +1,7 @@
 {
   "matchzy.ready.markedready": "準備完了としてマークされました。",
   "matchzy.ready.markedunready": "準備ができていないとマークされています。",
+  "matchzy.ready.readytotestorebackupinfomessage": "Unready players: {0}. Please type .ready when you are ready to restore the match backup. {1}",
 
   "matchzy.knife.sidedecisionpending": "{green}{0}{default} ナイフラウンドに勝利しました。 入力を待機してます。 {green}.stay{default} か {green}.switch{default}.",
   "matchzy.knife.decidedtostay": "{green}{0}{default} 留まることに決めたました。",
@@ -21,7 +22,9 @@
   "matchzy.pause.tacticaltimeout": "テクニカルポーズがアクティブな場合、このコマンドは使用できません。",
 
   "matchzy.restore.teamwantstorestore": "{green}{0}{default} ゲームを現在のラウンドの始めに戻します。 {green}{1}{default}, 確認するには !stop と入力してください。",
+  "matchzy.restore.loadedsuccessfully": "Backup file loaded successfully: {0}",
   "matchzy.restore.restoredsuccessfully": "バックアップファイルが正常に復元されました: {0}",
+  "matchzy.restore.stopcommandrequiresnodamage": "A request to restart the round cannot be given once a player has damaged any opposing player.",
 
   "matchzy.backup.stopduringhalftime": "ハーフタイム中はこのコマンドは使用できません。",
   "matchzy.backup.stopmatchended": "ゲーム終了後はこのコマンドは使用できません。",

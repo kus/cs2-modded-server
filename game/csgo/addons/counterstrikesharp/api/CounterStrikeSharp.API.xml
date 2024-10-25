@@ -684,6 +684,12 @@
             <param name="command"></param>
             <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
         </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.Disconnect(CounterStrikeSharp.API.ValveConstants.Protobuf.NetworkDisconnectionReason)">
+            <summary>
+            Disconnects a player from the server with the specified reason.
+            </summary>
+            <param name="reason"></param>
+        </member>
         <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.ExecuteClientCommandFromServer(System.String)">
             <summary>
             Issue the specified command directly from the server (mimics the server executing the command with the given player context).
@@ -788,6 +794,17 @@
             Placeholder for CVariant
             <see href="https://github.com/alliedmodders/hl2sdk/blob/cs2/public/variant.h"/>
             <remarks>A lot of entity outputs do not use this value</remarks>
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.Translations.LocalizerExtensions.ForPlayer(Microsoft.Extensions.Localization.IStringLocalizer,CounterStrikeSharp.API.Core.CCSPlayerController,System.String)">
+            <summary>
+            Returns a localized string using the locale of the specified player.
+            <remarks>Defaults to the server language if the player is invalid.</remarks>
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.Translations.LocalizerExtensions.ForPlayer(Microsoft.Extensions.Localization.IStringLocalizer,CounterStrikeSharp.API.Core.CCSPlayerController,System.String,System.Object[])">
+            <summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Core.Translations.LocalizerExtensions.ForPlayer(Microsoft.Extensions.Localization.IStringLocalizer,CounterStrikeSharp.API.Core.CCSPlayerController,System.String)"/>
             </summary>
         </member>
         <member name="M:CounterStrikeSharp.API.Core.Translations.PlayerLanguageExtensions.GetLanguage(CounterStrikeSharp.API.Core.CCSPlayerController)">
@@ -1356,6 +1373,83 @@
             <param name="memberName"></param>
             <returns></returns>
         </member>
+        <member name="M:CounterStrikeSharp.API.Modules.UserMessages.UserMessage.FromPartialName(System.String)">
+            <summary>
+            Creates a new user message with a given network message name partial match.
+            </summary>
+            <param name="name"></param>
+            <throws>if the name is not a valid network message name</throws>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.UserMessages.UserMessage.FromId(System.Int32)">
+            <summary>
+            Creates a new user message with a given network message ID.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.UserMessages.UserMessage.FindIdByName(System.String)">
+            <summary>
+            Finds a network message ID by name.
+            <remarks>
+            Network message system must be loaded before this function can be used.
+            Avoid calling this method from <see cref="M:CounterStrikeSharp.API.Core.IPlugin.Load(System.Boolean)"/>
+            </remarks>
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.UserMessages.UserMessage.Name">
+            <summary>
+            Returns the network message name of this user message.
+            <example>CMsgTEFireBullets [452]</example>
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.UserMessages.UserMessage.Id">
+            <summary>
+            Returns the network message ID of this user message.
+            <example>452</example>
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.UserMessages.UserMessage.Type">
+            <summary>
+            Returns the protobuf message type of this user message.
+            <example>CMsgTEFireBullets</example>
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.UserMessages.UserMessage.DebugString">
+            <summary>
+            Returns the debug string of this user message, as defined by protobuf.
+            <example>
+            <code>
+            CMsgTEFireBullets [452], 452, origin {
+                x: -1969.24951
+                y: 2046.12683
+                z: 60.9242516
+            }
+            angles {
+            x: 32.8350143
+            y: 19.0894909
+            z: 0
+            }
+            weapon_id: 2441476
+            mode: 1
+            seed: 991759080
+            player: 6390016
+            inaccuracy: 0.00490000239
+            recoil_index: 0
+            spread: 0.0015
+            sound_type: 9
+            item_def_index: 61
+            sound_dsp_effect: 2005810340
+            ent_origin {
+                x: -1969.24976
+                y: 2046.12671
+                z: -1.92980957
+            }
+            num_bullets_remaining: 12
+            attack_type: 0
+            </code>
+            </example>
+            </summary>
+        </member>
         <member name="T:CounterStrikeSharp.API.Modules.Utils.Angle">
             <summary>
             A <c>Angle</c> object represents 3D Euler angle, offset from the cardinal Z axis.
@@ -1453,6 +1547,12 @@
         <member name="M:CounterStrikeSharp.API.Modules.Utils.EnumUtils.GetEnumMemberAttribute``1(System.Enum)">
             <summary>
             Brute force search using Enum.GetNames as enum members pointing to other enum members do not have the correct attributes.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Modules.Utils.RecipientFilter">
+            <summary>
+            A generic filter for determining whom to send message/sounds etc.
+            to and providing a bit of additional state information
             </summary>
         </member>
         <member name="T:CounterStrikeSharp.API.Modules.Utils.Vector">
@@ -1581,6 +1681,11 @@
             </summary>
             <remarks>Increments even when server is hibernating</remarks>
         </member>
+        <member name="P:CounterStrikeSharp.API.Server.FrameTime">
+            <summary>
+            Returns the time spent on last server or client frame
+            </summary>
+        </member>
         <member name="M:CounterStrikeSharp.API.Server.RunOnTickAsync(System.Int32,System.Action)">
             <summary>
             <inheritdoc cref="M:CounterStrikeSharp.API.Server.RunOnTick(System.Int32,System.Action)"/>
@@ -1643,6 +1748,11 @@
             <param name="fieldName" example="m_iHealth">Schema field name</param>
             <param name="extraOffset">Any additional offset to the schema field</param>
             <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="T:CounterStrikeSharp.API.ValveConstants.Protobuf.NetworkDisconnectionReason">
+            <summary>
+            Enum derived from `network_connection.proto`
+            </summary>
         </member>
     </members>
 </doc>

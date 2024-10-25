@@ -1,6 +1,7 @@
 {
     "matchzy.ready.markedready": "Du bist bereit.",
     "matchzy.ready.markedunready": "Du bist nicht mehr bereit.",
+    "matchzy.ready.readytotestorebackupinfomessage": "Unready players: {0}. Please type .ready when you are ready to restore the match backup. {1}",
   
     "matchzy.knife.sidedecisionpending": "{green}{0}{default} hat die Messerrunde gewonnen. Es wird darauf gewartet, dass sie {green}.stay{default} oder {green}.switch{default} in den Chat schreiben.",
     "matchzy.knife.decidedtostay": "{green}{0}{default} hat sich entschieden, auf der Seite zu bleiben.",
@@ -21,7 +22,9 @@
     "matchzy.pause.tacticaltimeout": "You cannot use this command when tactical timeout is active.",
   
     "matchzy.restore.teamwantstorestore": "{green}{0}{default} möchte die aktuelle Runde wiederholen. {green}{1}{default}, bitte schreibt !stop in den Chat, um zuzustimmen.",
+    "matchzy.restore.loadedsuccessfully": "Backup file loaded successfully: {0}",
     "matchzy.restore.restoredsuccessfully": "Das Backup der Runde wurde erfolgreich geladen: {0}",
+    "matchzy.restore.stopcommandrequiresnodamage": "A request to restart the round cannot be given once a player has damaged any opposing player.",
 
     "matchzy.backup.stopduringhalftime": "You cannot use this command during halftime.",
     "matchzy.backup.stopmatchended": "You cannot use this command after the game has ended.",

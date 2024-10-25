@@ -71,7 +71,7 @@
             }
         },
 		{
-            "msg": "[GREEN]Server Mode[NORMAL]: [RED]10-Mans\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 Type [RED]!help[NORMAL] to access the 10-Man help menu.",
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]10-Mans\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 Type [GREEN].start[NORMAL] to start or [RED]!help[NORMAL] to access the 10-Man help menu.",
             "delay": 3,
             "properties": "Value",
             "cond": {
@@ -240,7 +240,7 @@
                 "value": 23
             }
         },
-		{
+        {
             "msg": "[GREEN]Server Mode[NORMAL]: [RED]Wingman\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
             "delay": 3,
             "properties": "Value",
@@ -248,6 +248,16 @@
                 "flag": "CS2AB_flag_1",
                 "op": 1,
                 "value": 24
+            }
+        },
+        {
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Battle Royale\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "delay": 3,
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 25
             }
         }
    ]

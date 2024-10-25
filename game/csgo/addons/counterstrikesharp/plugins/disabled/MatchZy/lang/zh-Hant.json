@@ -1,6 +1,7 @@
 {
   "matchzy.ready.markedready": "您已被標記為準備完成。",
   "matchzy.ready.markedunready": "您已經被標記為未準備。",
+  "matchzy.ready.readytotestorebackupinfomessage": "Unready players: {0}. Please type .ready when you are ready to restore the match backup. {1}",
 
   "matchzy.knife.sidedecisionpending": "{green}{0}{default} 贏下了刀局。等待他們輸入 {green}.stay{default} 或者 {green}.switch{default}。",
   "matchzy.knife.decidedtostay": "{green}{0}{default} 決定保留陣營。",
@@ -21,7 +22,9 @@
   "matchzy.pause.tacticaltimeout": "你不能在戰術暫停期間使用此命令。",
                               
   "matchzy.restore.teamwantstorestore": "{green}{0}{default} 想要回溯遊戲至本回合開始時。 {green}{1}{default}, 請輸入 !stop 來確定。",
+  "matchzy.restore.loadedsuccessfully": "Backup file loaded successfully: {0}",
   "matchzy.restore.restoredsuccessfully": "成功恢復備份文件: {0}",
+  "matchzy.restore.stopcommandrequiresnodamage": "A request to restart the round cannot be given once a player has damaged any opposing player.",
 
   "matchzy.backup.stopduringhalftime": "你不能在半場期間使用此命令。",
   "matchzy.backup.stopmatchended": "你不能在比賽結束後使用此命令。",

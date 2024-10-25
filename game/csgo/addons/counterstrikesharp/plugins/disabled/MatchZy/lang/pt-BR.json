@@ -1,6 +1,7 @@
 {
   "matchzy.ready.markedready": "Você foi marcado como {green}READY{default}.",
   "matchzy.ready.markedunready": "Você foi marcado como {darkred}NOTREADY{default}.",
+  "matchzy.ready.readytotestorebackupinfomessage": "Unready players: {0}. Please type .ready when you are ready to restore the match backup. {1}",
 
   "matchzy.knife.sidedecisionpending": "{green}{0}{default} ganhou a rodada faca. Aguardando eles digitarem {green}.stay{default} ou {green}.switch{default}.",
   "matchzy.knife.decidedtostay": "{green}{0}{default} decidiu permanecer no mesmo time.",
@@ -21,7 +22,9 @@
   "matchzy.pause.tacticaltimeout": "Você não pode usar este comando quando o tempo técnico está ativo.",
 
   "matchzy.restore.teamwantstorestore": "{green}{0}{default} quer restaurar o jogo para o início da rodada atual. {green}{1}{default}, por favor, escreva {green}!stop{default} para confirmar.",
+  "matchzy.restore.loadedsuccessfully": "Backup file loaded successfully: {0}",
   "matchzy.restore.restoredsuccessfully": "Arquivo de backup restaurado com sucesso: {0}",
+  "matchzy.restore.stopcommandrequiresnodamage": "A request to restart the round cannot be given once a player has damaged any opposing player.",
 
   "matchzy.backup.stopduringhalftime": "Você não pode usar este comando durante o intervalo.",
   "matchzy.backup.stopmatchended": "Você não pode usar este comando depois que o jogo terminou.",

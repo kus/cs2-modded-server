@@ -1,6 +1,7 @@
 {
     "matchzy.ready.markedready": "Вас отметили как готового.",
     "matchzy.ready.markedunready": "Вас отметили как НЕ готового.",
+    "matchzy.ready.readytotestorebackupinfomessage": "Unready players: {0}. Please type .ready when you are ready to restore the match backup. {1}",
     "matchzy.knife.sidedecisionpending": "{green}{0}{default} выиграла ножевой раунд. Ждём, пока они введут {green}.stay{default} или {green}.switch{default}.",
     "matchzy.knife.decidedtostay": "{green}{0}{default} решили остаться.",
     "matchzy.knife.decidedtoswitch": "{green}{0}{default} решили сменить стороны.",
@@ -18,7 +19,9 @@
     "matchzy.pause.matchended": "Вы не можете использовать эту команду после окончания игры.",
     "matchzy.pause.tacticaltimeout": "Вы не можете использовать эту команду, когда активен тактический перерыв.",
     "matchzy.restore.teamwantstorestore": "{green}{0}{default} хочет восстановить игру до начала текущего раунда. {green}{1}{default}, пожалуйста, напишите !stop для подтверждения.",
+    "matchzy.restore.loadedsuccessfully": "Backup file loaded successfully: {0}",
     "matchzy.restore.restoredsuccessfully": "Резервная копия успешно восстановлена: {0}",
+    "matchzy.restore.stopcommandrequiresnodamage": "A request to restart the round cannot be given once a player has damaged any opposing player.",
     "matchzy.backup.stopduringhalftime": "Вы не можете использовать эту команду во время смены сторон.",
     "matchzy.backup.stopmatchended": "Вы не можете использовать эту команду после окончания игры.",
     "matchzy.backup.stoptacticaltimeout": "Вы не можете использовать эту команду, когда активен тактический перерыв.",

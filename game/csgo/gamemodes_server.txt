@@ -34,7 +34,9 @@
 						"mg_aim"			"61"
 						"mg_prefire"		"62"
 						"mg_deathrun"		"63"
-						"mg_Casual-1.6"		"64"
+						"mg_battleroyale"	"64"
+						"mg_Casual-1.6"		"65"
+						"mg_45"				"66"
 					}
 				}
 
@@ -173,6 +175,8 @@
 				"workshop/3070284539/de_train"		""
 				"workshop/3082340867/de_sakura"		""
 				"de_memento"		""
+				"workshop/3309665004/skatepark"		""
+				"workshop/3257582863/de_palais"		""
 			}
 		}
 		"mg_dm"
@@ -227,6 +231,8 @@
 				"de_memento"		""
 				"de_mills"		""
 				"de_thera"		""
+				"workshop/3257582863/de_palais"		""
+				"workshop/3343693110/school_d_environment_prefab"		""
 			}
 		}
 		"mg_gg"
@@ -256,6 +262,7 @@
 				"workshop/3095778105/aim_ag_texture_jungle"		""
 				"workshop/3071890065/cs2_bloodstrike"		""
 				"workshop/3109232789/gg_simpsons_vs_flanders_v2"		""
+				"workshop/3343693110/school_d_environment_prefab"		""
 			}
 		}
 		"mg_1v1"
@@ -290,6 +297,7 @@
 			"maps"
 			{
 				"workshop/3074758439/only_up"		""
+				"workshop/3343029934/kz_dima"		""
 				"workshop/3170668869/ewii_challenge"		""
 				"workshop/3070220367/kz_hub"		""
 				"workshop/3145779590/hellcasecyrilchallenge"		""
@@ -330,6 +338,17 @@
 				"workshop/3082120895/mg_skeet_multigames_v7"		""
 				"workshop/3202752274/mg_lego_course_2"		""
 				"workshop/3076765511/mg_warmcup_headshot"		""
+			}
+		}
+		"mg_battleroyale"
+		{
+			"name"			"mg_battleroyale"
+			"displayname"			"Battle Royale"
+			"maps"
+			{
+				"workshop/3330484099/br_electrified"		""
+				"workshop/3297489255/br_stacks"		""
+				"workshop/3267454508/br_flood"		""
 				"workshop/3186779271/minecraft"		""
 			}
 		}
@@ -340,6 +359,7 @@
 			"maps"
 			{
 				"workshop/3164611860/deathrun_playground"		""
+				"workshop/3311285877/deathrun_egypt"		""
 				"workshop/3188021118/deathrun_civilization"		""
 				"workshop/3083325292/deathrun_iceworld_cs2"		""
 			}
@@ -395,6 +415,7 @@
 			"displayname"			"Soccer"
 			"maps"
 			{
+				"workshop/3293224257/futsal"		""
 				"workshop/3070198374/ka_soccer_2009"		""
 			}
 		}
@@ -452,6 +473,19 @@
 				"workshop/3205793205/de_nuke_classic"		""
 				"workshop/3216844784/cs_office_classic"		""
 				"workshop/3217247541/de_survivor_classic_m"	""
+			}
+		}
+		"mg_45"
+		{
+			"name"			"mg_45"
+			"displayname"			"45 degrees"
+			"maps"
+			{
+				"workshop/3276886893/de_vertigo_45"				""
+				"workshop/3245985233/de_anubis_silly"				""
+				"workshop/3270066070/de_overpass_45"				""
+				"workshop/3245245780/de_nuke_silly"				""
+				"workshop/3270516952/de_mirage45"				""
 			}
 		}
 	}
