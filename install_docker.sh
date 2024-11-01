@@ -112,8 +112,6 @@ fi
 chown -R ${user}:${user} /steamcmd
 chown -R ${user}:${user} /home/${user}
 
-chown -R ${user}:${user} /home/${user}
-
 # https://developer.valvesoftware.com/wiki/Command_line_options
 sudo -u $user /steamcmd/steamcmd.sh \
     +api_logging 1 1 \
