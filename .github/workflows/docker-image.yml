@@ -20,9 +20,15 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Docker meta
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ghcr.io/${{ github.repository }}:latest
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
           push: true
           tags: ghcr.io/${{ github.repository }}:latest
           platforms: linux/amd64
+          labels: ${{ steps.meta.outputs.labels }}
