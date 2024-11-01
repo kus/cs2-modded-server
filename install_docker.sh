@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# As root (sudo su)
-# cd / && curl -s -H "Cache-Control: no-cache" -o "install.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/master/install.sh" && chmod +x install.sh && bash install.sh
-
 # Variables
 user="steam"
 BRANCH="master"
@@ -38,27 +35,27 @@ else
 fi
 
 if [ -f /etc/os-release ]; then
-	# freedesktop.org and systemd
-	. /etc/os-release
-	DISTRO_OS=$NAME
-	DISTRO_VERSION=$VERSION_ID
+    # freedesktop.org and systemd
+    . /etc/os-release
+    DISTRO_OS=$NAME
+    DISTRO_VERSION=$VERSION_ID
 elif type lsb_release >/dev/null 2>&1; then
-	# linuxbase.org
-	DISTRO_OS=$(lsb_release -si)
-	DISTRO_VERSION=$(lsb_release -sr)
+    # linuxbase.org
+    DISTRO_OS=$(lsb_release -si)
+    DISTRO_VERSION=$(lsb_release -sr)
 elif [ -f /etc/lsb-release ]; then
-	# For some versions of Debian/Ubuntu without lsb_release command
-	. /etc/lsb-release
-	DISTRO_OS=$DISTRIB_ID
-	DISTRO_VERSION=$DISTRIB_RELEASE
+    # For some versions of Debian/Ubuntu without lsb_release command
+    . /etc/lsb-release
+    DISTRO_OS=$DISTRIB_ID
+    DISTRO_VERSION=$DISTRIB_RELEASE
 elif [ -f /etc/debian_version ]; then
-	# Older Debian/Ubuntu/etc.
-	DISTRO_OS=Debian
-	DISTRO_VERSION=$(cat /etc/debian_version)
+    # Older Debian/Ubuntu/etc.
+    DISTRO_OS=Debian
+    DISTRO_VERSION=$(cat /etc/debian_version)
 else
-	# Fall back to uname, e.g. "Linux <version>", also works for BSD, etc.
-	DISTRO_OS=$(uname -s)
-	DISTRO_VERSION=$(uname -r)
+    # Fall back to uname, e.g. "Linux <version>", also works for BSD, etc.
+    DISTRO_OS=$(uname -s)
+    DISTRO_VERSION=$(uname -r)
 fi
 
 echo "Starting on $DISTRO_OS: $DISTRO_VERSION..."
@@ -70,15 +67,15 @@ echo "With $FREE_SPACE Gb free space..."
 
 # Check root
 if [ "$EUID" -ne 0 ]; then
-	echo "ERROR: Please run this script as root..."
-	exit 1
+    echo "ERROR: Please run this script as root..."
+    exit 1
 fi
 
 PUBLIC_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
 
 if [ -z "$PUBLIC_IP" ]; then
-	echo "ERROR: Cannot retrieve your public IP address..."
-	exit 1
+    echo "ERROR: Cannot retrieve your public IP address..."
+    exit 1
 fi
 
 # Update DuckDNS with our current IP
@@ -87,51 +84,50 @@ if [ ! -z "$DUCK_TOKEN" ]; then
 fi
 
 echo "Checking $user user exists..."
-getent passwd ${user} >/dev/null 2&>1
+getent passwd ${user} 2 >/dev/null &>1
 if [ "$?" -ne "0" ]; then
-	echo "Adding $user user..."
-	addgroup ${user} && \
-	adduser --system --home /home/${user} --shell /bin/false --ingroup ${user} ${user} && \
-	usermod -a -G tty ${user} && \
-	mkdir -m 777 /home/${user}/cs2 && \
-	chown -R ${user}:${user} /home/${user}/cs2
-	if [ "$?" -ne "0" ]; then
-		echo "ERROR: Cannot add user $user..."
-		exit 1
-	fi
+    echo "Adding $user user..."
+    addgroup ${user} &&
+        adduser --system --home /home/${user} --shell /bin/false --ingroup ${user} ${user} &&
+        usermod -a -G tty ${user} &&
+        mkdir -m 777 /home/${user}/cs2 &&
+        chown -R ${user}:${user} /home/${user}/cs2
+    if [ "$?" -ne "0" ]; then
+        echo "ERROR: Cannot add user $user..."
+        exit 1
+    fi
 fi
 
 echo "Checking steamcmd exists..."
 if [ ! -d "/steamcmd" ]; then
-	mkdir /steamcmd && cd /steamcmd
-	wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
-	tar -xvzf steamcmd_linux.tar.gz
-	mkdir -p /root/.steam/sdk32/
-	ln -s /steamcmd/linux32/steamclient.so /root/.steam/sdk32/
-	mkdir -p /root/.steam/sdk64/
-	ln -s /steamcmd/linux64/steamclient.so /root/.steam/sdk64/
+    mkdir /steamcmd && cd /steamcmd || exit
+    wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
+    tar -xvzf steamcmd_linux.tar.gz
+    mkdir -p /root/.steam/sdk32/
+    ln -s /steamcmd/linux32/steamclient.so /root/.steam/sdk32/
+    mkdir -p /root/.steam/sdk64/
+    ln -s /steamcmd/linux64/steamclient.so /root/.steam/sdk64/
 fi
 
 chown -R ${user}:${user} /steamcmd
+chown -R ${user}:${user} /home/${user}
 
-echo "Downloading any updates for CS2..."
 # https://developer.valvesoftware.com/wiki/Command_line_options
 sudo -u $user /steamcmd/steamcmd.sh \
-  +api_logging 1 1 \
-  +@sSteamCmdForcePlatformType linux \
-  +@sSteamCmdForcePlatformBitness $BITS \
-  +force_install_dir /home/${user}/cs2 \
-  +login anonymous \
-  +app_update 730 \
-  +quit
+    +api_logging 1 1 \
+    +@sSteamCmdForcePlatformType linux \
+    +@sSteamCmdForcePlatformBitness "$BITS" \
+    +force_install_dir /home/${user}/cs2 \
+    +login anonymous \
+    +app_update 730 \
+    +quit
 
-cd /home/${user}
-echo "/home/user !!!!!!!"
+cd /home/${user} || exit
 
-# mkdir -p /root/.steam/sdk32/
-# ln -sf /steamcmd/linux32/steamclient.so /root/.steam/sdk32/
-# mkdir -p /root/.steam/sdk64/
-# ln -sf /steamcmd/linux64/steamclient.so /root/.steam/sdk64/
+mkdir -p /root/.steam/sdk32/
+ln -sf /steamcmd/linux32/steamclient.so /root/.steam/sdk32/
+mkdir -p /root/.steam/sdk64/
+ln -sf /steamcmd/linux64/steamclient.so /root/.steam/sdk64/
 
 mkdir -p /home/${user}/.steam/sdk32/
 ln -sf /steamcmd/linux32/steamclient.so /home/${user}/.steam/sdk32/
@@ -139,14 +135,14 @@ mkdir -p /home/${user}/.steam/sdk64/
 ln -sf /steamcmd/linux64/steamclient.so /home/${user}/.steam/sdk64/
 
 echo "Installing mods"
-cp -R /home/game/csgo/ /home/${user}/cs2/game/
+cp -R /home/cs2-modded-server/game/csgo/ /home/${user}/cs2/game/
 
 echo "Merging in custom files"
 cp -RT /home/custom_files/ /home/${user}/cs2/game/csgo/
 
-chown -R ${user}:${user} /home/${user}/cs2
+chown -R ${user}:${user} /home/${user}
 
-cd /home/${user}/cs2
+cd /home/${user}/cs2 || exit
 
 # Define the file name
 FILE="game/csgo/gameinfo.gi"
@@ -168,48 +164,28 @@ else
         if ($0 ~ pattern) {
             print lineToAdd;
         }
-    }' "$FILE" > tmp_file && mv tmp_file "$FILE"
+    }' "$FILE" >tmp_file && mv tmp_file "$FILE"
     echo "$FILE successfully patched for Metamod."
 fi
 
 echo "Starting server on $PUBLIC_IP:$PORT"
 # https://developer.valvesoftware.com/wiki/Counter-Strike_2/Dedicated_Servers#Command-Line_Parameters
-echo ./game/bin/linuxsteamrt64/cs2 \
+sudo -u $user ./game/bin/linuxsteamrt64/cs2 \
     -dedicated \
     -console \
     -usercon \
     -autoupdate \
-    -tickrate $TICKRATE \
-	$IP_ARGS \
-    -port $PORT \
-    +map de_dust2 \
-    -maxplayers $MAXPLAYERS \
-    -authkey $API_KEY \
-	+sv_setsteamaccount $STEAM_ACCOUNT \
-    +game_type 0 \
-    +game_mode 0 \
-    +mapgroup mg_active \
-    +sv_lan $LAN \
-	+sv_password $SERVER_PASSWORD \
-	+rcon_password $RCON_PASSWORD \
-	+exec $EXEC
-
-sudo -u $user /home/steam/cs2/game/bin/linuxsteamrt64/cs2 \
-    -dedicated \
-    -console \
-    -usercon \
-    -autoupdate \
-    -tickrate $TICKRATE \
-	$IP_ARGS \
-    -port $PORT \
-    +map de_dust2 \
-    -maxplayers $MAXPLAYERS \
-    -authkey $API_KEY \
-	+sv_setsteamaccount $STEAM_ACCOUNT \
-    +game_type 0 \
-    +game_mode 0 \
-    +mapgroup mg_active \
-    +sv_lan $LAN \
-	+sv_password $SERVER_PASSWORD \
-	+rcon_password $RCON_PASSWORD \
-	+exec $EXEC
+    -tickrate "$TICKRATE" \
+    "$IP_ARGS" \
+    -port "$PORT" \
+    +map "${MAP-de_dust2}" \
+    -maxplayers "$MAXPLAYERS" \
+    -authkey "$API_KEY" \
+    +sv_setsteamaccount "$STEAM_ACCOUNT" \
+    +game_type "${GAME_TYPE-0}" \
+    +game_mode "${GAME_MODE-0}" \
+    +mapgroup "${MAP_GROUP-mg_active}" \
+    +sv_lan "$LAN" \
+    +sv_password "$SERVER_PASSWORD" \
+    +rcon_password "$RCON_PASSWORD" \
+    +exec "$EXEC"
