@@ -804,7 +804,10 @@
           "SQLitePCLRaw.bundle_e_sqlite3": "2.1.7"
         },
         "runtime": {
-          "RetakesAllocatorCore.dll": {}
+          "RetakesAllocatorCore.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
