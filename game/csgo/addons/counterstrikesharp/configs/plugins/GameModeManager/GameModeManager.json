@@ -26,8 +26,8 @@
     "Folder": "settings"
   },
   "Warmup": {
-    "Time": 60,
-    "PerMap": false,
+    "Time": 0,
+    "PerMap": true,
     "Default": {
       "Name": "Deathmatch",
       "Config": "warmup/dm.cfg",
