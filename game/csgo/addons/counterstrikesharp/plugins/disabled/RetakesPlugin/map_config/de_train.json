@@ -71,23 +71,9 @@
       "CanBePlanter": false
     },
     {
-      "Vector": "1503.3325 -1340.5823 -327.96875",
-      "QAngle": "0 61.92685 0",
-      "Team": 3,
-      "Bombsite": 0,
-      "CanBePlanter": false
-    },
-    {
       "Vector": "1621.404 -1169.5692 -327.09747",
       "QAngle": "0 113.62677 0",
       "Team": 3,
-      "Bombsite": 0,
-      "CanBePlanter": false
-    },
-    {
-      "Vector": "1222.5859 1470.5029 -215.96875",
-      "QAngle": "0 -89.97391 0",
-      "Team": 2,
       "Bombsite": 0,
       "CanBePlanter": false
     },
@@ -169,20 +155,6 @@
       "CanBePlanter": false
     },
     {
-      "Vector": "1757.5059 -643.50037 -263.96875",
-      "QAngle": "0 -120.19009 0",
-      "Team": 3,
-      "Bombsite": 1,
-      "CanBePlanter": false
-    },
-    {
-      "Vector": "1767.9686 -937.3755 -302.96875",
-      "QAngle": "0 179.70953 0",
-      "Team": 3,
-      "Bombsite": 1,
-      "CanBePlanter": false
-    },
-    {
       "Vector": "1663.8279 -1019.1846 -327.78796",
       "QAngle": "0 -125.21599 0",
       "Team": 3,
@@ -218,16 +190,121 @@
       "CanBePlanter": false
     },
     {
-      "Vector": "1347.5824 -1440.9387 -327.34894",
-      "QAngle": "0 93.38446 0",
+      "Vector": "-578.0866 -347.74524 -213.46875",
+      "QAngle": "0 179.88397 0",
+      "Team": 3,
+      "Bombsite": 1,
+      "CanBePlanter": false
+    },
+    {
+      "Vector": "310.09763 1625.2981 -215.96875",
+      "QAngle": "0 -2.0197754 0",
       "Team": 3,
       "Bombsite": 0,
       "CanBePlanter": false
     },
     {
-      "Vector": "-578.0866 -347.74524 -213.46875",
-      "QAngle": "0 179.88397 0",
+      "Vector": "1500.1053 407.40268 -211.96875",
+      "QAngle": "0 159.29626 0",
+      "Team": 2,
+      "Bombsite": 0,
+      "CanBePlanter": false
+    },
+    {
+      "Vector": "1288.9019 -881.8668 -320.96875",
+      "QAngle": "0 179.5087 0",
       "Team": 3,
+      "Bombsite": 0,
+      "CanBePlanter": false
+    },
+    {
+      "Vector": "-183.92128 -891.17664 -318.96875",
+      "QAngle": "0 7.8030396 0",
+      "Team": 3,
+      "Bombsite": 0,
+      "CanBePlanter": false
+    },
+    {
+      "Vector": "419.41 1695.32 -213.96753",
+      "QAngle": "0 -159.70 0",
+      "Team": 3,
+      "Bombsite": 0,
+      "CanBePlanter": false
+    },
+    {
+      "Vector": "969.0126 54.807076 -211.73273",
+      "QAngle": "0 146.66406 0",
+      "Team": 2,
+      "Bombsite": 0,
+      "CanBePlanter": false
+    },
+    {
+      "Vector": "853.34656 -207.24608 -211.96875",
+      "QAngle": "0 27.79129 0",
+      "Team": 2,
+      "Bombsite": 0,
+      "CanBePlanter": false
+    },
+    {
+      "Vector": "697.96875 -394.9673 -207.96875",
+      "QAngle": "0 132.99911 0",
+      "Team": 2,
+      "Bombsite": 0,
+      "CanBePlanter": false
+    },
+    {
+      "Vector": "-970.47906 736.40625 -0.013118744",
+      "QAngle": "0 -90.05699 0",
+      "Team": 3,
+      "Bombsite": 1,
+      "CanBePlanter": false
+    },
+    {
+      "Vector": "-601.53766 467.045 16.03125",
+      "QAngle": "0 -97.439804 0",
+      "Team": 3,
+      "Bombsite": 1,
+      "CanBePlanter": false
+    },
+    {
+      "Vector": "-189.8856 -1759.5509 -166.96875",
+      "QAngle": "0 64.80731 0",
+      "Team": 2,
+      "Bombsite": 1,
+      "CanBePlanter": false
+    },
+    {
+      "Vector": "1738.521 -1655.278 -320.35007",
+      "QAngle": "0 -177.37633 0",
+      "Team": 3,
+      "Bombsite": 1,
+      "CanBePlanter": false
+    },
+    {
+      "Vector": "1381.968 -946.7372 -319.09604",
+      "QAngle": "0 168.67722 0",
+      "Team": 3,
+      "Bombsite": 1,
+      "CanBePlanter": false
+    },
+    {
+      "Vector": "-42.018127 -1442.7357 -350.96875",
+      "QAngle": "0 2.7002258 0",
+      "Team": 2,
+      "Bombsite": 1,
+      "CanBePlanter": false
+    },
+    {
+      "Vector": "-876.7882 -1780.6874 -153.96875",
+      "QAngle": "0 93.76489 0",
+      "Team": 2,
+      "Bombsite": 1,
+      "CanBePlanter": false
+    },
+    {
+      "Vector": "-483.96826 -1042.182 -350.96875",
+      "QAngle": "0 -3.0037231 0",
+      "Team": 2,
       "Bombsite": 1,
       "CanBePlanter": false
     }
