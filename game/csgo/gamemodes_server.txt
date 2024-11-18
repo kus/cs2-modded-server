@@ -35,7 +35,7 @@
 						"mg_prefire"		"62"
 						"mg_deathrun"		"63"
 						"mg_battleroyale"	"64"
-						"mg_Casual-1.6"		"65"
+						"mg_casual-1.6"		"65"
 						"mg_45"				"66"
 					}
 				}
@@ -465,9 +465,9 @@
 				"de_nuke"			""
 			}
 		}
-		"mg_Casual-1.6"
+		"mg_casual-1.6"
 		{
-			"name"			"mg_Casual-1.6"
+			"name"			"mg_casual-1.6"
 			"displayname"			"Casual 1.6"
 			"maps"
 			{

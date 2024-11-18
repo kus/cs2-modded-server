@@ -9,7 +9,7 @@
   },
   "Maps": {
     "Delay": 5,
-    "Style": "wasd",
+    "Style": "center",
     "Default": "de_dust2"
   },
   "Votes": {
@@ -18,16 +18,16 @@
     "AllMaps": false,
     "GameModes": true,
     "GameSettings": false,
-    "Style": "wasd"
+    "Style": "center"
   },
   "Settings": {
     "Enabled": true,
-    "Style": "wasd",
+    "Style": "center",
     "Folder": "settings"
   },
   "Warmup": {
-    "Time": 0,
-    "PerMap": true,
+    "Time": 30,
+    "PerMap": false,
     "Default": {
       "Name": "Deathmatch",
       "Config": "warmup/dm.cfg",
@@ -60,7 +60,7 @@
     "Maps": true,
     "AllMaps": false,
     "TimeLeft": true,
-    "Style": "wasd"
+    "Style": "center"
   },
   "Rotation": {
     "Enabled": false,
@@ -90,7 +90,7 @@
     ]
   },
   "GameModes": {
-    "Style": "wasd",
+    "Style": "center",
     "Default": {
       "Name": "Casual",
       "Config": "casual.cfg",
@@ -112,8 +112,8 @@
       },
       {
         "Name": "Deathmatch",
-        "Config": "deathmatch-multicfg.cfg",
-        "DefaultMap": "de_assembly",
+        "Config": "deathmatch.cfg",
+        "DefaultMap": "de_dust2",
         "MapGroups": [
           "mg_dm"
         ]
@@ -129,7 +129,7 @@
       {
         "Name": "Wingman",
         "Config": "wingman.cfg",
-        "DefaultMap": "de_palais",
+        "DefaultMap": "de_nuke",
         "MapGroups": [
           "mg_wingman"
         ]
@@ -175,7 +175,7 @@
         ]
       },
       {
-        "Name": "1v1",
+        "Name": "1v1 Arenas",
         "Config": "1v1.cfg",
         "DefaultMap": "3070253400",
         "MapGroups": [
@@ -207,7 +207,7 @@
         ]
       },
       {
-        "Name": "KreedZ",
+        "Name": "Kreedz Climbing",
         "Config": "kz.cfg",
         "DefaultMap": "3086304337",
         "MapGroups": [
@@ -281,15 +281,15 @@
       },
       {
         "Name": "Casual (1.6)",
-        "Config": "Casual-1.6.cfg",
+        "Config": "casual-1.6.cfg",
         "DefaultMap": "3201205818",
         "MapGroups": [
-          "mg_Casual-1.6"
+          "mg_casual-1.6"
         ]
       },
       {
         "Name": "Deathmatch (Valve)",
-        "Config": "dm.cfg",
+        "Config": "dm-valve.cfg",
         "DefaultMap": "de_dust2",
         "MapGroups": [
           "mg_dm"

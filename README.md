@@ -583,14 +583,14 @@ These are all the available chat commands to change the game mode:
 | ------------------------- | --------------------------------------------------------------------------------- |
 | `!rcon exec 1v1`          | 1v1 (allows more than 2 players)                                                  |
 | `!rcon exec aim`          | Aim                                                                               |
-| `!rcon exec ar`           | Arms Race                                                                         |
+| `!rcon exec ar`           | Arms Race (Valve)                                                                 |
 | `!rcon exec awp`          | Awp only                                                                          |
 | `!rcon exec bhop`         | Bunny hop maps                                                                    |
 | `!rcon exec br`           | Battle Royale                                                                     |
 | `!rcon exec comp`         | Competitive using [MatchZy](https://github.com/shobhit-pathak/MatchZy#usage-commands) |
 | `!rcon exec course`       | Tests players with different traps, kz, surf, bhop                                |
 | `!rcon exec dm`           | Deathmatch                                                                        |
-| `!rcon exec dm-multicfg`  | Deathmatch Multi Config                                                           |
+| `!rcon exec dm-valve`     | Deathmatch (Valve)                                                                |
 | `!rcon exec executes`     | Executes                                                                          |
 | `!rcon exec gg`           | Gun Game                                                                          |
 | `!rcon exec hns`          | Hide n Seek                                                                       |
