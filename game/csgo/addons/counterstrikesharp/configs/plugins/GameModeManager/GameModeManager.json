@@ -155,7 +155,7 @@
         "Config": "retake.cfg",
         "DefaultMap": "de_dust2",
         "MapGroups": [
-          "mg_comp"
+          "mg_retake"
         ]
       },
       {
