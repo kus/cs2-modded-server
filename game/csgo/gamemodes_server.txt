@@ -496,5 +496,22 @@
 				"workshop/3270516952/de_mirage45"				""
 			}
 		}
+		"mg_retake"
+		{
+			"name"			"mg_retake"
+			"displayname"			"Retake"
+			"maps"
+			{
+				"de_ancient"		""
+				"de_dust2"			""
+				"de_inferno"		""
+				"de_mirage"			""
+				"de_overpass"		""
+				"de_anubis"			""
+				"de_nuke"			""
+				"de_train"			""
+				"de_vertigo"			""
+			}
+		}
 	}
 }
