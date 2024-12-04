@@ -1,1 +1,43 @@
-{}
+{
+  "#css/admin": {
+    "flags": [
+      "@css/reservation",
+      "@css/generic",
+      "@css/kick",
+      "@css/ban",
+      "@css/unban",
+      "@css/vip",
+      "@css/slay",
+      "@css/changemap",
+      "@css/cvar",
+      "@css/config",
+      "@css/chat",
+      "@css/vote",
+      "@css/password",
+      "@css/rcon",
+      "@css/cheats",
+      "@css/root",
+      "@custom/prac",
+      "@css/map"
+    ],
+    "immunity": 100
+  },
+  "#css/moderator": {
+    "flags": [
+      "@css/reservation",
+      "@css/generic",
+      "@css/kick",
+      "@css/ban",
+      "@css/unban",
+      "@css/slay",
+      "@css/changemap",
+      "@css/cvar",
+      "@css/config",
+      "@css/chat",
+      "@css/vote",
+      "@css/rcon",
+      "@custom/prac"
+    ],
+    "immunity": 99
+  }
+}
