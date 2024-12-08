@@ -29,23 +29,16 @@ ENV STEAM_ACCOUNT=""
 RUN echo "steam ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/steam \
     && chmod 0440 /etc/sudoers.d/steam
 
-RUN mkdir -p /home/cs2-modded-server
+ENV HOME="/home/steam/cs2/"
 
-RUN mkdir -p /home/steam/cs2
+RUN mkdir -p $HOME && \
+    chown -R steam:steam $HOME
 
-WORKDIR /home/cs2-modded-server/
+ENV SRC_DIR="/home/cs2-modded-server"
 
-RUN chown -R steam:steam /home/steam/cs2
+WORKDIR $SRC_DIR
 
-RUN git clone https://github.com/kus/cs2-modded-server
-
-RUN echo cloned repository
-
-RUN mv /home/cs2-modded-server/cs2-modded-server/* /home/cs2-modded-server
-
-RUN rm -rf /home/cs2-modded-server/cs2-modded-server
-
-WORKDIR /home/cs2-modded-server/
+COPY . $SRC_DIR
 
 USER steam
 
