@@ -1,0 +1,214 @@
+{
+  "Effects": {
+    "EffectBeacon": {
+      "Enabled": true,
+      "Probability": 1
+    },
+    "EffectBigger": {
+      "Enabled": true,
+      "Probability": 1,
+      "Parameters": {
+        "scale": "1.5"
+      }
+    },
+    "EffectDoubleJump": {
+      "Enabled": true,
+      "Probability": 1
+    },
+    "EffectGetRandomWeapon": {
+      "Enabled": true,
+      "Probability": 3,
+      "Parameters": {
+        "weapon_p250": "1",
+        "weapon_mp9": "1",
+        "weapon_taser": "1",
+        "weapon_nova": "1",
+        "weapon_deagle": "1",
+        "weapon_glock": "1",
+        "weapon_usp_silencer": "1",
+        "weapon_hkp2000": "1",
+        "weapon_fiveseven": "1",
+        "weapon_tec9": "1",
+        "weapon_cz75a": "1",
+        "weapon_revolver": "1",
+        "weapon_famas": "1",
+        "weapon_galilar": "1",
+        "weapon_m4a1": "1",
+        "weapon_m4a1_silencer": "1",
+        "weapon_ak47": "1",
+        "weapon_ssg08": "1",
+        "weapon_sg556": "1",
+        "weapon_aug": "1",
+        "weapon_awp": "1",
+        "weapon_g3sg1": "1",
+        "weapon_scar20": "1",
+        "weapon_mac10": "1",
+        "weapon_mp7": "1",
+        "weapon_mp5sd": "1",
+        "weapon_ump45": "1",
+        "weapon_p90": "1",
+        "weapon_bizon": "1",
+        "weapon_mag7": "1",
+        "weapon_negev": "1",
+        "weapon_sawedoff": "1",
+        "weapon_xm1014": "1",
+        "weapon_m249": "1",
+        "weapon_healthshot": "0",
+        "item_kevlar": "0",
+        "item_assaultsuit": "0",
+        "item_defuser": "0"
+      }
+    },
+    "EffectGodMode": {
+      "Enabled": true,
+      "Probability": 1,
+      "Parameters": {
+        "durationSeconds": "10"
+      }
+    },
+    "EffectGetHealthShot": {
+      "Enabled": true,
+      "Probability": 2
+    },
+    "EffectImposter": {
+      "Enabled": true,
+      "Probability": 1,
+      "Parameters": {
+        "durationSeconds": "30",
+        "teleport": "true"
+      }
+    },
+    "EffectInvisible": {
+      "Enabled": true,
+      "Probability": 1,
+      "Parameters": {
+        "durationSeconds": "15"
+      }
+    },
+    "EffectLessFOV": {
+      "Enabled": true,
+      "Probability": 2,
+      "Parameters": {
+        "fovToSet": "35"
+      }
+    },
+    "EffectLessGravity": {
+      "Enabled": true,
+      "Probability": 2,
+      "Parameters": {
+        "gravityScaleFactor": "0.5"
+      }
+    },
+    "EffectLessHealth": {
+      "Enabled": true,
+      "Probability": 3,
+      "Parameters": {
+        "healthSubtrahend": "10"
+      }
+    },
+    "EffectLessMoney": {
+      "Enabled": true,
+      "Probability": 3,
+      "Parameters": {
+        "moneySubtrahend": "1000"
+      }
+    },
+    "EffectLessSpeed": {
+      "Enabled": true,
+      "Probability": 2,
+      "Parameters": {
+        "speedScaleFactor": "0.5"
+      }
+    },
+    "EffectLooseRandomWeapon": {
+      "Enabled": true,
+      "Probability": 3
+    },
+    "EffectMirrorDamage": {
+      "Enabled": true,
+      "Probability": 1,
+      "Parameters": {
+        "reflectedDamageScaleFactor": "0.5"
+      }
+    },
+    "EffectMoreFOV": {
+      "Enabled": true,
+      "Probability": 2,
+      "Parameters": {
+        "fovToSet": "145"
+      }
+    },
+    "EffectMoreGravity": {
+      "Enabled": true,
+      "Probability": 2,
+      "Parameters": {
+        "gravityScaleFactor": "1.5"
+      }
+    },
+    "EffectMoreHealth": {
+      "Enabled": true,
+      "Probability": 3,
+      "Parameters": {
+        "healthSummand": "10"
+      }
+    },
+    "EffectMoreMoney": {
+      "Enabled": true,
+      "Probability": 3,
+      "Parameters": {
+        "moneySummand": "1000"
+      }
+    },
+    "EffectMoreSpeed": {
+      "Enabled": true,
+      "Probability": 2,
+      "Parameters": {
+        "speedScaleFactor": "2.0"
+      }
+    },
+    "EffectNoclip": {
+      "Enabled": true,
+      "Probability": 1,
+      "Parameters": {
+        "durationSeconds": "10"
+      }
+    },
+    "EffectNoMoney": {
+      "Enabled": true,
+      "Probability": 1
+    },
+    "EffectNothing": {
+      "Enabled": true,
+      "Probability": 3
+    },
+    "EffectOneHealth": {
+      "Enabled": true,
+      "Probability": 1
+    },
+    "EffectSmaller": {
+      "Enabled": true,
+      "Probability": 1,
+      "Parameters": {
+        "scale": "0.5"
+      }
+    },
+    "EffectSuicide": {
+      "Enabled": true,
+      "Probability": 1
+    },
+    "EffectThirdPerson": {
+      "Enabled": true,
+      "Probability": 1,
+      "Parameters": {
+        "smoothCamera": "false"
+      }
+    },
+    "EffectVampire": {
+      "Enabled": true,
+      "Probability": 1,
+      "Parameters": {
+        "healthScaleFactor": "0.5"
+      }
+    }
+  }
+}
