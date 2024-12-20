@@ -1,0 +1,7 @@
+{
+  "menu.selection.left": "<font class='fontSize-s' color='red'>&#9654;</font><font class='fontSize-sm' color='red'> [ </font>",
+  "menu.selection.right": "<font class='fontSize-sm' color='red'> ] </font><font class='fontSize-s' color='red'>&#9664;</font>",
+  "menu.title.prefix": "&nbsp;&nbsp;&nbsp;<font class='fontSize-l horizontal-center' color='red'>",
+  "menu.more.options.below": "",
+  "menu.bottom.text": "<br><font class='fontSize-sm horizontal-center'><font color='white'>Move: </font><font color='gold' class='stratum-bold'>WASD</font><font color='white'> | Exit: </font><font color='gold' class='stratum-bold'>TAB</font></font>"
+}

@@ -1,64 +1,316 @@
 {
-  "Version": 3,
+  "Version": 7,
   "RTV": {
-    "Enabled": false,
-    "Plugin": "addons/counterstrikesharp/plugins/RockTheVote/RockTheVote.dll",
-    "MapListFile": "addons/counterstrikesharp/plugins/RockTheVote/maplist.txt",
-    "DefaultMapFormat": false
-  },
-  "MapGroup": {
-    "Delay": 5,
-    "Default": "mg_active",
-    "DefaultMap": "de_dust2",
-    "Style": "center",
-    "File": "gamemodes_server.txt"
-  },
-  "Settings": {
     "Enabled": true,
-    "Folder": "settings",
-    "Style": "center"
+    "Mode": 0,
+    "MapFormat": false,
+    "Plugin": "addons/counterstrikesharp/plugins/RockTheVote/RockTheVote.dll",
+    "MapList": "addons/counterstrikesharp/plugins/RockTheVote/maplist.txt"
   },
-  "GameMode": {
-    "Rotation": false,
-    "Interval": 4,
+  "Maps": {
     "Delay": 5,
     "Style": "center",
-    "ListEnabled": true,
-    "List": {
-      "comp": "Competitive",
-      "wingman": "Wingman",
-      "dm-multicfg": "Deathmatch",
-      "gg": "Gun Game",
-      "1v1": "1 v 1",
-      "awp": "AWP Only",
-      "aim": "Aim",
-      "prefire": "Prefire",
-      "retake": "Retakes",
-      "executes": "Executes",
-      "prac": "Practice Mode",
-      "bhop": "BHop",
-      "kz": "Kreedz Climbing",
-      "surf": "Surf",
-      "minigames": "Mini Games",
-      "deathrun": "Deathrun",
-      "course": "Course",
-      "scoutzknivez": "ScoutzKnives",
-      "br": "Battle Royale",
-      "hns": "Hide N Seek",
-      "soccer": "Soccer",
-      "dm": "Deathmatch (Valve)",
-      "ar": "Arms Race (Valve)",
-      "casual": "Casual",
-      "Casual-1.6": "Casual (1.6)",
-      "45": "Comp 45 degrees"
-    }
+    "Default": "de_dust2"
   },
   "Votes": {
     "Enabled": true,
-    "Map": true,
-    "GameMode": true,
-    "GameSetting": false,
+    "Maps": true,
+    "AllMaps": false,
+    "GameModes": true,
+    "GameSettings": false,
     "Style": "center"
   },
-  "ConfigVersion": 3
+  "Settings": {
+    "Enabled": true,
+    "Style": "center",
+    "Folder": "settings"
+  },
+  "Warmup": {
+    "Time": 30,
+    "PerMap": false,
+    "Default": {
+      "Name": "Deathmatch",
+      "Config": "warmup/dm.cfg",
+      "DefaultMap": null,
+      "MapGroups": []
+    },
+    "List": [
+      {
+        "Name": "Deathmatch",
+        "Config": "warmup/dm.cfg",
+        "DefaultMap": null,
+        "MapGroups": []
+      },
+      {
+        "Name": "Knives Only",
+        "Config": "warmup/knives_only.cfg",
+        "DefaultMap": null,
+        "MapGroups": []
+      },
+      {
+        "Name": "Scoutz Only",
+        "Config": "warmup/scoutz_only.cfg",
+        "DefaultMap": null,
+        "MapGroups": []
+      }
+    ]
+  },
+  "Commands": {
+    "Map": true,
+    "Maps": true,
+    "AllMaps": false,
+    "TimeLeft": true,
+    "Style": "center"
+  },
+  "Rotation": {
+    "Enabled": false,
+    "WhenServerEmpty": false,
+    "CustomTimeLimit": 600,
+    "Cycle": 0,
+    "MapGroups": [
+      "mg_active",
+      "mg_comp"
+    ],
+    "ModeRotation": false,
+    "ModeInterval": 4,
+    "ModeSchedules": false,
+    "Schedule": [
+      {
+        "Time": "10:00",
+        "Mode": "Casual"
+      },
+      {
+        "Time": "15:00",
+        "Mode": "Practice"
+      },
+      {
+        "Time": "17:00",
+        "Mode": "Competitive"
+      }
+    ]
+  },
+  "GameModes": {
+    "Style": "center",
+    "Default": {
+      "Name": "Casual",
+      "Config": "casual.cfg",
+      "DefaultMap": "de_dust2",
+      "MapGroups": [
+        "mg_active",
+        "mg_comp"
+      ]
+    },
+    "MapGroupFile": "gamemodes_server.txt",
+    "List": [
+      {
+        "Name": "Gun Game",
+        "Config": "gg.cfg",
+        "DefaultMap": "ar_pool_day",
+        "MapGroups": [
+          "mg_gg"
+        ]
+      },
+      {
+        "Name": "Deathmatch",
+        "Config": "deathmatch.cfg",
+        "DefaultMap": "de_dust2",
+        "MapGroups": [
+          "mg_dm"
+        ]
+      },
+      {
+        "Name": "Competitive",
+        "Config": "comp.cfg",
+        "DefaultMap": "de_inferno",
+        "MapGroups": [
+          "mg_comp"
+        ]
+      },
+      {
+        "Name": "Wingman",
+        "Config": "wingman.cfg",
+        "DefaultMap": "de_nuke",
+        "MapGroups": [
+          "mg_wingman"
+        ]
+      },
+      {
+        "Name": "Practice Mode",
+        "Config": "prac.cfg",
+        "DefaultMap": "de_dust2",
+        "MapGroups": [
+          "mg_comp"
+        ]
+      },
+      {
+        "Name": "Prefire",
+        "Config": "prefire.cfg",
+        "DefaultMap": "de_inferno",
+        "MapGroups": [
+          "mg_comp"
+        ]
+      },
+      {
+        "Name": "Retakes",
+        "Config": "retake.cfg",
+        "DefaultMap": "de_dust2",
+        "MapGroups": [
+          "mg_comp"
+        ]
+      },
+      {
+        "Name": "Executes",
+        "Config": "executes.cfg",
+        "DefaultMap": "de_mirage",
+        "MapGroups": [
+          "mg_comp"
+        ]
+      },
+      {
+        "Name": "Awp Only",
+        "Config": "awp.cfg",
+        "DefaultMap": "3142070597",
+        "MapGroups": [
+          "mg_awp"
+        ]
+      },
+      {
+        "Name": "1v1 Arenas",
+        "Config": "1v1.cfg",
+        "DefaultMap": "3070253400",
+        "MapGroups": [
+          "mg_1v1"
+        ]
+      },
+      {
+        "Name": "Aim",
+        "Config": "aim.cfg",
+        "DefaultMap": "3084291314",
+        "MapGroups": [
+          "mg_aim"
+        ]
+      },
+      {
+        "Name": "Bhop",
+        "Config": "bhop.cfg",
+        "DefaultMap": "3088973190",
+        "MapGroups": [
+          "mg_bhop"
+        ]
+      },
+      {
+        "Name": "Surf",
+        "Config": "surf.cfg",
+        "DefaultMap": "3082548297",
+        "MapGroups": [
+          "mg_surf"
+        ]
+      },
+      {
+        "Name": "Kreedz Climbing",
+        "Config": "kz.cfg",
+        "DefaultMap": "3086304337",
+        "MapGroups": [
+          "mg_kz"
+        ]
+      },
+      {
+        "Name": "Hide N Seek",
+        "Config": "hns.cfg",
+        "DefaultMap": "3097563690",
+        "MapGroups": [
+          "mg_hns"
+        ]
+      },
+      {
+        "Name": "Soccer",
+        "Config": "soccer.cfg",
+        "DefaultMap": "3293224257",
+        "MapGroups": [
+          "mg_soccer"
+        ]
+      },
+      {
+        "Name": "Course",
+        "Config": "course.cfg",
+        "DefaultMap": "3070455802",
+        "MapGroups": [
+          "mg_course"
+        ]
+      },
+      {
+        "Name": "Deathrun",
+        "Config": "deathrun.cfg",
+        "DefaultMap": "3164611860",
+        "MapGroups": [
+          "mg_deathrun"
+        ]
+      },
+      {
+        "Name": "Minigames",
+        "Config": "minigames.cfg",
+        "DefaultMap": "3082120895",
+        "MapGroups": [
+          "mg_minigames"
+        ]
+      },
+      {
+        "Name": "ScoutzKnivez",
+        "Config": "scoutzknivez.cfg",
+        "DefaultMap": "3073929825",
+        "MapGroups": [
+          "mg_scoutzknivez"
+        ]
+      },
+      {
+        "Name": "Battle Royale",
+        "Config": "br.cfg",
+        "DefaultMap": "3330484099",
+        "MapGroups": [
+          "mg_battleroyale"
+        ]
+      },
+      {
+        "Name": "Casual",
+        "Config": "casual.cfg",
+        "DefaultMap": "de_dust2",
+        "MapGroups": [
+          "mg_active",
+          "mg_comp"
+        ]
+      },
+      {
+        "Name": "Casual (1.6)",
+        "Config": "casual-1.6.cfg",
+        "DefaultMap": "3201205818",
+        "MapGroups": [
+          "mg_casual-1.6"
+        ]
+      },
+      {
+        "Name": "Deathmatch (Valve)",
+        "Config": "dm-valve.cfg",
+        "DefaultMap": "de_dust2",
+        "MapGroups": [
+          "mg_dm"
+        ]
+      },
+      {
+        "Name": "Arms Race (Valve)",
+        "Config": "ar.cfg",
+        "DefaultMap": "ar_pool_day",
+        "MapGroups": [
+          "mg_gg"
+        ]
+      },
+      {
+        "Name": "Competitive 45°",
+        "Config": "45.cfg",
+        "DefaultMap": "3276886893",
+        "MapGroups": [
+          "mg_45"
+        ]
+      }
+    ]
+  }
 }

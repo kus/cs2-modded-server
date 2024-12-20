@@ -71,7 +71,7 @@
             }
         },
 		{
-            "msg": "[GREEN]Server Mode[NORMAL]: [RED]10-Mans\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 Type [GREEN].start[NORMAL] to start or [RED]!help[NORMAL] to access the 10-Man help menu.",
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]10-Mans\u2029\u2029[NORMAL]Type [GREEN].r[NORMAL] to ready up\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 Type [GREEN].start[NORMAL] to start or [RED]!help[NORMAL] to access the 10-Man help menu.",
             "delay": 3,
             "properties": "Value",
             "cond": {
@@ -91,7 +91,7 @@
             }
         },
 		{
-            "msg": "[GREEN]Server Mode[NORMAL]: [RED]DM-MultiCFG\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]DM\u2029\u2029[NORMAL]Use [GREEN]!gun !dm[NORMAL] command in all chat\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
             "delay": 3,
             "properties": "Value",
             "cond": {
@@ -131,7 +131,7 @@
             }
         },
 		{
-            "msg": "[GREEN]Server Mode[NORMAL]: [RED]GunGame\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Gun Game\u2029\u2029[NORMAL]Use [GREEN]!music[NORMAL] to disable sounds\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
             "delay": 3,
             "properties": "Value",
             "cond": {

@@ -542,6 +542,12 @@
             </summary>
             <param name="manifest">Resource Manifest</param>
         </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.CheckTransmit">
+            <summary>
+            Called when checking transmit on entities.
+            </summary>
+            <param name="infoList">Transmit info list</param>
+        </member>
         <member name="M:CounterStrikeSharp.API.Core.CBaseEntity.Teleport(CounterStrikeSharp.API.Modules.Utils.Vector,CounterStrikeSharp.API.Modules.Utils.QAngle,CounterStrikeSharp.API.Modules.Utils.Vector)">
             <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
             <exception cref="T:System.ArgumentNullException">No valid argument</exception>
@@ -580,6 +586,30 @@
             </summary>
             <param name="weapon"></param>
             <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Core.CCheckTransmitInfo.TransmitEntities">
+            <summary>
+            Entity n is already marked for transmission
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Core.CCheckTransmitInfo.TransmitAlways">
+            <summary>
+            Entity n is always send even if not in PVS (HLTV and Replay only)
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.CCheckTransmitInfoList.Item(System.Int32)">
+            <summary>
+            Get transmit info for the given index.
+            </summary>
+            <param name="index">Index of the info you want to retrieve from the list, should be between 0 and '<see cref="P:CounterStrikeSharp.API.Core.CCheckTransmitInfoList.Count"/>' - 1</param>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCheckTransmitInfoList.Get(System.Int32)">
+            <summary>
+            Get transmit info for the given index.
+            </summary>
+            <param name="index">Index of the info you want to retrieve from the list, should be between 0 and '<see cref="P:CounterStrikeSharp.API.Core.CCheckTransmitInfoList.Count"/>' - 1</param>
+            <returns></returns>
         </member>
         <member name="M:CounterStrikeSharp.API.Core.CCSGameRules.TerminateRound(System.Single,CounterStrikeSharp.API.Modules.Entities.Constants.RoundEndReason)">
             <summary>
@@ -788,6 +818,15 @@
             Gets the <see cref="T:CounterStrikeSharp.API.Core.CSkeletonInstance"/> instance from the node.
             </summary>
             <exception cref="T:System.InvalidOperationException">GameSceneNode points to null</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CTakeDamageInfo.GetHitGroup">
+            <summary>
+            Retrieves the hitgroup
+            </summary>
+            <returns>
+            Returns a <see cref="T:CounterStrikeSharp.API.Core.HitGroup_t"/> enumeration representing the player's current hit group,
+            or <see cref="F:CounterStrikeSharp.API.Core.HitGroup_t.HITGROUP_INVALID"/> if the hit group cannot be determined.
+            </returns>
         </member>
         <member name="T:CounterStrikeSharp.API.Core.CVariant">
             <summary>
@@ -1349,6 +1388,27 @@
             <summary>
             <inheritdoc cref="M:CounterStrikeSharp.API.Modules.Utils.ChatColors.ForPlayer(CounterStrikeSharp.API.Core.CCSPlayerController)"/>
             </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Extensions.PluginConfigExtensions.GetConfigPath``1(``0)">
+            <summary>
+            Gets the configuration file path
+            </summary>
+            <typeparam name="T">Type of the plugin configuration.</typeparam>
+            <param name="_">Current configuration instance</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Extensions.PluginConfigExtensions.Update``1(``0)">
+            <summary>
+            Updates the configuration file
+            </summary>
+            <typeparam name="T">Type of the plugin configuration.</typeparam>
+            <param name="config">Current configuration instance</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Extensions.PluginConfigExtensions.Reload``1(``0)">
+            <summary>
+            Reloads the configuration file and updates current configuration instance.
+            </summary>
+            <typeparam name="T">Type of the plugin configuration.</typeparam>
+            <param name="config">Current configuration instance</param>
         </member>
         <member name="M:CounterStrikeSharp.API.Modules.Extensions.TeamExtensions.GetChatColor(CounterStrikeSharp.API.Modules.Utils.CsTeam)">
             <summary>

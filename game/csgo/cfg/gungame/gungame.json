@@ -117,7 +117,7 @@
   "_comment.MultiLevelEffect": "Enables or disables visual effect for Multi Level Bonus (it does not work now)",
   "MultiLevelAmount": 3,
   "_comment.MultiLevelAmount": "Number of levels needed to trigger Multi Level Bonus",
-  "MultiLevelSound": "sounds/training/highscore.wav",
+  "MultiLevelSound": "",
   "_comment.MultiLevelSound": "Sound on Multilevel bonus",
   "CommitSuicide": 1,
   "_comment.CommitSuicide": "Level down players if they use the 'kill' command. 0 - Disable, 1..N - Levels to lose",

@@ -84,22 +84,22 @@
   "CCSPlayer_WeaponServices_CanUse": {
     "signatures": {
       "library": "server",
-      "windows": "48 89 5C 24 ? 48 89 6C 24 ? 56 57 41 56 48 83 EC 30 48 8B 01",
+      "windows": "48 89 5C 24 ? 48 89 6C 24 ? 56 57 41 56 48 83 EC ? 48 8B 01 48 8B FA",
       "linux": "55 48 8D 15 ? ? ? ? 48 89 E5 41 55 49 89 FD 41 54 49 89 F4"
     }
   },
   "CCSPlayer_ItemServices_CanAcquire": {
     "signatures": {
       "library": "server",
-      "windows": "48 8B C4 44 89 40 18 48 89 48 08 55 56",
-      "linux": " 55 48 89 E5 41 57 41 56 48 8D 45 CC"
+      "windows": "48 8B C4 44 89 40 ? 48 89 50 ? 48 89 48",
+      "linux": "55 48 89 E5 41 57 41 56 41 55 49 89 CD 41 54 53 48 83 EC"
     }
   },
   "GetCSWeaponDataFromKey": {
     "signatures": {
       "library": "server",
-      "windows": "48 89 5C 24 CC 48 89 74 24 CC 57 48 83 EC 20 48 8B FA 8B",
-      "linux": " 55 48 89 E5 41 57 41 56 41 89 FE 41 55 41 54 45"
+      "windows": "48 89 5C 24 ? 48 89 74 24 ? 57 48 83 EC ? 48 8B FA 8B F1 48 85 D2 0F 84",
+      "linux": "55 48 89 E5 41 57 41 56 41 89 FE 41 55 41 54 45"
     }
   },
   "CCSPlayer_ItemServices_GiveNamedItem": {
@@ -131,6 +131,12 @@
       "library": "server",
       "windows": "48 8B C4 4C 89 48 ? 48 89 48 ? 55 41 55",
       "linux": "55 48 89 E5 41 57 41 56 41 55 41 54 49 89 FC 53 48 81 EC 88 00 00 00 48 8D 05 ? ? ? ?"
+    }
+  },
+  "CCSGameRules_FindPickerEntity": {
+    "offsets": {
+      "windows": 27,
+      "linux": 28
     }
   },
   "UTIL_CreateEntityByName": {
@@ -170,8 +176,8 @@
   },
   "CBasePlayerPawn_CommitSuicide": {
     "offsets": {
-      "windows": 377,
-      "linux": 377
+      "windows": 380,
+      "linux": 380
     }
   },
   "CBasePlayerPawn_RemovePlayerItem": {
@@ -252,6 +258,12 @@
     "offsets": {
       "windows": 2,
       "linux": 0
+    }
+  },
+  "CheckTransmitPlayerSlot": {
+    "offsets": {
+      "windows": 584,
+      "linux": 584
     }
   }
 }
