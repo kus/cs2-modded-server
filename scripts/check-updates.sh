@@ -51,7 +51,7 @@ fetch_latest_release() {
 		else
 			echo ""
 		fi
-	elif [[ $url == *"sourcemm.net"* ]]; then
+	elif [[ $url == *"metamodsource.net"* ]]; then
 		# Filter lines with the specific class and extract the version string
 		local latest_release=$(curl -s "$url" | grep "class=['\"]quick-download download-link['\"]" | grep -o "mmsource-[0-9.]*-git[0-9]*-linux.tar.gz" | sed -E 's/mmsource-([0-9.]+)-git([0-9]+)-linux.tar.gz/\1-\2/' | head -n 1)
 
