@@ -288,7 +288,7 @@ echo ./game/bin/linuxsteamrt64/cs2 \
 	$IP_ARGS \
     -port $PORT \
     +map de_dust2 \
-    -maxplayers $MAXPLAYERS \
+    +sv_visiblemaxplayers $MAXPLAYERS \
     -authkey $API_KEY \
 	+sv_setsteamaccount $STEAM_ACCOUNT \
     +game_type 0 \
@@ -307,7 +307,7 @@ sudo -u $user ./game/bin/linuxsteamrt64/cs2 \
 	$IP_ARGS \
     -port $PORT \
     +map de_dust2 \
-    -maxplayers $MAXPLAYERS \
+    +sv_visiblemaxplayers $MAXPLAYERS \
     -authkey $API_KEY \
 	+sv_setsteamaccount $STEAM_ACCOUNT \
     +game_type 0 \

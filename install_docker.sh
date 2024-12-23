@@ -182,7 +182,7 @@ sudo -u $user ./game/bin/linuxsteamrt64/cs2 \
     "$IP_ARGS" \
     -port "$PORT" \
     +map "${MAP-de_dust2}" \
-    -maxplayers "$MAXPLAYERS" \
+    +sv_visiblemaxplayers "$MAXPLAYERS" \
     -authkey "$API_KEY" \
     +sv_setsteamaccount "$STEAM_ACCOUNT" \
     +game_type "${GAME_TYPE-0}" \
