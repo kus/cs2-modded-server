@@ -90,7 +90,7 @@ Mod | Version | Why
 [CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon)| `1.2.0` | This is a rudimentary implementation of a RCON plugin for CS2 using CounterStrikeSharp as RCON does not work whilst connected to the server
 [SharpTimer](https://github.com/DEAFPS/SharpTimer/)| `0.2.5` | SharpTimer is a simple Surf/KZ/Bhop/MG/Deathrun/etc CS2 Timer plugin
 [GunGame](https://github.com/ssypchenko/cs2-gungame)| `1.1.2` | GunGame mode on Counter Strike Sharp
-[K4-Arenas](https://github.com/KitsuneLab-Development/K4-Arenas)| `1.5.3` | All in one arena plugin, that you can use to have a ladder type gameplay. Support all map, 2v2/3v3/etc
+[K4-Arenas](https://github.com/KitsuneLab-Development/K4-Arenas)| `1.5.4` | All in one arena plugin, that you can use to have a ladder type gameplay. Support all map, 2v2/3v3/etc
 [CS2 Retakes](https://github.com/B3none/cs2-retakes)| `20.0.16` | CS2 implementation of retakes. Based on the version for CS:GO by Splewis.
 [CS2 Retakes Shared](https://github.com/B3none/cs2-retakes)| `20.0.16` | Shared library for CS2 Retakes.
 [CS2 Instadefuse](https://github.com/B3none/cs2-instadefuse)| `2.0.0` | Allows a CT to instantly defuse the bomb when nothing can prevent defusal. Written in C# for CounterStrikeSharp.
