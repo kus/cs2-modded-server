@@ -101,6 +101,9 @@ if [ "$?" -ne "0" ]; then
 	fi
 fi
 
+chmod 777 /home/${user}/cs2
+chown -R ${user}:${user} /home/${user}
+
 echo "Checking steamcmd exists..."
 if [ ! -d "/steamcmd" ]; then
 	mkdir /steamcmd && cd /steamcmd
