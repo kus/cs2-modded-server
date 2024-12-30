@@ -1,0 +1,261 @@
+// CSGO Weapons
+"Weapons"
+{
+	//"weapon classname w/o weapon_"
+	//{
+	//	"enabled"		"0" 	//whether this weapon can be used by human
+	//	"knockback"		"0.0" 	//knockback scale for when humans shoot a zombie using this weapon
+	//}
+
+	// Gear
+	"c4"
+	{
+		"enabled"		"1"
+	}
+	"knife"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"taser"
+	{
+		"enabled"		"0"
+	}
+	"shield"
+	{
+		"enabled"		"0"
+	}
+	"bumpmine"
+	{
+		"enabled"		"0"
+	}
+	"breachcharge"
+	{
+		"enabled"		"0"
+	}
+	
+	// Grenade
+	"decoy"
+	{
+		"enabled"		"0"
+	}
+	"flashbang"
+	{
+		"enabled"		"0"
+	}
+	"healthshot"
+	{
+		"enabled"		"0"
+	}
+	"hegrenade"
+	{
+		"enabled"		"1"
+		"knockback"		"3.0"
+	}	
+	"hegrenade_projectile" // hegrenade explosion knockback
+	{
+		"enabled"		"1"
+		"knockback"		"3.0"
+	}
+	"inferno" // incgrenade and molotov flames knockback
+	{
+		"enabled"		"1"
+		"knockback"		"5.0"
+	}
+	"incgrenade"
+	{
+		"enabled"		"1"
+		"knockback"		"5.0"
+	}
+	"molotov"
+	{
+		"enabled"		"1"
+		"knockback"		"5.0"
+	}
+	"smokegrenade"
+	{
+		"enabled"		"0"
+	}
+	"tagrenade"
+	{
+		"enabled"		"0"
+	}
+	
+	// Heavy
+	"m249"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"mag7"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"negev"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"nova"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"sawedoff"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"xm1014"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	
+	// Pistol
+	"cz75a"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"deagle"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"elite"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"fiveseven"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"glock"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"hkp2000"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"p250"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"revolver"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"tec9"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"usp_silencer"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	
+	// Rifle
+	"ak47"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"aug"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"awp"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"famas"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"g3sg1"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"galilar"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"m4a1"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"m4a1_silencer"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"scar20"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"sg556"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"ssg08"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	
+	// SMG
+	"bizon"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"mac10"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"mp5sd"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"mp7"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"mp9"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"p90"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+	"ump45"
+	{
+		"enabled"		"1"
+		"knockback"		"1.0"
+	}
+}

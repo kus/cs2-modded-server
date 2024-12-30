@@ -1,0 +1,5 @@
+"Metamod Plugin"
+{
+	"alias"	"cs2fixes"
+	"file"	"addons\cs2fixes\bin\win64\cs2fixes"
+}
