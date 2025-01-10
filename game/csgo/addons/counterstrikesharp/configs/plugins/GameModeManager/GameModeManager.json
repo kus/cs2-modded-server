@@ -263,6 +263,14 @@
         ]
       },
       {
+        "Name": "Battle Ball",
+        "Config": "battle.cfg",
+        "DefaultMap": "3280650663",
+        "MapGroups": [
+          "mg_battle"
+        ]
+      },
+      {
         "Name": "Battle Royale",
         "Config": "br.cfg",
         "DefaultMap": "3330484099",

@@ -37,6 +37,7 @@
 						"mg_battleroyale"	"64"
 						"mg_casual-1.6"		"65"
 						"mg_45"				"66"
+						"mg_battle"			"67"
 					}
 				}
 
@@ -353,7 +354,6 @@
 				"workshop/3129698096/surf_nyx"		""
 				"workshop/3296258256/surf_whiteout"		""
 				"workshop/3079877518/surf_ski_2"		""
-				"workshop/3280650663/battleball"		""
 			}
 		}
 		"mg_minigames"
@@ -453,6 +453,15 @@
 			"maps"
 			{
 				"workshop/3142070597/awp_bhop_rocket"		""
+			}
+		}
+		"mg_battle"
+		{
+			"name"			"mg_battle"
+			"displayname"			"Battle Ball"
+			"maps"
+			{
+				"workshop/3280650663/battleball"		""
 			}
 		}
 		"mg_aim"
