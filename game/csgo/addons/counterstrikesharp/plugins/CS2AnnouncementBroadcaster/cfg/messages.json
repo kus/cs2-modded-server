@@ -141,7 +141,7 @@
             }
         },
 		{
-            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Hide and Seek\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Hide and Seek\u2029\u2029[NORMAL]Press [GREEN]E[NORMAL] in front of you to freeze/unfreeze\u2029[NORMAL]Press [GREEN]E[NORMAL] under you to whistle\u2029[NORMAL]Props change randomly at [GREEN]4:00 | 2:00 | 1:00[NORMAL] (you cannot choose)\u2029[NORMAL]Use [GREEN]thirdperson[NORMAL] in console to see yourself\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
             "delay": 3,
             "properties": "Value",
             "cond": {
