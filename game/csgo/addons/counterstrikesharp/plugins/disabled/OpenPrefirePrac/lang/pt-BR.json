@@ -91,5 +91,8 @@
     "map.de_vertigo.mid_to_ct": "Da metade à desova do CT",
     "map.de_vertigo.a_ramp": "Atacar o local A a partir da rampa A",
     "map.de_vertigo.a_short": "Atacar um local a partir de um andaime",
-    "map.de_vertigo.b_retake": "Retomar o local B do elevador"
+    "map.de_vertigo.b_retake": "Retomar o local B do elevador",
+    "map.de_train.a_main_to_a_site": "Atacar o local A a partir do local A principal",
+    "map.de_train.ivy_to_a": "Ataque um site de hera",
+    "map.de_train.ladder_to_a": "Ataque um site da sala de escada"
 }

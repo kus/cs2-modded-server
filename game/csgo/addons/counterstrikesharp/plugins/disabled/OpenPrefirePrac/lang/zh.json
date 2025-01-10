@@ -91,5 +91,8 @@
     "map.de_vertigo.mid_to_ct": "从中路到警家",
     "map.de_vertigo.a_ramp": "从 A 斜坡进攻 A 包点",
     "map.de_vertigo.a_short": "从 A 小进攻 A 包点",
-    "map.de_vertigo.b_retake": "从连接回防 B 区"
+    "map.de_vertigo.b_retake": "从连接回防 B 区",
+    "map.de_train.a_main_to_a_site": "从匪口进攻 A 包点",
+    "map.de_train.ivy_to_a": "从绿通进攻 A 包点",
+    "map.de_train.ladder_to_a": "从红楼梯进攻 A 包点"
 } 
