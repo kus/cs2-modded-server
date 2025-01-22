@@ -80,7 +80,7 @@ Mod | Version | Why
 --- | --- | ---
 [Metamod:Source](https://www.metamodsource.net/downloads.php?branch=dev) | `2.0.0-1319` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
 [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `301` | Attempts to implement a .NET Core scripting layer on top of a Metamod Source Plugin, allowing developers to create plugins that interact with the game server in a modern language (C#)
-[CS2Fixes](https://github.com/Source2ZE/CS2Fixes) | `1.10.3` | A Metamod plugin with fixes and features
+[CS2Fixes](https://github.com/Source2ZE/CS2Fixes) | `1.10.4` | A Metamod plugin with fixes and features
 [MultiAddonManager](https://github.com/Source2ZE/MultiAddonManager) | `1.3.3` | Allows you to use multiple workshop addons at once and have clients download them
 [ServerListPlayersFix](https://github.com/Source2ZE/ServerListPlayersFix) | `1.0.104102024` | Fixes players not showing up in the server browser
 [CS2_ExecAfter](https://github.com/kus/CS2_ExecAfter) | `1.0.0` | Executes a command after server event (i.e. OnMapStart) or a delay.
