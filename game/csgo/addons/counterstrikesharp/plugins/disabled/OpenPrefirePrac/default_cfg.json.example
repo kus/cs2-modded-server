@@ -26,5 +26,6 @@
     // EquipPlayer:
     //   0: Disabled. To avoid interfering with other weapon related plugins
     //   1: Enabled. Players will be equipped with AK47, deagle and nades every time they respawn.
+    //   2: Behavior tree based aim lock: Hard mode.
     "EquipPlayer": 1
 }

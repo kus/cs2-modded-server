@@ -217,7 +217,7 @@
       {
         "Name": "Hide N Seek",
         "Config": "hns.cfg",
-        "DefaultMap": "3097563690",
+        "DefaultMap": "3348038890",
         "MapGroups": [
           "mg_hns"
         ]
@@ -260,6 +260,14 @@
         "DefaultMap": "3073929825",
         "MapGroups": [
           "mg_scoutzknivez"
+        ]
+      },
+      {
+        "Name": "Battle Ball",
+        "Config": "battle.cfg",
+        "DefaultMap": "3280650663",
+        "MapGroups": [
+          "mg_battle"
         ]
       },
       {

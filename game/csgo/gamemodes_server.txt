@@ -37,6 +37,7 @@
 						"mg_battleroyale"	"64"
 						"mg_casual-1.6"		"65"
 						"mg_45"				"66"
+						"mg_battle"			"67"
 					}
 				}
 
@@ -133,13 +134,15 @@
 				"workshop/3070594412/cs_assault"		""
 				"workshop/3072352643/de_ruins_d_prefab"		""
 				"workshop/3089953774/cs_militia"		""
-				"workshop/3070960099/de_aztec"		""
+				"workshop/3079692971/de_aztec_hr"		""
 				"workshop/3108513658/de_akiba"		""
 				"workshop/3236615060/cs_insertion2"		""
 				"workshop/3070284539/de_train"		""
 				"workshop/3152430710/de_mills"		""
 				"workshop/3121217565/de_thera"		""
 				"workshop/3073892687/de_season"		""
+				"workshop/3386116667/de_ema"		""
+				"workshop/3345551391/twofort_cs2"		""
 			}
 		}
 		"mg_wingman"
@@ -182,6 +185,8 @@
 				"workshop/3082340867/de_sakura"		""
 				"workshop/3165559377/de_memento"		""
 				"workshop/3309665004/skatepark"		""
+				"workshop/3386116667/de_ema"		""
+				"workshop/3360723913/paintit"		""
 			}
 		}
 		"mg_dm"
@@ -241,6 +246,11 @@
 				"workshop/3121217565/de_thera"		""
 				"workshop/3257582863/de_palais"		""
 				"workshop/3343693110/school_d_environment_prefab"		""
+				"workshop/3386116667/de_ema"		""
+				"workshop/3345551391/twofort_cs2"		""
+				"workshop/3360723913/paintit"		""
+				"workshop/3248340515/kloce"		""
+				"workshop/3326465469/gulag"		""
 			}
 		}
 		"mg_gg"
@@ -271,6 +281,11 @@
 				"workshop/3071890065/cs2_bloodstrike"		""
 				"workshop/3109232789/gg_simpsons_vs_flanders_v2"		""
 				"workshop/3343693110/school_d_environment_prefab"		""
+				"workshop/3386116667/de_ema"		""
+				"workshop/3345551391/twofort_cs2"		""
+				"workshop/3360723913/paintit"		""
+				"workshop/3248340515/kloce"		""
+				"workshop/3326465469/gulag"		""
 			}
 		}
 		"mg_1v1"
@@ -335,6 +350,10 @@
 				"workshop/3082548297/surf_rookie"		""
 				"workshop/3098972556/surf_benevolent"		""
 				"workshop/3088413071/surf_ace"		""
+				"workshop/3133346713/surf_boreas"		""
+				"workshop/3129698096/surf_nyx"		""
+				"workshop/3296258256/surf_whiteout"		""
+				"workshop/3079877518/surf_ski_2"		""
 			}
 		}
 		"mg_minigames"
@@ -410,11 +429,11 @@
 			"displayname"			"Hide n Seek"
 			"maps"
 			{
-				"workshop/3097563690/infernohideandseek"		""
-				"workshop/3074479691/seek_town_bs"		""
-				"workshop/3070951079/winterday_bs"		""
-				"workshop/3070541369/minus_denhet"		""
-				"workshop/3071094345/hs_lake"		""
+				"workshop/3366748499/de_nuke_prophunt"		""
+				"workshop/3382166635/de_overpass_prophunt"		""
+				"workshop/3348038890/de_inferno_prophunt"		""
+				"workshop/3292648008/de_vertigo_prophunt"		""
+				"workshop/3287578956/de_mirage_prophunt"		""
 			}
 		}
 		"mg_soccer"
@@ -434,6 +453,15 @@
 			"maps"
 			{
 				"workshop/3142070597/awp_bhop_rocket"		""
+			}
+		}
+		"mg_battle"
+		{
+			"name"			"mg_battle"
+			"displayname"			"Battle Ball"
+			"maps"
+			{
+				"workshop/3280650663/battleball"		""
 			}
 		}
 		"mg_aim"

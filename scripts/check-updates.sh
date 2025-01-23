@@ -84,6 +84,50 @@ fetch_last_updated() {
 	fi
 }
 
+download_and_extract_latest_release() {
+	local repo_url="$1"
+	if [[ $repo_url != *"github.com"* ]]; then
+		echo "Unsupported URL: $repo_url"
+		return
+	fi
+
+	local repo_name=$(echo "$repo_url" | awk -F'github.com/' '{print $2}')
+	local latest_release_urls=$(curl -s "https://api.github.com/repos/${repo_name}/releases/latest" | grep "browser_download_url" | cut -d '"' -f 4)
+
+	if [ -z "$latest_release_urls" ]; then
+		echo "No releases found for $repo_name"
+		return 1
+	fi
+
+	rm -rf "./tmp/${repo_name}"
+	local temp_dir="./tmp/${repo_name}"
+	mkdir -p "${temp_dir}" || echo ""
+
+	for url in $latest_release_urls; do
+		local temp_file="./tmp/$(basename "$url")"
+		local temp_unzip_dir="$temp_dir"
+
+		if [[ "$temp_file" == *"windows"* ]]; then
+			temp_unzip_dir="$temp_unzip_dir/windows"
+		elif [[ "$temp_file" == *"linux"* ]]; then
+			temp_unzip_dir="$temp_unzip_dir/linux"
+		fi
+
+		if [ ! -f "$temp_file" ]; then
+			echo "Downloading latest release from $url..."
+			curl -L -o "$temp_file" "$url"
+		fi
+
+		echo "Extracting $temp_file..."
+		case "$temp_file" in
+		*.tar.gz) tar --overwrite -xzf "$temp_file" -C "$temp_unzip_dir" >/dev/null ;;
+		*.zip) unzip -o "$temp_file" -d "$temp_unzip_dir" >/dev/null ;;
+		*) echo "Unsupported file format: $temp_file" ;;
+		esac
+	done
+	echo "Latest release downloaded and extracted to $temp_dir"
+}
+
 main() {
 	# Call extract_mods and read output into an array
     IFS=$'\n' read -rd '' -a modList < <(extract_mods)
@@ -105,6 +149,7 @@ main() {
 				echo -e "\033[0;32m✅ ${name} ${latest_release}\033[0m"
 			else
 				echo -e "\033[0;33m📦 ${name} update available ${version} > ${latest_release} ${url}\033[0m"
+				download_and_extract_latest_release "$url"
 			fi
 		elif [ -n "$last_updated" ]; then
 			echo -e "\033[1;30m🔍 ${name} ${version} - Last updated ${last_updated} ${url}\033[0m"
