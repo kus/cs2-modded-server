@@ -79,7 +79,7 @@ Getting up and running:
 Mod | Version | Why
 --- | --- | ---
 [Metamod:Source](https://www.metamodsource.net/downloads.php?branch=dev) | `2.0.0-1319` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
-[CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `301` | Attempts to implement a .NET Core scripting layer on top of a Metamod Source Plugin, allowing developers to create plugins that interact with the game server in a modern language (C#)
+[CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `303` | Attempts to implement a .NET Core scripting layer on top of a Metamod Source Plugin, allowing developers to create plugins that interact with the game server in a modern language (C#)
 [CS2Fixes](https://github.com/Source2ZE/CS2Fixes) | `1.10.4` | A Metamod plugin with fixes and features
 [MultiAddonManager](https://github.com/Source2ZE/MultiAddonManager) | `1.3.3` | Allows you to use multiple workshop addons at once and have clients download them
 [ServerListPlayersFix](https://github.com/Source2ZE/ServerListPlayersFix) | `1.0.104102024` | Fixes players not showing up in the server browser
@@ -105,7 +105,7 @@ Mod | Version | Why
 [CS2 Deathmatch](https://github.com/NockyCZ/CS2-Deathmatch)| `1.2.5` | Custom Deathmatch CS2 plugin (Includes custom spawnpoints, multicfg, gun selection, spawn protection, etc)
 [OpenPrefirePrac](https://github.com/lengran/OpenPrefirePrac)| `0.1.46` | Multiple prefire practices on competitive maps and support multiplayer practicing simultaneously.
 [CS2-CustomVotes](https://github.com/imi-tat0r/CS2-CustomVotes)| `1.1.3` | A plugin for Counter-Strike 2 to create custom votes for settings.
-[deathrun-manager](https://github.com/leoskiline/cs2-deathrun-manager)| `0.0.8` | Deathrun Manager for CounterStrikeSharp Framework CS2.
+[deathrun-manager](https://github.com/leoskiline/cs2-deathrun-manager)| `0.0.9` | Deathrun Manager for CounterStrikeSharp Framework CS2.
 [AnnouncementBroadcaster](https://github.com/lengran/CS2AnnouncementBroadcaster) | `0.5` | Conditional messages, OnCommand, OnPlayerConnect, OnRoundStart, and TimerMsgs.
 [CS2FunMatchPlugin](https://github.com/TitaniumLithium/CS2FunMatchPlugin) | `1.1.1` | Random fun mode every round
 
