@@ -476,6 +476,7 @@
 				"workshop/3078701726/aim_ak-colt_CS2"   ""
 				"workshop/3085962528/aim_usp"		""
 				"workshop/3075996446/aim_deagle"		""
+				"workshop/3082605693/aim_long_dust"		""
 			}
 		}
 		"mg_prefire"
@@ -522,6 +523,23 @@
 				"workshop/3270066070/de_overpass_45"				""
 				"workshop/3245245780/de_nuke_silly"				""
 				"workshop/3270516952/de_mirage45"				""
+			}
+		}
+		"mg_retake"
+		{
+			"name"			"mg_retake"
+			"displayname"			"Retake"
+			"maps"
+			{
+				"de_ancient"		""
+				"de_dust2"			""
+				"de_inferno"		""
+				"de_mirage"			""
+				"de_overpass"		""
+				"de_anubis"			""
+				"de_nuke"			""
+				"de_train"			""
+				"de_vertigo"			""
 			}
 		}
 	}
