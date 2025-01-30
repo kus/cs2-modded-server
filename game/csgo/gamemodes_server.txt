@@ -197,14 +197,14 @@
 			"displayname"			"Wingman"
 			"maps"
 			{
+				"workshop/3413800427/de_dust2_wingman"		""
+				"workshop/3402437047/de_mirage_d"		""
 				"cs_italy"			""
 				"cs_office"			""
 				"de_vertigo"		""
 				"de_ancient"		""
 				"de_anubis"			""
-				"de_dust2"			""
 				"de_inferno"		""
-				"de_mirage"			""
 				"de_nuke"			""
 				"de_train"			""
 				"de_overpass"		""
@@ -213,6 +213,7 @@
 				"ar_baggage"		""
 				"de_whistle"		""
 				"de_palais"			""
+				"workshop/3414036782/de_dogtown"		""
 				"workshop/3085490518/gd_rialto"		""
 				"workshop/3070550406/de_safehouse"		""
 				"workshop/3070563536/de_lake"		""
@@ -522,6 +523,7 @@
 				"workshop/3078701726/aim_ak-colt_CS2"   ""
 				"workshop/3085962528/aim_usp"		""
 				"workshop/3075996446/aim_deagle"		""
+				"workshop/3082605693/1v1aim_map_longdustversion_d"		""
 			}
 		}
 		"mg_prefire"
@@ -568,6 +570,7 @@
 				"workshop/3270066070/de_overpass_45"				""
 				"workshop/3245245780/de_nuke_silly"				""
 				"workshop/3270516952/de_mirage45"				""
+				"workshop/3406937162/de_train_twyxe"		""
 			}
 		}
 	}
