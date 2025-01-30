@@ -147,7 +147,7 @@
         "Config": "prefire.cfg",
         "DefaultMap": "de_inferno",
         "MapGroups": [
-          "mg_comp"
+          "mg_prefire"
         ]
       },
       {
@@ -155,7 +155,7 @@
         "Config": "retake.cfg",
         "DefaultMap": "de_dust2",
         "MapGroups": [
-          "mg_comp"
+          "mg_retake"
         ]
       },
       {
@@ -163,7 +163,7 @@
         "Config": "executes.cfg",
         "DefaultMap": "de_mirage",
         "MapGroups": [
-          "mg_comp"
+          "mg_executes"
         ]
       },
       {

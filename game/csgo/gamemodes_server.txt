@@ -38,6 +38,9 @@
 						"mg_casual-1.6"		"65"
 						"mg_45"				"66"
 						"mg_battle"			"67"
+						"mg_prefire"		"68"
+						"mg_retake"			"69"
+						"mg_executes"		"70"
 					}
 				}
 
@@ -101,7 +104,7 @@
 				"de_mirage"		""
 				"de_nuke"		""
 				"de_dust2"		""
-				"de_vertigo"	""
+				"de_train"		""
 			}
 		}
 		"mg_comp"
@@ -143,6 +146,49 @@
 				"workshop/3073892687/de_season"		""
 				"workshop/3386116667/de_ema"		""
 				"workshop/3345551391/twofort_cs2"		""
+			}
+		}
+		"mg_retake"
+		{
+			"name"					"mg_retake"
+			"displayname"			"Retakes"
+			"maps"
+			{
+				"de_ancient"	""
+				"de_anubis"		""
+				"de_inferno"	""
+				"de_mirage"		""
+				"de_nuke"		""
+				"de_dust2"		""
+				"de_train"		""
+				"de_overpass"	""
+				"de_vertigo"	""
+			}
+		}
+		"mg_prefire"
+		{
+			"name"					"mg_prefire"
+			"displayname"			"Prefire"
+			"maps"
+			{
+				"de_ancient"	""
+				"de_anubis"		""
+				"de_inferno"	""
+				"de_mirage"		""
+				"de_nuke"		""
+				"de_dust2"		""
+				"de_train"		""
+				"de_overpass"	""
+				"de_vertigo"	""
+			}
+		}
+		"mg_executes"
+		{
+			"name"					"mg_executes"
+			"displayname"			"Executes"
+			"maps"
+			{
+				"de_mirage"		""
 			}
 		}
 		"mg_wingman"
