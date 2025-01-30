@@ -1,0 +1,178 @@
+{
+	"enabled": true,
+	"debug": false,
+	"sound_command": "sounds/ui/coin_pickup_01.vsnd",
+	"default_gui_position": "top_center",
+	"gui_positions": {
+		"top_center": {
+			"message_font": "Verdana",
+			"message_font_size": 40,
+			"message_color": "Purple",
+			"message_shift_x": -2.9,
+			"message_shift_y": 4.4,
+			"status_font": "Verdana",
+			"status_font_size": 30,
+			"status_color": "Red",
+			"status_shift_x": -2.75,
+			"status_shift_y": 4
+		}
+	},
+	"dices": {
+		"DiceIncreaseHealth": {
+			"enabled": true,
+			"max_health": 30,
+			"min_health": 10
+		},
+		"DiceDecreaseHealth": {
+			"enabled": true,
+			"max_health": 30,
+			"min_health": 10
+		},
+		"DiceIncreaseSpeed": {
+			"enabled": true,
+			"max_speed": 2,
+			"min_speed": 1.5
+		},
+		"DiceChangeName": {
+			"enabled": false,
+			"min_players_for_using_player_names": 4,
+			"names": [
+				"Hans Wurst",
+				"Fritz Frosch",
+				"Klaus Kleber",
+				"Otto Normalverbraucher",
+				"Peter Lustig",
+				"Karl-Heinz Klammer",
+				"Gustav Gans",
+				"Heinz Erhardt",
+				"Wolfgang Witzig",
+				"Ludwig Lustig",
+				"Rudi R\u00FCssel",
+				"Siggi Sorglos",
+				"Berti Bratwurst",
+				"Dieter Dosenbier",
+				"Erwin Einhorn",
+				"Franz Fuchs",
+				"G\u00FCnther Gans",
+				"Horst Hering",
+				"Ingo Igel",
+				"J\u00FCrgen Jux",
+				"Kurt Ketchup",
+				"Lars Lachs",
+				"Manfred M\u00F6hre",
+				"Norbert Nudel",
+				"Olaf Oktopus",
+				"Paul Pinguin",
+				"Quirin Qualle",
+				"Ralf Rabe",
+				"Stefan Seestern",
+				"Thomas Tintenfisch",
+				"Uwe Uhu",
+				"Volker Vogel",
+				"Willi Wurm",
+				"Xaver Xylophon",
+				"Yannik Yak",
+				"Zacharias Zebra",
+				"Albert Apfel",
+				"Bernd Banane",
+				"Claus Clown",
+				"Detlef Dachs",
+				"Egon Eule",
+				"Ferdinand Frosch",
+				"Gerd Giraffe",
+				"Helmut Hase",
+				"Igor Igel",
+				"Jochen Jaguar",
+				"Knut K\u00E4nguru",
+				"Lothar L\u00F6we",
+				"Martin Marder",
+				"Norbert Nashorn",
+				"Egon Kowalski",
+				"Fritz Fink",
+				"Heinz Hering"
+			]
+		},
+		"DicePlayerInvisible": {
+			"enabled": true,
+			"invisibility_percentage": 0.5
+		},
+		"DicePlayerSuicide": {
+			"enabled": true
+		},
+		"DicePlayerRespawn": {
+			"enabled": true
+		},
+		"DiceStripWeapons": {
+			"enabled": true
+		},
+		"DiceChickenLeader": {
+			"amount_chicken": 16,
+			"enabled": true
+		},
+		"DiceFastMapAction": {
+			"enabled": true
+		},
+		"DicePlayerVampire": {
+			"enabled": true,
+			"max_health": 200
+		},
+		"DicePlayerLowGravity": {
+			"enabled": true,
+			"gravity_scale": 0.4
+		},
+		"DicePlayerHighGravity": {
+			"enabled": true,
+			"gravity_scale": 3
+		},
+		"DicePlayerOneHP": {
+			"enabled": true
+		},
+		"DicePlayerDisguiseAsPlant": {
+			"enabled": true
+		},
+		"DicePlayerAsChicken": {
+			"enabled": true
+		},
+		"DicePlayerMakeHostageSounds": {
+			"enabled": true
+		},
+		"DicePlayerMakeFakeGunSounds": {
+			"enabled": true
+		},
+		"DiceBigTaserBattery": {
+			"enabled": true,
+			"max_batteries": 10,
+			"min_batteries": 2
+		},
+		"DicePlayerCloak": {
+			"enabled": true
+		},
+		"DiceGiveHealthShot": {
+			"enabled": true,
+			"max_healthshots": 5,
+			"min_healthshots": 1
+		},
+		"DiceNoExplosives": {
+			"enabled": true
+		},
+		"DiceChangePlayerModel": {
+			"enabled": true
+		},
+		"DicePlayerGlow": {
+			"enabled": true
+		},
+		"DiceShowPlayerHealthBar": {
+			"enabled": true
+		},
+		"DiceNoRecoil": {
+			"enabled": true
+		},
+		"DiceChangePlayerSize": {
+			"enabled": true,
+			"max_size": 2,
+			"min_size": 0.5
+		}
+	},
+	"maps": {},
+	"ConfigVersion": 1
+}
