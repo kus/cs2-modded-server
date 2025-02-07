@@ -20,12 +20,12 @@
 	"dices": {
 		"DiceIncreaseHealth": {
 			"enabled": true,
-			"max_health": 30,
+			"max_health": 100,
 			"min_health": 10
 		},
 		"DiceDecreaseHealth": {
 			"enabled": true,
-			"max_health": 30,
+			"max_health": 90,
 			"min_health": 10
 		},
 		"DiceIncreaseSpeed": {
@@ -94,7 +94,7 @@
 		},
 		"DicePlayerInvisible": {
 			"enabled": true,
-			"invisibility_percentage": 0.5
+			"invisibility_percentage": 0.25
 		},
 		"DicePlayerSuicide": {
 			"enabled": true
