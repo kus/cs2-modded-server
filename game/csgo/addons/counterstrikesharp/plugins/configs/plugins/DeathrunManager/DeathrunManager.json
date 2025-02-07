@@ -1,0 +1,6 @@
+{
+    "DeathrunEnabled": 1,
+    "DeathrunPrefix": "[DR Manager]",
+    "DeathrunAllowCTGoSpec": 1,
+    "DeathrunVelocityMultiplierTR": 1.75
+}
