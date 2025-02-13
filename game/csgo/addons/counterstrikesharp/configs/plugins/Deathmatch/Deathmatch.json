@@ -1,28 +1,39 @@
 {
+	"Save Players Weapons": false,
 	"Gameplay Settings": {
 		"Free For All": true,
 		"Custom Modes": true,
+		"Game Length": 10,
 		"Random Selection Of Modes": false,
 		"Map Start Custom Mode": 0,
 		"New Mode Countdown": 10,
+		"Hud Type": 1,
 		"Check Enemies Distance": true,
 		"Distance From Enemies for Respawn": 500,
-		"Default Weapons": 1,
+		"Default Weapons": 2,
 		"Switch Weapons": true,
 		"Allow Buymenu": true,
 		"Use Default Spawns": false,
-		"Respawn Players After New Mode": false
+		"Respawn Players After New Mode": false,
+		"Fast Weapon Equip": true,
+		"Spawn Protection Color": ""
 	},
 	"General Settings": {
 		"Hide Round Seconds": true,
+		"Hide New Mode Countdown": false,
 		"Block Radio Messages": true,
+		"Block Player Ping": true,
+		"Block Player ChatWheel": true,
 		"Remove Breakable Entities": true,
-		"Remove Decals After Death": true,
-		"Force Map End": false
+		"Remove Decals": true,
+		"Remove Kill Points Message": true,
+		"Remove Respawn Sound": true,
+		"Force Map End": false,
+		"Restart Map On Plugin Load": false
 	},
 	"Sounds Settings": {
 		"Weapon Cant Equip Sound": "sounds/ui/weapon_cant_buy.vsnd_c",
-		"New Mode Sound": ""
+		"New Mode Sound": "sounds/music/3kliksphilip_01/bombtenseccount.vsnd_c"
 	},
 	"Custom Commands": {
 		"Deatmatch Menu Commands": "dm,deathmatch",
@@ -31,18 +42,24 @@
 	},
 	"Players Gameplay Settings": {
 		"VIP_flag": "@css/vip",
-		"respawn_time": 1.1,
-		"VIP_respawn_time": 1.1,
-		"spawn_protection_time": 1.2,
-		"VIP_spawn_protection_time": 1.2,
-		"reffil_ammo_kill": true,
-		"VIP_reffil_ammo_kill": true,
-		"reffil_ammo_headshot": true,
-		"VIP_reffil_ammo_headshot": true,
-		"refill_health_kill": 25,
-		"VIP_refill_health_kill": 25,
-		"refill_health_headshot": 50,
-		"VIP_refill_health_headshot": 50
+		"Non VIP Players": {
+			"Respawn Time": 1.5,
+			"Spawn Protection Time": 1.1,
+			"Reffil Ammo Kill": false,
+			"Reffil Ammo Headshot": false,
+			"Reffil Ammo in All Weapons": false,
+			"Reffil Health Kill": 20,
+			"Reffil Health Headshot": 40
+		},
+		"VIP Players": {
+			"Respawn Time": 1.1,
+			"Spawn Protection Time": 1.2,
+			"Reffil Ammo Kill": false,
+			"Reffil Ammo Headshot": false,
+			"Reffil Ammo in All Weapons": false,
+			"Reffil Health Kill": 25,
+			"Reffil Health Headshot": 50
+		}
 	},
 	"Client Preferences": {
 		"Kill Sound": {
