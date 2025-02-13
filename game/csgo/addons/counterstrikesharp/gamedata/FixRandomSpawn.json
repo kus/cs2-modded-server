@@ -1,0 +1,20 @@
+{
+  "EntSelectSpawnPoint": {
+    "signatures": {
+      "library": "server",
+      "windows": "48 83 EC ? 4C 89 74 24 ? 4C 8B F1 48 8B 0D",
+      "linux": "55 48 89 E5 41 57 41 56 41 55 41 54 49 89 FC 53 48 83 EC ? 4C 8D 3D ? ? ? ? 48 C7 45"
+    }
+  },
+  "EntSelectSpawnPoint_Patch1": {
+    "signatures": {
+      "library": "server",
+      "windows": "90 90",
+      "linux": "90 E9"
+    },
+    "offsets": {
+      "windows": 157,
+      "linux": 62
+    }
+  }
+}

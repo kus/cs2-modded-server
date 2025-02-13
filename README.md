@@ -109,6 +109,7 @@ Mod | Version | Why
 [AnnouncementBroadcaster](https://github.com/lengran/CS2AnnouncementBroadcaster) | `0.5` | Conditional messages, OnCommand, OnPlayerConnect, OnRoundStart, and TimerMsgs.
 [CS2FunMatchPlugin](https://github.com/TitaniumLithium/CS2FunMatchPlugin) | `1.1.1` | Random fun mode every round
 [RollTheDice](https://github.com/Kandru/cs2-roll-the-dice) | `1.2.10` | Roll the dice to get either a positive or negative effect for the current round.
+[CS2-FixRandomSpawn](https://github.com/qstage/CS2-FixRandomSpawn) | `1.1.2` | Fixes ConVar `mp_randomspawn` for any game mode.
 
 ## Share the love
 
