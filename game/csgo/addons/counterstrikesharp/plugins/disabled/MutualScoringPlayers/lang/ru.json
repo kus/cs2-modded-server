@@ -1,0 +1,5 @@
+{
+  "Plugin.Tag": "[MutualScoring]",
+  "Plugin.Victim": "{Green}{0} {LightPurple}{1}{Default} ({Lime}{2}{Default}:{LightRed}{3}{Default}) {LightPurple}{4}{Default} ({LightBlue}-{5}{Default} подряд)",
+  "Plugin.Attacker": "{Green}{0} {LightPurple}{1}{Default} ({Lime}{2}{Default}:{LightRed}{3}{Default}) {LightPurple}{4}{Default} ({LightBlue}+{5}{Default} подряд)"
+}
