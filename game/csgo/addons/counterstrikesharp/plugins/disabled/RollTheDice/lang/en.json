@@ -1,9 +1,8 @@
 {
     "core.hotreload": "{purple}[RollTheDice] {default}Hot-Reloaded!",
     "core.unload": "[RollTheDice] Unloaded RollTheDice Plugin!",
-    "core.defaultconfig": "[RollTheDice] Found no map-specific configuration for {mapName}, using default one!",
-    "core.noconfig": "[RollTheDice] No map-specific configuration for {mapName} or default one found. Skipping!",
-    "core.foundconfig": "[RollTheDice] Found {count} matching map-specific configurations for {mapName}!",
+    "core.config": "[RollTheDice] loaded initial config from file",
+    "core.mapconfig": "[RollTheDice] loaded configuration for {mapName}!",
     "core.announcement": "{purple}[RollTheDice] {default}Get a suprise effect by typing {green}!rtd{default}",
     "core.error": "{purple}[RollTheDice] {default}Error: {error}",
     "core.nodicesenabled": "{purple}[RollTheDice] {default}No dices enabled! Please enable at least one dice in the configuration!",
@@ -17,6 +16,11 @@
     "command.rollthedice.alreadyrolled": "{purple}[RollTheDice] {red}Already rolled: {default}{dice}",
     "command.rollthedice.error": "{default}Error: could not roll the dice for you :(",
     "command.rollthedice.unlucky": "{default}You failed to roll the dice :D",
+    "command.rollthedice.cooldown.rounds": "{purple}[RollTheDice] {red}Cooldown: {default}wait {green}{rounds} {default}more round(s)!",
+    "command.rollthedice.cooldown.seconds": "{purple}[RollTheDice] {red}Cooldown: {default}wait {green}{seconds} {default}more seconds(s)!",
+    "command.givedice.noplayers": "{purple}[RollTheDice] {default}No player found!",
+    "command.givedice.toomanyplayers": "{purple}[RollTheDice] {default}Too many players found. Please try again!",
+    "command.givedice.nodicefound": "{purple}[RollTheDice] {default}Specific Dice not found. Please try again!",
     "DiceChangeName_player": "{default}You are now named {green}{randomName}{default}!",
     "DiceChangeName_other": "{purple}[RollTheDice] {green}{playerName} {default}changed their name to {green}{randomName}{default}!",
     "DiceChickenLeader_player": "{default}You are a chicken leader!",
@@ -104,5 +108,8 @@
     "DiceNoRecoil_other": "{purple}[RollTheDice] {green}{playerName} {default} has (almost) no recoil!",
     "DiceChangePlayerSize_player": "{default}You changed your size to {playerSize}x",
     "DiceChangePlayerSize_gui": "Player Size: {playerSize}x",
-    "DiceChangePlayerSize_other": "{purple}[RollTheDice] {green}{playerName} {default} is now {playerSize}x his size!"
+    "DiceChangePlayerSize_other": "{purple}[RollTheDice] {green}{playerName} {default} is now {playerSize}x his size!",
+    "DiceThirdPersonView_player": "{default}You're now in Third Person Mode",
+    "DiceThirdPersonView_gui": "{default}Third Person Mode",
+    "DiceThirdPersonView_other": "{purple}[RollTheDice] {green}{playerName} {default} is now in Third Person mode!"
 }

@@ -1,9 +1,8 @@
 {
     "core.hotreload": "[WürfelSpiel] Neu geladen!",
     "core.unload": "[WürfelSpiel] RollTheDice Plugin entladen!",
-    "core.defaultconfig": "[WürfelSpiel] Keine kartenspezifische Konfiguration für {mapName} gefunden, Standardkonfiguration wird verwendet!",
-    "core.noconfig": "[WürfelSpiel] Keine kartenspezifische Konfiguration für {mapName} oder Standardkonfiguration gefunden. Überspringen!",
-    "core.foundconfig": "[WürfelSpiel] {count} passende kartenspezifische Konfigurationen für {mapName} gefunden!",
+    "core.config": "[WürfelSpiel] Konfiguration aus Datei geladen!",
+    "core.mapconfig": "[WürfelSpiel] Konfiguration für {mapName} geladen!",
     "core.announcement": "{purple}[WürfelSpiel] {default}Erhalte einen Überraschungseffekt mit {green}!rtd{default}",
     "core.error": "{purple}[WürfelSpiel] {default}Fehler: {error}",
     "core.nodicesenabled": "{purple}[WürfelSpiel] {default}Keine Würfel aktiviert! Bitte aktiviere mindestens einen Würfel in der Konfiguration!",
@@ -17,6 +16,11 @@
     "command.rollthedice.alreadyrolled": "{purple}[WürfelSpiel] {red}Bereits gewürfelt: {default}{dice}",
     "command.rollthedice.error": "{default}Fehler: konnte nicht würfeln :(",
     "command.rollthedice.unlucky": "{default}Du hast die Würfel verloren :D",
+    "command.rollthedice.cooldown.rounds": "{purple}[RollTheDice] {red}Cooldown: {default}Warte {green}{rounds} {default}Runde(n)!",
+    "command.rollthedice.cooldown.seconds": "{purple}[RollTheDice] {red}Cooldown: {default}Warte {green}{seconds} {default}Runde(n)!",
+    "command.givedice.noplayers": "{purple}[WürfelSpiel] {default}Keinen Spieler gefunden",
+    "command.givedice.toomanyplayers": "{purple}[WürfelSpiel] {default}Zu viele Spieler gefunden. Bitte genauer angeben",
+    "command.givedice.nodicefound": "{purple}[WürfelSpiel] {default}Keinen zu vergebenen Würfel gefunden",
     "DiceChangeName_player": "{default}Du heißt jetzt {green}{randomName}{default}!",
     "DiceChangeName_other": "{purple}[WürfelSpiel] {green}{playerName} {default}hat seinen Namen in {green}{randomName} {default}geändert!",
     "DiceChickenLeader_player": "{default}Du bist ein Hühnerflüsterer!",
@@ -104,5 +108,8 @@
     "DiceNoRecoil_other": "{purple}[WürfelSpiel] {green}{playerName} {default} hat kaum Rückstoß!",
     "DiceChangePlayerSize_player": "{default}Du hast deine Größe zu {playerSize}x geändert!",
     "DiceChangePlayerSize_gui": "Spieler-Größe: {playerSize}x",
-    "DiceChangePlayerSize_other": "{purple}[WürfelSpiel] {green}{playerName} {default} ist nun {playerSize}x so groß wie vorher!"
+    "DiceChangePlayerSize_other": "{purple}[WürfelSpiel] {green}{playerName} {default} ist nun {playerSize}x so groß wie vorher!",
+    "DiceThirdPersonView_player": "{default}Du bist nun in der externen Ansicht",
+    "DiceThirdPersonView_gui": "{default}Externe Ansicht",
+    "DiceThirdPersonView_other": "{purple}[RollTheDice] {green}{playerName} {default} ist nun in der externen Ansicht!"
 }
