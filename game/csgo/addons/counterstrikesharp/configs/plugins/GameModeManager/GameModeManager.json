@@ -26,34 +26,10 @@
     "Folder": "settings"
   },
   "Warmup": {
-    "Time": 30,
+    "Time": 0,
     "PerMap": false,
-    "Default": {
-      "Name": "Deathmatch",
-      "Config": "warmup/dm.cfg",
-      "DefaultMap": null,
-      "MapGroups": []
-    },
-    "List": [
-      {
-        "Name": "Deathmatch",
-        "Config": "warmup/dm.cfg",
-        "DefaultMap": null,
-        "MapGroups": []
-      },
-      {
-        "Name": "Knives Only",
-        "Config": "warmup/knives_only.cfg",
-        "DefaultMap": null,
-        "MapGroups": []
-      },
-      {
-        "Name": "Scoutz Only",
-        "Config": "warmup/scoutz_only.cfg",
-        "DefaultMap": null,
-        "MapGroups": []
-      }
-    ]
+    "Default": {},
+    "List": []
   },
   "Commands": {
     "Map": true,

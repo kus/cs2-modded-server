@@ -33,7 +33,7 @@
 	},
 	"Sounds Settings": {
 		"Weapon Cant Equip Sound": "sounds/ui/weapon_cant_buy.vsnd_c",
-		"New Mode Sound": "sounds/music/3kliksphilip_01/bombtenseccount.vsnd_c"
+		"New Mode Sound": ""
 	},
 	"Custom Commands": {
 		"Deatmatch Menu Commands": "dm,deathmatch",
@@ -105,7 +105,7 @@
 			"OnlyHS": false,
 			"KnifeDamage": true,
 			"RandomWeapons": false,
-			"CenterMessageText": "<font class='fontSize-l' color='orange'>Pistols Only</font>",
+			"CenterMessageText": "\u003Cfont class=\u0027fontSize-l\u0027 color=\u0027blue\u0027\u003EPistols Only\u003C/font\u003E\u003Cbr\u003ENext Mode: {NEXTMODE} in {REMAININGTIME}\u003Cbr\u003E",
 			"PrimaryWeapons": [],
 			"SecondaryWeapons": [
 				"weapon_usp_silencer",
@@ -129,7 +129,7 @@
 			"OnlyHS": true,
 			"KnifeDamage": true,
 			"RandomWeapons": false,
-			"CenterMessageText": "<font class='fontSize-l' color='red'>Pistols HS-Only</font>",
+			"CenterMessageText": "\u003Cfont class=\u0027fontSize-l\u0027 color=\u0027blue\u0027\u003EPistols HS Only\u003C/font\u003E\u003Cbr\u003ENext Mode: {NEXTMODE} in {REMAININGTIME}\u003Cbr\u003E",
 			"PrimaryWeapons": [],
 			"SecondaryWeapons": [
 				"weapon_usp_silencer",
@@ -153,7 +153,7 @@
 			"OnlyHS": false,
 			"KnifeDamage": true,
 			"RandomWeapons": false,
-			"CenterMessageText": "<font class='fontSize-l' color='orange'>2nd Round Buy</font>",
+			"CenterMessageText": "\u003Cfont class=\u0027fontSize-l\u0027 color=\u0027yellow\u0027\u003E2nd Round Buy\u003C/font\u003E\u003Cbr\u003ENext Mode: {NEXTMODE} in {REMAININGTIME}\u003Cbr\u003E",
 			"PrimaryWeapons": [
 				"weapon_mac10",
 				"weapon_ssg08",
@@ -189,7 +189,7 @@
 			"OnlyHS": false,
 			"KnifeDamage": true,
 			"RandomWeapons": false,
-			"CenterMessageText": "<font class='fontSize-l' color='orange'>Rifles</font>",
+			"CenterMessageText": "\u003Cfont class=\u0027fontSize-l\u0027 color=\u0027blue\u0027\u003ERifles\u003C/font\u003E\u003Cbr\u003ENext Mode: {NEXTMODE} in {REMAININGTIME}\u003Cbr\u003E",
 			"PrimaryWeapons": [
 				"weapon_ak47",
 				"weapon_m4a1",
@@ -223,7 +223,7 @@
 			"OnlyHS": true,
 			"KnifeDamage": true,
 			"RandomWeapons": false,
-			"CenterMessageText": "<font class='fontSize-l' color='red'>Rifles HS-Only</font>",
+			"CenterMessageText": "\u003Cfont class=\u0027fontSize-l\u0027 color=\u0027orange\u0027\u003ERifles HS Only\u003C/font\u003E\u003Cbr\u003ENext Mode: {NEXTMODE} in {REMAININGTIME}\u003Cbr\u003E",
 			"PrimaryWeapons": [
 				"weapon_ak47",
 				"weapon_m4a1",
