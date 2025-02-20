@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "RollTheDice/1.2.11": {
+      "RollTheDice/1.2.13": {
         "dependencies": {
           "CounterStrikeSharp.API": "1.0.305"
         },
@@ -285,7 +285,7 @@
     }
   },
   "libraries": {
-    "RollTheDice/1.2.11": {
+    "RollTheDice/1.2.13": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
