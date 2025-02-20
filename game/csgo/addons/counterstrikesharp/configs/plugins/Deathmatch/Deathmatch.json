@@ -8,17 +8,21 @@
 		"Map Start Custom Mode": 0,
 		"New Mode Countdown": 10,
 		"Hud Type": 1,
-		"Check Enemies Distance": true,
-		"Distance From Enemies for Respawn": 500,
 		"Default Weapons": 2,
 		"Switch Weapons": true,
 		"Allow Buymenu": true,
-		"Use Default Spawns": false,
 		"Respawn Players After New Mode": false,
 		"Fast Weapon Equip": true,
 		"Spawn Protection Color": ""
 	},
+	"Spawn System": {
+		"Spawns Method": 1,
+		"Team Spawns Separation": false,
+		"Check Spawn Visibility": true,
+		"Distance From Enemies": 500
+	},
 	"General Settings": {
+		"Display Spawns Editor In Menu": true,
 		"Hide Round Seconds": true,
 		"Hide New Mode Countdown": false,
 		"Block Radio Messages": true,
@@ -41,24 +45,24 @@
 		"Weapons Select Shortcuts": "weapon_ak47:ak,weapon_m4a1_silencer:m4,weapon_m4a1_silencer:m4a1s,weapon_m4a1_silencer:m4a1-s,weapon_m4a1:m4a4,weapon_awp:awp,weapon_ssg08:scout,weapon_usp_silencer:usp,weapon_glock:glock,weapon_mac10:mac,weapon_deagle:deagle"
 	},
 	"Players Gameplay Settings": {
-		"VIP_flag": "@css/vip",
+		"VIP Flag": "@css/vip",
 		"Non VIP Players": {
 			"Respawn Time": 1.5,
 			"Spawn Protection Time": 1.1,
-			"Reffil Ammo Kill": false,
-			"Reffil Ammo Headshot": false,
-			"Reffil Ammo in All Weapons": false,
-			"Reffil Health Kill": 20,
-			"Reffil Health Headshot": 40
+			"Refill Ammo Kill": false,
+			"Refill Ammo Headshot": false,
+			"Refill Ammo in All Weapons": false,
+			"Refill Health Kill": 20,
+			"Refill Health Headshot": 40
 		},
 		"VIP Players": {
 			"Respawn Time": 1.1,
 			"Spawn Protection Time": 1.2,
-			"Reffil Ammo Kill": false,
-			"Reffil Ammo Headshot": false,
-			"Reffil Ammo in All Weapons": false,
-			"Reffil Health Kill": 25,
-			"Reffil Health Headshot": 50
+			"Refill Ammo Kill": false,
+			"Refill Ammo Headshot": false,
+			"Refill Ammo in All Weapons": false,
+			"Refill Health Kill": 25,
+			"Refill Health Headshot": 50
 		}
 	},
 	"Client Preferences": {
@@ -66,35 +70,64 @@
 			"Enabled": true,
 			"Sound path": "sounds/ui/armsrace_kill_01.vsnd_c",
 			"Default value": false,
-			"Only for VIP": false
+			"Only for VIP": false,
+			"Command Shortcuts": []
 		},
 		"Headshot Kill Sound": {
 			"Enabled": true,
 			"Sound path": "sounds/buttons/bell1.vsnd_c",
 			"Default value": false,
-			"Only for VIP": false
+			"Only for VIP": false,
+			"Command Shortcuts": []
 		},
 		"Knife Kill Sound": {
 			"Enabled": true,
 			"Sound path": "sounds/ui/armsrace_final_kill_knife.vsnd_c",
 			"Default value": false,
-			"Only for VIP": false
+			"Only for VIP": false,
+			"Command Shortcuts": []
 		},
 		"Hit Sound": {
 			"Enabled": true,
 			"Sound path": "sounds/ui/csgo_ui_contract_type2.vsnd_c",
 			"Default value": false,
-			"Only for VIP": false
+			"Only for VIP": false,
+			"Command Shortcuts": []
+		},
+		"No Primary": {
+			"Enabled": true,
+			"Default value": false,
+			"Only for VIP": false,
+			"Command Shortcuts": [
+				"noprimary",
+				"primary"
+			]
 		},
 		"Only Headshot": {
 			"Enabled": true,
 			"Default value": false,
-			"Only for VIP": false
+			"Only for VIP": false,
+			"Command Shortcuts": [
+				"hs",
+				"onlyhs"
+			]
 		},
 		"Hud Messages": {
 			"Enabled": true,
 			"Default value": true,
-			"Only for VIP": false
+			"Only for VIP": false,
+			"Command Shortcuts": [
+				"hud"
+			]
+		},
+		"Damage Info": {
+			"Enabled": true,
+			"Default value": true,
+			"Only for VIP": false,
+			"Command Shortcuts": [
+				"damage",
+				"dmg"
+			]
 		}
 	},
 	"Custom Modes": {
