@@ -108,7 +108,7 @@ Mod | Version | Why
 [deathrun-manager](https://github.com/leoskiline/cs2-deathrun-manager)| `0.1.0` | Deathrun Manager for CounterStrikeSharp Framework CS2.
 [AnnouncementBroadcaster](https://github.com/lengran/CS2AnnouncementBroadcaster) | `0.5` | Conditional messages, OnCommand, OnPlayerConnect, OnRoundStart, and TimerMsgs.
 [CS2FunMatchPlugin](https://github.com/TitaniumLithium/CS2FunMatchPlugin) | `1.1.1` | Random fun mode every round
-[RollTheDice](https://github.com/Kandru/cs2-roll-the-dice) | `1.2.13` | Roll the dice to get either a positive or negative effect for the current round.
+[RollTheDice](https://github.com/Kandru/cs2-roll-the-dice) | `1.2.14` | Roll the dice to get either a positive or negative effect for the current round.
 [CS2-FixRandomSpawn](https://github.com/qstage/CS2-FixRandomSpawn) | `1.1.2` | Fixes ConVar `mp_randomspawn` for any game mode.
 [CS2-MutualScoringPlayers](https://github.com/qstage/CS2-MutualScoringPlayers) | `1.0.1` | Keeps score of kills between players.
 
