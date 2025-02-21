@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Gravity Magic"
+    "shortname": "Gravity",
+    "hammerid": "12345",
+    "message": true,
+    "ui": true,
+    "transfer": true,
+    "color": "purple",
+    "templated": true, // only set false if the weapon is NOT in a template
+    "handlers": [
+      {
+        "type": "button",
+        "hammerid": "buttonhammerid",
+        "event": "OnPressed",
+        "mode": 2,
+        "cooldown": 60,
+        "maxuses": 0,
+        "message": true,
+        "ui": true,
+        "templated": true // only set false if this entity is NOT in a template
+      }
+    ],
+    "triggers": ["3333", "22222"]
+  },
+  {
+	"name": "Item 2",
+	//  ...
+  }
+]

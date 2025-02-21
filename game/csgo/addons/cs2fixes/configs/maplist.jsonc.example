@@ -1,0 +1,52 @@
+{
+	"Groups":
+	{
+		// If any map in a group gets played, all maps in that group will receive the group cooldown
+		// The group cooldown applies immediately, but only starts ticking down *after* the trigger map ends
+		"MyFirstGroup":
+		{
+			"enabled": true,
+			"cooldown": 4 // Cooldown in hours
+		},
+		"MySecondGroup":
+		{
+			"enabled": true,
+			"cooldown": 0.5
+		},
+		"MyThirdGroup":
+		{
+			// Omitting the cooldown option will fall back to cs2f_vote_maps_cooldown cvar
+			"enabled": true
+		}
+	},
+	"Maps":
+	{
+		"de_dust2": // Map name should always match .vpk name to avoid unintended behaviour
+		{
+			"enabled": true
+		},
+		"ze_my_first_ze_map":
+		{
+			"enabled": true,
+			"workshop_id": 123, // Workshop ID must be specified for workshop maps
+			"min_players": 20, // Minimum players required to nominate or appear in vote
+			"cooldown": 2 // Custom cooldown in hours, can override default map cooldown
+		},
+		"ze_my_second_ze_map":
+		{
+			"enabled": true,
+			"workshop_id": 456,
+			"min_players": 5, // Maximum players where map can be nominated or appear in vote
+			"max_players": 10,
+			"cooldown": 3,
+			"groups": [ "MyFirstGroup" ] // Any other maps in this group will receive the group cooldown when this map is played
+		},
+		"ze_my_third_ze_map":
+		{
+			"enabled": true,
+			"workshop_id": 789,
+			"max_players": 20,
+			"groups": [ "MyFirstGroup", "MySecondGroup" ] // A map can be in multiple groups
+		}
+	}
+}
