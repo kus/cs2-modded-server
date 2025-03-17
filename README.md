@@ -723,15 +723,18 @@ First open terminal and `cd` into the folder where you unzipped the zips i.e.: `
 
 `rsync -rhavz --exclude "._*" --exclude ".DS_Store" --partial --progress --stats ./addons/ /Users/kus/dev/personal/counter-strike/cs2-modded-server/game/csgo/addons/`
 
-If you are on Windows, from the [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp/releases) with runtime zip, you need to copy the `api`,`bin`, `dotnet` folders from the `/addons/counterstrikesharp` folder to`game/csgo/addons/windows/counterstrikesharp` in this repo.
+If you are on Windows, from the [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp/releases) with runtime zip, you need to copy the `api`,`bin`, `dotnet` folders from the `/addons/counterstrikesharp` folder to `/game/csgo/addons/windows/counterstrikesharp` in this repo.
 
 ### Enable K4 Arenas
 
 K4 Arenas requires a MySQL database (5.2 or higher) to function. Setting up a MySQL Database is outside the scope of this repo.
 
-You can set one up yourself or use a hosted one (there are also some free options such as [https://www.freemysqlhosting.net/](https://www.freemysqlhosting.net/) [https://www.db4free.net/](https://www.db4free.net/) but reliability isn't guaranteed).
+You can set one up yourself or use a hosted one (there are also some free options such as [filess.io](https://filess.io/#DBMS) [freemysqlhosting.net](https://www.freemysqlhosting.net/) [db4free.net/](https://www.db4free.net/) but reliability isn't guaranteed).
 
-Once you have the connection details; on your server go here `game/csgo/addons/counterstrikesharp/configs/plugins/K4-Arenas` (/home/steam/cs2/game/csgo/addons/counterstrikesharp/configs/plugins/K4-Arenas on Linux) and open the file `K4-Arenas.json` and add them to `"database-settings"`.
+Once you have the connection details; the config file is located at `/game/csgo/addons/counterstrikesharp/configs/plugins/K4-Arenas/K4-Arenas.json` which you would put in `/custom_files/addons/counterstrikesharp/configs/plugins/K4-Arenas/K4-Arenas.json` so it is not overwritten/deleted and open the file `K4-Arenas.json` and add your database connection details to `"database-settings"`.
+
+> [!TIP]
+> If `K4-Arenas.json` does not exist, copy `K4-Arenas.json.example` and remove `.example` from the name and use that.
 
 Restart your server.
 
@@ -741,7 +744,7 @@ If you want to enable a whitelist on your server load the plugin by putting this
 
 If you want it to load on every mod on your server, you can put it in your `/custom_files/cfg/custom_all.cfg` file.
 
-The config file is located at `/game/csgo/addons/counterstrikesharp/plugins/disabled/Advertisement/advertisement.json` which you would put in `/custom_files/addons/counterstrikesharp/plugins/disabled/Advertisement/advertisement.json` so it is not overwritten.
+The config file is located at `/game/csgo/addons/counterstrikesharp/plugins/disabled/Advertisement/advertisement.json` which you would put in `/custom_files/addons/counterstrikesharp/plugins/disabled/Advertisement/advertisement.json` so it is not overwritten/deleted.
 
 ### Enable Whitelist so only a list of people can play
 
