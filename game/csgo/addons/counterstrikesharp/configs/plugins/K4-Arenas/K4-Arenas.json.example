@@ -6,7 +6,7 @@
     "database": "database",
     "password": "password",
     "port": 3306,
-    "sslmode": "none",
+    "sslmode": "preferred",
     "table-prefix": "",
     "table-purge-days": 30
   },
@@ -37,7 +37,11 @@
     "challenge-decline-commands": [
       "cdecline",
       "cdeny"
-    ]
+    ],
+    "center-menu-mode": true,
+    "center-announce-mode": true,
+    "freeze-in-center-menu": true,
+    "show-menu-credits": true
   },
   "round-settings": [
     {
@@ -186,8 +190,11 @@
     }
   ],
   "compatibility-settings": {
-    "metamod-skinchanger-compatibility": false,
-    "force-arena-clantags": false
+    "force-arena-clantags": false,
+    "block-flash-of-not-opponent": false,
+    "block-damage-of-not-opponent": false,
+    "give-knife-by-default": true,
+    "disable-clantags": false
   },
   "default-weapon-settings": {
     "default-rifle": null,
@@ -195,7 +202,8 @@
     "default-smg": null,
     "default-lmg": null,
     "default-shotgun": null,
-    "default-pistol": null
+    "default-pistol": null,
+    "default-round": "k4.rounds.rifle"
   },
-  "ConfigVersion": 1
+  "ConfigVersion": 8
 }

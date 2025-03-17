@@ -96,7 +96,7 @@ Mod | Version | Why
 [SharpTimer](https://github.com/Letaryat/poor-sharptimer)| `0.3.1w` | SharpTimer is a simple Surf/KZ/Bhop/MG/Deathrun/etc CS2 Timer plugin
 [STFixes](https://github.com/rcnoob/STFixes)| `1.0.4` | A CounterStrikeSharp plugin with common fixes and features for SharpTimer servers
 [GunGame](https://github.com/ssypchenko/cs2-gungame)| `1.1.2` | GunGame mode on Counter Strike Sharp
-[K4-Arenas](https://github.com/KitsuneLab-Development/K4-Arenas)| `2.0.4` | All in one arena plugin, that you can use to have a ladder type gameplay. Support all map, 2v2/3v3/etc
+[K4-Arenas](https://github.com/KitsuneLab-Development/K4-Arenas)| `2.0.4` | All in one arena plugin, that you can use to have a ladder type gameplay. Support all map, 2v2/3v3/etc [How?](#enable-k4-arenas)
 [CS2 Retakes](https://github.com/B3none/cs2-retakes)| `20.0.17` | CS2 implementation of retakes. Based on the version for CS:GO by Splewis.
 [CS2 Retakes Shared](https://github.com/B3none/cs2-retakes)| `20.0.17` | Shared library for CS2 Retakes.
 [CS2 Instadefuse](https://github.com/B3none/cs2-instadefuse)| `2.0.0` | Allows a CT to instantly defuse the bomb when nothing can prevent defusal. Written in C# for CounterStrikeSharp.
@@ -724,6 +724,16 @@ First open terminal and `cd` into the folder where you unzipped the zips i.e.: `
 `rsync -rhavz --exclude "._*" --exclude ".DS_Store" --partial --progress --stats ./addons/ /Users/kus/dev/personal/counter-strike/cs2-modded-server/game/csgo/addons/`
 
 If you are on Windows, from the [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp/releases) with runtime zip, you need to copy the `api`,`bin`, `dotnet` folders from the `/addons/counterstrikesharp` folder to`game/csgo/addons/windows/counterstrikesharp` in this repo.
+
+### Enable K4 Arenas
+
+K4 Arenas requires a MySQL database (5.2 or higher) to function. Setting up a MySQL Database is outside the scope of this repo.
+
+You can set one up yourself or use a hosted one (there are also some free options such as [https://www.freemysqlhosting.net/](https://www.freemysqlhosting.net/) [https://www.db4free.net/](https://www.db4free.net/) but reliability isn't guaranteed).
+
+Once you have the connection details; on your server go here `game/csgo/addons/counterstrikesharp/configs/plugins/K4-Arenas` (/home/steam/cs2/game/csgo/addons/counterstrikesharp/configs/plugins/K4-Arenas on Linux) and open the file `K4-Arenas.json` and add them to `"database-settings"`.
+
+Restart your server.
 
 ### Enable advertisements
 
