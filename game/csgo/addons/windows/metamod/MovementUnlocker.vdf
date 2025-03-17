@@ -1,0 +1,5 @@
+"Metamod Plugin"
+{
+	"alias"	"MovementUnlocker"
+	"file"	"addons\MovementUnlocker\bin\win64\MovementUnlocker"
+}
