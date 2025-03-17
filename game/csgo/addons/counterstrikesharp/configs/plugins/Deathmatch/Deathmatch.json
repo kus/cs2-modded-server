@@ -42,7 +42,20 @@
 	"Custom Commands": {
 		"Deatmatch Menu Commands": "dm,deathmatch",
 		"Weapons Select Commands": "gun,weapon,w,g",
-		"Weapons Select Shortcuts": "weapon_ak47:ak,weapon_m4a1_silencer:m4,weapon_m4a1_silencer:m4a1s,weapon_m4a1_silencer:m4a1-s,weapon_m4a1:m4a4,weapon_awp:awp,weapon_ssg08:scout,weapon_usp_silencer:usp,weapon_glock:glock,weapon_mac10:mac,weapon_deagle:deagle"
+		"Weapons Select Shortcuts": {
+			"ak": "weapon_ak47",
+			"m4": "weapon_m4a1",
+			"m4a4": "weapon_m4a1",
+			"m4s": "weapon_m4a1_silencer",
+			"m4a1s": "weapon_m4a1_silencer",
+			"m4a1-s": "weapon_m4a1_silencer",
+			"awp": "weapon_awp",
+			"scout": "weapon_ssg08",
+			"usp": "weapon_usp_silencer",
+			"glock": "weapon_glock",
+			"mac": "weapon_mac10",
+			"deagle": "weapon_deagle"
+		}
 	},
 	"Players Gameplay Settings": {
 		"VIP Flag": "@css/vip",
