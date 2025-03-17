@@ -729,7 +729,7 @@ If you are on Windows, from the [CounterStrikeSharp](https://github.com/roflmuff
 
 K4 Arenas requires a MySQL database (5.2 or higher) to function. Setting up a MySQL Database is outside the scope of this repo.
 
-You can set one up yourself or use a hosted one (there are also some free options such as [filess.io](https://filess.io/#DBMS) [freemysqlhosting.net](https://www.freemysqlhosting.net/) [db4free.net/](https://www.db4free.net/) but reliability isn't guaranteed).
+You can set one up yourself or use a hosted one (there are also some free options such as [filess.io](https://filess.io/#DBMS) [aiven.io](https://aiven.io/pricing?product=mysql) [freemysqlhosting.net](https://www.freemysqlhosting.net/) [db4free.net](https://www.db4free.net/) but reliability isn't guaranteed).
 
 Once you have the connection details; the config file is located at `/game/csgo/addons/counterstrikesharp/configs/plugins/K4-Arenas/K4-Arenas.json` which you would put in `/custom_files/addons/counterstrikesharp/configs/plugins/K4-Arenas/K4-Arenas.json` so it is not overwritten/deleted and open the file `K4-Arenas.json` and add your database connection details to `"database-settings"`.
 
