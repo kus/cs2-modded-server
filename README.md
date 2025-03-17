@@ -8,28 +8,28 @@ A single modded Counter-Strike 2 (CS2) Modded Dedicated Server that you can [cha
 
 Each game mode has a hand full of maps preset so you are ready to go and it's [easy to add more](#setting-maps-for-different-game-modes).
 
-- 1v1 (with arenas) ([Steam API key](#playing-workshop-mapscollections) required)
-- Deathmatch ([Steam API key](#playing-workshop-mapscollections) required)
 - Competitive (using [MatchZy](https://github.com/shobhit-pathak/MatchZy#usage-commands))
-- Practice (record grenade throws etc)
-- Prefire practice
-- GunGame
-- Retake
-- Executes
+- Practice (record grenade throws etc) (using [MatchZy](https://github.com/shobhit-pathak/MatchZy#usage-commands))
 - Wingman (allows more than 4 players) ([Steam API key](#playing-workshop-mapscollections) required)
+- GunGame ([Steam API key](#playing-workshop-mapscollections) required)
+- Custom Deathmatch ([Steam API key](#playing-workshop-mapscollections) required)
+- Prefire practice
+- Retakes
+- Executes
+- 1v1 (with arenas) ([Steam API key](#playing-workshop-mapscollections) & [MySQL](#enable-k4-arenas) required)
+- ScoutzKnivez ([Steam API key](#playing-workshop-mapscollections) required)
 - KZ ([Steam API key](#playing-workshop-mapscollections) required)
 - BHop ([Steam API key](#playing-workshop-mapscollections) required)
 - Surf ([Steam API key](#playing-workshop-mapscollections) required)
-- Battle Ball ([Steam API key](#playing-workshop-mapscollections) required)
-- ScoutzKnivez ([Steam API key](#playing-workshop-mapscollections) required)
 - Mini Games ([Steam API key](#playing-workshop-mapscollections) required)
 - Deathrun ([Steam API key](#playing-workshop-mapscollections) required)
 - Course format (tests players with different traps, kz, surf, bhop) ([Steam API key](#playing-workshop-mapscollections) required)
-- Battle Royale ([Steam API key](#playing-workshop-mapscollections) required)
 - Hide n Seek ([Steam API key](#playing-workshop-mapscollections) required)
+- Battle Royale ([Steam API key](#playing-workshop-mapscollections) required)
 - Soccer ([Steam API key](#playing-workshop-mapscollections) required)
+- Battle Ball ([Steam API key](#playing-workshop-mapscollections) required)
 
-Every time you want to boot the server, you should run `gcp.sh` (if on Google Cloud) or `install.sh` (on Linux) and it will ensure your OS is up to date, CS2 is up to date, and pull down the latest patches from this mod (any updates that I push up).
+Every time you want to boot the server, you should run `gcp.sh` (if on Google Cloud) or `install.sh` (on Linux) or `update.bat` (on Windows) and it will ensure your OS is up to date, CS2 is up to date, and pull down the latest patches from this mod (any updates that I push up).
 
 Obviously, any changes you have made to the files in this mod will be overwritten so I have created a "[custom files](#custom-files)" folder where you mirror the contents of the `game/csgo/` folder, and any files you want to tweak, you put in there in the same spot and they will always overwrite the mods default files. Read more about it [here](#custom-files).
 
@@ -395,7 +395,7 @@ You can either Download this repo and extract it to where you want your server (
 
 Make sure you have **60GB free space**.
 
-You can either [Download this repo](https://github.com/kus/cs2-modded-server/archive/master.zip) and extract it to where you want your server (i.e. `C:\Server\cs2-modded-server`) or use git and clone the repo `git clone https://github.com/kus/cs2-modded-server.git` and run your server from inside of it. This way you can simply `git pull` updates.
+If you have git installed; it is recommended to use git and clone the repo `git clone https://github.com/kus/cs2-modded-server.git` and run your server from inside of it. This way you can simply `git pull` updates (or run `update.bat`). Alternatively you can [Download this repo](https://github.com/kus/cs2-modded-server/archive/master.zip) and extract it to where you want your server (i.e. `C:\Server\cs2-modded-server`) but you will manually have to handle updates.
 
 All the following instructions will use the repo folder location as the root.
 
