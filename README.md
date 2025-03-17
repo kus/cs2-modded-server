@@ -80,7 +80,6 @@ Mod | Version | Why
 --- | --- | ---
 [Metamod:Source](https://www.metamodsource.net/downloads.php?branch=dev) | `2.0.0-1344` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
 [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `305` | Attempts to implement a .NET Core scripting layer on top of a Metamod Source Plugin, allowing developers to create plugins that interact with the game server in a modern language (C#)
-[CS2Fixes](https://github.com/Source2ZE/CS2Fixes) | `1.11` | A Metamod plugin with fixes and features
 [MultiAddonManager](https://github.com/Source2ZE/MultiAddonManager) | `1.3.5` | Allows you to use multiple workshop addons at once and have clients download them
 [ServerListPlayersFix](https://github.com/Source2ZE/ServerListPlayersFix) | `1.0.104102024` | Fixes players not showing up in the server browser
 [CS2_ExecAfter](https://github.com/kus/CS2_ExecAfter) | `1.0.0` | Executes a command after server event (i.e. OnMapStart) or a delay.
@@ -92,7 +91,6 @@ Mod | Version | Why
 [MapConfigurator](https://github.com/ManifestManah/MapConfigurator)| `1.0.2` | Allows you to quick and easily create unique configuration files for each map on your server.
 [SimpleAdmin](https://github.com/connercsbn/SimpleAdmin/)| `0.1.2` | Adds basic administrator functions
 [CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon)| `1.2.0` | This is a rudimentary implementation of a RCON plugin for CS2 using CounterStrikeSharp as RCON does not work whilst connected to the server
-[SharpTimer](https://github.com/DEAFPS/SharpTimer/)| `0.2.5` | SharpTimer is a simple Surf/KZ/Bhop/MG/Deathrun/etc CS2 Timer plugin
 [GunGame](https://github.com/ssypchenko/cs2-gungame)| `1.1.2` | GunGame mode on Counter Strike Sharp
 [K4-Arenas](https://github.com/KitsuneLab-Development/K4-Arenas)| `2.0.4` | All in one arena plugin, that you can use to have a ladder type gameplay. Support all map, 2v2/3v3/etc
 [CS2 Retakes](https://github.com/B3none/cs2-retakes)| `20.0.17` | CS2 implementation of retakes. Based on the version for CS:GO by Splewis.
