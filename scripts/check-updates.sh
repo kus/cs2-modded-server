@@ -43,7 +43,7 @@ fetch_latest_release() {
 		# Use curl to fetch the releases page content
 		# Then use grep and sed to find and extract the latest release tag
 		# Finally, use sed to remove any characters that aren't numbers or full stops
-		local latest_release=$(curl -s "${url}/releases" | grep -m 1 -o 'href="[^"]*/releases/tag/[^"]*"' | sed 's/.*tag\/\([^"]*\)".*/\1/' | sed 's/[^0-9.]//g')
+		local latest_release=$(curl -s "${url}/releases" | grep -m 1 -o 'href="[^"]*/releases/tag/[^"]*"' | sed 's/.*tag\/\([^"]*\)".*/\1/' | sed 's/[^0-9a-zA-Z.]//g')
 
 		# Check if we found a release name
 		if [ -n "$latest_release" ]; then
