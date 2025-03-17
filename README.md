@@ -81,7 +81,7 @@ Mod | Version | Why
 [Metamod:Source](https://www.metamodsource.net/downloads.php?branch=dev) | `2.0.0-1344` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
 [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `305` | Attempts to implement a .NET Core scripting layer on top of a Metamod Source Plugin, allowing developers to create plugins that interact with the game server in a modern language (C#)
 [MultiAddonManager](https://github.com/Source2ZE/MultiAddonManager) | `1.3.5` | Allows you to use multiple workshop addons at once and have clients download them
-[ServerListPlayersFix](https://github.com/Source2ZE/ServerListPlayersFix) | `1.0.104102024` | Fixes players not showing up in the server browser
+[ServerListPlayersFix](https://github.com/Source2ZE/ServerListPlayersFix) | `1.0.1-Rebuild-04102024` | Fixes players not showing up in the server browser
 [CS2_ExecAfter](https://github.com/kus/CS2_ExecAfter) | `1.0.0` | Executes a command after server event (i.e. OnMapStart) or a delay.
 [CS2 Remove Map Weapons](https://github.com/kus/CS2-Remove-Map-Weapons) | `1.0.1` | Remove weapons from the map in CS2 as `mp_weapons_allow_map_placed 0` does not work.
 [K4-DamageInfo](https://github.com/KitsuneLab-Development/K4-DamageInfo) | `2.4.0` | Displays the amount of damage players have inflicted on the victim's HP and Armor, as well as the hit groups they have hit.
@@ -99,7 +99,7 @@ Mod | Version | Why
 [CS2 Retakes Allocator](https://github.com/yonilerner/cs2-retakes-allocator)| `2.4.0` | Advanced weapon allocation for B3none/cs2-retakes
 [CS2 Whitelist](https://github.com/PhantomYopta/CS2_WhiteList)| `1.0.0`| Restricts access to the server for SteamID members/employees listed in the whitelist. [How?](#enable-whitelist-so-only-a-list-of-people-can-play)
 [CS2 Executes](https://github.com/zwolof/cs2-executes)| `1.0.6` | CS2 implementation of executes. Based on the version for CS:GO by Splewis.
-[CS2 Advertisement](https://github.com/partiusfabaa/cs2-advertisement)| `1.0.8` | Allows you to show ads in chat/center/panel. [How?](#enable-advertisements)
+[CS2 Advertisement](https://github.com/partiusfabaa/cs2-advertisement)| `1.0.8fix` | Allows you to show ads in chat/center/panel. [How?](#enable-advertisements)
 [CS2 Deathmatch](https://github.com/NockyCZ/CS2-Deathmatch)| `1.2.8` | Custom Deathmatch CS2 plugin (Includes custom spawnpoints, multicfg, gun selection, spawn protection, etc)
 [OpenPrefirePrac](https://github.com/lengran/OpenPrefirePrac)| `0.1.47` | Multiple prefire practices on competitive maps and support multiplayer practicing simultaneously.
 [CS2-CustomVotes](https://github.com/imi-tat0r/CS2-CustomVotes)| `1.1.3` | A plugin for Counter-Strike 2 to create custom votes for settings.
