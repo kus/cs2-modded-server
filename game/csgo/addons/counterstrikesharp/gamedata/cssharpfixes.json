@@ -1,0 +1,71 @@
+﻿{
+  "WaterLevelGravity": {
+    "signatures": {
+      "library": "server",
+      "windows": "\\x3C\\x01\\x49\\x8B\\x5B\\x10\\x49\\x8B\\x7B\\x18\\x0F\\x97\\xC0\\x41\\x0F\\x28",
+      "linux": "\\x3C\\x01\\x0F\\x97\\xC0\\x48\\x81\\xC4\\x50\\x01"
+    }
+  },
+  "CheckJumpButtonWater": {
+    "signatures": {
+      "library": "server",
+      "windows": "\\xC8\\x42\\xEB\\x2A\\x48\\x8B\\x4B\\x30",
+      "linux": "\\xC8\\x42\\x66\\x0F\\xEF\\xE4\\x0F\\x2F\\x63\\x5C"
+    }
+  },
+  "CategorizeUnderwater": {
+    "signatures": {
+      "library": "server",
+      "windows": "75 ? B3 01 EB ? 32 DB 45 32 ?",
+      "linux": "0F 45 C2 4D 85 C0 0F 95 C2 20 C2"
+    }
+  },
+  "CPhysBox_Use": {
+    "signatures": {
+      "library": "server",
+      "windows": "4C 8B 47 08 48 8D 8B ? ? ? ? 48 8B 17 4C 8D 4C 24 ?",
+      "linux": "49 8B 54 24 08 48 8D 4D E0 48 C7 45 ? ? ? ? ?"
+    }
+  },
+  "BotNavIgnore": {
+    "signatures": {
+      "library": "server",
+      "windows": "\\x0F\\x84\\x2A\\x2A\\x2A\\x2A\\x80\\xB8\\x2A\\x2A\\x2A\\x2A\\x00\\x0F\\x84\\x2A\\x2A\\x2A\\x2A\\x80\\x3D\\x2A\\x2A\\x2A\\x2A\\x00\\x74\\x15",
+      "linux": "\\x48\\x85\\xC0\\x74\\x2E\\x80\\xB8\\x2A\\x2A\\x2A\\x2A\\x00\\x74\\x25"
+    }
+  },
+  "ServerMovementUnlock": {
+    "signatures": {
+      "library": "server",
+      "windows": "76 ? F2 0F 10 57 ? 0F 28 ? F3 0F ? ? 0F 28 ?",
+      "linux": "0F 87 ? ? ? ? 49 8B 7C 24 ? E8 ? ? ? ? 66 0F EF ED 66 0F D6 85"
+    }
+  },
+  "ProcessUsercmds": {
+    "signatures": {
+      "library": "server",
+      "windows": "48 8B C4 44 88 48 20 44 89 40 18 48 89 50 10 53",
+      "linux": "55 48 89 E5 41 57 41 56 41 89 D6 41 55 41 54 49 89 FC 53 48 83 EC 38"
+    }
+  },
+  "TriggerPush_Touch": {
+    "signatures": {
+      "library": "server",
+      "windows": "48 89 74 24 18 48 89 7C 24 20 55 48 8D AC 24 40 E0 FF FF",
+      "linux": "55 48 89 E5 41 57 41 56 41 55 49 89 F5 41 54 49 89 FC 53 48 81 EC ? ? ? ? E8 ? ? ? ? 84 C0 74 ?"
+    }
+  },
+  "SetGroundEntity": {
+    "signatures": {
+      "library": "server",
+      "windows": "48 89 5C 24 10 48 89 6C 24 18 56 57 41 55 41 56 41 57 48 83 EC 20 33 ED",
+      "linux": "55 48 89 E5 41 57 41 56 49 89 D6 41 55 49 89 F5 41 54 49 89 FC 53 48 83 EC 18 8B 97 B4 06 00 00"
+    }
+  },
+  "PassesTriggerFilters": {
+    "offsets": {
+      "windows": 258,
+      "linux": 259
+    }
+  }
+}
