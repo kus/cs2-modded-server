@@ -1,0 +1,9 @@
+{
+    "Host": "your_mysql_host",
+    "Database": "your_mysql_database",
+    "Username": "your_mysql_username",
+    "Password": "your_mysql_password",
+    "TablePrefix": "",
+    "Port": 3306,
+    "Timeout": 30
+}

@@ -1,0 +1,150 @@
+{
+  "prefix": "{lime}SharpTimer ●{white}",
+
+  //timer
+  "timer_time": "Tid: [{lime}{0}{default}] {1}",
+  "timer_style": "Style: [{lime}{0}{default}]",
+  "stop_using_timer": "Stäng av din timer med {lime}!timer{default} först!",
+  "timer_enabled": "Timer: {green}Aktiverad",
+  "timer_disabled": "Timer: {red}Inaktiverad",
+  "timer_cancelled": "Timer avbröts på grund av otillåtet överhoppningsförsök",
+  "timer_reset": "Du har återställts på grund av ett otillåtet överhoppningsförsök",
+
+  //records
+  "no_records_available": "Inga rekord tillgängliga för {0}",
+  "no_records_available_bonus": "Inga rekord tillgängliga för Bonus {0} på {1}",
+  "records_map": "#{0}: {lime}{1} {default}- {2} {lime}{3}",
+  "new_server_record": "{lime}{0} {white}tog ett nytt SR!",
+  "new_server_record_bonus": "{lime}{0} {white}tog ett nytt Bonus {1} SR!",
+  "new_pb_record": "{lime}{0} {white}tog ett nytt Map PB!",
+  "new_pb_record_bonus": "{lime}{0} {white}tog ett nytt Bonus {1} PB!",
+  "map_finish": "{lime}{0} {white}klarade av mappen!",
+  "map_finish_bonus": "{lime}{0} {white}klarade av Bonus {1}!",
+  "map_finish_rank": "Rank: [{lime}{0}{default}] Gånger Klarad: [{lime}{1}{default}]",
+  "top10_records": "Top 10 {0} Rekord for {1}:",
+  "top10_records_bonus": "Top 10 {0} Rekord för Bonus {1} on {2}:",
+
+  //stages
+  "invalid_bonus_stage": "Ange ett giltigt Bonus stage t.ex: {lime}!topbonus 1",
+  "invalid_bonus_rb": "Ange ett giltigt Bonus stage t.ex: {lime}!rb <index>",
+  "stages_unavalible": "Stages är inte tillgängliga",
+  "stages_unavalible_respawnpos": "{lightred}ingen RespawnStagePos med index {0} hittad för denna karta!",
+  "stages_enter_valid": "Ange ett giltigt stage t.ex: {lime}!stage <index>",
+  "map_no_stages": "{lightred}Nuvarande karta har inga stages!",
+
+  //rank
+  "current_rank": "Du är rank {0}{1}{lime}",
+  "current_rank_points": "{default}({lime}{0}{default}) [{lime}{1}{default}]",
+  "current_pb": "Ditt nuvarande PB på {lime}{0}{default}: {lime}{1}{default} [{lime}{2}{default}]",
+  "current_bonus_pb": "Ditt nuvarande PB på {lime}Bonus {0}{default}: {lime}{1}{default} [{lime}{2}{default}]",
+  "current_sr": "Nuvarande Server Rekord på {lime}{0}{white}:",
+  "current_sr_player": "{lime}{0} {white}- {lime}{1}",
+  "reached_max_free": "Du har nått dina maximala gratispoäng av {lime}{0}{default}!",
+  "gained_points": "{lime}{0} {default}fick {green}+{1} {default}Poäng {grey}({2})",
+  "top_10_points": "Topp 10 Spelare med mest poäng:",
+  "top_10_points_list": "#{0}: {lime}{1} {default}: {lime}{2} {default}poäng",
+
+  //replay
+  "no_replay": "Ingen Replay spelas just nu",
+  "end_your_replay": "Avsluta din nuvarande replay först {lime}!stopreplay",
+  "available_replay_cmds": "Tillgängliga replay cmds: {lime}!replaypb{default} | {lime}!replaytop <1-10>{default} | {lime}!replaysr{default}",
+  "no_sr_replay": "Inga Server Rekord att spela upp!",
+  "replaying_server_top": "Uppspelar Server Top {0} skriv {lime}!stop eller {lime}!stopreplay {default}för att avsluta replay",
+  "replaying_pb": "Uppspelar ditt PB skriv {lime}!stop eller {lime}!stopreplay {default}för att avsluta replay",
+  "ending_replay": "Avslutar Replay!",
+  "replay_corrupt": "Den begärda replay verkar vara korrupt",
+  "replay_dont_exist": "Den begärda replay finns inte",
+
+  //settings
+  "hud_shown": "HUD är nu: {green}Synlig",
+  "hud_hidden": "HUD är nu: {red}Gömd",
+  "keys_shown": "Tangenter är nu: {green}Synliga",
+  "keys_hidden": "Tangenter är nu: {red}Gömda",
+  "jumpstats_shown": "Jump Stats är nu: {green}Synliga",
+  "jumpstats_hidden": "Jump Stats är nu: {red}Gömda",
+  "sounds_on": "Ljud är nu: {green}PÅ",
+  "sounds_off": "Ljud är nu: {red}AV",
+
+  //zones
+  "no_respawnpos": "{lightred}Ingen hittades för denna karta!",
+  "no_respawnpos_bonus": "{lightred}Ingen RespawnBonusPos hittades för denna karta!",
+  "no_respawnpos_bonus_index": "{lightred}Ingen RespawnBonusPos med index {0} hittades för denna karta!",
+  "no_endpos": "{lightred}Ingen EndPos hittades för denna karta!",
+  "map_using_manual_zones": "Aktuell karta använder manuella zoner",
+  "saved_custom_respawnpos": "Sparade custom Start Zone RespawnPos!",
+  "not_inside_startzone": "Du är inte inne i Start Zone!",
+
+  //styles
+  "styles_list": "Style {0}. {lime}{1}",
+  "style_example": "exempel: {lime}/style 1 or lowgravity",
+  "style_set": "Style satt till: {lime}{0}",
+  "style_not_found": "Style {0} existerar inte",
+  "styles_disabled": "Styles är inaktiverade på denna server",
+  "styles_not_supported": "Styles stöds för närvarande inte på lokala rekord :(",
+
+  //checkpoints
+  "checkpoint_set": "{0} placerad! {lime}#{1}",
+  "no_checkpoint_set": "Inga {0} är placerade!",
+  "cant_use_checkpoint": "{lightred}Kan inte använda {0} medans timer är på, använd {default}!timer",
+  "cant_use_checkpoint_in_air": "{lightred}Kan inte sätta {0} medans du är i luften",
+  "used_checkpoint": "Teleporterade till nästa {0}",
+  "used_recent_checkpoint": "Teleporterade till senaste {0}",
+  "used_previous_checkpoint": "Teleporterade till tidigare {0}",
+
+  "goto_player": "Teleporterar till {lime}{0}",
+  "goto_player_not_found": "{lightred}Namnet på spelaren hittades inte! Om namnet innehåller mellanslag, försök {lime}!goto 'spelarens namn'",
+
+  //jumpstats
+  "js_msg1": "{lime}JS: {grey} {0}: {1}{2}{grey} | Pre: {lime}{3}{grey} | Max: {lime}{4}{grey} | Strafes: {lime}{5}",
+  "js_msg2": "{grey}Height: {lime}{0}{grey} | Width: {lime}{1}{grey} | WT: {lime}{2}{grey} | Sync: {lime}{3}%",
+
+  //other
+  "command_cooldown": "Command är på cooldown. Chilla...",
+  "error_occured": "{lightred}Fel uppstod.",
+  "info_version": "Den här servern kör SharpTimer v{0}",
+  "info_os": "OS: {0}",
+  "info_runtime": "Runtime: {0}",
+  "connect_message": "Spelare {red}{0} {default}ansluten!",
+  "connected_message": "Spelare {red}{0} {default}ansluten för den {1} gången!",
+  "connected_message_first": "Spleare {red}{0} {default}ansluten för första gången!",
+  "disconnect_message": "Spelare {red}{0} {default}lämnade!",
+  
+    // Error
+  "error_savingtime": "Chyba pri ukladaní času: Čas hráča je 0 tics",
+  "error_stagenotmatchfinalone": "Chyba pri ukladaní času: Aktuálna fáza hráča sa nezhoduje s konečnou {0}",
+  "error_checkpointnotmatchfinalone": "Chyba pri ukladaní času: Aktuálna kontrolná bodka hráča sa nezhoduje s konečnou {0}",
+
+  // help console Localizer
+  "Check_console": "Skontrolujte svoju konzolu pre zoznam dostupných príkazov!",
+  "console_r": "• !r (css_r) - Ožije vás",
+  "console_rb": "• !rb <#> / !b <#> (css_rb / css_b) - Ožije vás na bonuse",
+  "console_setresp": "• !setresp / !startpos (css_setresp / css_startpos) - Uloží vlastný bod respawnu v štartovacom spúšťači",
+  "console_top": "• !top (css_top) - Zobrazí 10 najlepších rekordov na tejto mape",
+  "console_topbonus": "• !topbonus <#> (css_topbonus) - Zobrazí 10 najlepších bonusových rekordov",
+  "console_rank": "• !rank (css_rank) - Zobrazí váš aktuálny rank a PB",
+  "console_ranks": "• !ranks (css_ranks) - Zobrazí zoznam rankov servera",
+  "console_points": "• !points (css_points) - Zobrazí 10 najlepších bodov",
+  "console_goto": "• !goto <name> (css_goto) - Teleportuje vás k hráčovi",
+  "console_stage": "• !stage <#> (css_stage) - Teleportuje vás na scénu",
+  "console_sounds": "• !sounds (css_sounds) - Prepnúť zvuky časovača!",
+  "console_hud": "• !hud (css_hud) - Prepnúť HUD časovača!",
+  "console_keys": "• !keys (css_keys) - Prepnúť tlačidlá HUD!",
+  "console_fov": "• !fov <0-140> (css_fov) - Zmeniť vaše zorné pole!",
+  "console_saveloc": "• !saveloc (css_saveloc) - Uloží lokalitu",
+  "console_loadloc": "• !loadloc (css_loadloc) - Teleportuje vás na poslednú lokalitu",
+  "console_prevloc": "• !prevloc (css_prevloc) - Teleportuje vás o jednu lokalitu späť",
+  "console_nextloc": "• !nextloc (css_nextloc) - Teleportuje vás o jednu lokalitu dopredu",
+  "console_cp": "• !cp (css_cp) - Nastaví kontrolný bod",
+  "console_tp": "• !tp (css_tp) - Teleportuje vás na posledný kontrolný bod",
+  "console_prevcp": "• !prevcp (css_prevcp) - Teleportuje vás o jeden kontrolný bod späť",
+  "console_nextcp": "• !nextcp (css_nextcp) - Teleportuje vás o jeden kontrolný bod dopredu",
+  "console_replay": "• !replay / !replaysr (css_replay / css_replaysr) - Prehrá aktuálny záznam serverovej mapy",
+  "console_replaytop": "• !replaytop [1-10] (css_replaytop) - Prehrá top 10 serverových rekordov mapy",
+  "console_replaypb": "• !replaypb (css_replaypb) - Prehrá váš PB pre aktuálnu mapu",
+  "console_replaybonus": "• !replaybonus / !replayb [1-10] [bonus stage] (css_replaybonus) - Prehrá top 10 serverových bonusových rekordov",
+  "console_replaybonuspb": "• !replaybonuspb / !replaybpb (css_replaybonuspb) - Prehrá váš PB pre bonus",
+  "console_jumpstats": "• !jumpstats (css_jumpstats) - Prepnúť JumpStats",
+  "console_hideweapon": "• !hideweapon (css_hideweapon) - Prepnúť viditeľnosť zbrane",
+  "console_spec": "• !spec (css_spec) - Presunie vás na diváka alebo späť do tímu",
+  "console_styles": "• !styles (css_styles) - Zobraziť všetky štýly"
+}

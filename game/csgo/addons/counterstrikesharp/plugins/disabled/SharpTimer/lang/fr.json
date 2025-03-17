@@ -1,0 +1,150 @@
+{
+  "prefix": "{lime}SharpTimer ●{white}",
+
+  //timer
+  "timer_time": "Temps: [{lime}{0}{default}] {1}",
+  "timer_style": "Style: [{lime}{0}{default}]",
+  "stop_using_timer": "Arrêtez votre minuteur en utilisant {lime}!timer{default} en premier !",
+  "timer_enabled": "Timer: {green}Activé",
+  "timer_disabled": "Timer: {red}Désactivé",
+  "timer_cancelled": "Timer annulée en raison d'une tentative de saut illégale",
+  "timer_reset": "Vous avez été réinitialisé en raison d'une tentative de saut illégale.",
+
+  //records
+  "no_records_available": "Aucun enregistrement n'est disponible pour {0}",
+  "no_records_available_bonus": "Aucun enregistrement n'est disponible pour le Bonus {0} sur {1}",
+  "records_map": "#{0}: {lime}{1} {default}- {2} {lime}{3}",
+  "new_server_record": "{lime}{0} {white}a établi un nouveau SR !",
+  "new_server_record_bonus": "{lime}{0} {white}a établi un nouveau SR pour le Bonus {1}!",
+  "new_pb_record": "{lime}{0} {white}a établi un nouveau record personnel sur la map !",
+  "new_pb_record_bonus": "{lime}{0} {white}a établi un nouveau record personnel pour le Bonus {1}!",
+  "map_finish": "{lime}{0} {white}a terminé la map!",
+  "map_finish_bonus": "{lime}{0} {white}a terminé le Bonus {1}!",
+  "map_finish_rank": "Classement: [{lime}{0}{default}] Temps accompli: [{lime}{1}{default}]",
+  "top10_records": "Top 10 {0} des records pour {1}:",
+  "top10_records_bonus": "Top 10 {0} des records pour le Bonus {1} sur {2}:",
+
+  //stages
+  "invalid_bonus_stage": "Veuillez saisir un numéro de stage valide pour le Bonus. ex : {lime}!topbonus 1",
+  "invalid_bonus_rb": "Veuillez saisir un numéro de stage valide. ex: {lime}!rb <index>",
+  "stages_unavalible": "Stage indisponible",
+  "stages_unavalible_respawnpos": "{lightred}Pas de RespawnStagePos avec l'index {0} trouvé pour la map actuelle !",
+  "stages_enter_valid": "Veuillez saisir un numéro stage valide. ex: {lime}!stage <index>",
+  "map_no_stages": "{lightred}La map actuelle ne contient aucun stage!",
+
+  //rank
+  "current_rank": "Vous êtes actuellement {0}{1}{lime}",
+  "current_rank_points": "{default}({lime}{0}{default}) [{lime}{1}{default}]",
+  "current_pb": "Votre PB actuel sur {lime}{0}{default}: {lime}{1}{default} [{lime}{2}{default}]",
+  "current_bonus_pb": "Votre PB actuel sur {lime}Bonus {0}{default}: {lime}{1}{default} [{lime}{2}{default}]",
+  "current_sr": "Record actuel sur le serveur pour {lime}{0}{white}:",
+  "current_sr_player": "{lime}{0} {white}- {lime}{1}",
+  "reached_max_free": "Vous avez atteint le nombre maximum de points gratuits de {lime}{0}{default}!",
+  "gained_points": "{lime}{0} {default}gagné {green}+{1} {default}Points {grey}({2})",
+  "top_10_points": "Top 10 des joueurs avec le plus de points :",
+  "top_10_points_list": "#{0} : {lime}{1} {default} : {lime}{2} {default}points",
+
+  //replay
+  "no_replay": "Pas de replay en cours",
+  "end_your_replay": "Terminez d'abord votre replay en cours {lime}!stopreplay",
+  "available_replay_cmds": "Commandes de replay disponibles: {lime}!replaypb{default} | {lime}!replaytop <1-10>{default} | {lime}!replaysr{default}",
+  "no_sr_replay": "Désolé il n'y a pas de replay pour le record du serveur !",
+  "replaying_server_top": "Vous visionnez le record Top {0} Utilisez {lime}!stop ou {lime}!stopreplay {default}pour quitter le replay",
+  "replaying_pb": "Vous visionnez votre record personnel. Utilisez {lime}!stop ou {lime}!stopreplay {default}pour quitter le replay",
+  "ending_replay": "Replay terminé !",
+  "replay_corrupt": "Le replay demandé semble être corrompu",
+  "replay_dont_exist": "Le replay demandé n'existe pas",
+
+  //settings
+  "hud_shown": "L'Hud est maintenant: {green}Affiché",
+  "hud_hidden": "L'Hud est maintenant: {red}Caché",
+  "keys_shown": "Les touches sont maintenant: {green}Affiché",
+  "keys_hidden": "Les touches sont maintenant: {red}Caché",
+  "jumpstats_shown": "Les statistiques de saut sont maintenant: {green}Affiché",
+  "jumpstats_hidden": "Les statistiques de saut sont maintenant:  {red}Caché",
+  "sounds_on": "Les sons sont maintenant: {green}Activé",
+  "sounds_off": "Les sons sont maintenant: {red}Désactivé",
+
+  //zones
+  "no_respawnpos": "{lightred}Aucun RespawnPos n'a été trouvé pour la map actuelle !",
+  "no_respawnpos_bonus": "{lightred}Aucun RespawnBonusPos n'a été trouvé pour la map actuelle !",
+  "no_respawnpos_bonus_index": "{lightred}Aucun RespawnBonusPos avec l'index {0} n'a été trouvé pour la map actuelle !",
+  "no_endpos": "{lightred}Aucun EndPos n'a été trouvé pour la map actuelle !",
+  "map_using_manual_zones": "La map actuelle utilise des zones manuelles",
+  "saved_custom_respawnpos": "Enregistrement des Positions personnalisées de réapparition de la zone de départ !",
+  "not_inside_startzone": "Vous n'êtes pas dans la zone de départ !",
+
+  //styles
+  "styles_list": "Style {0}. {lime}{1}",
+  "style_example": "example: {lime}/style 1 ou lowgravity",
+  "style_set": "Style réglé sur: {lime}{0}",
+  "style_not_found": "Le style {0} n'existe pas",
+  "styles_disabled": "Les styles sont actuellement désactivés sur ce serveur",
+  "styles_not_supported": "Les styles ne sont actuellement pas pris en charge par les enregistrements locaux :(",
+
+  //checkpoints
+  "checkpoint_set": "{0} définit! {lime}#{1}",
+  "no_checkpoint_set": "Aucune {0} définit!",
+  "cant_use_checkpoint": "{lightred}Impossible d'utiliser {0} lorsque le timer est activée, utilisez {default}!timer",
+  "cant_use_checkpoint_in_air": "{lightred}Impossible de définir {0} dans les airs",
+  "used_checkpoint": "Téléporté au suivant {0}",
+  "used_recent_checkpoint": "Téléporté au plus récent {0}",
+  "used_previous_checkpoint": "Téléportation vers le précédent {0}",
+
+  "goto_player": "Téléportation vers {lime}{0}",
+  "goto_player_not_found": "{lightred}Le nom du joueur n'a pas été trouvé ! Si le nom contient des espaces, essayez {lime}!goto 'joueur lambda'",
+
+  //jumpstats
+  "js_msg1": "{lime}JS: {grey} {0}: {1}{2}{grey} | Pre: {lime}{3}{grey} | Max: {lime}{4}{grey} | Strafes: {lime}{5}",
+  "js_msg2": "{grey}Hauteur: {lime}{0}{grey} | Largeur: {lime}{1}{grey} | WT: {lime}{2}{grey} | Sync: {lime}{3}%",
+
+  //other
+  "command_cooldown": "La commande est en attente. Chill...",
+  "error_occured": "{lightred}Une erreur s'est produite.",
+  "info_version": "Ce serveur utilise SharpTimer v{0}",
+  "info_os": "OS: {0}",
+  "info_runtime": "Runtime: {0}",
+  "connect_message": "Joueur {red}{0} {default}connecté!",
+  "connected_message": "Joueur {red}{0} {default}connecté pour la {1} fois!",
+  "connected_message_first": "Le joueur {red}{0} {default} s'est connecté pour la première fois!",
+  "disconnect_message": "Joueur {red}{0} {default}déconnecté!",
+  
+    // Error
+  "error_savingtime": "Erreur de sauvegarde du temps : Le temps du joueur est de 0 ticks",
+  "error_stagenotmatchfinalone": "Erreur de sauvegarde du temps : Le niveau actuel du joueur ne correspond pas au dernier niveau {0}",
+  "error_checkpointnotmatchfinalone": "Erreur de sauvegarde du temps : Le point de contrôle actuel du joueur ne correspond pas au dernier point de contrôle {0}",
+
+  // help console Localizer
+  "Check_console": "Vérifiez votre console pour une liste des commandes disponibles !",
+  "console_r": "• !r (css_r) - Vous réanime",
+  "console_rb": "• !rb <#> / !b <#> (css_rb / css_b) - Vous réanime dans un bonus",
+  "console_setresp": "• !setresp / !startpos (css_setresp / css_startpos) - Sauvegarde un point de réapparition personnalisé dans le déclencheur de départ",
+  "console_top": "• !top (css_top) - Liste les 10 meilleurs scores sur cette carte",
+  "console_topbonus": "• !topbonus <#> (css_topbonus) - Liste les 10 meilleurs scores pour un bonus",
+  "console_rank": "• !rank (css_rank) - Affiche votre rang actuel et votre meilleur temps",
+  "console_ranks": "• !ranks (css_ranks) - Affiche la liste des rangs du serveur",
+  "console_points": "• !points (css_points) - Affiche les 10 meilleurs points",
+  "console_goto": "• !goto <nom> (css_goto) - Vous téléporte vers un autre joueur",
+  "console_stage": "• !stage <#> (css_stage) - Vous téléporte à un stade",
+  "console_sounds": "• !sounds (css_sounds) - Active/désactive les sons du chronomètre !",
+  "console_hud": "• !hud (css_hud) - Active/désactive le HUD du chronomètre !",
+  "console_keys": "• !keys (css_keys) - Active/désactive les touches du HUD !",
+  "console_fov": "• !fov <0-140> (css_fov) - Modifie votre champ de vision !",
+  "console_saveloc": "• !saveloc (css_saveloc) - Sauvegarde un emplacement",
+  "console_loadloc": "• !loadloc (css_loadloc) - Vous téléporte à votre dernier emplacement",
+  "console_prevloc": "• !prevloc (css_prevloc) - Vous téléporte à l'emplacement précédent",
+  "console_nextloc": "• !nextloc (css_nextloc) - Vous téléporte à l'emplacement suivant",
+  "console_cp": "• !cp (css_cp) - Définit un point de contrôle",
+  "console_tp": "• !tp (css_tp) - Vous téléporte au dernier point de contrôle",
+  "console_prevcp": "• !prevcp (css_prevcp) - Vous téléporte au point de contrôle précédent",
+  "console_nextcp": "• !nextcp (css_nextcp) - Vous téléporte au point de contrôle suivant",
+  "console_replay": "• !replay / !replaysr (css_replay / css_replaysr) - Rejoue le record actuel de la carte sur le serveur",
+  "console_replaytop": "• !replaytop [1-10] (css_replaytop) - Rejoue un des 10 meilleurs records de la carte sur le serveur",
+  "console_replaypb": "• !replaypb (css_replaypb) - Rejoue votre meilleur temps pour la carte actuelle",
+  "console_replaybonus": "• !replaybonus / !replayb [1-10] [bonus stage] (css_replaybonus) - Rejoue un des 10 meilleurs records de bonus sur le serveur",
+  "console_replaybonuspb": "• !replaybonuspb / !replaybpb (css_replaybonuspb) - Rejoue votre meilleur temps pour un bonus",
+  "console_jumpstats": "• !jumpstats (css_jumpstats) - Active/désactive les statistiques de saut",
+  "console_hideweapon": "• !hideweapon (css_hideweapon) - Active/désactive la visibilité de l'arme",
+  "console_spec": "• !spec (css_spec) - Vous place en spectateur ou vous ramène dans une équipe",
+  "console_styles": "• !styles (css_styles) - Liste tous les styles"
+}

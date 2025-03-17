@@ -1,0 +1,2255 @@
+{
+    "bhop_1derland": {
+        "Tier": 1
+    },
+    "bhop_climbit": {
+        "Tier": 1
+    },
+    "bhop_vergogna": {
+        "Tier": 1
+    },
+    "bhop_crystal": {
+        "Tier": 1
+    },
+    "bhop_cyber": {
+        "Tier": 2
+    },
+    "bhop_3_easy": {
+        "Tier": 1
+    },
+    "bhop_rippcpie": {
+        "Tier": 2
+    },
+    "bhop_classic": {
+        "Tier": 1
+    },
+    "bhop_static": {
+        "Tier": 1
+    },
+    "bhop_violet": {
+        "Tier": 1
+    },
+    "bhop_tron": {
+        "Tier": 1
+    },
+    "bhop_pinkglow": {
+        "Tier": 2
+    },
+    "bhop_whiteglow": {
+        "Tier": 2
+    },
+    "bhop_greenglow": {
+        "Tier": 2
+    },
+    "bhop_rgbglow": {
+        "Tier": 1
+    },
+    "bhop_purpleglow": {
+        "Tier": 1
+    },
+    "bhop_cyanglow": {
+        "Tier": 1
+    },
+    "bhop_amaranthglow": {
+        "Tier": 1
+    },
+    "bhop_blackglow": {
+        "Tier": 1
+    },
+    "bhop_dunedash": {
+        "Tier": 1
+    },
+    "bhop_vaporwave": {
+        "Tier": 1
+    },
+    "bhop_1n5an3": {
+        "Tier": 1
+    },
+    "bhop_48": {
+        "Tier": 1
+    },
+    "bhop_4U": {
+        "Tier": 1
+    },
+    "bhop_98sync": {
+        "Tier": 1
+    },
+    "bhop_abandoned_sr": {
+        "Tier": 1
+    },
+    "bhop_abstraction": {
+        "Tier": 1
+    },
+    "bhop_ahlie": {
+        "Tier": 1
+    },
+    "bhop_alley": {
+        "Tier": 1
+    },
+    "bhop_alt_jestas": {
+        "Tier": 1
+    },
+    "bhop_alt_joutsen": {
+        "Tier": 1
+    },
+    "bhop_alt_kirves": {
+        "Tier": 1
+    },
+    "bhop_alt_kuutio": {
+        "Tier": 1
+    },
+    "bhop_alt_olohuone": {
+        "Tier": 1
+    },
+    "bhop_alt_paskin": {
+        "Tier": 1
+    },
+    "bhop_alt_saimaa": {
+        "Tier": 1
+    },
+    "bhop_alt_salmari": {
+        "Tier": 1
+    },
+    "bhop_alt_terassi": {
+        "Tier": 1
+    },
+    "bhop_alt_univaje": {
+        "Tier": 1
+    },
+    "bhop_alt_vaahtera": {
+        "Tier": 1
+    },
+    "bhop_alwaystranslucent": {
+        "Tier": 1
+    },
+    "bhop_ambience": {
+        "Tier": 1
+    },
+    "bhop_ample": {
+        "Tier": 1
+    },
+    "bhop_another20secstrafemap": {
+        "Tier": 1
+    },
+    "bhop_antosha_twitch1": {
+        "Tier": 1
+    },
+    "bhop_anyyy": {
+        "Tier": 1
+    },
+    "bhop_aow_blackout": {
+        "Tier": 1
+    },
+    "bhop_at_night": {
+        "Tier": 1
+    },
+    "bhop_atom": {
+        "Tier": 1
+    },
+    "bhop_atrium": {
+        "Tier": 1
+    },
+    "bhop_autobadges": {
+        "Tier": 1
+    },
+    "bhop_aztec": {
+        "Tier": 1
+    },
+    "bhop_babes": {
+        "Tier": 1
+    },
+    "bhop_badmapever": {
+        "Tier": 1
+    },
+    "bhop_bedtime": {
+        "Tier": 1
+    },
+    "bhop_beginner_castle": {
+        "Tier": 1
+    },
+    "bhop_behomeby10": {
+        "Tier": 1
+    },
+    "bhop_belkapeace": {
+        "Tier": 1
+    },
+    "bhop_biff": {
+        "Tier": 1
+    },
+    "bhop_bigdink_speedrun": {
+        "Tier": 1
+    },
+    "bhop_blackshit": {
+        "Tier": 1
+    },
+    "bhop_bless": {
+        "Tier": 1
+    },
+    "bhop_bloc": {
+        "Tier": 1
+    },
+    "bhop_blocker": {
+        "Tier": 1
+    },
+    "bhop_blue_shade": {
+        "Tier": 1
+    },
+    "bhop_bobop": {
+        "Tier": 1
+    },
+    "bhop_bofa": {
+        "Tier": 1
+    },
+    "bhop_boopsnow": {
+        "Tier": 1
+    },
+    "bhop_borders": {
+        "Tier": 1
+    },
+    "bhop_boredom": {
+        "Tier": 1
+    },
+    "bhop_bram_halloween": {
+        "Tier": 1
+    },
+    "bhop_bridge": {
+        "Tier": 1
+    },
+    "bhop_bw": {
+        "Tier": 1
+    },
+    "bhop_cad_mini1": {
+        "Tier": 1
+    },
+    "bhop_carotte": {
+        "Tier": 1
+    },
+    "bhop_castletown": {
+        "Tier": 1
+    },
+    "bhop_chaser": {
+        "Tier": 1
+    },
+    "bhop_chen_sr": {
+        "Tier": 1
+    },
+    "bhop_cherryblossom": {
+        "Tier": 1
+    },
+    "bhop_cks_easy": {
+        "Tier": 1
+    },
+    "bhop_clove": {
+        "Tier": 1
+    },
+    "bhop_cobblestones": {
+        "Tier": 1
+    },
+    "bhop_coma_x": {
+        "Tier": 1
+    },
+    "bhop_comingwinter": {
+        "Tier": 1
+    },
+    "bhop_concrete_pickle": {
+        "Tier": 1
+    },
+    "bhop_crates_crates_pastiche": {
+        "Tier": 1
+    },
+    "bhop_cuteconcretes": {
+        "Tier": 1
+    },
+    "bhop_cyan": {
+        "Tier": 1
+    },
+    "bhop_cynical": {
+        "Tier": 1
+    },
+    "bhop_darkness": {
+        "Tier": 1
+    },
+    "bhop_dipl": {
+        "Tier": 1
+    },
+    "bhop_dipliu69": {
+        "Tier": 1
+    },
+    "bhop_diremaul": {
+        "Tier": 1
+    },
+    "bhop_dontneedaname": {
+        "Tier": 1
+    },
+    "bhop_dontvote": {
+        "Tier": 1
+    },
+    "bhop_downdowndown": {
+        "Tier": 1
+    },
+    "bhop_dream": {
+        "Tier": 1
+    },
+    "bhop_duality": {
+        "Tier": 1
+    },
+    "bhop_dust_temple": {
+        "Tier": 1
+    },
+    "bhop_easy": {
+        "Tier": 1
+    },
+    "bhop_eazy_4xl": {
+        "Tier": 1
+    },
+    "bhop_eazy_hd": {
+        "Tier": 1
+    },
+    "bhop_egyptian_balls": {
+        "Tier": 1
+    },
+    "bhop_emevaelx_2": {
+        "Tier": 1
+    },
+    "bhop_emevaelx": {
+        "Tier": 1
+    },
+    "bhop_facility_2": {
+        "Tier": 1
+    },
+    "bhop_fast_hop_v1": {
+        "Tier": 1
+    },
+    "bhop_fatol": {
+        "Tier": 1
+    },
+    "bhop_flyingcolors": {
+        "Tier": 1
+    },
+    "bhop_forest": {
+        "Tier": 1
+    },
+    "bhop_forevertranslucent": {
+        "Tier": 1
+    },
+    "bhop_fort_update": {
+        "Tier": 1
+    },
+    "bhop_fuckdream": {
+        "Tier": 1
+    },
+    "bhop_galaxy": {
+        "Tier": 1
+    },
+    "bhop_gismo": {
+        "Tier": 1
+    },
+    "bhop_glacial": {
+        "Tier": 1
+    },
+    "bhop_gottagofast": {
+        "Tier": 1
+    },
+    "bhop_grassland_speedrun": {
+        "Tier": 1
+    },
+    "bhop_grassyass": {
+        "Tier": 1
+    },
+    "bhop_grayshit": {
+        "Tier": 1
+    },
+    "bhop_greenshit": {
+        "Tier": 1
+    },
+    "bhop_greentex": {
+        "Tier": 1
+    },
+    "bhop_greystuff": {
+        "Tier": 1
+    },
+    "bhop_grove": {
+        "Tier": 1
+    },
+    "bhop_hahalol": {
+        "Tier": 1
+    },
+    "bhop_hathor": {
+        "Tier": 1
+    },
+    "bhop_hatred": {
+        "Tier": 1
+    },
+    "bhop_helvete": {
+        "Tier": 1
+    },
+    "bhop_hood2": {
+        "Tier": 1
+    },
+    "bhop_horoshechnenko": {
+        "Tier": 1
+    },
+    "bhop_huar2": {
+        "Tier": 1
+    },
+    "bhop_icecapades": {
+        "Tier": 1
+    },
+    "bhop_ideal": {
+        "Tier": 1
+    },
+    "bhop_inline": {
+        "Tier": 1
+    },
+    "bhop_isomer": {
+        "Tier": 1
+    },
+    "bhop_j4f_speedrun": {
+        "Tier": 1
+    },
+    "bhop_jay_first": {
+        "Tier": 1
+    },
+    "bhop_jump_academy": {
+        "Tier": 1
+    },
+    "bhop_jungle3k": {
+        "Tier": 1
+    },
+    "bhop_jx": {
+        "Tier": 1
+    },
+    "bhop_k1": {
+        "Tier": 1
+    },
+    "bhop_k3": {
+        "Tier": 1
+    },
+    "bhop_kaina": {
+        "Tier": 1
+    },
+    "bhop_kaisa": {
+        "Tier": 1
+    },
+    "bhop_kaunisnimi_fix": {
+        "Tier": 1
+    },
+    "bhop_kiitovittu": {
+        "Tier": 1
+    },
+    "bhop_kitum": {
+        "Tier": 1
+    },
+    "bhop_kiwi_cwfx": {
+        "Tier": 1
+    },
+    "bhop_klassno": {
+        "Tier": 1
+    },
+    "bhop_kore": {
+        "Tier": 1
+    },
+    "bhop_kuiva": {
+        "Tier": 1
+    },
+    "bhop_kukliii_e_rock": {
+        "Tier": 1
+    },
+    "bhop_kuusipuu": {
+        "Tier": 1
+    },
+    "bhop_l_speedrun": {
+        "Tier": 1
+    },
+    "bhop_lade_v2": {
+        "Tier": 1
+    },
+    "bhop_lahna": {
+        "Tier": 1
+    },
+    "bhop_lahna2": {
+        "Tier": 1
+    },
+    "bhop_leaf": {
+        "Tier": 1
+    },
+    "bhop_legit": {
+        "Tier": 1
+    },
+    "bhop_lego": {
+        "Tier": 1
+    },
+    "bhop_legomyego": {
+        "Tier": 1
+    },
+    "bhop_lessthandirt": {
+        "Tier": 1
+    },
+    "bhop_linear_concrete": {
+        "Tier": 1
+    },
+    "bhop_lm": {
+        "Tier": 1
+    },
+    "bhop_lowg": {
+        "Tier": 1
+    },
+    "bhop_lucky": {
+        "Tier": 1
+    },
+    "bhop_lupadamadami": {
+        "Tier": 1
+    },
+    "bhop_madness": {
+        "Tier": 1
+    },
+    "bhop_malabar9": {
+        "Tier": 1
+    },
+    "bhop_manpoo": {
+        "Tier": 1
+    },
+    "bhop_matans": {
+        "Tier": 1
+    },
+    "bhop_melancholy": {
+        "Tier": 1
+    },
+    "bhop_metal_v2_sr": {
+        "Tier": 1
+    },
+    "bhop_metalhack_v1": {
+        "Tier": 1
+    },
+    "bhop_metra": {
+        "Tier": 1
+    },
+    "bhop_microwave": {
+        "Tier": 1
+    },
+    "bhop_miku": {
+        "Tier": 1
+    },
+    "bhop_miles": {
+        "Tier": 1
+    },
+    "bhop_mixed_journeys": {
+        "Tier": 1
+    },
+    "bhop_mixempire": {
+        "Tier": 1
+    },
+    "bhop_mixtape": {
+        "Tier": 1
+    },
+    "bhop_moonlight": {
+        "Tier": 1
+    },
+    "bhop_mp_stairs_hq": {
+        "Tier": 1
+    },
+    "bhop_mult": {
+        "Tier": 1
+    },
+    "bhop_neonhop": {
+        "Tier": 1
+    },
+    "bhop_nira": {
+        "Tier": 1
+    },
+    "bhop_niver": {
+        "Tier": 1
+    },
+    "bhop_nobody": {
+        "Tier": 1
+    },
+    "bhop_nona": {
+        "Tier": 1
+    },
+    "bhop_noobhop": {
+        "Tier": 1
+    },
+    "bhop_noodles_v2": {
+        "Tier": 1
+    },
+    "bhop_nosotros": {
+        "Tier": 1
+    },
+    "bhop_not_a_defrag_map": {
+        "Tier": 1
+    },
+    "bhop_nup": {
+        "Tier": 1
+    },
+    "bhop_nyrobs": {
+        "Tier": 1
+    },
+    "bhop_orionsbelt_go": {
+        "Tier": 1
+    },
+    "bhop_overline": {
+        "Tier": 1
+    },
+    "bhop_pahin": {
+        "Tier": 1
+    },
+    "bhop_pickles": {
+        "Tier": 1
+    },
+    "bhop_pims_cwfx": {
+        "Tier": 1
+    },
+    "bhop_pinky_fix": {
+        "Tier": 1
+    },
+    "bhop_puzazutop": {
+        "Tier": 1
+    },
+    "bhop_qmpa": {
+        "Tier": 1
+    },
+    "bhop_rabbit": {
+        "Tier": 1
+    },
+    "bhop_racer": {
+        "Tier": 1
+    },
+    "bhop_ragepoop_rev": {
+        "Tier": 1
+    },
+    "bhop_rebound": {
+        "Tier": 1
+    },
+    "bhop_redshit": {
+        "Tier": 1
+    },
+    "bhop_resonance": {
+        "Tier": 1
+    },
+    "bhop_reverie": {
+        "Tier": 1
+    },
+    "bhop_riverland": {
+        "Tier": 1
+    },
+    "bhop_royal": {
+        "Tier": 1
+    },
+    "bhop_runbhopper_sr": {
+        "Tier": 1
+    },
+    "bhop_sandyshores_rg1": {
+        "Tier": 1
+    },
+    "bhop_scrollcity_sr": {
+        "Tier": 1
+    },
+    "bhop_sdc01": {
+        "Tier": 1
+    },
+    "bhop_shades": {
+        "Tier": 1
+    },
+    "bhop_shitshow": {
+        "Tier": 1
+    },
+    "bhop_sky_realm_v3": {
+        "Tier": 1
+    },
+    "bhop_skylook": {
+        "Tier": 1
+    },
+    "bhop_skyruins": {
+        "Tier": 1
+    },
+    "bhop_sleepless_lg": {
+        "Tier": 1
+    },
+    "bhop_smth": {
+        "Tier": 1
+    },
+    "bhop_smudge": {
+        "Tier": 1
+    },
+    "bhop_something": {
+        "Tier": 1
+    },
+    "bhop_speedrun_cyberlose": {
+        "Tier": 1
+    },
+    "bhop_speedrun_fluid": {
+        "Tier": 1
+    },
+    "bhop_speedrun_lyned2": {
+        "Tier": 1
+    },
+    "bhop_speedrun_lyned3": {
+        "Tier": 1
+    },
+    "bhop_speedrun_spacelegofive": {
+        "Tier": 1
+    },
+    "bhop_speedrun_suka47": {
+        "Tier": 1
+    },
+    "bhop_speedrun_suka48": {
+        "Tier": 1
+    },
+    "bhop_speedrun_vasya34ru": {
+        "Tier": 1
+    },
+    "bhop_spentrol": {
+        "Tier": 1
+    },
+    "bhop_stoneage": {
+        "Tier": 1
+    },
+    "bhop_straa_babylon": {
+        "Tier": 1
+    },
+    "bhop_straa_forest": {
+        "Tier": 1
+    },
+    "bhop_straa_space": {
+        "Tier": 1
+    },
+    "bhop_strafing_in_egypt": {
+        "Tier": 1
+    },
+    "bhop_strafing_in_heaven": {
+        "Tier": 1
+    },
+    "bhop_strafing_in_hell": {
+        "Tier": 1
+    },
+    "bhop_strafing_in_japan": {
+        "Tier": 1
+    },
+    "bhop_strafing_in_space": {
+        "Tier": 1
+    },
+    "bhop_strafinggobrr": {
+        "Tier": 1
+    },
+    "bhop_stref_amazon": {
+        "Tier": 1
+    },
+    "bhop_stref_asleep": {
+        "Tier": 1
+    },
+    "bhop_stref_cairo": {
+        "Tier": 1
+    },
+    "bhop_stref_shanghai": {
+        "Tier": 1
+    },
+    "bhop_stref_siberia": {
+        "Tier": 1
+    },
+    "bhop_stref_wat": {
+        "Tier": 1
+    },
+    "bhop_suicide_pls": {
+        "Tier": 1
+    },
+    "bhop_svenA": {
+        "Tier": 1
+    },
+    "bhop_szaq2": {
+        "Tier": 1
+    },
+    "bhop_tasku_b3": {
+        "Tier": 1
+    },
+    "bhop_topgay": {
+        "Tier": 1
+    },
+    "bhop_tran": {
+        "Tier": 1
+    },
+    "bhop_verness": {
+        "Tier": 1
+    },
+    "bhop_vertex_fast": {
+        "Tier": 1
+    },
+    "bhop_white_sr": {
+        "Tier": 1
+    },
+    "bhop_whiteshit": {
+        "Tier": 1
+    },
+    "bhop_whoevenbhops_final": {
+        "Tier": 1
+    },
+    "bhop_winter": {
+        "Tier": 1
+    },
+    "bhop_wood_notsowoodremake": {
+        "Tier": 1
+    },
+    "bhop_worldwar": {
+        "Tier": 1
+    },
+    "bhop_xmas": {
+        "Tier": 1
+    },
+    "bhop_xof": {
+        "Tier": 1
+    },
+    "bhop_zygos": {
+        "Tier": 1
+    },
+    "bhop_colour": {
+        "Tier": 2
+    },
+    "bhop_162": {
+        "Tier": 2
+    },
+    "bhop_3d": {
+        "Tier": 2
+    },
+    "bhop_Fluffy_Panda": {
+        "Tier": 2
+    },
+    "bhop_Mukiology": {
+        "Tier": 2
+    },
+    "bhop_Z": {
+        "Tier": 2
+    },
+    "bhop_abriller": {
+        "Tier": 2
+    },
+    "bhop_accelerate": {
+        "Tier": 2
+    },
+    "bhop_adrino_fix": {
+        "Tier": 2
+    },
+    "bhop_adventure_final": {
+        "Tier": 2
+    },
+    "bhop_aks": {
+        "Tier": 2
+    },
+    "bhop_ala_laupapa": {
+        "Tier": 2
+    },
+    "bhop_alien_ruins": {
+        "Tier": 2
+    },
+    "bhop_all_the_way": {
+        "Tier": 2
+    },
+    "bhop_alt_tammikuu": {
+        "Tier": 2
+    },
+    "bhop_ametisti": {
+        "Tier": 2
+    },
+    "bhop_anini": {
+        "Tier": 2
+    },
+    "bhop_ankha": {
+        "Tier": 2
+    },
+    "bhop_aow_whiteout": {
+        "Tier": 2
+    },
+    "bhop_aphrodite": {
+        "Tier": 2
+    },
+    "bhop_arfsa": {
+        "Tier": 2
+    },
+    "bhop_arid": {
+        "Tier": 2
+    },
+    "bhop_aroma": {
+        "Tier": 2
+    },
+    "bhop_asiimov": {
+        "Tier": 2
+    },
+    "bhop_asko": {
+        "Tier": 2
+    },
+    "bhop_atmospheric": {
+        "Tier": 2
+    },
+    "bhop_audree_final": {
+        "Tier": 2
+    },
+    "bhop_aura": {
+        "Tier": 2
+    },
+    "bhop_aurum": {
+        "Tier": 2
+    },
+    "bhop_autism": {
+        "Tier": 2
+    },
+    "bhop_backstreet": {
+        "Tier": 2
+    },
+    "bhop_behomeby11": {
+        "Tier": 2
+    },
+    "bhop_believe": {
+        "Tier": 2
+    },
+    "bhop_beollao": {
+        "Tier": 2
+    },
+    "bhop_blackrockshooter": {
+        "Tier": 2
+    },
+    "bhop_blacktop": {
+        "Tier": 2
+    },
+    "bhop_blankbody": {
+        "Tier": 2
+    },
+    "bhop_bloclean": {
+        "Tier": 2
+    },
+    "bhop_blois_fix": {
+        "Tier": 2
+    },
+    "bhop_blue_abstract": {
+        "Tier": 2
+    },
+    "bhop_blue_aux": {
+        "Tier": 2
+    },
+    "bhop_blueglow": {
+        "Tier": 2
+    },
+    "bhop_bluerace": {
+        "Tier": 2
+    },
+    "bhop_breath": {
+        "Tier": 2
+    },
+    "bhop_brodinski": {
+        "Tier": 2
+    },
+    "bhop_bubblegum": {
+        "Tier": 2
+    },
+    "bhop_bug100": {
+        "Tier": 2
+    },
+    "bhop_bug100_2nd": {
+        "Tier": 2
+    },
+    "bhop_calming": {
+        "Tier": 2
+    },
+    "bhop_cartoons": {
+        "Tier": 2
+    },
+    "bhop_castle": {
+        "Tier": 2
+    },
+    "bhop_cc": {
+        "Tier": 2
+    },
+    "bhop_ch4": {
+        "Tier": 2
+    },
+    "bhop_chillim": {
+        "Tier": 2
+    },
+    "bhop_christmas": {
+        "Tier": 2
+    },
+    "bhop_cloudburst": {
+        "Tier": 2
+    },
+    "bhop_clrs2": {
+        "Tier": 2
+    },
+    "bhop_colorshit_v2": {
+        "Tier": 2
+    },
+    "bhop_compact_city_v2": {
+        "Tier": 2
+    },
+    "bhop_cover": {
+        "Tier": 2
+    },
+    "bhop_craton": {
+        "Tier": 2
+    },
+    "bhop_cyon": {
+        "Tier": 2
+    },
+    "bhop_cyphisonia": {
+        "Tier": 2
+    },
+    "bhop_dango": {
+        "Tier": 2
+    },
+    "bhop_dangobango_v2": {
+        "Tier": 2
+    },
+    "bhop_darkink": {
+        "Tier": 2
+    },
+    "bhop_daylight": {
+        "Tier": 2
+    },
+    "bhop_deeper": {
+        "Tier": 2
+    },
+    "bhop_definitely": {
+        "Tier": 2
+    },
+    "bhop_desolation_rg1": {
+        "Tier": 2
+    },
+    "bhop_despair": {
+        "Tier": 2
+    },
+    "bhop_despondent": {
+        "Tier": 2
+    },
+    "bhop_dezza": {
+        "Tier": 2
+    },
+    "bhop_dim": {
+        "Tier": 2
+    },
+    "bhop_disco": {
+        "Tier": 2
+    },
+    "bhop_dispute": {
+        "Tier": 2
+    },
+    "bhop_distant_tnn": {
+        "Tier": 2
+    },
+    "bhop_doh": {
+        "Tier": 2
+    },
+    "bhop_dom": {
+        "Tier": 2
+    },
+    "bhop_drip": {
+        "Tier": 2
+    },
+    "bhop_earnest": {
+        "Tier": 2
+    },
+    "bhop_edge_re": {
+        "Tier": 2
+    },
+    "bhop_emevaelx3": {
+        "Tier": 2
+    },
+    "bhop_extasis": {
+        "Tier": 2
+    },
+    "bhop_fantasy_speedrun": {
+        "Tier": 2
+    },
+    "bhop_feelerz2": {
+        "Tier": 2
+    },
+    "bhop_flat": {
+        "Tier": 2
+    },
+    "bhop_flavum": {
+        "Tier": 2
+    },
+    "bhop_flow": {
+        "Tier": 2
+    },
+    "bhop_foggybon": {
+        "Tier": 2
+    },
+    "bhop_foliage_fix": {
+        "Tier": 2
+    },
+    "bhop_forstrafe": {
+        "Tier": 2
+    },
+    "bhop_forstrafe2": {
+        "Tier": 2
+    },
+    "bhop_friday_nite": {
+        "Tier": 2
+    },
+    "bhop_friskv2": {
+        "Tier": 2
+    },
+    "bhop_fronk": {
+        "Tier": 2
+    },
+    "bhop_fy": {
+        "Tier": 2
+    },
+    "bhop_gateway": {
+        "Tier": 2
+    },
+    "bhop_gloom": {
+        "Tier": 2
+    },
+    "bhop_glxy": {
+        "Tier": 2
+    },
+    "bhop_go_boom": {
+        "Tier": 2
+    },
+    "bhop_godlike2_rg1": {
+        "Tier": 2
+    },
+    "bhop_godlike5": {
+        "Tier": 2
+    },
+    "bhop_grapefruit": {
+        "Tier": 2
+    },
+    "bhop_gravityfun": {
+        "Tier": 2
+    },
+    "bhop_great_unknown": {
+        "Tier": 2
+    },
+    "bhop_green": {
+        "Tier": 2
+    },
+    "bhop_green_shade": {
+        "Tier": 2
+    },
+    "bhop_haunt": {
+        "Tier": 2
+    },
+    "bhop_hexag0n_cool": {
+        "Tier": 2
+    },
+    "bhop_hi_im_sozu_first_fixx": {
+        "Tier": 2
+    },
+    "bhop_hima": {
+        "Tier": 2
+    },
+    "bhop_huni": {
+        "Tier": 2
+    },
+    "bhop_icetrap": {
+        "Tier": 2
+    },
+    "bhop_iconic": {
+        "Tier": 2
+    },
+    "bhop_icosa": {
+        "Tier": 2
+    },
+    "bhop_ihanvitunpaskamappi": {
+        "Tier": 2
+    },
+    "bhop_impatience": {
+        "Tier": 2
+    },
+    "bhop_interest_fix": {
+        "Tier": 2
+    },
+    "bhop_intra": {
+        "Tier": 2
+    },
+    "bhop_isanmaa_fixed": {
+        "Tier": 2
+    },
+    "bhop_japan": {
+        "Tier": 2
+    },
+    "bhop_jegg_adventure": {
+        "Tier": 2
+    },
+    "bhop_jumalauta": {
+        "Tier": 2
+    },
+    "bhop_kamapulya": {
+        "Tier": 2
+    },
+    "bhop_kasvihuone": {
+        "Tier": 2
+    },
+    "bhop_khonsu": {
+        "Tier": 2
+    },
+    "bhop_khufu": {
+        "Tier": 2
+    },
+    "bhop_kloom": {
+        "Tier": 2
+    },
+    "bhop_knox": {
+        "Tier": 2
+    },
+    "bhop_kotodama": {
+        "Tier": 2
+    },
+    "bhop_kotodama2": {
+        "Tier": 2
+    },
+    "bhop_kripsterhoholfull": {
+        "Tier": 2
+    },
+    "bhop_kuukkeli": {
+        "Tier": 2
+    },
+    "bhop_kyle": {
+        "Tier": 2
+    },
+    "bhop_larena_nodoors": {
+        "Tier": 2
+    },
+    "bhop_legion": {
+        "Tier": 2
+    },
+    "bhop_lego_rnm": {
+        "Tier": 2
+    },
+    "bhop_leios": {
+        "Tier": 2
+    },
+    "bhop_lightsout": {
+        "Tier": 2
+    },
+    "bhop_lime": {
+        "Tier": 2
+    },
+    "bhop_littlequeen": {
+        "Tier": 2
+    },
+    "bhop_lumin": {
+        "Tier": 2
+    },
+    "bhop_lunti": {
+        "Tier": 2
+    },
+    "bhop_lyhytmappi": {
+        "Tier": 2
+    },
+    "bhop_magic_cave": {
+        "Tier": 2
+    },
+    "bhop_magnoir": {
+        "Tier": 2
+    },
+    "bhop_malabar10": {
+        "Tier": 2
+    },
+    "bhop_malabar7": {
+        "Tier": 2
+    },
+    "bhop_mauve": {
+        "Tier": 2
+    },
+    "bhop_mbs": {
+        "Tier": 2
+    },
+    "bhop_medium_v1": {
+        "Tier": 2
+    },
+    "bhop_medusozoa": {
+        "Tier": 2
+    },
+    "bhop_mellowmood": {
+        "Tier": 2
+    },
+    "bhop_meme1": {
+        "Tier": 2
+    },
+    "bhop_minecraft": {
+        "Tier": 2
+    },
+    "bhop_monotonous": {
+        "Tier": 2
+    },
+    "bhop_monument_valley": {
+        "Tier": 2
+    },
+    "bhop_monument_valley_2": {
+        "Tier": 2
+    },
+    "bhop_motionless": {
+        "Tier": 2
+    },
+    "bhop_movetothetrees": {
+        "Tier": 2
+    },
+    "bhop_mustapaska": {
+        "Tier": 2
+    },
+    "bhop_nervosity": {
+        "Tier": 2
+    },
+    "bhop_nervosity2": {
+        "Tier": 2
+    },
+    "bhop_nevertranslucent": {
+        "Tier": 2
+    },
+    "bhop_newga_fix": {
+        "Tier": 2
+    },
+    "bhop_nila": {
+        "Tier": 2
+    },
+    "bhop_nono2": {
+        "Tier": 2
+    },
+    "bhop_nubia_fix": {
+        "Tier": 2
+    },
+    "bhop_nuclear": {
+        "Tier": 2
+    },
+    "bhop_nukkumaanmenoaika_fix": {
+        "Tier": 2
+    },
+    "bhop_nup2": {
+        "Tier": 2
+    },
+    "bhop_nux": {
+        "Tier": 2
+    },
+    "bhop_oer": {
+        "Tier": 2
+    },
+    "bhop_omnitopia": {
+        "Tier": 2
+    },
+    "bhop_orgrimmar": {
+        "Tier": 2
+    },
+    "bhop_oxom": {
+        "Tier": 2
+    },
+    "bhop_paradigm": {
+        "Tier": 2
+    },
+    "bhop_paskamappi": {
+        "Tier": 2
+    },
+    "bhop_persepillu": {
+        "Tier": 2
+    },
+    "bhop_phew": {
+        "Tier": 2
+    },
+    "bhop_pikkulauantai": {
+        "Tier": 2
+    },
+    "bhop_pisco": {
+        "Tier": 2
+    },
+    "bhop_popcornforadmin_fix": {
+        "Tier": 2
+    },
+    "bhop_primal": {
+        "Tier": 2
+    },
+    "bhop_puf": {
+        "Tier": 2
+    },
+    "bhop_purpleheart": {
+        "Tier": 2
+    },
+    "bhop_pyxkeriafix": {
+        "Tier": 2
+    },
+    "bhop_quaker": {
+        "Tier": 2
+    },
+    "bhop_quaker2": {
+        "Tier": 2
+    },
+    "bhop_quiet": {
+        "Tier": 2
+    },
+    "bhop_qwerty": {
+        "Tier": 2
+    },
+    "bhop_rapidfire": {
+        "Tier": 2
+    },
+    "bhop_rikudo": {
+        "Tier": 2
+    },
+    "bhop_ripdream": {
+        "Tier": 2
+    },
+    "bhop_rising": {
+        "Tier": 2
+    },
+    "bhop_rose": {
+        "Tier": 2
+    },
+    "bhop_ruins": {
+        "Tier": 2
+    },
+    "bhop_sacred": {
+        "Tier": 2
+    },
+    "bhop_safehaven": {
+        "Tier": 2
+    },
+    "bhop_sahara": {
+        "Tier": 2
+    },
+    "bhop_saisei": {
+        "Tier": 2
+    },
+    "bhop_sandtrap": {
+        "Tier": 2
+    },
+    "bhop_sandtrap2": {
+        "Tier": 2
+    },
+    "bhop_sandtrap3": {
+        "Tier": 2
+    },
+    "bhop_sativa": {
+        "Tier": 2
+    },
+    "bhop_sauvakavely": {
+        "Tier": 2
+    },
+    "bhop_scape": {
+        "Tier": 2
+    },
+    "bhop_scarlet": {
+        "Tier": 2
+    },
+    "bhop_seiz": {
+        "Tier": 2
+    },
+    "bhop_series_one": {
+        "Tier": 2
+    },
+    "bhop_serv": {
+        "Tier": 2
+    },
+    "bhop_shitstrafe": {
+        "Tier": 2
+    },
+    "bhop_sketchy_v4": {
+        "Tier": 2
+    },
+    "bhop_skylook2": {
+        "Tier": 2
+    },
+    "bhop_smallmap": {
+        "Tier": 2
+    },
+    "bhop_snowy": {
+        "Tier": 2
+    },
+    "bhop_soaatana": {
+        "Tier": 2
+    },
+    "bhop_soft": {
+        "Tier": 2
+    },
+    "bhop_sonni_v2": {
+        "Tier": 2
+    },
+    "bhop_space": {
+        "Tier": 2
+    },
+    "bhop_spacerooms": {
+        "Tier": 2
+    },
+    "bhop_speedrun_valley_b2": {
+        "Tier": 2
+    },
+    "bhop_spookyland": {
+        "Tier": 2
+    },
+    "bhop_spring_chill": {
+        "Tier": 2
+    },
+    "bhop_stoitnamalchika": {
+        "Tier": 2
+    },
+    "bhop_stonez": {
+        "Tier": 2
+    },
+    "bhop_strafe_matans": {
+        "Tier": 2
+    },
+    "bhop_subdivide": {
+        "Tier": 2
+    },
+    "bhop_suitsuke": {
+        "Tier": 2
+    },
+    "bhop_surf_qvo_v2": {
+        "Tier": 2
+    },
+    "bhop_symphony": {
+        "Tier": 2
+    },
+    "bhop_tangos4fags": {
+        "Tier": 2
+    },
+    "bhop_tehoputki": {
+        "Tier": 2
+    },
+    "bhop_tentacion": {
+        "Tier": 2
+    },
+    "bhop_tiainen": {
+        "Tier": 2
+    },
+    "bhop_timescalehack_v2": {
+        "Tier": 2
+    },
+    "bhop_torqwaz": {
+        "Tier": 2
+    },
+    "bhop_tumi": {
+        "Tier": 2
+    },
+    "bhop_tupasplash": {
+        "Tier": 2
+    },
+    "bhop_twilight_tile": {
+        "Tier": 2
+    },
+    "bhop_twisty": {
+        "Tier": 2
+    },
+    "bhop_ultra": {
+        "Tier": 2
+    },
+    "bhop_vagabond": {
+        "Tier": 2
+    },
+    "bhop_velstand": {
+        "Tier": 2
+    },
+    "bhop_whitepillar": {
+        "Tier": 2
+    },
+    "bhop_wild_rgb": {
+        "Tier": 2
+    },
+    "bhop_winterland": {
+        "Tier": 2
+    },
+    "bhop_woodenxd": {
+        "Tier": 2
+    },
+    "bhop_x": {
+        "Tier": 2
+    },
+    "bhop_xeimon": {
+        "Tier": 2
+    },
+    "bhop_xulazu": {
+        "Tier": 2
+    },
+    "bhop_y": {
+        "Tier": 2
+    },
+    "bhop_zegypt": {
+        "Tier": 2
+    },
+    "bhop_zentic": {
+        "Tier": 2
+    },
+    "bhop_zittern2_remake": {
+        "Tier": 2
+    },
+    "bhop_15m": {
+        "Tier": 3
+    },
+    "bhop_24": {
+        "Tier": 3
+    },
+    "bhop_4appa": {
+        "Tier": 3
+    },
+    "bhop_4colors": {
+        "Tier": 3
+    },
+    "bhop_Evolve": {
+        "Tier": 3
+    },
+    "bhop_addict_v2": {
+        "Tier": 3
+    },
+    "bhop_adventure_2": {
+        "Tier": 3
+    },
+    "bhop_akiragave": {
+        "Tier": 3
+    },
+    "bhop_alone": {
+        "Tier": 3
+    },
+    "bhop_arcane2_a06": {
+        "Tier": 3
+    },
+    "bhop_arcane_v1": {
+        "Tier": 3
+    },
+    "bhop_areaportal_nmp": {
+        "Tier": 3
+    },
+    "bhop_bad_imagination": {
+        "Tier": 3
+    },
+    "bhop_behemoth": {
+        "Tier": 3
+    },
+    "bhop_bitches": {
+        "Tier": 3
+    },
+    "bhop_bliss": {
+        "Tier": 3
+    },
+    "bhop_blockworld2": {
+        "Tier": 3
+    },
+    "bhop_bluemoon": {
+        "Tier": 3
+    },
+    "bhop_cc2": {
+        "Tier": 3
+    },
+    "bhop_ceekay": {
+        "Tier": 3
+    },
+    "bhop_celestial": {
+        "Tier": 3
+    },
+    "bhop_cheesemania": {
+        "Tier": 3
+    },
+    "bhop_cherry": {
+        "Tier": 3
+    },
+    "bhop_chronology": {
+        "Tier": 3
+    },
+    "bhop_cityscape": {
+        "Tier": 3
+    },
+    "bhop_comfort_dev1": {
+        "Tier": 3
+    },
+    "bhop_conquest": {
+        "Tier": 3
+    },
+    "bhop_conquest2": {
+        "Tier": 3
+    },
+    "bhop_crash_egypt": {
+        "Tier": 3
+    },
+    "bhop_cuteboys": {
+        "Tier": 3
+    },
+    "bhop_cutetraps": {
+        "Tier": 3
+    },
+    "bhop_danmark": {
+        "Tier": 3
+    },
+    "bhop_degree": {
+        "Tier": 3
+    },
+    "bhop_dimensional": {
+        "Tier": 3
+    },
+    "bhop_disarray": {
+        "Tier": 3
+    },
+    "bhop_discovery": {
+        "Tier": 3
+    },
+    "bhop_distilled": {
+        "Tier": 3
+    },
+    "bhop_distraction": {
+        "Tier": 3
+    },
+    "bhop_domi_final": {
+        "Tier": 3
+    },
+    "bhop_dream2": {
+        "Tier": 3
+    },
+    "bhop_dunes": {
+        "Tier": 3
+    },
+    "bhop_dungeon": {
+        "Tier": 3
+    },
+    "bhop_easycheese": {
+        "Tier": 3
+    },
+    "bhop_empty_eyes": {
+        "Tier": 3
+    },
+    "bhop_enigma": {
+        "Tier": 3
+    },
+    "bhop_enigma2": {
+        "Tier": 3
+    },
+    "bhop_epoch": {
+        "Tier": 3
+    },
+    "bhop_feyn": {
+        "Tier": 3
+    },
+    "bhop_flashbacks": {
+        "Tier": 3
+    },
+    "bhop_flatzone_fix": {
+        "Tier": 3
+    },
+    "bhop_fly_lovers": {
+        "Tier": 3
+    },
+    "bhop_focus": {
+        "Tier": 3
+    },
+    "bhop_fool": {
+        "Tier": 3
+    },
+    "bhop_fresh": {
+        "Tier": 3
+    },
+    "bhop_fur_fix": {
+        "Tier": 3
+    },
+    "bhop_future_city": {
+        "Tier": 3
+    },
+    "bhop_gunoi": {
+        "Tier": 3
+    },
+    "bhop_haarukka": {
+        "Tier": 3
+    },
+    "bhop_haddock": {
+        "Tier": 3
+    },
+    "bhop_hades": {
+        "Tier": 3
+    },
+    "bhop_hellish_dream": {
+        "Tier": 3
+    },
+    "bhop_highfly": {
+        "Tier": 3
+    },
+    "bhop_hopi": {
+        "Tier": 3
+    },
+    "bhop_indistinct": {
+        "Tier": 3
+    },
+    "bhop_inta": {
+        "Tier": 3
+    },
+    "bhop_interstellar": {
+        "Tier": 3
+    },
+    "bhop_ion": {
+        "Tier": 3
+    },
+    "bhop_istolefrompcpie": {
+        "Tier": 3
+    },
+    "bhop_kanto": {
+        "Tier": 3
+    },
+    "bhop_kinni": {
+        "Tier": 3
+    },
+    "bhop_laf": {
+        "Tier": 3
+    },
+    "bhop_leet_bh": {
+        "Tier": 3
+    },
+    "bhop_lego1": {
+        "Tier": 3
+    },
+    "bhop_legoflix1": {
+        "Tier": 3
+    },
+    "bhop_lord_m4dara": {
+        "Tier": 3
+    },
+    "bhop_lush": {
+        "Tier": 3
+    },
+    "bhop_metra2": {
+        "Tier": 3
+    },
+    "bhop_midnight": {
+        "Tier": 3
+    },
+    "bhop_miracle": {
+        "Tier": 3
+    },
+    "bhop_monster_jam": {
+        "Tier": 3
+    },
+    "bhop_monument_valley_3": {
+        "Tier": 3
+    },
+    "bhop_muchfast_fix_fix": {
+        "Tier": 3
+    },
+    "bhop_needyou": {
+        "Tier": 3
+    },
+    "bhop_ohboy": {
+        "Tier": 3
+    },
+    "bhop_oldschool": {
+        "Tier": 3
+    },
+    "bhop_omn": {
+        "Tier": 3
+    },
+    "bhop_onehunnidemoji": {
+        "Tier": 3
+    },
+    "bhop_orbital": {
+        "Tier": 3
+    },
+    "bhop_paisaweeaboo_beta4": {
+        "Tier": 3
+    },
+    "bhop_pandora": {
+        "Tier": 3
+    },
+    "bhop_peachrace": {
+        "Tier": 3
+    },
+    "bhop_pharaoh": {
+        "Tier": 3
+    },
+    "bhop_prux_fix": {
+        "Tier": 3
+    },
+    "bhop_pure_betafix": {
+        "Tier": 3
+    },
+    "bhop_pyle": {
+        "Tier": 3
+    },
+    "bhop_pym": {
+        "Tier": 3
+    },
+    "bhop_qportal": {
+        "Tier": 3
+    },
+    "bhop_quickie": {
+        "Tier": 3
+    },
+    "bhop_quiet2": {
+        "Tier": 3
+    },
+    "bhop_ratmeat_final": {
+        "Tier": 3
+    },
+    "bhop_redglow": {
+        "Tier": 3
+    },
+    "bhop_retrowave": {
+        "Tier": 3
+    },
+    "bhop_rgbglow_sr": {
+        "Tier": 3
+    },
+    "bhop_rockthevote4": {
+        "Tier": 3
+    },
+    "bhop_same": {
+        "Tier": 3
+    },
+    "bhop_screelee_fix": {
+        "Tier": 3
+    },
+    "bhop_second": {
+        "Tier": 3
+    },
+    "bhop_smally": {
+        "Tier": 3
+    },
+    "bhop_spiteful": {
+        "Tier": 3
+    },
+    "bhop_station_altair_fix": {
+        "Tier": 3
+    },
+    "bhop_sugarspeed": {
+        "Tier": 3
+    },
+    "bhop_summerland": {
+        "Tier": 3
+    },
+    "bhop_supernova": {
+        "Tier": 3
+    },
+    "bhop_tanker3": {
+        "Tier": 3
+    },
+    "bhop_techno_easy": {
+        "Tier": 3
+    },
+    "bhop_terry": {
+        "Tier": 3
+    },
+    "bhop_thc": {
+        "Tier": 3
+    },
+    "bhop_toc": {
+        "Tier": 3
+    },
+    "bhop_toxic": {
+        "Tier": 3
+    },
+    "bhop_tramadol": {
+        "Tier": 3
+    },
+    "bhop_translucidity_v2": {
+        "Tier": 3
+    },
+    "bhop_traveling_dreams": {
+        "Tier": 3
+    },
+    "bhop_treehouse2": {
+        "Tier": 3
+    },
+    "bhop_treehouse3": {
+        "Tier": 3
+    },
+    "bhop_treehouse4": {
+        "Tier": 3
+    },
+    "bhop_tron_evolution": {
+        "Tier": 3
+    },
+    "bhop_tyrian": {
+        "Tier": 3
+    },
+    "bhop_unreal_space": {
+        "Tier": 3
+    },
+    "bhop_unrealverse2": {
+        "Tier": 3
+    },
+    "bhop_verbena": {
+        "Tier": 3
+    },
+    "bhop_voxel": {
+        "Tier": 3
+    },
+    "bhop_voyage": {
+        "Tier": 3
+    },
+    "bhop_warmzsteon": {
+        "Tier": 3
+    },
+    "bhop_wildcard": {
+        "Tier": 3
+    },
+    "bhop_wire": {
+        "Tier": 3
+    },
+    "bhop_wonderland_fix": {
+        "Tier": 3
+    },
+    "bhop_zipfag": {
+        "Tier": 3
+    },
+    "bhop_zyper": {
+        "Tier": 3
+    },
+    "bhop_2_S4RO": {
+        "Tier": 4
+    },
+    "bhop_2flocci2furious_rg2": {
+        "Tier": 4
+    },
+    "bhop_abyss_fix": {
+        "Tier": 4
+    },
+    "bhop_alba": {
+        "Tier": 4
+    },
+    "bhop_angst_go": {
+        "Tier": 4
+    },
+    "bhop_arcturus": {
+        "Tier": 4
+    },
+    "bhop_astral": {
+        "Tier": 4
+    },
+    "bhop_badges_mini": {
+        "Tier": 4
+    },
+    "bhop_badly_v1": {
+        "Tier": 4
+    },
+    "bhop_blend": {
+        "Tier": 4
+    },
+    "bhop_bugga": {
+        "Tier": 4
+    },
+    "bhop_byrem": {
+        "Tier": 4
+    },
+    "bhop_communityjump": {
+        "Tier": 4
+    },
+    "bhop_cw_collab": {
+        "Tier": 4
+    },
+    "bhop_cw_journey": {
+        "Tier": 4
+    },
+    "bhop_daolang2": {
+        "Tier": 4
+    },
+    "bhop_daolang_go": {
+        "Tier": 4
+    },
+    "bhop_dark_ascension": {
+        "Tier": 4
+    },
+    "bhop_egyptiantemple_sr": {
+        "Tier": 4
+    },
+    "bhop_enlightened2": {
+        "Tier": 4
+    },
+    "bhop_epiphany": {
+        "Tier": 4
+    },
+    "bhop_esther": {
+        "Tier": 4
+    },
+    "bhop_experience": {
+        "Tier": 4
+    },
+    "bhop_fool_2": {
+        "Tier": 4
+    },
+    "bhop_foollatio_final": {
+        "Tier": 4
+    },
+    "bhop_fps_max_sr": {
+        "Tier": 4
+    },
+    "bhop_freakin": {
+        "Tier": 4
+    },
+    "bhop_fuji": {
+        "Tier": 4
+    },
+    "bhop_fury": {
+        "Tier": 4
+    },
+    "bhop_grid": {
+        "Tier": 4
+    },
+    "bhop_hamel": {
+        "Tier": 4
+    },
+    "bhop_hyable_go": {
+        "Tier": 4
+    },
+    "bhop_idiosyncrasy": {
+        "Tier": 4
+    },
+    "bhop_ihate_devmaps": {
+        "Tier": 4
+    },
+    "bhop_illusionary": {
+        "Tier": 4
+    },
+    "bhop_lapster_revisited": {
+        "Tier": 4
+    },
+    "bhop_lego2": {
+        "Tier": 4
+    },
+    "bhop_lego_journey": {
+        "Tier": 4
+    },
+    "bhop_lost_world": {
+        "Tier": 4
+    },
+    "bhop_meliodas_v1": {
+        "Tier": 4
+    },
+    "bhop_mine": {
+        "Tier": 4
+    },
+    "bhop_oceanic": {
+        "Tier": 4
+    },
+    "bhop_overthinker_go": {
+        "Tier": 4
+    },
+    "bhop_p05_go": {
+        "Tier": 4
+    },
+    "bhop_pandora2_fix": {
+        "Tier": 4
+    },
+    "bhop_pharma": {
+        "Tier": 4
+    },
+    "bhop_prometheus": {
+        "Tier": 4
+    },
+    "bhop_rockthevote3": {
+        "Tier": 4
+    },
+    "bhop_rotebal2_go": {
+        "Tier": 4
+    },
+    "bhop_shitper": {
+        "Tier": 4
+    },
+    "bhop_shutdown2": {
+        "Tier": 4
+    },
+    "bhop_superdooperhard_speedrun": {
+        "Tier": 4
+    },
+    "bhop_thc_gold_rg1": {
+        "Tier": 4
+    },
+    "bhop_the_distance": {
+        "Tier": 4
+    },
+    "bhop_the_journey_lyned2": {
+        "Tier": 4
+    },
+    "bhop_together": {
+        "Tier": 4
+    },
+    "bhop_underground_crypt": {
+        "Tier": 4
+    },
+    "bhop_alvo": {
+        "Tier": 5
+    },
+    "bhop_alvo2": {
+        "Tier": 5
+    },
+    "bhop_aux_a9": {
+        "Tier": 5
+    },
+    "bhop_badges": {
+        "Tier": 5
+    },
+    "bhop_challenjour_v2": {
+        "Tier": 5
+    },
+    "bhop_community_jump2": {
+        "Tier": 5
+    },
+    "bhop_cutekittenz": {
+        "Tier": 5
+    },
+    "bhop_exceptional": {
+        "Tier": 5
+    },
+    "bhop_exodus_fix": {
+        "Tier": 5
+    },
+    "bhop_flocci": {
+        "Tier": 5
+    },
+    "bhop_floccidrift": {
+        "Tier": 5
+    },
+    "bhop_friendsjump": {
+        "Tier": 5
+    },
+    "bhop_fruits2": {
+        "Tier": 5
+    },
+    "bhop_fury_2": {
+        "Tier": 5
+    },
+    "bhop_greenroom": {
+        "Tier": 5
+    },
+    "bhop_inmomentum_gfl_final": {
+        "Tier": 5
+    },
+    "bhop_insanelyserz": {
+        "Tier": 5
+    },
+    "bhop_interloper": {
+        "Tier": 5
+    },
+    "bhop_lego3": {
+        "Tier": 5
+    },
+    "bhop_memory": {
+        "Tier": 5
+    },
+    "bhop_null": {
+        "Tier": 5
+    },
+    "bhop_p06_go": {
+        "Tier": 5
+    },
+    "bhop_ponpon": {
+        "Tier": 5
+    },
+    "bhop_ragequit": {
+        "Tier": 5
+    },
+    "bhop_silly": {
+        "Tier": 5
+    },
+    "bhop_sina": {
+        "Tier": 5
+    },
+    "bhop_sqee": {
+        "Tier": 5
+    },
+    "bhop_synthetic": {
+        "Tier": 5
+    },
+    "bhop_thc_platinum_final_rg2": {
+        "Tier": 5
+    },
+    "bhop_trampislow": {
+        "Tier": 5
+    },
+    "bhop_verisimilitude": {
+        "Tier": 5
+    },
+    "kz_bhop_global_fix": {
+        "Tier": 5
+    },
+    "bhop_aimers_hell": {
+        "Tier": 6
+    }
+}

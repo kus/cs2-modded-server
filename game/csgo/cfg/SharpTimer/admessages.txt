@@ -1,0 +1,2 @@
+// {prefix} {current_map} {max_players} {players} {current_time} {current_date}
+// {primary} {default} {red} {white} {darkred} {green}{lightyellow} {lightblue}  {olive} {lime} {lightpurple} {purple} {grey} {yellow} {gold} {silver} {blue} {darkblue} {bluegrey} {magenta} {lightred} {orange}

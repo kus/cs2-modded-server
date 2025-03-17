@@ -1,0 +1,67 @@
+{
+  "Unranked": {
+    "title": "[Unranked]",
+    "color": "{default}",
+    "icon": "https://raw.githubusercontent.com/Letaryat/poor-SharpTimer/main/remote_data/rank_icons/unranked.png"
+  },
+  "Rank1": {
+    "title": "[Bronze]",
+    "percent": 100,
+    "color": "{lightyellow}",
+    "icon": "https://raw.githubusercontent.com/Letaryat/poor-SharpTimer/dev/remote_data/rank_icons/bronze.png"
+  },
+  "Rank2": {
+    "title": "[Silver]",
+    "percent": 85,
+    "color": "{silver}",
+    "icon": "https://raw.githubusercontent.com/Letaryat/poor-SharpTimer/main/remote_data/rank_icons/silver3.png"
+  },
+  "Rank3": {
+    "title": "[Gold]",
+    "percent": 70,
+    "color": "{yellow}",
+    "icon": "https://raw.githubusercontent.com/Letaryat/poor-SharpTimer/main/remote_data/rank_icons/gold3.png"
+  },
+  "Rank4": {
+    "title": "[Platinum]",
+    "percent": 55,
+    "color": "{lightblue}",
+    "icon": "https://raw.githubusercontent.com/Letaryat/poor-SharpTimer/main/remote_data/rank_icons/plat3.png"
+  },
+  "Rank5": {
+    "title": "[Diamond]",
+    "percent": 40,
+    "color": "{purple}",
+    "icon": "https://raw.githubusercontent.com/Letaryat/poor-SharpTimer/main/remote_data/rank_icons/dia3.png"
+  },
+  "Rank6": {
+    "title": "[Master]",
+    "percent": 25,
+    "color": "{lime}",
+    "icon": "https://raw.githubusercontent.com/Letaryat/poor-SharpTimer/main/remote_data/rank_icons/master3.png"
+  },
+  "Rank7": {
+    "title": "[Legend]",
+    "percent": 10,
+    "color": "{orange}",
+    "icon": "https://raw.githubusercontent.com/Letaryat/poor-SharpTimer/main/remote_data/rank_icons/legend3.png"
+  },
+  "Rank8": {
+    "title": "[Royalty]",
+    "percent": 3,
+    "color": "{lightred}",
+    "icon": "https://raw.githubusercontent.com/Letaryat/poor-SharpTimer/main/remote_data/rank_icons/royal3.png"
+  },
+  "Rank9": {
+    "title": "[God]",
+    "percent": 1,
+    "color": "{darkred}",
+    "icon": "https://raw.githubusercontent.com/Letaryat/poor-SharpTimer/main/remote_data/rank_icons/god.gif"
+  },
+  "Rank10": {
+    "title": "[#1]",
+    "placement": 1,
+    "color": "{darkred}",
+    "icon": "https://raw.githubusercontent.com/Letaryat/poor-SharpTimer/main/remote_data/rank_icons/god.gif"
+  }
+}
