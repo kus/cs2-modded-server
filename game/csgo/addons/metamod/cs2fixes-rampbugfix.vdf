@@ -1,0 +1,5 @@
+"Metamod Plugin"
+{
+	"alias"	"cs2fixes-rampbugfix"
+	"file"	"addons/cs2fixes-rampbugfix/bin/linuxsteamrt64/cs2fixes-rampbugfix"
+}
