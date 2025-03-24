@@ -391,6 +391,35 @@ You can either Download this repo and extract it to where you want your server (
 
    `docker compose up`
 
+## Running in Kubernetes
+
+You should have a Kubernetes distribution already running. To set up a K8s Cluster please refer to [RKE2 Quickstart](https://docs.rke2.io/install/quickstart)
+
+First create a namespace for your deployment with `kubectl create ns game-server`
+
+To securly pass .env vars to the container, *Kubernetes Secrets* are used. Make a file called `cs2-secret.yaml`. Your keys need to be base64 encoded. Simply `echo "my_key" | base64` in your bash shell and then put them in the data section of your Secret manifest.
+
+```
+apiVersion: v1
+kind: Secret
+metadata:
+  name: cs2-secret
+  namespace: game-server
+type: Opaque
+data:
+  STEAM_ACCOUNT: {your_steam_account_key_goes_here}
+  API_KEY: {your_api_key_goes_here}
+```
+
+Assuming you already have a `defaultStorageClass` and a `defaultLoadBalancerClass` you can apply the manifest with
+
+```kubectl apply -f manifest.yaml```
+
+Note: `custom_files` is mounted as a `hostPath` this wont work for multi-node setups. For this there are several solutions such as initContainer or Operators to automatically update the `custom_files` 
+
+Your service will receive an external IP and can be found with `kubectl get svc -n game-server`.
+
+
 ## Running on Windows
 
 Make sure you have **60GB free space**.
