@@ -97,8 +97,8 @@ Mod | Version | Why
 [STFixes](https://github.com/rcnoob/STFixes)| `1.0.4` | A CounterStrikeSharp plugin with common fixes and features for SharpTimer servers
 [GunGame](https://github.com/ssypchenko/cs2-gungame)| `1.1.2` | GunGame mode on Counter Strike Sharp
 [K4-Arenas](https://github.com/KitsuneLab-Development/K4-Arenas)| `2.0.4` | All in one arena plugin, that you can use to have a ladder type gameplay. Support all map, 2v2/3v3/etc [How?](#enable-k4-arenas)
-[CS2 Retakes](https://github.com/B3none/cs2-retakes)| `20.0.17` | CS2 implementation of retakes. Based on the version for CS:GO by Splewis.
-[CS2 Retakes Shared](https://github.com/B3none/cs2-retakes)| `20.0.17` | Shared library for CS2 Retakes.
+[CS2 Retakes](https://github.com/B3none/cs2-retakes)| `20.0.18` | CS2 implementation of retakes. Based on the version for CS:GO by Splewis.
+[CS2 Retakes Shared](https://github.com/B3none/cs2-retakes)| `20.0.18` | Shared library for CS2 Retakes.
 [CS2 Instadefuse](https://github.com/B3none/cs2-instadefuse)| `2.0.0` | Allows a CT to instantly defuse the bomb when nothing can prevent defusal. Written in C# for CounterStrikeSharp.
 [CS2 Retakes Allocator](https://github.com/yonilerner/cs2-retakes-allocator)| `2.4.0` | Advanced weapon allocation for B3none/cs2-retakes
 [CS2 Whitelist](https://github.com/PhantomYopta/CS2_WhiteList)| `1.0.0`| Restricts access to the server for SteamID members/employees listed in the whitelist. [How?](#enable-whitelist-so-only-a-list-of-people-can-play)
