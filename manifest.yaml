@@ -1,0 +1,90 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: cs2-modded-claim
+  namespace: game-server
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 60Gi #Reccomended Minimum
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cs2-modded-server
+  namespace: game-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cs2-modded-server
+  template:
+    metadata:
+      labels:
+        app: cs2-modded-server
+    spec:
+      securityContext:
+        fsGroup: 1000
+      containers:
+        - name: cs2-modded-server
+          image: ghcr.io/kus/cs2-modded-server:latest
+          ports:
+            - containerPort: 27015
+              protocol: TCP
+            - containerPort: 27015
+              protocol: UDP
+            - containerPort: 27020
+              protocol: TCP
+            - containerPort: 27020
+              protocol: UDP
+          env:
+            - name: STEAM_ACCOUNT
+              valueFrom:
+                secretKeyRef:
+                  name: cs2-secret
+                  key: STEAM_ACCOUNT
+            - name: API_KEY
+              value: "test"
+          volumeMounts:
+            - name: cs2-data
+              mountPath: /home/steam/cs2
+            - name: custom
+              mountPath: /home/custom_files/
+      volumes:
+        - name: cs2-data
+          persistentVolumeClaim:
+            claimName: cs2-modded-claim
+        - name: custom
+          hostPath:
+            path: /home/k8s_user/iac/rke2/game-server/cs2/custom_files/ #Custom_files path on host
+            type: Directory
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cs2-modded-service
+  namespace: game-server
+spec:
+  selector:
+    app: cs2-modded-server
+  ports:
+    - name: tcp-27015
+      protocol: TCP
+      port: 27015
+      targetPort: 27015
+    - name: udp-27015
+      protocol: UDP
+      port: 27015
+      targetPort: 27015
+    - name: tcp-27020
+      protocol: TCP
+      port: 27020
+      targetPort: 27020
+    - name: udp-27020
+      protocol: UDP
+      port: 27020
+      targetPort: 27020
+  type: LoadBalancer
