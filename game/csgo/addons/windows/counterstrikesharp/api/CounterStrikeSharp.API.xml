@@ -571,6 +571,16 @@
             </summary>
             <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
         </member>
+        <member name="M:CounterStrikeSharp.API.Core.CBaseEntity.EmitSound(System.String,CounterStrikeSharp.API.Modules.Utils.RecipientFilter,System.Single,System.Single)">
+            <summary>
+            Emit a soundevent to all players.
+            </summary>
+            <param name="soundEventName">The name of the soundevent to emit.</param>
+            <param name="recipients">The recipients of the soundevent.</param>
+            <param name="volume">The volume of the soundevent.</param>
+            <param name="pitch">The pitch of the soundevent.</param>
+            <returns>The sound event guid.</returns>
+        </member>
         <member name="M:CounterStrikeSharp.API.Core.CBaseModelEntity.SetModel(System.String)">
             <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
         </member>
