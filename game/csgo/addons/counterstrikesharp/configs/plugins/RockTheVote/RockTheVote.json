@@ -1,0 +1,43 @@
+{
+	"Version": 9,
+	"Rtv": {
+		"Enabled": true,
+		"EnabledInWarmup": true,
+		"NominationEnabled": true,
+		"MinPlayers": 0,
+		"MinRounds": 0,
+		"ChangeMapImmediatly": true,
+		"HideHudAfterVote": true,
+		"MapsToShow": 6,
+		"VoteDuration": 30,
+		"VotePercentage": 60,
+		"HudMenu": true
+	},
+	"Votemap": {
+		"Enabled": true,
+		"VotePercentage": 60,
+		"ChangeMapImmediatly": false,
+		"EnabledInWarmup": true,
+		"MinPlayers": 0,
+		"MinRounds": 0,
+		"HudMenu": false
+	},
+	"EndOfMapVote": {
+		"Enabled": true,
+		"MapsToShow": 6,
+		"HudMenu": true,
+		"ChangeMapImmediatly": false,
+		"VoteDuration": 30,
+		"HideHudAfterVote": true,
+		"TriggerSecondsBeforeEnd": 120,
+		"TriggerRoundsBeforEnd": 2,
+		"DelayToChangeInTheEnd": 6
+	},
+	"Timeleft": {
+		"ShowToAll": false
+	},
+	"Nextmap": {
+		"ShowToAll": false
+	},
+	"MapsInCoolDown": 1
+}
