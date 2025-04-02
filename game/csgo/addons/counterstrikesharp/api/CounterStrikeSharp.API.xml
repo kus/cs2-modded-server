@@ -1393,6 +1393,21 @@
             Development universe.
             </summary>
         </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Events.EventPlayerChat.Teamonly">
+            <summary>
+            If this chat message was sent to team only
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Events.EventPlayerChat.Userid">
+            <summary>
+            The user ID of the player who sent the chat message
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Events.EventPlayerChat.Text">
+            <summary>
+            The text content of the chat message
+            </summary>
+        </member>
         <member name="M:CounterStrikeSharp.API.Modules.Events.GameEvent.Free">
             <summary>
             Used to manually free the event.
