@@ -1,13 +1,30 @@
 {
-  "Version": 7,
+  "Version": 9,
   "RTV": {
     "Enabled": true,
-    "Mode": 0,
-    "MapFormat": false,
-    "Plugin": "addons/counterstrikesharp/plugins/RockTheVote/RockTheVote.dll",
-    "MapList": "addons/counterstrikesharp/plugins/RockTheVote/maplist.txt"
+    "PerMap": false,
+    "MapMode": 0,
+    "HudMenu": false,
+    "Style": "center",
+    "MinRounds": 0,
+    "MinPlayers": 1,
+    "VoteDuration": 20,
+    "OptionsToShow": 6,
+    "VotePercentage": 51,
+    "OptionsInCoolDown": 1,
+    "EndMapVote": true,
+    "IncludeModes": false,
+    "ModePercentage": 40,
+    "EnabledInWarmup": false,
+    "HideHudAfterVote": false,
+    "NominationEnabled": true,
+    "MaxNominationWinners": 1,
+    "ChangeImmediately": false,
+    "TriggerRoundsBeforeEnd": 2,
+    "TriggerSecondsBeforeEnd": 120
   },
   "Maps": {
+    "Mode": 0,
     "Delay": 5,
     "Style": "center",
     "Default": "de_dust2"
@@ -15,10 +32,9 @@
   "Votes": {
     "Enabled": true,
     "Maps": true,
-    "AllMaps": false,
+    "Style": "center",
     "GameModes": true,
-    "GameSettings": false,
-    "Style": "center"
+    "GameSettings": false
   },
   "Settings": {
     "Enabled": true,
@@ -26,6 +42,7 @@
     "Folder": "settings"
   },
   "Warmup": {
+    "Enabled": false,
     "Time": 0,
     "PerMap": false,
     "Default": {},
@@ -34,19 +51,21 @@
   "Commands": {
     "Map": true,
     "Maps": true,
-    "AllMaps": false,
+    "Mode": true,
+    "Modes": true,
     "TimeLeft": true,
+    "TimeLimit": true,
     "Style": "center"
   },
   "Rotation": {
     "Enabled": false,
-    "WhenServerEmpty": false,
-    "CustomTimeLimit": 600,
     "Cycle": 0,
     "MapGroups": [
       "mg_active",
       "mg_comp"
     ],
+    "WhenServerEmpty": false,
+    "CustomTimeLimit": 600,
     "ModeRotation": false,
     "ModeInterval": 4,
     "ModeSchedules": false,
