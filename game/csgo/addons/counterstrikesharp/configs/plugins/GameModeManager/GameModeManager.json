@@ -1,19 +1,22 @@
 {
-  "Version": 9,
+  "Version": 10,
   "RTV": {
     "Enabled": true,
-    "PerMap": false,
-    "MapMode": 0,
-    "HudMenu": false,
     "Style": "center",
+    "PerMap": false,
+    "HudMenu": false,
     "MinRounds": 0,
     "MinPlayers": 1,
-    "VoteDuration": 20,
+    "VoteDuration": 60,
     "OptionsToShow": 6,
     "VotePercentage": 51,
-    "OptionsInCoolDown": 1,
-    "EndMapVote": true,
+    "OptionsInCoolDown": 3,
+    "EndOfMapVote": true,
     "IncludeModes": false,
+    "IncludeExtend": false,
+    "MaxExtends": 6,
+    "ExtendTime": 10,
+    "ExtendRounds": 5,
     "ModePercentage": 40,
     "EnabledInWarmup": false,
     "HideHudAfterVote": false,
@@ -89,7 +92,7 @@
     "Default": {
       "Name": "Casual",
       "Config": "casual.cfg",
-      "DefaultMap": "de_dust2",
+      "DefaultMap": null,
       "MapGroups": [
         "mg_active",
         "mg_comp"
