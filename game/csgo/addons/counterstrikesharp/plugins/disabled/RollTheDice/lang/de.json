@@ -1,4 +1,8 @@
 {
+    "admin.unknown_command": "[WürfelSpiel] Unbekannter Befehl.",
+    "admin.reload:": "[WürfelSpiel] Konfiguration neu geladen.",
+    "admin.disable": "[WürfelSpiel] WürfelSpiel deaktiviert.",
+    "admin.enable": "[WürfelSpiel] WürfelSpiel aktiviert.",
     "core.hotreload": "[WürfelSpiel] Neu geladen!",
     "core.unload": "[WürfelSpiel] RollTheDice Plugin entladen!",
     "core.config": "[WürfelSpiel] Konfiguration aus Datei geladen!",
