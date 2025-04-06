@@ -87,7 +87,7 @@ Mod | Version | Why
 [CS2_ExecAfter](https://github.com/kus/CS2_ExecAfter) | `1.0.0` | Executes a command after server event (i.e. OnMapStart) or a delay.
 [CS2 Remove Map Weapons](https://github.com/kus/CS2-Remove-Map-Weapons) | `1.0.1` | Remove weapons from the map in CS2 as `mp_weapons_allow_map_placed 0` does not work.
 [GameModeManager](https://github.com/nickj609/GameModeManager)| `1.0.57` | A simple Counter-Strike 2 server plugin that helps admins manage game modes and map groups.
-[MatchZy](https://github.com/shobhit-pathak/MatchZy) | `0.8.8` | MatchZy is a plugin for CS2 for running and managing practice/pugs/scrims/matches with easy configuration!
+[MatchZy](https://github.com/shobhit-pathak/MatchZy) | `0.8.9` | MatchZy is a plugin for CS2 for running and managing practice/pugs/scrims/matches with easy configuration!
 [MapConfigurator](https://github.com/ManifestManah/MapConfigurator)| `1.0.2` | Allows you to quick and easily create unique configuration files for each map on your server.
 [K4-DamageInfo](https://github.com/KitsuneLab-Development/K4-DamageInfo) | `2.4.0` | Displays the amount of damage players have inflicted on the victim's HP and Armor, as well as the hit groups they have hit.
 [SimpleAdmin](https://github.com/connercsbn/SimpleAdmin/)| `0.1.2` | Adds basic administrator functions

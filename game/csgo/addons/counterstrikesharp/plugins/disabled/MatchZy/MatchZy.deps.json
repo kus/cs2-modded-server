@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "MatchZy/1.0.0": {
         "dependencies": {
-          "CounterStrikeSharp.API": "1.0.291",
+          "CounterStrikeSharp.API": "1.0.315",
           "CsvHelper": "30.0.1",
           "Dapper": "2.1.15",
           "Microsoft.Data.Sqlite": "7.0.13",
@@ -20,7 +20,7 @@
           "MatchZy.dll": {}
         }
       },
-      "CounterStrikeSharp.API/1.0.291": {
+      "CounterStrikeSharp.API/1.0.315": {
         "dependencies": {
           "McMaster.NETCore.Plugins": "1.4.0",
           "Microsoft.CSharp": "4.7.0",
@@ -33,7 +33,8 @@
           "Serilog.Extensions.Logging": "8.0.0",
           "Serilog.Sinks.Console": "5.0.0",
           "Serilog.Sinks.File": "5.0.0",
-          "System.Data.DataSetExtensions": "4.5.0"
+          "System.Data.DataSetExtensions": "4.5.0",
+          "Tomlyn": "0.19.0"
         }
       },
       "CsvHelper/30.0.1": {
@@ -490,7 +491,8 @@
         "dependencies": {
           "System.Text.Encodings.Web": "8.0.0"
         }
-      }
+      },
+      "Tomlyn/0.19.0": {}
     }
   },
   "libraries": {
@@ -499,12 +501,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "CounterStrikeSharp.API/1.0.291": {
+    "CounterStrikeSharp.API/1.0.315": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-VTeTxnxzmwcrCQTkDZdUUo14sS3l99zZvAfqvsOwQ7m9g+bvuVmL04IseRT3CIdpvdUkwgNrf63epiuIfWybXg==",
-      "path": "counterstrikesharp.api/1.0.291",
-      "hashPath": "counterstrikesharp.api.1.0.291.nupkg.sha512"
+      "sha512": "sha512-Ns/9F/nV72s6KOyPooFF6fXnhxX+LKjxl/+Q4qeLoQth2NXACtwutuyiy1xIItM1sVYyS/sn3qYuo2WQNTsArw==",
+      "path": "counterstrikesharp.api/1.0.315",
+      "hashPath": "counterstrikesharp.api.1.0.315.nupkg.sha512"
     },
     "CsvHelper/30.0.1": {
       "type": "package",
@@ -897,6 +899,13 @@
       "sha512": "sha512-OdrZO2WjkiEG6ajEFRABTRCi/wuXQPxeV6g8xvUJqdxMvvuCCEk86zPla8UiIQJz3durtUEbNyY/3lIhS0yZvQ==",
       "path": "system.text.json/8.0.0",
       "hashPath": "system.text.json.8.0.0.nupkg.sha512"
+    },
+    "Tomlyn/0.19.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GlI2o8R8jbZIaE+YX6uA/VoAOH7zIxYeqxDm7jHW2hqUhuB+q19oKold35FkMuv8IZDoCqsTMolaBv2eBLBmrQ==",
+      "path": "tomlyn/0.19.0",
+      "hashPath": "tomlyn.0.19.0.nupkg.sha512"
     }
   }
 }
