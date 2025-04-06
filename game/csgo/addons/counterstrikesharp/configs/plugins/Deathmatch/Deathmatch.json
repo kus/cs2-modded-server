@@ -16,7 +16,7 @@
 		"Spawn Protection Color": ""
 	},
 	"Spawn System": {
-		"Spawns Method": 1,
+		"Spawns Method": 0,
 		"Team Spawns Separation": false,
 		"Check Spawn Visibility": true,
 		"Distance From Enemies": 500
