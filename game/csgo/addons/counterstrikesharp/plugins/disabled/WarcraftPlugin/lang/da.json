@@ -1,0 +1,144 @@
+﻿{
+  //Menu + Core
+  "menu.selection.left": "<font color='red' class='fontSize-s'>▶ </font>", // <font color='red' class='fontSize-s'>▶ </font>
+  "menu.selection.right": "<font color='red' class='fontSize-s'> ◀</font>", // <font color='red' class='fontSize-s'> ◀</font>
+  "menu.option.select": "Mellemrum", // E
+  "menu.option.select.dead": "E", // Space
+  "menu.option.exit": "Tab", // Tab
+  "menu.option.up": "W↑", // W↑
+  "menu.option.down": "S↓", // S↓
+  "menu.exit": "Afslut", // Exit
+  "menu.select": "Vælg", // Select
+  "menu.navigate": "Naviger", // Navigate
+  "menu.more.options.below": "<center><img src='https://raw.githubusercontent.com/Wngui/CS2WarcraftMod/refs/heads/master/WarcraftPlugin/Resources/arrow-down.gif'></center><br>", // <center><img src='https://raw.githubusercontent.com/Wngui/CS2WarcraftMod/refs/heads/master/WarcraftPlugin/Resources/arrow-down.gif'></center><br>
+  "menu.class": "Warcraft Klasse Menu", // Warcraft Class Menu
+  "menu.class.total.levels": "Samlet antal levels", // Total Levels
+  "menu.class.level": "level", // level
+  "menu.skills.level": "level", // Level
+  "menu.skills.available": "Level-up skills ({0} tilgængelige)", // Level up skills ({0} available)
+  "class.pending.change": "{Green} Du vil spawne som {Orange}{0}{Green} i næste runde!", // {Green} You will spawn as {Orange}{0}{Green} next round!
+  "class.disabled": "{Green}Nuværende klasse er {Red}deaktiveret{Green}! Spiller nu som {Orange}{0}{Default}.", // {Green}Current class is {Red}disabled{Green}! Now playing as {Orange}{0}{Default}.
+  "xp.current": "XP", // Experience
+  "xp.bonus.headshot": "HS bonus", // HS bonus
+  "xp.bonus.knife": "knivbonus", // knife bonus
+  "xp.kill": "{Gold}+{0} XP {Default}for at dræbe {Green}{1} {Default}{2}{3}", // {Gold}+{0} XP {Default}for killing {Green}{1} {Default}{2}{3}
+  "xp.add": "Tilføjer {0} xp til spiller {1}", // Adding {0} xp to player {1}
+  "ability.ready": "{0} er klar!", // {0} is ready!
+  "ultimate.missing": "Ingen levels i ultimativ skill", // No levels in ultimate
+  "ultimate.countdown": "Ultimativ skill klar om {0}s", // Ultimate ready in {0}s
+
+  //Commands, used in-game by typing !<command>
+  "command.ultimate": "ultimativ", // ultimate
+  "command.changeclass": "skift", // changeclass
+  "command.reset": "nulstil", // reset
+  "command.factoryreset": "fabriksnulstil", // factoryreset
+  "command.addxp": "givxp", // addxp
+  "command.skills": "skills", // skills
+  "command.help": "hjælp", // commands
+  "command.help.description": "{Green}Skriv {Gold}!class{Green} for at skifte klasse, {Gold}!skills{Green} for at forbedre færdigheder", // {Green}Type {Gold}!class{Green} to change classes, {Gold}!skills{Green} to level-up
+
+  //Adverts
+  "advert.0": "{Green}Vil du prøve en ny klasse? Skriv {Gold}!class{Green} for at skifte", // {Green}Want to try a new class? Type {Gold}!class{Green} to change
+  "advert.1": "{Green}Uforbrugte færdighedspoint? Skriv {Gold}!skills{Green} for at forbedre skills", // {Green}Unspent skill points? Type {Gold}!skills{Green} to level up abilities
+  "advert.2": "{Green}Vil du prøve nye skills? Skriv {Gold}!reset{Green} for at omfordele", // {Green}Want to try new abilities? Type {Gold}!reset{Green} to reassign
+  "advert.3": "{Green}Vil du bruge din ultimative færdighed? Skriv 'bind <tast> ultimate' i konsollen. Eksempel: {Grey}bind x ultimate", // {Green}Want to use your ultimate? Type 'bind <key> ultimate' in console. Example: {Grey}bind x ultimate
+
+  //Stock class names
+  "barbarian": "Barbar", // Barbarian
+  "mage": "Troldmand", // Mage
+  "necromancer": "Nekromant", // Necromancer
+  "paladin": "Paladin", // Paladin
+  "ranger": "Ranger", // Ranger
+  "rogue": "Røver", // Rogue
+  "shapeshifter": "Skabeskifter", // Shapeshifter
+  "tinker": "Opfinder", // Tinker
+
+  //Stock class abilities
+  "barbarian.ability.0": "Blodbad", // Carnage
+  "barbarian.ability.0.description": "Øger skaden med haglbøsser.", // Increase damage dealt with shotguns.
+  "barbarian.ability.1": "Kamphærdet", // Battle-Hardened
+  "barbarian.ability.1.description": "Øger dit helbred med 20/40/60/80/100.", // Increase your health by 20/40/60/80/100.
+  "barbarian.ability.2": "Sprængtønde", // Throwing Axe
+  "barbarian.ability.2.description": "Chance for at kaste en eksploderende tønde, når du skyder.", // Chance to hurl an exploding barrel when firing.
+  "barbarian.ability.3": "Blodtørst", // Bloodlust
+  "barbarian.ability.3.description": "Giver uendelig ammunition, bevægelseshastighed og helbredsregeneration.", // Grants infinite ammo, movement speed & health regeneration.
+
+  "mage.ability.0": "Ildkugle", // Fireball
+  "mage.ability.0.description": "Fylder molotovcocktails med ildmagi, hvilket forårsager en enorm eksplosion ved sammenstød.", // Infuses molotovs with fire magic, causing a huge explosion on impact.
+  "mage.ability.1": "Isstråle", // Ice Beam
+  "mage.ability.1.description": "Chance for at fryse fjender på stedet.", // Chance to freeze enemies in place.
+  "mage.ability.2": "Manaskjold", // Mana Shield
+  "mage.ability.2.description": "Passivt magisk skjold, der regenererer rustning over tid.", // Passive magical shield, which regenerates armor over time.
+  "mage.ability.3": "Teleport", // Teleport
+  "mage.ability.3.description": "Når du trykker på din ultimative tast, teleporterer du til det sted, du sigter mod.", // When you press your ultimate key, you will teleport to the spot you're aiming.
+
+  "necromancer.ability.0": "Livsudtømning", // Life Drain
+  "necromancer.ability.0.description": "Udnytter mørk magi til at suge liv fra fjender og genoprette din egen vitalitet.", // Harness dark magic to siphon health from foes and restore your own vitality.
+  "necromancer.ability.1": "Giftig sky", // Poison Cloud
+  "necromancer.ability.1.description": "Fylder røggranater med stærke toksiner, der skader fjender over tid.", // Infuses smoke grenades with potent toxins, damaging enemies over time.
+  "necromancer.ability.2": "Splintret sjæl", // Splintered Soul
+  "necromancer.ability.2.description": "Chance for at snyde døden med en brøkdel af vitalitet.", // Chance to cheat death with a fraction of vitality.
+  "necromancer.ability.3": "Opvækkelse af døde", // Raise Dead
+  "necromancer.ability.3.description": "Tilkalder en horde af udøde kyllinger til at kæmpe for dig.", // Summon a horde of undead chicken to fight for you.
+
+  "paladin.ability.0": "Healende aura", // Healing Aura
+  "paladin.ability.0.description": "Udsender en aura, der gradvist helbreder nærliggende allierede over tid.", // Emit an aura that gradually heals nearby allies over time.
+  "paladin.ability.1": "Helligt skjold", // Holy Shield
+  "paladin.ability.1.description": "Få yderligere 20/40/60/80/100 rustning.", // Gain an additional 20/40/60/80/100 armor.
+  "paladin.ability.2": "Afrustning", // Smite
+  "paladin.ability.2.description": "Fylder dine angreb med guddommelig energi, der potentielt fjerner fjendens rustning.", // Infuse your attacks with divine energy, potentially stripping enemy armor.
+  "paladin.ability.3": "Guddommelig genopstandelse", // Divine Resurrection
+  "paladin.ability.3.description": "Genopliver øjeblikkeligt en tilfældig faldet allieret.", // Instantly revive a random fallen ally.
+
+  "ranger.ability.0": "Letfodet", // Light footed
+  "ranger.ability.0.description": "Utfører en kvik dash i luften ved at trykke på spring.", // Nimbly perform a dash in midair, by pressing jump.
+  "ranger.ability.1": "Fældefælde", // Ensnare trap
+  "ranger.ability.1.description": "Placerer en fælde ved at kaste en lokkedue.", // Place a trap by throwing a decoy.
+  "ranger.ability.2": "Snigskytte", // Marksman
+  "ranger.ability.2.description": "Ekstra skade med kikkertsiktede våben.", // Additional damage with scoped weapons.
+  "ranger.ability.3": "Pileregn", // Arrowstorm
+  "ranger.ability.3.description": "Kalder en dødelig pileregn ved hjælp af den ultimative tast.", // Call down a deadly volley of arrows using the ultimate key.
+
+  "rogue.ability.0": "Snig", // Stealth
+  "rogue.ability.0.description": "Bliver delvist usynlig i 1/2/3/4/5 sekunder, når du dræber nogen.", // Become partially invisible for 1/2/3/4/5 seconds, when killing someone.
+  "rogue.ability.1": "Snigeangreb", // Sneak Attack
+  "rogue.ability.1.description": "Når du rammer en fjende i ryggen, gør du yderligere 5/10/15/20/25 skade.", // When you hit an enemy in the back, you do an additional 5/10/15/20/25 damage.
+  "rogue.ability.2": "Klingedans", // Blade Dance
+  "rogue.ability.2.description": "Øger bevægelseshastighed og skade med knive.", // Increases movement speed and damage with knives.
+  "rogue.ability.3": "Røgbombe", // Smokebomb
+  "rogue.ability.3.description": "Når du er tæt på døden, vil du automatisk slippe en røgbombe, der lader dig snyde døden.", // When nearing death, you will automatically drop a smokebomb, letting you cheat death.
+
+  "shapeshifter.ability.0": "Adaptiv forklædning", // Adaptive Disguise
+  "shapeshifter.ability.0.description": "Chance for at spawne med en fjendtlig forklædning, der afsløres ved angreb.", // Chance to spawn with an enemy disguise, revealed upon attacking.
+  "shapeshifter.ability.1": "Doppelgænger", // Doppelganger
+  "shapeshifter.ability.1.description": "Opretter en midlertidig livløs klon af dig selv ved hjælp af en lokkeduegranat.", // Create a temporary inanimate clone of yourself, using a decoy grenade.
+  "shapeshifter.ability.2": "Bedrager-syndrom", // Imposter Syndrome
+  "shapeshifter.ability.2.description": "Chance for at blive underrettet, når du bliver afsløret af fjender på radaren.", // Chance to be notified when revealed by enemies on radar.
+  "shapeshifter.ability.3": "Morphling", // Morphling
+  "shapeshifter.ability.3.description": "Forvandler sig til et uskyldigt objekt.", // Transform into an unassuming object.
+
+  "tinker.ability.0": "Angrebsdrone", // Attack Drone
+  "tinker.ability.0.description": "Udruster en pistol-drone, der angriber nærliggende fjender.", // Deploy a gun drone that attacks nearby enemies.
+  "tinker.ability.1": "Reservedele", // Spare Parts
+  "tinker.ability.1.description": "Chance for ikke at miste ammunition, når du skyder.", // Chance to not lose ammo when firing.
+  "tinker.ability.2": "Springfælde", // Spring Trap
+  "tinker.ability.2.description": "Udruster en fælde, der sender spillere op i luften.", // Deploy a trap which launches players into the air.
+  "tinker.ability.3": "Dronesværm", // Drone Swarm
+  "tinker.ability.3.description": "Tilkald en sværm af angrebsdroner, der skader alle nærliggende fjender.", // Summon a swarm of attack drones that damage all nearby enemies.
+
+  //Stock class extras
+  "mage.frozen": "{Blue}[FROSNET]{Default}", // {Blue}[FROZEN]{Default}
+  "necromancer.cheatdeath": "{DarkRed}Du har snydt døden, for nu...", // {DarkRed}You have cheated death, for now...
+  "paladin.revive": "{Green}Du er blevet genoplivet!", // {Green}You have been revived!
+  "paladin.revive.other": "{Green}{0}{Default} er blevet genoplivet af {1}", // {Green}{0}{Default} has been revived by {1}
+  "paladin.revive.none": "{Red}Ingen faldne allierede at genoplive!", // {Red}No fallen allies to revive!
+  "ranger.dash.cooldown": "{Red}Dash{Default} på cooldown!", // {Red}Dash{Default} on cooldown!
+  "ranger.dash.ready": "{Green}Dash{Default} klar!", // {Green}Dash{Default} ready!
+  "rogue.backstab": "{Blue}[Bagholdsangreb] {0} bonus skade", // {Blue}[Backstab] {0} bonus damage
+  "rogue.invsible": "[Usynlig]", // [Invisible]
+  "rogue.visible": "[Synlig]", // [Visible]
+  "shapeshifter.disguise.failed": "{Red}Forklædning mislykkedes{Default}, ingen fjender at kopiere", // {Red}Disguise failed{Default}, no enemies to copy
+  "shapeshifter.disguise": "{Blue}Forklædt{Default} som {0}", // {Blue}Disguised{Default} as {0}
+  "shapeshifter.disguise.revealed": "{Red}Forklædning{Default} brudt!", // {Red}Disguise{Default} broken!
+  "shapeshifter.spotted": "[Opdaget]" // [Spotted]
+}

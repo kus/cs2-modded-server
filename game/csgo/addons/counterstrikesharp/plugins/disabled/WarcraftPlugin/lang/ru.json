@@ -1,0 +1,144 @@
+{
+  //Menu + Core
+  "menu.selection.left": "<font color='red' class='fontSize-s'>▶ </font>", // <font color='red' class='fontSize-s'>▶ </font>
+  "menu.selection.right": "<font color='red' class='fontSize-s'> ◀</font>", // <font color='red' class='fontSize-s'> ◀</font>
+  "menu.option.select": "Пробел", // E
+  "menu.option.select.dead": "E", // Space
+  "menu.option.exit": "Tab", // Tab
+  "menu.option.up": "W↑", // W↑
+  "menu.option.down": "S↓", // S↓
+  "menu.exit": "Выход", // Exit
+  "menu.select": "Выбрать", // Select
+  "menu.navigate": "Нави", // Navigate
+  "menu.more.options.below": "<center><img src='https://raw.githubusercontent.com/Wngui/CS2WarcraftMod/refs/heads/master/WarcraftPlugin/Resources/arrow-down.gif'></center><br>",
+  "menu.class": "Меню классов Warcraft", // Warcraft Class Menu
+  "menu.class.total.levels": "Всего уровней", // Total Levels
+  "menu.class.level": "уровень", // level
+  "menu.skills.level": "Уровень", // Level
+  "menu.skills.available": "Улучшить навыки ({0} доступно)", // Level up skills ({0} available)
+  "class.pending.change": "{Green} Вы появитесь как {Orange}{0}{Green} в следующем раунде!", // {Green} You will spawn as {Orange}{0}{Green} next round!
+  "class.disabled": "{Green}Текущий класс {Red}отключен{Green}! Теперь вы играете за {Orange}{0}{Default}.", // {Green}Current class is {Red}disabled{Green}! Now playing as {Orange}{0}{Default}.
+  "xp.current": "Опыт", // Experience
+  "xp.bonus.headshot": "Бонус за хедшот", // HS bonus
+  "xp.bonus.knife": "Бонус за нож", // knife bonus
+  "xp.kill": "{Gold}+{0} XP {Default}за убийство {Green}{1} {Default}{2}{3}", // {Gold}+{0} XP {Default}for killing {Green}{1} {Default}{2}{3}
+  "xp.add": "Добавление {0} опыта игроку {1}", // Adding {0} xp to player {1}
+  "ability.ready": "{0} готово!", // {0} is ready!
+  "ultimate.missing": "Нет уровней в ультимативной способности", // No levels in ultimate
+  "ultimate.countdown": "Ультимативная способность будет готова через {0}с", // Ultimate ready in {0}s
+
+  //Commands, used in-game by typing !<command>
+  "command.ultimate": "ультимейт", // ultimate
+  "command.changeclass": "сменитькласс", // changeclass
+  "command.reset": "сброс", // reset
+  "command.factoryreset": "полныйсброс", // factoryreset
+  "command.addxp": "добавитьопыт", // addxp
+  "command.skills": "навыки", // skills
+  "command.help": "команды", // commands
+  "command.help.description": "{Green}Введите {Gold}!class{Green}, чтобы сменить класс, {Gold}!skills{Green}, чтобы улучшить навыки", // {Green}Type {Gold}!class{Green} to change classes, {Gold}!skills{Green} to level-up
+
+  //Adverts
+  "advert.0": "{Green}Хотите попробовать новый класс? Введите {Gold}!class{Green}, чтобы сменить", // {Green}Want to try a new class? Type {Gold}!class{Green} to change
+  "advert.1": "{Green}Есть нераспределенные очки навыков? Введите {Gold}!skills{Green}, чтобы улучшить способности", // {Green}Unspent skill points? Type {Gold}!skills{Green} to level up abilities
+  "advert.2": "{Green}Хотите попробовать новые способности? Введите {Gold}!reset{Green}, чтобы перераспределить", // {Green}Want to try new abilities? Type {Gold}!reset{Green} to reassign
+  "advert.3": "{Green}Хотите использовать ультимативную способность? Введите 'bind <клавиша> ultimate' в консоли. Пример: {Grey}bind x ultimate", // {Green}Want to use your ultimate? Type 'bind <key> ultimate' in console. Example: {Grey}bind x ultimate
+
+  //Stock class names
+  "barbarian": "Варвар", // Barbarian
+  "mage": "Маг", // Mage
+  "necromancer": "Некромант", // Necromancer
+  "paladin": "Паладин", // Paladin
+  "ranger": "Рейнджер", // Ranger
+  "rogue": "Разбойник", // Rogue
+  "shapeshifter": "Оборотень", // Shapeshifter
+  "tinker": "Механик", // Tinker
+
+  //Stock class abilities
+  "barbarian.ability.0": "Резня", // Carnage
+  "barbarian.ability.0.description": "Увеличивает урон, наносимый дробовиками.", // Increase damage dealt with shotguns.
+  "barbarian.ability.1": "Закаленный в боях", // Battle-Hardened
+  "barbarian.ability.1.description": "Увеличивает ваше здоровье на 20/40/60/80/100.", // Increase your health by 20/40/60/80/100.
+  "barbarian.ability.2": "Бочка с взрывчаткой", // Exploding barrel  
+  "barbarian.ability.2.description": "Шанс бросить взрывающуюся бочку при атаке.", // Chance to hurl an exploding barrel when attacking.  
+  "barbarian.ability.3": "Жажда крови", // Bloodlust
+  "barbarian.ability.3.description": "Дает бесконечные патроны, скорость передвижения и регенерацию здоровья.", // Grants infinite ammo, movement speed & health regeneration.
+
+  "mage.ability.0": "Огненный шар", // Fireball
+  "mage.ability.0.description": "Наполняет коктейли Молотова огненной магией, вызывая огромный взрыв при ударе.", // Infuses molotovs with fire magic, causing a huge explosion on impact.
+  "mage.ability.1": "Ледяной луч", // Ice Beam
+  "mage.ability.1.description": "Шанс заморозить врагов на месте.", // Chance to freeze enemies in place.
+  "mage.ability.2": "Магический щит", // Mana Shield
+  "mage.ability.2.description": "Пассивный магический щит, который восстанавливает броню со временем.", // Passive magical shield, which regenerates armor over time.
+  "mage.ability.3": "Телепорт", // Teleport
+  "mage.ability.3.description": "Когда вы нажимаете клавишу ультимативной способности, вы телепортируетесь в место, на которое наведены.", // When you press your ultimate key, you will teleport to the spot you're aiming.
+
+  "necromancer.ability.0": "Высасывание жизни", // Life Drain
+  "necromancer.ability.0.description": "Используйте темную магию, чтобы высасывать здоровье у врагов и восстанавливать свое.", // Harness dark magic to siphon health from foes and restore your own vitality.
+  "necromancer.ability.1": "Ядовитое облако", // Poison Cloud
+  "necromancer.ability.1.description": "Наполняет дымовые гранаты сильными токсинами, нанося урон врагам со временем.", // Infuses smoke grenades with potent toxins, damaging enemies over time.
+  "necromancer.ability.2": "Расколотая душа", // Splintered Soul
+  "necromancer.ability.2.description": "Шанс избежать смерти с частью здоровья.", // Chance to cheat death with a fraction of vitality.
+  "necromancer.ability.3": "Воскрешение мертвых", // Raise Dead
+  "necromancer.ability.3.description": "Призывает орду неживых цыплят, чтобы они сражались за вас.", // Summon a horde of undead chicken to fight for you.
+
+  "paladin.ability.0": "Аура исцеления", // Healing Aura
+  "paladin.ability.0.description": "Излучает ауру, которая постепенно лечит союзников поблизости.", // Emit an aura that gradually heals nearby allies over time.
+  "paladin.ability.1": "Святой щит", // Holy Shield
+  "paladin.ability.1.description": "Получает дополнительно 20/40/60/80/100 брони.", // Gain an additional 20/40/60/80/100 armor.
+  "paladin.ability.2": "Кара", // Smite
+  "paladin.ability.2.description": "Наполняет ваши атаки божественной энергией, потенциально снимая броню врага.", // Infuse your attacks with divine energy, potentially stripping enemy armor.
+  "paladin.ability.3": "Божественное воскрешение", // Divine Resurrection
+  "paladin.ability.3.description": "Мгновенно воскрешает случайного павшего союзника.", // Instantly revive a random fallen ally.
+
+  "ranger.ability.0": "Легкая поступь", // Light footed
+  "ranger.ability.0.description": "Ловко совершает рывок в воздухе при нажатии на прыжок.", // Nimbly perform a dash in midair, by pressing jump.
+  "ranger.ability.1": "Ловушка", // Ensnare trap
+  "ranger.ability.1.description": "Устанавливает ловушку, бросая муляж.", // Place a trap by throwing a decoy.
+  "ranger.ability.2": "Меткий стрелок", // Marksman
+  "ranger.ability.2.description": "Дополнительный урон из снайперских винтовок.", // Additional damage with scoped weapons.
+  "ranger.ability.3": "Град стрел", // Arrowstorm
+  "ranger.ability.3.description": "Вызывает смертельный град стрел с помощью ультимативной клавиши.", // Call down a deadly volley of arrows using the ultimate key.
+
+  "rogue.ability.0": "Скрытность", // Stealth
+  "rogue.ability.0.description": "Становитесь частично невидимым на 1/2/3/4/5 секунд при убийстве.", // Become partially invisible for 1/2/3/4/5 seconds, when killing someone.
+  "rogue.ability.1": "Скрытая атака", // Sneak Attack
+  "rogue.ability.1.description": "Когда вы атакуете врага в спину, вы наносите дополнительно 5/10/15/20/25 урона.", // When you hit an enemy in the back, you do an additional 5/10/15/20/25 damage.
+  "rogue.ability.2": "Танец клинков", // Blade Dance
+  "rogue.ability.2.description": "Увеличивает скорость передвижения и урон от ножей.", // Increases movement speed and damage with knives.
+  "rogue.ability.3": "Дымовая шашка", // Smokebomb
+  "rogue.ability.3.description": "При приближении к смерти вы автоматически бросаете дымовую шашку, позволяя избежать смерти.", // When nearing death, you will automatically drop a smokebomb, letting you cheat death.
+
+  "shapeshifter.ability.0": "Адаптивная маскировка", // Adaptive Disguise
+  "shapeshifter.ability.0.description": "Шанс появиться с маскировкой врага, которая раскрывается при атаке.", // Chance to spawn with an enemy disguise, revealed upon attacking.
+  "shapeshifter.ability.1": "Двойник", // Doppelganger
+  "shapeshifter.ability.1.description": "Создает временного неодушевленного клона себя, используя муляж гранаты.", // Create a temporary inanimate clone of yourself, using a decoy grenade.
+  "shapeshifter.ability.2": "Синдром самозванца", // Imposter Syndrome
+  "shapeshifter.ability.2.description": "Шанс быть уведомленным, когда враги обнаруживают вас на радаре.", // Chance to be notified when revealed by enemies on radar.
+  "shapeshifter.ability.3": "Морфлинг", // Morphling
+  "shapeshifter.ability.3.description": "Превращается в неприметный объект.", // Transform into an unassuming object.
+
+  "tinker.ability.0": "Атакующий дрон", // Attack Drone
+  "tinker.ability.0.description": "Развертывает дрон с оружием, который атакует ближайших врагов.", // Deploy a gun drone that attacks nearby enemies.
+  "tinker.ability.1": "Запасные части", // Spare Parts
+  "tinker.ability.1.description": "Шанс не терять патроны при стрельбе.", // Chance to not lose ammo when firing.
+  "tinker.ability.2": "Прыжковая ловушка", // Spring Trap
+  "tinker.ability.2.description": "Устанавливает ловушку, которая подбрасывает игроков в воздух.", // Deploy a trap which launches players into the air.
+  "tinker.ability.3": "Рой дронов", // Drone Swarm
+  "tinker.ability.3.description": "Вызывает рой атакующих дронов, которые наносят урон всем ближайшим врагам.", // Summon a swarm of attack drones that damage all nearby enemies.
+
+  //Stock class extras
+  "mage.frozen": "{Blue}[ЗАМОРОЖЕН]{Default}", // {Blue}[FROZEN]{Default}
+  "necromancer.cheatdeath": "{DarkRed}Вы избежали смерти, пока что...", // {DarkRed}You have cheated death, for now...
+  "paladin.revive": "{Green}Вы были воскрешены!", // {Green}You have been revived!
+  "paladin.revive.other": "{Green}{0}{Default} был воскрешен {1}", // {Green}{0}{Default} has been revived by {1}
+  "paladin.revive.none": "{Red}Нет павших союзников для воскрешения!", // {Red}No fallen allies to revive!
+  "ranger.dash.cooldown": "{Red}Рывок{Default} на перезарядке!", // {Red}Dash{Default} on cooldown!
+  "ranger.dash.ready": "{Green}Рывок{Default} готов!", // {Green}Dash{Default} ready!
+  "rogue.backstab": "{Blue}[Удар в спину] {0} дополнительного урона", // {Blue}[Backstab] {0} bonus damage
+  "rogue.invsible": "[Невидим]", // [Invisible]
+  "rogue.visible": "[Видим]", // [Visible]
+  "shapeshifter.disguise.failed": "{Red}Маскировка не удалась{Default}, некому подражать", // {Red}Disguise failed{Default}, no enemies to copy
+  "shapeshifter.disguise": "{Blue}Замаскирован{Default} как {0}", // {Blue}Disguised{Default} as {0}
+  "shapeshifter.disguise.revealed": "{Red}Маскировка{Default} раскрыта!", // {Red}Disguise{Default} broken!
+  "shapeshifter.spotted": "[Обнаружен]" // [Spotted]
+}
