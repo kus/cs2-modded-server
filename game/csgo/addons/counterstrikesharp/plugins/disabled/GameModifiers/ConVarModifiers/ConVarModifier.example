@@ -1,0 +1,18 @@
+modifier_name 				ExampleConfigModifierName
+modifier_description 			This is an example description...
+supports_random_rounds 			false
+
+// List incomatible modifiers like so.
+// incompatible_modifiers [modifiername1, modifiername2 etc.]
+
+// Add console variables bellow that will be active for the duration of this modifier.
+// NOTE: When activated modifiers will apply these console variable changes, on removal they will be rolled back to the pre-modified value.
+//
+// Example:
+// sv_cheats 1
+// sv_enablebunnyhopping 1
+
+
+// Bellow this point all console variable changes wil be executed for each client on modifier activation and reset to default value on removal.
+// These are limited to Cvars that are marked as replicated OR exist on the server for now.
+Client:
