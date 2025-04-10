@@ -1,0 +1,48 @@
+[WeaponDatas]
+
+[WeaponDatas.weapon_glock]
+Clip = 30
+UnlimitedClip = true
+Damage = "1000"
+ReloadAfterShoot = true
+
+[WeaponDatas.weapon_deagle]
+Clip = 1
+Ammo = 1
+UnlimitedAmmo = true
+OnlyHeadshot = true
+Damage = "*2"
+
+[WeaponDatas.weapon_awp]
+WeaponQuota = { "4" = 1, "8" = 2, "16" = 3, "32" = 4 }
+AdminFlagsToIgnoreBlockUsing = ["@css/root"]
+
+[WeaponDatas.weapon_ssg08]
+BlockUsing = true
+AdminFlagsToIgnoreBlockUsing = ["@css/ban", "@css/unban"]
+Damage = "/2"
+
+[WeaponDatas.weapon_aug]
+BlockUsing = true
+
+[WeaponDatas.weapon_ak47]
+WeaponQuota = { "0" = 1, "5" = 2, "10" = 3, "16" = 4, "32" = 5 }
+
+# Supported datas
+
+# [["weapon_name"]]
+# Clip - Sets weapon clip
+# Ammo - Sets weapon ammo
+# BlockUsing - Block weapon usage
+# IgnorePickUpFromBlockUsing - Allows picking up the weapon even if usage is blocked
+# ReloadAfterShoot - Automatically reloads after each shot
+# UnlimitedAmmo - Enables unlimited ammo
+# UnlimitedClip - Enables unlimited clip
+# OnlyHeadshot - Restricts damage to headshots only
+# ViewModel - The model path displayed from the player's perspective
+# WorldModel - The model path displayed in the world
+# AdminFlagsToIgnoreBlockUsing - Admin flags that bypass usage restrictions
+# WeaponQuota - Defines weapon limits { playercount: allowed amount }
+# { 0 = 1, 5 = 2, 10 = 3, 16 = 4, 32 = 5 } 0-4 => 1, 5-9 => 3, 10-15 => 4, 16-31 => 4, 32-. => 5
+# Damage - The weapon's damage value or calculation formula
+# Allowed (=,+,-,/,*)

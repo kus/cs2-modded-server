@@ -316,6 +316,14 @@
         "MapGroups": [
           "mg_45"
         ]
+      },
+      {
+        "Name": "One In The Chamber",
+        "Config": "oitc.cfg",
+        "DefaultMap": "ar_pool_day",
+        "MapGroups": [
+          "mg_gg"
+        ]
       }
     ]
   }

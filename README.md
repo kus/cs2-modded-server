@@ -16,6 +16,7 @@ Each game mode has a hand full of maps preset so you are ready to go and it's [e
 - Prefire practice
 - Retakes
 - Executes
+- One In The Chamber
 - 1v1 (with arenas) ([Steam API key](#playing-workshop-mapscollections) & [MySQL](#enable-k4-arenas) required)
 - ScoutzKnivez ([Steam API key](#playing-workshop-mapscollections) required)
 - KZ ([Steam API key](#playing-workshop-mapscollections) required)
@@ -114,6 +115,8 @@ Mod | Version | Why
 [CS2-FixRandomSpawn](https://github.com/qstage/CS2-FixRandomSpawn) | `1.1.4` | Fixes ConVar `mp_randomspawn` for any game mode.
 [CS2-MutualScoringPlayers](https://github.com/qstage/CS2-MutualScoringPlayers) | `1.0.1` | Keeps score of kills between players.
 [CS2WarcraftMod](https://github.com/Wngui/CS2WarcraftMod) | `3.1.9` | An open-source Warcraft mod for CS2 featuring a fully-fledged RPG system.
+[cs2-advanced-weapon-system](https://github.com/schwarper/cs2-advanced-weapon-system) | `1.3` | An advanced weapon system that gives full control over weapon attributes, dynamic adjustments to weapon behaviour, restrictions and advanced customisation.
+[cs2-OneInTheChamber](https://github.com/ShookEagle/cs2-OneInTheChamber) | `1.0.0` | One in the Chamber game mode.
 
 ## Share the love
 
@@ -672,6 +675,7 @@ These are all the available chat commands to change the game mode:
 | `!rcon exec kz`           | Kreedz Climbing                                                                   |
 | `!rcon exec minigames`    | Mini Games                                                                        |
 | `!rcon exec deathrun`     | Deathrun                                                                          |
+| `!rcon exec oitc`         | One In The Chamber                                                                |
 | `!rcon exec prac`         | Practice (grenade lineups etc)                                                    |
 | `!rcon exec prefire`      | Prefire practice                                                                  |
 | `!rcon exec retake`       | Retakes                                                                           |
