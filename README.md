@@ -30,6 +30,13 @@ Each game mode has a hand full of maps preset so you are ready to go and it's [e
 - Soccer ([Steam API key](#playing-workshop-mapscollections) required)
 - Battle Ball ([Steam API key](#playing-workshop-mapscollections) required)
 
+You can also enable modifiers in game modes from the `!settings` menu in chat i.e. Competitive with random rounds like [NadeKings video](https://www.youtube.com/watch?v=OQQBUFB56Iw).
+
+- [Random Rounds](https://www.youtube.com/watch?v=OQQBUFB56Iw) - CS2, but every round is a SURPRISE.
+- [WarcraftMod](https://www.youtube.com/watch?v=Z9HdF47zPss) - An open-source Warcraft mod for CS2 featuring a fully-fledged RPG system.
+- Roll The Dice - Roll the dice to get either a positive or negative effect for the current round.
+- Bunny hopping
+
 Every time you want to boot the server, you should run `gcp.sh` (if on Google Cloud) or `install.sh` (on Linux) or `update.bat` (on Windows) and it will ensure your OS is up to date, CS2 is up to date, and pull down the latest patches from this mod (any updates that I push up).
 
 Obviously, any changes you have made to the files in this mod will be overwritten so I have created a "[custom files](#custom-files)" folder where you mirror the contents of the `game/csgo/` folder, and any files you want to tweak, you put in there in the same spot and they will always overwrite the mods default files. Read more about it [here](#custom-files).
