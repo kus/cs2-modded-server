@@ -261,6 +261,14 @@
         ]
       },
       {
+        "Name": "One In The Chamber",
+        "Config": "oitc.cfg",
+        "DefaultMap": "ar_pool_day",
+        "MapGroups": [
+          "mg_gg"
+        ]
+      },
+      {
         "Name": "Battle Ball",
         "Config": "battle.cfg",
         "DefaultMap": "3280650663",
@@ -315,14 +323,6 @@
         "DefaultMap": "3276886893",
         "MapGroups": [
           "mg_45"
-        ]
-      },
-      {
-        "Name": "One In The Chamber",
-        "Config": "oitc.cfg",
-        "DefaultMap": "ar_pool_day",
-        "MapGroups": [
-          "mg_gg"
         ]
       }
     ]
