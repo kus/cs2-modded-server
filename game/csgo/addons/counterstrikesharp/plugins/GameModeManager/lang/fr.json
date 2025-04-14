@@ -73,6 +73,8 @@
   "rtv.remaining-rounds": "dans {red}{0}{default} manche(s)",
   "rtv.remaining-time-hour": "dans {red}{0}:{1}:{2}",
   "rtv.remaining-time-minute": "dans {red}{0}{default} minute(s) et {red}{1}{default} seconde(s)",
-  "rtv.remaining-time-second": "dans {red}{0}{default] seconde(s)",
-  "rtv.remaining-last-round": "à la fin de cette manche"
+  "rtv.remaining-time-second": "dans {red}{0}{default} seconde(s)",
+  "rtv.remaining-last-round": "à la fin de cette manche",
+  "rotation.change-mode": "Partie terminée. Passage au mode {red}{0}{default}...",
+  "rotation.change-map": "Partie terminée. Passage à la carte {red}{0}{default}..."
 }

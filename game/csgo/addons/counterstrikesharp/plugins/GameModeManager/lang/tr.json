@@ -73,6 +73,8 @@
   "rtv.remaining-rounds": "{red}{0}{default} tur sonra",
   "rtv.remaining-time-hour": "{red}{0}:{1}:{2} sonra",
   "rtv.remaining-time-minute": "{red}{0}{default} dakika ve {red}{1}{default} saniye sonra",
-  "rtv.remaining-time-second": "{red}{0}{default] saniye sonra",
-  "rtv.remaining-last-round": "bu turun sonunda"
+  "rtv.remaining-time-second": "{red}{0}{default} saniye sonra",
+  "rtv.remaining-last-round": "bu turun sonunda",
+  "rotation.change-mode": "Oyun bitti. Mod {red}{0}{default} olarak değiştiriliyor...",
+  "rotation.change-map": "Oyun bitti. Harita {red}{0}{default} olarak değiştiriliyor..."
 }

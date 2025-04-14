@@ -73,6 +73,8 @@
   "rtv.remaining-rounds": "over {red}{0}{default} ronde(s)",
   "rtv.remaining-time-hour": "over {red}{0}:{1}:{2}",
   "rtv.remaining-time-minute": "over {red}{0}{default} minuut/minuten en {red}{1}{default} seconde(n)",
-  "rtv.remaining-time-second": "over {red}{0}{default] seconde(n)",
-  "rtv.remaining-last-round": "aan het einde van deze ronde"
+  "rtv.remaining-time-second": "over {red}{0}{default} seconde(n)",
+  "rtv.remaining-last-round": "aan het einde van deze ronde",
+  "rotation.change-mode": "Spel beëindigd. Wisselen naar modus {red}{0}{default}...",
+  "rotation.change-map": "Spel beëindigd. Wisselen naar kaart {red}{0}{default}..."
 }

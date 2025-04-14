@@ -73,6 +73,8 @@
   "rtv.remaining-rounds": "in {red}{0}{default} Runde(n)",
   "rtv.remaining-time-hour": "in {red}{0}:{1}:{2}",
   "rtv.remaining-time-minute": "in {red}{0}{default} Minute(n) und {red}{1}{default} Sekunde(n)",
-  "rtv.remaining-time-second": "in {red}{0}{default] Sekunde(n)",
-  "rtv.remaining-last-round": "am Ende dieser Runde"
+  "rtv.remaining-time-second": "in {red}{0}{default} Sekunde(n)",
+  "rtv.remaining-last-round": "am Ende dieser Runde",
+  "rotation.change-mode": "Spiel beendet. Wechsle Modus zu {red}{0}{default}...",
+  "rotation.change-map": "Spiel beendet. Wechsle Karte zu {red}{0}{default}..."
 }

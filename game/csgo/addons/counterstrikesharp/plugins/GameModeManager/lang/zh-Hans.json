@@ -73,6 +73,8 @@
   "rtv.remaining-rounds": "在 {red}{0}{default} 回合后",
   "rtv.remaining-time-hour": "在 {red}{0}:{1}:{2} 后",
   "rtv.remaining-time-minute": "在 {red}{0}{default} 分钟和 {red}{1}{default} 秒后",
-  "rtv.remaining-time-second": "在 {red}{0}{default] 秒后",
-  "rtv.remaining-last-round": "在本回合结束时"
+  "rtv.remaining-time-second": "在 {red}{0}{default} 秒后",
+  "rtv.remaining-last-round": "在本回合结束时",
+  "rotation.change-mode": "游戏已结束。正在更改模式为 {red}{0}{default}...",
+  "rotation.change-map": "游戏已结束。正在更改地图为 {red}{0}{default}..."
 }

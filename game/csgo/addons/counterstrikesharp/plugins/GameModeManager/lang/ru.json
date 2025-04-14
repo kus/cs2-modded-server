@@ -73,6 +73,8 @@
   "rtv.remaining-rounds": "через {red}{0}{default} раунд(а/ов)",
   "rtv.remaining-time-hour": "через {red}{0}:{1}:{2}",
   "rtv.remaining-time-minute": "через {red}{0}{default} минут(ы/ы) и {red}{1}{default} секунд(ы/ы)",
-  "rtv.remaining-time-second": "через {red}{0}{default] секунд(ы/ы)",
-  "rtv.remaining-last-round": "в конце этого раунда"
+  "rtv.remaining-time-second": "через {red}{0}{default} секунд(ы/ы)",
+  "rtv.remaining-last-round": "в конце этого раунда",
+  "rotation.change-mode": "Игра окончена. Смена режима на {red}{0}{default}...",
+  "rotation.change-map": "Игра окончена. Смена карты на {red}{0}{default}..."
 }

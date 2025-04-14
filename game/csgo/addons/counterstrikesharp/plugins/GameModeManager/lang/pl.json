@@ -73,6 +73,8 @@
   "rtv.remaining-rounds": "za {red}{0}{default} rund(y/rund)",
   "rtv.remaining-time-hour": "za {red}{0}:{1}:{2}",
   "rtv.remaining-time-minute": "za {red}{0}{default} minut(y/minut) i {red}{1}{default} sekund(y/sekund)",
-  "rtv.remaining-time-second": "za {red}{0}{default] sekund(y/sekund)",
-  "rtv.remaining-last-round": "na końcu tej rundy"
+  "rtv.remaining-time-second": "za {red}{0}{default} sekund(y/sekund)",
+  "rtv.remaining-last-round": "na końcu tej rundy",
+  "rotation.change-mode": "Gra zakończona. Zmiana trybu na {red}{0}{default}...",
+  "rotation.change-map": "Gra zakończona. Zmiana mapy na {red}{0}{default}..."
 }

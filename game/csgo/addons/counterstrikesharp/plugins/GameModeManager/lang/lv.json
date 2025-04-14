@@ -73,6 +73,8 @@
   "rtv.remaining-rounds": "pēc {red}{0}{default} raunda(iem)",
   "rtv.remaining-time-hour": "pēc {red}{0}:{1}:{2}",
   "rtv.remaining-time-minute": "pēc {red}{0}{default} minūte(m) un {red}{1}{default} sekundē(m)",
-  "rtv.remaining-time-second": "pēc {red}{0}{default] sekundē(m)",
-  "rtv.remaining-last-round": "šī raunda beigās"
+  "rtv.remaining-time-second": "pēc {red}{0}{default} sekundē(m)",
+  "rtv.remaining-last-round": "šī raunda beigās",
+  "rotation.change-mode": "Spēle beigusies. Maina režīmu uz {red}{0}{default}...",
+  "rotation.change-map": "Spēle beigusies. Maina karti uz {red}{0}{default}..."
 }
