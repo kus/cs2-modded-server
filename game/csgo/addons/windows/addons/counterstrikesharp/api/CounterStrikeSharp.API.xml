@@ -1,0 +1,1855 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CounterStrikeSharp.API</name>
+    </assembly>
+    <members>
+        <member name="M:CounterStrikeSharp.API.Api.GetVersion">
+            <summary>
+            Returns the API version of CounterStrikeSharp running on the server
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Api.GetVersionString">
+            <summary>
+            Returns the assembly version of CounterStrikeSharp running on the server as a string including git commit hash
+            </summary>
+            <example>1.0.0+9d8b6be</example>
+        </member>
+        <member name="M:CounterStrikeSharp.API.NativeObject.As``1">
+            <summary>
+            Returns a new instance of the specified type using the pointer from the passed in object.
+            </summary>
+            <remarks>
+            Useful for creating a new instance of a class that inherits from NativeObject.
+            e.g. <code>var weaponServices = playerWeaponServices.As&lt;CCSPlayer_WeaponServices&gt;();</code>
+            </remarks>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Attributes.CastFromAttribute">
+            Indicates that the parameter should be pulled from the ScriptContext as the passed in type,
+            then cast/converted to the parameter type.
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.Attributes.MinimumApiVersion.#ctor(System.Int32)">
+            <summary>
+            API version that this plugin requires to work correctly.
+            </summary>
+            <param name="version"></param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterEventHandler``1(CounterStrikeSharp.API.Core.BasePlugin.GameEventHandler{``0},CounterStrikeSharp.API.Core.HookMode)">
+            <summary>
+            Registers a game event handler.
+            </summary>
+            <typeparam name="T">The type of the game event.</typeparam>
+            <param name="handler">The event handler to register.</param>
+            <param name="hookMode">The mode in which the event handler is hooked. Default is `HookMode.Post`.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.DeregisterEventHandler``1(CounterStrikeSharp.API.Core.BasePlugin.GameEventHandler{``0},CounterStrikeSharp.API.Core.HookMode)">
+            <summary>
+            De-registers a game event handler.
+            </summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterEventHandler``1(CounterStrikeSharp.API.Core.BasePlugin.GameEventHandler{``0},CounterStrikeSharp.API.Core.HookMode)"/>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.AddCommand(System.String,System.String,CounterStrikeSharp.API.Modules.Commands.CommandInfo.CommandCallback)">
+            <summary>
+            Registers a new server command.
+            </summary>
+            <param name="name">The name of the command.</param>
+            <param name="description">The description of the command.</param>
+            <param name="handler">The callback function to be invoked when the command is executed.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.AddCommandListener(System.String,CounterStrikeSharp.API.Modules.Commands.CommandInfo.CommandListenerCallback,CounterStrikeSharp.API.Core.HookMode)">
+            <summary>
+            Adds a command listener which will be called before or after the command is executed on the server by a player.
+            </summary>
+            <param name="name">Name of the command, e.g. `jointeam`</param>
+            <param name="handler">Code to run when command is executed. Return <see cref="F:CounterStrikeSharp.API.Core.HookResult.Handled"/> or higher to prevent command execution.</param>
+            <param name="mode">Whether to hook before or after the command is executed.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RemoveCommand(System.String,CounterStrikeSharp.API.Modules.Commands.CommandInfo.CommandCallback)">
+            <summary>
+            Removes a server command.
+            </summary>
+            <param name="name">The name of the command.</param>
+            <param name="handler">The callback function to be invoked when the command is executed.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RemoveCommandListener(System.String,CounterStrikeSharp.API.Modules.Commands.CommandInfo.CommandListenerCallback,CounterStrikeSharp.API.Core.HookMode)">
+            <summary>
+            Remove a command listener.
+            </summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Core.BasePlugin.AddCommandListener(System.String,CounterStrikeSharp.API.Modules.Commands.CommandInfo.CommandListenerCallback,CounterStrikeSharp.API.Core.HookMode)"/>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterListener``1(``0)">
+            <summary>
+            Registers a global listener, e.g. <see cref="T:CounterStrikeSharp.API.Core.Listeners.OnTick"/>, <see cref="T:CounterStrikeSharp.API.Core.Listeners.OnClientConnect"/>.
+            </summary>
+            <param name="handler"></param>
+            <typeparam name="T">Listener delegate type</typeparam>
+            <exception cref="T:System.ArgumentException">Invalid listener <see cref="!:T"/> provided</exception>
+            <example>
+            <code lang="C#">
+            RegisterListener&lt;Listeners.OnTick&gt;(OnTick);
+            </code>
+            </example>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RemoveListener``1(``0)">
+            <summary>
+            Removes a global listener.
+            </summary>
+            <param name="handler"></param>
+            <typeparam name="T"></typeparam>
+            <exception cref="T:System.ArgumentException">Invalid listener <see cref="!:T"/> provided</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RemoveListener(System.String,System.Delegate)">
+            <summary>
+            Removes a global listener.
+            </summary>
+            <param name="name"></param>
+            <param name="handler"></param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.AddTimer(System.Single,System.Action,System.Nullable{CounterStrikeSharp.API.Modules.Timers.TimerFlags})">
+            <summary>
+            Adds a timer that will call the given callback after the specified amount of seconds.
+            By default will only run once unless the <see cref="F:CounterStrikeSharp.API.Modules.Timers.TimerFlags.REPEAT"/> flag is set.
+            </summary>
+            <param name="interval">Interval/Delay in seconds</param>
+            <param name="callback">Code to run when timer elapses</param>
+            <param name="flags">Controls if the timer is a one-off, repeat or stops on map change etc.</param>
+            <returns>An instance of the <see cref="T:CounterStrikeSharp.API.Modules.Timers.Timer"/></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterAllAttributes(System.Object)">
+            <summary>
+            Registers all attribute handlers on the given instance.
+            Can be used to register event handlers, console commands, entity outputs etc. from classes that are not derived from `BasePlugin`.
+            </summary>
+            <param name="instance"></param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterAttributeHandlers(System.Object)">
+            <summary>
+            Registers all game event handlers that are decorated with the <see cref="T:CounterStrikeSharp.API.Core.Attributes.Registration.GameEventHandlerAttribute"/> and <see cref="T:CounterStrikeSharp.API.Core.Attributes.Registration.ListenerHandlerAttribute`1"/> attribute.
+            </summary>
+            <param name="instance">The instance of the object where the event handlers are defined.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterConsoleCommandAttributeHandlers(System.Object)">
+            <summary>
+            Registers all console command handlers that are decorated with the <see cref="T:CounterStrikeSharp.API.Core.Attributes.Registration.ConsoleCommandAttribute"/> attribute.
+            </summary>
+            <param name="instance">The instance of the object where the console command handlers are defined.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterEntityOutputAttributeHandlers(System.Object)">
+            <summary>
+            Registers all entity output handlers that are decorated with the <see cref="T:CounterStrikeSharp.API.Core.Attributes.Registration.EntityOutputHookAttribute"/> attribute.
+            </summary>
+            <param name="instance">The instance of the object where entity output hook handlers are defined.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterFakeConVars(System.Object)">
+            <summary>
+            Used to bind a fake ConVar to a plugin command. Only required for ConVars that are not public properties of the plugin class.
+            </summary>
+            <param name="convar"></param>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.HookEntityOutput(System.String,System.String,CounterStrikeSharp.API.Modules.Entities.EntityIO.EntityOutputHandler,CounterStrikeSharp.API.Core.HookMode)">
+            <summary>
+            Hooks an <a href="https://developer.valvesoftware.com/wiki/Inputs_and_Outputs">entity output</a>.
+            </summary>
+            <param name="classname">Classname to hook, or `*` for wildcard</param>
+            <param name="outputName">Output name to hook, or `*` for wildcard</param>
+            <param name="handler">Handler to call</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.UnhookEntityOutput(System.String,System.String,CounterStrikeSharp.API.Modules.Entities.EntityIO.EntityOutputHandler,CounterStrikeSharp.API.Core.HookMode)">
+            <summary>
+            Unhooks an entity output.
+            </summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Core.BasePlugin.HookEntityOutput(System.String,System.String,CounterStrikeSharp.API.Modules.Entities.EntityIO.EntityOutputHandler,CounterStrikeSharp.API.Core.HookMode)"/>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.HookSingleEntityOutput(CounterStrikeSharp.API.Core.CEntityInstance,System.String,CounterStrikeSharp.API.Modules.Entities.EntityIO.EntityOutputHandler)">
+            <summary>
+            Hooks an entity output for a single entity instance.
+            </summary>
+            <param name="entityInstance">Entity instance to hook</param>
+            <param name="outputName">Output name to hook, or `*` for wildcard</param>
+            <param name="handler">Handler to call</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.UnhookSingleEntityOutput(CounterStrikeSharp.API.Core.CEntityInstance,System.String,CounterStrikeSharp.API.Modules.Entities.EntityIO.EntityOutputHandler)">
+            <summary>
+            Unhooks an entity output for a single entity instance.
+            </summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Core.BasePlugin.HookSingleEntityOutput(CounterStrikeSharp.API.Core.CEntityInstance,System.String,CounterStrikeSharp.API.Modules.Entities.EntityIO.EntityOutputHandler)"/>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Commands.PluginCommandManagerDecorator">
+            <summary>
+            Decorator for <see cref="T:CounterStrikeSharp.API.Core.Commands.ICommandManager"/> that tracks registered commands and removes them when disposed.
+            Used for plugins that register commands to ensure they are removed when the plugin is unloaded.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.CoreConfigData">
+            <summary>
+            Serializable instance of the CoreConfig
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.CoreConfig">
+            <summary>
+            Configuration related to the Core API.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.CoreConfig.PublicChatTrigger">
+            <summary>
+            List of characters to use for public chat triggers.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.CoreConfig.SilentChatTrigger">
+            <summary>
+            List of characters to use for silent chat triggers.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.CoreConfig.FollowCS2ServerGuidelines">
+             <summary>
+             <para>
+             Per <see href="http://blog.counter-strike.net/index.php/server_guidelines/"/>, certain plugin
+             functionality will trigger all of the game server owner's Game Server Login Tokens
+             (GSLTs) to get banned when executed on a Counter-Strike 2 game server.
+             </para>
+            
+             <para>
+             Enabling this option will block plugins from using functionality that is known to cause this.
+            
+             Note that this does NOT guarantee that you cannot
+            
+             receive a ban.
+             </para>
+            
+             <para>
+             Disable this option at your own risk.
+             </para>
+             </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.CoreConfig.PluginHotReloadEnabled">
+            <summary>
+            When enabled, plugins are automatically reloaded when their .dll file is updated.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.CoreConfig.PluginAutoLoadEnabled">
+            <summary>
+            When enabled, plugins are automatically loaded from the plugins directory on server start.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.FunctionLifetime">
+            <summary>
+            Describes the lifetime of a function reference.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Core.FunctionLifetime.SingleUse">
+            <summary>Delegate will be removed after the first invocation.</summary> 
+        </member>
+        <member name="F:CounterStrikeSharp.API.Core.FunctionLifetime.Permanent">
+            <summary>Delegate will remain in memory for the lifetime of the application (or until <see cref="M:CounterStrikeSharp.API.Core.FunctionReference.Remove(System.Int32)"/> is called).</summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.FunctionReference">
+            <summary>
+            Represents a reference to a function that can be called from native code.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.FunctionReference.Lifetime">
+            <summary>
+            <inheritdoc cref="T:CounterStrikeSharp.API.Core.FunctionLifetime"/>
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.FunctionReference.CompletionTask">
+            <summary>
+            For <see cref="F:CounterStrikeSharp.API.Core.FunctionLifetime.SingleUse"/> function references, this task will complete when
+            the function has finished invoking.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.HookMode">
+            <summary>
+            Specifies the hook mode.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Core.HookMode.Pre">
+            <summary>
+            The hook is called before the original method.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Core.HookMode.Post">
+            <summary>
+            The hook is called after the original method.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.HookResult">
+            <summary>
+            Represents the result of a hook.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Core.HookResult.Continue">
+            <summary>
+            Continue processing the hook to other listeners.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Core.HookResult.Changed">
+            <summary>
+            The hook result has been changed. Currently unused.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Core.HookResult.Handled">
+            <summary>
+            The hook has been handled. The original method will not be called, but other hooks will still be called.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Core.HookResult.Stop">
+            <summary>
+            Stop processing the hook. The original method will not be called, and other hooks will not proceed after this one.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Hosting.IScriptHostConfiguration">
+            <summary>
+            Provides information about the CounterStrikeSharp host configuration.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.Hosting.IScriptHostConfiguration.RootPath">
+            <summary>
+            Gets the absolute path to the directory that contains CounterStrikeSharp files.
+            e.g. /game/csgo/addons/counterstrikesharp
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.Hosting.IScriptHostConfiguration.PluginPath">
+            <summary>
+            Gets the absolute path to the directory that contains CounterStrikeSharp plugins.
+            e.g. /game/csgo/addons/counterstrikesharp/plugins
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.Hosting.IScriptHostConfiguration.SharedPath">
+            <summary>
+            Gets the absolute path to the directory that contains CounterStrikeSharp plugin shared APIS.
+            e.g. /game/csgo/addons/counterstrikesharp/shared
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.Hosting.IScriptHostConfiguration.ConfigsPath">
+            <summary>
+            Gets the absolute path to the directory that contains CounterStrikeSharp configs.
+            e.g. /game/csgo/addons/counterstrikesharp/configs
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.Hosting.IScriptHostConfiguration.GameDataPath">
+            <summary>
+            Gets the absolute path to the directory that contains CounterStrikeSharp game data.
+            e.g. /game/csgo/addons/counterstrikesharp/gamedata
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.IPlugin">
+            <summary>
+            Interface which every CounterStrikeSharp plugin must implement. Module will be created with parameterless constructor and then Load method will be called.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.IPlugin.ModuleName">
+            <summary>
+            Name of the plugin as it will appear in the plugin list.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.IPlugin.ModuleVersion">
+            <summary>
+            Module version as it will appear in the plugin list.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.IPlugin.ModuleAuthor">
+            <summary>
+            Author of the plugin as it will appear in the plugin list.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.IPlugin.ModuleDescription">
+            <summary>
+            Brief description of the plugin as it will appear in the plugin list.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.IPlugin.Load(System.Boolean)">
+            <summary>
+            This method is called by CounterStrikeSharp on plugin load and should be treated as plugin constructor.
+            Called with `true` on a hot reload (DLL file replaced in plugins folder)
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.IPlugin.Unload(System.Boolean)">
+            <summary>
+            Will be called by CounterStrikeSharp on plugin unload. In this method the plugin should cleanup any extra resources.
+            Event handlers, listeners etc. will automatically be deregistered.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.IPlugin.OnAllPluginsLoaded(System.Boolean)">
+            <summary>
+            Will be called by CounterStrikeSharp after all plugins have been loaded.
+            This will also be called for convenience after a reload or a late l oad, so that you don't have to handle
+            re-wiring everything.
+            </summary>
+            <param name="hotReload"></param>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.IPlugin.ModulePath">
+            <summary>
+            The path to the plugin's DLL file.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.IPluginConfig`1">
+            <summary>
+            An interface that describes a plugin configuration.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.IPluginConfig`1.OnConfigParsed(`0)">
+            <summary>
+            Called when the `ConfigManager` has parsed the configuration file for this plugin
+            </summary>
+            <param name="config">Parsed config instance</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.IPluginServiceCollection`1">
+            <summary>
+            Represents a service collection configuration for a plugin.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.IPluginServiceCollection`1.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Used to configure services exposed for dependency injection.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnEntitySpawned">
+            <summary>
+            Called when an entity is spawned.
+            </summary>
+            <param name="entity">The spawned entity.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnEntityCreated">
+            <summary>
+            Called when an entity is created.
+            </summary>
+            <param name="entity">The created entity.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnEntityDeleted">
+            <summary>
+            Called when an entity is deleted.
+            </summary>
+            <param name="entity">The deleted entity.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnEntityParentChanged">
+            <summary>
+            Called when an entity's parent is changed.
+            </summary>
+            <param name="entity">The entity whose parent was changed.</param>
+            <param name="newParent">The new parent entity.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnTick">
+            <summary>
+            Called on every server tick (64 per second).
+            This handler should avoid containing expensive operations.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnMapStart">
+            <summary>
+            Called when a new map is loaded.
+            </summary>
+            <param name="mapName">The name of the map that was started.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnMapEnd">
+            <summary>
+            Called when the current map is about to end.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnClientConnect">
+            <summary>
+            Called when a client connects to the server.
+            </summary>
+            <param name="playerSlot">The player slot of the connected client.</param>
+            <param name="name">The name of the connected client.</param>
+            <param name="ipAddress">The IP address of the connected client.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnClientConnected">
+            <summary>
+            Called when a client connects to the server.
+            </summary>
+            <param name="playerSlot">The player slot of the connected client.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnClientPutInServer">
+            <summary>
+            Called when a client is entering the game.
+            </summary>
+            <param name="playerSlot">The player slot of the client.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnClientDisconnect">
+            <summary>
+            Called when a client disconnects from the server.
+            </summary>
+            <param name="playerSlot">The player slot of the disconnected client.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnClientDisconnectPost">
+            <summary>
+            Called after a client has disconnected from the server.
+            </summary>
+            <param name="playerSlot">The player slot of the disconnected client.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnClientVoice">
+            <summary>
+            Called when a client transmits voice data
+            </summary>
+            <param name="playerSlot">The player slot of the client.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnClientAuthorized">
+            <summary>
+            Called when a client has been authorized by Steam.
+            </summary>
+            <param name="playerSlot">The player slot of the authorized client.</param>
+            <param name="steamId">The Steam ID of the authorized client.</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnServerHibernationUpdate">
+            <summary>
+            Called when the server is updating the hibernation state.
+            </summary>
+            <param name="isHibernating"><see langword="true"/> if the server is hibernating, <see langword="false"/> otherwise</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnGameServerSteamAPIActivated">
+            <summary>
+            Called when the Steam API is activated.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnGameServerSteamAPIDeactivated">
+            <summary>
+            Called when the Steam API is deactivated.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnHostNameChanged">
+            <summary>
+            Called when the server has changed hostname.
+            </summary>
+            <param name="hostname">New hostname of the server</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnServerPreFatalShutdown">
+            <summary>
+            Called before the server enters fatal shutdown.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnUpdateWhenNotInGame">
+            <summary>
+            Called when the server is in a loading stage.
+            </summary>
+            <param name="frameTime"></param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnServerPreWorldUpdate">
+            <summary>
+            Called before the world updates.
+            This seems to be called even when the server is hibernating.
+            </summary>
+            <param name="simulating"><see langword="true"/> if simulating, <see langword="false"/> otherwise</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnServerPrecacheResources">
+            <summary>
+            Called when the server precaching resources (only when initial startup / changing map).
+            </summary>
+            <param name="manifest">Resource Manifest</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.CheckTransmit">
+            <summary>
+            Called when checking transmit on entities.
+            </summary>
+            <param name="infoList">Transmit info list</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnMetamodAllPluginsLoaded">
+            <summary>
+            Called when all metamod plugins are loaded.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CBaseEntity.Teleport(CounterStrikeSharp.API.Modules.Utils.Vector,CounterStrikeSharp.API.Modules.Utils.QAngle,CounterStrikeSharp.API.Modules.Utils.Vector)">
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+            <exception cref="T:System.ArgumentNullException">No valid argument</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CBaseEntity.DispatchSpawn">
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.CBaseEntity.AbsOrigin">
+            <summary>
+            Shorthand for accessing an entity's CBodyComponent?.SceneNode?.AbsOrigin;
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.CBaseEntity.AbsRotation">
+            <summary>
+            Shorthand for accessing an entity's CBodyComponent?.SceneNode?.AbsRotation;
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CBaseEntity.EmitSound(System.String,CounterStrikeSharp.API.Modules.Utils.RecipientFilter,System.Single,System.Single)">
+            <summary>
+            Emit a soundevent to all players.
+            </summary>
+            <param name="soundEventName">The name of the soundevent to emit.</param>
+            <param name="recipients">The recipients of the soundevent.</param>
+            <param name="volume">The volume of the soundevent.</param>
+            <param name="pitch">The pitch of the soundevent.</param>
+            <returns>The sound event guid.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CBaseModelEntity.SetModel(System.String)">
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CBasePlayerController.SetPawn(CounterStrikeSharp.API.Core.CBasePlayerPawn)">
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CBasePlayerPawn.CommitSuicide(System.Boolean,System.Boolean)">
+            <summary>
+            Force player suicide
+            </summary>
+            <param name="explode"></param>
+            <param name="force"></param>
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CBasePlayerPawn.RemovePlayerItem(CounterStrikeSharp.API.Core.CBasePlayerWeapon)">
+            <summary>
+            Remove Player Item
+            </summary>
+            <param name="weapon"></param>
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Core.CCheckTransmitInfo.TransmitEntities">
+            <summary>
+            Entity n is already marked for transmission
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Core.CCheckTransmitInfo.TransmitAlways">
+            <summary>
+            Entity n is always send even if not in PVS (HLTV and Replay only)
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.CCheckTransmitInfoList.Item(System.Int32)">
+            <summary>
+            Get transmit info for the given index.
+            </summary>
+            <param name="index">Index of the info you want to retrieve from the list, should be between 0 and '<see cref="P:CounterStrikeSharp.API.Core.CCheckTransmitInfoList.Count"/>' - 1</param>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCheckTransmitInfoList.Get(System.Int32)">
+            <summary>
+            Get transmit info for the given index.
+            </summary>
+            <param name="index">Index of the info you want to retrieve from the list, should be between 0 and '<see cref="P:CounterStrikeSharp.API.Core.CCheckTransmitInfoList.Count"/>' - 1</param>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSGameRules.TerminateRound(System.Single,CounterStrikeSharp.API.Modules.Entities.Constants.RoundEndReason)">
+            <summary>
+            Terminate the round with the given delay and reason.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.GiveNamedItem(System.String)">
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.PrintToConsole(System.String)">
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.PrintToChat(System.String)">
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.PrintToCenter(System.String)">
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.PrintToCenterAlert(System.String)">
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.PrintToCenterHtml(System.String,System.Int32)">
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.DropActiveWeapon">
+            <summary>
+            Drops the active player weapon on the ground.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.RemoveWeapons">
+            <summary>
+            Removes every weapon from the player.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.CommitSuicide(System.Boolean,System.Boolean)">
+            <summary>
+            Force player suicide
+            </summary>
+            <param name="explode"></param>
+            <param name="force"></param>
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.Respawn">
+            <summary>
+            Respawn player
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.SwitchTeam(CounterStrikeSharp.API.Modules.Utils.CsTeam)">
+            <summary>
+            Forcibly switches the team of the player, the player will remain alive and keep their weapons.
+            </summary>
+            <param name="team">The team to switch to</param>
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.ChangeTeam(CounterStrikeSharp.API.Modules.Utils.CsTeam)">
+            <summary>
+            Switches the team of the player, has the same effect as the "jointeam" console command.
+            <remarks>
+            This follows gamemode rules, so this will usually cause a player suicide/loss of weapons.
+            </remarks>
+            </summary>
+            <param name="team">The team to change to</param>
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.GetConVarValue(System.String)">
+            <summary>
+            Get a ConVar value for given player
+            </summary>
+            <param name="conVar">Name of the convar to retrieve</param>
+            <returns>ConVar string value</returns>
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.SetFakeClientConVar(System.String,System.String)">
+            <summary>
+            Sets a ConVar value on a fake client (bot).
+            </summary>
+            <param name="conVar">Console variable name</param>
+            <param name="value">String value to set</param>
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+            <exception cref="T:System.InvalidOperationException">Player is not a bot</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.SetFakeClientConVar(CounterStrikeSharp.API.Modules.Cvars.ConVar,System.String)">
+            <summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Core.CCSPlayerController.SetFakeClientConVar(System.String,System.String)"/>
+            </summary>
+            <exception cref="T:System.ArgumentException"><paramref name="conVar"/> is <see langword="null"/></exception>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Core.CCSPlayerController.SetFakeClientConVar(System.String,System.String)" select="exception"/>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.CCSPlayerController.Buttons">
+            <summary>
+            Gets the active pawns button state. Will work even if the player is dead or observing.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.ExecuteClientCommand(System.String)">
+            <summary>
+            Issue the specified command to the specified client (mimics that client typing the command at the console).
+            Note: Only works for some commands, marked with the FCVAR_CLIENT_CAN_EXECUTE flag (not many).
+            </summary>
+            <param name="command"></param>
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.Disconnect(CounterStrikeSharp.API.ValveConstants.Protobuf.NetworkDisconnectionReason)">
+            <summary>
+            Disconnects a player from the server with the specified reason.
+            </summary>
+            <param name="reason"></param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.ExecuteClientCommandFromServer(System.String)">
+            <summary>
+            Issue the specified command directly from the server (mimics the server executing the command with the given player context).
+            <remarks>Works with server commands like `kill`, `explode`, `noclip`, etc. </remarks>
+            </summary>
+            <param name="command"></param>
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.SetListenOverride(CounterStrikeSharp.API.Core.CCSPlayerController,CounterStrikeSharp.API.ListenOverride)">
+            <summary>
+            Overrides who a player can hear in voice chat.
+            </summary>
+            <param name="sender">Player talking in the voice chat</param>
+            <param name="override">Whether the talker should be heard</param>
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerController.GetListenOverride(CounterStrikeSharp.API.Core.CCSPlayerController)">
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.CCSPlayerController.AuthorizedSteamID">
+            <summary>
+            Returns the authorized SteamID of this user which has been validated with the SteamAPI.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.CCSPlayerController.IpAddress">
+            <summary>
+            Returns the IP address (and possibly port) of this player.
+            <remarks>Returns 127.0.0.1 if the player is a bot.</remarks>
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.CCSPlayerController.VoiceFlags">
+            <summary>
+            Determines how the player interacts with voice chat.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayerPawn.Respawn">
+            <summary>
+            Respawn player
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayer_ItemServices.DropActivePlayerWeapon(CounterStrikeSharp.API.Core.CBasePlayerWeapon)">
+            <summary>
+            Drops the active player weapon on the ground.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">ItemServices points to null</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CCSPlayer_ItemServices.RemoveWeapons">
+            <summary>
+            Removes every weapon from the player.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">ItemServices points to null</exception>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Core.CEntityInstance.IsValid">
+            <summary>
+            Checks that the entity handle is valid and the handle points to a valid entity
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CEntityInstance.AcceptInput(System.String,CounterStrikeSharp.API.Core.CEntityInstance,CounterStrikeSharp.API.Core.CEntityInstance,System.String,System.Int32)">
+            <summary>
+            Calls a named input method on an entity, this will bypass the map IO event queue system.
+            <example>
+            <code>
+            entity.AcceptInput("Break");
+            </code>
+            </example>
+            </summary>
+            <param name="inputName">Input action name</param>
+            <param name="activator">Entity which initiated the action, <see langword="null"/> for no entity</param>
+            <param name="caller">Entity that is sending the event, <see langword="null"/> for no entity</param>
+            <param name="value">String variant value to send with the event</param>
+            <param name="outputId">Unknown, defaults to 0</param>
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CEntityInstance.AddEntityIOEvent(System.String,CounterStrikeSharp.API.Core.CEntityInstance,CounterStrikeSharp.API.Core.CEntityInstance,System.String,System.Single,System.Int32)">
+            <summary>
+            Calls a named input method on an entity, conforming to the map IO event queue system.
+            <example>
+            <code>
+            entity.AddEntityIOEvent("Break");
+            </code>
+            </example>
+            </summary>
+            <param name="inputName">Input action name</param>
+            <param name="activator">Entity which initiated the action, <see langword="null"/> for no entity</param>
+            <param name="caller">Entity that is sending the event, <see langword="null"/> for no entity</param>
+            <param name="value">String variant value to send with the event</param>
+            <param name="delay">Delay in seconds before calling the input</param>
+            <param name="outputId">Unknown, defaults to 0</param>
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CGameSceneNode.GetSkeletonInstance">
+            <summary>
+            Gets the <see cref="T:CounterStrikeSharp.API.Core.CSkeletonInstance"/> instance from the node.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">GameSceneNode points to null</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CTakeDamageInfo.GetHitGroup">
+            <summary>
+            Retrieves the hitgroup
+            </summary>
+            <returns>
+            Returns a <see cref="T:CounterStrikeSharp.API.Core.HitGroup_t"/> enumeration representing the player's current hit group,
+            or <see cref="F:CounterStrikeSharp.API.Core.HitGroup_t.HITGROUP_INVALID"/> if the hit group cannot be determined.
+            </returns>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.CVariant">
+            <summary>
+            Placeholder for CVariant
+            <see href="https://github.com/alliedmodders/hl2sdk/blob/cs2/public/variant.h"/>
+            <remarks>A lot of entity outputs do not use this value</remarks>
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.Translations.LocalizerExtensions.ForPlayer(Microsoft.Extensions.Localization.IStringLocalizer,CounterStrikeSharp.API.Core.CCSPlayerController,System.String)">
+            <summary>
+            Returns a localized string using the locale of the specified player.
+            <remarks>Defaults to the server language if the player is invalid.</remarks>
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.Translations.LocalizerExtensions.ForPlayer(Microsoft.Extensions.Localization.IStringLocalizer,CounterStrikeSharp.API.Core.CCSPlayerController,System.String,System.Object[])">
+            <summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Core.Translations.LocalizerExtensions.ForPlayer(Microsoft.Extensions.Localization.IStringLocalizer,CounterStrikeSharp.API.Core.CCSPlayerController,System.String)"/>
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.Translations.PlayerLanguageExtensions.GetLanguage(CounterStrikeSharp.API.Core.CCSPlayerController)">
+            <summary>
+            Returns the players configured language, as set using the "css_lang" command.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.CommandIsOverriden(System.String)">
+            <summary>
+            Checks to see if a command has overriden permissions.
+            </summary>
+            <param name="commandName">Name of the command.</param>
+            <returns>True if the command has overriden permissions, false if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.GetCommandOverrideData(System.String)">
+            <summary>
+            Grabs the data for a command override that was loaded from "configs/admin_overrides.json".
+            </summary>
+            <param name="commandName">Name of the command.</param>
+            <returns>CommandData class if found, null if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.GetPermissionOverrides(System.String)">
+            <summary>
+            Grabs the new, overriden flags for a command.
+            </summary>
+            <param name="commandName">Name of the command.</param>
+            <returns>If the command is valid, a valid array of flags.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.AddPermissionOverride(System.String,System.String[])">
+            <summary>
+            Adds a new permission to a command override. 
+            This is not saved to "configs/admin_overrides.json".
+            </summary>
+            <param name="commandName">Name of the command.</param>
+            <param name="permissions">Permissions to add to the command override.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.RemovePermissionOverride(System.String,System.String[])">
+            <summary>
+            Removes a permission from a command override.
+            This is not saved to "configs/admin_overrides.json".
+            </summary>
+            <param name="commandName">Name of the command.</param>
+            <param name="permissions">Permissions to remove from the command override.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.ClearPermissionOverride(System.String,System.Boolean)">
+            <summary>
+            Clears all permissions from a command override.
+            This is not saved to "configs/admin_overrides.json".
+            </summary>
+            <param name="commandName">Name of the command.</param>
+            <param name="disable">Whether to disable the command override after clearing.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.DeleteCommandOverride(System.String)">
+            <summary>
+            Deletes a command override.
+            This is not saved to "configs/admin_overrides.json".
+            </summary>
+            <param name="commandName">Name of the command.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.SetCommandOverideState(System.String,System.Boolean)">
+            <summary>
+            Sets a command override to be enabled or disabled.
+            This is not saved to "configs/admin_overrides.json".
+            </summary>
+            <param name="commandName">Name of the command.</param>
+            <param name="state">New state of the command override.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.PlayerInGroup(CounterStrikeSharp.API.Core.CCSPlayerController,System.String[])">
+            <summary>
+            Checks to see if the player is part of an admin group.
+            </summary>
+            <param name="player">Player controller.</param>
+            <param name="groups">Groups to check for.</param>
+            <returns>True if a player is part of all of the groups provided, false if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.PlayerInGroup(CounterStrikeSharp.API.Modules.Entities.SteamID,System.String[])">
+            <summary>
+            Checks to see if the player is part of an admin group.
+            </summary>
+            <param name="steamId">SteamID of the player.</param>
+            <param name="groups">Groups to check for.</param>
+            <returns>True if a player is part of all of the groups provided, false if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.AddPlayerToGroup(CounterStrikeSharp.API.Core.CCSPlayerController,System.String[])">
+            <summary>
+            Adds a player to a group. This does NOT modify the immunity of the player (see SetPlayerImmunity).
+            </summary>
+            <param name="player">Player controller.</param>
+            <param name="groups">Groups to add the player to.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.AddPlayerToGroup(CounterStrikeSharp.API.Modules.Entities.SteamID,System.String[])">
+            <summary>
+            Adds a player to a group. This does NOT modify the immunity of the player (see SetPlayerImmunity).
+            </summary>
+            <param name="steamId">SteamID of the player.</param>
+            <param name="groups">Groups to add the player to.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.RemovePlayerFromGroup(CounterStrikeSharp.API.Core.CCSPlayerController,System.Boolean,System.String[])">
+            <summary>
+            Removes a player from a group.
+            </summary>
+            <param name="player">Player controller.</param>
+            <param name="removeInheritedFlags">If true, all of the flags that the player inherited from being in the group will be removed.</param>
+            <param name="groups"></param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.RemovePlayerFromGroup(CounterStrikeSharp.API.Modules.Entities.SteamID,System.Boolean,System.String[])">
+            <summary>
+            Removes a player from a group.
+            </summary>
+            <param name="steamId">SteamID of the player.</param>
+            <param name="removeInheritedFlags">If true, all of the flags that the player inherited from being in the group will be removed.</param>
+            <param name="groups"></param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.GetPlayerAdminData(CounterStrikeSharp.API.Core.CCSPlayerController)">
+            <summary>
+            Grabs the admin data for a player that was loaded from "configs/admins.json" and "configs/admins_groups.json".
+            </summary>
+            <param name="player">Player controller</param>
+            <returns>AdminData class if data found, null if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.GetPlayerAdminData(CounterStrikeSharp.API.Modules.Entities.SteamID)">
+            <summary>
+            Grabs the admin data for a player that was loaded from "configs/admins.json" and "configs/admins_groups.json".
+            </summary>
+            <param name="steamId">SteamID object of the player.</param>
+            <returns>AdminData class if data found, null if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.RemovePlayerAdminData(CounterStrikeSharp.API.Core.CCSPlayerController)">
+            <summary>
+            Removes a players admin data. This is not saved to "configs/admins.json"
+            </summary>
+            <param name="player">Player controller</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.RemovePlayerAdminData(CounterStrikeSharp.API.Modules.Entities.SteamID)">
+            <summary>
+            Removes a players admin data. This is not saved to "configs/admins.json"
+            </summary>
+            <param name="steamId">Steam ID remove admin data from.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.PlayerHasPermissions(CounterStrikeSharp.API.Core.CCSPlayerController,System.String[])">
+            <summary>
+            Checks to see if a player has access to a certain set of permission flags.
+            </summary>
+            <param name="player">Player or server console.</param>
+            <param name="flags">Flags to look for in the players permission flags.</param>
+            <returns>True if flags are present, false if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.PlayerHasPermissions(CounterStrikeSharp.API.Modules.Entities.SteamID,System.String[])">
+            <summary>
+            Checks to see if a player has access to a certain set of permission flags.
+            </summary>
+            <param name="steamId">Steam ID object.</param>
+            <param name="flags">Flags to look for in the players permission flags.</param>
+            <returns>True if flags are present, false if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.PlayerHasCommandOverride(CounterStrikeSharp.API.Core.CCSPlayerController,System.String)">
+            <summary>
+            Checks to see if a player has a command override. This does NOT return the actual
+            state of the override.
+            </summary>
+            <param name="player">Player or server console.</param>
+            <param name="command">Name of the command to check for.</param>
+            <returns>True if override exists, false if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.PlayerHasCommandOverride(CounterStrikeSharp.API.Modules.Entities.SteamID,System.String)">
+            <summary>
+            Checks to see if a player has a command override. This does NOT return the actual
+            state of the override.
+            </summary>
+            <param name="steamId">Steam ID object.</param>
+            <param name="command">Name of the command to check for.</param>
+            <returns>True if override exists, false if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.GetPlayerCommandOverrideState(CounterStrikeSharp.API.Core.CCSPlayerController,System.String)">
+            <summary>
+            Gets the value of a command override state.
+            </summary>
+            <param name="player">Player or server console.</param>
+            <param name="command">Name of the command to check for.</param>
+            <returns>True if override is active, false if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.GetPlayerCommandOverrideState(CounterStrikeSharp.API.Modules.Entities.SteamID,System.String)">
+            <summary>
+            Gets the value of a command override state.
+            </summary>
+            <param name="steamId">Steam ID object.</param>
+            <param name="command">Name of the command to check for.</param>
+            <returns>True if override is active, false if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.SetPlayerCommandOverride(CounterStrikeSharp.API.Core.CCSPlayerController,System.String,System.Boolean)">
+            <summary>
+            Sets a player command override. This is not saved to "configs/admins.json".
+            </summary>
+            <param name="player">Player or server console.</param>
+            <param name="command">Name of the command to check for.</param>
+            <param name="state">New state of the command override.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.SetPlayerCommandOverride(CounterStrikeSharp.API.Modules.Entities.SteamID,System.String,System.Boolean)">
+            <summary>
+            Sets a player command override. This is not saved to "configs/admins.json".
+            </summary>
+            <param name="steamId">SteamID to add a flag to.</param>
+            <param name="command">Name of the command to check for.</param>
+            <param name="state">New state of the command override.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.AddPlayerPermissions(CounterStrikeSharp.API.Core.CCSPlayerController,System.String[])">
+            <summary>
+            Temporarily adds a permission flag to the player. These flags are not saved to
+            "configs/admins.json".
+            </summary>
+            <param name="player">Player controller to add a flag to.</param>
+            <param name="flags">Flags to add for the player.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.AddPlayerPermissions(CounterStrikeSharp.API.Modules.Entities.SteamID,System.String[])">
+            <summary>
+            Temporarily adds a permission flag to the player. These flags are not saved to
+            "configs/admins.json".
+            </summary>
+            <param name="steamId">SteamID to add a flag to.</param>
+            <param name="flags">Flags to add for the player.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.RemovePlayerPermissions(CounterStrikeSharp.API.Core.CCSPlayerController,System.String[])">
+            <summary>
+            Temporarily removes a permission flag to the player. These flags are not saved to
+            "configs/admins.json".
+            </summary>
+            <param name="player">Player controller to remove flags from.</param>
+            <param name="flags">Flags to remove from the player.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.RemovePlayerPermissions(CounterStrikeSharp.API.Modules.Entities.SteamID,System.String[])">
+            <summary>
+            Temporarily removes a permission flag to the player. These flags are not saved to
+            "configs/admins.json".
+            </summary>
+            <param name="steamId">Steam ID to remove flags from.</param>
+            <param name="flags">Flags to remove from the player.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.ClearPlayerPermissions(CounterStrikeSharp.API.Core.CCSPlayerController)">
+            <summary>
+            Temporarily removes all permission flags from a player. These flags are not saved to
+            "configs/admins.json".
+            </summary>
+            <param name="player">Player controller to remove flags from.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.ClearPlayerPermissions(CounterStrikeSharp.API.Modules.Entities.SteamID)">
+            <summary>
+            Temporarily removes all permission flags from a player. These flags are not saved to
+            "configs/admins.json".
+            </summary>
+            <param name="steamId">Steam ID to remove flags from.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.SetPlayerImmunity(CounterStrikeSharp.API.Core.CCSPlayerController,System.UInt32)">
+            <summary>
+            Sets the immunity value for a player.
+            </summary>
+            <param name="player">Player controller.</param>
+            <param name="value">New immunity value.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.SetPlayerImmunity(CounterStrikeSharp.API.Modules.Entities.SteamID,System.UInt32)">
+            <summary>
+            Sets the immunity value for a player.
+            </summary>
+            <param name="steamId">Steam ID of the player.</param>
+            <param name="value">New immunity value.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.GetPlayerImmunity(CounterStrikeSharp.API.Core.CCSPlayerController)">
+            <summary>
+            Returns the immunity value for a player.
+            </summary>
+            <param name="player">Player controller.</param>
+            <returns> If an immunity value is present in "configs/admins_groups.json" 
+            and in "configs/admins.json", the returned value will be the greater of the two.
+            If the value is overriden with SetPlayerImmunity, that value is returned instead.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.GetPlayerImmunity(CounterStrikeSharp.API.Modules.Entities.SteamID)">
+            <summary>
+            Returns the immunity value for a player.
+            </summary>
+            <param name="steamId">Steam ID of the player.</param>
+            <returns> If an immunity value is present in "configs/admins_groups.json" 
+            and in "configs/admins.json", the returned value will be the greater of the two.
+            If the value is overriden with SetPlayerImmunity, that value is returned instead.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.CanPlayerTarget(CounterStrikeSharp.API.Core.CCSPlayerController,CounterStrikeSharp.API.Core.CCSPlayerController)">
+            <summary>
+            Checks to see if a player can target another player based on their immunity value.
+            </summary>
+            <param name="caller">Caller of the command.</param>
+            <param name="target">Target of the command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminManager.CanPlayerTarget(CounterStrikeSharp.API.Modules.Entities.SteamID,CounterStrikeSharp.API.Modules.Entities.SteamID)">
+            <summary>
+            Checks to see if a player can target another player based on their immunity value.
+            </summary>
+            <param name="caller">Caller of the command.</param>
+            <param name="target">Target of the command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminData.DomainHasRootFlag(System.String)">
+            <summary>
+            Checks to see if a domain has a root flag inside of it.
+            </summary>
+            <param name="domain">Domain to check for.</param>
+            <returns>True if "@{domain}/root" or "@{domain}/*" is present, false if not.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminData.GetFlagDomains">
+            <summary>
+            Returns a list of all domains for flags.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Admin.AdminData.GetAllFlags">
+            <summary>
+            Returns a HashSet of all flags.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Admin.BaseRequiresPermissions.Permissions">
+            <summary>
+            The permissions for the command.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Admin.BaseRequiresPermissions.Command">
+            <summary>
+            The name of the command that is attached to this attribute.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Admin.BaseRequiresPermissions.Enabled">
+            <summary>
+            Whether this attribute should be used for permission checks.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Commands.CommandExtensions.GetArgTargetResult(CounterStrikeSharp.API.Modules.Commands.CommandInfo,System.Int32)">
+            <summary>
+            Treats the argument at the specified index as a target string (@all, @me etc.) and returns the result.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Commands.CommandHelperAttribute.#ctor(System.Int32,System.String,CounterStrikeSharp.API.Modules.Commands.CommandUsage)">
+            <summary>
+            
+            </summary>
+            <param name="minArgs">The minimum amount of arguments required to execute this command.</param>
+            <param name="usage">If the command fails, this string is printed to the caller to show the CommandUtils intended usage.</param>
+            <param name="whoCanExecute">Restricts the command so it can only be executed by players, the server console, or both (see CommandUsage).</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Modules.Commands.CommandInfo.CommandListenerCallback">
+            <summary>
+            Command listener callback.
+            <returns>If returning <see cref="F:CounterStrikeSharp.API.Core.HookResult.Handled"/> or higher, will prevent the command from executing.</returns>
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Commands.CommandInfo.CallingContext">
+            <summary>
+            Whether or not the command was sent via Console or Chat.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Commands.CommandInfo.ReplyToCommand(System.String)">
+            <summary>
+            Replies to the command with a message.
+            <remarks>
+            If the command was sent via Chat, <see cref="M:CounterStrikeSharp.API.Core.CCSPlayerController.PrintToChat(System.String)"/> is used, otherwise <see cref="M:CounterStrikeSharp.API.Core.CCSPlayerController.PrintToConsole(System.String)"/> is used.
+            If sent from the server console/RCON, <see cref="M:CounterStrikeSharp.API.Server.PrintToConsole(System.String)"/> is used.
+            </remarks>
+            </summary>
+            <param name="message">Message to send</param>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Cvars.ConVar.Type">
+            <summary>
+            The underlying data type of the ConVar.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Cvars.ConVar.Flags">
+            <summary>
+            The ConVar flags as defined by <see cref="T:CounterStrikeSharp.API.ConVarFlags"/>.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Cvars.ConVar.GetPrimitiveValue``1">
+            <summary>
+            Used to access primitive value types, i.e. <see langword="bool"/>, <see langword="float"/>, <see langword="int"/>, etc.
+            </summary>
+            <typeparam name="T">The type of value to retrieve</typeparam>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Cvars.ConVar.GetNativeValue``1">
+            <summary>
+            Used to access reference value types, i.e. Vector, QAngle
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Cvars.ConVar.StringValue">
+            <summary>
+            String value of the ConVar.
+            </summary>
+            <remarks>String is a special exception as we have to marshal the string to UTF8 on the send/receive to unmanaged code.
+            </remarks>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Cvars.ConVar.Public">
+            <summary>
+            Shorthand for checking the <see cref="F:CounterStrikeSharp.API.ConVarFlags.FCVAR_NOTIFY"/> flag.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Cvars.ConVar.Find(System.String)">
+            <summary>
+            Finds a ConVar by name.
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountInstance">
+            <summary>
+            Represents the instance types for a Steam account.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountInstance.Invalid">
+            <summary>
+            Invalid instance.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountInstance.All">
+            <summary>
+            All instances.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountInstance.Desktop">
+            <summary>
+            Desktop instance.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountInstance.Console">
+            <summary>
+            Console instance.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountInstance.Web">
+            <summary>
+            Web instance.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType">
+            <summary>
+            Represents the types of Steam accounts.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.Invalid">
+            <summary>
+            Invalid account type.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.Individual">
+            <summary>
+            Individual account type.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.MultiSeat">
+            <summary>
+            MultiSeat account type.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.GameServer">
+            <summary>
+            Game Server account type.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.AnonGameServer">
+            <summary>
+            Anonymous Game Server account type.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.Pending">
+            <summary>
+            Pending account type.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.ContentServer">
+            <summary>
+            Content Server account type.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.Clan">
+            <summary>
+            Clan account type.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.Chat">
+            <summary>
+            Chat account type.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.ConsoleUser">
+            <summary>
+            Console user account type.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.P2PSuperSeeder">
+            <summary>
+            P2P Super Seeder account type.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountType.AnonUser">
+            <summary>
+            Anonymous user account type.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountUniverse">
+            <summary>
+            Represents the universe of a Steam account.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountUniverse.Unspecified">
+            <summary>
+            Individual / unspecified universe.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountUniverse.Public">
+            <summary>
+            Public universe.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountUniverse.Beta">
+            <summary>
+            Beta universe.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountUniverse.Internal">
+            <summary>
+            Internal universe.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountUniverse.Dev">
+            <summary>
+            Development universe.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Events.EventPlayerChat.Teamonly">
+            <summary>
+            If this chat message was sent to team only
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Events.EventPlayerChat.Userid">
+            <summary>
+            The user ID of the player who sent the chat message
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Events.EventPlayerChat.Text">
+            <summary>
+            The text content of the chat message
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Events.GameEvent.Free">
+            <summary>
+            Used to manually free the event.
+            <remarks>If <see cref="M:CounterStrikeSharp.API.Modules.Events.GameEvent.FireEvent(System.Boolean)"/> is called, Free will be called automatically.</remarks>
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Extensions.PlayerExtensions.GetChatColor(CounterStrikeSharp.API.Core.CCSPlayerController)">
+            <summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Modules.Utils.ChatColors.ForPlayer(CounterStrikeSharp.API.Core.CCSPlayerController)"/>
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Extensions.PluginConfigExtensions.GetConfigPath``1(``0)">
+            <summary>
+            Gets the configuration file path
+            </summary>
+            <typeparam name="T">Type of the plugin configuration.</typeparam>
+            <param name="_">Current configuration instance</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Extensions.PluginConfigExtensions.Update``1(``0)">
+            <summary>
+            Updates the configuration file
+            </summary>
+            <typeparam name="T">Type of the plugin configuration.</typeparam>
+            <param name="config">Current configuration instance</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Extensions.PluginConfigExtensions.Reload``1(``0)">
+            <summary>
+            Reloads the configuration file and updates current configuration instance.
+            </summary>
+            <typeparam name="T">Type of the plugin configuration.</typeparam>
+            <param name="config">Current configuration instance</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Extensions.TeamExtensions.GetChatColor(CounterStrikeSharp.API.Modules.Utils.CsTeam)">
+            <summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Modules.Utils.ChatColors.ForTeam(CounterStrikeSharp.API.Modules.Utils.CsTeam)"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Memory.Schema.GetString(System.IntPtr,System.String,System.String)">
+            <summary>
+            Reads a string from the specified pointer, class name, and member name.
+            These are for non-networked strings, which are just stored as raw char bytes on the server.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Memory.Schema.GetUtf8String(System.IntPtr,System.String,System.String)">
+            <summary>
+            Reads a UTF8 encoded string from the specified pointer, class name, and member name.
+            These are for networked strings, which need to be read differently.
+            </summary>
+            <param name="pointer"></param>
+            <param name="className"></param>
+            <param name="memberName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.UserMessages.UserMessage.FromPartialName(System.String)">
+            <summary>
+            Creates a new user message with a given network message name partial match.
+            </summary>
+            <param name="name"></param>
+            <throws>if the name is not a valid network message name</throws>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.UserMessages.UserMessage.FromId(System.Int32)">
+            <summary>
+            Creates a new user message with a given network message ID.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.UserMessages.UserMessage.FindIdByName(System.String)">
+            <summary>
+            Finds a network message ID by name.
+            <remarks>
+            Network message system must be loaded before this function can be used.
+            Avoid calling this method from <see cref="M:CounterStrikeSharp.API.Core.IPlugin.Load(System.Boolean)"/>
+            </remarks>
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.UserMessages.UserMessage.Name">
+            <summary>
+            Returns the network message name of this user message.
+            <example>CMsgTEFireBullets [452]</example>
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.UserMessages.UserMessage.Id">
+            <summary>
+            Returns the network message ID of this user message.
+            <example>452</example>
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.UserMessages.UserMessage.Type">
+            <summary>
+            Returns the protobuf message type of this user message.
+            <example>CMsgTEFireBullets</example>
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.UserMessages.UserMessage.DebugString">
+            <summary>
+            Returns the debug string of this user message, as defined by protobuf.
+            <example>
+            <code>
+            CMsgTEFireBullets [452], 452, origin {
+                x: -1969.24951
+                y: 2046.12683
+                z: 60.9242516
+            }
+            angles {
+            x: 32.8350143
+            y: 19.0894909
+            z: 0
+            }
+            weapon_id: 2441476
+            mode: 1
+            seed: 991759080
+            player: 6390016
+            inaccuracy: 0.00490000239
+            recoil_index: 0
+            spread: 0.0015
+            sound_type: 9
+            item_def_index: 61
+            sound_dsp_effect: 2005810340
+            ent_origin {
+                x: -1969.24976
+                y: 2046.12671
+                z: -1.92980957
+            }
+            num_bullets_remaining: 12
+            attack_type: 0
+            </code>
+            </example>
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Modules.Utils.Angle">
+            <summary>
+            A <c>Angle</c> object represents 3D Euler angle, offset from the cardinal Z axis.
+            Each angle contains three rotation values.
+            <list type="bullet">
+            <item><term>X</term><description>pitch +down/-up</description></item>
+            <item><term>Y</term><description>yaw +left/-right</description></item>
+            <item><term>Z</term><description>roll +right/-left</description></item>
+            </list>
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.Angle.#ctor(System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single})">
+            <summary>
+            Creates new angle with the supplied Pitch, Yaw and Roll values.
+            </summary>
+            <param name="x">Pitch</param>
+            <param name="y">Yaw</param>
+            <param name="z">Roll</param>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Utils.Angle.Pitch">
+            <summary>
+            Pitch of angle
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Utils.Angle.Yaw">
+            <summary>
+            Yaw of angle
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Utils.Angle.Roll">
+            <summary>
+            Roll of angle
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Utils.Angle.P">
+            <summary>
+            Pitch of angle
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Utils.Angle.R">
+            <summary>
+            Roll of angle
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Utils.Angle.X">
+            <summary>
+            Pitch of angle
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Utils.Angle.Y">
+            <summary>
+            Yaw of angle
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Utils.Angle.Z">
+            <summary>
+            Roll of angle
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Modules.Utils.CHandle`1">
+            <summary>
+            CHandle is a class that represents a 32-bit ID (entindex + serial number) unique to every past and present entity in a game.
+            It is used to refer to entities where pointers and entity indexes are unsafe; mainly across the client/server divide.
+            <a href="https://developer.valvesoftware.com/wiki/CHandle">More info</a>
+            </summary>
+            <typeparam name="T">Type of entity this handle refers to</typeparam>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Utils.CHandle`1.Value">
+            <inheritdoc cref="M:CounterStrikeSharp.API.Modules.Utils.CHandle`1.Get"/>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.CHandle`1.Get">
+            <summary>
+            Retrieves the instance of the entity this handle refers to.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Utils.CHandle`1.IsValid">
+            <summary>
+            Checks that the handle is valid and points to an entity.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.ChatColors.ForTeam(CounterStrikeSharp.API.Modules.Utils.CsTeam)">
+            <summary>
+            Returns a chat color based on a team.
+            <remarks>Blue for CT, Yellow for T, LightPurple for Spectator</remarks>
+            </summary>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.ChatColors.ForPlayer(CounterStrikeSharp.API.Core.CCSPlayerController)">
+            <summary>
+            Returns a chat color for a player based on their team.
+            <remarks>Blue for CT, Yellow for T, LightPurple for Spectator</remarks>
+            </summary>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.EnumUtils.GetEnumMemberAttribute``1(System.Enum)">
+            <summary>
+            Brute force search using Enum.GetNames as enum members pointing to other enum members do not have the correct attributes.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Modules.Utils.RecipientFilter">
+            <summary>
+            A generic filter for determining whom to send message/sounds etc.
+            to and providing a bit of additional state information
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Modules.Utils.Vector">
+            <summary>
+            A <c>Vector</c> object represents a line with a direction and length.
+            Each vector contains three co-ordinates:
+            <list type="bullet">
+            <item><term>X</term><description>+forward/-backward</description></item>
+            <item><term>Y</term><description>+left/-right</description></item>
+            <item><term>Z</term><description>+up/-down</description></item>
+            </list>
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.Vector.With(System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single})">
+            <summary>
+            Returns a copy of the vector with values replaced.
+            </summary>
+            <param name="x">X value to replace with</param>
+            <param name="y">Y value to replace with</param>
+            <param name="z">Z value to replace with</param>
+            <returns>Copy of vector</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.Vector.Add(CounterStrikeSharp.API.Modules.Utils.Vector)">
+            <summary>
+            Adds values of argument vector to the original vector. Does not create a new vector object, skipping object construction.
+            </summary>
+            <param name="vector"></param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.Vector.Angle">
+            <summary>
+            Returns an angle that represents the normal of the vector.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.Vector.Angle(CounterStrikeSharp.API.Modules.Utils.Vector)">
+            <summary>
+            Returns the angle of the vector, but allows the use of a different 'up' direction.
+            </summary>
+            <param name="up">Direction for up</param>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.Vector.IsZero">
+            <summary>
+            Returns whether all fields on the Vector are 0.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.Vector.Length">
+            <summary>
+            Returns the Euclidean length of the vector: √x² + y² + z²
+            </summary>
+            <returns>Euclidean length of vector</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.Vector.Length2D">
+            <summary>
+            Returns length of Vector excluding Z axis.
+            </summary>
+            <returns>2D Length</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.Vector.LengthSqr">
+            <summary>
+            Returns the squared length of the vector, x² + y² + z². Faster than <see cref="M:CounterStrikeSharp.API.Modules.Utils.Vector.Length"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Utils.Vector.Length2DSqr">
+            <summary>
+            Returns the squared length of the vectors x and y value, x² + y². Faster than <see cref="M:CounterStrikeSharp.API.Modules.Utils.Vector.Length2D"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:CounterStrikeSharp.API.PlayerButtons.Walk">
+            Player is holding the speed key 
+        </member>
+        <member name="F:CounterStrikeSharp.API.PlayerButtons.Zoom">
+            Player holding walk key 
+        </member>
+        <member name="F:CounterStrikeSharp.API.PlayerButtons.Weapon1">
+            Zoom key for HUD zoom 
+        </member>
+        <member name="F:CounterStrikeSharp.API.PlayerButtons.Weapon2">
+            weapon defines these bits 
+        </member>
+        <member name="F:CounterStrikeSharp.API.PlayerButtons.Bullrush">
+            weapon defines these bits 
+        </member>
+        <member name="F:CounterStrikeSharp.API.PlayerButtons.Grenade2">
+            grenade 1 
+        </member>
+        <member name="F:CounterStrikeSharp.API.PlayerButtons.Attack3">
+            grenade 2 
+        </member>
+        <member name="P:CounterStrikeSharp.API.Server.TickInterval">
+            <summary>
+            Duration of a single game tick in seconds, based on a 64 tick server (hard coded in CS2).
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Server.ExecuteCommand(System.String)">
+            <summary>
+            Executes a command on the server, as if it was entered from the console.
+            </summary>
+            <param name="command"></param>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Server.TickedTime">
+            <summary>
+            Returns the total time the server has been running in seconds.
+            </summary>
+            <remarks>Does not increment when server is hibernating</remarks>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Server.CurrentTime">
+            <summary>
+            Returns the current map time in seconds, as an interval of the server's tick interval.
+            e.g. 70.046875 would represent 70 seconds of map time and the 4483rd tick of the server (70.046875 / 0.015625).
+            </summary>
+            <remarks>Increments even when server is hibernating</remarks>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Server.TickCount">
+            <summary>
+            Returns the current map tick count.
+            CS2 is a 64 tick server, so the value will increment by 64 every second.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Server.EngineTime">
+            <summary>
+            Returns the total time the server has been running in seconds.
+            </summary>
+            <remarks>Increments even when server is hibernating</remarks>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Server.FrameTime">
+            <summary>
+            Returns the time spent on last server or client frame
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Server.RunOnTickAsync(System.Int32,System.Action)">
+            <summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Server.RunOnTick(System.Int32,System.Action)"/>
+            Returns Task that completes once the synchronous task has been completed.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Server.RunOnTick(System.Int32,System.Action)">
+            <summary>
+            Queue a task to be executed on the specified tick.
+            See <see cref="P:CounterStrikeSharp.API.Server.TickCount"/> to retrieve the current tick.
+            <remarks>Does not execute if the server is hibernating.</remarks>
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Server.NextFrameAsync(System.Action)">
+            <summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Server.NextFrame(System.Action)"/>
+            Returns Task that completes once the synchronous task has been completed.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Server.NextFrame(System.Action)">
+            <summary>
+            Queue a task to be executed on the next game frame.
+            <remarks>Does not execute if the server is hibernating.</remarks>
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Server.NextWorldUpdateAsync(System.Action)">
+            <summary>
+            <inheritdoc cref="M:CounterStrikeSharp.API.Server.NextWorldUpdate(System.Action)"/>
+            Returns Task that completes once the synchronous task has been completed.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Server.NextWorldUpdate(System.Action)">
+            <summary>
+            Queue a task to be executed on the next pre world update.
+            <remarks>Executes if the server is hibernating.</remarks>
+            </summary>
+            <param name="task"></param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.ServiceCollectionExtensions.DecorateSingleton``2(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Decorates a given interface with a decorator class, keeping a local copy for singleton access.
+            </summary>
+            <param name="services"></param>
+            <typeparam name="TService"></typeparam>
+            <typeparam name="TDecoratedService"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Utilities.GetPlayers">
+            <summary>
+            Returns a list of <see cref="T:CounterStrikeSharp.API.Core.CCSPlayerController"/> that are valid and have a valid <see cref="P:CounterStrikeSharp.API.Core.CCSPlayerController.UserId"/> >= 0
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Utilities.SetStateChanged(CounterStrikeSharp.API.Core.CBaseEntity,System.String,System.String,System.Int32)">
+            <summary>
+            Marks a field as changed for network transmission.
+            Not all schema fields are network enabled, so please check the schema before using this.
+            </summary>
+            <param name="entity">Entity to update</param>
+            <param name="className" example="CBaseEntity">Schema field class name</param>
+            <param name="fieldName" example="m_iHealth">Schema field name</param>
+            <param name="extraOffset">Any additional offset to the schema field</param>
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Utilities.MetaFactory(System.String)">
+            <summary>
+            metamod method 'MetaFactory' to get the pointer of api interface exposed by metamod plugins.
+            Returns null when the interface cannot be found.
+            </summary>
+            <param name="interfaceName">The interface name of metamod api, can be found in their api header file</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.ValveConstants.Protobuf.NetworkDisconnectionReason">
+            <summary>
+            Enum derived from `network_connection.proto`
+            </summary>
+        </member>
+    </members>
+</doc>

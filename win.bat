@@ -109,7 +109,7 @@ xcopy "%ROOT_DIR%game\csgo\*" "%ROOT_DIR%server\game\csgo\" /K /S /E /I /H /Y >N
 
 :: Merge Windows specific files
 echo Merging Windows specific files.
-xcopy "%ROOT_DIR%game\csgo\addons\windows\*" "%ROOT_DIR%server\game\csgo\addons\" /K /S /E /I /H /Y >NUL
+xcopy "%ROOT_DIR%game\csgo\addons\windows\*" "%ROOT_DIR%server\game\csgo\" /K /S /E /I /H /Y >NUL
 
 :: Merge your custom files in
 echo Copying custom files from "%custom_folder%".

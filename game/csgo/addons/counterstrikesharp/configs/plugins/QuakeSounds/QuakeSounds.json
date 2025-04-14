@@ -51,25 +51,10 @@
             "en": "Knife Kill",
             "_sound": "QuakeSoundsD.Haha"
         },
-        "teamkill": {
-            "de": "Team-Kill",
-            "en": "Team Kill",
-            "_sound": "QuakeSoundsD.Teamkiller"
-        },
-        "selfkill": {
-            "de": "Selbsttötung",
-            "en": "Self Kill",
-            "_sound": "QuakeSoundsD.Perfect"
-        },
         "headshot": {
             "de": "Kopfschuss",
             "en": "Headshot",
             "_sound": "QuakeSoundsD.Headshot"
-        },
-        "weapon_hegrenade": {
-            "de": "Granaten-Kill",
-            "en": "Grenade Kill",
-            "_sound": "QuakeSoundsD.Perfect"
         }
     },
     "player_muted": [],
