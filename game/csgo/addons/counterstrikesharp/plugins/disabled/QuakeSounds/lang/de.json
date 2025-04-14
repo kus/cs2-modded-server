@@ -1,0 +1,17 @@
+{
+    "core.debugprint": "[QuakeSounds][DEBUG]: {message}",
+    "core.config": "[QuakeSounds] Konfiguration geladen",
+    "admin.unknown_command": "[QuakeSounds] Unbekannter Befehl: {command}",
+    "admin.disable": "[QuakeSounds] QuakeSounds deaktiviert.",
+    "admin.enable": "[QuakeSounds] QuakeSounds aktiviert.",
+    "admin.reload": "[QuakeSounds] Konfiguration neu geladen",
+    "menu.title": "[QuakeSounds] {default}Einstellungen",
+    "menu.mute": "{red}Sounds deaktivieren",
+    "menu.unmute": "{green}Sounds aktivieren",
+    "sounds.muted": "[QuakeSounds] {default}Alle Sounds für dich deaktiviert.",
+    "sounds.unmuted": "[QuakeSounds] {default}Alle Sounds für dich aktiviert.",
+    "center.msg.player": "{message}",
+    "center.msg.other": "{player} -> {message}",
+    "chat.msg.player": "[QuakeSounds] {green}{message}",
+    "chat.msg.other": "[QuakeSounds] {green}{player} {default}-> {green}{message}"
+}
