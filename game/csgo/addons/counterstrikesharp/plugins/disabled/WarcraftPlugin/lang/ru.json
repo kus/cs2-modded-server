@@ -24,8 +24,8 @@
   "xp.kill": "{Gold}+{0} XP {Default}за убийство {Green}{1} {Default}{2}{3}", // {Gold}+{0} XP {Default}for killing {Green}{1} {Default}{2}{3}
   "xp.add": "Добавление {0} опыта игроку {1}", // Adding {0} xp to player {1}
   "ability.ready": "{0} готово!", // {0} is ready!
-  "ultimate.no": "Нет уровней в ультимативной способности", // No levels in ultimate
   "ultimate.countdown": "Ультимативная способность будет готова через {0}с", // Ultimate ready in {0}s
+  "no.ultimate": "Нет уровней в ультимативной способности", // No levels in ultimate
 
   //Commands, used in-game by typing !<command>
   "command.ultimate": "ультимейт", // ultimate
