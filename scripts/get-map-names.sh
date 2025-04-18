@@ -43,7 +43,23 @@ while IFS= read -r id; do
         echo -e "Maps:"
 
         # Run the vpk command
-        vpk -l "steamcmd/steamapps/content/app_730/item_$id/$id.vpk" | grep '^maps/.*\.vpk$'
+        # Check to see if $id.vpk exists or $id_dir.vpk or $id_000.vpk"
+        vpkfile="steamcmd/steamapps/content/app_730/item_$id/$id.vpk"
+        if [[ ! -f "$vpkfile" ]]; then
+            vpkfile="steamcmd/steamapps/content/app_730/item_$id/${id}_dir.vpk"
+        fi
+        if [[ ! -f "$vpkfile" ]]; then
+            vpkfile="steamcmd/steamapps/content/app_730/item_$id/${id}_000.vpk"
+        fi
+        # Check if the vpk file exists
+        if [[ ! -f "$vpkfile" ]]; then
+            echo "Error: $vpkfile not found."
+            continue
+        fi
+        # Extract the vpk file and list the contents
+        echo "Extracting $vpkfile..."
+        # Extract the vpk file
+        vpk -l "$vpkfile" | grep '^maps/.*\.vpk$' # grep '^maps/' # grep '^maps/.*\.vpk$'
 
         # New line
         echo ""

@@ -279,7 +279,7 @@
       {
         "Name": "Battle Royale",
         "Config": "br.cfg",
-        "DefaultMap": "3330484099",
+        "DefaultMap": "3462095803",
         "MapGroups": [
           "mg_battleroyale"
         ]

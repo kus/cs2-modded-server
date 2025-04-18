@@ -146,6 +146,8 @@
 				"workshop/3073892687/de_season"		""
 				"workshop/3386116667/de_ema"		""
 				"workshop/3345551391/twofort_cs2"		""
+				"workshop/3460962520/de_rats_remake"		""
+				"workshop/3464733042/de_mirage_bricks"		""
 			}
 		}
 		"mg_retake"
@@ -234,6 +236,7 @@
 				"workshop/3309665004/skatepark"		""
 				"workshop/3386116667/de_ema"		""
 				"workshop/3360723913/paintit"		""
+				"workshop/3464733042/de_mirage_bricks"		""
 			}
 		}
 		"mg_dm"
@@ -282,6 +285,8 @@
 				"workshop/3360723913/paintit"		""
 				"workshop/3248340515/kloce"		""
 				"workshop/3326465469/gulag"		""
+				"workshop/3460962520/de_rats_remake"		""
+				"workshop/3464733042/de_mirage_bricks"		""
 			}
 		}
 		"mg_1v1"
@@ -369,10 +374,12 @@
 			"displayname"			"Battle Royale"
 			"maps"
 			{
+				"workshop/3462095803/br_t2"		""
 				"workshop/3330484099/br_electrified"		""
 				"workshop/3297489255/br_stacks"		""
 				"workshop/3267454508/br_flood"		""
 				"workshop/3186779271/minecraft"		""
+				"workshop/3240933254/minecraft_hungergame"		""
 			}
 		}
 		"mg_deathrun"
