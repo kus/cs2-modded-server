@@ -103,6 +103,10 @@ if exist "%tempFile%" (
 echo Deleting addons folder.
 rmdir /S /Q "%ROOT_DIR%server\game\csgo\addons\"
 
+:: If you have modifications in your cfg/settings/ folder they should be in custom_files as these are merged at the end
+echo Deleting cfg/settings folder.
+rmdir /S /Q "%ROOT_DIR%server\game\csgo\cfg\settings\"
+
 :: Patch server with mod files
 echo Copying mod files.
 xcopy "%ROOT_DIR%game\csgo\*" "%ROOT_DIR%server\game\csgo\" /K /S /E /I /H /Y >NUL

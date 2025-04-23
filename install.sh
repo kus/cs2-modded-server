@@ -210,6 +210,9 @@ fi
 # Delete addons folder as if we remove something later in git it won't get deleted
 rm -r /home/${user}/cs2/game/csgo/addons
 
+# Delete cfg/settings folder as if we remove something later in git it won't get deleted
+rm -r /home/${user}/cs2/game/csgo/cfg/settings
+
 echo "Downloading mod files..."
 wget --quiet https://github.com/kus/cs2-modded-server/archive/${BRANCH}.zip
 unzip -o -qq ${BRANCH}.zip
