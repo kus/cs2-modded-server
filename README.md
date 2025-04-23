@@ -118,7 +118,7 @@ Mod | Version | Why
 [AnnouncementBroadcaster](https://github.com/lengran/CS2AnnouncementBroadcaster) | `0.5` | Conditional messages, OnCommand, OnPlayerConnect, OnRoundStart, and TimerMsgs.
 [CS2-GameModifiers](https://github.com/Lewisscrivens/CS2-GameModifiers-Plugin) | `1.0.3` | CS2, but every round is a SURPRISE. Inspiration from [NadeKings video](https://www.youtube.com/watch?v=OQQBUFB56Iw).
 [CS2FunMatchPlugin](https://github.com/TitaniumLithium/CS2FunMatchPlugin) | `1.1.1` | Random fun mode every round
-[RollTheDice](https://github.com/Kandru/cs2-roll-the-dice) | `1.3.13` | Roll the dice to get either a positive or negative effect for the current round.
+[RollTheDice](https://github.com/Kandru/cs2-roll-the-dice) | `1.3.15` | Roll the dice to get either a positive or negative effect for the current round.
 [CS2-FixRandomSpawn](https://github.com/qstage/CS2-FixRandomSpawn) | `1.1.4` | Fixes ConVar `mp_randomspawn` for any game mode.
 [CS2-MutualScoringPlayers](https://github.com/qstage/CS2-MutualScoringPlayers) | `1.0.1` | Keeps score of kills between players.
 [CS2WarcraftMod](https://github.com/Wngui/CS2WarcraftMod) | `3.2.2` | An open-source Warcraft mod for CS2 featuring a fully-fledged RPG system.
