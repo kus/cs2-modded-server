@@ -1,0 +1,8 @@
+{
+  "invsim.announce": "Access your inventory at {0}.",
+  "invsim.ws_new": "Your inventory will be refreshed shortly.",
+  "invsim.ws_in_progress": "Your inventory is being refreshed.",
+  "invsim.ws_cooldown": "You cannot refresh your inventory right now. Please wait {0} seconds.",
+  "invsim.ws_completed": "Your inventory have been refreshed.",
+  "invsim.spray_cooldown": "You cannot spray right now. Please wait {0} seconds."
+}

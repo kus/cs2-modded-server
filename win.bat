@@ -119,6 +119,12 @@ xcopy "%ROOT_DIR%game\csgo\addons\windows\*" "%ROOT_DIR%server\game\csgo\" /K /S
 echo Copying custom files from "%custom_folder%".
 xcopy "%ROOT_DIR%%custom_folder%\*" "%ROOT_DIR%server\game\csgo\" /K /S /E /I /H /Y >NUL
 
+:: Merge your custom files secrets in (if they exist)
+if exist "%ROOT_DIR%custom_files_secret\" (
+    echo Copying custom files secret from "custom_files_secret".
+    xcopy "%ROOT_DIR%custom_files_secret\*" "%ROOT_DIR%server\game\csgo\" /K /S /E /I /H /Y >NUL
+)
+
 :: Start the server
 echo CS2 started.
 start /wait %ROOT_DIR%server\game\bin\win64\cs2.exe -dedicated -console -debug -condebug -conclearlog -usercon +game_type 0 +game_mode 0 +mapgroup mg_active +map de_dust2 -port %PORT% -ip 0.0.0.0 +net_public_adr %IP% -tickrate %TICKRATE% +sv_visiblemaxplayers %MAXPLAYERS% -authkey %API_KEY% +sv_setsteamaccount %STEAM_ACCOUNT% +sv_lan %LAN% +sv_password %SERVER_PASSWORD% +rcon_password %RCON_PASSWORD% +exec %EXEC%

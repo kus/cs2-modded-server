@@ -95,6 +95,7 @@ Mod | Version | Why
 [CS2_ExecAfter](https://github.com/kus/CS2_ExecAfter) | `1.0.0` | Executes a command after server event (i.e. OnMapStart) or a delay.
 [CS2 Remove Map Weapons](https://github.com/kus/CS2-Remove-Map-Weapons) | `1.0.1` | Remove weapons from the map in CS2 as `mp_weapons_allow_map_placed 0` does not work.
 [GameModeManager](https://github.com/nickj609/GameModeManager)| `1.0.59` | A simple Counter-Strike 2 server plugin that helps admins manage game modes and map groups.
+[cs2-inventory-simulator](https://github.com/ianlucas/cs2-inventory-simulator-plugin)| `19` | Use any Weapon, Knife, Gloves, Agent, Music Kit, Pin or Graffiti. [How?](#skin-changer)
 [MatchZy](https://github.com/shobhit-pathak/MatchZy) | `0.8.9` | MatchZy is a plugin for CS2 for running and managing practice/pugs/scrims/matches with easy configuration!
 [MapConfigurator](https://github.com/ManifestManah/MapConfigurator)| `1.0.2` | Allows you to quick and easily create unique configuration files for each map on your server.
 [K4-DamageInfo](https://github.com/KitsuneLab-Development/K4-DamageInfo) | `2.4.0` | Displays the amount of damage players have inflicted on the victim's HP and Armor, as well as the hit groups they have hit.
@@ -766,6 +767,34 @@ First open terminal and `cd` into the folder where you unzipped the zips i.e.: `
 `rsync -rhavz --exclude "._*" --exclude ".DS_Store" --partial --progress --stats ./addons/ /Users/kus/dev/personal/counter-strike/cs2-modded-server/game/csgo/addons/`
 
 If you are on Windows, from the [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp/releases) with runtime zip, you need to copy the `api`,`bin`, `dotnet` folders from the `/addons/counterstrikesharp` folder to `/game/csgo/addons/windows/counterstrikesharp` in this repo.
+
+### Skin changer
+
+On your server your players will have the ability to change the following:
+
+- Weapon
+  - Paint Kit, Wear, Seed, Name tag, StatTrak (with increment), and Stickers.
+- Knife
+  - Paint Kit, Wear, Seed, Name tag, and StatTrak (with increment).
+- Gloves
+  - Paint Kit, Wear, Seed.
+- Agent
+  - Patches.
+- Music Kit
+  - StatTrak (with increment). 
+- Pin
+- Graffiti
+
+Go to [https://inventory.cstrike.app](https://inventory.cstrike.app/) and click `Sign-in to sync` and log in with Steam (this needs to be the same Steam account you are playing on).
+
+Click `Craft Item` and create the items you want. You need to right click them and "Equip" them like you do in-game.
+
+On the server type `!ws` and it should update your skins to what you have set.
+
+> [!CAUTION]  
+> Your server can be banned by Valve for using this plugin (see their [server guidelines](https://blog.counter-strike.net/index.php/server_guidelines)). Use at your own risk.
+
+If you **DO NOT** want to use this plugin; change `FollowCS2ServerGuidelines` to `true` in `addons/counterstrikesharp/configs/core.json`. It is recommended to do this via [custom files](#custom-files).
 
 ### I run a Surf/KZ/Bhop server and want [MovementUnlocker](https://github.com/Source2ZE/MovementUnlocker) and [CS2Fixes-RampbugFix](https://github.com/Interesting-exe/CS2Fixes-RampbugFix) permanently on
 
