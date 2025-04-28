@@ -1,9 +1,10 @@
 {
-  "Version": 10,
+  "Version": 11,
   "RTV": {
     "Enabled": true,
     "Style": "center",
     "PerMap": false,
+    "HideHud": false,
     "HudMenu": false,
     "MinRounds": 0,
     "MinPlayers": 1,
@@ -23,6 +24,7 @@
     "NominationEnabled": true,
     "MaxNominationWinners": 1,
     "ChangeImmediately": false,
+    "TriggerKillsBeforeEnd": 13,
     "TriggerRoundsBeforeEnd": 2,
     "TriggerSecondsBeforeEnd": 120
   },
