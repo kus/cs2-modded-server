@@ -8,13 +8,13 @@
     ".NETCoreApp,Version=v8.0": {
       "InventorySimulator/1.0.0": {
         "dependencies": {
-          "CounterStrikeSharp.API": "1.0.271"
+          "CounterStrikeSharp.API": "1.0.316"
         },
         "runtime": {
           "InventorySimulator.dll": {}
         }
       },
-      "CounterStrikeSharp.API/1.0.271": {
+      "CounterStrikeSharp.API/1.0.316": {
         "dependencies": {
           "McMaster.NETCore.Plugins": "1.4.0",
           "Microsoft.CSharp": "4.7.0",
@@ -27,12 +27,13 @@
           "Serilog.Extensions.Logging": "8.0.0",
           "Serilog.Sinks.Console": "5.0.0",
           "Serilog.Sinks.File": "5.0.0",
-          "System.Data.DataSetExtensions": "4.5.0"
+          "System.Data.DataSetExtensions": "4.5.0",
+          "Tomlyn": "0.19.0"
         },
         "runtime": {
           "lib/net8.0/CounterStrikeSharp.API.dll": {
-            "assemblyVersion": "1.0.271.0",
-            "fileVersion": "1.0.271.0"
+            "assemblyVersion": "1.0.316.0",
+            "fileVersion": "1.0.316.0"
           }
         }
       },
@@ -530,6 +531,14 @@
         "dependencies": {
           "System.Text.Encodings.Web": "8.0.0"
         }
+      },
+      "Tomlyn/0.19.0": {
+        "runtime": {
+          "lib/net8.0/Tomlyn.dll": {
+            "assemblyVersion": "0.19.0.0",
+            "fileVersion": "0.19.0.0"
+          }
+        }
       }
     }
   },
@@ -539,12 +548,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "CounterStrikeSharp.API/1.0.271": {
+    "CounterStrikeSharp.API/1.0.316": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kw0BWwbNwItK5ALecJReCbiRNLp3oe7V7uMFq3iQl8h0i/Q2M14pZtPjJDxkWKT2gQgb8/y5agWSr/H+tBJz1A==",
-      "path": "counterstrikesharp.api/1.0.271",
-      "hashPath": "counterstrikesharp.api.1.0.271.nupkg.sha512"
+      "sha512": "sha512-KARlR7SFJifo6auAPafkPQsQZF63mDi7sF3oERVEhyBOcm0eInltlzW9H6dVQ0FGoBV5dmkS0kpNkmJTX9rAAA==",
+      "path": "counterstrikesharp.api/1.0.316",
+      "hashPath": "counterstrikesharp.api.1.0.316.nupkg.sha512"
     },
     "McMaster.NETCore.Plugins/1.4.0": {
       "type": "package",
@@ -867,6 +876,13 @@
       "sha512": "sha512-OdrZO2WjkiEG6ajEFRABTRCi/wuXQPxeV6g8xvUJqdxMvvuCCEk86zPla8UiIQJz3durtUEbNyY/3lIhS0yZvQ==",
       "path": "system.text.json/8.0.0",
       "hashPath": "system.text.json.8.0.0.nupkg.sha512"
+    },
+    "Tomlyn/0.19.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GlI2o8R8jbZIaE+YX6uA/VoAOH7zIxYeqxDm7jHW2hqUhuB+q19oKold35FkMuv8IZDoCqsTMolaBv2eBLBmrQ==",
+      "path": "tomlyn/0.19.0",
+      "hashPath": "tomlyn.0.19.0.nupkg.sha512"
     }
   }
 }
