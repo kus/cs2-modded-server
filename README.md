@@ -768,6 +768,16 @@ First open terminal and `cd` into the folder where you unzipped the zips i.e.: `
 
 If you are on Windows, from the [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp/releases) with runtime zip, you need to copy the `api`,`bin`, `dotnet` folders from the `/addons/counterstrikesharp` folder to `/game/csgo/addons/windows/counterstrikesharp` in this repo.
 
+### Quake Sounds
+
+Quake Sounds is enabled by default, so it will play the Quake Sound "HEADSHOT" for headshots, and for kill streaks different multi-kill sounds. Players can disable it by typing `!qs` in chat.
+
+If you **DO NOT** want to use it on your server, you need to modify two files using the [custom files](#custom-files) method.
+
+Copy `game/csgo/cfg/multiaddonmanager/multiaddonmanager.cfg` to `/custom_files/cfg/multiaddonmanager/multiaddonmanager.cfg` and delete `3461824328` from `mm_extra_addons` i.e.: so it reads `mm_extra_addons ""`. _This will stop it prompting your players to download the Quake Sound Pack when they join your server._
+
+Copy `game/csgo/cfg/settings/quake_sounds.cfg` to `/custom_files/cfg/settings/quake_sounds.cfg` and delete everything in the file so it is empty. _This will stop the plugin from loading._
+
 ### Skin changer
 
 On your server your players will have the ability to change the following:

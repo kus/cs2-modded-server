@@ -1,6 +1,6 @@
 {
     "enabled": true,
-    "debug": true,
+    "debug": false,
     "play_on": "player",
     "ignore_bots": true,
     "enable_center_message": true,
