@@ -8,6 +8,7 @@
   "k4.general.warmup": "ROZGRZEWKA",
   "k4.general.challenge": "WYZWANIE",
   "k4.general.random": "Losowo",
+  "k4.general.bot": "BOT",
 
   "k4.general.challenge.tie": "{silver}Wyzwanie pomiędzy {lime}{0}{silver} a {lime}{1}{silver} zakończyło się remisem.",
   "k4.general.challenge.winner": "{lime}{0}{silver} wygrał wyzwanie z {lime}{1}{silver}.",

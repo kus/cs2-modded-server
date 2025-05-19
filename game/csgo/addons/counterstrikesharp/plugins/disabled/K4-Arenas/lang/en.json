@@ -8,6 +8,7 @@
   "k4.general.warmup": "WARMUP",
   "k4.general.challenge": "CHALLENGE",
   "k4.general.random": "Random",
+  "k4.general.bot": "BOT",
 
   "k4.general.challenge.tie": "{silver}The challenge between {lime}{0}{silver} and {lime}{1}{silver} ended in a tie.",
   "k4.general.challenge.winner": "{lime}{0}{silver} won the challenge against {lime}{1}{silver}.",
