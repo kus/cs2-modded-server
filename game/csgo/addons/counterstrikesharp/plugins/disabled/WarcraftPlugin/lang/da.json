@@ -14,6 +14,7 @@
   "menu.class": "Warcraft Klasse Menu", // Warcraft Class Menu
   "menu.class.total.levels": "Samlet antal levels", // Total Levels
   "menu.class.level": "level", // level
+  "menu.class.locked": "Låst (lvl {0})", // Locked (lvl {0})
   "menu.skills.level": "level", // Level
   "menu.skills.available": "Level-up skills ({0} tilgængelige)", // Level up skills ({0} available)
   "class.pending.change": "{Green} Du vil spawne som {Orange}{0}{Green} i næste runde!", // {Green} You will spawn as {Orange}{0}{Green} next round!
@@ -126,6 +127,15 @@
   "tinker.ability.3": "Dronesværm", // Drone Swarm
   "tinker.ability.3.description": "Tilkald en sværm af angrebsdroner, der skader alle nærliggende fjender.", // Summon a swarm of attack drones that damage all nearby enemies.
 
+  "shadowblade.ability.0": "Skyggeskridt", // Shadowstep
+  "shadowblade.ability.0.description": "Chance for at teleportere bag fjenden, når du tager skade.", // Chance to teleport behind enemy when taking damage.
+  "shadowblade.ability.1": "Undvigelse", // Evasion
+  "shadowblade.ability.1.description": "Chance for helt at undgå indkommende skade.", // Chance to completely dodge incoming damage.
+  "shadowblade.ability.2": "Giftangreb", // Venom Strike
+  "shadowblade.ability.2.description": "Dine angreb forgifter fjender og giver skade over tid.", // Your attacks poison enemies, dealing damage over time.
+  "shadowblade.ability.3": "Skyggernes Kappe", // Cloak of Shadows
+  "shadowblade.ability.3.description": "Bliv usynlig i en kort periode.", // Become invisible for a short duration.
+
   //Stock class extras
   "mage.frozen": "{Blue}[FROSNET]{Default}", // {Blue}[FROZEN]{Default}
   "necromancer.cheatdeath": "{DarkRed}Du har snydt døden, for nu...", // {DarkRed}You have cheated death, for now...
@@ -140,5 +150,10 @@
   "shapeshifter.disguise.failed": "{Red}Forklædning mislykkedes{Default}, ingen fjender at kopiere", // {Red}Disguise failed{Default}, no enemies to copy
   "shapeshifter.disguise": "{Blue}Forklædt{Default} som {0}", // {Blue}Disguised{Default} as {0}
   "shapeshifter.disguise.revealed": "{Red}Forklædning{Default} brudt!", // {Red}Disguise{Default} broken!
-  "shapeshifter.spotted": "[Opdaget]" // [Spotted]
+  "shapeshifter.spotted": "[Opdaget]", // [Spotted]
+  "shadowblade.evaded": "{Green}Undveg {LightYellow}{0}{Green} skade!", // Evaded {0} damage!
+  "shadowblade.evaded.attacker": "{LightYellow}{0} {Green} undveg dit angreb!", // {0} Evaded your attack!
+  "shadowblade.shadowstep": "{DarkBlue}Skyggeskridt!", // Shadowstep!
+  "shadowblade.venomstrike": "{Green}Forgiftede {LightYellow}{0} {Green}for {DarkRed}{1} {Green}skade!", // Poisoned {0} for {1} damage!
+  "shadowblade.venomstrike.victim": "{Green}Forgiftet for {DarkRed}{0} {Green}skade!" // Poisoned for {0} damage!
 }

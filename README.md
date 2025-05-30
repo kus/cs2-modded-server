@@ -122,7 +122,7 @@ Mod | Version | Why
 [RollTheDice](https://github.com/Kandru/cs2-roll-the-dice) | `1.3.15` | Roll the dice to get either a positive or negative effect for the current round.
 [CS2-FixRandomSpawn](https://github.com/qstage/CS2-FixRandomSpawn) | `1.1.4` | Fixes ConVar `mp_randomspawn` for any game mode.
 [CS2-MutualScoringPlayers](https://github.com/qstage/CS2-MutualScoringPlayers) | `1.0.1` | Keeps score of kills between players.
-[CS2WarcraftMod](https://github.com/Wngui/CS2WarcraftMod) | `3.2.3` | An open-source Warcraft mod for CS2 featuring a fully-fledged RPG system.
+[CS2WarcraftMod](https://github.com/Wngui/CS2WarcraftMod) | `3.2.6` | An open-source Warcraft mod for CS2 featuring a fully-fledged RPG system.
 [cs2-advanced-weapon-system](https://github.com/schwarper/cs2-advanced-weapon-system) | `1.3` | An advanced weapon system that gives full control over weapon attributes, dynamic adjustments to weapon behaviour, restrictions and advanced customisation.
 [cs2-OneInTheChamber](https://github.com/ShookEagle/cs2-OneInTheChamber) | `1.0.0` | One in the Chamber game mode.
 [cs2-quake-sounds](https://github.com/Kandru/cs2-quake-sounds) | `1.0.6` | Quake Sounds on multi kills.
