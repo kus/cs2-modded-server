@@ -127,7 +127,12 @@ if exist "%ROOT_DIR%custom_files_secret\" (
 
 :: Start the server
 echo CS2 started.
+
+:: Start server as seperate process
 start /wait %ROOT_DIR%server\game\bin\win64\cs2.exe -dedicated -console -debug -condebug -conclearlog -usercon +game_type 0 +game_mode 0 +mapgroup mg_active +map de_dust2 -port %PORT% -ip 0.0.0.0 +net_public_adr %IP% -tickrate %TICKRATE% +sv_visiblemaxplayers %MAXPLAYERS% -authkey %API_KEY% +sv_setsteamaccount %STEAM_ACCOUNT% +sv_lan %LAN% +sv_password %SERVER_PASSWORD% +rcon_password %RCON_PASSWORD% +exec %EXEC%
+
+:: Start server and capture output to log for debugging (commands must be entered in blank CS2 window) (Uncomment below and comment out above start command)
+:: powershell -Command "& '%ROOT_DIR%server\game\bin\win64\cs2.exe' -dedicated -console -debug -condebug -conclearlog -usercon +game_type 0 +game_mode 0 +mapgroup mg_active +map de_dust2 -port %PORT% -ip 0.0.0.0 +net_public_adr %IP% -tickrate %TICKRATE% +sv_visiblemaxplayers %MAXPLAYERS% -authkey %API_KEY% +sv_setsteamaccount %STEAM_ACCOUNT% +sv_lan %LAN% +sv_password %SERVER_PASSWORD% +rcon_password %RCON_PASSWORD% +exec %EXEC% 2>&1 | Tee-Object -FilePath 'console.log'"
 echo WARNING: CS2 closed or crashed.
 
 :end
