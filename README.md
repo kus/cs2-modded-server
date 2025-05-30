@@ -2,6 +2,11 @@
 
 If you are looking for the CS:GO version you can still access that [here](https://github.com/kus/csgo-modded-server/tree/csgo).
 
+> [!NOTE]  
+> **MultiAddonManager** is currently **disabled** as it is causing [issues with certain maps](https://github.com/Source2ZE/MultiAddonManager/issues/34). When it is fixed it will be enabled again.
+> This means **QuakeSounds** is also disabled as it requires it to function.
+> If you want to enable **MultiAddonManager** as your server depends on it, do it via [custom files](#custom-files). Copy `game/csgo/addons/multiaddonmanager/multiaddonmanager.vdf` to `/custom_files/addons/metamod/multiaddonmanager.vdf`
+
 ## About
 
 A single modded Counter-Strike 2 (CS2) Modded Dedicated Server that you can [change the active mod](#changing-game-modes) on the server from chat or server console. [Maps are preconfigured per game mode](#what-maps-are-preconfigured-with-each-mode) and change when the game mode changes.
