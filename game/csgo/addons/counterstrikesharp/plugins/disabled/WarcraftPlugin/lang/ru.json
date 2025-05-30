@@ -14,6 +14,7 @@
   "menu.class": "Меню классов Warcraft", // Warcraft Class Menu
   "menu.class.total.levels": "Всего уровней", // Total Levels
   "menu.class.level": "уровень", // level
+  "menu.class.locked": "Закрыто (ур. {0})", // Locked (lvl {0})
   "menu.skills.level": "Уровень", // Level
   "menu.skills.available": "Улучшить навыки ({0} доступно)", // Level up skills ({0} available)
   "class.pending.change": "{Green} Вы появитесь как {Orange}{0}{Green} в следующем раунде!", // {Green} You will spawn as {Orange}{0}{Green} next round!
@@ -126,6 +127,15 @@
   "tinker.ability.3": "Рой дронов", // Drone Swarm
   "tinker.ability.3.description": "Вызывает рой атакующих дронов, которые наносят урон всем ближайшим врагам.", // Summon a swarm of attack drones that damage all nearby enemies.
 
+  "shadowblade.ability.0": "Шаг в тень", // Shadowstep
+  "shadowblade.ability.0.description": "Шанс телепортироваться за спину врагу при получении урона.", // Chance to teleport behind enemy when taking damage.
+  "shadowblade.ability.1": "Уклонение", // Evasion
+  "shadowblade.ability.1.description": "Шанс полностью уклониться от входящего урона.", // Chance to completely dodge incoming damage.
+  "shadowblade.ability.2": "Ядовитый удар", // Venom Strike
+  "shadowblade.ability.2.description": "Ваши атаки отравляют врагов, нанося урон со временем.", // Your attacks poison enemies, dealing damage over time.
+  "shadowblade.ability.3": "Плащ теней", // Cloak of Shadows
+  "shadowblade.ability.3.description": "Становитесь невидимым на короткое время.", // Become invisible for a short duration.
+
   //Stock class extras
   "mage.frozen": "{Blue}[ЗАМОРОЖЕН]{Default}", // {Blue}[FROZEN]{Default}
   "necromancer.cheatdeath": "{DarkRed}Вы избежали смерти, пока что...", // {DarkRed}You have cheated death, for now...
@@ -140,5 +150,10 @@
   "shapeshifter.disguise.failed": "{Red}Маскировка не удалась{Default}, некому подражать", // {Red}Disguise failed{Default}, no enemies to copy
   "shapeshifter.disguise": "{Blue}Замаскирован{Default} как {0}", // {Blue}Disguised{Default} as {0}
   "shapeshifter.disguise.revealed": "{Red}Маскировка{Default} раскрыта!", // {Red}Disguise{Default} broken!
-  "shapeshifter.spotted": "[Обнаружен]" // [Spotted]
+  "shapeshifter.spotted": "[Обнаружен]", // [Spotted]
+  "shadowblade.evaded": "{Green}Уклонение от {LightYellow}{0}{Green} урона!", // Evaded {0} damage!
+  "shadowblade.evaded.attacker": "{LightYellow}{0} {Green} уклонился от вашей атаки!", // {0} Evaded your attack!
+  "shadowblade.shadowstep": "{DarkBlue}Шаг в тень!", // Shadowstep!
+  "shadowblade.venomstrike": "{Green}Отравил {LightYellow}{0} {Green}на {DarkRed}{1} {Green}урона!", // Poisoned {0} for {1} damage!
+  "shadowblade.venomstrike.victim": "{Green}Отравлен на {DarkRed}{0} {Green}урона!" // Poisoned for {0} damage!
 }

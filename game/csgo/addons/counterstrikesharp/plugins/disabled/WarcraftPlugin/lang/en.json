@@ -14,6 +14,7 @@
   "menu.class": "Warcraft Class Menu",
   "menu.class.total.levels": "Total Levels",
   "menu.class.level": "level",
+  "menu.class.locked": "Locked (lvl {0})",
   "menu.skills.level": "Level",
   "menu.skills.available": "Level up skills ({0} available)",
   "class.pending.change": "{Green} You will spawn as {Orange}{0}{Green} next round!",
@@ -126,6 +127,15 @@
   "tinker.ability.3": "Drone Swarm",
   "tinker.ability.3.description": "Summon a swarm of attack drones that damage all nearby enemies.",
 
+  "shadowblade.ability.0": "Shadowstep",
+  "shadowblade.ability.0.description": "Chance to teleport behind enemy when taking damage.",
+  "shadowblade.ability.1": "Evasion",
+  "shadowblade.ability.1.description": "Chance to completely dodge incoming damage.",
+  "shadowblade.ability.2": "Venom Strike",
+  "shadowblade.ability.2.description": "Your attacks poison enemies, dealing damage over time.",
+  "shadowblade.ability.3": "Cloak of Shadows",
+  "shadowblade.ability.3.description": "Become invisible for a short duration.",
+
   //Stock class extras
   "mage.frozen": "{Blue}[FROZEN]{Default}",
   "necromancer.cheatdeath": "{DarkRed}You have cheated death, for now...",
@@ -140,5 +150,10 @@
   "shapeshifter.disguise.failed": "{Red}Disguise failed{Default}, no enemies to copy",
   "shapeshifter.disguise": "{Blue}Disguised{Default} as {0}",
   "shapeshifter.disguise.revealed": "{Red}Disguise{Default} broken!",
-  "shapeshifter.spotted": "[Spotted]"
+  "shapeshifter.spotted": "[Spotted]",
+  "shadowblade.evaded": "{Green}Evaded {LightYellow}{0}{Green} damage!",
+  "shadowblade.evaded.attacker": "{LightYellow}{0} {Green} Evaded your attack!",
+  "shadowblade.shadowstep": "{DarkBlue}Shadowstep!",
+  "shadowblade.venomstrike": "{Green}Poisoned {LightYellow}{0} {Green}for {DarkRed}{1} {Green}damage!",
+  "shadowblade.venomstrike.victim": "{Green}Poisoned for {DarkRed}{0} {Green}damage!"
 }

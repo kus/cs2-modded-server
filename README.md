@@ -2,6 +2,11 @@
 
 If you are looking for the CS:GO version you can still access that [here](https://github.com/kus/csgo-modded-server/tree/csgo).
 
+> [!NOTE]  
+> **MultiAddonManager** is currently **disabled** as it is causing [issues with certain maps](https://github.com/Source2ZE/MultiAddonManager/issues/34). When it is fixed it will be enabled again.
+> This means **QuakeSounds** is also disabled as it requires it to function.
+> If you want to enable **MultiAddonManager** as your server depends on it, do it via [custom files](#custom-files). Copy `game/csgo/addons/multiaddonmanager/multiaddonmanager.vdf` to `/custom_files/addons/metamod/multiaddonmanager.vdf`
+
 ## About
 
 A single modded Counter-Strike 2 (CS2) Modded Dedicated Server that you can [change the active mod](#changing-game-modes) on the server from chat or server console. [Maps are preconfigured per game mode](#what-maps-are-preconfigured-with-each-mode) and change when the game mode changes.
@@ -86,12 +91,12 @@ Getting up and running:
 
 Mod | Version | Why
 --- | --- | ---
-[Metamod:Source](https://www.metamodsource.net/downloads.php?branch=dev) | `2.0.0-1348` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
+[Metamod:Source](https://www.metamodsource.net/downloads.php?branch=dev) | `2.0.0-1350` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
 [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `1.0.318` | Attempts to implement a .NET Core scripting layer on top of a Metamod Source Plugin, allowing developers to create plugins that interact with the game server in a modern language (C#)
 [MultiAddonManager](https://github.com/Source2ZE/MultiAddonManager) | `1.4` | Allows you to use multiple workshop addons at once and have clients download them
 [ServerListPlayersFix](https://github.com/Source2ZE/ServerListPlayersFix) | `1.0.1-Rebuild-04102024` | Fixes players not showing up in the server browser
 [MovementUnlocker](https://github.com/Source2ZE/MovementUnlocker)| `1.4` | Removes max speed limitation from players on the ground, feels like CS:S [How?](#i-run-a-surfkzbhop-server-and-want-movementunlocker-and-cs2fixes-rampbugfix-permanently-on)
-[CS2Fixes-RampbugFix](https://github.com/Interesting-exe/CS2Fixes-RampbugFix)| `2024-11-06` | Minimizes rampbugs (needs to be enabled via `!settings` [How?](#i-run-a-surfkzbhop-server-and-want-movementunlocker-and-cs2fixes-rampbugfix-permanently-on))
+[CS2Fixes-RampbugFix](https://github.com/Interesting-exe/CS2Fixes-RampbugFix)| `2025-05-22` | Minimizes rampbugs (needs to be enabled via `!settings` [How?](#i-run-a-surfkzbhop-server-and-want-movementunlocker-and-cs2fixes-rampbugfix-permanently-on))
 [CS2_ExecAfter](https://github.com/kus/CS2_ExecAfter) | `1.0.0` | Executes a command after server event (i.e. OnMapStart) or a delay.
 [CS2 Remove Map Weapons](https://github.com/kus/CS2-Remove-Map-Weapons) | `1.0.1` | Remove weapons from the map in CS2 as `mp_weapons_allow_map_placed 0` does not work.
 [GameModeManager](https://github.com/nickj609/GameModeManager)| `1.0.60` | A simple Counter-Strike 2 server plugin that helps admins manage game modes and map groups.
@@ -104,7 +109,7 @@ Mod | Version | Why
 [SharpTimer](https://github.com/Letaryat/poor-sharptimer)| `0.3.1w` | SharpTimer is a simple Surf/KZ/Bhop/MG/Deathrun/etc CS2 Timer plugin
 [STFixes](https://github.com/rcnoob/STFixes)| `1.0.4` | A CounterStrikeSharp plugin with common fixes and features for SharpTimer servers
 [GunGame](https://github.com/ssypchenko/cs2-gungame)| `1.1.2` | GunGame mode on Counter Strike Sharp
-[K4-Arenas](https://github.com/KitsuneLab-Development/K4-Arenas)| `2.0.5` | All in one arena plugin, that you can use to have a ladder type gameplay. Support all map, 2v2/3v3/etc [How?](#enable-k4-arenas)
+[K4-Arenas](https://github.com/KitsuneLab-Development/K4-Arenas)| `2.0.6` | All in one arena plugin, that you can use to have a ladder type gameplay. Support all map, 2v2/3v3/etc [How?](#enable-k4-arenas)
 [CS2 Retakes](https://github.com/B3none/cs2-retakes)| `2.1.1` | CS2 implementation of retakes. Based on the version for CS:GO by Splewis.
 [CS2 Retakes Shared](https://github.com/B3none/cs2-retakes)| `2.1.1` | Shared library for CS2 Retakes.
 [CS2 Instadefuse](https://github.com/B3none/cs2-instadefuse)| `2.0.0` | Allows a CT to instantly defuse the bomb when nothing can prevent defusal. Written in C# for CounterStrikeSharp.
@@ -122,7 +127,7 @@ Mod | Version | Why
 [RollTheDice](https://github.com/Kandru/cs2-roll-the-dice) | `1.3.15` | Roll the dice to get either a positive or negative effect for the current round.
 [CS2-FixRandomSpawn](https://github.com/qstage/CS2-FixRandomSpawn) | `1.1.4` | Fixes ConVar `mp_randomspawn` for any game mode.
 [CS2-MutualScoringPlayers](https://github.com/qstage/CS2-MutualScoringPlayers) | `1.0.1` | Keeps score of kills between players.
-[CS2WarcraftMod](https://github.com/Wngui/CS2WarcraftMod) | `3.2.3` | An open-source Warcraft mod for CS2 featuring a fully-fledged RPG system.
+[CS2WarcraftMod](https://github.com/Wngui/CS2WarcraftMod) | `3.2.6` | An open-source Warcraft mod for CS2 featuring a fully-fledged RPG system.
 [cs2-advanced-weapon-system](https://github.com/schwarper/cs2-advanced-weapon-system) | `1.3` | An advanced weapon system that gives full control over weapon attributes, dynamic adjustments to weapon behaviour, restrictions and advanced customisation.
 [cs2-OneInTheChamber](https://github.com/ShookEagle/cs2-OneInTheChamber) | `1.0.0` | One in the Chamber game mode.
 [cs2-quake-sounds](https://github.com/Kandru/cs2-quake-sounds) | `1.0.6` | Quake Sounds on multi kills.
