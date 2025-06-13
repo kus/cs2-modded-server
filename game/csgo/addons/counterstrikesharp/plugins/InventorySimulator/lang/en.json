@@ -4,5 +4,8 @@
   "invsim.ws_in_progress": "Your inventory is being refreshed.",
   "invsim.ws_cooldown": "You cannot refresh your inventory right now. Please wait {0} seconds.",
   "invsim.ws_completed": "Your inventory have been refreshed.",
-  "invsim.spray_cooldown": "You cannot spray right now. Please wait {0} seconds."
+  "invsim.spray_cooldown": "You cannot spray right now. Please wait {0} seconds.",
+  "invsim.login_in_progress": "Trying to authenticate to your inventory...",
+  "invsim.login": "Access {0} to view your inventory.",
+  "invsim.login_failed": "Unable to authenticate to your inventory, please try again later."
 }
