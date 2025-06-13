@@ -19,8 +19,11 @@ echo If you want to quit, close the CS2 window and type Y followed by Enter.
 
 :: Ensure steamcmd exists
 if not exist "%ROOT_DIR%steamcmd\steamcmd.exe" (
-    echo steamcmd\steamcmd.exe does not exist!
-    goto end
+    mkdir "%ROOT_DIR%steamcmd"
+    echo Downloading SteamCMD
+    powershell -Command "Invoke-WebRequest -Uri https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip -OutFile '%ROOT_DIR%steamcmd\steamcmd.zip'"
+    powershell -Command "Expand-Archive -Path '%ROOT_DIR%steamcmd\steamcmd.zip' -DestinationPath '%ROOT_DIR%steamcmd'"
+    del "%ROOT_DIR%steamcmd\steamcmd.zip"
 )
 
 :: Use SteamCMD to download CS2
