@@ -22,7 +22,7 @@ Each game mode has a hand full of maps preset so you are ready to go and it's [e
 - Retakes
 - Executes
 - One In The Chamber
-- 1v1 (with arenas) ([Steam API key](#playing-workshop-mapscollections) & [MySQL](#enable-k4-arenas) required)
+- 1v1 (with arenas) ([Steam API key](#playing-workshop-mapscollections) required)
 - ScoutzKnivez ([Steam API key](#playing-workshop-mapscollections) required)
 - KZ ([Steam API key](#playing-workshop-mapscollections) required)
 - BHop ([Steam API key](#playing-workshop-mapscollections) required)
@@ -824,13 +824,17 @@ To check type `meta list` in console and you should see `Movement Unlocker` and 
 
 If you only want to turn it on ad hoc then in chat use the command `!settings` > `Enable` > `Surf` and it will load them and change the map to de_dust to avoid the server crashing, then change the map back to what you want with `!maps`.
 
-### Enable K4 Arenas
+### Setup MySQL database
 
-K4 Arenas requires a MySQL database (5.2 or higher) to function. Setting up a MySQL Database is outside the scope of this repo.
+Setting up a MySQL Database is outside the scope of this repo.
 
-You can set one up yourself or use a hosted one (there are also some free options such as [filess.io](https://filess.io/#DBMS) [aiven.io](https://aiven.io/pricing?product=mysql) [freemysqlhosting.net](https://www.freemysqlhosting.net/) [db4free.net](https://www.db4free.net/) but reliability isn't guaranteed).
+It is recommended to use 5.2 or higher.
 
-Once you have the connection details; the config file is located at `/game/csgo/addons/counterstrikesharp/configs/plugins/K4-Arenas/K4-Arenas.json` which you would put in `/custom_files/addons/counterstrikesharp/configs/plugins/K4-Arenas/K4-Arenas.json` so it is not overwritten/deleted and open the file `K4-Arenas.json` and add your database connection details to `"database-settings"`.
+You can set one up yourself or use a hosted one (there are also some free options such as [filess.io](https://filess.io/#DBMS) [aiven.io](https://aiven.io/pricing?product=mysql) but reliability isn't guaranteed).
+
+Once you have the connection details; the config files are generally located in `/game/csgo/addons/counterstrikesharp/configs/plugins/` which you would need to update via [custom files](#custom-files).
+
+For this example; I'll use K4-Arenas. The config is located at `/game/csgo/addons/counterstrikesharp/configs/plugins/K4-Arenas/K4-Arenas.json` which you would put in `/custom_files/addons/counterstrikesharp/configs/plugins/K4-Arenas/K4-Arenas.json` so it is not overwritten/deleted and open the file `K4-Arenas.json` and add your database connection details to `"database-settings"`.
 
 > [!TIP]
 > If `K4-Arenas.json` does not exist, copy `K4-Arenas.json.example` and remove `.example` from the name and use that.
