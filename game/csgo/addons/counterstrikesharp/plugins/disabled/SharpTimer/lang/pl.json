@@ -60,8 +60,6 @@
   "hud_hidden": "Hud zostal: {red}Ukryte",
   "keys_shown": "Klawisze sa teraz: {green}Pokazane",
   "keys_hidden": "Klawisze sa teraz: {red}Ukryte",
-  "jumpstats_shown": "Statystyki skokow zostaly: {green}Pokazane",
-  "jumpstats_hidden": "Statystyki skokow zostaly: {red}Ukryte",
   "sounds_on": "Dzwieki zostaly: {green}Wlaczone",
   "sounds_off": "Dzwieki zostaly: {red}Wylaczone",
 
@@ -94,10 +92,6 @@
   "goto_player": "Przeniesiono do {lime}{0}",
   "goto_player_not_found": "{lightred}Gracz pod dana nazwa nie zostal znaleziony. Jezeli nazwa posiada spacje sprobuj uzyc: {lime}!goto 'some name'",
 
-  //jumpstats
-  "js_msg1": "{lime}JS: {grey} {0}: {1}{2}{grey} | Pre: {lime}{3}{grey} | Max: {lime}{4}{grey} | Strafes: {lime}{5}",
-  "js_msg2": "{grey}Height: {lime}{0}{grey} | Width: {lime}{1}{grey} | WT: {lime}{2}{grey} | Sync: {lime}{3}%",
-
   //other
   "command_cooldown": "Odczekaj zanim ponownie skorzystasz z komendy!",
   "error_occured": "{lightred}Wystapil blad.",
@@ -108,10 +102,12 @@
   "connected_message": "Gracz {red}{0} {default}połączył się {1} raz!",
   "connected_message_first": "Gracz {red}{0} {default}połączył się po raz pierwszy!",
   "disconnect_message": "Gracz {red}{0} {default}rozłączył się!",
+  "afk_message": "{red}Za chwilę zostaniesz przeniesiony do AFK!",
+  "start_speed": "Prędkość startowa:",
   
-    // Error
+  // Error
   "error_savingtime": "Błąd zapisywania czasu: Czas gracza wynosi 0 ticks",
-  "error_stagenotmatchfinalone": "Błąd zapisywania czasu: Aktualny etap gracza nie pasuje do ostatniego {0}",
+  "error_stagenotmatchfinalone": "Błąd zapisywania czasu: Aktualny etap gracza nie pasuje do ostatniego",
   "error_checkpointnotmatchfinalone": "Błąd zapisywania czasu: Aktualny punkt kontrolny gracza nie pasuje do ostatniego {0}",
 
   // help console Localizer
@@ -143,7 +139,6 @@
   "console_replaypb": "• !replaypb (css_replaypb) - Odtwarza twój PB na aktualnej mapie",
   "console_replaybonus": "• !replaybonus / !replayb [1-10] [bonus stage] (css_replaybonus) - Odtwarza jeden z 10 najlepszych rekordów bonusowych",
   "console_replaybonuspb": "• !replaybonuspb / !replaybpb (css_replaybonuspb) - Odtwarza twój PB na bonusie",
-  "console_jumpstats": "• !jumpstats (css_jumpstats) - Przełącza JumpStats",
   "console_hideweapon": "• !hideweapon (css_hideweapon) - Przełącza widoczność broni",
   "console_spec": "• !spec (css_spec) - Przenosi cię do widza lub z powrotem do drużyny",
   "console_styles": "• !styles (css_styles) - Wyświetla wszystkie style"

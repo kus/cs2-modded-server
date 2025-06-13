@@ -67,8 +67,6 @@
   "hud_hidden": "HUD: {red}숨겨짐",
   "keys_shown": "키: {green}표시됨",
   "keys_hidden": "키: {red}숨겨짐",
-  "jumpstats_shown": "점프 통계: {green}표시됨",
-  "jumpstats_hidden": "점프 통계: {red}숨겨짐",
   "sounds_on": "소리: {green}켜짐",
   "sounds_off": "소리: {red}꺼짐",
 
@@ -102,10 +100,6 @@
   "goto_player": "{lime}{0}으로 이동 중",
   "goto_player_not_found": "{lightred}플레이어 이름을 찾을 수 없습니다! 이름에 공백이 포함된 경우 {lime}!goto '이름'을 시도해보세요",
 
-  // 점프 통계
-  "js_msg1": "{lime}JS: {grey} {0}: {1}{2}{grey} | Pre: {lime}{3}{grey} | Max: {lime}{4}{grey} | Strafes: {lime}{5}",
-  "js_msg2": "{grey}높이: {lime}{0}{grey} | 폭: {lime}{1}{grey} | WT: {lime}{2}{grey} | 동기화: {lime}{3}%",
-
   // 광고 메시지
   "ad_see_all_commands": "{primary}!sthelp{default}를 입력하여 모든 명령어를 확인하세요!",
   "ad_replay_pb": "{primary}!replaypb{default}를 입력하여 자신의 최고 기록 리플레이를 시청하세요!",
@@ -128,7 +122,6 @@
   "ad_hud": "{primary}!hud{default}를 입력하여 타이머 HUD를 켜거나 끄세요!",
   "ad_keys": "{primary}!keys{default}를 입력하여 키 HUD를 켜거나 끄세요!",
   "ad_styles": "{primary}!styles{default}를 입력하여 사용 가능한 모든 스타일을 확인하세요!",
-  "ad_jumpstats": "{primaryChatColor}!jumpstats{default}를 입력하여 점프 통계를 켜거나 끄세요!",
 
   // 기타
   "command_cooldown": "명령어 쿨다운 중입니다. 잠시 기다리세요...",
@@ -139,10 +132,11 @@
   "connect_message": "{red}{0} {default}플레이어가 연결되었습니다!",
   "disconnect_message": "{red}{0} {default}플레이어가 연결이 끊어졌습니다!",
   "afk_message": "{red}곧 AFK로 이동합니다!",
+  "start_speed": "시작 속도:",
 
   // 오류
   "error_savingtime": "시간 저장 오류: 플레이어 시간이 0 틱입니다",
-  "error_stagenotmatchfinalone": "시간 저장 오류: 플레이어의 현재 스테이지가 마지막 스테이지와 일치하지 않습니다{0}",
+  "error_stagenotmatchfinalone": "시간 저장 오류: 플레이어의 현재 스테이지가 마지막 스테이지와 일치하지 않습니다",
   "error_checkpointnotmatchfinalone": "시간 저장 오류: 플레이어의 현재 체크포인트가 마지막 체크포인트와 일치하지 않습니다{0}",
   
   // 도움말 콘솔 지역화
@@ -174,7 +168,6 @@
   "console_replaypb": "• !replaypb (css_replaypb) - 현재 맵의 PB를 재생합니다",
   "console_replaybonus": "• !replaybonus / !replayb [1-10] [보너스 스테이지] (css_replaybonus) - 서버 상위 10개 보너스 기록을 재생합니다",
   "console_replaybonuspb": "• !replaybonuspb / !replaybpb (css_replaybonuspb) - 보너스의 PB를 재생합니다",
-  "console_jumpstats": "• !jumpstats (css_jumpstats) - 점프 통계를 전환합니다",
   "console_hideweapon": "• !hideweapon (css_hideweapon) - 무기 가시성을 전환합니다",
   "console_spec": "• !spec (css_spec) - 관전자 모드로 이동하거나 팀으로 돌아갑니다",
   "console_styles": "• !styles (css_styles) - 모든 스타일을 나열합니다"

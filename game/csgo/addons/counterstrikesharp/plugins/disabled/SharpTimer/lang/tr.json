@@ -64,8 +64,6 @@
     "hud_hidden": "Hud şu anda: {red}Gizli",
     "keys_shown": "Tușlar şu anda: {green}Gösteriliyor",
     "keys_hidden": "Tușlar şu anda: {red}Gizli",
-    "jumpstats_shown": "Jump Stat'ları şu anda: {green}Gösteriliyor",
-    "jumpstats_hidden": "Jump Stat'ları şu anda: {red}Gizli",
     "sounds_on": "Sesler şu anda: {green}Açık",
     "sounds_off": "Sesler şu anda: {red}Kapalı",
   
@@ -99,10 +97,6 @@
     "goto_player": "Oyuncuya {lime}{0} ışınlanılıyor",
     "goto_player_not_found": "{lightred}Oyuncu adı bulunamadı! Eğer adı boşluk içeriyorsa {lime}!goto 'örnek kullanım' şeklinde deneyin",
   
-    //jumpstat mesajları
-    "js_msg1": "{lime}JS: {grey} {0}: {1}{2}{grey} | Pre: {lime}{3}{grey} | Max: {lime}{4}{grey} | Strafes: {lime}{5}",
-    "js_msg2": "{grey}Yükseklik: {lime}{0}{grey} | Genişlik: {lime}{1}{grey} | WT: {lime}{2}{grey} | Senkronizasyon: {lime}{3}%", 
-  
     //Reklam mesajları
     "ad_see_all_commands": "{primary}Tüm komutları görmek için !sthelp yazın{default}",
     "ad_replay_pb": "Kişisel en iyi rekorunuzun replayını izlemek için {primary}!replaypb yazın{default}",
@@ -125,7 +119,6 @@
     "ad_hud": "Zamanlayıcı HUD'unu açmak/kapamak için {primary}!hud yazın{default}",
     "ad_keys": "HUD tuşlarını açmak/kapamak için {primary}!keys yazın{default}",
     "ad_styles": "Mevcut stilleri listelemek için {primary}!styles yazın{default}",
-    "ad_jumpstats": "JumpStats'ı açmak/kapamak için {primaryChatColor}!jumpstats yazın{default}",
   
     //Diğer
     "command_cooldown": "Komut bekleme süresinde. Sakin olun...",
@@ -138,10 +131,11 @@
     "connected_message_first": "Oyuncu {red}{0} {default} ilk kez bağlandı!",
     "disconnect_message": "Oyuncu {red}{0} {default}çıktı!",
     "afk_message": "{red}AFK'ya alınmak üzeresiniz!",
+    "start_speed": "Başlangıç hızı:",
   
     //Hata
     "error_savingtime": "Zaman kaydedilirken hata: Oyuncu zamanı 0 tick",
-    "error_stagenotmatchfinalone": "Zaman kaydedilirken hata: Oyuncunun geçerli stage'i son stage ile uyuşmuyor{0}",
+    "error_stagenotmatchfinalone": "Zaman kaydedilirken hata: Oyuncunun geçerli stage'i son stage ile uyuşmuyor",
     "error_checkpointnotmatchfinalone": "Zaman kaydedilirken hata: Oyuncunun geçerli kontrol noktası son kontrol noktası ile uyuşmuyor{0}",
     
     //Yardım konsolu Yerelleştirici
@@ -173,7 +167,6 @@
     "console_replaypb": "• !replaypb (css_replaypb) - Mevcut haritada kişisel en iyi zamanınızı tekrar oynatır",
     "console_replaybonus": "• !replaybonus / !replayb [1-10] [bonus numarası] (css_replaybonus) - Bonus bölgesindeki sunucu replayını tekrar oynatır",
     "console_replaybonuspb": "• !replaybonuspb / !replaybpb (css_replaybonuspb) - Bonus bölgesindeki kişisel en iyi zamanınızı tekrar oynatır",
-    "console_jumpstats": "• !jumpstats (css_jumpstats) - JumpStats'ı açar/kapar",
     "console_hideweapon": "• !hideweapon (css_hideweapon) - Silah görünürlüğünü açar/kapar",
     "console_spec": "• !spec (css_spec) - Sizi izleyiciye veya takıma geri taşır",
     "console_styles": "• !styles (css_styles) - Mevcut stilleri listeler"

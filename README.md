@@ -106,7 +106,7 @@ Mod | Version | Why
 [K4-DamageInfo](https://github.com/KitsuneLab-Development/K4-DamageInfo) | `2.4.0` | Displays the amount of damage players have inflicted on the victim's HP and Armor, as well as the hit groups they have hit.
 [SimpleAdmin](https://github.com/connercsbn/SimpleAdmin/)| `0.1.2` | Adds basic administrator functions
 [CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon)| `1.2.0` | This is a rudimentary implementation of a RCON plugin for CS2 using CounterStrikeSharp as RCON does not work whilst connected to the server
-[SharpTimer](https://github.com/Letaryat/poor-sharptimer)| `0.3.1w` | SharpTimer is a simple Surf/KZ/Bhop/MG/Deathrun/etc CS2 Timer plugin
+[SharpTimer](https://github.com/Letaryat/poor-sharptimer)| `0.3.1x` | SharpTimer is a simple Surf/KZ/Bhop/MG/Deathrun/etc CS2 Timer plugin
 [STFixes](https://github.com/rcnoob/STFixes)| `1.0.4` | A CounterStrikeSharp plugin with common fixes and features for SharpTimer servers
 [GunGame](https://github.com/ssypchenko/cs2-gungame)| `1.1.2` | GunGame mode on Counter Strike Sharp
 [K4-Arenas](https://github.com/KitsuneLab-Development/K4-Arenas)| `2.0.6` | All in one arena plugin, that you can use to have a ladder type gameplay. Support all map, 2v2/3v3/etc [How?](#enable-k4-arenas)
