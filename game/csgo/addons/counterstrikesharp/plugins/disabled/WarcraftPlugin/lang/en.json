@@ -136,6 +136,15 @@
   "shadowblade.ability.3": "Cloak of Shadows",
   "shadowblade.ability.3.description": "Become invisible for a short duration.",
 
+  "dwarf_engineer.ability.0": "Build",
+  "dwarf_engineer.ability.0.description": "Allows you to build using the builder tool.",
+  "dwarf_engineer.ability.1": "Pickaxe",
+  "dwarf_engineer.ability.1.description": "Chance to find grenades when stabbing surfaces.",
+  "dwarf_engineer.ability.2": "Stone Skin",
+  "dwarf_engineer.ability.2.description": "Increase armor.",
+  "dwarf_engineer.ability.3": "Goldrush!",
+  "dwarf_engineer.ability.3.description": "Grants 1000 HP for a short time.",
+
   //Stock class extras
   "mage.frozen": "{Blue}[FROZEN]{Default}",
   "necromancer.cheatdeath": "{DarkRed}You have cheated death, for now...",
@@ -155,5 +164,8 @@
   "shadowblade.evaded.attacker": "{LightYellow}{0} {Green} Evaded your attack!",
   "shadowblade.shadowstep": "{DarkBlue}Shadowstep!",
   "shadowblade.venomstrike": "{Green}Poisoned {LightYellow}{0} {Green}for {DarkRed}{1} {Green}damage!",
-  "shadowblade.venomstrike.victim": "{Green}Poisoned for {DarkRed}{0} {Green}damage!"
+  "shadowblade.venomstrike.victim": "{Green}Poisoned for {DarkRed}{0} {Green}damage!",
+  "dwarf_engineer.buildtool": "Build Tool",
+  "dwarf_engineer.pickaxe": "Pickaxe",
+  "dwarf_engineer.build.tooltip": "{Green}[Left Click]{Default} Build {Grey}| {DarkBlue}[Right Click]{Default} Change {Grey}| {Red}[R]{Default} Rotate"
 }

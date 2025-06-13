@@ -136,6 +136,15 @@
   "shadowblade.ability.3": "Плащ теней", // Cloak of Shadows
   "shadowblade.ability.3.description": "Становитесь невидимым на короткое время.", // Become invisible for a short duration.
 
+  "dwarf_engineer.ability.0": "Строительство", // Build
+  "dwarf_engineer.ability.0.description": "Позволяет строить с помощью строительного инструмента.", // Allows you to build using the builder tool.
+  "dwarf_engineer.ability.1": "Кирка", // Pickaxe
+  "dwarf_engineer.ability.1.description": "Шанс найти гранаты при ударе по поверхностям.", // Chance to find grenades when stabbing surfaces.
+  "dwarf_engineer.ability.2": "Каменная кожа", // Stone Skin
+  "dwarf_engineer.ability.2.description": "Увеличивает броню.", // Increase armor.
+  "dwarf_engineer.ability.3": "Золотая лихорадка!", // Goldrush!
+  "dwarf_engineer.ability.3.description": "Дает 1000 HP на короткое время.", // Grants 1000 HP for a short time.
+
   //Stock class extras
   "mage.frozen": "{Blue}[ЗАМОРОЖЕН]{Default}", // {Blue}[FROZEN]{Default}
   "necromancer.cheatdeath": "{DarkRed}Вы избежали смерти, пока что...", // {DarkRed}You have cheated death, for now...
@@ -155,5 +164,8 @@
   "shadowblade.evaded.attacker": "{LightYellow}{0} {Green} уклонился от вашей атаки!", // {0} Evaded your attack!
   "shadowblade.shadowstep": "{DarkBlue}Шаг в тень!", // Shadowstep!
   "shadowblade.venomstrike": "{Green}Отравил {LightYellow}{0} {Green}на {DarkRed}{1} {Green}урона!", // Poisoned {0} for {1} damage!
-  "shadowblade.venomstrike.victim": "{Green}Отравлен на {DarkRed}{0} {Green}урона!" // Poisoned for {0} damage!
+  "shadowblade.venomstrike.victim": "{Green}Отравлен на {DarkRed}{0} {Green}урона!", // Poisoned for {0} damage!
+  "dwarf_engineer.buildtool": "Строительный инструмент", // Build Tool
+  "dwarf_engineer.pickaxe": "Кирка", // Pickaxe
+  "dwarf_engineer.build.tooltip": "{Green}[ЛКМ]{Default} Строить {Grey}| {DarkBlue}[ПКМ]{Default} Сменить {Grey}| {Red}[R]{Default} Повернуть" // {Green}[Left Click]{Default} Build | {DarkBlue}[Right Click]{Default} Change | {Red}[R]{Default} Rotate
 }
