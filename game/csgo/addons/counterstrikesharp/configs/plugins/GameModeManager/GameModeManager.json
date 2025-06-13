@@ -1,20 +1,19 @@
 {
-  "Version": 11,
+  "Version": 12,
   "RTV": {
     "Enabled": true,
     "Style": "center",
     "PerMap": false,
     "HideHud": false,
-    "HudMenu": false,
     "MinRounds": 0,
     "MinPlayers": 1,
     "VoteDuration": 60,
-    "OptionsToShow": 6,
+    "OptionsToShow": 15,
     "VotePercentage": 51,
     "OptionsInCoolDown": 3,
     "EndOfMapVote": true,
     "IncludeModes": false,
-    "IncludeExtend": false,
+    "IncludeExtend": true,
     "MaxExtends": 6,
     "ExtendTime": 10,
     "ExtendRounds": 5,
@@ -50,8 +49,24 @@
     "Enabled": false,
     "Time": 0,
     "PerMap": false,
-    "Default": {},
-    "List": []
+    "Default": {
+      "Name": "Deathmatch",
+      "Config": "warmup/dm.cfg"
+    },
+    "List": [
+      {
+        "Name": "Deathmatch",
+        "Config": "warmup/dm.cfg"
+      },
+      {
+        "Name": "Knives Only",
+        "Config": "warmup/knives_only.cfg"
+      },
+      {
+        "Name": "Scoutz Only",
+        "Config": "warmup/scoutz_only.cfg"
+      }
+    ]
   },
   "Commands": {
     "Map": true,

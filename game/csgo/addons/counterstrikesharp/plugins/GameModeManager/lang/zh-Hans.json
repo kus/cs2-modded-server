@@ -71,6 +71,7 @@
   "rtv.nextmap.message": "下一张地图将是 {green}{0}",
   "rtv.nextmode.message": "下一个模式将是 {green}{0}",
   "rtv.eofmapvote.message": "地图投票结束。",
+  "rtv.armsrace.message": "玩家 {green}{0}{default} 在军备竞赛中即将取得胜利！",
   "rtv.remaining-rounds": "在 {red}{0}{default} 回合后",
   "rtv.remaining-time-hour": "在 {red}{0}:{1}:{2} 后",
   "rtv.remaining-time-minute": "在 {red}{0}{default} 分钟和 {red}{1}{default} 秒后",

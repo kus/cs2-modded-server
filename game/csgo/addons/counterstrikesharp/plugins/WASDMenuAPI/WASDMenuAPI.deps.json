@@ -9,7 +9,7 @@
       "WASDMenuAPI/1.0.0": {
         "dependencies": {
           "CounterStrikeSharp.API": "1.0.282",
-          "WASDSharedAPI": "1.0.0.0"
+          "WASDMenuAPI.Shared": "1.0.0"
         },
         "runtime": {
           "WASDMenuAPI.dll": {}
@@ -532,10 +532,13 @@
           "System.Text.Encodings.Web": "8.0.0"
         }
       },
-      "WASDSharedAPI/1.0.0.0": {
+      "WASDMenuAPI.Shared/1.0.0": {
+        "dependencies": {
+          "CounterStrikeSharp.API": "1.0.282"
+        },
         "runtime": {
-          "WASDSharedAPI.dll": {
-            "assemblyVersion": "1.0.0.0",
+          "WASDMenuAPI.Shared.dll": {
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -877,8 +880,8 @@
       "path": "system.text.json/8.0.0",
       "hashPath": "system.text.json.8.0.0.nupkg.sha512"
     },
-    "WASDSharedAPI/1.0.0.0": {
-      "type": "reference",
+    "WASDMenuAPI.Shared/1.0.0": {
+      "type": "project",
       "serviceable": false,
       "sha512": ""
     }
