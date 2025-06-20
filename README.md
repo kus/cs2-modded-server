@@ -666,42 +666,9 @@ Admins can type `!modes` in chat and it will bring up a menu of all the game mod
 
 The maps in `!maps` will also update to the new game mode when it has changed.
 
-You can also change directly to a game mode with the Rcon commands via chat i.e. `!rcon exec dm` will change to deathmatch.
-
-These are all the available chat commands to change the game mode:
-
-| Command                   | Game mode                                                                         |
-| ------------------------- | --------------------------------------------------------------------------------- |
-| `!rcon exec 1v1`          | 1v1 (allows more than 2 players)                                                  |
-| `!rcon exec aim`          | Aim                                                                               |
-| `!rcon exec ar`           | Arms Race (Valve)                                                                 |
-| `!rcon exec awp`          | Awp only                                                                          |
-| `!rcon exec battle`       | Battle Ball                                                                       |
-| `!rcon exec bhop`         | Bunny hop maps                                                                    |
-| `!rcon exec br`           | Battle Royale                                                                     |
-| `!rcon exec comp`         | Competitive using [MatchZy](https://github.com/shobhit-pathak/MatchZy#usage-commands) |
-| `!rcon exec course`       | Tests players with different traps, kz, surf, bhop                                |
-| `!rcon exec dm`           | Deathmatch                                                                        |
-| `!rcon exec dm-valve`     | Deathmatch (Valve)                                                                |
-| `!rcon exec executes`     | Executes                                                                          |
-| `!rcon exec gg`           | Gun Game                                                                          |
-| `!rcon exec hns`          | Hide n Seek                                                                       |
-| `!rcon exec kz`           | Kreedz Climbing                                                                   |
-| `!rcon exec minigames`    | Mini Games                                                                        |
-| `!rcon exec deathrun`     | Deathrun                                                                          |
-| `!rcon exec oitc`         | One In The Chamber                                                                |
-| `!rcon exec prac`         | Practice (grenade lineups etc)                                                    |
-| `!rcon exec prefire`      | Prefire practice                                                                  |
-| `!rcon exec retake`       | Retakes                                                                           |
-| `!rcon exec scoutzknivez` | ScoutzKnivez                                                                      |
-| `!rcon exec soccer`       | Soccer                                                                            |
-| `!rcon exec surf`         | Surf                                                                              |
-| `!rcon exec wingman`      | Wingman (allows more than 4 players)                                              |
-| `!rcon exec 45`           | Competitive with 45 degree maps                                                   |
-
 Changing between gamemodes multiple times is not recommended, and it is better if you restart the CS2 server in-between.
 
-To view what other commands are available view the plugins at the top of the page.
+To view what other commands are available view the plugins documentation at the top of the page.
 
 ### RCON doesn't work
 
