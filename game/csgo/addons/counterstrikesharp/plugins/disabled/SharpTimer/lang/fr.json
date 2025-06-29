@@ -60,8 +60,6 @@
   "hud_hidden": "L'Hud est maintenant: {red}Caché",
   "keys_shown": "Les touches sont maintenant: {green}Affiché",
   "keys_hidden": "Les touches sont maintenant: {red}Caché",
-  "jumpstats_shown": "Les statistiques de saut sont maintenant: {green}Affiché",
-  "jumpstats_hidden": "Les statistiques de saut sont maintenant:  {red}Caché",
   "sounds_on": "Les sons sont maintenant: {green}Activé",
   "sounds_off": "Les sons sont maintenant: {red}Désactivé",
 
@@ -94,10 +92,6 @@
   "goto_player": "Téléportation vers {lime}{0}",
   "goto_player_not_found": "{lightred}Le nom du joueur n'a pas été trouvé ! Si le nom contient des espaces, essayez {lime}!goto 'joueur lambda'",
 
-  //jumpstats
-  "js_msg1": "{lime}JS: {grey} {0}: {1}{2}{grey} | Pre: {lime}{3}{grey} | Max: {lime}{4}{grey} | Strafes: {lime}{5}",
-  "js_msg2": "{grey}Hauteur: {lime}{0}{grey} | Largeur: {lime}{1}{grey} | WT: {lime}{2}{grey} | Sync: {lime}{3}%",
-
   //other
   "command_cooldown": "La commande est en attente. Chill...",
   "error_occured": "{lightred}Une erreur s'est produite.",
@@ -108,10 +102,12 @@
   "connected_message": "Joueur {red}{0} {default}connecté pour la {1} fois!",
   "connected_message_first": "Le joueur {red}{0} {default} s'est connecté pour la première fois!",
   "disconnect_message": "Joueur {red}{0} {default}déconnecté!",
+  "afk_message": "{red}Vous allez être déplacé vers l'AFK !",
+  "start_speed": "Vitesse de départ:",
   
     // Error
   "error_savingtime": "Erreur de sauvegarde du temps : Le temps du joueur est de 0 ticks",
-  "error_stagenotmatchfinalone": "Erreur de sauvegarde du temps : Le niveau actuel du joueur ne correspond pas au dernier niveau {0}",
+  "error_stagenotmatchfinalone": "Erreur de sauvegarde du temps : Le niveau actuel du joueur ne correspond pas au dernier niveau",
   "error_checkpointnotmatchfinalone": "Erreur de sauvegarde du temps : Le point de contrôle actuel du joueur ne correspond pas au dernier point de contrôle {0}",
 
   // help console Localizer
@@ -143,7 +139,6 @@
   "console_replaypb": "• !replaypb (css_replaypb) - Rejoue votre meilleur temps pour la carte actuelle",
   "console_replaybonus": "• !replaybonus / !replayb [1-10] [bonus stage] (css_replaybonus) - Rejoue un des 10 meilleurs records de bonus sur le serveur",
   "console_replaybonuspb": "• !replaybonuspb / !replaybpb (css_replaybonuspb) - Rejoue votre meilleur temps pour un bonus",
-  "console_jumpstats": "• !jumpstats (css_jumpstats) - Active/désactive les statistiques de saut",
   "console_hideweapon": "• !hideweapon (css_hideweapon) - Active/désactive la visibilité de l'arme",
   "console_spec": "• !spec (css_spec) - Vous place en spectateur ou vous ramène dans une équipe",
   "console_styles": "• !styles (css_styles) - Liste tous les styles"

@@ -136,6 +136,15 @@
   "shadowblade.ability.3": "Skyggernes Kappe", // Cloak of Shadows
   "shadowblade.ability.3.description": "Bliv usynlig i en kort periode.", // Become invisible for a short duration.
 
+  "dwarf_engineer.ability.0": "Byg", // Build
+  "dwarf_engineer.ability.0.description": "Mulighed for at bygge med byggeredskabet.", // Allows you to build using the builder tool.
+  "dwarf_engineer.ability.1": "Sten Hakke", // Pickaxe
+  "dwarf_engineer.ability.1.description": "Chance for at finde granater ved at stikke i overflader.", // Chance to find grenades when stabbing surfaces.
+  "dwarf_engineer.ability.2": "Stenhud", // Stone Skin
+  "dwarf_engineer.ability.2.description": "Mere armor.", // Increase armor.
+  "dwarf_engineer.ability.3": "Guldfeber!", // Goldrush!
+  "dwarf_engineer.ability.3.description": "Giver 1000 HP i en kort periode.", // Grants 1000 HP for a short time.
+
   //Stock class extras
   "mage.frozen": "{Blue}[FROSNET]{Default}", // {Blue}[FROZEN]{Default}
   "necromancer.cheatdeath": "{DarkRed}Du har snydt døden, for nu...", // {DarkRed}You have cheated death, for now...
@@ -155,5 +164,8 @@
   "shadowblade.evaded.attacker": "{LightYellow}{0} {Green} undveg dit angreb!", // {0} Evaded your attack!
   "shadowblade.shadowstep": "{DarkBlue}Skyggeskridt!", // Shadowstep!
   "shadowblade.venomstrike": "{Green}Forgiftede {LightYellow}{0} {Green}for {DarkRed}{1} {Green}skade!", // Poisoned {0} for {1} damage!
-  "shadowblade.venomstrike.victim": "{Green}Forgiftet for {DarkRed}{0} {Green}skade!" // Poisoned for {0} damage!
+  "shadowblade.venomstrike.victim": "{Green}Forgiftet for {DarkRed}{0} {Green}skade!", // Poisoned for {0} damage!
+  "dwarf_engineer.buildtool": "Byggeredskab", // Build Tool
+  "dwarf_engineer.pickaxe": "Sten Hakke", // Pickaxe
+  "dwarf_engineer.build.tooltip": "{Green}[Venstreklik]{Default} Byg {Grey}| {DarkBlue}[Højreklik]{Default} Skift {Grey}| {Red}[R]{Default} Roter" // {Green}[Left Click]{Default} Build | {DarkBlue}[Right Click]{Default} Change | {Red}[R]{Default} Rotate
 }

@@ -5,5 +5,6 @@
     "Password": "your_mysql_password",
     "TablePrefix": "",
     "Port": 3306,
-    "Timeout": 30
+    "Timeout": 30,
+    "SslMode": "Preferred"
 }

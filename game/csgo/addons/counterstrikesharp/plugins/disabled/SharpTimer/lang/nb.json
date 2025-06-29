@@ -60,8 +60,6 @@
     "hud_hidden": "Hud er nå: {red}Gjemt",
     "keys_shown": "Keys er nå: {green}Vist",
     "keys_hidden": "Keys er nå: {red}Gjemt",
-    "jumpstats_shown": "Hoppstatistikk er nå: {green}Vist",
-    "jumpstats_hidden": "Hoppstatistikk er nå: {red}Gjemt",
     "sounds_on": "Lyder er nå: {green}PÅ",
     "sounds_off": "Lyder er nå: {red}AV",
 
@@ -93,10 +91,6 @@
 
     "goto_player": "Teleporterer til {lime}{0}",
     "goto_player_not_found": "{lightred}Finner ikke spillernavnet! Hvis navnet inneholder mellomrom, prøv {lime}!goto 'et navn'",
-
-    //jumpstats
-    "js_msg1": "{lime}JS: {grey} {0}: {1}{2}{grey} | Pre: {lime}{3}{grey} | Max: {lime}{4}{grey} | Strafes: {lime}{5}",
-    "js_msg2": "{grey}Høyde: {lime}{0}{grey} | Bredde: {lime}{1}{grey} | WT: {lime}{2}{grey} | Sync: {lime}{3}%",
     
     //ad messages
     "ad_see_all_commands": "{primary}Skriv !sthelp{default} for å se alle kommandoer!",
@@ -120,8 +114,7 @@
     "ad_hud": "Skriv {primary}!hud{default} for å veksle tidtaker hud!",
     "ad_keys": "Skriv {primary}!keys{default} for å veksle hud taster!",
     "ad_styles": "Skriv {primary}!styles{default} for å liste opp alle tilgjengelige stiler!",
-    "ad_jumpstats": "Skriv {primaryChatColor}!jumpstats{default} for å veksle JumpStats!",
-    
+
     //other
     "command_cooldown": "Kommandoen er på nedkjøling. Chill...",
     "error_occured": "{lightred}Feil oppstod.",
@@ -132,10 +125,12 @@
     "connected_message": "Spiller {red}{0} {default}koblet til for den {1} gang!",
     "connected_message_first": "Spiller {red}{0} {default}koblet til for første gang!",
     "disconnect_message": "Spiller {red}{0} {default}frakoblet!",
+    "afk_message": "{red}Du er i ferd med å bli flyttet til AFK!",
+    "start_speed": "Startfart:",
 	
 	  // Error
   "error_savingtime": "Feil ved lagring av tid: Spillerens tid er 0 ticks",
-  "error_stagenotmatchfinalone": "Feil ved lagring av tid: Spillerens nåværende nivå stemmer ikke overens med siste nivå {0}",
+  "error_stagenotmatchfinalone": "Feil ved lagring av tid: Spillerens nåværende nivå stemmer ikke overens med siste nivå",
   "error_checkpointnotmatchfinalone": "Feil ved lagring av tid: Spillerens nåværende sjekkpunkt stemmer ikke overens med siste sjekkpunkt {0}",
 
   // help console Localizer
@@ -167,7 +162,6 @@
   "console_replaypb": "• !replaypb (css_replaypb) - Spill av din PB for det nåværende kartet",
   "console_replaybonus": "• !replaybonus / !replayb [1-10] [bonus stage] (css_replaybonus) - Spill av et av de 10 beste bonus-rekordene på serveren",
   "console_replaybonuspb": "• !replaybonuspb / !replaybpb (css_replaybonuspb) - Spill av din PB for en bonus",
-  "console_jumpstats": "• !jumpstats (css_jumpstats) - Bytt JumpStats",
   "console_hideweapon": "• !hideweapon (css_hideweapon) - Bytt synligheten på våpen",
   "console_spec": "• !spec (css_spec) - Flytter deg til spekter eller tilbake til et lag",
   "console_styles": "• !styles (css_styles) - List alle stiler"

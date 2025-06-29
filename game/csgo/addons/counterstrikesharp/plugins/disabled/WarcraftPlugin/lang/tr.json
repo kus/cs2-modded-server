@@ -1,0 +1,171 @@
+{
+  //Menu + Core
+  "menu.selection.left": "<font color='red' class='fontSize-s'>▶ </font>",
+  "menu.selection.right": "<font color='red' class='fontSize-s'> ◀</font>",
+  "menu.option.select": "Boşluk",
+  "menu.option.select.dead": "E",
+  "menu.option.exit": "Sekme",
+  "menu.option.up": "W↑",
+  "menu.option.down": "S↓",
+  "menu.exit": "Çıkış",
+  "menu.select": "Seç",
+  "menu.navigate": "Gezin",
+  "menu.more.options.below": "<center><img src='https://raw.githubusercontent.com/Wngui/CS2WarcraftMod/refs/heads/master/WarcraftPlugin/Resources/arrow-down.gif'></center><br>",
+  "menu.class": "Warcraft Sınıf Menüsü",
+  "menu.class.total.levels": "Toplam Seviye",
+  "menu.class.level": "seviye",
+  "menu.class.locked": "Kilitli (sv {0})",
+  "menu.skills.level": "Seviye",
+  "menu.skills.available": "Yetenekleri geliştir ({0} mevcut)",
+  "class.pending.change": "{Green} Bir sonraki turda {Orange}{0}{Green} olarak doğacaksın!",
+  "class.disabled": "{Green}Mevcut sınıf {Red}devre dışı{Green}! Şu an {Orange}{0}{Default} olarak oynuyorsun.",
+  "xp.current": "Deneyim",
+  "xp.bonus.headshot": "HS bonusu",
+  "xp.bonus.knife": "bıçak bonusu",
+  "xp.kill": "{Gold}+{0} XP {Default} öldürülen {Green}{1} {Default}{2}{3} için",
+  "xp.add": "Oyuncuya {1} {0} xp eklendi",
+  "ability.ready": "{0} hazır!",
+  "ultimate.countdown": "Ultimatif {0}sn içinde hazır",
+  "no.ultimate": "Ultimatif seviyen yok",
+
+  //Commands, used in-game by typing !<command>
+  "command.ultimate": "ultimate",
+  "command.changeclass": "changeclass",
+  "command.reset": "reset",
+  "command.factoryreset": "factoryreset",
+  "command.addxp": "addxp",
+  "command.skills": "skills",
+  "command.help": "commands", //"help" is a reserved keyword
+  "command.help.description": "{Green}Sınıf değiştirmek için {Gold}!class{Green}, yetenek yükseltmek için {Gold}!skills{Green} yaz",
+
+  //Adverts
+  "advert.0": "{Green}Yeni bir sınıf denemek mi istiyorsun? {Gold}!class{Green} yaz",
+  "advert.1": "{Green}Harcanmamış yetenek puanların mı var? {Gold}!skills{Green} yaz",
+  "advert.2": "{Green}Yeni yetenekler denemek mi istiyorsun? {Gold}!reset{Green} yaz",
+  "advert.3": "{Green}Ultini kullanmak mı istiyorsun? Konsola 'bind <tuş> ultimate' yaz. Örnek: {Grey}bind x ultimate",
+
+  //Stock class names
+  "barbarian": "Barbar",
+  "mage": "Büyücü",
+  "necromancer": "Nekromant",
+  "paladin": "Paladin",
+  "ranger": "İzci",
+  "rogue": "Hırsız",
+  "shapeshifter": "Biçim Değiştirici",
+  "tinker": "Tamirci",
+
+  //Stock class abilities
+  "barbarian.ability.0": "Katliam",
+  "barbarian.ability.0.description": "Pompalı tüfeklerle verilen hasarı artırır.",
+  "barbarian.ability.1": "Savaşçı Dayanıklılığı",
+  "barbarian.ability.1.description": "Sağlığını 20/40/60/80/100 artırır.",
+  "barbarian.ability.2": "Patlayan Varil",
+  "barbarian.ability.2.description": "Ateş ettiğinde patlayan bir varil fırlatma şansı.",
+  "barbarian.ability.3": "Kan Arzusu",
+  "barbarian.ability.3.description": "Sonsuz mermi, hareket hızı ve sağlık yenileme sağlar.",
+
+  "mage.ability.0": "Ateş Topu",
+  "mage.ability.0.description": "Molotofları büyüyle doldurur, çarptığında büyük bir patlama yapar.",
+  "mage.ability.1": "Buz Işını",
+  "mage.ability.1.description": "Düşmanları yerinde dondurma şansı.",
+  "mage.ability.2": "Mana Kalkanı",
+  "mage.ability.2.description": "Zırhı zamanla yenileyen pasif büyü kalkanı.",
+  "mage.ability.3": "Işınlanma",
+  "mage.ability.3.description": "Ult tuşuna bastığında, baktığın noktaya ışınlanırsın.",
+
+  "necromancer.ability.0": "Can Sömürüsü",
+  "necromancer.ability.0.description": "Düşmanlardan can çekerek kendi sağlığını yenile.",
+  "necromancer.ability.1": "Zehir Bulutu",
+  "necromancer.ability.1.description": "Sis bombalarını zehirli hale getirir, düşmanlara zamanla zarar verir.",
+  "necromancer.ability.2": "Bölünmüş Ruh",
+  "necromancer.ability.2.description": "Ölümden kaçma şansı verir.",
+  "necromancer.ability.3": "Ölüleri Kaldır",
+  "necromancer.ability.3.description": "Savaşması için ölü tavuklardan oluşan bir ordu çağır.",
+
+  "paladin.ability.0": "Şifa Aurası",
+  "paladin.ability.0.description": "Yakındaki takım arkadaşlarını zamanla iyileştirir.",
+  "paladin.ability.1": "Kutsal Kalkan",
+  "paladin.ability.1.description": "20/40/60/80/100 ek zırh kazan.",
+  "paladin.ability.2": "İlahi Darbe",
+  "paladin.ability.2.description": "Saldırıların zırh delici hale gelir.",
+  "paladin.ability.3": "İlahi Diriliş",
+  "paladin.ability.3.description": "Rastgele bir ölü takım arkadaşını anında dirilt.",
+
+  "ranger.ability.0": "Hafif Adımlar",
+  "ranger.ability.0.description": "Havadayken zıplayarak hızlı atılma hareketi yap.",
+  "ranger.ability.1": "Tuzak Kur",
+  "ranger.ability.1.description": "Sahte bomba atarak tuzak yerleştir.",
+  "ranger.ability.2": "Nişancı",
+  "ranger.ability.2.description": "Dürbünlü silahlarla fazladan hasar verir.",
+  "ranger.ability.3": "Ok Yağmuru",
+  "ranger.ability.3.description": "Ult tuşuyla ölümcül bir ok saldırısı çağır.",
+
+  "rogue.ability.0": "Gizlilik",
+  "rogue.ability.0.description": "Birini öldürdüğünde 1/2/3/4/5 saniye görünmez olursun.",
+  "rogue.ability.1": "Sinsi Saldırı",
+  "rogue.ability.1.description": "Düşmanın arkasından saldırdığında fazladan 5/10/15/20/25 hasar verir.",
+  "rogue.ability.2": "Bıçak Dansı",
+  "rogue.ability.2.description": "Bıçakla hızını ve hasarını artırır.",
+  "rogue.ability.3": "Duman Bombası",
+  "rogue.ability.3.description": "Ölmek üzereyken otomatik olarak duman bombası atarsın.",
+
+  "shapeshifter.ability.0": "Uyarlanabilir Kılık",
+  "shapeshifter.ability.0.description": "Düşman kılığına girme şansı. Saldırınca bozulur.",
+  "shapeshifter.ability.1": "Doppleganger",
+  "shapeshifter.ability.1.description": "Sahte bomba ile hareketsiz bir klon oluştur.",
+  "shapeshifter.ability.2": "Sahtekâr Sendromu",
+  "shapeshifter.ability.2.description": "Radarda fark edildiğinde uyarı alma şansı.",
+  "shapeshifter.ability.3": "Biçim Değişimi",
+  "shapeshifter.ability.3.description": "Sıradan bir nesneye dönüşürsün.",
+
+  "tinker.ability.0": "Saldırı Dronu",
+  "tinker.ability.0.description": "Yakındaki düşmanlara ateş eden bir drone yerleştir.",
+  "tinker.ability.1": "Yedek Parçalar",
+  "tinker.ability.1.description": "Ateş ederken cephane kaybetmeme şansı.",
+  "tinker.ability.2": "Zıplatıcı Tuzak",
+  "tinker.ability.2.description": "Oyuncuları havaya fırlatan tuzak yerleştir.",
+  "tinker.ability.3": "Drone Sürüsü",
+  "tinker.ability.3.description": "Yakındaki düşmanlara zarar veren drone sürüsü çağır.",
+
+  "shadowblade.ability.0": "Gölge Adım",
+  "shadowblade.ability.0.description": "Hasar aldığında düşmanın arkasına ışınlanma şansı.",
+  "shadowblade.ability.1": "Kaçınma",
+  "shadowblade.ability.1.description": "Gelen hasarı tamamen engelleme şansı.",
+  "shadowblade.ability.2": "Zehirli Darbe",
+  "shadowblade.ability.2.description": "Saldırıların düşmanları zehirleyerek zamanla hasar verir.",
+  "shadowblade.ability.3": "Gölge Pelerini",
+  "shadowblade.ability.3.description": "Kısa süreliğine görünmez ol.",
+
+  "dwarf_engineer.ability.0": "İnşa Et", // Build
+  "dwarf_engineer.ability.0.description": "İnşa aracını kullanarak inşa etmeyi sağlar.", // Allows you to build using the builder tool.
+  "dwarf_engineer.ability.1": "Kazma", // Pickaxe
+  "dwarf_engineer.ability.1.description": "Yüzeylere vurulduğunda el bombası bulma şansı.", // Chance to find grenades when stabbing surfaces.
+  "dwarf_engineer.ability.2": "Taş Cilt", // Stone Skin
+  "dwarf_engineer.ability.2.description": "Zırhı artırır.", // Increase armor.
+  "dwarf_engineer.ability.3": "Altına Hücum!", // Goldrush!
+  "dwarf_engineer.ability.3.description": "Kısa süreliğine 1000 HP verir.", // Grants 1000 HP for a short time.
+
+  //Stock class extras
+  "mage.frozen": "{Blue}[DONDURULDU]{Default}",
+  "necromancer.cheatdeath": "{DarkRed}Bu seferlik ölümden kurtuldun...",
+  "paladin.revive": "{Green}Dirildin!",
+  "paladin.revive.other": "{Green}{0}{Default}, {1} tarafından diriltildi",
+  "paladin.revive.none": "{Red}Diriltilecek takım arkadaşı yok!",
+  "ranger.dash.cooldown": "{Red}Atılma{Default} bekleme süresinde!",
+  "ranger.dash.ready": "{Green}Atılma{Default} hazır!",
+  "rogue.backstab": "{Blue}[Sırt Saldırısı] {0} ekstra hasar",
+  "rogue.invsible": "[Görünmez]",
+  "rogue.visible": "[Görünür]",
+  "shapeshifter.disguise.failed": "{Red}Kılık başarısız{Default}, kopyalanacak düşman yok",
+  "shapeshifter.disguise": "{Blue}{0} olarak kılık değiştirdin{Default}",
+  "shapeshifter.disguise.revealed": "{Red}Kılık{Default} bozuldu!",
+  "shapeshifter.spotted": "[Farkedildi]",
+  "shadowblade.evaded": "{Green}{LightYellow}{0}{Green} hasardan kaçındın!",
+  "shadowblade.evaded.attacker": "{LightYellow}{0} {Green} saldırından kaçındı!",
+  "shadowblade.shadowstep": "{DarkBlue}Gölge Adım!",
+  "shadowblade.venomstrike": "{Green}{LightYellow}{0} {DarkRed}{1} {Green} hasar ile zehirlendi!",
+  "shadowblade.venomstrike.victim": "{Green}{DarkRed}{0} {Green} hasar ile zehirlendin!",
+  "dwarf_engineer.buildtool": "İnşa Aracı", // Build Tool
+  "dwarf_engineer.pickaxe": "Kazma", // Pickaxe
+  "dwarf_engineer.build.tooltip": "{Green}[Sol Tık]{Default} İnşa Et {Grey}| {DarkBlue}[Sağ Tık]{Default} Değiştir {Grey}| {Red}[R]{Default} Döndür" // {Green}[Left Click]{Default} Build | {DarkBlue}[Right Click]{Default} Change | {Red}[R]{Default} Rotate
+}

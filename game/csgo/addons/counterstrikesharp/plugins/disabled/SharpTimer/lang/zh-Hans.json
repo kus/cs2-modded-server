@@ -52,8 +52,6 @@
   "hud_hidden": "HUD : {red}隐藏",
   "keys_shown": "按键: {green}显示",
   "keys_hidden": "按键: {red}隐藏",
-  "jumpstats_shown": "跳跃统计: {green}显示",
-  "jumpstats_hidden": "跳跃统计: {red}隐藏",
   "sounds_on": "声音: {green}打开",
   "sounds_off": "声音: {red}关闭",
   "no_respawnpos": "{lightred}当前地图未找到重生位置!",
@@ -78,8 +76,6 @@
   "used_previous_checkpoint": "已传送至上一个 {0}",
   "goto_player": "正在传送到 {lime}{0}",
   "goto_player_not_found": "{lightred}未找到玩家名称!如果名称包含空格，请尝试 {lime}!goto '名称'",
-  "js_msg1": "{lime}跳跃统计: {grey} {0}: {1}{2}{grey} | 预跳: {lime}{3}{grey} | 最大: {lime}{4}{grey} | 滑动次数: {lime}{5}",
-  "js_msg2": "{grey}高度: {lime}{0}{grey} | 宽度: {lime}{1}{grey} | 滑动时间: {lime}{2}{grey} | 同步率: {lime}{3}%",
   "ad_see_all_commands": "{primary}输入 !sthelp{default} 查看所有命令!",
   "ad_replay_pb": "输入 {primary}!replaypb{default} 观看你个人最佳的重播!",
   "ad_replay_sr": "输入 {primary}!replay 或 {primary}!replaysr{default} 观看 {primary}{current_map}{default} 的服务器记录重播!",
@@ -101,7 +97,6 @@
   "ad_hud": "输入 {primary}!hud{default} 启用/禁用计时器 HUD!",
   "ad_keys": "输入 {primary}!keys{default} 启用/禁用 HUD 按键!",
   "ad_styles": "输入 {primary}!styles{default} 列出所有可用的风格!",
-  "ad_jumpstats": "输入 {primaryChatColor}!jumpstats{default} 启用/禁用跳跃统计!",
   "command_cooldown": "命令正在冷却中，请稍等...",
   "error_occured": "{lightred}发生错误。",
   "info_version": "此服务器运行 SharpTimer v{0}",
@@ -112,10 +107,11 @@
   "connected_message_first": "玩家 {red}{0} {default}首次进入服务器!",
   "disconnect_message": "玩家 {red}{0} {default}断开连接!",
   "afk_message": "{red}你即将到达 AFK 检测!",
+  "start_speed": "起始速度:",
   
   //报错
   "error_savingtime": "保存时间错误：玩家时间为 0 ticks",
-  "error_stagenotmatchfinalone": "保存时间错误：玩家当前阶段与最终阶段不匹配{0}",
+  "error_stagenotmatchfinalone": "保存时间错误：玩家当前阶段与最终阶段不匹配",
   "error_checkpointnotmatchfinalone": "保存时间错误：玩家当前检查点与最终检查点不匹配{0}",
 
   //控制台项
@@ -147,7 +143,6 @@
   "console_replaypb": "• !replaypb (css_replaypb) - 回放你在当前地图的个人最好成绩",
   "console_replaybonus": "• !replaybonus / !replayb [1-10] [bonus stage] (css_replaybonus) - 回放前 10 名的服务器奖励记录",
   "console_replaybonuspb": "• !replaybonuspb / !replaybpb (css_replaybonuspb) - 回放你在奖励关卡的个人最好成绩",
-  "console_jumpstats": "• !jumpstats (css_jumpstats) - 切换跳跃统计",
   "console_hideweapon": "• !hideweapon (css_hideweapon) - 切换武器可见性",
   "console_spec": "• !spec (css_spec) - 使你进入观战模式或返回队伍",
   "console_styles": "• !styles (css_styles) - 列出所有样式"

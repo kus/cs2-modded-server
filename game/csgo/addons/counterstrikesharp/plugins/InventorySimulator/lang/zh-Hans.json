@@ -1,0 +1,11 @@
+{
+  "invsim.announce": "请访问 {0} 查看您的库存。",
+  "invsim.ws_new": "您的库存即将刷新。",
+  "invsim.ws_in_progress": "您的库存正在刷新中。",
+  "invsim.ws_cooldown": "您现在无法刷新库存。请等待 {0} 秒后重试。",
+  "invsim.ws_completed": "您的库存已刷新。",
+  "invsim.spray_cooldown": "您现在暂时无法使用涂鸦，请等待 {0} 秒后再试。",
+  "invsim.login_in_progress": "正在尝试登录您的库存...",
+  "invsim.login": "访问 {0} 以查看您的库存。",
+  "invsim.login_failed": "无法登录您的库存，请稍后再试。"
+}

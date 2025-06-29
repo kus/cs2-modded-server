@@ -66,8 +66,6 @@
   "hud_hidden": "Hud is now: {red}Hidden",
   "keys_shown": "Keys is now: {green}Shown",
   "keys_hidden": "Keys is now: {red}Hidden",
-  "jumpstats_shown": "Jump Stats are now: {green}Shown",
-  "jumpstats_hidden": "Jump Stats are now: {red}Hidden",
   "sounds_on": "Sounds are now: {green}ON",
   "sounds_off": "Sounds are now: {red}OFF",
 
@@ -101,10 +99,6 @@
   "goto_player": "Teleporting to {lime}{0}",
   "goto_player_not_found": "{lightred}Player name not found! If the name contains spaces please try {lime}!goto 'some name'",
 
-  //jumpstats
-  "js_msg1": "{lime}JS: {grey} {0}: {1}{2}{grey} | Pre: {lime}{3}{grey} | Max: {lime}{4}{grey} | Strafes: {lime}{5}",
-  "js_msg2": "{grey}Height: {lime}{0}{grey} | Width: {lime}{1}{grey} | WT: {lime}{2}{grey} | Sync: {lime}{3}%",
-
   //ad messages
   "ad_see_all_commands": "{primary}Type !sthelp{default} to see all commands!",
   "ad_replay_pb": "Type {primary}!replaypb{default} to watch a replay of your personal best run!",
@@ -127,7 +121,6 @@
   "ad_hud": "Type {primary}!hud{default} to toggle timer hud!",
   "ad_keys": "Type {primary}!keys{default} to toggle hud keys!",
   "ad_styles": "Type {primary}!styles{default} to list all available styles!",
-  "ad_jumpstats": "Type {primaryChatColor}!jumpstats{default} to toggle JumpStats!",
 
   //other
   "command_cooldown": "Command is on cooldown. Chill...",
@@ -140,12 +133,13 @@
   "connected_message_first": "Player {red}{0} {default}connected for the first time!",
   "disconnect_message": "Player {red}{0} {default}disconnected!",
   "afk_message": "{red}You are about to be moved to AFK!",
+  "start_speed": "Start speed:",
 
   //Error
   "error_savingtime": "Error Saving Time: Player time is 0 ticks",
-  "error_stagenotmatchfinalone": "Error Saving Time: Player current stage does not match final one{0}",
+  "error_stagenotmatchfinalone": "Error Saving Time: Player current stage does not match final one",
   "error_checkpointnotmatchfinalone": "Error Saving Time: Player current checkpoint does not match final one{0}",
-  
+
   //help console Localizer
   "Check_console": "Check your console for a list of available commands!",
   "console_r": "• !r (css_r) - Respawns you",
@@ -175,7 +169,6 @@
   "console_replaypb": "• !replaypb (css_replaypb) - Replay your pb for the current map",
   "console_replaybonus": "• !replaybonus / !replayb [1-10] [bonus stage] (css_replaybonus) - Replay a top 10 server bonus record",
   "console_replaybonuspb": "• !replaybonuspb / !replaybpb (css_replaybonuspb) - Replay your pb for a bonus",
-  "console_jumpstats": "• !jumpstats (css_jumpstats) - Toggles JumpStats",
   "console_hideweapon": "• !hideweapon (css_hideweapon) - Toggles weapon visibility",
   "console_spec": "• !spec (css_spec) - Moves you to Spectator or back to a team",
   "console_styles": "• !styles (css_styles) - List all styles"

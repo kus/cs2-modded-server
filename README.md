@@ -22,7 +22,7 @@ Each game mode has a hand full of maps preset so you are ready to go and it's [e
 - Retakes
 - Executes
 - One In The Chamber
-- 1v1 (with arenas) ([Steam API key](#playing-workshop-mapscollections) & [MySQL](#enable-k4-arenas) required)
+- 1v1 (with arenas) ([Steam API key](#playing-workshop-mapscollections) required)
 - ScoutzKnivez ([Steam API key](#playing-workshop-mapscollections) required)
 - KZ ([Steam API key](#playing-workshop-mapscollections) required)
 - BHop ([Steam API key](#playing-workshop-mapscollections) required)
@@ -91,25 +91,25 @@ Getting up and running:
 
 Mod | Version | Why
 --- | --- | ---
-[Metamod:Source](https://www.metamodsource.net/downloads.php?branch=dev) | `2.0.0-1350` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
+[Metamod:Source](https://www.metamodsource.net/downloads.php?branch=dev) | `2.0.0-1353` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
 [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `1.0.318` | Attempts to implement a .NET Core scripting layer on top of a Metamod Source Plugin, allowing developers to create plugins that interact with the game server in a modern language (C#)
-[MultiAddonManager](https://github.com/Source2ZE/MultiAddonManager) | `1.4` | Allows you to use multiple workshop addons at once and have clients download them
+[MultiAddonManager](https://github.com/Source2ZE/MultiAddonManager) | `1.4.1` | Allows you to use multiple workshop addons at once and have clients download them
 [ServerListPlayersFix](https://github.com/Source2ZE/ServerListPlayersFix) | `1.0.1-Rebuild-04102024` | Fixes players not showing up in the server browser
 [MovementUnlocker](https://github.com/Source2ZE/MovementUnlocker)| `1.4` | Removes max speed limitation from players on the ground, feels like CS:S [How?](#i-run-a-surfkzbhop-server-and-want-movementunlocker-and-cs2fixes-rampbugfix-permanently-on)
 [CS2Fixes-RampbugFix](https://github.com/Interesting-exe/CS2Fixes-RampbugFix)| `2025-05-22` | Minimizes rampbugs (needs to be enabled via `!settings` [How?](#i-run-a-surfkzbhop-server-and-want-movementunlocker-and-cs2fixes-rampbugfix-permanently-on))
 [CS2_ExecAfter](https://github.com/kus/CS2_ExecAfter) | `1.0.0` | Executes a command after server event (i.e. OnMapStart) or a delay.
 [CS2 Remove Map Weapons](https://github.com/kus/CS2-Remove-Map-Weapons) | `1.0.1` | Remove weapons from the map in CS2 as `mp_weapons_allow_map_placed 0` does not work.
-[GameModeManager](https://github.com/nickj609/GameModeManager)| `1.0.60` | A simple Counter-Strike 2 server plugin that helps admins manage game modes and map groups.
-[cs2-inventory-simulator](https://github.com/ianlucas/cs2-inventory-simulator-plugin)| `23` | Use any Weapon, Knife, Gloves, Agent, Music Kit, Pin or Graffiti. [How?](#skin-changer)
+[GameModeManager](https://github.com/nickj609/GameModeManager)| `1.0.62` | A simple Counter-Strike 2 server plugin that helps admins manage game modes and map groups.
+[cs2-inventory-simulator](https://github.com/ianlucas/cs2-inventory-simulator-plugin)| `26` | Use any Weapon, Knife, Gloves, Agent, Music Kit, Pin or Graffiti. [How?](#skin-changer)
 [MatchZy](https://github.com/shobhit-pathak/MatchZy) | `0.8.10` | MatchZy is a plugin for CS2 for running and managing practice/pugs/scrims/matches with easy configuration!
 [MapConfigurator](https://github.com/ManifestManah/MapConfigurator)| `1.0.2` | Allows you to quick and easily create unique configuration files for each map on your server.
 [K4-DamageInfo](https://github.com/KitsuneLab-Development/K4-DamageInfo) | `2.4.0` | Displays the amount of damage players have inflicted on the victim's HP and Armor, as well as the hit groups they have hit.
 [SimpleAdmin](https://github.com/connercsbn/SimpleAdmin/)| `0.1.2` | Adds basic administrator functions
 [CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon)| `1.2.0` | This is a rudimentary implementation of a RCON plugin for CS2 using CounterStrikeSharp as RCON does not work whilst connected to the server
-[SharpTimer](https://github.com/Letaryat/poor-sharptimer)| `0.3.1w` | SharpTimer is a simple Surf/KZ/Bhop/MG/Deathrun/etc CS2 Timer plugin
+[SharpTimer](https://github.com/Letaryat/poor-sharptimer)| `0.3.1x` | SharpTimer is a simple Surf/KZ/Bhop/MG/Deathrun/etc CS2 Timer plugin
 [STFixes](https://github.com/rcnoob/STFixes)| `1.0.4` | A CounterStrikeSharp plugin with common fixes and features for SharpTimer servers
 [GunGame](https://github.com/ssypchenko/cs2-gungame)| `1.1.2` | GunGame mode on Counter Strike Sharp
-[K4-Arenas](https://github.com/KitsuneLab-Development/K4-Arenas)| `2.0.6` | All in one arena plugin, that you can use to have a ladder type gameplay. Support all map, 2v2/3v3/etc [How?](#enable-k4-arenas)
+[K4-Arenas](https://github.com/KitsuneLab-Development/K4-Arenas)| `2.0.7` | All in one arena plugin, that you can use to have a ladder type gameplay. Support all map, 2v2/3v3/etc [How?](#enable-k4-arenas)
 [CS2 Retakes](https://github.com/B3none/cs2-retakes)| `2.1.1` | CS2 implementation of retakes. Based on the version for CS:GO by Splewis.
 [CS2 Retakes Shared](https://github.com/B3none/cs2-retakes)| `2.1.1` | Shared library for CS2 Retakes.
 [CS2 Instadefuse](https://github.com/B3none/cs2-instadefuse)| `2.0.0` | Allows a CT to instantly defuse the bomb when nothing can prevent defusal. Written in C# for CounterStrikeSharp.
@@ -127,10 +127,10 @@ Mod | Version | Why
 [RollTheDice](https://github.com/Kandru/cs2-roll-the-dice) | `1.3.15` | Roll the dice to get either a positive or negative effect for the current round.
 [CS2-FixRandomSpawn](https://github.com/qstage/CS2-FixRandomSpawn) | `1.1.4` | Fixes ConVar `mp_randomspawn` for any game mode.
 [CS2-MutualScoringPlayers](https://github.com/qstage/CS2-MutualScoringPlayers) | `1.0.1` | Keeps score of kills between players.
-[CS2WarcraftMod](https://github.com/Wngui/CS2WarcraftMod) | `3.2.6` | An open-source Warcraft mod for CS2 featuring a fully-fledged RPG system.
-[cs2-advanced-weapon-system](https://github.com/schwarper/cs2-advanced-weapon-system) | `1.3` | An advanced weapon system that gives full control over weapon attributes, dynamic adjustments to weapon behaviour, restrictions and advanced customisation.
+[CS2WarcraftMod](https://github.com/Wngui/CS2WarcraftMod) | `3.2.7` | An open-source Warcraft mod for CS2 featuring a fully-fledged RPG system.
+[cs2-advanced-weapon-system](https://github.com/schwarper/cs2-advanced-weapon-system) | `1.4` | An advanced weapon system that gives full control over weapon attributes, dynamic adjustments to weapon behaviour, restrictions and advanced customisation.
 [cs2-OneInTheChamber](https://github.com/ShookEagle/cs2-OneInTheChamber) | `1.0.0` | One in the Chamber game mode.
-[cs2-quake-sounds](https://github.com/Kandru/cs2-quake-sounds) | `1.0.6` | Quake Sounds on multi kills.
+[cs2-quake-sounds](https://github.com/Kandru/cs2-quake-sounds) | `1.0.7` | Quake Sounds on multi kills.
 
 ## Share the love
 
@@ -666,42 +666,9 @@ Admins can type `!modes` in chat and it will bring up a menu of all the game mod
 
 The maps in `!maps` will also update to the new game mode when it has changed.
 
-You can also change directly to a game mode with the Rcon commands via chat i.e. `!rcon exec dm` will change to deathmatch.
-
-These are all the available chat commands to change the game mode:
-
-| Command                   | Game mode                                                                         |
-| ------------------------- | --------------------------------------------------------------------------------- |
-| `!rcon exec 1v1`          | 1v1 (allows more than 2 players)                                                  |
-| `!rcon exec aim`          | Aim                                                                               |
-| `!rcon exec ar`           | Arms Race (Valve)                                                                 |
-| `!rcon exec awp`          | Awp only                                                                          |
-| `!rcon exec battle`       | Battle Ball                                                                       |
-| `!rcon exec bhop`         | Bunny hop maps                                                                    |
-| `!rcon exec br`           | Battle Royale                                                                     |
-| `!rcon exec comp`         | Competitive using [MatchZy](https://github.com/shobhit-pathak/MatchZy#usage-commands) |
-| `!rcon exec course`       | Tests players with different traps, kz, surf, bhop                                |
-| `!rcon exec dm`           | Deathmatch                                                                        |
-| `!rcon exec dm-valve`     | Deathmatch (Valve)                                                                |
-| `!rcon exec executes`     | Executes                                                                          |
-| `!rcon exec gg`           | Gun Game                                                                          |
-| `!rcon exec hns`          | Hide n Seek                                                                       |
-| `!rcon exec kz`           | Kreedz Climbing                                                                   |
-| `!rcon exec minigames`    | Mini Games                                                                        |
-| `!rcon exec deathrun`     | Deathrun                                                                          |
-| `!rcon exec oitc`         | One In The Chamber                                                                |
-| `!rcon exec prac`         | Practice (grenade lineups etc)                                                    |
-| `!rcon exec prefire`      | Prefire practice                                                                  |
-| `!rcon exec retake`       | Retakes                                                                           |
-| `!rcon exec scoutzknivez` | ScoutzKnivez                                                                      |
-| `!rcon exec soccer`       | Soccer                                                                            |
-| `!rcon exec surf`         | Surf                                                                              |
-| `!rcon exec wingman`      | Wingman (allows more than 4 players)                                              |
-| `!rcon exec 45`           | Competitive with 45 degree maps                                                   |
-
 Changing between gamemodes multiple times is not recommended, and it is better if you restart the CS2 server in-between.
 
-To view what other commands are available view the plugins at the top of the page.
+To view what other commands are available view the plugins documentation at the top of the page.
 
 ### RCON doesn't work
 
@@ -824,13 +791,17 @@ To check type `meta list` in console and you should see `Movement Unlocker` and 
 
 If you only want to turn it on ad hoc then in chat use the command `!settings` > `Enable` > `Surf` and it will load them and change the map to de_dust to avoid the server crashing, then change the map back to what you want with `!maps`.
 
-### Enable K4 Arenas
+### Setup MySQL database
 
-K4 Arenas requires a MySQL database (5.2 or higher) to function. Setting up a MySQL Database is outside the scope of this repo.
+Setting up a MySQL Database is outside the scope of this repo.
 
-You can set one up yourself or use a hosted one (there are also some free options such as [filess.io](https://filess.io/#DBMS) [aiven.io](https://aiven.io/pricing?product=mysql) [freemysqlhosting.net](https://www.freemysqlhosting.net/) [db4free.net](https://www.db4free.net/) but reliability isn't guaranteed).
+It is recommended to use 5.2 or higher.
 
-Once you have the connection details; the config file is located at `/game/csgo/addons/counterstrikesharp/configs/plugins/K4-Arenas/K4-Arenas.json` which you would put in `/custom_files/addons/counterstrikesharp/configs/plugins/K4-Arenas/K4-Arenas.json` so it is not overwritten/deleted and open the file `K4-Arenas.json` and add your database connection details to `"database-settings"`.
+You can set one up yourself or use a hosted one (there are also some free options such as [filess.io](https://filess.io/#DBMS) [aiven.io](https://aiven.io/pricing?product=mysql) but reliability isn't guaranteed).
+
+Once you have the connection details; the config files are generally located in `/game/csgo/addons/counterstrikesharp/configs/plugins/` which you would need to update via [custom files](#custom-files).
+
+For this example; I'll use K4-Arenas. The config is located at `/game/csgo/addons/counterstrikesharp/configs/plugins/K4-Arenas/K4-Arenas.json` which you would put in `/custom_files/addons/counterstrikesharp/configs/plugins/K4-Arenas/K4-Arenas.json` so it is not overwritten/deleted and open the file `K4-Arenas.json` and add your database connection details to `"database-settings"`.
 
 > [!TIP]
 > If `K4-Arenas.json` does not exist, copy `K4-Arenas.json.example` and remove `.example` from the name and use that.
