@@ -241,7 +241,7 @@
             </summary>
         </member>
         <member name="F:CounterStrikeSharp.API.Core.FunctionLifetime.SingleUse">
-            <summary>Delegate will be removed after the first invocation.</summary> 
+            <summary>Delegate will be removed after the first invocation.</summary>
         </member>
         <member name="F:CounterStrikeSharp.API.Core.FunctionLifetime.Permanent">
             <summary>Delegate will remain in memory for the lifetime of the application (or until <see cref="M:CounterStrikeSharp.API.Core.FunctionReference.Remove(System.Int32)"/> is called).</summary>
