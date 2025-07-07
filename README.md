@@ -446,7 +446,9 @@ If you have git installed; it is recommended to use git and clone the repo `git 
 
 All the following instructions will use the repo folder location as the root.
 
-Create a folder `steamcmd` and [download SteamCMD](https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip) and extract it inside `steamcmd` so you should have `\steamcmd\steamcmd.exe`.
+~~Create a folder `steamcmd` and [download SteamCMD](https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip) and extract it inside `steamcmd` so you should have `\steamcmd\steamcmd.exe`.~~
+
+* Manual download of SteamCMD is no longer necessary as the startup script will handle it for you now.
 
 To download maps from the workshop, your server [needs access](https://developer.valvesoftware.com/wiki/Counter-Strike:_Global_Offensive/Dedicated_Servers#Steam_Workshop) to the Steam Web API. To allow this, open `\win.ini` and set `cs_api_key` to your [Steam Web API Key](http://steamcommunity.com/dev/apikey).
 
