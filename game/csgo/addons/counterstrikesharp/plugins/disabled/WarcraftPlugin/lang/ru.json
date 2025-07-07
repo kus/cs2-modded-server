@@ -1,50 +1,67 @@
 {
-  //Menu + Core
-  "menu.selection.left": "<font color='red' class='fontSize-s'>▶ </font>", // <font color='red' class='fontSize-s'>▶ </font>
-  "menu.selection.right": "<font color='red' class='fontSize-s'> ◀</font>", // <font color='red' class='fontSize-s'> ◀</font>
-  "menu.option.select": "Пробел", // E
-  "menu.option.select.dead": "E", // Space
+  //Menu + Core //Меню + Ядро
+  "menu.selection.left": "<font color='red' class='fontSize-s'>▶ </font>", // Left selection arrow
+  "menu.selection.right": "<font color='red' class='fontSize-s'> ◀</font>", // Right selection arrow
+  "menu.option.select": "Пробел", // Space
+  "menu.option.select.dead": "E", // E (when dead)
   "menu.option.exit": "Tab", // Tab
   "menu.option.up": "W↑", // W↑
   "menu.option.down": "S↓", // S↓
   "menu.exit": "Выход", // Exit
   "menu.select": "Выбрать", // Select
-  "menu.navigate": "Нави", // Navigate
-  "menu.more.options.below": "<center><img src='https://raw.githubusercontent.com/Wngui/CS2WarcraftMod/refs/heads/master/WarcraftPlugin/Resources/arrow-down.gif'></center><br>",
-  "menu.class": "Меню классов Warcraft", // Warcraft Class Menu
-  "menu.class.total.levels": "Всего уровней", // Total Levels
-  "menu.class.level": "уровень", // level
-  "menu.class.locked": "Закрыто (ур. {0})", // Locked (lvl {0})
+  "menu.navigate": "Навигация", // Navigation
+  "menu.more.options.below": "<center><img src='https://raw.githubusercontent.com/Wngui/CS2WarcraftMod/refs/heads/master/WarcraftPlugin/Resources/arrow-down.gif'></center><br>", // More options below
+  "menu.class": "Меню классов Warcraft", // Warcraft class menu
+  "menu.class.total.levels": "Всего уровней", // Total levels
+  "menu.class.level": "уровень", // Level
+  "menu.class.locked": "Заблокировано (ур. {0})", // Locked (lvl {0})
   "menu.skills.level": "Уровень", // Level
-  "menu.skills.available": "Улучшить навыки ({0} доступно)", // Level up skills ({0} available)
-  "class.pending.change": "{Green} Вы появитесь как {Orange}{0}{Green} в следующем раунде!", // {Green} You will spawn as {Orange}{0}{Green} next round!
-  "class.disabled": "{Green}Текущий класс {Red}отключен{Green}! Теперь вы играете за {Orange}{0}{Default}.", // {Green}Current class is {Red}disabled{Green}! Now playing as {Orange}{0}{Default}.
+  "menu.skills.available": "Улучшить навыки ({0} доступно)", // Upgrade skills ({0} available)
+  "menu.skills.ultimate.level": "уровень {0}", // Level {0}
+  "menu.shop": "Магазин предметов", // Item Shop
+  "menu.shop.carry_limit": "Вы не можете нести больше предметов.", // You cannot carry more items.
+  "menu.shop.already_owned": "У вас уже есть этот предмет.", // You already own this item.
+  "menu.shop.not_enough_money": "Недостаточно денег!", // Not enough money!
+  "menu.shop.bought": "Куплено {Green}[{Gold}{0}{Green}]", // Bought {Green}[{Gold}{0}{Green}]
+  "class.pending.change": "{Green} Вы появитесь как {Orange}{0}{Green} в следующем раунде!", // You will spawn as {0} next round!
+  "class.disabled": "{Green}Текущий класс {Red}отключен{Green}! Теперь вы играете за {Orange}{0}{Default}.", // Current class disabled! Now playing as {0}.
   "xp.current": "Опыт", // Experience
-  "xp.bonus.headshot": "Бонус за хедшот", // HS bonus
-  "xp.bonus.knife": "Бонус за нож", // knife bonus
-  "xp.kill": "{Gold}+{0} XP {Default}за убийство {Green}{1} {Default}{2}{3}", // {Gold}+{0} XP {Default}for killing {Green}{1} {Default}{2}{3}
-  "xp.add": "Добавление {0} опыта игроку {1}", // Adding {0} xp to player {1}
-  "ability.ready": "{0} готово!", // {0} is ready!
-  "ultimate.countdown": "Ультимативная способность будет готова через {0}с", // Ultimate ready in {0}s
-  "no.ultimate": "Нет уровней в ультимативной способности", // No levels in ultimate
+  "xp.bonus.headshot": "Бонус за хедшот", // Headshot bonus
+  "xp.bonus.knife": "Бонус за нож", // Knife bonus
+  "xp.bonus.level": "Бонус за уровень", // level bonus
+  "xp.kill": "{Gold}+{0} XP {Default}за убийство {Green}{1} {Default}{2}{3}{4}", // +{0} XP for killing {1} {2}{3}{4}
+  "xp.add": "Добавление {0} опыта игроку {1}", // Adding {0} XP to player {1}
+  "xp.roundwin": "{Gold}+{0} XP {Default}за победу в раунде", // +{0} XP for round win
+  "xp.roundinfo": "{0}/{1} опыта", // {0}/{1}xp
+  "ability.ready": "{0} готово!", // {0} ready!
+  "ultimate.countdown": "Ультимейт готов через {0}с", // Ultimate ready in {0}s
+  "no.ultimate": "Нет уровней в ультимейте", // No ultimate levels
+  "bonus.damage.health.attacker": "{Green}+{0} урона {Gold}[{1}]", // +{0} damage [{1}]
+  "bonus.damage.health.victim": "{Red}+{0} урона от {Gold}[{1}]", // +{0} damage from [{1}]
+  "bonus.damage.armor.attacker": "{Green}+{0} урона по броне {Gold}[{1}]", // +{0} armor damage [{1}]
+  "bonus.damage.armor.victim": "{Red}-{0} брони от {Gold}[{1}]", // -{0} armor from [{1}]
+  "player.healed": "{Green}+{0} HP от {Default}{1}", // +{0} HP from {1}
+  "player.healed.healer": "{Green}Исцелил {Default}{0} {Green}+{1} HP", // Healed {0} +{1} HP
 
-  //Commands, used in-game by typing !<command>
+  //Commands, used in-game by typing !<command> //Команды, используемые в игре через !<команда>
   "command.ultimate": "ультимейт", // ultimate
   "command.changeclass": "сменитькласс", // changeclass
   "command.reset": "сброс", // reset
   "command.factoryreset": "полныйсброс", // factoryreset
   "command.addxp": "добавитьопыт", // addxp
   "command.skills": "навыки", // skills
+  "command.shopmenu": "магазин", // shopmenu
   "command.help": "команды", // commands
-  "command.help.description": "{Green}Введите {Gold}!class{Green}, чтобы сменить класс, {Gold}!skills{Green}, чтобы улучшить навыки", // {Green}Type {Gold}!class{Green} to change classes, {Gold}!skills{Green} to level-up
+  "command.help.description": "{Green}Введите {Gold}!class{Green} для смены класса, {Gold}!skills{Green} для улучшения навыков", // Type !class to change class, !skills to upgrade skills
 
-  //Adverts
-  "advert.0": "{Green}Хотите попробовать новый класс? Введите {Gold}!class{Green}, чтобы сменить", // {Green}Want to try a new class? Type {Gold}!class{Green} to change
-  "advert.1": "{Green}Есть нераспределенные очки навыков? Введите {Gold}!skills{Green}, чтобы улучшить способности", // {Green}Unspent skill points? Type {Gold}!skills{Green} to level up abilities
-  "advert.2": "{Green}Хотите попробовать новые способности? Введите {Gold}!reset{Green}, чтобы перераспределить", // {Green}Want to try new abilities? Type {Gold}!reset{Green} to reassign
-  "advert.3": "{Green}Хотите использовать ультимативную способность? Введите 'bind <клавиша> ultimate' в консоли. Пример: {Grey}bind x ultimate", // {Green}Want to use your ultimate? Type 'bind <key> ultimate' in console. Example: {Grey}bind x ultimate
+  //Adverts //Реклама
+  "advert.0": "{Green}Хотите новый класс? Введите {Gold}!class{Green} для смены", // Want a new class? Type !class to change
+  "advert.1": "{Green}Есть нераспределенные очки? Введите {Gold}!skills{Green} для улучшения", // Unspent points? Type !skills to upgrade
+  "advert.2": "{Green}Хотите новые способности? Введите {Gold}!reset{Green} для сброса", // Want new abilities? Type !reset to reset
+  "advert.3": "{Green}Для использования ультимейта введите 'bind <клавиша> ultimate' в консоли. Пример: {Grey}bind x ultimate", // To use ultimate, type 'bind <key> ultimate' in console. Example: bind x ultimate
+  "advert.4": "{Green}Хотите купить предметы? Введите {Gold}!shop{Green} для открытия магазина", // Want to buy items? Type !shop to open the shop menu
 
-  //Stock class names
+  //Stock class names //Названия классов
   "barbarian": "Варвар", // Barbarian
   "mage": "Маг", // Mage
   "necromancer": "Некромант", // Necromancer
@@ -53,119 +70,169 @@
   "rogue": "Разбойник", // Rogue
   "shapeshifter": "Оборотень", // Shapeshifter
   "tinker": "Механик", // Tinker
+  "shadowblade": "Теневой клинок", // Shadowblade
+  "dwarf_engineer": "Инженер-гном", // Dwarf Engineer
 
-  //Stock class abilities
+  //Stock class abilities //Способности классов
   "barbarian.ability.0": "Резня", // Carnage
-  "barbarian.ability.0.description": "Увеличивает урон, наносимый дробовиками.", // Increase damage dealt with shotguns.
-  "barbarian.ability.1": "Закаленный в боях", // Battle-Hardened
-  "barbarian.ability.1.description": "Увеличивает ваше здоровье на 20/40/60/80/100.", // Increase your health by 20/40/60/80/100.
-  "barbarian.ability.2": "Бочка с взрывчаткой", // Exploding barrel  
-  "barbarian.ability.2.description": "Шанс бросить взрывающуюся бочку при атаке.", // Chance to hurl an exploding barrel when attacking.  
+  "barbarian.ability.0.description": "Дополнительный урон 5/10/15/20/25 из дробовиков.", // Extra 5/10/15/20/25 shotgun damage.
+  "barbarian.ability.1": "Закаленный в боях", // Battle Hardened
+  "barbarian.ability.1.description": "Увеличивает здоровье на 20/40/60/80/100.", // Increases health by 20/40/60/80/100.
+  "barbarian.ability.2": "Взрывающаяся бочка", // Exploding Barrel
+  "barbarian.ability.2.description": "Шанс 3-13% выбросить бочку при выстреле (зависит от оружия).", // 3-13% chance to throw a barrel on shot (depends on weapon).
   "barbarian.ability.3": "Жажда крови", // Bloodlust
-  "barbarian.ability.3.description": "Дает бесконечные патроны, скорость передвижения и регенерацию здоровья.", // Grants infinite ammo, movement speed & health regeneration.
+  "barbarian.ability.3.description": "На 10с: бесконечные патроны, +30% скорости и регенерация здоровья.", // 10s: infinite ammo, +30% speed, health regen.
 
   "mage.ability.0": "Огненный шар", // Fireball
-  "mage.ability.0.description": "Наполняет коктейли Молотова огненной магией, вызывая огромный взрыв при ударе.", // Infuses molotovs with fire magic, causing a huge explosion on impact.
-  "mage.ability.1": "Ледяной луч", // Ice Beam
-  "mage.ability.1.description": "Шанс заморозить врагов на месте.", // Chance to freeze enemies in place.
-  "mage.ability.2": "Магический щит", // Mana Shield
-  "mage.ability.2.description": "Пассивный магический щит, который восстанавливает броню со временем.", // Passive magical shield, which regenerates armor over time.
+  "mage.ability.0.description": "Молотовы наносят 40/80/120/160/200 урона при взрыве.", // Molotovs deal 40/80/120/160/200 damage on explosion.
+  "mage.ability.1": "Ледяной луч", // Ice Ray
+  "mage.ability.1.description": "Шанс 5/10/15/20/25% заморозить врага.", // 5/10/15/20/25% chance to freeze enemy.
+  "mage.ability.2": "Магический щит", // Magic Shield
+  "mage.ability.2.description": "Регенерация 1 брони каждые 5/2.5/1.7/1.3/1с.", // 1 armor regen every 5/2.5/1.7/1.3/1s.
   "mage.ability.3": "Телепорт", // Teleport
-  "mage.ability.3.description": "Когда вы нажимаете клавишу ультимативной способности, вы телепортируетесь в место, на которое наведены.", // When you press your ultimate key, you will teleport to the spot you're aiming.
+  "mage.ability.3.description": "Телепортация в цель при нажатии ультимейта.", // Teleport to target on ultimate.
 
   "necromancer.ability.0": "Высасывание жизни", // Life Drain
-  "necromancer.ability.0.description": "Используйте темную магию, чтобы высасывать здоровье у врагов и восстанавливать свое.", // Harness dark magic to siphon health from foes and restore your own vitality.
+  "necromancer.ability.0.description": "Исцеление на 6/12/18/24/30% от нанесенного урона.", // Heal for 6/12/18/24/30% of dealt damage.
   "necromancer.ability.1": "Ядовитое облако", // Poison Cloud
-  "necromancer.ability.1.description": "Наполняет дымовые гранаты сильными токсинами, нанося урон врагам со временем.", // Infuses smoke grenades with potent toxins, damaging enemies over time.
-  "necromancer.ability.2": "Расколотая душа", // Splintered Soul
-  "necromancer.ability.2.description": "Шанс избежать смерти с частью здоровья.", // Chance to cheat death with a fraction of vitality.
+  "necromancer.ability.1.description": "Дым наносит 2/4/6/8/10 урона в тик.", // Smoke deals 2/4/6/8/10 damage per tick.
+  "necromancer.ability.2": "Расколотая душа", // Shattered Soul
+  "necromancer.ability.2.description": "Шанс 16/32/48/64/80% избежать смерти.", // 16/32/48/64/80% chance to avoid death.
   "necromancer.ability.3": "Воскрешение мертвых", // Raise Dead
-  "necromancer.ability.3.description": "Призывает орду неживых цыплят, чтобы они сражались за вас.", // Summon a horde of undead chicken to fight for you.
+  "necromancer.ability.3.description": "Призывает зомби-кур для боя.", // Summons zombie chickens for battle.
 
   "paladin.ability.0": "Аура исцеления", // Healing Aura
-  "paladin.ability.0.description": "Излучает ауру, которая постепенно лечит союзников поблизости.", // Emit an aura that gradually heals nearby allies over time.
+  "paladin.ability.0.description": "Лечит союзников в радиусе 200-600 на 1-5 HP каждые несколько секунд.", // Heals allies in 200-600 radius for 1-5 HP every few seconds.
   "paladin.ability.1": "Святой щит", // Holy Shield
-  "paladin.ability.1.description": "Получает дополнительно 20/40/60/80/100 брони.", // Gain an additional 20/40/60/80/100 armor.
-  "paladin.ability.2": "Кара", // Smite
-  "paladin.ability.2.description": "Наполняет ваши атаки божественной энергией, потенциально снимая броню врага.", // Infuse your attacks with divine energy, potentially stripping enemy armor.
+  "paladin.ability.1.description": "Дополнительные 20/40/60/80/100 брони.", // Extra 20/40/60/80/100 armor.
+  "paladin.ability.2": "Кара", // Retribution
+  "paladin.ability.2.description": "Шанс 15-75% снять 5-25 брони врага.", // 15-75% chance to remove 5-25 enemy armor.
   "paladin.ability.3": "Божественное воскрешение", // Divine Resurrection
-  "paladin.ability.3.description": "Мгновенно воскрешает случайного павшего союзника.", // Instantly revive a random fallen ally.
+  "paladin.ability.3.description": "Мгновенно воскрешает случайного союзника.", // Instantly resurrects a random ally.
 
-  "ranger.ability.0": "Легкая поступь", // Light footed
-  "ranger.ability.0.description": "Ловко совершает рывок в воздухе при нажатии на прыжок.", // Nimbly perform a dash in midair, by pressing jump.
-  "ranger.ability.1": "Ловушка", // Ensnare trap
-  "ranger.ability.1.description": "Устанавливает ловушку, бросая муляж.", // Place a trap by throwing a decoy.
-  "ranger.ability.2": "Меткий стрелок", // Marksman
-  "ranger.ability.2.description": "Дополнительный урон из снайперских винтовок.", // Additional damage with scoped weapons.
-  "ranger.ability.3": "Град стрел", // Arrowstorm
-  "ranger.ability.3.description": "Вызывает смертельный град стрел с помощью ультимативной клавиши.", // Call down a deadly volley of arrows using the ultimate key.
+  "ranger.ability.0": "Легкая поступь", // Light Step
+  "ranger.ability.0.description": "Рывок в воздухе с КД 10-2с (зависит от уровня).", // Air dash, cooldown 10-2s (by level).
+  "ranger.ability.1": "Капкан", // Trap
+  "ranger.ability.1.description": "Муляж-ловушка наносит 10/20/30/40/50 урона.", // Dummy trap deals 10/20/30/40/50 damage.
+  "ranger.ability.2": "Меткий стрелок", // Sharpshooter
+  "ranger.ability.2.description": "Дополнительные 2/4/6/8/10 урона из снайперских винтовок.", // +2/4/6/8/10 sniper rifle damage.
+  "ranger.ability.3": "Град стрел", // Arrow Barrage
+  "ranger.ability.3.description": "Метельный обстрел точки на 10с, замедляя врагов.", // Barrage at point for 10s, slows enemies.
 
   "rogue.ability.0": "Скрытность", // Stealth
-  "rogue.ability.0.description": "Становитесь частично невидимым на 1/2/3/4/5 секунд при убийстве.", // Become partially invisible for 1/2/3/4/5 seconds, when killing someone.
-  "rogue.ability.1": "Скрытая атака", // Sneak Attack
-  "rogue.ability.1.description": "Когда вы атакуете врага в спину, вы наносите дополнительно 5/10/15/20/25 урона.", // When you hit an enemy in the back, you do an additional 5/10/15/20/25 damage.
+  "rogue.ability.0.description": "Частичная невидимость на 1/2/3/4/5с после убийства.", // Partial invisibility for 1/2/3/4/5s after kill.
+  "rogue.ability.1": "Удар в спину", // Backstab
+  "rogue.ability.1.description": "Дополнительные 5/10/15/20/25 урона при атаке в спину.", // +5/10/15/20/25 damage on back attack.
   "rogue.ability.2": "Танец клинков", // Blade Dance
-  "rogue.ability.2.description": "Увеличивает скорость передвижения и урон от ножей.", // Increases movement speed and damage with knives.
-  "rogue.ability.3": "Дымовая шашка", // Smokebomb
-  "rogue.ability.3.description": "При приближении к смерти вы автоматически бросаете дымовую шашку, позволяя избежать смерти.", // When nearing death, you will automatically drop a smokebomb, letting you cheat death.
+  "rogue.ability.2.description": "+12/24/36/48/60 урона ножом и до +50% скорости.", // +12/24/36/48/60 knife damage, up to +50% speed.
+  "rogue.ability.3": "Дымовая шашка", // Smoke Bomb
+  "rogue.ability.3.description": "Автоматическая дымовая шашка при смертельном уроне.", // Auto smoke bomb on lethal damage.
 
   "shapeshifter.ability.0": "Адаптивная маскировка", // Adaptive Disguise
-  "shapeshifter.ability.0.description": "Шанс появиться с маскировкой врага, которая раскрывается при атаке.", // Chance to spawn with an enemy disguise, revealed upon attacking.
-  "shapeshifter.ability.1": "Двойник", // Doppelganger
-  "shapeshifter.ability.1.description": "Создает временного неодушевленного клона себя, используя муляж гранаты.", // Create a temporary inanimate clone of yourself, using a decoy grenade.
-  "shapeshifter.ability.2": "Синдром самозванца", // Imposter Syndrome
-  "shapeshifter.ability.2.description": "Шанс быть уведомленным, когда враги обнаруживают вас на радаре.", // Chance to be notified when revealed by enemies on radar.
-  "shapeshifter.ability.3": "Морфлинг", // Morphling
-  "shapeshifter.ability.3.description": "Превращается в неприметный объект.", // Transform into an unassuming object.
+  "shapeshifter.ability.0.description": "Шанс 8-40% заспавниться под видом врага.", // 8-40% chance to spawn as enemy.
+  "shapeshifter.ability.1": "Двойник", // Double
+  "shapeshifter.ability.1.description": "Создает клона на 5/10/15/20/25с.", // Creates clone for 5/10/15/20/25s.
+  "shapeshifter.ability.2": "Синдром самозванца", // Impostor Syndrome
+  "shapeshifter.ability.2.description": "Шанс 20-100% получить уведомление при обнаружении.", // 20-100% chance to get notified when spotted.
+  "shapeshifter.ability.3": "Трансформация", // Transformation
+  "shapeshifter.ability.3.description": "Превращение в случайный объект.", // Transform into random object.
 
   "tinker.ability.0": "Атакующий дрон", // Attack Drone
-  "tinker.ability.0.description": "Развертывает дрон с оружием, который атакует ближайших врагов.", // Deploy a gun drone that attacks nearby enemies.
+  "tinker.ability.0.description": "Дрон атакует врагов, урон и шанс ракет растут с уровнем.", // Drone attacks enemies, damage and rocket chance scale with level.
   "tinker.ability.1": "Запасные части", // Spare Parts
-  "tinker.ability.1.description": "Шанс не терять патроны при стрельбе.", // Chance to not lose ammo when firing.
-  "tinker.ability.2": "Прыжковая ловушка", // Spring Trap
-  "tinker.ability.2.description": "Устанавливает ловушку, которая подбрасывает игроков в воздух.", // Deploy a trap which launches players into the air.
+  "tinker.ability.1.description": "Шанс 4-20% не тратить патроны.", // 4-20% chance to not use ammo.
+  "tinker.ability.2": "Пружинная ловушка", // Spring Trap
+  "tinker.ability.2.description": "Ловушка подбрасывает игроков с силой 500-2500.", // Trap launches players with 500-2500 force.
   "tinker.ability.3": "Рой дронов", // Drone Swarm
-  "tinker.ability.3.description": "Вызывает рой атакующих дронов, которые наносят урон всем ближайшим врагам.", // Summon a swarm of attack drones that damage all nearby enemies.
+  "tinker.ability.3.description": "Призывает рой атакующих дронов.", // Summons a swarm of attack drones.
 
-  "shadowblade.ability.0": "Шаг в тень", // Shadowstep
-  "shadowblade.ability.0.description": "Шанс телепортироваться за спину врагу при получении урона.", // Chance to teleport behind enemy when taking damage.
+  "shadowblade.ability.0": "Шаг в тень", // Shadow Step
+  "shadowblade.ability.0.description": "Шанс 4-20% телепортироваться за атакующего при получении урона.", // 4-20% chance to teleport behind attacker when damaged.
   "shadowblade.ability.1": "Уклонение", // Evasion
-  "shadowblade.ability.1.description": "Шанс полностью уклониться от входящего урона.", // Chance to completely dodge incoming damage.
+  "shadowblade.ability.1.description": "Шанс 6-30% полностью избежать урона.", // 6-30% chance to fully evade damage.
   "shadowblade.ability.2": "Ядовитый удар", // Venom Strike
-  "shadowblade.ability.2.description": "Ваши атаки отравляют врагов, нанося урон со временем.", // Your attacks poison enemies, dealing damage over time.
+  "shadowblade.ability.2.description": "Атаки наносят 1/2/3/4/5 урона в секунду в течение 4с.", // Attacks deal 1/2/3/4/5 DPS for 4s.
   "shadowblade.ability.3": "Плащ теней", // Cloak of Shadows
-  "shadowblade.ability.3.description": "Становитесь невидимым на короткое время.", // Become invisible for a short duration.
+  "shadowblade.ability.3.description": "Невидимость и ускорение на 6с.", // Invisibility and speed for 6s.
 
-  "dwarf_engineer.ability.0": "Строительство", // Build
-  "dwarf_engineer.ability.0.description": "Позволяет строить с помощью строительного инструмента.", // Allows you to build using the builder tool.
+  "dwarf_engineer.ability.0": "Строительство", // Construction
+  "dwarf_engineer.ability.0.description": "Позволяет строить с 3/6/9/12/15 зарядами.", // Allows building with 3/6/9/12/15 charges.
   "dwarf_engineer.ability.1": "Кирка", // Pickaxe
-  "dwarf_engineer.ability.1.description": "Шанс найти гранаты при ударе по поверхностям.", // Chance to find grenades when stabbing surfaces.
+  "dwarf_engineer.ability.1.description": "Шанс 6-30% найти гранаты при ударе киркой.", // 6-30% chance to find grenades with pickaxe.
   "dwarf_engineer.ability.2": "Каменная кожа", // Stone Skin
-  "dwarf_engineer.ability.2.description": "Увеличивает броню.", // Increase armor.
-  "dwarf_engineer.ability.3": "Золотая лихорадка!", // Goldrush!
-  "dwarf_engineer.ability.3.description": "Дает 1000 HP на короткое время.", // Grants 1000 HP for a short time.
+  "dwarf_engineer.ability.2.description": "Дополнительные 20/40/60/80/100 брони.", // +20/40/60/80/100 armor.
+  "dwarf_engineer.ability.3": "Золотая лихорадка!", // Gold Rush!
+  "dwarf_engineer.ability.3.description": "+1000 HP и ускорение на 10с.", // +1000 HP and speed for 10s.
 
-  //Stock class extras
-  "mage.frozen": "{Blue}[ЗАМОРОЖЕН]{Default}", // {Blue}[FROZEN]{Default}
-  "necromancer.cheatdeath": "{DarkRed}Вы избежали смерти, пока что...", // {DarkRed}You have cheated death, for now...
-  "paladin.revive": "{Green}Вы были воскрешены!", // {Green}You have been revived!
-  "paladin.revive.other": "{Green}{0}{Default} был воскрешен {1}", // {Green}{0}{Default} has been revived by {1}
-  "paladin.revive.none": "{Red}Нет павших союзников для воскрешения!", // {Red}No fallen allies to revive!
-  "ranger.dash.cooldown": "{Red}Рывок{Default} на перезарядке!", // {Red}Dash{Default} on cooldown!
-  "ranger.dash.ready": "{Green}Рывок{Default} готов!", // {Green}Dash{Default} ready!
-  "rogue.backstab": "{Blue}[Удар в спину] {0} дополнительного урона", // {Blue}[Backstab] {0} bonus damage
+  //Stock class extras //Дополнительно
+  "mage.frozen": "{Blue}[ЗАМОРОЖЕН]{Default}", // [FROZEN]
+  "necromancer.cheatdeath": "{DarkRed}Вы избежали смерти, пока что...", // You cheated death... for now
+  "necromancer.lifedrain": "{0} {Red}высосал {1} HP из вас!", // {0} drained {1} HP from you!
+  "paladin.revive": "{Green}Вы были воскрешены!", // You have been resurrected!
+  "paladin.revive.other": "{Green}{0}{Default} был воскрешен {Gold}{1}", // {0} was resurrected by {1}
+  "paladin.revive.none": "{Red}Нет павших союзников для воскрешения!", // No fallen allies to resurrect!
+  "necromancer_classic.revive": "{Green}Вы подняты из мертвых!", // You are raised from the dead!
+  "ranger.dash.cooldown": "{Red}Рывок{Default} на перезарядке!", // Dash on cooldown!
+  "ranger.dash.ready": "{Green}Рывок{Default} готов!", // Dash ready!
+  "ranger.trappedby": "{red}Пойман ловушкой {green}{0}", // Trapped by {0}
+  "ranger.trapowner": "{green}{0}{default} поймал в ловушку {1}", // {0} trapped {1}
+  "rogue.backstab": "{Blue}[Удар в спину] {0} доп. урона", // [Backstab] {0} bonus damage
   "rogue.invsible": "[Невидим]", // [Invisible]
   "rogue.visible": "[Видим]", // [Visible]
-  "shapeshifter.disguise.failed": "{Red}Маскировка не удалась{Default}, некому подражать", // {Red}Disguise failed{Default}, no enemies to copy
-  "shapeshifter.disguise": "{Blue}Замаскирован{Default} как {0}", // {Blue}Disguised{Default} as {0}
-  "shapeshifter.disguise.revealed": "{Red}Маскировка{Default} раскрыта!", // {Red}Disguise{Default} broken!
+  "shapeshifter.disguise.failed": "{Red}Маскировка провалена{Default}, некому подражать", // Disguise failed, no one to mimic
+  "shapeshifter.disguise": "{Blue}Замаскирован{Default} как {0}", // Disguised as {0}
+  "shapeshifter.disguise.revealed": "{Red}Маскировка{Default} раскрыта!", // Disguise revealed!
   "shapeshifter.spotted": "[Обнаружен]", // [Spotted]
   "shadowblade.evaded": "{Green}Уклонение от {LightYellow}{0}{Green} урона!", // Evaded {0} damage!
-  "shadowblade.evaded.attacker": "{LightYellow}{0} {Green} уклонился от вашей атаки!", // {0} Evaded your attack!
-  "shadowblade.shadowstep": "{DarkBlue}Шаг в тень!", // Shadowstep!
-  "shadowblade.venomstrike": "{Green}Отравил {LightYellow}{0} {Green}на {DarkRed}{1} {Green}урона!", // Poisoned {0} for {1} damage!
+  "shadowblade.evaded.attacker": "{LightYellow}{0} {Green}уклонился от атаки!", // {0} evaded your attack!
+  "shadowblade.shadowstep": "{DarkBlue}Шаг в тень!", // Shadow Step!
+  "shadowblade.venomstrike": "{Green}Отравлен {LightYellow}{0} {Green}на {DarkRed}{1} {Green}урона!", // Poisoned {0} for {1} damage!
   "shadowblade.venomstrike.victim": "{Green}Отравлен на {DarkRed}{0} {Green}урона!", // Poisoned for {0} damage!
-  "dwarf_engineer.buildtool": "Строительный инструмент", // Build Tool
+  "dwarf_engineer.buildtool": "Инструмент строителя", // Builder tool
   "dwarf_engineer.pickaxe": "Кирка", // Pickaxe
-  "dwarf_engineer.build.tooltip": "{Green}[ЛКМ]{Default} Строить {Grey}| {DarkBlue}[ПКМ]{Default} Сменить {Grey}| {Red}[R]{Default} Повернуть" // {Green}[Left Click]{Default} Build | {DarkBlue}[Right Click]{Default} Change | {Red}[R]{Default} Rotate
+  "dwarf_engineer.build.tooltip": "{Green}[ЛКМ]{Default} Строить {Grey}| {DarkBlue}[ПКМ]{Default} Сменить {Grey}| {Red}[R]{Default} Повернуть", // [LMB] Build | [RMB] Switch | [R] Rotate
+
+  //Items
+  "item.owned": "Предметы: {0}", // Items: {0}
+  "item.amulet_of_the_cat.name": "Амулет Кота",
+  "item.amulet_of_the_cat.description": "Бесшумные шаги",
+  "item.amulet_of_the_cat.activated": "Бесшумные шаги активированы.",
+  "item.amulet_of_vitality.name": "Амулет Живучести",
+  "item.amulet_of_vitality.description": "Увеличивает макс. HP на 50",
+  "item.boots_of_speed.name": "Сапоги Скорости",
+  "item.boots_of_speed.description": "Увеличивает скорость на 20%",
+  "item.dagger_of_venom.name": "Кинжал Яда",
+  "item.dagger_of_venom.description": "Отравляет врагов при ударе",
+  "item.gloves_of_cloud.name": "Перчатки Облака",
+  "item.gloves_of_cloud.description": "Получайте дымовую гранату каждые 12 сек.",
+  "item.gloves_of_cloud.grenade_name": "Дымовая граната",
+  "item.gloves_of_dazzle.name": "Перчатки Ослепления",
+  "item.gloves_of_dazzle.description": "Получайте светошумовую гранату каждые 12 сек.",
+  "item.gloves_of_dazzle.grenade_name": "Светошумовая граната",
+  "item.gloves_of_wrath.name": "Перчатки Гнева",
+  "item.gloves_of_wrath.description": "Получайте осколочную гранату каждые 12 сек.",
+  "item.gloves_of_wrath.grenade_name": "Осколочная граната",
+  "item.mask_of_death.name": "Маска Смерти",
+  "item.mask_of_death.description": "50% шанс исцелить 15% нанесённого урона оружием",
+  "item.money_siphon_scepter.name": "Скипетр Сифона Денег",
+  "item.money_siphon_scepter.description": "Крадёт 2% денег врага при ударе",
+  "item.money_siphon_scepter.steal": "{Gold}+${0} украдено у {Red}{1}{Default}",
+  "item.money_siphon_scepter.stolen": "{Red}-{0} украдено {Gold}{1}{Default}",
+  "item.orb_of_frost.name": "Сфера Холода",
+  "item.orb_of_frost.description": "33% шанс замедлить врага при ударе",
+  "item.orb_of_frost.slowed": "{Red}Замедлен {Green}{0}{Default}",
+  "item.ring_of_regeneration.name": "Кольцо Регенерации",
+  "item.ring_of_regeneration.description": "Восстанавливает 1 HP каждую сек.",
+  "item.sock_of_feathers.name": "Носок Перьев",
+  "item.sock_of_feathers.description": "Уменьшает гравитацию на 50%",
+  "item.talisman_of_evasion.name": "Талисман Уклонения",
+  "item.talisman_of_evasion.description": "20% шанс уклониться",
+  "item.tome_of_experience.name": "Том Опыта",
+  "item.tome_of_experience.description": "Получить 150XP",
+  "item.tome_of_gambling.name": "Том Азарта",
+  "item.tome_of_gambling.description": "Шанс получить 150-450 XP",
+
+  //SharedEffects
+  "effect.stun.stunnedby": "{red}Оглушен {green}{0}", // Stunned by {0}
+  "effect.stun.stunowner": "{green}{0}{default} оглушил {1}" // {0} stunned {1}
 }
