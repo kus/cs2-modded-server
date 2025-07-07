@@ -6,12 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "CS2-CustomVotes.Shared/1.0.0": {
+      "WASDSharedAPI/1.0.0": {
         "dependencies": {
           "CounterStrikeSharp.API": "1.0.282"
         },
         "runtime": {
-          "CS2-CustomVotes.Shared.dll": {}
+          "WASDSharedAPI.dll": {}
         }
       },
       "CounterStrikeSharp.API/1.0.282": {
@@ -534,7 +534,7 @@
     }
   },
   "libraries": {
-    "CS2-CustomVotes.Shared/1.0.0": {
+    "WASDSharedAPI/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
