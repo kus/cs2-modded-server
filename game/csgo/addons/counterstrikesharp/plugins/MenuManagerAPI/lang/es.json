@@ -1,0 +1,14 @@
+{
+  "menutype.select": "Seleccionar Menú",
+  "menutype.console": "Consola",
+  "menutype.chat": "Chat",
+  "menutype.center": "Centro",
+  "menutype.button": "Botón",
+  "menutype.selected": "Menú seleccionado: ",
+  "menu.enabled.color": "blanco",
+  "menu.disabled.color": "#aaaaaa",
+  "menu.selection.left": "<font class='fontSize-s' color='red'>&#9654;</font><font class='fontSize-s' color='red'> [ </font>",
+  "menu.selection.right": "<font class='fontSize-s' color='red'> ] </font><font class='fontSize-s' color='red'>&#9664;</font>",
+  "menu.title.color": "rojo",
+  "menu.bottom.text": "<font color='white'>Desplazarse </font><font color='gold' class='stratum-bold'>W/S</font><font color='white'> | Sel </font><font color='gold' class='stratum-bold'>E</font><font color='white'> | Ant <font color='gold' class='stratum-bold'>CTRL</font><font color='white'> | Salir </font><font color='gold' class='stratum-bold'>R</font>"
+}
