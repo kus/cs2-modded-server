@@ -843,13 +843,6 @@
             or <see cref="F:CounterStrikeSharp.API.Core.HitGroup_t.HITGROUP_INVALID"/> if the hit group cannot be determined.
             </returns>
         </member>
-        <member name="T:CounterStrikeSharp.API.Core.CVariant">
-            <summary>
-            Placeholder for CVariant
-            <see href="https://github.com/alliedmodders/hl2sdk/blob/cs2/public/variant.h"/>
-            <remarks>A lot of entity outputs do not use this value</remarks>
-            </summary>
-        </member>
         <member name="M:CounterStrikeSharp.API.Core.Translations.LocalizerExtensions.ForPlayer(Microsoft.Extensions.Localization.IStringLocalizer,CounterStrikeSharp.API.Core.CCSPlayerController,System.String)">
             <summary>
             Returns a localized string using the locale of the specified player.

@@ -241,7 +241,7 @@
             </summary>
         </member>
         <member name="F:CounterStrikeSharp.API.Core.FunctionLifetime.SingleUse">
-            <summary>Delegate will be removed after the first invocation.</summary> 
+            <summary>Delegate will be removed after the first invocation.</summary>
         </member>
         <member name="F:CounterStrikeSharp.API.Core.FunctionLifetime.Permanent">
             <summary>Delegate will remain in memory for the lifetime of the application (or until <see cref="M:CounterStrikeSharp.API.Core.FunctionReference.Remove(System.Int32)"/> is called).</summary>
@@ -842,13 +842,6 @@
             Returns a <see cref="T:CounterStrikeSharp.API.Core.HitGroup_t"/> enumeration representing the player's current hit group,
             or <see cref="F:CounterStrikeSharp.API.Core.HitGroup_t.HITGROUP_INVALID"/> if the hit group cannot be determined.
             </returns>
-        </member>
-        <member name="T:CounterStrikeSharp.API.Core.CVariant">
-            <summary>
-            Placeholder for CVariant
-            <see href="https://github.com/alliedmodders/hl2sdk/blob/cs2/public/variant.h"/>
-            <remarks>A lot of entity outputs do not use this value</remarks>
-            </summary>
         </member>
         <member name="M:CounterStrikeSharp.API.Core.Translations.LocalizerExtensions.ForPlayer(Microsoft.Extensions.Localization.IStringLocalizer,CounterStrikeSharp.API.Core.CCSPlayerController,System.String)">
             <summary>
