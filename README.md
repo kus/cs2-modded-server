@@ -127,6 +127,7 @@ Mod | Version | Why
 [cs2-OneInTheChamber](https://github.com/ShookEagle/cs2-OneInTheChamber) | `1.0.0` | One in the Chamber game mode.
 [cs2-quake-sounds](https://github.com/Kandru/cs2-quake-sounds) | `1.0.7` | Quake Sounds on multi kills.
 [CS2-WeaponSpeed](https://github.com/akanora/CS2-WeaponSpeed) | `1.2` | Gives players a speed boost when they fire specified weapons.
+[BotsNoKnife](https://discord.com/channels/1160907911501991946/1365937101886984262) | `1.0` | Keeps Bots from using the knife.
 
 ## Share the love
 
