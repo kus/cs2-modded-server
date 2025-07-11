@@ -174,6 +174,8 @@
   "necromancer_classic.revive": "{Green}Du er blevet genoprejst!", // You have been resurrected!
   "ranger.dash.cooldown": "{Red}Dash{Default} på cooldown!", // Dash on cooldown!
   "ranger.dash.ready": "{Green}Dash{Default} klar!", // Dash ready!
+  "ranger.trappedby": "{red}Fanget af {green}{0}",
+  "ranger.trapowner": "{green}Fangede {default}{0}!",
   "rogue.backstab": "{Blue}[Bagholdsangreb] {0} bonus skade", // [Backstab] {0} bonus damage
   "rogue.invsible": "[Usynlig]", // [Invisible]
   "rogue.visible": "[Synlig]", // [Visible]
@@ -191,6 +193,8 @@
   "dwarf_engineer.build.tooltip": "{Green}[Venstreklik]{Default} Byg {Grey}| {DarkBlue}[Højreklik]{Default} Skift {Grey}| {Red}[R]{Default} Roter", // [Left click] Build | [Right click] Switch | [R] Rotate
 
   //Items
+  "item.owned": "Genstande: {0}",
+  "item.amulet_of_the_cat.activated": "Stille fodtrin aktiveret.",
   "item.amulet_of_the_cat.name": "Kattens Amulet",
   "item.amulet_of_the_cat.description": "Stille fodtrin",
   "item.amulet_of_vitality.name": "Vitalitetsamulet",
@@ -220,5 +224,15 @@
   "item.tome_of_experience.name": "Erfaringsbog",
   "item.tome_of_experience.description": "Få 150XP",
   "item.tome_of_gambling.name": "Spillets Bog",
-  "item.tome_of_gambling.description": "Chance for at få 150-450 XP"
+  "item.tome_of_gambling.description": "Chance for at få 150-450 XP",
+  "item.gloves_of_cloud.grenade_name": "Røggranat",
+  "item.gloves_of_dazzle.grenade_name": "Flashbang",
+  "item.gloves_of_wrath.grenade_name": "HE-granat",
+  "item.money_siphon_scepter.steal": "{Gold}+${0} stjålet fra {Red}{1}{Default}",
+  "item.money_siphon_scepter.stolen": "{Red}-${0} stjålet af {Gold}{1}{Default}",
+  "item.orb_of_frost.slowed": "{Red}Sænket af {Green}{0}{Default}",
+
+  //SharedEffects
+  "effect.stun.stunnedby": "{red}Bedøvet af {green}{0}",
+  "effect.stun.stunowner": "{green}{0}{default} bedøvede {1}"
 }

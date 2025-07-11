@@ -175,7 +175,7 @@
   "ranger.dash.cooldown": "{Red}Dash{Default} on cooldown!",
   "ranger.dash.ready": "{Green}Dash{Default} ready!",
   "ranger.trappedby": "{red}Trapped by {green}{0}",
-  "ranger.trapowner": "{green}{0}{default} trapped {1}",
+  "ranger.trapowner": "{green}Trapped {default}{0}!",
   "rogue.backstab": "{Blue}[Backstab] {0} bonus damage",
   "rogue.invsible": "[Invisible]",
   "rogue.visible": "[Visible]",
