@@ -9,7 +9,7 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 60Gi #Reccomended Minimum
+      storage: 100Gi #Reccomended Minimum
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -27,6 +27,7 @@ spec:
         app: cs2-modded-server
     spec:
       securityContext:
+        runAsUser: 1000
         fsGroup: 1000
       containers:
         - name: cs2-modded-server
@@ -34,25 +35,31 @@ spec:
           ports:
             - containerPort: 27015
               protocol: TCP
+              name: tcp-game
             - containerPort: 27015
               protocol: UDP
+              name: udp-game
             - containerPort: 27020
               protocol: TCP
+              name: tcp-sourcetv
             - containerPort: 27020
               protocol: UDP
+              name: udp-sourcetv
           env:
-            - name: STEAM_ACCOUNT
+            - name: STEAM_ACCOUNT #Env Var using a kubernetes secret
               valueFrom:
                 secretKeyRef:
                   name: cs2-secret
                   key: STEAM_ACCOUNT
-            - name: API_KEY
+            - name: API_KEY #Env Var in cleartext
               value: "test"
+            - name: CUSTOM_FOLDER
+              value: /home/cs2-modded-server/custom_files
           volumeMounts:
             - name: cs2-data
               mountPath: /home/steam/cs2
             - name: custom
-              mountPath: /home/custom_files/
+              mountPath: /home/cs2-modded-server/custom_files/
       volumes:
         - name: cs2-data
           persistentVolumeClaim:
