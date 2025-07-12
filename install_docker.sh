@@ -141,7 +141,7 @@ echo "Installing mods"
 cp -R /home/cs2-modded-server/game/csgo/ /home/${user}/cs2/game/
 
 echo "Merging in custom files"
-cp -RT /home/custom_files/ /home/${user}/cs2/game/csgo/
+cp -R /home/cs2-modded-server/custom_files/* /home/${user}/cs2/game/csgo/
 
 chown -R ${user}:${user} /home/${user}
 
