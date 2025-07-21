@@ -1,0 +1,9 @@
+{
+  "prefix": "{yellow}[SpectatorList]{default}",
+  "no_permissions": "{red}No tienes permisos para usar este comando.",
+  "spectators_watching": "{blue}Espectadores {white}({{blue}0}{white}): {white}{1}",
+  "spectators_title": "Espectadores ({0}):",
+  "spectator_display_enabled": "Lista de espectadores {green}habilitada",
+  "spectator_display_disabled": "Lista de espectadores {red}deshabilitada",
+  "and_more": "y {0} más..."
+}

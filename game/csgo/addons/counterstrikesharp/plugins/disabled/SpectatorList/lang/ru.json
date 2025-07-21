@@ -1,0 +1,9 @@
+{
+  "prefix": "{yellow}[Список Наблюдателей]{default}",
+  "no_permissions": "{red}У вас нет прав для использования этой команды.",
+  "spectators_watching": "{blue}Наблюдатели {white}({{blue}0}{white}): {white}{1}",
+  "spectators_title": "Наблюдатели ({0}):",
+  "spectator_display_enabled": "Список наблюдателей {green}включен",
+  "spectator_display_disabled": "Список наблюдателей {red}выключен",
+  "and_more": "и ещё {0}..."
+}
