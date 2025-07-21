@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "CounterStrikeSharp.API/1.0.327": {
+      "CounterStrikeSharp.API/1.0.328": {
         "dependencies": {
           "McMaster.NETCore.Plugins": "1.4.0",
           "Microsoft.CSharp": "4.7.0",
@@ -532,7 +532,7 @@
     }
   },
   "libraries": {
-    "CounterStrikeSharp.API/1.0.327": {
+    "CounterStrikeSharp.API/1.0.328": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
