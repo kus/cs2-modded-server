@@ -73,6 +73,10 @@
   "tinker": "Opfinder", // Tinker
   "shadowblade": "Skyggeklinge", // Shadowblade
   "dwarf_engineer": "Dværgingeniør", // Dwarf Engineer
+  "death_weaver": "Ölüm Dokuyucusu",
+  "hammerstorm": "Hamrestorm",
+  "sacred_warrior": "Hellig Kriger",
+  "silent_assassin": "Ninja",
 
   //Stock class abilities //Stock class abilities
   "barbarian.ability.0": "Blodbad", // Bloodbath
@@ -165,13 +169,51 @@
   "dwarf_engineer.ability.3": "Guldfeber!", // Gold Rush!
   "dwarf_engineer.ability.3.description": "Giver 1000 HP og hastighedsboost i 10s.", // Grants 1000 HP and speed boost for 10s.
 
+  "hammerstorm.ability.0": "Stormbolt",
+  "hammerstorm.ability.0.description": "25% chance for at bedøve fjender nær dit mål.",
+  "hammerstorm.ability.1": "Kæmpehug",
+  "hammerstorm.ability.1.description": "25% chance for at skade nærliggende fjender med stænk.",
+  "hammerstorm.ability.2": "Krigsbrøl",
+  "hammerstorm.ability.2.description": "Giver bonus liv og bevægelseshastighed.",
+  "hammerstorm.ability.3": "Guders Styrke",
+  "hammerstorm.ability.3.description": "Øger skade med 25% i 6 sekunder. Nedkøling: 20 sek.",
+
+  "sacred_warrior.ability.0": "Indre Vitalitet",
+  "sacred_warrior.ability.0.description": "Gendanner passivt 1/2/3/4/5 HP. Når du er under 40% liv, heler du dobbelt så hurtigt.",
+  "sacred_warrior.ability.1": "Brændende Spyd",
+  "sacred_warrior.ability.1.description": "Mister 5% af maks HP, men antænder fjender. Giver 1/2/3/4/5 skade per sekund i 3 sekunder. Stables op til 3 gange.",
+  "sacred_warrior.ability.2": "Bersærkerblod",
+  "sacred_warrior.ability.2.description": "Får 1/2/3/4% bevægelseshastighed for hver 7% af dit liv, du mangler.",
+  "sacred_warrior.ability.3": "Livsbrud",
+  "sacred_warrior.ability.3.description": "Skader dig selv (20% af maks HP) for at gøre massiv skade (40% af offerets maks HP). Nedkøling: 40 sek.",
+
+  "silent_assassin.ability.0": "Formindskelse",
+  "silent_assassin.ability.0.description": "Reducerer modellens størrelse med 15/20/25/30/35%.",
+  "silent_assassin.ability.1": "Letvægt",
+  "silent_assassin.ability.1.description": "Øger hastighed og reducerer tyngdekraft.",
+  "silent_assassin.ability.2": "Snigmorderens Klinge",
+  "silent_assassin.ability.2.description": "40% chance for ekstra knivskade.",
+  "silent_assassin.ability.3": "Spøgelsesgang",
+  "silent_assassin.ability.3.description": "Helt usynlig i 3 sekunder. Nedkøling: 15 sek.",
+
+  "death_weaver.ability.0": "Lamhed",
+  "death_weaver.ability.0.description": "25% chance for at sænke en fjende i 1,5/2/2,5/3/3,5 sekunder.",
+  "death_weaver.ability.1": "Uhellig Raseri",
+  "death_weaver.ability.1.description": "25% chance for at give 10/20/30/40/50% ekstra skade.",
+  "death_weaver.ability.2": "Nekromant Mester",
+  "death_weaver.ability.2.description": "65/70/75/80/85% chance for at spawne med et stormgevær.",
+  "death_weaver.ability.3": "Genopliv Skelet",
+  "death_weaver.ability.3.description": "Genopliver en tilfældig allieret.",
+
   //Stock class extras //Stock class extras
   "mage.frozen": "{Blue}[FROSNET]{Default}", // [FROZEN]
   "necromancer.cheatdeath": "{DarkRed}Du har snydt døden, indtil videre...", // You have cheated death, for now...
   "paladin.revive": "{Green}Du er blevet genoplivet!", // You have been revived!
   "paladin.revive.other": "{Green}{0}{Default} er blevet genoplivet af {Gold}{1}", // {0} has been revived by {1}
   "paladin.revive.none": "{Red}Ingen døde allierede at genoplive!", // No dead allies to revive!
-  "necromancer_classic.revive": "{Green}Du er blevet genoprejst!", // You have been resurrected!
+  "death_weaver.cripple": "{Green}Lammet {Default}{0}",
+  "death_weaver.cripple.victim": "{Red}Lammet af {Default}{0}",
+  "death_weaver.spawn.rifle": "{Green}Spawnet med et stormgevær!",
   "ranger.dash.cooldown": "{Red}Dash{Default} på cooldown!", // Dash on cooldown!
   "ranger.dash.ready": "{Green}Dash{Default} klar!", // Dash ready!
   "ranger.trappedby": "{red}Fanget af {green}{0}",
@@ -191,6 +233,8 @@
   "dwarf_engineer.buildtool": "Byggeredskab", // Build Tool
   "dwarf_engineer.pickaxe": "Stenhakke", // Pickaxe
   "dwarf_engineer.build.tooltip": "{Green}[Venstreklik]{Default} Byg {Grey}| {DarkBlue}[Højreklik]{Default} Skift {Grey}| {Red}[R]{Default} Roter", // [Left click] Build | [Right click] Switch | [R] Rotate
+  "sacred_warrior.burningspear": "{Green}Brændende {0}",
+  "sacred_warrior.burningspear.victim": "{Orange}Brænder fra {Default}{0}",
 
   //Items
   "item.owned": "Genstande: {0}",
@@ -234,5 +278,6 @@
 
   //SharedEffects
   "effect.stun.stunnedby": "{red}Bedøvet af {green}{0}",
-  "effect.stun.stunowner": "{green}{0}{default} bedøvede {1}"
+  "effect.stun.stunowner": "{green}{0}{default} bedøvede {1}",
+  "effect.no.target": "{Red}Ingen gyldigt mål fundet for {Green}{0}"
 }

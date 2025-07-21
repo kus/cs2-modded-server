@@ -65,6 +65,7 @@
   "barbarian": "Barbarian",
   "mage": "Mage",
   "necromancer": "Necromancer",
+  "death_weaver": "Death Weaver",
   "paladin": "Paladin",
   "ranger": "Ranger",
   "rogue": "Rogue",
@@ -72,6 +73,9 @@
   "tinker": "Tinker",
   "shadowblade": "Shadowblade",
   "dwarf_engineer": "Dwarf Engineer",
+  "hammerstorm": "HammerStorm",
+  "sacred_warrior": "Sacred Warrior",
+  "silent_assassin": "Silent Assassin",
 
   //Stock class abilities
   "barbarian.ability.0": "Carnage",
@@ -82,6 +86,15 @@
   "barbarian.ability.2.description": "Chance to throw an exploding barrel when firing (around 3\u201313% per shot depending on weapon).",
   "barbarian.ability.3": "Bloodlust",
   "barbarian.ability.3.description": "For 10s gain infinite ammo, 30% more speed and constant health regeneration.",
+
+  "death_weaver.ability.0": "Cripple",
+  "death_weaver.ability.0.description": "25% chance to slow an enemy for 1.5/2/2.5/3/3.5 seconds.",
+  "death_weaver.ability.1": "Unholy Frenzy",
+  "death_weaver.ability.1.description": "25% chance to deal 10-50% bonus damage.",
+  "death_weaver.ability.2": "Necromancer Master",
+  "death_weaver.ability.2.description": "65-85% chance to spawn with an assault rifle.",
+  "death_weaver.ability.3": "Raise Skeleton",
+  "death_weaver.ability.3.description": "Revive a random ally.",
 
   "mage.ability.0": "Fireball",
   "mage.ability.0.description": "Infuses molotovs with fire magic, causing a huge explosion on impact (40/80/120/160/200 damage).",
@@ -129,7 +142,7 @@
   "rogue.ability.3.description": "When nearing death, you will automatically drop a smokebomb, letting you cheat death.",
 
   "shapeshifter.ability.0": "Adaptive Disguise",
-  "shapeshifter.ability.0.description": "8/16/24/32/40% chance to spawn disguised as an enemy.",
+  "shapeshifter.ability.0.description": "8-40% chance to spawn disguised as an enemy.",
   "shapeshifter.ability.1": "Doppelganger",
   "shapeshifter.ability.1.description": "Create a temporary inanimate clone of yourself, lasting 5/10/15/20/25 seconds.",
   "shapeshifter.ability.2": "Imposter Syndrome",
@@ -164,6 +177,33 @@
   "dwarf_engineer.ability.3": "Goldrush!",
   "dwarf_engineer.ability.3.description": "Gain 1000 HP and a speed boost for 10s.",
 
+  "hammerstorm.ability.0": "Storm Bolt",
+  "hammerstorm.ability.0.description": "25% chance to stun enemies near your target.",
+  "hammerstorm.ability.1": "Great Cleave",
+  "hammerstorm.ability.1.description": "25% chance to splash damage to nearby enemies.",
+  "hammerstorm.ability.2": "Warcry",
+  "hammerstorm.ability.2.description": "Gain bonus health and movement speed.",
+  "hammerstorm.ability.3": "Gods Strength",
+  "hammerstorm.ability.3.description": "Increase damage by 25% for 6s. Cooldown: 20s",
+
+  "sacred_warrior.ability.0": "Inner Vitality",
+  "sacred_warrior.ability.0.description": "Passively recover 1/2/3/4/5 HP. When below 40% you heal twice as fast.",
+  "sacred_warrior.ability.1": "Burning Spear",
+  "sacred_warrior.ability.1.description": "Lose 5% max HP, but set enemies ablaze. Deals 1/2/3/4/5 DPS for 3 seconds. Stacks 3 times.",
+  "sacred_warrior.ability.2": "Berserker's Blood",
+  "sacred_warrior.ability.2.description": "Gain 1/2/3/4% move speed for each 7 percent of your health missing.",
+  "sacred_warrior.ability.3": "Life Break",
+  "sacred_warrior.ability.3.description": "Damage 40% of victim's max HP at the cost of 20% of your own. Cooldown: 40s",
+
+  "silent_assassin.ability.0": "Shrink",
+  "silent_assassin.ability.0.description": "Reduce model size by 15/20/25/30/35%.",
+  "silent_assassin.ability.1": "Lightweight",
+  "silent_assassin.ability.1.description": "Increase speed and reduce gravity.",
+  "silent_assassin.ability.2": "Assassin's Blade",
+  "silent_assassin.ability.2.description": "40% chance to add bonus knife damage.",
+  "silent_assassin.ability.3": "Ghost Walk",
+  "silent_assassin.ability.3.description": "Completely invisible for 3 seconds. Cooldown: 15s",
+
   //Stock class extras
   "mage.frozen": "{Blue}[FROZEN]{Default}",
   "necromancer.cheatdeath": "{DarkRed}You have cheated death, for now...",
@@ -190,6 +230,11 @@
   "shadowblade.venomstrike.victim": "{Green}Poisoned for {DarkRed}{0} {Green}damage!",
   "dwarf_engineer.buildtool": "Build Tool",
   "dwarf_engineer.pickaxe": "Pickaxe",
+  "death_weaver.spawn.rifle": "{Green}Spawned with an assault rifle!",
+  "death_weaver.cripple": "{Green}Crippled {Default}{0}",
+  "death_weaver.cripple.victim": "{Red}Crippled by {Default}{0}",
+  "sacred_warrior.burningspear": "{Green}Burning {0}",
+  "sacred_warrior.burningspear.victim": "{Orange}Burning from {Default}{0}",
   "dwarf_engineer.build.tooltip": "{Green}[Left Click]{Default} Build {Grey}| {DarkBlue}[Right Click]{Default} Change {Grey}| {Red}[R]{Default} Rotate",
 
   //Items
@@ -234,5 +279,6 @@
 
   //SharedEffects
   "effect.stun.stunnedby": "{red}Stunned by {green}{0}",
-  "effect.stun.stunowner": "{green}{0}{default} stunned {1}"
+  "effect.stun.stunowner": "{green}{0}{default} stunned {1}",
+  "effect.no.target": "{Red}No valid target found for {Green}{0}"
 }

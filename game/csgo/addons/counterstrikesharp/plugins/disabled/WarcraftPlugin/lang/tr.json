@@ -72,6 +72,10 @@
   "tinker": "Teker", // Tinker
   "shadowblade": "Gölge Kılıcı", // Shadowblade
   "dwarf_engineer": "Cüce Mühendis", // Dwarf Engineer
+  "death_weaver": "Ölüm Dokuyucusu",
+  "hammerstorm": "Çekiç Fırtınası",
+  "sacred_warrior": "Kutsal Savaşçı",
+  "silent_assassin": "Sessiz Suikastçı",
 
   //Stock class abilities // Sınıf yetenekleri
   "barbarian.ability.0": "Katliam", // Massacre
@@ -82,6 +86,15 @@
   "barbarian.ability.2.description": "Ateş ederken %3-13 patlayan varil fırlatma şansı (silaha göre değişir).", // 3-13% chance to throw an exploding barrel when firing (depends on weapon).
   "barbarian.ability.3": "Kan Arzusu", // Bloodlust
   "barbarian.ability.3.description": "10s boyunca: Sonsuz mermi, %30 daha hızlı ve sürekli can yenileme.", // For 10s: infinite ammo, 30% faster, and constant health regen.
+
+  "death_weaver.ability.0": "Cripple",
+  "death_weaver.ability.0.description": "Saldırdığında düşmanı yavaşlatma şansı.",
+  "death_weaver.ability.1": "Unholy Frenzy",
+  "death_weaver.ability.1.description": "10-50% ekstra hasar verme şansı.",
+  "death_weaver.ability.2": "Necromancer Master",
+  "death_weaver.ability.2.description": "Saldırı tüfeği ile başlama şansı.",
+  "death_weaver.ability.3": "Raise Skeleton",
+  "death_weaver.ability.3.description": "Rastgele bir takım arkadaşını diriltir.",
 
   "mage.ability.0": "Ateş Topu", // Fireball
   "mage.ability.0.description": "Molotoflar 40/80/120/160/200 hasar veren büyük patlama yapar.", // Molotovs create a big explosion dealing 40/80/120/160/200 damage.
@@ -164,8 +177,38 @@
   "dwarf_engineer.ability.3": "Altına Hücum!", // Gold Rush!
   "dwarf_engineer.ability.3.description": "10s boyunca 1000 HP ve hız artışı kazanırsın.", // Gain 1000 HP and speed boost for 10s.
 
+  "hammerstorm.ability.0": "Fırtına Oku",
+  "hammerstorm.ability.0.description": "Hedefin yakınındaki düşmanları sersemletme şansı %25.",
+  "hammerstorm.ability.1": "Büyük Yarma",
+  "hammerstorm.ability.1.description": "Yakındaki düşmanlara sıçrama hasarı verme şansı %25.",
+  "hammerstorm.ability.2": "Savaş Çığlığı",
+  "hammerstorm.ability.2.description": "Fazladan can ve hareket hızı kazanılır.",
+  "hammerstorm.ability.3": "Tanrıların Gücü",
+  "hammerstorm.ability.3.description": "6 saniyeliğine hasarı %25 artırır. Bekleme süresi: 20 saniye.",
+
+  "sacred_warrior.ability.0": "İçsel Canlılık",
+  "sacred_warrior.ability.0.description": "Pasif olarak 1/2/3/4/5 HP yeniler. Canın %40’ın altına düştüğünde iyileşme hızı iki katına çıkar.",
+  "sacred_warrior.ability.1": "Yanan Mızrak",
+  "sacred_warrior.ability.1.description": "Maksimum canının %5’ini kaybedersin, ancak düşmanları ateşe verirsin. 3 saniye boyunca 1/2/3/4/5 DPS verir. 3 kez üst üste birikir.",
+  "sacred_warrior.ability.2": "Berserker Kanı",
+  "sacred_warrior.ability.2.description": "Eksik canının her %7’si için %1/2/3/4 hareket hızı kazanırsın.",
+  "sacred_warrior.ability.3": "Hayat Kırılması",
+  "sacred_warrior.ability.3.description": "Kendine %20 maksimum can kaybettirerek hedefe %40 maksimum can kadar büyük hasar verirsin. Bekleme süresi: 40 saniye.",
+
+  "silent_assassin.ability.0": "Küçülme",
+  "silent_assassin.ability.0.description": "Model boyutunu %15/20/25/30/35 küçültür.",
+  "silent_assassin.ability.1": "Hafiflik",
+  "silent_assassin.ability.1.description": "Hareket hızını artırır ve yerçekimini azaltır.",
+  "silent_assassin.ability.2": "Suikastçı Bıçağı",
+  "silent_assassin.ability.2.description": "%40 ihtimalle ekstra bıçak hasarı verir.",
+  "silent_assassin.ability.3": "Hayalet Yürüyüşü",
+  "silent_assassin.ability.3.description": "3 saniyeliğine tamamen görünmez olursun. Bekleme süresi: 15 saniye.",
+
   //Stock class extras // Sınıf ekstraları
   "mage.frozen": "{Blue}[DONDURULDU]{Default}", // [FROZEN]
+  "death_weaver.cripple": "{Green}Sakatlandı {Default}{0}",
+  "death_weaver.cripple.victim": "{Red}{0} tarafından sakatlandı {Default}",
+  "death_weaver.spawn.rifle": "{Green}Bir taarruz tüfeği ile doğdun!",
   "necromancer.cheatdeath": "{DarkRed}Ölümden şimdilik kurtuldun...", // You cheated death for now...
   "necromancer.lifedrain": "{0} {Red}sendan {1} HP çaldı!", // {0} drained {1} HP from you!
   "paladin.revive": "{Green}Dirildin!", // You have been revived!
@@ -191,6 +234,9 @@
   "dwarf_engineer.buildtool": "İnşa Aracı", // Build Tool
   "dwarf_engineer.pickaxe": "Kazma", // Pickaxe
   "dwarf_engineer.build.tooltip": "{Green}[Sol Tık]{Default} İnşa Et {Grey}| {DarkBlue}[Sağ Tık]{Default} Değiştir {Grey}| {Red}[R]{Default} Döndür", // [Left Click] Build | [Right Click] Change | [R] Rotate
+  "sacred_warrior.burningspear": "{Green}Yanan {0}",
+  "sacred_warrior.burningspear.victim": "{Orange}{0}'dan yanıyor{Default}",
+
 
   //Items
   "item.owned": "Eşyalar: {0}", // Items: {0}
@@ -234,5 +280,6 @@
 
   //SharedEffects
   "effect.stun.stunnedby": "{red}{green}{0} tarafından sersemletildin", // Stunned by {0}
-  "effect.stun.stunowner": "{green}{0}{default} {1}'i sersemletti" // {0} stunned {1}
+  "effect.stun.stunowner": "{green}{0}{default} {1}'i sersemletti", // {0} stunned {1}
+  "effect.no.target": "{Red}{Green}{0} için geçerli hedef bulunamadı"
 }

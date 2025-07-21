@@ -72,6 +72,10 @@
   "tinker": "Механик", // Tinker
   "shadowblade": "Теневой клинок", // Shadowblade
   "dwarf_engineer": "Инженер-гном", // Dwarf Engineer
+  "death_weaver": "Ткач Смерти",
+  "hammerstorm": "Громовой Молот",
+  "sacred_warrior": "Священный Воин",
+  "silent_assassin": "Безмолвный Убийца",
 
   //Stock class abilities //Способности классов
   "barbarian.ability.0": "Резня", // Carnage
@@ -82,6 +86,15 @@
   "barbarian.ability.2.description": "Шанс 3-13% выбросить бочку при выстреле (зависит от оружия).", // 3-13% chance to throw a barrel on shot (depends on weapon).
   "barbarian.ability.3": "Жажда крови", // Bloodlust
   "barbarian.ability.3.description": "На 10с: бесконечные патроны, +30% скорости и регенерация здоровья.", // 10s: infinite ammo, +30% speed, health regen.
+
+  "death_weaver.ability.0": "Cripple", // Cripple
+  "death_weaver.ability.0.description": "Шанс замедлить врага при атаке.",
+  "death_weaver.ability.1": "Unholy Frenzy", // Unholy Frenzy
+  "death_weaver.ability.1.description": "Шанс нанести дополнительный урон 10-50%.",
+  "death_weaver.ability.2": "Necromancer Master", // Necromancer Master
+  "death_weaver.ability.2.description": "Шанс появиться со штурмовой винтовкой.",
+  "death_weaver.ability.3": "Raise Skeleton", // Raise Skeleton
+  "death_weaver.ability.3.description": "Возрождает случайного союзника.",
 
   "mage.ability.0": "Огненный шар", // Fireball
   "mage.ability.0.description": "Молотовы наносят 40/80/120/160/200 урона при взрыве.", // Molotovs deal 40/80/120/160/200 damage on explosion.
@@ -164,10 +177,40 @@
   "dwarf_engineer.ability.3": "Золотая лихорадка!", // Gold Rush!
   "dwarf_engineer.ability.3.description": "+1000 HP и ускорение на 10с.", // +1000 HP and speed for 10s.
 
+  "hammerstorm.ability.0": "Грозовой удар",
+  "hammerstorm.ability.0.description": "25% шанс оглушить врагов рядом с целью.",
+  "hammerstorm.ability.1": "Мощный размах",
+  "hammerstorm.ability.1.description": "25% шанс нанести урон по области рядом с врагами.",
+  "hammerstorm.ability.2": "Боевой клич",
+  "hammerstorm.ability.2.description": "Дополнительное здоровье и скорость передвижения.",
+  "hammerstorm.ability.3": "Сила богов",
+  "hammerstorm.ability.3.description": "Увеличивает урон на 25% в течение 6 сек. Перезарядка: 20 сек.",
+
+  "sacred_warrior.ability.0": "Внутренняя Жизнь",
+  "sacred_warrior.ability.0.description": "Восстанавливает 1–5 HP. Ниже 40% HP — восстановление ×2.",
+  "sacred_warrior.ability.1": "Пылающее Копьё",
+  "sacred_warrior.ability.1.description": "Теряешь 5% HP, поджигаешь врага: 1–5 урона/сек. на 3 сек. до ×3 стаков.",
+  "sacred_warrior.ability.2": "Кровь Берсерка",
+  "sacred_warrior.ability.2.description": "+1–4% скорости за каждые 7% недостающего HP.",
+  "sacred_warrior.ability.3": "Жертвенный Удар",
+  "sacred_warrior.ability.3.description": "Тратишь 20% HP, наносишь 40% HP врага. КД: 40 сек.",
+
+  "silent_assassin.ability.0": "Уменьшение",
+  "silent_assassin.ability.0.description": "Уменьшает размер модели на 15/20/25/30/35%.",
+  "silent_assassin.ability.1": "Невесомость",
+  "silent_assassin.ability.1.description": "Увеличивает скорость и снижает гравитацию.",
+  "silent_assassin.ability.2": "Клинок Убийцы",
+  "silent_assassin.ability.2.description": "40% шанс нанести дополнительный урон ножом.",
+  "silent_assassin.ability.3": "Призрачная Хода",
+  "silent_assassin.ability.3.description": "Полностью невидим на 3 секунды. Перезарядка: 15 сек.",
+
   //Stock class extras //Дополнительно
   "mage.frozen": "{Blue}[ЗАМОРОЖЕН]{Default}", // [FROZEN]
   "necromancer.cheatdeath": "{DarkRed}Вы избежали смерти, пока что...", // You cheated death... for now
   "necromancer.lifedrain": "{0} {Red}высосал {1} HP из вас!", // {0} drained {1} HP from you!
+  "death_weaver.cripple": "{Green}Обездвижен {Default}{0}",
+  "death_weaver.cripple.victim": "{Red}Обездвижен от {Default}{0}",
+  "death_weaver.spawn.rifle": "{Green}Вы появились со штурмовой винтовкой!", // Spawned with an assault rifle!
   "paladin.revive": "{Green}Вы были воскрешены!", // You have been resurrected!
   "paladin.revive.other": "{Green}{0}{Default} был воскрешен {Gold}{1}", // {0} was resurrected by {1}
   "paladin.revive.none": "{Red}Нет павших союзников для воскрешения!", // No fallen allies to resurrect!
@@ -191,6 +234,8 @@
   "dwarf_engineer.buildtool": "Инструмент строителя", // Builder tool
   "dwarf_engineer.pickaxe": "Кирка", // Pickaxe
   "dwarf_engineer.build.tooltip": "{Green}[ЛКМ]{Default} Строить {Grey}| {DarkBlue}[ПКМ]{Default} Сменить {Grey}| {Red}[R]{Default} Повернуть", // [LMB] Build | [RMB] Switch | [R] Rotate
+  "sacred_warrior.burningspear": "{Green}Горение {0}",
+  "sacred_warrior.burningspear.victim": "{Orange}Горит от {Default}{0}",
 
   //Items
   "item.owned": "Предметы: {0}", // Items: {0}
@@ -234,5 +279,6 @@
 
   //SharedEffects
   "effect.stun.stunnedby": "{red}Оглушен {green}{0}", // Stunned by {0}
-  "effect.stun.stunowner": "{green}{0}{default} оглушил {1}" // {0} stunned {1}
+  "effect.stun.stunowner": "{green}{0}{default} оглушил {1}", // {0} stunned {1}
+  "effect.no.target": "{Red}Не найден подходящий цель для {Green}{0}"
 }
