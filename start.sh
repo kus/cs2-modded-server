@@ -7,6 +7,8 @@
 # As root (sudo su)
 # cd / && curl -s -H "Cache-Control: no-cache" -o "start.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/master/start.sh" && chmod +x start.sh && bash start.sh
 
+[ -f /home/steam/cs2/.env ] && export $(cat /home/steam/cs2/.env | xargs)
+
 METADATA_URL="${METADATA_URL:-http://metadata.google.internal/computeMetadata/v1/instance/attributes}"
 
 get_metadata () {
@@ -219,16 +221,22 @@ chown -R ${user}:${user} /steamcmd
 
 # /root/.steam/sdk64/steamclient.so
 
-echo "Downloading any updates for CS2..."
+echo "Checking/Downloading any updates for CS2..."
 # https://developer.valvesoftware.com/wiki/Command_line_options
-sudo -u $user /steamcmd/steamcmd.sh \
-  +api_logging 1 1 \
-  +@sSteamCmdForcePlatformType linux \
-  +@sSteamCmdForcePlatformBitness $BITS \
-  +force_install_dir /home/${user}/cs2 \
-  +login anonymous \
-  +app_update 730 \
-  +quit
+if [ ! -f /home/${user}/cs2/game/bin/linuxsteamrt64/cs2 ]; then
+    echo "CS2 is not installed. Installing..."
+    sudo -u $user /steamcmd/steamcmd.sh \
+      +api_logging 1 1 \
+      +@sSteamCmdForcePlatformType linux \
+      +@sSteamCmdForcePlatformBitness $BITS \
+      +force_install_dir /home/${user}/cs2 \
+      +login anonymous \
+      +app_update 730 \
+      +quit
+else
+    echo "CS2 already installed. Skipping update..."
+fi
+
 
 cd /home/${user}
 
