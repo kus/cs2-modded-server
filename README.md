@@ -438,7 +438,7 @@ Your service will receive an external IP and can be found with `kubectl get svc 
 
 ## Running on Windows
 
-Make sure you have **60GB free space**.
+Make sure you have **60GB free space** and **Steam installed** (you don't need to be logged in, just have Steam installed and updated).
 
 If you have git installed; it is recommended to use git and clone the repo `git clone https://github.com/kus/cs2-modded-server.git` and run your server from inside of it. This way you can simply `git pull` updates (or run `update.bat`). Alternatively you can [Download this repo](https://github.com/kus/cs2-modded-server/archive/master.zip) and extract it to where you want your server (i.e. `C:\Server\cs2-modded-server`) but you will manually have to handle updates.
 
