@@ -1,50 +1,48 @@
 {
   "Kus": {
     "identity": "76561197960377828",
-    "groups": [
-      "#css/admin"
-    ]
+    "groups": ["#css/admin"]
   },
   "Kus smurf": {
     "identity": "76561198041470060",
-    "groups": [
-      "#css/admin"
-    ]
+    "groups": ["#css/admin"]
   },
   "Murc": {
     "identity": "76561197995565506",
-    "groups": [
-      "#css/moderator"
-    ]
+    "groups": ["#css/moderator"]
   },
   "Dunx": {
     "identity": "76561197979545410",
-    "groups": [
-      "#css/moderator"
-    ]
+    "groups": ["#css/moderator"]
   },
   "Def": {
     "identity": "76561198806908843",
-    "groups": [
-      "#css/moderator"
-    ]
+    "groups": ["#css/moderator"]
   },
   "mike": {
     "identity": "76561197976814106",
-    "groups": [
-      "#css/moderator"
-    ]
+    "groups": ["#css/moderator"]
   },
   "hudz": {
     "identity": "76561197988916412",
-    "groups": [
-      "#css/moderator"
-    ]
+    "groups": ["#css/moderator"]
   },
   "gino": {
     "identity": "76561198006530968",
-    "groups": [
-      "#css/moderator"
-    ]
+    "groups": ["#css/moderator"]
+  },
+  "Omri": {
+    "identity": "76561198291506774",
+    "flags": [
+      "@css/generic",
+      "@css/kick",
+      "@css/ban",
+      "@css/unban",
+      "@css/slay",
+      "@css/changemap",
+      "@css/chat",
+      "@css/vote"
+    ],
+    "groups": ["#css/admin"]
   }
 }

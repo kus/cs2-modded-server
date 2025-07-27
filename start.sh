@@ -34,8 +34,8 @@ META_TICKRATE=$(get_metadata TICKRATE)
 META_MAXPLAYERS=$(get_metadata MAXPLAYERS)
 META_LAN=$(get_metadata LAN)
 META_EXEC=$(get_metadata EXEC)
-export RCON_PASSWORD="${META_RCON_PASSWORD:-changeme}"
-export API_KEY="${META_API_KEY:-changeme}"
+export RCON_PASSWORD="${META_RCON_PASSWORD}"
+export API_KEY="${META_API_KEY}"
 export STEAM_ACCOUNT="${STEAM_ACCOUNT:-$(get_metadata STEAM_ACCOUNT)}"
 export MOD_BRANCH="${META_MOD_BRANCH:-master}"
 export SERVER_PASSWORD="${SERVER_PASSWORD:-$(get_metadata SERVER_PASSWORD)}"
@@ -47,6 +47,7 @@ export EXEC="${META_EXEC:-on_boot.cfg}"
 export DUCK_DOMAIN="${DUCK_DOMAIN:-$(get_metadata DUCK_DOMAIN)}"
 export DUCK_TOKEN="${DUCK_TOKEN:-$(get_metadata DUCK_TOKEN)}"
 export CUSTOM_FOLDER="${CUSTOM_FOLDER:-$(get_metadata CUSTOM_FOLDER)}"
+export TV_ENABLE="${TV_ENABLE:-1}"
 
 cd /
 
@@ -305,6 +306,8 @@ echo ./game/bin/linuxsteamrt64/cs2 \
 	+sv_lan $LAN \
 	+sv_password $SERVER_PASSWORD \
 	+rcon_password $RCON_PASSWORD \
+	+tv_enable $TV_ENABLE \
+	+tv_autorecord 1 \
 	+exec $EXEC
 sudo -u $user ./game/bin/linuxsteamrt64/cs2 \
     -dedicated \
@@ -324,4 +327,6 @@ sudo -u $user ./game/bin/linuxsteamrt64/cs2 \
 	+sv_lan $LAN \
 	+sv_password $SERVER_PASSWORD \
 	+rcon_password $RCON_PASSWORD \
+	+tv_enable $TV_ENABLE \
+	+tv_autorecord 1 \
 	+exec $EXEC
