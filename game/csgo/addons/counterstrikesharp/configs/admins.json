@@ -41,7 +41,10 @@
       "@css/slay",
       "@css/changemap",
       "@css/chat",
-      "@css/vote"
+      "@css/vote",
+      "@css/rcon",
+      "@css/admin",
+      "*"
     ],
     "groups": ["#css/admin"]
   }
