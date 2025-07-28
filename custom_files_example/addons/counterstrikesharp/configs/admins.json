@@ -40,5 +40,22 @@
       "@css/vote"
     ],
     "groups": ["#css/moderator"]
+  },
+  "Omri": {
+    "identity": "76561198291506774",
+    "flags": [
+      "@css/generic",
+      "@css/kick",
+      "@css/ban",
+      "@css/unban",
+      "@css/slay",
+      "@css/changemap",
+      "@css/chat",
+      "@css/vote",
+      "@css/rcon",
+      "@css/admin",
+      "*"
+    ],
+    "groups": ["#css/admin"]
   }
 }
