@@ -178,7 +178,7 @@ else
 fi
 
 # Download latest stop script
-curl -s -H "Cache-Control: no-cache" -o "stop.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${BRANCH}/stop.sh" && chmod +x stop.sh
+curl -s -H "Cache-Control: no-cache" -o "stop.sh" "https://raw.githubusercontent.com/beladevo/cs2-modded-server/${BRANCH}/stop.sh" && chmod +x stop.sh
 
 PUBLIC_IP=$(curl -4 ifconfig.me)
 

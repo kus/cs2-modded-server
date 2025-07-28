@@ -132,10 +132,10 @@ else
 fi
 
 # Download latest stop script
-curl -s -H "Cache-Control: no-cache" -o "stop.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${BRANCH}/stop.sh" && chmod +x stop.sh
+curl -s -H "Cache-Control: no-cache" -o "stop.sh" "https://raw.githubusercontent.com/beladevo/cs2-modded-server/${BRANCH}/stop.sh" && chmod +x stop.sh
 
 # Download latest start script
-curl -s -H "Cache-Control: no-cache" -o "start.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${BRANCH}/start.sh" && chmod +x start.sh
+curl -s -H "Cache-Control: no-cache" -o "start.sh" "https://raw.githubusercontent.com/beladevo/cs2-modded-server/${BRANCH}/start.sh" && chmod +x start.sh
 
 PUBLIC_IP=$(dig -4 +short myip.opendns.com @resolver1.opendns.com)
 
@@ -214,7 +214,7 @@ rm -r /home/${user}/cs2/game/csgo/addons
 rm -r /home/${user}/cs2/game/csgo/cfg/settings
 
 echo "Downloading mod files..."
-wget --quiet https://github.com/kus/cs2-modded-server/archive/${BRANCH}.zip
+wget --quiet https://github.com/beladevo/cs2-modded-server/archive/${BRANCH}.zip
 unzip -o -qq ${BRANCH}.zip
 # Delete custom_files_example as I use this for my server and as a demo for others and I want it to always reflect git
 rm -r /home/${user}/cs2/custom_files_example/

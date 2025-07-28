@@ -157,7 +157,7 @@ while IFS= read -r line; do
             map=$(echo "${BASH_REMATCH[2]}" | xargs)
             # echo_and_write "[$map](https://steamcommunity.com/sharedfiles/filedetails/?id=$id) "
             # maps_in_group="$maps_in_group[$map](https://steamcommunity.com/sharedfiles/filedetails/?id=$id) ";
-            maps_in_group="$maps_in_group<table align=\"left\"><tr><td><img src=\"https://github.com/kus/cs2-modded-server/blob/assets/images/$map.jpg?raw=true&sanitize=true\"></td></tr><tr><td><a href=\"https://steamcommunity.com/sharedfiles/filedetails/?id=$id\">$map</a><br><sup><sub>host_workshop_map $id</sub></sup></td></tr></table>";
+            maps_in_group="$maps_in_group<table align=\"left\"><tr><td><img src=\"https://github.com/beladevo/cs2-modded-server/blob/assets/images/$map.jpg?raw=true&sanitize=true\"></td></tr><tr><td><a href=\"https://steamcommunity.com/sharedfiles/filedetails/?id=$id\">$map</a><br><sup><sub>host_workshop_map $id</sub></sup></td></tr></table>";
             process_id "$id" "$map"
             addToArray "$id"
         else
@@ -166,7 +166,7 @@ while IFS= read -r line; do
                 map="${BASH_REMATCH[1]}"
                 # echo_and_write "$map "
                 # maps_in_group="$maps_in_group$map ";
-                maps_in_group="$maps_in_group<table align=\"left\"><tr><td><img src=\"https://github.com/kus/cs2-modded-server/blob/assets/images/$map.jpg?raw=true&sanitize=true\"></td></tr><tr><td>$map<br><sup><sub>changelevel $map</sub></sup></td></tr></table>";
+                maps_in_group="$maps_in_group<table align=\"left\"><tr><td><img src=\"https://github.com/beladevo/cs2-modded-server/blob/assets/images/$map.jpg?raw=true&sanitize=true\"></td></tr><tr><td>$map<br><sup><sub>changelevel $map</sub></sup></td></tr></table>";
             fi
         fi
     fi

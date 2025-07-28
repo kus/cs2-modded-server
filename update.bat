@@ -12,7 +12,7 @@ git pull
 if %errorlevel% neq 0 (
     echo Git pull failed!
     echo Was this folder cloned from git?
-    echo git clone https://github.com/kus/cs2-modded-server.git
+    echo git clone https://github.com/beladevo/cs2-modded-server.git
     pause
 
 ) else (
