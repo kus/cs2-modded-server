@@ -238,8 +238,6 @@ else
     echo "CS2 already installed. Skipping update..."
 fi
 
-echo "Syncing ${CUSTOM_FILES} into /home/${user}/cs2/${CUSTOM_FILES}..."
-rsync -a "/home/cs2-modded-server/${CUSTOM_FILES}/" "/home/${user}/cs2/${CUSTOM_FILES}/"
 
 cd /home/${user}
 
