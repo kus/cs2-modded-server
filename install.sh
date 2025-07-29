@@ -177,16 +177,17 @@ fi
 
 chown -R ${user}:${user} /steamcmd
 
-echo "Downloading any updates for CS2..."
-# https://developer.valvesoftware.com/wiki/Command_line_options
-sudo -u $user /steamcmd/steamcmd.sh \
-  +api_logging 1 1 \
-  +@sSteamCmdForcePlatformType linux \
-  +@sSteamCmdForcePlatformBitness $BITS \
-  +force_install_dir /home/${user}/cs2 \
-  +login anonymous \
-  +app_update 730 \
-  +quit
+echo "Downloading any updates for CS2... SKIPPED!"
+# echo "Downloading any updates for CS2..."
+# # https://developer.valvesoftware.com/wiki/Command_line_options
+# sudo -u $user /steamcmd/steamcmd.sh \
+#   +api_logging 1 1 \
+#   +@sSteamCmdForcePlatformType linux \
+#   +@sSteamCmdForcePlatformBitness $BITS \
+#   +force_install_dir /home/${user}/cs2 \
+#   +login anonymous \
+#   +app_update 730 \
+#   +quit
 
 cd /home/${user}
 
@@ -212,6 +213,11 @@ rm -r /home/${user}/cs2/game/csgo/addons
 
 # Delete cfg/settings folder as if we remove something later in git it won't get deleted
 rm -r /home/${user}/cs2/game/csgo/cfg/settings
+
+echo "Installing Metamod-CS2 from community fork (compatible with engine 26)..."
+cd /home/${user}/cs2/game/csgo/addons
+rm -rf metamod
+git clone --depth 1 https://github.com/alliedmodders/metamod-source metamod
 
 echo "Downloading mod files..."
 wget --quiet https://github.com/beladevo/cs2-modded-server/archive/${BRANCH}.zip
@@ -288,7 +294,7 @@ sudo -u $user ./game/bin/linuxsteamrt64/cs2 \
     -dedicated \
     -console \
     -usercon \
-    -autoupdate \
+    # -autoupdate \
     -tickrate $TICKRATE \
 	$IP_ARGS \
     -port $PORT \
