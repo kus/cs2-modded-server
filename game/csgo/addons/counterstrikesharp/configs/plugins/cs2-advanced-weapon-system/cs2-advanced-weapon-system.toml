@@ -1,8 +1,0 @@
-[WeaponDatas]
-
-[WeaponDatas.weapon_deagle]
-Clip = 1
-Ammo = 0
-UnlimitedAmmo = false
-OnlyHeadshot = false
-Damage = "1000"
