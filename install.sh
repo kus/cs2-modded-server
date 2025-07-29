@@ -215,6 +215,7 @@ rm -r /home/${user}/cs2/game/csgo/addons
 rm -r /home/${user}/cs2/game/csgo/cfg/settings
 
 echo "Installing Metamod-CS2 from community fork (compatible with engine 26)..."
+mkdir -p /home/${user}/cs2/game/csgo/addons
 cd /home/${user}/cs2/game/csgo/addons
 rm -rf metamod
 git clone --depth 1 https://github.com/alliedmodders/metamod-source metamod
