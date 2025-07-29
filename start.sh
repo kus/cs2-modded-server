@@ -308,7 +308,8 @@ echo ./game/bin/linuxsteamrt64/cs2 \
 	+rcon_password $RCON_PASSWORD \
 	+tv_enable $TV_ENABLE \
 	+tv_autorecord 1 \
-	+exec $EXEC
+	+exec $EXEC \
+	+exec start_comp.cfg
 sudo -u $user ./game/bin/linuxsteamrt64/cs2 \
     -dedicated \
     -console \
@@ -329,4 +330,6 @@ sudo -u $user ./game/bin/linuxsteamrt64/cs2 \
 	+rcon_password $RCON_PASSWORD \
 	+tv_enable $TV_ENABLE \
 	+tv_autorecord 1 \
-	+exec $EXEC
+	+exec $EXEC \
+	+exec start_comp.cfg
+
