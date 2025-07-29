@@ -29,16 +29,6 @@
   },
   "gino": {
     "identity": "76561198006530968",
-    "flags": [
-      "@css/generic",
-      "@css/kick",
-      "@css/ban",
-      "@css/unban",
-      "@css/slay",
-      "@css/changemap",
-      "@css/chat",
-      "@css/vote"
-    ],
     "groups": ["#css/moderator"]
   },
   "Omri": {

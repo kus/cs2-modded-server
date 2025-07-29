@@ -1,9 +1,0 @@
-﻿{
-  "vote.disabled": "Speciální hlasování jsou {DarkBlue}vypnuta{Default}.",
-  "vote.active": "Hlasování již probíhá.",
-  "vote.started": "Hráč {DarkBlue}{0}{Default} spustil hlasování pro {DarkBlue}{1}{Default}.",
-  "vote.cooldown": "Prosím, počkejte {DarkBlue}{0}{Default} sekund mezi hlasováním.",
-  "vote.already_voted": "Již jste hlasovali.",
-  "vote.finished_with": "Hlasování pro {DarkBlue}{0}{Default} skončilo s výsledkem {DarkBlue}{1}{Default} ({2} hlasy).",
-  "vote.no_permission": "Nemáte potřebné oprávnění k zahájení tohoto hlasování."
-}

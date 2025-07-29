@@ -369,7 +369,7 @@ When you join the server you can [change game modes](#changing-game-modes).
 
 ## Running in Docker
 
-Make sure Docker is installed and about 40 GB disk space is free.
+Make sure Docker is installed and about 60 GB disk space is free.
 
 - **If setting up for internet server:**
 

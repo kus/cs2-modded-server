@@ -1,9 +1,0 @@
-{
-	"RandomRoundsEnabledByDefault": true,
-	"ShowCentreMsg": true,
-	"CanRepeat": false,
-	"MinRandomRounds": 1,
-	"MaxRandomRounds": 1,
-	"DisabledModifiers": [],
-	"ConfigVersion": 1
-}

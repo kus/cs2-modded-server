@@ -3,7 +3,7 @@
 # chmod +x check-updates.sh
 
 extract_mods() {
-    local README_URL="https://raw.githubusercontent.com/kus/cs2-modded-server/master/README.md"
+    local README_URL="https://raw.githubusercontent.com/beladevo/cs2-modded-server/master/README.md"
     
     curl -s "$README_URL" | awk '
         BEGIN { modsStarted = 0 }
