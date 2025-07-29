@@ -132,9 +132,11 @@ else
 fi
 
 # Download latest stop script
+curl -s -H "Cache-Control: no-cache" -o "stop.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${BRANCH}/stop.sh" && chmod +x stop.sh
 curl -s -H "Cache-Control: no-cache" -o "stop.sh" "https://raw.githubusercontent.com/beladevo/cs2-modded-server/${BRANCH}/stop.sh" && chmod +x stop.sh
 
 # Download latest start script
+curl -s -H "Cache-Control: no-cache" -o "start.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${BRANCH}/start.sh" && chmod +x start.sh
 curl -s -H "Cache-Control: no-cache" -o "start.sh" "https://raw.githubusercontent.com/beladevo/cs2-modded-server/${BRANCH}/start.sh" && chmod +x start.sh
 
 PUBLIC_IP=$(dig -4 +short myip.opendns.com @resolver1.opendns.com)
@@ -177,17 +179,16 @@ fi
 
 chown -R ${user}:${user} /steamcmd
 
-echo "Downloading any updates for CS2... SKIPPED!"
-# echo "Downloading any updates for CS2..."
-# # https://developer.valvesoftware.com/wiki/Command_line_options
-# sudo -u $user /steamcmd/steamcmd.sh \
-#   +api_logging 1 1 \
-#   +@sSteamCmdForcePlatformType linux \
-#   +@sSteamCmdForcePlatformBitness $BITS \
-#   +force_install_dir /home/${user}/cs2 \
-#   +login anonymous \
-#   +app_update 730 \
-#   +quit
+echo "Downloading any updates for CS2..."
+# https://developer.valvesoftware.com/wiki/Command_line_options
+sudo -u $user /steamcmd/steamcmd.sh \
+  +api_logging 1 1 \
+  +@sSteamCmdForcePlatformType linux \
+  +@sSteamCmdForcePlatformBitness $BITS \
+  +force_install_dir /home/${user}/cs2 \
+  +login anonymous \
+  +app_update 730 \
+  +quit
 
 cd /home/${user}
 
@@ -214,13 +215,8 @@ rm -r /home/${user}/cs2/game/csgo/addons
 # Delete cfg/settings folder as if we remove something later in git it won't get deleted
 rm -r /home/${user}/cs2/game/csgo/cfg/settings
 
-echo "Installing Metamod-CS2 from community fork (compatible with engine 26)..."
-mkdir -p /home/${user}/cs2/game/csgo/addons
-cd /home/${user}/cs2/game/csgo/addons
-rm -rf metamod
-git clone --depth 1 https://github.com/alliedmodders/metamod-source metamod
-
 echo "Downloading mod files..."
+wget --quiet https://github.com/kus/cs2-modded-server/archive/${BRANCH}.zip
 wget --quiet https://github.com/beladevo/cs2-modded-server/archive/${BRANCH}.zip
 unzip -o -qq ${BRANCH}.zip
 # Delete custom_files_example as I use this for my server and as a demo for others and I want it to always reflect git
@@ -309,5 +305,3 @@ sudo -u $user ./game/bin/linuxsteamrt64/cs2 \
 	+sv_password $SERVER_PASSWORD \
 	+rcon_password $RCON_PASSWORD \
 	+exec $EXEC
-
-	#auto-update removed
