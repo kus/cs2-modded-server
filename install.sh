@@ -295,7 +295,6 @@ sudo -u $user ./game/bin/linuxsteamrt64/cs2 \
     -dedicated \
     -console \
     -usercon \
-    # -autoupdate \
     -tickrate $TICKRATE \
 	$IP_ARGS \
     -port $PORT \
@@ -310,3 +309,5 @@ sudo -u $user ./game/bin/linuxsteamrt64/cs2 \
 	+sv_password $SERVER_PASSWORD \
 	+rcon_password $RCON_PASSWORD \
 	+exec $EXEC
+
+	#auto-update removed
