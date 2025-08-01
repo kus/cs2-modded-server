@@ -32,7 +32,7 @@
   "xp.kill": "{Gold}+{0} XP {Default}{Green}{1}{Default}'yi öldürdüğün için {2}{3}{4}", // +{0} XP for killing {1} {2}{3}{4}
   "xp.add": "{1} oyuncusuna {0} XP eklendi", // {0} XP added to player {1}
   "xp.roundwin": "{Gold}+{0} XP {Default}raundu kazandığın için", // +{0} XP for winning the round
-  "xp.roundinfo": "{0}/{1}xp", // {0}/{1}xp
+  "xp.roundinfo": "{Gold}{0} {Grey}| {White}Seviye {White}{1} {Grey}| {Lime}{2}{Default}/{Green}{3}{Default} XP",
   "ability.ready": "{0} hazır!", // {0} ready!
   "ultimate.countdown": "Ulti hazır olmasına {0}s kaldı", // {0}s until ultimate is ready
   "no.ultimate": "Ulti seviyesi yok", // No ultimate level
@@ -239,44 +239,44 @@
 
 
   //Items
-  "item.owned": "Eşyalar: {0}", // Items: {0}
+  "item.owned": "Eşyalar: {0}",
   "item.amulet_of_the_cat.name": "Kedinin Tılsımı",
   "item.amulet_of_the_cat.description": "Sessiz Adımlar",
   "item.amulet_of_the_cat.activated": "Sessiz adımlar etkin.",
   "item.amulet_of_vitality.name": "Canlılık Tılsımı",
-  "item.amulet_of_vitality.description": "Maksimum HP'yi 50 artırır",
+  "item.amulet_of_vitality.description": "Maksimum HP'yi {0} artırır",
   "item.boots_of_speed.name": "Hız Çizmeleri",
-  "item.boots_of_speed.description": "Hızı %20 artırır",
+  "item.boots_of_speed.description": "Hızı %{0} artırır",
   "item.dagger_of_venom.name": "Zehir Hançeri",
   "item.dagger_of_venom.description": "Vuruşta düşmanları zehirler",
   "item.gloves_of_cloud.name": "Bulut Eldivenleri",
-  "item.gloves_of_cloud.description": "Her 12 saniyede bir duman bombası al",
+  "item.gloves_of_cloud.description": "Her {0} saniyede bir duman bombası al",
   "item.gloves_of_cloud.grenade_name": "Duman bombası",
   "item.gloves_of_dazzle.name": "Parıltı Eldivenleri",
-  "item.gloves_of_dazzle.description": "Her 12 saniyede bir flaş bombası al",
+  "item.gloves_of_dazzle.description": "Her {0} saniyede bir flaş bombası al",
   "item.gloves_of_dazzle.grenade_name": "Flaş bombası",
   "item.gloves_of_wrath.name": "Öfke Eldivenleri",
-  "item.gloves_of_wrath.description": "Her 12 saniyede bir el bombası al",
+  "item.gloves_of_wrath.description": "Her {0} saniyede bir el bombası al",
   "item.gloves_of_wrath.grenade_name": "El bombası",
   "item.mask_of_death.name": "Ölüm Maskesi",
-  "item.mask_of_death.description": "Silah hasarının %15'ini iyileştirme şansı %50",
+  "item.mask_of_death.description": "Silah hasarının %{0}'ini iyileştirme şansı %{1}",
   "item.money_siphon_scepter.name": "Para Sifon Asası",
-  "item.money_siphon_scepter.description": "Vuruşta düşmanın parasının %2'sini çalar",
+  "item.money_siphon_scepter.description": "Vuruşta düşmanın parasının %{0}'sini çalar",
   "item.money_siphon_scepter.steal": "{Gold}+${0} {Red}{1}{Default}'dan çalındı",
   "item.money_siphon_scepter.stolen": "{Red}-{0} {Gold}{1}{Default} tarafından çalındı",
   "item.orb_of_frost.name": "Buz Küresi",
-  "item.orb_of_frost.description": "Vuruşta düşmanı yavaşlatma şansı %33",
+  "item.orb_of_frost.description": "Vuruşta düşmanı yavaşlatma şansı %{0}",
   "item.orb_of_frost.slowed": "{Red}{Green}{0}{Default} tarafından yavaşlatıldın",
   "item.ring_of_regeneration.name": "Yenilenme Yüzüğü",
-  "item.ring_of_regeneration.description": "Her saniye 1 HP yeniler",
+  "item.ring_of_regeneration.description": "Her saniye {0} HP yeniler",
   "item.sock_of_feathers.name": "Tüy Çorabı",
-  "item.sock_of_feathers.description": "Yerçekimini %50 azaltır",
+  "item.sock_of_feathers.description": "Yerçekimini %{0} azaltır",
   "item.talisman_of_evasion.name": "Kaçınma Tılsımı",
-  "item.talisman_of_evasion.description": "%20 kaçınma şansı",
+  "item.talisman_of_evasion.description": "%{0} kaçınma şansı",
   "item.tome_of_experience.name": "Deneyim Kitabı",
-  "item.tome_of_experience.description": "150XP kazan",
+  "item.tome_of_experience.description": "{0} XP kazan",
   "item.tome_of_gambling.name": "Kumar Kitabı",
-  "item.tome_of_gambling.description": "150-450 XP kazanma şansı",
+  "item.tome_of_gambling.description": "{0}-{1} XP kazanma şansı",
 
   //SharedEffects
   "effect.stun.stunnedby": "{red}{green}{0} tarafından sersemletildin", // Stunned by {0}
