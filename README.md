@@ -2,6 +2,11 @@
 
 If you are looking for the CS:GO version you can still access that [here](https://github.com/kus/csgo-modded-server/tree/csgo).
 
+> [!WARNING]  
+> Yes modded servers are broken. The recent July 29th big update has changed a lot things behind the scenes and the fixes need to trickle down from [hl2sdk](https://github.com/alliedmodders/hl2sdk/tree/cs2) -> [Metamod:Source](https://github.com/alliedmodders/metamod-source) -> [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp).
+> This can take some time, everyone is working on this in their own free time.
+> If you want to know when the fixes are in *Watch* > *Custom* > *Releases* on this repo.
+
 ## About
 
 A single modded Counter-Strike 2 (CS2) Modded Dedicated Server that you can [change the active mod](#changing-game-modes) on the server from chat or server console. [Maps are preconfigured per game mode](#what-maps-are-preconfigured-with-each-mode) and change when the game mode changes.
