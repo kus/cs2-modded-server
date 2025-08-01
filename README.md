@@ -87,7 +87,7 @@ Getting up and running:
 
 Mod | Version | Why
 --- | --- | ---
-[Metamod:Source](https://www.metamodsource.net/downloads.php?branch=dev) | `2.0.0-1359` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
+[Metamod:Source](https://www.metamodsource.net/downloads.php?branch=dev) | `2.0.0-1361` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
 [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `1.0.328` | Attempts to implement a .NET Core scripting layer on top of a Metamod Source Plugin, allowing developers to create plugins that interact with the game server in a modern language (C#)
 [MultiAddonManager](https://github.com/Source2ZE/MultiAddonManager) | `1.4.2` | Allows you to use multiple workshop addons at once and have clients download them
 [ServerListPlayersFix](https://github.com/Source2ZE/ServerListPlayersFix) | `1.0.1-Rebuild-04102024` | Fixes players not showing up in the server browser
@@ -127,7 +127,7 @@ Mod | Version | Why
 [cs2-OneInTheChamber](https://github.com/ShookEagle/cs2-OneInTheChamber) | `1.0.0` | One in the Chamber game mode.
 [cs2-quake-sounds](https://github.com/Kandru/cs2-quake-sounds) | `1.0.7` | Quake Sounds on multi kills.
 [CS2-WeaponSpeed](https://github.com/akanora/CS2-WeaponSpeed) | `1.2` | Gives players a speed boost when they fire specified weapons.
-[SpectatorList-CS2](https://github.com/wiruwiru/SpectatorList-CS2) | `build-9` | Shows real-time spectators in on-screen display.
+[SpectatorList-CS2](https://github.com/wiruwiru/SpectatorList-CS2) | `9` | Shows real-time spectators in on-screen display.
 [BotsNoKnife](https://discord.com/channels/1160907911501991946/1365937101886984262) | `1.0` | Keeps Bots from using the knife.
 
 ## Share the love
