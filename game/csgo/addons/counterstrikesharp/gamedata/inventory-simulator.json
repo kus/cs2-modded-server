@@ -16,7 +16,7 @@
   "CBaseModelEntity_SetBodygroup": {
     "signatures": {
       "library": "server",
-      "windows": "48 89 5C 24 ? 48 89 74 24 ? 57 48 83 EC ? 48 8B 19 41 8B F8",
+      "windows": "48 89 5C 24 ? 48 89 74 24 ? 57 48 83 EC ? 41 8B F8 48 8B F2 48 8B D9 E8",
       "linux": "55 48 89 E5 41 55 49 89 F5 41 54 41 89 D4 53 48 89 FB 48 83 EC 08 E8 ? ? ? ? 48 85 C0"
     }
   },
