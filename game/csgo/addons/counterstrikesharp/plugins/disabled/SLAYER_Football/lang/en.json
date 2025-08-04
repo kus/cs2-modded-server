@@ -1,0 +1,11 @@
+{
+    "Chat.Prefix":                      "{Gold}[{DarkRed}★ {Lime}Football {DarkRed}★{Gold}]",
+    "Chat.Invalid":                     "{DarkRed}Invalid Value. {White}Please Enter integer Value {Lime}!startgame <goals>",
+    "Chat.GameStarted":                 "{Green}Game Started! {Gold}Total Goals to Win: {Lime}{0}",
+    "Chat.CTGoal":                      "{Blue}Counter-Terrorists {White}scored a {Gold}Goal! {Purple}Total Goals: {Lime}{0}{DarkRed}/{1}",
+    "Chat.TGoal":                       "{Red}Terrorists {White}scored a {Gold}Goal! {Purple}Total Goals: {Lime}{0}{DarkRed}/{1}",
+    "Chat.Winner":                      "{DarkRed}Game End! {Gold}And the Winner is: {Green}{0}",
+    "Chat.MatchEnd":                    "{DarkRed}Game End! {Gold}Not Enough players for the Match",
+    "Chat.GameStarting":                "{Green}Enough players to start the Game. {Gold}The match will autostart in {Green}{0} {Red}seconds!",
+    "Chat.NotEnoughPlayers":            "{Red}Not Enough players to start the Game. {Green}{0} {Gold}Players need to start the {Green}Game!"
+}

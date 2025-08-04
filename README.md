@@ -132,6 +132,7 @@ Mod | Version | Why
 [cs2-quake-sounds](https://github.com/Kandru/cs2-quake-sounds) | `1.0.8` | Quake Sounds on multi kills.
 [CS2-WeaponSpeed](https://github.com/akanora/CS2-WeaponSpeed) | `1.2` | Gives players a speed boost when they fire specified weapons.
 [SpectatorList-CS2](https://github.com/wiruwiru/SpectatorList-CS2) | `9` | Shows real-time spectators in on-screen display.
+[SLAYER_Football](https://github.com/zakriamansoor47/SLAYER_Football) | `1.1` | Football in CS2.
 [BotsNoKnife](https://discord.com/channels/1160907911501991946/1365937101886984262) | `1.0` | Keeps Bots from using the knife.
 
 ## Share the love
