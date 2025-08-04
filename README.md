@@ -2,10 +2,9 @@
 
 If you are looking for the CS:GO version you can still access that [here](https://github.com/kus/csgo-modded-server/tree/csgo).
 
-> [!WARNING]  
-> Yes modded servers are broken. The recent July 29th big update has changed a lot things behind the scenes and the fixes need to trickle down from [hl2sdk](https://github.com/alliedmodders/hl2sdk/tree/cs2) -> [Metamod:Source](https://github.com/alliedmodders/metamod-source) -> [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp).
-> This can take some time, everyone is working on this in their own free time.
-> If you want to know when the fixes are in *Watch* > *Custom* > *Releases* on this repo.
+> [!NOTE]  
+> **MultiAddonManager** is currently **disabled** as it needs to be updated for the 28 July 2025 Build 19388062. When it is fixed it will be enabled again.
+> This means **QuakeSounds** is also disabled as it requires it to function.
 
 ## About
 
