@@ -3,35 +3,35 @@
     "signatures": {
       "library": "server",
       "windows": "48 89 6C 24 ? 56 48 83 EC ? 48 8B EA 48 8B F1 E8 ? ? ? ? 84 C0 0F 84",
-      "linux": "55 48 89 E5 41 57 41 56 41 55 49 89 F5 41 54 49 89 FC 53 48 81 EC ? ? ? ? E8 ? ? ? ? 84 C0 74 ? 48 8D 05"
+      "linux": "55 48 89 E5 41 55 41 54 49 89 F4 53 48 89 FB 48 83 EC ? E8 ? ? ? ? 84 C0 74"
     }
   },
   "CAttributeList_SetOrAddAttributeValueByName": {
     "signatures": {
       "library": "server",
-      "windows": "40 53 41 56 41 57 48 81 EC ? ? ? ? 0F 29 74 24",
-      "linux": "55 48 89 E5 41 57 41 56 49 89 FE 41 55 41 54 49 89 F4 53 48 83 EC ? F3 0F 11 85"
+      "windows": "40 53 55 41 56 48 81 EC ? ? ? ? 0F 29 74 24",
+      "linux": "55 48 89 E5 41 57 41 56 49 89 FE 41 55 41 54 53 48 89 F3 48 83 EC ? F3 0F 11 85"
     }
   },
   "CBaseModelEntity_SetBodygroup": {
     "signatures": {
       "library": "server",
-      "windows": "48 89 5C 24 ? 48 89 74 24 ? 57 48 83 EC ? 41 8B F8 48 8B F2 48 8B D9 E8",
-      "linux": "55 48 89 E5 41 56 49 89 F6 41 55 41 89 D5 41 54 49 89 FC 48 83 EC"
+      "windows": "48 89 5C 24 ? 48 89 74 24 ? 57 48 83 EC ? 48 8B 19 41 8B F8",
+      "linux": "55 48 89 E5 41 55 49 89 F5 41 54 41 89 D4 53 48 89 FB 48 83 EC 08 E8 ? ? ? ? 48 85 C0"
     }
   },
   "CCSPlayerPawn_IsAbleToApplySpray": {
     "signatures": {
       "library": "server",
       "windows": "48 89 5C 24 ? 48 89 74 24 ? 48 89 7C 24 ? 4C 89 74 24 ? 55 48 8D AC 24 ? ? ? ? 48 81 EC ? ? ? ? 49 8B F1",
-      "linux": "55 48 89 E5 41 57 41 56 49 89 FE 41 55 49 89 D5 41 54 48 8D 95"
+      "linux": "55 48 89 E5 41 57 41 56 49 89 D6 41 55 48 8D 95 ? ? ? ? 49 89 CD"
     }
   },
   "CCSPlayerController_ProcessUsercmds": {
     "signatures": {
       "library": "server",
       "windows": "48 8B C4 44 88 48 20 44 89 40 18 48 89 50 10 53",
-      "linux": "55 48 89 E5 41 57 41 56 41 89 D6 41 55 41 54 49 89 FC 53 48 83 EC 38"
+      "linux": "55 48 89 E5 41 57 41 56 41 55 41 54 53 48 89 FB 48 83 EC ? 89 4D"
     }
   },
   "CCSPlayerController_UpdateSelectTeamPreview": {
@@ -45,14 +45,20 @@
     "signatures": {
       "library": "engine2",
       "windows": "40 57 48 83 EC ? 48 8B F9 48 89 74 24",
-      "linux": "55 89 F0 48 89 E5 41 57 41 56"
+      "linux": "55 89 F0 48 89 E5 41 57 41 56 41 55 41 54 41 89 F4"
     }
   },
   "CServerSideClientBase_Connect": {
     "signatures": {
       "library": "engine2",
-      "windows": "48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 48 89 7C 24 ? 41 54 41 56 41 57 48 83 EC ? 4C 8B BC 24 ? ? ? ? 4D 8B E0 41 0F B7 F1 4C 8B F1 4D 85 FF 74 ? 49 8B 07 49 8B CF FF 50 ? BB ? ? ? ? 84 C0 74 ? BB ? ? ? ? 8B 0D ? ? ? ? 8B D3 FF 15 ? ? ? ? 0F B6 AC 24 ? ? ? ? 84 C0 74 ? 4D 85 FF 74 ? 49 8B 07 49 8B CF FF 50 ? 48 8B D0 EB ? 48 8D 15 ? ? ? ? 8B 0D ? ? ? ? 4C 8D 05 ? ? ? ? 48 89 54 24 ? 4D 8B CC 89 6C 24 ? 8B D3 89 74 24 ? FF 15 ? ? ? ? 40 84 ED 75 ? 45 33 C0 48 8D 0D ? ? ? ? 41 8D 50 ? E8 ? ? ? ? 49 8B 06 49 8B CE 49 8B BE ? ? ? ? 49 8B 9E ? ? ? ? FF 50 ? B9 ? ? ? ? 49 89 BE ? ? ? ? 49 89 BE ? ? ? ? 49 89 9E ? ? ? ? 66 41 89 B6 ? ? ? ? FF 15 ? ? ? ? 33 FF",
-      "linux": "55 48 89 E5 41 57 49 89 FF 41 56 41 55 41 89 CD"
+      "windows": "48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 57 41 54 41 55 41 56 41 57 48 83 EC ? 4C 8B BC 24",
+      "linux": "55 48 89 E5 41 57 49 89 FF 41 56 41 89 CE 41 55 41 BD"
+    }
+  },
+  "CCSPlayer_WeaponServices_DropWeapon": {
+    "offsets": {
+      "windows": 22,
+      "linux": 23
     }
   }
 }
