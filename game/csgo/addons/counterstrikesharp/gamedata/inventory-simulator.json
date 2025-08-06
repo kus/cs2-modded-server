@@ -1,23 +1,9 @@
 {
-  "ChangeSubclass": {
-    "signatures": {
-      "library": "server",
-      "windows": "48 89 6C 24 ? 56 48 83 EC ? 48 8B EA 48 8B F1 E8 ? ? ? ? 84 C0 0F 84",
-      "linux": "55 48 89 E5 41 55 41 54 49 89 F4 53 48 89 FB 48 83 EC ? E8 ? ? ? ? 84 C0 74"
-    }
-  },
   "CAttributeList_SetOrAddAttributeValueByName": {
     "signatures": {
       "library": "server",
       "windows": "40 53 55 41 56 48 81 EC ? ? ? ? 0F 29 74 24",
       "linux": "55 48 89 E5 41 57 41 56 49 89 FE 41 55 41 54 53 48 89 F3 48 83 EC ? F3 0F 11 85"
-    }
-  },
-  "CBaseModelEntity_SetBodygroup": {
-    "signatures": {
-      "library": "server",
-      "windows": "48 89 5C 24 ? 48 89 74 24 ? 57 48 83 EC ? 41 8B F8 48 8B F2 48 8B D9 E8",
-      "linux": "55 48 89 E5 41 55 49 89 F5 41 54 41 89 D4 53 48 89 FB 48 83 EC 08 E8 ? ? ? ? 48 85 C0"
     }
   },
   "CCSPlayerPawn_IsAbleToApplySpray": {
