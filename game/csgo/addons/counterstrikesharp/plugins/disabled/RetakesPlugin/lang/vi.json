@@ -1,0 +1,17 @@
+﻿{
+  "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
+  
+  "retakes.queue.joined": "Bạn đã được đưa vào hàng chờ.",
+  "retakes.queue.waiting": "Trận đấu hiện đã đầy với [GREEN]{0}[NORMAL] người chơi. Bạn đang trong hàng chờ.",
+  "retakes.queue.replaced_by_vip": "Bạn đã bị thay thế bởi VIP [GREEN]{0}[NORMAL].",
+  "retakes.queue.vip_took_place": "Bạn đã lấy chỗ của [GREEN]{0}[NORMAL] trong trận.",
+
+  "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} T[NORMAL] vs [PURPLE]{2} CT",
+  "retakes.voices.toggle": "Bạn đã {0} thông báo bằng giọng nói!",
+
+  "retakes.teams.scramble": "T đã thắng [GREEN]{0}[NORMAL] round liên tiếp. [PURPLE]Đội sẽ được xáo trộn!",
+  "retakes.teams.almost_scramble": "T đã thắng [GREEN]{0}[NORMAL] round liên tiếp - nếu thắng thêm [GREEN]{1}, [PURPLE]đội sẽ bị xáo trộn.",
+  "retakes.teams.win_streak": "T đang có chuỗi thắng [GREEN]{0}[NORMAL] round!",
+  "retakes.teams.win_streak_over": "CT đã kết thúc chuỗi thắng [GREEN]{0}[NORMAL] round!",
+  "retakes.teams.admin_scramble": "{0} đã thiết lập xáo trộn đội ở round tiếp theo."
+}
