@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "cs2-advanced-weapon-system/1.4": {
+      "cs2-advanced-weapon-system/1.5": {
         "dependencies": {
           "CounterStrikeSharp.API": "1.0.314"
         },
@@ -543,7 +543,7 @@
     }
   },
   "libraries": {
-    "cs2-advanced-weapon-system/1.4": {
+    "cs2-advanced-weapon-system/1.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
