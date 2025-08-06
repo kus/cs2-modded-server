@@ -566,6 +566,14 @@
             <param name="pressed"></param>
             <param name="released"></param>
         </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnPlayerChat">
+            <summary>
+            Called when a player sends a chat message.
+            </summary>
+            <param name="player">The player who sent the chat message.</param>
+            <param name="message">The content of the chat message.</param>
+            <param name="teamChat">If the chat message was sent to team only.</param>
+        </member>
         <member name="T:CounterStrikeSharp.API.Core.Listeners.OnMetamodAllPluginsLoaded">
             <summary>
             Called when all metamod plugins are loaded.
