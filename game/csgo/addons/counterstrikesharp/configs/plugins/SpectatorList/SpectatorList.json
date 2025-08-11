@@ -1,0 +1,39 @@
+{
+  "Commands": [
+    "css_speclist",
+    "css_specs",
+    "css_spectators"
+  ],
+  "CommandPermissions": "",
+  "CanViewList": "",
+  "UpdateSettings": {
+    "CheckInterval": 2,
+    "ShowOnChange": true,
+    "ShowPeriodic": false,
+    "PeriodicInterval": 5
+  },
+  "DisplaySettings": {
+    "ExclusionFlag": "",
+    "MaxNamesInMessage": 5,
+    "SendToChat": false,
+    "UseScreenView": true,
+    "ScreenViewSettings": {
+      "PositionX": -8,
+      "PositionY": 1,
+      "TitleColor": "#FFD700",
+      "PlayerNameColor": "#FFFFFF",
+      "CountColor": "#87CEEB"
+    }
+  },
+  "StorageSettings": {
+    "StorageType": "Memory",
+    "Database": {
+      "Host": "",
+      "Port": 3306,
+      "User": "root",
+      "Password": "",
+      "DatabaseName": ""
+    }
+  },
+  "ConfigVersion": 1
+}

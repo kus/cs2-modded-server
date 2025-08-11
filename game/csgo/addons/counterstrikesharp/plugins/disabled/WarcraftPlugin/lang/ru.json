@@ -32,7 +32,7 @@
   "xp.kill": "{Gold}+{0} XP {Default}за убийство {Green}{1} {Default}{2}{3}{4}", // +{0} XP for killing {1} {2}{3}{4}
   "xp.add": "Добавление {0} опыта игроку {1}", // Adding {0} XP to player {1}
   "xp.roundwin": "{Gold}+{0} XP {Default}за победу в раунде", // +{0} XP for round win
-  "xp.roundinfo": "{0}/{1} опыта", // {0}/{1}xp
+  "xp.roundinfo": "{Gold}{0} {Grey}| {White}Уровень {White}{1} {Grey}| {Lime}{2}{Default}/{Green}{3}{Default} ОП",
   "ability.ready": "{0} готово!", // {0} ready!
   "ultimate.countdown": "Ультимейт готов через {0}с", // Ultimate ready in {0}s
   "no.ultimate": "Нет уровней в ультимейте", // No ultimate levels
@@ -72,6 +72,10 @@
   "tinker": "Механик", // Tinker
   "shadowblade": "Теневой клинок", // Shadowblade
   "dwarf_engineer": "Инженер-гном", // Dwarf Engineer
+  "death_weaver": "Ткач Смерти",
+  "hammerstorm": "Громовой Молот",
+  "sacred_warrior": "Священный Воин",
+  "silent_assassin": "Безмолвный Убийца",
 
   //Stock class abilities //Способности классов
   "barbarian.ability.0": "Резня", // Carnage
@@ -82,6 +86,15 @@
   "barbarian.ability.2.description": "Шанс 3-13% выбросить бочку при выстреле (зависит от оружия).", // 3-13% chance to throw a barrel on shot (depends on weapon).
   "barbarian.ability.3": "Жажда крови", // Bloodlust
   "barbarian.ability.3.description": "На 10с: бесконечные патроны, +30% скорости и регенерация здоровья.", // 10s: infinite ammo, +30% speed, health regen.
+
+  "death_weaver.ability.0": "Cripple", // Cripple
+  "death_weaver.ability.0.description": "Шанс замедлить врага при атаке.",
+  "death_weaver.ability.1": "Unholy Frenzy", // Unholy Frenzy
+  "death_weaver.ability.1.description": "Шанс нанести дополнительный урон 10-50%.",
+  "death_weaver.ability.2": "Necromancer Master", // Necromancer Master
+  "death_weaver.ability.2.description": "Шанс появиться со штурмовой винтовкой.",
+  "death_weaver.ability.3": "Raise Skeleton", // Raise Skeleton
+  "death_weaver.ability.3.description": "Возрождает случайного союзника.",
 
   "mage.ability.0": "Огненный шар", // Fireball
   "mage.ability.0.description": "Молотовы наносят 40/80/120/160/200 урона при взрыве.", // Molotovs deal 40/80/120/160/200 damage on explosion.
@@ -164,10 +177,40 @@
   "dwarf_engineer.ability.3": "Золотая лихорадка!", // Gold Rush!
   "dwarf_engineer.ability.3.description": "+1000 HP и ускорение на 10с.", // +1000 HP and speed for 10s.
 
+  "hammerstorm.ability.0": "Грозовой удар",
+  "hammerstorm.ability.0.description": "25% шанс оглушить врагов рядом с целью.",
+  "hammerstorm.ability.1": "Мощный размах",
+  "hammerstorm.ability.1.description": "25% шанс нанести урон по области рядом с врагами.",
+  "hammerstorm.ability.2": "Боевой клич",
+  "hammerstorm.ability.2.description": "Дополнительное здоровье и скорость передвижения.",
+  "hammerstorm.ability.3": "Сила богов",
+  "hammerstorm.ability.3.description": "Увеличивает урон на 25% в течение 6 сек. Перезарядка: 20 сек.",
+
+  "sacred_warrior.ability.0": "Внутренняя Жизнь",
+  "sacred_warrior.ability.0.description": "Восстанавливает 1–5 HP. Ниже 40% HP — восстановление ×2.",
+  "sacred_warrior.ability.1": "Пылающее Копьё",
+  "sacred_warrior.ability.1.description": "Теряешь 5% HP, поджигаешь врага: 1–5 урона/сек. на 3 сек. до ×3 стаков.",
+  "sacred_warrior.ability.2": "Кровь Берсерка",
+  "sacred_warrior.ability.2.description": "+1–4% скорости за каждые 7% недостающего HP.",
+  "sacred_warrior.ability.3": "Жертвенный Удар",
+  "sacred_warrior.ability.3.description": "Тратишь 20% HP, наносишь 40% HP врага. КД: 40 сек.",
+
+  "silent_assassin.ability.0": "Уменьшение",
+  "silent_assassin.ability.0.description": "Уменьшает размер модели на 15/20/25/30/35%.",
+  "silent_assassin.ability.1": "Невесомость",
+  "silent_assassin.ability.1.description": "Увеличивает скорость и снижает гравитацию.",
+  "silent_assassin.ability.2": "Клинок Убийцы",
+  "silent_assassin.ability.2.description": "40% шанс нанести дополнительный урон ножом.",
+  "silent_assassin.ability.3": "Призрачная Хода",
+  "silent_assassin.ability.3.description": "Полностью невидим на 3 секунды. Перезарядка: 15 сек.",
+
   //Stock class extras //Дополнительно
   "mage.frozen": "{Blue}[ЗАМОРОЖЕН]{Default}", // [FROZEN]
   "necromancer.cheatdeath": "{DarkRed}Вы избежали смерти, пока что...", // You cheated death... for now
   "necromancer.lifedrain": "{0} {Red}высосал {1} HP из вас!", // {0} drained {1} HP from you!
+  "death_weaver.cripple": "{Green}Обездвижен {Default}{0}",
+  "death_weaver.cripple.victim": "{Red}Обездвижен от {Default}{0}",
+  "death_weaver.spawn.rifle": "{Green}Вы появились со штурмовой винтовкой!", // Spawned with an assault rifle!
   "paladin.revive": "{Green}Вы были воскрешены!", // You have been resurrected!
   "paladin.revive.other": "{Green}{0}{Default} был воскрешен {Gold}{1}", // {0} was resurrected by {1}
   "paladin.revive.none": "{Red}Нет павших союзников для воскрешения!", // No fallen allies to resurrect!
@@ -191,48 +234,51 @@
   "dwarf_engineer.buildtool": "Инструмент строителя", // Builder tool
   "dwarf_engineer.pickaxe": "Кирка", // Pickaxe
   "dwarf_engineer.build.tooltip": "{Green}[ЛКМ]{Default} Строить {Grey}| {DarkBlue}[ПКМ]{Default} Сменить {Grey}| {Red}[R]{Default} Повернуть", // [LMB] Build | [RMB] Switch | [R] Rotate
+  "sacred_warrior.burningspear": "{Green}Горение {0}",
+  "sacred_warrior.burningspear.victim": "{Orange}Горит от {Default}{0}",
 
   //Items
-  "item.owned": "Предметы: {0}", // Items: {0}
+  "item.owned": "Предметы: {0}",
   "item.amulet_of_the_cat.name": "Амулет Кота",
   "item.amulet_of_the_cat.description": "Бесшумные шаги",
   "item.amulet_of_the_cat.activated": "Бесшумные шаги активированы.",
   "item.amulet_of_vitality.name": "Амулет Живучести",
-  "item.amulet_of_vitality.description": "Увеличивает макс. HP на 50",
+  "item.amulet_of_vitality.description": "Увеличивает макс. HP на {0}",
   "item.boots_of_speed.name": "Сапоги Скорости",
-  "item.boots_of_speed.description": "Увеличивает скорость на 20%",
+  "item.boots_of_speed.description": "Увеличивает скорость на {0}%",
   "item.dagger_of_venom.name": "Кинжал Яда",
   "item.dagger_of_venom.description": "Отравляет врагов при ударе",
   "item.gloves_of_cloud.name": "Перчатки Облака",
-  "item.gloves_of_cloud.description": "Получайте дымовую гранату каждые 12 сек.",
+  "item.gloves_of_cloud.description": "Получайте дымовую гранату каждые {0} сек.",
   "item.gloves_of_cloud.grenade_name": "Дымовая граната",
   "item.gloves_of_dazzle.name": "Перчатки Ослепления",
-  "item.gloves_of_dazzle.description": "Получайте светошумовую гранату каждые 12 сек.",
+  "item.gloves_of_dazzle.description": "Получайте светошумовую гранату каждые {0} сек.",
   "item.gloves_of_dazzle.grenade_name": "Светошумовая граната",
   "item.gloves_of_wrath.name": "Перчатки Гнева",
-  "item.gloves_of_wrath.description": "Получайте осколочную гранату каждые 12 сек.",
+  "item.gloves_of_wrath.description": "Получайте осколочную гранату каждые {0} сек.",
   "item.gloves_of_wrath.grenade_name": "Осколочная граната",
   "item.mask_of_death.name": "Маска Смерти",
-  "item.mask_of_death.description": "50% шанс исцелить 15% нанесённого урона оружием",
+  "item.mask_of_death.description": "{0}% шанс исцелить {1}% нанесённого урона оружием",
   "item.money_siphon_scepter.name": "Скипетр Сифона Денег",
-  "item.money_siphon_scepter.description": "Крадёт 2% денег врага при ударе",
+  "item.money_siphon_scepter.description": "Крадёт {0}% денег врага при ударе",
   "item.money_siphon_scepter.steal": "{Gold}+${0} украдено у {Red}{1}{Default}",
   "item.money_siphon_scepter.stolen": "{Red}-{0} украдено {Gold}{1}{Default}",
   "item.orb_of_frost.name": "Сфера Холода",
-  "item.orb_of_frost.description": "33% шанс замедлить врага при ударе",
+  "item.orb_of_frost.description": "{0}% шанс замедлить врага при ударе",
   "item.orb_of_frost.slowed": "{Red}Замедлен {Green}{0}{Default}",
   "item.ring_of_regeneration.name": "Кольцо Регенерации",
-  "item.ring_of_regeneration.description": "Восстанавливает 1 HP каждую сек.",
+  "item.ring_of_regeneration.description": "Восстанавливает {0} HP каждую сек.",
   "item.sock_of_feathers.name": "Носок Перьев",
-  "item.sock_of_feathers.description": "Уменьшает гравитацию на 50%",
+  "item.sock_of_feathers.description": "Уменьшает гравитацию на {0}%",
   "item.talisman_of_evasion.name": "Талисман Уклонения",
-  "item.talisman_of_evasion.description": "20% шанс уклониться",
+  "item.talisman_of_evasion.description": "{0}% шанс уклониться",
   "item.tome_of_experience.name": "Том Опыта",
-  "item.tome_of_experience.description": "Получить 150XP",
+  "item.tome_of_experience.description": "Получить {0} XP",
   "item.tome_of_gambling.name": "Том Азарта",
-  "item.tome_of_gambling.description": "Шанс получить 150-450 XP",
+  "item.tome_of_gambling.description": "Шанс получить {0}-{1} XP",
 
   //SharedEffects
   "effect.stun.stunnedby": "{red}Оглушен {green}{0}", // Stunned by {0}
-  "effect.stun.stunowner": "{green}{0}{default} оглушил {1}" // {0} stunned {1}
+  "effect.stun.stunowner": "{green}{0}{default} оглушил {1}", // {0} stunned {1}
+  "effect.no.target": "{Red}Не найден подходящий цель для {Green}{0}"
 }

@@ -440,6 +440,16 @@
             This handler should avoid containing expensive operations.
             </summary>
         </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnServerPreEntityThink">
+            <summary>
+            Called on every server frame before entities think.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnServerPostEntityThink">
+            <summary>
+            Called on every server frame after entities think.
+            </summary>
+        </member>
         <member name="T:CounterStrikeSharp.API.Core.Listeners.OnMapStart">
             <summary>
             Called when a new map is loaded.
@@ -548,6 +558,22 @@
             </summary>
             <param name="infoList">Transmit info list</param>
         </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnPlayerButtonsChanged">
+            <summary>
+            Called in the entity pre-think when the player's buttons have changed.
+            </summary>
+            <param name="player"></param>
+            <param name="pressed"></param>
+            <param name="released"></param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnPlayerChat">
+            <summary>
+            Called when a player sends a chat message.
+            </summary>
+            <param name="player">The player who sent the chat message.</param>
+            <param name="message">The content of the chat message.</param>
+            <param name="teamChat">If the chat message was sent to team only.</param>
+        </member>
         <member name="T:CounterStrikeSharp.API.Core.Listeners.OnMetamodAllPluginsLoaded">
             <summary>
             Called when all metamod plugins are loaded.
@@ -555,7 +581,15 @@
         </member>
         <member name="M:CounterStrikeSharp.API.Core.CBaseEntity.Teleport(CounterStrikeSharp.API.Modules.Utils.Vector,CounterStrikeSharp.API.Modules.Utils.QAngle,CounterStrikeSharp.API.Modules.Utils.Vector)">
             <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
-            <exception cref="T:System.ArgumentNullException">No valid argument</exception>
+            <exception cref="T:System.ArgumentNullException">At least one parameter must be specified</exception>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Core.CBaseEntity.Teleport(System.Nullable{System.Numerics.Vector3},System.Nullable{System.Numerics.Vector3},System.Nullable{System.Numerics.Vector3})">
+            <summary>
+            Teleports the entity to the specified position, angles, and velocity using Vector3 parameters.
+            This overload is optimized for memory efficiency by directly working with a Vector3 struct.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
+            <exception cref="T:System.ArgumentException">At least one parameter must be specified</exception>
         </member>
         <member name="M:CounterStrikeSharp.API.Core.CBaseEntity.DispatchSpawn">
             <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>

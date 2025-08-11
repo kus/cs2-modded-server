@@ -127,8 +127,8 @@
   "_comment.WorldspawnSuicide": "Level down player if they kill themself by WorldSpawn Suicide, 0 - Disable, 1..N - Levels to loose",
   "SelfKillProtection": true,
   "_comment.SelfKillProtection": "Prevents players from using the kill command.",
-  "LevelsInScoreboard": false,
-  "_comment.LevelsInScoreboard": "Show levels in the scoreboard. (It does not work now)",
+  "LevelsInScoreboard": 4,
+  "_comment.LevelsInScoreboard": "Show levels in scoreboard: 0 - disabled, 1 - replace kills, 2 - deaths, 3 - assists, 4 - score",
   "ShowLeaderWeapon": true,
   "_comment.ShowLeaderWeapon": "Show leader's weapon name in chat with leading message",
   "ShowSpawnMsgInHintBox": true,
@@ -183,6 +183,8 @@
   "_comment.EndGameSilent": "Defines how to finish the game after someone has won. False - normal end, True - silent end.",
   "WinnerFreezePlayers": true,
   "_comment.WinnerFreezePlayers": "Freezes players after a win.",
+  "WinnerMessage": 3,
+  "_comment.WinnerMessage": "Print Winner and Looser after win. 0 - Don't print, 1 - Print in Chat, 2 - Print in Centre, 3 - Print in CentreHtml",
   "AfkManagement": true,
   "_comment.AfkManagement": "Enables or disables built in Afk management system",
   "AfkDeaths": 2,
@@ -202,6 +204,8 @@
   "DontAddWinsOnBot": true,
   "_comment.DontAddWinsOnBot": "If player wins on bot, then dont add win in stats.",
   "WarmupTimerSound": "",
+  "UseSoundEvents": false,
+  "_comment.UseSoundEvents": "True if sounds organised in soundevents. So soundevents names should be set in corresponded parameters",
   "WinnerSound": [
     "sounds/music/3kliksphilip_01/startaction_01.mp3",
     "sounds/music/austinwintory_01/startaction_01.mp3",
@@ -232,11 +236,13 @@
     "sounds/vo/agents/seal_fem/af1_sees_friend_killed_06.wav",
     "sounds/vo/agents/swat_fem/sees_friend_killed_04.wav"
   ],
+  "WinnerSoundEvent": "winner.event",
   "LevelDownSound": "sounds/ui/armsrace_demoted.wav",
   "LevelUpSound": "sounds/ui/armsrace_level_up.wav",
   "_comment.LevelUpSound": "Sound for player when he leveled up",
   "LevelStealUpSound": "sounds/training/pointscored.wav",
   "_comment.LevelStealUpSound": "Sound for player when he stole level",
+  "TeamKillSoundEvent": "teamkill.event",
   "KnifeStealSound": [
     "sounds/vo/commander/commander_comment_07.wav",
     "sounds/vo/commander/commander_comment_08.wav",
@@ -244,8 +250,10 @@
     "sounds/vo/commander/commander_comment_14.wav"
   ],
   "_comment.KnifeStealSound": "List of sounds for everyone when someone stole a level by knife",
+  "KnifeStealSoundEvent": "knifesteal.event",
   "MolotovKillSound": "",
   "_comment.MolotovKillSound": "Sound for everyone when someone killed my Molotov and stole a level",
-  "SpawnDistance": 60.0,
+  "SpawnDistance": 100.0,
+  "LogSpawnDistance": false,
   "ConfigVersion": 1
 }

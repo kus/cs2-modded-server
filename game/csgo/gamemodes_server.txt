@@ -221,6 +221,7 @@
 				"workshop/3257582863/de_palais"        ""
 				"workshop/3308613773/de_whistle"        ""
 				"workshop/3085490518/gd_rialto"		""
+				"workshop/3536622725/de_rooftop"		""
 				"workshop/3070550406/de_safehouse"		""
 				"workshop/3070563536/de_lake"		""
 				"workshop/3070581293/de_bank"		""
@@ -265,6 +266,8 @@
 				"ar_baggage"		""
 				"ar_pool_day"		""
 				"workshop/3443206318/speedball"		""
+				"workshop/3267768230/gg_lego_arena"		""
+				"workshop/3535917558/de_indoor"		""
 				"workshop/3071005299/de_assembly"		""
 				"workshop/3070238628/fy_iceworld"		""
 				"workshop/3072640420/daymare"		""
@@ -448,8 +451,7 @@
 			"displayname"			"Soccer"
 			"maps"
 			{
-				"workshop/3293224257/futsal"		""
-				"workshop/3070198374/ka_soccer_2009"		""
+				"workshop/3238565662/field"		""
 			}
 		}
 		"mg_awp"
