@@ -89,7 +89,7 @@ Mod | Version | Why
 --- | --- | ---
 [Metamod:Source](https://www.metamodsource.net/downloads.php?branch=dev) | `2.0.0-1364` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
 [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `1.0.334` | Attempts to implement a .NET Core scripting layer on top of a Metamod Source Plugin, allowing developers to create plugins that interact with the game server in a modern language (C#)
-[MultiAddonManager](https://github.com/Source2ZE/MultiAddonManager) | `1.4.4` | Allows you to use multiple workshop addons at once and have clients download them
+[MultiAddonManager](https://github.com/Source2ZE/MultiAddonManager) | `1.4.5` | Allows you to use multiple workshop addons at once and have clients download them
 [ServerListPlayersFix](https://github.com/Source2ZE/ServerListPlayersFix) | `1.0.2` | Fixes players not showing up in the server browser
 [MovementUnlocker](https://github.com/Source2ZE/MovementUnlocker)| `1.5` | Removes max speed limitation from players on the ground, feels like CS:S [How?](#i-run-a-surfkzbhop-server-and-want-movementunlocker-and-cs2fixes-rampbugfix-permanently-on)
 [CS2Fixes-RampbugFix](https://github.com/Interesting-exe/CS2Fixes-RampbugFix)| `1.8` | Minimizes rampbugs (needs to be enabled via `!settings` [How?](#i-run-a-surfkzbhop-server-and-want-movementunlocker-and-cs2fixes-rampbugfix-permanently-on))
