@@ -410,11 +410,12 @@ You can either Download this repo and extract it to where you want your server (
 
 ## Running in Kubernetes
 
-You should have a Kubernetes distribution already running. To set up a K8s Cluster please refer to [RKE2 Quickstart](https://docs.rke2.io/install/quickstart)
+Assuming you have a Kubernetes cluster already running... To set up a K8s Cluster please refer to [RKE2 Quickstart](https://docs.rke2.io/install/quickstart)
 
 First create a namespace for your deployment with `kubectl create ns game-server`
 
-To securly pass .env vars to the container, *Kubernetes Secrets* are used. Make a file called `cs2-secret.yaml`. Your keys need to be base64 encoded. Simply `echo "my_key" | base64` in your bash shell and then put them in the data section of your Secret manifest.
+To securly pass .env vars to the container, *Kubernetes Secrets* are used. To create a kuberneteres secret, first `echo -n 'your_secret_value' | base64` for your steam account and api key. Then create a manifest of kind secret and store your keys in the base64 encoded format.
+
 
 ```
 apiVersion: v1
@@ -432,7 +433,7 @@ Assuming you already have a `defaultStorageClass` and a `defaultLoadBalancerClas
 
 ```kubectl apply -f manifest.yaml```
 
-Note: `custom_files` is mounted as a `hostPath` this wont work for multi-node setups. For this there are several solutions such as initContainer or Operators to automatically update the `custom_files` 
+Note: `custom_files` is mounted as a `hostPath` this wont work for multi-node setups. For this there are several solutions such as initContainer or Operators to automatically update the `custom_files`. One could also use a gitsync sidecar and another pvc.
 
 Your service will receive an external IP and can be found with `kubectl get svc -n game-server`.
 
