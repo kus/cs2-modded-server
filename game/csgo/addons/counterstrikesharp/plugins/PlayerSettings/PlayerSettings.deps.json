@@ -6,17 +6,17 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "GameModeManager/1.0.0": {
+      "PlayerSettings/1.0.0": {
         "dependencies": {
-          "CounterStrikeSharp.API": "1.0.282",
-          "GameModeManager.Shared": "1.0.0",
-          "Gameloop.Vdf": "0.6.2.0"
+          "CounterStrikeSharp.API": "1.0.233",
+          "PlayerSettingsApi": "1.0.0",
+          "AnyBaseLib": "1.0.0.0"
         },
         "runtime": {
-          "GameModeManager.dll": {}
+          "PlayerSettings.dll": {}
         }
       },
-      "CounterStrikeSharp.API/1.0.282": {
+      "CounterStrikeSharp.API/1.0.233": {
         "dependencies": {
           "McMaster.NETCore.Plugins": "1.4.0",
           "Microsoft.CSharp": "4.7.0",
@@ -33,8 +33,8 @@
         },
         "runtime": {
           "lib/net8.0/CounterStrikeSharp.API.dll": {
-            "assemblyVersion": "1.0.282.0",
-            "fileVersion": "1.0.282.0"
+            "assemblyVersion": "1.0.233.0",
+            "fileVersion": "1.0.233.0"
           }
         }
       },
@@ -533,39 +533,39 @@
           "System.Text.Encodings.Web": "8.0.0"
         }
       },
-      "GameModeManager.Shared/1.0.0": {
+      "PlayerSettingsApi/1.0.0": {
         "dependencies": {
-          "CounterStrikeSharp.API": "1.0.282"
+          "CounterStrikeSharp.API": "1.0.233"
         },
         "runtime": {
-          "GameModeManager.Shared.dll": {
-            "assemblyVersion": "1.0.0",
+          "PlayerSettingsApi.dll": {
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
       },
-      "Gameloop.Vdf/0.6.2.0": {
+      "AnyBaseLib/1.0.0.0": {
         "runtime": {
-          "Gameloop.Vdf.dll": {
-            "assemblyVersion": "0.6.2.0",
-            "fileVersion": "0.6.2.0"
+          "AnyBaseLib.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       }
     }
   },
   "libraries": {
-    "GameModeManager/1.0.0": {
+    "PlayerSettings/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "CounterStrikeSharp.API/1.0.282": {
+    "CounterStrikeSharp.API/1.0.233": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oantyRJganDBhUnna0bgBmEXu+3WWCYhEED8zQ1YZecwYCNM/OgTNL2mVXVDPuengBg+jJvwi1tFrOM8PyaIhQ==",
-      "path": "counterstrikesharp.api/1.0.282",
-      "hashPath": "counterstrikesharp.api.1.0.282.nupkg.sha512"
+      "sha512": "sha512-s3h/hcMLzWrbAFqLUxk6Ld68J2IwUtxnHXD14zTQ7km1LCvsoI7XpxD335usNpRmsWTiZ5I+tG6PcvPBPw/2/A==",
+      "path": "counterstrikesharp.api/1.0.233",
+      "hashPath": "counterstrikesharp.api.1.0.233.nupkg.sha512"
     },
     "McMaster.NETCore.Plugins/1.4.0": {
       "type": "package",
@@ -889,12 +889,12 @@
       "path": "system.text.json/8.0.0",
       "hashPath": "system.text.json.8.0.0.nupkg.sha512"
     },
-    "GameModeManager.Shared/1.0.0": {
+    "PlayerSettingsApi/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Gameloop.Vdf/0.6.2.0": {
+    "AnyBaseLib/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
