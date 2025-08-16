@@ -1,0 +1,256 @@
+{
+  "default": {
+    "graveryard": {
+      "LineupPos": "-1349.97 -968.03 -399.97",
+      "LineupAng": "-10.34 -27.05 0.00",
+      "Desc": "Graveyard Smoke Simple Jumpthrow",
+      "Map": "de_nuke",
+      "Type": "Smoke"
+    },
+    "solo_cross": {
+      "LineupPos": "-1349.97 -968.03 -399.97",
+      "LineupAng": "-28.23 -28.60 0.00",
+      "Desc": "Solo Cross Smoke Simple Jumpthrow",
+      "Map": "de_nuke",
+      "Type": "Smoke"
+    },
+    "secret1": {
+      "LineupPos": "-106.27 -280.03 -171.97",
+      "LineupAng": "-11.30 -58.30 0.00",
+      "Desc": "Secret v1 Smoke Simple Jumpthrow",
+      "Map": "de_nuke",
+      "Type": "Smoke"
+    },
+    "secret2": {
+      "LineupPos": "-891.97 -927.03 -415.97",
+      "LineupAng": "-11.87 -34.08 0.00",
+      "Desc": "Secret v2 Smoke Simple Jumpthrow",
+      "Map": "de_nuke",
+      "Type": "Smoke"
+    },
+    "outside_cross1": {
+      "LineupPos": "-1567.99 -1072.03 -415.97",
+      "LineupAng": "-22.16 -18.53 0.00",
+      "Desc": "Cross v1 1 Smoke Simple Jumpthrow",
+      "Map": "de_nuke",
+      "Type": "Smoke"
+    },
+    "outside_cross2": {
+      "LineupPos": "-1268.03 -1161.32 -415.97",
+      "LineupAng": "-37.91 -20.22 0.00",
+      "Desc": "Cross v1 2 Smoke Simple Jumpthrow",
+      "Map": "de_nuke",
+      "Type": "Smoke"
+    },
+    "outside_cross3": {
+      "LineupPos": "-1268.03 -1161.30 -415.97",
+      "LineupAng": "-44.65 -25.92 0.00",
+      "Desc": "Cross v2 1 Smoke Simple Jumpthrow",
+      "Map": "de_nuke",
+      "Type": "Smoke"
+    },
+    "outside_cross4": {
+      "LineupPos": "-732.88 -1322.14 -407.97",
+      "LineupAng": "-11.16 -22.40 0.00",
+      "Desc": "Cross v2 2 Smoke Simple Jumpthrow",
+      "Map": "de_nuke",
+      "Type": "Smoke"
+    },
+    "blue": {
+      "LineupPos": "-134.29 -1977.53 -415.97",
+      "LineupAng": "-36.48 20.16 0.00",
+      "Desc": "Outside Box Smoke Just throw",
+      "Map": "de_nuke",
+      "Type": "Smoke"
+    },
+    "ramp1": {
+      "LineupPos": "251.97 -352.21 -415.97",
+      "LineupAng": "-8.25 131.88 0.00",
+      "Desc": "Ramp v1 Smoke Run Throw",
+      "Map": "de_nuke",
+      "Type": "Smoke"
+    },
+    "ramp2": {
+      "LineupPos": "251.97 -463.97 -415.97",
+      "LineupAng": "-1.45 105.46 0.00",
+      "Desc": "Ramp v2 Smoke Run Throw",
+      "Map": "de_nuke",
+      "Type": "Smoke"
+    },
+    "silo": {
+      "LineupPos": "1978.01 -788.42 -335.97",
+      "LineupAng": "-17.87 -155.55 0.00",
+      "Desc": "Silo Smoke Simple Jumpthrow",
+      "Map": "de_nuke",
+      "Type": "Smoke"
+    },
+    "heaven": {
+      "LineupPos": "-335.97 -900.25 -171.97",
+      "LineupAng": "-22.54 2.52 0.00",
+      "Desc": "A Heaven Smoke Run-Jumpthrow",
+      "Map": "de_nuke",
+      "Type": "Smoke"
+    },
+    "garage1": {
+      "LineupPos": "-916.01 -992.03 -413.97",
+      "LineupAng": "-20.28 -20.63 0.00",
+      "Desc": "Garage v1 Smoke Simple Jumpthrow",
+      "Map": "de_nuke",
+      "Type": "Smoke"
+    },
+    "garage2": {
+      "LineupPos": "-309.50 -1923.27 -415.97",
+      "LineupAng": "-19.74 -0.33 0.00",
+      "Desc": "Garage v2 Smoke Just throw",
+      "Map": "de_nuke",
+      "Type": "Smoke"
+    },
+    "garage3": {
+      "LineupPos": "-366.16 -1440.05 -287.97",
+      "LineupAng": "-31.05 -15.35 0.00",
+      "Desc": "Garage v3 Smoke Jump throw",
+      "Map": "de_nuke",
+      "Type": "Smoke"
+    },
+    "b_doubledoor": {
+      "LineupPos": "402.06 16.68 -639.97",
+      "LineupAng": "1.35 -58.80 0.00",
+      "Desc": "B Doubledoor Smoke Just throw",
+      "Map": "de_nuke",
+      "Type": "Smoke"
+    },
+    "graveyard_molly": {
+      "LineupPos": "1791.97 -1061.69 -358.07",
+      "LineupAng": "7.35 -147.05 0.00",
+      "Desc": "Graveyard Molly Run and Jump throw",
+      "Map": "de_nuke",
+      "Type": "Molly"
+    },
+    "red_molly": {
+      "LineupPos": "-424.95 -1750.08 -415.97",
+      "LineupAng": "7.23 -19.79 0.00",
+      "Desc": "Behind Red Jumpthrow",
+      "Map": "de_nuke",
+      "Type": "Molly"
+    },
+    "silo_molly": {
+      "LineupPos": "1515.91 -1583.97 -407.97",
+      "LineupAng": "-11.26 -179.57 0.00",
+      "Desc": "Silo Molly Jumpthrow",
+      "Map": "de_nuke",
+      "Type": "Molly"
+    },
+    "a_door": {
+      "LineupPos": "1008.14 -457.97 -127.97",
+      "LineupAng": "-1.18 -120.56 0.00",
+      "Desc": "A Door Molly, Just throw",
+      "Map": "de_nuke",
+      "Type": "Molly"
+    },
+    "hut_roof": {
+      "LineupPos": "-18.47 -1464.01 -43.90",
+      "LineupAng": "-11.31 29.39 0.00",
+      "Desc": "Hut roof Molly, Just throw",
+      "Map": "de_nuke",
+      "Type": "Molly"
+    },
+    "rafters": {
+      "LineupPos": "-24.34 -825.08 -21.97",
+      "LineupAng": "-8.69 14.99 0.00",
+      "Desc": "Rafters Molly, Just throw",
+      "Map": "de_nuke",
+      "Type": "Molly"
+    },
+    "a_site": {
+      "LineupPos": "-113.03 -735.92 -171.97",
+      "LineupAng": "-1.66 10.68 0.00",
+      "Desc": "T A Site Molly, Jumpthrow",
+      "Map": "de_nuke",
+      "Type": "Molly"
+    },
+    "a_site2": {
+      "LineupPos": "3.38 -750.25 -89.97",
+      "LineupAng": "4.55 9.80 0.00",
+      "Desc": "A Site Flash, Jump throw",
+      "Map": "de_nuke",
+      "Type": "Flash"
+    },
+    "silo2_molly": {
+      "LineupPos": "1024.09 -1552.03 -415.97",
+      "LineupAng": "-38.69 -179.22 0.00",
+      "Desc": "Silo Molly, Just throw",
+      "Map": "de_nuke",
+      "Type": "Molly"
+    },
+    "hut1": {
+      "LineupPos": "160.03 -1119.97 -415.97",
+      "LineupAng": "-3.55 29.02 0.00",
+      "Desc": "Out Hut door, Just throw",
+      "Map": "de_nuke",
+      "Type": "Flash"
+    },
+    "hut2": {
+      "LineupPos": "86.22 -792.49 -415.97",
+      "LineupAng": "-3.17 -61.39 0.00",
+      "Desc": "Out Hut door, Run throw",
+      "Map": "de_nuke",
+      "Type": "Flash"
+    },
+    "a_site1": {
+      "LineupPos": "-29.08 -338.03 -111.96",
+      "LineupAng": "-23.88 -33.36 0.00",
+      "Desc": "A Site Flash, Just throw",
+      "Map": "de_nuke",
+      "Type": "Flash"
+    },
+    "red_he": {
+      "LineupPos": "-161.22 -1947.49 -415.97",
+      "LineupAng": "-10.49 -12.55 0.00",
+      "Desc": "Backside Red HE, Just throw",
+      "Map": "de_nuke",
+      "Type": "HE"
+    },
+    "silo_he": {
+      "LineupPos": "1024.09 -1552.03 -415.97",
+      "LineupAng": "-38.69 -179.22 0.00",
+      "Desc": "Silo HE, Just throw",
+      "Map": "de_nuke",
+      "Type": "HE"
+    },
+    "asite": {
+      "LineupPos": "1,813.29 653.26 1,613.03",
+      "LineupAng": "-22.83 156.51 0.00",
+      "Desc": "A Site Smoke for Short, Just Jumpthrow",
+      "Map": "de_cache",
+      "Type": "Smoke"
+    },
+    "con": {
+      "LineupPos": "1,813.29 653.26 1,613.03",
+      "LineupAng": "-30.01 -163.79 0.00",
+      "Desc": "Connector Smoke, Just Jumpthrow",
+      "Map": "de_cache",
+      "Type": "Smoke"
+    },
+    "amain": {
+      "LineupPos": "-912.95 1,071.23 1,687.03",
+      "LineupAng": "-18.46 23.93 0.00",
+      "Desc": "A main Smoke, , Just throw",
+      "Map": "de_cache",
+      "Type": "Smoke"
+    },
+    "amain2": {
+      "LineupPos": "-429.97 2,274.97 1,723.03",
+      "LineupAng": "-1.12 -30.68 0.00",
+      "Desc": "A main Smoke, , Just throw",
+      "Map": "de_cache",
+      "Type": "Smoke"
+    },
+    "garage": {
+      "LineupPos": "-730.50 201.16 1,617.49",
+      "LineupAng": "-19.11 2.14 0.00",
+      "Desc": "Garage Smoke, Just throw",
+      "Map": "de_cache",
+      "Type": "Smoke"
+    }
+  }
+}
