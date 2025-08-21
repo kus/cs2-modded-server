@@ -97,7 +97,7 @@ Mod | Version | Why
 [CS2 Remove Map Weapons](https://github.com/kus/CS2-Remove-Map-Weapons) | `1.0.1` | Remove weapons from the map in CS2 as `mp_weapons_allow_map_placed 0` does not work.
 [GameModeManager](https://github.com/nickj609/GameModeManager)| `1.0.62` | A simple Counter-Strike 2 server plugin that helps admins manage game modes and map groups.
 [Inventory Simulator](https://github.com/ianlucas/cs2-inventory-simulator-plugin)| `34` | Use any Weapon, Knife, Gloves, Agent, Music Kit, Pin or Graffiti. [How?](#skin-changer)
-[CS2-PlayerModelChanger](https://github.com/samyycX/CS2-PlayerModelChanger)| `1.8.6` | A lightweighted counterstrikesharp plugin to change player model.
+[CS2-PlayerModelChanger](https://github.com/samyycX/CS2-PlayerModelChanger)| `1.8.6` | A lightweighted counterstrikesharp plugin to change player model. [How?](#model-changer)
 [MatchZy](https://github.com/shobhit-pathak/MatchZy) | `0.8.11` | MatchZy is a plugin for CS2 for running and managing practice/pugs/scrims/matches with easy configuration!
 [MapConfigurator](https://github.com/ManifestManah/MapConfigurator)| `1.0.2` | Allows you to quick and easily create unique configuration files for each map on your server.
 [K4-DamageInfo](https://github.com/KitsuneLab-Development/K4-DamageInfo) | `2.4.0` | Displays the amount of damage players have inflicted on the victim's HP and Armor, as well as the hit groups they have hit.
@@ -783,6 +783,18 @@ On the server type `!ws` and it should update your skins to what you have set.
 > Your server can be banned by Valve for using this plugin (see their [server guidelines](https://blog.counter-strike.net/index.php/server_guidelines)). Use at your own risk.
 
 If you **DO NOT** want to use this plugin; change `FollowCS2ServerGuidelines` to `true` in `addons/counterstrikesharp/configs/core.json`. It is recommended to do this via [custom files](#custom-files).
+
+### Model changer
+
+You have the abililty to have custom player models. You can turn it on va `!settings` > `Enable` > `Custom Player Models` and it will change the map to de_dust2 and the models will stay on for the future maps/modes unless turned off via `!settings` > `Disable` > `Custom Player Models`.
+
+It requires that you have a Workshop Addon with the models, for my server I just use [this one](https://steamcommunity.com/sharedfiles/filedetails/?id=3163629484) which has over 200 models.
+
+You need to have the Addon ID in your `cfg/multiaddonmanager/multiaddonmanager.cfg` you can see how I have [mine setup here](https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/cfg/multiaddonmanager/multiaddonmanager.cfg) (which you can copy if you are using the same addon).
+
+Then you need to define the models from the Workshop Addon in `addons\counterstrikesharp\configs\plugins\PlayerModelChanger\PlayerModelChanger.json`, I have some in there that I use if you want more you will need to add them yourself.
+
+The easiest way to see what is in a Workshop Addon is Subscribe to it and wait for it to download, then download and open [Source 2 Viewer](https://valveresourceformat.github.io/) and browse to Counter-Strike 2 > the Workshop Addon and you can see the files and paths in it.
 
 ### I run a Surf/KZ/Bhop server and want [MovementUnlocker](https://github.com/Source2ZE/MovementUnlocker) and [CS2Fixes-RampbugFix](https://github.com/Interesting-exe/CS2Fixes-RampbugFix) permanently on
 

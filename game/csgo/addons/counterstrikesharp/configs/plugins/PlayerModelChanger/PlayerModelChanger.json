@@ -1,0 +1,83 @@
+{
+  "Models": {
+    "AmongUs": {
+      "name": "Among Us",
+      "path": "characters/models/nozb1/among_us_player_model/among_us_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "BananoCat": {
+      "name": "Banano Cat",
+      "path": "characters/models/nozb1/bananocat_player_model/bananocat_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "CardboardMan": {
+      "name": "Cardboard Man",
+      "path": "characters/models/nozb1/cardboard_man_player_model/cardboard_man_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "TMNTLeonardo": {
+      "name": "TMNT Leonardo",
+      "path": "characters/models/nozb1/chibi_leonardo_player_model/chibi_leonardo_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "TMNTMichelangelo": {
+      "name": "TMNT Michelangelo",
+      "path": "characters/models/nozb1/chibi_michelangelo_player_model/chibi_michelangelo_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "TMNTRaphael": {
+      "name": "TMNT Raphael",
+      "path": "characters/models/nozb1/chibi_raphael_player_model/chibi_raphael_player_model.vmdl_c",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    }
+  },
+  "StorageType": "sqlite",
+  "MySQL_IP": "",
+  "MySQL_Port": "",
+  "MySQL_User": "",
+  "MySQL_Password": "",
+  "MySQL_Database": "",
+  "MySQL_Table": "playermodelchanger",
+  "ModelForBots": {
+    "CT": "@random",
+    "T": "@random"
+  },
+  "ModelChangeCooldownSecond": 0,
+  "Inspection": {
+    "Enable": true,
+    "Mode": "rotation"
+  },
+  "BasicPermission": "",
+  "DisableDefaultModelLeg": false,
+  "DisableInstantChange": false,
+  "DisablePrecache": false,
+  "DisableRandomModel": false,
+  "DisableAutoCheck": false,
+  "DisablePlayerSelection": false,
+  "AutoResyncCache": false,
+  "ConfigVersion": 1
+}
