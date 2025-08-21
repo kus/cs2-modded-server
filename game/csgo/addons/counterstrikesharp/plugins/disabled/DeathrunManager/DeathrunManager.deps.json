@@ -9,7 +9,7 @@
       "DeathrunManager/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Localization.Abstractions": "9.0.1",
-          "CounterStrikeSharp.API": "1.0.301.0"
+          "CounterStrikeSharp.API": "1.0.305.0"
         },
         "runtime": {
           "DeathrunManager.dll": {}
@@ -23,11 +23,11 @@
           }
         }
       },
-      "CounterStrikeSharp.API/1.0.301.0": {
+      "CounterStrikeSharp.API/1.0.305.0": {
         "runtime": {
           "CounterStrikeSharp.API.dll": {
-            "assemblyVersion": "1.0.301.0",
-            "fileVersion": "1.0.301.0"
+            "assemblyVersion": "1.0.305.0",
+            "fileVersion": "1.0.305.0"
           }
         }
       }
@@ -46,7 +46,7 @@
       "path": "microsoft.extensions.localization.abstractions/9.0.1",
       "hashPath": "microsoft.extensions.localization.abstractions.9.0.1.nupkg.sha512"
     },
-    "CounterStrikeSharp.API/1.0.301.0": {
+    "CounterStrikeSharp.API/1.0.305.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
