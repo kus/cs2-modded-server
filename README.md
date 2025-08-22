@@ -87,7 +87,7 @@ Getting up and running:
 
 Mod | Version | Why
 --- | --- | ---
-[Metamod:Source](https://www.metamodsource.net/downloads.php?branch=dev) | `2.0.0-1364` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
+[Metamod:Source](https://www.metamodsource.net/downloads.php?branch=dev) | `2.0.0-1365` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
 [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `1.0.337` | Attempts to implement a .NET Core scripting layer on top of a Metamod Source Plugin, allowing developers to create plugins that interact with the game server in a modern language (C#)
 [MultiAddonManager](https://github.com/Source2ZE/MultiAddonManager) | `1.4.6` | Allows you to use multiple workshop addons at once and have clients download them
 [ServerListPlayersFix](https://github.com/Source2ZE/ServerListPlayersFix) | `1.0.3` | Fixes players not showing up in the server browser
@@ -794,7 +794,7 @@ You need to have the Addon ID in your `cfg/multiaddonmanager/multiaddonmanager.c
 
 Then you need to define the models from the Workshop Addon in `addons\counterstrikesharp\configs\plugins\PlayerModelChanger\PlayerModelChanger.json`, I have some in there that I use if you want more you will need to add them yourself.
 
-The easiest way to see what is in a Workshop Addon is Subscribe to it and wait for it to download, then download and open [Source 2 Viewer](https://valveresourceformat.github.io/) and browse to Counter-Strike 2 > the Workshop Addon and you can see the files and paths in it.
+The easiest way to see what is in a Workshop Addon is Subscribe to it and wait for it to download (it will download to `C:\Program Files (x86)\Steam\steamapps\workshop\content\730\<workshop-id>\`), then download and open [Source 2 Viewer](https://valveresourceformat.github.io/) and browse to Counter-Strike 2 > the Workshop Addon and you can see the files and paths in it.
 
 ### I run a Surf/KZ/Bhop server and want [MovementUnlocker](https://github.com/Source2ZE/MovementUnlocker) and [CS2Fixes-RampbugFix](https://github.com/Interesting-exe/CS2Fixes-RampbugFix) permanently on
 
