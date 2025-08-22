@@ -1,5 +1,14 @@
 {
   "Models": {
+    "AdultNeptune": {
+      "name": "Adult Neptune",
+      "path": "characters/models/nozb1/adult_neptune_player_model/adult_neptune_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
     "AmongUs": {
       "name": "Among Us",
       "path": "characters/models/nozb1/among_us_player_model/among_us_player_model.vmdl",
@@ -47,7 +56,286 @@
     },
     "TMNTRaphael": {
       "name": "TMNT Raphael",
-      "path": "characters/models/nozb1/chibi_raphael_player_model/chibi_raphael_player_model.vmdl_c",
+      "path": "characters/models/nozb1/chibi_raphael_player_model/chibi_raphael_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "TMNTShredder": {
+      "name": "TMNT Shredder",
+      "path": "characters/models/nozb1/chibi_shredder_player_model/chibi_shredder_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "Chucky": {
+      "name": "Chucky",
+      "path": "characters/models/nozb1/chucky_player_model/chucky_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "CubeBanana": {
+      "name": "Cube Banana",
+      "path": "characters/models/nozb1/cube_banana_player_model/cube_banana_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "CyborgMale": {
+      "name": "Cyborg Male",
+      "path": "characters/models/nozb1/cyborgmale_player_model/cyborgmale_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "DarkTeletubbe": {
+      "name": "Dark Teletubbe",
+      "path": "characters/models/nozb1/dark_teletubbe_player_model/dark_teletubbe_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "FridayNightFreddysDog": {
+      "name": "Friday Night Freddy's Dog",
+      "path": "characters/models/nozb1/ds_dog_player_model/ds_dog_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "GarouCosmic": {
+      "name": "Garou Cosmic",
+      "path": "characters/models/nozb1/garou_cosmic_player_model/garou_cosmic_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "MadagascarGloria": {
+      "name": "Madagascar Gloria",
+      "path": "characters/models/nozb1/gloria_player_model/gloria_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "HuggyMale": {
+      "name": "Huggy Male",
+      "path": "characters/models/nozb1/huggy_male_player_model/huggy_male_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "JohnyBravo": {
+      "name": "Johny Bravo",
+      "path": "characters/models/nozb1/johny_bravo_player_model/johny_bravo_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "Kermit": {
+      "name": "Kermit",
+      "path": "characters/models/nozb1/kermit_player_model/kermit_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "KingAlex": {
+      "name": "King Alex",
+      "path": "characters/models/nozb1/king_alex_player_model/king_alex_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "KingJulian": {
+      "name": "King Julian",
+      "path": "characters/models/nozb1/king_julian_player_model/king_julian_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "Kowalski": {
+      "name": "Kowalski",
+      "path": "characters/models/nozb1/kowalski_player_model/kowalski_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "Lada2107": {
+      "name": "Lada 2107",
+      "path": "characters/models/nozb1/lada2107_player_model/lada2107_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "MaalikInfernal": {
+      "name": "Maalik Infernal",
+      "path": "characters/models/nozb1/maalik_infernal_player_model/maalik_infernal_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "MadagascarMonkey": {
+      "name": "Madagascar Monkey",
+      "path": "characters/models/nozb1/madagascar_monkey_player_model/madagascar_monkey_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "Mephisto": {
+      "name": "Mephisto",
+      "path": "characters/models/nozb1/mephisto_player_model/mephisto_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "MonBlackDragon": {
+      "name": "Mon Black Dragon",
+      "path": "characters/models/nozb1/mon_black_dragon_player_model/mon_black_dragon_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "MrKrabs": {
+      "name": "Mr Krabs",
+      "path": "characters/models/nozb1/mr_krabs_player_model/mr_krabs_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "Patrik": {
+      "name": "Patrik",
+      "path": "characters/models/nozb1/patrik_player_model/patrik_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "Pepe": {
+      "name": "Pepe",
+      "path": "characters/models/nozb1/pepe_player_model/pepe_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "Putin": {
+      "name": "Putin",
+      "path": "characters/models/nozb1/putin_player_model/putin_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "Repo": {
+      "name": "Repo",
+      "path": "characters/models/nozb1/repo_player_model/repo_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "SpiderNoWayHome": {
+      "name": "Spiderman",
+      "path": "characters/models/nozb1/spider_no_way_home_player_model/spydernw_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "SpongeBob": {
+      "name": "SpongeBob",
+      "path": "characters/models/nozb1/spongebob_player_model/spongebob_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "Squidward": {
+      "name": "Squidward",
+      "path": "characters/models/nozb1/squidward_player_model/squidward_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "FireFighter": {
+      "name": "Fire Fighter",
+      "path": "characters/models/nozb1/sr_ffighter1_player_model/sr_ffighter1_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "TheFlash": {
+      "name": "The Flash",
+      "path": "characters/models/nozb1/theflash_player_model/theflash_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "ThomasShelby": {
+      "name": "Thomas Shelby",
+      "path": "characters/models/nozb1/thomas_shelby_player_model/thomas_shelby_player_model.vmdl",
+      "side": "ALL",
+      "permissions": [],
+      "permissionsOr": [],
+      "disableleg": true,
+      "hideinmenu": false
+    },
+    "TrollFace": {
+      "name": "Troll Face",
+      "path": "characters/models/nozb1/trollface_player_model/trollface_player_model.vmdl",
       "side": "ALL",
       "permissions": [],
       "permissionsOr": [],
