@@ -141,7 +141,10 @@ echo "Installing mods"
 cp -R /home/cs2-modded-server/game/csgo/ /home/${user}/cs2/game/
 
 echo "Merging in custom files"
-cp -RT /home/custom_files/ /home/${user}/cs2/game/csgo/
+cp -Rf /home/cs2-modded-server/custom_files/* /home/${user}/cs2/game/csgo/
+
+echo "Current CSS admins.json File:"
+cat /home/${user}/cs2/game/csgo/addons/counterstrikesharp/configs/admins.json
 
 chown -R ${user}:${user} /home/${user}
 
