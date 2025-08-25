@@ -91,32 +91,33 @@ Mod | Version | Why
 [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `1.0.337` | Attempts to implement a .NET Core scripting layer on top of a Metamod Source Plugin, allowing developers to create plugins that interact with the game server in a modern language (C#)
 [MultiAddonManager](https://github.com/Source2ZE/MultiAddonManager) | `1.4.6` | Allows you to use multiple workshop addons at once and have clients download them
 [ServerListPlayersFix](https://github.com/Source2ZE/ServerListPlayersFix) | `1.0.3` | Fixes players not showing up in the server browser
-[MovementUnlocker](https://github.com/Source2ZE/MovementUnlocker)| `1.5` | Removes max speed limitation from players on the ground, feels like CS:S [How?](#i-run-a-surfkzbhop-server-and-want-movementunlocker-and-cs2fixes-rampbugfix-permanently-on)
-[CS2Fixes-RampbugFix](https://github.com/Interesting-exe/CS2Fixes-RampbugFix)| `1.8` | Minimizes rampbugs (needs to be enabled via `!settings` [How?](#i-run-a-surfkzbhop-server-and-want-movementunlocker-and-cs2fixes-rampbugfix-permanently-on))
+[MovementUnlocker](https://github.com/Source2ZE/MovementUnlocker) | `1.5` | Removes max speed limitation from players on the ground, feels like CS:S [How?](#i-run-a-surfkzbhop-server-and-want-movementunlocker-and-cs2fixes-rampbugfix-permanently-on)
+[CS2Fixes-RampbugFix](https://github.com/Interesting-exe/CS2Fixes-RampbugFix) | `1.8` | Minimizes rampbugs (needs to be enabled via `!settings` [How?](#i-run-a-surfkzbhop-server-and-want-movementunlocker-and-cs2fixes-rampbugfix-permanently-on))
 [CS2_ExecAfter](https://github.com/kus/CS2_ExecAfter) | `1.0.0` | Executes a command after server event (i.e. OnMapStart) or a delay.
 [CS2 Remove Map Weapons](https://github.com/kus/CS2-Remove-Map-Weapons) | `1.0.1` | Remove weapons from the map in CS2 as `mp_weapons_allow_map_placed 0` does not work.
-[GameModeManager](https://github.com/nickj609/GameModeManager)| `1.0.62` | A simple Counter-Strike 2 server plugin that helps admins manage game modes and map groups.
-[Inventory Simulator](https://github.com/ianlucas/cs2-inventory-simulator-plugin)| `34` | Use any Weapon, Knife, Gloves, Agent, Music Kit, Pin or Graffiti. [How?](#skin-changer)
-[CS2-PlayerModelChanger](https://github.com/samyycX/CS2-PlayerModelChanger)| `1.8.6` | A lightweighted counterstrikesharp plugin to change player model. [How?](#model-changer)
+[GameModeManager](https://github.com/nickj609/GameModeManager) | `1.0.62` | A simple Counter-Strike 2 server plugin that helps admins manage game modes and map groups.
+[Inventory Simulator](https://github.com/ianlucas/cs2-inventory-simulator-plugin) | `34` | Use any Weapon, Knife, Gloves, Agent, Music Kit, Pin or Graffiti. [How?](#skin-changer)
+[CS2-PlayerModelChanger](https://github.com/samyycX/CS2-PlayerModelChanger) | `1.8.6` | A lightweighted counterstrikesharp plugin to change player model. [How?](#model-changer)
 [MatchZy](https://github.com/shobhit-pathak/MatchZy) | `0.8.11` | MatchZy is a plugin for CS2 for running and managing practice/pugs/scrims/matches with easy configuration!
-[MapConfigurator](https://github.com/ManifestManah/MapConfigurator)| `1.0.2` | Allows you to quick and easily create unique configuration files for each map on your server.
+[MapConfigurator](https://github.com/ManifestManah/MapConfigurator) | `1.0.2` | Allows you to quick and easily create unique configuration files for each map on your server.
 [K4-DamageInfo](https://github.com/KitsuneLab-Development/K4-DamageInfo) | `2.4.0` | Displays the amount of damage players have inflicted on the victim's HP and Armor, as well as the hit groups they have hit.
-[SimpleAdmin](https://github.com/connercsbn/SimpleAdmin/)| `0.1.2` | Adds basic administrator functions
-[CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon)| `1.2.0` | This is a rudimentary implementation of a RCON plugin for CS2 using CounterStrikeSharp as RCON does not work whilst connected to the server
-[SharpTimer](https://github.com/Letaryat/poor-sharptimer)| `0.3.1x` | SharpTimer is a simple Surf/KZ/Bhop/MG/Deathrun/etc CS2 Timer plugin
-[STFixes](https://github.com/rcnoob/STFixes)| `1.0.5` | A CounterStrikeSharp plugin with common fixes and features for SharpTimer servers
-[GunGame](https://github.com/ssypchenko/cs2-gungame)| `1.2.1` | GunGame mode on Counter Strike Sharp
-[K4-Arenas](https://github.com/KitsuneLab-Development/K4-Arenas)| `2.0.8` | All in one arena plugin, that you can use to have a ladder type gameplay. Support all map, 2v2/3v3/etc [How?](#enable-k4-arenas)
-[CS2 Retakes](https://github.com/B3none/cs2-retakes)| `2.1.5` | CS2 implementation of retakes. Based on the version for CS:GO by Splewis.
-[CS2 Instadefuse](https://github.com/B3none/cs2-instadefuse)| `2.0.0` | Allows a CT to instantly defuse the bomb when nothing can prevent defusal. Written in C# for CounterStrikeSharp.
-[CS2 Retakes Allocator](https://github.com/yonilerner/cs2-retakes-allocator)| `2.4.2` | Advanced weapon allocation for B3none/cs2-retakes
-[CS2 Whitelist](https://github.com/PhantomYopta/CS2_WhiteList)| `1.0.0`| Restricts access to the server for SteamID members/employees listed in the whitelist. [How?](#enable-whitelist-so-only-a-list-of-people-can-play)
-[CS2 Executes](https://github.com/zwolof/cs2-executes)| `1.0.6` | CS2 implementation of executes. Based on the version for CS:GO by Splewis.
-[CS2 Advertisement](https://github.com/partiusfabaa/cs2-advertisement)| `1.0.8-recompile` | Allows you to show ads in chat/center/panel. [How?](#enable-advertisements)
-[CS2 Deathmatch](https://github.com/NockyCZ/CS2-Deathmatch)| `1.2.9` | Custom Deathmatch CS2 plugin (Includes custom spawnpoints, multicfg, gun selection, spawn protection, etc)
-[OpenPrefirePrac](https://github.com/lengran/OpenPrefirePrac)| `0.1.47` | Multiple prefire practices on competitive maps and support multiplayer practicing simultaneously.
-[CS2-CustomVotes](https://github.com/imi-tat0r/CS2-CustomVotes)| `1.1.3` | A plugin for Counter-Strike 2 to create custom votes for settings.
-[deathrun-manager](https://github.com/leoskiline/cs2-deathrun-manager)| `0.5.0` | Deathrun Manager for CounterStrikeSharp Framework CS2.
+[SimpleAdmin](https://github.com/connercsbn/SimpleAdmin/) | `0.1.2` | Adds basic administrator functions
+[CS2Rcon](https://github.com/LordFetznschaedl/CS2Rcon) | `1.2.0` | This is a rudimentary implementation of a RCON plugin for CS2 using CounterStrikeSharp as RCON does not work whilst connected to the server
+[K4-AlwaysWeaponSkins](https://github.com/K4ryuu/K4-AlwaysWeaponSkins) | `2.0.0` | Applies the equipped skins from your inventory to both teams.
+[SharpTimer](https://github.com/Letaryat/poor-sharptimer) | `0.3.1x` | SharpTimer is a simple Surf/KZ/Bhop/MG/Deathrun/etc CS2 Timer plugin
+[STFixes](https://github.com/rcnoob/STFixes) | `1.0.5` | A CounterStrikeSharp plugin with common fixes and features for SharpTimer servers
+[GunGame](https://github.com/ssypchenko/cs2-gungame) | `1.2.1` | GunGame mode on Counter Strike Sharp
+[K4-Arenas](https://github.com/KitsuneLab-Development/K4-Arenas) | `2.0.8` | All in one arena plugin, that you can use to have a ladder type gameplay. Support all map, 2v2/3v3/etc [How?](#enable-k4-arenas)
+[CS2 Retakes](https://github.com/B3none/cs2-retakes) | `2.1.5` | CS2 implementation of retakes. Based on the version for CS:GO by Splewis.
+[CS2 Instadefuse](https://github.com/B3none/cs2-instadefuse) | `2.0.0` | Allows a CT to instantly defuse the bomb when nothing can prevent defusal. Written in C# for CounterStrikeSharp.
+[CS2 Retakes Allocator](https://github.com/yonilerner/cs2-retakes-allocator) | `2.4.2` | Advanced weapon allocation for B3none/cs2-retakes
+[CS2 Whitelist](https://github.com/PhantomYopta/CS2_WhiteList) | `1.0.0`| Restricts access to the server for SteamID members/employees listed in the whitelist. [How?](#enable-whitelist-so-only-a-list-of-people-can-play)
+[CS2 Executes](https://github.com/zwolof/cs2-executes) | `1.0.6` | CS2 implementation of executes. Based on the version for CS:GO by Splewis.
+[CS2 Advertisement](https://github.com/partiusfabaa/cs2-advertisement) | `1.0.8-recompile` | Allows you to show ads in chat/center/panel. [How?](#enable-advertisements)
+[CS2 Deathmatch](https://github.com/NockyCZ/CS2-Deathmatch) | `1.2.9` | Custom Deathmatch CS2 plugin (Includes custom spawnpoints, multicfg, gun selection, spawn protection, etc)
+[OpenPrefirePrac](https://github.com/lengran/OpenPrefirePrac) | `0.1.47` | Multiple prefire practices on competitive maps and support multiplayer practicing simultaneously.
+[CS2-CustomVotes](https://github.com/imi-tat0r/CS2-CustomVotes) | `1.1.3` | A plugin for Counter-Strike 2 to create custom votes for settings.
+[deathrun-manager](https://github.com/leoskiline/cs2-deathrun-manager) | `0.5.0` | Deathrun Manager for CounterStrikeSharp Framework CS2.
 [AnnouncementBroadcaster](https://github.com/lengran/CS2AnnouncementBroadcaster) | `0.5` | Conditional messages, OnCommand, OnPlayerConnect, OnRoundStart, and TimerMsgs.
 [CS2-GameModifiers](https://github.com/Lewisscrivens/CS2-GameModifiers-Plugin) | `1.0.3` | CS2, but every round is a SURPRISE. Inspiration from [NadeKings video](https://www.youtube.com/watch?v=OQQBUFB56Iw).
 [CS2FunMatchPlugin](https://github.com/TitaniumLithium/CS2FunMatchPlugin) | `1.1.1` | Random fun mode every round

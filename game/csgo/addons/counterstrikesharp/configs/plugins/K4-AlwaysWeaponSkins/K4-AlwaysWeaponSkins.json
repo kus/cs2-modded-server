@@ -1,0 +1,6 @@
+{
+  "ApplyToMapWeapons": true,
+  "ApplyOnNoPreviousOwner": true,
+  "ApplyOnPreviousOwner": false,
+  "ConfigVersion": 2
+}
