@@ -1,0 +1,17 @@
+{
+  "PluginEnabled": true,
+  "revive_DrawBeacon": true,
+  "revive_DrawReviveSign": false,
+  "revive_CountDeath": false,
+  "revive_ReviveLimit": 10,
+  "revive_ReviveFrag": 0,
+  "revive_cost_mode": 0,
+  "revive_cost_health": 10,
+  "revive_cost_money": 1000,
+  "revive_RevivedHealth": 100,
+  "revive_timer_delay": 5,
+  "revive_delay": 0,
+  "revive_distance": 75,
+  "revive_AdminFlag": "",
+  "ConfigVersion": 1
+}

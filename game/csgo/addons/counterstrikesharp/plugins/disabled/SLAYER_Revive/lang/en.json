@@ -1,0 +1,10 @@
+{
+    "Chat.Prefix":                    "{Gold}[{DarkRed}★ {Green}SLAYER Revive {DarkRed}★{Gold}]",
+    "Chat.GettingRevived":            "{lime}You are getting revived by {gold}{0}",
+    "Chat.ReviveDelay":               "{lime}You will be able to Revive again after {gold}{0} {lime}seconds!",
+    "Chat.NotEnoughRevive":           "{DarkRed}You can't {lime}Revive {DarkRed}more teammates in this Round!",
+    "Chat.NotEnoughMoney":            "{DarkRed}You don't have enough {lime}Money {DarkRed}to Revive your teammate! {Green}Need {gold}{0}",
+    "Chat.NotEnoughHealth":           "{DarkRed}You don't have enough {lime}Health {DarkRed}to Revive your teammate! {Green}Need {gold}{0}",
+    "Chat.NoPermission":              "{DarkRed}You don't have permission to Revive!",
+    "CenterHtml.Reviving":            "<font color='red'>.:| </font> <font class='fontSize-l' color='lime'>Reviving:</font> <font class='fontSize-l' color='gold'>{0}</font> <font color='red'>|:.</font><br>"
+}
