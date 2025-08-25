@@ -1,0 +1,9 @@
+{
+  "TeleportHeight": 10,
+  "EnableChatMessage": false,
+  "TeleportChance": 100,
+  "TeleportFlags": [],
+  "TeleportCooldownSeconds": 0,
+  "TeleportsPerRound": 0,
+  "ConfigVersion": 1
+}

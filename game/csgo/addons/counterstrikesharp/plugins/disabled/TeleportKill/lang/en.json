@@ -1,0 +1,4 @@
+{
+  "Prefix": "{GOLD}[Teleport Kill]{DEFAULT} ",
+  "TeleportSuccess": "{GOLD}{0} {DEFAULT}teleported to {RED}{1}{DEFAULT}!"
+}
