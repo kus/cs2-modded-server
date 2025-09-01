@@ -125,7 +125,7 @@ Mod | Version | Why
 [CS2-FixRandomSpawn](https://github.com/qstage/CS2-FixRandomSpawn) | `1.1.4.1` | Fixes ConVar `mp_randomspawn` for any game mode.
 [CS2-MutualScoringPlayers](https://github.com/qstage/CS2-MutualScoringPlayers) | `1.0.1` | Keeps score of kills between players.
 [CS2WarcraftMod](https://github.com/Wngui/CS2WarcraftMod) | `3.3.5` | An open-source Warcraft mod for CS2 featuring a fully-fledged RPG system.
-[cs2-advanced-weapon-system](https://github.com/schwarper/cs2-advanced-weapon-system) | `1.8` | An advanced weapon system that gives full control over weapon attributes, dynamic adjustments to weapon behaviour, restrictions and advanced customisation.
+[cs2-advanced-weapon-system](https://github.com/schwarper/cs2-advanced-weapon-system) | `1.9` | An advanced weapon system that gives full control over weapon attributes, dynamic adjustments to weapon behaviour, restrictions and advanced customisation.
 [cs2-OneInTheChamber](https://github.com/ShookEagle/cs2-OneInTheChamber) | `1.0.0` | One in the Chamber game mode.
 [cs2-quake-sounds](https://github.com/Kandru/cs2-quake-sounds) | `1.0.10` | Quake Sounds on multi kills.
 [CS2-WeaponSpeed](https://github.com/akanora/CS2-WeaponSpeed) | `1.2` | Gives players a speed boost when they fire specified weapons.
