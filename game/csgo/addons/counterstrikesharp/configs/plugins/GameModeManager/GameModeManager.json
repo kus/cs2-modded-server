@@ -230,6 +230,14 @@
         ]
       },
       {
+        "Name": "Capture The Flag",
+        "Config": "ctf.cfg",
+        "DefaultMap": "3555531615",
+        "MapGroups": [
+          "mg_ctf"
+        ]
+      },
+      {
         "Name": "Hide N Seek",
         "Config": "hns.cfg",
         "DefaultMap": "3348038890",

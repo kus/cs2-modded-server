@@ -279,6 +279,16 @@
                 "op": 1,
                 "value": 27
             }
+        },
+        {
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Capture The Flag\u2029\u2029[NORMAL]Use [GREEN]!qs[NORMAL] to disable quake sounds\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "delay": 3,
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 28
+            }
         }
    ]
 }
