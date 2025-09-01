@@ -96,7 +96,7 @@ Mod | Version | Why
 [CS2Fixes-RampbugFix](https://github.com/Interesting-exe/CS2Fixes-RampbugFix) | `8-18` | Minimizes rampbugs (needs to be enabled via `!settings` [How?](#i-run-a-surfkzbhop-server-and-want-movementunlocker-and-cs2fixes-rampbugfix-permanently-on))
 [CS2_ExecAfter](https://github.com/kus/CS2_ExecAfter) | `1.0.0` | Executes a command after server event (i.e. OnMapStart) or a delay.
 [CS2 Remove Map Weapons](https://github.com/kus/CS2-Remove-Map-Weapons) | `1.0.1` | Remove weapons from the map in CS2 as `mp_weapons_allow_map_placed 0` does not work.
-[GameModeManager](https://github.com/nickj609/GameModeManager) | `1.0.62` | A simple Counter-Strike 2 server plugin that helps admins manage game modes and map groups.
+[GameModeManager](https://github.com/nickj609/GameModeManager) | `1.0.62` | <div style="background-color: #fff3cd; padding: 8px; border-left: 4px solid #ffc107;">⚠️ Waiting for fix</div> A simple Counter-Strike 2 server plugin that helps admins manage game modes and map groups.
 [Inventory Simulator](https://github.com/ianlucas/cs2-inventory-simulator-plugin) | `34` | Use any Weapon, Knife, Gloves, Agent, Music Kit, Pin or Graffiti. [How?](#skin-changer)
 [CS2-PlayerModelChanger](https://github.com/samyycX/CS2-PlayerModelChanger) | `1.8.6` | A lightweighted counterstrikesharp plugin to change player model. [How?](#model-changer)
 [MatchZy](https://github.com/shobhit-pathak/MatchZy) | `0.8.12` | MatchZy is a plugin for CS2 for running and managing practice/pugs/scrims/matches with easy configuration!
@@ -134,7 +134,7 @@ Mod | Version | Why
 [SLAYER_Football](https://github.com/zakriamansoor47/SLAYER_Football) | `1.1` | Football in CS2.
 [SLAYER_Revive](https://github.com/zakriamansoor47/SLAYER_Revive) | `1.3.1` | Revive Your Teammates.
 [cs2-TeleportKill](https://github.com/rodopoulos1/cs2-TeleportKill) | `1.0.0` |  Instantly teleport to the location of the enemy you kill.
-[BotsNoKnife](https://discord.com/channels/1160907911501991946/1365937101886984262) | `1.0` | Keeps Bots from using the knife.
+[CS2-BotAI](https://github.com/Austinbots/CS2-BotAI) | `1.0` | Improves the built in bots AI and also makes them run with a gun intead of a knife or nade.
 
 ## Share the love
 
