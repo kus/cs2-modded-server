@@ -4,6 +4,6 @@
 	"CanRepeat": false,
 	"MinRandomRounds": 1,
 	"MaxRandomRounds": 1,
-	"DisabledModifiers": [],
+	"DisabledModifiers": ["Bhop, GrenadesOnly, HeadShotOnly, HighGravity, Imposters, IncreasedSpread, InfiniteAmmo, KnivesOnly, LeadBoots, Lightweight, LowGravity, NoSpread, PlantAnywhere, RandomSpawns, RandomWeapon, RandomWeapons, Respawn, SlowMo, Speed, SuperJump, Surf, TeleportOnReload"],
 	"ConfigVersion": 1
 }
