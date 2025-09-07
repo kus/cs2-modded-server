@@ -4,6 +4,8 @@
 	"CanRepeat": false,
 	"MinRandomRounds": 1,
 	"MaxRandomRounds": 1,
-	"DisabledModifiers": ["GrenadesOnly, KnivesOnly, RandomSpawns, RandomWeapon, RandomWeapons, Respawn, TeleportOnReload, DropOnMiss, FastFireRate, SlowFireRate, TeleportOnHit"],
+	"DisabledModifiers": ["GrenadesOnly", "KnivesOnly", "RandomSpawns", "RandomWeapon", "RandomWeapons", "Respawn", "TeleportOnReload", "DropOnMiss", "FastFireRate", "SlowFireRate", "TeleportOnHit"],
 	"ConfigVersion": 1
 }
+
+
