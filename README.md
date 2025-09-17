@@ -132,7 +132,7 @@ Mod | Version | Why
 [CS2-WeaponSpeed](https://github.com/akanora/CS2-WeaponSpeed) | `1.2` | Gives players a speed boost when they fire specified weapons.
 [SpectatorList-CS2](https://github.com/wiruwiru/SpectatorList-CS2) | `9` | Shows real-time spectators in on-screen display.
 [SLAYER_Football](https://github.com/zakriamansoor47/SLAYER_Football) | `1.1` | Football in CS2.
-[SLAYER_Revive](https://github.com/zakriamansoor47/SLAYER_Revive) | `1.3.1` | Revive Your Teammates.
+[SLAYER_Revive](https://github.com/zakriamansoor47/SLAYER_Revive) | `1.3.2` | Revive Your Teammates.
 [cs2-TeleportKill](https://github.com/rodopoulos1/cs2-TeleportKill) | `1.0.0` |  Instantly teleport to the location of the enemy you kill.
 [CS2-BotAI](https://github.com/Austinbots/CS2-BotAI) | `1.0` | Improves the built in bots AI and also makes them run with a gun intead of a knife or nade.
 
