@@ -137,6 +137,10 @@ cp -v /steamcmd/linux64/steamclient.so /home/${user}/.steam/sdk64/steamclient.so
 	echo "ERROR: Failed to copy 64-bit libraries"
 }
 
+# Copy .so files needed after 16.9.2025 update
+# https://discord.com/channels/1160907911501991946/1160907912445710479/1417806634503372851
+cp -v /home/${user}/cs2/game/bin/linuxsteamrt64/*.so  /home/${user}/cs2/game/csgo/bin/linuxsteamrt64/
+
 echo "Installing mods"
 cp -R /home/cs2-modded-server/game/csgo/ /home/${user}/cs2/game/
 
