@@ -1,31 +1,5 @@
 #!/usr/bin/env bash
 
-# Function to safely enable unprivileged user namespaces
-enable_unprivileged_namespaces() {
-    # Check if the sysctl parameter exists (some kernels don't have it)
-    if ! sysctl kernel.unprivileged_userns_clone >/dev/null 2>&1; then
-        echo "Info: kernel.unprivileged_userns_clone not available on this system"
-        return 0
-    fi
-    
-    # Check current value
-    local current_value=$(sysctl -n kernel.unprivileged_userns_clone 2>/dev/null)
-    
-    if [ "$current_value" != "1" ]; then
-        echo "Enabling unprivileged user namespaces..."
-        if sudo sysctl kernel.unprivileged_userns_clone=1; then
-            echo "Successfully enabled unprivileged user namespaces"
-            return 0
-        else
-            echo "Warning: Failed to enable unprivileged user namespaces"
-            return 1
-        fi
-    else
-        echo "Unprivileged user namespaces already enabled"
-        return 0
-    fi
-}
-
 # Variables
 user="steam"
 BRANCH="master"
@@ -137,19 +111,6 @@ fi
 chown -R ${user}:${user} /steamcmd
 chown -R ${user}:${user} /home/${user}
 
-# https://discord.com/channels/1160907911501991946/1160907912445710479/1411330429679829013
-# https://steamdb.info/app/1628350/depots/
-sudo -u $user /steamcmd/steamcmd.sh \
-  +api_logging 1 1 \
-  +@sSteamCmdForcePlatformType linux \
-  +@sSteamCmdForcePlatformBitness $BITS \
-  +force_install_dir /home/${user}/steamrt \
-  +login anonymous \
-  +app_update 1628350 \
-  +validate \
-  +quit
-chown -R ${user}:${user} /home/${user}/steamrt
-
 # https://developer.valvesoftware.com/wiki/Command_line_options
 sudo -u $user /steamcmd/steamcmd.sh \
     +api_logging 1 1 \
@@ -210,12 +171,9 @@ else
     echo "$FILE successfully patched for Metamod."
 fi
 
-# Try to enable unprivileged namespaces
-enable_unprivileged_namespaces
-
 echo "Starting server on $PUBLIC_IP:$PORT"
 # https://developer.valvesoftware.com/wiki/Counter-Strike_2/Dedicated_Servers#Command-Line_Parameters
-sudo -u $user /home/${user}/steamrt/run ./game/bin/linuxsteamrt64/cs2 --graphics-provider "" -- \
+sudo -u $user ./game/bin/linuxsteamrt64/cs2 \
     -dedicated \
     -console \
     -usercon \

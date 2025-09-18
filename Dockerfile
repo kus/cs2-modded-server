@@ -1,4 +1,4 @@
-FROM debian:bullseye-20240211-slim
+FROM registry.gitlab.steamos.cloud/steamrt/sniper/platform:latest-container-runtime-depot
 
 USER root
 
