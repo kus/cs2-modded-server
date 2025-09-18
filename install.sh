@@ -204,15 +204,19 @@ sudo -u $user /steamcmd/steamcmd.sh \
 
 cd /home/${user}
 
-mkdir -p /root/.steam/sdk32/
-ln -s /steamcmd/linux32/steamclient.so /root/.steam/sdk32/
-mkdir -p /root/.steam/sdk64/
-ln -s /steamcmd/linux64/steamclient.so /root/.steam/sdk64/
-
+# Set up steam client libraries
 mkdir -p /home/${user}/.steam/sdk32/
-ln -s /steamcmd/linux32/steamclient.so /home/${user}/.steam/sdk32/
+cp -v /steamcmd/linux32/steamclient.so /home/${user}/.steam/sdk32/steamclient.so || {
+	echo "ERROR: Failed to copy 32-bit libraries"
+}
 mkdir -p /home/${user}/.steam/sdk64/
-ln -s /steamcmd/linux64/steamclient.so /home/${user}/.steam/sdk64/
+cp -v /steamcmd/linux64/steamclient.so /home/${user}/.steam/sdk64/steamclient.so || {
+	echo "ERROR: Failed to copy 64-bit libraries"
+}
+
+# Copy .so files needed after 16.9.2025 update
+# https://discord.com/channels/1160907911501991946/1160907912445710479/1417806634503372851
+cp -v /home/${user}/cs2/game/bin/linuxsteamrt64/*.so  /home/${user}/cs2/game/csgo/bin/linuxsteamrt64/
 
 if [ "${DISTRO_OS}" == "Ubuntu" ]; then
 	if [ "${DISTRO_VERSION}" == "22.04" ]; then
