@@ -169,10 +169,6 @@ if [ ! -d "/steamcmd" ]; then
 	mkdir /steamcmd && cd /steamcmd
 	wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
 	tar -xvzf steamcmd_linux.tar.gz
-	mkdir -p /root/.steam/sdk32/
-	ln -s /steamcmd/linux32/steamclient.so /root/.steam/sdk32/
-	mkdir -p /root/.steam/sdk64/
-	ln -s /steamcmd/linux64/steamclient.so /root/.steam/sdk64/
 fi
 
 chown -R ${user}:${user} /steamcmd
