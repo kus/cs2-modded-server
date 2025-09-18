@@ -207,19 +207,13 @@ cd /home/${user}
 # Set up steam client libraries
 # 32-bit
 mkdir -p /home/${user}/.steam/sdk32/
-# Delete symlink if it exists /home/${user}/.steam/sdk32/steamclient.so
-if [ -L "/home/${user}/.steam/sdk32/steamclient.so" ]; then
-	rm /home/${user}/.steam/sdk32/steamclient.so
-fi
+rm /home/${user}/.steam/sdk32/steamclient.so
 cp -v /steamcmd/linux32/steamclient.so /home/${user}/.steam/sdk32/steamclient.so || {
 	echo "ERROR: Failed to copy 32-bit libraries"
 }
 # 64-bit
 mkdir -p /home/${user}/.steam/sdk64/
-# Delete symlink if it exists /home/${user}/.steam/sdk64/steamclient.so
-if [ -L "/home/${user}/.steam/sdk64/steamclient.so" ]; then
-	rm /home/${user}/.steam/sdk64/steamclient.so
-fi
+rm /home/${user}/.steam/sdk64/steamclient.so
 cp -v /steamcmd/linux64/steamclient.so /home/${user}/.steam/sdk64/steamclient.so || {
 	echo "ERROR: Failed to copy 64-bit libraries"
 }
