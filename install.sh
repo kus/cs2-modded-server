@@ -177,6 +177,20 @@ fi
 
 chown -R ${user}:${user} /steamcmd
 
+echo "Downloading any updates for Steam Linux Runtime 3.0 (sniper)..."
+# https://discord.com/channels/1160907911501991946/1160907912445710479/1411330429679829013
+# https://steamdb.info/app/1628350/depots/
+sudo -u $user /steamcmd/steamcmd.sh \
+  +api_logging 1 1 \
+  +@sSteamCmdForcePlatformType linux \
+  +@sSteamCmdForcePlatformBitness $BITS \
+  +force_install_dir /home/${user}/steamrt \
+  +login anonymous \
+  +app_update 1628350 \
+  +validate \
+  +quit
+chown -R ${user}:${user} /home/${user}/steamrt
+
 echo "Downloading any updates for CS2..."
 # https://developer.valvesoftware.com/wiki/Command_line_options
 sudo -u $user /steamcmd/steamcmd.sh \
@@ -265,7 +279,7 @@ rm -r /home/${user}/cs2-modded-server-${BRANCH} /home/${user}/${BRANCH}.zip
 
 echo "Starting server on $PUBLIC_IP:$PORT"
 # https://developer.valvesoftware.com/wiki/Counter-Strike_2/Dedicated_Servers#Command-Line_Parameters
-echo ./game/bin/linuxsteamrt64/cs2 \
+echo /home/${user}/steamrt/run ./game/bin/linuxsteamrt64/cs2 --graphics-provider "" -- \
     -dedicated \
     -console \
     -usercon \
@@ -284,7 +298,7 @@ echo ./game/bin/linuxsteamrt64/cs2 \
 	+sv_password $SERVER_PASSWORD \
 	+rcon_password $RCON_PASSWORD \
 	+exec $EXEC
-sudo -u $user ./game/bin/linuxsteamrt64/cs2 \
+sudo -u $user /home/${user}/steamrt/run ./game/bin/linuxsteamrt64/cs2 --graphics-provider "" -- \
     -dedicated \
     -console \
     -usercon \
