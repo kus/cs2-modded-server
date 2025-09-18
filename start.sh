@@ -7,6 +7,33 @@
 # As root (sudo su)
 # cd / && curl -s -H "Cache-Control: no-cache" -o "start.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/master/start.sh" && chmod +x start.sh && bash start.sh
 
+
+# Function to safely enable unprivileged user namespaces
+enable_unprivileged_namespaces() {
+    # Check if the sysctl parameter exists (some kernels don't have it)
+    if ! sysctl kernel.unprivileged_userns_clone >/dev/null 2>&1; then
+        echo "Info: kernel.unprivileged_userns_clone not available on this system"
+        return 0
+    fi
+    
+    # Check current value
+    local current_value=$(sysctl -n kernel.unprivileged_userns_clone 2>/dev/null)
+    
+    if [ "$current_value" != "1" ]; then
+        echo "Enabling unprivileged user namespaces..."
+        if sudo sysctl kernel.unprivileged_userns_clone=1; then
+            echo "Successfully enabled unprivileged user namespaces"
+            return 0
+        else
+            echo "Warning: Failed to enable unprivileged user namespaces"
+            return 1
+        fi
+    else
+        echo "Unprivileged user namespaces already enabled"
+        return 0
+    fi
+}
+
 METADATA_URL="${METADATA_URL:-http://metadata.google.internal/computeMetadata/v1/instance/attributes}"
 
 get_metadata () {
@@ -292,6 +319,9 @@ else
     }' "$FILE" > tmp_file && mv tmp_file "$FILE"
     echo "$FILE successfully patched for Metamod."
 fi
+
+# Try to enable unprivileged namespaces
+enable_unprivileged_namespaces
 
 echo "Starting server on $PUBLIC_IP:$PORT"
 # https://developer.valvesoftware.com/wiki/Counter-Strike_2/Dedicated_Servers#Command-Line_Parameters
