@@ -1,11 +1,4 @@
 {
-  "ChangeSubclass": {
-    "signatures": {
-      "library": "server",
-      "windows": "74 ? 48 8D 0D ? ? ? ? FF 15 ? ? ? ? EB ? BA",
-      "linux": "0F 85 ? ? ? ? 31 C0 B9 ? ? ? ? BA ? ? ? ? 66 0F EF C0 31 F6 31 FF 48 C7 45 ? ? ? ? ? 48 C7 45 ? ? ? ? ? 48 C7 45 ? ? ? ? ? 48 C7 45 ? ? ? ? ? 0F 29 45 ? 48 C7 45 ? ? ? ? ? C7 45 ? ? ? ? ? 66 89 45 ? E8 ? ? ? ? 41 89 C5 85 C0 0F 8E"
-    }
-  },
   "CAttributeList_SetOrAddAttributeValueByName": {
     "signatures": {
       "library": "server",
@@ -16,7 +9,7 @@
   "CCSPlayerPawn_IsAbleToApplySpray": {
     "signatures": {
       "library": "server",
-      "windows": "48 89 5C 24 ? 48 89 74 24 ? 48 89 7C 24 ? 4C 89 74 24 ? 55 48 8D AC 24 ? ? ? ? 48 81 EC ? ? ? ? 49 8B F1",
+      "windows": "48 8B C4 48 89 58 ? 48 89 70 ? 48 89 78 ? 55 48 8D A8 ? ? ? ? 48 81 EC ? ? ? ? 4C 89 70",
       "linux": "55 48 89 E5 41 57 41 56 49 89 D6 41 55 48 8D 95 ? ? ? ? 49 89 CD"
     }
   },
@@ -31,7 +24,7 @@
     "signatures": {
       "library": "server",
       "windows": "89 54 24 ? 55 48 81 EC",
-      "linux": "55 48 89 E5 41 57 41 56 41 55 41 54 53 48 89 FB 48 83 EC ? 89 75"
+      "linux": "55 48 89 E5 41 57 41 56 41 55 41 54 53 48 89 FB 48 83 EC ? 89 75 ? F6 87"
     }
   },
   "CServerSideClientBase_SetSignonState": {
