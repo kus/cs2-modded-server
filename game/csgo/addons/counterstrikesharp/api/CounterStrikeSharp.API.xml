@@ -1441,6 +1441,20 @@
             <remarks>If <see cref="M:CounterStrikeSharp.API.Modules.Events.GameEvent.FireEvent(System.Boolean)"/> is called, Free will be called automatically.</remarks>
             </summary>
         </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Extensions.CBasePlayerWeaponExtensions.GetWeaponName(CounterStrikeSharp.API.Core.CBasePlayerWeapon)">
+            <summary>
+            Gets the weapon's designer name (e.g., "weapon_ak47").
+            </summary>
+            <param name="weapon">The <see cref="T:CounterStrikeSharp.API.Core.CBasePlayerWeapon"/> instance.</param>
+            <returns>The designer name of the weapon as a string, or <c>null</c> if it cannot be retrieved.</returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Extensions.CBasePlayerWeaponExtensions.GetEconOwner(CounterStrikeSharp.API.Core.CBasePlayerWeapon)">
+            <summary>
+            Gets the econ owner of a weapon entity
+            </summary>
+            <param name="weapon">The weapon entity.</param>
+            <returns>The <see cref="T:CounterStrikeSharp.API.Core.CCSPlayerController"/> instance for the player, or <c>null</c> if it doesn't exist.</returns>
+        </member>
         <member name="M:CounterStrikeSharp.API.Modules.Extensions.PlayerExtensions.GetChatColor(CounterStrikeSharp.API.Core.CCSPlayerController)">
             <summary>
             <inheritdoc cref="M:CounterStrikeSharp.API.Modules.Utils.ChatColors.ForPlayer(CounterStrikeSharp.API.Core.CCSPlayerController)"/>
