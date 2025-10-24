@@ -337,6 +337,12 @@
             e.g. /game/csgo/addons/counterstrikesharp/gamedata
             </summary>
         </member>
+        <member name="P:CounterStrikeSharp.API.Core.Hosting.IScriptHostConfiguration.LanguagePath">
+            <summary>
+            Gets the absolute path to the directory that contains CounterStrikeSharp translation files.
+            e.g. /game/csgo/addons/counterstrikesharp/lang
+            </summary>
+        </member>
         <member name="T:CounterStrikeSharp.API.Core.IPlugin">
             <summary>
             Interface which every CounterStrikeSharp plugin must implement. Module will be created with parameterless constructor and then Load method will be called.
@@ -1252,6 +1258,118 @@
             </remarks>
             </summary>
             <param name="message">Message to send</param>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Modules.Commands.Targeting.ProcessTargetFilterFlag">
+            <summary>
+            Specifies filters for processing command targets.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Commands.Targeting.ProcessTargetFilterFlag.None">
+            <summary>
+            No filter applied.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Commands.Targeting.ProcessTargetFilterFlag.FilterAlive">
+            <summary>
+            Only allow alive players as targets.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Commands.Targeting.ProcessTargetFilterFlag.FilterDead">
+            <summary>
+            Only allow dead players as targets.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Commands.Targeting.ProcessTargetFilterFlag.FilterNoImmunity">
+            <summary>
+            Filter out targets that the command issuer cannot target due to immunity rules.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Commands.Targeting.ProcessTargetFilterFlag.FilterNoMulti">
+            <summary>
+            Do not allow multiple target patterns like @all, @ct, etc.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Commands.Targeting.ProcessTargetFilterFlag.FilterNoBots">
+            <summary>
+            Do not allow bots to be targeted.
+            </summary>
+        </member>
+        <member name="T:CounterStrikeSharp.API.Modules.Commands.Targeting.ProcessTargetResultFlag">
+            <summary>
+            Represents the result of a target processing operation.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Commands.Targeting.ProcessTargetResultFlag.TargetFound">
+            <summary>
+            Target(s) were successfully found and filtered.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Commands.Targeting.ProcessTargetResultFlag.TargetNone">
+            <summary>
+            No target was found matching the initial pattern.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Commands.Targeting.ProcessTargetResultFlag.TargetNotAlive">
+            <summary>
+            A single target was found, but they were not alive as required by the filter.
+            Or a multi-target filter resulted in no alive players.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Commands.Targeting.ProcessTargetResultFlag.TargetNotDead">
+            <summary>
+            A single target was found, but they were not dead as required by the filter.
+            Or a multi-target filter resulted in no dead players.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Commands.Targeting.ProcessTargetResultFlag.TargetImmune">
+            <summary>
+            The target is immune and cannot be targeted by the command issuer.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Commands.Targeting.ProcessTargetResultFlag.TargetEmptyFilter">
+            <summary>
+            A multi-target filter (like @all) resulted in no players after filtering.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Commands.Targeting.ProcessTargetResultFlag.TargetNotHuman">
+            <summary>
+            The target was found, but it was not a human player as required by the filter.
+            </summary>
+        </member>
+        <member name="F:CounterStrikeSharp.API.Modules.Commands.Targeting.ProcessTargetResultFlag.TargetAmbiguous">
+            <summary>
+            The target string was ambiguous and matched more than one player when a single target was expected.
+            </summary>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Commands.Targeting.Target.ProcessTargetString(CounterStrikeSharp.API.Core.CCSPlayerController,System.String,CounterStrikeSharp.API.Modules.Commands.Targeting.ProcessTargetFilterFlag,System.Boolean,System.String@,System.Collections.Generic.List{CounterStrikeSharp.API.Core.CCSPlayerController}@)">
+            <summary>
+            Processes a target string, finds matching players, and applies specified filters.
+            </summary>
+            <param name="player">The player who executed the command.</param>
+            <param name="targetString">The target string (e.g., player name, #userid, @all).</param>
+            <param name="filter">Flags to filter the found targets.</param>
+            <param name="tnIsMl">If true, the target name buffer will be an ML phrase. Otherwise, it will be normal string.</param>
+            <param name="targetname">
+            An output list that will contain the resolved target names. These may be localization keys 
+            (e.g., "all", "ct") if <paramref name="tnIsMl"/> is true, or actual player names otherwise.
+            </param>
+            <param name="players">An output list that will be populated with the player entities matching the target string.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Commands.Targeting.Target.FindTarget(CounterStrikeSharp.API.Core.CCSPlayerController,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Wraps ProcessTargetString() and handles producing error messages for bad targets.
+            </summary>
+            <param name="player">The player who executed the command.</param>
+            <param name="targetString">The target string (e.g., player name, #userid, @all).</param>
+            <param name="nobots">Optional. Set to true if bots should NOT be targetted</param>
+            <param name="immunity">Optional. Set to false to ignore target immunity.</param>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Commands.Targeting.Target.ReplyToTargetError(CounterStrikeSharp.API.Core.CCSPlayerController,CounterStrikeSharp.API.Modules.Commands.Targeting.ProcessTargetResultFlag)">
+            <summary>
+            Replies to a client with a given message describing a targetting failure reason.
+            </summary>
+            <param name="player">The player who executed the command.</param>
+            <param name="resultFlag">The <see cref="T:CounterStrikeSharp.API.Modules.Commands.Targeting.ProcessTargetResultFlag"/> value indicating why it is failed.</param>
         </member>
         <member name="P:CounterStrikeSharp.API.Modules.Cvars.ConVar.Type">
             <summary>
