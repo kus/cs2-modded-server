@@ -90,7 +90,7 @@ Mod | Version | Why
 --- | --- | ---
 [Metamod:Source](https://www.metamodsource.net/downloads.php?branch=dev) | `2.0.0-1367` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
 [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `1.0.343` | Attempts to implement a .NET Core scripting layer on top of a Metamod Source Plugin, allowing developers to create plugins that interact with the game server in a modern language (C#)
-[MultiAddonManager](https://github.com/Source2ZE/MultiAddonManager) | `1.4.8` | Allows you to use multiple workshop addons at once and have clients download them
+[MultiAddonManager](https://github.com/Source2ZE/MultiAddonManager) | `1.4.8` | Allows you to use multiple workshop addons at once and have clients download them [How?](#i-want-to-permanently-enable-multi-addon-manager)
 [ServerListPlayersFix](https://github.com/Source2ZE/ServerListPlayersFix) | `1.0.5` | Fixes players not showing up in the server browser
 [MovementUnlocker](https://github.com/Source2ZE/MovementUnlocker) | `1.8` | Removes max speed limitation from players on the ground, feels like CS:S [How?](#i-run-a-surfkzbhop-server-and-want-movementunlocker-and-cs2fixes-rampbugfix-permanently-on)
 [CS2Fixes-RampbugFix](https://github.com/Interesting-exe/CS2Fixes-RampbugFix) | `16-10` | Minimizes rampbugs (needs to be enabled via `!settings` [How?](#i-run-a-surfkzbhop-server-and-want-movementunlocker-and-cs2fixes-rampbugfix-permanently-on))
@@ -752,13 +752,15 @@ If you are on Windows, from the [CounterStrikeSharp](https://github.com/roflmuff
 
 ### Quake Sounds
 
-Quake Sounds is enabled by default, so it will play the Quake Sound "HEADSHOT" for headshots, and for kill streaks different multi-kill sounds. Players can disable it by typing `!qs` in chat.
+This requires Multi Addon Manager to be [enabled](#i-want-to-permanently-enable-multi-addon-manager).
 
-If you **DO NOT** want to use it on your server, you need to modify two files using the [custom files](#custom-files) method.
+Quake Sounds is disabled by default, when it is enabled, players can disable it by typing `!qs` in chat.
 
-Copy `game/csgo/cfg/multiaddonmanager/multiaddonmanager.cfg` to `/custom_files/cfg/multiaddonmanager/multiaddonmanager.cfg` and delete `3461824328` from `mm_extra_addons` i.e.: so it reads `mm_extra_addons ""`. _This will stop it prompting your players to download the Quake Sound Pack when they join your server._
+If you want to use it on your server, you need to modify two files using the [custom files](#custom-files) method.
 
-Copy `game/csgo/cfg/settings/quake_sounds.cfg` to `/custom_files/cfg/settings/quake_sounds.cfg` and delete everything in the file so it is empty. _This will stop the plugin from loading._
+Copy `game/csgo/cfg/multiaddonmanager/multiaddonmanager.cfg` to `/custom_files/cfg/multiaddonmanager/multiaddonmanager.cfg` and add `3461824328` to `mm_extra_addons`.
+
+Copy `game/csgo/cfg/settings/quake_sounds.cfg` to `/custom_files/cfg/settings/quake_sounds.cfg` uncomment this line `// css_plugins load "plugins/disabled/QuakeSounds/QuakeSounds.dll"`.
 
 ### Skin changer
 
@@ -788,7 +790,19 @@ On the server type `!ws` and it should update your skins to what you have set.
 
 If you **DO NOT** want to use this plugin; change `FollowCS2ServerGuidelines` to `true` in `addons/counterstrikesharp/configs/core.json`. It is recommended to do this via [custom files](#custom-files).
 
+### I want to permanently enable Multi Addon Manager
+
+Utilising [custom files](#custom-files), copy:
+
+`game/csgo/addons/multiaddonmanager/multiaddonmanager.vdf` to `/custom_files/addons/metamod/multiaddonmanager.vdf`
+
+This will enable [MultiAddonManager](https://github.com/Source2ZE/MultiAddonManager) on your server when it boots.
+
+To check type `meta list` in console and you should see `MultiAddonManager` in the list of loaded plugins.
+
 ### Model changer
+
+This requires Multi Addon Manager to be [enabled](#i-want-to-permanently-enable-multi-addon-manager).
 
 You have the abililty to have custom player models. You can turn it on va `!settings` > `Enable` > `Custom Player Models` and it will change the map to de_dust2 and the models will stay on for the future maps/modes unless turned off via `!settings` > `Disable` > `Custom Player Models`.
 
