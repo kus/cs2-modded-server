@@ -327,6 +327,14 @@
         ]
       },
       {
+        "Name": "Competitive (Valve)",
+        "Config": "comp-valve.cfg",
+        "DefaultMap": "de_dust2",
+        "MapGroups": [
+          "mg_comp"
+        ]
+      },
+      {
         "Name": "Deathmatch (Valve)",
         "Config": "dm-valve.cfg",
         "DefaultMap": "de_dust2",
