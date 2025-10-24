@@ -108,6 +108,9 @@
   "matchzy.pm.loadnadenotfound": "Nade não encontrada! Use: .loadnade <nome>",
   "matchzy.pm.backtonumber": "Use: !back <número> (Você lançou {green}{0}{default} nades até agora)",
   "matchzy.pm.throwindextonumber": "Use: !throwindex <número> (Você lançou {green}{0}{default} nades até agora)",
+  "matchzy.pm.savepos": "Posição salva",
+  "matchzy.pm.loadpos": "Posição carregada",
+  "matchzy.pm.notsavedpos": "Você ainda não salvou uma posição!",
 
   "matchzy.rs.minreadyplayers": "Você deve ter pelo menos {green}{0}{default} jogador(es) no servidor para ficar pronto.",
   "matchzy.rs.forcereadiedby": "Sua equipe foi forçada a ficar pronta por {green}{0}{default}",

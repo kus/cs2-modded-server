@@ -108,6 +108,9 @@
   "matchzy.pm.loadnadenotfound": "Nade não encontrada! Uso: .loadnade <nome>",
   "matchzy.pm.backtonumber": "Uso: !back <número> (Atiraste {green}{0}{default} granadas até agora)",
   "matchzy.pm.throwindextonumber": "Uso: !throwindex <número> (Atiraste {green}{0}{default} granadas até agora)",
+  "matchzy.pm.savepos": "Posição guardada",
+  "matchzy.pm.loadpos": "Posição carregada",
+  "matchzy.pm.notsavedpos": "Ainda não guardou uma posição!",
 
   "matchzy.rs.minreadyplayers": "Tens que ter no mínimo {green}{0}{default} jogador(es) no server para estar pronto.",
   "matchzy.rs.forcereadiedby": "A tua equipa foi forçada a estar pronta por {green}{0}{default}",

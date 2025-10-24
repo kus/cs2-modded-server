@@ -100,6 +100,10 @@
     "matchzy.pm.loadnadenotfound": "Граната не найдена! Использование: .loadnade <имя>",
     "matchzy.pm.backtonumber": "Использование: !back <число> (Вы бросили до сих пор {green}{0}{default} гранат)",
     "matchzy.pm.throwindextonumber": "Использование: !throwindex <число> (Вы бросили до сих пор {green}{0}{default} гранат)",
+    "matchzy.pm.savepos": "Позиция сохранена",
+    "matchzy.pm.loadpos": "Позиция загружена",
+    "matchzy.pm.notsavedpos": "Вы еще не сохранили позицию!",
+
     "matchzy.rs.minreadyplayers": "На сервере должно быть как минимум {green}{0}{default} игрок(а), чтобы подтвердить готовность.",
     "matchzy.rs.forcereadiedby": "Ваша команда была принудительно подтверждена готовой {green}{0}{default}",
     "matchzy.sleep.sleepwhenmatchstared": "Режим сна не может быть активирован, когда матч уже начался!",

@@ -121,5 +121,8 @@
   "matchzy.pracc.molotov": "A molotovot {red}{0}{default} dobta, és {green}{1}{default} mp alatt robbant fel",
   "matchzy.pracc.decoy": "A csaligránátot {red}{0}{default} dobta, és {green}{1}{default} mp alatt robbant fel",
   "matchzy.pracc.damage": "{red}{0}{default} sebzést okozott {lightblue}{1}{default}-nak ({green}{2}{default} egészség)",
-  "matchzy.pracc.blind": "{lightblue}{0}{default} vakítva lett {green}{1}{default} mp-re"
+  "matchzy.pracc.blind": "{lightblue}{0}{default} vakítva lett {green}{1}{default} mp-re",
+  "matchzy.pm.savepos": "Pozíció mentve",
+  "matchzy.pm.loadpos": "Pozíció betöltve",
+  "matchzy.pm.notsavedpos": "Még nem mentettél pozíciót!"
 }

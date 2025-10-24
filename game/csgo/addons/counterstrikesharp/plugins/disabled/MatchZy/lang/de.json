@@ -108,7 +108,10 @@
     "matchzy.pm.loadnadenotfound": "Nade not found! Usage: .loadnade <name>",
     "matchzy.pm.backtonumber": "Usage: !back <number> (You've thrown {green}{0}{default} grenades till now)",
     "matchzy.pm.throwindextonumber": "Usage: !throwindex <number> (You've thrown {green}{0}{default} grenades till now)",
-  
+    "matchzy.pm.savepos": "Position gespeichert",
+    "matchzy.pm.loadpos": "Position geladen",
+    "matchzy.pm.notsavedpos": "Sie haben noch keine Position gespeichert!",
+
     "matchzy.rs.minreadyplayers": "You must have at least {green}{0}{default} player(s) on the server to ready up.",
     "matchzy.rs.forcereadiedby": "Your team was force-readied by {green}{0}{default}",
   

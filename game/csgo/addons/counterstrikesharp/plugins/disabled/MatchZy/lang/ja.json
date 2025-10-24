@@ -108,6 +108,9 @@
   "matchzy.pm.loadnadenotfound": "手榴弾が見つかりません! 使用法: .loadnade <name>",
   "matchzy.pm.backtonumber": "使用法: !back <number> (これまでに{green}{0}{default}個の手榴弾を投げました)",
   "matchzy.pm.throwindextonumber": "使用法: !throwindex <number> (これまでに{green}{0}{default}個の手榴弾を投げました)",
+  "matchzy.pm.savepos": "位置を保存しました",
+  "matchzy.pm.loadpos": "位置を読み込みました",
+  "matchzy.pm.notsavedpos": "まだ位置を保存していません！",
 
   "matchzy.rs.minreadyplayers": "準備するには、サーバーに少なくとも {green}{0}{default} 人のプレイヤーが必要です。",
   "matchzy.rs.forcereadiedby": "あなたのチームは{green}{0}{default}によって強制的に準備されました",

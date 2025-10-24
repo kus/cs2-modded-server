@@ -108,6 +108,9 @@
   "matchzy.pm.loadnadenotfound": "Granata topilmadi! Foydalanish: .loadnade <nom>",
   "matchzy.pm.backtonumber": "Foydalanish: !back <raqam> (Siz hozirgacha {green}{0}{default} granatalar tashladingiz)",
   "matchzy.pm.throwindextonumber": "Foydalanish: !throwindex <raqam> (Siz hozirgacha {green}{0}{default} granatalar tashladingiz)",
+  "matchzy.pm.savepos": "Lavozim saqlandi",
+  "matchzy.pm.loadpos": "Lavozim yuklandi",
+  "matchzy.pm.notsavedpos": "Siz hali lavozim saqlamadingiz!",
 
   "matchzy.rs.minreadyplayers": "Tayyor bo‘lish uchun serverda kamida {green}{0}{default} o‘yinchi bo‘lishi kerak.",
   "matchzy.rs.forcereadiedby": "Jamoangiz {green}{0}{default} tomonidan majburiy tayyor deb belgilandi",

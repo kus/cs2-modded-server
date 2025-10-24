@@ -108,6 +108,9 @@
   "matchzy.pm.loadnadenotfound": "Nade 未找到！使用示例: .loadnade <name>",
   "matchzy.pm.backtonumber": "使用示例: !back <number> (你目前為止已扔出 {green}{0}{default} 個手雷)",
   "matchzy.pm.throwindextonumber": "使用示例: !throwindex <number> (你目前為止已扔出 {green}{0}{default} 個手雷)",
+  "matchzy.pm.savepos": "位置已儲存",
+  "matchzy.pm.loadpos": "位置已載入",
+  "matchzy.pm.notsavedpos": "您尚未儲存位置！",
   
   "matchzy.rs.minreadyplayers": "服務器至少需要 {green}{0}{default} 個已準備的玩家。",
   "matchzy.rs.forcereadiedby": "你的隊伍已被 {green}{0}{default} 強制設置為 已準備 ",
