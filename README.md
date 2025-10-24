@@ -794,7 +794,7 @@ You have the abililty to have custom player models. You can turn it on va `!sett
 
 It requires that you have a Workshop Addon with the models, for my server I just use [this one](https://steamcommunity.com/sharedfiles/filedetails/?id=3163629484) which has over 200 models.
 
-You need to have the Addon ID in your `cfg/multiaddonmanager/multiaddonmanager.cfg` you can see how I have [mine setup here](https://github.com/kus/cs2-modded-server/blob/master/custom_files_example/cfg/multiaddonmanager/multiaddonmanager.cfg) (which you can copy if you are using the same addon).
+You need to have the Addon ID in your `cfg/multiaddonmanager/multiaddonmanager.cfg` i.e. `mm_extra_addons     "3461824328,3163629484"`.
 
 Then you need to define the models from the Workshop Addon in `addons\counterstrikesharp\configs\plugins\PlayerModelChanger\PlayerModelChanger.json`, I have some in there that I use if you want more you will need to add them yourself.
 
