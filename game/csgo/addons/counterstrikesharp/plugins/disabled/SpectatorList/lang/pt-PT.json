@@ -1,7 +1,8 @@
 {
   "prefix": "{yellow}[Lista de Espectadores]{default}",
   "no_permissions": "{red}Você não tem permissão para usar este comando.",
-  "spectators_watching": "{blue}Espectadores {white}({{blue}0}{white}): {white}{1}",
+  "spectators_watching": "{blue}Espectadores {white}({blue}{0}{white}): {white}{1}",
+  "spectators_simplewatching": "{blue}Espectadores {white}({blue}{0}{white}) a observar",
   "spectators_title": "Espectadores ({0}):",
   "spectator_display_enabled": "Lista de espectadores {green}ativada",
   "spectator_display_disabled": "Lista de espectadores {red}desativada",
