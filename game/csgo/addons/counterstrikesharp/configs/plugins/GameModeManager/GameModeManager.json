@@ -328,26 +328,42 @@
       },
       {
         "Name": "Competitive (Valve)",
-        "Config": "comp-valve.cfg",
+        "Config": "valve-competitive.cfg",
         "DefaultMap": "de_dust2",
         "MapGroups": [
-          "mg_comp"
+          "mg_valve_competitive"
         ]
       },
       {
-        "Name": "Deathmatch (Valve)",
-        "Config": "dm-valve.cfg",
+        "Name": "Deathmatch FFA (Valve)",
+        "Config": "valve-deathmatch-freeforall.cfg",
         "DefaultMap": "de_dust2",
         "MapGroups": [
-          "mg_dm"
+          "mg_valve_deathmatch"
         ]
       },
       {
         "Name": "Arms Race (Valve)",
-        "Config": "ar.cfg",
+        "Config": "valve-armsrace.cfg",
         "DefaultMap": "ar_pool_day",
         "MapGroups": [
-          "mg_gg"
+          "mg_valve_arms_race"
+        ]
+      },
+      {
+        "Name": "Wingman (Valve)",
+        "Config": "valve-wingman.cfg",
+        "DefaultMap": "de_nuke",
+        "MapGroups": [
+          "mg_valve_wingman"
+        ]
+      },
+      {
+        "Name": "Retakes (Valve)",
+        "Config": "valve-retake.cfg",
+        "DefaultMap": "de_dust2",
+        "MapGroups": [
+          "mg_valve_retakes"
         ]
       },
       {
