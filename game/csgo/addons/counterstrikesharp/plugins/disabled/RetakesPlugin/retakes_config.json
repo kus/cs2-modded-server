@@ -1,5 +1,5 @@
 {
-  "Version": 11,
+  "Version": 12,
   "MaxPlayers": 9,
   "TerroristRatio": 0.45,
   "RoundsToScramble": 5,
@@ -11,6 +11,7 @@
   "ShouldOpenDoors": false,
   "IsAutoPlantEnabled": true,
   "QueuePriorityFlag": "@css/vip",
+  "QueueImmunityFlag": "@css/vip",
   "IsDebugMode": false,
   "ShouldForceEvenTeamsWhenPlayerCountIsMultipleOf10": true,
   "EnableFallbackBombsiteAnnouncement": true,
