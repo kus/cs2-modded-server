@@ -512,6 +512,18 @@ Players can start a vote to change the game mode by typing `!gamemode` in chat.
 
 You can also start a specific game mode vote by typing `!comp`, `!wingman`, `!dm`, `!gg`, `!1v1`, `!awp`, `!aim`, `!prefire`, `!executes`, `!retake`, `!prac`, `!bhop`, `!kz`, `!surf`, `!minigames`, `!deathrun`, `!course`, `!scoutzknivez`, `!hns`, `!br`, `!soccer`, `!1.6`.
 
+### I want MatchZy to record demos automatically
+
+We have SourceTV defaultly disabled for the best compatability with the widest range of setups.
+
+If you want to enable SourceTV create this file using [custom files](#custom-files) steps (`/custom_files/cfg/custom_all.cfg`) and add `tv_enable 1` to it (you can look at other commands you can change [here](https://github.com/kus/cs2-modded-server/blob/master/game/csgo/cfg/server.cfg#L116)).
+
+`/custom_files/cfg/custom_all.cfg` is executed after the servers `server.cfg` is executed so you can make your changes and when you pull updates from here it won't overwrite your changes.
+
+If you specifically want MatchZy to make the demos make sure you leave `tv_autorecord 0` as MatchZy automatically starts and stops the recordings.
+
+To check SourceTV is working on your server type `tv_status` from the server console. You can also try record a short demo with `tv_record <filename>` and stop with `tv_stoprecord`.
+
 ### What maps are preconfigured with each mode?
 
 #### mg_active
