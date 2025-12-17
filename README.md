@@ -128,7 +128,7 @@ Mod | Version | Why
 [cs2-advanced-weapon-system](https://github.com/schwarper/cs2-advanced-weapon-system) | `1.11` | An advanced weapon system that gives full control over weapon attributes, dynamic adjustments to weapon behaviour, restrictions and advanced customisation.
 [cs2-OneInTheChamber](https://github.com/ShookEagle/cs2-OneInTheChamber) | `1.0.0` | One in the Chamber game mode.
 [cs2-quake-sounds](https://github.com/Kandru/cs2-quake-sounds) | `25.11.2` | Quake Sounds on multi kills.
-[CS2-WeaponSpeed](https://github.com/akanora/CS2-WeaponSpeed) | `1.2` | Gives players a speed boost when they fire specified weapons.
+[CS2-WeaponSpeed](https://github.com/akanora/CS2-WeaponSpeed) | `1.3` | Gives players a speed boost when they fire specified weapons.
 [SpectatorList-CS2](https://github.com/wiruwiru/SpectatorList-CS2) | `16` | Shows real-time spectators in on-screen display.
 [SLAYER_Football](https://github.com/zakriamansoor47/SLAYER_Football) | `1.1` | Football in CS2.
 [SLAYER_Revive](https://github.com/zakriamansoor47/SLAYER_Revive) | `1.3.2` | Revive Your Teammates.
