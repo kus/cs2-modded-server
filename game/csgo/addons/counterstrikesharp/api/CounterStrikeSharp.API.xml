@@ -118,6 +118,16 @@
             <param name="flags">Controls if the timer is a one-off, repeat or stops on map change etc.</param>
             <returns>An instance of the <see cref="T:CounterStrikeSharp.API.Modules.Timers.Timer"/></returns>
         </member>
+        <member name="M:CounterStrikeSharp.API.Core.BasePlugin.AddTickTimer(System.Int32,System.Action,System.Nullable{CounterStrikeSharp.API.Modules.Timers.TimerFlags})">
+            <summary>
+            Adds a timer that will call the given callback after the specified amount of ticks.
+            By default will only run once unless the <see cref="F:CounterStrikeSharp.API.Modules.Timers.TimerFlags.REPEAT"/> flag is set.
+            </summary>
+            <param name="interval">Interval/Delay in ticks</param>
+            <param name="callback">Code to run when timer elapses</param>
+            <param name="flags">Controls if the timer is a one-off, repeat or stops on map change etc.</param>
+            <returns>An instance of the <see cref="T:CounterStrikeSharp.API.Modules.Timers.Timer"/></returns>
+        </member>
         <member name="M:CounterStrikeSharp.API.Core.BasePlugin.RegisterAllAttributes(System.Object)">
             <summary>
             Registers all attribute handlers on the given instance.
