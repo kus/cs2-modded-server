@@ -1,14 +1,19 @@
 ﻿{
-  "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
-  
+  "retakes.prefix": "[{green}RETAKES{default}]",
+  "retakes.no_permissions": "您沒有使用此指令的權限。",
+  "retakes.enabled": "{red}已停用{default}",
+  "retakes.disabled": "{green}已啟用{default}",
+
   "retakes.queue.joined": "您已被放入等待佇列。",
-  "retakes.queue.waiting": "遊戲目前已滿，共有[GREEN]{0}[NORMAL]名玩家。您正在等待佇列中。",
-  
-  "retakes.bombsite.announcement": "回防[GREEN]{0}[NORMAL]炸彈點：[LIGHT_RED]{1}名恐怖份子[NORMAL]對陣[PURPLE]{2}名反恐小组",
-  
-  "retakes.teams.scramble": "T連續贏得[GREEN]{0}[NORMAL]個回合。[PURPLE]正在重新打亂隊伍！",
-  "retakes.teams.almost_scramble": "T連續贏得[GREEN]{0}[NORMAL]個回合 - 如果他們再贏[GREEN]{1}個回合，[PURPLE]將重新打亂隊伍。",
-  "retakes.teams.win_streak": "T連續贏得[GREEN]{0}[NORMAL]個回合！",
-  "retakes.teams.win_streak_over": "CT結束了[GREEN]{0}[NORMAL]個回合的連勝！",
+  "retakes.queue.waiting": "遊戲目前已滿，共有{green}{0}{default}名玩家。您正在等待佇列中。",
+  "retakes.queue.replaced_by_vip": "您已經被{gold}{1}{default}用戶{green}{0}{default}取代。",
+  "retakes.queue.vip_took_place": "您已經取代了{green}{0}{default}在遊戲中的位置，因為您是{gold}{1}{default}。",
+
+  "retakes.bombsite.announcement": "回防{green}{0}{default}炸彈點：{lightred}{1}名恐怖份子{default}對陣{purple}{2}名反恐小组",
+
+  "retakes.teams.scramble": "T連續贏得{green}{0}{default}個回合。{purple}正在重新打亂隊伍！",
+  "retakes.teams.almost_scramble": "T連續贏得{green}{0}{default}個回合 - 如果他們再贏{green}{1}個回合，{purple}將重新打亂隊伍。",
+  "retakes.teams.win_streak": "T連續贏得{green}{0}{default}個回合！",
+  "retakes.teams.win_streak_over": "CT結束了{green}{0}{default}個回合的連勝！",
   "retakes.teams.admin_scramble": "{0}已設定下一回合重新打亂隊伍。"
 }

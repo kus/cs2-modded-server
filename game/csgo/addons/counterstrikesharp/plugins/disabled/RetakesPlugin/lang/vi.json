@@ -1,17 +1,20 @@
 ﻿{
-  "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
-  
-  "retakes.queue.joined": "Bạn đã được đưa vào hàng chờ.",
-  "retakes.queue.waiting": "Trận đấu hiện đã đầy với [GREEN]{0}[NORMAL] người chơi. Bạn đang trong hàng chờ.",
-  "retakes.queue.replaced_by_vip": "Bạn đã bị thay thế bởi VIP [GREEN]{0}[NORMAL].",
-  "retakes.queue.vip_took_place": "Bạn đã lấy chỗ của [GREEN]{0}[NORMAL] trong trận.",
+  "retakes.prefix": "[{green}RETAKES{default}]",
+  "retakes.no_permissions": "Bạn không có quyền sử dụng lệnh này.",
+  "retakes.enabled": "{red}đã tắt{default}",
+  "retakes.disabled": "{green}đã bật{default}",
 
-  "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} T[NORMAL] vs [PURPLE]{2} CT",
+  "retakes.queue.joined": "Bạn đã được đưa vào hàng chờ.",
+  "retakes.queue.waiting": "Trận đấu hiện đã đầy với {green}{0}{default} người chơi. Bạn đang trong hàng chờ.",
+  "retakes.queue.replaced_by_vip": "Bạn đã bị thay thế bởi {gold}{1}{default} {green}{0}{default}.",
+  "retakes.queue.vip_took_place": "Bạn đã lấy chỗ của {green}{0}{default} trong trận vì bạn là {gold}{1}{default}.",
+
+  "retakes.bombsite.announcement": "Retake {green}{0}{default}: {lightred}{1} T{default} vs {purple}{2} CT",
   "retakes.voices.toggle": "Bạn đã {0} thông báo bằng giọng nói!",
 
-  "retakes.teams.scramble": "T đã thắng [GREEN]{0}[NORMAL] round liên tiếp. [PURPLE]Đội sẽ được xáo trộn!",
-  "retakes.teams.almost_scramble": "T đã thắng [GREEN]{0}[NORMAL] round liên tiếp - nếu thắng thêm [GREEN]{1}, [PURPLE]đội sẽ bị xáo trộn.",
-  "retakes.teams.win_streak": "T đang có chuỗi thắng [GREEN]{0}[NORMAL] round!",
-  "retakes.teams.win_streak_over": "CT đã kết thúc chuỗi thắng [GREEN]{0}[NORMAL] round!",
+  "retakes.teams.scramble": "T đã thắng {green}{0}{default} round liên tiếp. {purple}Đội sẽ được xáo trộn!",
+  "retakes.teams.almost_scramble": "T đã thắng {green}{0}{default} round liên tiếp - nếu thắng thêm {green}{1}, {purple}đội sẽ bị xáo trộn.",
+  "retakes.teams.win_streak": "T đang có chuỗi thắng {green}{0}{default} round!",
+  "retakes.teams.win_streak_over": "CT đã kết thúc chuỗi thắng {green}{0}{default} round!",
   "retakes.teams.admin_scramble": "{0} đã thiết lập xáo trộn đội ở round tiếp theo."
 }

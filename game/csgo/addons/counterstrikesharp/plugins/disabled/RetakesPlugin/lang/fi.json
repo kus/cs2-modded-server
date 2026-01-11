@@ -1,16 +1,20 @@
 {
-  "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
+  "retakes.prefix": "[{green}RETAKES{default}]",
+  "retakes.no_permissions": "Sinulla ei ole oikeutta käyttää tätä komentoa.",
+  "retakes.enabled": "{red}pois käytöstä{default}",
+  "retakes.disabled": "{green}käytössä{default}",
 
   "retakes.queue.joined": "Sinut on laitettu jonoon odottamaan peliin siirtymistä.",
-  "retakes.queue.waiting": "Peli on tällä hetkellä täysi [GREEN]{0}[NORMAL] pelaajalla. Olet jonossa odottamassa peliin.",
-  "retakes.queue.replaced_by_vip": "Sinun paikkasi pelissä otti VIP pelaaja [GREEN]{0}[NORMAL].",
-  "retakes.queue.vip_took_place": "Olet ottanut pelaajan [GREEN]{0}[NORMAL] paikan pelissä.",
+  "retakes.queue.waiting": "Peli on tällä hetkellä täysi {green}{0}{default} pelaajalla. Olet jonossa odottamassa peliin.",
+  "retakes.queue.replaced_by_vip": "Sinun paikkasi pelissä otti {gold}{1}{default} pelaaja {green}{0}{default}.",
+  "retakes.queue.vip_took_place": "Olet ottanut pelaajan {green}{0}{default} paikan pelissä, koska olet {gold}{1}{default}.",
 
-  "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Ts[NORMAL] vs [PURPLE]{2} CTs",
+  "retakes.bombsite.announcement": "Retake {green}{0}{default}: {lightred}{1} Ts{default} vs {purple}{2} CTs",
+  "retakes.voices.toggle": "Sinulla on {0} äänitiedotukset!",
 
-  "retakes.teams.scramble": "Terot ovat voittaneet [GREEN]{0}[NORMAL] kierrosta putkeen. [PURPLE]Tiimit sekoitetaan!",
-  "retakes.teams.almost_scramble": "Terot ovat voittanut [GREEN]{0}[NORMAL] kierrosta putkeen - Jos he voittavat [GREEN]{1} lisää, [PURPLE]tiimit sekoitetaan.",
-  "retakes.teams.win_streak": "Terot ovat voittaneet [GREEN]{0}[NORMAL] kierrosta putkeen!",
-  "retakes.teams.win_streak_over": "CT hävisi [GREEN]{0}[NORMAL]-kierrosta kestäneen voittoputken!",
+  "retakes.teams.scramble": "Terot ovat voittaneet {green}{0}{default} kierrosta putkeen. {purple}Tiimit sekoitetaan!",
+  "retakes.teams.almost_scramble": "Terot ovat voittanut {green}{0}{default} kierrosta putkeen - Jos he voittavat {green}{1} lisää, {purple}tiimit sekoitetaan.",
+  "retakes.teams.win_streak": "Terot ovat voittaneet {green}{0}{default} kierrosta putkeen!",
+  "retakes.teams.win_streak_over": "CT hävisi {green}{0}{default}-kierrosta kestäneen voittoputken!",
   "retakes.teams.admin_scramble": "{0} asetti tiimit sekoittumaan seuraavalla kierroksella."
 }

@@ -1,17 +1,20 @@
 {
-  "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
-  
-  "retakes.queue.joined": "Você foi colocado na fila de espera, aguarda a próxima ronda.",
-  "retakes.queue.waiting": "As equipas estão cheias de momento com [GREEN]{0}[NORMAL] players. Você está na fila de espera.",
-  "retakes.queue.replaced_by_vip": "Você foi substituído pelo jogador VIP [GREEN]{0}[NORMAL].",
-  "retakes.queue.vip_took_place": "Você ocupou o lugar de [GREEN]{0}[NORMAL] no jogo.",
+  "retakes.prefix": "[{green}RETAKES{default}]",
+  "retakes.no_permissions": "Não tens permissão para usar este comando.",
+  "retakes.enabled": "{red}desativado{default}",
+  "retakes.disabled": "{green}ativado{default}",
 
-  "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Ts[NORMAL] vs [PURPLE]{2} CTs",
+  "retakes.queue.joined": "Você foi colocado na fila de espera, aguarda a próxima ronda.",
+  "retakes.queue.waiting": "As equipas estão cheias de momento com {green}{0}{default} players. Você está na fila de espera.",
+  "retakes.queue.replaced_by_vip": "Você foi substituído pelo jogador {gold}{1}{default} {green}{0}{default}.",
+  "retakes.queue.vip_took_place": "Você ocupou o lugar de {green}{0}{default} no jogo por ser {gold}{1}{default}.",
+
+  "retakes.bombsite.announcement": "Retake {green}{0}{default}: {lightred}{1} Ts{default} vs {purple}{2} CTs",
   "retakes.voices.toggle": "Você tem {0} anúncios de voz!",
 
-  "retakes.teams.scramble": "Terroristas venceram [GREEN]{0}[NORMAL] rondas consecutivas. [PURPLE]Equipas estão sendo embaralhadas!",
-  "retakes.teams.almost_scramble": "Terroristas venceram [GREEN]{0}[NORMAL] rondas consecutivas - se ganharem mais [GREEN]{1} ronda, [PURPLE]as equipas serão embaralhadas.",
-  "retakes.teams.win_streak": "Terroristas venceram [GREEN]{0}[NORMAL] rondas consecutivas!",
-  "retakes.teams.win_streak_over": "Contra-Terroristas terminaram uma sequência de rondas consecutivas [GREEN]{0}[NORMAL]!",
+  "retakes.teams.scramble": "Terroristas venceram {green}{0}{default} rondas consecutivas. {purple}Equipas estão sendo embaralhadas!",
+  "retakes.teams.almost_scramble": "Terroristas venceram {green}{0}{default} rondas consecutivas - se ganharem mais {green}{1} ronda, {purple}as equipas serão embaralhadas.",
+  "retakes.teams.win_streak": "Terroristas venceram {green}{0}{default} rondas consecutivas!",
+  "retakes.teams.win_streak_over": "Contra-Terroristas terminaram uma sequência de rondas consecutivas {green}{0}{default}!",
   "retakes.teams.admin_scramble": "{0} definiu para as equipas serem embaralhadas na próxima ronda."
 }

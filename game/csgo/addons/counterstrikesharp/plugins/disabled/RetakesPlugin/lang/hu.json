@@ -1,14 +1,20 @@
 {
-  "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
-  
+  "retakes.prefix": "[{green}RETAKES{default}]",
+  "retakes.no_permissions": "Nincs jogosultságod használni ezt a parancsot.",
+  "retakes.enabled": "{red}letiltva{default}",
+  "retakes.disabled": "{green}engedélyezve{default}",
+
   "retakes.queue.joined": "Át lettél rakva a várólistába.",
-  "retakes.queue.waiting": "Játék jelenleg fullon van [GREEN]{0}[NORMAL] játékossal. Bent vagy a várólistában.",
+  "retakes.queue.waiting": "Játék jelenleg fullon van {green}{0}{default} játékossal. Bent vagy a várólistában.",
+  "retakes.queue.replaced_by_vip": "Egy {gold}{1}{default} játékos, {green}{0}{default} helyettesített téged.",
+  "retakes.queue.vip_took_place": "Átvetted {green}{0}{default} helyét a játékban, mert {gold}{1}{default} vagy.",
 
-  "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} T-k[NORMAL] vs [PURPLE]{2} TE-k",
+  "retakes.bombsite.announcement": "Retake {green}{0}{default}: {lightred}{1} T-k{default} vs {purple}{2} TE-k",
+  "retakes.voices.toggle": "{0} hangos bejelentéseid vannak!",
 
-  "retakes.teams.scramble": "Terroristák [GREEN]{0}[NORMAL] kört nyertek egymás után. [PURPLE]A csapatok össze lettek keverve!",
-  "retakes.teams.almost_scramble": "Terroristák [GREEN]{0}[NORMAL] kört nyertek egymás után - ha még nyernek [GREEN]{1} kört, [PURPLE]a csapatok össze lesznek keverve.",
-  "retakes.teams.win_streak": "Terroristák [GREEN]{0}[NORMAL] kört nyertek egymás után!",
-  "retakes.teams.win_streak_over": "TE-k megállították a [GREEN]{0}[NORMAL] kör hosszú győzelem sorozatot!",
+  "retakes.teams.scramble": "Terroristák {green}{0}{default} kört nyertek egymás után. {purple}A csapatok össze lettek keverve!",
+  "retakes.teams.almost_scramble": "Terroristák {green}{0}{default} kört nyertek egymás után - ha még nyernek {green}{1} kört, {purple}a csapatok össze lesznek keverve.",
+  "retakes.teams.win_streak": "Terroristák {green}{0}{default} kört nyertek egymás után!",
+  "retakes.teams.win_streak_over": "TE-k megállították a {green}{0}{default} kör hosszú győzelem sorozatot!",
   "retakes.teams.admin_scramble": "{0} beállította, hogy a csapatok össze legyenek keverve a következő körben."
 }

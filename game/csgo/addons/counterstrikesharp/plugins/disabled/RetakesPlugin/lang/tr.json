@@ -1,17 +1,20 @@
 {
-  "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
-  
-  "retakes.queue.joined": "Bekleme sırasına alındınız.",
-  "retakes.queue.waiting": "Oyun şu anda [GREEN]{0}[NORMAL] oyuncuyla dolu. Bekleme sırasındasınız.",
-  "retakes.queue.replaced_by_vip": "Yerinizi VIP oyuncu [GREEN]{0}[NORMAL] aldı.",
-  "retakes.queue.vip_took_place": "Oyunda [GREEN]{0}[NORMAL]'in yerini aldınız.",
+  "retakes.prefix": "[{green}RETAKES{default}]",
+  "retakes.no_permissions": "Bu komutu kullanma izniniz yok.",
+  "retakes.enabled": "{red}devre dışı{default}",
+  "retakes.disabled": "{green}etkin{default}",
 
-  "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} T[NORMAL] vs [PURPLE]{2} AT",
+  "retakes.queue.joined": "Bekleme sırasına alındınız.",
+  "retakes.queue.waiting": "Oyun şu anda {green}{0}{default} oyuncuyla dolu. Bekleme sırasındasınız.",
+  "retakes.queue.replaced_by_vip": "Yerinizi {gold}{1}{default} oyuncu {green}{0}{default} aldı.",
+  "retakes.queue.vip_took_place": "Oyunda {green}{0}{default}'in yerini aldınız çünkü {gold}{1}{default} sınız.",
+
+  "retakes.bombsite.announcement": "Retake {green}{0}{default}: {lightred}{1} T{default} vs {purple}{2} AT",
   "retakes.voices.toggle": "{0} sesli duyurunuz var!",
 
-  "retakes.teams.scramble": "Teröristler [GREEN]{0}[NORMAL] round arka arkaya kazandı. [PURPLE]Takımlar karıştırılıyor!",
-  "retakes.teams.almost_scramble": "Teröristler [GREEN]{0}[NORMAL] round arka arkaya kazandı - eğer [GREEN]{1} round daha alırlarsa, [PURPLE]takımlar karıştırılacak.",
-  "retakes.teams.win_streak": "Teröristler [GREEN]{0}[NORMAL] round arka arkaya kazandı!",
-  "retakes.teams.win_streak_over": "AT'ler [GREEN]{0}[NORMAL] roundluk uzun galibiyet serisine son verdi.",
+  "retakes.teams.scramble": "Teröristler {green}{0}{default} round arka arkaya kazandı. {purple}Takımlar karıştırılıyor!",
+  "retakes.teams.almost_scramble": "Teröristler {green}{0}{default} round arka arkaya kazandı - eğer {green}{1} round daha alırlarsa, {purple}takımlar karıştırılacak.",
+  "retakes.teams.win_streak": "Teröristler {green}{0}{default} round arka arkaya kazandı!",
+  "retakes.teams.win_streak_over": "AT'ler {green}{0}{default} roundluk uzun galibiyet serisine son verdi.",
   "retakes.teams.admin_scramble": "{0}, takımları bir sonraki round karıştırılacak şekilde ayarladı."
 }

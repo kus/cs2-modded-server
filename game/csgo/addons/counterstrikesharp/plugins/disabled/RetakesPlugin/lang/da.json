@@ -1,14 +1,20 @@
 {
-  "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
-  
+  "retakes.prefix": "[{green}RETAKES{default}]",
+  "retakes.no_permissions": "Du har ikke tilladelse til at bruge denne kommando.",
+  "retakes.enabled": "{red}deaktiveret{default}",
+  "retakes.disabled": "{green}aktiveret{default}",
+
   "retakes.queue.joined": "Du er blevet placeret i køen.",
-  "retakes.queue.waiting": "Dette spil er fuldt med [GREEN]{0}[NORMAL] spillere. Du er blevet placeret i køen.",
+  "retakes.queue.waiting": "Dette spil er fuldt med {green}{0}{default} spillere. Du er blevet placeret i køen.",
+  "retakes.queue.replaced_by_vip": "Du er blevet erstattet af {gold}{1}{default}-spilleren {green}{0}{default}.",
+  "retakes.queue.vip_took_place": "Du har taget {green}{0}{default}s plads i spillet, fordi du er {gold}{1}{default}.",
 
-  "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} T'er[NORMAL] mod [PURPLE]{2} CT'er",
+  "retakes.bombsite.announcement": "Retake {green}{0}{default}: {lightred}{1} T'er{default} mod {purple}{2} CT'er",
+  "retakes.voices.toggle": "Du har {0} stemmeannonceringer!",
 
-  "retakes.teams.scramble": "Terroristerne har vundet [GREEN]{0}[NORMAL] runder i træk. [PURPLE]Holdende bliver blandet!",
-  "retakes.teams.almost_scramble": "Terroristerne har vundet [GREEN]{0}[NORMAL] runder i træk - hvis de vinder [GREEN]{1} mere, [PURPLE]bliver holdende blandet.",
-  "retakes.teams.win_streak": "Terroristerne har vundet [GREEN]{0}[NORMAL] runder i træk!",
-  "retakes.teams.win_streak_over": "CT'erne har afsluttet en [GREEN]{0}[NORMAL]-runde lang win streak!",
+  "retakes.teams.scramble": "Terroristerne har vundet {green}{0}{default} runder i træk. {purple}Holdende bliver blandet!",
+  "retakes.teams.almost_scramble": "Terroristerne har vundet {green}{0}{default} runder i træk - hvis de vinder {green}{1} mere, {purple}bliver holdende blandet.",
+  "retakes.teams.win_streak": "Terroristerne har vundet {green}{0}{default} runder i træk!",
+  "retakes.teams.win_streak_over": "CT'erne har afsluttet en {green}{0}{default}-runde lang win streak!",
   "retakes.teams.admin_scramble": "{0} har sat holdende til at blive blandet."
 }

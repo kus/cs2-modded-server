@@ -1,14 +1,20 @@
 {
-  "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
-  
+  "retakes.prefix": "[{green}RETAKES{default}]",
+  "retakes.no_permissions": "Du har ikke tillatelse til å bruke denne kommandoen.",
+  "retakes.enabled": "{red}deaktivert{default}",
+  "retakes.disabled": "{green}aktivert{default}",
+
   "retakes.queue.joined": "Du har blitt plassert i kø for å bli med.",
-  "retakes.queue.waiting": "Spillet er for øyeblikket fullt med [GREEN]{0}[NORMAL] spillere. Du er nå i køen for å bli med.",
+  "retakes.queue.waiting": "Spillet er for øyeblikket fullt med {green}{0}{default} spillere. Du er nå i køen for å bli med.",
+  "retakes.queue.replaced_by_vip": "Du har blitt erstattet av {gold}{1}{default}-spilleren {green}{0}{default}.",
+  "retakes.queue.vip_took_place": "Du har tatt {green}{0}{default}s plass i spillet fordi du er {gold}{1}{default}.",
 
-  "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Ts[NORMAL] mot [PURPLE]{2} CTs",
+  "retakes.bombsite.announcement": "Retake {green}{0}{default}: {lightred}{1} Ts{default} mot {purple}{2} CTs",
+  "retakes.voices.toggle": "Du har {0} stemme kunngjøringer!",
 
-  "retakes.teams.scramble": "Terroristene har vunnet [GREEN]{0}[NORMAL] runder på rad. [PURPLE]Lagene blir samlet!",
-  "retakes.teams.almost_scramble": "Terroristene har vunnet [GREEN]{0}[NORMAL] runder på rad - hvis de vinner [GREEN]{1} mer, [PURPLE]vil lagene bli endret.",
-  "retakes.teams.win_streak": "Terroristene har vunnet [GREEN]{0}[NORMAL] runder på rad!",
-  "retakes.teams.win_streak_over": "CT har sluttet en [GREEN]{0}[NORMAL]-runders lang seiersrekke!",
+  "retakes.teams.scramble": "Terroristene har vunnet {green}{0}{default} runder på rad. {purple}Lagene blir samlet!",
+  "retakes.teams.almost_scramble": "Terroristene har vunnet {green}{0}{default} runder på rad - hvis de vinner {green}{1} mer, {purple}vil lagene bli endret.",
+  "retakes.teams.win_streak": "Terroristene har vunnet {green}{0}{default} runder på rad!",
+  "retakes.teams.win_streak_over": "CT har sluttet en {green}{0}{default}-runders lang seiersrekke!",
   "retakes.teams.admin_scramble": "{0} har satt lagene til å bli samlet neste runde."
 }

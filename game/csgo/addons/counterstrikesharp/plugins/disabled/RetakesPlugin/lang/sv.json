@@ -1,14 +1,20 @@
 {
-  "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
-  
+  "retakes.prefix": "[{green}RETAKES{default}]",
+  "retakes.no_permissions": "Du har inte behörighet att använda detta kommando.",
+  "retakes.enabled": "{red}inaktiverad{default}",
+  "retakes.disabled": "{green}aktiverad{default}",
+
   "retakes.queue.joined": "Du är placerad i kön.",
-  "retakes.queue.waiting": "Matchen är just nu full med [GREEN]{0}[NORMAL] spelare. Du är i kö.",
+  "retakes.queue.waiting": "Matchen är just nu full med {green}{0}{default} spelare. Du är i kö.",
+  "retakes.queue.replaced_by_vip": "Du har blivit ersatt av {gold}{1}{default}-spelaren {green}{0}{default}.",
+  "retakes.queue.vip_took_place": "Du har tagit {green}{0}{default}s plats i matchen för att du är {gold}{1}{default}.",
 
-  "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Terrorister[NORMAL] vs [PURPLE]{2} Anti-terrorister.",
+  "retakes.bombsite.announcement": "Retake {green}{0}{default}: {lightred}{1} Terrorister{default} vs {purple}{2} Anti-terrorister.",
+  "retakes.voices.toggle": "Du har {0} röstmeddelanden!",
 
-  "retakes.teams.scramble": "Terroristerna har vunnit [GREEN]{0}[NORMAL] rundor i rad. [PURPLE]Blandar om lagen!",
-  "retakes.teams.almost_scramble": "Terroristerna har vunnit [GREEN]{0}[NORMAL] rundor i rad - vinner de [GREEN]{1} till, [PURPLE]så blandas lagen om.",
-  "retakes.teams.win_streak": "Terroristerna har vunnit [GREEN]{0}[NORMAL] rundor i rad!",
-  "retakes.teams.win_streak_over": "Anti-terroristerna har avbrutit terroristernas [GREEN]{0}[NORMAL] raka vinster!",
+  "retakes.teams.scramble": "Terroristerna har vunnit {green}{0}{default} rundor i rad. {purple}Blandar om lagen!",
+  "retakes.teams.almost_scramble": "Terroristerna har vunnit {green}{0}{default} rundor i rad - vinner de {green}{1} till, {purple}så blandas lagen om.",
+  "retakes.teams.win_streak": "Terroristerna har vunnit {green}{0}{default} rundor i rad!",
+  "retakes.teams.win_streak_over": "Anti-terroristerna har avbrutit terroristernas {green}{0}{default} raka vinster!",
   "retakes.teams.admin_scramble": "{0} har satt lagen att blandas om nästa runda."
 }

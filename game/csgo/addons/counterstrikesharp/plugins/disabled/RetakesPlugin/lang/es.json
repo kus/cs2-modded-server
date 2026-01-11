@@ -1,14 +1,20 @@
 {
-  "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
-  
+  "retakes.prefix": "[{green}RETAKES{default}]",
+  "retakes.no_permissions": "No tienes permiso para usar este comando.",
+  "retakes.enabled": "{red}deshabilitado{default}",
+  "retakes.disabled": "{green}habilitado{default}",
+
   "retakes.queue.joined": "Fuiste puesto en la lista de espera.",
-  "retakes.queue.waiting": "La partida está llena con [GREEN]{0}[NORMAL] jugadores. Te encuentras en la lista de espera.",
+  "retakes.queue.waiting": "La partida está llena con {green}{0}{default} jugadores. Te encuentras en la lista de espera.",
+  "retakes.queue.replaced_by_vip": "Has sido reemplazado por el jugador {gold}{1}{default} {green}{0}{default}.",
+  "retakes.queue.vip_took_place": "Has tomado el lugar de {green}{0}{default} por ser {gold}{1}{default}.",
 
-  "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Ts[NORMAL] vs [PURPLE]{2} CTs",
+  "retakes.bombsite.announcement": "Retake {green}{0}{default}: {lightred}{1} Ts{default} vs {purple}{2} CTs",
+  "retakes.voices.toggle": "¡Tienes {0} anuncios de voz!",
 
-  "retakes.teams.scramble": "Los terroristas ganaron [GREEN]{0}[NORMAL] rondas seguidas. [PURPLE]Los equipos serán mezclados!",
-  "retakes.teams.almost_scramble": "Los terroristas van ganando [GREEN]{0}[NORMAL] rondas seguidas - Si ganan [GREEN]{1} más, [PURPLE]los equipos serán a mezclados.",
-  "retakes.teams.win_streak": "Los terroristas ganaron [GREEN]{0}[NORMAL] rondas seguidas!",
-  "retakes.teams.win_streak_over": "Los CTs habían perdido [GREEN]{0}[NORMAL] rondas, pero al fin ganaron 1.",
+  "retakes.teams.scramble": "Los terroristas ganaron {green}{0}{default} rondas seguidas. {purple}Los equipos serán mezclados!",
+  "retakes.teams.almost_scramble": "Los terroristas van ganando {green}{0}{default} rondas seguidas - Si ganan {green}{1} más, {purple}los equipos serán a mezclados.",
+  "retakes.teams.win_streak": "Los terroristas ganaron {green}{0}{default} rondas seguidas!",
+  "retakes.teams.win_streak_over": "Los CTs habían perdido {green}{0}{default} rondas, pero al fin ganaron 1.",
   "retakes.teams.admin_scramble": "{0} Los equipos serán a mezclados en la siguiente ronda."
 }

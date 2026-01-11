@@ -1,17 +1,20 @@
 ﻿{
-  "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
-  
+  "retakes.prefix": "[{green}RETAKES{default}]",
+  "retakes.no_permissions": "您没有使用此命令的权限。",
+  "retakes.enabled": "{red}已禁用{default}",
+  "retakes.disabled": "{green}已启用{default}",
+
   "retakes.queue.joined": "您已被放入等待队列。",
-  "retakes.queue.waiting": "游戏当前已满，共有[GREEN]{0}[NORMAL]名玩家。您正在等待队列中。",
-  "retakes.queue.replaced_by_vip": "您已经被VIP用户插队[GREEN]{0}[NORMAL]。",
-  "retakes.queue.vip_took_place": "您已经插队了[GREEN]{0}[NORMAL]的等待位置。",
-  
-  "retakes.bombsite.announcement": "回防[GREEN]{0}[NORMAL]包点：[LIGHT_RED]{1}名T[NORMAL]对阵[PURPLE]{2}名CT",
+  "retakes.queue.waiting": "游戏当前已满，共有{green}{0}{default}名玩家。您正在等待队列中。",
+  "retakes.queue.replaced_by_vip": "您已经被{gold}{1}{default}用户{green}{0}{default}插队。",
+  "retakes.queue.vip_took_place": "您已经插队了{green}{0}{default}的等待位置，因为您是{gold}{1}{default}。",
+
+  "retakes.bombsite.announcement": "回防{green}{0}{default}包点：{lightred}{1}名T{default}对阵{purple}{2}名CT",
   "retakes.voices.toggle": "您已经{0}语音播报！",
 
-  "retakes.teams.scramble": "T连续赢得[GREEN]{0}[NORMAL]个回合。[PURPLE]正在重新打乱队伍！",
-  "retakes.teams.almost_scramble": "T连续赢得[GREEN]{0}[NORMAL]个回合 - 如果他们再赢[GREEN]{1}个回合，[PURPLE]将重新打乱队伍。",
-  "retakes.teams.win_streak": "T连续赢得[GREEN]{0}[NORMAL]个回合！",
-  "retakes.teams.win_streak_over": "CT结束了[GREEN]{0}[NORMAL]个回合的连胜！",
+  "retakes.teams.scramble": "T连续赢得{green}{0}{default}个回合。{purple}正在重新打乱队伍！",
+  "retakes.teams.almost_scramble": "T连续赢得{green}{0}{default}个回合 - 如果他们再赢{green}{1}个回合，{purple}将重新打乱队伍。",
+  "retakes.teams.win_streak": "T连续赢得{green}{0}{default}个回合！",
+  "retakes.teams.win_streak_over": "CT结束了{green}{0}{default}个回合的连胜！",
   "retakes.teams.admin_scramble": "{0}已设置下一回合重新打乱队伍。"
 }

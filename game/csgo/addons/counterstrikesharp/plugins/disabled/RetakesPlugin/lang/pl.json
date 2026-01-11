@@ -1,14 +1,20 @@
 {
-  "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
-  
+  "retakes.prefix": "[{green}RETAKES{default}]",
+  "retakes.no_permissions": "Nie masz uprawnień do użycia tej komendy.",
+  "retakes.enabled": "{red}wyłączone{default}",
+  "retakes.disabled": "{green}włączone{default}",
+
   "retakes.queue.joined": "Zostałeś dodany do kolejki.",
-  "retakes.queue.waiting": "Gra jest pełna z [GREEN]{0}[NORMAL] graczami. Jesteś aktualnie w kolejce.",
+  "retakes.queue.waiting": "Gra jest pełna z {green}{0}{default} graczami. Jesteś aktualnie w kolejce.",
+  "retakes.queue.replaced_by_vip": "Zostałeś zastąpiony przez gracza {gold}{1}{default} {green}{0}{default}.",
+  "retakes.queue.vip_took_place": "Zająłeś miejsce {green}{0}{default} w grze, ponieważ jesteś {gold}{1}{default}.",
 
-  "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Ts[NORMAL] vs [PURPLE]{2} CTs",
+  "retakes.bombsite.announcement": "Retake {green}{0}{default}: {lightred}{1} Ts{default} vs {purple}{2} CTs",
+  "retakes.voices.toggle": "Masz {0} głosowe ogłoszenia!",
 
-  "retakes.teams.scramble": "Terroryści wygrali [GREEN]{0}[NORMAL] rund pod rząd. [PURPLE]Drużyny zostaną wymieszane!",
-  "retakes.teams.almost_scramble": "Terroryści wygrali [GREEN]{0}[NORMAL] rund pod rząd - jeśli wygrają [GREEN]{1} raz(y), [PURPLE]drużyny zostaną wymieszane.",
-  "retakes.teams.win_streak": "Terroryści wygrali [GREEN]{0}[NORMAL] rund pod rząd!",
-  "retakes.teams.win_streak_over": "CT zakończyli [GREEN]{0}[NORMAL] zwycięską serie rund!",
+  "retakes.teams.scramble": "Terroryści wygrali {green}{0}{default} rund pod rząd. {purple}Drużyny zostaną wymieszane!",
+  "retakes.teams.almost_scramble": "Terroryści wygrali {green}{0}{default} rund pod rząd - jeśli wygrają {green}{1} raz(y), {purple}drużyny zostaną wymieszane.",
+  "retakes.teams.win_streak": "Terroryści wygrali {green}{0}{default} rund pod rząd!",
+  "retakes.teams.win_streak_over": "CT zakończyli {green}{0}{default} zwycięską serie rund!",
   "retakes.teams.admin_scramble": "{0} ustawił wymieszanie drużyn na następną rundę."
 }
