@@ -2,6 +2,7 @@ FROM registry.gitlab.steamos.cloud/steamrt/sniper/platform:latest-container-runt
 
 USER root
 
+# Run an apt update and add package dependencies
 RUN apt-get update --fix-missing \
     && apt-get install -y --no-install-recommends \
     dnsutils \
@@ -23,6 +24,7 @@ ENV STEAM_ACCOUNT=""
 RUN echo "steam ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/steam \
     && chmod 0440 /etc/sudoers.d/steam
 
+# $Home for the installation of cs2
 ENV HOME="/home/steam/cs2/"
 
 RUN mkdir -p $HOME && \
