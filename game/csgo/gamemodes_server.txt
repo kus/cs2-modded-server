@@ -261,6 +261,7 @@
 				"workshop/3345551391/twofort_cs2"		""
 				"workshop/3460962520/de_rats_remake"		""
 				"workshop/3464733042/de_mirage_bricks"		""
+				"workshop/3683699332/project_phoenix"		""
 			}
 		}
 		"mg_retake"
