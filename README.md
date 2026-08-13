@@ -918,4 +918,4 @@ See `LICENSE` for more details.
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=kus/cs2-modded-server)](https://star-history.com/#kus/cs2-modded-server)
+[![Star History Chart](https://star-history.dera.page/svg?repos=kus/cs2-modded-server)](https://star-history.dera.page/#kus/cs2-modded-server)
