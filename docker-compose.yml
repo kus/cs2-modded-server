@@ -4,6 +4,7 @@ services:
     container_name: cs2-modded-server
     env_file:
       - .env
+    restart: unless-stopped
     volumes:
       - cs2-volume:/home/steam/
       - type: bind

@@ -176,6 +176,12 @@ else
 fi
 
 echo "Starting server on $PUBLIC_IP:$PORT"
+n# Start auto-update service in background
+echo "Starting CS2 auto-update service..."
+sudo bash /home/cs2-modded-server/auto_update.sh > /tmp/cs2_autoupdate.log 2>&1 &
+AUTO_UPDATE_PID=$!
+echo "Auto-update service started with PID: $AUTO_UPDATE_PID"
+echo ""
 # https://developer.valvesoftware.com/wiki/Counter-Strike_2/Dedicated_Servers#Command-Line_Parameters
 echo ./game/bin/linuxsteamrt64/cs2 \
     -dedicated \

@@ -219,6 +219,7 @@ Key | Default value | What is it
 `EXEC` | `on_boot.cfg` | Config file to run when server boots. If switching gamemode, it's recommended to do a delay see the example `on_boot.cfg` file
 `DUCK_DOMAIN` | `` | (Linux only) [Duck DNS](https://www.duckdns.org/) domain if you want to utalise the free service to get a domain for your server instead of IP
 `DUCK_TOKEN` | `` | (Linux only) [Duck DNS](https://www.duckdns.org/) access token to update domain when server boots
+`UPDATE_CHECK_INTERVAL` | `300` | Time in seconds between update checks for CS2. The auto-updater will check Steam for new CS2 builds at this interval and automatically update the server (default: 300 = 5 minutes)
 
 ## Playing workshop maps/collections
 
