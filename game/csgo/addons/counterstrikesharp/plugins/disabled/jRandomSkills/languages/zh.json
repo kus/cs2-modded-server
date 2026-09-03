@@ -1,0 +1,630 @@
+{
+  "none": "无",
+  "none_desc": "你没有任何技能",
+
+  "aimbot": "自动瞄准",
+  "aimbot_desc": "你击中的每颗子弹都算作爆头",
+
+  "aimlock": "自",
+  "aimlock_desc": "点击 [css_useSkill] 瞄准距离最近的敌人",
+
+  "anomaly": "异常",
+  "anomaly_desc": "点击 [css_useSkill] 回到几秒钟前",
+
+  "antyflash": "防闪",
+  "antyflash_desc": "你对闪光弹免疫，你的闪光弹持续7秒",
+
+  "antyhead": "铁头",
+  "antyhead_desc": "你不会受到爆头伤害",
+
+  "areareaper": "区域收割者",
+  "areareaper_desc": "你可以选择一个安放区进行禁用",
+  "areareaper_incorrect_site": "未找到此炸弹安放区。",
+  "areareaper_no_site": "未找到任何炸弹安放区。",
+  "areareaper_select_info": "选择你想禁用的炸弹安放区：",
+  "areareaper_site_disabled": "炸弹点 {0} 已被禁用 - 无法在此放置炸弹！",
+  "areareaper_used_info": "你的能力已被使用。",
+  "areareaper_teammates_info": "{0} 区域已禁止安放炸弹。",
+  "areareaper_bombsite_disabled": "该炸弹安放区已被禁用！",
+
+  "armored": "覆甲",
+  "armored_desc": "你收到伤害的倍率随机(开局随机一个倍率)",
+  "armored_desc2": "你的受到伤害倍率是：{0}x",
+
+  "assassin": "刺客",
+  "assassin_desc": "从背后攻击敌人时造成更高的伤害",
+
+  "astronaut": "宇航员",
+  "astronaut_desc": "回合开始时你会获得随机重力值",
+  "astronaut_desc2": "你的随机重力是：{0}x",
+
+  "bankrupt": "破产",
+  "bankrupt_desc": "选择一个玩家让他失去所有钱",
+  "bankrupt_enemy_info": "你破产了。",
+  "bankrupt_player_info": "玩家“{0}”已破产。",
+  "bankrupt_select_info": "选择玩家破产:",
+
+  "baseball": "棒球手",
+  "baseball_desc": "你的诱饵弹会在墙壁上快速反弹并在砸到敌人时将其杀死",
+
+  "behind": "背身",
+  "behind_desc": "你有随机几率在击中敌人时使其旋转180度",
+  "behind_desc2": "你击中敌人使其旋转的几率是：{0}%",
+
+  "blademaster": "我的刀能档子弹！",
+  "blademaster_desc": "持刀时，你有很高几率格挡子弹",
+
+  "bounty": "悬赏",
+  "bounty_desc": "对一名敌人悬赏，击杀他的人可以获得赏金",
+  "bounty_select_info": "选择一名玩家：",
+  "bounty_player_info": "你对 '{0}' 悬赏了 {1}$。",
+  "bounty_enemy_info": "有人对你悬赏了 {0}$。",
+  "bounty_claimed_info": "你击杀了 '{0}'，获得 {1}$。",
+
+  "bunnyhop": "连跳大佬",
+  "bunnyhop_desc": "你获得自动连跳的能力",
+
+  "c4camouflage": "C4伪装",
+  "c4camouflage_desc": "你持有炸弹时隐形",
+
+  "carefulbullets": "谨慎开火",
+  "carefulbullets_desc": "选择一名玩家，每当他空枪时就会受到伤害",
+  "carefulbullets_enemy_info": "从现在起，空枪将带来切实的伤害。",
+  "carefulbullets_disable_info": "打空子弹不会再受到伤害。",
+  "carefulbullets_player_info": "'{0}' 现在必须更加谨慎。",
+  "carefulbullets_select_info": "空枪会伤害玩家：",
+
+  "catapult": "飞起来！",
+  "catapult_desc": "你有随机几率将敌人向上弹射",
+  "catapult_desc2": "你击中敌人将其弹射的几率是：{0}%",
+
+  "chameleon": "变色龙",
+  "chameleon_desc": "你击杀的第一名玩家会把技能传给你",
+  "chameleon_copied_info": "已复制技能：{0}",
+  "chameleon_wrong_team_info": "'{0}' 的技能你的队伍无法使用。",
+
+  "chicken": "小鸡",
+  "chicken_desc": "你获得小鸡模型 + 移动速度提高10% - 50生命值",
+
+  "chillout": "悠闲",
+  "chillout_desc": "放置炸弹需要更长的时间",
+
+  "cutter": "剑圣",
+  "cutter_desc": "用刀刀人可立即杀死敌人",
+
+  "cypher": "相机",
+  "cypher_desc": "点击 [css_useSkill] 创建/切换摄像机",
+  "cypher_nospace": "相机必须与墙壁呈直角放置",
+
+  "darkness": "黑暗",
+  "darkness_desc": "对选定的敌人施加黑暗效果",
+  "darkness_enemy_info": "让灯光熄灭。",
+  "darkness_disable_info": "灯光恢复了。",
+  "darkness_player_info": "黑暗笼罩了玩家 '{0}'。",
+  "darkness_select_info": "选择你想施加黑暗效果的玩家：",
+
+  "deactivator": "禁用者",
+  "deactivator_desc": "选择一个玩家以禁用其技能",
+  "deactivator_enemy_info": "你的技能已被禁用。",
+  "deactivator_player_info": "玩家 '{0}' 的技能已被禁用。",
+  "deactivator_select_info": "选择你想禁用其技能的玩家：",
+
+  "deaf": "聋子",
+  "deaf_desc": "选择一个玩家以静音其所有声音",
+  "deaf_enemy_info": "你的耳机已退出游戏。",
+  "deaf_disable_info": "你的听力恢复了。",
+  "deaf_player_info": "玩家 '{0}' 的声音已被禁用。",
+  "deaf_select_info": "选择你想静音其所有声音的玩家：",
+
+  "disarmament": "除你武器！",
+  "disarmament_desc": "你有随机几率在击中敌人时使其丢下武器",
+  "disarmament_desc2": "你使敌人解除武装的几率是：{0}%",
+
+  "distancer": "测距仪",
+  "distancer_desc": "你可以看到与最近敌人的距离",
+
+  "dash": "冲刺",
+  "dash_desc": "执行第二次跳跃来进行冲刺",
+
+  "dracula": "吸血鬼",
+  "dracula_desc": "击中敌人会根据造成的伤害百分比恢复你的生命值",
+
+  "duplicator": "复制者",
+  "duplicator_desc": "选择一个玩家以复制其技能",
+  "duplicator_player_info": "玩家 '{0}' 的技能已被复制。",
+  "duplicator_select_info": "选择你想复制其技能的玩家：",
+
+  "dwarf": "小矮人",
+  "dwarf_desc": "回合开始时获得随机角色大小",
+  "dwarf_desc2": "你的体型倍率是：{0}x",
+
+  "empgrenade": "电磁脉冲手雷",
+  "empgrenade_desc": "被你的手雷伤到的人会暂时失去雷达和准星",
+  "empgrenade_enemy_info": "电磁脉冲手雷让你的雷达和准星失效了。",
+
+  "enemyspawn": "传送敌人出生点",
+  "enemyspawn_desc": "点击 [css_useSkill] 传送到敌人出生点",
+
+  "expensiveammo": "expensiveammo",
+  "expensiveammo_desc": "expensiveammo_desc",
+  "expensiveammo_disable_info": "expensiveammo_disable_info",
+  "expensiveammo_enemy_info": "expensiveammo_enemy_info: {0}",
+  "expensiveammo_player_info": "expensiveammo_player_info: {0}",
+  "expensiveammo_select_info": "expensiveammo_select_info",
+
+  "explodingbarrel": "explodingbarrel",
+  "explodingbarrel_desc": "explodingbarrel_desc",
+
+  "explosiveshot": "爆炸射击",
+  "explosiveshot_desc": "射击时有随机几率发射爆炸子弹",
+  "explosiveshot_desc2": "你发射爆炸子弹的几率是：{0}%",
+
+  "falconeye": "鹰眼",
+  "falconeye_desc": "点击 [css_useSkill] 激活俯视视角",
+
+  "fastreload": "快速装弹",
+  "fastreload_desc": "点击 [css_useSkill] 重新装填你当前持有的武器",
+
+  "flash": "闪电",
+  "flash_desc": "回合开始时获得随机玩家速度",
+  "flash_desc2": "你的速度倍率是：{0}x",
+
+  "fortnite": "堡垒之夜玩家",
+  "fortnite_desc": "点击[css_useSkill]创建可破坏路障",
+
+  "fragilebomb": "脆弱炸弹",
+  "fragilebomb_desc": "射击炸弹会对其造成伤害",
+  "fragilebomb_bomb_health": "炸弹生命值",
+
+  "friendlyfire": "奶妈",
+  "friendlyfire_desc": "射击队友会治愈他们",
+
+  "frozendecoy": "冰冻诱饵",
+  "frozendecoy_desc": "你的诱饵弹会冻结附近的所有玩家",
+
+  "gambler": "赌徒",
+  "gambler_desc": "从提供的列表中选择一个技能。",
+  "gambler_select_info": "选择你的技能：",
+  "gambler_more": "#00FF00|刷新 ${0}",
+  "gambler_no_money": "钱不够。",
+
+  "ghost": "幽灵",
+  "ghost_desc": "你完全隐形,但是只能用刀",
+
+  "giant": "giant",
+  "giant_desc": "giant_desc",
+  "giant_desc2": "giant_desc2: {0}x",
+  "giant_disable_info": "giant_disable_info",
+  "giant_enemy_info": "giant_enemy_info: {0}x",
+  "giant_player_info": "giant_player_info: {0} {1}",
+  "giant_select_info": "giant_select_info",
+
+  "glaz": "烟雾头盔",
+  "glaz_desc": "你可以看透烟雾弹",
+
+  "glitch": "故障",
+  "glitch_desc": "禁用选定敌人的雷达",
+  "glitch_enemy_info": "你的雷达已被禁用。",
+  "glitch_disable_info": "你的雷达恢复正常了。",
+  "glitch_player_info": "玩家 '{0}' 的雷达已被禁用。",
+  "glitch_select_info": "选择你想禁用其雷达的玩家：",
+
+  "glue": "黏性",
+  "glue_desc": "你的手榴弹会粘在墙上",
+
+  "godmode": "我就是神",
+  "godmode_desc": "点击 [css_useSkill] 在短时间内变得无敌",
+  "godmode_off": "无敌状态已禁用",
+  "godmode_on": "无敌状态已启用",
+
+  "grapple": "钩爪",
+  "grapple_desc": "按 [css_useSkill] 向准星所指位置发射钩爪并将自己拉过去",
+  "grapple_no_anchor_info": "没有可以钩住的表面。",
+  "grapple_pulling_info": "拉动中",
+
+  "gravitydecoy": "重力诱饵",
+  "gravitydecoy_desc": "你的诱饵会改变附近所有人的重力",
+
+  "grenadier": "投弹手",
+  "grenadier_desc": "你拥有无限高爆手雷",
+
+  "healingsmoke": "治疗烟雾",
+  "healingsmoke_desc": "你的烟雾弹会治疗",
+
+  "heavyweight": "重量级",
+  "heavyweight_desc": "推开你或让你减速的技能对你无效",
+
+  "hermit": "隐士",
+  "hermit_desc": "击杀敌人会恢复弹药和部分生命值",
+
+  "holyhandgrenade": "神圣手榴弹",
+  "holyhandgrenade_desc": "你的高爆手榴弹造成双倍伤害并拥有双倍范围",
+
+  "homingnades": "追踪手雷",
+  "homingnades_desc": "你的手雷（烟雾弹除外）会自动追踪敌人",
+
+  "hotbomb": "烫手山芋",
+  "hotbomb_desc": "只要你还活着，炸弹就会对携带者造成伤害",
+  "hotbomb_hint": "小心，炸弹很烫！",
+  "hotbomb_disable_info": "炸弹不再烫手了。",
+
+  "iana": "全息图",
+  "iana_desc": "点击 [css_useSkill] 可控制你的全息影像数秒",
+
+  "illiterate": "文盲",
+  "illiterate_desc": "只要你还活着，你的敌人就无法阅读",
+  "illiterate_alert": "文盲已激活！在该技能的拥有者被消灭之前，你无法阅读消息。",
+
+  "illusionist": "幻术师",
+  "illusionist_desc": "点击 [css_useSkill] 部署一个直线行走的幻象",
+
+  "impostor": "间谍",
+  "impostor_desc": "回合开始时你获得敌方玩家模型",
+
+  "infiniteammo": "无限弹药",
+  "infiniteammo_desc": "你为所有武器获得无限弹药",
+
+  "inheritance": "继承",
+  "inheritance_desc": "当队友阵亡时，你可以接管他的技能",
+  "inheritance_select_info": "选择要继承的技能：",
+  "inheritance_player_info": "你继承了 '{0}' 的技能。",
+
+  "jackal": "追踪者",
+  "jackal_desc": "每个对手都会留下痕迹",
+
+  "jammer": "干扰器",
+  "jammer_desc": "选择一个玩家以禁用其准星",
+  "jammer_enemy_info": "你的准星已被禁用。",
+  "jammer_disable_info": "你的准星恢复正常了。",
+  "jammer_player_info": "玩家 '{0}' 的准星已被禁用。",
+  "jammer_select_info": "选择你想禁用其准星的玩家：",
+
+  "jester": "小丑",
+  "jester_desc": "在小丑模式下，你不能造成或受到任何伤害。此模式每隔几秒会变化。",
+  "jester_mode": "小丑模式",
+  "jester_on": "开",
+  "jester_off": "关",
+
+  "jumpban": "瘸子",
+  "jumpban_desc": "选择一个玩家使其无法跳跃",
+  "jumpban_enemy_info": "有人切断了你的腿。",
+  "jumpban_disable_info": "你的双腿恢复正常了。",
+  "jumpban_player_info": "玩家 '{0}' 现在无法跳跃。",
+  "jumpban_select_info": "选择无法跳跃的玩家：",
+
+  "jumpcurse": "jumpcurse",
+  "jumpcurse_desc": "jumpcurse_desc",
+  "jumpcurse_disable_info": "jumpcurse_disable_info",
+  "jumpcurse_enemy_info": "jumpcurse_enemy_info",
+  "jumpcurse_player_info": "jumpcurse_player_info: {0}",
+  "jumpcurse_select_info": "jumpcurse_select_info",
+  "jumpingjack": "开合跳",
+  "jumpingjack_desc": "跳跃会恢复生命值",
+
+  "killerflash": "致命闪光",
+  "killerflash_desc": "任何被你的闪光弹完全致盲的人都会死亡（包括你自己）",
+
+  "knockback": "knockback",
+  "knockback_desc": "knockback_desc",
+  "lifeswap": "生命交换",
+  "lifeswap_desc": "选择一个玩家以交换生命值",
+  "lifeswap_enemy_info": "有人借走了你的生命值。",
+  "lifeswap_player_info": "你与玩家 '{0}' 交换了生命值。",
+  "lifeswap_select_info": "选择你想与之交换生命值的玩家：",
+
+  "longknife": "剑气攻击",
+  "longknife_desc": "刀具攻击造成的伤害无视距离",
+
+  "longzeus": "电击狙",
+  "longzeus_desc": "电击枪无论距离多远都能造成伤害",
+
+  "magneticdecoy": "磁性诱饵",
+  "magneticdecoy_desc": "你的诱饵弹会将附近的玩家吸引到自己身边",
+
+  "magneto": "万磁王",
+  "magneto_desc": "所有敌方手雷都会被你弹开",
+
+  "magnifier": "伸脖子",
+  "magnifier_desc": "强制敌方屏幕放大，缩小其视野范围",
+  "magnifier_enemy_info": "你的视野已被扭曲！",
+  "magnifier_disable_info": "你的视力恢复正常了。",
+  "magnifier_player_info": "玩家'{0}'已被强制进入放大模式。",
+  "magnifier_select_info": "选择需要放大的玩家：",
+
+  "medic": "医疗兵",
+  "medic_desc": "点击 [css_useSkill] 使用治疗装置恢复50点生命值",
+
+  "miner": "炸弹矿工",
+  "miner_desc": "你的高爆手雷仅在附近有敌人时才会爆炸",
+
+  "moneyswap": "税务员",
+  "moneyswap_desc": "选择一个玩家以交换金钱",
+  "moneyswap_enemy_info": "税务局找上你了。",
+  "moneyswap_player_info": "你与玩家 '{0}' 交换了金钱。",
+  "moneyswap_select_info": "选择你想与之交换金钱的玩家：",
+
+  "deathbomb": "死亡炸弹",
+  "deathbomb_desc": "你死亡时会爆炸，杀死附近的玩家",
+  "deathbomb_explosion": "砰！",
+
+  "nemesis": "宿敌",
+  "nemesis_desc": "被你标记的玩家会受到额外伤害",
+  "nemesis_select_info": "选择一名玩家：",
+  "nemesis_player_info": "你标记了 '{0}'。",
+  "nemesis_enemy_info": "你被标记为宿敌，现在会受到所有人的额外伤害。",
+
+  "nightmare": "nightmare",
+  "nightmare_desc": "nightmare_desc",
+  "nightmare_disable_info": "nightmare_disable_info",
+  "nightmare_enemy_info": "nightmare_enemy_info",
+  "nightmare_player_info": "nightmare_player_info: {0}",
+  "nightmare_select_info": "nightmare_select_info",
+
+  "ninja": "忍者",
+  "ninja_desc": "站立不动增加33%隐形，蹲下增加33%，持刀增加33%",
+
+  "nonades": "手雷免疫者",
+  "nonades_desc": "手榴弹对你不造成伤害",
+
+  "norecoil": "专注",
+  "norecoil_desc": "射击时无后坐力",
+
+  "noclip": "无碰撞",
+  "noclip_desc": "点击 [css_useSkill] 在短时间内启用无碰撞模式",
+
+  "oneshot": "一击必杀",
+  "oneshot_desc": "击中敌人立即杀死他们",
+
+  "onlyhead": "金刚“身”",
+  "onlyhead_desc": "你只会在头部受到伤害",
+
+  "paweljumper": "左脚踩右脚",
+  "paweljumper_desc": "你将获得随机数量的额外跳跃机会",
+  "paweljumper_desc2": "你获得 {0} 次额外跳跃",
+
+  "phoenix": "凤凰",
+  "phoenix_desc": "你有随机几率在死亡后复活",
+  "phoenix_desc2": "你死亡后复活的几率是：{0}%",
+  "phoenix_respawn": "你因 CHATCOLORS.RED凤凰 的力量从灰烬中重生",
+
+  "psychicdefusing": "心灵感应拆弹",
+  "psychicdefusing_desc": "当你靠近炸弹时，你开始拆除它",
+  "psychicdefusing_hud_info": "拆除还剩 {0} 秒",
+
+  "pilot": "飞行员",
+  "pilot_desc": "在有限时间内飞行。双击跳跃飞行",
+  "pilot_hud_info": "燃料",
+
+  "planter": "自由下包者",
+  "planter_desc": "你可以在任何地方放置炸弹，引爆时间为60秒。",
+  "planter_planting": "安放炸弹中 ({0})...",
+
+  "poison": "毒药",
+  "poison_desc": "选择一个玩家，每隔几秒受到伤害",
+  "poison_enemy_info": "你被毒害了。",
+  "poison_disable_info": "你已免疫毒素。",
+  "poison_player_info": "玩家 '{0}' 已被毒害。",
+  "poison_select_info": "选择每隔几秒将受到伤害的玩家：",
+
+  "primaryban": "手枪局",
+  "primaryban_desc": "选择一个玩家使其无法使用步枪",
+  "primaryban_enemy_info": "你无法再使用步枪。",
+  "primaryban_disable_info": "你现在可以再次使用步枪了。",
+  "primaryban_player_info": "玩家 '{0}' 无法再使用步枪。",
+  "primaryban_select_info": "选择禁止使用步枪的玩家：",
+
+  "prosthesis": "假肢",
+  "prosthesis_desc": "手臂和腿部防弹",
+
+  "punisher": "惩罚者",
+  "punisher_desc": "你会积攒受到伤害的一部分，并加到下一次命中上",
+  "punisher_released_info": "你造成了 {0} 点额外伤害，并回复了同样的生命值。",
+
+  "push": "推力者",
+  "push_desc": "你有随机几率在击中敌人时将其推回",
+  "push_desc2": "你击退敌人的几率为：{0}%",
+
+  "pyro": "火男",
+  "pyro_desc": "燃烧瓶会恢复生命值",
+
+  "quickshot": "快速射击",
+  "quickshot_desc": "你的子弹射击速度加快",
+
+  "radarhack": "雷达外挂",
+  "radarhack_desc": "雷达上可以看到敌人",
+
+  "rambo": "兰博",
+  "rambo_desc": "回合开始时你获得随机数量的生命值",
+
+  "randomweapon": "随机武器",
+  "randomweapon_desc": "点击 [css_useSkill] 获得随机武器",
+
+  "rezombie": "重生僵尸",
+  "rezombie_desc": "死亡后你将作为僵尸复活，拥有更多生命值但无武器",
+
+  "reactivearmor": "反应装甲",
+  "reactivearmor_desc": "装甲吸收首次受到的伤害",
+
+  "regeneration": "再生",
+  "regeneration_desc": "每隔几秒恢复生命值",
+
+  "replicator": "复制者",
+  "replicator_desc": "点击 [css_useSkill] 创建一个造成伤害的复制体",
+
+  "retreat": "撤退",
+  "retreat_desc": "点击 [css_useSkill] 返回出生点",
+
+  "returntosender": "发送他们房子！！！",
+  "returntosender_desc": "首次击中敌人会将其送回出生点",
+
+  "rewind": "回溯",
+  "rewind_desc": "按 [css_useSkill] 在原地留下标记，稍后回到那里",
+  "rewind_pending_info": "回溯：{0}",
+
+  "richboy": "富少",
+  "richboy_desc": "回合开始时你获得随机数量的钱",
+
+  "ricochet": "跳弹",
+  "ricochet_desc": "你的子弹会从墙上弹开，并且仍能击中敌人",
+
+  "robinhood": "罗宾汉",
+  "robinhood_desc": "对敌人造成伤害会偷取他们的钱",
+
+  "rubber": "橡胶子弹",
+  "rubber_desc": "你的子弹会显著减慢玩家速度",
+
+  "saper": "工兵",
+  "saper_desc": "你可以更快地放置和拆除炸弹",
+
+  "secondlife": "第二次机会",
+  "secondlife_desc": "死亡后你会以相同生命值复活",
+
+  "shade": "阴影",
+  "shade_desc": "你存在随机几率将被击中的敌人传送至其身后",
+  "shade_desc2": "你传送至击中敌人身后的概率为：{0}%",
+  "shade_nospace": "无可用空间",
+
+  "shortbomb": "短引信",
+  "shortbomb_desc": "炸弹爆炸速度快得多",
+
+  "silent": "无声",
+  "silent_desc": "你的脚步和跳跃对其他玩家无声",
+
+  "smoker": "烟瘾大",
+  "smoker_desc": "你的烟雾弹永远用不完",
+
+  "sniperelite": "狙击精英",
+  "sniperelite_customname": "狙击精英技能",
+  "sniperelite_desc": "点击 [css_useSkill] 将当前武器替换为AWP",
+
+  "soldier": "士兵",
+  "soldier_desc": "你有随机伤害倍率",
+  "soldier_desc2": "你的伤害倍率是：{0}x",
+
+  "soundmaker": "声音制造者",
+  "soundmaker_desc": "你会不时听到玩家的惨叫声",
+
+  "spectator": "观察者",
+  "spectator_desc": "点击 [css_useSkill] 旁观一个随机敌人",
+
+  "swapposition": "位置交换",
+  "swapposition_desc": "点击 [css_useSkill] 与随机敌人交换位置",
+
+  "teleporter": "传送者",
+  "teleporter_desc": "你与被击中的敌人交换位置",
+
+  "thief": "小偷",
+  "thief_desc": "你可以从选定玩家那里偷取技能",
+  "thief_enemy_info": "你的技能被偷走了。",
+  "thief_player_info": "玩家 '{0}' 的技能被偷走了。",
+  "thief_select_info": "选择你想偷取其技能的玩家：",
+  "thief_incorrect_skill": "此技能无法选择！",
+
+  "thirdeye": "第三只眼",
+  "thirdeye_desc": "点击 [css_useSkill] 激活第三人称视角",
+
+  "thorns": "荊棘",
+  "thorns_desc": "你的对手将承受其对你造成伤害的一部分",
+
+  "throwingknife": "投掷飞刀",
+  "throwingknife_desc": "点击 [css_useSkill] 扔出飞刀。但要小心其他人",
+
+  "toxicsmoke": "毒烟",
+  "toxicsmoke_desc": "你的烟雾弹会造成伤害",
+
+  "tripwire": "tripwire",
+  "tripwire_desc": "tripwire_desc",
+  "tripwire_no_wall_info": "tripwire_no_wall_info",
+  "tripwire_placed_info": "tripwire_placed_info",
+  "tripwire_triggered_info": "tripwire_triggered_info: {0}",
+
+  "truearmor": "真实护甲",
+  "truearmor_desc": "你受到的一部分伤害由护甲承担，而不是生命值",
+
+  "voodoo": "巫毒",
+  "voodoo_desc": "被你标记的敌人也会受到你所受伤害的一部分",
+  "voodoo_select_info": "选择一名玩家：",
+  "voodoo_player_info": "你把 '{0}' 绑到了你的巫毒上。",
+
+  "wallhack": "透视",
+  "wallhack_desc": "你可以通过墙壁看到敌人",
+
+  "watchmaker": "钟表匠",
+  "watchmaker_desc": "每次投掷手榴弹都会改变回合时间",
+  "watchmaker_ct": "回合时间缩短了 {0} 秒。",
+  "watchmaker_tt": "回合时间延长了 {0} 秒。",
+
+  "weaponsswap": "武器交换",
+  "weaponsswap_desc": "点击 [css_useSkill] 与随机敌人交换武器",
+  "weaponsswap_hud_info2": "你没有可交换的武器",
+
+  "weightless": "失重",
+  "weightless_desc": "你的手雷不受重力影响，且飞行速度更快",
+
+  "wildthrow": "乱扔道具",
+  "wildthrow_desc": "选择一名丢道具会遇到麻烦的玩家",
+  "wildthrow_player_info": "玩家 '{0}' 已经忘记了所有投掷角度，成为了broky",
+  "wildthrow_enemy_info": "你投掷手雷时太紧张了。",
+  "wildthrow_disable_info": "你关于投掷手雷的记忆恢复正常了。",
+  "wildthrow_select_info": "选择一名玩家：",
+
+  "zeus": "宙斯",
+  "zeus_desc": "电击枪立即充能",
+
+  "your_skill": "你当前的技能",
+  "enemy_skill": "敌人的技能",
+  "observer_skill": "玩家的技能",
+  "welcome_message": "欢迎 {PLAYER} 来到 {SERVER_NAME}！\n当前 jRandomSkills 版本：{VERSION}（{SKILLS_COUNT} 个技能）。\n\n最初由以下人员创建：\n{AUTHOR1}\n由以下人员修改和改进：\n{AUTHOR2}\n官方Discord：https://discord.gg/9H8EZYBpPF",
+  "drawing_skill": "抽取技能",
+  "disabled_weapon": "你无法使用这把武器",
+
+  "hud_info": "再等 {0} 秒",
+  "hud_info_no_enemy": "未找到敌人",
+  "active_hud_info": "还剩 {0} 毫秒有效",
+
+  "skills_menu": "技能列表",
+  "no_player": "未找到匹配的玩家。",
+  "duplicate_player": "找到多个同名玩家。",
+  "selectplayerskill_command": "输入 /t",
+  "selectplayerskill_incorrect_enemy_index": "未找到可供选择的玩家。",
+  "curse_limit_info": "已达到 {0} 的诅咒效果上限",
+
+  "skill_not_found_setskill": "未找到 CHATCOLORS.RED 技能",
+  "player_not_found_setskill": "未找到 CHATCOLORS.RED 玩家",
+  "correct_form_setskill": "正确用法：CHATCOLORS.RED!setskill <昵称> <技能>",
+  "correct_form_setscore": "正确用法：CHATCOLORS.RED!setscore <CT> <TT>",
+  "done_setskill": "技能已设置",
+  "error_setskill": "无法设置 CHATCOLORS.RED 技能",
+  "for_setskill": "为",
+
+  "invalid_map": "地图名称输入错误！",
+  "loading_map": "正在加载新地图",
+
+  "pause": "比赛已暂停。",
+  "unpause": "比赛已恢复。",
+  "healed": "你已被治疗。",
+  "game_start": "游戏开始！",
+  "reload": "语言和配置已重新加载。",
+  "hud_on": "HUD已启用。",
+  "hud_off": "HUD已禁用。",
+
+  "vote_started": "投票开始：'{0}'",
+  "vote_timeout": "投票'{0}'超时！",
+  "vote_wait": "您需要等待才能开始另一轮投票！",
+  "vote_same_wait": "您需要等待才能再次发起相同投票！",
+  "vote_not_enough_players": "投票人数不足！",
+  "vote_alredy_voted": "您已投票！",
+  "vote_vote": "投票",
+
+  "bombsite_a": "炸弹安放区A",
+  "bombsite_b": "炸弹安放区B",
+  "bombplanted": "炸弹已安装完毕{0}秒后引爆",
+
+  "teammate_skills": "你队友的技能",
+
+  "summary": "上一回合总结",
+
+  "menu_controlls_scroll": "W/S - 滚动",
+  "menu_controlls_padding": "   |   ",
+  "menu_controlls_select": "E - 选择"
+}
