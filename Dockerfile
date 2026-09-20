@@ -1,17 +1,32 @@
-FROM registry.gitlab.steamos.cloud/steamrt/sniper/platform:latest-container-runtime-depot
+# Steam Runtime 4 (Debian 13 "trixie").
+# Steam Runtime 3 "sniper" is Debian 11 "bullseye", whose security suite was retired in
+# August 2026: its index is still published but the .deb files are gone, so every
+# apt-get install on that base now fails with 404s. Upstream CS2 projects moved for the
+# same reason (joedwards32/CS2 in September 2026, Source2ZE build containers ship
+# steamrt3 + steamrt4). All the plugin binaries shipped in game/csgo need at most
+# GLIBC_2.29, well below the 2.41 this image provides, so they load unchanged.
+FROM registry.gitlab.steamos.cloud/steamrt/steamrt4/platform:latest-container-runtime-depot
 
 USER root
 
-RUN apt-get update --fix-missing \
+ENV DEBIAN_FRONTEND=noninteractive
+
+# No version pins: they tie the build to one Debian point release and break on the next.
+# git-all was removed - nothing in the image uses git, and it pulled in emacs,
+# subversion and cvs through its metapackage dependencies.
+RUN apt-get update \
     && apt-get install -y --no-install-recommends \
     dnsutils \
-    git-all \
-    lib32z1=1:1.2.11.dfsg-2+deb11u2 \
-    wget=1.21-1+deb11u1 \
+    lib32z1 \
+    wget \
     && sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen \
-    && dpkg-reconfigure --frontend=noninteractive locales
+    && dpkg-reconfigure --frontend=noninteractive locales \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
-RUN addgroup steam \
+# groupadd, not addgroup: Debian 13 dropped the adduser package from the base image,
+# and groupadd ships with passwd, which is essential.
+RUN groupadd steam \
     && useradd -g steam steam \
     && usermod -aG sudo steam
 
