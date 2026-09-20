@@ -124,7 +124,7 @@
   "CServerSideClientBase::m_UserID": {
     "offsets": {
       "linux": 168,
-      "windows": 160
+      "windows": 168
     }
   }
 }
