@@ -1,7 +1,10 @@
 # Plugin update automation
 
+Part of **Kus' modded Counter Strike 2 (CS2) Dedicated Server**:
+<https://github.com/kus/cs2-modded-server/>
+
 Automates the manual "check releases, download, copy into the repo, bump the README,
-commit" routine for the mods listed in the root `README.md` version table
+commit" routine for the mods listed in this repo's root `README.md` version table
 (`Mod | Version | Why`). No AI involved, safe to re-run, and it refuses to act when
 anything looks off.
 
@@ -69,6 +72,7 @@ Create `scripts/update/plugins/<slug>.sh` from this template. It is *sourced* by
 
 ```bash
 #!/usr/bin/env bash
+# Project:           Kus' modded Counter Strike 2 (CS2) Dedicated Server - https://github.com/kus/cs2-modded-server/
 # Update script for: <Mod name exactly as in the README table>
 # README row:        [<name>](<url>)
 # Sourced by scripts/update/update.sh - do not run directly.
@@ -134,6 +138,9 @@ Then test it: `./scripts/update/update.sh --dry-run --only <slug>` and, once hap
 | `copy_file <src> <dest>` | Copy one file (parent directory created) |
 | `empty_dir <dir>` | Delete everything inside `<dir>`, keep the directory |
 | `remove_path <path>` | Delete a file or directory; no error if already absent |
+| `warn_cfg_dir_changes <archive dir> <repo dir> [existing-only]` | Heads-up only: lists new upstream config files, repo files upstream no longer ships, and new settings in files present on both sides. Writes nothing. |
+| `plugins/<slug>.ignore` (file, optional) | One setting key per line (`#` comments allowed). Keys listed here are never reported by the two helpers above - add a key once it has been reviewed (ported, or removed from your config on purpose) so it stops showing up on every update. |
+| `warn_new_settings <archive file> <repo file>` | Heads-up only: lists setting keys (`.cfg` first tokens / JSON keys) present upstream but missing from the repo's customised copy |
 | `info`, `step`, `warn`, `err`, `die` | Logging; `die` aborts the plugin with a message |
 
 Deletes (`empty_dir`, `remove_path`) are only allowed *inside* a `PLUGIN_PATHS` entry.
@@ -152,10 +159,16 @@ downloadable asset (size `0` if unknown).
 | Metamod:Source | `plugins/metamod-source.sh` | Assets come from the dev downloads page quick-download links. Windows zip is applied before the Linux tar.gz on purpose: both ship `metamod.vdf`, `metamod_x64.vdf`, `metaplugins.ini`, `README.txt`; the Linux copies (LF endings, `linux64` server path) are what the repo keeps. |
 | CounterStrikeSharp | `plugins/counterstrikesharp.sh` | Uses the `with-runtime` Windows and Linux zips. Windows first (rsync into `game/csgo/addons/`, then the special `game/csgo/addons/windows/addons/counterstrikesharp/` refresh of `api/ bin/ dotnet/`), then Linux rsync on top. |
 | Inventory Simulator | `plugins/inventory-simulator.sh` | Replaces the plugin directory and the `inventory-simulator.json` gamedata file. |
-| MultiAddonManager | `plugins/multiaddonmanager.sh` | Windows zip + Linux `steamrt3` tar.gz (the `steamrt4` build is ignored). Replaces only the two binaries in `game/csgo/addons/multiaddonmanager/bin/`; the `.vdf` and `cfg/` the archives ship are left alone. |
+| MultiAddonManager | `plugins/multiaddonmanager.sh` | Windows zip + Linux `steamrt3` tar.gz (the `steamrt4` build is ignored). Replaces only the two binaries in `game/csgo/addons/multiaddonmanager/bin/`; the `.vdf` is left alone and the customised `game/csgo/cfg/multiaddonmanager/multiaddonmanager.cfg` is never written, only compared (new settings reported). |
 | ServerListPlayersFix | `plugins/serverlistplayersfix.sh` | Windows zip + Linux `steamrt3` tar.gz. Replaces only `bin/win64/*.dll` and `bin/linuxsteamrt64/*.so`; the repo's per-platform `.vdf` copies are left alone. |
 | MovementUnlocker | `plugins/movementunlocker.sh` | Windows zip + Linux `steamrt3` tar.gz. Replaces only `bin/win64/*.dll` and `bin/linuxsteamrt64/*.so`; the `.vdf` copies under `addons/surf/` are left alone. |
 | CS2 Retakes | `plugins/cs2-retakes.sh` | Uses the full `RetakesPlugin-<v>.zip` (not the `-no-map-configs` one). Replaces `plugins/disabled/RetakesPlugin` (the plugin is kept disabled in this repo, so it is NOT at `plugins/RetakesPlugin`) and `shared/RetakesPluginShared`. |
+| MatchZy | `plugins/matchzy.sh` | Plain `MatchZy-<v>.zip` (not the `-with-cssharp-*` bundles). Merge-copies the plugin folder over `plugins/disabled/MatchZy` (nothing deleted). `game/csgo/cfg/MatchZy/` and `custom_files_example/cfg/MatchZy/` are customised and never written; new upstream files/settings are only reported for a manual port. |
+| GunGame | `plugins/gungame.sh` | Merge-copies `plugins/disabled/GG2` and `shared/GunGameAPI` (old leftovers like `Dapper.dll`/`runtimes/` are kept, as the manual updates did). `game/csgo/cfg/gungame/` is customised and never written; new upstream files, removed files and new settings are reported for a manual port. |
+| CS2 Deathmatch | `plugins/cs2-deathmatch.sh` | Asset is always `Deathmatch.zip`, archive root `Deathmatch/`. Replaces `plugins/disabled/Deathmatch` and `shared/DeathmatchAPI` whole. `configs/plugins/Deathmatch/` and `gamedata/Deathmatch.json` are not shipped and not touched. |
+| deathrun-manager | `plugins/deathrun-manager.sh` | Replaces `plugins/disabled/DeathrunManager` whole. The shipped `configs/plugins/DeathrunManager/DeathrunManager.json` is never written, only compared (new settings reported). Archive junk (`README-ME.txt`, `logs/`) ignored. |
+| RollTheDice | `plugins/rollthedice.sh` | Archive root `RollTheDice/`; replaces `plugins/disabled/RollTheDice` whole. `configs/plugins/RollTheDice/` not touched. |
+| cs2-quake-sounds | `plugins/cs2-quake-sounds.sh` | Archive root `QuakeSounds/`; replaces `plugins/disabled/QuakeSounds` whole. `configs/plugins/QuakeSounds/` not touched. |
 
 ## Files
 
@@ -191,6 +204,22 @@ downloadable asset (size `0` if unknown).
 
 ## Notes for future maintenance (context for Claude / whoever comes back to this)
 
+- Two copy styles are in use on purpose: "replace whole" (`remove_path` + `copy_dir`) where the
+  repo folder is byte-identical to the release, and "merge" (`copy_dir` only) where the manual
+  history shows leftovers were never removed (MatchZy, GG2).
+- **Config policy: plugin scripts never write config files that can be customised.** Anything a
+  release ships under `cfg/` or `configs/` (MatchZy, GunGame, MultiAddonManager, deathrun-manager)
+  is only compared with `warn_cfg_dir_changes` / `warn_new_settings`, and new files, removed
+  files and new settings are printed for a manual port. The files that ARE overwritten are
+  upstream-owned data shipped inside the plugin/addon folders (Metamod's stock `metaplugins.ini`
+  and `.vdf`s, CounterStrikeSharp's `gamedata.json`, `*.example.json` and `lang/`, Retakes'
+  `map_config/`, Deathmatch's `spawns/`, Inventory Simulator's gamedata) - all byte-identical to
+  upstream in this repo. If one of those ever gets customised, move it out of the script's paths
+  or switch that script to a report-only check.
+- The new-settings report is a key-based heuristic (first token of a `.cfg` line, JSON keys)
+  on customised files, so it also lists upstream keys that were removed from the repo's copy
+  on purpose and upstream example values (e.g. example SteamIDs in MatchZy's `admins.json`).
+  Silence reviewed keys via `plugins/<slug>.ignore`; the file is not created automatically.
 - Design decisions: versions are read from the **local** README (idempotency); mods
   without a script are only reported, nothing is downloaded for them; the run stops at
   the first failure that left the tree dirty, but continues past failures that changed

@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # =============================================================================
-# scripts/update/lib.sh - shared functions for the plugin update tool.
+# Kus' modded Counter Strike 2 (CS2) Dedicated Server
+# https://github.com/kus/cs2-modded-server/
+#
+# scripts/update/lib.sh - shared functions for the plugin (mod) update tool.
 #
 # Sourced by scripts/update/update.sh. Plugin scripts (scripts/update/plugins/*.sh)
 # are sourced *after* this file and may use everything defined here.
@@ -382,6 +385,64 @@ remove_path() {
         rm -rf "$p" || die "failed to delete $p"
     else
         info "(already absent) $p"
+    fi
+}
+
+# ----------------------------------------------------------------------------- config-file helpers
+# Keys (first token of each non-comment line; JSON keys) of a .cfg/.json file.
+_setting_keys() {
+    sed -E 's/^[[:space:]]+//; s#^//.*##; s/^"([^"]+)".*/\1/' "$1" \
+        | awk 'NF && $1 !~ /^[{}\[\],]+$/ { print $1 }' | sort -u
+}
+
+# Keys listed in scripts/update/plugins/<slug>.ignore (one per line, '#' comments) are
+# never reported: add a key there once it has been reviewed (ported, or removed on purpose).
+_ignored_setting_keys() {
+    local f="${PLUGIN_SCRIPT_DIR:-scripts/update/plugins}/${PLUGIN_SLUG:-}.ignore"
+    [ -f "$f" ] || return 0
+    sed -E 's/#.*//; s/^[[:space:]]+//; s/[[:space:]]+$//' "$f" | awk 'NF' | sort -u
+}
+
+# Heads-up only (never edits anything): reports settings present in the release's
+# copy of a config file but absent from the repo's customised copy, so new upstream
+# settings can be merged by hand. $1 = file in the extracted archive, $2 = repo file.
+warn_new_settings() {
+    local src="$1" dest="$2" missing
+    if is_dry; then dry "report settings in $src that are missing from $dest (manual merge)"; return 0; fi
+    require_file "$src"
+    [ -f "$dest" ] || { warn "$dest does not exist (release ships $(basename "$src")) - add it by hand if wanted (NOT copied)"; return 0; }
+    missing=$(comm -23 <(_setting_keys "$src") <(_setting_keys "$dest") | comm -23 - <(_ignored_setting_keys))
+    if [ -n "$missing" ]; then
+        warn "new upstream settings in $src not present in $dest - merge by hand:"
+        printf '%s\n' "$missing" | sed 's/^/          /' >&3
+    else
+        info "no new upstream settings in $(basename "$dest")"
+    fi
+}
+
+# Report-only check of a whole config directory the release ships against the repo's
+# customised copy. NOTHING is written or deleted: new upstream files, files upstream no
+# longer ships, and new settings inside files present on both sides are listed so they
+# can be ported by hand. $1 = directory in the extracted archive, $2 = repo directory,
+# $3 = "existing-only" to skip the new/removed-file checks (for partial mirrors such as
+# custom_files_example/).
+warn_cfg_dir_changes() {
+    local src="$1" dest="$2" mode="${3:-}" f
+    src="${src%/}"; dest="${dest%/}"
+    if is_dry; then dry "report new files / removed files / new settings in $src/ vs $dest/ (manual port, nothing written)"; return 0; fi
+    require_dir "$src"
+    [ -d "$dest" ] || { warn "$dest/ does not exist (release ships $src/) - nothing compared"; return 0; }
+    while IFS= read -r f; do
+        if [ -f "$dest/$f" ]; then
+            warn_new_settings "$src/$f" "$dest/$f"
+        elif [ "$mode" != "existing-only" ]; then
+            warn "release ships a new config file $f that is not in $dest/ - add it by hand if wanted (NOT copied)"
+        fi
+    done < <(cd "$src" && find . -type f ! -name '.DS_Store' ! -name '._*' | sed 's#^\./##' | sort)
+    if [ "$mode" != "existing-only" ]; then
+        while IFS= read -r f; do
+            [ -e "$src/$f" ] || warn "$dest/$f is not shipped by this release any more - delete it by hand if it was an upstream leftover (NOT deleted)"
+        done < <(cd "$dest" && find . -type f ! -name '.DS_Store' ! -name '._*' | sed 's#^\./##' | sort)
     fi
 }
 

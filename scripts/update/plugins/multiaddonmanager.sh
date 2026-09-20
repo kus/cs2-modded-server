@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Project:           Kus' modded Counter Strike 2 (CS2) Dedicated Server - https://github.com/kus/cs2-modded-server/
 # Update script for: MultiAddonManager
 # README row:        [MultiAddonManager](https://github.com/Source2ZE/MultiAddonManager)
 # Sourced by scripts/update/update.sh - do not run directly.
@@ -15,7 +16,8 @@
 # Only the two binaries are taken. The archives also ship addons/metamod/multiaddonmanager.vdf
 # and cfg/multiaddonmanager/multiaddonmanager.cfg; the repo keeps its own copies of those
 # (game/csgo/addons/multiaddonmanager/multiaddonmanager.vdf, game/csgo/cfg/multiaddonmanager/)
-# and they are deliberately not touched.
+# and they are deliberately not touched. The customised cfg is only compared against the
+# release's copy and new upstream settings are reported for a manual port.
 
 PLUGIN_PATHS=(
     "game/csgo/addons/multiaddonmanager/bin/multiaddonmanager.dll"
@@ -39,6 +41,7 @@ plugin_apply() {
 
     require_file "$win/addons/multiaddonmanager/bin/multiaddonmanager.dll"
     require_file "$linux/addons/multiaddonmanager/bin/multiaddonmanager.so"
+    require_file "$linux/cfg/multiaddonmanager/multiaddonmanager.cfg"
 
     # Windows first
     remove_path "game/csgo/addons/multiaddonmanager/bin/multiaddonmanager.dll"
@@ -50,5 +53,8 @@ plugin_apply() {
     remove_path "game/csgo/addons/multiaddonmanager/bin/multiaddonmanager.so"
     copy_file   "$linux/addons/multiaddonmanager/bin/multiaddonmanager.so" \
                 "game/csgo/addons/multiaddonmanager/bin/multiaddonmanager.so"
+
+    # heads-up only: the customised cfg is never written
+    warn_new_settings "$linux/cfg/multiaddonmanager/multiaddonmanager.cfg" "game/csgo/cfg/multiaddonmanager/multiaddonmanager.cfg"
     remove_extracted "$linux"
 }

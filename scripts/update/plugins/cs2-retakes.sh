@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Project:           Kus' modded Counter Strike 2 (CS2) Dedicated Server - https://github.com/kus/cs2-modded-server/
 # Update script for: CS2 Retakes
 # README row:        [CS2 Retakes](https://github.com/B3none/cs2-retakes)
 # Sourced by scripts/update/update.sh - do not run directly.

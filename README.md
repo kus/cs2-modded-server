@@ -143,6 +143,28 @@ Mod | Version | Why
 [cs2-TeleportKill](https://github.com/rodopoulos1/cs2-TeleportKill) | `1.0.1` |  Instantly teleport to the location of the enemy you kill.
 [CS2-BotAI](https://github.com/Austinbots/CS2-BotAI) | `1.0` | Improves the built in bots AI and also makes them run with a gun intead of a knife or nade.
 
+### Updating the mods in this repo
+
+> [!NOTE]
+> This is for maintaining the repo (or your fork of it), not for updating a running server. To update a server just re-run the install script for your platform.
+
+Keeping the table above current used to be a manual chore: check every project for a new release, download it, copy the right files into `/game/`, bump the version and commit. That is now scripted in [`/scripts/update/`](scripts/update/) and needs no AI, it is plain bash.
+
+```bash
+./scripts/update/update.sh --dry-run   # what is out of date and exactly what would change, touches nothing
+./scripts/update/update.sh             # apply it, one commit per mod in the style "- UPDATED: MatchZy 0.8.14 > 0.8.15"
+./scripts/update/update.sh --list      # every mod, its slug and whether it has an update script yet
+```
+
+How it works:
+
+- It goes down the table above, one mod at a time, and compares the version in the table with the latest release on GitHub (or the Metamod:Source download page).
+- If there is a newer release **and** a script exists for that mod in `/scripts/update/plugins/`, it downloads the release, copies the files into place the same way the manual updates always did, bumps the version in the table and commits. Mods without a script are just listed so you can update them by hand or [write a script](scripts/update/README.md#adding-a-plugin-script) for them.
+- Config files you may have customised (`/game/csgo/cfg/MatchZy/`, `/game/csgo/cfg/gungame/` etc.) are never overwritten. New upstream settings are printed so you can port them by hand.
+- It refuses to run on a dirty working tree, checks everything before touching a file, and can be re-run safely. Anything unexpected is flagged with what is wrong.
+
+Requirements: `bash`, `git`, `curl`, `jq`, `unzip`, `tar` and `rsync` (macOS and Linux are fine, including the stock macOS bash). Being logged in with `gh auth login` (or setting `GITHUB_TOKEN`) avoids GitHub's anonymous API rate limit but is optional. See [`/scripts/update/README.md`](scripts/update/README.md) for the details and how to add a mod.
+
 ## Share the love
 
 If you appreciate the project then please take the time to star the repository 🙏

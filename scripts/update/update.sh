@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # =============================================================================
-# scripts/update/update.sh - automated plugin updater for cs2-modded-server
+# Kus' modded Counter Strike 2 (CS2) Dedicated Server
+# https://github.com/kus/cs2-modded-server/
+#
+# scripts/update/update.sh - automated plugin (mod) updater for this repo
 #
 #   ./scripts/update/update.sh              apply every available update (one at a time, README order)
 #   ./scripts/update/update.sh --dry-run    only report what would happen (no downloads, no changes)
@@ -45,7 +48,7 @@ ONLY=()
 STOP_RUN=0
 
 usage() {
-    sed -n '2,12p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'
+    sed -n '2,14p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'
 }
 
 while [ $# -gt 0 ]; do

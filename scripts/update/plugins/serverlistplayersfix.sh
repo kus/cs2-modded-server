@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Project:           Kus' modded Counter Strike 2 (CS2) Dedicated Server - https://github.com/kus/cs2-modded-server/
 # Update script for: ServerListPlayersFix
 # README row:        [ServerListPlayersFix](https://github.com/Source2ZE/ServerListPlayersFix)
 # Sourced by scripts/update/update.sh - do not run directly.

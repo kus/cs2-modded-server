@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Project:           Kus' modded Counter Strike 2 (CS2) Dedicated Server - https://github.com/kus/cs2-modded-server/
 # Update script for: Inventory Simulator
 # README row:        [Inventory Simulator](https://github.com/ianlucas/cs2-css-inventory-simulator)
 # Sourced by scripts/update/update.sh - do not run directly.
