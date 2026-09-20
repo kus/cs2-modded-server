@@ -61,6 +61,28 @@ of 5 as `[dry-run] would ...` without downloading, extracting, writing or commit
 Checks against extracted archive contents cannot run in dry-run and are printed as
 `would verify ...`.
 
+## Running it automatically (GitHub Actions)
+
+`.github/workflows/auto-update-mods.yml` runs this same script daily at 3pm
+Australia/Sydney, and on demand from the Actions tab. It adds nothing of its own: it
+checks out `stage`, runs `./scripts/update/update.sh`, and if that produced commits it
+pushes them and opens a pull request into `master`. Adding a new plugin script here is
+therefore all that is needed for the automation to pick that plugin up too.
+
+- **No update, no noise.** If the script commits nothing, the workflow pushes nothing
+  and opens no pull request.
+- **A human merges.** Commits pushed with the Actions token do not trigger other
+  workflows, so if the bot merged into `master` the `build and publish` workflow would
+  silently not run. Merging the pull request yourself does trigger it.
+- **Failures are surfaced.** If the script exits non-zero the pull request is still
+  opened for the mods that succeeded, the summary is attached, and the job then fails
+  so the run shows up as a failure.
+- The schedule is a single cron at 04:00 UTC. GitHub cron has no timezone, so in Sydney
+  that lands at 3pm during daylight saving and 2pm outside it.
+- Scheduled workflows only fire from the copy of the file on the **default branch**, so
+  this workflow has to be on `master` to run on its own.
+- GitHub disables scheduled workflows after 60 days with no repository activity.
+
 ## Adding a plugin script
 
 The script file name is the **slug** of the mod name in the README table: lower-case,

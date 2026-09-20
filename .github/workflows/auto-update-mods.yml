@@ -1,0 +1,187 @@
+name: auto update mods
+
+# Runs scripts/update/update.sh on a schedule, commits any mod updates to the stage
+# branch and opens a pull request into master for review.
+#
+# Nothing about which mods are handled is duplicated here: the workflow just runs the
+# update script, so adding scripts/update/plugins/<slug>.sh is all that is needed for
+# a new plugin to be picked up by this workflow too.
+#
+# If no mod needs updating the script makes no commits, and this workflow then pushes
+# nothing and opens no pull request.
+#
+# NOTE: GitHub only runs "schedule" triggers from the copy of the workflow file on the
+# default branch, so this file has to reach master before the daily run will fire.
+
+on:
+  schedule:
+    # GitHub cron is UTC only, so the Sydney time shifts with daylight saving:
+    #   3pm AEDT (daylight saving, roughly October to April)
+    #   2pm AEST (roughly April to October)
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: auto-update-mods
+  cancel-in-progress: false
+
+env:
+  STAGE_BRANCH: stage
+  TARGET_BRANCH: master
+
+jobs:
+  update:
+    name: Update mods
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout ${{ env.STAGE_BRANCH }}
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ env.STAGE_BRANCH }}
+          # Shallow is enough: the update script only reads the working tree and
+          # commits on top of it.
+          fetch-depth: 1
+
+      - name: Configure git identity
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+      - name: Run the update script
+        id: update
+        env:
+          # Read by scripts/update/lib.sh for the authenticated GitHub API rate limit.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -uo pipefail
+          echo "Sydney time is now $(TZ=Australia/Sydney date '+%Y-%m-%d %H:%M %Z')"
+          echo "before=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          set +e
+          ./scripts/update/update.sh 2>&1 | tee /tmp/update.log
+          rc=${PIPESTATUS[0]}
+          set -e
+          echo "rc=$rc" >> "$GITHUB_OUTPUT"
+          echo "after=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "Update script exited with $rc"
+
+      - name: Summarise the run
+        run: |
+          set -euo pipefail
+          # Strip ANSI colour, then keep the summary block the script prints at the end.
+          sed -e 's/\x1b\[[0-9;]*m//g' /tmp/update.log > /tmp/update.txt
+          if grep -q '^=\{10,\} summary' /tmp/update.txt; then
+            sed -n '/^=\{10,\} summary/,$p' /tmp/update.txt > /tmp/summary.txt
+          else
+            tail -40 /tmp/update.txt > /tmp/summary.txt
+          fi
+          {
+            echo '### Mod update run'
+            echo
+            echo '```'
+            cat /tmp/summary.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Nothing to do
+        if: steps.update.outputs.before == steps.update.outputs.after
+        run: echo "No mod needed updating, so there is nothing to push and no pull request to open."
+
+      - name: Push ${{ env.STAGE_BRANCH }}
+        if: steps.update.outputs.before != steps.update.outputs.after
+        env:
+          BEFORE: ${{ steps.update.outputs.before }}
+        run: |
+          set -euo pipefail
+          git log --oneline "$BEFORE..HEAD"
+          git push origin "HEAD:$STAGE_BRANCH"
+
+      - name: Open or update the pull request
+        if: steps.update.outputs.before != steps.update.outputs.after
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BEFORE: ${{ steps.update.outputs.before }}
+          RC: ${{ steps.update.outputs.rc }}
+          OWNER: ${{ github.repository_owner }}
+        run: |
+          set -euo pipefail
+
+          # Mods updated by this run, taken from the commit subjects.
+          git log --format='%s' "$BEFORE..HEAD" > /tmp/new-commits.txt
+          echo "This run produced:"
+          cat /tmp/new-commits.txt
+
+          existing=$(gh pr list --base "$TARGET_BRANCH" --head "$STAGE_BRANCH" \
+            --state open --json number --jq '.[0].number // empty')
+
+          # The pull request can span several runs, so describe every commit in it,
+          # not just the ones from this run.
+          if [ -n "$existing" ]; then
+            gh pr view "$existing" --json commits \
+              --jq '.commits[].messageHeadline' > /tmp/all-commits.txt
+          else
+            cp /tmp/new-commits.txt /tmp/all-commits.txt
+          fi
+
+          count=$(grep -c . /tmp/all-commits.txt || true)
+          if [ "$count" = "1" ]; then
+            title=$(cat /tmp/all-commits.txt)
+          else
+            title="- UPDATED: $count mods"
+          fi
+
+          {
+            echo "Automated run of \`scripts/update/update.sh\`."
+            echo
+            echo "### Updated"
+            echo
+            sed 's/^- UPDATED: /- /' /tmp/all-commits.txt
+            echo
+            echo "### Latest script summary"
+            echo
+            echo '```'
+            cat /tmp/summary.txt
+            echo '```'
+            if [ "$RC" != "0" ]; then
+              echo
+              echo "> [!WARNING]"
+              echo "> The update script exited with a non-zero status, so at least one mod failed or needs attention by hand. See the summary above. The commits here are the ones that completed cleanly."
+            fi
+            echo
+            echo "Merging this yourself is what triggers \`build and publish\`. A merge made by the Actions token would not."
+          } > /tmp/pr-body.md
+
+          if [ -n "$existing" ]; then
+            echo "Updating existing pull request #$existing"
+            gh pr edit "$existing" --title "$title" --body-file /tmp/pr-body.md
+            {
+              echo "Pushed more mod updates:"
+              echo
+              sed 's/^- UPDATED: /- /' /tmp/new-commits.txt
+            } > /tmp/pr-comment.md
+            gh pr comment "$existing" --body-file /tmp/pr-comment.md
+          else
+            gh pr create \
+              --base "$TARGET_BRANCH" \
+              --head "$STAGE_BRANCH" \
+              --title "$title" \
+              --body-file /tmp/pr-body.md \
+              --assignee "$OWNER"
+            number=$(gh pr list --base "$TARGET_BRANCH" --head "$STAGE_BRANCH" \
+              --state open --json number --jq '.[0].number')
+            echo "Opened pull request #$number"
+            # A review request is a nicety on top of the assignment; never fail on it.
+            gh pr edit "$number" --add-reviewer "$OWNER" ||
+              echo "Could not request a review from $OWNER; the assignment already notifies."
+          fi
+
+      - name: Fail if the update script reported problems
+        if: steps.update.outputs.rc != '0'
+        env:
+          RC: ${{ steps.update.outputs.rc }}
+        run: |
+          echo "The update script exited with $RC. See the job summary for what failed."
+          exit 1
