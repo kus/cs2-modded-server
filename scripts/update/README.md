@@ -152,6 +152,10 @@ downloadable asset (size `0` if unknown).
 | Metamod:Source | `plugins/metamod-source.sh` | Assets come from the dev downloads page quick-download links. Windows zip is applied before the Linux tar.gz on purpose: both ship `metamod.vdf`, `metamod_x64.vdf`, `metaplugins.ini`, `README.txt`; the Linux copies (LF endings, `linux64` server path) are what the repo keeps. |
 | CounterStrikeSharp | `plugins/counterstrikesharp.sh` | Uses the `with-runtime` Windows and Linux zips. Windows first (rsync into `game/csgo/addons/`, then the special `game/csgo/addons/windows/addons/counterstrikesharp/` refresh of `api/ bin/ dotnet/`), then Linux rsync on top. |
 | Inventory Simulator | `plugins/inventory-simulator.sh` | Replaces the plugin directory and the `inventory-simulator.json` gamedata file. |
+| MultiAddonManager | `plugins/multiaddonmanager.sh` | Windows zip + Linux `steamrt3` tar.gz (the `steamrt4` build is ignored). Replaces only the two binaries in `game/csgo/addons/multiaddonmanager/bin/`; the `.vdf` and `cfg/` the archives ship are left alone. |
+| ServerListPlayersFix | `plugins/serverlistplayersfix.sh` | Windows zip + Linux `steamrt3` tar.gz. Replaces only `bin/win64/*.dll` and `bin/linuxsteamrt64/*.so`; the repo's per-platform `.vdf` copies are left alone. |
+| MovementUnlocker | `plugins/movementunlocker.sh` | Windows zip + Linux `steamrt3` tar.gz. Replaces only `bin/win64/*.dll` and `bin/linuxsteamrt64/*.so`; the `.vdf` copies under `addons/surf/` are left alone. |
+| CS2 Retakes | `plugins/cs2-retakes.sh` | Uses the full `RetakesPlugin-<v>.zip` (not the `-no-map-configs` one). Replaces `plugins/disabled/RetakesPlugin` (the plugin is kept disabled in this repo, so it is NOT at `plugins/RetakesPlugin`) and `shared/RetakesPluginShared`. |
 
 ## Files
 
