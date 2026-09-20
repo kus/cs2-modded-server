@@ -69,6 +69,8 @@ mod, e.g. `Metamod:Source` -> `metamod-source.sh`, `CS2 Retakes` -> `cs2-retakes
 
 Create `scripts/update/plugins/<slug>.sh` from this template. It is *sourced* by
 `update.sh`, so its top level must only set `PLUGIN_PATHS` and define functions.
+Before writing it, work through "Reconstructing the process for a mod from git history"
+and the gotchas list below, then test it as described in "Testing a new or changed script".
 
 ```bash
 #!/usr/bin/env bash
@@ -114,6 +116,78 @@ plugin_apply() {
 
 Then test it: `./scripts/update/update.sh --dry-run --only <slug>` and, once happy,
 `./scripts/update/update.sh --only <slug>`. Check the commit with `git show --stat`.
+
+### Reconstructing the process for a mod from git history (do this BEFORE writing a script)
+
+Every existing script was derived this way. It takes ten minutes and avoids guessing.
+
+1. **Find the manual updates**: `git log --oneline --grep="UPDATED: <Mod name>"`, then
+   `git show --name-status --format="" <sha>` for the last three. This tells you the real repo
+   paths (they are often NOT where you expect - many plugins live under
+   `plugins/disabled/` because they are off by default) and which files change per update.
+2. **Get the release layout**: list the assets with
+   `curl -s https://api.github.com/repos/<owner>/<repo>/releases/latest | jq -r '.assets[].name'`
+   (or `gh api`), download the one(s) the manual updates used, and list the archive
+   (`unzip -Z1 x.zip` / `tar -tzf x.tar.gz`). Note the root: `addons/...`, `csgo/addons/...`,
+   `<Name>/plugins/...`, `<Name>/...` - it differs per project. Ignore junk (`README-ME.txt`,
+   `logs/`, `-no-map-configs` variants, `-with-cssharp-*` bundles, `steamrt4` builds).
+3. **Diff the extracted archive against the repo** (the repo is normally at the latest
+   version): `diff -rq <extracted>/<dir> game/csgo/...`. Identical files = what the manual
+   process copies. Differing files = what it keeps (customised configs). Files only in the repo
+   = leftovers the manual process never deleted, or custom files.
+4. **Check the config history**: `git log --oneline -- game/csgo/cfg/<mod>` (and
+   `configs/plugins/<Mod>`). Commits that are not "UPDATED: <mod>" mean it is customised.
+   Customised config paths are NEVER written by a script (see the config policy below); use
+   `warn_cfg_dir_changes` / `warn_new_settings` instead.
+5. **Pick the copy style** from steps 1-3: "replace whole" (`remove_path` + `copy_dir`) when the
+   repo folder is byte-identical to the release; "merge" (`copy_dir` only) when the repo carries
+   leftovers the manual updates kept (MatchZy, GG2) or when a file name only differs by case.
+6. Write the script from the template, put the reconstructed manual process in its header
+   comment (that is the documentation of record), pin asset names with `${NEW_VERSION}` where
+   the name carries the version, and add `require_*` checks for the archive layout you saw.
+
+### Gotchas seen so far (check the new mod against each)
+
+- **Asset variants**: releases often ship several files; pin the exact one the manual updates
+  used (`steamrt3` not `steamrt4`, `with-runtime`, plain `MatchZy-<v>.zip`, full
+  `RetakesPlugin-<v>.zip` not `-no-map-configs`). A glob that matches 2 assets fails on purpose.
+- **Version in the name**: tags are normalised like `check-updates.sh` does (`v1.6` -> `1.6`,
+  `V0.5.1` -> `0.5.1`, Metamod `2.0.0.1469`/`git1469` -> `2.0.0-1469`), so `${NEW_VERSION}` is
+  the bare version. Some assets carry no version at all (`Deathmatch.zip`): use the exact name.
+- **Two-platform mods**: apply Windows first, then Linux, always. Both archives ship the same
+  config/vdf files and the Linux copies (LF endings, Linux paths) are the ones the repo keeps.
+  Only replace the binaries the manual updates replaced; the per-platform `.vdf`s in the repo
+  live elsewhere (`addons/windows/`, `addons/surf/`) and are managed by hand.
+- **Case-insensitive filesystem**: MatchZy ships `lang/pt-PT.json`, the repo tracks
+  `lang/pt-pt.json`. On macOS (`core.ignorecase=true`) a merge-copy just updates the tracked
+  file; a replace-whole would try to rename it. On Linux you would get both files.
+- **Same link text elsewhere in the README**: the version bump only matches the row in the
+  `Mod | Version | Why` table (anchored at line start), because e.g. the CounterStrikeSharp
+  link also appears in prose.
+- **Files inside plugin folders that look like config** (`map_config/`, `spawns/`, `lang/`) are
+  upstream-owned and byte-identical to the release here, so "replace whole" is fine - but check
+  step 3 before assuming that for a new mod.
+- **A README bump done in a separate commit** (cs2-quake-sounds 26.08.1) means the manual
+  commit's file set lacks `README.md`; the script always bumps it in the same commit.
+
+### Testing a new or changed script
+
+Never test on the real checkout; the tool commits. Use a throwaway local clone:
+
+```bash
+git clone -q --local --branch stage . /tmp/cs2-test && cd /tmp/cs2-test
+git revert --no-edit <sha of the mod's last "UPDATED:" commit>   # makes the update pending again
+# if the revert conflicts on README.md context, instead: git checkout <sha>~1 -- <the mod's paths>,
+# set the README row back by hand with sed, and commit
+./scripts/update/update.sh --dry-run --only <slug>
+./scripts/update/update.sh --only <slug>
+git show --name-status --format="" HEAD | sort > /tmp/new.txt
+git show --name-status --format="" <sha> | sort > /tmp/old.txt && diff /tmp/old.txt /tmp/new.txt   # expect no diff
+./scripts/update/update.sh --only <slug>      # second run must report "OK <mod> <version>" and change nothing
+```
+
+Downloads are cached under `tmp/update/<slug>/<version>/`; copy archives there from another
+checkout to avoid re-downloading. Delete the clone afterwards.
 
 ### Variables available in a plugin script
 
