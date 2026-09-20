@@ -4,8 +4,13 @@
 
 extract_mods() {
     local README_URL="https://raw.githubusercontent.com/kus/cs2-modded-server/master/README.md"
-    
-    curl -s "$README_URL" | awk '
+
+    # CHECK_UPDATES_README=<path> reads a local README instead (used by scripts/update/update.sh)
+    if [ -n "${CHECK_UPDATES_README:-}" ]; then
+        cat "$CHECK_UPDATES_README"
+    else
+        curl -s "$README_URL"
+    fi | awk '
         BEGIN { modsStarted = 0 }
         $0 == "Mod | Version | Why" { modsStarted = 1; next }  # Look for the specific header to start
         modsStarted == 1 && $0 ~ /^$/ { exit }  # Stop at the first empty line
@@ -159,4 +164,8 @@ main() {
     done
 }
 
-main
+# Only run when executed directly; scripts/update/update.sh sources this file to reuse
+# extract_mods / fetch_latest_release / fetch_last_updated.
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    main
+fi
