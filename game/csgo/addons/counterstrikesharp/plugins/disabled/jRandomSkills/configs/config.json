@@ -1,0 +1,267 @@
+﻿{
+  "ConfigName": "Default",
+  "GameMode": 3,
+  "YourSkillChatInfo": true,
+  "KillerSkillChatInfo": true,
+  "TeamMateSkillChatInfo": true,
+  "SummaryAfterTheRound": true,
+  "EnableBotSkills": true,
+  "EnableBotKickDebug": false,
+  "EnableFullForceUpdate": false,
+  "DebugMode": 0,
+  "PerfMode": false,
+  "AlternativeSkillButton": null,
+  "SkillTimeBeforeStart": 7.0,
+  "SkillHudDuration": -1.0,
+  "SkillDescriptionDuration": 7.0,
+  "DisplayAlwaysDescription": false,
+  "DisableSpectateHUD": false,
+  "HideHudForOtherPlugins": true,
+  "EnableFlashingHtmlHudFix": false,
+  "TraceRayBeam": false,
+  "DisableHUDOnDeathPermission": "@jRandomSkills/death",
+  "DisableSkillsOnRoundEnd": false,
+  "CurseSkillPerPlayer": null,
+  "ShowDecoyRing": true,
+  "Weapons": {
+    "Rifle": [
+      "weapon_ak47",
+      "weapon_m4a1",
+      "weapon_m4a1_silencer",
+      "weapon_famas",
+      "weapon_galilar",
+      "weapon_aug",
+      "weapon_sg556",
+      "weapon_mp9",
+      "weapon_mac10",
+      "weapon_bizon",
+      "weapon_mp7",
+      "weapon_ump45",
+      "weapon_p90",
+      "weapon_mp5sd",
+      "weapon_ssg08",
+      "weapon_awp",
+      "weapon_scar20",
+      "weapon_g3sg1",
+      "weapon_nova",
+      "weapon_xm1014",
+      "weapon_mag7",
+      "weapon_sawedoff",
+      "weapon_m249",
+      "weapon_negev"
+    ],
+    "Pistol": [
+      "weapon_deagle",
+      "weapon_revolver",
+      "weapon_glock",
+      "weapon_usp_silencer",
+      "weapon_cz75a",
+      "weapon_fiveseven",
+      "weapon_p250",
+      "weapon_tec9",
+      "weapon_elite",
+      "weapon_hkp2000"
+    ],
+    "Grenade": [
+      "weapon_hegrenade",
+      "weapon_flashbang",
+      "weapon_smokegrenade",
+      "weapon_molotov",
+      "weapon_incgrenade",
+      "weapon_decoy"
+    ]
+  },
+  "LanguageSystem": {
+    "DefaultLangCode": "en",
+    "DisableGeoLite": false,
+    "LanguageInfos": [
+      {
+        "IsoCodes": "ZH, CN, TW, HK, MO, SG",
+        "FileName": "zh"
+      },
+      {
+        "IsoCodes": "PT-BR, PT, BR, AO, CV, GW, MZ, ST, TL",
+        "FileName": "pt-br"
+      },
+      {
+        "IsoCodes": "FR, MC, HT",
+        "FileName": "fr"
+      },
+      {
+        "IsoCodes": "DE, AT, CH, LI, LU, BE",
+        "FileName": "de"
+      },
+      {
+        "IsoCodes": "RU, KZ, BY, KG, TJ, UZ, TM, AM, AZ, GE, MD",
+        "FileName": "ru"
+      },
+      {
+        "IsoCodes": "TR",
+        "FileName": "tr"
+      },
+      {
+        "IsoCodes": "CZ",
+        "FileName": "cs"
+      },
+      {
+        "IsoCodes": "PL",
+        "FileName": "pl"
+      },
+      {
+        "IsoCodes": "EN, GB, US",
+        "FileName": "en"
+      }
+    ]
+  },
+  "HtmlHudCustomisation": {
+    "HeaderLineColor": "#FFFFFF",
+    "HeaderLineSize": "",
+    "SkillLineSize": "l",
+    "InfoLineColor": "#FFFFFF",
+    "InfoLineSize": "sm",
+    "SkillDescriptionLineColor": "#999999",
+    "SkillDescriptionLineSize": "sm",
+    "WSADMenuSelectInfoLineColor": "#999999",
+    "WSADMenuSelectInfoLineSize": "sm",
+    "WSADMenuItemLineColor": "white",
+    "WSADMenuItemHoverLineColor": "orange",
+    "WSADMenuItemLineSize": "sm",
+    "WSADMenuVisibleItems": 3,
+    "WSADMenuControllsLineSize": "sm",
+    "WSADMenuControllsLineColor1": "cyan",
+    "WSADMenuControllsLineColor2": "white",
+    "WSADMenuControllsLineColor3": "green"
+  },
+  "ChatMessage": {
+    "MaxWidth": 1280.0,
+    "LineSymbol": "―",
+    "LineColor": "\u0004",
+    "LineShow": true,
+    "InfoPlayerNameColor": "\u0002",
+    "InfoSkillColor": "\u0006",
+    "InfoMessageShow": true,
+    "TagFormat": "\u0002◢◆◤ {TAG} ◥◆◣"
+  },
+  "NormalCommands": {
+    "SetSkillCommand": {
+      "Alias": "ustawskill, ustaw_skill, setskill, set_skill, definirhabilidade, configurarhabilidade, 设置技能, 配置技能",
+      "Permissions": "@jRandomSkills/admin"
+    },
+    "SkillsListCommand": {
+      "Alias": "supermoc, skille, listamocy, supermoce, skills, listaHabilidades, habilidades, 技能列表, 超能力列表",
+      "Permissions": "@jRandomSkills/admin"
+    },
+    "UseSkillCommand": {
+      "Alias": "t, useSkill, usarHabilidade, 技能使用, 使用技能",
+      "Permissions": "@jRandomSkills/admin"
+    },
+    "HealCommand": {
+      "Alias": "heal, ulecz, curar, tratar, 治疗, 治愈",
+      "Permissions": "@jRandomSkills/admin"
+    },
+    "HealthCommand": {
+      "Alias": "sethealth, set_health, health",
+      "Permissions": "@jRandomSkills/admin"
+    },
+    "PlantedBomb": {
+      "Alias": "plantedbomb, planted_bomb, bomb",
+      "Permissions": "@jRandomSkills/admin"
+    },
+    "BotPlace": {
+      "Alias": "botplace, bot_place",
+      "Permissions": "@jRandomSkills/admin"
+    },
+    "ConsoleCommand": {
+      "Alias": "console, sv, 控制台, 服务器",
+      "Permissions": "@jRandomSkills/owner"
+    },
+    "HudCommand": {
+      "Alias": "hud, hood",
+      "Permissions": ""
+    },
+    "SetStaticSkillCommand": {
+      "Alias": "ustawstatycznyskill, ustaw_statyczny_skill, setstaticskill, set_static_skill",
+      "Permissions": "@jRandomSkills/admin"
+    },
+    "ChangeLanguageCommand": {
+      "Alias": "lang, language, changelang, change_lang, jezyk, język",
+      "Permissions": ""
+    },
+    "ReloadCommand": {
+      "Alias": "reload, refresh",
+      "Permissions": "@jRandomSkills/admin"
+    },
+    "NextCommand": {
+      "Alias": "next_skill",
+      "Permissions": "@jRandomSkills/admin"
+    },
+    "CheckEntityCommand": {
+      "Alias": "ent, entity, checkentity, check_entity, sprawdzencje, checkent, check_ent, 检查实体",
+      "Permissions": "@jRandomSkills/owner"
+    }
+  },
+  "VotingCommands": {
+    "StartGameCommand": {
+      "EnableVoting": true,
+      "Alias": "start, go, começar, iniciar, 开始, 启动",
+      "Permissions": "@jRandomSkills/admin",
+      "StartParams": "mp_freezetime 15; mp_forcecamera 0; mp_overtime_enable 1; sv_cheats 0",
+      "SVStartParams": "mp_freezetime 0; mp_forcecamera 0; mp_overtime_enable 1; sv_cheats 1",
+      "TimeToVote": 15.0,
+      "PercentagesToSuccess": 60.0,
+      "TimeToNextVoting": 15.0,
+      "TimeToNextSameVoting": 500.0,
+      "MinimumPlayersToStartVoting": 2
+    },
+    "ChangeMapCommand": {
+      "EnableVoting": true,
+      "TimeToVote": 25.0,
+      "PercentagesToSuccess": 90.0,
+      "TimeToNextVoting": 15.0,
+      "TimeToNextSameVoting": 500.0,
+      "MinimumPlayersToStartVoting": 2,
+      "Alias": "map, mapa, changemap, zmienmape, mudarMapa, trocarMapa, 更换地图, 更改地图",
+      "Permissions": "@jRandomSkills/admin"
+    },
+    "SwapCommand": {
+      "EnableVoting": true,
+      "TimeToVote": 15.0,
+      "PercentagesToSuccess": 90.0,
+      "TimeToNextVoting": 15.0,
+      "TimeToNextSameVoting": 20.0,
+      "MinimumPlayersToStartVoting": 2,
+      "Alias": "swap, zmiana, trocar, 交换, 切换",
+      "Permissions": "@jRandomSkills/admin"
+    },
+    "ShuffleCommand": {
+      "EnableVoting": true,
+      "TimeToVote": 15.0,
+      "PercentagesToSuccess": 90.0,
+      "TimeToNextVoting": 15.0,
+      "TimeToNextSameVoting": 20.0,
+      "MinimumPlayersToStartVoting": 2,
+      "Alias": "shuffle, embaralhar, 随机排序, 洗牌",
+      "Permissions": "@jRandomSkills/admin"
+    },
+    "PauseCommand": {
+      "EnableVoting": true,
+      "TimeToVote": 15.0,
+      "PercentagesToSuccess": 60.0,
+      "TimeToNextVoting": 15.0,
+      "TimeToNextSameVoting": 2.0,
+      "MinimumPlayersToStartVoting": 2,
+      "Alias": "pause, unpause, pausar, despausar, 暂停, 恢复",
+      "Permissions": "@jRandomSkills/admin"
+    },
+    "SetScoreCommand": {
+      "EnableVoting": true,
+      "TimeToVote": 15.0,
+      "PercentagesToSuccess": 90.0,
+      "TimeToNextVoting": 15.0,
+      "TimeToNextSameVoting": 90.0,
+      "MinimumPlayersToStartVoting": 2,
+      "Alias": "setscore, wynik, definirPontuacao, configurarPontos, 设置分数, 调整分数",
+      "Permissions": "@jRandomSkills/owner"
+    }
+  }
+}
