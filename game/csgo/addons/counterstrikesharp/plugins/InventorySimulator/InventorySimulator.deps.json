@@ -8,13 +8,13 @@
     ".NETCoreApp,Version=v10.0": {
       "InventorySimulator/1.0.0": {
         "dependencies": {
-          "CounterStrikeSharp.API": "1.0.371"
+          "CounterStrikeSharp.API": "1.0.375"
         },
         "runtime": {
           "InventorySimulator.dll": {}
         }
       },
-      "CounterStrikeSharp.API/1.0.371": {
+      "CounterStrikeSharp.API/1.0.375": {
         "dependencies": {
           "FastGenericNew": "3.3.1",
           "McMaster.NETCore.Plugins": "1.4.0",
@@ -30,8 +30,8 @@
         },
         "runtime": {
           "lib/net10.0/CounterStrikeSharp.API.dll": {
-            "assemblyVersion": "1.0.371.0",
-            "fileVersion": "1.0.371.0"
+            "assemblyVersion": "1.0.375.0",
+            "fileVersion": "1.0.375.0"
           }
         }
       },
@@ -531,12 +531,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "CounterStrikeSharp.API/1.0.371": {
+    "CounterStrikeSharp.API/1.0.375": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-K9zmwFh+YGkuZaz0d1AY6/Ec1I1NVrCdNlL4OKFQ0fWhHnCfL7uPAsvan3qR6aHLDkY7U4hjfwrHErY40NKQxQ==",
-      "path": "counterstrikesharp.api/1.0.371",
-      "hashPath": "counterstrikesharp.api.1.0.371.nupkg.sha512"
+      "sha512": "sha512-ap0UNvxwQMWvY1NLBx5rA1cAF7rjwlJbLO/uB6uiIC/JRmE3gAJfv+uI6sGS2zPpW0d5O1IpWNzQCXNArtIXCA==",
+      "path": "counterstrikesharp.api/1.0.375",
+      "hashPath": "counterstrikesharp.api.1.0.375.nupkg.sha512"
     },
     "FastGenericNew/3.3.1": {
       "type": "package",
