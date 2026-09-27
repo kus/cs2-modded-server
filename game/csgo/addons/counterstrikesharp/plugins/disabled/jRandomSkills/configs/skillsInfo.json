@@ -11,6 +11,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -25,6 +26,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -40,6 +42,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -55,6 +58,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -72,6 +76,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -86,6 +91,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 1,
+    "MinPlayer": 0,
     "Rarity": "Epic"
   },
   {
@@ -101,6 +107,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 2,
+    "MinPlayer": 0,
     "Rarity": "Rare"
   },
   {
@@ -116,6 +123,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Uncommon"
   },
   {
@@ -137,6 +145,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Rare"
   },
   {
@@ -158,6 +167,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -174,6 +184,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -191,6 +202,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -206,6 +218,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -220,6 +233,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -236,6 +250,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -253,6 +268,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 2,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -269,6 +285,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -285,6 +302,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -301,6 +319,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -317,6 +336,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -334,6 +354,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -348,6 +369,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -363,6 +385,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -377,6 +400,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -392,6 +416,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -409,6 +434,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -424,6 +450,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -438,6 +465,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -454,6 +482,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -469,6 +498,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -497,6 +527,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 2,
+    "MinPlayer": 0,
     "Rarity": "Rare"
   },
   {
@@ -513,6 +544,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -532,6 +564,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -549,6 +582,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Uncommon"
   },
   {
@@ -563,6 +597,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -578,6 +613,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -596,6 +632,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 2,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -612,6 +649,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -627,6 +665,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -644,6 +683,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -660,6 +700,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -674,6 +715,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -688,6 +730,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -704,6 +747,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -722,6 +766,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -739,6 +784,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -756,6 +802,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -770,6 +817,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -784,6 +832,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -802,6 +851,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 2,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -817,6 +867,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -836,6 +887,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -852,6 +904,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -869,6 +922,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -883,6 +937,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -898,6 +953,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -912,6 +968,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -926,6 +983,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -940,6 +998,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -957,6 +1016,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -974,6 +1034,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -993,6 +1054,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Rare"
   },
   {
@@ -1009,6 +1071,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 2,
+    "MinPlayer": 0,
     "Rarity": "Rare"
   },
   {
@@ -1023,6 +1086,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1040,6 +1104,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1058,6 +1123,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1073,6 +1139,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1088,6 +1155,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1105,6 +1173,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1121,6 +1190,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Uncommon"
   },
   {
@@ -1139,6 +1209,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1153,6 +1224,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1170,6 +1242,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Rare"
   },
   {
@@ -1186,6 +1259,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1203,6 +1277,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 1,
+    "MinPlayer": 0,
     "Rarity": "Epic"
   },
   {
@@ -1218,6 +1293,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1233,6 +1309,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1247,6 +1324,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1262,6 +1340,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1279,6 +1358,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1293,6 +1373,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1308,6 +1389,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1322,6 +1404,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 2,
+    "MinPlayer": 0,
     "Rarity": "Rare"
   },
   {
@@ -1336,6 +1419,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1350,6 +1434,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1370,6 +1455,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 2,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1384,6 +1470,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1401,6 +1488,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1418,6 +1506,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1436,6 +1525,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1453,6 +1543,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1469,6 +1560,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1483,6 +1575,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Uncommon"
   },
   {
@@ -1502,6 +1595,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1522,6 +1616,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 1,
+    "MinPlayer": 0,
     "Rarity": "Legendary"
   },
   {
@@ -1536,6 +1631,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1553,6 +1649,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1577,6 +1674,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Rare"
   },
   {
@@ -1593,6 +1691,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1607,6 +1706,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1621,6 +1721,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1636,6 +1737,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1652,6 +1754,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1666,6 +1769,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Epic"
   },
   {
@@ -1681,6 +1785,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1698,6 +1803,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1714,6 +1820,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1729,6 +1836,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1747,6 +1855,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 5,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1770,6 +1879,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 2,
+    "MinPlayer": 0,
     "Rarity": "Legendary"
   },
   {
@@ -1786,6 +1896,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1801,6 +1912,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Epic"
   },
   {
@@ -1816,6 +1928,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1831,6 +1944,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1851,6 +1965,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1871,6 +1986,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 2,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1886,6 +2002,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1902,6 +2019,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1918,6 +2036,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Uncommon"
   },
   {
@@ -1934,6 +2053,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1948,6 +2068,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1963,6 +2084,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1977,6 +2099,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -1993,6 +2116,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2010,6 +2134,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2029,6 +2154,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2043,6 +2169,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2057,6 +2184,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2076,6 +2204,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2094,6 +2223,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Rare"
   },
   {
@@ -2110,6 +2240,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2125,6 +2256,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2140,6 +2272,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2154,6 +2287,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2168,6 +2302,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 2,
+    "MinPlayer": 0,
     "Rarity": "Rare"
   },
   {
@@ -2184,6 +2319,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2200,6 +2336,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2214,6 +2351,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 1,
+    "MinPlayer": 0,
     "Rarity": "Uncommon"
   },
   {
@@ -2231,6 +2369,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2246,6 +2385,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2266,6 +2406,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2283,6 +2424,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2300,6 +2442,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2316,6 +2459,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2334,6 +2478,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2348,6 +2493,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2364,6 +2510,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2381,6 +2528,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2397,6 +2545,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2411,6 +2560,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": 1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2425,6 +2575,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2441,6 +2592,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2457,6 +2609,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2473,6 +2626,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   },
   {
@@ -2487,6 +2641,7 @@
     "DescriptionHudDuration": null,
     "RequiredPermission": "",
     "MaxPerServer": -1,
+    "MinPlayer": 0,
     "Rarity": "Common"
   }
 ]

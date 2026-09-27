@@ -21,6 +21,21 @@
   "TraceRayBeam": false,
   "DisableHUDOnDeathPermission": "@jRandomSkills/death",
   "DisableSkillsOnRoundEnd": false,
+  "VIPFlag": "@css/vip",
+  "SkillsChance": {
+    "Common": 0.7,
+    "Uncommon": 0.14,
+    "Rare": 0.1,
+    "Epic": 0.05,
+    "Legendary": 0.01
+  },
+  "VIPSkillsChance": {
+    "Common": 0.55,
+    "Uncommon": 0.23,
+    "Rare": 0.14,
+    "Epic": 0.07,
+    "Legendary": 0.01
+  },
   "CurseSkillPerPlayer": null,
   "ShowDecoyRing": true,
   "Weapons": {

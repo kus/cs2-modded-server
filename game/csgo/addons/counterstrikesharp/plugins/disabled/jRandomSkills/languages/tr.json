@@ -82,7 +82,7 @@
 
   "catapult": "Mancınık",
   "catapult_desc": "Vurduğun rakibi uzaya (yukarı doğru) fırlatma şansın var",
-  "catapult_desc2": "Fırlatma şansın: %{0}",
+  "catapult_desc2": "Vurduğun rakibi havaya fırlatma şansın: %{0}",
 
   "chameleon": "Bukalemun",
   "chameleon_desc": "Öldürdüğün ilk oyuncunun yeteneği sana geçer",
@@ -452,7 +452,7 @@
 
   "push": "İtici",
   "push_desc": "Düşmana vurduğunda onu geri itme şansın olur",
-  "push_desc2": "Geri itme şansın: %{0}",
+  "push_desc2": "Vurduğun rakibi geri itme şansın: %{0}",
 
   "pyro": "Ateşbaz",
   "pyro_desc": "Molotof canını yeniler",
@@ -511,7 +511,7 @@
 
   "shade": "Gölge",
   "shade_desc": "Vurduğun düşmanın arkasına ışınlanma şansın olur",
-  "shade_desc2": "Arkasına ışınlanma şansın: %{0}",
+  "shade_desc2": "Vurduğun rakibin arkasına ışınlanma şansın: %{0}",
   "shade_nospace": "Uygun alan yok",
 
   "shortbomb": "Kısa Fünye",

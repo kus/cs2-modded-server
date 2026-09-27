@@ -487,7 +487,7 @@
   "returntosender": "Zwrot do Nadawcy",
   "returntosender_desc": "Pierwsze trafienie wroga powoduje, że wraca on na swój resp",
 
-  "rewind": "Cofnięcietruearmor",
+  "rewind": "Cofnięcie",
   "rewind_desc": "Naciśnij [css_useSkill], aby zostawić znacznik i wkrótce do niego wrócić",
   "rewind_pending_info": "POWRÓT: {0}",
 
