@@ -124,5 +124,13 @@
   "matchzy.pracc.blind": "{lightblue}{0}{default} vakítva lett {green}{1}{default} mp-re",
   "matchzy.pm.savepos": "Pozíció mentve",
   "matchzy.pm.loadpos": "Pozíció betöltve",
-  "matchzy.pm.notsavedpos": "Még nem mentettél pozíciót!"
+  "matchzy.pm.notsavedpos": "Még nem mentettél pozíciót!",
+  "matchzy.restore.queued": "Backup {0} will be restored when the match goes live (run the command again to restore it now).",
+  "matchzy.restore.incomplete": "Backup {0} has no complete round data, nothing was restored.",
+  "matchzy.cc.endmatchnomatch": "No match is loaded or running, so there is no match to end with a winner. Use .forceend without a team to reset.",
+  "matchzy.pm.importnadeinvalid": "Invalid lineup code: the position and angle must be 6 numbers.",
+  "matchzy.pm.lineupinvalid": "Lineup {0} has an invalid position or angle and cannot be loaded.",
+  "matchzy.pm.botsdisabled": "Bots are disabled on this server (-nobots), so practice bots cannot be added.",
+  "matchzy.pm.botserverfull": "The server is full, so no bot can be added (it would take the CSTV slot and stop GOTV).",
+  "matchzy.pm.nospawns": "No spawns found for this team on this map."
 }

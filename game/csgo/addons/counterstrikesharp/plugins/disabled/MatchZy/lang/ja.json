@@ -136,5 +136,13 @@
   "matchzy.pracc.molotov": "{red}{0}{default} が投げた火炎瓶が爆発するまでに {green}{1}{default} 秒かかりました",
   "matchzy.pracc.decoy": "{red}{0}{default} が投げたデコイが爆発するまでに {green}{1}{default} 秒かかりました",
   "matchzy.pracc.damage": "{lightblue}{1}{default}（{green}{2}{default} 体力）に {red}{0}{default} のダメージ",
-  "matchzy.pracc.blind": "{lightblue}{0}{default} は {green}{1}{default} 秒間盲目になりました"
+  "matchzy.pracc.blind": "{lightblue}{0}{default} は {green}{1}{default} 秒間盲目になりました",
+  "matchzy.restore.queued": "Backup {0} will be restored when the match goes live (run the command again to restore it now).",
+  "matchzy.restore.incomplete": "Backup {0} has no complete round data, nothing was restored.",
+  "matchzy.cc.endmatchnomatch": "No match is loaded or running, so there is no match to end with a winner. Use .forceend without a team to reset.",
+  "matchzy.pm.importnadeinvalid": "Invalid lineup code: the position and angle must be 6 numbers.",
+  "matchzy.pm.lineupinvalid": "Lineup {0} has an invalid position or angle and cannot be loaded.",
+  "matchzy.pm.botsdisabled": "Bots are disabled on this server (-nobots), so practice bots cannot be added.",
+  "matchzy.pm.botserverfull": "The server is full, so no bot can be added (it would take the CSTV slot and stop GOTV).",
+  "matchzy.pm.nospawns": "No spawns found for this team on this map."
 }
