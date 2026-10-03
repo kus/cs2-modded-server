@@ -32,6 +32,7 @@
   "Prefs.HeadshotKillSound": "爆头音效",
   "Prefs.KnifeKillSound": "刀杀音效",
   "Prefs.HitSound": "命中音效",
+  "Prefs.NewModeSound": "新模式音效",
   "Prefs.OnlyHS": "仅爆头模式",
   "Prefs.HudMessages": "HUD 消息",
   "Prefs.DamageInfo": "伤害信息",
