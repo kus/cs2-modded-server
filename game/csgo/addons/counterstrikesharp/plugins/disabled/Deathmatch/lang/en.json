@@ -32,6 +32,7 @@
   "Prefs.HeadshotKillSound": "HS Kill Sound",
   "Prefs.KnifeKillSound": "Knife Kill Sound",
   "Prefs.HitSound": "Hit Sound",
+  "Prefs.NewModeSound": "New Mode Sound",
   "Prefs.OnlyHS": "Only Headshot",
   "Prefs.HudMessages": "Hud Messages",
   "Prefs.DamageInfo": "Damage Info",

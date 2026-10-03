@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v10.0": {
-      "MatchZy/0.9.0": {
+      "MatchZy/0.9.1": {
         "dependencies": {
           "CsvHelper": "30.0.1",
           "Dapper": "2.1.15",
@@ -243,7 +243,7 @@
     }
   },
   "libraries": {
-    "MatchZy/0.9.0": {
+    "MatchZy/0.9.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
