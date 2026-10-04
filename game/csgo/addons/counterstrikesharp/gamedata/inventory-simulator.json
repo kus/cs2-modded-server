@@ -126,5 +126,39 @@
       "linux": 168,
       "windows": 168
     }
+  },
+  "CChicken::InitPet": {
+    "signatures": {
+      "library": "server",
+      "windows": "40 55 56 41 56 48 83 EC ? 48 8B E9 4C 8B F2",
+      "linux": "55 48 89 E5 41 57 41 56 41 55 49 89 F5 41 54 53 48 89 FB 48 89 F7 48 81 EC"
+    }
+  },
+  "CCSPlayerController::GetPetChicken": {
+    "signatures": {
+      "library": "server",
+      "windows": "8B 91 ? ? ? ? 45 33 D2 83 FA ? 74 ? 48 8B 0D ? ? ? ? 48 85 C9 74 ? 83 FA ? 74 ? 8B C2 25 ? ? ? ? 44 8B C0 48 C1 E8 ? 4C 8B 0C C1 4D 85 C9 74 ? 41 81 E0 ? ? ? ? 49 6B C0 ? 49 03 C1 74 ? 39 50 ? 49 0F 45 C2 EB ? 49 8B C2 48 85 C0 74 ? 48 8B 00 C3 49 8B C2 C3 CC E9 ? ? ? ? CC CC CC CC CC CC CC CC CC CC CC 41 0F B7 40",
+      "linux": "8B 8F ? ? ? ? 83 F9 ? 74 ? 48 8B 35 ? ? ? ? 48 85 F6 74 ? 83 F9 ? 74 ? 0F B7 87 ? ? ? ? 48 89 C2 48 C1 EA ? 83 E2 ? 48 8B 14 D6 48 85 D2 74 ? 25 ? ? ? ? 48 6B C0 ? 48 01 D0 31 D2 3B 48 ? 75 ? 48 8B 10 48 89 D0 C3 31 D2 48 89 D0 C3 CC CC CC CC CC CC CC CC CC CC 48 85 F6"
+    }
+  },
+  "CCSPlayerController::SetPetChicken": {
+    "signatures": {
+      "library": "server",
+      "windows": "4C 8B C9 48 85 D2 74 ? 48 8B 42 ? 48 85 C0 74 ? 8B 50 ? B9 ? ? ? ? 8B 40 ? 44 8B C2 83 E0 ? 41 C1 E8 ? 44 2B C0 8B C2 23 C1 41 C1 E0 ? 83 FA ? 0F 45 C8 44 0B C1 45 89 81 ? ? ? ? C3 C7 81 ? ? ? ? ? ? ? ? C3 CC CC CC 40 55 41 56",
+      "linux": "48 85 F6 74 ? 48 8B 56 ? 48 85 D2 74 ? 8B 42 ? 8B 4A ? C1 E8 ? 83 E1 ? 29 C8 83 7A ? ? 74 ? 0F B7 52 ? 66 81 E2 ? ? C1 E0 ? 0F B7 D2 09 D0 89 87 ? ? ? ? C3 66 0F 1F 44 00 ? C7 87 ? ? ? ? ? ? ? ? C3 0F 1F 44 00 ? BA ? ? ? ? EB ? CC CC CC CC CC CC CC CC CC 55 48 8D 05"
+    }
+  },
+  "CCSChickenManager::ServerGamePostSimulate": {
+    "signatures": {
+      "library": "server",
+      "windows": "40 53 48 83 EC ? 48 83 3D ? ? ? ? ? 48 8B D9 0F 84",
+      "linux": "55 48 89 E5 41 55 41 54 53 48 83 EC ? 4C 8D 25 ? ? ? ? 49 83 3C 24 ? 74 ? 4C 8D 6F"
+    }
+  },
+  "CChicken::m_bCanRoam": {
+    "offsets": {
+      "windows": 13025,
+      "linux": 13737
+    }
   }
 }
