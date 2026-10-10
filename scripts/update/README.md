@@ -213,6 +213,15 @@ Every existing script was derived this way. It takes ten minutes and avoids gues
 - **Files inside plugin folders that look like config** (`map_config/`, `spawns/`, `lang/`) are
   upstream-owned and byte-identical to the release here, so "replace whole" is fine - but check
   step 3 before assuming that for a new mod.
+- **A leading `v` in the README version never matches**: detection strips non-digits from the
+  tag, so a row reading `` `v1.2.4.b3` `` compares against `1.2.4.b3` and reports an update
+  on every run, forever. jRandomSkills was the only row with a `v` and it did exactly that.
+  Keep the bare version in the table however upstream writes its tags.
+- **Trust the files, not the commit message, for what version the repo holds**: the
+  jRandomSkills row claimed `v1.2.4.b4`, a version that has never existed upstream, with no
+  such release or tag. Its binaries were byte-identical to v1.2.4.b3, so the label was simply
+  wrong and a run would have "updated" the repo backwards. Compare the tracked binaries
+  against the release before trusting a version string.
 - **A case-only rename that already reached a branch** must be undone on every branch, not
   just the one you noticed it on. While `master` tracked both names and `stage` tracked one,
   every macOS checkout of `master` showed a permanently modified file. Merging the fixed
@@ -305,6 +314,7 @@ downloadable asset (size `0` if unknown).
 | deathrun-manager | `plugins/deathrun-manager.sh` | Replaces `plugins/disabled/DeathrunManager` whole. The shipped `configs/plugins/DeathrunManager/DeathrunManager.json` is never written, only compared (new settings reported). Archive junk (`README-ME.txt`, `logs/`) ignored. |
 | RollTheDice | `plugins/rollthedice.sh` | Archive root `RollTheDice/`; replaces `plugins/disabled/RollTheDice` whole. `configs/plugins/RollTheDice/` not touched. |
 | CS2-FixRandomSpawn | `plugins/cs2-fixrandomspawn.sh` | Asset renamed to `CS2-FixRandomSpawn.zip` in 1.2.0 (`FixRandomSpawn.zip` before). 1.2.0 also restructured the archive to `plugins/` + `gamedata/`, relative to `addons/counterstrikesharp/`; the older flat layout is not supported. Plugin lives at `plugins/FixRandomSpawn` (not disabled) and is replaced whole, which also drops the stale plugin-local `gamedata/` the flat archive left behind. The top-level `gamedata/FixRandomSpawn.json` is upstream signature data and is replaced, because 1.2.0 renamed its keys and it has to match the dll. |
+| jRandomSkills | `plugins/jrandomskills.sh` | Asset is `jRandomSkills.v<version>.zip`, archive laid out relative to `addons/counterstrikesharp/` (`plugins/` + `gamedata/`). Plugin lives at `plugins/disabled/jRandomSkills` and is replaced whole, which drops the two `.pdb` files that v1.2.4.b3 no longer ships. Its `configs/` are byte-identical to upstream, so they are replaced rather than protected. Release tags carry a `v` prefix, so the README row must hold the bare version. |
 | cs2-quake-sounds | `plugins/cs2-quake-sounds.sh` | Archive root `QuakeSounds/`; replaces `plugins/disabled/QuakeSounds` whole. `configs/plugins/QuakeSounds/` not touched. |
 
 ## Files
