@@ -17,8 +17,9 @@
 # upstream added a new setting (0.8.12 > 0.8.13 added matchzy_demo_recording_enabled) it was
 # merged into both customised copies by hand; this script only reports new upstream files/settings.
 #
-# Known quirk: the archive ships lang/pt-PT.json while the repo tracks lang/pt-pt.json. On the
-# case-insensitive macOS filesystem (core.ignorecase=true) the copy just updates the tracked file.
+# Known quirk: upstream renamed lang/pt-pt.json to lang/pt-PT.json (0.9.0). The merge-copy never
+# deletes, so on Linux both names ended up tracked; pt-pt.json was untracked by hand. If upstream
+# renames a file by case again, untrack the old name (see "Case-only renames" in the README).
 
 PLUGIN_PATHS=(
     "game/csgo/addons/counterstrikesharp/plugins/disabled/MatchZy"

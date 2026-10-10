@@ -96,7 +96,7 @@ Getting up and running:
 
 Mod | Version | Why
 --- | --- | ---
-[Metamod:Source](https://www.metamodsource.net/downloads.php?branch=dev) | `2.0.0-1473` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
+[Metamod:Source](https://www.metamodsource.net/downloads.php?branch=dev) | `2.0.0-1474` | Sits between the Game and the Engine, and allows plugins to intercept calls that flow between
 [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp) | `1.0.376` | Attempts to implement a .NET Core scripting layer on top of a Metamod Source Plugin, allowing developers to create plugins that interact with the game server in a modern language (C#)
 [MultiAddonManager](https://github.com/Source2ZE/MultiAddonManager) | `1.6.2` | Allows you to use multiple workshop addons at once and have clients download them [How?](#i-want-to-permanently-enable-multi-addon-manager)
 [ServerListPlayersFix](https://github.com/Source2ZE/ServerListPlayersFix) | `2.0` | Fixes players not showing up in the server browser
@@ -122,7 +122,7 @@ Mod | Version | Why
 [CS2 Whitelist](https://github.com/PhantomYopta/CS2_WhiteList) | `1.0.0`| Restricts access to the server for SteamID members/employees listed in the whitelist. [How?](#enable-whitelist-so-only-a-list-of-people-can-play)
 [CS2 Executes](https://github.com/zwolof/cs2-executes) | `1.1.1` | CS2 implementation of executes. Based on the version for CS:GO by Splewis.
 [CS2 Advertisement](https://github.com/partiusfabaa/cs2-advertisement) | `1.0.8-recompile` | Allows you to show ads in chat/center/panel. [How?](#enable-advertisements)
-[CS2 Deathmatch](https://github.com/NockyCZ/CS2-Deathmatch) | `1.3.5` | Custom Deathmatch CS2 plugin (Includes custom spawnpoints, multicfg, gun selection, spawn protection, etc)
+[CS2 Deathmatch](https://github.com/NockyCZ/CS2-Deathmatch) | `1.3.6` | Custom Deathmatch CS2 plugin (Includes custom spawnpoints, multicfg, gun selection, spawn protection, etc)
 [OpenPrefirePrac](https://github.com/lengran/OpenPrefirePrac) | `0.1.47` | Multiple prefire practices on competitive maps and support multiplayer practicing simultaneously.
 [CS2-CustomVotes](https://github.com/imi-tat0r/CS2-CustomVotes) | `1.1.3` | A plugin for Counter-Strike 2 to create custom votes for settings.
 [deathrun-manager](https://github.com/leoskiline/cs2-deathrun-manager) | `0.5.1` | Deathrun Manager for CounterStrikeSharp Framework CS2.
@@ -130,7 +130,6 @@ Mod | Version | Why
 [jRandomSkills](https://github.com/Juzlus/jRandomSkills) | `v1.2.4.b4` | CS2, but every round is a SURPRISE. Inspiration from [NadeKings video](https://www.youtube.com/watch?v=OQQBUFB56Iw).
 [CS2FunMatchPlugin](https://github.com/TitaniumLithium/CS2FunMatchPlugin) | `1.1.1` | Random fun mode every round
 [RollTheDice](https://github.com/Kandru/cs2-roll-the-dice) | `26.07.1` | Roll the dice to get either a positive or negative effect for the current round.
-[CS2-FixRandomSpawn](https://github.com/qstage/CS2-FixRandomSpawn) | `1.1.4.1` | Fixes ConVar `mp_randomspawn` for any game mode.
 [CS2-MutualScoringPlayers](https://github.com/qstage/CS2-MutualScoringPlayers) | `1.0.3` | Keeps score of kills between players.
 [CS2WarcraftMod](https://github.com/Wngui/CS2WarcraftMod) | `3.3.5` | An open-source Warcraft mod for CS2 featuring a fully-fledged RPG system.
 [cs2-advanced-weapon-system](https://github.com/schwarper/cs2-advanced-weapon-system) | `1.11` | An advanced weapon system that gives full control over weapon attributes, dynamic adjustments to weapon behaviour, restrictions and advanced customisation.
@@ -141,7 +140,6 @@ Mod | Version | Why
 [SLAYER_Football](https://github.com/zakriamansoor47/SLAYER_Football) | `1.1` | Football in CS2.
 [SLAYER_Revive](https://github.com/zakriamansoor47/SLAYER_Revive) | `1.3.2` | Revive Your Teammates.
 [cs2-TeleportKill](https://github.com/rodopoulos1/cs2-TeleportKill) | `1.0.1` |  Instantly teleport to the location of the enemy you kill.
-[CS2-BotAI](https://github.com/Austinbots/CS2-BotAI) | `1.0` | Improves the built in bots AI and also makes them run with a gun intead of a knife or nade.
 
 ### Updating the mods in this repo
 

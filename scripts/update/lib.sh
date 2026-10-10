@@ -319,6 +319,28 @@ extract_asset() {
     printf '%s\n' "$dir"
 }
 
+# Prints the first of several candidate directories that exists, for releases whose
+# archive root moves between versions. Fails if none of them do, so a third layout is
+# still caught rather than silently skipped.
+# In dry-run nothing has been extracted, so the first candidate is assumed and reported.
+# Use as: root=$(pick_dir "$x/new/layout" "$x/old/layout")
+pick_dir() {
+    local d
+    if is_dry; then
+        dry "use the first of these that exists: $*"
+        printf '%s\n' "$1"
+        return 0
+    fi
+    for d in "$@"; do
+        if [ -d "$d" ]; then
+            info "archive root: $d"
+            printf '%s\n' "$d"
+            return 0
+        fi
+    done
+    die "none of these directories exist in the extracted release, so the archive layout changed again: $*"
+}
+
 # Deletes a directory produced by extract_asset.
 remove_extracted() {
     local d="$1"
