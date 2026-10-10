@@ -503,6 +503,27 @@ verify_containment() {
     return "$bad"
 }
 
+# Two paths differing only in case cannot coexist on a case-insensitive filesystem, so
+# committing both breaks every macOS checkout: git picks one, and the other is reported
+# modified forever, and discarding it just flips which one is dirty. The Linux runner can
+# hold both quite happily, which is exactly why this has to be checked rather than noticed.
+# It happens when upstream renames a file by case only and a merge-style copy adds the new
+# name without removing the old one (MatchZy renamed lang/pt-pt.json to lang/pt-PT.json in
+# 0.9.0). Covers tracked and new-but-unignored files, because this runs before staging.
+verify_no_case_duplicates() {
+    local all dupes d
+    all=$(git ls-files --cached --others --exclude-standard)
+    dupes=$(printf '%s\n' "$all" | sort -f | uniq -di)
+    [ -z "$dupes" ] && return 0
+    err "these paths differ only in case, which breaks checkouts on macOS:"
+    while IFS= read -r d; do
+        [ -n "$d" ] || continue
+        printf '%s\n' "$all" | grep -ixF "$d" | sed 's/^/          /' >&3
+    done <<< "$dupes"
+    err "upstream probably renamed a file by case. Delete the stale name from the repo, then re-run."
+    return 1
+}
+
 # True if at least one changed path is inside PLUGIN_PATHS (i.e. the update changed files).
 plugin_files_changed() {
     local p o

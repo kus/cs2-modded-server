@@ -199,7 +199,8 @@ Every existing script was derived this way. It takes ten minutes and avoids gues
   config/vdf files and the Linux copies (LF endings, Linux paths) are the ones the repo keeps.
   Only replace the binaries the manual updates replaced; the per-platform `.vdf`s in the repo
   live elsewhere (`addons/windows/`, `addons/surf/`) and are managed by hand.
-- **Case-only renames**: the repo is updated on both macOS (`core.ignorecase=true`) and Linux
+- **Case-only renames** (now guarded, see `verify_no_case_duplicates`, so a run refuses to
+  commit one): the repo is updated on both macOS (`core.ignorecase=true`) and Linux
   (the GitHub Action), so a file must only ever be tracked under one case. MatchZy renamed
   `lang/pt-pt.json` to `lang/pt-PT.json`; the Action's merge-copy added `pt-PT.json` next to the
   old file, and on macOS the two then fought over one path (a permanent "modified" file that
@@ -212,6 +213,14 @@ Every existing script was derived this way. It takes ten minutes and avoids gues
 - **Files inside plugin folders that look like config** (`map_config/`, `spawns/`, `lang/`) are
   upstream-owned and byte-identical to the release here, so "replace whole" is fine - but check
   step 3 before assuming that for a new mod.
+- **A case-only rename that already reached a branch** must be undone on every branch, not
+  just the one you noticed it on. While `master` tracked both names and `stage` tracked one,
+  every macOS checkout of `master` showed a permanently modified file. Merging the fixed
+  branch in removes the stale entry, but since both names were one physical file the merge
+  deletes it from disk, so finish with `git checkout -- <surviving path>`. If the merge
+  refuses because the dirty file is the one being deleted, discard it first with
+  `git checkout -- <stale path>`, which flips the dirtiness onto the surviving name, then
+  merge. Verify with `git ls-files | sort -f | uniq -di`, which must print nothing.
 - **The archive root can move between versions**: CS2 Deathmatch shipped
   `Deathmatch/{plugins,shared}/` up to 1.3.5 and the standard
   `addons/counterstrikesharp/{plugins,shared}/` from 1.3.6, with identical file names
@@ -264,6 +273,7 @@ checkout to avoid re-downloading. Delete the clone afterwards.
 | `copy_file <src> <dest>` | Copy one file (parent directory created) |
 | `empty_dir <dir>` | Delete everything inside `<dir>`, keep the directory |
 | `remove_path <path>` | Delete a file or directory; no error if already absent |
+| `verify_no_case_duplicates` | Run automatically after every plugin's apply: fails the run before committing if two paths differ only in case. Not called from plugin scripts. |
 | `warn_cfg_dir_changes <archive dir> <repo dir> [existing-only]` | Heads-up only: lists new upstream config files, repo files upstream no longer ships, and new settings in files present on both sides. Writes nothing. |
 | `plugins/<slug>.ignore` (file, optional) | One setting key per line (`#` comments allowed). Keys listed here are never reported by the two helpers above - add a key once it has been reviewed (ported, or removed from your config on purpose) so it stops showing up on every update. |
 | `warn_new_settings <archive file> <repo file>` | Heads-up only: lists setting keys (`.cfg` first tokens / JSON keys) present upstream but missing from the repo's customised copy |

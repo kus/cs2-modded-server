@@ -260,6 +260,11 @@ process_mod() {   # $1 name, $2 url, $3 current version
         STOP_RUN=1; return 0
     fi
 
+    if ! verify_no_case_duplicates; then
+        fail_mod "the update produced paths differing only in case - not committing, because that breaks every macOS checkout of the branch. Delete the stale name, then re-run. Reset with 'git checkout -- . && git clean -fd game/'."
+        STOP_RUN=1; return 0
+    fi
+
     if ! plugin_files_changed; then
         fail_mod "the update did not change any tracked file under PLUGIN_PATHS ($(_owned_paths_str)) - the release may ship identical files, or the plugin script copies to the wrong place. Nothing committed."
         return 0
