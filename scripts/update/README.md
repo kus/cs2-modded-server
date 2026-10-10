@@ -18,7 +18,26 @@ relative paths work from anywhere inside the repo):
 ./scripts/update/update.sh                # apply every available update, one commit per mod
 ./scripts/update/update.sh --only "Inventory Simulator" --only counterstrikesharp   # limit to some mods (name or slug)
 ./scripts/update/update.sh --list         # mods, current versions, slugs and which have an update script
+./scripts/update/update.sh --no-pull      # skip the pull a local run starts with
 ```
+
+**A local run pulls first.** The GitHub Action commits mod updates straight to `stage`,
+so a local checkout goes stale fast. Before reading any version the script fetches and
+fast-forwards the current branch, otherwise it would read the stale README, decide mods
+are outdated when the Action has already done them, and redo the work. It only ever
+fast-forwards, never merges or rebases:
+
+| Situation | What happens |
+| --- | --- |
+| Up to date | Nothing, just says so |
+| Behind, clean tree | Fast-forwards, then carries on |
+| Behind, dirty tree | Warns that versions may be stale and does not pull (a real run stops on the dirty tree anyway) |
+| Diverged from the remote | Stops, so you resolve it by hand |
+| No upstream, or detached HEAD | Warns and carries on |
+| Inside GitHub Actions | Skipped; the runner already checked out the exact ref |
+
+`--no-pull` runs against the local checkout as-is, for working offline or on a branch
+you do not want moved.
 
 Requirements: `bash` (3.2+ is fine), `git`, `curl`, `jq`, `unzip`, `tar`, `rsync`
 (macOS openrsync works). A **clean working tree** is required for a real run because
@@ -180,9 +199,13 @@ Every existing script was derived this way. It takes ten minutes and avoids gues
   config/vdf files and the Linux copies (LF endings, Linux paths) are the ones the repo keeps.
   Only replace the binaries the manual updates replaced; the per-platform `.vdf`s in the repo
   live elsewhere (`addons/windows/`, `addons/surf/`) and are managed by hand.
-- **Case-insensitive filesystem**: MatchZy ships `lang/pt-PT.json`, the repo tracks
-  `lang/pt-pt.json`. On macOS (`core.ignorecase=true`) a merge-copy just updates the tracked
-  file; a replace-whole would try to rename it. On Linux you would get both files.
+- **Case-only renames**: the repo is updated on both macOS (`core.ignorecase=true`) and Linux
+  (the GitHub Action), so a file must only ever be tracked under one case. MatchZy renamed
+  `lang/pt-pt.json` to `lang/pt-PT.json`; the Action's merge-copy added `pt-PT.json` next to the
+  old file, and on macOS the two then fought over one path (a permanent "modified" file that
+  discard just flips). The stale `pt-pt.json` was untracked; check with
+  `git ls-files | sort -f | uniq -di` (must print nothing) and untrack the stale name with
+  `git rm --cached` (a plain `git rm` on macOS deletes the surviving file too).
 - **Same link text elsewhere in the README**: the version bump only matches the row in the
   `Mod | Version | Why` table (anchored at line start), because e.g. the CounterStrikeSharp
   link also appears in prose.

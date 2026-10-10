@@ -9,6 +9,10 @@
 #   ./scripts/update/update.sh --dry-run    only report what would happen (no downloads, no changes)
 #   ./scripts/update/update.sh --only NAME  restrict to one mod (README name or slug; repeatable)
 #   ./scripts/update/update.sh --list       list mods, slugs and whether an update script exists
+#   ./scripts/update/update.sh --no-pull    skip the "git pull" the local run starts with
+#
+# Run locally it fast-forwards the branch from its remote first, so it never redoes
+# work the GitHub Action has already committed. Inside the Action it does not.
 #
 # See scripts/update/README.md for the full description and how to add plugins.
 # =============================================================================
@@ -44,17 +48,19 @@ list_mods() { ( set +o pipefail; extract_mods ); }
 # ----------------------------------------------------------------------------- args
 DRY_RUN=0
 LIST_ONLY=0
+NO_PULL=0
 ONLY=()
 STOP_RUN=0
 
 usage() {
-    sed -n '2,14p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'
+    sed -n '2,18p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'
 }
 
 while [ $# -gt 0 ]; do
     case "$1" in
         -n|--dry-run) DRY_RUN=1 ;;
         --list)       LIST_ONLY=1 ;;
+        --no-pull)    NO_PULL=1 ;;
         --only)       [ $# -ge 2 ] || { usage; exit 2; }; ONLY+=("$2"); shift ;;
         -h|--help)    usage; exit 0 ;;
         *)            echo "unknown argument: $1" >&2; usage; exit 2 ;;
@@ -76,6 +82,61 @@ selected() {   # $1 name, $2 slug -> true if no --only given or it matches
     return 1
 }
 
+# ----------------------------------------------------------------------------- remote sync
+# Bring the checkout up to date before reading any versions.
+#
+# The GitHub Action commits mod updates straight to the branch, so a local checkout
+# goes stale quickly. Without this, a local run reads the stale README, decides mods
+# are out of date when the Action has already updated them, and redoes the work.
+#
+# Skipped inside GitHub Actions: the runner has just checked out the exact ref, and
+# fetching there would only risk pulling in a commit the job did not intend to build on.
+sync_with_remote() {
+    local branch remote upstream behind ahead
+
+    if [ -n "${GITHUB_ACTIONS:-}" ]; then
+        info "running inside GitHub Actions, skipping the pull"
+        return 0
+    fi
+    if [ "$NO_PULL" = 1 ]; then
+        info "--no-pull given, running against the local checkout as-is"
+        return 0
+    fi
+
+    branch=$(git rev-parse --abbrev-ref HEAD)
+    if [ "$branch" = "HEAD" ]; then
+        warn "detached HEAD, skipping the pull"
+        return 0
+    fi
+
+    upstream=$(git rev-parse --abbrev-ref --symbolic-full-name '@{u}' 2>/dev/null) || {
+        warn "no upstream configured for '$branch', skipping the pull. Versions below may be stale."
+        return 0
+    }
+    remote=$(git config "branch.$branch.remote" 2>/dev/null || echo origin)
+
+    step "fetching $remote"
+    git fetch --quiet "$remote" || die "git fetch $remote failed. Fix the network or pass --no-pull."
+
+    read -r behind ahead <<< "$(git rev-list --left-right --count "$upstream...HEAD")"
+
+    if [ "$behind" = 0 ]; then
+        info "up to date with $upstream"
+        return 0
+    fi
+    if [ "$ahead" != 0 ]; then
+        die "'$branch' has diverged from $upstream: $ahead local commit(s), $behind remote. Merge or rebase by hand, then re-run."
+    fi
+    if ! tree_is_clean; then
+        warn "$behind commit(s) behind $upstream, but the working tree is not clean so it was not pulled. Versions below may be stale."
+        return 0
+    fi
+
+    step "fast-forwarding $behind commit(s) from $upstream"
+    git merge --ff-only --quiet "$upstream" || die "fast-forward to $upstream failed. Resolve by hand, then re-run."
+    info "now at $(git rev-parse --short HEAD)"
+}
+
 # ----------------------------------------------------------------------------- preflight
 preflight() {
     require_tools bash git curl jq unzip tar rsync awk sed grep find cut
@@ -90,12 +151,13 @@ preflight() {
     log "repo:   $(pwd)"
     log "branch: $(git rev-parse --abbrev-ref HEAD)"
     if is_dry; then
-        log "mode:   DRY RUN (nothing will be downloaded, changed or committed)"
+        log "mode:   DRY RUN (no downloads, no mod changes, no commits; still pulls first)"
         tree_is_clean || warn "working tree is not clean - a real run would refuse to start:"$'\n'"$(git status --short | sed 's/^/        /')"
     else
         log "mode:   APPLY"
         tree_is_clean || die "working tree is not clean - commit or stash first:"$'\n'"$(git status --short | sed 's/^/        /')"
     fi
+    sync_with_remote
     log ""
 }
 
