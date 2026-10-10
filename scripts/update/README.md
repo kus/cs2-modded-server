@@ -212,6 +212,12 @@ Every existing script was derived this way. It takes ten minutes and avoids gues
 - **Files inside plugin folders that look like config** (`map_config/`, `spawns/`, `lang/`) are
   upstream-owned and byte-identical to the release here, so "replace whole" is fine - but check
   step 3 before assuming that for a new mod.
+- **The archive root can move between versions**: CS2 Deathmatch shipped
+  `Deathmatch/{plugins,shared}/` up to 1.3.5 and the standard
+  `addons/counterstrikesharp/{plugins,shared}/` from 1.3.6, with identical file names
+  inside. The `require_*` checks caught it before anything was written, so the failure
+  was clean, but the run still stopped. Use `pick_dir` to accept both roots rather than
+  hard coding one, and keep the oldest supported root as the last candidate.
 - **A README bump done in a separate commit** (cs2-quake-sounds 26.08.1) means the manual
   commit's file set lacks `README.md`; the script always bumps it in the same commit.
 
@@ -250,6 +256,7 @@ checkout to avoid re-downloading. Delete the clone afterwards.
 | --- | --- |
 | `extract_asset <glob>` | Extracts the matched archive into a fresh `EXTRACT_DIR/<archive name>/` and prints that path |
 | `asset_path <glob>` | Prints the path of the downloaded archive |
+| `pick_dir <dir> [dir...]` | Prints the first candidate that exists, for releases whose archive root moves between versions. Dies if none do, so a third layout is still caught. In dry-run it assumes the first. |
 | `remove_extracted <dir>` | Deletes a directory made by `extract_asset` |
 | `require_dir <path>`, `require_file <path>` | Fail unless it exists (reported as `would verify` for extracted paths in dry-run) |
 | `sync_dir <src> <dest>` | `rsync -rhavz --exclude "._*" --exclude ".DS_Store" --partial --stats src/ dest/` (merge, never deletes at dest) |
@@ -284,7 +291,7 @@ downloadable asset (size `0` if unknown).
 | CS2 Retakes | `plugins/cs2-retakes.sh` | Uses the full `RetakesPlugin-<v>.zip` (not the `-no-map-configs` one). Replaces `plugins/disabled/RetakesPlugin` (the plugin is kept disabled in this repo, so it is NOT at `plugins/RetakesPlugin`) and `shared/RetakesPluginShared`. |
 | MatchZy | `plugins/matchzy.sh` | Plain `MatchZy-<v>.zip` (not the `-with-cssharp-*` bundles). Merge-copies the plugin folder over `plugins/disabled/MatchZy` (nothing deleted). `game/csgo/cfg/MatchZy/` and `custom_files_example/cfg/MatchZy/` are customised and never written; new upstream files/settings are only reported for a manual port. |
 | GunGame | `plugins/gungame.sh` | Merge-copies `plugins/disabled/GG2` and `shared/GunGameAPI` (old leftovers like `Dapper.dll`/`runtimes/` are kept, as the manual updates did). `game/csgo/cfg/gungame/` is customised and never written; new upstream files, removed files and new settings are reported for a manual port. |
-| CS2 Deathmatch | `plugins/cs2-deathmatch.sh` | Asset is always `Deathmatch.zip`, archive root `Deathmatch/`. Replaces `plugins/disabled/Deathmatch` and `shared/DeathmatchAPI` whole. `configs/plugins/Deathmatch/` and `gamedata/Deathmatch.json` are not shipped and not touched. |
+| CS2 Deathmatch | `plugins/cs2-deathmatch.sh` | Asset is always `Deathmatch.zip`. Archive root is `addons/counterstrikesharp/` from 1.3.6 and `Deathmatch/` before it; `pick_dir` accepts either. Replaces `plugins/disabled/Deathmatch` and `shared/DeathmatchAPI` whole. `configs/plugins/Deathmatch/` and `gamedata/Deathmatch.json` are not shipped and not touched. |
 | deathrun-manager | `plugins/deathrun-manager.sh` | Replaces `plugins/disabled/DeathrunManager` whole. The shipped `configs/plugins/DeathrunManager/DeathrunManager.json` is never written, only compared (new settings reported). Archive junk (`README-ME.txt`, `logs/`) ignored. |
 | RollTheDice | `plugins/rollthedice.sh` | Archive root `RollTheDice/`; replaces `plugins/disabled/RollTheDice` whole. `configs/plugins/RollTheDice/` not touched. |
 | cs2-quake-sounds | `plugins/cs2-quake-sounds.sh` | Archive root `QuakeSounds/`; replaces `plugins/disabled/QuakeSounds` whole. `configs/plugins/QuakeSounds/` not touched. |
