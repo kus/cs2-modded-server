@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v10.0": {
-      "RollTheDice/26.07.1": {
+      "RollTheDice/1.0.0": {
         "runtime": {
           "RollTheDice.dll": {}
         }
@@ -14,7 +14,7 @@
     }
   },
   "libraries": {
-    "RollTheDice/26.07.1": {
+    "RollTheDice/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
