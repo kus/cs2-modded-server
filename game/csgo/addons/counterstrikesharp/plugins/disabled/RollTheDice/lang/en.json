@@ -31,6 +31,8 @@
     "command.givedice.noplayers": "{purple}[RollTheDice] {default}No player found!",
     "command.givedice.toomanyplayers": "{purple}[RollTheDice] {default}Too many players found. Please try again!",
     "command.givedice.nodicefound": "{purple}[RollTheDice] {default}Specific Dice not found. Please try again!",
+    "command.givedice.ambiguousdice": "{purple}[RollTheDice] {default}Multiple dices match. Be more specific: {green}{dices}",
+    "command.givedice.success": "{purple}[RollTheDice] {default}Gave {green}{dice} {default}to {green}{player}{default}.",
     "command.givedice.availabledices": "{purple}[RollTheDice] {default}The following dices are available:",
     "dice_ChangeName_player": "You are now named {green}{randomName}{default}!",
     "dice_ChangeName_name": "Changed name to {randomName}",
