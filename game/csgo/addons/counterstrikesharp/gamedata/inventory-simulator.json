@@ -34,6 +34,20 @@
       "linux": "55 48 89 E5 41 57 41 56 41 55 41 54 53 48 83 EC ? 83 FA"
     }
   },
+  "CCSInventoryManager::GetBaseItemForTeam": {
+    "signatures": {
+      "library": "server",
+      "windows": "41 83 F8 ? 77 ? 83 FA",
+      "linux": "83 FA ? 77 ? 83 FE ? 77"
+    }
+  },
+  "CInventoryManager::GetReferenceEconItem": {
+    "signatures": {
+      "library": "server",
+      "windows": "48 89 6C 24 ? 48 89 74 24 ? 41 56 48 83 EC ? 0F B7 F2",
+      "linux": "55 0F B6 C9 48 89 E5 41 57"
+    }
+  },
   "CEconItemView::CEconItemView": {
     "signatures": {
       "library": "server",
