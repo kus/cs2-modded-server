@@ -2,6 +2,9 @@
   "none": "Nenhuma",
   "none_desc": "Você não tem nenhuma habilidade",
 
+  "adrenaline": "Adrenalina",
+  "adrenaline_desc": "Seus acertos roubam a velocidade dos inimigos",
+
   "aimbot": "Aimbot",
   "aimbot_desc": "Toda bala que você acertar conta como um hs",
 
@@ -26,6 +29,7 @@
   "areareaper_used_info": "Seu poder já foi usado.",
   "areareaper_teammates_info": "A área {0} foi bloqueada para plantar a bomba.",
   "areareaper_bombsite_disabled": "Este local de bomba foi desativado!",
+  "areareaper_owner_dead_info": "O Ceifador de Bombsite morreu: a área {0} está aberta de novo!",
 
   "armored": "Super Tiro",
   "armored_desc": "Seu dano é multiplicado por um valor aleatório",
@@ -67,6 +71,13 @@
   "bounty_enemy_info": "Puseram {0}$ de recompensa na sua cabeça.",
   "bounty_claimed_info": "Você matou '{0}' e levou {1}$.",
 
+  "bowlegs": "Pernas Tortas",
+  "bowlegs_desc": "Inverte os controles de movimento de um inimigo escolhido",
+  "bowlegs_select_info": "Escolha um jogador:",
+  "bowlegs_player_info": "'{0}' agora anda ao contrário.",
+  "bowlegs_enemy_info": "Seus controles estão invertidos e você tropeça.",
+  "bowlegs_disable_info": "Suas pernas voltaram ao normal.",
+
   "bunnyhop": "Coelho",
   "bunnyhop_desc": "Você ganha \"BunnyHop\" automático",
 
@@ -94,6 +105,9 @@
 
   "chillout": "Esqueci a Senha",
   "chillout_desc": "Plantar a bomba leva significativamente mais tempo",
+
+  "coins": "Chuva de Moedas",
+  "coins_desc": "Inimigos mortos soltam moedas no valor da recompensa",
 
   "cutter": "Corte Rápido",
   "cutter_desc": "Você mata instantaneamente com a faca",
@@ -150,6 +164,9 @@
   "dwarf": "Anão",
   "dwarf_desc": "Sua altura agora é aleatória",
   "dwarf_desc2": "Seu multiplicador de altura é: {0}x",
+
+  "echo": "Eco",
+  "echo_desc": "Suas granadas são jogadas de novo depois de explodir",
 
   "empgrenade": "Granada EMP",
   "empgrenade_desc": "Quem se ferir com sua granada perde o radar e a mira por um tempo",
@@ -217,6 +234,10 @@
   "giant_enemy_info": "Você foi aumentado para {0}x o tamanho normal.",
   "giant_player_info": "Você aumentou o jogador '{0}' para {1}x o tamanho normal.",
   "giant_select_info": "Selecione um jogador para aumentar:",
+
+  "glasscannon": "Canhão de Vidro",
+  "glasscannon_desc": "Você começa com menos vida, mas causa mais dano",
+  "glasscannon_hud": "Vida máx.: {0} | Dano: +{1}%",
 
   "glaz": "Smoke Transparente",
   "glaz_desc": "Smokes tornam-se transparentes para você",
@@ -393,6 +414,14 @@
   "ninja": "Ninja",
   "ninja_desc": "Ficar parado aumenta sua invisibilidade em 33%, agachar em 33%, e segurar uma faca em 33%",
 
+  "partner": "Parceiro",
+  "partner_desc": "Fique perto de um aliado escolhido para regenerar a vida dos dois",
+  "partner_select_info": "Escolha um aliado:",
+  "partner_player_info": "'{0}' agora é seu parceiro.",
+  "partner_teammate_info": "'{0}' escolheu você como parceiro.",
+  "partner_no_teammates": "Nenhum aliado para escolher.",
+  "partner_dead_info": "Seu parceiro morreu",
+
   "nonades": "Imune a Granadas",
   "nonades_desc": "Granadas não causam dano a você",
 
@@ -416,6 +445,11 @@
   "phoenix_desc": "Você tem uma chance aleatória de renascer após a morte",
   "phoenix_desc2": "Sua chance de renascer após a morte: {0}%",
   "phoenix_respawn": "Você foi ressuscitado das cinzas graças ao poder de: CHATCOLORS.REDPhoenix",
+
+  "pickpocket": "Batedor de Carteira",
+  "pickpocket_desc": "Suas balas fazem inimigos derrubarem granadas ativas",
+  "pickpocket_desc2": "Chance de o inimigo atingido derrubar uma granada: {0}%",
+  "pickpocket_enemy_info": "Uma granada caiu do seu bolso!",
 
   "psychicdefusing": "Desarme Psíquico",
   "psychicdefusing_desc": "Quando você está proximo da bomba, começa a desarmá-la automaticamente",
@@ -475,6 +509,7 @@
   "reactivearmor": "Armadura Reativa",
   "reactivearmor_desc": "A armadura absorve o primeiro dano recebido",
 
+
   "regeneration": "Regeneração",
   "regeneration_desc": "Você restaura vida a cada poucos segundos",
 
@@ -531,6 +566,9 @@
   "soldier_desc": "Seus tiros causam mais dano",
   "soldier_desc2": "Seu multiplicador de dano é: {0}x",
 
+  "soulthrower": "Lançador de Almas",
+  "soulthrower_desc": "As almas dos inimigos mortos voam e explodem ao bater",
+
   "soundmaker": "Criador de Som",
   "soundmaker_desc": "De vez em quando, você ouve gritos de jogadores",
 
@@ -571,6 +609,12 @@
   "throwingknife": "Faca de Arremesso",
   "throwingknife_desc": "Clique em [css_useSkill] para lançar uma faca. Mas cuidado com os outros",
 
+  "thundergod": "Deus do Trovão",
+  "thundergod_desc": "Sua decoy atinge inimigos próximos com raios",
+
+  "titan": "Titã",
+  "titan_desc": "Você cresce, ganha muita vida e causa mais dano",
+
   "toxicsmoke": "Smoke Tóxica",
   "toxicsmoke_desc": "Suas smokes causam dano",
 
@@ -587,6 +631,7 @@
   "voodoo_desc": "O inimigo que você marcar também recebe parte do dano que você leva",
   "voodoo_select_info": "Escolha um jogador:",
   "voodoo_player_info": "Você ligou '{0}' ao seu vodu.",
+  "voodoo_enemy_info": "Um inimigo fez de você o boneco de vodu dele: quando ele leva dano, você também leva.",
 
   "wallhack": "Wallhack",
   "wallhack_desc": "Você pode ver inimigos através das paredes",

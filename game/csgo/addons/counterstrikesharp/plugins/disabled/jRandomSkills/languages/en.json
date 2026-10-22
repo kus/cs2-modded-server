@@ -2,6 +2,9 @@
   "none": "None",
   "none_desc": "You have no skill",
 
+  "adrenaline": "Adrenaline",
+  "adrenaline_desc": "Hitting enemies steals their speed",
+
   "aimbot": "Aimbot",
   "aimbot_desc": "Every bullet you hit counts as a headshot",
 
@@ -26,6 +29,7 @@
   "areareaper_used_info": "Your skill has already been used.",
   "areareaper_teammates_info": "Bombsite {0} has been blocked for planting.",
   "areareaper_bombsite_disabled": "This bombsite has been disabled!",
+  "areareaper_owner_dead_info": "The Zone Reaper died: bombsite {0} is open again!",
 
   "armored": "Armored",
   "armored_desc": "You have a random damage taken multiplier",
@@ -67,6 +71,13 @@
   "bounty_enemy_info": "A {0}$ bounty was placed on your head.",
   "bounty_claimed_info": "You killed '{0}' and claimed {1}$.",
 
+  "bowlegs": "Bowlegs",
+  "bowlegs_desc": "Reverses a chosen enemy's movement keys",
+  "bowlegs_select_info": "Choose a player:",
+  "bowlegs_player_info": "'{0}' now moves the opposite way.",
+  "bowlegs_enemy_info": "Your controls are reversed and you stumble.",
+  "bowlegs_disable_info": "Your legs are back to normal.",
+
   "bunnyhop": "Bunny",
   "bunnyhop_desc": "You get auto \"BunnyHop\"",
 
@@ -94,6 +105,9 @@
 
   "chillout": "Chillout",
   "chillout_desc": "Planting the bomb takes significantly longer",
+
+  "coins": "Coins",
+  "coins_desc": "Enemies you kill drop coins worth their kill reward",
 
   "cutter": "Cutter",
   "cutter_desc": "Instant kill with a knife",
@@ -143,6 +157,9 @@
   "dwarf": "Dwarf",
   "dwarf_desc": "Random character size at the start of the round",
   "dwarf_desc2": "Your size multiplier is: {0}x",
+
+  "echo": "Echo",
+  "echo_desc": "Your grenades are thrown again after they go off",
 
   "empgrenade": "EMP Grenade",
   "empgrenade_desc": "Anyone hurt by your grenade loses their radar and crosshair for a while",
@@ -210,6 +227,10 @@
   "giant_enemy_info": "You have been enlarged to {0}x your normal size.",
   "giant_player_info": "You enlarged player '{0}' to {1}x their normal size.",
   "giant_select_info": "Select a player to enlarge:",
+
+  "glasscannon": "Glass Cannon",
+  "glasscannon_desc": "You start with less health but deal extra damage",
+  "glasscannon_hud": "Max HP: {0} | Damage: +{1}%",
 
   "glaz": "Glaz",
   "glaz_desc": "You can see through smoke grenades",
@@ -393,6 +414,14 @@
   "ninja": "Ninja",
   "ninja_desc": "Standing still increases your invisibility by 33%, crouching by 33%, and holding a knife by 33%",
 
+  "partner": "Partner",
+  "partner_desc": "Stay close to a chosen teammate to regenerate both of your health",
+  "partner_select_info": "Choose a teammate:",
+  "partner_player_info": "'{0}' is now your partner.",
+  "partner_teammate_info": "'{0}' chose you as their partner.",
+  "partner_no_teammates": "No teammates to choose.",
+  "partner_dead_info": "Your partner is dead",
+
   "nonades": "No-Nades",
   "nonades_desc": "Grenades deal no damage to you",
 
@@ -416,6 +445,11 @@
   "phoenix_desc": "You have a random chance to respawn after death",
   "phoenix_desc2": "Your chance to respawn after death: {0}%",
   "phoenix_respawn": "You have been resurrected from the ashes thanks to the power of: CHATCOLORS.REDPhoenix",
+
+  "pickpocket": "Pickpocket",
+  "pickpocket_desc": "Your bullets can make enemies drop live grenades",
+  "pickpocket_desc2": "Chance to make the enemy you hit drop a grenade: {0}%",
+  "pickpocket_enemy_info": "A grenade fell out of your pocket!",
 
   "psychicdefusing": "Psychic Defusing",
   "psychicdefusing_desc": "When you are near the bomb, you start defusing it",
@@ -475,6 +509,7 @@
   "reactivearmor": "Reactive Armor",
   "reactivearmor_desc": "Armor absorbs the first damage taken",
 
+
   "regeneration": "Regeneration",
   "regeneration_desc": "You restore health every few seconds",
 
@@ -531,6 +566,9 @@
   "soldier_desc": "You have a random damage multiplier",
   "soldier_desc2": "Your damage multiplier is: {0}x",
 
+  "soulthrower": "Soul Thrower",
+  "soulthrower_desc": "Killed enemies' souls fly forward and explode on impact",
+
   "soundmaker": "Soundmaker",
   "soundmaker_desc": "Every now and then, you hear player screams",
 
@@ -571,6 +609,12 @@
   "throwingknife": "Throwing Knife",
   "throwingknife_desc": "Click [css_useSkill] to throw a knife. But watch out for others",
 
+  "thundergod": "Thunder God",
+  "thundergod_desc": "Your decoy strikes nearby enemies with lightning",
+
+  "titan": "Titan",
+  "titan_desc": "You grow bigger, with more health and damage",
+
   "toxicsmoke": "Toxic Smoke",
   "toxicsmoke_desc": "Your smoke grenades deal damage",
 
@@ -587,6 +631,7 @@
   "voodoo_desc": "The enemy you mark also takes part of the damage you take",
   "voodoo_select_info": "Choose a player:",
   "voodoo_player_info": "You bound '{0}' to your voodoo.",
+  "voodoo_enemy_info": "An enemy made you their voodoo doll: when they take damage, you take some too.",
 
   "wallhack": "Wallhack",
   "wallhack_desc": "You can see enemies through walls",

@@ -2,6 +2,9 @@
   "none": "Keine",
   "none_desc": "Du hast keine Fertigkeit",
 
+  "adrenaline": "Adrenalin",
+  "adrenaline_desc": "Treffer stehlen Gegnern ihre Geschwindigkeit",
+
   "aimbot": "Aimbot",
   "aimbot_desc": "Jede Kugel, die du triffst, zählt als Kopfschuss",
 
@@ -26,6 +29,7 @@
   "areareaper_used_info": "Deine Fähigkeit wurde bereits eingesetzt.",
   "areareaper_teammates_info": "Bereich {0} wurde für das Pflanzen der Bombe gesperrt.",
   "areareaper_bombsite_disabled": "Dieser Bombenplatz wurde deaktiviert!",
+  "areareaper_owner_dead_info": "Der Zone Reaper ist tot: Bereich {0} ist wieder offen!",
 
   "armored": "Gepanzert",
   "armored_desc": "Du hast einen zufälligen Schadensmultiplikator",
@@ -67,6 +71,13 @@
   "bounty_enemy_info": "Auf deinen Kopf wurden {0}$ ausgesetzt.",
   "bounty_claimed_info": "Du hast '{0}' getötet und {1}$ kassiert.",
 
+  "bowlegs": "O-Beine",
+  "bowlegs_desc": "Kehrt die Bewegungstasten eines ausgewählten Gegners um",
+  "bowlegs_select_info": "Wähle einen Spieler:",
+  "bowlegs_player_info": "'{0}' läuft jetzt in die Gegenrichtung.",
+  "bowlegs_enemy_info": "Deine Steuerung ist vertauscht und du stolperst.",
+  "bowlegs_disable_info": "Deine Beine sind wieder normal.",
+
   "bunnyhop": "Hase",
   "bunnyhop_desc": "Du erhältst automatisch bunnyhop",
 
@@ -94,6 +105,9 @@
 
   "chillout": "Chillout",
   "chillout_desc": "Das Platzieren der Bombe dauert deutlich länger",
+
+  "coins": "Münzregen",
+  "coins_desc": "Getötete Gegner lassen Münzen im Wert ihrer Abschussprämie fallen",
 
   "cutter": "Cutter",
   "cutter_desc": "Sofortiger Tod mit einem Messer",
@@ -150,6 +164,9 @@
   "dwarf": "Zwerg",
   "dwarf_desc": "Zufällige Charaktergröße zu Beginn der Runde",
   "dwarf_desc2": "Dein Größenmultiplikator beträgt: {0}x",
+
+  "echo": "Echo",
+  "echo_desc": "Deine Granaten werden nach der Explosion erneut geworfen",
 
   "empgrenade": "EMP-Granate",
   "empgrenade_desc": "Wer von deiner Granate getroffen wird, verliert kurzzeitig Radar und Fadenkreuz",
@@ -217,6 +234,10 @@
   "giant_enemy_info": "Du wurdest auf das {0}-Fache deiner normalen Größe vergrößert.",
   "giant_player_info": "Du hast Spieler '{0}' auf das {1}-Fache seiner normalen Größe vergrößert.",
   "giant_select_info": "Wähle einen Spieler zum Vergrößern:",
+
+  "glasscannon": "Glaskanone",
+  "glasscannon_desc": "Du startest mit weniger Leben, verursachst aber mehr Schaden",
+  "glasscannon_hud": "Max. Leben: {0} | Schaden: +{1} %",
 
   "glaz": "Glaz",
   "glaz_desc": "Du kannst durch Rauchgranaten hindurchsehen",
@@ -393,6 +414,14 @@
   "ninja": "Ninja",
   "ninja_desc": "Wenn du stillstehst, erhöht sich deine Unsichtbarkeit um 33 %, wenn du dich duckst um 33 % und wenn du ein Messer hältst um 33 %",
 
+  "partner": "Partner",
+  "partner_desc": "Bleib nah bei einem gewählten Teamkameraden, um euch beide zu heilen",
+  "partner_select_info": "Wähle einen Teamkameraden:",
+  "partner_player_info": "'{0}' ist jetzt dein Partner.",
+  "partner_teammate_info": "'{0}' hat dich als Partner gewählt.",
+  "partner_no_teammates": "Keine Teamkameraden zur Auswahl.",
+  "partner_dead_info": "Dein Partner ist tot",
+
   "nonades": "No-Nades",
   "nonades_desc": "Granaten fügen dir keinen Schaden zu",
 
@@ -416,6 +445,11 @@
   "phoenix_desc": "Du hast eine zufällige Chance, nach dem Tod wieder zu erscheinen",
   "phoenix_desc2": "Deine Chance, nach dem Tod wieder zu erscheinen: {0} %",
   "phoenix_respawn": "Du bist dank der Kraft von CHATCOLORS.REDPhoenix aus der Asche auferstanden",
+
+  "pickpocket": "Taschendieb",
+  "pickpocket_desc": "Deine Kugeln lassen Gegner scharfe Granaten fallen",
+  "pickpocket_desc2": "Chance, dass getroffene Gegner eine Granate fallen lassen: {0} %",
+  "pickpocket_enemy_info": "Eine Granate ist dir aus der Tasche gefallen!",
 
   "psychicdefusing": "Psychic Defusing",
   "psychicdefusing_desc": "Wenn du dich in der Nähe der Bombe befindest, beginnst du, sie zu entschärfen",
@@ -475,6 +509,7 @@
   "reactivearmor": "Reaktive Rüstung",
   "reactivearmor_desc": "Die Rüstung absorbiert den ersten erlittenen Schaden",
 
+
   "regeneration": "Regeneration",
   "regeneration_desc": "Du stellst alle paar Sekunden Gesundheit wieder her",
 
@@ -531,6 +566,9 @@
   "soldier_desc": "Du hast einen zufälligen Schadensmultiplikator",
   "soldier_desc2": "Dein Schadensmultiplikator beträgt: {0}x",
 
+  "soulthrower": "Seelenwerfer",
+  "soulthrower_desc": "Seelen getöteter Gegner fliegen weiter und explodieren beim Aufprall",
+
   "soundmaker": "Soundmaker",
   "soundmaker_desc": "Von Zeit zu Zeit hörst du die Schreie von Spielern",
 
@@ -571,6 +609,12 @@
   "throwingknife": "Wurfmesser",
   "throwingknife_desc": "Klicke [css_useSkill], um ein Messer zu werfen. Aber nimm dich vor anderen in Acht",
 
+  "thundergod": "Donnergott",
+  "thundergod_desc": "Dein Köder trifft nahe Gegner mit Blitzen",
+
+  "titan": "Titan",
+  "titan_desc": "Du wirst größer und bekommst mehr Leben und Schaden",
+
   "toxicsmoke": "Giftiger Rauch",
   "toxicsmoke_desc": "Deine Rauchgranaten verursachen Schaden",
 
@@ -587,6 +631,7 @@
   "voodoo_desc": "Der markierte Gegner erleidet einen Teil des Schadens, den du erleidest",
   "voodoo_select_info": "Wähle einen Spieler:",
   "voodoo_player_info": "Du hast '{0}' an deinen Voodoo gebunden.",
+  "voodoo_enemy_info": "Ein Gegner hat dich zu seiner Voodoo-Puppe gemacht: Wenn er Schaden nimmt, nimmst du auch Schaden.",
 
   "wallhack": "Wallhack",
   "wallhack_desc": "Du kannst Feinde durch Wände hindurch sehen",

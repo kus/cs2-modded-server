@@ -2,6 +2,9 @@
   "none": "Yok",
   "none_desc": "Hiçbir yeteneğin yok",
 
+  "adrenaline": "Adrenalin",
+  "adrenaline_desc": "Vurduğun düşmanın hızını çalarsın",
+
   "aimbot": "Aimbot",
   "aimbot_desc": "Vurduğunda kafadan (HS) sayılır",
 
@@ -26,6 +29,7 @@
   "areareaper_used_info": "Yeteneğini zaten kullandın!",
   "areareaper_teammates_info": "{0} Bölgesi bomba kurmaya kapatıldı.",
   "areareaper_bombsite_disabled": "Bu bomba alanı kullanıma kapatıldı.",
+  "areareaper_owner_dead_info": "Mekan Kapatan öldü: {0} bölgesi yeniden açıldı!",
 
   "armored": "Zırhlı",
   "armored_desc": "Rastgele hasar alma çarpanın olur",
@@ -67,6 +71,13 @@
   "bounty_enemy_info": "Başına {0}$ ödül kondu.",
   "bounty_claimed_info": "'{0}' oyuncusunu öldürdün ve {1}$ kazandın.",
 
+  "bowlegs": "Çarpık Bacak",
+  "bowlegs_desc": "Seçtiğin düşmanın yön tuşları ters çalışır",
+  "bowlegs_select_info": "Birini seçin:",
+  "bowlegs_player_info": "'{0}' artık ters yöne gidecek.",
+  "bowlegs_enemy_info": "Artık tam tersi yönlere gideceksin ve titreyeceksin.",
+  "bowlegs_disable_info": "Bacakların normale döndü.",
+
   "bunnyhop": "Tavşan",
   "bunnyhop_desc": "Otomatik BunnyHop yaparsın",
 
@@ -94,6 +105,9 @@
 
   "chillout": "Ağırdan Al",
   "chillout_desc": "Bombayı kurmak çok daha uzun sürer",
+
+  "coins": "Para Yağmuru",
+  "coins_desc": "Öldürdüğün düşman yere para saçar",
 
   "cutter": "Kasap",
   "cutter_desc": "Bıçakla tek atarsın",
@@ -143,6 +157,9 @@
   "dwarf": "Cüce",
   "dwarf_desc": "Rastgele karakter boyutu",
   "dwarf_desc2": "Boyutun: {0}x",
+
+  "echo": "Yankı",
+  "echo_desc": "Attığın bombalar patlayınca tekrar atılır",
 
   "empgrenade": "EMP Bombası",
   "empgrenade_desc": "El bomban, hasar verdiğin düşmanın radarını ve nişangahını kapatır",
@@ -210,6 +227,10 @@
   "giant_enemy_info": "{0}x boyutuna büyüdün.",
   "giant_player_info": "'{0}' boyutunu {1}x büyüttün.",
   "giant_select_info": "Birini seçin:",
+
+  "glasscannon": "Cam Top",
+  "glasscannon_desc": "Az canla başlarsın ama daha çok hasar verirsin",
+  "glasscannon_hud": "Maks. can: {0} | Hasar: +%{1}",
 
   "glaz": "Glaz",
   "glaz_desc": "Sis bombasının içini görürsün",
@@ -393,6 +414,14 @@
   "ninja": "Ninja",
   "ninja_desc": "Sabit durmak, eğilmek ve bıçak tutmak görünmezliğini %33 artırır",
 
+  "partner": "Partner",
+  "partner_desc": "Seçtiğin takım arkadaşına yakın kaldıkça ikinizin de canı yenilenir",
+  "partner_select_info": "Bir takım arkadaşı seçin:",
+  "partner_player_info": "'{0}' artık partnerin.",
+  "partner_teammate_info": "'{0}' seni partneri olarak seçti.",
+  "partner_no_teammates": "Seçilecek takım arkadaşı yok.",
+  "partner_dead_info": "Partnerin öldü",
+
   "nonades": "Bomba Geçirmez",
   "nonades_desc": "Bombalar sana hasar vermez",
 
@@ -416,6 +445,11 @@
   "phoenix_desc": "Öldükten sonra yeniden doğma şansın olur",
   "phoenix_desc2": "Yeniden doğma şansın: %{0}",
   "phoenix_respawn": "Küllerinden yeniden doğdun!",
+
+  "pickpocket": "Yankesici",
+  "pickpocket_desc": "Mermilerin düşmanın bombalarını düşürüp patlatabilir",
+  "pickpocket_desc2": "Vurduğun rakibin bombasını düşürme şansın: %{0}",
+  "pickpocket_enemy_info": "Cebinden bir bomba düştü!",
 
   "psychicdefusing": "Psişik İmha",
   "psychicdefusing_desc": "Bombanın yanındayken otomatik imhaya başlarsın",
@@ -475,6 +509,7 @@
   "reactivearmor": "Reaktif Zırh",
   "reactivearmor_desc": "Zırhın ilk hasarı emer",
 
+
   "regeneration": "Yenilenme",
   "regeneration_desc": "Birkaç saniyede bir canın yenilenir",
 
@@ -531,6 +566,9 @@
   "soldier_desc": "Rastgele hasar verme çarpanın olur",
   "soldier_desc2": "Hasarın: {0}x",
 
+  "soulthrower": "Ruh Fırlatıcı",
+  "soulthrower_desc": "Öldürdüğün düşmanın ruhu fırlar ve çarptığı yerde patlar",
+
   "soundmaker": "Çığlık",
   "soundmaker_desc": "Rakibin çığlığını duyarsın",
 
@@ -571,6 +609,12 @@
   "throwingknife": "Fırlatma Bıçağı",
   "throwingknife_desc": "[css_useSkill] tuşuna basarak bıçak fırlat",
 
+  "thundergod": "Gök Tanrısı",
+  "thundergod_desc": "Yanıltıcı bomban yakındaki düşmanlara yıldırım düşürür",
+
+  "titan": "Titan",
+  "titan_desc": "Büyürsün, canın ve hasarın artar",
+
   "toxicsmoke": "Zehirli Sis",
   "toxicsmoke_desc": "Sis bomban hasar verir",
 
@@ -587,6 +631,7 @@
   "voodoo_desc": "Aldığın hasarın bir kısmını işaretlediğin düşman da alır",
   "voodoo_select_info": "Birini seçin:",
   "voodoo_player_info": "'{0}' oyuncusunu kendine bağladın.",
+  "voodoo_enemy_info": "Bir düşman seni vudu bebeği yaptı: o hasar aldıkça sen de hasar alırsın.",
 
   "wallhack": "Wallhack",
   "wallhack_desc": "Düşmanları duvar arkasından görürsün",

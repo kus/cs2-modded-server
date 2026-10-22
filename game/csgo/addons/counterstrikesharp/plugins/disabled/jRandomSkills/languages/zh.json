@@ -2,6 +2,9 @@
   "none": "无",
   "none_desc": "你没有任何技能",
 
+  "adrenaline": "肾上腺素",
+  "adrenaline_desc": "命中敌人会偷取其速度",
+
   "aimbot": "自动瞄准",
   "aimbot_desc": "你击中的每颗子弹都算作爆头",
 
@@ -26,6 +29,7 @@
   "areareaper_used_info": "你的能力已被使用。",
   "areareaper_teammates_info": "{0} 区域已禁止安放炸弹。",
   "areareaper_bombsite_disabled": "该炸弹安放区已被禁用！",
+  "areareaper_owner_dead_info": "区域收割者阵亡了：{0} 区域重新开放！",
 
   "armored": "覆甲",
   "armored_desc": "你收到伤害的倍率随机(开局随机一个倍率)",
@@ -61,6 +65,13 @@
   "bounty_enemy_info": "有人对你悬赏了 {0}$。",
   "bounty_claimed_info": "你击杀了 '{0}'，获得 {1}$。",
 
+  "bowlegs": "罗圈腿",
+  "bowlegs_desc": "反转选定敌人的移动方向",
+  "bowlegs_select_info": "选择一名玩家：",
+  "bowlegs_player_info": "'{0}' 现在会反方向移动。",
+  "bowlegs_enemy_info": "你的操作被反转了，还会踉跄。",
+  "bowlegs_disable_info": "你的腿恢复正常了。",
+
   "bunnyhop": "连跳大佬",
   "bunnyhop_desc": "你获得自动连跳的能力",
 
@@ -88,6 +99,9 @@
 
   "chillout": "悠闲",
   "chillout_desc": "放置炸弹需要更长的时间",
+
+  "coins": "金币雨",
+  "coins_desc": "击杀的敌人会掉落金币",
 
   "cutter": "剑圣",
   "cutter_desc": "用刀刀人可立即杀死敌人",
@@ -137,6 +151,9 @@
   "dwarf": "小矮人",
   "dwarf_desc": "回合开始时获得随机角色大小",
   "dwarf_desc2": "你的体型倍率是：{0}x",
+
+  "echo": "回响",
+  "echo_desc": "你的手雷爆炸后会再投掷一次",
 
   "empgrenade": "电磁脉冲手雷",
   "empgrenade_desc": "被你的手雷伤到的人会暂时失去雷达和准星",
@@ -198,6 +215,10 @@
   "giant_enemy_info": "giant_enemy_info: {0}x",
   "giant_player_info": "giant_player_info: {0} {1}",
   "giant_select_info": "giant_select_info",
+
+  "glasscannon": "玻璃大炮",
+  "glasscannon_desc": "开局生命值更少，但伤害更高",
+  "glasscannon_hud": "最大生命值：{0} | 伤害：+{1}%",
 
   "glaz": "烟雾头盔",
   "glaz_desc": "你可以看透烟雾弹",
@@ -363,6 +384,14 @@
   "ninja": "忍者",
   "ninja_desc": "站立不动增加33%隐形，蹲下增加33%，持刀增加33%",
 
+  "partner": "搭档",
+  "partner_desc": "靠近选定的队友，你们双方都会恢复生命值",
+  "partner_select_info": "选择一名队友：",
+  "partner_player_info": "'{0}' 现在是你的搭档。",
+  "partner_teammate_info": "'{0}' 选择了你作为搭档。",
+  "partner_no_teammates": "没有可选择的队友。",
+  "partner_dead_info": "你的搭档已阵亡",
+
   "nonades": "手雷免疫者",
   "nonades_desc": "手榴弹对你不造成伤害",
 
@@ -386,6 +415,11 @@
   "phoenix_desc": "你有随机几率在死亡后复活",
   "phoenix_desc2": "你死亡后复活的几率是：{0}%",
   "phoenix_respawn": "你因 CHATCOLORS.RED凤凰 的力量从灰烬中重生",
+
+  "pickpocket": "扒手",
+  "pickpocket_desc": "你的子弹会打落敌人的手雷并引爆",
+  "pickpocket_desc2": "命中敌人时使其掉落手雷的几率：{0}%",
+  "pickpocket_enemy_info": "一颗手雷从你的口袋里掉出来了！",
 
   "psychicdefusing": "心灵感应拆弹",
   "psychicdefusing_desc": "当你靠近炸弹时，你开始拆除它",
@@ -445,6 +479,7 @@
   "reactivearmor": "反应装甲",
   "reactivearmor_desc": "装甲吸收首次受到的伤害",
 
+
   "regeneration": "再生",
   "regeneration_desc": "每隔几秒恢复生命值",
 
@@ -501,6 +536,9 @@
   "soldier_desc": "你有随机伤害倍率",
   "soldier_desc2": "你的伤害倍率是：{0}x",
 
+  "soulthrower": "灵魂投手",
+  "soulthrower_desc": "击杀的敌人灵魂会飞出并在撞击时爆炸",
+
   "soundmaker": "声音制造者",
   "soundmaker_desc": "你会不时听到玩家的惨叫声",
 
@@ -529,6 +567,12 @@
   "throwingknife": "投掷飞刀",
   "throwingknife_desc": "点击 [css_useSkill] 扔出飞刀。但要小心其他人",
 
+  "thundergod": "雷神",
+  "thundergod_desc": "你的诱饵弹会用闪电击中附近的敌人",
+
+  "titan": "泰坦",
+  "titan_desc": "你会变大，生命值和伤害都会提升",
+
   "toxicsmoke": "毒烟",
   "toxicsmoke_desc": "你的烟雾弹会造成伤害",
 
@@ -545,6 +589,7 @@
   "voodoo_desc": "被你标记的敌人也会受到你所受伤害的一部分",
   "voodoo_select_info": "选择一名玩家：",
   "voodoo_player_info": "你把 '{0}' 绑到了你的巫毒上。",
+  "voodoo_enemy_info": "一名敌人把你变成了巫毒娃娃：他受到伤害时，你也会受到伤害。",
 
   "wallhack": "透视",
   "wallhack_desc": "你可以通过墙壁看到敌人",
