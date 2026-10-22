@@ -2,6 +2,9 @@
   "none": "Brak",
   "none_desc": "Nie posiadasz żadnej supermocy",
 
+  "adrenaline": "Adrenalina",
+  "adrenaline_desc": "Trafienia kradną wrogom prędkość",
+
   "aimbot": "Aimbot",
   "aimbot_desc": "Każdy twój trafiony pocisk liczy się jako strzał w głowę",
 
@@ -26,6 +29,7 @@
   "areareaper_used_info": "Twoja moc została już wykorzystana.",
   "areareaper_teammates_info": "Strefa {0} została zablokowana do podłożenia bomby.",
   "areareaper_bombsite_disabled": "Ten bombsite został wyłączony!",
+  "areareaper_owner_dead_info": "Niszczyciel Stref zginął: strefa {0} jest znowu otwarta!",
 
   "armored": "Gruby",
   "armored_desc": "Masz losowy mnożnik otrzymywanych obrażeń",
@@ -67,6 +71,13 @@
   "bounty_enemy_info": "Za twoją głowę wyznaczono {0}$.",
   "bounty_claimed_info": "Zabiłeś '{0}' i zgarnąłeś {1}$.",
 
+  "bowlegs": "Krzywe Nogi",
+  "bowlegs_desc": "Odwracasz sterowanie wybranemu przeciwnikowi",
+  "bowlegs_select_info": "Wybierz gracza:",
+  "bowlegs_player_info": "'{0}' porusza się teraz odwrotnie.",
+  "bowlegs_enemy_info": "Twoje sterowanie jest odwrócone i się chwiejesz.",
+  "bowlegs_disable_info": "Twoje nogi wróciły do normy.",
+
   "bunnyhop": "Królik",
   "bunnyhop_desc": "Otrzymujesz auto \"BunnyHopa\"",
 
@@ -94,6 +105,9 @@
 
   "chillout": "Wyluzowany",
   "chillout_desc": "Podłożenie bomby zajmuje znacznie więcej czasu",
+
+  "coins": "Deszcz Monet",
+  "coins_desc": "Zabici wrogowie upuszczają monety warte nagrody za zabójstwo",
 
   "cutter": "Scyzoryk",
   "cutter_desc": "Natychmiastowe zabójstwo nożem",
@@ -150,6 +164,9 @@
   "dwarf": "Mini Majk",
   "dwarf_desc": "Losowa wielkość postaci na początku rundy",
   "dwarf_desc2": "Twój mnożnik wielkości to {0}x",
+
+  "echo": "Echo",
+  "echo_desc": "Twoje granaty są rzucane ponownie po wybuchu",
 
   "empgrenade": "Granat EMP",
   "empgrenade_desc": "Kto oberwie twoim granatem, na chwilę traci radar i celownik",
@@ -217,6 +234,10 @@
   "giant_enemy_info": "Zostałeś powiększony do {0}x normalnego rozmiaru.",
   "giant_player_info": "Powiększyłeś gracza '{0}' do {1}x normalnego rozmiaru.",
   "giant_select_info": "Wybierz gracza do powiększenia:",
+
+  "glasscannon": "Szklane Działo",
+  "glasscannon_desc": "Zaczynasz z mniejszym zdrowiem, ale zadajesz więcej obrażeń",
+  "glasscannon_hud": "Maks. zdrowie: {0} | Obrażenia: +{1}%",
 
   "glaz": "Glaz",
   "glaz_desc": "Nie widzisz granatów dymnych",
@@ -393,6 +414,14 @@
   "ninja": "Ninja",
   "ninja_desc": "Stojąc nieruchomo zwiększasz swoją niewidzialność o 33%, kucając o 33%, a trzymając nóż o 33%",
 
+  "partner": "Partner",
+  "partner_desc": "Bądź blisko wybranego sojusznika, by odnawiać zdrowie wam obu",
+  "partner_select_info": "Wybierz sojusznika:",
+  "partner_player_info": "'{0}' jest teraz twoim partnerem.",
+  "partner_teammate_info": "'{0}' wybrał cię na swojego partnera.",
+  "partner_no_teammates": "Brak sojuszników do wyboru.",
+  "partner_dead_info": "Twój partner nie żyje",
+
   "nonades": "Pancernik",
   "nonades_desc": "Granaty nie zadają Ci obrażeń",
 
@@ -416,6 +445,11 @@
   "phoenix_desc": "Masz losową szans na odrodzenie się po śmierci",
   "phoenix_desc2": "Twoje szanse na odrodzenie się po śmierci: {0}%",
   "phoenix_respawn": "Zostałeś odrodzony z popiołów dzięki mocy: CHATCOLORS.REDPhoenix",
+
+  "pickpocket": "Kieszonkowiec",
+  "pickpocket_desc": "Twoje kule wybijają wrogom odbezpieczone granaty",
+  "pickpocket_desc2": "Szansa, że trafiony wróg upuści granat: {0}%",
+  "pickpocket_enemy_info": "Z kieszeni wypadł ci granat!",
 
   "psychicdefusing": "Zdalne Rozbrajanie",
   "psychicdefusing_desc": "Kiedy jesteś blisko bomby, zaczynasz ją rozbrajać",
@@ -475,6 +509,7 @@
   "reactivearmor": "Pancerz Reaktywny",
   "reactivearmor_desc": "Pancerz pochłania pierwsze otrzymane obrażenia",
 
+
   "regeneration": "Regeneracja",
   "regeneration_desc": "Co kilka sekund odnawiasz zdrowie",
 
@@ -531,6 +566,9 @@
   "soldier_desc": "Masz losowy mnożnik obrażeń",
   "soldier_desc2": "Twój mnożnik obrażeń wynosi: {0}x",
 
+  "soulthrower": "Miotacz Dusz",
+  "soulthrower_desc": "Dusze zabitych wrogów lecą dalej i wybuchają przy uderzeniu",
+
   "soundmaker": "Dźwiękowiec",
   "soundmaker_desc": "Co jakiś czas słyszysz krzyki graczy",
 
@@ -571,6 +609,12 @@
   "throwingknife": "Nóż do Rzucania",
   "throwingknife_desc": "Naciśnij [css_useSkill], aby rzucić nożem. Ale uważaj na innych",
 
+  "thundergod": "Bóg Piorunów",
+  "thundergod_desc": "Twój wabik razi pobliskich wrogów piorunami",
+
+  "titan": "Tytan",
+  "titan_desc": "Rośniesz i zyskujesz więcej zdrowia i obrażeń",
+
   "toxicsmoke": "Toksyczny Dym",
   "toxicsmoke_desc": "Twoje granaty dymny zadają obrażenia",
 
@@ -587,6 +631,7 @@
   "voodoo_desc": "Oznaczony wróg również otrzymuje część obrażeń, które ty dostajesz",
   "voodoo_select_info": "Wybierz gracza:",
   "voodoo_player_info": "Związałeś '{0}' swoim voodoo.",
+  "voodoo_enemy_info": "Wróg zrobił z ciebie laleczkę voodoo: gdy on otrzymuje obrażenia, ty też je otrzymujesz.",
 
   "wallhack": "Wallhack",
   "wallhack_desc": "Widzisz wrogów przez ściany",

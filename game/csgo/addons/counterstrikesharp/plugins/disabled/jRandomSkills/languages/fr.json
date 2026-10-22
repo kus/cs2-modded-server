@@ -2,6 +2,9 @@
   "none": "Aucune",
   "none_desc": "Vous n’avez aucune compétence",
 
+  "adrenaline": "Adrénaline",
+  "adrenaline_desc": "Vos tirs volent la vitesse des ennemis touchés",
+
   "aimbot": "Aimbot",
   "aimbot_desc": "Chaque balle que vous touchez compte comme un headshot",
 
@@ -26,6 +29,7 @@
   "areareaper_used_info": "Votre compétence a déjà été utilisée.",
   "areareaper_teammates_info": "Le site de bombe {0} est désormais interdit au plant.",
   "areareaper_bombsite_disabled": "Ce site de bombe a été désactivé !",
+  "areareaper_owner_dead_info": "Le Faucheur de Zone est mort : le site {0} est de nouveau ouvert !",
 
   "armored": "Blindé",
   "armored_desc": "Vous avez un multiplicateur de dégâts subis aléatoire",
@@ -67,6 +71,13 @@
   "bounty_enemy_info": "Une prime de {0}$ a été mise sur ta tête.",
   "bounty_claimed_info": "Tu as tué '{0}' et empoché {1}$.",
 
+  "bowlegs": "Jambes croisées",
+  "bowlegs_desc": "Inverse les touches de déplacement d'un ennemi choisi",
+  "bowlegs_select_info": "Choisis un joueur :",
+  "bowlegs_player_info": "'{0}' se déplace maintenant à l'envers.",
+  "bowlegs_enemy_info": "Vos commandes sont inversées et vous titubez.",
+  "bowlegs_disable_info": "Vos jambes sont revenues à la normale.",
+
   "bunnyhop": "Lapin",
   "bunnyhop_desc": "Vous obtenez l’auto « BunnyHop »",
 
@@ -94,6 +105,9 @@
 
   "chillout": "Détente",
   "chillout_desc": "Planter la bombe prend beaucoup plus de temps",
+
+  "coins": "Pluie de pièces",
+  "coins_desc": "Les ennemis tués lâchent des pièces valant leur prime",
 
   "cutter": "Trancheur",
   "cutter_desc": "Coup de couteau = mort instantanée",
@@ -150,6 +164,9 @@
   "dwarf": "Nain",
   "dwarf_desc": "Taille du personnage aléatoire au début du round",
   "dwarf_desc2": "Votre multiplicateur de taille est : {0}x",
+
+  "echo": "Écho",
+  "echo_desc": "Vos grenades sont relancées après avoir explosé",
 
   "empgrenade": "Grenade EMP",
   "empgrenade_desc": "Ceux que ta grenade blesse perdent leur radar et leur viseur un moment",
@@ -217,6 +234,10 @@
   "giant_enemy_info": "Vous avez été agrandi à {0}x votre taille normale.",
   "giant_player_info": "Vous avez agrandi le joueur '{0}' jusqu'à {1}x sa taille normale.",
   "giant_select_info": "Sélectionnez un joueur à agrandir :",
+
+  "glasscannon": "Canon de verre",
+  "glasscannon_desc": "Vous commencez avec moins de PV mais infligez plus de dégâts",
+  "glasscannon_hud": "PV max : {0} | Dégâts : +{1}%",
 
   "glaz": "Glaz",
   "glaz_desc": "Vous pouvez voir à travers les fumigènes",
@@ -393,6 +414,14 @@
   "ninja": "Ninja",
   "ninja_desc": "Rester immobile augmente votre invisibilité de 33%, s’accroupir de 33%, et tenir un couteau de 33%",
 
+  "partner": "Partenaire",
+  "partner_desc": "Restez près d'un coéquipier choisi pour vous soigner tous les deux",
+  "partner_select_info": "Choisis un coéquipier :",
+  "partner_player_info": "'{0}' est maintenant votre partenaire.",
+  "partner_teammate_info": "'{0}' vous a choisi comme partenaire.",
+  "partner_no_teammates": "Aucun coéquipier à choisir.",
+  "partner_dead_info": "Votre partenaire est mort",
+
   "nonades": "Sans Grenades",
   "nonades_desc": "Les grenades ne vous infligent aucun dégât",
 
@@ -416,6 +445,11 @@
   "phoenix_desc": "Vous avez une chance aléatoire de réapparaître après la mort",
   "phoenix_desc2": "Votre chance de réapparaître après la mort est : {0}%",
   "phoenix_respawn": "Vous avez ressuscité de vos cendres grâce au pouvoir du : CHATCOLORS.REDPhénix",
+
+  "pickpocket": "Pickpocket",
+  "pickpocket_desc": "Vos balles font lâcher aux ennemis des grenades dégoupillées",
+  "pickpocket_desc2": "Chance que l'ennemi touché lâche une grenade : {0}%",
+  "pickpocket_enemy_info": "Une grenade est tombée de votre poche !",
 
   "psychicdefusing": "Désamorçage Psychique",
   "psychicdefusing_desc": "Quand vous êtes près de la bombe, vous commencez à la désamorcer",
@@ -475,6 +509,7 @@
   "reactivearmor": "Armure Réactive",
   "reactivearmor_desc": "L’armure absorbe les premiers dégâts reçus",
 
+
   "regeneration": "Régénération",
   "regeneration_desc": "Vous regagnez des PV toutes les quelques secondes",
 
@@ -531,6 +566,9 @@
   "soldier_desc": "Vous avez un multiplicateur de dégâts aléatoire",
   "soldier_desc2": "Votre multiplicateur de dégâts est : {0}x",
 
+  "soulthrower": "Lanceur d'âmes",
+  "soulthrower_desc": "L'âme des ennemis tués s'envole et explose à l'impact",
+
   "soundmaker": "Faiseur de Bruit",
   "soundmaker_desc": "De temps en temps, vous entendez les cris des joueurs",
 
@@ -571,6 +609,12 @@
   "throwingknife": "Couteau de lancer",
   "throwingknife_desc": "Cliquez sur [css_useSkill] pour lancer un couteau. Mais attention aux autres",
 
+  "thundergod": "Dieu du tonnerre",
+  "thundergod_desc": "Votre leurre foudroie les ennemis proches",
+
+  "titan": "Titan",
+  "titan_desc": "Vous grandissez et gagnez plus de PV et de dégâts",
+
   "toxicsmoke": "Fumée Toxique",
   "toxicsmoke_desc": "Vos grenades fumigènes infligent des dégâts",
 
@@ -587,6 +631,7 @@
   "voodoo_desc": "L'ennemi que tu marques subit aussi une partie des dégâts que tu reçois",
   "voodoo_select_info": "Choisis un joueur :",
   "voodoo_player_info": "Tu as lié '{0}' à ton vaudou.",
+  "voodoo_enemy_info": "Un ennemi a fait de vous sa poupée vaudou : quand il subit des dégâts, vous en subissez aussi.",
 
   "wallhack": "Wallhack",
   "wallhack_desc": "Vous pouvez voir les ennemis à travers les murs",
