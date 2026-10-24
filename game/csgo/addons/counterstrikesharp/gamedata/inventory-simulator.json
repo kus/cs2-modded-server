@@ -13,13 +13,6 @@
       "linux": "55 48 89 E5 41 57 41 56 49 89 D6 41 55 48 8D 95 ? ? ? ? 49 89 CD"
     }
   },
-  "CCSPlayerController::ProcessUsercmds": {
-    "signatures": {
-      "library": "server",
-      "windows": "48 8B C4 44 88 48 20 44 89 40 18 48 89 50 10 53",
-      "linux": "55 48 89 E5 41 57 41 56 41 55 41 54 53 48 89 FB 48 83 EC ? 89 4D"
-    }
-  },
   "CServerSideClientBase::ActivatePlayer": {
     "signatures": {
       "library": "engine2",
