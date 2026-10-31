@@ -319,6 +319,36 @@
                 "op": 1,
                 "value": 31
             }
+        },
+        {
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Rush\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "delay": 3,
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 32
+            }
+        },
+        {
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Arms Race (Valve)\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "delay": 3,
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 33
+            }
+        },
+        {
+            "msg": "[GREEN]Server Mode[NORMAL]: [RED]Rush (Valve)\u2029\u2029[NORMAL]Type [GREEN]!modes[NORMAL] to switch mode, [GREEN]!maps[NORMAL] to switch map.\u2029 You can also type [GREEN]!rtv[NORMAL] to rock a map vote.\u2029 Map will change at the end of the round.",
+            "delay": 3,
+            "properties": "Value",
+            "cond": {
+                "flag": "CS2AB_flag_1",
+                "op": 1,
+                "value": 34
+            }
         }
    ]
 }
