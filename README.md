@@ -19,6 +19,7 @@ Each game mode has a hand full of maps preset so you are ready to go and it's [e
 - Competitive (using [MatchZy](https://github.com/shobhit-pathak/MatchZy#usage-commands))
 - Practice (record grenade throws etc) (using [MatchZy](https://github.com/shobhit-pathak/MatchZy#usage-commands))
 - Wingman (allows more than 4 players) ([Steam API key](#playing-workshop-mapscollections) required)
+- Rush (allows more than 3v3)
 - GunGame ([Steam API key](#playing-workshop-mapscollections) required)
 - Custom Deathmatch ([Steam API key](#playing-workshop-mapscollections) required)
 - Prefire practice
@@ -581,6 +582,10 @@ To check SourceTV is working on your server type `tv_status` from the server con
 #### mg_valve_retakes
 
 <table><tr><td><table align="left"><tr><td><img src="https://github.com/kus/cs2-modded-server/blob/assets/images/de_dust2.jpg?raw=true&sanitize=true"></td></tr><tr><td>de_dust2<br><sup><sub>changelevel de_dust2</sub></sup></td></tr></table><table align="left"><tr><td><img src="https://github.com/kus/cs2-modded-server/blob/assets/images/de_mirage.jpg?raw=true&sanitize=true"></td></tr><tr><td>de_mirage<br><sup><sub>changelevel de_mirage</sub></sup></td></tr></table><table align="left"><tr><td><img src="https://github.com/kus/cs2-modded-server/blob/assets/images/de_inferno.jpg?raw=true&sanitize=true"></td></tr><tr><td>de_inferno<br><sup><sub>changelevel de_inferno</sub></sup></td></tr></table><table align="left"><tr><td><img src="https://github.com/kus/cs2-modded-server/blob/assets/images/de_ancient_night.jpg?raw=true&sanitize=true"></td></tr><tr><td>de_ancient_night<br><sup><sub>changelevel de_ancient_night</sub></sup></td></tr></table><table align="left"><tr><td><img src="https://github.com/kus/cs2-modded-server/blob/assets/images/de_nuke.jpg?raw=true&sanitize=true"></td></tr><tr><td>de_nuke<br><sup><sub>changelevel de_nuke</sub></sup></td></tr></table><table align="left"><tr><td><img src="https://github.com/kus/cs2-modded-server/blob/assets/images/de_train.jpg?raw=true&sanitize=true"></td></tr><tr><td>de_train<br><sup><sub>changelevel de_train</sub></sup></td></tr></table><table align="left"><tr><td><img src="https://github.com/kus/cs2-modded-server/blob/assets/images/de_overpass.jpg?raw=true&sanitize=true"></td></tr><tr><td>de_overpass<br><sup><sub>changelevel de_overpass</sub></sup></td></tr></table><table align="left"><tr><td><img src="https://github.com/kus/cs2-modded-server/blob/assets/images/de_anubis.jpg?raw=true&sanitize=true"></td></tr><tr><td>de_anubis<br><sup><sub>changelevel de_anubis</sub></sup></td></tr></table><table align="left"><tr><td><img src="https://github.com/kus/cs2-modded-server/blob/assets/images/de_vertigo.jpg?raw=true&sanitize=true"></td></tr><tr><td>de_vertigo<br><sup><sub>changelevel de_vertigo</sub></sup></td></tr></table></td></tr></table>
+
+#### mg_rush
+
+<table><tr><td><table align="left"><tr><td><img src="https://github.com/kus/cs2-modded-server/blob/assets/images/rush_001.jpg?raw=true&sanitize=true"></td></tr><tr><td>rush_001<br><sup><sub>changelevel rush_001</sub></sup></td></tr></table></td></tr></table>
 
 #### mg_comp
 

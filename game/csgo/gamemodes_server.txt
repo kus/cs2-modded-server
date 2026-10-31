@@ -87,6 +87,21 @@
 						"mg_dm"		"50"
 					}
 				}
+
+				// Rush
+				"rush"
+				{
+					"maxplayers"			"64"
+					"exec"
+					{
+						"exec" "gamemode_rush_last.cfg"
+					}
+					// Map groups for online modes
+					"mapgroupsMP"
+					{
+						"mg_rush"		"50"
+					}
+				}
 			}
 		}
 	}
@@ -215,6 +230,15 @@
 				"de_overpass"		""
 				"de_anubis"			""
 				"de_vertigo"		""
+			}
+		}
+		"mg_rush"
+		{
+			"name"					"mg_rush"
+			"displayname"			"Rush"
+			"maps"
+			{
+				"rush_001"			""
 			}
 		}
 		"mg_comp"

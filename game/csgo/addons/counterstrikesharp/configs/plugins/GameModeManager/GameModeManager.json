@@ -150,6 +150,14 @@
         ]
       },
       {
+        "Name": "Rush",
+        "Config": "rush.cfg",
+        "DefaultMap": "rush_001",
+        "MapGroups": [
+          "mg_rush"
+        ]
+      },
+      {
         "Name": "Practice Mode",
         "Config": "prac.cfg",
         "DefaultMap": "de_dust2",
@@ -327,6 +335,14 @@
         ]
       },
       {
+        "Name": "Competitive 45°",
+        "Config": "45.cfg",
+        "DefaultMap": "3276886893",
+        "MapGroups": [
+          "mg_45"
+        ]
+      },
+      {
         "Name": "Competitive (Valve)",
         "Config": "valve-competitive.cfg",
         "DefaultMap": "de_dust2",
@@ -359,19 +375,19 @@
         ]
       },
       {
+        "Name": "Rush (Valve)",
+        "Config": "valve-rush.cfg",
+        "DefaultMap": "rush_001",
+        "MapGroups": [
+          "mg_rush"
+        ]
+      },
+      {
         "Name": "Retakes (Valve)",
         "Config": "valve-retake.cfg",
         "DefaultMap": "de_dust2",
         "MapGroups": [
           "mg_valve_retakes"
-        ]
-      },
-      {
-        "Name": "Competitive 45°",
-        "Config": "45.cfg",
-        "DefaultMap": "3276886893",
-        "MapGroups": [
-          "mg_45"
         ]
       }
     ]
