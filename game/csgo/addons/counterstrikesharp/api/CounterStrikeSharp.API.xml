@@ -638,6 +638,12 @@
             <param name="customLayout">Entity custom hud</param>
             <param name="buttonId">ID of the button that was clicked</param>
         </member>
+        <member name="T:CounterStrikeSharp.API.Core.Listeners.OnConVarChanged">
+            <summary>
+            Called when a ConVar changes.
+            </summary>
+            <param name="conVar">The ConVar that changed.</param>   
+        </member>
         <member name="M:CounterStrikeSharp.API.Core.CBaseEntity.Teleport(CounterStrikeSharp.API.Modules.Utils.Vector,CounterStrikeSharp.API.Modules.Utils.QAngle,CounterStrikeSharp.API.Modules.Utils.Vector)">
             <exception cref="T:System.InvalidOperationException">Entity is not valid</exception>
             <exception cref="T:System.ArgumentNullException">At least one parameter must be specified</exception>
@@ -1591,6 +1597,55 @@
             </summary>
             <param name="name"></param>
             <returns></returns>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Cvars.ConVarBase.Type">
+            <summary>
+            The underlying data type of the ConVar.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Cvars.ConVarBase.Flags">
+            <summary>
+            The ConVar flags as defined by <see cref="T:CounterStrikeSharp.API.ConVarFlags"/>.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Cvars.ConVarBase.Public">
+            <summary>
+            Shorthand for checking the <see cref="F:CounterStrikeSharp.API.ConVarFlags.FCVAR_NOTIFY"/> flag.
+            </summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Cvars.ConVar`1.MinValue">
+            <summary>
+            Gets or updates the existing lower bound for a numeric, vector, or angle ConVar.
+            </summary>
+            <remarks>
+            Throws if no lower bound exists or the new minimum exceeds the maximum.
+            Changes apply to subsequent value assignments; the current value is not reclamped.
+            For native objects, assign a new value rather than modifying the returned object's components.
+            </remarks>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Cvars.ConVar`1.MaxValue">
+            <summary>
+            Gets or updates the existing upper bound for a numeric, vector, or angle ConVar.
+            </summary>
+            <remarks>
+            Throws if no upper bound exists or the new maximum is below the minimum.
+            Changes apply to subsequent value assignments; the current value is not reclamped.
+            For native objects, assign a new value rather than modifying the returned object's components.
+            </remarks>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Cvars.ConVar`1.TryGetMinValue(`0@)">
+            <summary>Tries to read the lower bound, returning false and default(T) when it is not set.</summary>
+            <remarks>Invalid ConVars and mismatched value types still throw.</remarks>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Modules.Cvars.ConVar`1.TryGetMaxValue(`0@)">
+            <summary>Tries to read the upper bound, returning false and default(T) when it is not set.</summary>
+            <remarks>Invalid ConVars and mismatched value types still throw.</remarks>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Cvars.ConVarCreationOptions`1.MinValue">
+            <summary>Optional lower bound. Omit this property for no minimum; zero and false are valid bounds.</summary>
+        </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Cvars.ConVarCreationOptions`1.MaxValue">
+            <summary>Optional upper bound. Omit this property for no maximum; zero and false are valid bounds.</summary>
         </member>
         <member name="T:CounterStrikeSharp.API.Modules.Entities.Constants.SteamAccountInstance">
             <summary>
