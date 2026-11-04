@@ -4,6 +4,7 @@
 
   "adrenaline": "Adrénaline",
   "adrenaline_desc": "Vos tirs volent la vitesse des ennemis touchés",
+  "adrenaline_hud": "Vitesse : +{0}%",
 
   "aimbot": "Aimbot",
   "aimbot_desc": "Chaque balle que vous touchez compte comme un headshot",
@@ -57,6 +58,7 @@
 
   "berserker": "Berserker",
   "berserker_desc": "Vous infligez plus de dégâts et vous déplacez plus vite à mesure que votre santé diminue",
+  "berserker_hud": "Puissance : x{0}",
 
   "blademaster": "Maître de Lame",
   "blademaster_desc": "En tenant un couteau, vous avez une forte chance de dévier un tir",
@@ -83,6 +85,9 @@
 
   "c4camouflage": "Camouflage C4",
   "c4camouflage_desc": "Vous êtes invisible en tenant la bombe",
+  "c4camouflage_hud": "État : {0}",
+  "c4camouflage_hidden": "Invisible",
+  "c4camouflage_visible": "Visible",
 
   "carefulbullets": "Balles prudentes",
   "carefulbullets_desc": "Sélectionnez un joueur qui subit des dégâts à chaque tir manqué",
@@ -155,6 +160,7 @@
 
   "dracula": "Dracula",
   "dracula_desc": "Toucher un ennemi vous rend de la vie égale à un pourcentage des dégâts infligés",
+  "dracula_hud": "Vol de vie : {0}% des dégâts",
 
   "duplicator": "Duplicateur",
   "duplicator_desc": "Choisissez un joueur pour copier sa compétence",
@@ -171,6 +177,7 @@
   "empgrenade": "Grenade EMP",
   "empgrenade_desc": "Ceux que ta grenade blesse perdent leur radar et leur viseur un moment",
   "empgrenade_enemy_info": "Une grenade EMP a coupé ton radar et ton viseur.",
+  "empgrenade_hud": "Durée de l'EMP : {0} s",
 
   "enemyspawn": "Spawn Ennemi",
   "enemyspawn_desc": "Appuyez sur [css_useSkill] pour vous téléporter au spawn ennemi",
@@ -256,6 +263,7 @@
   "godmode_desc": "Appuyez sur [css_useSkill] pour devenir immortel pendant un court instant",
   "godmode_off": "Immortalité désactivée",
   "godmode_on": "Immortalité activée",
+  "godmode_hud": "Invulnérabilité : {0} s",
 
   "grapple": "Grappin",
   "grapple_desc": "Appuyez sur [css_useSkill] pour lancer un grappin sur le point visé et vous y propulser",
@@ -270,6 +278,7 @@
 
   "healingsmoke": "Fumigène Soin",
   "healingsmoke_desc": "Vos fumigènes soignent",
+  "healingsmoke_hud": "Soin de fumée : {0} PV/s",
 
   "healingchicken": "Poulet guérisseur",
   "healingchicken_desc": "Vos poulets vous soignent lorsque vous êtes à proximité",
@@ -290,6 +299,7 @@
   "hotbomb_desc": "Tant que vous êtes en vie, la bombe inflige des dégâts à son porteur",
   "hotbomb_hint": "Attention, la bombe est brûlante !",
   "hotbomb_disable_info": "La bombe ne brûle plus.",
+  "hotbomb_hud": "Le porteur de C4 subit {1} dégâts toutes les {0} s",
 
   "iana": "Hologramme",
   "iana_desc": "Cliquez sur [css_useSkill] pour contrôler votre hologramme pendant quelques secondes",
@@ -351,15 +361,18 @@
 
   "jumpingjack": "Sauteur",
   "jumpingjack_desc": "Sauter vous rend de la vie",
+  "jumpingjack_hud": "+{0} PV par saut",
 
   "killerflash": "Flash Mortel",
   "killerflash_desc": "Toute personne totalement aveuglée par votre flashbang meurt (y compris vous)",
+  "killerflash_hud": "Ennemis aveuglés {0} s+ meurent",
 
   "knockback": "Repoussement",
   "knockback_desc": "Tirer dans les airs vous repousse vers l'arrière",
 
   "lastgasp": "Dernier souffle",
   "lastgasp_desc": "Après votre mort, vous infligez des dégâts à l'ennemi qui vous a tué",
+  "lastgasp_hud": "À ta mort : {0} dégâts à ton tueur",
 
   "lifeswap": "Échange de Vie",
   "lifeswap_desc": "Choisissez un joueur avec qui échanger votre santé",
@@ -413,6 +426,7 @@
 
   "ninja": "Ninja",
   "ninja_desc": "Rester immobile augmente votre invisibilité de 33%, s’accroupir de 33%, et tenir un couteau de 33%",
+  "ninja_hud": "Invisibilité : {0}",
 
   "partner": "Partenaire",
   "partner_desc": "Restez près d'un coéquipier choisi pour vous soigner tous les deux",
@@ -469,6 +483,7 @@
   "poison_disable_info": "Vous êtes désormais immunisé contre le poison.",
   "poison_player_info": "Le joueur « {0} » a été empoisonné.",
   "poison_select_info": "Empoisonner un joueur :",
+  "poison_hud": "{1} dégâts toutes les {0} s (jusqu'à {2} PV)",
 
   "primaryban": "Sans Fusils",
   "primaryban_desc": "Choisissez un joueur qui ne pourra plus utiliser de fusils",
@@ -483,6 +498,7 @@
   "punisher": "Punisseur",
   "punisher_desc": "Tu accumules une partie des dégâts subis et l'ajoutes à ton prochain tir",
   "punisher_released_info": "Tu as infligé {0} dégâts en plus et récupéré autant de vie.",
+  "punisher_hud": "Rage accumulée : {0}",
 
   "push": "Pousseur",
   "push_desc": "Vous avez une chance aléatoire de repousser un ennemi en le touchant",
@@ -505,6 +521,7 @@
 
   "rezombie": "Re-Zombie",
   "rezombie_desc": "Après la mort, vous réapparaissez en zombie avec plus de PV et sans armes",
+  "rezombie_hud": "Tu reviens en zombie avec {0} PV",
 
   "reactivearmor": "Armure Réactive",
   "reactivearmor_desc": "L’armure absorbe les premiers dégâts reçus",
@@ -528,15 +545,18 @@
 
   "richboy": "Gosse de Riche",
   "richboy_desc": "Vous recevez une somme d’argent aléatoire au début du round",
+  "richboy_hud": "Argent reçu : +${0}",
 
   "ricochet": "Ricochet",
   "ricochet_desc": "Vos balles rebondissent sur les murs et peuvent encore toucher les ennemis",
+  "ricochet_hud": "Les balles rebondissent {0} fois",
 
   "robinhood": "Robin des Bois",
   "robinhood_desc": "Infliger des dégâts à un ennemi lui vole de l’argent",
 
   "rubber": "Balles en Caoutchouc",
   "rubber_desc": "Vos balles ralentissent fortement les joueurs",
+  "rubber_hud": "Ralentit de {1}% pendant {0} s",
 
   "saper": "Sapeur",
   "saper_desc": "Vous pouvez poser et désamorcer les bombes plus rapidement",
@@ -605,6 +625,7 @@
 
   "thorns": "Épines",
   "thorns_desc": "Votre adversaire recevra une partie des dégâts qu’il vous a infligés",
+  "thorns_hud": "Renvoie {0}% des dégâts (max {1})",
 
   "throwingknife": "Couteau de lancer",
   "throwingknife_desc": "Cliquez sur [css_useSkill] pour lancer un couteau. Mais attention aux autres",
@@ -617,6 +638,7 @@
 
   "toxicsmoke": "Fumée Toxique",
   "toxicsmoke_desc": "Vos grenades fumigènes infligent des dégâts",
+  "toxicsmoke_hud": "Dégâts de fumée : {0}/s",
 
   "tripwire": "Fil-piège",
   "tripwire_desc": "Cliquez sur [css_useSkill] pour tendre un fil entre deux murs. Les ennemis qui le touchent apparaissent sur votre radar",
@@ -626,6 +648,7 @@
 
   "truearmor": "Vraie armure",
   "truearmor_desc": "Une partie des dégâts est absorbée par ton armure au lieu de ta vie",
+  "truearmor_hud": "Dégâts absorbés par l’armure : {0}%",
 
   "voodoo": "Vaudou",
   "voodoo_desc": "L'ennemi que tu marques subit aussi une partie des dégâts que tu reçois",
@@ -670,6 +693,9 @@
   "active_hud_info": "Actif encore {0} millisecondes",
 
   "skills_menu": "Liste des compétences",
+  "language_name": "Français",
+  "language_menu": "Langue",
+  "language_changed": "Langue modifiée : {0}",
   "no_player": "Aucun joueur correspondant trouvé.",
   "duplicate_player": "Plus d’un joueur trouvé avec le même nom.",
   "selectplayerskill_command": "Tapez /t",

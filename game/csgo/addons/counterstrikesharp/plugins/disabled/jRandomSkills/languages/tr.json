@@ -4,6 +4,7 @@
 
   "adrenaline": "Adrenalin",
   "adrenaline_desc": "Vurduğun düşmanın hızını çalarsın",
+  "adrenaline_hud": "Hız: +%{0}",
 
   "aimbot": "Aimbot",
   "aimbot_desc": "Vurduğunda kafadan (HS) sayılır",
@@ -57,6 +58,7 @@
 
   "berserker": "Berserker",
   "berserker_desc": "Canın azaldıkça hasarın ve hızın artar",
+  "berserker_hud": "Güç: x{0}",
 
   "blademaster": "Kılıç Ustası",
   "blademaster_desc": "Bıçak tutarken mermileri savuşturursun",
@@ -83,6 +85,9 @@
 
   "c4camouflage": "C4 Kamuflaj",
   "c4camouflage_desc": "Elinde C4 varken görünmezsin",
+  "c4camouflage_hud": "Durum: {0}",
+  "c4camouflage_hidden": "Görünmez",
+  "c4camouflage_visible": "Görünür",
 
   "carefulbullets": "Dikkatli Mermiler",
   "carefulbullets_desc": "Düşman mermi kaçırırsa hasar alır",
@@ -148,6 +153,7 @@
 
   "dracula": "Drakula",
   "dracula_desc": "Rakibe verdiğin hasarın birazı kadar can alırsın",
+  "dracula_hud": "Can çalma: hasarın %{0}",
 
   "duplicator": "Kopyacı",
   "duplicator_desc": "Bir düşmanın yeteneğini kopyala",
@@ -164,6 +170,7 @@
   "empgrenade": "EMP Bombası",
   "empgrenade_desc": "El bomban, hasar verdiğin düşmanın radarını ve nişangahını kapatır",
   "empgrenade_enemy_info": "Radarın ve nişangahın kapandı.",
+  "empgrenade_hud": "EMP süresi: {0} sn",
 
   "enemyspawn": "Base Baskını",
   "enemyspawn_desc": "[css_useSkill] tuşuna basarak düşman doğma noktasına ışınlan",
@@ -249,6 +256,7 @@
   "godmode_desc": "[css_useSkill] tuşuna basarak kısa süreli ölümsüz ol",
   "godmode_off": "Ölümsüzlük kapandı",
   "godmode_on": "Ölümsüzlük açıldı",
+  "godmode_hud": "Ölümsüzlük süresi: {0} sn",
 
   "grapple": "Kanca",
   "grapple_desc": "[css_useSkill] tuşuna basarak baktığın yere kanca at",
@@ -266,6 +274,7 @@
 
   "healingsmoke": "Şifalı Sis",
   "healingsmoke_desc": "Sis bomban iyileştirir",
+  "healingsmoke_hud": "Sis iyileştirmesi: {0} can/sn",
 
   "heavyweight": "Ağır Sıklet",
   "heavyweight_desc": "Seni iten ve yavaşlatan yetenekler işlemez",
@@ -283,6 +292,7 @@
   "hotbomb_desc": "Yaşadığın sürece bombacının canı azalır",
   "hotbomb_hint": "C4 ÇOK SICAK!",
   "hotbomb_disable_info": "C4 soğudu.",
+  "hotbomb_hud": "C4 taşıyana {0} sn'de bir {1} hasar",
 
   "iana": "Hologram",
   "iana_desc": "[css_useSkill] tuşuna basarak bir hologram oluştur",
@@ -344,15 +354,18 @@
 
   "jumpingjack": "Zıpzıp Jack",
   "jumpingjack_desc": "Zıplamak canını yeniler",
+  "jumpingjack_hud": "Zıplama başına +{0} can",
 
   "killerflash": "Ölümcül Flaş",
   "killerflash_desc": "Flaşına tamamen kör olan herkes ölür (sen dahil)",
+  "killerflash_hud": "{0} sn+ kör kalan düşman ölür",
 
   "knockback": "Savurma",
   "knockback_desc": "Havadayken ateş etmek seni geriye savurur",
 
   "lastgasp": "Son Nefes",
   "lastgasp_desc": "Öldükten sonra seni öldürene hasar verirsin",
+  "lastgasp_hud": "Ölünce katiline {0} hasar",
 
   "lifeswap": "Can Takası",
   "lifeswap_desc": "Bir düşmanla canını takasla",
@@ -413,6 +426,7 @@
 
   "ninja": "Ninja",
   "ninja_desc": "Sabit durmak, eğilmek ve bıçak tutmak görünmezliğini %33 artırır",
+  "ninja_hud": "Görünmezlik: {0}",
 
   "partner": "Partner",
   "partner_desc": "Seçtiğin takım arkadaşına yakın kaldıkça ikinizin de canı yenilenir",
@@ -469,6 +483,7 @@
   "poison_disable_info": "Zehire bağışıklık kazandın",
   "poison_player_info": "'{0}' isimli oyuncu zehirlendi.",
   "poison_select_info": "Birini seçin:",
+  "poison_hud": "{0} sn'de bir {1} hasar ({2} cana kadar)",
 
   "primaryban": "Tüfek Yasak",
   "primaryban_desc": "Tüfek kullanamayacak bir düşman seç",
@@ -483,6 +498,7 @@
   "punisher": "İntikam",
   "punisher_desc": "Aldığın hasarı biriktirir, sonraki vuruşunda geri verirsin",
   "punisher_released_info": "{0} ekstra hasar verdin ve o kadar can kazandın.",
+  "punisher_hud": "Biriken öfke: {0}",
 
   "push": "İtici",
   "push_desc": "Düşmana vurduğunda onu geri itme şansın olur",
@@ -505,6 +521,7 @@
 
   "rezombie": "Zombi",
   "rezombie_desc": "Öldüğünde silahsız zombi olarak daha çok canla dirilirsin",
+  "rezombie_hud": "{0} canla zombi olarak dirilirsin",
 
   "reactivearmor": "Reaktif Zırh",
   "reactivearmor_desc": "Zırhın ilk hasarı emer",
@@ -528,15 +545,18 @@
 
   "richboy": "Zengin Çocuk",
   "richboy_desc": "Rastgele miktarda paran olur",
+  "richboy_hud": "Verilen para: +${0}",
 
   "ricochet": "Seken Mermi",
   "ricochet_desc": "Mermin duvardan seker ve düşmana isabet edebilir",
+  "ricochet_hud": "Mermi {0} kez seker",
 
   "robinhood": "Robin Hood",
   "robinhood_desc": "Düşmana hasar vermek onun parasını çalar",
 
   "rubber": "Lastik Mermi",
   "rubber_desc": "Mermin isabet edeni yavaşlatır",
+  "rubber_hud": "Vurduğunu {0} sn %{1} yavaşlatır",
 
   "saper": "İstihkamcı",
   "saper_desc": "Bombayı daha hızlı kurar ve imha edersin",
@@ -605,6 +625,7 @@
 
   "thorns": "Dikenler",
   "thorns_desc": "Sana verilen hasarın bir kısmı rakibe döner",
+  "thorns_hud": "Yansıtma: hasarın %{0} (en fazla {1})",
 
   "throwingknife": "Fırlatma Bıçağı",
   "throwingknife_desc": "[css_useSkill] tuşuna basarak bıçak fırlat",
@@ -617,6 +638,7 @@
 
   "toxicsmoke": "Zehirli Sis",
   "toxicsmoke_desc": "Sis bomban hasar verir",
+  "toxicsmoke_hud": "Sis hasarı: {0}/sn",
 
   "tripwire": "Tel Tuzağı",
   "tripwire_desc": "[css_useSkill] tuşuna basarak iki duvar arasına tel ger, değen düşman radarda görünür",
@@ -626,6 +648,7 @@
 
   "truearmor": "Gerçek Zırh",
   "truearmor_desc": "Aldığın hasarın bir kısmını canın yerine zırhın karşılar",
+  "truearmor_hud": "Zırhın karşıladığı hasar: %{0}",
 
   "voodoo": "Vudu",
   "voodoo_desc": "Aldığın hasarın bir kısmını işaretlediğin düşman da alır",
@@ -670,6 +693,9 @@
   "active_hud_info": "{0} milisaniye daha aktif",
 
   "skills_menu": "Yetenek Listesi",
+  "language_name": "Türkçe",
+  "language_menu": "Dil Seçimi",
+  "language_changed": "Dil değiştirildi: {0}",
   "no_player": "Eşleşen oyuncu yok.",
   "duplicate_player": "Aynı isimde birden fazla oyuncu bulundu.",
   "selectplayerskill_command": "Sohbete /t yazın",

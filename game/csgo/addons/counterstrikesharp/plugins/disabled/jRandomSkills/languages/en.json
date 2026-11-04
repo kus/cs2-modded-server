@@ -4,6 +4,7 @@
 
   "adrenaline": "Adrenaline",
   "adrenaline_desc": "Hitting enemies steals their speed",
+  "adrenaline_hud": "Speed: +{0}%",
 
   "aimbot": "Aimbot",
   "aimbot_desc": "Every bullet you hit counts as a headshot",
@@ -57,6 +58,7 @@
 
   "berserker": "Berserker",
   "berserker_desc": "You deal more damage and move faster as your health gets lower",
+  "berserker_hud": "Power: x{0}",
 
   "blademaster": "Blademaster",
   "blademaster_desc": "While holding a knife, you have a high chance to deflect a shot",
@@ -83,6 +85,9 @@
 
   "c4camouflage": "C4 Camouflage",
   "c4camouflage_desc": "You are invisible while holding the bomb",
+  "c4camouflage_hud": "Status: {0}",
+  "c4camouflage_hidden": "Invisible",
+  "c4camouflage_visible": "Visible",
 
   "carefulbullets": "Careful Bullets",
   "carefulbullets_desc": "Select a player who takes damage for every missed shot",
@@ -148,6 +153,7 @@
 
   "dracula": "Dracula",
   "dracula_desc": "Hitting an enemy restores health equal to a percentage of the damage dealt",
+  "dracula_hud": "Lifesteal: {0}% of damage",
 
   "duplicator": "Duplicator",
   "duplicator_desc": "Choose a player to copy their skill",
@@ -164,6 +170,7 @@
   "empgrenade": "EMP Grenade",
   "empgrenade_desc": "Anyone hurt by your grenade loses their radar and crosshair for a while",
   "empgrenade_enemy_info": "An EMP grenade knocked out your radar and crosshair.",
+  "empgrenade_hud": "EMP duration: {0}s",
 
   "enemyspawn": "Enemy Spawn",
   "enemyspawn_desc": "Click [css_useSkill] to teleport to the enemy spawn",
@@ -249,6 +256,7 @@
   "godmode_desc": "Click [css_useSkill] to become immortal for a short time",
   "godmode_off": "Immortality disabled",
   "godmode_on": "Immortality enabled",
+  "godmode_hud": "Invulnerability: {0}s",
 
   "grapple": "Grapple Hook",
   "grapple_desc": "Press [css_useSkill] to fire a hook at the point you are aiming at and pull yourself there",
@@ -266,6 +274,7 @@
 
   "healingsmoke": "Healing Smoke",
   "healingsmoke_desc": "Your smoke grenades heal",
+  "healingsmoke_hud": "Smoke heal: {0} HP/s",
 
   "heavyweight": "Heavyweight",
   "heavyweight_desc": "Skills that push or slow you down have no effect on you",
@@ -283,6 +292,7 @@
   "hotbomb_desc": "As long as you are alive, the bomb deals damage to its carrier",
   "hotbomb_hint": "Careful, the bomb is hot!",
   "hotbomb_disable_info": "The bomb is no longer hot.",
+  "hotbomb_hud": "C4 carrier takes {1} dmg every {0}s",
 
   "iana": "Hologram",
   "iana_desc": "Click [css_useSkill] to control your hologram for a few seconds",
@@ -344,15 +354,18 @@
 
   "jumpingjack": "Jumping Jack",
   "jumpingjack_desc": "Jumping restores health",
+  "jumpingjack_hud": "+{0} HP per jump",
 
   "killerflash": "Killer Flash",
   "killerflash_desc": "Anyone fully blinded by your flashbang dies (including you)",
+  "killerflash_hud": "Enemies blinded {0}s+ die",
 
   "knockback": "Knockback",
   "knockback_desc": "Firing while airborne pushes you backwards",
 
   "lastgasp": "Last Gasp",
   "lastgasp_desc": "After you die, you deal damage to the enemy who killed you",
+  "lastgasp_hud": "On death: {0} dmg to your killer",
 
   "lifeswap": "Life Swap",
   "lifeswap_desc": "Choose a player to swap health with",
@@ -413,6 +426,7 @@
 
   "ninja": "Ninja",
   "ninja_desc": "Standing still increases your invisibility by 33%, crouching by 33%, and holding a knife by 33%",
+  "ninja_hud": "Invisibility: {0}",
 
   "partner": "Partner",
   "partner_desc": "Stay close to a chosen teammate to regenerate both of your health",
@@ -469,6 +483,7 @@
   "poison_disable_info": "You are now immune to poison.",
   "poison_player_info": "Player '{0}' has been poisoned.",
   "poison_select_info": "Poison a player:",
+  "poison_hud": "{1} dmg every {0}s (down to {2} HP)",
 
   "primaryban": "No Rifles",
   "primaryban_desc": "Choose a player who cannot use rifles",
@@ -483,6 +498,7 @@
   "punisher": "Punisher",
   "punisher_desc": "You bank part of the damage you take and add it to your next hit",
   "punisher_released_info": "You dealt {0} extra damage and healed for the same amount.",
+  "punisher_hud": "Stored rage: {0}",
 
   "push": "Pusher",
   "push_desc": "You have a random chance to push an enemy back when hitting them",
@@ -505,6 +521,7 @@
 
   "rezombie": "Re-Zombie",
   "rezombie_desc": "After death, you respawn as a zombie with increased health and no weapons",
+  "rezombie_hud": "You revive as a zombie with {0} HP",
 
   "reactivearmor": "Reactive Armor",
   "reactivearmor_desc": "Armor absorbs the first damage taken",
@@ -528,15 +545,18 @@
 
   "richboy": "Rich Boy",
   "richboy_desc": "You receive a random amount of money at the start of the round",
+  "richboy_hud": "Money given: +${0}",
 
   "ricochet": "Ricochet",
   "ricochet_desc": "Your bullets bounce off walls and can still hit enemies",
+  "ricochet_hud": "Bullets bounce {0} times",
 
   "robinhood": "Robin Hood",
   "robinhood_desc": "Dealing damage to an enemy steals their money",
 
   "rubber": "Rubber Bullets",
   "rubber_desc": "Your bullets significantly slow down players",
+  "rubber_hud": "Slows hit enemies by {1}% for {0}s",
 
   "saper": "Sapper",
   "saper_desc": "You can plant and defuse bombs faster",
@@ -605,6 +625,7 @@
 
   "thorns": "Thorns",
   "thorns_desc": "Your opponent will receive a portion of the damage that they inflicted on you",
+  "thorns_hud": "Reflects {0}% of damage (max {1})",
 
   "throwingknife": "Throwing Knife",
   "throwingknife_desc": "Click [css_useSkill] to throw a knife. But watch out for others",
@@ -617,6 +638,7 @@
 
   "toxicsmoke": "Toxic Smoke",
   "toxicsmoke_desc": "Your smoke grenades deal damage",
+  "toxicsmoke_hud": "Smoke damage: {0}/s",
 
   "tripwire": "Tripwire",
   "tripwire_desc": "Click [css_useSkill] to string a wire between two walls. Enemies who touch it appear on your radar",
@@ -626,6 +648,7 @@
 
   "truearmor": "True Armor",
   "truearmor_desc": "Part of the damage you take is paid by your armor instead of your health",
+  "truearmor_hud": "Damage taken by armor: {0}%",
 
   "voodoo": "Voodoo",
   "voodoo_desc": "The enemy you mark also takes part of the damage you take",
@@ -669,7 +692,10 @@
   "hud_info_no_enemy": "No enemy found",
   "active_hud_info": "Active for another {0} milliseconds",
 
-  "skills_menu": "skill List",
+  "skills_menu": "Skill List",
+  "language_name": "English",
+  "language_menu": "Language",
+  "language_changed": "Language changed: {0}",
   "no_player": "No matching player found.",
   "duplicate_player": "More than one player found with the same name.",
   "selectplayerskill_command": "Type /t",

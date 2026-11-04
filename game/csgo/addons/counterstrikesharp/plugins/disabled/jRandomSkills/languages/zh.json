@@ -4,6 +4,7 @@
 
   "adrenaline": "肾上腺素",
   "adrenaline_desc": "命中敌人会偷取其速度",
+  "adrenaline_hud": "速度：+{0}%",
 
   "aimbot": "自动瞄准",
   "aimbot_desc": "你击中的每颗子弹都算作爆头",
@@ -55,6 +56,8 @@
   "behind_desc": "你有随机几率在击中敌人时使其旋转180度",
   "behind_desc2": "你击中敌人使其旋转的几率是：{0}%",
 
+  "berserker_hud": "力量：x{0}",
+
   "blademaster": "我的刀能档子弹！",
   "blademaster_desc": "持刀时，你有很高几率格挡子弹",
 
@@ -77,6 +80,9 @@
 
   "c4camouflage": "C4伪装",
   "c4camouflage_desc": "你持有炸弹时隐形",
+  "c4camouflage_hud": "状态：{0}",
+  "c4camouflage_hidden": "隐身",
+  "c4camouflage_visible": "可见",
 
   "carefulbullets": "谨慎开火",
   "carefulbullets_desc": "选择一名玩家，每当他空枪时就会受到伤害",
@@ -142,6 +148,7 @@
 
   "dracula": "吸血鬼",
   "dracula_desc": "击中敌人会根据造成的伤害百分比恢复你的生命值",
+  "dracula_hud": "吸血：伤害的{0}%",
 
   "duplicator": "复制者",
   "duplicator_desc": "选择一个玩家以复制其技能",
@@ -158,6 +165,7 @@
   "empgrenade": "电磁脉冲手雷",
   "empgrenade_desc": "被你的手雷伤到的人会暂时失去雷达和准星",
   "empgrenade_enemy_info": "电磁脉冲手雷让你的雷达和准星失效了。",
+  "empgrenade_hud": "EMP持续：{0}秒",
 
   "enemyspawn": "传送敌人出生点",
   "enemyspawn_desc": "点击 [css_useSkill] 传送到敌人出生点",
@@ -237,6 +245,7 @@
   "godmode_desc": "点击 [css_useSkill] 在短时间内变得无敌",
   "godmode_off": "无敌状态已禁用",
   "godmode_on": "无敌状态已启用",
+  "godmode_hud": "无敌：{0}秒",
 
   "grapple": "钩爪",
   "grapple_desc": "按 [css_useSkill] 向准星所指位置发射钩爪并将自己拉过去",
@@ -251,6 +260,7 @@
 
   "healingsmoke": "治疗烟雾",
   "healingsmoke_desc": "你的烟雾弹会治疗",
+  "healingsmoke_hud": "烟雾治疗：{0}生命/秒",
 
   "heavyweight": "重量级",
   "heavyweight_desc": "推开你或让你减速的技能对你无效",
@@ -268,6 +278,7 @@
   "hotbomb_desc": "只要你还活着，炸弹就会对携带者造成伤害",
   "hotbomb_hint": "小心，炸弹很烫！",
   "hotbomb_disable_info": "炸弹不再烫手了。",
+  "hotbomb_hud": "C4携带者每{0}秒受到{1}伤害",
 
   "iana": "全息图",
   "iana_desc": "点击 [css_useSkill] 可控制你的全息影像数秒",
@@ -321,9 +332,11 @@
   "jumpcurse_select_info": "jumpcurse_select_info",
   "jumpingjack": "开合跳",
   "jumpingjack_desc": "跳跃会恢复生命值",
+  "jumpingjack_hud": "每次跳跃 +{0} 生命",
 
   "killerflash": "致命闪光",
   "killerflash_desc": "任何被你的闪光弹完全致盲的人都会死亡（包括你自己）",
+  "killerflash_hud": "致盲{0}秒以上的敌人死亡",
 
   "knockback": "knockback",
   "knockback_desc": "knockback_desc",
@@ -332,6 +345,8 @@
   "lifeswap_enemy_info": "有人借走了你的生命值。",
   "lifeswap_player_info": "你与玩家 '{0}' 交换了生命值。",
   "lifeswap_select_info": "选择你想与之交换生命值的玩家：",
+
+  "lastgasp_hud": "死亡时对击杀者造成{0}伤害",
 
   "longknife": "剑气攻击",
   "longknife_desc": "刀具攻击造成的伤害无视距离",
@@ -383,6 +398,7 @@
 
   "ninja": "忍者",
   "ninja_desc": "站立不动增加33%隐形，蹲下增加33%，持刀增加33%",
+  "ninja_hud": "隐形：{0}",
 
   "partner": "搭档",
   "partner_desc": "靠近选定的队友，你们双方都会恢复生命值",
@@ -439,6 +455,7 @@
   "poison_disable_info": "你已免疫毒素。",
   "poison_player_info": "玩家 '{0}' 已被毒害。",
   "poison_select_info": "选择每隔几秒将受到伤害的玩家：",
+  "poison_hud": "每{0}秒{1}点伤害（降至{2}生命）",
 
   "primaryban": "手枪局",
   "primaryban_desc": "选择一个玩家使其无法使用步枪",
@@ -453,6 +470,7 @@
   "punisher": "惩罚者",
   "punisher_desc": "你会积攒受到伤害的一部分，并加到下一次命中上",
   "punisher_released_info": "你造成了 {0} 点额外伤害，并回复了同样的生命值。",
+  "punisher_hud": "积攒怒气：{0}",
 
   "push": "推力者",
   "push_desc": "你有随机几率在击中敌人时将其推回",
@@ -475,6 +493,7 @@
 
   "rezombie": "重生僵尸",
   "rezombie_desc": "死亡后你将作为僵尸复活，拥有更多生命值但无武器",
+  "rezombie_hud": "以{0}生命复活为僵尸",
 
   "reactivearmor": "反应装甲",
   "reactivearmor_desc": "装甲吸收首次受到的伤害",
@@ -498,15 +517,18 @@
 
   "richboy": "富少",
   "richboy_desc": "回合开始时你获得随机数量的钱",
+  "richboy_hud": "获得金钱：+${0}",
 
   "ricochet": "跳弹",
   "ricochet_desc": "你的子弹会从墙上弹开，并且仍能击中敌人",
+  "ricochet_hud": "子弹弹射{0}次",
 
   "robinhood": "罗宾汉",
   "robinhood_desc": "对敌人造成伤害会偷取他们的钱",
 
   "rubber": "橡胶子弹",
   "rubber_desc": "你的子弹会显著减慢玩家速度",
+  "rubber_hud": "命中后减速{1}%，持续{0}秒",
 
   "saper": "工兵",
   "saper_desc": "你可以更快地放置和拆除炸弹",
@@ -563,6 +585,7 @@
 
   "thorns": "荊棘",
   "thorns_desc": "你的对手将承受其对你造成伤害的一部分",
+  "thorns_hud": "反弹{0}%伤害（最多{1}）",
 
   "throwingknife": "投掷飞刀",
   "throwingknife_desc": "点击 [css_useSkill] 扔出飞刀。但要小心其他人",
@@ -575,6 +598,7 @@
 
   "toxicsmoke": "毒烟",
   "toxicsmoke_desc": "你的烟雾弹会造成伤害",
+  "toxicsmoke_hud": "烟雾伤害：{0}/秒",
 
   "tripwire": "tripwire",
   "tripwire_desc": "tripwire_desc",
@@ -584,6 +608,7 @@
 
   "truearmor": "真实护甲",
   "truearmor_desc": "你受到的一部分伤害由护甲承担，而不是生命值",
+  "truearmor_hud": "护甲承担伤害：{0}%",
 
   "voodoo": "巫毒",
   "voodoo_desc": "被你标记的敌人也会受到你所受伤害的一部分",
@@ -628,6 +653,9 @@
   "active_hud_info": "还剩 {0} 毫秒有效",
 
   "skills_menu": "技能列表",
+  "language_name": "中文",
+  "language_menu": "语言",
+  "language_changed": "语言已更改：{0}",
   "no_player": "未找到匹配的玩家。",
   "duplicate_player": "找到多个同名玩家。",
   "selectplayerskill_command": "输入 /t",

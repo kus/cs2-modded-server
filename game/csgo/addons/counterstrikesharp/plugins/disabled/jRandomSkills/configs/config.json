@@ -147,6 +147,12 @@
     "WSADMenuControllsLineColor2": "white",
     "WSADMenuControllsLineColor3": "green"
   },
+  "PanoramaHud": {
+    "Enabled": false,
+    "Layout": "panorama/layout/custom_game/jrandomskills/simple_skills.xml",
+    "Font": "stratum",
+    "FontSize": 100
+  },
   "ChatMessage": {
     "MaxWidth": 1280.0,
     "LineSymbol": "―",
