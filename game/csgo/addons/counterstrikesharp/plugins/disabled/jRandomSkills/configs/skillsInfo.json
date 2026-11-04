@@ -1704,6 +1704,7 @@
     "HealRadius": 150.0,
     "ChickenHealth": 50,
     "BoostFactor": 2.5,
+    "ReturnDistance": 500.0,
     "NeedsTeammates": false,
     "DisableOnFreezeTime": false,
     "DisableOnPistolRound": false,

@@ -4,6 +4,7 @@
 
   "adrenaline": "Adrenalina",
   "adrenaline_desc": "Seus acertos roubam a velocidade dos inimigos",
+  "adrenaline_hud": "Velocidade: +{0}%",
 
   "aimbot": "Aimbot",
   "aimbot_desc": "Toda bala que você acertar conta como um hs",
@@ -57,6 +58,7 @@
 
   "berserker": "Berserker",
   "berserker_desc": "Você causa mais dano e se move mais rápido conforme sua vida diminui",
+  "berserker_hud": "Poder: x{0}",
 
   "blademaster": "Mestre das Lâminas",
   "blademaster_desc": "Enquanto segura a faca, você tem chance de desviar de um tiro",
@@ -83,6 +85,9 @@
 
   "c4camouflage": "Camuflagem C4",
   "c4camouflage_desc": "Você fica invisível enquanto segura a bomba",
+  "c4camouflage_hud": "Estado: {0}",
+  "c4camouflage_hidden": "Invisível",
+  "c4camouflage_visible": "Visível",
 
   "carefulbullets": "Errou, mamou",
   "carefulbullets_desc": "Selecione um jogador vai sofrer dano ao errar cada tiro",
@@ -155,6 +160,7 @@
 
   "dracula": "Drácula",
   "dracula_desc": "Acertar um inimigo restaura sua vida igual a ao dano causado",
+  "dracula_hud": "Roubo de vida: {0}% do dano",
 
   "duplicator": "ctrl+c ctrl+v",
   "duplicator_desc": "Escolha um jogador para copiar a habilidade",
@@ -171,6 +177,7 @@
   "empgrenade": "Granada EMP",
   "empgrenade_desc": "Quem se ferir com sua granada perde o radar e a mira por um tempo",
   "empgrenade_enemy_info": "Uma granada EMP derrubou seu radar e sua mira.",
+  "empgrenade_hud": "Duração do EMP: {0}s",
 
   "enemyspawn": "Spawn Inimigo",
   "enemyspawn_desc": "Clique em [css_useSkill] para se teletransportar para a base inimiga",
@@ -256,6 +263,7 @@
   "godmode_desc": "Clique em [css_useSkill] para se tornar imortal por alguns segundos",
   "godmode_off": "Imortalidade desativada",
   "godmode_on": "Imortalidade ativada",
+  "godmode_hud": "Invulnerabilidade: {0}s",
 
   "grapple": "Gancho",
   "grapple_desc": "Pressione [css_useSkill] para lançar um gancho no ponto mirado e se puxar até lá",
@@ -270,6 +278,7 @@
 
   "healingsmoke": "Smoke Amiga",
   "healingsmoke_desc": "Suas smokes curam",
+  "healingsmoke_hud": "Cura da fumaça: {0} de vida/s",
 
   "healingchicken": "Galinha Curadora",
   "healingchicken_desc": "Suas galinhas curam você enquanto você estiver por perto",
@@ -290,6 +299,7 @@
   "hotbomb_desc": "Enquanto você estiver vivo, a bomba causa dano ao portador",
   "hotbomb_hint": "Cuidado, a bomba está quente!",
   "hotbomb_disable_info": "A bomba não está mais queimando.",
+  "hotbomb_hud": "Portador da C4 sofre {1} de dano a cada {0}s",
 
   "iana": "Holograma",
   "iana_desc": "Clique em [css_useSkill] para controlar seu holograma por alguns segundos",
@@ -351,15 +361,18 @@
 
   "jumpingjack": "Pula-Pula",
   "jumpingjack_desc": "Pular restaura vida",
+  "jumpingjack_hud": "+{0} de vida por pulo",
 
   "killerflash": "Flash Mortal",
   "killerflash_desc": "Qualquer pessoa cega pela sua flash morre (incluindo você)",
+  "killerflash_hud": "Inimigos cegos por {0}s+ morrem",
 
   "knockback": "Repulsão",
   "knockback_desc": "Atirar enquanto estiver no ar empurra você para trás",
 
   "lastgasp": "Último Suspiro",
   "lastgasp_desc": "Após morrer, você causa dano ao inimigo que matou você",
+  "lastgasp_hud": "Ao morrer: {0} de dano no assassino",
 
   "lifeswap": "Troca de Vida",
   "lifeswap_desc": "Escolha um jogador para trocar de vida",
@@ -413,6 +426,7 @@
 
   "ninja": "Ninja",
   "ninja_desc": "Ficar parado aumenta sua invisibilidade em 33%, agachar em 33%, e segurar uma faca em 33%",
+  "ninja_hud": "Invisibilidade: {0}",
 
   "partner": "Parceiro",
   "partner_desc": "Fique perto de um aliado escolhido para regenerar a vida dos dois",
@@ -469,6 +483,7 @@
   "poison_disable_info": "Você agora está imune ao veneno.",
   "poison_player_info": "O jogador '{0}' foi envenenado.",
   "poison_select_info": "Envenenar jogador:",
+  "poison_hud": "{1} de dano a cada {0}s (até {2} de vida)",
 
   "primaryban": "Sem Rifle",
   "primaryban_desc": "Escolha um jogador que não poderá usar rifles",
@@ -483,6 +498,7 @@
   "punisher": "Punidor",
   "punisher_desc": "Você guarda parte do dano recebido e soma no seu próximo tiro",
   "punisher_released_info": "Você causou {0} de dano extra e recuperou a mesma vida.",
+  "punisher_hud": "Fúria acumulada: {0}",
 
   "push": "Empurrão",
   "push_desc": "Você tem uma chance aleatória de empurrar um inimigo ao acertá-lo",
@@ -505,6 +521,7 @@
 
   "rezombie": "Walking Dead",
   "rezombie_desc": "Após morrer, você renasce como um zumbi com mais vida porém sem armas",
+  "rezombie_hud": "Você revive como zumbi com {0} de vida",
 
   "reactivearmor": "Armadura Reativa",
   "reactivearmor_desc": "A armadura absorve o primeiro dano recebido",
@@ -528,15 +545,18 @@
 
   "richboy": "Filhinho de Papai",
   "richboy_desc": "Você recebe uma quantidade aleatória de dinheiro no início da rodada",
+  "richboy_hud": "Dinheiro recebido: +${0}",
 
   "ricochet": "Ricochete",
   "ricochet_desc": "Suas balas ricocheteiam nas paredes e ainda podem acertar inimigos",
+  "ricochet_hud": "As balas ricocheteiam {0} vezes",
 
   "robinhood": "Robin Hood",
   "robinhood_desc": "Atirar em um inimigo rouba seu dinheiro",
 
   "rubber": "Balas de Borracha",
   "rubber_desc": "Seus tiros deixam os jogadores lentos ao serem atingidos",
+  "rubber_hud": "Desacelera {1}% por {0}s",
 
   "saper": "Especialista",
   "saper_desc": "Você pode plantar e desarmar bombas mais rápido",
@@ -605,6 +625,7 @@
 
   "thorns": "Porco Espinho",
   "thorns_desc": "Seu oponente receberá uma parte do dano que causou a você",
+  "thorns_hud": "Reflete {0}% do dano (máx. {1})",
 
   "throwingknife": "Faca de Arremesso",
   "throwingknife_desc": "Clique em [css_useSkill] para lançar uma faca. Mas cuidado com os outros",
@@ -617,6 +638,7 @@
 
   "toxicsmoke": "Smoke Tóxica",
   "toxicsmoke_desc": "Suas smokes causam dano",
+  "toxicsmoke_hud": "Dano da fumaça: {0}/s",
 
   "tripwire": "Fio de Armadilha",
   "tripwire_desc": "Clique em [css_useSkill] para estender um fio entre duas paredes. Inimigos que tocarem nele aparecerão no seu radar",
@@ -626,6 +648,7 @@
 
   "truearmor": "Armadura Real",
   "truearmor_desc": "Parte do dano que você recebe sai do colete em vez da vida",
+  "truearmor_hud": "Dano absorvido pelo colete: {0}%",
 
   "voodoo": "Vodu",
   "voodoo_desc": "O inimigo que você marcar também recebe parte do dano que você leva",
@@ -670,6 +693,9 @@
   "active_hud_info": "Ativo por mais {0} milissegundos",
 
   "skills_menu": "Lista de Habilidades",
+  "language_name": "Português (BR)",
+  "language_menu": "Idioma",
+  "language_changed": "Idioma alterado: {0}",
   "no_player": "Nenhum jogador correspondente encontrado.",
   "duplicate_player": "Mais de um jogador encontrado com o mesmo nome.",
   "selectplayerskill_command": "Digite /t",

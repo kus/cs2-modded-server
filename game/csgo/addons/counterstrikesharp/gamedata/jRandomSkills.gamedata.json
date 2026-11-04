@@ -2,8 +2,8 @@
   "SmokeGrenadeProjectile_CreateFunc": {
     "signatures": {
       "library": "server",
-      "windows": "48 8B C4 48 89 58 ? 48 89 68 ? 48 89 70 ? 57 41 56 41 57 48 81 EC ? ? ? ? 48 8B B4 24 ? ? ? ? 4D 8B F8",
-      "linux": "55 4C 89 C1 48 89 E5 41 57 49 89 FF 41 56 45 89 CE 41 55 4D 89 C5 41 54 53 48 81 EC ? ? ? ? 48 89 95 ? ? ? ? 48 89 F2 48 89 FE 48 8D 3D"
+      "windows": "48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 57 41 56 41 57 48 83 EC ? 48 8B B4 24 ? ? ? ? 4D 8B F8 4C 8B C2",
+      "linux": "55 4C 89 C1 48 89 E5 41 57 41 56 49 89 FE 41 55 45 89 CD 41 54 4D 89 C4 53 48 81 EC ? ? ? ? 48 89 95 ? ? ? ? 48 89 F2 48 89 FE 48 8D 3D"
     }
   },
   "HEGrenadeProjectile_CreateFunc": {
@@ -23,7 +23,7 @@
   "DecoyProjectile_CreateFunc": {
     "signatures": {
       "library": "server",
-      "windows": "48 8B C4 55 56 48 81 EC ? ? ? ? 48 89 58 ? 48 8B D9 48 89 78 ? 49 8B F8 4C 89 78 ? 4C 8B C2 4C 8B BC 24 ? ? ? ? 48 8B D1 4D 8B CF 0F 29 70",
+      "windows": "40 55 56 48 83 EC ? 48 89 5C 24 ? 48 8B D9 48 89 7C 24 ? 49 8B F8 4C 89 7C 24 ? 4C 8B C2 4C 8B BC 24 ? ? ? ? 48 8B D1 4D 8B CF 0F 29 74 24",
       "linux": "55 4C 89 C1 48 89 E5 41 57 45 89 CF 41 56 49 89 FE 41 55 49 89 D5 48 89 F2 48 89 FE 41 54 48 8D 3D ? ? ? ? 4D 89 C4 53 48 83 EC ? E8 ? ? ? ? 45 31 C0 31 C9 31 D2"
     }
   },

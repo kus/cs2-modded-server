@@ -4,6 +4,7 @@
 
   "adrenaline": "Adrenalina",
   "adrenaline_desc": "Trafienia kradną wrogom prędkość",
+  "adrenaline_hud": "Prędkość: +{0}%",
 
   "aimbot": "Aimbot",
   "aimbot_desc": "Każdy twój trafiony pocisk liczy się jako strzał w głowę",
@@ -57,6 +58,7 @@
 
   "berserker": "Berserker",
   "berserker_desc": "Zadajesz więcej obrażeń i poruszasz się szybciej, gdy masz mniej zdrowia",
+  "berserker_hud": "Siła: x{0}",
 
   "blademaster": "Mistrz Ostrza",
   "blademaster_desc": "Trzymając nóż, masz duże szanse na odparcie strzału",
@@ -83,6 +85,9 @@
 
   "c4camouflage": "C4 Kamuflaż",
   "c4camouflage_desc": "Kiedy trzymasz bombę, jesteś niewidzialny",
+  "c4camouflage_hud": "Stan: {0}",
+  "c4camouflage_hidden": "Niewidzialny",
+  "c4camouflage_visible": "Widoczny",
 
   "carefulbullets": "Ostrożne Pociski",
   "carefulbullets_desc": "Wybierz gracza, który otrzymuje obrażenia za każdy niecelny strzał",
@@ -155,6 +160,7 @@
 
   "dracula": "Drakula",
   "dracula_desc": "Po trafieniu ofiary odzyskujesz zdrowie równe pewnemu procentowi zadanych obrażeń",
+  "dracula_hud": "Kradzież życia: {0}% obrażeń",
 
   "duplicator": "Duplikator",
   "duplicator_desc": "Wybierasz gracza, od którego chcesz skopiować supermoc",
@@ -171,6 +177,7 @@
   "empgrenade": "Granat EMP",
   "empgrenade_desc": "Kto oberwie twoim granatem, na chwilę traci radar i celownik",
   "empgrenade_enemy_info": "Granat EMP wyłączył twój radar i celownik.",
+  "empgrenade_hud": "Czas EMP: {0} s",
 
   "enemyspawn": "Resp Wroga",
   "enemyspawn_desc": "Kliknij [css_useSkill], aby teleportować się na resp wroga",
@@ -256,6 +263,7 @@
   "godmode_desc": "Kliknij [css_useSkill], aby stać się nieśmiertelnym na krótką chwilę",
   "godmode_off": "Nieśmiertelność wyłączona",
   "godmode_on": "Nieśmiertelność włączona",
+  "godmode_hud": "Nieśmiertelność: {0} s",
 
   "grapple": "Hak",
   "grapple_desc": "Naciśnij [css_useSkill], aby wystrzelić hak w celowany punkt i przyciągnąć się do niego",
@@ -270,6 +278,7 @@
 
   "healingsmoke": "Leczący Dym",
   "healingsmoke_desc": "Twoje granaty dymne leczą",
+  "healingsmoke_hud": "Leczenie dymu: {0} HP/s",
 
   "healingchicken": "Lecząca Kura",
   "healingchicken_desc": "Twoje kury leczą Cię, gdy jesteś w pobliżu",
@@ -290,6 +299,7 @@
   "hotbomb_desc": "Dopóki żyjesz, bomba zadaje obrażenia osobie, która ją niesie",
   "hotbomb_hint": "Ostrożnie, bomba parzy!",
   "hotbomb_disable_info": "Bomba już nie parzy.",
+  "hotbomb_hud": "Nosiciel C4 traci {1} HP co {0} s",
 
   "iana": "Hologram",
   "iana_desc": "Kliknij [css_useSkill], aby sterować hologramem przez kilka sekund",
@@ -351,15 +361,18 @@
 
   "jumpingjack": "Pajacyk",
   "jumpingjack_desc": "Skakanie przywraca zdrowie",
+  "jumpingjack_hud": "+{0} HP za skok",
 
   "killerflash": "Zabójczy Flash",
   "killerflash_desc": "Każdy całkowicie oślepiony twoim granatem umiera (również ty)",
+  "killerflash_hud": "Wrogowie oślepieni na {0} s+ giną",
 
   "knockback": "Odrzut",
   "knockback_desc": "Strzelanie w powietrzu odpycha Cię do tyłu",
 
   "lastgasp": "Ostatnie Tchnienie",
   "lastgasp_desc": "Po śmierci zadajesz obrażenia przeciwnikowi, który Cię zabił",
+  "lastgasp_hud": "Po śmierci: {0} obr. dla zabójcy",
 
   "lifeswap": "Zamiana Żyć",
   "lifeswap_desc": "Wybierasz gracza, z którym chcesz wymienić się zdrowiem",
@@ -413,6 +426,7 @@
 
   "ninja": "Ninja",
   "ninja_desc": "Stojąc nieruchomo zwiększasz swoją niewidzialność o 33%, kucając o 33%, a trzymając nóż o 33%",
+  "ninja_hud": "Niewidzialność: {0}",
 
   "partner": "Partner",
   "partner_desc": "Bądź blisko wybranego sojusznika, by odnawiać zdrowie wam obu",
@@ -469,6 +483,7 @@
   "poison_disable_info": "Jesteś teraz odporny na truciznę.",
   "poison_player_info": "Gracz '{0}' został otruty.",
   "poison_select_info": "Zatruj gracza:",
+  "poison_hud": "{1} obr. co {0} s (do {2} HP)",
 
   "primaryban": "Brak Karabinów",
   "primaryban_desc": "Wybierasz gracza, który nie może używać karabinów",
@@ -483,6 +498,7 @@
   "punisher": "Karający",
   "punisher_desc": "Gromadzisz część otrzymanych obrażeń i uwalniasz je przy następnym strzale",
   "punisher_released_info": "Zadałeś {0} dodatkowych obrażeń i odzyskałeś tyle samo życia.",
+  "punisher_hud": "Zgromadzony gniew: {0}",
 
   "push": "Odpychacz",
   "push_desc": "Masz losową szansę na odepchnięcie wroga po trafieniu go",
@@ -505,6 +521,7 @@
 
   "rezombie": "Re-Zombie",
   "rezombie_desc": "Po śmierci odradzasz się jako zombie z większym zdrowiem i bez broni",
+  "rezombie_hud": "Odradzasz się jako zombie z {0} HP",
 
   "reactivearmor": "Pancerz Reaktywny",
   "reactivearmor_desc": "Pancerz pochłania pierwsze otrzymane obrażenia",
@@ -528,15 +545,18 @@
 
   "richboy": "Bogacz",
   "richboy_desc": "Na początku rundy otrzymujesz losową kwotę gotówki",
+  "richboy_hud": "Otrzymane pieniądze: +${0}",
 
   "ricochet": "Rykoszet",
   "ricochet_desc": "Twoje pociski odbijają się od ścian i nadal mogą trafić przeciwników",
+  "ricochet_hud": "Pociski odbijają się {0} razy",
 
   "robinhood": "Robin Hood",
   "robinhood_desc": "Zadanie obrażeń przeciwnikowi powoduje kradzież jego pieniędzy",
 
   "rubber": "Gumowe Kule",
   "rubber_desc": "Twoje pociski znacznie spowalniają graczy",
+  "rubber_hud": "Spowalnia o {1}% na {0} s",
 
   "saper": "Saper",
   "saper_desc": "Możesz szybciej podłożyć bombę i ją rozbroić",
@@ -605,6 +625,7 @@
 
   "thorns": "Ciernie",
   "thorns_desc": "Twój przeciwnik otrzymuje część obrażeń, które zadał ci",
+  "thorns_hud": "Odbija {0}% obrażeń (maks. {1})",
 
   "throwingknife": "Nóż do Rzucania",
   "throwingknife_desc": "Naciśnij [css_useSkill], aby rzucić nożem. Ale uważaj na innych",
@@ -617,6 +638,7 @@
 
   "toxicsmoke": "Toksyczny Dym",
   "toxicsmoke_desc": "Twoje granaty dymny zadają obrażenia",
+  "toxicsmoke_hud": "Obrażenia dymu: {0}/s",
 
   "tripwire": "Linka z Drutu",
   "tripwire_desc": "Kliknij [css_useSkill], aby rozciągnąć drut między dwiema ścianami. Wrogowie, którzy go dotkną, pojawią się na Twoim radarze",
@@ -626,6 +648,7 @@
 
   "truearmor": "Prawdziwy Pancerz",
   "truearmor_desc": "Pancerz pochłania część otrzymywanych obrażeń zamiast zdrowia",
+  "truearmor_hud": "Obrażenia na pancerz: {0}%",
 
   "voodoo": "Voodoo",
   "voodoo_desc": "Oznaczony wróg również otrzymuje część obrażeń, które ty dostajesz",
@@ -670,6 +693,9 @@
   "active_hud_info": "Działa jeszcze przez {0} milisekund",
 
   "skills_menu": "Lista Super Mocy",
+  "language_name": "Polski",
+  "language_menu": "Język",
+  "language_changed": "Zmieniono język: {0}",
   "no_player": "Nie znaleziono pasującego gracza.",
   "duplicate_player": "Znaleziono więcej niż jednego gracza o tej samej nazwie.",
   "selectplayerskill_command": "Wpisz /t",
