@@ -161,11 +161,5 @@
       "windows": "40 53 48 83 EC ? 48 83 3D ? ? ? ? ? 48 8B D9 0F 84",
       "linux": "55 48 89 E5 41 55 41 54 53 48 83 EC ? 4C 8D 25 ? ? ? ? 49 83 3C 24 ? 74 ? 4C 8D 6F"
     }
-  },
-  "CChicken::m_bCanRoam": {
-    "offsets": {
-      "windows": 13025,
-      "linux": 13737
-    }
   }
 }
