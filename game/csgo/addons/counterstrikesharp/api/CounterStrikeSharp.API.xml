@@ -1772,6 +1772,11 @@
             Development universe.
             </summary>
         </member>
+        <member name="P:CounterStrikeSharp.API.Modules.Entities.EntitySystem.IsInitialized">
+            <summary>
+            Gets whether the entity system has been initialized.
+            </summary>
+        </member>
         <member name="P:CounterStrikeSharp.API.Modules.Events.EventPlayerChat.Teamonly">
             <summary>
             If this chat message was sent to team only
@@ -2376,6 +2381,11 @@
             <typeparam name="TService"></typeparam>
             <typeparam name="TDecoratedService"></typeparam>
             <returns></returns>
+        </member>
+        <member name="M:CounterStrikeSharp.API.Utilities.GetGameRules">
+            <summary>
+            Returns the game rules of the current map, or <c>null</c> before the map has loaded.
+            </summary>
         </member>
         <member name="M:CounterStrikeSharp.API.Utilities.GetPlayers">
             <summary>
