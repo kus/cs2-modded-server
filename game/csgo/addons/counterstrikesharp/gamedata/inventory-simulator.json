@@ -152,7 +152,7 @@
     "signatures": {
       "library": "server",
       "windows": "4C 8B C9 48 85 D2 74 ? 48 8B 42 ? 48 85 C0 74 ? 8B 50 ? B9 ? ? ? ? 8B 40 ? 44 8B C2 83 E0 ? 41 C1 E8 ? 44 2B C0 8B C2 23 C1 41 C1 E0 ? 83 FA ? 0F 45 C8 44 0B C1 45 89 81 ? ? ? ? C3 C7 81 ? ? ? ? ? ? ? ? C3 CC CC CC 40 55 41 56",
-      "linux": "48 85 F6 74 ? 48 8B 56 ? 48 85 D2 74 ? 8B 42 ? 8B 4A ? C1 E8 ? 83 E1 ? 29 C8 83 7A ? ? 74 ? 0F B7 52 ? 66 81 E2 ? ? C1 E0 ? 0F B7 D2 09 D0 89 87 ? ? ? ? C3 66 0F 1F 44 00 ? C7 87 ? ? ? ? ? ? ? ? C3 0F 1F 44 00 ? BA ? ? ? ? EB ? CC CC CC CC CC CC CC CC CC 55 48 8D 05"
+      "linux": "48 85 F6 74 ? 48 8B 56 ? 48 85 D2 74 ? 8B 42 ? 8B 4A ? C1 E8 ? 83 E1 ? 29 C8 83 7A ? ? 74 ? 0F B7 52 ? 66 81 E2 ? ? C1 E0 ? 0F B7 D2 09 D0 89 87 ? ? ? ? C3 66 0F 1F 44 00 ? C7 87 ? ? ? ? ? ? ? ? C3 0F 1F 44 00 ? BA ? ? ? ? EB ? CC CC CC CC CC CC CC CC CC CC"
     }
   },
   "CCSChickenManager::ServerGamePostSimulate": {
