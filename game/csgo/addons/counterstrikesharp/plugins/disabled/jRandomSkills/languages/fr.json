@@ -12,6 +12,10 @@
   "aimlock": "Verrouillage de visée",
   "aimlock_desc": "Cliquez sur [css_useSkill] pour verrouiller votre visée sur l'ennemi le plus proche",
 
+  "airstrike": "Frappe aérienne",
+  "airstrike_desc": "Appuie sur [css_useSkill] pour lancer une frappe aérienne de missiles sur une position",
+  "airstrike_hud": "Choisis une cible : {0} s",
+
   "anomaly": "Anomalie",
   "anomaly_desc": "Appuyez sur [css_useSkill] pour remonter de quelques secondes dans le temps",
 
@@ -23,6 +27,7 @@
 
   "areareaper": "Faucheur de Zone",
   "areareaper_desc": "Vous pouvez choisir un site de bombe à désactiver",
+  "areareaper_hud": "Site {0} fermé",
   "areareaper_incorrect_site": "Aucun site de bombe trouvé",
   "areareaper_no_site": "Aucun site de bombe disponible.",
   "areareaper_select_info": "Sélectionnez un site à désactiver :",
@@ -34,14 +39,21 @@
 
   "armored": "Blindé",
   "armored_desc": "Vous avez un multiplicateur de dégâts subis aléatoire",
-  "armored_desc2": "Votre multiplicateur de dégâts subis est : {0}x",
+  "armored_desc2": "Votre multiplicateur de dégâts subis est : x{0}",
 
   "assassin": "Assassin",
   "assassin_desc": "Vous infligez plus de dégâts aux ennemis par-derrière",
+  "assassin_hud": "Dégâts dans le dos : x{0}",
 
   "astronaut": "Astronaute",
   "astronaut_desc": "Vous recevez une gravité aléatoire au début du round",
-  "astronaut_desc2": "Votre gravité aléatoire est : {0}x",
+  "astronaut_desc2": "Votre gravité aléatoire est : x{0}",
+
+  "chain": "Dégâts en chaîne",
+  "chain_desc": "{0}% des dégâts de tes balles se propagent aux ennemis à moins de {1} unités de la cible",
+
+  "hunter": "Chasseur",
+  "hunter_desc": "Les ennemis à {0}% de vie ou moins apparaissent sur ton radar",
 
   "moneyswap": "Percepteur",
   "moneyswap_desc": "Choisissez un joueur avec qui échanger votre argent",
@@ -83,6 +95,10 @@
   "bunnyhop": "Lapin",
   "bunnyhop_desc": "Vous obtenez l’auto « BunnyHop »",
 
+  "breachzone": "Zone de percée",
+  "breachzone_desc": "Votre leurre crée une zone qui augmente les dégâts et leur résistance",
+  "breachzone_hud": "DMG : +{0}% | RES : +{1}%",
+
   "c4camouflage": "Camouflage C4",
   "c4camouflage_desc": "Vous êtes invisible en tenant la bombe",
   "c4camouflage_hud": "État : {0}",
@@ -106,10 +122,11 @@
   "chameleon_wrong_team_info": "'{0}' avait une compétence que votre équipe ne peut pas utiliser.",
 
   "chicken": "Poulet",
-  "chicken_desc": "Vous obtenez un modèle de poulet + 10% de vitesse de déplacement en plus - 50 PV",
+  "chicken_desc": "Vous obtenez un modèle de poulet + {0}% de vitesse de déplacement en plus - {1} PV",
 
   "chillout": "Détente",
   "chillout_desc": "Planter la bombe prend beaucoup plus de temps",
+  "chillout_hud": "Pose ennemie : {0} s",
 
   "coins": "Pluie de pièces",
   "coins_desc": "Les ennemis tués lâchent des pièces valant leur prime",
@@ -147,6 +164,7 @@
 
   "demoneye": "Œil démoniaque",
   "demoneye_desc": "Vous infligez des dégâts à tous les ennemis que vous regardez",
+  "demoneye_hud": "Dégâts : {0}/{1} s",
 
   "disarmament": "Désarmement",
   "disarmament_desc": "Vous avez une chance aléatoire de faire lâcher son arme à un ennemi en le touchant",
@@ -169,7 +187,7 @@
 
   "dwarf": "Nain",
   "dwarf_desc": "Taille du personnage aléatoire au début du round",
-  "dwarf_desc2": "Votre multiplicateur de taille est : {0}x",
+  "dwarf_desc2": "Votre multiplicateur de taille est : x{0}",
 
   "echo": "Écho",
   "echo_desc": "Vos grenades sont relancées après avoir explosé",
@@ -207,7 +225,7 @@
 
   "flash": "Flash",
   "flash_desc": "Vitesse de joueur aléatoire au début du round",
-  "flash_desc2": "Votre multiplicateur de vitesse est : {0}x",
+  "flash_desc2": "Votre multiplicateur de vitesse est : x{0}",
 
   "flashlight": "Lampe torche",
   "flashlight_desc": "Cliquez sur [css_useSkill] pour allumer ou éteindre la lampe torche. Sa lumière peut aveugler les ennemis",
@@ -236,7 +254,7 @@
 
   "giant": "Géant",
   "giant_desc": "Agrandissez un ennemi de votre choix",
-  "giant_desc2": "Agrandissez un ennemi de votre choix jusqu'à {0}x sa taille normale",
+  "giant_desc2": "Agrandissez un ennemi de votre choix jusqu'à x{0} sa taille normale",
   "giant_disable_info": "Vous avez retrouvé votre taille normale.",
   "giant_enemy_info": "Vous avez été agrandi à {0}x votre taille normale.",
   "giant_player_info": "Vous avez agrandi le joueur '{0}' jusqu'à {1}x sa taille normale.",
@@ -278,16 +296,18 @@
 
   "healingsmoke": "Fumigène Soin",
   "healingsmoke_desc": "Vos fumigènes soignent",
-  "healingsmoke_hud": "Soin de fumée : {0} PV/s",
+  "healingsmoke_hud": "Soin : {0} PV/s",
 
   "healingchicken": "Poulet guérisseur",
   "healingchicken_desc": "Vos poulets vous soignent lorsque vous êtes à proximité",
+  "healingchicken_hud": "Par poulet : {0} PV/{1} s",
 
   "heavyweight": "Poids lourd",
   "heavyweight_desc": "Les compétences qui te poussent ou te ralentissent n'ont aucun effet sur toi",
 
   "hermit": "Ermite",
   "hermit_desc": "Tuer restaure des munitions et une partie de vos PV",
+  "hermit_hud": "Par kill : +{0} PV",
 
   "holyhandgrenade": "Grenade Sacrée",
   "holyhandgrenade_desc": "Vos grenades HE infligent le double de dégâts et ont une portée doublée",
@@ -299,7 +319,7 @@
   "hotbomb_desc": "Tant que vous êtes en vie, la bombe inflige des dégâts à son porteur",
   "hotbomb_hint": "Attention, la bombe est brûlante !",
   "hotbomb_disable_info": "La bombe ne brûle plus.",
-  "hotbomb_hud": "Le porteur de C4 subit {1} dégâts toutes les {0} s",
+  "hotbomb_hud": "Porteur C4 : {1} dégâts/{0} s",
 
   "iana": "Hologramme",
   "iana_desc": "Cliquez sur [css_useSkill] pour contrôler votre hologramme pendant quelques secondes",
@@ -361,7 +381,7 @@
 
   "jumpingjack": "Sauteur",
   "jumpingjack_desc": "Sauter vous rend de la vie",
-  "jumpingjack_hud": "+{0} PV par saut",
+  "jumpingjack_hud": "Saut +{0} PV",
 
   "killerflash": "Flash Mortel",
   "killerflash_desc": "Toute personne totalement aveuglée par votre flashbang meurt (y compris vous)",
@@ -372,7 +392,7 @@
 
   "lastgasp": "Dernier souffle",
   "lastgasp_desc": "Après votre mort, vous infligez des dégâts à l'ennemi qui vous a tué",
-  "lastgasp_hud": "À ta mort : {0} dégâts à ton tueur",
+  "lastgasp_hud": "Tueur subit {0} dégâts",
 
   "lifeswap": "Échange de Vie",
   "lifeswap_desc": "Choisissez un joueur avec qui échanger votre santé",
@@ -483,7 +503,7 @@
   "poison_disable_info": "Vous êtes désormais immunisé contre le poison.",
   "poison_player_info": "Le joueur « {0} » a été empoisonné.",
   "poison_select_info": "Empoisonner un joueur :",
-  "poison_hud": "{1} dégâts toutes les {0} s (jusqu'à {2} PV)",
+  "poison_hud": "Poison {1} dégâts/{0} s (jusqu'à {2} PV)",
 
   "primaryban": "Sans Fusils",
   "primaryban_desc": "Choisissez un joueur qui ne pourra plus utiliser de fusils",
@@ -521,7 +541,7 @@
 
   "rezombie": "Re-Zombie",
   "rezombie_desc": "Après la mort, vous réapparaissez en zombie avec plus de PV et sans armes",
-  "rezombie_hud": "Tu reviens en zombie avec {0} PV",
+  "rezombie_hud": "Zombie à {0} PV",
 
   "reactivearmor": "Armure Réactive",
   "reactivearmor_desc": "L’armure absorbe les premiers dégâts reçus",
@@ -584,7 +604,7 @@
 
   "soldier": "Soldat",
   "soldier_desc": "Vous avez un multiplicateur de dégâts aléatoire",
-  "soldier_desc2": "Votre multiplicateur de dégâts est : {0}x",
+  "soldier_desc2": "Votre multiplicateur de dégâts est : x{0}",
 
   "soulthrower": "Lanceur d'âmes",
   "soulthrower_desc": "L'âme des ennemis tués s'envole et explose à l'impact",
@@ -625,7 +645,7 @@
 
   "thorns": "Épines",
   "thorns_desc": "Votre adversaire recevra une partie des dégâts qu’il vous a infligés",
-  "thorns_hud": "Renvoie {0}% des dégâts (max {1})",
+  "thorns_hud": "Renvoi : {0}%",
 
   "throwingknife": "Couteau de lancer",
   "throwingknife_desc": "Cliquez sur [css_useSkill] pour lancer un couteau. Mais attention aux autres",
@@ -638,7 +658,7 @@
 
   "toxicsmoke": "Fumée Toxique",
   "toxicsmoke_desc": "Vos grenades fumigènes infligent des dégâts",
-  "toxicsmoke_hud": "Dégâts de fumée : {0}/s",
+  "toxicsmoke_hud": "Dégâts : {0}/s",
 
   "tripwire": "Fil-piège",
   "tripwire_desc": "Cliquez sur [css_useSkill] pour tendre un fil entre deux murs. Les ennemis qui le touchent apparaissent sur votre radar",
@@ -648,7 +668,13 @@
 
   "truearmor": "Vraie armure",
   "truearmor_desc": "Une partie des dégâts est absorbée par ton armure au lieu de ta vie",
-  "truearmor_hud": "Dégâts absorbés par l’armure : {0}%",
+  "truearmor_hud": "Absorbé : {0}%",
+
+  "turtleshield": "Carapace de tortue",
+  "turtleshield_desc": "Tu subis {0}% de dégâts en moins en étant accroupi",
+  "turtleshield_hud": "Carapace : {0}",
+  "turtleshield_active": "Active",
+  "turtleshield_passive": "Passive",
 
   "voodoo": "Vaudou",
   "voodoo_desc": "L'ennemi que tu marques subit aussi une partie des dégâts que tu reçois",
@@ -658,6 +684,9 @@
 
   "wallhack": "Wallhack",
   "wallhack_desc": "Vous pouvez voir les ennemis à travers les murs",
+
+  "wanderer": "Vagabond",
+  "wanderer_desc": "Gagne {1} PV pour chaque tranche de {0} unités parcourues",
 
   "watchmaker": "Horloger",
   "watchmaker_desc": "Chaque lancer de grenade modifie le temps du round",

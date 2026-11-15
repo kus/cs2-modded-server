@@ -12,6 +12,10 @@
   "aimlock": "自",
   "aimlock_desc": "点击 [css_useSkill] 瞄准距离最近的敌人",
 
+  "airstrike": "空袭",
+  "airstrike_desc": "按下 [css_useSkill] 对某个位置发动导弹空袭",
+  "airstrike_hud": "选择目标：{0}秒",
+
   "anomaly": "异常",
   "anomaly_desc": "点击 [css_useSkill] 回到几秒钟前",
 
@@ -23,6 +27,7 @@
 
   "areareaper": "区域收割者",
   "areareaper_desc": "你可以选择一个安放区进行禁用",
+  "areareaper_hud": "{0}点已关闭",
   "areareaper_incorrect_site": "未找到此炸弹安放区。",
   "areareaper_no_site": "未找到任何炸弹安放区。",
   "areareaper_select_info": "选择你想禁用的炸弹安放区：",
@@ -34,14 +39,15 @@
 
   "armored": "覆甲",
   "armored_desc": "你收到伤害的倍率随机(开局随机一个倍率)",
-  "armored_desc2": "你的受到伤害倍率是：{0}x",
+  "armored_desc2": "你的受到伤害倍率是：x{0}",
 
   "assassin": "刺客",
   "assassin_desc": "从背后攻击敌人时造成更高的伤害",
+  "assassin_hud": "背后伤害：x{0}",
 
   "astronaut": "宇航员",
   "astronaut_desc": "回合开始时你会获得随机重力值",
-  "astronaut_desc2": "你的随机重力是：{0}x",
+  "astronaut_desc2": "你的随机重力是：x{0}",
 
   "bankrupt": "破产",
   "bankrupt_desc": "选择一个玩家让他失去所有钱",
@@ -75,6 +81,10 @@
   "bowlegs_enemy_info": "你的操作被反转了，还会踉跄。",
   "bowlegs_disable_info": "你的腿恢复正常了。",
 
+  "breachzone": "突破区域",
+  "breachzone_desc": "诱饵弹会生成一个提升伤害和伤害抗性的区域",
+  "breachzone_hud": "伤害：{0}% | 抗性：{1}%",
+
   "bunnyhop": "连跳大佬",
   "bunnyhop_desc": "你获得自动连跳的能力",
 
@@ -95,16 +105,20 @@
   "catapult_desc": "你有随机几率将敌人向上弹射",
   "catapult_desc2": "你击中敌人将其弹射的几率是：{0}%",
 
+  "chain": "连锁伤害",
+  "chain_desc": "你子弹伤害的{0}%会弹射到目标{1}单位内的敌人",
+
   "chameleon": "变色龙",
   "chameleon_desc": "你击杀的第一名玩家会把技能传给你",
   "chameleon_copied_info": "已复制技能：{0}",
   "chameleon_wrong_team_info": "'{0}' 的技能你的队伍无法使用。",
 
   "chicken": "小鸡",
-  "chicken_desc": "你获得小鸡模型 + 移动速度提高10% - 50生命值",
+  "chicken_desc": "你获得小鸡模型 + 移动速度提高{0}% - {1}生命值",
 
   "chillout": "悠闲",
   "chillout_desc": "放置炸弹需要更长的时间",
+  "chillout_hud": "敌方安放C4：{0}秒",
 
   "coins": "金币雨",
   "coins_desc": "击杀的敌人会掉落金币",
@@ -157,7 +171,7 @@
 
   "dwarf": "小矮人",
   "dwarf_desc": "回合开始时获得随机角色大小",
-  "dwarf_desc2": "你的体型倍率是：{0}x",
+  "dwarf_desc2": "你的体型倍率是：x{0}",
 
   "echo": "回响",
   "echo_desc": "你的手雷爆炸后会再投掷一次",
@@ -192,7 +206,7 @@
 
   "flash": "闪电",
   "flash_desc": "回合开始时获得随机玩家速度",
-  "flash_desc2": "你的速度倍率是：{0}x",
+  "flash_desc2": "你的速度倍率是：x{0}",
 
   "fortnite": "堡垒之夜玩家",
   "fortnite_desc": "点击[css_useSkill]创建可破坏路障",
@@ -218,7 +232,7 @@
 
   "giant": "giant",
   "giant_desc": "giant_desc",
-  "giant_desc2": "giant_desc2: {0}x",
+  "giant_desc2": "敌人体型：x{0}",
   "giant_disable_info": "giant_disable_info",
   "giant_enemy_info": "giant_enemy_info: {0}x",
   "giant_player_info": "giant_player_info: {0} {1}",
@@ -260,13 +274,14 @@
 
   "healingsmoke": "治疗烟雾",
   "healingsmoke_desc": "你的烟雾弹会治疗",
-  "healingsmoke_hud": "烟雾治疗：{0}生命/秒",
+  "healingsmoke_hud": "治疗：{0}生命/秒",
 
   "heavyweight": "重量级",
   "heavyweight_desc": "推开你或让你减速的技能对你无效",
 
   "hermit": "隐士",
   "hermit_desc": "击杀敌人会恢复弹药和部分生命值",
+  "hermit_hud": "击杀：+{0}生命",
 
   "holyhandgrenade": "神圣手榴弹",
   "holyhandgrenade_desc": "你的高爆手榴弹造成双倍伤害并拥有双倍范围",
@@ -278,7 +293,10 @@
   "hotbomb_desc": "只要你还活着，炸弹就会对携带者造成伤害",
   "hotbomb_hint": "小心，炸弹很烫！",
   "hotbomb_disable_info": "炸弹不再烫手了。",
-  "hotbomb_hud": "C4携带者每{0}秒受到{1}伤害",
+  "hotbomb_hud": "C4携带者：每{0}秒{1}伤害",
+
+  "hunter": "猎人",
+  "hunter_desc": "生命值不高于{0}%的敌人会显示在你的雷达上",
 
   "iana": "全息图",
   "iana_desc": "点击 [css_useSkill] 可控制你的全息影像数秒",
@@ -332,7 +350,7 @@
   "jumpcurse_select_info": "jumpcurse_select_info",
   "jumpingjack": "开合跳",
   "jumpingjack_desc": "跳跃会恢复生命值",
-  "jumpingjack_hud": "每次跳跃 +{0} 生命",
+  "jumpingjack_hud": "跳跃 +{0}生命",
 
   "killerflash": "致命闪光",
   "killerflash_desc": "任何被你的闪光弹完全致盲的人都会死亡（包括你自己）",
@@ -346,7 +364,7 @@
   "lifeswap_player_info": "你与玩家 '{0}' 交换了生命值。",
   "lifeswap_select_info": "选择你想与之交换生命值的玩家：",
 
-  "lastgasp_hud": "死亡时对击杀者造成{0}伤害",
+  "lastgasp_hud": "击杀者受到{0}伤害",
 
   "longknife": "剑气攻击",
   "longknife_desc": "刀具攻击造成的伤害无视距离",
@@ -455,7 +473,7 @@
   "poison_disable_info": "你已免疫毒素。",
   "poison_player_info": "玩家 '{0}' 已被毒害。",
   "poison_select_info": "选择每隔几秒将受到伤害的玩家：",
-  "poison_hud": "每{0}秒{1}点伤害（降至{2}生命）",
+  "poison_hud": "中毒 每{0}秒{1}伤害（至{2}生命）",
 
   "primaryban": "手枪局",
   "primaryban_desc": "选择一个玩家使其无法使用步枪",
@@ -493,7 +511,7 @@
 
   "rezombie": "重生僵尸",
   "rezombie_desc": "死亡后你将作为僵尸复活，拥有更多生命值但无武器",
-  "rezombie_hud": "以{0}生命复活为僵尸",
+  "rezombie_hud": "{0}生命僵尸",
 
   "reactivearmor": "反应装甲",
   "reactivearmor_desc": "装甲吸收首次受到的伤害",
@@ -556,7 +574,7 @@
 
   "soldier": "士兵",
   "soldier_desc": "你有随机伤害倍率",
-  "soldier_desc2": "你的伤害倍率是：{0}x",
+  "soldier_desc2": "你的伤害倍率是：x{0}",
 
   "soulthrower": "灵魂投手",
   "soulthrower_desc": "击杀的敌人灵魂会飞出并在撞击时爆炸",
@@ -585,7 +603,7 @@
 
   "thorns": "荊棘",
   "thorns_desc": "你的对手将承受其对你造成伤害的一部分",
-  "thorns_hud": "反弹{0}%伤害（最多{1}）",
+  "thorns_hud": "反弹：{0}%",
 
   "throwingknife": "投掷飞刀",
   "throwingknife_desc": "点击 [css_useSkill] 扔出飞刀。但要小心其他人",
@@ -598,7 +616,7 @@
 
   "toxicsmoke": "毒烟",
   "toxicsmoke_desc": "你的烟雾弹会造成伤害",
-  "toxicsmoke_hud": "烟雾伤害：{0}/秒",
+  "toxicsmoke_hud": "伤害：{0}/秒",
 
   "tripwire": "tripwire",
   "tripwire_desc": "tripwire_desc",
@@ -608,7 +626,13 @@
 
   "truearmor": "真实护甲",
   "truearmor_desc": "你受到的一部分伤害由护甲承担，而不是生命值",
-  "truearmor_hud": "护甲承担伤害：{0}%",
+  "truearmor_hud": "吸收：{0}%",
+
+  "turtleshield": "龟壳",
+  "turtleshield_desc": "蹲下时受到的伤害减少{0}%",
+  "turtleshield_hud": "龟壳：{0}",
+  "turtleshield_active": "已激活",
+  "turtleshield_passive": "未激活",
 
   "voodoo": "巫毒",
   "voodoo_desc": "被你标记的敌人也会受到你所受伤害的一部分",
@@ -618,6 +642,9 @@
 
   "wallhack": "透视",
   "wallhack_desc": "你可以通过墙壁看到敌人",
+
+  "wanderer": "漫游者",
+  "wanderer_desc": "每移动{0}单位获得{1}点生命值",
 
   "watchmaker": "钟表匠",
   "watchmaker_desc": "每次投掷手榴弹都会改变回合时间",

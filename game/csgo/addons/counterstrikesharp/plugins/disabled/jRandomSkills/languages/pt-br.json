@@ -12,6 +12,10 @@
   "aimlock": "Aim Lock",
   "aimlock_desc": "Clique em [css_useSkill] para travar a mira no inimigo mais próximo",
 
+  "airstrike": "Ataque Aéreo",
+  "airstrike_desc": "Pressione [css_useSkill] para lançar um ataque aéreo de mísseis em um local",
+  "airstrike_hud": "Escolha o alvo: {0}s",
+
   "anomaly": "Máquina do Tempo",
   "anomaly_desc": "Pressione [css_useSkill] para voltar alguns segundos no tempo",
 
@@ -23,6 +27,7 @@
 
   "areareaper": "Ceifador de Bombsite",
   "areareaper_desc": "Você pode escolher um bombsite para desativar",
+  "areareaper_hud": "Bomb {0} fechado",
   "areareaper_incorrect_site": "Nenhum bombsite encontrado.",
   "areareaper_no_site": "Nenhum bombsite encontrado.",
   "areareaper_select_info": "Escolha o bomb p/ desativar:",
@@ -34,14 +39,15 @@
 
   "armored": "Super Tiro",
   "armored_desc": "Seu dano é multiplicado por um valor aleatório",
-  "armored_desc2": "Seu multiplicador de dano é: {0}x",
+  "armored_desc2": "Seu multiplicador de dano é: x{0}",
 
   "assassin": "Assassino",
   "assassin_desc": "Você causa mais dano aos inimigos de costas",
+  "assassin_hud": "Dano pelas costas: x{0}",
 
   "astronaut": "Astronauta",
   "astronaut_desc": "Sua gravidade é multiplicada por um valor aleatório",
-  "astronaut_desc2": "Sua gravidade aleatória é: {0}x",
+  "astronaut_desc2": "Sua gravidade aleatória é: x{0}",
 
   "bankrupt": "Ladrão",
   "bankrupt_desc": "Escolha o jogador que perderá todo o dinheiro",
@@ -80,6 +86,10 @@
   "bowlegs_enemy_info": "Seus controles estão invertidos e você tropeça.",
   "bowlegs_disable_info": "Suas pernas voltaram ao normal.",
 
+  "breachzone": "Zona de Ruptura",
+  "breachzone_desc": "Sua isca cria uma área que aumenta o dano e a resistência a ele",
+  "breachzone_hud": "DMG: +{0}% | RES: +{1}%",
+
   "bunnyhop": "Coelho",
   "bunnyhop_desc": "Você ganha \"BunnyHop\" automático",
 
@@ -100,16 +110,20 @@
   "catapult_desc": "Você tem uma chance aleatória de lançar um inimigo para cima",
   "catapult_desc2": "Sua chance de lançar um inimigo ao acertá-lo é: {0}%",
 
+  "chain": "Dano em Cadeia",
+  "chain_desc": "{0}% do dano das suas balas salta para inimigos a até {1} unidades do alvo",
+
   "chameleon": "Camaleão",
   "chameleon_desc": "O primeiro jogador que você matar lhe dá a habilidade dele",
   "chameleon_copied_info": "Habilidade copiada: {0}",
   "chameleon_wrong_team_info": "'{0}' tinha uma habilidade que sua equipe não pode usar.",
 
   "chicken": "Galinha",
-  "chicken_desc": "Você é uma galinha com +10% de movimento mais rápido e -50 HP",
+  "chicken_desc": "Você é uma galinha com +{0}% de movimento mais rápido e {1} HP",
 
   "chillout": "Esqueci a Senha",
   "chillout_desc": "Plantar a bomba leva significativamente mais tempo",
+  "chillout_hud": "Tempo de plant inimigo: {0}s",
 
   "coins": "Chuva de Moedas",
   "coins_desc": "Inimigos mortos soltam moedas no valor da recompensa",
@@ -147,6 +161,7 @@
 
   "demoneye": "Olho Demoníaco",
   "demoneye_desc": "Você causa dano a todos os inimigos que estiver olhando",
+  "demoneye_hud": "Dano: {0}/{1}s",
 
   "disarmament": "Desarmamento",
   "disarmament_desc": "Você tem uma chance aleatória de fazer um inimigo dropar a arma ao acertá-lo",
@@ -169,7 +184,7 @@
 
   "dwarf": "Anão",
   "dwarf_desc": "Sua altura agora é aleatória",
-  "dwarf_desc2": "Seu multiplicador de altura é: {0}x",
+  "dwarf_desc2": "Seu multiplicador de altura é: x{0}",
 
   "echo": "Eco",
   "echo_desc": "Suas granadas são jogadas de novo depois de explodir",
@@ -207,7 +222,7 @@
 
   "flash": "Ligeirinho",
   "flash_desc": "Velocidade de movimentação aleatória no início da rodada",
-  "flash_desc2": "Seu multiplicador de velocidade é: {0}x",
+  "flash_desc2": "Seu multiplicador de velocidade é: x{0}",
 
   "flashlight": "Lanterna",
   "flashlight_desc": "Clique em [css_useSkill] para ligar ou desligar a lanterna. Sua luz pode cegar os inimigos",
@@ -236,7 +251,7 @@
 
   "giant": "Gigante",
   "giant_desc": "Aumente o tamanho de um inimigo à sua escolha",
-  "giant_desc2": "Aumente o tamanho de um inimigo à sua escolha para {0}x o tamanho normal",
+  "giant_desc2": "Aumente o tamanho de um inimigo à sua escolha para x{0} o tamanho normal",
   "giant_disable_info": "Você voltou ao seu tamanho normal.",
   "giant_enemy_info": "Você foi aumentado para {0}x o tamanho normal.",
   "giant_player_info": "Você aumentou o jogador '{0}' para {1}x o tamanho normal.",
@@ -278,16 +293,18 @@
 
   "healingsmoke": "Smoke Amiga",
   "healingsmoke_desc": "Suas smokes curam",
-  "healingsmoke_hud": "Cura da fumaça: {0} de vida/s",
+  "healingsmoke_hud": "Cura: {0} de vida/s",
 
   "healingchicken": "Galinha Curadora",
   "healingchicken_desc": "Suas galinhas curam você enquanto você estiver por perto",
+  "healingchicken_hud": "Por galinha: {0} de vida/{1}s",
 
   "heavyweight": "Peso Pesado",
   "heavyweight_desc": "Habilidades que empurram ou te deixam lento não fazem efeito em você",
 
   "hermit": "Sanguessuga",
   "hermit_desc": "Matar restaura munição e uma parte da sua vida",
+  "hermit_hud": "Ao matar: +{0} de vida",
 
   "holyhandgrenade": "Granada Obesa",
   "holyhandgrenade_desc": "HEs causam dano dobrado e têm alcance dobrado",
@@ -299,7 +316,10 @@
   "hotbomb_desc": "Enquanto você estiver vivo, a bomba causa dano ao portador",
   "hotbomb_hint": "Cuidado, a bomba está quente!",
   "hotbomb_disable_info": "A bomba não está mais queimando.",
-  "hotbomb_hud": "Portador da C4 sofre {1} de dano a cada {0}s",
+  "hotbomb_hud": "Portador da C4: {1} de dano/{0}s",
+
+  "hunter": "Caçador",
+  "hunter_desc": "Inimigos com {0}% de vida ou menos aparecem no seu radar",
 
   "iana": "Holograma",
   "iana_desc": "Clique em [css_useSkill] para controlar seu holograma por alguns segundos",
@@ -361,7 +381,7 @@
 
   "jumpingjack": "Pula-Pula",
   "jumpingjack_desc": "Pular restaura vida",
-  "jumpingjack_hud": "+{0} de vida por pulo",
+  "jumpingjack_hud": "Pulo +{0} de vida",
 
   "killerflash": "Flash Mortal",
   "killerflash_desc": "Qualquer pessoa cega pela sua flash morre (incluindo você)",
@@ -372,7 +392,7 @@
 
   "lastgasp": "Último Suspiro",
   "lastgasp_desc": "Após morrer, você causa dano ao inimigo que matou você",
-  "lastgasp_hud": "Ao morrer: {0} de dano no assassino",
+  "lastgasp_hud": "Assassino sofre {0} de dano",
 
   "lifeswap": "Troca de Vida",
   "lifeswap_desc": "Escolha um jogador para trocar de vida",
@@ -483,7 +503,7 @@
   "poison_disable_info": "Você agora está imune ao veneno.",
   "poison_player_info": "O jogador '{0}' foi envenenado.",
   "poison_select_info": "Envenenar jogador:",
-  "poison_hud": "{1} de dano a cada {0}s (até {2} de vida)",
+  "poison_hud": "Veneno {1} de dano/{0}s (até {2} de vida)",
 
   "primaryban": "Sem Rifle",
   "primaryban_desc": "Escolha um jogador que não poderá usar rifles",
@@ -521,7 +541,7 @@
 
   "rezombie": "Walking Dead",
   "rezombie_desc": "Após morrer, você renasce como um zumbi com mais vida porém sem armas",
-  "rezombie_hud": "Você revive como zumbi com {0} de vida",
+  "rezombie_hud": "Zumbi com {0} de vida",
 
   "reactivearmor": "Armadura Reativa",
   "reactivearmor_desc": "A armadura absorve o primeiro dano recebido",
@@ -584,7 +604,7 @@
 
   "soldier": "Soldado",
   "soldier_desc": "Seus tiros causam mais dano",
-  "soldier_desc2": "Seu multiplicador de dano é: {0}x",
+  "soldier_desc2": "Seu multiplicador de dano é: x{0}",
 
   "soulthrower": "Lançador de Almas",
   "soulthrower_desc": "As almas dos inimigos mortos voam e explodem ao bater",
@@ -625,7 +645,7 @@
 
   "thorns": "Porco Espinho",
   "thorns_desc": "Seu oponente receberá uma parte do dano que causou a você",
-  "thorns_hud": "Reflete {0}% do dano (máx. {1})",
+  "thorns_hud": "Reflexo: {0}%",
 
   "throwingknife": "Faca de Arremesso",
   "throwingknife_desc": "Clique em [css_useSkill] para lançar uma faca. Mas cuidado com os outros",
@@ -638,7 +658,7 @@
 
   "toxicsmoke": "Smoke Tóxica",
   "toxicsmoke_desc": "Suas smokes causam dano",
-  "toxicsmoke_hud": "Dano da fumaça: {0}/s",
+  "toxicsmoke_hud": "Dano: {0}/s",
 
   "tripwire": "Fio de Armadilha",
   "tripwire_desc": "Clique em [css_useSkill] para estender um fio entre duas paredes. Inimigos que tocarem nele aparecerão no seu radar",
@@ -648,7 +668,13 @@
 
   "truearmor": "Armadura Real",
   "truearmor_desc": "Parte do dano que você recebe sai do colete em vez da vida",
-  "truearmor_hud": "Dano absorvido pelo colete: {0}%",
+  "truearmor_hud": "Absorvido: {0}%",
+
+  "turtleshield": "Casco de Tartaruga",
+  "turtleshield_desc": "Você recebe {0}% menos dano enquanto agachado",
+  "turtleshield_hud": "Casco: {0}",
+  "turtleshield_active": "Ativo",
+  "turtleshield_passive": "Passivo",
 
   "voodoo": "Vodu",
   "voodoo_desc": "O inimigo que você marcar também recebe parte do dano que você leva",
@@ -658,6 +684,9 @@
 
   "wallhack": "Wallhack",
   "wallhack_desc": "Você pode ver inimigos através das paredes",
+
+  "wanderer": "Andarilho",
+  "wanderer_desc": "Ganhe {1} de vida a cada {0} unidades percorridas",
 
   "watchmaker": "Relojoeiro",
   "watchmaker_desc": "Cada arremesso de granada altera o tempo da rodada",
