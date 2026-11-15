@@ -12,6 +12,10 @@
   "aimlock": "Aim Lock",
   "aimlock_desc": "Kliknij [css_useSkill], aby wycelować na najbliższego wroga",
 
+  "airstrike": "Nalot",
+  "airstrike_desc": "Naciśnij [css_useSkill], aby wezwać nalot rakietowy na wybrane miejsce",
+  "airstrike_hud": "Wybierz cel: {0} s",
+
   "anomaly": "Anomalia",
   "anomaly_desc": "Kliknij [css_useSkill], aby cofnąć się o kilka sekund w czasie",
 
@@ -23,6 +27,7 @@
 
   "areareaper": "Niszczyciel Stref",
   "areareaper_desc": "Możesz wybrać strefę detonacji, którą chcesz dezaktywować",
+  "areareaper_hud": "Strefa {0} zamknięta",
   "areareaper_incorrect_site": "Nie znaleziono takiej strefy detonacji.",
   "areareaper_no_site": "Nie znaleziono żadnej strefy detonacji.",
   "areareaper_select_info": "Wybierz strefę do dezaktyw.:",
@@ -34,14 +39,15 @@
 
   "armored": "Gruby",
   "armored_desc": "Masz losowy mnożnik otrzymywanych obrażeń",
-  "armored_desc2": "Twój mnożnik otrzymywanych obrażeń wynosi: {0}x",
+  "armored_desc2": "Twój mnożnik otrzymywanych obrażeń wynosi: x{0}",
 
   "assassin": "Skrytobójca",
   "assassin_desc": "Zadajesz większe obrażenia przeciwnikowi od tyłu",
+  "assassin_hud": "Obrażenia od tyłu: x{0}",
 
   "astronaut": "Astronauta",
   "astronaut_desc": "Na początku rundy otrzymujesz losową wartość grawitacji",
-  "astronaut_desc2": "Twoja losowa grawitacja wynosi: {0}x",
+  "astronaut_desc2": "Twoja losowa grawitacja wynosi: x{0}",
 
   "bankrupt": "Bankrut",
   "bankrupt_desc": "Wybierz gracza, który straci wszystkie swoje pieniądze",
@@ -80,6 +86,10 @@
   "bowlegs_enemy_info": "Twoje sterowanie jest odwrócone i się chwiejesz.",
   "bowlegs_disable_info": "Twoje nogi wróciły do normy.",
 
+  "breachzone": "Strefa Przełamania",
+  "breachzone_desc": "Wabik tworzy strefę zwiększającą obrażenia i odporność na nie",
+  "breachzone_hud": "DMG: +{0}% | RES: +{1}%",
+
   "bunnyhop": "Królik",
   "bunnyhop_desc": "Otrzymujesz auto \"BunnyHopa\"",
 
@@ -100,16 +110,20 @@
   "catapult_desc": "Masz losową szanse na podrzucenie wroga",
   "catapult_desc2": "Twoje szanse na podrzucenie wroga po trafieniu to: {0}%",
 
+  "chain": "Obrażenia łańcuchowe",
+  "chain_desc": "{0}% obrażeń od kul przeskakuje na wrogów w promieniu {1} jednostek od celu",
+
   "chameleon": "Kameleon",
   "chameleon_desc": "Pierwszy zabity gracz oddaje ci swoją umiejętność",
   "chameleon_copied_info": "Skopiowano umiejętność: {0}",
   "chameleon_wrong_team_info": "'{0}' miał umiejętność, której twoja drużyna nie może użyć.",
 
   "chicken": "Kurczak",
-  "chicken_desc": "Otrzymujesz model kurczaka + jesteś o 10% szybszy - 50hp",
+  "chicken_desc": "Otrzymujesz model kurczaka + jesteś o {0}% szybszy - {1}hp",
 
   "chillout": "Wyluzowany",
   "chillout_desc": "Podłożenie bomby zajmuje znacznie więcej czasu",
+  "chillout_hud": "Czas podkładania wroga: {0} s",
 
   "coins": "Deszcz Monet",
   "coins_desc": "Zabici wrogowie upuszczają monety warte nagrody za zabójstwo",
@@ -147,6 +161,7 @@
 
   "demoneye": "Oko Demona",
   "demoneye_desc": "Zadajesz obrażenia wszystkim przeciwnikom, na których patrzysz",
+  "demoneye_hud": "Obrażenia: {0}/{1} s",
 
   "disarmament": "Rozbrojenie",
   "disarmament_desc": "Masz losową szanse na wyrzucenie broni wroga po trafieniu",
@@ -169,7 +184,7 @@
 
   "dwarf": "Mini Majk",
   "dwarf_desc": "Losowa wielkość postaci na początku rundy",
-  "dwarf_desc2": "Twój mnożnik wielkości to {0}x",
+  "dwarf_desc2": "Twój mnożnik wielkości to x{0}",
 
   "echo": "Echo",
   "echo_desc": "Twoje granaty są rzucane ponownie po wybuchu",
@@ -207,7 +222,7 @@
 
   "flash": "Flash",
   "flash_desc": "Losowa prędkośc postaci na początku rundy",
-  "flash_desc2": "Twój mnożnik prędkości to {0}x",
+  "flash_desc2": "Twój mnożnik prędkości to x{0}",
 
   "flashlight": "Latarka",
   "flashlight_desc": "Kliknij [css_useSkill], aby włączyć lub wyłączyć latarkę. Jej światło może oślepić przeciwników",
@@ -236,7 +251,7 @@
 
   "giant": "Olbrzym",
   "giant_desc": "Powiększ wybranego przeciwnika",
-  "giant_desc2": "Powiększ wybranego przeciwnika do {0}x normalnego rozmiaru",
+  "giant_desc2": "Powiększ wybranego przeciwnika do x{0} normalnego rozmiaru",
   "giant_disable_info": "Wróciłeś do normalnego rozmiaru.",
   "giant_enemy_info": "Zostałeś powiększony do {0}x normalnego rozmiaru.",
   "giant_player_info": "Powiększyłeś gracza '{0}' do {1}x normalnego rozmiaru.",
@@ -278,16 +293,18 @@
 
   "healingsmoke": "Leczący Dym",
   "healingsmoke_desc": "Twoje granaty dymne leczą",
-  "healingsmoke_hud": "Leczenie dymu: {0} HP/s",
+  "healingsmoke_hud": "Leczenie: {0} HP/s",
 
   "healingchicken": "Lecząca Kura",
   "healingchicken_desc": "Twoje kury leczą Cię, gdy jesteś w pobliżu",
+  "healingchicken_hud": "Na kurczaka: {0} HP/{1} s",
 
   "heavyweight": "Waga Ciężka",
   "heavyweight_desc": "Umiejętności, które cię popychają lub spowalniają, nie działają na ciebie",
 
   "hermit": "Pustelnik",
   "hermit_desc": "Zabijanie przywraca amunicję i część zdrowia",
+  "hermit_hud": "Za zabójstwo: +{0} HP",
 
   "holyhandgrenade": "Święty Granat Ręczny",
   "holyhandgrenade_desc": "Twoje granaty uderzeniowe zadają podwójne obrażenia i mają podwójny zasięg",
@@ -299,7 +316,10 @@
   "hotbomb_desc": "Dopóki żyjesz, bomba zadaje obrażenia osobie, która ją niesie",
   "hotbomb_hint": "Ostrożnie, bomba parzy!",
   "hotbomb_disable_info": "Bomba już nie parzy.",
-  "hotbomb_hud": "Nosiciel C4 traci {1} HP co {0} s",
+  "hotbomb_hud": "Nosiciel C4: {1} obr./{0} s",
+
+  "hunter": "Łowca",
+  "hunter_desc": "Wrogowie z {0}% zdrowia lub mniej pojawiają się na twoim radarze",
 
   "iana": "Hologram",
   "iana_desc": "Kliknij [css_useSkill], aby sterować hologramem przez kilka sekund",
@@ -361,7 +381,7 @@
 
   "jumpingjack": "Pajacyk",
   "jumpingjack_desc": "Skakanie przywraca zdrowie",
-  "jumpingjack_hud": "+{0} HP za skok",
+  "jumpingjack_hud": "Skok +{0} HP",
 
   "killerflash": "Zabójczy Flash",
   "killerflash_desc": "Każdy całkowicie oślepiony twoim granatem umiera (również ty)",
@@ -372,7 +392,7 @@
 
   "lastgasp": "Ostatnie Tchnienie",
   "lastgasp_desc": "Po śmierci zadajesz obrażenia przeciwnikowi, który Cię zabił",
-  "lastgasp_hud": "Po śmierci: {0} obr. dla zabójcy",
+  "lastgasp_hud": "Zabójca traci {0} HP",
 
   "lifeswap": "Zamiana Żyć",
   "lifeswap_desc": "Wybierasz gracza, z którym chcesz wymienić się zdrowiem",
@@ -483,7 +503,7 @@
   "poison_disable_info": "Jesteś teraz odporny na truciznę.",
   "poison_player_info": "Gracz '{0}' został otruty.",
   "poison_select_info": "Zatruj gracza:",
-  "poison_hud": "{1} obr. co {0} s (do {2} HP)",
+  "poison_hud": "Trucizna {1} obr./{0} s (do {2} HP)",
 
   "primaryban": "Brak Karabinów",
   "primaryban_desc": "Wybierasz gracza, który nie może używać karabinów",
@@ -521,7 +541,7 @@
 
   "rezombie": "Re-Zombie",
   "rezombie_desc": "Po śmierci odradzasz się jako zombie z większym zdrowiem i bez broni",
-  "rezombie_hud": "Odradzasz się jako zombie z {0} HP",
+  "rezombie_hud": "Zombie z {0} HP",
 
   "reactivearmor": "Pancerz Reaktywny",
   "reactivearmor_desc": "Pancerz pochłania pierwsze otrzymane obrażenia",
@@ -584,7 +604,7 @@
 
   "soldier": "Żołnierz",
   "soldier_desc": "Masz losowy mnożnik obrażeń",
-  "soldier_desc2": "Twój mnożnik obrażeń wynosi: {0}x",
+  "soldier_desc2": "Twój mnożnik obrażeń wynosi: x{0}",
 
   "soulthrower": "Miotacz Dusz",
   "soulthrower_desc": "Dusze zabitych wrogów lecą dalej i wybuchają przy uderzeniu",
@@ -625,7 +645,7 @@
 
   "thorns": "Ciernie",
   "thorns_desc": "Twój przeciwnik otrzymuje część obrażeń, które zadał ci",
-  "thorns_hud": "Odbija {0}% obrażeń (maks. {1})",
+  "thorns_hud": "Odbicie: {0}%",
 
   "throwingknife": "Nóż do Rzucania",
   "throwingknife_desc": "Naciśnij [css_useSkill], aby rzucić nożem. Ale uważaj na innych",
@@ -638,7 +658,7 @@
 
   "toxicsmoke": "Toksyczny Dym",
   "toxicsmoke_desc": "Twoje granaty dymny zadają obrażenia",
-  "toxicsmoke_hud": "Obrażenia dymu: {0}/s",
+  "toxicsmoke_hud": "Obrażenia: {0}/s",
 
   "tripwire": "Linka z Drutu",
   "tripwire_desc": "Kliknij [css_useSkill], aby rozciągnąć drut między dwiema ścianami. Wrogowie, którzy go dotkną, pojawią się na Twoim radarze",
@@ -648,7 +668,13 @@
 
   "truearmor": "Prawdziwy Pancerz",
   "truearmor_desc": "Pancerz pochłania część otrzymywanych obrażeń zamiast zdrowia",
-  "truearmor_hud": "Obrażenia na pancerz: {0}%",
+  "truearmor_hud": "Pochłonięte: {0}%",
+
+  "turtleshield": "Żółwi pancerz",
+  "turtleshield_desc": "Otrzymujesz o {0}% mniej obrażeń podczas kucania",
+  "turtleshield_hud": "Pancerz: {0}",
+  "turtleshield_active": "Aktywny",
+  "turtleshield_passive": "Pasywny",
 
   "voodoo": "Voodoo",
   "voodoo_desc": "Oznaczony wróg również otrzymuje część obrażeń, które ty dostajesz",
@@ -658,6 +684,9 @@
 
   "wallhack": "Wallhack",
   "wallhack_desc": "Widzisz wrogów przez ściany",
+
+  "wanderer": "Wędrowiec",
+  "wanderer_desc": "Zyskujesz {1} HP za każde {0} przebytych jednostek",
 
   "watchmaker": "Zegarmistrz",
   "watchmaker_desc": "Każdy rzut granatem zmienia czas rundy",

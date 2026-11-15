@@ -12,6 +12,10 @@
   "aimlock": "Aim Lock",
   "aimlock_desc": "Click [css_useSkill] to lock your aim on the nearest enemy",
 
+  "airstrike": "Airstrike",
+  "airstrike_desc": "Press [css_useSkill] to call a missile airstrike on a location",
+  "airstrike_hud": "Pick target: {0}s",
+
   "anomaly": "Anomaly",
   "anomaly_desc": "Click [css_useSkill] to rewind a few seconds back in time",
 
@@ -23,6 +27,7 @@
 
   "areareaper": "Zone Reaper",
   "areareaper_desc": "You can choose a bomb site to deactivate",
+  "areareaper_hud": "Site {0} closed",
   "areareaper_incorrect_site": "No such bomb site found.",
   "areareaper_no_site": "No bomb sites found.",
   "areareaper_select_info": "Select site to deactivate:",
@@ -34,14 +39,21 @@
 
   "armored": "Armored",
   "armored_desc": "You have a random damage taken multiplier",
-  "armored_desc2": "Your damage taken multiplier is: {0}x",
+  "armored_desc2": "Your damage taken multiplier is: x{0}",
 
   "assassin": "Assassin",
   "assassin_desc": "You deal increased damage to enemies from behind",
+  "assassin_hud": "Backstab damage: x{0}",
 
   "astronaut": "Astronaut",
   "astronaut_desc": "You receive a random gravity value at the start of the round",
-  "astronaut_desc2": "Your random gravity is: {0}x",
+  "astronaut_desc2": "Your random gravity is: x{0}",
+
+  "chain": "Chain Damage",
+  "chain_desc": "{0}% of your bullet damage jumps to enemies within {1} units of the target",
+
+  "hunter": "Hunter",
+  "hunter_desc": "Enemies at or below {0}% health show on your radar",
 
   "moneyswap": "Taxman",
   "moneyswap_desc": "Choose a player to swap money with",
@@ -80,6 +92,10 @@
   "bowlegs_enemy_info": "Your controls are reversed and you stumble.",
   "bowlegs_disable_info": "Your legs are back to normal.",
 
+  "breachzone": "Breach Zone",
+  "breachzone_desc": "Your decoy creates a zone that boosts damage and damage resistance",
+  "breachzone_hud": "DMG: +{0}% | RES: +{1}%",
+
   "bunnyhop": "Bunny",
   "bunnyhop_desc": "You get auto \"BunnyHop\"",
 
@@ -106,10 +122,11 @@
   "chameleon_wrong_team_info": "'{0}' had a skill your team cannot use.",
 
   "chicken": "Chicken",
-  "chicken_desc": "You get a chicken model + 10% faster movement - 50 HP",
+  "chicken_desc": "You get a chicken model + {0}% faster movement - {1} HP",
 
   "chillout": "Chillout",
   "chillout_desc": "Planting the bomb takes significantly longer",
+  "chillout_hud": "Enemy plant time: {0}s",
 
   "coins": "Coins",
   "coins_desc": "Enemies you kill drop coins worth their kill reward",
@@ -162,7 +179,7 @@
 
   "dwarf": "Dwarf",
   "dwarf_desc": "Random character size at the start of the round",
-  "dwarf_desc2": "Your size multiplier is: {0}x",
+  "dwarf_desc2": "Your size multiplier is: x{0}",
 
   "echo": "Echo",
   "echo_desc": "Your grenades are thrown again after they go off",
@@ -200,7 +217,7 @@
 
   "flash": "Flash",
   "flash_desc": "Random player speed at the beginning of the round",
-  "flash_desc2": "Your speed multiplier is: {0}x",
+  "flash_desc2": "Your speed multiplier is: x{0}",
 
   "flashlight": "Flashlight",
   "flashlight_desc": "Click [css_useSkill] to turn the flashlight on or off. Its light can blind enemies",
@@ -229,7 +246,7 @@
 
   "giant": "Giant",
   "giant_desc": "Enlarge an enemy of your choice",
-  "giant_desc2": "Enlarge an enemy of your choice to {0}x their normal size",
+  "giant_desc2": "Enlarge an enemy of your choice to x{0} their normal size",
   "giant_disable_info": "You are back to your normal size.",
   "giant_enemy_info": "You have been enlarged to {0}x your normal size.",
   "giant_player_info": "You enlarged player '{0}' to {1}x their normal size.",
@@ -271,16 +288,18 @@
 
   "healingchicken": "Healing Chicken",
   "healingchicken_desc": "Your chickens heal you while you are nearby",
+  "healingchicken_hud": "Per chicken: {0} HP/{1}s",
 
   "healingsmoke": "Healing Smoke",
   "healingsmoke_desc": "Your smoke grenades heal",
-  "healingsmoke_hud": "Smoke heal: {0} HP/s",
+  "healingsmoke_hud": "Heal: {0} HP/s",
 
   "heavyweight": "Heavyweight",
   "heavyweight_desc": "Skills that push or slow you down have no effect on you",
 
   "hermit": "Hermit",
   "hermit_desc": "Killing restores ammo and a portion of health",
+  "hermit_hud": "On kill: +{0} HP",
 
   "holyhandgrenade": "Holy Hand Grenade",
   "holyhandgrenade_desc": "Your HE grenades deal double damage and have double range",
@@ -292,7 +311,7 @@
   "hotbomb_desc": "As long as you are alive, the bomb deals damage to its carrier",
   "hotbomb_hint": "Careful, the bomb is hot!",
   "hotbomb_disable_info": "The bomb is no longer hot.",
-  "hotbomb_hud": "C4 carrier takes {1} dmg every {0}s",
+  "hotbomb_hud": "C4 carrier: {1} dmg/{0}s",
 
   "iana": "Hologram",
   "iana_desc": "Click [css_useSkill] to control your hologram for a few seconds",
@@ -354,7 +373,7 @@
 
   "jumpingjack": "Jumping Jack",
   "jumpingjack_desc": "Jumping restores health",
-  "jumpingjack_hud": "+{0} HP per jump",
+  "jumpingjack_hud": "Jump +{0} HP",
 
   "killerflash": "Killer Flash",
   "killerflash_desc": "Anyone fully blinded by your flashbang dies (including you)",
@@ -365,7 +384,7 @@
 
   "lastgasp": "Last Gasp",
   "lastgasp_desc": "After you die, you deal damage to the enemy who killed you",
-  "lastgasp_hud": "On death: {0} dmg to your killer",
+  "lastgasp_hud": "Killer takes {0} dmg",
 
   "lifeswap": "Life Swap",
   "lifeswap_desc": "Choose a player to swap health with",
@@ -410,6 +429,7 @@
 
   "demoneye": "Demon Eye",
   "demoneye_desc": "You deal damage to every enemy you are looking at",
+  "demoneye_hud": "Damage: {0}/{1}s",
 
   "nemesis": "Nemesis",
   "nemesis_desc": "The player you mark takes extra damage",
@@ -483,7 +503,7 @@
   "poison_disable_info": "You are now immune to poison.",
   "poison_player_info": "Player '{0}' has been poisoned.",
   "poison_select_info": "Poison a player:",
-  "poison_hud": "{1} dmg every {0}s (down to {2} HP)",
+  "poison_hud": "Poison {1} dmg/{0}s (to {2} HP)",
 
   "primaryban": "No Rifles",
   "primaryban_desc": "Choose a player who cannot use rifles",
@@ -521,7 +541,7 @@
 
   "rezombie": "Re-Zombie",
   "rezombie_desc": "After death, you respawn as a zombie with increased health and no weapons",
-  "rezombie_hud": "You revive as a zombie with {0} HP",
+  "rezombie_hud": "Revive as {0} HP zombie",
 
   "reactivearmor": "Reactive Armor",
   "reactivearmor_desc": "Armor absorbs the first damage taken",
@@ -584,7 +604,7 @@
 
   "soldier": "Soldier",
   "soldier_desc": "You have a random damage multiplier",
-  "soldier_desc2": "Your damage multiplier is: {0}x",
+  "soldier_desc2": "Your damage multiplier is: x{0}",
 
   "soulthrower": "Soul Thrower",
   "soulthrower_desc": "Killed enemies' souls fly forward and explode on impact",
@@ -625,7 +645,7 @@
 
   "thorns": "Thorns",
   "thorns_desc": "Your opponent will receive a portion of the damage that they inflicted on you",
-  "thorns_hud": "Reflects {0}% of damage (max {1})",
+  "thorns_hud": "Reflect: {0}%",
 
   "throwingknife": "Throwing Knife",
   "throwingknife_desc": "Click [css_useSkill] to throw a knife. But watch out for others",
@@ -638,7 +658,7 @@
 
   "toxicsmoke": "Toxic Smoke",
   "toxicsmoke_desc": "Your smoke grenades deal damage",
-  "toxicsmoke_hud": "Smoke damage: {0}/s",
+  "toxicsmoke_hud": "Damage: {0}/s",
 
   "tripwire": "Tripwire",
   "tripwire_desc": "Click [css_useSkill] to string a wire between two walls. Enemies who touch it appear on your radar",
@@ -648,7 +668,13 @@
 
   "truearmor": "True Armor",
   "truearmor_desc": "Part of the damage you take is paid by your armor instead of your health",
-  "truearmor_hud": "Damage taken by armor: {0}%",
+  "truearmor_hud": "Absorbed: {0}%",
+
+  "turtleshield": "Turtle Shell",
+  "turtleshield_desc": "Take {0}% less damage while crouching",
+  "turtleshield_hud": "Shell: {0}",
+  "turtleshield_active": "Active",
+  "turtleshield_passive": "Passive",
 
   "voodoo": "Voodoo",
   "voodoo_desc": "The enemy you mark also takes part of the damage you take",
@@ -658,6 +684,9 @@
 
   "wallhack": "Wallhack",
   "wallhack_desc": "You can see enemies through walls",
+
+  "wanderer": "Wanderer",
+  "wanderer_desc": "Gain {1} HP for every {0} units you travel",
 
   "watchmaker": "Watchmaker",
   "watchmaker_desc": "Every grenade throw alters the round time",

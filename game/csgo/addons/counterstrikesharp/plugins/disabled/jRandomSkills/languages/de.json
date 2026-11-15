@@ -12,6 +12,10 @@
   "aimlock": "Aim-Lock",
   "aimlock_desc": "Klicke [css_useSkill], um dein Visier auf den nächsten Gegner zu fixieren",
 
+  "airstrike": "Luftangriff",
+  "airstrike_desc": "Drücke [css_useSkill], um einen Raketenluftschlag auf einen Ort anzufordern",
+  "airstrike_hud": "Ziel wählen: {0} s",
+
   "anomaly": "Anomalie",
   "anomaly_desc": "Drücke [css_useSkill], um einige Sekunden in der Zeit zurückzuspringen",
 
@@ -23,6 +27,7 @@
 
   "areareaper": "Zone Reaper",
   "areareaper_desc": "Du kannst einen Bombenort auswählen, den du deaktivieren möchtest",
+  "areareaper_hud": "Bombenplatz {0} gesperrt",
   "areareaper_incorrect_site": "Kein solcher Bombenort gefunden",
   "areareaper_no_site": "Keine Bombenstandorte gefunden.",
   "areareaper_select_info": "Standort zum Deaktivieren auswählen:",
@@ -34,14 +39,21 @@
 
   "armored": "Gepanzert",
   "armored_desc": "Du hast einen zufälligen Schadensmultiplikator",
-  "armored_desc2": "Dein Schadensmultiplikator beträgt: {0}x",
+  "armored_desc2": "Dein Schadensmultiplikator beträgt: x{0}",
 
   "assassin": "Attentäter",
   "assassin_desc": "Du fügst Gegnern von hinten erhöhten Schaden zu",
+  "assassin_hud": "Schaden von hinten: x{0}",
 
   "astronaut": "Astronaut",
   "astronaut_desc": "Du erhältst zu Beginn der Runde einen zufälligen Schwerkraftwert",
-  "astronaut_desc2": "Deine zufällige Schwerkraft beträgt: {0}x",
+  "astronaut_desc2": "Deine zufällige Schwerkraft beträgt: x{0}",
+
+  "chain": "Kettenschaden",
+  "chain_desc": "{0}% deines Kugelschadens springt auf Gegner im Umkreis von {1} Einheiten um das Ziel über",
+
+  "hunter": "Jäger",
+  "hunter_desc": "Gegner mit {0}% Leben oder weniger erscheinen auf deinem Radar",
 
   "moneyswap": "Steuerbeamter",
   "moneyswap_desc": "Wähle einen Spieler aus, mit dem du Geld tauschen möchtest",
@@ -80,6 +92,10 @@
   "bowlegs_enemy_info": "Deine Steuerung ist vertauscht und du stolperst.",
   "bowlegs_disable_info": "Deine Beine sind wieder normal.",
 
+  "breachzone": "Durchbruchszone",
+  "breachzone_desc": "Dein Köder erzeugt eine Zone, die Schaden und Schadensresistenz erhöht",
+  "breachzone_hud": "DMG: +{0}% | RES: +{1}%",
+
   "bunnyhop": "Hase",
   "bunnyhop_desc": "Du erhältst automatisch bunnyhop",
 
@@ -106,10 +122,11 @@
   "chameleon_wrong_team_info": "'{0}' hatte eine Fähigkeit, die dein Team nicht nutzen kann.",
 
   "chicken": "Huhn",
-  "chicken_desc": "Du erhältst ein Huhn-Modell + 10 % schnellere Bewegung – 50 HP",
+  "chicken_desc": "Du erhältst ein Huhn-Modell + {0} % schnellere Bewegung – {1} HP",
 
   "chillout": "Chillout",
   "chillout_desc": "Das Platzieren der Bombe dauert deutlich länger",
+  "chillout_hud": "Gegner-Legezeit: {0} s",
 
   "coins": "Münzregen",
   "coins_desc": "Getötete Gegner lassen Münzen im Wert ihrer Abschussprämie fallen",
@@ -147,6 +164,7 @@
 
   "demoneye": "Dämonenauge",
   "demoneye_desc": "Du verursachst allen Gegnern Schaden, die du ansiehst",
+  "demoneye_hud": "Schaden: {0}/{1} s",
 
   "disarmament": "Entwaffnung",
   "disarmament_desc": "Du hast eine zufällige Chance, einen Gegner bei einem Treffer seine Waffe fallen zu lassen.",
@@ -169,7 +187,7 @@
 
   "dwarf": "Zwerg",
   "dwarf_desc": "Zufällige Charaktergröße zu Beginn der Runde",
-  "dwarf_desc2": "Dein Größenmultiplikator beträgt: {0}x",
+  "dwarf_desc2": "Dein Größenmultiplikator beträgt: x{0}",
 
   "echo": "Echo",
   "echo_desc": "Deine Granaten werden nach der Explosion erneut geworfen",
@@ -207,7 +225,7 @@
 
   "flash": "Blitz",
   "flash_desc": "Zufällige Spielergeschwindigkeit zu Beginn der Runde",
-  "flash_desc2": "Dein Geschwindigkeitsmultiplikator beträgt: {0}x",
+  "flash_desc2": "Dein Geschwindigkeitsmultiplikator beträgt: x{0}",
 
   "flashlight": "Taschenlampe",
   "flashlight_desc": "Klicke auf [css_useSkill], um die Taschenlampe ein- oder auszuschalten. Ihr Licht kann Gegner blenden",
@@ -278,16 +296,18 @@
 
   "healingsmoke": "Heilender Rauch",
   "healingsmoke_desc": "Deine Rauchgranaten heilen",
-  "healingsmoke_hud": "Rauchheilung: {0} HP/s",
+  "healingsmoke_hud": "Heilung: {0} HP/s",
 
   "healingchicken": "Heilendes Huhn",
   "healingchicken_desc": "Deine Hühner heilen dich, solange du in ihrer Nähe bist",
+  "healingchicken_hud": "Pro Huhn: {0} HP/{1} s",
 
   "heavyweight": "Schwergewicht",
   "heavyweight_desc": "Fähigkeiten, die dich stoßen oder verlangsamen, wirken nicht auf dich",
 
   "hermit": "Einsiedler",
   "hermit_desc": "Durch das Töten von Gegnern werden Munition und ein Teil der Gesundheit wiederhergestellt",
+  "hermit_hud": "Pro Kill: +{0} HP",
 
   "holyhandgrenade": "Heilige Handgranate",
   "holyhandgrenade_desc": "Deine HE-Granaten verursachen doppelten Schaden und haben doppelte Reichweite",
@@ -299,7 +319,7 @@
   "hotbomb_desc": "Solange du am Leben bist, fügt die Bombe ihrem Träger Schaden zu",
   "hotbomb_hint": "Vorsicht, die Bombe ist heiß!",
   "hotbomb_disable_info": "Die Bombe ist nicht mehr heiß.",
-  "hotbomb_hud": "C4-Träger erleidet alle {0} s {1} Schaden",
+  "hotbomb_hud": "C4-Träger: {1} Schaden/{0} s",
 
   "iana": "Hologramm",
   "iana_desc": "Klicken Sie auf [css_useSkill], um Ihr Hologramm für einige Sekunden zu steuern",
@@ -361,7 +381,7 @@
 
   "jumpingjack": "Jumping Jack",
   "jumpingjack_desc": "Durch Springen wird die Gesundheit wiederhergestellt",
-  "jumpingjack_hud": "+{0} HP pro Sprung",
+  "jumpingjack_hud": "Sprung +{0} HP",
 
   "killerflash": "Killer Flash",
   "killerflash_desc": "Jeder, der durch deine Blendgranate vollständig geblendet wird, stirbt (einschließlich dir selbst)",
@@ -372,7 +392,7 @@
 
   "lastgasp": "Letzter Atemzug",
   "lastgasp_desc": "Nach deinem Tod fügst du dem Gegner, der dich getötet hat, Schaden zu",
-  "lastgasp_hud": "Beim Tod: {0} Schaden an deinem Mörder",
+  "lastgasp_hud": "Mörder erleidet {0} Schaden",
 
   "lifeswap": "Lebensaustausch",
   "lifeswap_desc": "Wähle einen Spieler aus, mit dem du deine Gesundheit austauschen möchtest",
@@ -483,7 +503,7 @@
   "poison_disable_info": "Du bist jetzt immun gegen Gift.",
   "poison_player_info": "Der Spieler ‚{0}‘ wurde vergiftet",
   "poison_select_info": "Einen Spieler vergiften:",
-  "poison_hud": "{1} Schaden alle {0} s (bis {2} HP)",
+  "poison_hud": "Gift {1} Schaden/{0} s (bis {2} HP)",
 
   "primaryban": "Keine Gewehre",
   "primaryban_desc": "Wähle einen Spieler aus, der keine Gewehre verwenden kann",
@@ -521,7 +541,7 @@
 
   "rezombie": "Re-Zombie",
   "rezombie_desc": "Nach dem Tod spawnst du als Zombie mit erhöhter Gesundheit und ohne Waffen",
-  "rezombie_hud": "Du stehst als Zombie mit {0} HP auf",
+  "rezombie_hud": "Zombie mit {0} HP",
 
   "reactivearmor": "Reaktive Rüstung",
   "reactivearmor_desc": "Die Rüstung absorbiert den ersten erlittenen Schaden",
@@ -584,7 +604,7 @@
 
   "soldier": "Soldat",
   "soldier_desc": "Du hast einen zufälligen Schadensmultiplikator",
-  "soldier_desc2": "Dein Schadensmultiplikator beträgt: {0}x",
+  "soldier_desc2": "Dein Schadensmultiplikator beträgt: x{0}",
 
   "soulthrower": "Seelenwerfer",
   "soulthrower_desc": "Seelen getöteter Gegner fliegen weiter und explodieren beim Aufprall",
@@ -625,7 +645,7 @@
 
   "thorns": "Dornen",
   "thorns_desc": "Dein Gegner erhält einen Teil des Schadens, den er dir zugefügt hat",
-  "thorns_hud": "Reflektiert {0} % des Schadens (max. {1})",
+  "thorns_hud": "Reflexion: {0} %",
 
   "throwingknife": "Wurfmesser",
   "throwingknife_desc": "Klicke [css_useSkill], um ein Messer zu werfen. Aber nimm dich vor anderen in Acht",
@@ -638,7 +658,7 @@
 
   "toxicsmoke": "Giftiger Rauch",
   "toxicsmoke_desc": "Deine Rauchgranaten verursachen Schaden",
-  "toxicsmoke_hud": "Rauchschaden: {0}/s",
+  "toxicsmoke_hud": "Schaden: {0}/s",
 
   "tripwire": "Stolperdraht",
   "tripwire_desc": "Klicke auf [css_useSkill], um einen Draht zwischen zwei Wänden zu spannen. Gegner, die ihn berühren, werden auf deinem Radar angezeigt",
@@ -648,7 +668,13 @@
 
   "truearmor": "Echte Rüstung",
   "truearmor_desc": "Ein Teil des Schadens geht auf deine Rüstung statt auf dein Leben",
-  "truearmor_hud": "Schaden auf Rüstung: {0} %",
+  "truearmor_hud": "Absorbiert: {0} %",
+
+  "turtleshield": "Schildkrötenpanzer",
+  "turtleshield_desc": "Du erhältst {0}% weniger Schaden, solange du geduckt bist",
+  "turtleshield_hud": "Panzer: {0}",
+  "turtleshield_active": "Aktiv",
+  "turtleshield_passive": "Passiv",
 
   "voodoo": "Voodoo",
   "voodoo_desc": "Der markierte Gegner erleidet einen Teil des Schadens, den du erleidest",
@@ -658,6 +684,9 @@
 
   "wallhack": "Wallhack",
   "wallhack_desc": "Du kannst Feinde durch Wände hindurch sehen",
+
+  "wanderer": "Wanderer",
+  "wanderer_desc": "Erhalte {1} LP für je {0} zurückgelegte Einheiten",
 
   "watchmaker": "Uhrmacher",
   "watchmaker_desc": "Jeder Granatenwurf verändert die Rundenzeit",

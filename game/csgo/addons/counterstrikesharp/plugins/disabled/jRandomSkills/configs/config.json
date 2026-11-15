@@ -1,4 +1,4 @@
-﻿{
+{
   "ConfigName": "Default",
   "GameMode": 3,
   "YourSkillChatInfo": true,
@@ -151,7 +151,10 @@
     "Enabled": false,
     "Layout": "panorama/layout/custom_game/jrandomskills/simple_skills.xml",
     "Font": "stratum",
-    "FontSize": 100
+    "FontSize": 100,
+    "yOffset": 1,
+    "ySpecOffset": 9,
+    "xOffset": 0
   },
   "ChatMessage": {
     "MaxWidth": 1280.0,

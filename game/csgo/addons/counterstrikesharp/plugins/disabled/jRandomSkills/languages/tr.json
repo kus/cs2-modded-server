@@ -12,6 +12,10 @@
   "aimlock": "Kitlenme",
   "aimlock_desc": "[css_useSkill] tuşuna basarak en yakın düşmana kitlen",
 
+  "airstrike": "Hava Saldırısı",
+  "airstrike_desc": "[css_useSkill] ile bir konuma füzeli hava saldırısı yap",
+  "airstrike_hud": "Hedef seç: {0} sn",
+
   "anomaly": "Zaman Büken",
   "anomaly_desc": "[css_useSkill] tuşuna basarak zamanı birkaç saniye geri al",
 
@@ -23,6 +27,7 @@
 
   "areareaper": "Mekan Kapatan",
   "areareaper_desc": "Haritadaki bir bomba alanını devre dışı bırak",
+  "areareaper_hud": "{0} Bölgesi kapalı",
   "areareaper_incorrect_site": "Böyle bir bomba alanı yok uydurma",
   "areareaper_no_site": "Haritada bomba alanı bulunamadı",
   "areareaper_select_info": "Alan seçin:",
@@ -34,14 +39,21 @@
 
   "armored": "Zırhlı",
   "armored_desc": "Rastgele hasar alma çarpanın olur",
-  "armored_desc2": "Hasar alma: {0}x",
+  "armored_desc2": "Hasar alma: x{0}",
 
   "assassin": "Suikastçı",
   "assassin_desc": "Düşmana arkadan daha fazla hasar verirsin",
+  "assassin_hud": "Arkadan hasar: x{0}",
 
   "astronaut": "Astronot",
   "astronaut_desc": "Rastgele bir yerçekimine sahipsin",
-  "astronaut_desc2": "Yerçekimin: {0}x",
+  "astronaut_desc2": "Yerçekimin: x{0}",
+
+  "chain": "Zincirlenme",
+  "chain_desc": "Mermi hasarının %{0}'i hedefin {1} birim yakınındaki düşmanlara sıçrar",
+
+  "hunter": "Avcı",
+  "hunter_desc": "Canı %{0} ve altına düşen düşmanları radarda görürsün",
 
   "moneyswap": "Vergi Memuru",
   "moneyswap_desc": "Bir düşmanla paranı takasla",
@@ -80,6 +92,10 @@
   "bowlegs_enemy_info": "Artık tam tersi yönlere gideceksin ve titreyeceksin.",
   "bowlegs_disable_info": "Bacakların normale döndü.",
 
+  "breachzone": "Yarma Alanı",
+  "breachzone_desc": "Yem bomban, hasarı ve hasar direncini artıran bir alan oluşturur",
+  "breachzone_hud": "DMG: +{0}% | RES: +{1}%",
+
   "bunnyhop": "Tavşan",
   "bunnyhop_desc": "Otomatik BunnyHop yaparsın",
 
@@ -106,10 +122,11 @@
   "chameleon_wrong_team_info": "'{0}' takımının kullanamayacağı bir yeteneğe sahipti.",
 
   "chicken": "Tavuk",
-  "chicken_desc": "Tavuk modeli, %10 daha hızlı ama 50 HP",
+  "chicken_desc": "Tavuk modeli, %{0} daha hızlı ama {1} HP",
 
   "chillout": "Ağırdan Al",
   "chillout_desc": "Bombayı kurmak çok daha uzun sürer",
+  "chillout_hud": "Rakip C4 kurma: {0} sn",
 
   "coins": "Para Yağmuru",
   "coins_desc": "Öldürdüğün düşman yere para saçar",
@@ -162,7 +179,7 @@
 
   "dwarf": "Cüce",
   "dwarf_desc": "Rastgele karakter boyutu",
-  "dwarf_desc2": "Boyutun: {0}x",
+  "dwarf_desc2": "Boyutun: x{0}",
 
   "echo": "Yankı",
   "echo_desc": "Attığın bombalar patlayınca tekrar atılır",
@@ -200,7 +217,7 @@
 
   "flash": "Flash",
   "flash_desc": "Rastgele oyuncu hızı",
-  "flash_desc2": "Hızın: {0}x",
+  "flash_desc2": "Hızın: x{0}",
 
   "flashlight": "El Feneri",
   "flashlight_desc": "[css_useSkill] tuşuna basarak el fenerini aç veya kapat, ışığı düşmanı kör eder",
@@ -229,7 +246,7 @@
 
   "giant": "Dev",
   "giant_desc": "Seçtiğin rakibi büyüt",
-  "giant_desc2": "Rakibin boyutu: {0}x",
+  "giant_desc2": "Rakibin boyutu: x{0}",
   "giant_disable_info": "Normal boyutuna döndün.",
   "giant_enemy_info": "{0}x boyutuna büyüdün.",
   "giant_player_info": "'{0}' boyutunu {1}x büyüttün.",
@@ -271,16 +288,18 @@
 
   "healingchicken": "Şifacı Tavuk",
   "healingchicken_desc": "Yakınındayken tavuğun seni iyileştirir",
+  "healingchicken_hud": "Tavuk başına: {0} can/{1} sn",
 
   "healingsmoke": "Şifalı Sis",
   "healingsmoke_desc": "Sis bomban iyileştirir",
-  "healingsmoke_hud": "Sis iyileştirmesi: {0} can/sn",
+  "healingsmoke_hud": "İyileştirme: {0} can/sn",
 
   "heavyweight": "Ağır Sıklet",
   "heavyweight_desc": "Seni iten ve yavaşlatan yetenekler işlemez",
 
   "hermit": "Münzevi",
   "hermit_desc": "Birini öldürünce mermin ve canın yenilenir",
+  "hermit_hud": "Öldürünce: +{0} can",
 
   "holyhandgrenade": "Kutsal El Bombası",
   "holyhandgrenade_desc": "El bombanın hasarı ve menzili iki kat",
@@ -292,7 +311,7 @@
   "hotbomb_desc": "Yaşadığın sürece bombacının canı azalır",
   "hotbomb_hint": "C4 ÇOK SICAK!",
   "hotbomb_disable_info": "C4 soğudu.",
-  "hotbomb_hud": "C4 taşıyana {0} sn'de bir {1} hasar",
+  "hotbomb_hud": "C4 taşıyıcıya {1} hasar/{0} sn'de",
 
   "iana": "Hologram",
   "iana_desc": "[css_useSkill] tuşuna basarak bir hologram oluştur",
@@ -354,7 +373,7 @@
 
   "jumpingjack": "Zıpzıp Jack",
   "jumpingjack_desc": "Zıplamak canını yeniler",
-  "jumpingjack_hud": "Zıplama başına +{0} can",
+  "jumpingjack_hud": "Zıplama +{0} can",
 
   "killerflash": "Ölümcül Flaş",
   "killerflash_desc": "Flaşına tamamen kör olan herkes ölür (sen dahil)",
@@ -365,7 +384,7 @@
 
   "lastgasp": "Son Nefes",
   "lastgasp_desc": "Öldükten sonra seni öldürene hasar verirsin",
-  "lastgasp_hud": "Ölünce katiline {0} hasar",
+  "lastgasp_hud": "Öldürene {0} hasar",
 
   "lifeswap": "Can Takası",
   "lifeswap_desc": "Bir düşmanla canını takasla",
@@ -410,6 +429,7 @@
 
   "demoneye": "Şeytani Göz",
   "demoneye_desc": "Baktığın tüm düşmana hasar verirsin",
+  "demoneye_hud": "Hasar: {0}/{1} sn",
 
   "nemesis": "Ezeli Rakip",
   "nemesis_desc": "İşaretlediğin düşman herkesten daha fazla hasar alır",
@@ -483,7 +503,7 @@
   "poison_disable_info": "Zehire bağışıklık kazandın",
   "poison_player_info": "'{0}' isimli oyuncu zehirlendi.",
   "poison_select_info": "Birini seçin:",
-  "poison_hud": "{0} sn'de bir {1} hasar ({2} cana kadar)",
+  "poison_hud": "Zehir {0} sn'de {1} hasar ({2} cana kadar)",
 
   "primaryban": "Tüfek Yasak",
   "primaryban_desc": "Tüfek kullanamayacak bir düşman seç",
@@ -521,7 +541,7 @@
 
   "rezombie": "Zombi",
   "rezombie_desc": "Öldüğünde silahsız zombi olarak daha çok canla dirilirsin",
-  "rezombie_hud": "{0} canla zombi olarak dirilirsin",
+  "rezombie_hud": "{0} canlı zombi olursun",
 
   "reactivearmor": "Reaktif Zırh",
   "reactivearmor_desc": "Zırhın ilk hasarı emer",
@@ -584,7 +604,7 @@
 
   "soldier": "Teğmen",
   "soldier_desc": "Rastgele hasar verme çarpanın olur",
-  "soldier_desc2": "Hasarın: {0}x",
+  "soldier_desc2": "Hasarın: x{0}",
 
   "soulthrower": "Ruh Fırlatıcı",
   "soulthrower_desc": "Öldürdüğün düşmanın ruhu fırlar ve çarptığı yerde patlar",
@@ -625,7 +645,7 @@
 
   "thorns": "Dikenler",
   "thorns_desc": "Sana verilen hasarın bir kısmı rakibe döner",
-  "thorns_hud": "Yansıtma: hasarın %{0} (en fazla {1})",
+  "thorns_hud": "Yansıtma: %{0}",
 
   "throwingknife": "Fırlatma Bıçağı",
   "throwingknife_desc": "[css_useSkill] tuşuna basarak bıçak fırlat",
@@ -638,7 +658,7 @@
 
   "toxicsmoke": "Zehirli Sis",
   "toxicsmoke_desc": "Sis bomban hasar verir",
-  "toxicsmoke_hud": "Sis hasarı: {0}/sn",
+  "toxicsmoke_hud": "Hasar: {0}/sn",
 
   "tripwire": "Tel Tuzağı",
   "tripwire_desc": "[css_useSkill] tuşuna basarak iki duvar arasına tel ger, değen düşman radarda görünür",
@@ -648,7 +668,13 @@
 
   "truearmor": "Gerçek Zırh",
   "truearmor_desc": "Aldığın hasarın bir kısmını canın yerine zırhın karşılar",
-  "truearmor_hud": "Zırhın karşıladığı hasar: %{0}",
+  "truearmor_hud": "Karşılanan hasar: %{0}",
+
+  "turtleshield": "Kaplumbağa Kabuğu",
+  "turtleshield_desc": "Eğilirken %{0} daha az hasar alırsın",
+  "turtleshield_hud": "Kabuk: {0}",
+  "turtleshield_active": "Aktif",
+  "turtleshield_passive": "Pasif",
 
   "voodoo": "Vudu",
   "voodoo_desc": "Aldığın hasarın bir kısmını işaretlediğin düşman da alır",
@@ -658,6 +684,9 @@
 
   "wallhack": "Wallhack",
   "wallhack_desc": "Düşmanları duvar arkasından görürsün",
+
+  "wanderer": "Gezgin",
+  "wanderer_desc": "Her {0} birim yürüdüğünde {1} can kazanırsın",
 
   "watchmaker": "Saat Ustası",
   "watchmaker_desc": "Atılan her bomba raund süresini değiştirir",
