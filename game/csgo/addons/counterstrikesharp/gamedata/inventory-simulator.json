@@ -124,8 +124,8 @@
   },
   "CCSPlayerController_InventoryServices::m_pInventory": {
     "offsets": {
-      "linux": 112,
-      "windows": 112
+      "linux": 4,
+      "windows": 4
     }
   },
   "CServerSideClientBase::m_UserID": {
@@ -160,6 +160,78 @@
       "library": "server",
       "windows": "40 53 48 83 EC ? 48 83 3D ? ? ? ? ? 48 8B D9 0F 84",
       "linux": "55 48 89 E5 41 55 41 54 53 48 83 EC ? 4C 8D 25 ? ? ? ? 49 83 3C 24 ? 74 ? 4C 8D 6F"
+    }
+  },
+  "CEconItemDefinition::m_nDefIndex": {
+    "offsets": {
+      "windows": 16,
+      "linux": 16
+    }
+  },
+  "CEconItemDefinition::m_pszDefinitionName": {
+    "offsets": {
+      "windows": 608,
+      "linux": 608
+    }
+  },
+  "CEconItemDefinition::m_iDefaultLoadoutSlot": {
+    "offsets": {
+      "windows": 824,
+      "linux": 824
+    }
+  },
+  "CChicken::m_bCanRoam": {
+    "offsets": {
+      "windows": -1,
+      "linux": -1
+    }
+  },
+  "CGameTrace::m_vEndPos": {
+    "offsets": {
+      "windows": 132,
+      "linux": 132
+    }
+  },
+  "CGameTrace::m_vHitNormal": {
+    "offsets": {
+      "windows": 144,
+      "linux": 144
+    }
+  },
+  "sizeof(CGameTrace)": {
+    "offsets": {
+      "windows": 192,
+      "linux": 192
+    }
+  },
+  "IGameSystem_InitAllSystems_pFirst::DisplacementOffset": {
+    "offsets": {
+      "windows": 3,
+      "linux": 3
+    }
+  },
+  "IGameSystem_InitAllSystems_pFirst::InstructionSize": {
+    "offsets": {
+      "windows": 7,
+      "linux": 7
+    }
+  },
+  "CBaseGameSystemFactory::m_pNext": {
+    "offsets": {
+      "windows": 8,
+      "linux": 8
+    }
+  },
+  "CBaseGameSystemFactory::m_pName": {
+    "offsets": {
+      "windows": 16,
+      "linux": 16
+    }
+  },
+  "IGameSystemFactory::GetStaticGameSystem": {
+    "offsets": {
+      "windows": 9,
+      "linux": 9
     }
   }
 }

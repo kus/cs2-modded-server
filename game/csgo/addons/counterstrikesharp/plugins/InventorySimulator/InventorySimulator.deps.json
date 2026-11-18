@@ -8,13 +8,13 @@
     ".NETCoreApp,Version=v10.0": {
       "InventorySimulator/1.0.0": {
         "dependencies": {
-          "CounterStrikeSharp.API": "1.0.375"
+          "CounterStrikeSharp.API": "1.0.380"
         },
         "runtime": {
           "InventorySimulator.dll": {}
         }
       },
-      "CounterStrikeSharp.API/1.0.375": {
+      "CounterStrikeSharp.API/1.0.380": {
         "dependencies": {
           "FastGenericNew": "3.3.1",
           "McMaster.NETCore.Plugins": "1.4.0",
@@ -30,8 +30,9 @@
         },
         "runtime": {
           "lib/net10.0/CounterStrikeSharp.API.dll": {
-            "assemblyVersion": "1.0.375.0",
-            "fileVersion": "1.0.375.0"
+            "assemblyVersion": "1.0.380.0",
+            "fileVersion": "1.0.380.0",
+            "localPath": "CounterStrikeSharp.API.dll"
           }
         }
       },
@@ -39,7 +40,8 @@
         "runtime": {
           "lib/net8.0/FastGenericNew.dll": {
             "assemblyVersion": "3.3.1.0",
-            "fileVersion": "3.3.1.0"
+            "fileVersion": "3.3.1.0",
+            "localPath": "FastGenericNew.dll"
           }
         }
       },
@@ -51,7 +53,8 @@
         "runtime": {
           "lib/netcoreapp3.1/McMaster.NETCore.Plugins.dll": {
             "assemblyVersion": "1.4.0.0",
-            "fileVersion": "1.4.0.0"
+            "fileVersion": "1.4.0.0",
+            "localPath": "McMaster.NETCore.Plugins.dll"
           }
         }
       },
@@ -59,7 +62,8 @@
         "runtime": {
           "lib/netstandard2.0/Microsoft.DotNet.PlatformAbstractions.dll": {
             "assemblyVersion": "3.1.6.0",
-            "fileVersion": "3.100.620.31604"
+            "fileVersion": "3.100.620.31604",
+            "localPath": "Microsoft.DotNet.PlatformAbstractions.dll"
           }
         }
       },
@@ -71,7 +75,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Configuration.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.Configuration.dll"
           }
         }
       },
@@ -82,7 +87,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.Configuration.Abstractions.dll"
           }
         }
       },
@@ -94,7 +100,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Configuration.Binder.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.Configuration.Binder.dll"
           }
         }
       },
@@ -106,7 +113,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Configuration.CommandLine.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.Configuration.CommandLine.dll"
           }
         }
       },
@@ -118,7 +126,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.Configuration.EnvironmentVariables.dll"
           }
         }
       },
@@ -133,7 +142,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.Configuration.FileExtensions.dll"
           }
         }
       },
@@ -147,7 +157,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Configuration.Json.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.Configuration.Json.dll"
           }
         }
       },
@@ -161,7 +172,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Configuration.UserSecrets.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.Configuration.UserSecrets.dll"
           }
         }
       },
@@ -172,7 +184,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.DependencyInjection.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.DependencyInjection.dll"
           }
         }
       },
@@ -180,7 +193,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.DependencyInjection.Abstractions.dll"
           }
         }
       },
@@ -188,7 +202,8 @@
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll": {
             "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.21.52210"
+            "fileVersion": "6.0.21.52210",
+            "localPath": "Microsoft.Extensions.DependencyModel.dll"
           }
         }
       },
@@ -201,7 +216,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Diagnostics.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.Diagnostics.dll"
           }
         }
       },
@@ -213,7 +229,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Diagnostics.Abstractions.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.Diagnostics.Abstractions.dll"
           }
         }
       },
@@ -224,7 +241,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.FileProviders.Abstractions.dll"
           }
         }
       },
@@ -237,7 +255,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.FileProviders.Physical.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.FileProviders.Physical.dll"
           }
         }
       },
@@ -245,7 +264,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.FileSystemGlobbing.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.FileSystemGlobbing.dll"
           }
         }
       },
@@ -277,7 +297,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Hosting.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.Hosting.dll"
           }
         }
       },
@@ -292,7 +313,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.Hosting.Abstractions.dll"
           }
         }
       },
@@ -300,7 +322,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Localization.Abstractions.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.Localization.Abstractions.dll"
           }
         }
       },
@@ -313,7 +336,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Logging.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.Logging.dll"
           }
         }
       },
@@ -324,7 +348,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Logging.Abstractions.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.Logging.Abstractions.dll"
           }
         }
       },
@@ -342,7 +367,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Logging.Configuration.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.Logging.Configuration.dll"
           }
         }
       },
@@ -357,7 +383,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Logging.Console.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.Logging.Console.dll"
           }
         }
       },
@@ -370,7 +397,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Logging.Debug.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.Logging.Debug.dll"
           }
         }
       },
@@ -385,7 +413,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Logging.EventLog.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.Logging.EventLog.dll"
           }
         }
       },
@@ -400,7 +429,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Logging.EventSource.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.Logging.EventSource.dll"
           }
         }
       },
@@ -412,7 +442,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Options.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.Options.dll"
           }
         }
       },
@@ -427,7 +458,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.Options.ConfigurationExtensions.dll"
           }
         }
       },
@@ -435,7 +467,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Primitives.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.Primitives.dll"
           }
         }
       },
@@ -447,7 +480,8 @@
         "runtime": {
           "lib/net6.0/Scrutor.dll": {
             "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.0.0"
+            "fileVersion": "4.0.0.0",
+            "localPath": "Scrutor.dll"
           }
         }
       },
@@ -455,7 +489,8 @@
         "runtime": {
           "lib/net9.0/Serilog.dll": {
             "assemblyVersion": "4.2.0.0",
-            "fileVersion": "4.2.0.0"
+            "fileVersion": "4.2.0.0",
+            "localPath": "Serilog.dll"
           }
         }
       },
@@ -467,7 +502,8 @@
         "runtime": {
           "lib/net9.0/Serilog.Extensions.Logging.dll": {
             "assemblyVersion": "9.0.2.0",
-            "fileVersion": "9.0.2.0"
+            "fileVersion": "9.0.2.0",
+            "localPath": "Serilog.Extensions.Logging.dll"
           }
         }
       },
@@ -478,7 +514,8 @@
         "runtime": {
           "lib/net7.0/Serilog.Sinks.Console.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.0"
+            "fileVersion": "5.0.0.0",
+            "localPath": "Serilog.Sinks.Console.dll"
           }
         }
       },
@@ -489,7 +526,8 @@
         "runtime": {
           "lib/net5.0/Serilog.Sinks.File.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.0"
+            "fileVersion": "5.0.0.0",
+            "localPath": "Serilog.Sinks.File.dll"
           }
         }
       },
@@ -497,7 +535,8 @@
         "runtime": {
           "lib/net10.0/System.Diagnostics.EventLog.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "System.Diagnostics.EventLog.dll"
           }
         },
         "runtimeTargets": {
@@ -505,13 +544,15 @@
             "rid": "win",
             "assetType": "runtime",
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "runtimes/win/lib/net10.0/System.Diagnostics.EventLog.Messages.dll"
           },
           "runtimes/win/lib/net10.0/System.Diagnostics.EventLog.dll": {
             "rid": "win",
             "assetType": "runtime",
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "runtimes/win/lib/net10.0/System.Diagnostics.EventLog.dll"
           }
         }
       },
@@ -519,7 +560,8 @@
         "runtime": {
           "lib/net8.0/Tomlyn.dll": {
             "assemblyVersion": "0.19.0.0",
-            "fileVersion": "0.19.0.0"
+            "fileVersion": "0.19.0.0",
+            "localPath": "Tomlyn.dll"
           }
         }
       }
@@ -531,12 +573,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "CounterStrikeSharp.API/1.0.375": {
+    "CounterStrikeSharp.API/1.0.380": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ap0UNvxwQMWvY1NLBx5rA1cAF7rjwlJbLO/uB6uiIC/JRmE3gAJfv+uI6sGS2zPpW0d5O1IpWNzQCXNArtIXCA==",
-      "path": "counterstrikesharp.api/1.0.375",
-      "hashPath": "counterstrikesharp.api.1.0.375.nupkg.sha512"
+      "sha512": "sha512-JbI3wzIRQnam83bOn4J9HbuFRbdYRhln/2UPZtIG2RXkyOnYhkxWW1QQmG37pw2i0j5ffHuSRYTj4xgzEviqpA==",
+      "path": "counterstrikesharp.api/1.0.380",
+      "hashPath": "counterstrikesharp.api.1.0.380.nupkg.sha512"
     },
     "FastGenericNew/3.3.1": {
       "type": "package",
