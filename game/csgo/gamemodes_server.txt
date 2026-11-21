@@ -523,7 +523,7 @@
 			"displayname"			"Battle Royale"
 			"maps"
 			{
-				"workshop/3837286244/aurum"		""
+				"workshop/3837286244/br_aurum"		""
 				"workshop/3462095803/br_t2"		""
 				"workshop/3330484099/br_electrified"		""
 				"workshop/3297489255/br_stacks"		""
